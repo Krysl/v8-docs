@@ -81,6 +81,10 @@ class v8\+::\+Property\+Callback\+Info$<$ T $>$}
 
 The information passed to a property callback about the context of the property access. 
 
+Definition at line 105 of file v8.\+h.
+
+
+
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classv8_1_1PropertyCallbackInfo_a0156bad4329132beddee04f2d000c617}\label{classv8_1_1PropertyCallbackInfo_a0156bad4329132beddee04f2d000c617}} 
 \index{v8\+::\+Property\+Callback\+Info@{v8\+::\+Property\+Callback\+Info}!Data@{Data}}
@@ -92,6 +96,10 @@ The information passed to a property callback about the context of the property 
 \begin{DoxyReturn}{Returns}
 The data set in the configuration, i.\+e., in {\ttfamily \mbox{\hyperlink{structv8_1_1NamedPropertyHandlerConfiguration}{Named\+Property\+Handler\+Configuration}}} or {\ttfamily \mbox{\hyperlink{structv8_1_1IndexedPropertyHandlerConfiguration}{Indexed\+Property\+Handler\+Configuration}}.} 
 \end{DoxyReturn}
+
+
+Definition at line 10372 of file v8.\+h.
+
 \mbox{\Hypertarget{classv8_1_1PropertyCallbackInfo_aff7b838ede308ab8a42890962eb9271c}\label{classv8_1_1PropertyCallbackInfo_aff7b838ede308ab8a42890962eb9271c}} 
 \index{v8\+::\+Property\+Callback\+Info@{v8\+::\+Property\+Callback\+Info}!Get\+Isolate@{Get\+Isolate}}
 \index{Get\+Isolate@{Get\+Isolate}!v8\+::\+Property\+Callback\+Info@{v8\+::\+Property\+Callback\+Info}}
@@ -102,6 +110,10 @@ Isolate $\ast$ \mbox{\hyperlink{classv8_1_1PropertyCallbackInfo}{v8\+::\+Propert
 \begin{DoxyReturn}{Returns}
 The isolate of the property access. 
 \end{DoxyReturn}
+
+
+Definition at line 10366 of file v8.\+h.
+
 \mbox{\Hypertarget{classv8_1_1PropertyCallbackInfo_aa0882946929c3c4df6d131fe0d8d6746}\label{classv8_1_1PropertyCallbackInfo_aa0882946929c3c4df6d131fe0d8d6746}} 
 \index{v8\+::\+Property\+Callback\+Info@{v8\+::\+Property\+Callback\+Info}!Get\+Return\+Value@{Get\+Return\+Value}}
 \index{Get\+Return\+Value@{Get\+Return\+Value}!v8\+::\+Property\+Callback\+Info@{v8\+::\+Property\+Callback\+Info}}
@@ -116,6 +128,10 @@ info.GetReturnValue().Set(...)
 \end{DoxyCode}
  
 \end{DoxyReturn}
+
+
+Definition at line 10390 of file v8.\+h.
+
 \mbox{\Hypertarget{classv8_1_1PropertyCallbackInfo_a66b7ec267f18bd84e8baf0a0e16187b9}\label{classv8_1_1PropertyCallbackInfo_a66b7ec267f18bd84e8baf0a0e16187b9}} 
 \index{v8\+::\+Property\+Callback\+Info@{v8\+::\+Property\+Callback\+Info}!Holder@{Holder}}
 \index{Holder@{Holder}!v8\+::\+Property\+Callback\+Info@{v8\+::\+Property\+Callback\+Info}}
@@ -129,6 +145,10 @@ The object in the prototype chain of the receiver that has the interceptor. Supp
 \begin{DoxyNote}{Note}
 For security reasons, do not pass the object back into the runtime. 
 \end{DoxyNote}
+
+
+Definition at line 10384 of file v8.\+h.
+
 \mbox{\Hypertarget{classv8_1_1PropertyCallbackInfo_a82d79a9cdaac9807a0fa17331b159ce9}\label{classv8_1_1PropertyCallbackInfo_a82d79a9cdaac9807a0fa17331b159ce9}} 
 \index{v8\+::\+Property\+Callback\+Info@{v8\+::\+Property\+Callback\+Info}!Should\+Throw\+On\+Error@{Should\+Throw\+On\+Error}}
 \index{Should\+Throw\+On\+Error@{Should\+Throw\+On\+Error}!v8\+::\+Property\+Callback\+Info@{v8\+::\+Property\+Callback\+Info}}
@@ -142,6 +162,10 @@ True if the intercepted function should throw if an error occurs. Usually, {\ttf
 \begin{DoxyNote}{Note}
 Always {\ttfamily false} when intercepting {\ttfamily Reflect.\+set()} independent of the language mode. 
 \end{DoxyNote}
+
+
+Definition at line 10395 of file v8.\+h.
+
 \mbox{\Hypertarget{classv8_1_1PropertyCallbackInfo_af46300339d2f31d8dc84a06d74ed6c3c}\label{classv8_1_1PropertyCallbackInfo_af46300339d2f31d8dc84a06d74ed6c3c}} 
 \index{v8\+::\+Property\+Callback\+Info@{v8\+::\+Property\+Callback\+Info}!This@{This}}
 \index{This@{This}!v8\+::\+Property\+Callback\+Info@{v8\+::\+Property\+Callback\+Info}}
@@ -188,6 +212,10 @@ env->Global()
 CompileRun(\textcolor{stringliteral}{"obj.a = 'obj'; var r = \{a: 'r'\}; Reflect.get(obj, 'x', r)"});
 \end{DoxyCode}
  
+
+Definition at line 10378 of file v8.\+h.
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

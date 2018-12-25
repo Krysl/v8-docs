@@ -147,6 +147,8 @@ Static Protected Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>V8 <a class="el" href="classv8_1_1Platform.html">Platform</a> abstraction layer.</p>
 <p>The embedder has to provide an implementation of this interface before initializing the rest of V8. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00268">268</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ada31b440048763bf8d9c296ca4cf2e1b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada31b440048763bf8d9c296ca4cf2e1b">&#9670;&nbsp;</a></span>CallBlockingTaskOnWorkerThread()</h2>
@@ -172,6 +174,8 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Schedules a task that blocks the main thread to be invoked with high-priority on a worker thread. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00328">328</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
 
 </div>
 </div>
@@ -289,6 +293,8 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Tells the embedder to generate and upload a crashdump during an unexpected but non-critical scenario. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00416">416</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
+
 </div>
 </div>
 <a id="af0d18c6bbefa133c5d11ec8a460d0278"></a>
@@ -342,6 +348,8 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Allows the embedder to manage memory page allocations. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00275">275</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
+
 </div>
 </div>
 <a id="aadb2594e6ff9a6f6a0657412ff5a7206"></a>
@@ -367,6 +375,8 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns a function pointer that print a stack trace of the current stack on invocation. Disables printing of the stack trace if nullptr. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00405">405</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
 
 </div>
 </div>
@@ -420,6 +430,8 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns true if idle tasks are enabled for the given |isolate|. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00380">380</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
 
 </div>
 </div>
@@ -499,6 +511,8 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Enables the embedder to respond in cases where V8 can't allocate large blocks of memory. V8 retries the failed allocation once after calling this method. On success, execution continues; otherwise V8 exits with a fatal error. Embedder overrides of this function must NOT call back into V8. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00287">287</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
+
 </div>
 </div>
 <a id="a0de4b8a7bb8865ce65beb5afbaabe4cc"></a>
@@ -526,6 +540,8 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Enables the embedder to respond in cases where V8 can't allocate large memory regions. The |length| parameter is the amount of memory needed. Returns true if memory is now available. Returns false if no memory could be made available. V8 will retry allocations until this method returns false.</p>
 <p>Embedder overrides of this function must NOT call back into V8. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00301">301</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
 
 </div>
 </div>
@@ -664,6 +680,8 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Schedules a task to be invoked on a foreground thread wrt a specific |isolate| when the embedder is idle. Requires that SupportsIdleTasks(isolate) is true. Idle tasks may be reordered relative to other task types and may be starved for an arbitrarily long time if no idle time is available. The definition of "foreground" is opaque to V8. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00369">369</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -675,7 +693,7 @@ Static Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1Platform.html">Platform</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 13:42:28 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:17:15 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

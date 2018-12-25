@@ -173,6 +173,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>internal::CustomArgu
 class v8::PropertyCallbackInfo&lt; T &gt;</h3>
 
 <p>The information passed to a property callback about the context of the property access. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l00105">105</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0156bad4329132beddee04f2d000c617"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0156bad4329132beddee04f2d000c617">&#9670;&nbsp;</a></span>Data()</h2>
@@ -191,6 +193,8 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The data set in the configuration, i.e., in <code><a class="el" href="structv8_1_1NamedPropertyHandlerConfiguration.html">NamedPropertyHandlerConfiguration</a></code> or <code><a class="el" href="structv8_1_1IndexedPropertyHandlerConfiguration.html">IndexedPropertyHandlerConfiguration</a>.</code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l10372">10372</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -212,6 +216,8 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The isolate of the property access. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l10366">10366</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="aa0882946929c3c4df6d131fe0d8d6746"></a>
@@ -231,6 +237,8 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The return value of the callback. Can be changed by calling Set(). <div class="fragment"><div class="line">info.GetReturnValue().Set(...)</div></div><!-- fragment --> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l10390">10390</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -253,6 +261,8 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The object in the prototype chain of the receiver that has the interceptor. Suppose you have <code>x</code> and its prototype is <code>y</code>, and <code>y</code> has an interceptor. Then <code>info.This()</code> is <code>x</code> and <code>info.Holder()</code> is <code>y</code>. The <a class="el" href="classv8_1_1PropertyCallbackInfo.html#a66b7ec267f18bd84e8baf0a0e16187b9">Holder()</a> could be a hidden object (the global object, rather than the global proxy).</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>For security reasons, do not pass the object back into the runtime. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l10384">10384</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="a82d79a9cdaac9807a0fa17331b159ce9"></a>
@@ -274,6 +284,8 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>True if the intercepted function should throw if an error occurs. Usually, <code>true</code> corresponds to &lsquo;'use strict&rsquo;`.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Always <code>false</code> when intercepting <code>Reflect.set()</code> independent of the language mode. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l10395">10395</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="af46300339d2f31d8dc84a06d74ed6c3c"></a>
@@ -294,6 +306,8 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The receiver. In many cases, this is the object on which the property access was intercepted. When using <code>Reflect.get</code>, <code>Function.prototype.call</code>, or similar functions, it is the object passed in as receiver or thisArg.</dd></dl>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> GetterCallback(Local&lt;Name&gt; name,</div><div class="line">                    <span class="keyword">const</span> <a class="code" href="classv8_1_1PropertyCallbackInfo.html">v8::PropertyCallbackInfo&lt;v8::Value&gt;</a>&amp; info) {</div><div class="line">   <span class="keyword">auto</span> context = info.<a class="code" href="classv8_1_1PropertyCallbackInfo.html#aff7b838ede308ab8a42890962eb9271c">GetIsolate</a>()-&gt;GetCurrentContext();</div><div class="line"></div><div class="line">   <a class="code" href="classv8_1_1Local.html">v8::Local&lt;v8::Value&gt;</a> a_this =</div><div class="line">       info.<a class="code" href="classv8_1_1PropertyCallbackInfo.html#af46300339d2f31d8dc84a06d74ed6c3c">This</a>()</div><div class="line">           -&gt;GetRealNamedProperty(context, v8_str(<span class="stringliteral">&quot;a&quot;</span>))</div><div class="line">           .ToLocalChecked();</div><div class="line">   <a class="code" href="classv8_1_1Local.html">v8::Local&lt;v8::Value&gt;</a> a_holder =</div><div class="line">       info.<a class="code" href="classv8_1_1PropertyCallbackInfo.html#a66b7ec267f18bd84e8baf0a0e16187b9">Holder</a>()</div><div class="line">           -&gt;GetRealNamedProperty(context, v8_str(<span class="stringliteral">&quot;a&quot;</span>))</div><div class="line">           .ToLocalChecked();</div><div class="line"></div><div class="line">  CHECK(v8_str(<span class="stringliteral">&quot;r&quot;</span>)-&gt;Equals(context, a_this).FromJust());</div><div class="line">  CHECK(v8_str(<span class="stringliteral">&quot;obj&quot;</span>)-&gt;Equals(context, a_holder).FromJust());</div><div class="line"></div><div class="line">  info.<a class="code" href="classv8_1_1PropertyCallbackInfo.html#aa0882946929c3c4df6d131fe0d8d6746">GetReturnValue</a>().Set(name);</div><div class="line">}</div><div class="line"></div><div class="line"><a class="code" href="classv8_1_1Local.html">v8::Local&lt;v8::FunctionTemplate&gt;</a> templ =</div><div class="line"><a class="code" href="classv8_1_1FunctionTemplate.html#a3b675b8327f08a7c6a4c4d9dce5cb3b3">v8::FunctionTemplate::New</a>(isolate);</div><div class="line">templ-&gt;<a class="code" href="classv8_1_1FunctionTemplate.html#a00dd9725566908e8fd14064542f5a781">InstanceTemplate</a>()-&gt;SetHandler(</div><div class="line">    <a class="code" href="structv8_1_1NamedPropertyHandlerConfiguration.html">v8::NamedPropertyHandlerConfiguration</a>(GetterCallback));</div><div class="line">LocalContext env;</div><div class="line">env-&gt;Global()</div><div class="line">    -&gt;Set(env.local(), v8_str(<span class="stringliteral">&quot;obj&quot;</span>), templ-&gt;GetFunction(env.local())</div><div class="line">                                         .ToLocalChecked()</div><div class="line">                                         -&gt;NewInstance(env.local())</div><div class="line">                                         .ToLocalChecked())</div><div class="line">    .FromJust();</div><div class="line"></div><div class="line">CompileRun(<span class="stringliteral">&quot;obj.a = &#39;obj&#39;; var r = {a: &#39;r&#39;}; Reflect.get(obj, &#39;x&#39;, r)&quot;</span>);</div></div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l10378">10378</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -305,7 +319,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1PropertyCallbackInfo.html">PropertyCallbackInfo</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 13:42:28 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:17:16 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

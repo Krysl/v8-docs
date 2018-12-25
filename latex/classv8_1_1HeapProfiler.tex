@@ -91,6 +91,10 @@ static const uint16\+\_\+t \mbox{\hyperlink{classv8_1_1HeapProfiler_a272c9af3ea5
 \subsection{Detailed Description}
 Interface for controlling heap profiling. Instance of the profiler can be retrieved using v8\+::\+Isolate\+::\+Get\+Heap\+Profiler. 
 
+Definition at line 742 of file v8-\/profiler.\+h.
+
+
+
 \subsection{Member Typedef Documentation}
 \mbox{\Hypertarget{classv8_1_1HeapProfiler_a29c98afa5ce0ea543eef904201bc3e40}\label{classv8_1_1HeapProfiler_a29c98afa5ce0ea543eef904201bc3e40}} 
 \index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Build\+Embedder\+Graph\+Callback@{Build\+Embedder\+Graph\+Callback}}
@@ -98,25 +102,41 @@ Interface for controlling heap profiling. Instance of the profiler can be retrie
 \subsubsection{\texorpdfstring{Build\+Embedder\+Graph\+Callback}{BuildEmbedderGraphCallback}}
 {\footnotesize\ttfamily typedef void($\ast$ v8\+::\+Heap\+Profiler\+::\+Build\+Embedder\+Graph\+Callback) (v8\+::\+Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1EmbedderGraph}{v8\+::\+Embedder\+Graph}} $\ast$graph, void $\ast$data)}
 
-Callback function invoked during heap snapshot generation to retrieve the embedder object graph. The callback should use graph-\/$>$Add\+Edge(..) to add references between the objects. The callback must not trigger garbage collection in V8. \mbox{\Hypertarget{classv8_1_1HeapProfiler_a7f34c8eb67f9502e5778695187ea0e96}\label{classv8_1_1HeapProfiler_a7f34c8eb67f9502e5778695187ea0e96}} 
+Callback function invoked during heap snapshot generation to retrieve the embedder object graph. The callback should use graph-\/$>$Add\+Edge(..) to add references between the objects. The callback must not trigger garbage collection in V8. 
+
+Definition at line 782 of file v8-\/profiler.\+h.
+
+\mbox{\Hypertarget{classv8_1_1HeapProfiler_a7f34c8eb67f9502e5778695187ea0e96}\label{classv8_1_1HeapProfiler_a7f34c8eb67f9502e5778695187ea0e96}} 
 \index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Get\+Retainer\+Infos\+Callback@{Get\+Retainer\+Infos\+Callback}}
 \index{Get\+Retainer\+Infos\+Callback@{Get\+Retainer\+Infos\+Callback}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
 \subsubsection{\texorpdfstring{Get\+Retainer\+Infos\+Callback}{GetRetainerInfosCallback}}
 {\footnotesize\ttfamily typedef \mbox{\hyperlink{structv8_1_1HeapProfiler_1_1RetainerInfos}{Retainer\+Infos}}($\ast$ v8\+::\+Heap\+Profiler\+::\+Get\+Retainer\+Infos\+Callback) (v8\+::\+Isolate $\ast$isolate)}
 
-Callback function invoked to retrieve all \mbox{\hyperlink{structv8_1_1HeapProfiler_1_1RetainerInfos}{Retainer\+Infos}} from the embedder. \mbox{\Hypertarget{classv8_1_1HeapProfiler_aafaa85413706329f7767f559b701eb1a}\label{classv8_1_1HeapProfiler_aafaa85413706329f7767f559b701eb1a}} 
+Callback function invoked to retrieve all \mbox{\hyperlink{structv8_1_1HeapProfiler_1_1RetainerInfos}{Retainer\+Infos}} from the embedder. 
+
+Definition at line 765 of file v8-\/profiler.\+h.
+
+\mbox{\Hypertarget{classv8_1_1HeapProfiler_aafaa85413706329f7767f559b701eb1a}\label{classv8_1_1HeapProfiler_aafaa85413706329f7767f559b701eb1a}} 
 \index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Legacy\+Build\+Embedder\+Graph\+Callback@{Legacy\+Build\+Embedder\+Graph\+Callback}}
 \index{Legacy\+Build\+Embedder\+Graph\+Callback@{Legacy\+Build\+Embedder\+Graph\+Callback}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
 \subsubsection{\texorpdfstring{Legacy\+Build\+Embedder\+Graph\+Callback}{LegacyBuildEmbedderGraphCallback}}
 {\footnotesize\ttfamily typedef void($\ast$ v8\+::\+Heap\+Profiler\+::\+Legacy\+Build\+Embedder\+Graph\+Callback) (v8\+::\+Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1EmbedderGraph}{v8\+::\+Embedder\+Graph}} $\ast$graph)}
 
-T\+O\+D\+O(addaleax)\+: Remove \mbox{\Hypertarget{classv8_1_1HeapProfiler_a677025dd201fd832e0464e5ab0b0d0d4}\label{classv8_1_1HeapProfiler_a677025dd201fd832e0464e5ab0b0d0d4}} 
+T\+O\+D\+O(addaleax)\+: Remove 
+
+Definition at line 787 of file v8-\/profiler.\+h.
+
+\mbox{\Hypertarget{classv8_1_1HeapProfiler_a677025dd201fd832e0464e5ab0b0d0d4}\label{classv8_1_1HeapProfiler_a677025dd201fd832e0464e5ab0b0d0d4}} 
 \index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Wrapper\+Info\+Callback@{Wrapper\+Info\+Callback}}
 \index{Wrapper\+Info\+Callback@{Wrapper\+Info\+Callback}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
 \subsubsection{\texorpdfstring{Wrapper\+Info\+Callback}{WrapperInfoCallback}}
 {\footnotesize\ttfamily typedef \mbox{\hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info}}$\ast$($\ast$ v8\+::\+Heap\+Profiler\+::\+Wrapper\+Info\+Callback) (uint16\+\_\+t class\+\_\+id, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ wrapper)}
 
 Callback function invoked for obtaining \mbox{\hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info}} for the given Java\+Script wrapper object. It is prohibited to enter V8 while the callback is running\+: only getters on the handle and Get\+Pointer\+From\+Internal\+Field on the objects are allowed. 
+
+Definition at line 773 of file v8-\/profiler.\+h.
+
+
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classv8_1_1HeapProfiler_a8a90c630543ed1875cbf9166239ff8d3}\label{classv8_1_1HeapProfiler_a8a90c630543ed1875cbf9166239ff8d3}} 
@@ -226,13 +246,21 @@ Binds a callback to embedder\textquotesingle{}s class ID.
 \subsubsection{\texorpdfstring{k\+Persistent\+Handle\+No\+Class\+Id}{kPersistentHandleNoClassId}}
 {\footnotesize\ttfamily const uint16\+\_\+t v8\+::\+Heap\+Profiler\+::k\+Persistent\+Handle\+No\+Class\+Id = 0\hspace{0.3cm}{\ttfamily [static]}}
 
-Default value of persistent handle class ID. Must not be used to define a class. Can be used to reset a class of a persistent handle. \mbox{\Hypertarget{classv8_1_1HeapProfiler_abf2b9d8facb18473f9b124ab8baf5786}\label{classv8_1_1HeapProfiler_abf2b9d8facb18473f9b124ab8baf5786}} 
+Default value of persistent handle class ID. Must not be used to define a class. Can be used to reset a class of a persistent handle. 
+
+Definition at line 952 of file v8-\/profiler.\+h.
+
+\mbox{\Hypertarget{classv8_1_1HeapProfiler_abf2b9d8facb18473f9b124ab8baf5786}\label{classv8_1_1HeapProfiler_abf2b9d8facb18473f9b124ab8baf5786}} 
 \index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!k\+Unknown\+Object\+Id@{k\+Unknown\+Object\+Id}}
 \index{k\+Unknown\+Object\+Id@{k\+Unknown\+Object\+Id}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
 \subsubsection{\texorpdfstring{k\+Unknown\+Object\+Id}{kUnknownObjectId}}
 {\footnotesize\ttfamily const Snapshot\+Object\+Id v8\+::\+Heap\+Profiler\+::k\+Unknown\+Object\+Id = 0\hspace{0.3cm}{\ttfamily [static]}}
 
 A constant for invalid Snapshot\+Object\+Id. Get\+Snapshot\+Object\+Id will return it in case heap profiler cannot find id for the object passed as parameter. \mbox{\hyperlink{classv8_1_1HeapSnapshot_a0aec9c1535c27bc8b1b55579969203fc}{Heap\+Snapshot\+::\+Get\+Node\+By\+Id}} will always return N\+U\+LL for such id. 
+
+Definition at line 820 of file v8-\/profiler.\+h.
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

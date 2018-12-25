@@ -133,6 +133,8 @@ class v8::Maybe&lt; T &gt;</h3>
 
 <p>A simple <a class="el" href="classv8_1_1Maybe.html">Maybe</a> type, representing an object which may or may not have a value, see <a href="https://hackage.haskell.org/package/base/docs/Data-Maybe.html">https://hackage.haskell.org/package/base/docs/Data-Maybe.html</a>.</p>
 <p>If an API method returns a Maybe&lt;&gt;, the API method can potentially fail either because an exception is thrown, or because an exception is pending, e.g. because a previous API call threw an exception that hasn't been caught yet, or because a TerminateExecution exception was thrown. In that case, a "Nothing" value is returned. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l00056">56</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6c35f4870a5b5049d09ba5f13c67ede9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6c35f4870a5b5049d09ba5f13c67ede9">&#9670;&nbsp;</a></span>FromJust()</h2>
@@ -159,6 +161,8 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Converts this Maybe&lt;&gt; to a value of type T. If this Maybe&lt;&gt; is nothing (empty), V8 will crash the process. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l08683">8683</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -189,6 +193,8 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 <p>Converts this Maybe&lt;&gt; to a value of type T, using a default value if this Maybe&lt;&gt; is nothing (empty). </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l08692">8692</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="a7d1d77e5fd55f125fb4c41db1335bd09"></a>
@@ -218,6 +224,8 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 <p>Converts this Maybe&lt;&gt; to a value of type T. If this Maybe&lt;&gt; is nothing (empty), |false| is returned and |out| is left untouched. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l08674">8674</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="abf2c0453c947f8c03f8e24b94887d33b"></a>
@@ -246,6 +254,8 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 <p>An alias for |FromJust|. Will crash if the Maybe&lt;&gt; is nothing. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l08668">8668</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -257,7 +267,7 @@ template&lt;class T&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1Maybe.html">Maybe</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 13:42:25 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:17:11 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

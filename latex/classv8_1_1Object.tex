@@ -204,6 +204,10 @@ static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Object}{Object}} $\a
 \subsection{Detailed Description}
 A Java\+Script object (E\+C\+M\+A-\/262, 4.\+3.\+3) 
 
+Definition at line 3239 of file v8.\+h.
+
+
+
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classv8_1_1Object_a10dcefb0bd595a959234703690a02530}\label{classv8_1_1Object_a10dcefb0bd595a959234703690a02530}} 
 \index{v8\+::\+Object@{v8\+::\+Object}!Call\+As\+Constructor@{Call\+As\+Constructor}}
@@ -235,7 +239,11 @@ Returns the context in which the object was created. \mbox{\Hypertarget{classv8_
 \subsubsection{\texorpdfstring{Creation\+Context()}{CreationContext()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$Context$>$ v8\+::\+Object\+::\+Creation\+Context (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classv8_1_1PersistentBase}{Persistent\+Base}}$<$ \mbox{\hyperlink{classv8_1_1Object}{Object}} $>$ \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
-Same as above, but works for Persistents \mbox{\Hypertarget{classv8_1_1Object_ae2ad9fee9db6e0e5da56973ebb8ea2bc}\label{classv8_1_1Object_ae2ad9fee9db6e0e5da56973ebb8ea2bc}} 
+Same as above, but works for Persistents 
+
+Definition at line 3601 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1Object_ae2ad9fee9db6e0e5da56973ebb8ea2bc}\label{classv8_1_1Object_ae2ad9fee9db6e0e5da56973ebb8ea2bc}} 
 \index{v8\+::\+Object@{v8\+::\+Object}!Find\+Instance\+In\+Prototype\+Chain@{Find\+Instance\+In\+Prototype\+Chain}}
 \index{Find\+Instance\+In\+Prototype\+Chain@{Find\+Instance\+In\+Prototype\+Chain}!v8\+::\+Object@{v8\+::\+Object}}
 \subsubsection{\texorpdfstring{Find\+Instance\+In\+Prototype\+Chain()}{FindInstanceInPrototypeChain()}}
@@ -247,13 +255,21 @@ Finds an instance of the given function template in the prototype chain. \mbox{\
 \subsubsection{\texorpdfstring{Get\+Aligned\+Pointer\+From\+Internal\+Field()}{GetAlignedPointerFromInternalField()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void $\ast$ v8\+::\+Object\+::\+Get\+Aligned\+Pointer\+From\+Internal\+Field (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
 
-Gets a 2-\/byte-\/aligned native pointer from an internal field. This field must have been set by Set\+Aligned\+Pointer\+In\+Internal\+Field, everything else leads to undefined behavior. \mbox{\Hypertarget{classv8_1_1Object_a65b5a3dc93c0774594f8b0f2ab5481c8}\label{classv8_1_1Object_a65b5a3dc93c0774594f8b0f2ab5481c8}} 
+Gets a 2-\/byte-\/aligned native pointer from an internal field. This field must have been set by Set\+Aligned\+Pointer\+In\+Internal\+Field, everything else leads to undefined behavior. 
+
+Definition at line 9887 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1Object_a65b5a3dc93c0774594f8b0f2ab5481c8}\label{classv8_1_1Object_a65b5a3dc93c0774594f8b0f2ab5481c8}} 
 \index{v8\+::\+Object@{v8\+::\+Object}!Get\+Aligned\+Pointer\+From\+Internal\+Field@{Get\+Aligned\+Pointer\+From\+Internal\+Field}}
 \index{Get\+Aligned\+Pointer\+From\+Internal\+Field@{Get\+Aligned\+Pointer\+From\+Internal\+Field}!v8\+::\+Object@{v8\+::\+Object}}
 \subsubsection{\texorpdfstring{Get\+Aligned\+Pointer\+From\+Internal\+Field()}{GetAlignedPointerFromInternalField()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily static V8\+\_\+\+I\+N\+L\+I\+NE void$\ast$ v8\+::\+Object\+::\+Get\+Aligned\+Pointer\+From\+Internal\+Field (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classv8_1_1PersistentBase}{Persistent\+Base}}$<$ \mbox{\hyperlink{classv8_1_1Object}{Object}} $>$ \&}]{object,  }\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
-Same as above, but works for Persistents \mbox{\Hypertarget{classv8_1_1Object_a7bbe987794658f20a3ec1b68326305e6}\label{classv8_1_1Object_a7bbe987794658f20a3ec1b68326305e6}} 
+Same as above, but works for Persistents 
+
+Definition at line 3492 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1Object_a7bbe987794658f20a3ec1b68326305e6}\label{classv8_1_1Object_a7bbe987794658f20a3ec1b68326305e6}} 
 \index{v8\+::\+Object@{v8\+::\+Object}!Get\+Constructor\+Name@{Get\+Constructor\+Name}}
 \index{Get\+Constructor\+Name@{Get\+Constructor\+Name}!v8\+::\+Object@{v8\+::\+Object}}
 \subsubsection{\texorpdfstring{Get\+Constructor\+Name()}{GetConstructorName()}}
@@ -273,7 +289,11 @@ The return value will never be 0. Also, it is not guaranteed to be unique. \mbox
 \subsubsection{\texorpdfstring{Get\+Internal\+Field()}{GetInternalField()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ v8\+::\+Object\+::\+Get\+Internal\+Field (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
 
-Gets the value from an internal field. \mbox{\Hypertarget{classv8_1_1Object_ab991b53d50ab3ce53179e927e52b24f5}\label{classv8_1_1Object_ab991b53d50ab3ce53179e927e52b24f5}} 
+Gets the value from an internal field. 
+
+Definition at line 9865 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1Object_ab991b53d50ab3ce53179e927e52b24f5}\label{classv8_1_1Object_ab991b53d50ab3ce53179e927e52b24f5}} 
 \index{v8\+::\+Object@{v8\+::\+Object}!Get\+Isolate@{Get\+Isolate}}
 \index{Get\+Isolate@{Get\+Isolate}!v8\+::\+Object@{v8\+::\+Object}}
 \subsubsection{\texorpdfstring{Get\+Isolate()}{GetIsolate()}}
@@ -391,7 +411,11 @@ Gets the number of internal fields for this \mbox{\hyperlink{classv8_1_1Object}{
 \subsubsection{\texorpdfstring{Internal\+Field\+Count()}{InternalFieldCount()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily static V8\+\_\+\+I\+N\+L\+I\+NE int v8\+::\+Object\+::\+Internal\+Field\+Count (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classv8_1_1PersistentBase}{Persistent\+Base}}$<$ \mbox{\hyperlink{classv8_1_1Object}{Object}} $>$ \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
-Same as above, but works for Persistents \mbox{\Hypertarget{classv8_1_1Object_a23c2c1f23b50fab4a02e2f819641b865}\label{classv8_1_1Object_a23c2c1f23b50fab4a02e2f819641b865}} 
+Same as above, but works for Persistents 
+
+Definition at line 3473 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1Object_a23c2c1f23b50fab4a02e2f819641b865}\label{classv8_1_1Object_a23c2c1f23b50fab4a02e2f819641b865}} 
 \index{v8\+::\+Object@{v8\+::\+Object}!Is\+Callable@{Is\+Callable}}
 \index{Is\+Callable@{Is\+Callable}!v8\+::\+Object@{v8\+::\+Object}}
 \subsubsection{\texorpdfstring{Is\+Callable()}{IsCallable()}}

@@ -122,6 +122,8 @@ AddHistogramSampleCallback&#160;</td><td class="memItemRight" valign="bottom"><b
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Initial configuration parameters for a new Isolate. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l07122">7122</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="acade19de0f78ff15d76aaef2e292da72"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acade19de0f78ff15d76aaef2e292da72">&#9670;&nbsp;</a></span>allow_atomics_wait</h2>
@@ -135,6 +137,8 @@ AddHistogramSampleCallback&#160;</td><td class="memItemRight" valign="bottom"><b
       </table>
 </div><div class="memdoc">
 <p>Whether calling Atomics.wait (a function that may block) is allowed in this isolate. This can also be configured via SetAllowAtomicsWait. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l07196">7196</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -151,6 +155,8 @@ AddHistogramSampleCallback&#160;</td><td class="memItemRight" valign="bottom"><b
 </div><div class="memdoc">
 <p>The <a class="el" href="classv8_1_1ArrayBuffer_1_1Allocator.html">ArrayBuffer::Allocator</a> to use for allocating and freeing the backing store of ArrayBuffers. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l07182">7182</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="a783e3eba90ce6e2800bdd69197bbccdd"></a>
@@ -165,6 +171,8 @@ AddHistogramSampleCallback&#160;</td><td class="memItemRight" valign="bottom"><b
       </table>
 </div><div class="memdoc">
 <p>Allows the host application to provide the address of a function that is notified each time code is added, moved or removed. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l07150">7150</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -181,6 +189,8 @@ AddHistogramSampleCallback&#160;</td><td class="memItemRight" valign="bottom"><b
 </div><div class="memdoc">
 <p>ResourceConstraints to use for the new Isolate. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l07155">7155</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="a10441abadd0b83a938303c92e7444fb6"></a>
@@ -195,6 +205,8 @@ AddHistogramSampleCallback&#160;</td><td class="memItemRight" valign="bottom"><b
       </table>
 </div><div class="memdoc">
 <p>Enables the host application to provide a mechanism for recording statistics counters. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l07167">7167</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -211,6 +223,8 @@ AddHistogramSampleCallback&#160;</td><td class="memItemRight" valign="bottom"><b
 </div><div class="memdoc">
 <p>Enables the host application to provide a mechanism for recording histograms. The CreateHistogram function returns a histogram which will later be passed to the AddHistogramSample function. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l07175">7175</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="aa7aa18bbe2d86713e5b074a93b38dc60"></a>
@@ -225,6 +239,8 @@ AddHistogramSampleCallback&#160;</td><td class="memItemRight" valign="bottom"><b
       </table>
 </div><div class="memdoc">
 <p>The optional entry_hook allows the host application to provide the address of a function that's invoked on entry to every V8-generated function. Note that entry_hook is invoked at the very start of each generated function. An entry_hook can only be provided in no-snapshot builds; in snapshot builds it must be nullptr. TODO(v8:8503): Remove entry_hook. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l07144">7144</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -241,6 +257,8 @@ AddHistogramSampleCallback&#160;</td><td class="memItemRight" valign="bottom"><b
 </div><div class="memdoc">
 <p>Specifies an optional nullptr-terminated array of raw addresses in the embedder that V8 can match against during serialization and use for deserialization. This array and its content must stay valid for the entire lifetime of the isolate. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l07190">7190</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="af44a854a07944452589128b6cf3b9958"></a>
@@ -255,6 +273,8 @@ AddHistogramSampleCallback&#160;</td><td class="memItemRight" valign="bottom"><b
       </table>
 </div><div class="memdoc">
 <p>Termination is postponed when there is no active <a class="el" href="classv8_1_1Isolate_1_1SafeForTerminationScope.html">SafeForTerminationScope</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l07201">7201</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -271,6 +291,8 @@ AddHistogramSampleCallback&#160;</td><td class="memItemRight" valign="bottom"><b
 </div><div class="memdoc">
 <p>Explicitly specify a startup snapshot blob. The embedder owns the blob. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l07160">7160</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
@@ -282,7 +304,7 @@ AddHistogramSampleCallback&#160;</td><td class="memItemRight" valign="bottom"><b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><b>Isolate</b></li><li class="navelem"><a class="el" href="structv8_1_1Isolate_1_1CreateParams.html">CreateParams</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 13:42:25 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:17:11 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

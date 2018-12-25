@@ -43,6 +43,13 @@ class {\bfseries internal\+::\+Scoped\+External\+String\+Lock}
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+
+
+Definition at line 2635 of file v8.\+h.
+
+
+
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classv8_1_1String_1_1ExternalStringResourceBase_af4720342ae31e1ab4656df3f15d069c0}\label{classv8_1_1String_1_1ExternalStringResourceBase_af4720342ae31e1ab4656df3f15d069c0}} 
 \index{v8\+::\+String\+::\+External\+String\+Resource\+Base@{v8\+::\+String\+::\+External\+String\+Resource\+Base}!Dispose@{Dispose}}
@@ -50,13 +57,21 @@ class {\bfseries internal\+::\+Scoped\+External\+String\+Lock}
 \subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
 {\footnotesize\ttfamily virtual void v8\+::\+String\+::\+External\+String\+Resource\+Base\+::\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Internally V8 will call this Dispose method when the external string resource is no longer needed. The default implementation will use the delete operator. This method can be overridden in subclasses to control how allocated external string resources are disposed. \mbox{\Hypertarget{classv8_1_1String_1_1ExternalStringResourceBase_a994c7580185c831abd45075d297dd07c}\label{classv8_1_1String_1_1ExternalStringResourceBase_a994c7580185c831abd45075d297dd07c}} 
+Internally V8 will call this Dispose method when the external string resource is no longer needed. The default implementation will use the delete operator. This method can be overridden in subclasses to control how allocated external string resources are disposed. 
+
+Definition at line 2659 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1String_1_1ExternalStringResourceBase_a994c7580185c831abd45075d297dd07c}\label{classv8_1_1String_1_1ExternalStringResourceBase_a994c7580185c831abd45075d297dd07c}} 
 \index{v8\+::\+String\+::\+External\+String\+Resource\+Base@{v8\+::\+String\+::\+External\+String\+Resource\+Base}!Is\+Cacheable@{Is\+Cacheable}}
 \index{Is\+Cacheable@{Is\+Cacheable}!v8\+::\+String\+::\+External\+String\+Resource\+Base@{v8\+::\+String\+::\+External\+String\+Resource\+Base}}
 \subsubsection{\texorpdfstring{Is\+Cacheable()}{IsCacheable()}}
 {\footnotesize\ttfamily virtual bool v8\+::\+String\+::\+External\+String\+Resource\+Base\+::\+Is\+Cacheable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-If a string is cacheable, the value returned by \mbox{\hyperlink{classv8_1_1String_1_1ExternalStringResource_a987309199b848511adb708e221e0fb0a}{External\+String\+Resource\+::data()}} may be cached, otherwise it is not expected to be stable beyond the current top-\/level task. \mbox{\Hypertarget{classv8_1_1String_1_1ExternalStringResourceBase_ae539b974907cc2737e58797ace2652b4}\label{classv8_1_1String_1_1ExternalStringResourceBase_ae539b974907cc2737e58797ace2652b4}} 
+If a string is cacheable, the value returned by \mbox{\hyperlink{classv8_1_1String_1_1ExternalStringResource_a987309199b848511adb708e221e0fb0a}{External\+String\+Resource\+::data()}} may be cached, otherwise it is not expected to be stable beyond the current top-\/level task. 
+
+Definition at line 2648 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1String_1_1ExternalStringResourceBase_ae539b974907cc2737e58797ace2652b4}\label{classv8_1_1String_1_1ExternalStringResourceBase_ae539b974907cc2737e58797ace2652b4}} 
 \index{v8\+::\+String\+::\+External\+String\+Resource\+Base@{v8\+::\+String\+::\+External\+String\+Resource\+Base}!Lock@{Lock}}
 \index{Lock@{Lock}!v8\+::\+String\+::\+External\+String\+Resource\+Base@{v8\+::\+String\+::\+External\+String\+Resource\+Base}}
 \subsubsection{\texorpdfstring{Lock()}{Lock()}}
@@ -64,13 +79,21 @@ If a string is cacheable, the value returned by \mbox{\hyperlink{classv8_1_1Stri
 
 For a non-\/cacheable string, the value returned by $\vert$\+External\+String\+Resource\+::data()$\vert$ has to be stable between $\vert$\+Lock()$\vert$ and $\vert$\+Unlock()$\vert$, that is the string must behave as is $\vert$\+Is\+Cacheable()$\vert$ returned true.
 
-These two functions must be thread-\/safe, and can be called from anywhere. They also must handle lock depth, in the sense that each can be called several times, from different threads, and unlocking should only happen when the balance of \mbox{\hyperlink{classv8_1_1String_1_1ExternalStringResourceBase_ae539b974907cc2737e58797ace2652b4}{Lock()}} and \mbox{\hyperlink{classv8_1_1String_1_1ExternalStringResourceBase_a6c6892d46c8fafaa938df542a6e334cd}{Unlock()}} calls is 0. \mbox{\Hypertarget{classv8_1_1String_1_1ExternalStringResourceBase_a6c6892d46c8fafaa938df542a6e334cd}\label{classv8_1_1String_1_1ExternalStringResourceBase_a6c6892d46c8fafaa938df542a6e334cd}} 
+These two functions must be thread-\/safe, and can be called from anywhere. They also must handle lock depth, in the sense that each can be called several times, from different threads, and unlocking should only happen when the balance of \mbox{\hyperlink{classv8_1_1String_1_1ExternalStringResourceBase_ae539b974907cc2737e58797ace2652b4}{Lock()}} and \mbox{\hyperlink{classv8_1_1String_1_1ExternalStringResourceBase_a6c6892d46c8fafaa938df542a6e334cd}{Unlock()}} calls is 0. 
+
+Definition at line 2672 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1String_1_1ExternalStringResourceBase_a6c6892d46c8fafaa938df542a6e334cd}\label{classv8_1_1String_1_1ExternalStringResourceBase_a6c6892d46c8fafaa938df542a6e334cd}} 
 \index{v8\+::\+String\+::\+External\+String\+Resource\+Base@{v8\+::\+String\+::\+External\+String\+Resource\+Base}!Unlock@{Unlock}}
 \index{Unlock@{Unlock}!v8\+::\+String\+::\+External\+String\+Resource\+Base@{v8\+::\+String\+::\+External\+String\+Resource\+Base}}
 \subsubsection{\texorpdfstring{Unlock()}{Unlock()}}
 {\footnotesize\ttfamily virtual void v8\+::\+String\+::\+External\+String\+Resource\+Base\+::\+Unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
 Unlocks the string. 
+
+Definition at line 2677 of file v8.\+h.
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

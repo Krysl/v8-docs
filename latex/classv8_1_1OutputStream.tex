@@ -28,6 +28,10 @@ virtual Write\+Result \mbox{\hyperlink{classv8_1_1OutputStream_a104fd1a0b5ef685e
 \subsection{Detailed Description}
 An interface for exporting data from V8, using \char`\"{}push\char`\"{} model. 
 
+Definition at line 448 of file v8-\/profiler.\+h.
+
+
+
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classv8_1_1OutputStream_a6c5c308367fc5776bcbedff0e94d6049}\label{classv8_1_1OutputStream_a6c5c308367fc5776bcbedff0e94d6049}} 
 \index{v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}!End\+Of\+Stream@{End\+Of\+Stream}}
@@ -41,7 +45,11 @@ Notify about the end of stream. \mbox{\Hypertarget{classv8_1_1OutputStream_a93bd
 \subsubsection{\texorpdfstring{Get\+Chunk\+Size()}{GetChunkSize()}}
 {\footnotesize\ttfamily virtual int v8\+::\+Output\+Stream\+::\+Get\+Chunk\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-Get preferred output chunk size. Called only once. \mbox{\Hypertarget{classv8_1_1OutputStream_a42adc62ebe43d00159f80328538f217f}\label{classv8_1_1OutputStream_a42adc62ebe43d00159f80328538f217f}} 
+Get preferred output chunk size. Called only once. 
+
+Definition at line 458 of file v8-\/profiler.\+h.
+
+\mbox{\Hypertarget{classv8_1_1OutputStream_a42adc62ebe43d00159f80328538f217f}\label{classv8_1_1OutputStream_a42adc62ebe43d00159f80328538f217f}} 
 \index{v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}!Write\+Ascii\+Chunk@{Write\+Ascii\+Chunk}}
 \index{Write\+Ascii\+Chunk@{Write\+Ascii\+Chunk}!v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}}
 \subsubsection{\texorpdfstring{Write\+Ascii\+Chunk()}{WriteAsciiChunk()}}
@@ -54,6 +62,10 @@ Writes the next chunk of snapshot data into the stream. Writing can be stopped b
 {\footnotesize\ttfamily virtual Write\+Result v8\+::\+Output\+Stream\+::\+Write\+Heap\+Stats\+Chunk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structv8_1_1HeapStatsUpdate}{Heap\+Stats\+Update}} $\ast$}]{data,  }\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 Writes the next chunk of heap stats data into the stream. Writing can be stopped by returning k\+Abort as function result. End\+Of\+Stream will not be called in case writing was aborted. 
+
+Definition at line 470 of file v8-\/profiler.\+h.
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

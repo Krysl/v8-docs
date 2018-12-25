@@ -581,6 +581,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 </div><div class="memdoc">
 <p>Returns true if the given context should be allowed to access the given object. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05614">5614</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="a722613c87061708a4f1aa050d095f868"></a>
@@ -595,6 +597,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
       </table>
 </div><div class="memdoc">
 <p>Accessor[Getter|Setter] are used as callback functions when setting|getting a particular property. See <a class="el" href="classv8_1_1Object.html">Object</a> and <a class="el" href="classv8_1_1ObjectTemplate.html">ObjectTemplate</a>'s method SetAccessor. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l03148">3148</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -621,6 +625,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 </dl>
 <p>See also <code><a class="el" href="classv8_1_1ObjectTemplate.html#a3d5666f1e9b0f46df6b4dbb7cfbb6114">ObjectTemplate::SetHandler</a></code>. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05521">5521</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="ad2aecc0406ea4bc02d5a4f84a433b273"></a>
@@ -646,6 +652,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 <dl class="section note"><dt>Note</dt><dd>If you need to mimic the behavior of <code>delete</code>, i.e., throw in strict mode instead of returning false, use <code>info.ShouldThrowOnError()</code> to determine if you are in strict mode.</dd></dl>
 <p>See also <code><a class="el" href="classv8_1_1ObjectTemplate.html#a3d5666f1e9b0f46df6b4dbb7cfbb6114">ObjectTemplate::SetHandler</a>.</code> </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05489">5489</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="a8cf8faa26baffa84173a24906c0d49f6"></a>
@@ -670,6 +678,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 <dl class="section note"><dt>Note</dt><dd>If GetOwnPropertyDescriptor is intercepted, it will always return true, i.e., indicate that the property was found.</dd></dl>
 <p>See also <code><a class="el" href="classv8_1_1ObjectTemplate.html#a3d5666f1e9b0f46df6b4dbb7cfbb6114">ObjectTemplate::SetHandler</a></code>. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05544">5544</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="a20826eb7e52e84fa4f632534e8eddd04"></a>
@@ -685,6 +695,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 </div><div class="memdoc">
 <p>Returns an array containing the names of the properties the named property getter intercepts.</p>
 <p>Note: The values in the array must be of type <a class="el" href="classv8_1_1Name.html">v8::Name</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05498">5498</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -709,6 +721,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
   </dd>
 </dl>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> GetterCallback(</div><div class="line">  Local&lt;Name&gt; name,</div><div class="line">  <span class="keyword">const</span> <a class="code" href="classv8_1_1PropertyCallbackInfo.html">v8::PropertyCallbackInfo&lt;v8::Value&gt;</a>&amp; info) {</div><div class="line">    info.<a class="code" href="classv8_1_1PropertyCallbackInfo.html#aa0882946929c3c4df6d131fe0d8d6746">GetReturnValue</a>().Set(v8_num(42));</div><div class="line">}</div><div class="line"></div><div class="line"><a class="code" href="classv8_1_1Local.html">v8::Local&lt;v8::FunctionTemplate&gt;</a> templ =</div><div class="line">    <a class="code" href="classv8_1_1FunctionTemplate.html#a3b675b8327f08a7c6a4c4d9dce5cb3b3">v8::FunctionTemplate::New</a>(isolate);</div><div class="line">templ-&gt;<a class="code" href="classv8_1_1FunctionTemplate.html#a00dd9725566908e8fd14064542f5a781">InstanceTemplate</a>()-&gt;SetHandler(</div><div class="line">    <a class="code" href="structv8_1_1NamedPropertyHandlerConfiguration.html">v8::NamedPropertyHandlerConfiguration</a>(GetterCallback));</div><div class="line">LocalContext env;</div><div class="line">env-&gt;Global()</div><div class="line">    -&gt;Set(env.local(), v8_str(<span class="stringliteral">&quot;obj&quot;</span>), templ-&gt;GetFunction(env.local())</div><div class="line">                                           .ToLocalChecked()</div><div class="line">                                           -&gt;NewInstance(env.local())</div><div class="line">                                           .ToLocalChecked())</div><div class="line">    .FromJust();</div><div class="line"><a class="code" href="classv8_1_1Local.html">v8::Local&lt;v8::Value&gt;</a> result = CompileRun(<span class="stringliteral">&quot;obj.a = 17; obj.a&quot;</span>);</div><div class="line">CHECK(v8_num(42)-&gt;Equals(env.local(), result).FromJust());</div></div><!-- fragment --><p>See also <code><a class="el" href="classv8_1_1ObjectTemplate.html#a3d5666f1e9b0f46df6b4dbb7cfbb6114">ObjectTemplate::SetHandler</a></code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05416">5416</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -735,6 +749,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 <dl class="section note"><dt>Note</dt><dd>Some functions query the property attributes internally, even though they do not return the attributes. For example, <code>hasOwnProperty()</code> can trigger this interceptor depending on the state of the object.</dd></dl>
 <p>See also <code><a class="el" href="classv8_1_1ObjectTemplate.html#a3d5666f1e9b0f46df6b4dbb7cfbb6114">ObjectTemplate::SetHandler</a>.</code> </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05465">5465</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="af74716c6e95a269c6cd4314662fd0a7e"></a>
@@ -760,6 +776,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 </dl>
 <p>See also <code><a class="el" href="classv8_1_1ObjectTemplate.html#a3d5666f1e9b0f46df6b4dbb7cfbb6114">ObjectTemplate::SetHandler</a>.</code> </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05440">5440</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="a967435db933fa9798caac467948499df"></a>
@@ -774,6 +792,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
       </table>
 </div><div class="memdoc">
 <p>See <code><a class="el" href="namespacev8.html#a66c854bc88d612ab4c65354bc0dc74a0">v8::GenericNamedPropertyDefinerCallback</a></code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05588">5588</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -790,6 +810,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 </div><div class="memdoc">
 <p>See <code><a class="el" href="namespacev8.html#ad2aecc0406ea4bc02d5a4f84a433b273">v8::GenericNamedPropertyDeleterCallback</a></code>. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05572">5572</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="a7506e91d70d885b5cbeabdf870ac0e88"></a>
@@ -804,6 +826,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
       </table>
 </div><div class="memdoc">
 <p>See <code><a class="el" href="namespacev8.html#a8cf8faa26baffa84173a24906c0d49f6">v8::GenericNamedPropertyDescriptorCallback</a></code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05595">5595</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -821,6 +845,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 <p>Returns an array containing the indices of the properties the indexed property getter intercepts.</p>
 <p>Note: The values in the array must be uint32_t. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05582">5582</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="a48e7816ba64447bf32a25d194588daaf"></a>
@@ -835,6 +861,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
       </table>
 </div><div class="memdoc">
 <p>See <code><a class="el" href="namespacev8.html#a24b1801fa53a7c5a71366d8044927563">v8::GenericNamedPropertyGetterCallback</a></code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05550">5550</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -851,6 +879,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 </div><div class="memdoc">
 <p>See <code><a class="el" href="namespacev8.html#add9f7ab11e4a9a2b9ad2c4536b0e1a64">v8::GenericNamedPropertyQueryCallback</a></code>. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05565">5565</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="a4ac7cc6185ebc8b6a199f9fa8e6bf5c3"></a>
@@ -865,6 +895,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
       </table>
 </div><div class="memdoc">
 <p>See <code><a class="el" href="namespacev8.html#af74716c6e95a269c6cd4314662fd0a7e">v8::GenericNamedPropertySetterCallback</a></code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05557">5557</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -884,6 +916,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 <p>Some accessors should be accessible across contexts. These accessors have an explicit access control parameter which specifies the kind of cross-context access that should be allowed.</p>
 <p>TODO(dcarney): Remove PROHIBITS_OVERWRITING as it is now unused. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l03175">3175</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="add8bef6469c5b94706584124e610046c"></a>
@@ -899,6 +933,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 </div><div class="memdoc">
 <p>Access type specification. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05601">5601</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="af0ff31131cc32ced9b5279b321569bbc"></a>
@@ -913,6 +949,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
       </table>
 </div><div class="memdoc">
 <p>Note that this enum may be extended in the future. Please include a default case if this enum is used in a switch statement. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8-profiler_8h_source.html#l01064">1064</a> of file <a class="el" href="v8-profiler_8h_source.html">v8-profiler.h</a>.</p>
 
 </div>
 </div>
@@ -937,6 +975,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 </div><div class="memdoc">
 <p>kIncludesIndices allows for integer indices to be collected, while kSkipIndices will exclude integer indices from being collected. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l03223">3223</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="a02642d03ff1eecc2fd358626499c2e30"></a>
@@ -959,6 +999,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 </table>
 </div><div class="memdoc">
 <p>Integrity level for objects. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l03234">3234</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -984,6 +1026,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 <p>Keys/Properties filter enums:</p>
 <p>KeyCollectionMode limits the range of collected properties. kOwnOnly limits the collected properties to the given <a class="el" href="classv8_1_1Object.html">Object</a> only. kIncludesPrototypes will include all keys of the objects's prototype chain as well. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l03217">3217</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="aa65aeff871614520d8033dead4b34e38"></a>
@@ -1006,6 +1050,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 </table>
 </div><div class="memdoc">
 <p>kConvertToString will convert integer indices to strings. kKeepNumbers will return numbers for integer indices. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l03229">3229</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -1037,6 +1083,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 </td></tr>
 </table>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l02520">2520</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="a05f25f935e108a1ea2d150e274602b87"></a>
@@ -1062,6 +1110,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 </td></tr>
 </table>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l03132">3132</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="afbf02b6b1152a3e25d7bde90798209ac"></a>
@@ -1076,6 +1126,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
       </table>
 </div><div class="memdoc">
 <p>Property filter bits. They can be or'ed to build a composite filter. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l03185">3185</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -1112,6 +1164,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 </td></tr>
 </table>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05851">5851</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="a29711319c2b9fc7716d65faee2f7b9cb"></a>
@@ -1134,6 +1188,8 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 </table>
 </div><div class="memdoc">
 <p>Options for marking whether callbacks may trigger JS-observable side effects. Side-effect-free callbacks are whitelisted during debug evaluation with throwOnSideEffect. It applies when calling a <a class="el" href="classv8_1_1Function.html">Function</a>, <a class="el" href="classv8_1_1FunctionTemplate.html">FunctionTemplate</a>, or an Accessor callback. For Interceptors, please see PropertyHandlerFlags's kHasNoSideEffect. Callbacks that only cause side effects to the receiver are whitelisted if invoked on receiver objects that are created within the same debug-evaluate call, as these objects are temporary and the side effect does not escape. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l03204">3204</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -1214,7 +1270,7 @@ V8_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalOneByteS
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 13:42:17 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:17:00 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

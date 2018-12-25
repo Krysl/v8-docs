@@ -17,7 +17,6 @@ var searchData=
   ['local_3c_20v8_3a_3astring_20_3e',['Local&lt; v8::String &gt;',['../classv8_1_1Local.html',1,'v8']]],
   ['local_3c_20v8_3a_3aunboundscript_20_3e',['Local&lt; v8::UnboundScript &gt;',['../classv8_1_1Local.html',1,'v8']]],
   ['local_3c_20v8_3a_3avalue_20_3e',['Local&lt; v8::Value &gt;',['../classv8_1_1Local.html',1,'v8']]],
-  ['local_3c_20value_20_3e',['Local&lt; Value &gt;',['../classv8_1_1Local.html',1,'v8']]],
   ['location',['Location',['../classv8_1_1Location.html',1,'v8']]],
   ['lock',['Lock',['../classv8_1_1String_1_1ExternalStringResourceBase.html#ae539b974907cc2737e58797ace2652b4',1,'v8::String::ExternalStringResourceBase']]]
 ];

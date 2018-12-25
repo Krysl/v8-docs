@@ -118,6 +118,8 @@ class v8::MaybeLocal&lt; T &gt;</h3>
 
 <p>A MaybeLocal&lt;&gt; is a wrapper around Local&lt;&gt; that enforces a check whether the Local&lt;&gt; is empty before it can be used.</p>
 <p>If an API method returns a MaybeLocal&lt;&gt;, the API method can potentially fail either because an exception is thrown, or because an exception is pending, e.g. because a previous API call threw an exception that hasn't been caught yet, or because a TerminateExecution exception was thrown. In that case, an empty <a class="el" href="classv8_1_1MaybeLocal.html">MaybeLocal</a> is returned. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l00087">87</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad99cb1e7ac1a4eac34c144faa4262407"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad99cb1e7ac1a4eac34c144faa4262407">&#9670;&nbsp;</a></span>FromMaybe()</h2>
@@ -147,6 +149,8 @@ template&lt;class S &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Converts this MaybeLocal&lt;&gt; to a Local&lt;&gt;, using a default value if this MaybeLocal&lt;&gt; is empty. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l00363">363</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -179,6 +183,8 @@ template&lt;class S &gt; </div>
 </div><div class="memdoc">
 <p>Converts this MaybeLocal&lt;&gt; to a Local&lt;&gt;. If this MaybeLocal&lt;&gt; is empty, |false| is returned and |out| is left untouched. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l00347">347</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="a9b2c9d50fca5897e3a03fd4c25d12415"></a>
@@ -199,6 +205,8 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <p>Converts this MaybeLocal&lt;&gt; to a Local&lt;&gt;. If this MaybeLocal&lt;&gt; is empty, V8 will crash the process. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l09402">9402</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -210,7 +218,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1MaybeLocal.html">MaybeLocal</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 13:42:25 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:17:11 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

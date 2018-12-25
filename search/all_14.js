@@ -11,7 +11,7 @@ var searchData=
   ['v8node',['V8Node',['../classv8_1_1EmbedderGraph.html#a6fdb5451611738dd44c70d195445d0ff',1,'v8::EmbedderGraph']]],
   ['v8stacktrace',['V8StackTrace',['../classv8__inspector_1_1V8StackTrace.html',1,'v8_inspector']]],
   ['v8stacktraceid',['V8StackTraceId',['../structv8__inspector_1_1V8StackTraceId.html',1,'v8_inspector']]],
-  ['value',['Value',['../classv8_1_1String_1_1Value.html',1,'v8::String::Value'],['../classv8_1_1Value.html',1,'v8::Value']]],
+  ['value',['Value',['../classv8_1_1Value.html',1,'v8::Value'],['../classv8_1_1String_1_1Value.html',1,'v8::String::Value']]],
   ['valuedeserializer',['ValueDeserializer',['../classv8_1_1ValueDeserializer.html',1,'v8']]],
   ['valueof',['ValueOf',['../classv8_1_1Date.html#adb9d292549a173e045ee177051dbde19',1,'v8::Date']]],
   ['valueserializer',['ValueSerializer',['../classv8_1_1ValueSerializer.html',1,'v8']]]

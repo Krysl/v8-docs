@@ -23,6 +23,10 @@ virtual void \mbox{\hyperlink{classv8_1_1EmbedderGraph_a81b1c7dd4d0387ec50037b07
 \subsection{Detailed Description}
 An object graph consisting of embedder objects and V8 objects. Edges of the graph are strong references between the objects. The embedder can build this graph during heap snapshot generation to include the embedder objects in the heap snapshot. Usage\+: 1) Define derived class of \mbox{\hyperlink{classv8_1_1EmbedderGraph_1_1Node}{Embedder\+Graph\+::\+Node}} for embedder objects. 2) \mbox{\hyperlink{classv8_1_1Set}{Set}} the build embedder graph callback on the heap profiler using Heap\+Profiler\+::\+Add\+Build\+Embedder\+Graph\+Callback. 3) In the callback use graph-\/$>$Add\+Edge(node1, node2) to add an edge from node1 to node2. 4) To represent references from/to V8 object, construct V8 nodes using graph-\/$>$V8\+Node(value). 
 
+Definition at line 686 of file v8-\/profiler.\+h.
+
+
+
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classv8_1_1EmbedderGraph_a81b1c7dd4d0387ec50037b0778b8af11}\label{classv8_1_1EmbedderGraph_a81b1c7dd4d0387ec50037b0778b8af11}} 
 \index{v8\+::\+Embedder\+Graph@{v8\+::\+Embedder\+Graph}!Add\+Edge@{Add\+Edge}}

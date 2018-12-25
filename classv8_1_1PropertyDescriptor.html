@@ -162,7 +162,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const 
 <p>Properties in a descriptor are present or absent. If you do not set <code>enumerable</code>, <code>configurable</code>, and <code>writable</code>, they are absent. If <code>value</code>, <code>get</code>, or <code>set</code> are absent, but you must specify them in the constructor, use empty handles.</p>
 <p>Accessors <code>get</code> and <code>set</code> must be callable or undefined if they are present.</p>
 <dl class="section note"><dt>Note</dt><dd>Only query properties if they are present, i.e., call <code>x()</code> only if <code>has_x()</code> returns true.</dd></dl>
-<div class="fragment"><div class="line"><span class="comment">// var desc = {writable: false}</span></div><div class="line"><a class="code" href="classv8_1_1PropertyDescriptor.html">v8::PropertyDescriptor</a> d(Local&lt;Value&gt;()), <span class="keyword">false</span>);</div><div class="line">d.value(); <span class="comment">// error, value not set</span></div><div class="line"><span class="keywordflow">if</span> (d.has_writable()) {</div><div class="line">  d.writable(); <span class="comment">// false</span></div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// var desc = {value: undefined}</span></div><div class="line"><a class="code" href="classv8_1_1PropertyDescriptor.html">v8::PropertyDescriptor</a> d(v8::Undefined(isolate));</div><div class="line"></div><div class="line"><span class="comment">// var desc = {get: undefined}</span></div><div class="line"><a class="code" href="classv8_1_1PropertyDescriptor.html">v8::PropertyDescriptor</a> d(v8::Undefined(isolate), Local&lt;Value&gt;()));</div></div><!-- fragment --> </div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="fragment"><div class="line"><span class="comment">// var desc = {writable: false}</span></div><div class="line"><a class="code" href="classv8_1_1PropertyDescriptor.html">v8::PropertyDescriptor</a> d(Local&lt;Value&gt;()), <span class="keyword">false</span>);</div><div class="line">d.value(); <span class="comment">// error, value not set</span></div><div class="line"><span class="keywordflow">if</span> (d.has_writable()) {</div><div class="line">  d.writable(); <span class="comment">// false</span></div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// var desc = {value: undefined}</span></div><div class="line"><a class="code" href="classv8_1_1PropertyDescriptor.html">v8::PropertyDescriptor</a> d(v8::Undefined(isolate));</div><div class="line"></div><div class="line"><span class="comment">// var desc = {get: undefined}</span></div><div class="line"><a class="code" href="classv8_1_1PropertyDescriptor.html">v8::PropertyDescriptor</a> d(v8::Undefined(isolate), Local&lt;Value&gt;()));</div></div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l04207">4207</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>v8/include/<a class="el" href="v8_8h_source.html">v8.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -171,7 +173,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1PropertyDescriptor.html">PropertyDescriptor</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 13:42:28 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:17:16 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

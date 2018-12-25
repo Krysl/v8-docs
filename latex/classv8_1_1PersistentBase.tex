@@ -118,6 +118,10 @@ An object reference that is independent of any handle scope. Where a \mbox{\hype
 
 A persistent handle contains a reference to a storage cell within the V8 engine which holds an object value and which is updated by the garbage collector whenever the object is moved. A new storage cell can be created using the constructor or \mbox{\hyperlink{classv8_1_1PersistentBase_a174bb1e45b18fd4eeaee033622825bb8}{Persistent\+Base\+::\+Reset}} and existing handles can be disposed using \mbox{\hyperlink{classv8_1_1PersistentBase_a174bb1e45b18fd4eeaee033622825bb8}{Persistent\+Base\+::\+Reset}}. 
 
+Definition at line 90 of file v8.\+h.
+
+
+
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classv8_1_1PersistentBase_a27ddb6118b13225207e9641c1e6c8c91}\label{classv8_1_1PersistentBase_a27ddb6118b13225207e9641c1e6c8c91}} 
 \index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!Annotate\+Strong\+Retainer@{Annotate\+Strong\+Retainer}}
@@ -126,21 +130,33 @@ A persistent handle contains a reference to a storage cell within the V8 engine 
 {\footnotesize\ttfamily template$<$class T $>$ \\
 void \mbox{\hyperlink{classv8_1_1PersistentBase}{v8\+::\+Persistent\+Base}}$<$ T $>$\+::Annotate\+Strong\+Retainer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{label }\end{DoxyParamCaption})}
 
-Annotates the strong handle with the given label, which is then used by the heap snapshot generator as a name of the edge from the root to the handle. The function does not take ownership of the label and assumes that the label is valid as long as the handle is valid. \mbox{\Hypertarget{classv8_1_1PersistentBase_a6587b66b7d4c0397129c51d0507b4094}\label{classv8_1_1PersistentBase_a6587b66b7d4c0397129c51d0507b4094}} 
+Annotates the strong handle with the given label, which is then used by the heap snapshot generator as a name of the edge from the root to the handle. The function does not take ownership of the label and assumes that the label is valid as long as the handle is valid. 
+
+Definition at line 9520 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PersistentBase_a6587b66b7d4c0397129c51d0507b4094}\label{classv8_1_1PersistentBase_a6587b66b7d4c0397129c51d0507b4094}} 
 \index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!Is\+Near\+Death@{Is\+Near\+Death}}
 \index{Is\+Near\+Death@{Is\+Near\+Death}!v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}}
 \subsubsection{\texorpdfstring{Is\+Near\+Death()}{IsNearDeath()}}
 {\footnotesize\ttfamily template$<$class T $>$ \\
 bool \mbox{\hyperlink{classv8_1_1PersistentBase}{v8\+::\+Persistent\+Base}}$<$ T $>$\+::Is\+Near\+Death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Checks if the handle holds the only reference to an object. \mbox{\Hypertarget{classv8_1_1PersistentBase_a479c7b146da083aa608e133a7dec79f9}\label{classv8_1_1PersistentBase_a479c7b146da083aa608e133a7dec79f9}} 
+Checks if the handle holds the only reference to an object. 
+
+Definition at line 9449 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PersistentBase_a479c7b146da083aa608e133a7dec79f9}\label{classv8_1_1PersistentBase_a479c7b146da083aa608e133a7dec79f9}} 
 \index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!Is\+Weak@{Is\+Weak}}
 \index{Is\+Weak@{Is\+Weak}!v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}}
 \subsubsection{\texorpdfstring{Is\+Weak()}{IsWeak()}}
 {\footnotesize\ttfamily template$<$class T $>$ \\
 bool \mbox{\hyperlink{classv8_1_1PersistentBase}{v8\+::\+Persistent\+Base}}$<$ T $>$\+::Is\+Weak (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns true if the handle\textquotesingle{}s reference is weak. \mbox{\Hypertarget{classv8_1_1PersistentBase_a7244edd33a45b7d95e566fce85e3f87d}\label{classv8_1_1PersistentBase_a7244edd33a45b7d95e566fce85e3f87d}} 
+Returns true if the handle\textquotesingle{}s reference is weak. 
+
+Definition at line 9460 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PersistentBase_a7244edd33a45b7d95e566fce85e3f87d}\label{classv8_1_1PersistentBase_a7244edd33a45b7d95e566fce85e3f87d}} 
 \index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!Mark\+Active@{Mark\+Active}}
 \index{Mark\+Active@{Mark\+Active}!v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}}
 \subsubsection{\texorpdfstring{Mark\+Active()}{MarkActive()}}
@@ -149,21 +165,33 @@ void \mbox{\hyperlink{classv8_1_1PersistentBase}{v8\+::\+Persistent\+Base}}$<$ T
 
 Marks the reference to this object as active. The scavenge garbage collection should not reclaim the objects marked as active, even if the object held by the handle is otherwise unreachable.
 
-This bit is cleared after the each garbage collection pass. \mbox{\Hypertarget{classv8_1_1PersistentBase_a427ad28478a6a208605fca3d39ce4bdf}\label{classv8_1_1PersistentBase_a427ad28478a6a208605fca3d39ce4bdf}} 
+This bit is cleared after the each garbage collection pass. 
+
+Definition at line 9542 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PersistentBase_a427ad28478a6a208605fca3d39ce4bdf}\label{classv8_1_1PersistentBase_a427ad28478a6a208605fca3d39ce4bdf}} 
 \index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!Register\+External\+Reference@{Register\+External\+Reference}}
 \index{Register\+External\+Reference@{Register\+External\+Reference}!v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}}
 \subsubsection{\texorpdfstring{Register\+External\+Reference()}{RegisterExternalReference()}}
 {\footnotesize\ttfamily template$<$class T $>$ \\
 void \mbox{\hyperlink{classv8_1_1PersistentBase}{v8\+::\+Persistent\+Base}}$<$ T $>$\+::Register\+External\+Reference (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate }\end{DoxyParamCaption}) const}
 
-Allows the embedder to tell the \mbox{\hyperlink{namespacev8}{v8}} garbage collector that a certain object is alive. Only allowed when the embedder is asked to trace its heap by Embedder\+Heap\+Tracer. \mbox{\Hypertarget{classv8_1_1PersistentBase_a174bb1e45b18fd4eeaee033622825bb8}\label{classv8_1_1PersistentBase_a174bb1e45b18fd4eeaee033622825bb8}} 
+Allows the embedder to tell the \mbox{\hyperlink{namespacev8}{v8}} garbage collector that a certain object is alive. Only allowed when the embedder is asked to trace its heap by Embedder\+Heap\+Tracer. 
+
+Definition at line 9526 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PersistentBase_a174bb1e45b18fd4eeaee033622825bb8}\label{classv8_1_1PersistentBase_a174bb1e45b18fd4eeaee033622825bb8}} 
 \index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!Reset@{Reset}}
 \index{Reset@{Reset}!v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}}
 \subsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily template$<$class T $>$ \\
 void \mbox{\hyperlink{classv8_1_1PersistentBase}{v8\+::\+Persistent\+Base}}$<$ T $>$\+::Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-If non-\/empty, destroy the underlying storage cell Is\+Empty() will return true after this call. \mbox{\Hypertarget{classv8_1_1PersistentBase_a11164f0dfc9a16d79809236e7a9670aa}\label{classv8_1_1PersistentBase_a11164f0dfc9a16d79809236e7a9670aa}} 
+If non-\/empty, destroy the underlying storage cell Is\+Empty() will return true after this call. 
+
+Definition at line 9469 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PersistentBase_a11164f0dfc9a16d79809236e7a9670aa}\label{classv8_1_1PersistentBase_a11164f0dfc9a16d79809236e7a9670aa}} 
 \index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!Reset@{Reset}}
 \index{Reset@{Reset}!v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}}
 \subsubsection{\texorpdfstring{Reset()}{Reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
@@ -187,21 +215,33 @@ If non-\/empty, destroy the underlying storage cell and create a new one with th
 template$<$typename P $>$ \\
 V8\+\_\+\+I\+N\+L\+I\+NE void \mbox{\hyperlink{classv8_1_1PersistentBase}{v8\+::\+Persistent\+Base}}$<$ T $>$\+::Set\+Weak (\begin{DoxyParamCaption}\item[{P $\ast$}]{parameter,  }\item[{typename \mbox{\hyperlink{classv8_1_1WeakCallbackInfo}{Weak\+Callback\+Info}}$<$ P $>$\+::Callback}]{callback,  }\item[{Weak\+Callback\+Type}]{type }\end{DoxyParamCaption})}
 
-Install a finalization callback on this object. N\+O\+TE\+: There is no guarantee as to {\itshape when} or even {\itshape if} the callback is invoked. The invocation is performed solely on a best effort basis. As always, G\+C-\/based finalization should {\itshape not} be relied upon for any critical form of resource management! \mbox{\Hypertarget{classv8_1_1PersistentBase_a09fd1d1c3cd3ff32b91937f4d8beb1ea}\label{classv8_1_1PersistentBase_a09fd1d1c3cd3ff32b91937f4d8beb1ea}} 
+Install a finalization callback on this object. N\+O\+TE\+: There is no guarantee as to {\itshape when} or even {\itshape if} the callback is invoked. The invocation is performed solely on a best effort basis. As always, G\+C-\/based finalization should {\itshape not} be relied upon for any critical form of resource management! 
+
+Definition at line 9499 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PersistentBase_a09fd1d1c3cd3ff32b91937f4d8beb1ea}\label{classv8_1_1PersistentBase_a09fd1d1c3cd3ff32b91937f4d8beb1ea}} 
 \index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!Set\+Weak@{Set\+Weak}}
 \index{Set\+Weak@{Set\+Weak}!v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}}
 \subsubsection{\texorpdfstring{Set\+Weak()}{SetWeak()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$class T $>$ \\
 void \mbox{\hyperlink{classv8_1_1PersistentBase}{v8\+::\+Persistent\+Base}}$<$ T $>$\+::Set\+Weak (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Turns this handle into a weak phantom handle without finalization callback. The handle will be reset automatically when the garbage collector detects that the object is no longer reachable. A related function Isolate\+::\+Number\+Of\+Phantom\+Handle\+Resets\+Since\+Last\+Call returns how many phantom handles were reset by the garbage collector. \mbox{\Hypertarget{classv8_1_1PersistentBase_ac4c979164b3ed4dc92319e6f5a108d3d}\label{classv8_1_1PersistentBase_ac4c979164b3ed4dc92319e6f5a108d3d}} 
+Turns this handle into a weak phantom handle without finalization callback. The handle will be reset automatically when the garbage collector detects that the object is no longer reachable. A related function Isolate\+::\+Number\+Of\+Phantom\+Handle\+Resets\+Since\+Last\+Call returns how many phantom handles were reset by the garbage collector. 
+
+Definition at line 9508 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PersistentBase_ac4c979164b3ed4dc92319e6f5a108d3d}\label{classv8_1_1PersistentBase_ac4c979164b3ed4dc92319e6f5a108d3d}} 
 \index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!Set\+Wrapper\+Class\+Id@{Set\+Wrapper\+Class\+Id}}
 \index{Set\+Wrapper\+Class\+Id@{Set\+Wrapper\+Class\+Id}!v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}}
 \subsubsection{\texorpdfstring{Set\+Wrapper\+Class\+Id()}{SetWrapperClassId()}}
 {\footnotesize\ttfamily template$<$class T $>$ \\
 void \mbox{\hyperlink{classv8_1_1PersistentBase}{v8\+::\+Persistent\+Base}}$<$ T $>$\+::Set\+Wrapper\+Class\+Id (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{class\+\_\+id }\end{DoxyParamCaption})}
 
-Assigns a wrapper class ID to the handle. See \mbox{\hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info}} interface description in \mbox{\hyperlink{v8-profiler_8h_source}{v8-\/profiler.\+h}} for details. \mbox{\Hypertarget{classv8_1_1PersistentBase_a760df2921447e2344ec564d0268d9d1c}\label{classv8_1_1PersistentBase_a760df2921447e2344ec564d0268d9d1c}} 
+Assigns a wrapper class ID to the handle. See \mbox{\hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info}} interface description in \mbox{\hyperlink{v8-profiler_8h_source}{v8-\/profiler.\+h}} for details. 
+
+Definition at line 9551 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PersistentBase_a760df2921447e2344ec564d0268d9d1c}\label{classv8_1_1PersistentBase_a760df2921447e2344ec564d0268d9d1c}} 
 \index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}}
 \index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}!v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}}
 \subsubsection{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N()}{V8\_DEPRECATE\_SOON()}}
@@ -216,6 +256,10 @@ Marks the reference to this object independent. Garbage collector is free to ign
 uint16\+\_\+t \mbox{\hyperlink{classv8_1_1PersistentBase}{v8\+::\+Persistent\+Base}}$<$ T $>$\+::Wrapper\+Class\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 Returns the class ID previously assigned to this handle or 0 if no class ID was previously assigned. 
+
+Definition at line 9561 of file v8.\+h.
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

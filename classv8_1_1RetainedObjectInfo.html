@@ -123,6 +123,8 @@ Public Member Functions</h2></td></tr>
 <li>Call SetWrapperClassId on certain persistent handles.</li>
 </ol>
 <p>V8 takes ownership of <a class="el" href="classv8_1_1RetainedObjectInfo.html">RetainedObjectInfo</a> instances passed to it and keeps them alive only during snapshot collection. Afterwards, they are freed by calling the Dispose class function. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8-profiler_8h_source.html#l00985">985</a> of file <a class="el" href="v8-profiler_8h_source.html">v8-profiler.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5011203f7c5949049ba36b8059f03eca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5011203f7c5949049ba36b8059f03eca">&#9670;&nbsp;</a></span>Dispose()</h2>
@@ -174,6 +176,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns element count in case if a global handle retains a subgraph by holding one of its nodes. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8-profiler_8h_source.html#l01020">1020</a> of file <a class="el" href="v8-profiler_8h_source.html">v8-profiler.h</a>.</p>
+
 </div>
 </div>
 <a id="adf835370c5516f2a89dd2d3f83dee10b"></a>
@@ -199,6 +203,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns human-readable group label. It must be a null-terminated UTF-8 encoded string. V8 copies its contents during a call to GetGroupLabel. Heap snapshot generator will collect all the group names, create top level entries with these names and attach the objects to the corresponding top level group objects. There is a default implementation which is required because embedders don't have their own implementation yet. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8-profiler_8h_source.html#l01014">1014</a> of file <a class="el" href="v8-profiler_8h_source.html">v8-profiler.h</a>.</p>
 
 </div>
 </div>
@@ -278,6 +284,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns embedder's object size in bytes. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8-profiler_8h_source.html#l01023">1023</a> of file <a class="el" href="v8-profiler_8h_source.html">v8-profiler.h</a>.</p>
+
 </div>
 </div>
 <a id="a286103bb076c85415919c86b1838c990"></a>
@@ -316,7 +324,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1RetainedObjectInfo.html">RetainedObjectInfo</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 13:42:29 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:17:16 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

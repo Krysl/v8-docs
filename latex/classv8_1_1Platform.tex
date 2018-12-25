@@ -59,6 +59,10 @@ V8 \mbox{\hyperlink{classv8_1_1Platform}{Platform}} abstraction layer.
 
 The embedder has to provide an implementation of this interface before initializing the rest of V8. 
 
+Definition at line 268 of file v8-\/platform.\+h.
+
+
+
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classv8_1_1Platform_ada31b440048763bf8d9c296ca4cf2e1b}\label{classv8_1_1Platform_ada31b440048763bf8d9c296ca4cf2e1b}} 
 \index{v8\+::\+Platform@{v8\+::\+Platform}!Call\+Blocking\+Task\+On\+Worker\+Thread@{Call\+Blocking\+Task\+On\+Worker\+Thread}}
@@ -66,7 +70,11 @@ The embedder has to provide an implementation of this interface before initializ
 \subsubsection{\texorpdfstring{Call\+Blocking\+Task\+On\+Worker\+Thread()}{CallBlockingTaskOnWorkerThread()}}
 {\footnotesize\ttfamily virtual void v8\+::\+Platform\+::\+Call\+Blocking\+Task\+On\+Worker\+Thread (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1Task}{Task}} $>$}]{task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-Schedules a task that blocks the main thread to be invoked with high-\/priority on a worker thread. \mbox{\Hypertarget{classv8_1_1Platform_a808b0e55ed3efca10ebca031bbd6ecc6}\label{classv8_1_1Platform_a808b0e55ed3efca10ebca031bbd6ecc6}} 
+Schedules a task that blocks the main thread to be invoked with high-\/priority on a worker thread. 
+
+Definition at line 328 of file v8-\/platform.\+h.
+
+\mbox{\Hypertarget{classv8_1_1Platform_a808b0e55ed3efca10ebca031bbd6ecc6}\label{classv8_1_1Platform_a808b0e55ed3efca10ebca031bbd6ecc6}} 
 \index{v8\+::\+Platform@{v8\+::\+Platform}!Call\+Delayed\+On\+Worker\+Thread@{Call\+Delayed\+On\+Worker\+Thread}}
 \index{Call\+Delayed\+On\+Worker\+Thread@{Call\+Delayed\+On\+Worker\+Thread}!v8\+::\+Platform@{v8\+::\+Platform}}
 \subsubsection{\texorpdfstring{Call\+Delayed\+On\+Worker\+Thread()}{CallDelayedOnWorkerThread()}}
@@ -90,7 +98,11 @@ Current wall-\/clock time in milliseconds since epoch. This function is expected
 \subsubsection{\texorpdfstring{Dump\+Without\+Crashing()}{DumpWithoutCrashing()}}
 {\footnotesize\ttfamily virtual void v8\+::\+Platform\+::\+Dump\+Without\+Crashing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-Tells the embedder to generate and upload a crashdump during an unexpected but non-\/critical scenario. \mbox{\Hypertarget{classv8_1_1Platform_af0d18c6bbefa133c5d11ec8a460d0278}\label{classv8_1_1Platform_af0d18c6bbefa133c5d11ec8a460d0278}} 
+Tells the embedder to generate and upload a crashdump during an unexpected but non-\/critical scenario. 
+
+Definition at line 416 of file v8-\/platform.\+h.
+
+\mbox{\Hypertarget{classv8_1_1Platform_af0d18c6bbefa133c5d11ec8a460d0278}\label{classv8_1_1Platform_af0d18c6bbefa133c5d11ec8a460d0278}} 
 \index{v8\+::\+Platform@{v8\+::\+Platform}!Get\+Foreground\+Task\+Runner@{Get\+Foreground\+Task\+Runner}}
 \index{Get\+Foreground\+Task\+Runner@{Get\+Foreground\+Task\+Runner}!v8\+::\+Platform@{v8\+::\+Platform}}
 \subsubsection{\texorpdfstring{Get\+Foreground\+Task\+Runner()}{GetForegroundTaskRunner()}}
@@ -102,13 +114,21 @@ Returns a \mbox{\hyperlink{classv8_1_1TaskRunner}{Task\+Runner}} which can be us
 \subsubsection{\texorpdfstring{Get\+Page\+Allocator()}{GetPageAllocator()}}
 {\footnotesize\ttfamily virtual \mbox{\hyperlink{classv8_1_1PageAllocator}{Page\+Allocator}}$\ast$ v8\+::\+Platform\+::\+Get\+Page\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-Allows the embedder to manage memory page allocations. \mbox{\Hypertarget{classv8_1_1Platform_aadb2594e6ff9a6f6a0657412ff5a7206}\label{classv8_1_1Platform_aadb2594e6ff9a6f6a0657412ff5a7206}} 
+Allows the embedder to manage memory page allocations. 
+
+Definition at line 275 of file v8-\/platform.\+h.
+
+\mbox{\Hypertarget{classv8_1_1Platform_aadb2594e6ff9a6f6a0657412ff5a7206}\label{classv8_1_1Platform_aadb2594e6ff9a6f6a0657412ff5a7206}} 
 \index{v8\+::\+Platform@{v8\+::\+Platform}!Get\+Stack\+Trace\+Printer@{Get\+Stack\+Trace\+Printer}}
 \index{Get\+Stack\+Trace\+Printer@{Get\+Stack\+Trace\+Printer}!v8\+::\+Platform@{v8\+::\+Platform}}
 \subsubsection{\texorpdfstring{Get\+Stack\+Trace\+Printer()}{GetStackTracePrinter()}}
 {\footnotesize\ttfamily virtual Stack\+Trace\+Printer v8\+::\+Platform\+::\+Get\+Stack\+Trace\+Printer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-Returns a function pointer that print a stack trace of the current stack on invocation. Disables printing of the stack trace if nullptr. \mbox{\Hypertarget{classv8_1_1Platform_aa760c7bf8c46495eb650d2be72399747}\label{classv8_1_1Platform_aa760c7bf8c46495eb650d2be72399747}} 
+Returns a function pointer that print a stack trace of the current stack on invocation. Disables printing of the stack trace if nullptr. 
+
+Definition at line 405 of file v8-\/platform.\+h.
+
+\mbox{\Hypertarget{classv8_1_1Platform_aa760c7bf8c46495eb650d2be72399747}\label{classv8_1_1Platform_aa760c7bf8c46495eb650d2be72399747}} 
 \index{v8\+::\+Platform@{v8\+::\+Platform}!Get\+Tracing\+Controller@{Get\+Tracing\+Controller}}
 \index{Get\+Tracing\+Controller@{Get\+Tracing\+Controller}!v8\+::\+Platform@{v8\+::\+Platform}}
 \subsubsection{\texorpdfstring{Get\+Tracing\+Controller()}{GetTracingController()}}
@@ -120,7 +140,11 @@ Returns an instance of a \mbox{\hyperlink{classv8_1_1TracingController}{v8\+::\+
 \subsubsection{\texorpdfstring{Idle\+Tasks\+Enabled()}{IdleTasksEnabled()}}
 {\footnotesize\ttfamily virtual bool v8\+::\+Platform\+::\+Idle\+Tasks\+Enabled (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-Returns true if idle tasks are enabled for the given $\vert$isolate$\vert$. \mbox{\Hypertarget{classv8_1_1Platform_a6d4d7c2dcf6b0c7113099b97fa7f57b7}\label{classv8_1_1Platform_a6d4d7c2dcf6b0c7113099b97fa7f57b7}} 
+Returns true if idle tasks are enabled for the given $\vert$isolate$\vert$. 
+
+Definition at line 380 of file v8-\/platform.\+h.
+
+\mbox{\Hypertarget{classv8_1_1Platform_a6d4d7c2dcf6b0c7113099b97fa7f57b7}\label{classv8_1_1Platform_a6d4d7c2dcf6b0c7113099b97fa7f57b7}} 
 \index{v8\+::\+Platform@{v8\+::\+Platform}!Monotonically\+Increasing\+Time@{Monotonically\+Increasing\+Time}}
 \index{Monotonically\+Increasing\+Time@{Monotonically\+Increasing\+Time}!v8\+::\+Platform@{v8\+::\+Platform}}
 \subsubsection{\texorpdfstring{Monotonically\+Increasing\+Time()}{MonotonicallyIncreasingTime()}}
@@ -138,7 +162,11 @@ Gets the number of worker threads used by Call(\+Blocking\+Task)On\+Worker\+Thre
 \subsubsection{\texorpdfstring{On\+Critical\+Memory\+Pressure()}{OnCriticalMemoryPressure()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily virtual void v8\+::\+Platform\+::\+On\+Critical\+Memory\+Pressure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-Enables the embedder to respond in cases where V8 can\textquotesingle{}t allocate large blocks of memory. V8 retries the failed allocation once after calling this method. On success, execution continues; otherwise V8 exits with a fatal error. Embedder overrides of this function must N\+OT call back into V8. \mbox{\Hypertarget{classv8_1_1Platform_a0de4b8a7bb8865ce65beb5afbaabe4cc}\label{classv8_1_1Platform_a0de4b8a7bb8865ce65beb5afbaabe4cc}} 
+Enables the embedder to respond in cases where V8 can\textquotesingle{}t allocate large blocks of memory. V8 retries the failed allocation once after calling this method. On success, execution continues; otherwise V8 exits with a fatal error. Embedder overrides of this function must N\+OT call back into V8. 
+
+Definition at line 287 of file v8-\/platform.\+h.
+
+\mbox{\Hypertarget{classv8_1_1Platform_a0de4b8a7bb8865ce65beb5afbaabe4cc}\label{classv8_1_1Platform_a0de4b8a7bb8865ce65beb5afbaabe4cc}} 
 \index{v8\+::\+Platform@{v8\+::\+Platform}!On\+Critical\+Memory\+Pressure@{On\+Critical\+Memory\+Pressure}}
 \index{On\+Critical\+Memory\+Pressure@{On\+Critical\+Memory\+Pressure}!v8\+::\+Platform@{v8\+::\+Platform}}
 \subsubsection{\texorpdfstring{On\+Critical\+Memory\+Pressure()}{OnCriticalMemoryPressure()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
@@ -146,7 +174,11 @@ Enables the embedder to respond in cases where V8 can\textquotesingle{}t allocat
 
 Enables the embedder to respond in cases where V8 can\textquotesingle{}t allocate large memory regions. The $\vert$length$\vert$ parameter is the amount of memory needed. Returns true if memory is now available. Returns false if no memory could be made available. V8 will retry allocations until this method returns false.
 
-Embedder overrides of this function must N\+OT call back into V8. \mbox{\Hypertarget{classv8_1_1Platform_a18ccdaf3a1a738bd4082dbbe749d026b}\label{classv8_1_1Platform_a18ccdaf3a1a738bd4082dbbe749d026b}} 
+Embedder overrides of this function must N\+OT call back into V8. 
+
+Definition at line 301 of file v8-\/platform.\+h.
+
+\mbox{\Hypertarget{classv8_1_1Platform_a18ccdaf3a1a738bd4082dbbe749d026b}\label{classv8_1_1Platform_a18ccdaf3a1a738bd4082dbbe749d026b}} 
 \index{v8\+::\+Platform@{v8\+::\+Platform}!System\+Clock\+Time\+Millis@{System\+Clock\+Time\+Millis}}
 \index{System\+Clock\+Time\+Millis@{System\+Clock\+Time\+Millis}!v8\+::\+Platform@{v8\+::\+Platform}}
 \subsubsection{\texorpdfstring{System\+Clock\+Time\+Millis()}{SystemClockTimeMillis()}}
@@ -171,6 +203,10 @@ Schedules a task to be invoked on a foreground thread wrt a specific $\vert$isol
 {\footnotesize\ttfamily v8\+::\+Platform\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON (\begin{DoxyParamCaption}\item[{\char`\"{}Use a taskrunner acquired by \mbox{\hyperlink{classv8_1_1Platform_af0d18c6bbefa133c5d11ec8a460d0278}{Get\+Foreground\+Task\+Runner}} instead.\char`\"{}}]{,  }\item[{virtual void }]{Call\+Idle\+On\+Foreground\+ThreadIsolate $\ast$isolate, Idle\+Task $\ast$task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Schedules a task to be invoked on a foreground thread wrt a specific $\vert$isolate$\vert$ when the embedder is idle. Requires that Supports\+Idle\+Tasks(isolate) is true. Idle tasks may be reordered relative to other task types and may be starved for an arbitrarily long time if no idle time is available. The definition of \char`\"{}foreground\char`\"{} is opaque to V8. 
+
+Definition at line 369 of file v8-\/platform.\+h.
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

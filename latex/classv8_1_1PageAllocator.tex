@@ -44,6 +44,10 @@ A V8 memory page allocator.
 
 Can be implemented by an embedder to manage large host OS allocations. 
 
+Definition at line 191 of file v8-\/platform.\+h.
+
+
+
 \subsection{Member Enumeration Documentation}
 \mbox{\Hypertarget{classv8_1_1PageAllocator_a88f74b164fe97e053259f67a95758415}\label{classv8_1_1PageAllocator_a88f74b164fe97e053259f67a95758415}} 
 \index{v8\+::\+Page\+Allocator@{v8\+::\+Page\+Allocator}!Permission@{Permission}}
@@ -52,6 +56,10 @@ Can be implemented by an embedder to manage large host OS allocations.
 {\footnotesize\ttfamily enum \mbox{\hyperlink{classv8_1_1PageAllocator_a88f74b164fe97e053259f67a95758415}{v8\+::\+Page\+Allocator\+::\+Permission}}}
 
 Memory permissions. 
+
+Definition at line 222 of file v8-\/platform.\+h.
+
+
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classv8_1_1PageAllocator_ab3a25ddd2601701f80ee67c4bf017ef7}\label{classv8_1_1PageAllocator_ab3a25ddd2601701f80ee67c4bf017ef7}} 
@@ -78,7 +86,11 @@ Gets the page granularity for Set\+Permissions and Release\+Pages. Addresses and
 \subsubsection{\texorpdfstring{Discard\+System\+Pages()}{DiscardSystemPages()}}
 {\footnotesize\ttfamily virtual bool v8\+::\+Page\+Allocator\+::\+Discard\+System\+Pages (\begin{DoxyParamCaption}\item[{void $\ast$}]{address,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-Frees memory in the given \mbox{[}address, address + size) range. address and size should be operating system page-\/aligned. The next write to this memory area brings the memory transparently back. \mbox{\Hypertarget{classv8_1_1PageAllocator_abc2e3fdc768aba7d35ce0cf44f14586c}\label{classv8_1_1PageAllocator_abc2e3fdc768aba7d35ce0cf44f14586c}} 
+Frees memory in the given \mbox{[}address, address + size) range. address and size should be operating system page-\/aligned. The next write to this memory area brings the memory transparently back. 
+
+Definition at line 259 of file v8-\/platform.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PageAllocator_abc2e3fdc768aba7d35ce0cf44f14586c}\label{classv8_1_1PageAllocator_abc2e3fdc768aba7d35ce0cf44f14586c}} 
 \index{v8\+::\+Page\+Allocator@{v8\+::\+Page\+Allocator}!Free\+Pages@{Free\+Pages}}
 \index{Free\+Pages@{Free\+Pages}!v8\+::\+Page\+Allocator@{v8\+::\+Page\+Allocator}}
 \subsubsection{\texorpdfstring{Free\+Pages()}{FreePages()}}

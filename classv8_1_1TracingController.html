@@ -119,6 +119,8 @@ virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>AddTraceE
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>V8 Tracing controller.</p>
 <p>Can be implemented by an embedder to record trace events from V8. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00122">122</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad1e234b340ea8f9f1e3386aa21dad5dd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad1e234b340ea8f9f1e3386aa21dad5dd">&#9670;&nbsp;</a></span>AddTraceEvent()</h2>
@@ -215,6 +217,8 @@ virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>AddTraceE
 </div><div class="memdoc">
 <p>Adds a trace event to the platform tracing system. These function calls are usually the result of a TRACE_* macro from trace_event_common.h when tracing and the category of the particular trace are enabled. It is not advisable to call these functions on their own; they are really only meant to be used by the trace macros. The returned handle can be used by UpdateTraceEventDuration to update the duration of COMPLETE events. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00146">146</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
+
 </div>
 </div>
 <a id="a7b86361ffadff46018a348fd2aa01061"></a>
@@ -241,6 +245,8 @@ virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>AddTraceE
 </table>
 </div><div class="memdoc">
 <p>Adds tracing state change observer. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00180">180</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
 
 </div>
 </div>
@@ -269,6 +275,8 @@ virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>AddTraceE
 </div><div class="memdoc">
 <p>Called by TRACE_EVENT* macros, don't call this directly. The name parameter is a category group for example: TRACE_EVENT0("v8,parse", "V8.Parse") The pointer returned points to a value with zero or more of the bits defined in CategoryGroupEnabledFlags. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00133">133</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
+
 </div>
 </div>
 <a id="ab8d5b3ac795188effb423fa2c0514353"></a>
@@ -295,6 +303,8 @@ virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>AddTraceE
 </table>
 </div><div class="memdoc">
 <p>Removes tracing state change observer. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00183">183</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
 
 </div>
 </div>
@@ -339,6 +349,8 @@ virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>AddTraceE
 </div><div class="memdoc">
 <p>Sets the duration field of a COMPLETE trace event. It must be called with the handle returned from <a class="el" href="classv8_1_1TracingController.html#ad1e234b340ea8f9f1e3386aa21dad5dd">AddTraceEvent()</a>. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00169">169</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -350,7 +362,7 @@ virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>AddTraceE
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1TracingController.html">TracingController</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 13:42:33 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:17:20 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

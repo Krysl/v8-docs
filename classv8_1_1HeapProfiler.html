@@ -180,6 +180,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for controlling heap profiling. Instance of the profiler can be retrieved using v8::Isolate::GetHeapProfiler. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8-profiler_8h_source.html#l00742">742</a> of file <a class="el" href="v8-profiler_8h_source.html">v8-profiler.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a29c98afa5ce0ea543eef904201bc3e40"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a29c98afa5ce0ea543eef904201bc3e40">&#9670;&nbsp;</a></span>BuildEmbedderGraphCallback</h2>
@@ -193,6 +195,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Callback function invoked during heap snapshot generation to retrieve the embedder object graph. The callback should use graph-&gt;AddEdge(..) to add references between the objects. The callback must not trigger garbage collection in V8. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8-profiler_8h_source.html#l00782">782</a> of file <a class="el" href="v8-profiler_8h_source.html">v8-profiler.h</a>.</p>
 
 </div>
 </div>
@@ -209,6 +213,8 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Callback function invoked to retrieve all <a class="el" href="structv8_1_1HeapProfiler_1_1RetainerInfos.html">RetainerInfos</a> from the embedder. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8-profiler_8h_source.html#l00765">765</a> of file <a class="el" href="v8-profiler_8h_source.html">v8-profiler.h</a>.</p>
+
 </div>
 </div>
 <a id="aafaa85413706329f7767f559b701eb1a"></a>
@@ -224,6 +230,8 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>TODO(addaleax): Remove </p>
 
+<p class="definition">Definition at line <a class="el" href="v8-profiler_8h_source.html#l00787">787</a> of file <a class="el" href="v8-profiler_8h_source.html">v8-profiler.h</a>.</p>
+
 </div>
 </div>
 <a id="a677025dd201fd832e0464e5ab0b0d0d4"></a>
@@ -238,6 +246,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Callback function invoked for obtaining <a class="el" href="classv8_1_1RetainedObjectInfo.html">RetainedObjectInfo</a> for the given JavaScript wrapper object. It is prohibited to enter V8 while the callback is running: only getters on the handle and GetPointerFromInternalField on the objects are allowed. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8-profiler_8h_source.html#l00773">773</a> of file <a class="el" href="v8-profiler_8h_source.html">v8-profiler.h</a>.</p>
 
 </div>
 </div>
@@ -577,6 +587,8 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Default value of persistent handle class ID. Must not be used to define a class. Can be used to reset a class of a persistent handle. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8-profiler_8h_source.html#l00952">952</a> of file <a class="el" href="v8-profiler_8h_source.html">v8-profiler.h</a>.</p>
+
 </div>
 </div>
 <a id="abf2b9d8facb18473f9b124ab8baf5786"></a>
@@ -600,6 +612,8 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>A constant for invalid SnapshotObjectId. GetSnapshotObjectId will return it in case heap profiler cannot find id for the object passed as parameter. <a class="el" href="classv8_1_1HeapSnapshot.html#a0aec9c1535c27bc8b1b55579969203fc">HeapSnapshot::GetNodeById</a> will always return NULL for such id. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8-profiler_8h_source.html#l00820">820</a> of file <a class="el" href="v8-profiler_8h_source.html">v8-profiler.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -611,7 +625,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1HeapProfiler.html">HeapProfiler</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 13:42:23 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:17:09 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

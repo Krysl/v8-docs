@@ -78,6 +78,10 @@ A map wrapper that allows using \mbox{\hyperlink{classv8_1_1Global}{Global}} as 
 
 The map relies on a backing map, whose type and accessors are described by the Traits class. The backing map will handle values of type Persistent\+Container\+Value, with all conversion into and out of V8 handles being transparently handled by this class. 
 
+Definition at line 160 of file v8-\/util.\+h.
+
+
+
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a1bf074e7a7c24713c9a3d40ddce89e74}\label{classv8_1_1PersistentValueMapBase_a1bf074e7a7c24713c9a3d40ddce89e74}} 
 \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Clear@{Clear}}
@@ -86,21 +90,33 @@ The map relies on a backing map, whose type and accessors are described by the T
 {\footnotesize\ttfamily template$<$typename K , typename V , typename Traits $>$ \\
 void \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Traverses the map repeatedly, in case side effects of disposal cause insertions. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a8c68e5f99c4042541c6d32232c97282a}\label{classv8_1_1PersistentValueMapBase_a8c68e5f99c4042541c6d32232c97282a}} 
+Traverses the map repeatedly, in case side effects of disposal cause insertions. 
+
+Definition at line 219 of file v8-\/util.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a8c68e5f99c4042541c6d32232c97282a}\label{classv8_1_1PersistentValueMapBase_a8c68e5f99c4042541c6d32232c97282a}} 
 \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Contains@{Contains}}
 \index{Contains@{Contains}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
 \subsubsection{\texorpdfstring{Contains()}{Contains()}}
 {\footnotesize\ttfamily template$<$typename K , typename V , typename Traits $>$ \\
 bool \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Contains (\begin{DoxyParamCaption}\item[{const K \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Check whether a value is contained in the map. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a16b8f906ea42036c2f37d44813bf2a72}\label{classv8_1_1PersistentValueMapBase_a16b8f906ea42036c2f37d44813bf2a72}} 
+Check whether a value is contained in the map. 
+
+Definition at line 184 of file v8-\/util.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a16b8f906ea42036c2f37d44813bf2a72}\label{classv8_1_1PersistentValueMapBase_a16b8f906ea42036c2f37d44813bf2a72}} 
 \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Get@{Get}}
 \index{Get@{Get}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
 \subsubsection{\texorpdfstring{Get()}{Get()}}
 {\footnotesize\ttfamily template$<$typename K , typename V , typename Traits $>$ \\
 \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$V$>$ \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Get (\begin{DoxyParamCaption}\item[{const K \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Get value stored in map. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a52e74c69b94c7ce77a65af9f32d68af4}\label{classv8_1_1PersistentValueMapBase_a52e74c69b94c7ce77a65af9f32d68af4}} 
+Get value stored in map. 
+
+Definition at line 177 of file v8-\/util.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a52e74c69b94c7ce77a65af9f32d68af4}\label{classv8_1_1PersistentValueMapBase_a52e74c69b94c7ce77a65af9f32d68af4}} 
 \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Get\+Reference@{Get\+Reference}}
 \index{Get\+Reference@{Get\+Reference}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
 \subsubsection{\texorpdfstring{Get\+Reference()}{GetReference()}}
@@ -109,42 +125,66 @@ Get value stored in map. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a5
 
 Get a reference to a map value. This enables fast, repeated access to a value stored in the map while the map remains unchanged.
 
-Careful\+: This is potentially unsafe, so please use with care. The value will become invalid if the value for this key changes in the underlying map, as a result of \mbox{\hyperlink{classv8_1_1Set}{Set}} or Remove for the same key; as a result of the weak callback for the same key; or as a result of calling \mbox{\hyperlink{classv8_1_1PersistentValueMapBase_a1bf074e7a7c24713c9a3d40ddce89e74}{Clear()}} or destruction of the map. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a9f824b13dd30605589508db2740dd678}\label{classv8_1_1PersistentValueMapBase_a9f824b13dd30605589508db2740dd678}} 
+Careful\+: This is potentially unsafe, so please use with care. The value will become invalid if the value for this key changes in the underlying map, as a result of \mbox{\hyperlink{classv8_1_1Set}{Set}} or Remove for the same key; as a result of the weak callback for the same key; or as a result of calling \mbox{\hyperlink{classv8_1_1PersistentValueMapBase_a1bf074e7a7c24713c9a3d40ddce89e74}{Clear()}} or destruction of the map. 
+
+Definition at line 285 of file v8-\/util.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a9f824b13dd30605589508db2740dd678}\label{classv8_1_1PersistentValueMapBase_a9f824b13dd30605589508db2740dd678}} 
 \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Is\+Weak@{Is\+Weak}}
 \index{Is\+Weak@{Is\+Weak}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
 \subsubsection{\texorpdfstring{Is\+Weak()}{IsWeak()}}
 {\footnotesize\ttfamily template$<$typename K , typename V , typename Traits $>$ \\
 bool \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Is\+Weak (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return whether the map holds weak persistents. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a7d1cd63172b997dfaac9d0f009edd709}\label{classv8_1_1PersistentValueMapBase_a7d1cd63172b997dfaac9d0f009edd709}} 
+Return whether the map holds weak persistents. 
+
+Definition at line 172 of file v8-\/util.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a7d1cd63172b997dfaac9d0f009edd709}\label{classv8_1_1PersistentValueMapBase_a7d1cd63172b997dfaac9d0f009edd709}} 
 \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Register\+Externally\+Referenced\+Object@{Register\+Externally\+Referenced\+Object}}
 \index{Register\+Externally\+Referenced\+Object@{Register\+Externally\+Referenced\+Object}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
 \subsubsection{\texorpdfstring{Register\+Externally\+Referenced\+Object()}{RegisterExternallyReferencedObject()}}
 {\footnotesize\ttfamily template$<$typename K , typename V , typename Traits $>$ \\
 void \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Register\+Externally\+Referenced\+Object (\begin{DoxyParamCaption}\item[{K \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Call V8\+::\+Register\+Externally\+Referenced\+Object with the map value for given key. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a9ffa7a4e0c59121c0471d71c04112966}\label{classv8_1_1PersistentValueMapBase_a9ffa7a4e0c59121c0471d71c04112966}} 
+Call V8\+::\+Register\+Externally\+Referenced\+Object with the map value for given key. 
+
+Definition at line 201 of file v8-\/util.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a9ffa7a4e0c59121c0471d71c04112966}\label{classv8_1_1PersistentValueMapBase_a9ffa7a4e0c59121c0471d71c04112966}} 
 \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Release@{Release}}
 \index{Release@{Release}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
 \subsubsection{\texorpdfstring{Release()}{Release()}}
 {\footnotesize\ttfamily template$<$typename K , typename V , typename Traits $>$ \\
 static \mbox{\hyperlink{classv8_1_1Global}{Global}}$<$V$>$ \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Release (\begin{DoxyParamCaption}\item[{Persistent\+Container\+Value}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
 
-Return a container value as \mbox{\hyperlink{classv8_1_1Global}{Global}} and make sure the weak callback is properly disposed of. All remove functionality should go through this. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_abd75a4c050416712167ba0bb9eace097}\label{classv8_1_1PersistentValueMapBase_abd75a4c050416712167ba0bb9eace097}} 
+Return a container value as \mbox{\hyperlink{classv8_1_1Global}{Global}} and make sure the weak callback is properly disposed of. All remove functionality should go through this. 
+
+Definition at line 316 of file v8-\/util.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_abd75a4c050416712167ba0bb9eace097}\label{classv8_1_1PersistentValueMapBase_abd75a4c050416712167ba0bb9eace097}} 
 \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Remove@{Remove}}
 \index{Remove@{Remove}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
 \subsubsection{\texorpdfstring{Remove()}{Remove()}}
 {\footnotesize\ttfamily template$<$typename K , typename V , typename Traits $>$ \\
 \mbox{\hyperlink{classv8_1_1Global}{Global}}$<$V$>$ \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Remove (\begin{DoxyParamCaption}\item[{const K \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Return value for key and remove it from the map. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a85201649d2bbd0ffdebe8be3d5c6447a}\label{classv8_1_1PersistentValueMapBase_a85201649d2bbd0ffdebe8be3d5c6447a}} 
+Return value for key and remove it from the map. 
+
+Definition at line 211 of file v8-\/util.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a85201649d2bbd0ffdebe8be3d5c6447a}\label{classv8_1_1PersistentValueMapBase_a85201649d2bbd0ffdebe8be3d5c6447a}} 
 \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Set\+Return\+Value@{Set\+Return\+Value}}
 \index{Set\+Return\+Value@{Set\+Return\+Value}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
 \subsubsection{\texorpdfstring{Set\+Return\+Value()}{SetReturnValue()}}
 {\footnotesize\ttfamily template$<$typename K , typename V , typename Traits $>$ \\
 bool \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Set\+Return\+Value (\begin{DoxyParamCaption}\item[{const K \&}]{key,  }\item[{\mbox{\hyperlink{classv8_1_1ReturnValue}{Return\+Value}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$}]{return\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Get value stored in map and set it in return\+Value. Return true if a value was found. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_ade5c5db2a968fdabe073649e85b837eb}\label{classv8_1_1PersistentValueMapBase_ade5c5db2a968fdabe073649e85b837eb}} 
+Get value stored in map and set it in return\+Value. Return true if a value was found. 
+
+Definition at line 192 of file v8-\/util.\+h.
+
+\mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_ade5c5db2a968fdabe073649e85b837eb}\label{classv8_1_1PersistentValueMapBase_ade5c5db2a968fdabe073649e85b837eb}} 
 \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Size@{Size}}
 \index{Size@{Size}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
 \subsubsection{\texorpdfstring{Size()}{Size()}}
@@ -152,6 +192,10 @@ Get value stored in map and set it in return\+Value. Return true if a value was 
 size\+\_\+t \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Return size of the map. 
+
+Definition at line 167 of file v8-\/util.\+h.
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

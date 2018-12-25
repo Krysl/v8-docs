@@ -4,7 +4,7 @@ var searchData=
   ['sample',['Sample',['../structv8_1_1AllocationProfile_1_1Sample.html',1,'v8::AllocationProfile']]],
   ['sample_5fid',['sample_id',['../structv8_1_1AllocationProfile_1_1Sample.html#afc21641115d4a9684363ac873750422c',1,'v8::AllocationProfile::Sample']]],
   ['sampleinfo',['SampleInfo',['../structv8_1_1SampleInfo.html',1,'v8']]],
-  ['scope',['Scope',['../classv8_1_1Context_1_1Scope.html',1,'v8::Context::Scope'],['../classv8_1_1Isolate_1_1Scope.html',1,'v8::Isolate::Scope']]],
+  ['scope',['Scope',['../classv8_1_1Isolate_1_1Scope.html',1,'v8::Isolate::Scope'],['../classv8_1_1Context_1_1Scope.html',1,'v8::Context::Scope']]],
   ['script',['Script',['../classv8_1_1Script.html',1,'v8']]],
   ['script_5fid',['script_id',['../structv8_1_1AllocationProfile_1_1Node.html#a4a746de878d9ad42b32fda4c365b98fb',1,'v8::AllocationProfile::Node']]],
   ['script_5fname',['script_name',['../structv8_1_1AllocationProfile_1_1Node.html#acd6567ac06a0bae713390559128e9c62',1,'v8::AllocationProfile::Node']]],

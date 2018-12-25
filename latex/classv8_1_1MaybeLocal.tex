@@ -29,6 +29,10 @@ A Maybe\+Local$<$$>$ is a wrapper around Local$<$$>$ that enforces a check wheth
 
 If an A\+PI method returns a Maybe\+Local$<$$>$, the A\+PI method can potentially fail either because an exception is thrown, or because an exception is pending, e.\+g. because a previous A\+PI call threw an exception that hasn\textquotesingle{}t been caught yet, or because a Terminate\+Execution exception was thrown. In that case, an empty \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}} is returned. 
 
+Definition at line 87 of file v8.\+h.
+
+
+
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classv8_1_1MaybeLocal_ad99cb1e7ac1a4eac34c144faa4262407}\label{classv8_1_1MaybeLocal_ad99cb1e7ac1a4eac34c144faa4262407}} 
 \index{v8\+::\+Maybe\+Local@{v8\+::\+Maybe\+Local}!From\+Maybe@{From\+Maybe}}
@@ -38,7 +42,11 @@ If an A\+PI method returns a Maybe\+Local$<$$>$, the A\+PI method can potentiall
 template$<$class S $>$ \\
 V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$S$>$ \mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ T $>$\+::From\+Maybe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ S $>$}]{default\+\_\+value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Converts this Maybe\+Local$<$$>$ to a Local$<$$>$, using a default value if this Maybe\+Local$<$$>$ is empty. \mbox{\Hypertarget{classv8_1_1MaybeLocal_aa12fc83adccbf02f502a2aaeed9c32ab}\label{classv8_1_1MaybeLocal_aa12fc83adccbf02f502a2aaeed9c32ab}} 
+Converts this Maybe\+Local$<$$>$ to a Local$<$$>$, using a default value if this Maybe\+Local$<$$>$ is empty. 
+
+Definition at line 363 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1MaybeLocal_aa12fc83adccbf02f502a2aaeed9c32ab}\label{classv8_1_1MaybeLocal_aa12fc83adccbf02f502a2aaeed9c32ab}} 
 \index{v8\+::\+Maybe\+Local@{v8\+::\+Maybe\+Local}!To\+Local@{To\+Local}}
 \index{To\+Local@{To\+Local}!v8\+::\+Maybe\+Local@{v8\+::\+Maybe\+Local}}
 \subsubsection{\texorpdfstring{To\+Local()}{ToLocal()}}
@@ -46,7 +54,11 @@ Converts this Maybe\+Local$<$$>$ to a Local$<$$>$, using a default value if this
 template$<$class S $>$ \\
 V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT V8\+\_\+\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ T $>$\+::To\+Local (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ S $>$ $\ast$}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Converts this Maybe\+Local$<$$>$ to a Local$<$$>$. If this Maybe\+Local$<$$>$ is empty, $\vert$false$\vert$ is returned and $\vert$out$\vert$ is left untouched. \mbox{\Hypertarget{classv8_1_1MaybeLocal_a9b2c9d50fca5897e3a03fd4c25d12415}\label{classv8_1_1MaybeLocal_a9b2c9d50fca5897e3a03fd4c25d12415}} 
+Converts this Maybe\+Local$<$$>$ to a Local$<$$>$. If this Maybe\+Local$<$$>$ is empty, $\vert$false$\vert$ is returned and $\vert$out$\vert$ is left untouched. 
+
+Definition at line 347 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1MaybeLocal_a9b2c9d50fca5897e3a03fd4c25d12415}\label{classv8_1_1MaybeLocal_a9b2c9d50fca5897e3a03fd4c25d12415}} 
 \index{v8\+::\+Maybe\+Local@{v8\+::\+Maybe\+Local}!To\+Local\+Checked@{To\+Local\+Checked}}
 \index{To\+Local\+Checked@{To\+Local\+Checked}!v8\+::\+Maybe\+Local@{v8\+::\+Maybe\+Local}}
 \subsubsection{\texorpdfstring{To\+Local\+Checked()}{ToLocalChecked()}}
@@ -54,6 +66,10 @@ Converts this Maybe\+Local$<$$>$ to a Local$<$$>$. If this Maybe\+Local$<$$>$ is
 \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ \mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ T $>$\+::To\+Local\+Checked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Converts this Maybe\+Local$<$$>$ to a Local$<$$>$. If this Maybe\+Local$<$$>$ is empty, V8 will crash the process. 
+
+Definition at line 9402 of file v8.\+h.
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

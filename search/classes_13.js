@@ -6,7 +6,7 @@ var searchData=
   ['v8inspectorsession',['V8InspectorSession',['../classv8__inspector_1_1V8InspectorSession.html',1,'v8_inspector']]],
   ['v8stacktrace',['V8StackTrace',['../classv8__inspector_1_1V8StackTrace.html',1,'v8_inspector']]],
   ['v8stacktraceid',['V8StackTraceId',['../structv8__inspector_1_1V8StackTraceId.html',1,'v8_inspector']]],
-  ['value',['Value',['../classv8_1_1String_1_1Value.html',1,'v8::String::Value'],['../classv8_1_1Value.html',1,'v8::Value']]],
+  ['value',['Value',['../classv8_1_1Value.html',1,'v8::Value'],['../classv8_1_1String_1_1Value.html',1,'v8::String::Value']]],
   ['valuedeserializer',['ValueDeserializer',['../classv8_1_1ValueDeserializer.html',1,'v8']]],
   ['valueserializer',['ValueSerializer',['../classv8_1_1ValueSerializer.html',1,'v8']]]
 ];

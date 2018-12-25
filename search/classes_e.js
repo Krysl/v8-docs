@@ -16,9 +16,6 @@ var searchData=
   ['promise',['Promise',['../classv8_1_1Promise.html',1,'v8']]],
   ['propertycallbackinfo',['PropertyCallbackInfo',['../classv8_1_1PropertyCallbackInfo.html',1,'v8']]],
   ['propertycallbackinfo_3c_20array_20_3e',['PropertyCallbackInfo&lt; Array &gt;',['../classv8_1_1PropertyCallbackInfo.html',1,'v8']]],
-  ['propertycallbackinfo_3c_20boolean_20_3e',['PropertyCallbackInfo&lt; Boolean &gt;',['../classv8_1_1PropertyCallbackInfo.html',1,'v8']]],
-  ['propertycallbackinfo_3c_20integer_20_3e',['PropertyCallbackInfo&lt; Integer &gt;',['../classv8_1_1PropertyCallbackInfo.html',1,'v8']]],
-  ['propertycallbackinfo_3c_20value_20_3e',['PropertyCallbackInfo&lt; Value &gt;',['../classv8_1_1PropertyCallbackInfo.html',1,'v8']]],
   ['propertydescriptor',['PropertyDescriptor',['../classv8_1_1PropertyDescriptor.html',1,'v8']]],
   ['proxy',['Proxy',['../classv8_1_1Proxy.html',1,'v8']]]
 ];

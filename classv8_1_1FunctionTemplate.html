@@ -194,7 +194,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ObjectTemplate</b></
 <div class="fragment"><div class="line">FunctionTemplate Parent  -&gt; Parent() . prototype -&gt; { }</div><div class="line">  ^                                                  ^</div><div class="line">  | <a class="code" href="classv8_1_1FunctionTemplate.html#abc11c462facf11bafd541892815c5425">Inherit</a>(Parent)                                  | .__proto__</div><div class="line">  |                                                  |</div><div class="line">FunctionTemplate Child   -&gt; Child()  . prototype -&gt; { }</div></div><!-- fragment --><p>A <a class="el" href="classv8_1_1FunctionTemplate.html">FunctionTemplate</a> 'Child' inherits from 'Parent', the prototype object of the Child() function has <b>proto</b> pointing to the Parent() function's prototype object. An instance of the Child function has all properties on Parent's instance templates.</p>
 <p>Let Parent be the <a class="el" href="classv8_1_1FunctionTemplate.html">FunctionTemplate</a> initialized in the previous section and create a Child <a class="el" href="classv8_1_1FunctionTemplate.html">FunctionTemplate</a> by:</p>
 <div class="fragment"><div class="line">Local&lt;FunctionTemplate&gt; parent = t;</div><div class="line">Local&lt;FunctionTemplate&gt; child = <a class="code" href="classv8_1_1FunctionTemplate.html#a3b675b8327f08a7c6a4c4d9dce5cb3b3">FunctionTemplate::New</a>();</div><div class="line">child-&gt;Inherit(parent);</div><div class="line"></div><div class="line">Local&lt;Function&gt; child_function = child-&gt;GetFunction();</div><div class="line">Local&lt;Object&gt; child_instance = child_function-&gt;NewInstance();</div></div><!-- fragment --><p>The Child function and Child instance will have the following properties:</p>
-<div class="fragment"><div class="line">child_func.prototype.__proto__ == <span class="keyword">function</span>.prototype;</div><div class="line">child_instance.instance_accessor calls <span class="stringliteral">&#39;InstanceAccessorCallback&#39;</span></div><div class="line">child_instance.instance_property == 3;</div></div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="fragment"><div class="line">child_func.prototype.__proto__ == <span class="keyword">function</span>.prototype;</div><div class="line">child_instance.instance_accessor calls <span class="stringliteral">&#39;InstanceAccessorCallback&#39;</span></div><div class="line">child_instance.instance_property == 3;</div></div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05718">5718</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="acd9eaca4c7d6de89949b8e1c41f4ba46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd9eaca4c7d6de89949b8e1c41f4ba46">&#9670;&nbsp;</a></span>FromSnapshot()</h2>
 
@@ -664,7 +666,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ObjectTemplate</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1FunctionTemplate.html">FunctionTemplate</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 13:42:23 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:17:07 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

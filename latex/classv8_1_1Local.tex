@@ -131,6 +131,10 @@ There are two types of handles\+: local and persistent handles.
 
 It is safe to extract the object stored in the handle by dereferencing the handle (for instance, to extract the Object$\ast$ from a Local$<$\+Object$>$); the value will still be governed by a handle behind the scenes and the same rules apply to these values as to their handles. 
 
+Definition at line 85 of file v8.\+h.
+
+
+
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classv8_1_1Local_a18d761713c1062a38f58a568fffe8f80}\label{classv8_1_1Local_a18d761713c1062a38f58a568fffe8f80}} 
 \index{v8\+::\+Local@{v8\+::\+Local}!Local@{Local}}
@@ -142,6 +146,10 @@ V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ T
 
 This check fails when trying to convert between incompatible handles. For example, converting from a Local$<$\+String$>$ to a Local$<$\+Number$>$.
 
+Definition at line 182 of file v8.\+h.
+
+
+
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classv8_1_1Local_afa242d21780a729341644a615c4e6ea1}\label{classv8_1_1Local_afa242d21780a729341644a615c4e6ea1}} 
 \index{v8\+::\+Local@{v8\+::\+Local}!As@{As}}
@@ -151,7 +159,11 @@ This check fails when trying to convert between incompatible handles. For exampl
 template$<$class S $>$ \\
 V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$S$>$ \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ T $>$\+::As (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Calling this is equivalent to \mbox{\hyperlink{classv8_1_1Local_a95c8aa28ad098dd160ddd8cb60377bd6}{Local$<$\+S$>$\+::\+Cast()}}. In particular, this is only valid if the handle actually refers to a value of the target type. \mbox{\Hypertarget{classv8_1_1Local_a95c8aa28ad098dd160ddd8cb60377bd6}\label{classv8_1_1Local_a95c8aa28ad098dd160ddd8cb60377bd6}} 
+Calling this is equivalent to \mbox{\hyperlink{classv8_1_1Local_a95c8aa28ad098dd160ddd8cb60377bd6}{Local$<$\+S$>$\+::\+Cast()}}. In particular, this is only valid if the handle actually refers to a value of the target type. 
+
+Definition at line 266 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1Local_a95c8aa28ad098dd160ddd8cb60377bd6}\label{classv8_1_1Local_a95c8aa28ad098dd160ddd8cb60377bd6}} 
 \index{v8\+::\+Local@{v8\+::\+Local}!Cast@{Cast}}
 \index{Cast@{Cast}!v8\+::\+Local@{v8\+::\+Local}}
 \subsubsection{\texorpdfstring{Cast()}{Cast()}}
@@ -159,28 +171,44 @@ Calling this is equivalent to \mbox{\hyperlink{classv8_1_1Local_a95c8aa28ad098dd
 template$<$class S $>$ \\
 static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$T$>$ \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ T $>$\+::Cast (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ S $>$}]{that }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
-Cast a handle to a subclass, e.\+g. \mbox{\hyperlink{classv8_1_1Local}{Local$<$\+Value$>$}} to Local$<$\+Object$>$. This is only valid if the handle actually refers to a value of the target type. \mbox{\Hypertarget{classv8_1_1Local_a6fcf63af6bdd697ddd7c3acd16c69899}\label{classv8_1_1Local_a6fcf63af6bdd697ddd7c3acd16c69899}} 
+Cast a handle to a subclass, e.\+g. Local$<$\+Value$>$ to Local$<$\+Object$>$. This is only valid if the handle actually refers to a value of the target type. 
+
+Definition at line 251 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1Local_a6fcf63af6bdd697ddd7c3acd16c69899}\label{classv8_1_1Local_a6fcf63af6bdd697ddd7c3acd16c69899}} 
 \index{v8\+::\+Local@{v8\+::\+Local}!Clear@{Clear}}
 \index{Clear@{Clear}!v8\+::\+Local@{v8\+::\+Local}}
 \subsubsection{\texorpdfstring{Clear()}{Clear()}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 V8\+\_\+\+I\+N\+L\+I\+NE void \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ T $>$\+::Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the handle to be empty. \mbox{\hyperlink{classv8_1_1Local_aeec81dfca98e0d5b2f26ae13c2d141f4}{Is\+Empty()}} will then return true. \mbox{\Hypertarget{classv8_1_1Local_aeec81dfca98e0d5b2f26ae13c2d141f4}\label{classv8_1_1Local_aeec81dfca98e0d5b2f26ae13c2d141f4}} 
+Sets the handle to be empty. \mbox{\hyperlink{classv8_1_1Local_aeec81dfca98e0d5b2f26ae13c2d141f4}{Is\+Empty()}} will then return true. 
+
+Definition at line 200 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1Local_aeec81dfca98e0d5b2f26ae13c2d141f4}\label{classv8_1_1Local_aeec81dfca98e0d5b2f26ae13c2d141f4}} 
 \index{v8\+::\+Local@{v8\+::\+Local}!Is\+Empty@{Is\+Empty}}
 \index{Is\+Empty@{Is\+Empty}!v8\+::\+Local@{v8\+::\+Local}}
 \subsubsection{\texorpdfstring{Is\+Empty()}{IsEmpty()}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 V8\+\_\+\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ T $>$\+::Is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Returns true if the handle is empty. \mbox{\Hypertarget{classv8_1_1Local_a1b3c386fb10d9e8f67aecec9174de1fa}\label{classv8_1_1Local_a1b3c386fb10d9e8f67aecec9174de1fa}} 
+Returns true if the handle is empty. 
+
+Definition at line 195 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1Local_a1b3c386fb10d9e8f67aecec9174de1fa}\label{classv8_1_1Local_a1b3c386fb10d9e8f67aecec9174de1fa}} 
 \index{v8\+::\+Local@{v8\+::\+Local}!New@{New}}
 \index{New@{New}!v8\+::\+Local@{v8\+::\+Local}}
 \subsubsection{\texorpdfstring{New()}{New()}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ T $>$\+::New (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$}]{that }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Create a local handle for the content of another handle. The referee is kept alive by the local handle even when the original handle is destroyed/disposed. \mbox{\Hypertarget{classv8_1_1Local_a3b2ae1c0415d319099ebc2fd059dbb10}\label{classv8_1_1Local_a3b2ae1c0415d319099ebc2fd059dbb10}} 
+Create a local handle for the content of another handle. The referee is kept alive by the local handle even when the original handle is destroyed/disposed. 
+
+Definition at line 9365 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1Local_a3b2ae1c0415d319099ebc2fd059dbb10}\label{classv8_1_1Local_a3b2ae1c0415d319099ebc2fd059dbb10}} 
 \index{v8\+::\+Local@{v8\+::\+Local}!operator"!=@{operator"!=}}
 \index{operator"!=@{operator"!=}!v8\+::\+Local@{v8\+::\+Local}}
 \subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
@@ -188,7 +216,11 @@ Create a local handle for the content of another handle. The referee is kept ali
 template$<$class S $>$ \\
 V8\+\_\+\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ S $>$ \&}]{that }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Checks whether two handles are different. Returns true if only one of the handles is empty, or if the objects to which they refer are different. The handles\textquotesingle{} references are not checked. \mbox{\Hypertarget{classv8_1_1Local_a0dfaa25015487674f568a4e1cd0be48c}\label{classv8_1_1Local_a0dfaa25015487674f568a4e1cd0be48c}} 
+Checks whether two handles are different. Returns true if only one of the handles is empty, or if the objects to which they refer are different. The handles\textquotesingle{} references are not checked. 
+
+Definition at line 237 of file v8.\+h.
+
+\mbox{\Hypertarget{classv8_1_1Local_a0dfaa25015487674f568a4e1cd0be48c}\label{classv8_1_1Local_a0dfaa25015487674f568a4e1cd0be48c}} 
 \index{v8\+::\+Local@{v8\+::\+Local}!operator==@{operator==}}
 \index{operator==@{operator==}!v8\+::\+Local@{v8\+::\+Local}}
 \subsubsection{\texorpdfstring{operator==()}{operator==()}}
@@ -197,6 +229,10 @@ template$<$class S $>$ \\
 V8\+\_\+\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ S $>$ \&}]{that }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 Checks whether two handles are the same. Returns true if both are empty, or if the objects to which they refer are identical. The handles\textquotesingle{} references are not checked. 
+
+Definition at line 213 of file v8.\+h.
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

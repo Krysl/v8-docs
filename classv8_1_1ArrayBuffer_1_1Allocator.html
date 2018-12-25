@@ -121,6 +121,8 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>A thread-safe allocator that V8 uses to allocate |ArrayBuffer|'s memory. The allocator is a global V8 setting. It has to be set via <a class="el" href="structv8_1_1Isolate_1_1CreateParams.html">Isolate::CreateParams</a>.</p>
 <p>Memory allocated through this allocator by V8 is accounted for as external memory by V8. Note that V8 keeps track of the memory for all internalized |ArrayBuffer|s. Responsibility for tracking external memory (using Isolate::AdjustAmountOfExternalAllocatedMemory) is handed over to the embedder upon externalization and taken over upon internalization (creating an internalized buffer from an existing buffer).</p>
 <p>Note that it is unsafe to call back into V8 from any of the allocator functions. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l04513">4513</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ab106d1fbad7be9f6fd8b0f5c550ac59e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab106d1fbad7be9f6fd8b0f5c550ac59e">&#9670;&nbsp;</a></span>AllocationMode</h2>
@@ -142,6 +144,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p><a class="el" href="classv8_1_1ArrayBuffer.html">ArrayBuffer</a> allocation mode. kNormal is a malloc/free style allocation, while kReservation is for larger allocations with the ability to set access permissions. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l04540">4540</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -273,7 +277,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1ArrayBuffer.html">ArrayBuffer</a></li><li class="navelem"><a class="el" href="classv8_1_1ArrayBuffer_1_1Allocator.html">Allocator</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 13:42:18 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:17:01 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

@@ -25,6 +25,10 @@ virtual size\+\_\+t \mbox{\hyperlink{classv8_1_1String_1_1ExternalOneByteStringR
 \subsection{Detailed Description}
 An \mbox{\hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource}{External\+One\+Byte\+String\+Resource}} is a wrapper around an one-\/byte string buffer that resides outside V8\textquotesingle{}s heap. Implement an \mbox{\hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource}{External\+One\+Byte\+String\+Resource}} to manage the life cycle of the underlying buffer. Note that the string data must be immutable and that the data must be Latin-\/1 and not U\+T\+F-\/8, which would require special treatment internally in the engine and do not allow efficient indexing. Use String\+::\+New or convert to 16 bit data for non-\/\+Latin1. 
 
+Definition at line 2728 of file v8.\+h.
+
+
+
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classv8_1_1String_1_1ExternalOneByteStringResource_ac75c47722e5602b863cbc880dc4f5b7c}\label{classv8_1_1String_1_1ExternalOneByteStringResource_ac75c47722e5602b863cbc880dc4f5b7c}} 
 \index{v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource@{v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource}!````~External\+One\+Byte\+String\+Resource@{$\sim$\+External\+One\+Byte\+String\+Resource}}

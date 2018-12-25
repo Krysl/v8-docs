@@ -42,6 +42,10 @@ Thus, if an embedder wants to provide information about native objects for heap 
 
 V8 takes ownership of \mbox{\hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info}} instances passed to it and keeps them alive only during snapshot collection. Afterwards, they are freed by calling the Dispose class function. 
 
+Definition at line 985 of file v8-\/profiler.\+h.
+
+
+
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_a5011203f7c5949049ba36b8059f03eca}\label{classv8_1_1RetainedObjectInfo_a5011203f7c5949049ba36b8059f03eca}} 
 \index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Dispose@{Dispose}}
@@ -55,13 +59,21 @@ Called by V8 when it no longer needs an instance. \mbox{\Hypertarget{classv8_1_1
 \subsubsection{\texorpdfstring{Get\+Element\+Count()}{GetElementCount()}}
 {\footnotesize\ttfamily virtual intptr\+\_\+t v8\+::\+Retained\+Object\+Info\+::\+Get\+Element\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-Returns element count in case if a global handle retains a subgraph by holding one of its nodes. \mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_adf835370c5516f2a89dd2d3f83dee10b}\label{classv8_1_1RetainedObjectInfo_adf835370c5516f2a89dd2d3f83dee10b}} 
+Returns element count in case if a global handle retains a subgraph by holding one of its nodes. 
+
+Definition at line 1020 of file v8-\/profiler.\+h.
+
+\mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_adf835370c5516f2a89dd2d3f83dee10b}\label{classv8_1_1RetainedObjectInfo_adf835370c5516f2a89dd2d3f83dee10b}} 
 \index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Get\+Group\+Label@{Get\+Group\+Label}}
 \index{Get\+Group\+Label@{Get\+Group\+Label}!v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}}
 \subsubsection{\texorpdfstring{Get\+Group\+Label()}{GetGroupLabel()}}
 {\footnotesize\ttfamily virtual const char$\ast$ v8\+::\+Retained\+Object\+Info\+::\+Get\+Group\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-Returns human-\/readable group label. It must be a null-\/terminated U\+T\+F-\/8 encoded string. V8 copies its contents during a call to Get\+Group\+Label. Heap snapshot generator will collect all the group names, create top level entries with these names and attach the objects to the corresponding top level group objects. There is a default implementation which is required because embedders don\textquotesingle{}t have their own implementation yet. \mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_a6fdbfa242b95615e63f08433419c8066}\label{classv8_1_1RetainedObjectInfo_a6fdbfa242b95615e63f08433419c8066}} 
+Returns human-\/readable group label. It must be a null-\/terminated U\+T\+F-\/8 encoded string. V8 copies its contents during a call to Get\+Group\+Label. Heap snapshot generator will collect all the group names, create top level entries with these names and attach the objects to the corresponding top level group objects. There is a default implementation which is required because embedders don\textquotesingle{}t have their own implementation yet. 
+
+Definition at line 1014 of file v8-\/profiler.\+h.
+
+\mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_a6fdbfa242b95615e63f08433419c8066}\label{classv8_1_1RetainedObjectInfo_a6fdbfa242b95615e63f08433419c8066}} 
 \index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Get\+Hash@{Get\+Hash}}
 \index{Get\+Hash@{Get\+Hash}!v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}}
 \subsubsection{\texorpdfstring{Get\+Hash()}{GetHash()}}
@@ -79,7 +91,11 @@ Returns human-\/readable label. It must be a null-\/terminated U\+T\+F-\/8 encod
 \subsubsection{\texorpdfstring{Get\+Size\+In\+Bytes()}{GetSizeInBytes()}}
 {\footnotesize\ttfamily virtual intptr\+\_\+t v8\+::\+Retained\+Object\+Info\+::\+Get\+Size\+In\+Bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-Returns embedder\textquotesingle{}s object size in bytes. \mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_a286103bb076c85415919c86b1838c990}\label{classv8_1_1RetainedObjectInfo_a286103bb076c85415919c86b1838c990}} 
+Returns embedder\textquotesingle{}s object size in bytes. 
+
+Definition at line 1023 of file v8-\/profiler.\+h.
+
+\mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_a286103bb076c85415919c86b1838c990}\label{classv8_1_1RetainedObjectInfo_a286103bb076c85415919c86b1838c990}} 
 \index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Is\+Equivalent@{Is\+Equivalent}}
 \index{Is\+Equivalent@{Is\+Equivalent}!v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}}
 \subsubsection{\texorpdfstring{Is\+Equivalent()}{IsEquivalent()}}

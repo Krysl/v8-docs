@@ -233,6 +233,8 @@ class v8::Local&lt; T &gt;</h3>
 <p><a class="el" href="classv8_1_1Local.html">Local</a> handles are light-weight and transient and typically used in local operations. They are managed by HandleScopes. That means that a <a class="el" href="classv8_1_1HandleScope.html">HandleScope</a> must exist on the stack when they are created and that they are only valid inside of the <a class="el" href="classv8_1_1HandleScope.html">HandleScope</a> active during their creation. For passing a local handle to an outer <a class="el" href="classv8_1_1HandleScope.html">HandleScope</a>, an <a class="el" href="classv8_1_1EscapableHandleScope.html">EscapableHandleScope</a> and its Escape() method must be used.</p>
 <p><a class="el" href="classv8_1_1Persistent.html">Persistent</a> handles can be used when storing objects across several independent operations and have to be explicitly deallocated when they're no longer used.</p>
 <p>It is safe to extract the object stored in the handle by dereferencing the handle (for instance, to extract the Object* from a Local&lt;Object&gt;); the value will still be governed by a handle behind the scenes and the same rules apply to these values as to their handles. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l00085">85</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a18d761713c1062a38f58a568fffe8f80"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18d761713c1062a38f58a568fffe8f80">&#9670;&nbsp;</a></span>Local()</h2>
@@ -262,6 +264,8 @@ template&lt;class S &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>This check fails when trying to convert between incompatible handles. For example, converting from a Local&lt;String&gt; to a Local&lt;Number&gt;.</p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l00182">182</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -294,6 +298,8 @@ template&lt;class S &gt; </div>
 </div><div class="memdoc">
 <p>Calling this is equivalent to <a class="el" href="classv8_1_1Local.html#a95c8aa28ad098dd160ddd8cb60377bd6">Local&lt;S&gt;::Cast()</a>. In particular, this is only valid if the handle actually refers to a value of the target type. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l00266">266</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="a95c8aa28ad098dd160ddd8cb60377bd6"></a>
@@ -323,7 +329,9 @@ template&lt;class S &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Cast a handle to a subclass, e.g. <a class="el" href="classv8_1_1Local.html">Local&lt;Value&gt;</a> to Local&lt;Object&gt;. This is only valid if the handle actually refers to a value of the target type. </p>
+<p>Cast a handle to a subclass, e.g. Local&lt;Value&gt; to Local&lt;Object&gt;. This is only valid if the handle actually refers to a value of the target type. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l00251">251</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -353,6 +361,8 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 <p>Sets the handle to be empty. <a class="el" href="classv8_1_1Local.html#aeec81dfca98e0d5b2f26ae13c2d141f4">IsEmpty()</a> will then return true. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l00200">200</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="aeec81dfca98e0d5b2f26ae13c2d141f4"></a>
@@ -380,6 +390,8 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Returns true if the handle is empty. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l00195">195</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -420,6 +432,8 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 <p>Create a local handle for the content of another handle. The referee is kept alive by the local handle even when the original handle is destroyed/disposed. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l09365">9365</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <a id="a3b2ae1c0415d319099ebc2fd059dbb10"></a>
@@ -450,6 +464,8 @@ template&lt;class S &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Checks whether two handles are different. Returns true if only one of the handles is empty, or if the objects to which they refer are different. The handles' references are not checked. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l00237">237</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
 
 </div>
 </div>
@@ -482,6 +498,8 @@ template&lt;class S &gt; </div>
 </div><div class="memdoc">
 <p>Checks whether two handles are the same. Returns true if both are empty, or if the objects to which they refer are identical. The handles' references are not checked. </p>
 
+<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l00213">213</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -493,7 +511,7 @@ template&lt;class S &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1Local.html">Local</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 13:42:25 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:17:11 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
