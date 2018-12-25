@@ -35,11 +35,11 @@ var NAVTREE =
         [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
     ] ],
-    [ "Data Structures", "annotated.html", [
-      [ "Data Structures", "annotated.html", "annotated_dup" ],
-      [ "Data Structure Index", "classes.html", null ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Data Fields", "functions.html", [
+      [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
@@ -57,12 +57,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"classv8_1_1HeapGraphEdge.html#a7d784f0b7a5bf532e9d4ec86bcb94092",
-"classv8_1_1Object.html#aec7375fe34a800baac4e26deb33ccac0",
-"classv8_1_1ReturnValue.html#a0f1cdf01090e6fc957a0081036a55e6b",
-"classv8_1_1Testing.html#a436a1a521a0bc070cc0b46ad7a658575a02088738657125ce78a03ccc3661221d",
-"classv8__inspector_1_1V8InspectorClient.html#a8b47c57ccc57f386570e1148a2efe38a",
-"v8-testing_8h_source.html"
+"classv8_1_1HeapGraphEdge.html#a252500cf4307fe9e4fcb0335a907259bae3470dd36fc8f97e910d8d77decf5695",
+"classv8_1_1Object.html#aebf949a0592cebc144bb2f96bfb7ec72",
+"classv8_1_1ReturnValue.html#a0453174f9d6ab50a5eb657e49ce75fdd",
+"classv8_1_1Testing.html",
+"classv8_1_1platform_1_1tracing_1_1TracingController.html#a3362b081a3ba0eeff68655402d604e8f",
+"structv8_1_1MemoryRange.html#a3dea80a77e98bb0b9ff20fa27cb13280"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

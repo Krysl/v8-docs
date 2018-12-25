@@ -26,6 +26,7 @@ var searchData=
   ['annotatestrongretainer',['AnnotateStrongRetainer',['../classv8_1_1PersistentBase.html#a27ddb6118b13225207e9641c1e6c8c91',1,'v8::PersistentBase']]],
   ['append',['Append',['../classv8_1_1PersistentValueVector.html#a02376c6d16be29084db46f65473477fb',1,'v8::PersistentValueVector::Append(Local&lt; V &gt; value)'],['../classv8_1_1PersistentValueVector.html#ad076923fd0046196670e87e996582546',1,'v8::PersistentValueVector::Append(Global&lt; V &gt; persistent)']]],
   ['appendastraceformat',['AppendAsTraceFormat',['../classv8_1_1ConvertableToTraceFormat.html#a11f3295df2906e09c1f266049d130013',1,'v8::ConvertableToTraceFormat']]],
+  ['argvalue',['ArgValue',['../unionv8_1_1platform_1_1tracing_1_1TraceObject_1_1ArgValue.html',1,'v8::platform::tracing::TraceObject']]],
   ['array',['Array',['../classv8_1_1Array.html',1,'v8']]],
   ['array_5fbuffer_5fallocator',['array_buffer_allocator',['../structv8_1_1Isolate_1_1CreateParams.html#a7c663f70b64290392eeaf164f57585f9',1,'v8::Isolate::CreateParams']]],
   ['arraybuffer',['ArrayBuffer',['../classv8_1_1ArrayBuffer.html',1,'v8']]],

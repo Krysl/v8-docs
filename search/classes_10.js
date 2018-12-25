@@ -3,7 +3,7 @@ var searchData=
   ['safeforterminationscope',['SafeForTerminationScope',['../classv8_1_1Isolate_1_1SafeForTerminationScope.html',1,'v8::Isolate']]],
   ['sample',['Sample',['../structv8_1_1AllocationProfile_1_1Sample.html',1,'v8::AllocationProfile']]],
   ['sampleinfo',['SampleInfo',['../structv8_1_1SampleInfo.html',1,'v8']]],
-  ['scope',['Scope',['../classv8_1_1Isolate_1_1Scope.html',1,'v8::Isolate::Scope'],['../classv8_1_1Context_1_1Scope.html',1,'v8::Context::Scope']]],
+  ['scope',['Scope',['../classv8_1_1Context_1_1Scope.html',1,'v8::Context::Scope'],['../classv8_1_1Isolate_1_1Scope.html',1,'v8::Isolate::Scope']]],
   ['script',['Script',['../classv8_1_1Script.html',1,'v8']]],
   ['scriptcompiler',['ScriptCompiler',['../classv8_1_1ScriptCompiler.html',1,'v8']]],
   ['scriptorigin',['ScriptOrigin',['../classv8_1_1ScriptOrigin.html',1,'v8']]],

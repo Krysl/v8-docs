@@ -1,0 +1,38 @@
+\hypertarget{classv8_1_1platform_1_1tracing_1_1TraceBuffer}{}\section{v8\+:\+:platform\+:\+:tracing\+:\+:Trace\+Buffer Class Reference}
+\label{classv8_1_1platform_1_1tracing_1_1TraceBuffer}\index{v8\+::platform\+::tracing\+::\+Trace\+Buffer@{v8\+::platform\+::tracing\+::\+Trace\+Buffer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceBuffer_a0680714161394e7b93cf2ac32f3d6b72}\label{classv8_1_1platform_1_1tracing_1_1TraceBuffer_a0680714161394e7b93cf2ac32f3d6b72}} 
+virtual \mbox{\hyperlink{classv8_1_1platform_1_1tracing_1_1TraceObject}{Trace\+Object}} $\ast$ {\bfseries Add\+Trace\+Event} (uint64\+\_\+t $\ast$handle)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceBuffer_a9749c2155f2c483625d0242d9a7eb0ec}\label{classv8_1_1platform_1_1tracing_1_1TraceBuffer_a9749c2155f2c483625d0242d9a7eb0ec}} 
+virtual \mbox{\hyperlink{classv8_1_1platform_1_1tracing_1_1TraceObject}{Trace\+Object}} $\ast$ {\bfseries Get\+Event\+By\+Handle} (uint64\+\_\+t handle)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceBuffer_ad16dbfbda98253565b3af122e60aa636}\label{classv8_1_1platform_1_1tracing_1_1TraceBuffer_ad16dbfbda98253565b3af122e60aa636}} 
+virtual bool {\bfseries Flush} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceBuffer_aa5389ad37c2d2c12cdbefba2a45731f1}\label{classv8_1_1platform_1_1tracing_1_1TraceBuffer_aa5389ad37c2d2c12cdbefba2a45731f1}} 
+static \mbox{\hyperlink{classv8_1_1platform_1_1tracing_1_1TraceBuffer}{Trace\+Buffer}} $\ast$ {\bfseries Create\+Trace\+Buffer\+Ring\+Buffer} (size\+\_\+t max\+\_\+chunks, \mbox{\hyperlink{classv8_1_1platform_1_1tracing_1_1TraceWriter}{Trace\+Writer}} $\ast$trace\+\_\+writer)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceBuffer_a4957aae5f855daac2d581de0734f0d49}\label{classv8_1_1platform_1_1tracing_1_1TraceBuffer_a4957aae5f855daac2d581de0734f0d49}} 
+static const size\+\_\+t {\bfseries k\+Ring\+Buffer\+Chunks} = 1024
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 148 of file v8-\/tracing.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/libplatform/v8-\/tracing.\+h\end{DoxyCompactItemize}

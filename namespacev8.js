@@ -8,6 +8,16 @@ var namespacev8 =
       [ "SmiTagging< 4 >", "structv8_1_1internal_1_1SmiTagging_3_014_01_4.html", "structv8_1_1internal_1_1SmiTagging_3_014_01_4" ],
       [ "SmiTagging< 8 >", "structv8_1_1internal_1_1SmiTagging_3_018_01_4.html", "structv8_1_1internal_1_1SmiTagging_3_018_01_4" ]
     ] ],
+    [ "platform", null, [
+      [ "tracing", null, [
+        [ "TraceBuffer", "classv8_1_1platform_1_1tracing_1_1TraceBuffer.html", "classv8_1_1platform_1_1tracing_1_1TraceBuffer" ],
+        [ "TraceBufferChunk", "classv8_1_1platform_1_1tracing_1_1TraceBufferChunk.html", "classv8_1_1platform_1_1tracing_1_1TraceBufferChunk" ],
+        [ "TraceConfig", "classv8_1_1platform_1_1tracing_1_1TraceConfig.html", "classv8_1_1platform_1_1tracing_1_1TraceConfig" ],
+        [ "TraceObject", "classv8_1_1platform_1_1tracing_1_1TraceObject.html", "classv8_1_1platform_1_1tracing_1_1TraceObject" ],
+        [ "TraceWriter", "classv8_1_1platform_1_1tracing_1_1TraceWriter.html", "classv8_1_1platform_1_1tracing_1_1TraceWriter" ],
+        [ "TracingController", "classv8_1_1platform_1_1tracing_1_1TracingController.html", "classv8_1_1platform_1_1tracing_1_1TracingController" ]
+      ] ]
+    ] ],
     [ "AccessorSignature", "classv8_1_1AccessorSignature.html", null ],
     [ "ActivityControl", "classv8_1_1ActivityControl.html", "classv8_1_1ActivityControl" ],
     [ "AlignOfHelper", "classv8_1_1AlignOfHelper.html", null ],
