@@ -66,6 +66,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#friends">Friends</a>  </div>
   <div class="headertitle">
@@ -75,6 +76,12 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="v8_8h_source.html">v8.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aee13ae166dcf8e210c499a81720b436d"><td class="memItemLeft" align="right" valign="top"><a id="aee13ae166dcf8e210c499a81720b436d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>DeleterCallback</b> = void(*)(void *buffer, size_t length, void *info)</td></tr>
+<tr class="separator:aee13ae166dcf8e210c499a81720b436d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6982d157697f42fde9007989c0150d89"><td class="memItemLeft" align="right" valign="top"><a id="a6982d157697f42fde9007989c0150d89"></a>
@@ -92,6 +99,12 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><b>Data</b> () const</
 <tr class="memitem:ac4ca77bb59e6cbb004d9edaa79d30ad6"><td class="memItemLeft" align="right" valign="top"><a id="ac4ca77bb59e6cbb004d9edaa79d30ad6"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>ByteLength</b> () const</td></tr>
 <tr class="separator:ac4ca77bb59e6cbb004d9edaa79d30ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaa11444494fd9ea3c4444a86c4575ff"><td class="memItemLeft" align="right" valign="top"><a id="adaa11444494fd9ea3c4444a86c4575ff"></a>
+DeleterCallback&#160;</td><td class="memItemRight" valign="bottom"><b>Deleter</b> () const</td></tr>
+<tr class="separator:adaa11444494fd9ea3c4444a86c4575ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c7a852906052acc7cda4a8b38a9a241"><td class="memItemLeft" align="right" valign="top"><a id="a2c7a852906052acc7cda4a8b38a9a241"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>DeleterData</b> () const</td></tr>
+<tr class="separator:a2c7a852906052acc7cda4a8b38a9a241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -101,14 +114,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ArrayBuffer</b></td>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The contents of an |ArrayBuffer|. Externalization of |ArrayBuffer| returns an instance of this class, populated, with a pointer to data and byte length.</p>
-<p>The <a class="el" href="classv8_1_1Data.html">Data</a> pointer of <a class="el" href="classv8_1_1ArrayBuffer_1_1Contents.html">ArrayBuffer::Contents</a> is always allocated with <a class="el" href="classv8_1_1ArrayBuffer_1_1Allocator.html#a106b0d80120ed04fe9b9675e96f0340b">Allocator::Allocate</a> that is set via <a class="el" href="structv8_1_1Isolate_1_1CreateParams.html">Isolate::CreateParams</a>. </p>
+<p>The <a class="el" href="classv8_1_1Data.html">Data</a> pointer of <a class="el" href="classv8_1_1ArrayBuffer_1_1Contents.html">ArrayBuffer::Contents</a> must be freed using the provided deleter, which will call <a class="el" href="classv8_1_1ArrayBuffer_1_1Allocator.html#a419f59d2a103a5a8863809d7977c9cd8">ArrayBuffer::Allocator::Free</a> if the buffer was allocated with ArraryBuffer::Allocator::Allocate. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>v8/include/<a class="el" href="v8_8h_source.html">v8.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 12 2018 15:46:59 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 25 2018 13:21:53 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

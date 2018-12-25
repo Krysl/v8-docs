@@ -7,6 +7,6 @@ var searchData=
   ['uint8clampedarray',['Uint8ClampedArray',['../classv8_1_1Uint8ClampedArray.html',1,'v8']]],
   ['unboundmodulescript',['UnboundModuleScript',['../classv8_1_1UnboundModuleScript.html',1,'v8']]],
   ['unboundscript',['UnboundScript',['../classv8_1_1UnboundScript.html',1,'v8']]],
-  ['unlocker',['Unlocker',['../classv8_1_1Unlocker.html',1,'v8']]],
+  ['unwindstate',['UnwindState',['../structv8_1_1UnwindState.html',1,'v8']]],
   ['utf8value',['Utf8Value',['../classv8_1_1String_1_1Utf8Value.html',1,'v8::String']]]
 ];

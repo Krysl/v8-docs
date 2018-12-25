@@ -28,11 +28,11 @@ static \mbox{\hyperlink{classv8_1_1ArrayBuffer_1_1Allocator}{Allocator}} $\ast$ 
 
 
 \subsection{Detailed Description}
-A thread-\/safe allocator that \mbox{\hyperlink{classv8_1_1V8}{V8}} uses to allocate $\vert$\+Array\+Buffer$\vert$\textquotesingle{}s memory. The allocator is a global \mbox{\hyperlink{classv8_1_1V8}{V8}} setting. It has to be set via \mbox{\hyperlink{structv8_1_1Isolate_1_1CreateParams}{Isolate\+::\+Create\+Params}}.
+A thread-\/safe allocator that V8 uses to allocate $\vert$\+Array\+Buffer$\vert$\textquotesingle{}s memory. The allocator is a global V8 setting. It has to be set via \mbox{\hyperlink{structv8_1_1Isolate_1_1CreateParams}{Isolate\+::\+Create\+Params}}.
 
-Memory allocated through this allocator by \mbox{\hyperlink{classv8_1_1V8}{V8}} is accounted for as external memory by \mbox{\hyperlink{classv8_1_1V8}{V8}}. Note that \mbox{\hyperlink{classv8_1_1V8}{V8}} keeps track of the memory for all internalized $\vert$\+Array\+Buffer$\vert$s. Responsibility for tracking external memory (using \mbox{\hyperlink{classv8_1_1Isolate_aaeda5fa60961a3d9d476c46200e30711}{Isolate\+::\+Adjust\+Amount\+Of\+External\+Allocated\+Memory}}) is handed over to the embedder upon externalization and taken over upon internalization (creating an internalized buffer from an existing buffer).
+Memory allocated through this allocator by V8 is accounted for as external memory by V8. Note that V8 keeps track of the memory for all internalized $\vert$\+Array\+Buffer$\vert$s. Responsibility for tracking external memory (using Isolate\+::\+Adjust\+Amount\+Of\+External\+Allocated\+Memory) is handed over to the embedder upon externalization and taken over upon internalization (creating an internalized buffer from an existing buffer).
 
-Note that it is unsafe to call back into \mbox{\hyperlink{classv8_1_1V8}{V8}} from any of the allocator functions. 
+Note that it is unsafe to call back into V8 from any of the allocator functions. 
 
 \subsection{Member Enumeration Documentation}
 \mbox{\Hypertarget{classv8_1_1ArrayBuffer_1_1Allocator_ab106d1fbad7be9f6fd8b0f5c550ac59e}\label{classv8_1_1ArrayBuffer_1_1Allocator_ab106d1fbad7be9f6fd8b0f5c550ac59e}} 

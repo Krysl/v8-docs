@@ -94,18 +94,18 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPrivate</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Private.html">Private</a> &gt; name, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Data.html">Data</a> &gt; value, <a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87">PropertyAttribute</a> attributes=<a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df">None</a>)</td></tr>
 <tr class="separator:a91214bdb0cc2d6534c81742e67fc4cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc2fc88ac8df0d12b44d4c16ff0128cc"><td class="memItemLeft" align="right" valign="top"><a id="adc2fc88ac8df0d12b44d4c16ff0128cc"></a>
-V8_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate, const char *name, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Data.html">Data</a> &gt; value)</td></tr>
+V8_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (Isolate *isolate, const char *name, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Data.html">Data</a> &gt; value)</td></tr>
 <tr class="separator:adc2fc88ac8df0d12b44d4c16ff0128cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c702a91581d6cf8cfb72c24ba8b8d17"><td class="memItemLeft" align="right" valign="top"><a id="a5c702a91581d6cf8cfb72c24ba8b8d17"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAccessorProperty</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt; name, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1FunctionTemplate.html">FunctionTemplate</a> &gt; getter=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1FunctionTemplate.html">FunctionTemplate</a> &gt;(), <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1FunctionTemplate.html">FunctionTemplate</a> &gt; setter=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1FunctionTemplate.html">FunctionTemplate</a> &gt;(), <a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87">PropertyAttribute</a> attribute=<a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df">None</a>, <a class="el" href="namespacev8.html#a31d8355cb043d7d2dda3f4a52760b64e">AccessControl</a> settings=DEFAULT)</td></tr>
 <tr class="separator:a5c702a91581d6cf8cfb72c24ba8b8d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6820f70079745cef28d5291ff21df29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Template.html#af6820f70079745cef28d5291ff21df29">SetNativeDataProperty</a> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt; name, <a class="el" href="namespacev8.html#a722613c87061708a4f1aa050d095f868">AccessorGetterCallback</a> getter, AccessorSetterCallback setter=0, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; data=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;(), <a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87">PropertyAttribute</a> attribute=<a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df">None</a>, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt; signature=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt;(), <a class="el" href="namespacev8.html#a31d8355cb043d7d2dda3f4a52760b64e">AccessControl</a> settings=DEFAULT, <a class="el" href="namespacev8.html#a29711319c2b9fc7716d65faee2f7b9cb">SideEffectType</a> getter_side_effect_type=SideEffectType::kHasSideEffect)</td></tr>
-<tr class="separator:af6820f70079745cef28d5291ff21df29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf16e2f0650da7996ccdffb997401040"><td class="memItemLeft" align="right" valign="top"><a id="adf16e2f0650da7996ccdffb997401040"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNativeDataProperty</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt; name, AccessorNameGetterCallback getter, AccessorNameSetterCallback setter=0, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; data=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;(), <a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87">PropertyAttribute</a> attribute=<a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df">None</a>, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt; signature=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt;(), <a class="el" href="namespacev8.html#a31d8355cb043d7d2dda3f4a52760b64e">AccessControl</a> settings=DEFAULT, <a class="el" href="namespacev8.html#a29711319c2b9fc7716d65faee2f7b9cb">SideEffectType</a> getter_side_effect_type=SideEffectType::kHasSideEffect)</td></tr>
-<tr class="separator:adf16e2f0650da7996ccdffb997401040"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a983acad576914228a522965fac87c786"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Template.html#a983acad576914228a522965fac87c786">SetLazyDataProperty</a> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt; name, AccessorNameGetterCallback getter, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; data=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;(), <a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87">PropertyAttribute</a> attribute=<a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df">None</a>, <a class="el" href="namespacev8.html#a29711319c2b9fc7716d65faee2f7b9cb">SideEffectType</a> getter_side_effect_type=SideEffectType::kHasSideEffect)</td></tr>
-<tr class="separator:a983acad576914228a522965fac87c786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a771f6ca09e5c4789306f8638de5b99ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Template.html#a771f6ca09e5c4789306f8638de5b99ed">SetNativeDataProperty</a> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt; name, <a class="el" href="namespacev8.html#a722613c87061708a4f1aa050d095f868">AccessorGetterCallback</a> getter, AccessorSetterCallback setter=nullptr, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; data=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;(), <a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87">PropertyAttribute</a> attribute=<a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df">None</a>, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt; signature=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt;(), <a class="el" href="namespacev8.html#a31d8355cb043d7d2dda3f4a52760b64e">AccessControl</a> settings=DEFAULT, <a class="el" href="namespacev8.html#a29711319c2b9fc7716d65faee2f7b9cb">SideEffectType</a> getter_side_effect_type=SideEffectType::kHasSideEffect, <a class="el" href="namespacev8.html#a29711319c2b9fc7716d65faee2f7b9cb">SideEffectType</a> setter_side_effect_type=SideEffectType::kHasSideEffect)</td></tr>
+<tr class="separator:a771f6ca09e5c4789306f8638de5b99ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae547de668df4ca1c90a637effd86dad8"><td class="memItemLeft" align="right" valign="top"><a id="ae547de668df4ca1c90a637effd86dad8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNativeDataProperty</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt; name, AccessorNameGetterCallback getter, AccessorNameSetterCallback setter=nullptr, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; data=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;(), <a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87">PropertyAttribute</a> attribute=<a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df">None</a>, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt; signature=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt;(), <a class="el" href="namespacev8.html#a31d8355cb043d7d2dda3f4a52760b64e">AccessControl</a> settings=DEFAULT, <a class="el" href="namespacev8.html#a29711319c2b9fc7716d65faee2f7b9cb">SideEffectType</a> getter_side_effect_type=SideEffectType::kHasSideEffect, <a class="el" href="namespacev8.html#a29711319c2b9fc7716d65faee2f7b9cb">SideEffectType</a> setter_side_effect_type=SideEffectType::kHasSideEffect)</td></tr>
+<tr class="separator:ae547de668df4ca1c90a637effd86dad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab306ba858f4e71a25ebba4380ea5791f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Template.html#ab306ba858f4e71a25ebba4380ea5791f">SetLazyDataProperty</a> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt; name, AccessorNameGetterCallback getter, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; data=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;(), <a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87">PropertyAttribute</a> attribute=<a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df">None</a>, <a class="el" href="namespacev8.html#a29711319c2b9fc7716d65faee2f7b9cb">SideEffectType</a> getter_side_effect_type=SideEffectType::kHasSideEffect, <a class="el" href="namespacev8.html#a29711319c2b9fc7716d65faee2f7b9cb">SideEffectType</a> setter_side_effect_type=SideEffectType::kHasSideEffect)</td></tr>
+<tr class="separator:ab306ba858f4e71a25ebba4380ea5791f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef172ef714818a210d815de389a5ab77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Template.html#aef172ef714818a210d815de389a5ab77">SetIntrinsicDataProperty</a> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt; name, Intrinsic intrinsic, <a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87">PropertyAttribute</a> attribute=<a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df">None</a>)</td></tr>
 <tr class="separator:aef172ef714818a210d815de389a5ab77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -192,8 +192,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
 
 </div>
 </div>
-<a id="a983acad576914228a522965fac87c786"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a983acad576914228a522965fac87c786">&#9670;&nbsp;</a></span>SetLazyDataProperty()</h2>
+<a id="ab306ba858f4e71a25ebba4380ea5791f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab306ba858f4e71a25ebba4380ea5791f">&#9670;&nbsp;</a></span>SetLazyDataProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +226,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacev8.html#a29711319c2b9fc7716d65faee2f7b9cb">SideEffectType</a>&#160;</td>
-          <td class="paramname"><em>getter_side_effect_type</em> = <code>SideEffectType::kHasSideEffect</code>&#160;</td>
+          <td class="paramname"><em>getter_side_effect_type</em> = <code>SideEffectType::kHasSideEffect</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacev8.html#a29711319c2b9fc7716d65faee2f7b9cb">SideEffectType</a>&#160;</td>
+          <td class="paramname"><em>setter_side_effect_type</em> = <code>SideEffectType::kHasSideEffect</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -235,12 +241,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Like SetNativeDataProperty, but <a class="el" href="classv8_1_1V8.html">V8</a> will replace the native data property with a real data property on first access. </p>
+<p>Like SetNativeDataProperty, but V8 will replace the native data property with a real data property on first access. </p>
 
 </div>
 </div>
-<a id="af6820f70079745cef28d5291ff21df29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6820f70079745cef28d5291ff21df29">&#9670;&nbsp;</a></span>SetNativeDataProperty()</h2>
+<a id="a771f6ca09e5c4789306f8638de5b99ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a771f6ca09e5c4789306f8638de5b99ed">&#9670;&nbsp;</a></span>SetNativeDataProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +267,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">AccessorSetterCallback&#160;</td>
-          <td class="paramname"><em>setter</em> = <code>0</code>, </td>
+          <td class="paramname"><em>setter</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -291,7 +297,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacev8.html#a29711319c2b9fc7716d65faee2f7b9cb">SideEffectType</a>&#160;</td>
-          <td class="paramname"><em>getter_side_effect_type</em> = <code>SideEffectType::kHasSideEffect</code>&#160;</td>
+          <td class="paramname"><em>getter_side_effect_type</em> = <code>SideEffectType::kHasSideEffect</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacev8.html#a29711319c2b9fc7716d65faee2f7b9cb">SideEffectType</a>&#160;</td>
+          <td class="paramname"><em>setter_side_effect_type</em> = <code>SideEffectType::kHasSideEffect</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -322,7 +334,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 12 2018 15:47:08 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 25 2018 13:22:08 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

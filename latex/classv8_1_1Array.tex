@@ -19,7 +19,9 @@ uint32\+\_\+t {\bfseries Length} () const
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Array}{Array}} $>$ \mbox{\hyperlink{classv8_1_1Array_a892f18fe6a25dfc0bc7b435759a30226}{New}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, int length=0)
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Array}{Array}} $>$ \mbox{\hyperlink{classv8_1_1Array_a892f18fe6a25dfc0bc7b435759a30226}{New}} (Isolate $\ast$isolate, int length=0)
+\item 
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Array}{Array}} $>$ \mbox{\hyperlink{classv8_1_1Array_a748ab878a787989d9970d6e647677974}{New}} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ $\ast$elements, size\+\_\+t length)
 \item 
 \mbox{\Hypertarget{classv8_1_1Array_ae56792766f8513395c3ebe8c29afde4b}\label{classv8_1_1Array_ae56792766f8513395c3ebe8c29afde4b}} 
 static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Array}{Array}} $\ast$ {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1Value}{Value}} $\ast$obj)
@@ -33,10 +35,16 @@ An instance of the built-\/in array constructor (E\+C\+M\+A-\/262, 15.\+4.\+2).
 \mbox{\Hypertarget{classv8_1_1Array_a892f18fe6a25dfc0bc7b435759a30226}\label{classv8_1_1Array_a892f18fe6a25dfc0bc7b435759a30226}} 
 \index{v8\+::\+Array@{v8\+::\+Array}!New@{New}}
 \index{New@{New}!v8\+::\+Array@{v8\+::\+Array}}
-\subsubsection{\texorpdfstring{New()}{New()}}
-{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Array}{Array}}$>$ v8\+::\+Array\+::\+New (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{int}]{length = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\subsubsection{\texorpdfstring{New()}{New()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Array}{Array}}$>$ v8\+::\+Array\+::\+New (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{int}]{length = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Creates a Java\+Script array with the given length. If the length is negative the returned array will have length 0. 
+Creates a Java\+Script array with the given length. If the length is negative the returned array will have length 0. \mbox{\Hypertarget{classv8_1_1Array_a748ab878a787989d9970d6e647677974}\label{classv8_1_1Array_a748ab878a787989d9970d6e647677974}} 
+\index{v8\+::\+Array@{v8\+::\+Array}!New@{New}}
+\index{New@{New}!v8\+::\+Array@{v8\+::\+Array}}
+\subsubsection{\texorpdfstring{New()}{New()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Array}{Array}}$>$ v8\+::\+Array\+::\+New (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ $\ast$}]{elements,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a Java\+Script array out of a \mbox{\hyperlink{classv8_1_1Local}{Local$<$\+Value$>$}} array in C++ with a known length. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

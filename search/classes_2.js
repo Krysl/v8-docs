@@ -6,7 +6,6 @@ var searchData=
   ['codeevent',['CodeEvent',['../classv8_1_1CodeEvent.html',1,'v8']]],
   ['codeeventhandler',['CodeEventHandler',['../classv8_1_1CodeEventHandler.html',1,'v8']]],
   ['contents',['Contents',['../classv8_1_1ArrayBuffer_1_1Contents.html',1,'v8::ArrayBuffer::Contents'],['../classv8_1_1SharedArrayBuffer_1_1Contents.html',1,'v8::SharedArrayBuffer::Contents']]],
-  ['context',['Context',['../classv8_1_1Context.html',1,'v8']]],
   ['convertabletotraceformat',['ConvertableToTraceFormat',['../classv8_1_1ConvertableToTraceFormat.html',1,'v8']]],
   ['copyablepersistenttraits',['CopyablePersistentTraits',['../structv8_1_1CopyablePersistentTraits.html',1,'v8']]],
   ['cpuprofile',['CpuProfile',['../classv8_1_1CpuProfile.html',1,'v8']]],

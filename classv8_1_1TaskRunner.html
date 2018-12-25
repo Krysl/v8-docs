@@ -78,12 +78,16 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a755795cc77383daf067a17673569c685"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1TaskRunner.html#a755795cc77383daf067a17673569c685">PostTask</a> (std::unique_ptr&lt; <a class="el" href="classv8_1_1Task.html">Task</a> &gt; task)=0</td></tr>
 <tr class="separator:a755795cc77383daf067a17673569c685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2b73f380765e09c9ae401182a92d8e9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1TaskRunner.html#ab2b73f380765e09c9ae401182a92d8e9">PostNonNestableTask</a> (std::unique_ptr&lt; <a class="el" href="classv8_1_1Task.html">Task</a> &gt; task)</td></tr>
+<tr class="separator:ab2b73f380765e09c9ae401182a92d8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ae45842086210292d966e2e326629a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1TaskRunner.html#a8ae45842086210292d966e2e326629a4">PostDelayedTask</a> (std::unique_ptr&lt; <a class="el" href="classv8_1_1Task.html">Task</a> &gt; task, double delay_in_seconds)=0</td></tr>
 <tr class="separator:a8ae45842086210292d966e2e326629a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ebfb362d1cb3fa621f0f50b9ff0fb6f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1TaskRunner.html#a0ebfb362d1cb3fa621f0f50b9ff0fb6f">PostIdleTask</a> (std::unique_ptr&lt; <a class="el" href="classv8_1_1IdleTask.html">IdleTask</a> &gt; task)=0</td></tr>
 <tr class="separator:a0ebfb362d1cb3fa621f0f50b9ff0fb6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8a6077bed5735e2190918685faf20f5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1TaskRunner.html#aa8a6077bed5735e2190918685faf20f5">IdleTasksEnabled</a> ()=0</td></tr>
 <tr class="separator:aa8a6077bed5735e2190918685faf20f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7042a9967ddaaf1f995e568c3dd7ce64"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1TaskRunner.html#a7042a9967ddaaf1f995e568c3dd7ce64">NonNestableTasksEnabled</a> () const</td></tr>
+<tr class="separator:a7042a9967ddaaf1f995e568c3dd7ce64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="classv8_1_1TaskRunner.html">TaskRunner</a> allows scheduling of tasks. The <a class="el" href="classv8_1_1TaskRunner.html">TaskRunner</a> may still be used to post tasks after the isolate gets destructed, but these tasks may not get executed anymore. All tasks posted to a given <a class="el" href="classv8_1_1TaskRunner.html">TaskRunner</a> will be invoked in sequence. Tasks can be posted from any thread. </p>
@@ -111,6 +115,32 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns true if idle tasks are enabled for this <a class="el" href="classv8_1_1TaskRunner.html">TaskRunner</a>. </p>
+
+</div>
+</div>
+<a id="a7042a9967ddaaf1f995e568c3dd7ce64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7042a9967ddaaf1f995e568c3dd7ce64">&#9670;&nbsp;</a></span>NonNestableTasksEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool v8::TaskRunner::NonNestableTasksEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if non-nestable tasks are enabled for this <a class="el" href="classv8_1_1TaskRunner.html">TaskRunner</a>. </p>
 
 </div>
 </div>
@@ -174,7 +204,35 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Schedules an idle task to be invoked by this <a class="el" href="classv8_1_1TaskRunner.html">TaskRunner</a>. The task is scheduled when the embedder is idle. Requires that TaskRunner::SupportsIdleTasks(isolate) is true. Idle tasks may be reordered relative to other task types and may be starved for an arbitrarily long time if no idle time is available. The <a class="el" href="classv8_1_1TaskRunner.html">TaskRunner</a> implementation takes ownership of |task|. </p>
+<p>Schedules an idle task to be invoked by this <a class="el" href="classv8_1_1TaskRunner.html">TaskRunner</a>. The task is scheduled when the embedder is idle. Requires that |TaskRunner::IdleTasksEnabled()| is true. Idle tasks may be reordered relative to other task types and may be starved for an arbitrarily long time if no idle time is available. The <a class="el" href="classv8_1_1TaskRunner.html">TaskRunner</a> implementation takes ownership of |task|. </p>
+
+</div>
+</div>
+<a id="ab2b73f380765e09c9ae401182a92d8e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2b73f380765e09c9ae401182a92d8e9">&#9670;&nbsp;</a></span>PostNonNestableTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void v8::TaskRunner::PostNonNestableTask </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classv8_1_1Task.html">Task</a> &gt;&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Schedules a task to be invoked by this <a class="el" href="classv8_1_1TaskRunner.html">TaskRunner</a>. The <a class="el" href="classv8_1_1TaskRunner.html">TaskRunner</a> implementation takes ownership of |task|. The |task| cannot be nested within other task executions.</p>
+<p>Requires that |TaskRunner::NonNestableTasksEnabled()| is true. </p>
 
 </div>
 </div>
@@ -211,7 +269,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 12 2018 15:47:08 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 25 2018 13:22:08 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

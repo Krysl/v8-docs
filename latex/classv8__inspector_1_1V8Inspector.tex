@@ -12,10 +12,13 @@ class \mbox{\hyperlink{classv8__inspector_1_1V8Inspector_1_1Channel}{Channel}}
 virtual void {\bfseries context\+Created} (const \mbox{\hyperlink{classv8__inspector_1_1V8ContextInfo}{V8\+Context\+Info}} \&)=0
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_a519c21ce7d4693e27c0b2859f3c5901d}\label{classv8__inspector_1_1V8Inspector_a519c21ce7d4693e27c0b2859f3c5901d}} 
-virtual void {\bfseries context\+Destroyed} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{v8\+::\+Context}} $>$)=0
+virtual void {\bfseries context\+Destroyed} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$)=0
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_ab65e4ca3316c60644bfdefc52a769d99}\label{classv8__inspector_1_1V8Inspector_ab65e4ca3316c60644bfdefc52a769d99}} 
 virtual void {\bfseries reset\+Context\+Group} (int context\+Group\+Id)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_a79545a28609e5370dec7e244e7abc39f}\label{classv8__inspector_1_1V8Inspector_a79545a28609e5370dec7e244e7abc39f}} 
+virtual \mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ v8\+::\+Context $>$ {\bfseries context\+By\+Id} (int group\+Id, \mbox{\hyperlink{classv8_1_1Maybe}{v8\+::\+Maybe}}$<$ int $>$ context\+Id)=0
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_a923d7681b39db723a43b279a7429d9ea}\label{classv8__inspector_1_1V8Inspector_a923d7681b39db723a43b279a7429d9ea}} 
 virtual void {\bfseries idle\+Started} ()=0
@@ -48,10 +51,10 @@ virtual void {\bfseries external\+Async\+Task\+Started} (const \mbox{\hyperlink{
 virtual void {\bfseries external\+Async\+Task\+Finished} (const \mbox{\hyperlink{structv8__inspector_1_1V8StackTraceId}{V8\+Stack\+Trace\+Id}} \&parent)=0
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_a71e69c7b3fbb5eb9c0b5272f6aab3a2d}\label{classv8__inspector_1_1V8Inspector_a71e69c7b3fbb5eb9c0b5272f6aab3a2d}} 
-virtual unsigned {\bfseries exception\+Thrown} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{v8\+::\+Context}} $>$, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&message, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ exception, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&detailed\+Message, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&url, unsigned line\+Number, unsigned column\+Number, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8StackTrace}{V8\+Stack\+Trace}} $>$, int script\+Id)=0
+virtual unsigned {\bfseries exception\+Thrown} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&message, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ exception, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&detailed\+Message, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&url, unsigned line\+Number, unsigned column\+Number, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8StackTrace}{V8\+Stack\+Trace}} $>$, int script\+Id)=0
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_a6853e6b53df0a0058b0e7ff2a3cc94ec}\label{classv8__inspector_1_1V8Inspector_a6853e6b53df0a0058b0e7ff2a3cc94ec}} 
-virtual void {\bfseries exception\+Revoked} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{v8\+::\+Context}} $>$, unsigned exception\+Id, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&message)=0
+virtual void {\bfseries exception\+Revoked} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$, unsigned exception\+Id, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&message)=0
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_ada36fa35ede4b3fda70b07fc855458e4}\label{classv8__inspector_1_1V8Inspector_ada36fa35ede4b3fda70b07fc855458e4}} 
 virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8InspectorSession}{V8\+Inspector\+Session}} $>$ {\bfseries connect} (int context\+Group\+Id, \mbox{\hyperlink{classv8__inspector_1_1V8Inspector_1_1Channel}{Channel}} $\ast$, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&state)=0
@@ -66,7 +69,7 @@ virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8Stack
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_ac7b64842334aadde7dabff1ac6d82cff}\label{classv8__inspector_1_1V8Inspector_ac7b64842334aadde7dabff1ac6d82cff}} 
-static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8Inspector}{V8\+Inspector}} $>$ {\bfseries create} (\mbox{\hyperlink{classv8_1_1Isolate}{v8\+::\+Isolate}} $\ast$, \mbox{\hyperlink{classv8__inspector_1_1V8InspectorClient}{V8\+Inspector\+Client}} $\ast$)
+static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8Inspector}{V8\+Inspector}} $>$ {\bfseries create} (v8\+::\+Isolate $\ast$, \mbox{\hyperlink{classv8__inspector_1_1V8InspectorClient}{V8\+Inspector\+Client}} $\ast$)
 \end{DoxyCompactItemize}
 
 

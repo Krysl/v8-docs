@@ -14,10 +14,10 @@ Inheritance diagram for v8\+:\+:Handle\+Scope\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classv8_1_1HandleScope_afdb3053d852ea467f026b025ed431e79}\label{classv8_1_1HandleScope_afdb3053d852ea467f026b025ed431e79}} 
-{\bfseries Handle\+Scope} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
+{\bfseries Handle\+Scope} (Isolate $\ast$isolate)
 \item 
 \mbox{\Hypertarget{classv8_1_1HandleScope_ad605be00a8f9bfd8157806102af95fab}\label{classv8_1_1HandleScope_ad605be00a8f9bfd8157806102af95fab}} 
-V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$ {\bfseries Get\+Isolate} () const
+V8\+\_\+\+I\+N\+L\+I\+NE Isolate $\ast$ {\bfseries Get\+Isolate} () const
 \item 
 \mbox{\Hypertarget{classv8_1_1HandleScope_a8354f068f3185cb663ecb689587fbbe8}\label{classv8_1_1HandleScope_a8354f068f3185cb663ecb689587fbbe8}} 
 {\bfseries Handle\+Scope} (const \mbox{\hyperlink{classv8_1_1HandleScope}{Handle\+Scope}} \&)=delete
@@ -28,19 +28,19 @@ void {\bfseries operator=} (const \mbox{\hyperlink{classv8_1_1HandleScope}{Handl
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static int \mbox{\hyperlink{classv8_1_1HandleScope_abab7214c9b9388b02f575fd5270b7e2f}{Number\+Of\+Handles}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
+static int \mbox{\hyperlink{classv8_1_1HandleScope_abab7214c9b9388b02f575fd5270b7e2f}{Number\+Of\+Handles}} (Isolate $\ast$isolate)
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classv8_1_1HandleScope_a7bb8631c1c8756b05e9232b8414dd992}\label{classv8_1_1HandleScope_a7bb8631c1c8756b05e9232b8414dd992}} 
-void {\bfseries Initialize} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
+void {\bfseries Initialize} (Isolate $\ast$isolate)
 \end{DoxyCompactItemize}
 \subsection*{Static Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classv8_1_1HandleScope_a3f63aa8552a0371606305f58187d80e2}\label{classv8_1_1HandleScope_a3f63aa8552a0371606305f58187d80e2}} 
-static internal\+::\+Object $\ast$$\ast$ {\bfseries Create\+Handle} (internal\+::\+Isolate $\ast$isolate, internal\+::\+Object $\ast$value)
+\mbox{\Hypertarget{classv8_1_1HandleScope_a1dfeb02024b2b75746a1aa1f0b2e94fa}\label{classv8_1_1HandleScope_a1dfeb02024b2b75746a1aa1f0b2e94fa}} 
+static internal\+::\+Address $\ast$ {\bfseries Create\+Handle} (internal\+::\+Isolate $\ast$isolate, internal\+::\+Address value)
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -66,7 +66,7 @@ After the handle scope of a local handle has been deleted the garbage collector 
 \index{v8\+::\+Handle\+Scope@{v8\+::\+Handle\+Scope}!Number\+Of\+Handles@{Number\+Of\+Handles}}
 \index{Number\+Of\+Handles@{Number\+Of\+Handles}!v8\+::\+Handle\+Scope@{v8\+::\+Handle\+Scope}}
 \subsubsection{\texorpdfstring{Number\+Of\+Handles()}{NumberOfHandles()}}
-{\footnotesize\ttfamily static int v8\+::\+Handle\+Scope\+::\+Number\+Of\+Handles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static int v8\+::\+Handle\+Scope\+::\+Number\+Of\+Handles (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Counts the number of allocated handles. 
 

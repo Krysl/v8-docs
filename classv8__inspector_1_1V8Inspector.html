@@ -85,11 +85,14 @@ Public Member Functions</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>contextCreated</b> (const <a class="el" href="classv8__inspector_1_1V8ContextInfo.html">V8ContextInfo</a> &amp;)=0</td></tr>
 <tr class="separator:a2027babae023eb7745a699de30ef2040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a519c21ce7d4693e27c0b2859f3c5901d"><td class="memItemLeft" align="right" valign="top"><a id="a519c21ce7d4693e27c0b2859f3c5901d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>contextDestroyed</b> (<a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Context.html">v8::Context</a> &gt;)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>contextDestroyed</b> (<a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; v8::Context &gt;)=0</td></tr>
 <tr class="separator:a519c21ce7d4693e27c0b2859f3c5901d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab65e4ca3316c60644bfdefc52a769d99"><td class="memItemLeft" align="right" valign="top"><a id="ab65e4ca3316c60644bfdefc52a769d99"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>resetContextGroup</b> (int contextGroupId)=0</td></tr>
 <tr class="separator:ab65e4ca3316c60644bfdefc52a769d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79545a28609e5370dec7e244e7abc39f"><td class="memItemLeft" align="right" valign="top"><a id="a79545a28609e5370dec7e244e7abc39f"></a>
+virtual <a class="el" href="classv8_1_1MaybeLocal.html">v8::MaybeLocal</a>&lt; v8::Context &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>contextById</b> (int groupId, <a class="el" href="classv8_1_1Maybe.html">v8::Maybe</a>&lt; int &gt; contextId)=0</td></tr>
+<tr class="separator:a79545a28609e5370dec7e244e7abc39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a923d7681b39db723a43b279a7429d9ea"><td class="memItemLeft" align="right" valign="top"><a id="a923d7681b39db723a43b279a7429d9ea"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>idleStarted</b> ()=0</td></tr>
 <tr class="separator:a923d7681b39db723a43b279a7429d9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,10 +124,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>externalAsync
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>externalAsyncTaskFinished</b> (const <a class="el" href="structv8__inspector_1_1V8StackTraceId.html">V8StackTraceId</a> &amp;parent)=0</td></tr>
 <tr class="separator:a0968e8e70a8c9086b66e421e02db8a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71e69c7b3fbb5eb9c0b5272f6aab3a2d"><td class="memItemLeft" align="right" valign="top"><a id="a71e69c7b3fbb5eb9c0b5272f6aab3a2d"></a>
-virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>exceptionThrown</b> (<a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Context.html">v8::Context</a> &gt;, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;message, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Value.html">v8::Value</a> &gt; exception, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;detailedMessage, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;url, unsigned lineNumber, unsigned columnNumber, std::unique_ptr&lt; <a class="el" href="classv8__inspector_1_1V8StackTrace.html">V8StackTrace</a> &gt;, int scriptId)=0</td></tr>
+virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>exceptionThrown</b> (<a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; v8::Context &gt;, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;message, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Value.html">v8::Value</a> &gt; exception, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;detailedMessage, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;url, unsigned lineNumber, unsigned columnNumber, std::unique_ptr&lt; <a class="el" href="classv8__inspector_1_1V8StackTrace.html">V8StackTrace</a> &gt;, int scriptId)=0</td></tr>
 <tr class="separator:a71e69c7b3fbb5eb9c0b5272f6aab3a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6853e6b53df0a0058b0e7ff2a3cc94ec"><td class="memItemLeft" align="right" valign="top"><a id="a6853e6b53df0a0058b0e7ff2a3cc94ec"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>exceptionRevoked</b> (<a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Context.html">v8::Context</a> &gt;, unsigned exceptionId, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;message)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>exceptionRevoked</b> (<a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; v8::Context &gt;, unsigned exceptionId, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;message)=0</td></tr>
 <tr class="separator:a6853e6b53df0a0058b0e7ff2a3cc94ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada36fa35ede4b3fda70b07fc855458e4"><td class="memItemLeft" align="right" valign="top"><a id="ada36fa35ede4b3fda70b07fc855458e4"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classv8__inspector_1_1V8InspectorSession.html">V8InspectorSession</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>connect</b> (int contextGroupId, <a class="el" href="classv8__inspector_1_1V8Inspector_1_1Channel.html">Channel</a> *, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;state)=0</td></tr>
@@ -139,7 +142,7 @@ virtual std::unique_ptr&lt; <a class="el" href="classv8__inspector_1_1V8StackTra
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac7b64842334aadde7dabff1ac6d82cff"><td class="memItemLeft" align="right" valign="top"><a id="ac7b64842334aadde7dabff1ac6d82cff"></a>
-static std::unique_ptr&lt; <a class="el" href="classv8__inspector_1_1V8Inspector.html">V8Inspector</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (<a class="el" href="classv8_1_1Isolate.html">v8::Isolate</a> *, <a class="el" href="classv8__inspector_1_1V8InspectorClient.html">V8InspectorClient</a> *)</td></tr>
+static std::unique_ptr&lt; <a class="el" href="classv8__inspector_1_1V8Inspector.html">V8Inspector</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (v8::Isolate *, <a class="el" href="classv8__inspector_1_1V8InspectorClient.html">V8InspectorClient</a> *)</td></tr>
 <tr class="separator:ac7b64842334aadde7dabff1ac6d82cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -148,7 +151,7 @@ static std::unique_ptr&lt; <a class="el" href="classv8__inspector_1_1V8Inspector
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 12 2018 15:47:10 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 25 2018 13:22:11 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

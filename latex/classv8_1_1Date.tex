@@ -18,16 +18,16 @@ double \mbox{\hyperlink{classv8_1_1Date_adb9d292549a173e045ee177051dbde19}{Value
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classv8_1_1Date_a4537a2f3b7de01ccc40784923ccece11}\label{classv8_1_1Date_a4537a2f3b7de01ccc40784923ccece11}} 
-static {\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON} (\char`\"{}Use maybe version.\char`\"{}, Local$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ New(\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, double time))
+\mbox{\Hypertarget{classv8_1_1Date_abd1ff8294e0d5a513696b72b67d36ecf}\label{classv8_1_1Date_abd1ff8294e0d5a513696b72b67d36ecf}} 
+static {\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use maybe version.\char`\"{}, Local$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ New(Isolate $\ast$isolate, double time))
 \item 
 \mbox{\Hypertarget{classv8_1_1Date_a07639d26ad5bc9564c2411a1c14f7d70}\label{classv8_1_1Date_a07639d26ad5bc9564c2411a1c14f7d70}} 
-static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$ context, double time)
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ Context $>$ context, double time)
 \item 
 \mbox{\Hypertarget{classv8_1_1Date_aebb004782ef43f01518f24e662ef6ad8}\label{classv8_1_1Date_aebb004782ef43f01518f24e662ef6ad8}} 
 static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Date}{Date}} $\ast$ {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1Value}{Value}} $\ast$obj)
 \item 
-static void \mbox{\hyperlink{classv8_1_1Date_adb084ec0683d3d195ad0f78af5f6f72b}{Date\+Time\+Configuration\+Change\+Notification}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
+static void \mbox{\hyperlink{classv8_1_1Date_adb084ec0683d3d195ad0f78af5f6f72b}{Date\+Time\+Configuration\+Change\+Notification}} (Isolate $\ast$isolate)
 \end{DoxyCompactItemize}
 
 
@@ -39,9 +39,9 @@ An instance of the built-\/in \mbox{\hyperlink{classv8_1_1Date}{Date}} construct
 \index{v8\+::\+Date@{v8\+::\+Date}!Date\+Time\+Configuration\+Change\+Notification@{Date\+Time\+Configuration\+Change\+Notification}}
 \index{Date\+Time\+Configuration\+Change\+Notification@{Date\+Time\+Configuration\+Change\+Notification}!v8\+::\+Date@{v8\+::\+Date}}
 \subsubsection{\texorpdfstring{Date\+Time\+Configuration\+Change\+Notification()}{DateTimeConfigurationChangeNotification()}}
-{\footnotesize\ttfamily static void v8\+::\+Date\+::\+Date\+Time\+Configuration\+Change\+Notification (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void v8\+::\+Date\+::\+Date\+Time\+Configuration\+Change\+Notification (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Notification that the embedder has changed the time zone, daylight savings time, or other date / time configuration parameters. \mbox{\hyperlink{classv8_1_1V8}{V8}} keeps a cache of various values used for date / time computation. This notification will reset those cached values for the current context so that date / time configuration changes would be reflected in the \mbox{\hyperlink{classv8_1_1Date}{Date}} object.
+Notification that the embedder has changed the time zone, daylight savings time, or other date / time configuration parameters. V8 keeps a cache of various values used for date / time computation. This notification will reset those cached values for the current context so that date / time configuration changes would be reflected in the \mbox{\hyperlink{classv8_1_1Date}{Date}} object.
 
 This A\+PI should not be called more than needed as it will negatively impact the performance of date operations. \mbox{\Hypertarget{classv8_1_1Date_adb9d292549a173e045ee177051dbde19}\label{classv8_1_1Date_adb9d292549a173e045ee177051dbde19}} 
 \index{v8\+::\+Date@{v8\+::\+Date}!Value\+Of@{Value\+Of}}

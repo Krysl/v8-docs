@@ -7,7 +7,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$ \mbox{\hyperlink{classv8_1_1PropertyCallbackInfo_aff7b838ede308ab8a42890962eb9271c}{Get\+Isolate}} () const
+V8\+\_\+\+I\+N\+L\+I\+NE Isolate $\ast$ \mbox{\hyperlink{classv8_1_1PropertyCallbackInfo_aff7b838ede308ab8a42890962eb9271c}{Get\+Isolate}} () const
 \item 
 V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ \mbox{\hyperlink{classv8_1_1PropertyCallbackInfo_a0156bad4329132beddee04f2d000c617}{Data}} () const
 \item 
@@ -28,14 +28,14 @@ static const int {\bfseries k\+Args\+Length} = 7
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classv8_1_1PropertyCallbackInfo_aa666043c86d4db9a57a3ac866c78ee0e}\label{classv8_1_1PropertyCallbackInfo_aa666043c86d4db9a57a3ac866c78ee0e}} 
-V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Property\+Callback\+Info} (internal\+::\+Object $\ast$$\ast$args)
+\mbox{\Hypertarget{classv8_1_1PropertyCallbackInfo_af1ab54236cc838166b2c3855488cb7ad}\label{classv8_1_1PropertyCallbackInfo_af1ab54236cc838166b2c3855488cb7ad}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Property\+Callback\+Info} (internal\+::\+Address $\ast$args)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classv8_1_1PropertyCallbackInfo_a57b2243627071c62ed3900a741a41a0b}\label{classv8_1_1PropertyCallbackInfo_a57b2243627071c62ed3900a741a41a0b}} 
-internal\+::\+Object $\ast$$\ast$ {\bfseries args\+\_\+}
+\mbox{\Hypertarget{classv8_1_1PropertyCallbackInfo_af78f4466d1014cb3304589570f2d1fce}\label{classv8_1_1PropertyCallbackInfo_af78f4466d1014cb3304589570f2d1fce}} 
+internal\+::\+Address $\ast$ {\bfseries args\+\_\+}
 \end{DoxyCompactItemize}
 \subsection*{Static Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -97,7 +97,7 @@ The data set in the configuration, i.\+e., in {\ttfamily \mbox{\hyperlink{struct
 \index{Get\+Isolate@{Get\+Isolate}!v8\+::\+Property\+Callback\+Info@{v8\+::\+Property\+Callback\+Info}}
 \subsubsection{\texorpdfstring{Get\+Isolate()}{GetIsolate()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$ \mbox{\hyperlink{classv8_1_1PropertyCallbackInfo}{v8\+::\+Property\+Callback\+Info}}$<$ T $>$\+::Get\+Isolate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+Isolate $\ast$ \mbox{\hyperlink{classv8_1_1PropertyCallbackInfo}{v8\+::\+Property\+Callback\+Info}}$<$ T $>$\+::Get\+Isolate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 \begin{DoxyReturn}{Returns}
 The isolate of the property access. 
@@ -174,7 +174,7 @@ The receiver. In many cases, this is the object on which the property access was
 \}
 
 \mbox{\hyperlink{classv8_1_1Local}{v8::Local<v8::FunctionTemplate>}} templ =
-\mbox{\hyperlink{classv8_1_1FunctionTemplate_a0724f26034d01ce76bd106b193ab7e7a}{v8::FunctionTemplate::New}}(isolate);
+\mbox{\hyperlink{classv8_1_1FunctionTemplate_a3b675b8327f08a7c6a4c4d9dce5cb3b3}{v8::FunctionTemplate::New}}(isolate);
 templ->\mbox{\hyperlink{classv8_1_1FunctionTemplate_a00dd9725566908e8fd14064542f5a781}{InstanceTemplate}}()->SetHandler(
     \mbox{\hyperlink{structv8_1_1NamedPropertyHandlerConfiguration}{v8::NamedPropertyHandlerConfiguration}}(GetterCallback));
 LocalContext env;

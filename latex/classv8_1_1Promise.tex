@@ -26,16 +26,18 @@ enum \mbox{\hyperlink{classv8_1_1Promise_a0c357b9d99a634f98a5a203b0a322544}{Prom
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Promise}{Promise}} $>$ \mbox{\hyperlink{classv8_1_1Promise_ab5b9bc0140b750cbf569f3a0e6c92b42}{Catch}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Function}{Function}} $>$ handler)
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Promise}{Promise}} $>$ \mbox{\hyperlink{classv8_1_1Promise_ab5b9bc0140b750cbf569f3a0e6c92b42}{Catch}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ Context $>$ context, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Function}{Function}} $>$ handler)
 \item 
 \mbox{\Hypertarget{classv8_1_1Promise_af043d82818e1bbaf6c659e40bcf86c89}\label{classv8_1_1Promise_af043d82818e1bbaf6c659e40bcf86c89}} 
-V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Promise}{Promise}} $>$ {\bfseries Then} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Function}{Function}} $>$ handler)
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Promise}{Promise}} $>$ {\bfseries Then} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ Context $>$ context, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Function}{Function}} $>$ handler)
 \item 
 bool \mbox{\hyperlink{classv8_1_1Promise_aeea8bdfdbe2291632d7f0d45394c1722}{Has\+Handler}} ()
 \item 
 \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ \mbox{\hyperlink{classv8_1_1Promise_a94aceab6e2ad55f37e6997b4dcac2f11}{Result}} ()
 \item 
 \mbox{\hyperlink{classv8_1_1Promise_a0c357b9d99a634f98a5a203b0a322544}{Promise\+State}} \mbox{\hyperlink{classv8_1_1Promise_abc011691f131e23939b167a4fe3f9391}{State}} ()
+\item 
+void \mbox{\hyperlink{classv8_1_1Promise_a17d6e3484dc051e1c05a31fd285b0f9f}{Mark\+As\+Handled}} ()
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -68,7 +70,7 @@ State of the promise. Each value corresponds to one of the possible values of th
 \index{v8\+::\+Promise@{v8\+::\+Promise}!Catch@{Catch}}
 \index{Catch@{Catch}!v8\+::\+Promise@{v8\+::\+Promise}}
 \subsubsection{\texorpdfstring{Catch()}{Catch()}}
-{\footnotesize\ttfamily V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1Promise}{Promise}}$>$ v8\+::\+Promise\+::\+Catch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$}]{context,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Function}{Function}} $>$}]{handler }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1Promise}{Promise}}$>$ v8\+::\+Promise\+::\+Catch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ Context $>$}]{context,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Function}{Function}} $>$}]{handler }\end{DoxyParamCaption})}
 
 Register a resolution/rejection handler with a promise. The handler is given the respective resolution/rejection value as an argument. If the promise is already resolved/rejected, the handler is invoked at the end of turn. \mbox{\Hypertarget{classv8_1_1Promise_aeea8bdfdbe2291632d7f0d45394c1722}\label{classv8_1_1Promise_aeea8bdfdbe2291632d7f0d45394c1722}} 
 \index{v8\+::\+Promise@{v8\+::\+Promise}!Has\+Handler@{Has\+Handler}}
@@ -76,7 +78,13 @@ Register a resolution/rejection handler with a promise. The handler is given the
 \subsubsection{\texorpdfstring{Has\+Handler()}{HasHandler()}}
 {\footnotesize\ttfamily bool v8\+::\+Promise\+::\+Has\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Returns true if the promise has at least one derived promise, and therefore resolve/reject handlers (including default handler). \mbox{\Hypertarget{classv8_1_1Promise_a94aceab6e2ad55f37e6997b4dcac2f11}\label{classv8_1_1Promise_a94aceab6e2ad55f37e6997b4dcac2f11}} 
+Returns true if the promise has at least one derived promise, and therefore resolve/reject handlers (including default handler). \mbox{\Hypertarget{classv8_1_1Promise_a17d6e3484dc051e1c05a31fd285b0f9f}\label{classv8_1_1Promise_a17d6e3484dc051e1c05a31fd285b0f9f}} 
+\index{v8\+::\+Promise@{v8\+::\+Promise}!Mark\+As\+Handled@{Mark\+As\+Handled}}
+\index{Mark\+As\+Handled@{Mark\+As\+Handled}!v8\+::\+Promise@{v8\+::\+Promise}}
+\subsubsection{\texorpdfstring{Mark\+As\+Handled()}{MarkAsHandled()}}
+{\footnotesize\ttfamily void v8\+::\+Promise\+::\+Mark\+As\+Handled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Marks this promise as handled to avoid reporting unhandled rejections. \mbox{\Hypertarget{classv8_1_1Promise_a94aceab6e2ad55f37e6997b4dcac2f11}\label{classv8_1_1Promise_a94aceab6e2ad55f37e6997b4dcac2f11}} 
 \index{v8\+::\+Promise@{v8\+::\+Promise}!Result@{Result}}
 \index{Result@{Result}!v8\+::\+Promise@{v8\+::\+Promise}}
 \subsubsection{\texorpdfstring{Result()}{Result()}}

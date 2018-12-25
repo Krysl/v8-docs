@@ -115,10 +115,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stepOver</b> 
 virtual std::vector&lt; std::unique_ptr&lt; protocol::Debugger::API::SearchMatch &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>searchInTextByLines</b> (const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;text, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;query, bool caseSensitive, bool isRegex)=0</td></tr>
 <tr class="separator:acaa137f90ce833744a2a16bda60490c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7568a840a4c681cbca9ec7ad50aba0e6"><td class="memItemLeft" align="right" valign="top"><a id="a7568a840a4c681cbca9ec7ad50aba0e6"></a>
-virtual std::unique_ptr&lt; protocol::Runtime::API::RemoteObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>wrapObject</b> (<a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Context.html">v8::Context</a> &gt;, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Value.html">v8::Value</a> &gt;, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;groupName, bool generatePreview)=0</td></tr>
+virtual std::unique_ptr&lt; protocol::Runtime::API::RemoteObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>wrapObject</b> (<a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; v8::Context &gt;, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Value.html">v8::Value</a> &gt;, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;groupName, bool generatePreview)=0</td></tr>
 <tr class="separator:a7568a840a4c681cbca9ec7ad50aba0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbe69bb66c76882db82482db3712b554"><td class="memItemLeft" align="right" valign="top"><a id="adbe69bb66c76882db82482db3712b554"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>unwrapObject</b> (std::unique_ptr&lt; <a class="el" href="classv8__inspector_1_1StringBuffer.html">StringBuffer</a> &gt; *error, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;objectId, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Value.html">v8::Value</a> &gt; *, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Context.html">v8::Context</a> &gt; *, std::unique_ptr&lt; <a class="el" href="classv8__inspector_1_1StringBuffer.html">StringBuffer</a> &gt; *objectGroup)=0</td></tr>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>unwrapObject</b> (std::unique_ptr&lt; <a class="el" href="classv8__inspector_1_1StringBuffer.html">StringBuffer</a> &gt; *error, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;objectId, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Value.html">v8::Value</a> &gt; *, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; v8::Context &gt; *, std::unique_ptr&lt; <a class="el" href="classv8__inspector_1_1StringBuffer.html">StringBuffer</a> &gt; *objectGroup)=0</td></tr>
 <tr class="separator:adbe69bb66c76882db82482db3712b554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a7e04f754c93086d7e61ad483bd38aa"><td class="memItemLeft" align="right" valign="top"><a id="a3a7e04f754c93086d7e61ad483bd38aa"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseObjectGroup</b> (const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;)=0</td></tr>
@@ -136,7 +136,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>canDispatchMet
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 12 2018 15:47:10 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 25 2018 13:22:11 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

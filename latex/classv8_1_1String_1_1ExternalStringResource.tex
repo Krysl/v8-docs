@@ -13,7 +13,7 @@ Inheritance diagram for v8\+:\+:String\+:\+:External\+String\+Resource\+:\begin{
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \mbox{\hyperlink{classv8_1_1String_1_1ExternalStringResource_a6b7ef9e33a47059092e1447b10c35416}{$\sim$\+External\+String\+Resource}} ()
+\mbox{\hyperlink{classv8_1_1String_1_1ExternalStringResource_ad5f8c0ca1ed53d7c1ec7b11dc0aef49c}{$\sim$\+External\+String\+Resource}} () override=default
 \item 
 virtual const uint16\+\_\+t $\ast$ \mbox{\hyperlink{classv8_1_1String_1_1ExternalStringResource_a987309199b848511adb708e221e0fb0a}{data}} () const =0
 \item 
@@ -23,14 +23,14 @@ virtual size\+\_\+t \mbox{\hyperlink{classv8_1_1String_1_1ExternalStringResource
 
 
 \subsection{Detailed Description}
-An \mbox{\hyperlink{classv8_1_1String_1_1ExternalStringResource}{External\+String\+Resource}} is a wrapper around a two-\/byte string buffer that resides outside \mbox{\hyperlink{classv8_1_1V8}{V8}}\textquotesingle{}s heap. Implement an \mbox{\hyperlink{classv8_1_1String_1_1ExternalStringResource}{External\+String\+Resource}} to manage the life cycle of the underlying buffer. Note that the string data must be immutable. 
+An \mbox{\hyperlink{classv8_1_1String_1_1ExternalStringResource}{External\+String\+Resource}} is a wrapper around a two-\/byte string buffer that resides outside V8\textquotesingle{}s heap. Implement an \mbox{\hyperlink{classv8_1_1String_1_1ExternalStringResource}{External\+String\+Resource}} to manage the life cycle of the underlying buffer. Note that the string data must be immutable. 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classv8_1_1String_1_1ExternalStringResource_a6b7ef9e33a47059092e1447b10c35416}\label{classv8_1_1String_1_1ExternalStringResource_a6b7ef9e33a47059092e1447b10c35416}} 
+\mbox{\Hypertarget{classv8_1_1String_1_1ExternalStringResource_ad5f8c0ca1ed53d7c1ec7b11dc0aef49c}\label{classv8_1_1String_1_1ExternalStringResource_ad5f8c0ca1ed53d7c1ec7b11dc0aef49c}} 
 \index{v8\+::\+String\+::\+External\+String\+Resource@{v8\+::\+String\+::\+External\+String\+Resource}!````~External\+String\+Resource@{$\sim$\+External\+String\+Resource}}
 \index{````~External\+String\+Resource@{$\sim$\+External\+String\+Resource}!v8\+::\+String\+::\+External\+String\+Resource@{v8\+::\+String\+::\+External\+String\+Resource}}
 \subsubsection{\texorpdfstring{$\sim$\+External\+String\+Resource()}{~ExternalStringResource()}}
-{\footnotesize\ttfamily virtual v8\+::\+String\+::\+External\+String\+Resource\+::$\sim$\+External\+String\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily v8\+::\+String\+::\+External\+String\+Resource\+::$\sim$\+External\+String\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
 
 Override the destructor to manage the life cycle of the underlying buffer. 
 

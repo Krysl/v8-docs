@@ -25,12 +25,12 @@ void \mbox{\hyperlink{classv8_1_1BigInt_adbc582fd6ae26b6afe9b5591b5fe06e7}{To\+W
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classv8_1_1BigInt_a2ae15b635778d6c84f7715c8fb75aab6}\label{classv8_1_1BigInt_a2ae15b635778d6c84f7715c8fb75aab6}} 
-static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, int64\+\_\+t value)
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} $>$ {\bfseries New} (Isolate $\ast$isolate, int64\+\_\+t value)
 \item 
 \mbox{\Hypertarget{classv8_1_1BigInt_afae6436f0bce457d6280a25377dca250}\label{classv8_1_1BigInt_afae6436f0bce457d6280a25377dca250}} 
-static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} $>$ {\bfseries New\+From\+Unsigned} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, uint64\+\_\+t value)
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} $>$ {\bfseries New\+From\+Unsigned} (Isolate $\ast$isolate, uint64\+\_\+t value)
 \item 
-static \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} $>$ \mbox{\hyperlink{classv8_1_1BigInt_a2e315509efbc08fef90ef54d7e179e4d}{New\+From\+Words}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$ context, int sign\+\_\+bit, int word\+\_\+count, const uint64\+\_\+t $\ast$words)
+static \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} $>$ \mbox{\hyperlink{classv8_1_1BigInt_a2e315509efbc08fef90ef54d7e179e4d}{New\+From\+Words}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ Context $>$ context, int sign\+\_\+bit, int word\+\_\+count, const uint64\+\_\+t $\ast$words)
 \item 
 \mbox{\Hypertarget{classv8_1_1BigInt_ad6d5b03552c5f81589d641ef2fc055d8}\label{classv8_1_1BigInt_ad6d5b03552c5f81589d641ef2fc055d8}} 
 static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} $\ast$ {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $\ast$obj)
@@ -51,7 +51,7 @@ Returns the value of this \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} as a si
 \index{v8\+::\+Big\+Int@{v8\+::\+Big\+Int}!New\+From\+Words@{New\+From\+Words}}
 \index{New\+From\+Words@{New\+From\+Words}!v8\+::\+Big\+Int@{v8\+::\+Big\+Int}}
 \subsubsection{\texorpdfstring{New\+From\+Words()}{NewFromWords()}}
-{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}}$>$ v8\+::\+Big\+Int\+::\+New\+From\+Words (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$}]{context,  }\item[{int}]{sign\+\_\+bit,  }\item[{int}]{word\+\_\+count,  }\item[{const uint64\+\_\+t $\ast$}]{words }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}}$>$ v8\+::\+Big\+Int\+::\+New\+From\+Words (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ Context $>$}]{context,  }\item[{int}]{sign\+\_\+bit,  }\item[{int}]{word\+\_\+count,  }\item[{const uint64\+\_\+t $\ast$}]{words }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Creates a new \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} object using a specified sign bit and a specified list of digits/words. The resulting number is calculated as\+:
 

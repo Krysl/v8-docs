@@ -86,14 +86,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6fdb5451611738dd44c70d195445d0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57afbce6126e5cd82b66f66b018a18e2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classv8_1_1EmbedderGraph_1_1Node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1EmbedderGraph.html#a57afbce6126e5cd82b66f66b018a18e2">AddNode</a> (std::unique_ptr&lt; <a class="el" href="classv8_1_1EmbedderGraph_1_1Node.html">Node</a> &gt; node)=0</td></tr>
 <tr class="separator:a57afbce6126e5cd82b66f66b018a18e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1625dcd91021c6de5f039952c9d220d6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1EmbedderGraph.html#a1625dcd91021c6de5f039952c9d220d6">AddEdge</a> (<a class="el" href="classv8_1_1EmbedderGraph_1_1Node.html">Node</a> *from, <a class="el" href="classv8_1_1EmbedderGraph_1_1Node.html">Node</a> *to)=0</td></tr>
-<tr class="separator:a1625dcd91021c6de5f039952c9d220d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b1c7dd4d0387ec50037b0778b8af11"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1EmbedderGraph.html#a81b1c7dd4d0387ec50037b0778b8af11">AddEdge</a> (<a class="el" href="classv8_1_1EmbedderGraph_1_1Node.html">Node</a> *from, <a class="el" href="classv8_1_1EmbedderGraph_1_1Node.html">Node</a> *to, const char *name=nullptr)=0</td></tr>
+<tr class="separator:a81b1c7dd4d0387ec50037b0778b8af11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An object graph consisting of embedder objects and <a class="el" href="classv8_1_1V8.html">V8</a> objects. Edges of the graph are strong references between the objects. The embedder can build this graph during heap snapshot generation to include the embedder objects in the heap snapshot. Usage: 1) Define derived class of <a class="el" href="classv8_1_1EmbedderGraph_1_1Node.html">EmbedderGraph::Node</a> for embedder objects. 2) <a class="el" href="classv8_1_1Set.html">Set</a> the build embedder graph callback on the heap profiler using HeapProfiler::AddBuildEmbedderGraphCallback. 3) In the callback use graph-&gt;AddEdge(node1, node2) to add an edge from node1 to node2. 4) To represent references from/to <a class="el" href="classv8_1_1V8.html">V8</a> object, construct <a class="el" href="classv8_1_1V8.html">V8</a> nodes using graph-&gt;V8Node(value). </p>
+<div class="textblock"><p>An object graph consisting of embedder objects and V8 objects. Edges of the graph are strong references between the objects. The embedder can build this graph during heap snapshot generation to include the embedder objects in the heap snapshot. Usage: 1) Define derived class of <a class="el" href="classv8_1_1EmbedderGraph_1_1Node.html">EmbedderGraph::Node</a> for embedder objects. 2) <a class="el" href="classv8_1_1Set.html">Set</a> the build embedder graph callback on the heap profiler using HeapProfiler::AddBuildEmbedderGraphCallback. 3) In the callback use graph-&gt;AddEdge(node1, node2) to add an edge from node1 to node2. 4) To represent references from/to V8 object, construct V8 nodes using graph-&gt;V8Node(value). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1625dcd91021c6de5f039952c9d220d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1625dcd91021c6de5f039952c9d220d6">&#9670;&nbsp;</a></span>AddEdge()</h2>
+<a id="a81b1c7dd4d0387ec50037b0778b8af11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81b1c7dd4d0387ec50037b0778b8af11">&#9670;&nbsp;</a></span>AddEdge()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -111,7 +111,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classv8_1_1EmbedderGraph_1_1Node.html">Node</a> *&#160;</td>
-          <td class="paramname"><em>to</em>&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -125,7 +131,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Adds an edge that represents a strong reference from the given node |from| to the given node |to|. The nodes must be added to the graph before calling this function. </p>
+<p>Adds an edge that represents a strong reference from the given node |from| to the given node |to|. The nodes must be added to the graph before calling this function.</p>
+<p>If name is nullptr, the edge will have auto-increment indexes, otherwise it will be named accordingly. </p>
 
 </div>
 </div>
@@ -179,7 +186,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns a node corresponding to the given <a class="el" href="classv8_1_1V8.html">V8</a> value. Ownership is not transferred. The result pointer is valid while the graph is alive. </p>
+<p>Returns a node corresponding to the given V8 value. Ownership is not transferred. The result pointer is valid while the graph is alive. </p>
 
 </div>
 </div>
@@ -189,7 +196,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 12 2018 15:47:01 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 25 2018 13:21:56 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

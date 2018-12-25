@@ -17,16 +17,18 @@ void \mbox{\hyperlink{classv8_1_1CpuProfiler_a7a9b75d3d7285d90344e1b8f14e97076}{
 \item 
 \mbox{\hyperlink{classv8_1_1CpuProfile}{Cpu\+Profile}} $\ast$ \mbox{\hyperlink{classv8_1_1CpuProfiler_a34acaa3b0e40cf2f92e9e6acb3fb5de7}{Stop\+Profiling}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ title)
 \item 
-\mbox{\hyperlink{classv8_1_1CpuProfiler_a8ddea26e13e631875cb41dcb2563ff40}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}} (\char`\"{}Use static \mbox{\hyperlink{classv8_1_1CpuProfiler_a88b787078f0c8742b3c077af0de4f46b}{Collect\+Sample}}(\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}}$\ast$) instead.\char`\"{}, void \mbox{\hyperlink{classv8_1_1CpuProfiler_a88b787078f0c8742b3c077af0de4f46b}{Collect\+Sample}}())
+\mbox{\hyperlink{classv8_1_1CpuProfiler_a8ddea26e13e631875cb41dcb2563ff40}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}} (\char`\"{}Use static \mbox{\hyperlink{classv8_1_1CpuProfiler_a88b787078f0c8742b3c077af0de4f46b}{Collect\+Sample}}(Isolate$\ast$) instead.\char`\"{}, void \mbox{\hyperlink{classv8_1_1CpuProfiler_a88b787078f0c8742b3c077af0de4f46b}{Collect\+Sample}}())
 \item 
-\mbox{\hyperlink{classv8_1_1CpuProfiler_aa5a41d80d7d262f2c171a4382f2fbd4f}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}} (\char`\"{}Use \mbox{\hyperlink{classv8_1_1Isolate_a9b5a3d4caed212eabb58a2b0a54e7a5d}{Isolate\+::\+Set\+Idle}}(bool) instead.\char`\"{}, void Set\+Idle(bool is\+\_\+idle))
+\mbox{\hyperlink{classv8_1_1CpuProfiler_aa5a41d80d7d262f2c171a4382f2fbd4f}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}} (\char`\"{}Use Isolate\+::\+Set\+Idle(bool) instead.\char`\"{}, void Set\+Idle(bool is\+\_\+idle))
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \mbox{\hyperlink{classv8_1_1CpuProfiler}{Cpu\+Profiler}} $\ast$ \mbox{\hyperlink{classv8_1_1CpuProfiler_a9850aa42c5580c686cde1555f09577aa}{New}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
+static \mbox{\hyperlink{classv8_1_1CpuProfiler}{Cpu\+Profiler}} $\ast$ \mbox{\hyperlink{classv8_1_1CpuProfiler_a9850aa42c5580c686cde1555f09577aa}{New}} (Isolate $\ast$isolate)
 \item 
-static void \mbox{\hyperlink{classv8_1_1CpuProfiler_a88b787078f0c8742b3c077af0de4f46b}{Collect\+Sample}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
+static void \mbox{\hyperlink{classv8_1_1CpuProfiler_a88b787078f0c8742b3c077af0de4f46b}{Collect\+Sample}} (Isolate $\ast$isolate)
+\item 
+static void \mbox{\hyperlink{classv8_1_1CpuProfiler_ae62325c49592ebdc030fbcf21e470c16}{Use\+Detailed\+Source\+Positions\+For\+Profiling}} (Isolate $\ast$isolate)
 \end{DoxyCompactItemize}
 
 
@@ -38,7 +40,7 @@ Interface for controlling C\+PU profiling. Instance of the profiler can be creat
 \index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!Collect\+Sample@{Collect\+Sample}}
 \index{Collect\+Sample@{Collect\+Sample}!v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}}
 \subsubsection{\texorpdfstring{Collect\+Sample()}{CollectSample()}}
-{\footnotesize\ttfamily static void v8\+::\+Cpu\+Profiler\+::\+Collect\+Sample (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void v8\+::\+Cpu\+Profiler\+::\+Collect\+Sample (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Synchronously collect current stack sample in all profilers attached to the $\vert$isolate$\vert$. The call does not affect number of ticks recorded for the current top node. \mbox{\Hypertarget{classv8_1_1CpuProfiler_ab49b3f25a897dc6a359571b3014cd225}\label{classv8_1_1CpuProfiler_ab49b3f25a897dc6a359571b3014cd225}} 
 \index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!Dispose@{Dispose}}
@@ -50,7 +52,7 @@ Disposes the C\+PU profiler object. \mbox{\Hypertarget{classv8_1_1CpuProfiler_a9
 \index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!New@{New}}
 \index{New@{New}!v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}}
 \subsubsection{\texorpdfstring{New()}{New()}}
-{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1CpuProfiler}{Cpu\+Profiler}}$\ast$ v8\+::\+Cpu\+Profiler\+::\+New (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1CpuProfiler}{Cpu\+Profiler}}$\ast$ v8\+::\+Cpu\+Profiler\+::\+New (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Creates a new C\+PU profiler for the $\vert$isolate$\vert$. The isolate must be initialized. The profiler object must be disposed after use by calling $\vert$\+Dispose$\vert$ method. \mbox{\Hypertarget{classv8_1_1CpuProfiler_ac5b05c72fb899e20adfa7f8cc57f21fb}\label{classv8_1_1CpuProfiler_ac5b05c72fb899e20adfa7f8cc57f21fb}} 
 \index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!Set\+Sampling\+Interval@{Set\+Sampling\+Interval}}
@@ -78,17 +80,23 @@ The same as Start\+Profiling above, but the Cpu\+Profiling\+Mode defaults to k\+
 \subsubsection{\texorpdfstring{Stop\+Profiling()}{StopProfiling()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1CpuProfile}{Cpu\+Profile}}$\ast$ v8\+::\+Cpu\+Profiler\+::\+Stop\+Profiling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{title }\end{DoxyParamCaption})}
 
-Stops collecting C\+PU profile with a given title and returns it. If the title given is empty, finishes the last profile started. \mbox{\Hypertarget{classv8_1_1CpuProfiler_a8ddea26e13e631875cb41dcb2563ff40}\label{classv8_1_1CpuProfiler_a8ddea26e13e631875cb41dcb2563ff40}} 
+Stops collecting C\+PU profile with a given title and returns it. If the title given is empty, finishes the last profile started. \mbox{\Hypertarget{classv8_1_1CpuProfiler_ae62325c49592ebdc030fbcf21e470c16}\label{classv8_1_1CpuProfiler_ae62325c49592ebdc030fbcf21e470c16}} 
+\index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!Use\+Detailed\+Source\+Positions\+For\+Profiling@{Use\+Detailed\+Source\+Positions\+For\+Profiling}}
+\index{Use\+Detailed\+Source\+Positions\+For\+Profiling@{Use\+Detailed\+Source\+Positions\+For\+Profiling}!v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}}
+\subsubsection{\texorpdfstring{Use\+Detailed\+Source\+Positions\+For\+Profiling()}{UseDetailedSourcePositionsForProfiling()}}
+{\footnotesize\ttfamily static void v8\+::\+Cpu\+Profiler\+::\+Use\+Detailed\+Source\+Positions\+For\+Profiling (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generate more detailed source positions to code objects. This results in better results when mapping profiling samples to script source. \mbox{\Hypertarget{classv8_1_1CpuProfiler_a8ddea26e13e631875cb41dcb2563ff40}\label{classv8_1_1CpuProfiler_a8ddea26e13e631875cb41dcb2563ff40}} 
 \index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
 \index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}}
 \subsubsection{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D()}{V8\_DEPRECATED()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily v8\+::\+Cpu\+Profiler\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (\begin{DoxyParamCaption}\item[{\char`\"{}Use static \mbox{\hyperlink{classv8_1_1CpuProfiler_a88b787078f0c8742b3c077af0de4f46b}{Collect\+Sample}}(\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}}$\ast$) instead.\char`\"{}}]{,  }\item[{void }]{Collect\+Sample() }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily v8\+::\+Cpu\+Profiler\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (\begin{DoxyParamCaption}\item[{\char`\"{}Use static \mbox{\hyperlink{classv8_1_1CpuProfiler_a88b787078f0c8742b3c077af0de4f46b}{Collect\+Sample}}(Isolate$\ast$) instead.\char`\"{}}]{,  }\item[{void }]{Collect\+Sample() }\end{DoxyParamCaption})}
 
 Force collection of a sample. Must be called on the VM thread. Recording the forced sample does not contribute to the aggregated profile statistics. \mbox{\Hypertarget{classv8_1_1CpuProfiler_aa5a41d80d7d262f2c171a4382f2fbd4f}\label{classv8_1_1CpuProfiler_aa5a41d80d7d262f2c171a4382f2fbd4f}} 
 \index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
 \index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}}
 \subsubsection{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D()}{V8\_DEPRECATED()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily v8\+::\+Cpu\+Profiler\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (\begin{DoxyParamCaption}\item[{\char`\"{}Use \mbox{\hyperlink{classv8_1_1Isolate_a9b5a3d4caed212eabb58a2b0a54e7a5d}{Isolate\+::\+Set\+Idle}}(bool) instead.\char`\"{}}]{,  }\item[{void }]{Set\+Idlebool is\+\_\+idle }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily v8\+::\+Cpu\+Profiler\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (\begin{DoxyParamCaption}\item[{\char`\"{}Use Isolate\+::\+Set\+Idle(bool) instead.\char`\"{}}]{,  }\item[{void }]{Set\+Idlebool is\+\_\+idle }\end{DoxyParamCaption})}
 
 Tells the profiler whether the embedder is idle. 
 

@@ -112,7 +112,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>formatAccesso
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>isInspectableHeapObject</b> (<a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Object.html">v8::Object</a> &gt;)</td></tr>
 <tr class="separator:a0871bb7e065494f174e445845b56f30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b47c57ccc57f386570e1148a2efe38a"><td class="memItemLeft" align="right" valign="top"><a id="a8b47c57ccc57f386570e1148a2efe38a"></a>
-virtual <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Context.html">v8::Context</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ensureDefaultContextInGroup</b> (int contextGroupId)</td></tr>
+virtual <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; v8::Context &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ensureDefaultContextInGroup</b> (int contextGroupId)</td></tr>
 <tr class="separator:a8b47c57ccc57f386570e1148a2efe38a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a004987bc7b929f12a39d3e1cc7804a05"><td class="memItemLeft" align="right" valign="top"><a id="a004987bc7b929f12a39d3e1cc7804a05"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>beginEnsureAllContextsInGroup</b> (int contextGroupId)</td></tr>
@@ -121,13 +121,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>beginEnsureAl
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>endEnsureAllContextsInGroup</b> (int contextGroupId)</td></tr>
 <tr class="separator:affc437fd3eb8e2294b1e9d6ad8bf8dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbc688fd17d8c8a29435c4533f9e1f43"><td class="memItemLeft" align="right" valign="top"><a id="acbc688fd17d8c8a29435c4533f9e1f43"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>installAdditionalCommandLineAPI</b> (<a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Context.html">v8::Context</a> &gt;, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Object.html">v8::Object</a> &gt;)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>installAdditionalCommandLineAPI</b> (<a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; v8::Context &gt;, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Object.html">v8::Object</a> &gt;)</td></tr>
 <tr class="separator:acbc688fd17d8c8a29435c4533f9e1f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acac454b61131fecf04f5d7631ddeae86"><td class="memItemLeft" align="right" valign="top"><a id="acac454b61131fecf04f5d7631ddeae86"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>consoleAPIMessage</b> (int contextGroupId, v8::Isolate::MessageErrorLevel level, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;message, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;url, unsigned lineNumber, unsigned columnNumber, <a class="el" href="classv8__inspector_1_1V8StackTrace.html">V8StackTrace</a> *)</td></tr>
 <tr class="separator:acac454b61131fecf04f5d7631ddeae86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0ae6992f007803302cb64d3d0461a20"><td class="memItemLeft" align="right" valign="top"><a id="aa0ae6992f007803302cb64d3d0461a20"></a>
-virtual <a class="el" href="classv8_1_1MaybeLocal.html">v8::MaybeLocal</a>&lt; <a class="el" href="classv8_1_1Value.html">v8::Value</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>memoryInfo</b> (<a class="el" href="classv8_1_1Isolate.html">v8::Isolate</a> *, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Context.html">v8::Context</a> &gt;)</td></tr>
+virtual <a class="el" href="classv8_1_1MaybeLocal.html">v8::MaybeLocal</a>&lt; <a class="el" href="classv8_1_1Value.html">v8::Value</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>memoryInfo</b> (v8::Isolate *, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; v8::Context &gt;)</td></tr>
 <tr class="separator:aa0ae6992f007803302cb64d3d0461a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b0e3b6ae4473671ed80e38153cbcec9"><td class="memItemLeft" align="right" valign="top"><a id="a7b0e3b6ae4473671ed80e38153cbcec9"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>consoleTime</b> (const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;title)</td></tr>
@@ -156,6 +156,9 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>canExecuteScr
 <tr class="memitem:afdb594d52d1a1dfc751f11dbcf2166bf"><td class="memItemLeft" align="right" valign="top"><a id="afdb594d52d1a1dfc751f11dbcf2166bf"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>maxAsyncCallStackDepthChanged</b> (int depth)</td></tr>
 <tr class="separator:afdb594d52d1a1dfc751f11dbcf2166bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7db967e0049f3935b83de0788d111497"><td class="memItemLeft" align="right" valign="top"><a id="a7db967e0049f3935b83de0788d111497"></a>
+virtual std::unique_ptr&lt; <a class="el" href="classv8__inspector_1_1StringBuffer.html">StringBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>resourceNameToUrl</b> (const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;resourceName)</td></tr>
+<tr class="separator:a7db967e0049f3935b83de0788d111497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>v8/include/<a class="el" href="v8-inspector_8h_source.html">v8-inspector.h</a></li>
@@ -163,7 +166,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>maxAsyncCallS
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 12 2018 15:47:10 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 25 2018 13:22:11 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

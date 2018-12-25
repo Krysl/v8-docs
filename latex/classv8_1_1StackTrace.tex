@@ -26,14 +26,14 @@ enum \mbox{\hyperlink{classv8_1_1StackTrace_a9704e4a37949eb8eb8ccddbddf161492}{S
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1StackFrame}{Stack\+Frame}} $>$ \mbox{\hyperlink{classv8_1_1StackTrace_af9f956d39bbfbd7770ae2ab7d6608c0d}{Get\+Frame}} (uint32\+\_\+t index) const
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1StackFrame}{Stack\+Frame}} $>$ \mbox{\hyperlink{classv8_1_1StackTrace_a62d9e32ccc7706716de7c7fd66a18726}{Get\+Frame}} (Isolate $\ast$isolate, uint32\+\_\+t index) const
 \item 
 int \mbox{\hyperlink{classv8_1_1StackTrace_a97a2010fa998f963df290062a8157849}{Get\+Frame\+Count}} () const
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1StackTrace}{Stack\+Trace}} $>$ \mbox{\hyperlink{classv8_1_1StackTrace_a9ae3595dfa217d50a60cea7ea2e87366}{Current\+Stack\+Trace}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, int frame\+\_\+limit, \mbox{\hyperlink{classv8_1_1StackTrace_a9704e4a37949eb8eb8ccddbddf161492}{Stack\+Trace\+Options}} options=k\+Detailed)
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1StackTrace}{Stack\+Trace}} $>$ \mbox{\hyperlink{classv8_1_1StackTrace_a9ae3595dfa217d50a60cea7ea2e87366}{Current\+Stack\+Trace}} (Isolate $\ast$isolate, int frame\+\_\+limit, \mbox{\hyperlink{classv8_1_1StackTrace_a9704e4a37949eb8eb8ccddbddf161492}{Stack\+Trace\+Options}} options=k\+Detailed)
 \end{DoxyCompactItemize}
 
 
@@ -54,7 +54,7 @@ Flags that determine what information is placed captured for each \mbox{\hyperli
 \index{v8\+::\+Stack\+Trace@{v8\+::\+Stack\+Trace}!Current\+Stack\+Trace@{Current\+Stack\+Trace}}
 \index{Current\+Stack\+Trace@{Current\+Stack\+Trace}!v8\+::\+Stack\+Trace@{v8\+::\+Stack\+Trace}}
 \subsubsection{\texorpdfstring{Current\+Stack\+Trace()}{CurrentStackTrace()}}
-{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1StackTrace}{Stack\+Trace}}$>$ v8\+::\+Stack\+Trace\+::\+Current\+Stack\+Trace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{int}]{frame\+\_\+limit,  }\item[{\mbox{\hyperlink{classv8_1_1StackTrace_a9704e4a37949eb8eb8ccddbddf161492}{Stack\+Trace\+Options}}}]{options = {\ttfamily kDetailed} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1StackTrace}{Stack\+Trace}}$>$ v8\+::\+Stack\+Trace\+::\+Current\+Stack\+Trace (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{int}]{frame\+\_\+limit,  }\item[{\mbox{\hyperlink{classv8_1_1StackTrace_a9704e4a37949eb8eb8ccddbddf161492}{Stack\+Trace\+Options}}}]{options = {\ttfamily kDetailed} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Grab a snapshot of the current Java\+Script execution stack.
 
@@ -65,11 +65,11 @@ Grab a snapshot of the current Java\+Script execution stack.
 {\em options} & Enumerates the set of things we will capture for each \mbox{\hyperlink{classv8_1_1StackFrame}{Stack\+Frame}}. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classv8_1_1StackTrace_af9f956d39bbfbd7770ae2ab7d6608c0d}\label{classv8_1_1StackTrace_af9f956d39bbfbd7770ae2ab7d6608c0d}} 
+\mbox{\Hypertarget{classv8_1_1StackTrace_a62d9e32ccc7706716de7c7fd66a18726}\label{classv8_1_1StackTrace_a62d9e32ccc7706716de7c7fd66a18726}} 
 \index{v8\+::\+Stack\+Trace@{v8\+::\+Stack\+Trace}!Get\+Frame@{Get\+Frame}}
 \index{Get\+Frame@{Get\+Frame}!v8\+::\+Stack\+Trace@{v8\+::\+Stack\+Trace}}
 \subsubsection{\texorpdfstring{Get\+Frame()}{GetFrame()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1StackFrame}{Stack\+Frame}}$>$ v8\+::\+Stack\+Trace\+::\+Get\+Frame (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{index }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1StackFrame}{Stack\+Frame}}$>$ v8\+::\+Stack\+Trace\+::\+Get\+Frame (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{uint32\+\_\+t}]{index }\end{DoxyParamCaption}) const}
 
 Returns a \mbox{\hyperlink{classv8_1_1StackFrame}{Stack\+Frame}} at a particular index. \mbox{\Hypertarget{classv8_1_1StackTrace_a97a2010fa998f963df290062a8157849}\label{classv8_1_1StackTrace_a97a2010fa998f963df290062a8157849}} 
 \index{v8\+::\+Stack\+Trace@{v8\+::\+Stack\+Trace}!Get\+Frame\+Count@{Get\+Frame\+Count}}

@@ -19,6 +19,8 @@ int \mbox{\hyperlink{structv8_1_1AllocationProfile_1_1Node_ac9773c92a3af3a9a9420
 \item 
 int \mbox{\hyperlink{structv8_1_1AllocationProfile_1_1Node_a7cf86acc298428c858673fc1f9dbe305}{column\+\_\+number}}
 \item 
+uint32\+\_\+t \mbox{\hyperlink{structv8_1_1AllocationProfile_1_1Node_aa2a43ec43107692b2cfcb3b2b00aa801}{node\+\_\+id}}
+\item 
 std\+::vector$<$ \mbox{\hyperlink{structv8_1_1AllocationProfile_1_1Node}{Node}} $\ast$ $>$ \mbox{\hyperlink{structv8_1_1AllocationProfile_1_1Node_a176673c0440cb1baaf7713e14da84db0}{children}}
 \item 
 std\+::vector$<$ \mbox{\hyperlink{structv8_1_1AllocationProfile_1_1Allocation}{Allocation}} $>$ \mbox{\hyperlink{structv8_1_1AllocationProfile_1_1Node_a6ee0934b35ba77fb5d8b53f02d5a3068}{allocations}}
@@ -59,7 +61,13 @@ List of callees called from this node for which we have sampled allocations. The
 \subsubsection{\texorpdfstring{name}{name}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1String}{String}}$>$ v8\+::\+Allocation\+Profile\+::\+Node\+::name}
 
-\mbox{\hyperlink{classv8_1_1Name}{Name}} of the function. May be empty for anonymous functions or if the script corresponding to this function has been unloaded. \mbox{\Hypertarget{structv8_1_1AllocationProfile_1_1Node_a4a746de878d9ad42b32fda4c365b98fb}\label{structv8_1_1AllocationProfile_1_1Node_a4a746de878d9ad42b32fda4c365b98fb}} 
+\mbox{\hyperlink{classv8_1_1Name}{Name}} of the function. May be empty for anonymous functions or if the script corresponding to this function has been unloaded. \mbox{\Hypertarget{structv8_1_1AllocationProfile_1_1Node_aa2a43ec43107692b2cfcb3b2b00aa801}\label{structv8_1_1AllocationProfile_1_1Node_aa2a43ec43107692b2cfcb3b2b00aa801}} 
+\index{v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}!node\+\_\+id@{node\+\_\+id}}
+\index{node\+\_\+id@{node\+\_\+id}!v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}}
+\subsubsection{\texorpdfstring{node\+\_\+id}{node\_id}}
+{\footnotesize\ttfamily uint32\+\_\+t v8\+::\+Allocation\+Profile\+::\+Node\+::node\+\_\+id}
+
+Unique id of the node. \mbox{\Hypertarget{structv8_1_1AllocationProfile_1_1Node_a4a746de878d9ad42b32fda4c365b98fb}\label{structv8_1_1AllocationProfile_1_1Node_a4a746de878d9ad42b32fda4c365b98fb}} 
 \index{v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}!script\+\_\+id@{script\+\_\+id}}
 \index{script\+\_\+id@{script\+\_\+id}!v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}}
 \subsubsection{\texorpdfstring{script\+\_\+id}{script\_id}}

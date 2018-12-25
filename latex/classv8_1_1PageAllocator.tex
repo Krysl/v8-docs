@@ -34,11 +34,13 @@ virtual bool \mbox{\hyperlink{classv8_1_1PageAllocator_abc2e3fdc768aba7d35ce0cf4
 virtual bool \mbox{\hyperlink{classv8_1_1PageAllocator_a6eb6bd93c8880dd022a61a13c65f66c0}{Release\+Pages}} (void $\ast$address, size\+\_\+t length, size\+\_\+t new\+\_\+length)=0
 \item 
 virtual bool \mbox{\hyperlink{classv8_1_1PageAllocator_aa3817d5bfaba9ec280a6cfb60e6adda0}{Set\+Permissions}} (void $\ast$address, size\+\_\+t length, \mbox{\hyperlink{classv8_1_1PageAllocator_a88f74b164fe97e053259f67a95758415}{Permission}} permissions)=0
+\item 
+virtual bool \mbox{\hyperlink{classv8_1_1PageAllocator_ad0de847c922e25f63d82494d997f441d}{Discard\+System\+Pages}} (void $\ast$address, size\+\_\+t size)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-A \mbox{\hyperlink{classv8_1_1V8}{V8}} memory page allocator.
+A V8 memory page allocator.
 
 Can be implemented by an embedder to manage large host OS allocations. 
 
@@ -70,7 +72,13 @@ Gets the page granularity for Allocate\+Pages and Free\+Pages. Addresses and len
 \subsubsection{\texorpdfstring{Commit\+Page\+Size()}{CommitPageSize()}}
 {\footnotesize\ttfamily virtual size\+\_\+t v8\+::\+Page\+Allocator\+::\+Commit\+Page\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
-Gets the page granularity for Set\+Permissions and Release\+Pages. Addresses and lengths for those calls should be multiples of \mbox{\hyperlink{classv8_1_1PageAllocator_ad817d87004151e3824997415f2dc57e9}{Commit\+Page\+Size()}}. \mbox{\Hypertarget{classv8_1_1PageAllocator_abc2e3fdc768aba7d35ce0cf44f14586c}\label{classv8_1_1PageAllocator_abc2e3fdc768aba7d35ce0cf44f14586c}} 
+Gets the page granularity for Set\+Permissions and Release\+Pages. Addresses and lengths for those calls should be multiples of \mbox{\hyperlink{classv8_1_1PageAllocator_ad817d87004151e3824997415f2dc57e9}{Commit\+Page\+Size()}}. \mbox{\Hypertarget{classv8_1_1PageAllocator_ad0de847c922e25f63d82494d997f441d}\label{classv8_1_1PageAllocator_ad0de847c922e25f63d82494d997f441d}} 
+\index{v8\+::\+Page\+Allocator@{v8\+::\+Page\+Allocator}!Discard\+System\+Pages@{Discard\+System\+Pages}}
+\index{Discard\+System\+Pages@{Discard\+System\+Pages}!v8\+::\+Page\+Allocator@{v8\+::\+Page\+Allocator}}
+\subsubsection{\texorpdfstring{Discard\+System\+Pages()}{DiscardSystemPages()}}
+{\footnotesize\ttfamily virtual bool v8\+::\+Page\+Allocator\+::\+Discard\+System\+Pages (\begin{DoxyParamCaption}\item[{void $\ast$}]{address,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Frees memory in the given \mbox{[}address, address + size) range. address and size should be operating system page-\/aligned. The next write to this memory area brings the memory transparently back. \mbox{\Hypertarget{classv8_1_1PageAllocator_abc2e3fdc768aba7d35ce0cf44f14586c}\label{classv8_1_1PageAllocator_abc2e3fdc768aba7d35ce0cf44f14586c}} 
 \index{v8\+::\+Page\+Allocator@{v8\+::\+Page\+Allocator}!Free\+Pages@{Free\+Pages}}
 \index{Free\+Pages@{Free\+Pages}!v8\+::\+Page\+Allocator@{v8\+::\+Page\+Allocator}}
 \subsubsection{\texorpdfstring{Free\+Pages()}{FreePages()}}

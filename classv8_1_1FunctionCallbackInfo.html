@@ -95,7 +95,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad2105b93e9b4d02f42b7338fa5950cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0ebfc2ea43af2fdfc3d085272bf499f"><td class="memItemLeft" align="right" valign="top">V8_INLINE <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1FunctionCallbackInfo.html#ab0ebfc2ea43af2fdfc3d085272bf499f">Data</a> () const</td></tr>
 <tr class="separator:ab0ebfc2ea43af2fdfc3d085272bf499f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eee713a6f95d5707ce788861754682f"><td class="memItemLeft" align="right" valign="top">V8_INLINE <a class="el" href="classv8_1_1Isolate.html">Isolate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1FunctionCallbackInfo.html#a7eee713a6f95d5707ce788861754682f">GetIsolate</a> () const</td></tr>
+<tr class="memitem:a7eee713a6f95d5707ce788861754682f"><td class="memItemLeft" align="right" valign="top">V8_INLINE Isolate *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1FunctionCallbackInfo.html#a7eee713a6f95d5707ce788861754682f">GetIsolate</a> () const</td></tr>
 <tr class="separator:a7eee713a6f95d5707ce788861754682f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cb41afe1e098a46d27d901b4cc1e6f5"><td class="memItemLeft" align="right" valign="top">V8_INLINE <a class="el" href="classv8_1_1ReturnValue.html">ReturnValue</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1FunctionCallbackInfo.html#a2cb41afe1e098a46d27d901b4cc1e6f5">GetReturnValue</a> () const</td></tr>
 <tr class="separator:a2cb41afe1e098a46d27d901b4cc1e6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,18 +108,18 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>kArgsLeng
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad479ef760ed88d4354c267d2068deaca"><td class="memItemLeft" align="right" valign="top"><a id="ad479ef760ed88d4354c267d2068deaca"></a>
-V8_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionCallbackInfo</b> (internal::Object **implicit_args, internal::Object **values, int length)</td></tr>
-<tr class="separator:ad479ef760ed88d4354c267d2068deaca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ca4a2f13fa2479a340d5cfd8efaca1"><td class="memItemLeft" align="right" valign="top"><a id="a34ca4a2f13fa2479a340d5cfd8efaca1"></a>
+V8_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionCallbackInfo</b> (internal::Address *implicit_args, internal::Address *values, int length)</td></tr>
+<tr class="separator:a34ca4a2f13fa2479a340d5cfd8efaca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ab8a2c77ae9ea4f1406c4e488c7cdd700"><td class="memItemLeft" align="right" valign="top"><a id="ab8a2c77ae9ea4f1406c4e488c7cdd700"></a>
-internal::Object **&#160;</td><td class="memItemRight" valign="bottom"><b>implicit_args_</b></td></tr>
-<tr class="separator:ab8a2c77ae9ea4f1406c4e488c7cdd700"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21b29295968c0797c9f94ab6c7f571ca"><td class="memItemLeft" align="right" valign="top"><a id="a21b29295968c0797c9f94ab6c7f571ca"></a>
-internal::Object **&#160;</td><td class="memItemRight" valign="bottom"><b>values_</b></td></tr>
-<tr class="separator:a21b29295968c0797c9f94ab6c7f571ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a589fda1e686768fb49af5f5ea9e6549e"><td class="memItemLeft" align="right" valign="top"><a id="a589fda1e686768fb49af5f5ea9e6549e"></a>
+internal::Address *&#160;</td><td class="memItemRight" valign="bottom"><b>implicit_args_</b></td></tr>
+<tr class="separator:a589fda1e686768fb49af5f5ea9e6549e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1692383567930ec69c51ddfd9207744e"><td class="memItemLeft" align="right" valign="top"><a id="a1692383567930ec69c51ddfd9207744e"></a>
+internal::Address *&#160;</td><td class="memItemRight" valign="bottom"><b>values_</b></td></tr>
+<tr class="separator:a1692383567930ec69c51ddfd9207744e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab250ace06b495beb6f14b192eff77005"><td class="memItemLeft" align="right" valign="top"><a id="ab250ace06b495beb6f14b192eff77005"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>length_</b></td></tr>
 <tr class="separator:ab250ace06b495beb6f14b192eff77005"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,14 +192,14 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classv8_1_1Isolate.html">Isolate</a> * <a class="el" href="classv8_1_1FunctionCallbackInfo.html">v8::FunctionCallbackInfo</a>&lt; T &gt;::GetIsolate </td>
+          <td class="memname">Isolate * <a class="el" href="classv8_1_1FunctionCallbackInfo.html">v8::FunctionCallbackInfo</a>&lt; T &gt;::GetIsolate </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The current <a class="el" href="classv8_1_1Isolate.html">Isolate</a>. </p>
+<p>The current Isolate. </p>
 
 </div>
 </div>
@@ -240,7 +240,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>If the callback was created without a <a class="el" href="classv8_1_1Signature.html">Signature</a>, this is the same value as <a class="el" href="classv8_1_1FunctionCallbackInfo.html#a4ddfd6d21732dff1c4c55d5441a8a5ca">This()</a>. If there is a signature, and the signature didn't match <a class="el" href="classv8_1_1FunctionCallbackInfo.html#a4ddfd6d21732dff1c4c55d5441a8a5ca">This()</a> but one of its hidden prototypes, this will be the respective hidden prototype.</p>
-<p>Note that this is not the prototype of <a class="el" href="classv8_1_1FunctionCallbackInfo.html#a4ddfd6d21732dff1c4c55d5441a8a5ca">This()</a> on which the accessor referencing this callback was found (which in <a class="el" href="classv8_1_1V8.html">V8</a> internally is often referred to as holder [sic]). </p>
+<p>Note that this is not the prototype of <a class="el" href="classv8_1_1FunctionCallbackInfo.html#a4ddfd6d21732dff1c4c55d5441a8a5ca">This()</a> on which the accessor referencing this callback was found (which in V8 internally is often referred to as holder [sic]). </p>
 
 </div>
 </div>
@@ -351,7 +351,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 12 2018 15:47:02 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 25 2018 13:21:58 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

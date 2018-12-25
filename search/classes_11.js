@@ -7,8 +7,6 @@ var searchData=
   ['ticksample',['TickSample',['../structv8_1_1TickSample.html',1,'v8']]],
   ['tracestateobserver',['TraceStateObserver',['../classv8_1_1TracingController_1_1TraceStateObserver.html',1,'v8::TracingController']]],
   ['tracingcontroller',['TracingController',['../classv8_1_1TracingController.html',1,'v8']]],
-  ['tracingcpuprofiler',['TracingCpuProfiler',['../classv8_1_1TracingCpuProfiler.html',1,'v8']]],
   ['transferrablemodule',['TransferrableModule',['../classv8_1_1WasmCompiledModule_1_1TransferrableModule.html',1,'v8::WasmCompiledModule']]],
-  ['trycatch',['TryCatch',['../classv8_1_1TryCatch.html',1,'v8']]],
   ['typedarray',['TypedArray',['../classv8_1_1TypedArray.html',1,'v8']]]
 ];

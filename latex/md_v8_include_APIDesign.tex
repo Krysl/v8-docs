@@ -16,11 +16,11 @@ V8 requires access to certain O\+S-\/level primitives such as the ability to sch
 
 The embedder can define how to access those primitives via the \mbox{\hyperlink{classv8_1_1Platform}{v8\+::\+Platform}} interface. While V8 bundles a basic implementation, embedders are highly encouraged to implement \mbox{\hyperlink{classv8_1_1Platform}{v8\+::\+Platform}} themselves.
 
-Currently, the \mbox{\hyperlink{classv8_1_1ArrayBuffer_1_1Allocator}{v8\+::\+Array\+Buffer\+::\+Allocator}} is passed to the \mbox{\hyperlink{classv8_1_1Isolate}{v8\+::\+Isolate}} factory method, however, conceptually it should also be part of the \mbox{\hyperlink{classv8_1_1Platform}{v8\+::\+Platform}} since all instances of V8 should share one allocator.
+Currently, the \mbox{\hyperlink{classv8_1_1ArrayBuffer_1_1Allocator}{v8\+::\+Array\+Buffer\+::\+Allocator}} is passed to the v8\+::\+Isolate factory method, however, conceptually it should also be part of the \mbox{\hyperlink{classv8_1_1Platform}{v8\+::\+Platform}} since all instances of V8 should share one allocator.
 
-Once the \mbox{\hyperlink{classv8_1_1Platform}{v8\+::\+Platform}} is configured, an \mbox{\hyperlink{classv8_1_1Isolate}{v8\+::\+Isolate}} can be created. All further interactions with V8 should explicitly reference the \mbox{\hyperlink{classv8_1_1Isolate}{v8\+::\+Isolate}} they refer to. All A\+PI methods should eventually take an \mbox{\hyperlink{classv8_1_1Isolate}{v8\+::\+Isolate}} parameter.
+Once the \mbox{\hyperlink{classv8_1_1Platform}{v8\+::\+Platform}} is configured, an v8\+::\+Isolate can be created. All further interactions with V8 should explicitly reference the v8\+::\+Isolate they refer to. All A\+PI methods should eventually take an v8\+::\+Isolate parameter.
 
-When a given instance of V8 is no longer needed, it can be destroyed by disposing the respective \mbox{\hyperlink{classv8_1_1Isolate}{v8\+::\+Isolate}}. If the embedder wishes to free all memory associated with the \mbox{\hyperlink{classv8_1_1Isolate}{v8\+::\+Isolate}}, it has to first clear all global handles associated with that \mbox{\hyperlink{classv8_1_1Isolate}{v8\+::\+Isolate}}.
+When a given instance of V8 is no longer needed, it can be destroyed by disposing the respective v8\+::\+Isolate. If the embedder wishes to free all memory associated with the v8\+::\+Isolate, it has to first clear all global handles associated with that v8\+::\+Isolate.
 
 \section*{E\+C\+M\+A\+Script-\/like capabilities}
 
@@ -28,7 +28,7 @@ In general, the C++ A\+PI shouldn\textquotesingle{}t enable capabilities that ar
 
 The C++ A\+PI should also be pleasant to use, and not require learning new paradigms. Similarly to how the A\+PI exposed to scripts aims to provide good ergonomics, we should aim to provide a reasonable developer experience for this A\+PI surface.
 
-E\+C\+M\+A\+Script makes heavy use of exceptions, however, V8\textquotesingle{}s C++ code doesn\textquotesingle{}t use C++ exceptions. Therefore, all A\+PI methods that can throw exceptions should indicate so by returning a \mbox{\hyperlink{classv8_1_1Maybe}{v8\+::\+Maybe}}$<$$>$ or \mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$$>$ result, and by taking a \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$\mbox{\hyperlink{classv8_1_1Context}{v8\+::\+Context}}$>$ parameter that indicates in which context a possible exception should be thrown.
+E\+C\+M\+A\+Script makes heavy use of exceptions, however, V8\textquotesingle{}s C++ code doesn\textquotesingle{}t use C++ exceptions. Therefore, all A\+PI methods that can throw exceptions should indicate so by returning a \mbox{\hyperlink{classv8_1_1Maybe}{v8\+::\+Maybe}}$<$$>$ or \mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$$>$ result, and by taking a \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$v8\+::\+Context$>$ parameter that indicates in which context a possible exception should be thrown.
 
 \section*{A\+PI objects}
 

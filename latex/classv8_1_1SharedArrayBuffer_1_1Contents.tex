@@ -4,6 +4,15 @@
 
 {\ttfamily \#include $<$v8.\+h$>$}
 
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1SharedArrayBuffer_1_1Contents_a9b3beca611144f6514647ce8e6937be7}\label{classv8_1_1SharedArrayBuffer_1_1Contents_a9b3beca611144f6514647ce8e6937be7}} 
+using {\bfseries Allocator} = \mbox{\hyperlink{classv8_1_1ArrayBuffer_1_1Allocator}{v8\+::\+Array\+Buffer\+::\+Allocator}}
+\item 
+\mbox{\Hypertarget{classv8_1_1SharedArrayBuffer_1_1Contents_a68a6bf80c68a3b8c6ac2eb6fb38169f0}\label{classv8_1_1SharedArrayBuffer_1_1Contents_a68a6bf80c68a3b8c6ac2eb6fb38169f0}} 
+using {\bfseries Deleter\+Callback} = void($\ast$)(void $\ast$buffer, size\+\_\+t length, void $\ast$info)
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -13,14 +22,20 @@ void $\ast$ {\bfseries Allocation\+Base} () const
 \mbox{\Hypertarget{classv8_1_1SharedArrayBuffer_1_1Contents_a5d3facf7b33602f5bd8d6641c15a626a}\label{classv8_1_1SharedArrayBuffer_1_1Contents_a5d3facf7b33602f5bd8d6641c15a626a}} 
 size\+\_\+t {\bfseries Allocation\+Length} () const
 \item 
-\mbox{\Hypertarget{classv8_1_1SharedArrayBuffer_1_1Contents_ad878fba7975a9ee251fa935c246eb4ff}\label{classv8_1_1SharedArrayBuffer_1_1Contents_ad878fba7975a9ee251fa935c246eb4ff}} 
-\mbox{\hyperlink{classv8_1_1ArrayBuffer_1_1Allocator_ab106d1fbad7be9f6fd8b0f5c550ac59e}{Array\+Buffer\+::\+Allocator\+::\+Allocation\+Mode}} {\bfseries Allocation\+Mode} () const
+\mbox{\Hypertarget{classv8_1_1SharedArrayBuffer_1_1Contents_ae0ad06b6417e2e66cc903f230dffbfe5}\label{classv8_1_1SharedArrayBuffer_1_1Contents_ae0ad06b6417e2e66cc903f230dffbfe5}} 
+\mbox{\hyperlink{classv8_1_1ArrayBuffer_1_1Allocator_ab106d1fbad7be9f6fd8b0f5c550ac59e}{Allocator\+::\+Allocation\+Mode}} {\bfseries Allocation\+Mode} () const
 \item 
 \mbox{\Hypertarget{classv8_1_1SharedArrayBuffer_1_1Contents_a8a795e7b725530f608c83528e5d4193b}\label{classv8_1_1SharedArrayBuffer_1_1Contents_a8a795e7b725530f608c83528e5d4193b}} 
 void $\ast$ {\bfseries Data} () const
 \item 
 \mbox{\Hypertarget{classv8_1_1SharedArrayBuffer_1_1Contents_a3678ae4afdb9884a5beeab644966382b}\label{classv8_1_1SharedArrayBuffer_1_1Contents_a3678ae4afdb9884a5beeab644966382b}} 
 size\+\_\+t {\bfseries Byte\+Length} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1SharedArrayBuffer_1_1Contents_aa53c887a604cb1fc79e485cb7c765847}\label{classv8_1_1SharedArrayBuffer_1_1Contents_aa53c887a604cb1fc79e485cb7c765847}} 
+Deleter\+Callback {\bfseries Deleter} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1SharedArrayBuffer_1_1Contents_ac3d565b291b4090206db8f2ab80876c5}\label{classv8_1_1SharedArrayBuffer_1_1Contents_ac3d565b291b4090206db8f2ab80876c5}} 
+void $\ast$ {\bfseries Deleter\+Data} () const
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -33,7 +48,7 @@ class {\bfseries Shared\+Array\+Buffer}
 \subsection{Detailed Description}
 The contents of an $\vert$\+Shared\+Array\+Buffer$\vert$. Externalization of $\vert$\+Shared\+Array\+Buffer$\vert$ returns an instance of this class, populated, with a pointer to data and byte length.
 
-The \mbox{\hyperlink{classv8_1_1Data}{Data}} pointer of \mbox{\hyperlink{classv8_1_1SharedArrayBuffer_1_1Contents}{Shared\+Array\+Buffer\+::\+Contents}} is always allocated with $\vert$\+Array\+Buffer\+::\+Allocator\+::\+Allocate$\vert$ by the allocator specified in \mbox{\hyperlink{structv8_1_1Isolate_1_1CreateParams_a7c663f70b64290392eeaf164f57585f9}{v8\+::\+Isolate\+::\+Create\+Params\+::array\+\_\+buffer\+\_\+allocator}}.
+The \mbox{\hyperlink{classv8_1_1Data}{Data}} pointer of \mbox{\hyperlink{classv8_1_1ArrayBuffer_1_1Contents}{Array\+Buffer\+::\+Contents}} must be freed using the provided deleter, which will call \mbox{\hyperlink{classv8_1_1ArrayBuffer_1_1Allocator_a419f59d2a103a5a8863809d7977c9cd8}{Array\+Buffer\+::\+Allocator\+::\+Free}} if the buffer was allocated with Arrary\+Buffer\+::\+Allocator\+::\+Allocate.
 
 This A\+PI is experimental and may change significantly. 
 

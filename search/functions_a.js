@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['length',['length',['../classv8_1_1String_1_1ExternalStringResource.html#ab5ca300fea077d7c7774ec49d32e4da1',1,'v8::String::ExternalStringResource::length()'],['../classv8_1_1String_1_1ExternalOneByteStringResource.html#ad6b702f05798bcfc3975cb922f32b5ab',1,'v8::String::ExternalOneByteStringResource::length()'],['../classv8_1_1ExternalOneByteStringResourceImpl.html#a4015ab4f74c209ac484e5183b2039f58',1,'v8::ExternalOneByteStringResourceImpl::length()'],['../classv8_1_1String.html#afaa18eae27056bb7058f09920a238f53',1,'v8::String::Length()'],['../classv8_1_1FunctionCallbackInfo.html#af97dd3f1cb01ed039f9479152ad63a84',1,'v8::FunctionCallbackInfo::Length()'],['../classv8_1_1TypedArray.html#abb1047225d53d960c0da9c9f83cd7042',1,'v8::TypedArray::Length()']]],
-  ['local',['Local',['../classv8_1_1Local.html#a18d761713c1062a38f58a568fffe8f80',1,'v8::Local']]],
-  ['locker',['Locker',['../classv8_1_1Locker.html#a9f41151c92493a27d6724676fc774b51',1,'v8::Locker']]],
-  ['lowmemorynotification',['LowMemoryNotification',['../classv8_1_1Isolate.html#aaf446f4877e4707a93d2c406fffd9fd6',1,'v8::Isolate']]]
+  ['makeexternal',['MakeExternal',['../classv8_1_1String.html#a5efd1eba40c1fa8a6aae2c4a175a63be',1,'v8::String::MakeExternal(ExternalStringResource *resource)'],['../classv8_1_1String.html#a607d632c720eec5133649f522aefa944',1,'v8::String::MakeExternal(ExternalOneByteStringResource *resource)']]],
+  ['markactive',['MarkActive',['../classv8_1_1PersistentBase.html#a7244edd33a45b7d95e566fce85e3f87d',1,'v8::PersistentBase']]],
+  ['markashandled',['MarkAsHandled',['../classv8_1_1Promise.html#a17d6e3484dc051e1c05a31fd285b0f9f',1,'v8::Promise']]],
+  ['markasundetectable',['MarkAsUndetectable',['../classv8_1_1ObjectTemplate.html#a7e40ef313b44c2ad336c73051523b4f8',1,'v8::ObjectTemplate']]],
+  ['monotonicallyincreasingtime',['MonotonicallyIncreasingTime',['../classv8_1_1Platform.html#a6d4d7c2dcf6b0c7113099b97fa7f57b7',1,'v8::Platform']]]
 ];

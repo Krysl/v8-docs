@@ -106,9 +106,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6eb6bd93c8880dd022a61a13c65f66c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3817d5bfaba9ec280a6cfb60e6adda0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#aa3817d5bfaba9ec280a6cfb60e6adda0">SetPermissions</a> (void *address, size_t length, <a class="el" href="classv8_1_1PageAllocator.html#a88f74b164fe97e053259f67a95758415">Permission</a> permissions)=0</td></tr>
 <tr class="separator:aa3817d5bfaba9ec280a6cfb60e6adda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0de847c922e25f63d82494d997f441d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#ad0de847c922e25f63d82494d997f441d">DiscardSystemPages</a> (void *address, size_t size)</td></tr>
+<tr class="separator:ad0de847c922e25f63d82494d997f441d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A <a class="el" href="classv8_1_1V8.html">V8</a> memory page allocator.</p>
+<div class="textblock"><p>A V8 memory page allocator.</p>
 <p>Can be implemented by an embedder to manage large host OS allocations. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a88f74b164fe97e053259f67a95758415"></a>
@@ -225,6 +227,43 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Gets the page granularity for SetPermissions and ReleasePages. Addresses and lengths for those calls should be multiples of <a class="el" href="classv8_1_1PageAllocator.html#ad817d87004151e3824997415f2dc57e9">CommitPageSize()</a>. </p>
+
+</div>
+</div>
+<a id="ad0de847c922e25f63d82494d997f441d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0de847c922e25f63d82494d997f441d">&#9670;&nbsp;</a></span>DiscardSystemPages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool v8::PageAllocator::DiscardSystemPages </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Frees memory in the given [address, address + size) range. address and size should be operating system page-aligned. The next write to this memory area brings the memory transparently back. </p>
 
 </div>
 </div>
@@ -410,7 +449,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 12 2018 15:47:05 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 25 2018 13:22:02 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

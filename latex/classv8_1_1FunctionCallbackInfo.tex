@@ -21,7 +21,7 @@ V8\+\_\+\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo_a
 \item 
 V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo_ab0ebfc2ea43af2fdfc3d085272bf499f}{Data}} () const
 \item 
-V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$ \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo_a7eee713a6f95d5707ce788861754682f}{Get\+Isolate}} () const
+V8\+\_\+\+I\+N\+L\+I\+NE Isolate $\ast$ \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo_a7eee713a6f95d5707ce788861754682f}{Get\+Isolate}} () const
 \item 
 V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1ReturnValue}{Return\+Value}}$<$ T $>$ \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo_a2cb41afe1e098a46d27d901b4cc1e6f5}{Get\+Return\+Value}} () const
 \end{DoxyCompactItemize}
@@ -34,17 +34,17 @@ static const int {\bfseries k\+Args\+Length} = 6
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classv8_1_1FunctionCallbackInfo_ad479ef760ed88d4354c267d2068deaca}\label{classv8_1_1FunctionCallbackInfo_ad479ef760ed88d4354c267d2068deaca}} 
-V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Function\+Callback\+Info} (internal\+::\+Object $\ast$$\ast$implicit\+\_\+args, internal\+::\+Object $\ast$$\ast$values, int length)
+\mbox{\Hypertarget{classv8_1_1FunctionCallbackInfo_a34ca4a2f13fa2479a340d5cfd8efaca1}\label{classv8_1_1FunctionCallbackInfo_a34ca4a2f13fa2479a340d5cfd8efaca1}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Function\+Callback\+Info} (internal\+::\+Address $\ast$implicit\+\_\+args, internal\+::\+Address $\ast$values, int length)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classv8_1_1FunctionCallbackInfo_ab8a2c77ae9ea4f1406c4e488c7cdd700}\label{classv8_1_1FunctionCallbackInfo_ab8a2c77ae9ea4f1406c4e488c7cdd700}} 
-internal\+::\+Object $\ast$$\ast$ {\bfseries implicit\+\_\+args\+\_\+}
+\mbox{\Hypertarget{classv8_1_1FunctionCallbackInfo_a589fda1e686768fb49af5f5ea9e6549e}\label{classv8_1_1FunctionCallbackInfo_a589fda1e686768fb49af5f5ea9e6549e}} 
+internal\+::\+Address $\ast$ {\bfseries implicit\+\_\+args\+\_\+}
 \item 
-\mbox{\Hypertarget{classv8_1_1FunctionCallbackInfo_a21b29295968c0797c9f94ab6c7f571ca}\label{classv8_1_1FunctionCallbackInfo_a21b29295968c0797c9f94ab6c7f571ca}} 
-internal\+::\+Object $\ast$$\ast$ {\bfseries values\+\_\+}
+\mbox{\Hypertarget{classv8_1_1FunctionCallbackInfo_a1692383567930ec69c51ddfd9207744e}\label{classv8_1_1FunctionCallbackInfo_a1692383567930ec69c51ddfd9207744e}} 
+internal\+::\+Address $\ast$ {\bfseries values\+\_\+}
 \item 
 \mbox{\Hypertarget{classv8_1_1FunctionCallbackInfo_ab250ace06b495beb6f14b192eff77005}\label{classv8_1_1FunctionCallbackInfo_ab250ace06b495beb6f14b192eff77005}} 
 int {\bfseries length\+\_\+}
@@ -103,9 +103,9 @@ The data argument specified when creating the callback. \mbox{\Hypertarget{class
 \index{Get\+Isolate@{Get\+Isolate}!v8\+::\+Function\+Callback\+Info@{v8\+::\+Function\+Callback\+Info}}
 \subsubsection{\texorpdfstring{Get\+Isolate()}{GetIsolate()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$ \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ T $>$\+::Get\+Isolate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+Isolate $\ast$ \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ T $>$\+::Get\+Isolate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-The current \mbox{\hyperlink{classv8_1_1Isolate}{Isolate}}. \mbox{\Hypertarget{classv8_1_1FunctionCallbackInfo_a2cb41afe1e098a46d27d901b4cc1e6f5}\label{classv8_1_1FunctionCallbackInfo_a2cb41afe1e098a46d27d901b4cc1e6f5}} 
+The current Isolate. \mbox{\Hypertarget{classv8_1_1FunctionCallbackInfo_a2cb41afe1e098a46d27d901b4cc1e6f5}\label{classv8_1_1FunctionCallbackInfo_a2cb41afe1e098a46d27d901b4cc1e6f5}} 
 \index{v8\+::\+Function\+Callback\+Info@{v8\+::\+Function\+Callback\+Info}!Get\+Return\+Value@{Get\+Return\+Value}}
 \index{Get\+Return\+Value@{Get\+Return\+Value}!v8\+::\+Function\+Callback\+Info@{v8\+::\+Function\+Callback\+Info}}
 \subsubsection{\texorpdfstring{Get\+Return\+Value()}{GetReturnValue()}}
@@ -121,7 +121,7 @@ The \mbox{\hyperlink{classv8_1_1ReturnValue}{Return\+Value}} for the call. \mbox
 
 If the callback was created without a \mbox{\hyperlink{classv8_1_1Signature}{Signature}}, this is the same value as \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo_a4ddfd6d21732dff1c4c55d5441a8a5ca}{This()}}. If there is a signature, and the signature didn\textquotesingle{}t match \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo_a4ddfd6d21732dff1c4c55d5441a8a5ca}{This()}} but one of its hidden prototypes, this will be the respective hidden prototype.
 
-Note that this is not the prototype of \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo_a4ddfd6d21732dff1c4c55d5441a8a5ca}{This()}} on which the accessor referencing this callback was found (which in \mbox{\hyperlink{classv8_1_1V8}{V8}} internally is often referred to as holder \mbox{[}sic\mbox{]}). \mbox{\Hypertarget{classv8_1_1FunctionCallbackInfo_ad2105b93e9b4d02f42b7338fa5950cbc}\label{classv8_1_1FunctionCallbackInfo_ad2105b93e9b4d02f42b7338fa5950cbc}} 
+Note that this is not the prototype of \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo_a4ddfd6d21732dff1c4c55d5441a8a5ca}{This()}} on which the accessor referencing this callback was found (which in V8 internally is often referred to as holder \mbox{[}sic\mbox{]}). \mbox{\Hypertarget{classv8_1_1FunctionCallbackInfo_ad2105b93e9b4d02f42b7338fa5950cbc}\label{classv8_1_1FunctionCallbackInfo_ad2105b93e9b4d02f42b7338fa5950cbc}} 
 \index{v8\+::\+Function\+Callback\+Info@{v8\+::\+Function\+Callback\+Info}!Is\+Construct\+Call@{Is\+Construct\+Call}}
 \index{Is\+Construct\+Call@{Is\+Construct\+Call}!v8\+::\+Function\+Callback\+Info@{v8\+::\+Function\+Callback\+Info}}
 \subsubsection{\texorpdfstring{Is\+Construct\+Call()}{IsConstructCall()}}

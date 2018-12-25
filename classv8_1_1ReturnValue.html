@@ -79,10 +79,10 @@ Public Member Functions</h2></td></tr>
 template&lt;class S &gt; </td></tr>
 <tr class="memitem:a0f1cdf01090e6fc957a0081036a55e6b"><td class="memTemplItemLeft" align="right" valign="top">V8_INLINE&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ReturnValue</b> (const <a class="el" href="classv8_1_1ReturnValue.html">ReturnValue</a>&lt; S &gt; &amp;that)</td></tr>
 <tr class="separator:a0f1cdf01090e6fc957a0081036a55e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a852de19bf776c8ed9b5a0c40abe1f011"><td class="memTemplParams" colspan="2"><a id="a852de19bf776c8ed9b5a0c40abe1f011"></a>
+<tr class="memitem:a0453174f9d6ab50a5eb657e49ce75fdd"><td class="memTemplParams" colspan="2"><a id="a0453174f9d6ab50a5eb657e49ce75fdd"></a>
 template&lt;typename S &gt; </td></tr>
-<tr class="memitem:a852de19bf776c8ed9b5a0c40abe1f011"><td class="memTemplItemLeft" align="right" valign="top">V8_INLINE&#160;</td><td class="memTemplItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use <a class="el" href="classv8_1_1Global.html">Global</a>&lt;&gt; instead&quot;, void <a class="el" href="classv8_1_1Set.html">Set</a>(const <a class="el" href="classv8_1_1Persistent.html">Persistent</a>&lt; S &gt; &amp;handle))</td></tr>
-<tr class="separator:a852de19bf776c8ed9b5a0c40abe1f011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0453174f9d6ab50a5eb657e49ce75fdd"><td class="memTemplItemLeft" align="right" valign="top">V8_INLINE&#160;</td><td class="memTemplItemRight" valign="bottom"><b>V8_DEPRECATED</b> (&quot;Use <a class="el" href="classv8_1_1Global.html">Global</a>&lt;&gt; instead&quot;, void <a class="el" href="classv8_1_1Set.html">Set</a>(const <a class="el" href="classv8_1_1Persistent.html">Persistent</a>&lt; S &gt; &amp;handle))</td></tr>
+<tr class="separator:a0453174f9d6ab50a5eb657e49ce75fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd7bacd0c0c42de6d7bc904b66fab5d6"><td class="memTemplParams" colspan="2"><a id="acd7bacd0c0c42de6d7bc904b66fab5d6"></a>
 template&lt;typename S &gt; </td></tr>
 <tr class="memitem:acd7bacd0c0c42de6d7bc904b66fab5d6"><td class="memTemplItemLeft" align="right" valign="top">V8_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Set</b> (const <a class="el" href="classv8_1_1Global.html">Global</a>&lt; S &gt; &amp;handle)</td></tr>
@@ -113,7 +113,7 @@ V8_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUndefine
 V8_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>SetEmptyString</b> ()</td></tr>
 <tr class="separator:a3ed4f59f726eafae53525bb68512b93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb4418eb993240d8b5b4bde488d6ea1d"><td class="memItemLeft" align="right" valign="top"><a id="acb4418eb993240d8b5b4bde488d6ea1d"></a>
-V8_INLINE <a class="el" href="classv8_1_1Isolate.html">Isolate</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetIsolate</b> () const</td></tr>
+V8_INLINE Isolate *&#160;</td><td class="memItemRight" valign="bottom"><b>GetIsolate</b> () const</td></tr>
 <tr class="separator:acb4418eb993240d8b5b4bde488d6ea1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbfa5f2c7cf2e95b42a4dcf79874fbe5"><td class="memTemplParams" colspan="2"><a id="acbfa5f2c7cf2e95b42a4dcf79874fbe5"></a>
 template&lt;typename S &gt; </td></tr>
@@ -122,22 +122,6 @@ template&lt;typename S &gt; </td></tr>
 <tr class="memitem:a9167dbbc04d72bbd85a8a7f199f211c4"><td class="memItemLeft" align="right" valign="top"><a id="a9167dbbc04d72bbd85a8a7f199f211c4"></a>
 V8_INLINE <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Get</b> () const</td></tr>
 <tr class="separator:a9167dbbc04d72bbd85a8a7f199f211c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ff02f4be7d7fdcf0e21be43dfd4fe43"><td class="memTemplParams" colspan="2"><a id="a2ff02f4be7d7fdcf0e21be43dfd4fe43"></a>
-template&lt;typename S &gt; </td></tr>
-<tr class="memitem:a2ff02f4be7d7fdcf0e21be43dfd4fe43"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Set</b> (const <a class="el" href="classv8_1_1Persistent.html">Persistent</a>&lt; S &gt; &amp;handle)</td></tr>
-<tr class="separator:a2ff02f4be7d7fdcf0e21be43dfd4fe43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57c4b962cf2ca387d3fb9a2f8e47a963"><td class="memTemplParams" colspan="2"><a id="a57c4b962cf2ca387d3fb9a2f8e47a963"></a>
-template&lt;typename S &gt; </td></tr>
-<tr class="memitem:a57c4b962cf2ca387d3fb9a2f8e47a963"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Set</b> (const <a class="el" href="classv8_1_1Global.html">Global</a>&lt; S &gt; &amp;handle)</td></tr>
-<tr class="separator:a57c4b962cf2ca387d3fb9a2f8e47a963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69d99ab0e0c12d68291d425287532799"><td class="memTemplParams" colspan="2"><a id="a69d99ab0e0c12d68291d425287532799"></a>
-template&lt;typename S &gt; </td></tr>
-<tr class="memitem:a69d99ab0e0c12d68291d425287532799"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Set</b> (const <a class="el" href="classv8_1_1Local.html">Local</a>&lt; S &gt; handle)</td></tr>
-<tr class="separator:a69d99ab0e0c12d68291d425287532799"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a766f60aa4d7d86bfb949d3c40b147ef7"><td class="memTemplParams" colspan="2"><a id="a766f60aa4d7d86bfb949d3c40b147ef7"></a>
-template&lt;typename S &gt; </td></tr>
-<tr class="memitem:a766f60aa4d7d86bfb949d3c40b147ef7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Set</b> (S *whatever)</td></tr>
-<tr class="separator:a766f60aa4d7d86bfb949d3c40b147ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -164,7 +148,7 @@ template&lt;class F , class G , class H &gt; </td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 12 2018 15:47:06 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 25 2018 13:22:05 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['hostimportmoduledynamicallycallback',['HostImportModuleDynamicallyCallback',['../namespacev8.html#a327d89ea1fb89b4ada3571a3571413cc',1,'v8']]],
-  ['hostinitializeimportmetaobjectcallback',['HostInitializeImportMetaObjectCallback',['../namespacev8.html#a46fe0379312fafd495b9be892b2de443',1,'v8']]]
+  ['modulecompiledcallback',['ModuleCompiledCallback',['../classv8_1_1WasmStreaming.html#a2e8af849348cbd9fe9c3940ab010917d',1,'v8::WasmStreaming']]]
 ];

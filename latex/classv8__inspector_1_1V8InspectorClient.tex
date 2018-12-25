@@ -40,7 +40,7 @@ virtual bool {\bfseries format\+Accessors\+As\+Properties} (\mbox{\hyperlink{cla
 virtual bool {\bfseries is\+Inspectable\+Heap\+Object} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{v8\+::\+Object}} $>$)
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8InspectorClient_a8b47c57ccc57f386570e1148a2efe38a}\label{classv8__inspector_1_1V8InspectorClient_a8b47c57ccc57f386570e1148a2efe38a}} 
-virtual \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{v8\+::\+Context}} $>$ {\bfseries ensure\+Default\+Context\+In\+Group} (int context\+Group\+Id)
+virtual \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$ {\bfseries ensure\+Default\+Context\+In\+Group} (int context\+Group\+Id)
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8InspectorClient_a004987bc7b929f12a39d3e1cc7804a05}\label{classv8__inspector_1_1V8InspectorClient_a004987bc7b929f12a39d3e1cc7804a05}} 
 virtual void {\bfseries begin\+Ensure\+All\+Contexts\+In\+Group} (int context\+Group\+Id)
@@ -49,13 +49,13 @@ virtual void {\bfseries begin\+Ensure\+All\+Contexts\+In\+Group} (int context\+G
 virtual void {\bfseries end\+Ensure\+All\+Contexts\+In\+Group} (int context\+Group\+Id)
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8InspectorClient_acbc688fd17d8c8a29435c4533f9e1f43}\label{classv8__inspector_1_1V8InspectorClient_acbc688fd17d8c8a29435c4533f9e1f43}} 
-virtual void {\bfseries install\+Additional\+Command\+Line\+A\+PI} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{v8\+::\+Context}} $>$, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{v8\+::\+Object}} $>$)
+virtual void {\bfseries install\+Additional\+Command\+Line\+A\+PI} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{v8\+::\+Object}} $>$)
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8InspectorClient_acac454b61131fecf04f5d7631ddeae86}\label{classv8__inspector_1_1V8InspectorClient_acac454b61131fecf04f5d7631ddeae86}} 
 virtual void {\bfseries console\+A\+P\+I\+Message} (int context\+Group\+Id, v8\+::\+Isolate\+::\+Message\+Error\+Level level, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&message, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&url, unsigned line\+Number, unsigned column\+Number, \mbox{\hyperlink{classv8__inspector_1_1V8StackTrace}{V8\+Stack\+Trace}} $\ast$)
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8InspectorClient_aa0ae6992f007803302cb64d3d0461a20}\label{classv8__inspector_1_1V8InspectorClient_aa0ae6992f007803302cb64d3d0461a20}} 
-virtual \mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ {\bfseries memory\+Info} (\mbox{\hyperlink{classv8_1_1Isolate}{v8\+::\+Isolate}} $\ast$, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{v8\+::\+Context}} $>$)
+virtual \mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ {\bfseries memory\+Info} (v8\+::\+Isolate $\ast$, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$)
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8InspectorClient_a7b0e3b6ae4473671ed80e38153cbcec9}\label{classv8__inspector_1_1V8InspectorClient_a7b0e3b6ae4473671ed80e38153cbcec9}} 
 virtual void {\bfseries console\+Time} (const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&title)
@@ -83,6 +83,9 @@ virtual bool {\bfseries can\+Execute\+Scripts} (int context\+Group\+Id)
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8InspectorClient_afdb594d52d1a1dfc751f11dbcf2166bf}\label{classv8__inspector_1_1V8InspectorClient_afdb594d52d1a1dfc751f11dbcf2166bf}} 
 virtual void {\bfseries max\+Async\+Call\+Stack\+Depth\+Changed} (int depth)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorClient_a7db967e0049f3935b83de0788d111497}\label{classv8__inspector_1_1V8InspectorClient_a7db967e0049f3935b83de0788d111497}} 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1StringBuffer}{String\+Buffer}} $>$ {\bfseries resource\+Name\+To\+Url} (const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&resource\+Name)
 \end{DoxyCompactItemize}
 
 

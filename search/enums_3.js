@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['flags',['Flags',['../classv8_1_1RegExp.html#aa4718a5c1f18472aff3bf51ed694fc5a',1,'v8::RegExp']]]
+  ['indexfilter',['IndexFilter',['../namespacev8.html#a46fd71fef702b35b34ed7495e7a63323',1,'v8']]],
+  ['integritylevel',['IntegrityLevel',['../namespacev8.html#a02642d03ff1eecc2fd358626499c2e30',1,'v8']]]
 ];

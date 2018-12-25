@@ -51,20 +51,20 @@ enum {\bfseries New\+String\+Type} \{ {\bfseries k\+Normal\+String} = static\+\_
 \item 
 int \mbox{\hyperlink{classv8_1_1String_afaa18eae27056bb7058f09920a238f53}{Length}} () const
 \item 
-int \mbox{\hyperlink{classv8_1_1String_a03010150464f91fdabb73c837bf41706}{Utf8\+Length}} () const
+int \mbox{\hyperlink{classv8_1_1String_af99433ee51ed45337e5b4536bd28a834}{Utf8\+Length}} (Isolate $\ast$isolate) const
 \item 
 bool \mbox{\hyperlink{classv8_1_1String_a8f14ab3aff52295d2d3245081a1b29eb}{Is\+One\+Byte}} () const
 \item 
 bool \mbox{\hyperlink{classv8_1_1String_a29b9bc5f71fba74af478e806b9d6a1d6}{Contains\+Only\+One\+Byte}} () const
 \item 
-\mbox{\Hypertarget{classv8_1_1String_a4377d4256329aa83b60dbe6ec2724d2b}\label{classv8_1_1String_a4377d4256329aa83b60dbe6ec2724d2b}} 
-int {\bfseries Write} (uint16\+\_\+t $\ast$buffer, int start=0, int length=-\/1, int options=N\+O\+\_\+\+O\+P\+T\+I\+O\+NS) const
+\mbox{\Hypertarget{classv8_1_1String_a7196c4beb54cdbeaa31b84724c71a2dc}\label{classv8_1_1String_a7196c4beb54cdbeaa31b84724c71a2dc}} 
+int {\bfseries Write} (Isolate $\ast$isolate, uint16\+\_\+t $\ast$buffer, int start=0, int length=-\/1, int options=N\+O\+\_\+\+O\+P\+T\+I\+O\+NS) const
 \item 
-\mbox{\Hypertarget{classv8_1_1String_a2341e5b5fb4a2ca8c7167cd8f61159c5}\label{classv8_1_1String_a2341e5b5fb4a2ca8c7167cd8f61159c5}} 
-int {\bfseries Write\+One\+Byte} (uint8\+\_\+t $\ast$buffer, int start=0, int length=-\/1, int options=N\+O\+\_\+\+O\+P\+T\+I\+O\+NS) const
+\mbox{\Hypertarget{classv8_1_1String_a63989b39945308d79484c1a3c4c52730}\label{classv8_1_1String_a63989b39945308d79484c1a3c4c52730}} 
+int {\bfseries Write\+One\+Byte} (Isolate $\ast$isolate, uint8\+\_\+t $\ast$buffer, int start=0, int length=-\/1, int options=N\+O\+\_\+\+O\+P\+T\+I\+O\+NS) const
 \item 
-\mbox{\Hypertarget{classv8_1_1String_aa2529bf836fe251638ebc0a014c1a19c}\label{classv8_1_1String_aa2529bf836fe251638ebc0a014c1a19c}} 
-int {\bfseries Write\+Utf8} (char $\ast$buffer, int length=-\/1, int $\ast$nchars\+\_\+ref=N\+U\+LL, int options=N\+O\+\_\+\+O\+P\+T\+I\+O\+NS) const
+\mbox{\Hypertarget{classv8_1_1String_a7a15f155614bef1fdda4dfc1072dc846}\label{classv8_1_1String_a7a15f155614bef1fdda4dfc1072dc846}} 
+int {\bfseries Write\+Utf8} (Isolate $\ast$isolate, char $\ast$buffer, int length=-\/1, int $\ast$nchars\+\_\+ref=nullptr, int options=N\+O\+\_\+\+O\+P\+T\+I\+O\+NS) const
 \item 
 bool \mbox{\hyperlink{classv8_1_1String_a1d24faa97c6168221ec362c395d41ce1}{Is\+External}} () const
 \item 
@@ -81,33 +81,35 @@ bool \mbox{\hyperlink{classv8_1_1String_a5efd1eba40c1fa8a6aae2c4a175a63be}{Make\
 bool \mbox{\hyperlink{classv8_1_1String_a607d632c720eec5133649f522aefa944}{Make\+External}} (\mbox{\hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource}{External\+One\+Byte\+String\+Resource}} $\ast$resource)
 \item 
 bool \mbox{\hyperlink{classv8_1_1String_a0fe076838af046506ffebbfadcde812a}{Can\+Make\+External}} ()
+\item 
+bool \mbox{\hyperlink{classv8_1_1String_aaca2109ba1c2c50e45d40d7b79edb01c}{String\+Equals}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ str)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1String_aa393d47baa54467fe57001065e49194b}{Empty}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1String_aa393d47baa54467fe57001065e49194b}{Empty}} (Isolate $\ast$isolate)
 \item 
 \mbox{\Hypertarget{classv8_1_1String_a826d60798dc152cea64a7636737b03b9}\label{classv8_1_1String_a826d60798dc152cea64a7636737b03b9}} 
 static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1String}{String}} $\ast$ {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $\ast$obj)
 \item 
-static \mbox{\hyperlink{classv8_1_1String_aa9d64688e3535b3daabafcc46a59ce5a}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1String_a851bcf20fecb01b97f14131ce609f701}{New\+From\+Utf8}}(\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, const char $\ast$data, New\+String\+Type type=k\+Normal\+String, int length=-\/1))
+static \mbox{\hyperlink{classv8_1_1String_aa9d64688e3535b3daabafcc46a59ce5a}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1String_a851bcf20fecb01b97f14131ce609f701}{New\+From\+Utf8}}(Isolate $\ast$isolate, const char $\ast$data, New\+String\+Type type=k\+Normal\+String, int length=-\/1))
 \item 
-static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1String_a851bcf20fecb01b97f14131ce609f701}{New\+From\+Utf8}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, const char $\ast$data, \mbox{\hyperlink{namespacev8_ac9163ab12fb3b2a95907a3a0367c6095}{v8\+::\+New\+String\+Type}} type, int length=-\/1)
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1String_a851bcf20fecb01b97f14131ce609f701}{New\+From\+Utf8}} (Isolate $\ast$isolate, const char $\ast$data, \mbox{\hyperlink{namespacev8_ac9163ab12fb3b2a95907a3a0367c6095}{v8\+::\+New\+String\+Type}} type, int length=-\/1)
 \item 
-static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1String_a2b8cf518523a62d97360c07ed33d8aa6}{New\+From\+One\+Byte}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, const uint8\+\_\+t $\ast$data, \mbox{\hyperlink{namespacev8_ac9163ab12fb3b2a95907a3a0367c6095}{v8\+::\+New\+String\+Type}} type, int length=-\/1)
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1String_a2b8cf518523a62d97360c07ed33d8aa6}{New\+From\+One\+Byte}} (Isolate $\ast$isolate, const uint8\+\_\+t $\ast$data, \mbox{\hyperlink{namespacev8_ac9163ab12fb3b2a95907a3a0367c6095}{v8\+::\+New\+String\+Type}} type, int length=-\/1)
 \item 
-static \mbox{\hyperlink{classv8_1_1String_aeab948105979e2ffd61eb552b0da4e50}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1String_aaad4c7c856c29d79db85994c301fe601}{New\+From\+Two\+Byte}}(\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, const uint16\+\_\+t $\ast$data, New\+String\+Type type=k\+Normal\+String, int length=-\/1))
+static \mbox{\hyperlink{classv8_1_1String_aeab948105979e2ffd61eb552b0da4e50}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1String_aaad4c7c856c29d79db85994c301fe601}{New\+From\+Two\+Byte}}(Isolate $\ast$isolate, const uint16\+\_\+t $\ast$data, New\+String\+Type type=k\+Normal\+String, int length=-\/1))
 \item 
-static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1String_aaad4c7c856c29d79db85994c301fe601}{New\+From\+Two\+Byte}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, const uint16\+\_\+t $\ast$data, \mbox{\hyperlink{namespacev8_ac9163ab12fb3b2a95907a3a0367c6095}{v8\+::\+New\+String\+Type}} type, int length=-\/1)
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1String_aaad4c7c856c29d79db85994c301fe601}{New\+From\+Two\+Byte}} (Isolate $\ast$isolate, const uint16\+\_\+t $\ast$data, \mbox{\hyperlink{namespacev8_ac9163ab12fb3b2a95907a3a0367c6095}{v8\+::\+New\+String\+Type}} type, int length=-\/1)
 \item 
-static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1String_ae72b61a78cef5d2916a87d9032c7fd34}{Concat}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ left, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ right)
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1String_a757cf6ba6e17164fc962c1051c068c58}{Concat}} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ left, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ right)
 \item 
-static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1String_ad0491e4a3506df9ef9bfc08fca0d7a34}{New\+External\+Two\+Byte}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1String_1_1ExternalStringResource}{External\+String\+Resource}} $\ast$resource)
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1String_ad0491e4a3506df9ef9bfc08fca0d7a34}{New\+External\+Two\+Byte}} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1String_1_1ExternalStringResource}{External\+String\+Resource}} $\ast$resource)
 \item 
-static \mbox{\hyperlink{classv8_1_1String_ad7186b5cfdddffbee8235a7216f31a67}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ New\+External(\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource}{External\+One\+Byte\+String\+Resource}} $\ast$resource))
+static \mbox{\hyperlink{classv8_1_1String_ad7186b5cfdddffbee8235a7216f31a67}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ New\+External(Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource}{External\+One\+Byte\+String\+Resource}} $\ast$resource))
 \item 
 \mbox{\Hypertarget{classv8_1_1String_a43edc2bcb1bf2a06f306ea9554042f24}\label{classv8_1_1String_a43edc2bcb1bf2a06f306ea9554042f24}} 
-static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ {\bfseries New\+External\+One\+Byte} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource}{External\+One\+Byte\+String\+Resource}} $\ast$resource)
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ {\bfseries New\+External\+One\+Byte} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource}{External\+One\+Byte\+String\+Resource}} $\ast$resource)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
@@ -157,11 +159,11 @@ The number of characters copied to the buffer excluding the null terminator. For
 \subsubsection{\texorpdfstring{Can\+Make\+External()}{CanMakeExternal()}}
 {\footnotesize\ttfamily bool v8\+::\+String\+::\+Can\+Make\+External (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Returns true if this string can be made external. \mbox{\Hypertarget{classv8_1_1String_ae72b61a78cef5d2916a87d9032c7fd34}\label{classv8_1_1String_ae72b61a78cef5d2916a87d9032c7fd34}} 
+Returns true if this string can be made external. \mbox{\Hypertarget{classv8_1_1String_a757cf6ba6e17164fc962c1051c068c58}\label{classv8_1_1String_a757cf6ba6e17164fc962c1051c068c58}} 
 \index{v8\+::\+String@{v8\+::\+String}!Concat@{Concat}}
 \index{Concat@{Concat}!v8\+::\+String@{v8\+::\+String}}
 \subsubsection{\texorpdfstring{Concat()}{Concat()}}
-{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1String}{String}}$>$ v8\+::\+String\+::\+Concat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{left,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1String}{String}}$>$ v8\+::\+String\+::\+Concat (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{left,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Creates a new string by concatenating the left and the right strings passed in as parameters. \mbox{\Hypertarget{classv8_1_1String_a29b9bc5f71fba74af478e806b9d6a1d6}\label{classv8_1_1String_a29b9bc5f71fba74af478e806b9d6a1d6}} 
 \index{v8\+::\+String@{v8\+::\+String}!Contains\+Only\+One\+Byte@{Contains\+Only\+One\+Byte}}
@@ -173,7 +175,7 @@ Returns whether this string contain only one byte data, i.\+e. I\+S\+O-\/8859-\/
 \index{v8\+::\+String@{v8\+::\+String}!Empty@{Empty}}
 \index{Empty@{Empty}!v8\+::\+String@{v8\+::\+String}}
 \subsubsection{\texorpdfstring{Empty()}{Empty()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ v8\+::\+String\+::\+Empty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ v8\+::\+String\+::\+Empty (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 A zero length string. \mbox{\Hypertarget{classv8_1_1String_af93d92ca10a216be472d1b7c20550f76}\label{classv8_1_1String_af93d92ca10a216be472d1b7c20550f76}} 
 \index{v8\+::\+String@{v8\+::\+String}!Get\+External\+One\+Byte\+String\+Resource@{Get\+External\+One\+Byte\+String\+Resource}}
@@ -233,31 +235,37 @@ Associate an external string resource with this string by transforming it in pla
 \index{v8\+::\+String@{v8\+::\+String}!New\+External\+Two\+Byte@{New\+External\+Two\+Byte}}
 \index{New\+External\+Two\+Byte@{New\+External\+Two\+Byte}!v8\+::\+String@{v8\+::\+String}}
 \subsubsection{\texorpdfstring{New\+External\+Two\+Byte()}{NewExternalTwoByte()}}
-{\footnotesize\ttfamily static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1String}{String}}$>$ v8\+::\+String\+::\+New\+External\+Two\+Byte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1String_1_1ExternalStringResource}{External\+String\+Resource}} $\ast$}]{resource }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1String}{String}}$>$ v8\+::\+String\+::\+New\+External\+Two\+Byte (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1String_1_1ExternalStringResource}{External\+String\+Resource}} $\ast$}]{resource }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Creates a new external string using the data defined in the given resource. When the external string is no longer live on \mbox{\hyperlink{classv8_1_1V8}{V8}}\textquotesingle{}s heap the resource will be disposed by calling its Dispose method. The caller of this function should not otherwise delete or modify the resource. Neither should the underlying buffer be deallocated or modified except through the destructor of the external string resource. \mbox{\Hypertarget{classv8_1_1String_a2b8cf518523a62d97360c07ed33d8aa6}\label{classv8_1_1String_a2b8cf518523a62d97360c07ed33d8aa6}} 
+Creates a new external string using the data defined in the given resource. When the external string is no longer live on V8\textquotesingle{}s heap the resource will be disposed by calling its Dispose method. The caller of this function should not otherwise delete or modify the resource. Neither should the underlying buffer be deallocated or modified except through the destructor of the external string resource. \mbox{\Hypertarget{classv8_1_1String_a2b8cf518523a62d97360c07ed33d8aa6}\label{classv8_1_1String_a2b8cf518523a62d97360c07ed33d8aa6}} 
 \index{v8\+::\+String@{v8\+::\+String}!New\+From\+One\+Byte@{New\+From\+One\+Byte}}
 \index{New\+From\+One\+Byte@{New\+From\+One\+Byte}!v8\+::\+String@{v8\+::\+String}}
 \subsubsection{\texorpdfstring{New\+From\+One\+Byte()}{NewFromOneByte()}}
-{\footnotesize\ttfamily static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1String}{String}}$>$ v8\+::\+String\+::\+New\+From\+One\+Byte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{const uint8\+\_\+t $\ast$}]{data,  }\item[{\mbox{\hyperlink{namespacev8_ac9163ab12fb3b2a95907a3a0367c6095}{v8\+::\+New\+String\+Type}}}]{type,  }\item[{int}]{length = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1String}{String}}$>$ v8\+::\+String\+::\+New\+From\+One\+Byte (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{const uint8\+\_\+t $\ast$}]{data,  }\item[{\mbox{\hyperlink{namespacev8_ac9163ab12fb3b2a95907a3a0367c6095}{v8\+::\+New\+String\+Type}}}]{type,  }\item[{int}]{length = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Allocates a new string from Latin-\/1 data. Only returns an empty value when length $>$ k\+Max\+Length. \mbox{\Hypertarget{classv8_1_1String_aaad4c7c856c29d79db85994c301fe601}\label{classv8_1_1String_aaad4c7c856c29d79db85994c301fe601}} 
 \index{v8\+::\+String@{v8\+::\+String}!New\+From\+Two\+Byte@{New\+From\+Two\+Byte}}
 \index{New\+From\+Two\+Byte@{New\+From\+Two\+Byte}!v8\+::\+String@{v8\+::\+String}}
 \subsubsection{\texorpdfstring{New\+From\+Two\+Byte()}{NewFromTwoByte()}}
-{\footnotesize\ttfamily static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1String}{String}}$>$ v8\+::\+String\+::\+New\+From\+Two\+Byte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{const uint16\+\_\+t $\ast$}]{data,  }\item[{\mbox{\hyperlink{namespacev8_ac9163ab12fb3b2a95907a3a0367c6095}{v8\+::\+New\+String\+Type}}}]{type,  }\item[{int}]{length = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1String}{String}}$>$ v8\+::\+String\+::\+New\+From\+Two\+Byte (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{const uint16\+\_\+t $\ast$}]{data,  }\item[{\mbox{\hyperlink{namespacev8_ac9163ab12fb3b2a95907a3a0367c6095}{v8\+::\+New\+String\+Type}}}]{type,  }\item[{int}]{length = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Allocates a new string from U\+T\+F-\/16 data. Only returns an empty value when length $>$ k\+Max\+Length. \mbox{\Hypertarget{classv8_1_1String_a851bcf20fecb01b97f14131ce609f701}\label{classv8_1_1String_a851bcf20fecb01b97f14131ce609f701}} 
 \index{v8\+::\+String@{v8\+::\+String}!New\+From\+Utf8@{New\+From\+Utf8}}
 \index{New\+From\+Utf8@{New\+From\+Utf8}!v8\+::\+String@{v8\+::\+String}}
 \subsubsection{\texorpdfstring{New\+From\+Utf8()}{NewFromUtf8()}}
-{\footnotesize\ttfamily static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1String}{String}}$>$ v8\+::\+String\+::\+New\+From\+Utf8 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{const char $\ast$}]{data,  }\item[{\mbox{\hyperlink{namespacev8_ac9163ab12fb3b2a95907a3a0367c6095}{v8\+::\+New\+String\+Type}}}]{type,  }\item[{int}]{length = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1String}{String}}$>$ v8\+::\+String\+::\+New\+From\+Utf8 (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{const char $\ast$}]{data,  }\item[{\mbox{\hyperlink{namespacev8_ac9163ab12fb3b2a95907a3a0367c6095}{v8\+::\+New\+String\+Type}}}]{type,  }\item[{int}]{length = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Allocates a new string from U\+T\+F-\/8 data. Only returns an empty value when length $>$ k\+Max\+Length. \mbox{\Hypertarget{classv8_1_1String_a03010150464f91fdabb73c837bf41706}\label{classv8_1_1String_a03010150464f91fdabb73c837bf41706}} 
+Allocates a new string from U\+T\+F-\/8 data. Only returns an empty value when length $>$ k\+Max\+Length. \mbox{\Hypertarget{classv8_1_1String_aaca2109ba1c2c50e45d40d7b79edb01c}\label{classv8_1_1String_aaca2109ba1c2c50e45d40d7b79edb01c}} 
+\index{v8\+::\+String@{v8\+::\+String}!String\+Equals@{String\+Equals}}
+\index{String\+Equals@{String\+Equals}!v8\+::\+String@{v8\+::\+String}}
+\subsubsection{\texorpdfstring{String\+Equals()}{StringEquals()}}
+{\footnotesize\ttfamily bool v8\+::\+String\+::\+String\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{str }\end{DoxyParamCaption})}
+
+Returns true if the strings values are equal. Same as JS ==/===. \mbox{\Hypertarget{classv8_1_1String_af99433ee51ed45337e5b4536bd28a834}\label{classv8_1_1String_af99433ee51ed45337e5b4536bd28a834}} 
 \index{v8\+::\+String@{v8\+::\+String}!Utf8\+Length@{Utf8\+Length}}
 \index{Utf8\+Length@{Utf8\+Length}!v8\+::\+String@{v8\+::\+String}}
 \subsubsection{\texorpdfstring{Utf8\+Length()}{Utf8Length()}}
-{\footnotesize\ttfamily int v8\+::\+String\+::\+Utf8\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily int v8\+::\+String\+::\+Utf8\+Length (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate }\end{DoxyParamCaption}) const}
 
 Returns the number of bytes in the U\+T\+F-\/8 encoded representation of this string. \mbox{\Hypertarget{classv8_1_1String_aa9d64688e3535b3daabafcc46a59ce5a}\label{classv8_1_1String_aa9d64688e3535b3daabafcc46a59ce5a}} 
 \index{v8\+::\+String@{v8\+::\+String}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}}
@@ -277,7 +285,7 @@ Allocates a new string from U\+T\+F-\/16 data. \mbox{\Hypertarget{classv8_1_1Str
 \subsubsection{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N()}{V8\_DEPRECATE\_SOON()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily static v8\+::\+String\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON (\begin{DoxyParamCaption}\item[{\char`\"{}Use maybe version\char`\"{}}]{,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ }]{New\+ExternalIsolate $\ast$isolate, External\+One\+Byte\+String\+Resource $\ast$resource }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Creates a new external string using the one-\/byte data defined in the given resource. When the external string is no longer live on \mbox{\hyperlink{classv8_1_1V8}{V8}}\textquotesingle{}s heap the resource will be disposed by calling its Dispose method. The caller of this function should not otherwise delete or modify the resource. Neither should the underlying buffer be deallocated or modified except through the destructor of the external string resource. 
+Creates a new external string using the one-\/byte data defined in the given resource. When the external string is no longer live on V8\textquotesingle{}s heap the resource will be disposed by calling its Dispose method. The caller of this function should not otherwise delete or modify the resource. Neither should the underlying buffer be deallocated or modified except through the destructor of the external string resource. 
 
 \subsection{Field Documentation}
 \mbox{\Hypertarget{classv8_1_1String_a66259940a4836974906729017ff25fd2}\label{classv8_1_1String_a66259940a4836974906729017ff25fd2}} 
@@ -288,7 +296,7 @@ Creates a new external string using the one-\/byte data defined in the given res
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
-= internal::kApiPointerSize == 4
+= internal::kApiTaggedSize == 4
                                         ? (1 << 28) - 16
                                         : internal::kSmiMaxValue / 2 - 24
 \end{DoxyCode}

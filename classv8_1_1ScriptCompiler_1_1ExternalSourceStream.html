@@ -84,7 +84,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a425cf1ba265eeca194b805fe5c52bc19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>For streaming incomplete script data to <a class="el" href="classv8_1_1V8.html">V8</a>. The embedder should implement a subclass of this class. </p>
+<div class="textblock"><p>For streaming incomplete script data to V8. The embedder should implement a subclass of this class. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac3a0221b5725f0b612a6342d8e83d899"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3a0221b5725f0b612a6342d8e83d899">&#9670;&nbsp;</a></span>GetMoreData()</h2>
@@ -109,10 +109,10 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classv8_1_1V8.html">V8</a> calls this to request the next chunk of data from the embedder. This function will be called on a background thread, so it's OK to block and wait for the data, if the embedder doesn't have data yet. Returns the length of the data returned. When the data ends, GetMoreData should return 0. Caller takes ownership of the data.</p>
-<p>When streaming UTF-8 data, <a class="el" href="classv8_1_1V8.html">V8</a> handles multi-byte characters split between two data chunks, but doesn't handle multi-byte characters split between more than two data chunks. The embedder can avoid this problem by always returning at least 2 bytes of data.</p>
-<p>When streaming UTF-16 data, <a class="el" href="classv8_1_1V8.html">V8</a> does not handle characters split between two data chunks. The embedder has to make sure that chunks have an even length.</p>
-<p>If the embedder wants to cancel the streaming, they should make the next GetMoreData call return 0. <a class="el" href="classv8_1_1V8.html">V8</a> will interpret it as end of data (and most probably, parsing will fail). The streaming task will return as soon as <a class="el" href="classv8_1_1V8.html">V8</a> has parsed the data it received so far. </p>
+<p>V8 calls this to request the next chunk of data from the embedder. This function will be called on a background thread, so it's OK to block and wait for the data, if the embedder doesn't have data yet. Returns the length of the data returned. When the data ends, GetMoreData should return 0. Caller takes ownership of the data.</p>
+<p>When streaming UTF-8 data, V8 handles multi-byte characters split between two data chunks, but doesn't handle multi-byte characters split between more than two data chunks. The embedder can avoid this problem by always returning at least 2 bytes of data.</p>
+<p>When streaming UTF-16 data, V8 does not handle characters split between two data chunks. The embedder has to make sure that chunks have an even length.</p>
+<p>If the embedder wants to cancel the streaming, they should make the next GetMoreData call return 0. V8 will interpret it as end of data (and most probably, parsing will fail). The streaming task will return as soon as V8 has parsed the data it received so far. </p>
 
 </div>
 </div>
@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classv8_1_1V8.html">V8</a> calls this to return to a previously set bookmark. </p>
+<p>V8 calls this to return to a previously set bookmark. </p>
 
 </div>
 </div>
@@ -164,7 +164,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classv8_1_1V8.html">V8</a> calls this method to set a 'bookmark' at the current position in the source stream, for the purpose of (maybe) later calling ResetToBookmark. If ResetToBookmark is called later, then subsequent calls to GetMoreData should return the same data as they did when SetBookmark was called earlier.</p>
+<p>V8 calls this method to set a 'bookmark' at the current position in the source stream, for the purpose of (maybe) later calling ResetToBookmark. If ResetToBookmark is called later, then subsequent calls to GetMoreData should return the same data as they did when SetBookmark was called earlier.</p>
 <p>The embedder may return 'false' to indicate it cannot provide this functionality. </p>
 
 </div>
@@ -175,7 +175,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 12 2018 15:47:06 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 25 2018 13:22:05 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

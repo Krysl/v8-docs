@@ -8,7 +8,7 @@
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classv8_1_1PersistentValueVector_ab6b9994133c30359ad7a02d3cc05219c}\label{classv8_1_1PersistentValueVector_ab6b9994133c30359ad7a02d3cc05219c}} 
-{\bfseries Persistent\+Value\+Vector} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
+{\bfseries Persistent\+Value\+Vector} (Isolate $\ast$isolate)
 \item 
 void \mbox{\hyperlink{classv8_1_1PersistentValueVector_a02376c6d16be29084db46f65473477fb}{Append}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ V $>$ value)
 \item 
@@ -32,7 +32,7 @@ class v8\+::\+Persistent\+Value\+Vector$<$ V, Traits $>$}
 
 A vector wrapper that safely stores \mbox{\hyperlink{classv8_1_1Global}{Global}} values. C++11 embedders don\textquotesingle{}t need this class, as they can use \mbox{\hyperlink{classv8_1_1Global}{Global}} directly in std containers.
 
-This class relies on a backing vector implementation, whose type and methods are described by the Traits class. The backing map will handle values of type Persistent\+Container\+Value, with all conversion into and out of \mbox{\hyperlink{classv8_1_1V8}{V8}} handles being transparently handled by this class. 
+This class relies on a backing vector implementation, whose type and methods are described by the Traits class. The backing map will handle values of type Persistent\+Container\+Value, with all conversion into and out of V8 handles being transparently handled by this class. 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classv8_1_1PersistentValueVector_a02376c6d16be29084db46f65473477fb}\label{classv8_1_1PersistentValueVector_a02376c6d16be29084db46f65473477fb}} 

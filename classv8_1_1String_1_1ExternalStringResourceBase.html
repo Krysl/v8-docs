@@ -81,20 +81,25 @@ Inheritance diagram for v8::String::ExternalStringResourceBase:</div>
   <map id="v8::String::ExternalStringResourceBase_map" name="v8::String::ExternalStringResourceBase_map">
 <area href="classv8_1_1String_1_1ExternalOneByteStringResource.html" alt="v8::String::ExternalOneByteStringResource" shape="rect" coords="0,56,253,80"/>
 <area href="classv8_1_1String_1_1ExternalStringResource.html" alt="v8::String::ExternalStringResource" shape="rect" coords="263,56,516,80"/>
-<area href="classv8_1_1ExternalOneByteStringResourceImpl.html" alt="v8::ExternalOneByteStringResourceImpl" shape="rect" coords="0,112,253,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aea69648f432efa7114684852d0ccfae6"><td class="memItemLeft" align="right" valign="top"><a id="aea69648f432efa7114684852d0ccfae6"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsCompressible</b> () const</td></tr>
-<tr class="separator:aea69648f432efa7114684852d0ccfae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d6b2291158845591c0458365582c31"><td class="memItemLeft" align="right" valign="top"><a id="a07d6b2291158845591c0458365582c31"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATED</b> (&quot;Use <a class="el" href="classv8_1_1String_1_1ExternalStringResourceBase.html#a994c7580185c831abd45075d297dd07c">IsCacheable</a>().&quot;, virtual bool IsCompressible() const)</td></tr>
+<tr class="separator:a07d6b2291158845591c0458365582c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a994c7580185c831abd45075d297dd07c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1String_1_1ExternalStringResourceBase.html#a994c7580185c831abd45075d297dd07c">IsCacheable</a> () const</td></tr>
+<tr class="separator:a994c7580185c831abd45075d297dd07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:af4720342ae31e1ab4656df3f15d069c0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1String_1_1ExternalStringResourceBase.html#af4720342ae31e1ab4656df3f15d069c0">Dispose</a> ()</td></tr>
 <tr class="separator:af4720342ae31e1ab4656df3f15d069c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae539b974907cc2737e58797ace2652b4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1String_1_1ExternalStringResourceBase.html#ae539b974907cc2737e58797ace2652b4">Lock</a> () const</td></tr>
+<tr class="separator:ae539b974907cc2737e58797ace2652b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c6892d46c8fafaa938df542a6e334cd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1String_1_1ExternalStringResourceBase.html#a6c6892d46c8fafaa938df542a6e334cd">Unlock</a> () const</td></tr>
+<tr class="separator:a6c6892d46c8fafaa938df542a6e334cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e9ebb706e3ebb401b1055a865b0ae0f"><td class="memItemLeft" align="right" valign="top"><a id="a2e9ebb706e3ebb401b1055a865b0ae0f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ExternalStringResourceBase</b> (const <a class="el" href="classv8_1_1String_1_1ExternalStringResourceBase.html">ExternalStringResourceBase</a> &amp;)=delete</td></tr>
 <tr class="separator:a2e9ebb706e3ebb401b1055a865b0ae0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,6 +115,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>internal::Heap</b></
 <tr class="memitem:a74072e7f09bdb13330b20ba10dcb8b55"><td class="memItemLeft" align="right" valign="top"><a id="a74072e7f09bdb13330b20ba10dcb8b55"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>v8::String</b></td></tr>
 <tr class="separator:a74072e7f09bdb13330b20ba10dcb8b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f11ab15863611529297dca3f21c2979"><td class="memItemLeft" align="right" valign="top"><a id="a9f11ab15863611529297dca3f21c2979"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>internal::ScopedExternalStringLock</b></td></tr>
+<tr class="separator:a9f11ab15863611529297dca3f21c2979"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="af4720342ae31e1ab4656df3f15d069c0"></a>
@@ -134,7 +142,86 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>v8::String</b></td><
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Internally <a class="el" href="classv8_1_1V8.html">V8</a> will call this Dispose method when the external string resource is no longer needed. The default implementation will use the delete operator. This method can be overridden in subclasses to control how allocated external string resources are disposed. </p>
+<p>Internally V8 will call this Dispose method when the external string resource is no longer needed. The default implementation will use the delete operator. This method can be overridden in subclasses to control how allocated external string resources are disposed. </p>
+
+</div>
+</div>
+<a id="a994c7580185c831abd45075d297dd07c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a994c7580185c831abd45075d297dd07c">&#9670;&nbsp;</a></span>IsCacheable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool v8::String::ExternalStringResourceBase::IsCacheable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>If a string is cacheable, the value returned by <a class="el" href="classv8_1_1String_1_1ExternalStringResource.html#a987309199b848511adb708e221e0fb0a">ExternalStringResource::data()</a> may be cached, otherwise it is not expected to be stable beyond the current top-level task. </p>
+
+</div>
+</div>
+<a id="ae539b974907cc2737e58797ace2652b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae539b974907cc2737e58797ace2652b4">&#9670;&nbsp;</a></span>Lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void v8::String::ExternalStringResourceBase::Lock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>For a non-cacheable string, the value returned by |ExternalStringResource::data()| has to be stable between |Lock()| and |Unlock()|, that is the string must behave as is |IsCacheable()| returned true.</p>
+<p>These two functions must be thread-safe, and can be called from anywhere. They also must handle lock depth, in the sense that each can be called several times, from different threads, and unlocking should only happen when the balance of <a class="el" href="classv8_1_1String_1_1ExternalStringResourceBase.html#ae539b974907cc2737e58797ace2652b4">Lock()</a> and <a class="el" href="classv8_1_1String_1_1ExternalStringResourceBase.html#a6c6892d46c8fafaa938df542a6e334cd">Unlock()</a> calls is 0. </p>
+
+</div>
+</div>
+<a id="a6c6892d46c8fafaa938df542a6e334cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c6892d46c8fafaa938df542a6e334cd">&#9670;&nbsp;</a></span>Unlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void v8::String::ExternalStringResourceBase::Unlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Unlocks the string. </p>
 
 </div>
 </div>
@@ -144,7 +231,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>v8::String</b></td><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 12 2018 15:47:08 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 25 2018 13:22:07 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

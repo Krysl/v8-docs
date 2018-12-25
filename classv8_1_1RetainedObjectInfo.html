@@ -94,15 +94,15 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for providing information about embedder's objects held by global handles. This information is reported in two ways:</p>
 <ol type="1">
-<li>When calling AddObjectGroup, an embedder may pass <a class="el" href="classv8_1_1RetainedObjectInfo.html">RetainedObjectInfo</a> instance describing the group. To collect this information while taking a heap snapshot, <a class="el" href="classv8_1_1V8.html">V8</a> calls GC prologue and epilogue callbacks.</li>
-<li>When a heap snapshot is collected, <a class="el" href="classv8_1_1V8.html">V8</a> additionally requests RetainedObjectInfos for persistent handles that were not previously reported via AddObjectGroup.</li>
+<li>When calling AddObjectGroup, an embedder may pass <a class="el" href="classv8_1_1RetainedObjectInfo.html">RetainedObjectInfo</a> instance describing the group. To collect this information while taking a heap snapshot, V8 calls GC prologue and epilogue callbacks.</li>
+<li>When a heap snapshot is collected, V8 additionally requests RetainedObjectInfos for persistent handles that were not previously reported via AddObjectGroup.</li>
 </ol>
 <p>Thus, if an embedder wants to provide information about native objects for heap snapshots, it can do it in a GC prologue handler, and / or by assigning wrapper class ids in the following way:</p>
 <ol type="1">
 <li>Bind a callback to class id by calling SetWrapperClassInfoProvider.</li>
 <li>Call SetWrapperClassId on certain persistent handles.</li>
 </ol>
-<p><a class="el" href="classv8_1_1V8.html">V8</a> takes ownership of <a class="el" href="classv8_1_1RetainedObjectInfo.html">RetainedObjectInfo</a> instances passed to it and keeps them alive only during snapshot collection. Afterwards, they are freed by calling the Dispose class function. </p>
+<p>V8 takes ownership of <a class="el" href="classv8_1_1RetainedObjectInfo.html">RetainedObjectInfo</a> instances passed to it and keeps them alive only during snapshot collection. Afterwards, they are freed by calling the Dispose class function. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5011203f7c5949049ba36b8059f03eca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5011203f7c5949049ba36b8059f03eca">&#9670;&nbsp;</a></span>Dispose()</h2>
@@ -126,7 +126,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Called by <a class="el" href="classv8_1_1V8.html">V8</a> when it no longer needs an instance. </p>
+<p>Called by V8 when it no longer needs an instance. </p>
 
 </div>
 </div>
@@ -178,7 +178,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns human-readable group label. It must be a null-terminated UTF-8 encoded string. <a class="el" href="classv8_1_1V8.html">V8</a> copies its contents during a call to GetGroupLabel. Heap snapshot generator will collect all the group names, create top level entries with these names and attach the objects to the corresponding top level group objects. There is a default implementation which is required because embedders don't have their own implementation yet. </p>
+<p>Returns human-readable group label. It must be a null-terminated UTF-8 encoded string. V8 copies its contents during a call to GetGroupLabel. Heap snapshot generator will collect all the group names, create top level entries with these names and attach the objects to the corresponding top level group objects. There is a default implementation which is required because embedders don't have their own implementation yet. </p>
 
 </div>
 </div>
@@ -230,7 +230,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns human-readable label. It must be a null-terminated UTF-8 encoded string. <a class="el" href="classv8_1_1V8.html">V8</a> copies its contents during a call to GetLabel. </p>
+<p>Returns human-readable label. It must be a null-terminated UTF-8 encoded string. V8 copies its contents during a call to GetLabel. </p>
 
 </div>
 </div>
@@ -293,7 +293,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 12 2018 15:47:06 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 25 2018 13:22:05 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

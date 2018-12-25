@@ -36,10 +36,10 @@ V8\+\_\+\+I\+N\+L\+I\+NE T $\ast$ {\bfseries operator$\ast$} () const
 \item 
 {\footnotesize template$<$class S $>$ }\\static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ \mbox{\hyperlink{classv8_1_1Local_a95c8aa28ad098dd160ddd8cb60377bd6}{Cast}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ S $>$ that)
 \item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ \mbox{\hyperlink{classv8_1_1Local_a1b3c386fb10d9e8f67aecec9174de1fa}{New}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ that)
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ \mbox{\hyperlink{classv8_1_1Local_a1b3c386fb10d9e8f67aecec9174de1fa}{New}} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ that)
 \item 
 \mbox{\Hypertarget{classv8_1_1Local_a9ffe326224dc9b8a0b47d61b1f877741}\label{classv8_1_1Local_a9ffe326224dc9b8a0b47d61b1f877741}} 
-static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, const \mbox{\hyperlink{classv8_1_1PersistentBase}{Persistent\+Base}}$<$ T $>$ \&that)
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ {\bfseries New} (Isolate $\ast$isolate, const \mbox{\hyperlink{classv8_1_1PersistentBase}{Persistent\+Base}}$<$ T $>$ \&that)
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -102,16 +102,16 @@ class {\bfseries Escapable\+Handle\+Scope}
 {\footnotesize template$<$class F $>$ }\\class {\bfseries Return\+Value}
 \item 
 \mbox{\Hypertarget{classv8_1_1Local_a696a04c5f02bf0aeedd1e5a539587de4}\label{classv8_1_1Local_a696a04c5f02bf0aeedd1e5a539587de4}} 
-\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Primitive}{Primitive}} $>$ {\bfseries Undefined} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Primitive}{Primitive}} $>$ {\bfseries Undefined} (Isolate $\ast$isolate)
 \item 
 \mbox{\Hypertarget{classv8_1_1Local_a6a29184b023bde58d4af2bba2d249a35}\label{classv8_1_1Local_a6a29184b023bde58d4af2bba2d249a35}} 
-\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Primitive}{Primitive}} $>$ {\bfseries Null} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Primitive}{Primitive}} $>$ {\bfseries Null} (Isolate $\ast$isolate)
 \item 
 \mbox{\Hypertarget{classv8_1_1Local_aa5944f05409b5572b14793eff33a7908}\label{classv8_1_1Local_aa5944f05409b5572b14793eff33a7908}} 
-\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Boolean}{Boolean}} $>$ {\bfseries True} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Boolean}{Boolean}} $>$ {\bfseries True} (Isolate $\ast$isolate)
 \item 
 \mbox{\Hypertarget{classv8_1_1Local_ae8e414a3a8b3e1f2fa60c24e4dda0c4a}\label{classv8_1_1Local_ae8e414a3a8b3e1f2fa60c24e4dda0c4a}} 
-\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Boolean}{Boolean}} $>$ {\bfseries False} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Boolean}{Boolean}} $>$ {\bfseries False} (Isolate $\ast$isolate)
 \end{DoxyCompactItemize}
 
 
@@ -178,7 +178,7 @@ Returns true if the handle is empty. \mbox{\Hypertarget{classv8_1_1Local_a1b3c38
 \index{New@{New}!v8\+::\+Local@{v8\+::\+Local}}
 \subsubsection{\texorpdfstring{New()}{New()}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
-\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ T $>$\+::New (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$}]{that }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ T $>$\+::New (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$}]{that }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Create a local handle for the content of another handle. The referee is kept alive by the local handle even when the original handle is destroyed/disposed. \mbox{\Hypertarget{classv8_1_1Local_a3b2ae1c0415d319099ebc2fd059dbb10}\label{classv8_1_1Local_a3b2ae1c0415d319099ebc2fd059dbb10}} 
 \index{v8\+::\+Local@{v8\+::\+Local}!operator"!=@{operator"!=}}

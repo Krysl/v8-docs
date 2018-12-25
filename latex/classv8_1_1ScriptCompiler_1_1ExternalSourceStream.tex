@@ -16,7 +16,7 @@ virtual void \mbox{\hyperlink{classv8_1_1ScriptCompiler_1_1ExternalSourceStream_
 
 
 \subsection{Detailed Description}
-For streaming incomplete script data to \mbox{\hyperlink{classv8_1_1V8}{V8}}. The embedder should implement a subclass of this class. 
+For streaming incomplete script data to V8. The embedder should implement a subclass of this class. 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classv8_1_1ScriptCompiler_1_1ExternalSourceStream_ac3a0221b5725f0b612a6342d8e83d899}\label{classv8_1_1ScriptCompiler_1_1ExternalSourceStream_ac3a0221b5725f0b612a6342d8e83d899}} 
@@ -25,25 +25,25 @@ For streaming incomplete script data to \mbox{\hyperlink{classv8_1_1V8}{V8}}. Th
 \subsubsection{\texorpdfstring{Get\+More\+Data()}{GetMoreData()}}
 {\footnotesize\ttfamily virtual size\+\_\+t v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream\+::\+Get\+More\+Data (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$$\ast$}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
-\mbox{\hyperlink{classv8_1_1V8}{V8}} calls this to request the next chunk of data from the embedder. This function will be called on a background thread, so it\textquotesingle{}s OK to block and wait for the data, if the embedder doesn\textquotesingle{}t have data yet. Returns the length of the data returned. When the data ends, Get\+More\+Data should return 0. Caller takes ownership of the data.
+V8 calls this to request the next chunk of data from the embedder. This function will be called on a background thread, so it\textquotesingle{}s OK to block and wait for the data, if the embedder doesn\textquotesingle{}t have data yet. Returns the length of the data returned. When the data ends, Get\+More\+Data should return 0. Caller takes ownership of the data.
 
-When streaming U\+T\+F-\/8 data, \mbox{\hyperlink{classv8_1_1V8}{V8}} handles multi-\/byte characters split between two data chunks, but doesn\textquotesingle{}t handle multi-\/byte characters split between more than two data chunks. The embedder can avoid this problem by always returning at least 2 bytes of data.
+When streaming U\+T\+F-\/8 data, V8 handles multi-\/byte characters split between two data chunks, but doesn\textquotesingle{}t handle multi-\/byte characters split between more than two data chunks. The embedder can avoid this problem by always returning at least 2 bytes of data.
 
-When streaming U\+T\+F-\/16 data, \mbox{\hyperlink{classv8_1_1V8}{V8}} does not handle characters split between two data chunks. The embedder has to make sure that chunks have an even length.
+When streaming U\+T\+F-\/16 data, V8 does not handle characters split between two data chunks. The embedder has to make sure that chunks have an even length.
 
-If the embedder wants to cancel the streaming, they should make the next Get\+More\+Data call return 0. \mbox{\hyperlink{classv8_1_1V8}{V8}} will interpret it as end of data (and most probably, parsing will fail). The streaming task will return as soon as \mbox{\hyperlink{classv8_1_1V8}{V8}} has parsed the data it received so far. \mbox{\Hypertarget{classv8_1_1ScriptCompiler_1_1ExternalSourceStream_a425cf1ba265eeca194b805fe5c52bc19}\label{classv8_1_1ScriptCompiler_1_1ExternalSourceStream_a425cf1ba265eeca194b805fe5c52bc19}} 
+If the embedder wants to cancel the streaming, they should make the next Get\+More\+Data call return 0. V8 will interpret it as end of data (and most probably, parsing will fail). The streaming task will return as soon as V8 has parsed the data it received so far. \mbox{\Hypertarget{classv8_1_1ScriptCompiler_1_1ExternalSourceStream_a425cf1ba265eeca194b805fe5c52bc19}\label{classv8_1_1ScriptCompiler_1_1ExternalSourceStream_a425cf1ba265eeca194b805fe5c52bc19}} 
 \index{v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream@{v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream}!Reset\+To\+Bookmark@{Reset\+To\+Bookmark}}
 \index{Reset\+To\+Bookmark@{Reset\+To\+Bookmark}!v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream@{v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream}}
 \subsubsection{\texorpdfstring{Reset\+To\+Bookmark()}{ResetToBookmark()}}
 {\footnotesize\ttfamily virtual void v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream\+::\+Reset\+To\+Bookmark (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-\mbox{\hyperlink{classv8_1_1V8}{V8}} calls this to return to a previously set bookmark. \mbox{\Hypertarget{classv8_1_1ScriptCompiler_1_1ExternalSourceStream_a6848508547b3508a2d016738f12561e8}\label{classv8_1_1ScriptCompiler_1_1ExternalSourceStream_a6848508547b3508a2d016738f12561e8}} 
+V8 calls this to return to a previously set bookmark. \mbox{\Hypertarget{classv8_1_1ScriptCompiler_1_1ExternalSourceStream_a6848508547b3508a2d016738f12561e8}\label{classv8_1_1ScriptCompiler_1_1ExternalSourceStream_a6848508547b3508a2d016738f12561e8}} 
 \index{v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream@{v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream}!Set\+Bookmark@{Set\+Bookmark}}
 \index{Set\+Bookmark@{Set\+Bookmark}!v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream@{v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream}}
 \subsubsection{\texorpdfstring{Set\+Bookmark()}{SetBookmark()}}
 {\footnotesize\ttfamily virtual bool v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream\+::\+Set\+Bookmark (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-\mbox{\hyperlink{classv8_1_1V8}{V8}} calls this method to set a \textquotesingle{}bookmark\textquotesingle{} at the current position in the source stream, for the purpose of (maybe) later calling Reset\+To\+Bookmark. If Reset\+To\+Bookmark is called later, then subsequent calls to Get\+More\+Data should return the same data as they did when Set\+Bookmark was called earlier.
+V8 calls this method to set a \textquotesingle{}bookmark\textquotesingle{} at the current position in the source stream, for the purpose of (maybe) later calling Reset\+To\+Bookmark. If Reset\+To\+Bookmark is called later, then subsequent calls to Get\+More\+Data should return the same data as they did when Set\+Bookmark was called earlier.
 
 The embedder may return \textquotesingle{}false\textquotesingle{} to indicate it cannot provide this functionality. 
 

@@ -10,6 +10,6 @@ var searchData=
   ['freepages',['FreePages',['../classv8_1_1PageAllocator.html#abc2e3fdc768aba7d35ce0cf44f14586c',1,'v8::PageAllocator']]],
   ['fromjust',['FromJust',['../classv8_1_1Maybe.html#a6c35f4870a5b5049d09ba5f13c67ede9',1,'v8::Maybe']]],
   ['frommaybe',['FromMaybe',['../classv8_1_1MaybeLocal.html#ad99cb1e7ac1a4eac34c144faa4262407',1,'v8::MaybeLocal::FromMaybe()'],['../classv8_1_1Maybe.html#a4b95361b73d9af3dddd975accca89a5f',1,'v8::Maybe::FromMaybe()']]],
-  ['fromsnapshot',['FromSnapshot',['../classv8_1_1FunctionTemplate.html#acd9eaca4c7d6de89949b8e1c41f4ba46',1,'v8::FunctionTemplate::FromSnapshot()'],['../classv8_1_1ObjectTemplate.html#a7899f31276e3ca69358005e360e3bc27',1,'v8::ObjectTemplate::FromSnapshot()'],['../classv8_1_1Context.html#a49a8fb02c04b6ebf4e532755d50d2ff9',1,'v8::Context::FromSnapshot()']]],
+  ['fromsnapshot',['FromSnapshot',['../classv8_1_1FunctionTemplate.html#acd9eaca4c7d6de89949b8e1c41f4ba46',1,'v8::FunctionTemplate::FromSnapshot()'],['../classv8_1_1ObjectTemplate.html#a7899f31276e3ca69358005e360e3bc27',1,'v8::ObjectTemplate::FromSnapshot()']]],
   ['fromtransferrablemodule',['FromTransferrableModule',['../classv8_1_1WasmCompiledModule.html#a6bdfdf09e75ad1eb19d5b944e6177f74',1,'v8::WasmCompiledModule']]]
 ];

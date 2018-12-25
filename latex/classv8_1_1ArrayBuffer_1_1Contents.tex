@@ -4,6 +4,12 @@
 
 {\ttfamily \#include $<$v8.\+h$>$}
 
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1ArrayBuffer_1_1Contents_aee13ae166dcf8e210c499a81720b436d}\label{classv8_1_1ArrayBuffer_1_1Contents_aee13ae166dcf8e210c499a81720b436d}} 
+using {\bfseries Deleter\+Callback} = void($\ast$)(void $\ast$buffer, size\+\_\+t length, void $\ast$info)
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -21,6 +27,12 @@ void $\ast$ {\bfseries Data} () const
 \item 
 \mbox{\Hypertarget{classv8_1_1ArrayBuffer_1_1Contents_ac4ca77bb59e6cbb004d9edaa79d30ad6}\label{classv8_1_1ArrayBuffer_1_1Contents_ac4ca77bb59e6cbb004d9edaa79d30ad6}} 
 size\+\_\+t {\bfseries Byte\+Length} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1ArrayBuffer_1_1Contents_adaa11444494fd9ea3c4444a86c4575ff}\label{classv8_1_1ArrayBuffer_1_1Contents_adaa11444494fd9ea3c4444a86c4575ff}} 
+Deleter\+Callback {\bfseries Deleter} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1ArrayBuffer_1_1Contents_a2c7a852906052acc7cda4a8b38a9a241}\label{classv8_1_1ArrayBuffer_1_1Contents_a2c7a852906052acc7cda4a8b38a9a241}} 
+void $\ast$ {\bfseries Deleter\+Data} () const
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -33,7 +45,7 @@ class {\bfseries Array\+Buffer}
 \subsection{Detailed Description}
 The contents of an $\vert$\+Array\+Buffer$\vert$. Externalization of $\vert$\+Array\+Buffer$\vert$ returns an instance of this class, populated, with a pointer to data and byte length.
 
-The \mbox{\hyperlink{classv8_1_1Data}{Data}} pointer of \mbox{\hyperlink{classv8_1_1ArrayBuffer_1_1Contents}{Array\+Buffer\+::\+Contents}} is always allocated with \mbox{\hyperlink{classv8_1_1ArrayBuffer_1_1Allocator_a106b0d80120ed04fe9b9675e96f0340b}{Allocator\+::\+Allocate}} that is set via \mbox{\hyperlink{structv8_1_1Isolate_1_1CreateParams}{Isolate\+::\+Create\+Params}}. 
+The \mbox{\hyperlink{classv8_1_1Data}{Data}} pointer of \mbox{\hyperlink{classv8_1_1ArrayBuffer_1_1Contents}{Array\+Buffer\+::\+Contents}} must be freed using the provided deleter, which will call \mbox{\hyperlink{classv8_1_1ArrayBuffer_1_1Allocator_a419f59d2a103a5a8863809d7977c9cd8}{Array\+Buffer\+::\+Allocator\+::\+Free}} if the buffer was allocated with Arrary\+Buffer\+::\+Allocator\+::\+Allocate. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
