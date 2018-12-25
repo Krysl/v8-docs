@@ -1,0 +1,58 @@
+\hypertarget{classv8_1_1internal_1_1HeapGraphEdge}{}\section{v8\+:\+:internal\+:\+:Heap\+Graph\+Edge Class Reference}
+\label{classv8_1_1internal_1_1HeapGraphEdge}\index{v8\+::internal\+::\+Heap\+Graph\+Edge@{v8\+::internal\+::\+Heap\+Graph\+Edge}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapGraphEdge_ac5999a0e6fcaad7e23822c0f205c40eb}\label{classv8_1_1internal_1_1HeapGraphEdge_ac5999a0e6fcaad7e23822c0f205c40eb}} 
+enum {\bfseries Type} \{ \newline
+{\bfseries k\+Context\+Variable} = v8\+:\+:Heap\+Graph\+Edge\+:\+:k\+Context\+Variable, 
+{\bfseries k\+Element} = v8\+:\+:Heap\+Graph\+Edge\+:\+:k\+Element, 
+{\bfseries k\+Property} = v8\+:\+:Heap\+Graph\+Edge\+:\+:k\+Property, 
+{\bfseries k\+Internal} = v8\+:\+:Heap\+Graph\+Edge\+:\+:k\+Internal, 
+\newline
+{\bfseries k\+Hidden} = v8\+:\+:Heap\+Graph\+Edge\+:\+:k\+Hidden, 
+{\bfseries k\+Shortcut} = v8\+:\+:Heap\+Graph\+Edge\+:\+:k\+Shortcut, 
+{\bfseries k\+Weak} = v8\+:\+:Heap\+Graph\+Edge\+:\+:k\+Weak
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapGraphEdge_abd9e96dbd3d4888ec2de0ad1068a8f7b}\label{classv8_1_1internal_1_1HeapGraphEdge_abd9e96dbd3d4888ec2de0ad1068a8f7b}} 
+{\bfseries Heap\+Graph\+Edge} (Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, const \mbox{\hyperlink{classchar}{char}} $\ast$name, \mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $\ast$from, \mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $\ast$to)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapGraphEdge_aa054a62dc0e8a7b37eb22fe123a35204}\label{classv8_1_1internal_1_1HeapGraphEdge_aa054a62dc0e8a7b37eb22fe123a35204}} 
+{\bfseries Heap\+Graph\+Edge} (Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $\ast$from, \mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $\ast$to)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapGraphEdge_a42af288ac335046f1009f35523527977}\label{classv8_1_1internal_1_1HeapGraphEdge_a42af288ac335046f1009f35523527977}} 
+Type {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapGraphEdge_a99ea6689bcb0b4820d2408a07f61b16a}\label{classv8_1_1internal_1_1HeapGraphEdge_a99ea6689bcb0b4820d2408a07f61b16a}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapGraphEdge_a6b59a542835b6621ab3901ab508faf03}\label{classv8_1_1internal_1_1HeapGraphEdge_a6b59a542835b6621ab3901ab508faf03}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapGraphEdge_ad94884768c1d573ecb13232dce8dfd66}\label{classv8_1_1internal_1_1HeapGraphEdge_ad94884768c1d573ecb13232dce8dfd66}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $\ast$ {\bfseries from} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapGraphEdge_ac1e819d2d473a083e8eead99a24e764a}\label{classv8_1_1internal_1_1HeapGraphEdge_ac1e819d2d473a083e8eead99a24e764a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $\ast$ {\bfseries to} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapGraphEdge_a9ca5ab009531a8bc5194b0b67d9c292b}\label{classv8_1_1internal_1_1HeapGraphEdge_a9ca5ab009531a8bc5194b0b67d9c292b}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 51 of file heap-\/snapshot-\/generator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/heap-\/snapshot-\/generator.\+h\item 
+v8/src/profiler/heap-\/snapshot-\/generator-\/inl.\+h\item 
+v8/src/profiler/heap-\/snapshot-\/generator.\+cc\end{DoxyCompactItemize}

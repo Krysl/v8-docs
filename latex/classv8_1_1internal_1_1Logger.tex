@@ -1,0 +1,266 @@
+\hypertarget{classv8_1_1internal_1_1Logger}{}\section{v8\+:\+:internal\+:\+:Logger Class Reference}
+\label{classv8_1_1internal_1_1Logger}\index{v8\+::internal\+::\+Logger@{v8\+::internal\+::\+Logger}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Logger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1Logger}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_ae1d0584967c39c5e1a33a9d8a16ce1e7}\label{classv8_1_1internal_1_1Logger_ae1d0584967c39c5e1a33a9d8a16ce1e7}} 
+enum {\bfseries Start\+End} \{ {\bfseries S\+T\+A\+RT} = 0, 
+{\bfseries E\+ND} = 1, 
+{\bfseries S\+T\+A\+MP} = 2
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_ab8051ff8092f40d88b86fed63f95cd7a}\label{classv8_1_1internal_1_1Logger_ab8051ff8092f40d88b86fed63f95cd7a}} 
+enum {\bfseries Script\+Event\+Type} \{ \newline
+{\bfseries k\+Reserve\+Id}, 
+{\bfseries k\+Create}, 
+{\bfseries k\+Deserialize}, 
+{\bfseries k\+Background\+Compile}, 
+\newline
+{\bfseries k\+Streaming\+Compile}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a57c1357e2efcb8f18a9463b3738de1c3}\label{classv8_1_1internal_1_1Logger_a57c1357e2efcb8f18a9463b3738de1c3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Set\+Up} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a89f5788193b8b60cc23095b01b303278}\label{classv8_1_1internal_1_1Logger_a89f5788193b8b60cc23095b01b303278}} 
+void {\bfseries Set\+Code\+Event\+Handler} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} options, Jit\+Code\+Event\+Handler event\+\_\+handler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_aa3ba1fdbb0a32a440540bb6ff6630077}\label{classv8_1_1internal_1_1Logger_aa3ba1fdbb0a32a440540bb6ff6630077}} 
+\mbox{\hyperlink{classv8_1_1sampler_1_1Sampler}{sampler\+::\+Sampler}} $\ast$ {\bfseries sampler} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_ac8018c72b3bfa833a8e9d1f5701c5570}\label{classv8_1_1internal_1_1Logger_ac8018c72b3bfa833a8e9d1f5701c5570}} 
+void {\bfseries Stop\+Profiler\+Thread} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_aecd345473e60fedd6cf022514b460ade}\label{classv8_1_1internal_1_1Logger_aecd345473e60fedd6cf022514b460ade}} 
+F\+I\+LE $\ast$ {\bfseries Tear\+Down} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_aa5b4d8a0c983f1302a86943394481ef8}\label{classv8_1_1internal_1_1Logger_aa5b4d8a0c983f1302a86943394481ef8}} 
+void {\bfseries String\+Event} (const \mbox{\hyperlink{classchar}{char}} $\ast$name, const \mbox{\hyperlink{classchar}{char}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_add38edf4ef5cb1d654eb9cac76f53136}\label{classv8_1_1internal_1_1Logger_add38edf4ef5cb1d654eb9cac76f53136}} 
+void {\bfseries Int\+Ptr\+T\+Event} (const \mbox{\hyperlink{classchar}{char}} $\ast$name, intptr\+\_\+t value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a6dffb059d816744e4c85150d2acb480a}\label{classv8_1_1internal_1_1Logger_a6dffb059d816744e4c85150d2acb480a}} 
+void {\bfseries Handle\+Event} (const \mbox{\hyperlink{classchar}{char}} $\ast$name, \mbox{\hyperlink{classuintptr__t}{Address}} $\ast$location)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a32c89d2d5ca535c3e0b9e00b73275528}\label{classv8_1_1internal_1_1Logger_a32c89d2d5ca535c3e0b9e00b73275528}} 
+void {\bfseries New\+Event} (const \mbox{\hyperlink{classchar}{char}} $\ast$name, void $\ast$object, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a1d8c8690eb3d3d0a3e784da1d6fea25e}\label{classv8_1_1internal_1_1Logger_a1d8c8690eb3d3d0a3e784da1d6fea25e}} 
+void {\bfseries Delete\+Event} (const \mbox{\hyperlink{classchar}{char}} $\ast$name, void $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a6c913c6d1dc334b9b34804ffa5eaf57c}\label{classv8_1_1internal_1_1Logger_a6c913c6d1dc334b9b34804ffa5eaf57c}} 
+void {\bfseries Resource\+Event} (const \mbox{\hyperlink{classchar}{char}} $\ast$name, const \mbox{\hyperlink{classchar}{char}} $\ast$tag)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a4e00e3d702c9a6d2da4bea62467ab8cc}\label{classv8_1_1internal_1_1Logger_a4e00e3d702c9a6d2da4bea62467ab8cc}} 
+void {\bfseries Suspect\+Read\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$obj)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_acf497a20b84038301ae19e42f010e91d}\label{classv8_1_1internal_1_1Logger_acf497a20b84038301ae19e42f010e91d}} 
+void {\bfseries Function\+Event} (const \mbox{\hyperlink{classchar}{char}} $\ast$reason, \mbox{\hyperlink{classint}{int}} script\+\_\+id, double time\+\_\+delta\+\_\+ms, \mbox{\hyperlink{classint}{int}} start\+\_\+position=-\/1, \mbox{\hyperlink{classint}{int}} end\+\_\+position=-\/1, \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} function\+\_\+name=\mbox{\hyperlink{classv8_1_1internal_1_1String}{String}}())
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a02a5cd42681aa0f59ac06f49ba0a971a}\label{classv8_1_1internal_1_1Logger_a02a5cd42681aa0f59ac06f49ba0a971a}} 
+void {\bfseries Function\+Event} (const \mbox{\hyperlink{classchar}{char}} $\ast$reason, \mbox{\hyperlink{classint}{int}} script\+\_\+id, double time\+\_\+delta\+\_\+ms, \mbox{\hyperlink{classint}{int}} start\+\_\+position, \mbox{\hyperlink{classint}{int}} end\+\_\+position, const \mbox{\hyperlink{classchar}{char}} $\ast$function\+\_\+name=nullptr, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} function\+\_\+name\+\_\+length=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_ab3d19043c118d70e48f166aa25b29b3d}\label{classv8_1_1internal_1_1Logger_ab3d19043c118d70e48f166aa25b29b3d}} 
+void {\bfseries Compilation\+Cache\+Event} (const \mbox{\hyperlink{classchar}{char}} $\ast$action, const \mbox{\hyperlink{classchar}{char}} $\ast$cache\+\_\+type, \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$sfi)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_abdb6e588475fc4bf95355f5328e06499}\label{classv8_1_1internal_1_1Logger_abdb6e588475fc4bf95355f5328e06499}} 
+void {\bfseries Script\+Event} (Script\+Event\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classint}{int}} script\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a7e754decd24da530b9602dfca1cfde71}\label{classv8_1_1internal_1_1Logger_a7e754decd24da530b9602dfca1cfde71}} 
+void {\bfseries Script\+Details} (\mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $\ast$script)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a0053fdf1c9ff5687fd8233140f08aafc}\label{classv8_1_1internal_1_1Logger_a0053fdf1c9ff5687fd8233140f08aafc}} 
+void {\bfseries Api\+Security\+Check} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_aa2654b090974d25e35d51a14f90ddf06}\label{classv8_1_1internal_1_1Logger_aa2654b090974d25e35d51a14f90ddf06}} 
+void {\bfseries Api\+Named\+Property\+Access} (const \mbox{\hyperlink{classchar}{char}} $\ast$tag, \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $\ast$holder, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_afe8a98fc8134ed8a3daaa581a304986c}\label{classv8_1_1internal_1_1Logger_afe8a98fc8134ed8a3daaa581a304986c}} 
+void {\bfseries Api\+Indexed\+Property\+Access} (const \mbox{\hyperlink{classchar}{char}} $\ast$tag, \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $\ast$holder, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_ad52311ceb7d9b9056b033850ff42f56d}\label{classv8_1_1internal_1_1Logger_ad52311ceb7d9b9056b033850ff42f56d}} 
+void {\bfseries Api\+Object\+Access} (const \mbox{\hyperlink{classchar}{char}} $\ast$tag, \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $\ast$obj)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a1240868d15412e1543074364a1242dee}\label{classv8_1_1internal_1_1Logger_a1240868d15412e1543074364a1242dee}} 
+void {\bfseries Api\+Entry\+Call} (const \mbox{\hyperlink{classchar}{char}} $\ast$name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_ad1fc75229b3c27f9d2dfa1f808de58bd}\label{classv8_1_1internal_1_1Logger_ad1fc75229b3c27f9d2dfa1f808de58bd}} 
+void {\bfseries Add\+Code\+Event\+Listener} (\mbox{\hyperlink{classv8_1_1internal_1_1CodeEventListener}{Code\+Event\+Listener}} $\ast$listener)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_ab68733af9c4968e0f96d82b6201d47b5}\label{classv8_1_1internal_1_1Logger_ab68733af9c4968e0f96d82b6201d47b5}} 
+void {\bfseries Remove\+Code\+Event\+Listener} (\mbox{\hyperlink{classv8_1_1internal_1_1CodeEventListener}{Code\+Event\+Listener}} $\ast$listener)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a223050a49d1a1fcdfff9890727a5311b}\label{classv8_1_1internal_1_1Logger_a223050a49d1a1fcdfff9890727a5311b}} 
+void {\bfseries Callback\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, \mbox{\hyperlink{classuintptr__t}{Address}} entry\+\_\+point) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a07e89e4aa95ff2a416ebcecef8ce1cf0}\label{classv8_1_1internal_1_1Logger_a07e89e4aa95ff2a416ebcecef8ce1cf0}} 
+void {\bfseries Getter\+Callback\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, \mbox{\hyperlink{classuintptr__t}{Address}} entry\+\_\+point) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_affdd7edbeb3b62635023b4c4bd62cb87}\label{classv8_1_1internal_1_1Logger_affdd7edbeb3b62635023b4c4bd62cb87}} 
+void {\bfseries Setter\+Callback\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, \mbox{\hyperlink{classuintptr__t}{Address}} entry\+\_\+point) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_aa9da923725f0db4f2b547ff28ea8717e}\label{classv8_1_1internal_1_1Logger_aa9da923725f0db4f2b547ff28ea8717e}} 
+void {\bfseries Code\+Create\+Event} (Code\+Event\+Listener\+::\+Log\+Events\+And\+Tags tag, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, const \mbox{\hyperlink{classchar}{char}} $\ast$source) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a272de6ad22ccc913baaff1deab33ca47}\label{classv8_1_1internal_1_1Logger_a272de6ad22ccc913baaff1deab33ca47}} 
+void {\bfseries Code\+Create\+Event} (Code\+Event\+Listener\+::\+Log\+Events\+And\+Tags tag, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_aeafedc3c255a459c72b6a7045d932f88}\label{classv8_1_1internal_1_1Logger_aeafedc3c255a459c72b6a7045d932f88}} 
+void {\bfseries Code\+Create\+Event} (Code\+Event\+Listener\+::\+Log\+Events\+And\+Tags tag, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$shared, \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a5b6dbff45edff7b0da82962766e1ff15}\label{classv8_1_1internal_1_1Logger_a5b6dbff45edff7b0da82962766e1ff15}} 
+void {\bfseries Code\+Create\+Event} (Code\+Event\+Listener\+::\+Log\+Events\+And\+Tags tag, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$shared, \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} source, \mbox{\hyperlink{classint}{int}} line, \mbox{\hyperlink{classint}{int}} column) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_aff1f50c6c4da784a01f7753b5734a0de}\label{classv8_1_1internal_1_1Logger_aff1f50c6c4da784a01f7753b5734a0de}} 
+void {\bfseries Code\+Create\+Event} (Code\+Event\+Listener\+::\+Log\+Events\+And\+Tags tag, const \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCode}{wasm\+::\+Wasm\+Code}} $\ast$code, \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{wasm\+::\+Wasm\+Name}} name) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a518f5a851b84f7311268f8d2806123fc}\label{classv8_1_1internal_1_1Logger_a518f5a851b84f7311268f8d2806123fc}} 
+void {\bfseries Code\+Disable\+Opt\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$shared) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a7904fcde2b16c9c1ac72d4f2b73fbf15}\label{classv8_1_1internal_1_1Logger_a7904fcde2b16c9c1ac72d4f2b73fbf15}} 
+void {\bfseries Code\+Moving\+G\+C\+Event} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_ae50e9a1575661d16443a3a71388f38ab}\label{classv8_1_1internal_1_1Logger_ae50e9a1575661d16443a3a71388f38ab}} 
+void {\bfseries Reg\+Exp\+Code\+Create\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} source) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_ab726061869e8d1e00871266258852368}\label{classv8_1_1internal_1_1Logger_ab726061869e8d1e00871266258852368}} 
+void {\bfseries Code\+Move\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} from, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} to) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_ac954023a65bf93a01fa6b811b43f27e6}\label{classv8_1_1internal_1_1Logger_ac954023a65bf93a01fa6b811b43f27e6}} 
+void {\bfseries Code\+Line\+Pos\+Info\+Record\+Event} (\mbox{\hyperlink{classuintptr__t}{Address}} code\+\_\+start, \mbox{\hyperlink{classv8_1_1internal_1_1ByteArray}{Byte\+Array}} source\+\_\+position\+\_\+table)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_af4c98845194394a4d02cb3e4ddb6724f}\label{classv8_1_1internal_1_1Logger_af4c98845194394a4d02cb3e4ddb6724f}} 
+void {\bfseries Code\+Line\+Pos\+Info\+Record\+Event} (\mbox{\hyperlink{classuintptr__t}{Address}} code\+\_\+start, \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const byte $>$ source\+\_\+position\+\_\+table)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a5a663130ec5a4e3839e77781983b3f44}\label{classv8_1_1internal_1_1Logger_a5a663130ec5a4e3839e77781983b3f44}} 
+void {\bfseries Shared\+Function\+Info\+Move\+Event} (\mbox{\hyperlink{classuintptr__t}{Address}} from, \mbox{\hyperlink{classuintptr__t}{Address}} to) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a25ef7751705623af5cb5aedfa447efb1}\label{classv8_1_1internal_1_1Logger_a25ef7751705623af5cb5aedfa447efb1}} 
+void {\bfseries Code\+Name\+Event} (\mbox{\hyperlink{classuintptr__t}{Address}} addr, \mbox{\hyperlink{classint}{int}} pos, const \mbox{\hyperlink{classchar}{char}} $\ast$code\+\_\+name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_aee892412964305c929f3cd2cfd1d0e30}\label{classv8_1_1internal_1_1Logger_aee892412964305c929f3cd2cfd1d0e30}} 
+void {\bfseries Code\+Deopt\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} code, Deoptimize\+Kind kind, \mbox{\hyperlink{classuintptr__t}{Address}} pc, \mbox{\hyperlink{classint}{int}} fp\+\_\+to\+\_\+sp\+\_\+delta) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a37d2f63bfa0704d6ca276411cd6e1a3e}\label{classv8_1_1internal_1_1Logger_a37d2f63bfa0704d6ca276411cd6e1a3e}} 
+void {\bfseries I\+C\+Event} (const \mbox{\hyperlink{classchar}{char}} $\ast$\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classbool}{bool}} keyed, \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$key, \mbox{\hyperlink{classchar}{char}} old\+\_\+state, \mbox{\hyperlink{classchar}{char}} new\+\_\+state, const \mbox{\hyperlink{classchar}{char}} $\ast$modifier, const \mbox{\hyperlink{classchar}{char}} $\ast$slow\+\_\+stub\+\_\+reason)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a5d129ffe29c1b025b3225875a5904501}\label{classv8_1_1internal_1_1Logger_a5d129ffe29c1b025b3225875a5904501}} 
+void {\bfseries Map\+Event} (const \mbox{\hyperlink{classchar}{char}} $\ast$\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} from, \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} to, const \mbox{\hyperlink{classchar}{char}} $\ast$reason=nullptr, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$name\+\_\+or\+\_\+sfi=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a85d9e6b11de20e5d41fb128a0bec19c1}\label{classv8_1_1internal_1_1Logger_a85d9e6b11de20e5d41fb128a0bec19c1}} 
+void {\bfseries Map\+Create} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_aa2a5c26311e2300e47097e0d094a09d1}\label{classv8_1_1internal_1_1Logger_aa2a5c26311e2300e47097e0d094a09d1}} 
+void {\bfseries Map\+Details} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_af12e96b0f6ea17213bc847e06fd10508}\label{classv8_1_1internal_1_1Logger_af12e96b0f6ea17213bc847e06fd10508}} 
+void {\bfseries Shared\+Library\+Event} (const std\+::string \&library\+\_\+path, \mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} start, \mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} end, intptr\+\_\+t aslr\+\_\+slide)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_aa0a465dbed17a0793a716223c0feaecf}\label{classv8_1_1internal_1_1Logger_aa0a465dbed17a0793a716223c0feaecf}} 
+void {\bfseries Current\+Time\+Event} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a9e1006be8887830cb167c3080a509b71}\label{classv8_1_1internal_1_1Logger_a9e1006be8887830cb167c3080a509b71}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Timer\+Event} (Start\+End se, const \mbox{\hyperlink{classchar}{char}} $\ast$name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_aed323c6dffe4aabc969b080bfe782adf}\label{classv8_1_1internal_1_1Logger_aed323c6dffe4aabc969b080bfe782adf}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+logging} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a2c0ed08ed59a3a5f43a4830312bf6980}\label{classv8_1_1internal_1_1Logger_a2c0ed08ed59a3a5f43a4830312bf6980}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+listening\+\_\+to\+\_\+code\+\_\+events} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_af83f62b2d37eb53cf3b89eb10ee17bbe}\label{classv8_1_1internal_1_1Logger_af83f62b2d37eb53cf3b89eb10ee17bbe}} 
+void {\bfseries Stop\+Profiler} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a69a15af625beb6a875fc2734ba422afc}\label{classv8_1_1internal_1_1Logger_a69a15af625beb6a875fc2734ba422afc}} 
+void {\bfseries Log\+Existing\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ shared, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} $>$ code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a7372775745f2f974a600996232acc7d6}\label{classv8_1_1internal_1_1Logger_a7372775745f2f974a600996232acc7d6}} 
+void {\bfseries Log\+Compiled\+Functions} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a4d77e3ce92369187c58127754a9fa149}\label{classv8_1_1internal_1_1Logger_a4d77e3ce92369187c58127754a9fa149}} 
+void {\bfseries Log\+Accessor\+Callbacks} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_acf57b8270cf5f12f6b1c1a4810011306}\label{classv8_1_1internal_1_1Logger_acf57b8270cf5f12f6b1c1a4810011306}} 
+void {\bfseries Log\+Code\+Objects} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a4c12474fca554cda5288223741ea06ea}\label{classv8_1_1internal_1_1Logger_a4c12474fca554cda5288223741ea06ea}} 
+void {\bfseries Log\+All\+Maps} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_ab5fc1e0f322695f69c7a6bcee79ceaa5}\label{classv8_1_1internal_1_1Logger_ab5fc1e0f322695f69c7a6bcee79ceaa5}} 
+void {\bfseries Log\+Failure} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_affdaa044e4ec347cb0853d9d91c63ff9}\label{classv8_1_1internal_1_1Logger_affdaa044e4ec347cb0853d9d91c63ff9}} 
+void {\bfseries Log\+Code\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$code\+\_\+object)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a89b6f2b7d49bb9d19dc26909aee24e65}\label{classv8_1_1internal_1_1Logger_a89b6f2b7d49bb9d19dc26909aee24e65}} 
+static void {\bfseries Enter\+External} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a66eff83e012fb21ad8f2c9b41fcb6aaf}\label{classv8_1_1internal_1_1Logger_a66eff83e012fb21ad8f2c9b41fcb6aaf}} 
+static void {\bfseries Leave\+External} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a0b3b1025f5f3662c0731bee4f99688be}\label{classv8_1_1internal_1_1Logger_a0b3b1025f5f3662c0731bee4f99688be}} 
+static void {\bfseries Default\+Event\+Logger\+Sentinel} (const \mbox{\hyperlink{classchar}{char}} $\ast$name, \mbox{\hyperlink{classint}{int}} event)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_af8ea5dae8b74ed2b23a9b7681efd085c}\label{classv8_1_1internal_1_1Logger_af8ea5dae8b74ed2b23a9b7681efd085c}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Call\+Event\+Logger} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const \mbox{\hyperlink{classchar}{char}} $\ast$name, Start\+End se, \mbox{\hyperlink{classbool}{bool}} expose\+\_\+to\+\_\+api)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a497f5f9923f71c3566d80b765d714ba7}\label{classv8_1_1internal_1_1Logger_a497f5f9923f71c3566d80b765d714ba7}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE Code\+Event\+Listener\+::\+Log\+Events\+And\+Tags {\bfseries To\+Native\+By\+Script} (Code\+Event\+Listener\+::\+Log\+Events\+And\+Tags, \mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a86ab9207d5dcd104fba80426bbf9b78d}\label{classv8_1_1internal_1_1Logger_a86ab9207d5dcd104fba80426bbf9b78d}} 
+static const Log\+Separator {\bfseries k\+Next} = Log\+Separator\+::k\+Separator
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a640116136ce15d7180db4807ac2fbe77}\label{classv8_1_1internal_1_1Logger_a640116136ce15d7180db4807ac2fbe77}} 
+class {\bfseries Event\+Log}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_aba4f0964bdacf2bbf62cf876e5d28d0a}\label{classv8_1_1internal_1_1Logger_aba4f0964bdacf2bbf62cf876e5d28d0a}} 
+class {\bfseries Isolate}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a1c4918f5f53a4fc9fcdaa6bca4bf5204}\label{classv8_1_1internal_1_1Logger_a1c4918f5f53a4fc9fcdaa6bca4bf5204}} 
+class {\bfseries Time\+Log}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_ad73e5645d5b7b84a00d4a5d07b8d8078}\label{classv8_1_1internal_1_1Logger_ad73e5645d5b7b84a00d4a5d07b8d8078}} 
+class {\bfseries Profiler}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a625fbe66123c83b3cafa99a202c00225}\label{classv8_1_1internal_1_1Logger_a625fbe66123c83b3cafa99a202c00225}} 
+{\footnotesize template$<$State\+Tag Tag$>$ }\\class {\bfseries V\+M\+State}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_a4702c0b6e47a7a03f8fee92352c3209f}\label{classv8_1_1internal_1_1Logger_a4702c0b6e47a7a03f8fee92352c3209f}} 
+class {\bfseries Logger\+Test\+Helper}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Logger_acb7d0754758c89612a316001c25d07c4}\label{classv8_1_1internal_1_1Logger_acb7d0754758c89612a316001c25d07c4}} 
+class {\bfseries Cpu\+Profiler}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 112 of file log.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/log.\+h\item 
+v8/src/log-\/inl.\+h\item 
+v8/src/log.\+cc\end{DoxyCompactItemize}

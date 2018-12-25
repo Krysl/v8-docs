@@ -1,0 +1,67 @@
+\hypertarget{classv8_1_1internal_1_1AstNode}{}\section{v8\+:\+:internal\+:\+:Ast\+Node Class Reference}
+\label{classv8_1_1internal_1_1AstNode}\index{v8\+::internal\+::\+Ast\+Node@{v8\+::internal\+::\+Ast\+Node}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Ast\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classv8_1_1internal_1_1AstNode}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNode_ac45ba3bb3b25fc6afad01bd1a89fd4a5}\label{classv8_1_1internal_1_1AstNode_ac45ba3bb3b25fc6afad01bd1a89fd4a5}} 
+enum {\bfseries Node\+Type} \+: uint8\+\_\+t \{ {\bfseries A\+S\+T\+\_\+\+N\+O\+D\+E\+\_\+\+L\+I\+ST} =(D\+E\+C\+L\+A\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+N\+UM)
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNode_a3b42cf9e8f0c9685573ab0f445d30856}\label{classv8_1_1internal_1_1AstNode_a3b42cf9e8f0c9685573ab0f445d30856}} 
+void $\ast$ {\bfseries operator new} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNode_ad2383a08814cf53a35738fe3d84c5e3b}\label{classv8_1_1internal_1_1AstNode_ad2383a08814cf53a35738fe3d84c5e3b}} 
+Node\+Type {\bfseries node\+\_\+type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNode_a9fcfa53b12eb954e0f72f17465ade813}\label{classv8_1_1internal_1_1AstNode_a9fcfa53b12eb954e0f72f17465ade813}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries position} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNode_ace8690f07ae06be7a8adf693046e4334}\label{classv8_1_1internal_1_1AstNode_ace8690f07ae06be7a8adf693046e4334}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1BreakableStatement}{Breakable\+Statement}} $\ast$ {\bfseries As\+Breakable\+Statement} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNode_ae3e25fa09ab1bdec48d69d0a03ab266a}\label{classv8_1_1internal_1_1AstNode_ae3e25fa09ab1bdec48d69d0a03ab266a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1IterationStatement}{Iteration\+Statement}} $\ast$ {\bfseries As\+Iteration\+Statement} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNode_a81215882e963669f78e868d42d131946}\label{classv8_1_1internal_1_1AstNode_a81215882e963669f78e868d42d131946}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaterializedLiteral}{Materialized\+Literal}} $\ast$ {\bfseries As\+Materialized\+Literal} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNode_a252506cc4179b3bc7ffe07b18d52ffea}\label{classv8_1_1internal_1_1AstNode_a252506cc4179b3bc7ffe07b18d52ffea}} 
+{\bfseries Ast\+Node} (\mbox{\hyperlink{classint}{int}} position, Node\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNode_a45226472a08d30f2ed552fe22b0790f2}\label{classv8_1_1internal_1_1AstNode_a45226472a08d30f2ed552fe22b0790f2}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries bit\+\_\+field\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNode_a7587c0459339bc701a2ace3ce44e2599}\label{classv8_1_1internal_1_1AstNode_a7587c0459339bc701a2ace3ce44e2599}} 
+static const uint8\+\_\+t {\bfseries k\+Next\+Bit\+Field\+Index} = Node\+Type\+Field\+::k\+Next
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 136 of file ast.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ast/ast.\+h\item 
+v8/src/ast/ast.\+cc\end{DoxyCompactItemize}

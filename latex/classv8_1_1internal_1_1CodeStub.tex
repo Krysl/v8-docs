@@ -1,0 +1,128 @@
+\hypertarget{classv8_1_1internal_1_1CodeStub}{}\section{v8\+:\+:internal\+:\+:Code\+Stub Class Reference}
+\label{classv8_1_1internal_1_1CodeStub}\index{v8\+::internal\+::\+Code\+Stub@{v8\+::internal\+::\+Code\+Stub}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Code\+Stub\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classv8_1_1internal_1_1CodeStub}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_abb9bc8d92239cfc2396b3002979de13f}\label{classv8_1_1internal_1_1CodeStub_abb9bc8d92239cfc2396b3002979de13f}} 
+enum {\bfseries Major} \{ {\bfseries No\+Cache} = 0, 
+{\bfseries N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+I\+DS}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_a7dd0ee9f6ed0bb3269498f791b9b103c}\label{classv8_1_1internal_1_1CodeStub_a7dd0ee9f6ed0bb3269498f791b9b103c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Get\+Code} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_a91373401aac008290d1a07477f5750ac}\label{classv8_1_1internal_1_1CodeStub_a91373401aac008290d1a07477f5750ac}} 
+{\bfseries Code\+Stub} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_a983df1dde643508536e1b1ba62fa0fa8}\label{classv8_1_1internal_1_1CodeStub_a983df1dde643508536e1b1ba62fa0fa8}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Sometimes\+Sets\+Up\+A\+Frame} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_ab081df3daa52dd794e67708ea4b3cf3c}\label{classv8_1_1internal_1_1CodeStub_ab081df3daa52dd794e67708ea4b3cf3c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Find\+Code\+In\+Cache} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $\ast$code\+\_\+out)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_a2047fe312dfc5da7aaa4970a9cfcc9ea}\label{classv8_1_1internal_1_1CodeStub_a2047fe312dfc5da7aaa4970a9cfcc9ea}} 
+virtual \mbox{\hyperlink{classv8_1_1internal_1_1CallInterfaceDescriptor}{Call\+Interface\+Descriptor}} {\bfseries Get\+Call\+Interface\+Descriptor} () const =0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_a48a36e9a9aff455a5c69dea11bc0790d}\label{classv8_1_1internal_1_1CodeStub_a48a36e9a9aff455a5c69dea11bc0790d}} 
+virtual \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Stack\+Parameter\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_ab54439b9fba9baedce3fc4eda5599f88}\label{classv8_1_1internal_1_1CodeStub_ab54439b9fba9baedce3fc4eda5599f88}} 
+virtual Major {\bfseries Major\+Key} () const =0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_ac2d639a6528fb9715f9a0209c63ffcf4}\label{classv8_1_1internal_1_1CodeStub_ac2d639a6528fb9715f9a0209c63ffcf4}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Minor\+Key} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_afd9384ba253acc78119e26faf6bd579e}\label{classv8_1_1internal_1_1CodeStub_afd9384ba253acc78119e26faf6bd579e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_a115d22ad2dc7ca20fd19a8ba46d9027a}\label{classv8_1_1internal_1_1CodeStub_a115d22ad2dc7ca20fd19a8ba46d9027a}} 
+void {\bfseries set\+\_\+isolate} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_a1b6fe8afd08eeb91261887f5970674cf}\label{classv8_1_1internal_1_1CodeStub_a1b6fe8afd08eeb91261887f5970674cf}} 
+void {\bfseries Delete\+Stub\+From\+Cache\+For\+Testing} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_ac34c7f14ec61a80cd7d39afd1a02a9f2}\label{classv8_1_1internal_1_1CodeStub_ac34c7f14ec61a80cd7d39afd1a02a9f2}} 
+static Major {\bfseries Major\+Key\+From\+Key} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_acb62f5d4eaa6f12dbeaa790220570290}\label{classv8_1_1internal_1_1CodeStub_acb62f5d4eaa6f12dbeaa790220570290}} 
+static \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Minor\+Key\+From\+Key} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_a7fb9f6a8a6c4f6fb31db03e33125a0e3}\label{classv8_1_1internal_1_1CodeStub_a7fb9f6a8a6c4f6fb31db03e33125a0e3}} 
+static Major {\bfseries Get\+Major\+Key} (const \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} code\+\_\+stub)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_a216bae8cdb6faaf30e25c3ee6dcd674b}\label{classv8_1_1internal_1_1CodeStub_a216bae8cdb6faaf30e25c3ee6dcd674b}} 
+static \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries No\+Cache\+Key} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_adf29ce4f8d41908970b8d43c4714c6fc}\label{classv8_1_1internal_1_1CodeStub_adf29ce4f8d41908970b8d43c4714c6fc}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Major\+Name} (Major major\+\_\+key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_a588320742fd43943338ed1704ce1aae6}\label{classv8_1_1internal_1_1CodeStub_a588320742fd43943338ed1704ce1aae6}} 
+static void {\bfseries Initialize\+Descriptor} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} key, \mbox{\hyperlink{classv8_1_1internal_1_1CodeStubDescriptor}{Code\+Stub\+Descriptor}} $\ast$desc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_a0daac74e46ce67a36f086856eca81f0a}\label{classv8_1_1internal_1_1CodeStub_a0daac74e46ce67a36f086856eca81f0a}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Get\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} key)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_a7527e954f615542b8eefcf63fd08746e}\label{classv8_1_1internal_1_1CodeStub_a7527e954f615542b8eefcf63fd08746e}} 
+{\bfseries Code\+Stub} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} key, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_af97a144d181a25b3fdc1c35585fed35e}\label{classv8_1_1internal_1_1CodeStub_af97a144d181a25b3fdc1c35585fed35e}} 
+virtual \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Generate\+Code} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_a05fa1e71dd487f1dbb8fa71e57135338}\label{classv8_1_1internal_1_1CodeStub_a05fa1e71dd487f1dbb8fa71e57135338}} 
+virtual Movability {\bfseries Needs\+Immovable\+Code} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_a12037fc4510bac5ae59c8109bc441ba8}\label{classv8_1_1internal_1_1CodeStub_a12037fc4510bac5ae59c8109bc441ba8}} 
+virtual void {\bfseries Print\+Name} (std\+::ostream \&os) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_a14f85cdea1100da28ac97e67bd0aa6eb}\label{classv8_1_1internal_1_1CodeStub_a14f85cdea1100da28ac97e67bd0aa6eb}} 
+virtual void {\bfseries Print\+Base\+Name} (std\+::ostream \&os) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_aeb27675ad86ee7d36c36a2be4d519132}\label{classv8_1_1internal_1_1CodeStub_aeb27675ad86ee7d36c36a2be4d519132}} 
+virtual void {\bfseries Print\+State} (std\+::ostream \&os) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_adcce9f0c6ec471a2ef53f2561e6889c8}\label{classv8_1_1internal_1_1CodeStub_adcce9f0c6ec471a2ef53f2561e6889c8}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Get\+Key} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_acd00f90e85d81d14a76ec8777bef3aa4}\label{classv8_1_1internal_1_1CodeStub_acd00f90e85d81d14a76ec8777bef3aa4}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries minor\+\_\+key\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_a096b3a9009a783c1025b73df216fa85f}\label{classv8_1_1internal_1_1CodeStub_a096b3a9009a783c1025b73df216fa85f}} 
+class {\bfseries Break\+Point\+Iterator}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStub_a339c419cc6fc0e8026ac8dc8fa59a98c}\label{classv8_1_1internal_1_1CodeStub_a339c419cc6fc0e8026ac8dc8fa59a98c}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{classv8_1_1internal_1_1CodeStub}{Code\+Stub}} \&s)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 81 of file code-\/stubs.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/code-\/stubs.\+h\item 
+v8/src/code-\/stubs.\+cc\end{DoxyCompactItemize}

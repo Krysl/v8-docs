@@ -1,0 +1,77 @@
+\hypertarget{classv8_1_1internal_1_1LocalEmbedderHeapTracer}{}\section{v8\+:\+:internal\+:\+:Local\+Embedder\+Heap\+Tracer Class Reference}
+\label{classv8_1_1internal_1_1LocalEmbedderHeapTracer}\index{v8\+::internal\+::\+Local\+Embedder\+Heap\+Tracer@{v8\+::internal\+::\+Local\+Embedder\+Heap\+Tracer}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1LocalEmbedderHeapTracer_1_1ProcessingScope}{Processing\+Scope}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a78771d7b0df8540da1f95c6c04e5b0ba}\label{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a78771d7b0df8540da1f95c6c04e5b0ba}} 
+typedef std\+::pair$<$ void $\ast$, void $\ast$ $>$ {\bfseries Wrapper\+Info}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a532d126f47d197195d047e062ff8426d}\label{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a532d126f47d197195d047e062ff8426d}} 
+typedef std\+::vector$<$ Wrapper\+Info $>$ {\bfseries Wrapper\+Cache}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a23d242b698afcbb813ab36ef9683b0d5}\label{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a23d242b698afcbb813ab36ef9683b0d5}} 
+{\bfseries Local\+Embedder\+Heap\+Tracer} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a1e73c538fab45f2af2c04a22387938c9}\label{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a1e73c538fab45f2af2c04a22387938c9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries In\+Use} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalEmbedderHeapTracer_adac9df430a58d679f6699f895e44b69d}\label{classv8_1_1internal_1_1LocalEmbedderHeapTracer_adac9df430a58d679f6699f895e44b69d}} 
+Embedder\+Heap\+Tracer $\ast$ {\bfseries remote\+\_\+tracer} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a6f892e403bf155638b467a449f86bc3b}\label{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a6f892e403bf155638b467a449f86bc3b}} 
+void {\bfseries Set\+Remote\+Tracer} (Embedder\+Heap\+Tracer $\ast$tracer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a98c6b9b1bb9030c125c128cb102b4cad}\label{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a98c6b9b1bb9030c125c128cb102b4cad}} 
+void {\bfseries Trace\+Prologue} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalEmbedderHeapTracer_acc8062aa8c63d4ceb3b47854fe44c702}\label{classv8_1_1internal_1_1LocalEmbedderHeapTracer_acc8062aa8c63d4ceb3b47854fe44c702}} 
+void {\bfseries Trace\+Epilogue} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a8cb69fb6a76681604b77a9bd80f59250}\label{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a8cb69fb6a76681604b77a9bd80f59250}} 
+void {\bfseries Enter\+Final\+Pause} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a7c6ab7f53c5bcace05d55e5404c2fb99}\label{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a7c6ab7f53c5bcace05d55e5404c2fb99}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Trace} (double deadline)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a9eb834ac35486fe37d6be8194d1105bd}\label{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a9eb834ac35486fe37d6be8194d1105bd}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Remote\+Tracing\+Done} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a200bc51a33c9114a8ef0e64c57d44ee7}\label{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a200bc51a33c9114a8ef0e64c57d44ee7}} 
+void {\bfseries Notify\+V8\+Marking\+Worklist\+Was\+Empty} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalEmbedderHeapTracer_ac9cbeb1fd6db44fa8a158ef96d48d114}\label{classv8_1_1internal_1_1LocalEmbedderHeapTracer_ac9cbeb1fd6db44fa8a158ef96d48d114}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Should\+Finalize\+Incremental\+Marking} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a20cd0d475b1472af899effe2270236f8}\label{classv8_1_1internal_1_1LocalEmbedderHeapTracer_a20cd0d475b1472af899effe2270236f8}} 
+void {\bfseries Set\+Embedder\+Stack\+State\+For\+Next\+Finalization} (Embedder\+Heap\+Tracer\+::\+Embedder\+Stack\+State stack\+\_\+state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalEmbedderHeapTracer_acb79ebab34cb342772b4fe28145f0e0b}\label{classv8_1_1internal_1_1LocalEmbedderHeapTracer_acb79ebab34cb342772b4fe28145f0e0b}} 
+void {\bfseries Set\+Embedder\+Worklist\+Empty} (\mbox{\hyperlink{classbool}{bool}} is\+\_\+empty)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalEmbedderHeapTracer_aaf13071c4075ae60eb0b224f5eaacdb8}\label{classv8_1_1internal_1_1LocalEmbedderHeapTracer_aaf13071c4075ae60eb0b224f5eaacdb8}} 
+class {\bfseries Embedder\+Stack\+State\+Scope}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file embedder-\/tracing.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/embedder-\/tracing.\+h\item 
+v8/src/heap/embedder-\/tracing.\+cc\end{DoxyCompactItemize}

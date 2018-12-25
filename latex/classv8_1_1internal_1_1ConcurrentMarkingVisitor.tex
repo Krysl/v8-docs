@@ -1,0 +1,153 @@
+\hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor}{}\section{v8\+:\+:internal\+:\+:Concurrent\+Marking\+Visitor Class Reference}
+\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor}\index{v8\+::internal\+::\+Concurrent\+Marking\+Visitor@{v8\+::internal\+::\+Concurrent\+Marking\+Visitor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Concurrent\+Marking\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1ConcurrentMarkingVisitor}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_aa3c506ec63eb0731e227e289ccb16b99}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_aa3c506ec63eb0731e227e289ccb16b99}} 
+using {\bfseries Base\+Class} = \mbox{\hyperlink{classv8_1_1internal_1_1HeapVisitor}{Heap\+Visitor}}$<$ \mbox{\hyperlink{classint}{int}}, \mbox{\hyperlink{classv8_1_1internal_1_1ConcurrentMarkingVisitor}{Concurrent\+Marking\+Visitor}} $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a15f4fc8a0f119de974bc7d3aa6391fb7}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a15f4fc8a0f119de974bc7d3aa6391fb7}} 
+{\bfseries Concurrent\+Marking\+Visitor} (\mbox{\hyperlink{classv8_1_1internal_1_1Worklist}{Concurrent\+Marking\+::\+Marking\+Worklist}} $\ast$shared, \mbox{\hyperlink{classv8_1_1internal_1_1Worklist}{Concurrent\+Marking\+::\+Marking\+Worklist}} $\ast$bailout, Live\+Bytes\+Map $\ast$live\+\_\+bytes, \mbox{\hyperlink{structv8_1_1internal_1_1WeakObjects}{Weak\+Objects}} $\ast$weak\+\_\+objects, \mbox{\hyperlink{classv8_1_1internal_1_1Worklist}{Concurrent\+Marking\+::\+Embedder\+Tracing\+Worklist}} $\ast$embedder\+\_\+objects, \mbox{\hyperlink{classint}{int}} task\+\_\+id, \mbox{\hyperlink{classbool}{bool}} embedder\+\_\+tracing\+\_\+enabled)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a33a4fd062f35cb07ddcc8d0c4cc57142}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a33a4fd062f35cb07ddcc8d0c4cc57142}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Should\+Visit} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a7e203272819fa27ca2958dc453894baf}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a7e203272819fa27ca2958dc453894baf}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Allow\+Default\+J\+S\+Object\+Visit} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a1c54108c56df2cb2f05fcab8f65cf491}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a1c54108c56df2cb2f05fcab8f65cf491}} 
+void {\bfseries Process\+Strong\+Heap\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} slot, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$heap\+\_\+object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_aa7002afa883cdf6980ef62d729d3b17a}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_aa7002afa883cdf6980ef62d729d3b17a}} 
+void {\bfseries Process\+Weak\+Heap\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObjectSlot}{Heap\+Object\+Slot}} slot, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$heap\+\_\+object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_ab3eca5ad41128dda2af8065b6efb166a}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_ab3eca5ad41128dda2af8065b6efb166a}} 
+void {\bfseries Visit\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} end) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_ae6ea74ab8ff044e25e67146f253bf80c}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_ae6ea74ab8ff044e25e67146f253bf80c}} 
+void {\bfseries Visit\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} end) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a19e9f14554bf09f27698b6b7630328fb}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a19e9f14554bf09f27698b6b7630328fb}} 
+void {\bfseries Visit\+Custom\+Weak\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} end) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a35b0fa0ae8ffd86c85ffb660b2ff16b6}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a35b0fa0ae8ffd86c85ffb660b2ff16b6}} 
+void {\bfseries Visit\+Pointers\+In\+Snapshot} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, const \mbox{\hyperlink{classv8_1_1internal_1_1SlotSnapshot}{Slot\+Snapshot}} \&snapshot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a130a3c7a1be5b4d3d5d1cb91eba09efc}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a130a3c7a1be5b4d3d5d1cb91eba09efc}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+J\+S\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_aa5c096227f0fc8d7e122d62eadc37a62}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_aa5c096227f0fc8d7e122d62eadc37a62}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+J\+S\+Object\+Fast} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_aa01bdeb5ef3df9109f72566f6b62e546}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_aa01bdeb5ef3df9109f72566f6b62e546}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+Wasm\+Instance\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1WasmInstanceObject}{Wasm\+Instance\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a01e94eb6db95f76bf075380b23d248ce}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a01e94eb6db95f76bf075380b23d248ce}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+J\+S\+Weak\+Cell} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1JSWeakCell}{J\+S\+Weak\+Cell}} $\ast$weak\+\_\+cell)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a4a519bbe39a982b1763abbf818ac55f6}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a4a519bbe39a982b1763abbf818ac55f6}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+J\+S\+Api\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a14c607c26749aa142be3238588d10038}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a14c607c26749aa142be3238588d10038}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+J\+S\+Array\+Buffer} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1JSArrayBuffer}{J\+S\+Array\+Buffer}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_acc09ed23a4d9d1a900496f69b58bbe2f}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_acc09ed23a4d9d1a900496f69b58bbe2f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+J\+S\+Data\+View} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1JSDataView}{J\+S\+Data\+View}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_aa83c24fcb7c071170c66e53e6aa865eb}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_aa83c24fcb7c071170c66e53e6aa865eb}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+J\+S\+Typed\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1JSTypedArray}{J\+S\+Typed\+Array}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a1a84a1eb155e48f3ed670f08b71deca9}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a1a84a1eb155e48f3ed670f08b71deca9}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+Cons\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1ConsString}{Cons\+String}} object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_aff2ff1b6ee388534e090a7d50091c9e1}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_aff2ff1b6ee388534e090a7d50091c9e1}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+Sliced\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1SlicedString}{Sliced\+String}} object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a77f6c877d93dc587f6d8f1eafff0040a}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a77f6c877d93dc587f6d8f1eafff0040a}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+Thin\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1ThinString}{Thin\+String}} object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_aa0c09dc27bb9e558545c10d58c1982f7}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_aa0c09dc27bb9e558545c10d58c1982f7}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+Seq\+One\+Byte\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1SeqOneByteString}{Seq\+One\+Byte\+String}} object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_ad291ba676212b6c5794432dd3a26bc58}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_ad291ba676212b6c5794432dd3a26bc58}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+Seq\+Two\+Byte\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1SeqTwoByteString}{Seq\+Two\+Byte\+String}} object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a2c40c526af1e706961621a2363071c84}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a2c40c526af1e706961621a2363071c84}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+Fixed\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a3ad5293a3759d586185acf0cbc8b96c6}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a3ad5293a3759d586185acf0cbc8b96c6}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+Fixed\+Double\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1FixedDoubleArray}{Fixed\+Double\+Array}} object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_ab8f91369bd87494f5da74aa08dc4307b}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_ab8f91369bd87494f5da74aa08dc4307b}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_adb7253b4ab16627e06988ba4a68f80b9}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_adb7253b4ab16627e06988ba4a68f80b9}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+Bytecode\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray}{Bytecode\+Array}} object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a1323e6781d38aaf8a10f5437aaeb84e6}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a1323e6781d38aaf8a10f5437aaeb84e6}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+Map} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} meta\+\_\+map, \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a10649948bdb633a079945aca0003b5fa}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a10649948bdb633a079945aca0003b5fa}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+Transition\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1TransitionArray}{Transition\+Array}} $\ast$array)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_ae2729be5dd8cefb48f601a637af58638}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_ae2729be5dd8cefb48f601a637af58638}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+J\+S\+Weak\+Collection} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1JSWeakCollection}{J\+S\+Weak\+Collection}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a74d0503395c56936a1fc3b09a8762672}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a74d0503395c56936a1fc3b09a8762672}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Visit\+Ephemeron\+Hash\+Table} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1EphemeronHashTable}{Ephemeron\+Hash\+Table}} table)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a369869135c49011a3d4f9854db3472df}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a369869135c49011a3d4f9854db3472df}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Visit\+Ephemeron} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$key, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a9c368bf3dffd62a81b162dc4f2e34f08}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a9c368bf3dffd62a81b162dc4f2e34f08}} 
+void {\bfseries Mark\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a91ee3c06cb03b5f2ae84e80b974325d5}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a91ee3c06cb03b5f2ae84e80b974325d5}} 
+{\footnotesize template$<$$>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1ConsString}{Cons\+String}} {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a5a5fee2002e26d6a811791e4699fe8c9}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a5a5fee2002e26d6a811791e4699fe8c9}} 
+{\footnotesize template$<$$>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1SlicedString}{Sliced\+String}} {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a805a09cdf53256a867fe4762be8d15c0}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a805a09cdf53256a867fe4762be8d15c0}} 
+{\footnotesize template$<$$>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1ThinString}{Thin\+String}} {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a8a1e131d1b1fe9c5dd489db1c54d4acf}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a8a1e131d1b1fe9c5dd489db1c54d4acf}} 
+{\footnotesize template$<$$>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1SeqOneByteString}{Seq\+One\+Byte\+String}} {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a2fbc480b5eef782c953fc25d7a191cb7}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a2fbc480b5eef782c953fc25d7a191cb7}} 
+{\footnotesize template$<$$>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1SeqTwoByteString}{Seq\+Two\+Byte\+String}} {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a20aa9f67fbd854a706271ef25a0cc4e6}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a20aa9f67fbd854a706271ef25a0cc4e6}} 
+{\footnotesize template$<$$>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a5ccfe7b7cfca4b29d6807abe10ebcaa4}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a5ccfe7b7cfca4b29d6807abe10ebcaa4}} 
+{\footnotesize template$<$typename T , typename  = typename std\+::enable\+\_\+if$<$                            std\+::is\+\_\+base\+\_\+of$<$\+Object, T$>$\+::value$>$\+::type$>$ }\\static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$ {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a28d7654333d9bb9f9cd46747e1d94e0c}\label{classv8_1_1internal_1_1ConcurrentMarkingVisitor_a28d7654333d9bb9f9cd46747e1d94e0c}} 
+{\footnotesize template$<$typename T , typename  = typename std\+::enable\+\_\+if$<$                            std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ptr, T$>$\+::value$>$\+::type$>$ }\\static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 76 of file concurrent-\/marking.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/concurrent-\/marking.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,164 @@
+\hypertarget{classv8_1_1internal_1_1SemiSpace}{}\section{v8\+:\+:internal\+:\+:Semi\+Space Class Reference}
+\label{classv8_1_1internal_1_1SemiSpace}\index{v8\+::internal\+::\+Semi\+Space@{v8\+::internal\+::\+Semi\+Space}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Semi\+Space\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1SemiSpace}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_af9ffdc744bfd9e901a29bd4394327127}\label{classv8_1_1internal_1_1SemiSpace_af9ffdc744bfd9e901a29bd4394327127}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1PageIteratorImpl}{Page\+Iterator}} {\bfseries iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a1958ffe221d002476c29da54612956f0}\label{classv8_1_1internal_1_1SemiSpace_a1958ffe221d002476c29da54612956f0}} 
+{\bfseries Semi\+Space} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, Semi\+Space\+Id semispace)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a7b8cab12d3c9941c5d09b181900dd61c}\label{classv8_1_1internal_1_1SemiSpace_a7b8cab12d3c9941c5d09b181900dd61c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Contains} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$o)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a6dc2672844ad19e9ed67d92fd8fa7d52}\label{classv8_1_1internal_1_1SemiSpace_a6dc2672844ad19e9ed67d92fd8fa7d52}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Contains} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$o)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_abbbef2d1954093488b830f774c5bfb76}\label{classv8_1_1internal_1_1SemiSpace_abbbef2d1954093488b830f774c5bfb76}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Contains\+Slow} (\mbox{\hyperlink{classuintptr__t}{Address}} a)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_aa1ca5030e16e0fa8d2139c2c06297be4}\label{classv8_1_1internal_1_1SemiSpace_aa1ca5030e16e0fa8d2139c2c06297be4}} 
+void {\bfseries Set\+Up} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} initial\+\_\+capacity, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} maximum\+\_\+capacity)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a2e5b66ad47c14767b0035ed5006c2152}\label{classv8_1_1internal_1_1SemiSpace_a2e5b66ad47c14767b0035ed5006c2152}} 
+void {\bfseries Tear\+Down} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_abcde77679b352a13023036322527bdd8}\label{classv8_1_1internal_1_1SemiSpace_abcde77679b352a13023036322527bdd8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Commit} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a61e540c5fda1ce8ca1d3eba9ea7b79dc}\label{classv8_1_1internal_1_1SemiSpace_a61e540c5fda1ce8ca1d3eba9ea7b79dc}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Uncommit} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a287a9650286c05244efe8a2464a0b584}\label{classv8_1_1internal_1_1SemiSpace_a287a9650286c05244efe8a2464a0b584}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+committed} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_ab48e942506c0014002130e0b3f3bfe0d}\label{classv8_1_1internal_1_1SemiSpace_ab48e942506c0014002130e0b3f3bfe0d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Grow\+To} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} new\+\_\+capacity)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_adae737be78243fb3fb91ab1a1bbbd8a5}\label{classv8_1_1internal_1_1SemiSpace_adae737be78243fb3fb91ab1a1bbbd8a5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Shrink\+To} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} new\+\_\+capacity)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a237f69e5ef91e47c1fa40ee0df6fc131}\label{classv8_1_1internal_1_1SemiSpace_a237f69e5ef91e47c1fa40ee0df6fc131}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Ensure\+Current\+Capacity} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_afa779ea2c5d2ee9717ebd964016bf9b9}\label{classv8_1_1internal_1_1SemiSpace_afa779ea2c5d2ee9717ebd964016bf9b9}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries space\+\_\+end} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a00a39687980da5652bb8b3c9d86b416b}\label{classv8_1_1internal_1_1SemiSpace_a00a39687980da5652bb8b3c9d86b416b}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries space\+\_\+start} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a3959f291a89565277dd3cc05d8235d4e}\label{classv8_1_1internal_1_1SemiSpace_a3959f291a89565277dd3cc05d8235d4e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$ {\bfseries current\+\_\+page} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_ab77dc9f30dee0b301431fd3482e2473c}\label{classv8_1_1internal_1_1SemiSpace_ab77dc9f30dee0b301431fd3482e2473c}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries pages\+\_\+used} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a99bc7823065a43ae2616a5add5576927}\label{classv8_1_1internal_1_1SemiSpace_a99bc7823065a43ae2616a5add5576927}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries page\+\_\+low} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a1215003e1c658acd5ecb782063880833}\label{classv8_1_1internal_1_1SemiSpace_a1215003e1c658acd5ecb782063880833}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries page\+\_\+high} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a3a3a17fe0cd6b823613b324e1f352b46}\label{classv8_1_1internal_1_1SemiSpace_a3a3a17fe0cd6b823613b324e1f352b46}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Advance\+Page} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a14dc89b6ec2d58c43fe3799cd8e54c38}\label{classv8_1_1internal_1_1SemiSpace_a14dc89b6ec2d58c43fe3799cd8e54c38}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a4276ad0d5dc9e4aa7a45c0925ad44407}\label{classv8_1_1internal_1_1SemiSpace_a4276ad0d5dc9e4aa7a45c0925ad44407}} 
+void {\bfseries Remove\+Page} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a76d296a748a8b1e8cfe9354cfd02f488}\label{classv8_1_1internal_1_1SemiSpace_a76d296a748a8b1e8cfe9354cfd02f488}} 
+void {\bfseries Prepend\+Page} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a415f0c18100664d97f9c91ceb1986257}\label{classv8_1_1internal_1_1SemiSpace_a415f0c18100664d97f9c91ceb1986257}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$ {\bfseries Initialize\+Page} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk, Executability executable)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a96d84b4c29550486b8600a8601b269ce}\label{classv8_1_1internal_1_1SemiSpace_a96d84b4c29550486b8600a8601b269ce}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries age\+\_\+mark} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_aab39f62197f82066a5b293869ee2fc44}\label{classv8_1_1internal_1_1SemiSpace_aab39f62197f82066a5b293869ee2fc44}} 
+void {\bfseries set\+\_\+age\+\_\+mark} (\mbox{\hyperlink{classuintptr__t}{Address}} mark)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_adb4f89e009cfa54a140323f7309f3406}\label{classv8_1_1internal_1_1SemiSpace_adb4f89e009cfa54a140323f7309f3406}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries current\+\_\+capacity} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a72b4e41930c66bfa371024a60bed1188}\label{classv8_1_1internal_1_1SemiSpace_a72b4e41930c66bfa371024a60bed1188}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries maximum\+\_\+capacity} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_abbc98d9f86e7298a3d25c4f1efb38b8d}\label{classv8_1_1internal_1_1SemiSpace_abbc98d9f86e7298a3d25c4f1efb38b8d}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries minimum\+\_\+capacity} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_acdc44c71f23654cb7a127db798a1a52a}\label{classv8_1_1internal_1_1SemiSpace_acdc44c71f23654cb7a127db798a1a52a}} 
+Semi\+Space\+Id {\bfseries id} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a0f0477f262aa4c64a4f19bdd7d9807ca}\label{classv8_1_1internal_1_1SemiSpace_a0f0477f262aa4c64a4f19bdd7d9807ca}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Committed\+Physical\+Memory} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a753d1807262923c9143c834c07846fb0}\label{classv8_1_1internal_1_1SemiSpace_a753d1807262923c9143c834c07846fb0}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Size} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a91e11a4ef83ade96e3f9de2e318553c9}\label{classv8_1_1internal_1_1SemiSpace_a91e11a4ef83ade96e3f9de2e318553c9}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Size\+Of\+Objects} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_ad6bbfb9bc189930740d60d111dcd3330}\label{classv8_1_1internal_1_1SemiSpace_ad6bbfb9bc189930740d60d111dcd3330}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Available} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_affb8b730722b64f2d78bcce0bad0c955}\label{classv8_1_1internal_1_1SemiSpace_affb8b730722b64f2d78bcce0bad0c955}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$ {\bfseries first\+\_\+page} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a05505b721b9aa32f50d11ba48abad3b1}\label{classv8_1_1internal_1_1SemiSpace_a05505b721b9aa32f50d11ba48abad3b1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$ {\bfseries last\+\_\+page} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a8136d80b6c840dee9d814cb9afe0b448}\label{classv8_1_1internal_1_1SemiSpace_a8136d80b6c840dee9d814cb9afe0b448}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PageIteratorImpl}{iterator}} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_abf810855ae24e21076298aedda4e93f5}\label{classv8_1_1internal_1_1SemiSpace_abf810855ae24e21076298aedda4e93f5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PageIteratorImpl}{iterator}} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a16dad2304a20d716bbfd9aaff4ef00c1}\label{classv8_1_1internal_1_1SemiSpace_a16dad2304a20d716bbfd9aaff4ef00c1}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ObjectIterator}{Object\+Iterator}} $>$ {\bfseries Get\+Object\+Iterator} () override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a12d9024e40c876221b1fc8da9ad55433}\label{classv8_1_1internal_1_1SemiSpace_a12d9024e40c876221b1fc8da9ad55433}} 
+static void {\bfseries Swap} (\mbox{\hyperlink{classv8_1_1internal_1_1SemiSpace}{Semi\+Space}} $\ast$from, \mbox{\hyperlink{classv8_1_1internal_1_1SemiSpace}{Semi\+Space}} $\ast$to)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_ae78e80586c1013a2339790bd6f5938e2}\label{classv8_1_1internal_1_1SemiSpace_ae78e80586c1013a2339790bd6f5938e2}} 
+static void {\bfseries Assert\+Valid\+Range} (\mbox{\hyperlink{classuintptr__t}{Address}} from, \mbox{\hyperlink{classuintptr__t}{Address}} to)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a71065109e762b07b59b80cd64d885ff8}\label{classv8_1_1internal_1_1SemiSpace_a71065109e762b07b59b80cd64d885ff8}} 
+class {\bfseries New\+Space}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SemiSpace_a8b928629934cd4bbb42b079d8d3faf28}\label{classv8_1_1internal_1_1SemiSpace_a8b928629934cd4bbb42b079d8d3faf28}} 
+class {\bfseries Semi\+Space\+Iterator}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 2369 of file spaces.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/spaces.\+h\item 
+v8/src/heap/spaces-\/inl.\+h\item 
+v8/src/heap/spaces.\+cc\end{DoxyCompactItemize}

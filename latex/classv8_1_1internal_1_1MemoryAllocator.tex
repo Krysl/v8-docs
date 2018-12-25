@@ -1,0 +1,122 @@
+\hypertarget{classv8_1_1internal_1_1MemoryAllocator}{}\section{v8\+:\+:internal\+:\+:Memory\+Allocator Class Reference}
+\label{classv8_1_1internal_1_1MemoryAllocator}\index{v8\+::internal\+::\+Memory\+Allocator@{v8\+::internal\+::\+Memory\+Allocator}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1MemoryAllocator_1_1Unmapper}{Unmapper}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_a11e35bec1fa662a922430a198cf7bbab}\label{classv8_1_1internal_1_1MemoryAllocator_a11e35bec1fa662a922430a198cf7bbab}} 
+enum {\bfseries Allocation\+Mode} \{ {\bfseries k\+Regular}, 
+{\bfseries k\+Pooled}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_a1c5f0a0deae321ce11d19b7be506ed8b}\label{classv8_1_1internal_1_1MemoryAllocator_a1c5f0a0deae321ce11d19b7be506ed8b}} 
+enum {\bfseries Free\+Mode} \{ {\bfseries k\+Full}, 
+{\bfseries k\+Already\+Pooled}, 
+{\bfseries k\+Pre\+Free\+And\+Queue}, 
+{\bfseries k\+Pooled\+And\+Queue}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_ae3f0cab8f80c404fb92b41ef676a6ebc}\label{classv8_1_1internal_1_1MemoryAllocator_ae3f0cab8f80c404fb92b41ef676a6ebc}} 
+{\bfseries Memory\+Allocator} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} max\+\_\+capacity, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} code\+\_\+range\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_a41d0347f476400e5b35fb9f40081471c}\label{classv8_1_1internal_1_1MemoryAllocator_a41d0347f476400e5b35fb9f40081471c}} 
+void {\bfseries Tear\+Down} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_a4828039863fa25890cb7efaa3f53126a}\label{classv8_1_1internal_1_1MemoryAllocator_a4828039863fa25890cb7efaa3f53126a}} 
+{\footnotesize template$<$Memory\+Allocator\+::\+Allocation\+Mode alloc\+\_\+mode = k\+Regular, typename Space\+Type $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$ {\bfseries Allocate\+Page} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, Space\+Type $\ast$owner, Executability executable)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_a8386866a8e8e6b0d463cc2508dc59b44}\label{classv8_1_1internal_1_1MemoryAllocator_a8386866a8e8e6b0d463cc2508dc59b44}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1LargePage}{Large\+Page}} $\ast$ {\bfseries Allocate\+Large\+Page} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classv8_1_1internal_1_1LargeObjectSpace}{Large\+Object\+Space}} $\ast$owner, Executability executable)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_a45142bb4bfeef4b6970fc23bdfa286a4}\label{classv8_1_1internal_1_1MemoryAllocator_a45142bb4bfeef4b6970fc23bdfa286a4}} 
+{\footnotesize template$<$Memory\+Allocator\+::\+Free\+Mode mode = k\+Full$>$ }\\void {\bfseries Free} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_ab11215af5deaa0644edcd30e0b71d4ce}\label{classv8_1_1internal_1_1MemoryAllocator_ab11215af5deaa0644edcd30e0b71d4ce}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Size} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_a8fe153c012f90aa7a67e93bb8e982c4f}\label{classv8_1_1internal_1_1MemoryAllocator_a8fe153c012f90aa7a67e93bb8e982c4f}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Size\+Executable} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_aa2f0685d4fd0e3980959eac3b41eddc6}\label{classv8_1_1internal_1_1MemoryAllocator_aa2f0685d4fd0e3980959eac3b41eddc6}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Available} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_a2f7aca28e7f9bfd922847bad71d30341}\label{classv8_1_1internal_1_1MemoryAllocator_a2f7aca28e7f9bfd922847bad71d30341}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Outside\+Allocated\+Space} (\mbox{\hyperlink{classuintptr__t}{Address}} address)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_aaf116676ecb88c2617bebdb84954ca6f}\label{classv8_1_1internal_1_1MemoryAllocator_aaf116676ecb88c2617bebdb84954ca6f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$ {\bfseries Allocate\+Chunk} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} reserve\+\_\+area\+\_\+size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} commit\+\_\+area\+\_\+size, Executability executable, \mbox{\hyperlink{classv8_1_1internal_1_1Space}{Space}} $\ast$space)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_ac5f086e30959ef26b198a82631cc5029}\label{classv8_1_1internal_1_1MemoryAllocator_ac5f086e30959ef26b198a82631cc5029}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Allocate\+Aligned\+Memory} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} reserve\+\_\+size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} commit\+\_\+size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} alignment, Executability executable, void $\ast$hint, \mbox{\hyperlink{classv8_1_1internal_1_1VirtualMemory}{Virtual\+Memory}} $\ast$controller)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_a09600f5b1ca7e4be8337a4d5200bfa01}\label{classv8_1_1internal_1_1MemoryAllocator_a09600f5b1ca7e4be8337a4d5200bfa01}} 
+void {\bfseries Free\+Memory} (\mbox{\hyperlink{classv8_1_1PageAllocator}{v8\+::\+Page\+Allocator}} $\ast$page\+\_\+allocator, \mbox{\hyperlink{classuintptr__t}{Address}} addr, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_a0afb973edac68394d0355cdfec1928f5}\label{classv8_1_1internal_1_1MemoryAllocator_a0afb973edac68394d0355cdfec1928f5}} 
+void {\bfseries Partial\+Free\+Memory} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk, \mbox{\hyperlink{classuintptr__t}{Address}} start\+\_\+free, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} bytes\+\_\+to\+\_\+free, \mbox{\hyperlink{classuintptr__t}{Address}} new\+\_\+area\+\_\+end)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_afc4f762e2a1808e983bed027fed42607}\label{classv8_1_1internal_1_1MemoryAllocator_afc4f762e2a1808e983bed027fed42607}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Memory\+Chunk\+Executable} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_ac05a8410e67e0305c36b562b788369a3}\label{classv8_1_1internal_1_1MemoryAllocator_ac05a8410e67e0305c36b562b788369a3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Commit\+Memory} (\mbox{\hyperlink{classv8_1_1internal_1_1VirtualMemory}{Virtual\+Memory}} $\ast$reservation)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_a4affd8ca0efc82342fafbe4f8b448fa2}\label{classv8_1_1internal_1_1MemoryAllocator_a4affd8ca0efc82342fafbe4f8b448fa2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Uncommit\+Memory} (\mbox{\hyperlink{classv8_1_1internal_1_1VirtualMemory}{Virtual\+Memory}} $\ast$reservation)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_ab5e6daa3ddeaf66910cf277d645ec5fe}\label{classv8_1_1internal_1_1MemoryAllocator_ab5e6daa3ddeaf66910cf277d645ec5fe}} 
+void {\bfseries Zap\+Block} (\mbox{\hyperlink{classuintptr__t}{Address}} start, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} zap\+\_\+value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_a983e0f6ef099c24fe058f60cf634c9be}\label{classv8_1_1internal_1_1MemoryAllocator_a983e0f6ef099c24fe058f60cf634c9be}} 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classbool}{bool}} {\bfseries Commit\+Executable\+Memory} (\mbox{\hyperlink{classv8_1_1internal_1_1VirtualMemory}{Virtual\+Memory}} $\ast$vm, \mbox{\hyperlink{classuintptr__t}{Address}} start, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} commit\+\_\+size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} reserved\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_a686cbc2a493b2544ac9e4c436fcc136b}\label{classv8_1_1internal_1_1MemoryAllocator_a686cbc2a493b2544ac9e4c436fcc136b}} 
+\mbox{\hyperlink{classv8_1_1PageAllocator}{v8\+::\+Page\+Allocator}} $\ast$ {\bfseries data\+\_\+page\+\_\+allocator} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_a05981eb9d0bfb14aafbc56d4f73c462e}\label{classv8_1_1internal_1_1MemoryAllocator_a05981eb9d0bfb14aafbc56d4f73c462e}} 
+\mbox{\hyperlink{classv8_1_1PageAllocator}{v8\+::\+Page\+Allocator}} $\ast$ {\bfseries code\+\_\+page\+\_\+allocator} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_afceaa8c904f829d22d5206de9e25f37d}\label{classv8_1_1internal_1_1MemoryAllocator_afceaa8c904f829d22d5206de9e25f37d}} 
+\mbox{\hyperlink{classv8_1_1PageAllocator}{v8\+::\+Page\+Allocator}} $\ast$ {\bfseries page\+\_\+allocator} (Executability executable)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_a2dce5a68af73e500d3977eb610e80dba}\label{classv8_1_1internal_1_1MemoryAllocator_a2dce5a68af73e500d3977eb610e80dba}} 
+const \mbox{\hyperlink{classv8_1_1base_1_1AddressRegion}{base\+::\+Address\+Region}} \& {\bfseries code\+\_\+range} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_a47e626016282b63c20f45fbf981d496d}\label{classv8_1_1internal_1_1MemoryAllocator_a47e626016282b63c20f45fbf981d496d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MemoryAllocator_1_1Unmapper}{Unmapper}} $\ast$ {\bfseries unmapper} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_a26dad607a382b9c3ca6670649ed1b0f5}\label{classv8_1_1internal_1_1MemoryAllocator_a26dad607a382b9c3ca6670649ed1b0f5}} 
+static intptr\+\_\+t {\bfseries Get\+Commit\+Page\+Size} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_ab9fe8e7b9c2f6145900440078d603383}\label{classv8_1_1internal_1_1MemoryAllocator_ab9fe8e7b9c2f6145900440078d603383}} 
+static \mbox{\hyperlink{classv8_1_1base_1_1AddressRegion}{base\+::\+Address\+Region}} {\bfseries Compute\+Discard\+Memory\+Area} (\mbox{\hyperlink{classuintptr__t}{Address}} addr, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryAllocator_a52894013d0173f11f3ece6adc10d6c72}\label{classv8_1_1internal_1_1MemoryAllocator_a52894013d0173f11f3ece6adc10d6c72}} 
+class {\bfseries heap\+::\+Test\+Code\+Page\+Allocator\+Scope}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1163 of file spaces.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/spaces.\+h\item 
+v8/src/heap/spaces.\+cc\end{DoxyCompactItemize}

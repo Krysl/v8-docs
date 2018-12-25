@@ -94,6 +94,15 @@ $(document).ready(function(){initNavTree('classv8__inspector_1_1V8InspectorSessi
 <div class="title">v8_inspector::V8InspectorSession Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for v8_inspector::V8InspectorSession:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classv8__inspector_1_1V8InspectorSession.png" usemap="#v8_5Finspector::V8InspectorSession_map" alt=""/>
+  <map id="v8_5Finspector::V8InspectorSession_map" name="v8_5Finspector::V8InspectorSession_map">
+<area href="classv8__inspector_1_1V8InspectorSessionImpl.html" alt="v8_inspector::V8InspectorSessionImpl" shape="rect" coords="0,56,225,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -124,7 +133,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>cancelPauseOn
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>breakProgram</b> (const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;breakReason, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;breakDetails)=0</td></tr>
 <tr class="separator:a1239ec98b9499e08271fb69564310c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae98e6ad6dd45492ce828737f7176b501"><td class="memItemLeft" align="right" valign="top"><a id="ae98e6ad6dd45492ce828737f7176b501"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setSkipAllPauses</b> (bool)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setSkipAllPauses</b> (<a class="el" href="classbool.html">bool</a>)=0</td></tr>
 <tr class="separator:ae98e6ad6dd45492ce828737f7176b501"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace573efed7184ee701f06cb2543d4e15"><td class="memItemLeft" align="right" valign="top"><a id="ace573efed7184ee701f06cb2543d4e15"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>resume</b> ()=0</td></tr>
@@ -133,13 +142,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>resume</b> ()
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stepOver</b> ()=0</td></tr>
 <tr class="separator:aa419715baf430ebac1673160251715db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaa137f90ce833744a2a16bda60490c5"><td class="memItemLeft" align="right" valign="top"><a id="acaa137f90ce833744a2a16bda60490c5"></a>
-virtual std::vector&lt; std::unique_ptr&lt; protocol::Debugger::API::SearchMatch &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>searchInTextByLines</b> (const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;text, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;query, bool caseSensitive, bool isRegex)=0</td></tr>
+virtual std::vector&lt; std::unique_ptr&lt; protocol::Debugger::API::SearchMatch &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>searchInTextByLines</b> (const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;text, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;query, <a class="el" href="classbool.html">bool</a> caseSensitive, <a class="el" href="classbool.html">bool</a> isRegex)=0</td></tr>
 <tr class="separator:acaa137f90ce833744a2a16bda60490c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7568a840a4c681cbca9ec7ad50aba0e6"><td class="memItemLeft" align="right" valign="top"><a id="a7568a840a4c681cbca9ec7ad50aba0e6"></a>
-virtual std::unique_ptr&lt; protocol::Runtime::API::RemoteObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>wrapObject</b> (<a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; v8::Context &gt;, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Value.html">v8::Value</a> &gt;, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;groupName, bool generatePreview)=0</td></tr>
+virtual std::unique_ptr&lt; protocol::Runtime::API::RemoteObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>wrapObject</b> (<a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; v8::Context &gt;, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Value.html">v8::Value</a> &gt;, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;groupName, <a class="el" href="classbool.html">bool</a> generatePreview)=0</td></tr>
 <tr class="separator:a7568a840a4c681cbca9ec7ad50aba0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbe69bb66c76882db82482db3712b554"><td class="memItemLeft" align="right" valign="top"><a id="adbe69bb66c76882db82482db3712b554"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>unwrapObject</b> (std::unique_ptr&lt; <a class="el" href="classv8__inspector_1_1StringBuffer.html">StringBuffer</a> &gt; *error, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;objectId, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Value.html">v8::Value</a> &gt; *, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; v8::Context &gt; *, std::unique_ptr&lt; <a class="el" href="classv8__inspector_1_1StringBuffer.html">StringBuffer</a> &gt; *objectGroup)=0</td></tr>
+virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unwrapObject</b> (std::unique_ptr&lt; <a class="el" href="classv8__inspector_1_1StringBuffer.html">StringBuffer</a> &gt; *error, const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;objectId, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Value.html">v8::Value</a> &gt; *, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; v8::Context &gt; *, std::unique_ptr&lt; <a class="el" href="classv8__inspector_1_1StringBuffer.html">StringBuffer</a> &gt; *objectGroup)=0</td></tr>
 <tr class="separator:adbe69bb66c76882db82482db3712b554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a7e04f754c93086d7e61ad483bd38aa"><td class="memItemLeft" align="right" valign="top"><a id="a3a7e04f754c93086d7e61ad483bd38aa"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseObjectGroup</b> (const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;)=0</td></tr>
@@ -147,15 +156,16 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseObject
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a34718345c6d8f43eb07222af2fd8c232"><td class="memItemLeft" align="right" valign="top"><a id="a34718345c6d8f43eb07222af2fd8c232"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>canDispatchMethod</b> (const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;method)</td></tr>
-<tr class="separator:a34718345c6d8f43eb07222af2fd8c232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d58da86d01d8c9f94e09825b498ec5e"><td class="memItemLeft" align="right" valign="top"><a id="a3d58da86d01d8c9f94e09825b498ec5e"></a>
+static <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>canDispatchMethod</b> (const <a class="el" href="classv8__inspector_1_1StringView.html">StringView</a> &amp;method)</td></tr>
+<tr class="separator:a3d58da86d01d8c9f94e09825b498ec5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="v8-inspector_8h_source.html#l00119">119</a> of file <a class="el" href="v8-inspector_8h_source.html">v8-inspector.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>v8/include/<a class="el" href="v8-inspector_8h_source.html">v8-inspector.h</a></li>
+<li>v8/src/inspector/<a class="el" href="v8-inspector-session-impl_8cc_source.html">v8-inspector-session-impl.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -163,7 +173,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>canDispatchMet
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>v8_inspector</b></li><li class="navelem"><a class="el" href="classv8__inspector_1_1V8InspectorSession.html">V8InspectorSession</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 14:33:15 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:47:41 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

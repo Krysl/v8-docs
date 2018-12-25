@@ -1,0 +1,114 @@
+\hypertarget{classv8_1_1internal_1_1JSArray}{}\section{v8\+:\+:internal\+:\+:J\+S\+Array Class Reference}
+\label{classv8_1_1internal_1_1JSArray}\index{v8\+::internal\+::\+J\+S\+Array@{v8\+::internal\+::\+J\+S\+Array}}
+Inheritance diagram for v8\+:\+:internal\+:\+:J\+S\+Array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classv8_1_1internal_1_1JSArray}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_a54ff148702abd700a56f5b79d2d527fc}\label{classv8_1_1internal_1_1JSArray_a54ff148702abd700a56f5b79d2d527fc}} 
+void {\bfseries set\+\_\+length} (\mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_a08a73b7a43f807fb88bf9df19855fad3}\label{classv8_1_1internal_1_1JSArray_a08a73b7a43f807fb88bf9df19855fad3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Set\+Length\+Would\+Normalize} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} new\+\_\+length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_ae90f5435e217abb3debb5b5e28ec4eb5}\label{classv8_1_1internal_1_1JSArray_ae90f5435e217abb3debb5b5e28ec4eb5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Allows\+Set\+Length} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_a942aa05a4af5d802acf8679cf5c35a82}\label{classv8_1_1internal_1_1JSArray_a942aa05a4af5d802acf8679cf5c35a82}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Array\+Prototype} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_a0ebad386294cd7ba5e09f1289f84b23b}\label{classv8_1_1internal_1_1JSArray_a0ebad386294cd7ba5e09f1289f84b23b}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Read\+Only\+Length} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArray}{J\+S\+Array}} $>$ array)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_ab250b04720a407005395098e350026f5}\label{classv8_1_1internal_1_1JSArray_ab250b04720a407005395098e350026f5}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Would\+Change\+Read\+Only\+Length} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArray}{J\+S\+Array}} $>$ array, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_ac34bb2e7768e194e679b3b1556b4e168}\label{classv8_1_1internal_1_1JSArray_ac34bb2e7768e194e679b3b1556b4e168}} 
+static void {\bfseries Initialize} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArray}{J\+S\+Array}} $>$ array, \mbox{\hyperlink{classint}{int}} capacity, \mbox{\hyperlink{classint}{int}} length=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_aceeca4831590d83fe633b9471936e78e}\label{classv8_1_1internal_1_1JSArray_aceeca4831590d83fe633b9471936e78e}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Set\+Length\+Would\+Normalize} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} new\+\_\+length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_a393d220b4a4df41af5589d3c3774281b}\label{classv8_1_1internal_1_1JSArray_a393d220b4a4df41af5589d3c3774281b}} 
+static void {\bfseries Set\+Length} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArray}{J\+S\+Array}} $>$ array, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_a41f6ed171dd4166868145bfbd59ae829}\label{classv8_1_1internal_1_1JSArray_a41f6ed171dd4166868145bfbd59ae829}} 
+static void {\bfseries Set\+Content} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArray}{J\+S\+Array}} $>$ array, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArrayBase}{Fixed\+Array\+Base}} $>$ storage)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_a6bcefd1ec362326a85e9e5e072883d27}\label{classv8_1_1internal_1_1JSArray_a6bcefd1ec362326a85e9e5e072883d27}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ {\bfseries Define\+Own\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArray}{J\+S\+Array}} $>$ o, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDescriptor}{Property\+Descriptor}} $\ast$desc, Should\+Throw should\+\_\+throw)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_ab1c733216a8e34bb2a814162dabd8008}\label{classv8_1_1internal_1_1JSArray_ab1c733216a8e34bb2a814162dabd8008}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Anything\+To\+Array\+Length} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ length\+\_\+object, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} $\ast$output)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_a1a85c4694c5c524713cf52d58d577049}\label{classv8_1_1internal_1_1JSArray_a1a85c4694c5c524713cf52d58d577049}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ {\bfseries Array\+Set\+Length} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArray}{J\+S\+Array}} $>$ a, \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDescriptor}{Property\+Descriptor}} $\ast$desc, Should\+Throw should\+\_\+throw)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_a82c37c3175af643a6c104f1173782435}\label{classv8_1_1internal_1_1JSArray_a82c37c3175af643a6c104f1173782435}} 
+static \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Array\+Join\+Concat\+To\+Sequential\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classuintptr__t}{Address}} raw\+\_\+fixed\+\_\+array, intptr\+\_\+t length, \mbox{\hyperlink{classuintptr__t}{Address}} raw\+\_\+separator, \mbox{\hyperlink{classuintptr__t}{Address}} raw\+\_\+dest)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_a67bc60ae3f9c63e64f3b8cc94d718bc0}\label{classv8_1_1internal_1_1JSArray_a67bc60ae3f9c63e64f3b8cc94d718bc0}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Preallocated\+Array\+Elements} = 4
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_a8518c34fdf9fe7de0534d16e9b3965c2}\label{classv8_1_1internal_1_1JSArray_a8518c34fdf9fe7de0534d16e9b3965c2}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Length\+Descriptor\+Index} = 0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_ab7f0ba556e6297fdeff589254dc77c3c}\label{classv8_1_1internal_1_1JSArray_ab7f0ba556e6297fdeff589254dc77c3c}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Copy\+Elements} = 100
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_ad4a204c6582b2a18446eafa1af6b4cde}\label{classv8_1_1internal_1_1JSArray_ad4a204c6582b2a18446eafa1af6b4cde}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Max\+Fast\+Array\+Length} = 32 $\ast$ 1024 $\ast$ 1024
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_a692de1ac404ce6c228447af34ee7b8a7}\label{classv8_1_1internal_1_1JSArray_a692de1ac404ce6c228447af34ee7b8a7}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Min\+Join\+Stack\+Size} = 2
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Initial\+Max\+Fast\+Element\+Array}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_a869f03db24586fc415a9736a0a76577f}\label{classv8_1_1internal_1_1JSArray_a869f03db24586fc415a9736a0a76577f}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Max\+Array\+Index} = k\+Max\+U\+Int32 -\/ 1
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 23 of file js-\/array.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArray_a42a590c6a358190389066e4b127bcf5b}\label{classv8_1_1internal_1_1JSArray_a42a590c6a358190389066e4b127bcf5b}} 
+\index{v8\+::internal\+::\+J\+S\+Array@{v8\+::internal\+::\+J\+S\+Array}!k\+Initial\+Max\+Fast\+Element\+Array@{k\+Initial\+Max\+Fast\+Element\+Array}}
+\index{k\+Initial\+Max\+Fast\+Element\+Array@{k\+Initial\+Max\+Fast\+Element\+Array}!v8\+::internal\+::\+J\+S\+Array@{v8\+::internal\+::\+J\+S\+Array}}
+\subsubsection{\texorpdfstring{k\+Initial\+Max\+Fast\+Element\+Array}{kInitialMaxFastElementArray}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+J\+S\+Array\+::k\+Initial\+Max\+Fast\+Element\+Array\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      (kMaxRegularHeapObjectSize - FixedArray::kHeaderSize - kSize -
+       AllocationMemento::kSize) >>
+      kDoubleSizeLog2
+\end{DoxyCode}
+
+
+Definition at line 127 of file js-\/array.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/js-\/array.\+h\item 
+v8/src/objects/js-\/array-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

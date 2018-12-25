@@ -1,0 +1,87 @@
+\hypertarget{classv8_1_1internal_1_1RegExpCharacterClass}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Character\+Class Class Reference}
+\label{classv8_1_1internal_1_1RegExpCharacterClass}\index{v8\+::internal\+::\+Reg\+Exp\+Character\+Class@{v8\+::internal\+::\+Reg\+Exp\+Character\+Class}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Reg\+Exp\+Character\+Class\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1RegExpCharacterClass}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_a077dcd747ae95c38bbe7e89d8bda999a}\label{classv8_1_1internal_1_1RegExpCharacterClass_a077dcd747ae95c38bbe7e89d8bda999a}} 
+enum {\bfseries Flag} \{ {\bfseries N\+E\+G\+A\+T\+ED} = 1 $<$$<$ 0, 
+{\bfseries C\+O\+N\+T\+A\+I\+N\+S\+\_\+\+S\+P\+L\+I\+T\+\_\+\+S\+U\+R\+R\+O\+G\+A\+TE} = 1 $<$$<$ 1
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_a479a60eb9a395a9db21f00e544004b42}\label{classv8_1_1internal_1_1RegExpCharacterClass_a479a60eb9a395a9db21f00e544004b42}} 
+typedef \mbox{\hyperlink{classv8_1_1base_1_1Flags}{base\+::\+Flags}}$<$ Flag $>$ {\bfseries Character\+Class\+Flags}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_a565543562a56d034654962f218646305}\label{classv8_1_1internal_1_1RegExpCharacterClass_a565543562a56d034654962f218646305}} 
+{\bfseries Reg\+Exp\+Character\+Class} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} $>$ $\ast$ranges, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{J\+S\+Reg\+Exp\+::\+Flags}} flags, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{Character\+Class\+Flags}} character\+\_\+class\+\_\+flags=\mbox{\hyperlink{classv8_1_1base_1_1Flags}{Character\+Class\+Flags}}())
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_abaa5ef0a8ae002efe5b0d5088c0d79b5}\label{classv8_1_1internal_1_1RegExpCharacterClass_abaa5ef0a8ae002efe5b0d5088c0d79b5}} 
+{\bfseries Reg\+Exp\+Character\+Class} (uc16 \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{J\+S\+Reg\+Exp\+::\+Flags}} flags)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_adc213a458ec43d1a553adb2e0528ca49}\label{classv8_1_1internal_1_1RegExpCharacterClass_adc213a458ec43d1a553adb2e0528ca49}} 
+void $\ast$ {\bfseries Accept} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpVisitor}{Reg\+Exp\+Visitor}} $\ast$visitor, void $\ast$data) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_a01b0c45fbf9fe6f74f74d4696500600d}\label{classv8_1_1internal_1_1RegExpCharacterClass_a01b0c45fbf9fe6f74f74d4696500600d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ {\bfseries To\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_aaf0ba1148e04f1875b42f5493383356d}\label{classv8_1_1internal_1_1RegExpCharacterClass_aaf0ba1148e04f1875b42f5493383356d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCharacterClass}{Reg\+Exp\+Character\+Class}} $\ast$ {\bfseries As\+Character\+Class} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_abd6e8ece4b15e332a4f77e528516651f}\label{classv8_1_1internal_1_1RegExpCharacterClass_abd6e8ece4b15e332a4f77e528516651f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Character\+Class} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_a6a73a75f22232e7e2e322dc3fdd10bd3}\label{classv8_1_1internal_1_1RegExpCharacterClass_a6a73a75f22232e7e2e322dc3fdd10bd3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Text\+Element} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_a41015390326c62e06d046ee891ea96ae}\label{classv8_1_1internal_1_1RegExpCharacterClass_a41015390326c62e06d046ee891ea96ae}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries min\+\_\+match} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_ab1c395ca89b299506141b17c1ee7703f}\label{classv8_1_1internal_1_1RegExpCharacterClass_ab1c395ca89b299506141b17c1ee7703f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries max\+\_\+match} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_a2c13a305e7541f7ccfd7cff09daf0a3c}\label{classv8_1_1internal_1_1RegExpCharacterClass_a2c13a305e7541f7ccfd7cff09daf0a3c}} 
+void {\bfseries Append\+To\+Text} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpText}{Reg\+Exp\+Text}} $\ast$text, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_aeb09e449abac9af4e9ae45ca61643f7b}\label{classv8_1_1internal_1_1RegExpCharacterClass_aeb09e449abac9af4e9ae45ca61643f7b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CharacterSet}{Character\+Set}} {\bfseries character\+\_\+set} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_a5d06881217e78455f3d95b08e4c0118a}\label{classv8_1_1internal_1_1RegExpCharacterClass_a5d06881217e78455f3d95b08e4c0118a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+standard} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_aa3f5fa0e8fdd8d6d50ff24d2fe26ff1c}\label{classv8_1_1internal_1_1RegExpCharacterClass_aa3f5fa0e8fdd8d6d50ff24d2fe26ff1c}} 
+uc16 {\bfseries standard\+\_\+type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_a5ff03e7b8e528731216c7d8d4e26fe7a}\label{classv8_1_1internal_1_1RegExpCharacterClass_a5ff03e7b8e528731216c7d8d4e26fe7a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} $>$ $\ast$ {\bfseries ranges} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_a8d270a839bd3bdaf2490c8e18830f792}\label{classv8_1_1internal_1_1RegExpCharacterClass_a8d270a839bd3bdaf2490c8e18830f792}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+negated} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_a9d1e27a72b26c7791b2b5ccc7d8bc79e}\label{classv8_1_1internal_1_1RegExpCharacterClass_a9d1e27a72b26c7791b2b5ccc7d8bc79e}} 
+\mbox{\hyperlink{classv8_1_1base_1_1Flags}{J\+S\+Reg\+Exp\+::\+Flags}} {\bfseries flags} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpCharacterClass_adf74924435a9dae6625232a7f7698f4e}\label{classv8_1_1internal_1_1RegExpCharacterClass_adf74924435a9dae6625232a7f7698f4e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries contains\+\_\+split\+\_\+surrogate} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 293 of file regexp-\/ast.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/regexp-\/ast.\+h\item 
+v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,51 @@
+\hypertarget{classv8_1_1internal_1_1ValueDeserializer}{}\section{v8\+:\+:internal\+:\+:Value\+Deserializer Class Reference}
+\label{classv8_1_1internal_1_1ValueDeserializer}\index{v8\+::internal\+::\+Value\+Deserializer@{v8\+::internal\+::\+Value\+Deserializer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ValueDeserializer_a054cbf437b495a52998a0495ce8cee26}\label{classv8_1_1internal_1_1ValueDeserializer_a054cbf437b495a52998a0495ce8cee26}} 
+{\bfseries Value\+Deserializer} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ data, \mbox{\hyperlink{classv8_1_1ValueDeserializer_1_1Delegate}{v8\+::\+Value\+Deserializer\+::\+Delegate}} $\ast$delegate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ValueDeserializer_a53ad63d94912ceed93d934b0d0ca4a5a}\label{classv8_1_1internal_1_1ValueDeserializer_a53ad63d94912ceed93d934b0d0ca4a5a}} 
+\mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ {\bfseries Read\+Header} () V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ValueDeserializer_a636fcd5f4f8fc79e7b05450063fe961b}\label{classv8_1_1internal_1_1ValueDeserializer_a636fcd5f4f8fc79e7b05450063fe961b}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Get\+Wire\+Format\+Version} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ValueDeserializer_a755c6c18b9cb33753cd4055a44e81ef5}\label{classv8_1_1internal_1_1ValueDeserializer_a755c6c18b9cb33753cd4055a44e81ef5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Read\+Object} () V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ValueDeserializer_a6fd426957aa8ea42dec1d356fb754ef1}\label{classv8_1_1internal_1_1ValueDeserializer_a6fd426957aa8ea42dec1d356fb754ef1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Read\+Object\+Using\+Entire\+Buffer\+For\+Legacy\+Format} () V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ValueDeserializer_acd272faa2a82bc3cf48fd3a0027784f0}\label{classv8_1_1internal_1_1ValueDeserializer_acd272faa2a82bc3cf48fd3a0027784f0}} 
+void {\bfseries Transfer\+Array\+Buffer} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} transfer\+\_\+id, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArrayBuffer}{J\+S\+Array\+Buffer}} $>$ array\+\_\+buffer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ValueDeserializer_ab633fdecf2a3add6de0d16dc334aeea4}\label{classv8_1_1internal_1_1ValueDeserializer_ab633fdecf2a3add6de0d16dc334aeea4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Read\+Uint32} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} $\ast$value) V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ValueDeserializer_a5c36a3c5a0fda0db220e1b4b8db80994}\label{classv8_1_1internal_1_1ValueDeserializer_a5c36a3c5a0fda0db220e1b4b8db80994}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Read\+Uint64} (uint64\+\_\+t $\ast$value) V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ValueDeserializer_a9b24de4a16cf54d63f80e3c7e7d51536}\label{classv8_1_1internal_1_1ValueDeserializer_a9b24de4a16cf54d63f80e3c7e7d51536}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Read\+Double} (double $\ast$value) V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ValueDeserializer_a7b4f665de5f19915d1c96a0cda115343}\label{classv8_1_1internal_1_1ValueDeserializer_a7b4f665de5f19915d1c96a0cda115343}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Read\+Raw\+Bytes} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} length, const void $\ast$$\ast$data) V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ValueDeserializer_ac49c4a15a11886f79d71558101a155ad}\label{classv8_1_1internal_1_1ValueDeserializer_ac49c4a15a11886f79d71558101a155ad}} 
+void {\bfseries set\+\_\+expect\+\_\+inline\+\_\+wasm} (\mbox{\hyperlink{classbool}{bool}} expect\+\_\+inline\+\_\+wasm)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 185 of file value-\/serializer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/value-\/serializer.\+h\item 
+v8/src/value-\/serializer.\+cc\end{DoxyCompactItemize}

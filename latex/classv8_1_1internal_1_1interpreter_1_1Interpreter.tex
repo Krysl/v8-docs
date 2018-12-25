@@ -1,0 +1,72 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1Interpreter}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Interpreter Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1Interpreter}\index{v8\+::internal\+::interpreter\+::\+Interpreter@{v8\+::internal\+::interpreter\+::\+Interpreter}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Interpreter_af89f24c8ab451e62383e262fc3c0fdbd}\label{classv8_1_1internal_1_1interpreter_1_1Interpreter_af89f24c8ab451e62383e262fc3c0fdbd}} 
+{\bfseries Interpreter} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Interpreter_aa221aa17ea5f172b04816275e72495f5}\label{classv8_1_1internal_1_1interpreter_1_1Interpreter_aa221aa17ea5f172b04816275e72495f5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} {\bfseries Get\+Bytecode\+Handler} (Bytecode bytecode, Operand\+Scale operand\+\_\+scale)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Interpreter_a54034611e85b57f2f159296b0abb4ed7}\label{classv8_1_1internal_1_1interpreter_1_1Interpreter_a54034611e85b57f2f159296b0abb4ed7}} 
+void {\bfseries Set\+Bytecode\+Handler} (Bytecode bytecode, Operand\+Scale operand\+\_\+scale, \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} handler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Interpreter_a677ccc0941ba927bcb44e81eae4cc8ba}\label{classv8_1_1internal_1_1interpreter_1_1Interpreter_a677ccc0941ba927bcb44e81eae4cc8ba}} 
+void {\bfseries Iterate\+Dispatch\+Table} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Interpreter_acd8533358566fc09305f9827a899c686}\label{classv8_1_1internal_1_1interpreter_1_1Interpreter_acd8533358566fc09305f9827a899c686}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Lookup\+Name\+Of\+Bytecode\+Handler} (const \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Interpreter_aa9051f15da75ce1c80fbe37fb0fd9a73}\label{classv8_1_1internal_1_1interpreter_1_1Interpreter_aa9051f15da75ce1c80fbe37fb0fd9a73}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{v8\+::\+Object}} $>$ {\bfseries Get\+Dispatch\+Counters\+Object} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Interpreter_a16f8e32a5397cc32cd9c387d4a0dbc54}\label{classv8_1_1internal_1_1interpreter_1_1Interpreter_a16f8e32a5397cc32cd9c387d4a0dbc54}} 
+void {\bfseries For\+Each\+Bytecode} (const std\+::function$<$ void(Bytecode, Operand\+Scale)$>$ \&f)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Interpreter_a38ec4f6bc9bbac84c6834847dcbafecb}\label{classv8_1_1internal_1_1interpreter_1_1Interpreter_a38ec4f6bc9bbac84c6834847dcbafecb}} 
+void {\bfseries Initialize} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Interpreter_af26d63eeddc302eeb00183eb91d0f073}\label{classv8_1_1internal_1_1interpreter_1_1Interpreter_af26d63eeddc302eeb00183eb91d0f073}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Dispatch\+Table\+Initialized} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Interpreter_ad208aa6e4cd6c4440dd43eee243ccd02}\label{classv8_1_1internal_1_1interpreter_1_1Interpreter_ad208aa6e4cd6c4440dd43eee243ccd02}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries dispatch\+\_\+table\+\_\+address} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Interpreter_ac242337609472144f10ece1eb04fa348}\label{classv8_1_1internal_1_1interpreter_1_1Interpreter_ac242337609472144f10ece1eb04fa348}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries bytecode\+\_\+dispatch\+\_\+counters\+\_\+table} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Interpreter_a73f9cbcb62a52628ff11a2464c4e6e33}\label{classv8_1_1internal_1_1interpreter_1_1Interpreter_a73f9cbcb62a52628ff11a2464c4e6e33}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries address\+\_\+of\+\_\+interpreter\+\_\+entry\+\_\+trampoline\+\_\+instruction\+\_\+start} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Interpreter_a38cd11e6d5af0fc621b321ff2d8fbdbd}\label{classv8_1_1internal_1_1interpreter_1_1Interpreter_a38cd11e6d5af0fc621b321ff2d8fbdbd}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Interrupt\+Budget} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Interpreter_aae49a73ec472a996358935eef6486f80}\label{classv8_1_1internal_1_1interpreter_1_1Interpreter_aae49a73ec472a996358935eef6486f80}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1UnoptimizedCompilationJob}{Unoptimized\+Compilation\+Job}} $\ast$ {\bfseries New\+Compilation\+Job} (\mbox{\hyperlink{classv8_1_1internal_1_1ParseInfo}{Parse\+Info}} $\ast$parse\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1FunctionLiteral}{Function\+Literal}} $\ast$literal, \mbox{\hyperlink{classv8_1_1internal_1_1AccountingAllocator}{Accounting\+Allocator}} $\ast$allocator, std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FunctionLiteral}{Function\+Literal}} $\ast$$>$ $\ast$eager\+\_\+inner\+\_\+literals)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Interpreter_ad86b676d3e5a66d1e5e3e77597f8e4c6}\label{classv8_1_1internal_1_1interpreter_1_1Interpreter_ad86b676d3e5a66d1e5e3e77597f8e4c6}} 
+class {\bfseries Setup\+Interpreter}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Interpreter_a5bc2e088b5a79aa965189cc55ab06e66}\label{classv8_1_1internal_1_1interpreter_1_1Interpreter_a5bc2e088b5a79aa965189cc55ab06e66}} 
+class {\bfseries v8\+::internal\+::\+Setup\+Isolate\+Delegate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 35 of file interpreter.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/interpreter/interpreter.\+h\item 
+v8/src/interpreter/interpreter.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,39 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessBuilder}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Property\+Access\+Builder Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessBuilder}\index{v8\+::internal\+::compiler\+::\+Property\+Access\+Builder@{v8\+::internal\+::compiler\+::\+Property\+Access\+Builder}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessBuilder_a22ef411e313010ebe6e9021728909a00}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessBuilder_a22ef411e313010ebe6e9021728909a00}} 
+{\bfseries Property\+Access\+Builder} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSGraph}{J\+S\+Graph}} $\ast$jsgraph, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSHeapBroker}{J\+S\+Heap\+Broker}} $\ast$broker, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CompilationDependencies}{Compilation\+Dependencies}} $\ast$dependencies)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessBuilder_ae34e4af1d8f2eaf0c320d7dbb4bab2c2}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessBuilder_ae34e4af1d8f2eaf0c320d7dbb4bab2c2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Try\+Build\+String\+Check} (Map\+Handles const \&maps, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$$\ast$receiver, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$$\ast$effect, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$control)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessBuilder_ae12f481a8da9d8b300c91608be7d3c6b}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessBuilder_ae12f481a8da9d8b300c91608be7d3c6b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Try\+Build\+Number\+Check} (Map\+Handles const \&maps, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$$\ast$receiver, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$$\ast$effect, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$control)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessBuilder_a010f8a84a9ab00c17089dc88f0568a05}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessBuilder_a010f8a84a9ab00c17089dc88f0568a05}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Build\+Check\+Heap\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$receiver, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$$\ast$effect, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$control)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessBuilder_aea122769b17a7e30003ca8e9064009e8}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessBuilder_aea122769b17a7e30003ca8e9064009e8}} 
+void {\bfseries Build\+Check\+Maps} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$receiver, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$$\ast$effect, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$control, std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$$>$ const \&receiver\+\_\+maps)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessBuilder_a6537e9d3637d2017c64621b7b51d9ece}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessBuilder_a6537e9d3637d2017c64621b7b51d9ece}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Build\+Check\+Value} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$receiver, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$$\ast$effect, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$control, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessBuilder_ac404ae76a0efab3673ae740fd06a4a25}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessBuilder_ac404ae76a0efab3673ae740fd06a4a25}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Build\+Load\+Data\+Field} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo}{Property\+Access\+Info}} const \&access\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$receiver, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$$\ast$effect, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$$\ast$control)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 27 of file property-\/access-\/builder.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/property-\/access-\/builder.\+h\item 
+v8/src/compiler/property-\/access-\/builder.\+cc\end{DoxyCompactItemize}

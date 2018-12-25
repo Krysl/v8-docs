@@ -1,0 +1,102 @@
+\hypertarget{classv8_1_1internal_1_1ThreadLocalTop}{}\section{v8\+:\+:internal\+:\+:Thread\+Local\+Top Class Reference}
+\label{classv8_1_1internal_1_1ThreadLocalTop}\index{v8\+::internal\+::\+Thread\+Local\+Top@{v8\+::internal\+::\+Thread\+Local\+Top}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_a11f16bfd5074dfadf5b2fea9f7580404}\label{classv8_1_1internal_1_1ThreadLocalTop_a11f16bfd5074dfadf5b2fea9f7580404}} 
+void {\bfseries Initialize} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_a80a0c4f75ef4db4765621ab43a0fb2ec}\label{classv8_1_1internal_1_1ThreadLocalTop_a80a0c4f75ef4db4765621ab43a0fb2ec}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries try\+\_\+catch\+\_\+handler\+\_\+address} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_a6eaa04c701660ff270c73f0c02250afd}\label{classv8_1_1internal_1_1ThreadLocalTop_a6eaa04c701660ff270c73f0c02250afd}} 
+void {\bfseries Free} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_a4c483a4ed1926b6451c9f8235386c247}\label{classv8_1_1internal_1_1ThreadLocalTop_a4c483a4ed1926b6451c9f8235386c247}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (sizeof(\mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}})==k\+Pointer\+Size)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_ad3bfe8ddc2775c1755add90fd9512b70}\label{classv8_1_1internal_1_1ThreadLocalTop_ad3bfe8ddc2775c1755add90fd9512b70}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_a8410e5e540ebdbb435cbcb4c8fdd4cfb}\label{classv8_1_1internal_1_1ThreadLocalTop_a8410e5e540ebdbb435cbcb4c8fdd4cfb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} {\bfseries context\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_a18b4279fc019aa2c8ce5c9f38d77aead}\label{classv8_1_1internal_1_1ThreadLocalTop_a18b4279fc019aa2c8ce5c9f38d77aead}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ThreadId}{Thread\+Id}} {\bfseries thread\+\_\+id\+\_\+} = Thread\+Id\+::\+Invalid()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_ad28eb89671a3e309634212aedede1ce3}\label{classv8_1_1internal_1_1ThreadLocalTop_ad28eb89671a3e309634212aedede1ce3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries pending\+\_\+exception\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_adb2ba3e46ff286f2ce8dc60cd6d18b60}\label{classv8_1_1internal_1_1ThreadLocalTop_adb2ba3e46ff286f2ce8dc60cd6d18b60}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} {\bfseries pending\+\_\+handler\+\_\+context\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_ad2da2e56e444b0e2af1325e2733907cc}\label{classv8_1_1internal_1_1ThreadLocalTop_ad2da2e56e444b0e2af1325e2733907cc}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries pending\+\_\+handler\+\_\+entrypoint\+\_\+} = k\+Null\+Address
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_ab9066c1f7881b8ab1552a598809eb4ec}\label{classv8_1_1internal_1_1ThreadLocalTop_ab9066c1f7881b8ab1552a598809eb4ec}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries pending\+\_\+handler\+\_\+constant\+\_\+pool\+\_\+} = k\+Null\+Address
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_a1ac0a4f621c04a09c73eb72f727bfdc9}\label{classv8_1_1internal_1_1ThreadLocalTop_a1ac0a4f621c04a09c73eb72f727bfdc9}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries pending\+\_\+handler\+\_\+fp\+\_\+} = k\+Null\+Address
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_ac7664a5305763813b198643be7af08cf}\label{classv8_1_1internal_1_1ThreadLocalTop_ac7664a5305763813b198643be7af08cf}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries pending\+\_\+handler\+\_\+sp\+\_\+} = k\+Null\+Address
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_ae5f50cf0ab4090989c40d6f7c1e4d12e}\label{classv8_1_1internal_1_1ThreadLocalTop_ae5f50cf0ab4090989c40d6f7c1e4d12e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries rethrowing\+\_\+message\+\_\+} = false
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_aa1d1a3f402b117394029bc03d38c4538}\label{classv8_1_1internal_1_1ThreadLocalTop_aa1d1a3f402b117394029bc03d38c4538}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries pending\+\_\+message\+\_\+obj\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_a601165f24acce07a44a78d9c25f89ee2}\label{classv8_1_1internal_1_1ThreadLocalTop_a601165f24acce07a44a78d9c25f89ee2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries scheduled\+\_\+exception\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_ac5b6bbca2f1b0e1a742c109efcd77ffc}\label{classv8_1_1internal_1_1ThreadLocalTop_ac5b6bbca2f1b0e1a742c109efcd77ffc}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries external\+\_\+caught\+\_\+exception\+\_\+} = false
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_a08950fcd6f4d0d56dd6f50a3a7aef683}\label{classv8_1_1internal_1_1ThreadLocalTop_a08950fcd6f4d0d56dd6f50a3a7aef683}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1SaveContext}{Save\+Context}} $\ast$ {\bfseries save\+\_\+context\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_a044b9e938f6d2a4c5fe85473bd762cf3}\label{classv8_1_1internal_1_1ThreadLocalTop_a044b9e938f6d2a4c5fe85473bd762cf3}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries c\+\_\+entry\+\_\+fp\+\_\+} = k\+Null\+Address
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_a4efce7d729073dfb73f0bc6c3fdc54cf}\label{classv8_1_1internal_1_1ThreadLocalTop_a4efce7d729073dfb73f0bc6c3fdc54cf}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries handler\+\_\+} = k\+Null\+Address
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_a69e360da2917b948c2b75773722c2238}\label{classv8_1_1internal_1_1ThreadLocalTop_a69e360da2917b948c2b75773722c2238}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries c\+\_\+function\+\_\+} = k\+Null\+Address
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_ac2f5b14a0ca8839224180f8b6c1acce6}\label{classv8_1_1internal_1_1ThreadLocalTop_ac2f5b14a0ca8839224180f8b6c1acce6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PromiseOnStack}{Promise\+On\+Stack}} $\ast$ {\bfseries promise\+\_\+on\+\_\+stack\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_a2a93253ede9a9c1687f5aba5107da7b7}\label{classv8_1_1internal_1_1ThreadLocalTop_a2a93253ede9a9c1687f5aba5107da7b7}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries js\+\_\+entry\+\_\+sp\+\_\+} = k\+Null\+Address
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_a440206c169aa838a504161a59ec018c8}\label{classv8_1_1internal_1_1ThreadLocalTop_a440206c169aa838a504161a59ec018c8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ExternalCallbackScope}{External\+Callback\+Scope}} $\ast$ {\bfseries external\+\_\+callback\+\_\+scope\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_ab4603fb29594e25660ca3b25bc9be4fc}\label{classv8_1_1internal_1_1ThreadLocalTop_ab4603fb29594e25660ca3b25bc9be4fc}} 
+State\+Tag {\bfseries current\+\_\+vm\+\_\+state\+\_\+} = E\+X\+T\+E\+R\+N\+AL
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_aaf6d18342d06ea6c3dd5e110f9a5f3e1}\label{classv8_1_1internal_1_1ThreadLocalTop_aaf6d18342d06ea6c3dd5e110f9a5f3e1}} 
+v8\+::\+Failed\+Access\+Check\+Callback {\bfseries failed\+\_\+access\+\_\+check\+\_\+callback\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadLocalTop_acf5f50f8f2a4ca6efc85b6fb94c370bd}\label{classv8_1_1internal_1_1ThreadLocalTop_acf5f50f8f2a4ca6efc85b6fb94c370bd}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries thread\+\_\+in\+\_\+wasm\+\_\+flag\+\_\+address\+\_\+} = k\+Null\+Address
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 343 of file isolate.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/isolate.\+h\item 
+v8/src/isolate.\+cc\end{DoxyCompactItemize}

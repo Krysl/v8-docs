@@ -3,7 +3,7 @@ var classv8_1_1ObjectTemplate =
     [ "InternalFieldCount", "classv8_1_1ObjectTemplate.html#a43de785d594d8c01b18230b1aa79e31c", null ],
     [ "IsImmutableProto", "classv8_1_1ObjectTemplate.html#a76c12ee7be283bd3b007d062686dc0ed", null ],
     [ "MarkAsUndetectable", "classv8_1_1ObjectTemplate.html#a7e40ef313b44c2ad336c73051523b4f8", null ],
-    [ "NewInstance", "classv8_1_1ObjectTemplate.html#ab6903ae25b5ffb081f1802df6b7fe6d7", null ],
+    [ "NewInstance", "classv8_1_1ObjectTemplate.html#a76c118a457f70ec9ec24cf24985655ff", null ],
     [ "SetAccessCheckCallback", "classv8_1_1ObjectTemplate.html#a5b0337016cd89fc72f3a9d75399c2487", null ],
     [ "SetAccessCheckCallbackAndHandler", "classv8_1_1ObjectTemplate.html#abb8302671bfb5d381f7415336f4e631d", null ],
     [ "SetAccessor", "classv8_1_1ObjectTemplate.html#a5a99dc7b4895ad486430a4ba6c294136", null ],

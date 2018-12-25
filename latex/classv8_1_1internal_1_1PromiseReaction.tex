@@ -1,0 +1,64 @@
+\hypertarget{classv8_1_1internal_1_1PromiseReaction}{}\section{v8\+:\+:internal\+:\+:Promise\+Reaction Class Reference}
+\label{classv8_1_1internal_1_1PromiseReaction}\index{v8\+::internal\+::\+Promise\+Reaction@{v8\+::internal\+::\+Promise\+Reaction}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Promise\+Reaction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1PromiseReaction}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseReaction_ae58c48378eaa38b1b27e354e38929cb7}\label{classv8_1_1internal_1_1PromiseReaction_ae58c48378eaa38b1b27e354e38929cb7}} 
+enum {\bfseries Type} \{ {\bfseries k\+Fulfill}, 
+{\bfseries k\+Reject}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseReaction_aaa0dae341c2ee730e78d8faee04282ac}\label{classv8_1_1internal_1_1PromiseReaction_aaa0dae341c2ee730e78d8faee04282ac}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Next\+Offset} = Struct\+::k\+Header\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseReaction_a0c81c30a1b6dbefb4ebc927b9cbd8764}\label{classv8_1_1internal_1_1PromiseReaction_a0c81c30a1b6dbefb4ebc927b9cbd8764}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Reject\+Handler\+Offset} = k\+Next\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseReaction_a5da1c973b7cd2ac8b61951080c7942ee}\label{classv8_1_1internal_1_1PromiseReaction_a5da1c973b7cd2ac8b61951080c7942ee}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Fulfill\+Handler\+Offset} = k\+Reject\+Handler\+Offset + k\+Pointer\+Size
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Promise\+Or\+Capability\+Offset}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseReaction_a625f74e9be75e0c4cf4aaaa3352a97ed}\label{classv8_1_1internal_1_1PromiseReaction_a625f74e9be75e0c4cf4aaaa3352a97ed}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Size} = k\+Promise\+Or\+Capability\+Offset + k\+Pointer\+Size
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 135 of file promise.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseReaction_af5a6bec56002beffa66e1346aa714209}\label{classv8_1_1internal_1_1PromiseReaction_af5a6bec56002beffa66e1346aa714209}} 
+\index{v8\+::internal\+::\+Promise\+Reaction@{v8\+::internal\+::\+Promise\+Reaction}!k\+Promise\+Or\+Capability\+Offset@{k\+Promise\+Or\+Capability\+Offset}}
+\index{k\+Promise\+Or\+Capability\+Offset@{k\+Promise\+Or\+Capability\+Offset}!v8\+::internal\+::\+Promise\+Reaction@{v8\+::internal\+::\+Promise\+Reaction}}
+\subsubsection{\texorpdfstring{k\+Promise\+Or\+Capability\+Offset}{kPromiseOrCapabilityOffset}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Promise\+Reaction\+::k\+Promise\+Or\+Capability\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kFulfillHandlerOffset + kPointerSize
+\end{DoxyCode}
+
+
+Definition at line 149 of file promise.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/promise.\+h\end{DoxyCompactItemize}

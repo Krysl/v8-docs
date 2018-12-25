@@ -1,0 +1,50 @@
+\hypertarget{classv8_1_1base_1_1AsAtomicImpl}{}\section{v8\+:\+:base\+:\+:As\+Atomic\+Impl$<$ T\+Atomic\+Storage\+Type $>$ Class Template Reference}
+\label{classv8_1_1base_1_1AsAtomicImpl}\index{v8\+::base\+::\+As\+Atomic\+Impl$<$ T\+Atomic\+Storage\+Type $>$@{v8\+::base\+::\+As\+Atomic\+Impl$<$ T\+Atomic\+Storage\+Type $>$}}
+Inheritance diagram for v8\+:\+:base\+:\+:As\+Atomic\+Impl$<$ T\+Atomic\+Storage\+Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1base_1_1AsAtomicImpl}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1AsAtomicImpl_af4f1ceb648b931dcc7c43917dd521661}\label{classv8_1_1base_1_1AsAtomicImpl_af4f1ceb648b931dcc7c43917dd521661}} 
+using {\bfseries Atomic\+Storage\+Type} = T\+Atomic\+Storage\+Type
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1AsAtomicImpl_a776bcde4b303aceccd6491599a7cf1d5}\label{classv8_1_1base_1_1AsAtomicImpl_a776bcde4b303aceccd6491599a7cf1d5}} 
+{\footnotesize template$<$typename T $>$ }\\static \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} {\bfseries Acquire\+\_\+\+Load} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$addr)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1AsAtomicImpl_ae17a848e6e9140dda698d2f1395d6cff}\label{classv8_1_1base_1_1AsAtomicImpl_ae17a848e6e9140dda698d2f1395d6cff}} 
+{\footnotesize template$<$typename T $>$ }\\static \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} {\bfseries Relaxed\+\_\+\+Load} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$addr)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1AsAtomicImpl_a34e2a63266f7f9ad03907c218e97eb47}\label{classv8_1_1base_1_1AsAtomicImpl_a34e2a63266f7f9ad03907c218e97eb47}} 
+{\footnotesize template$<$typename T $>$ }\\static void {\bfseries Release\+\_\+\+Store} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$addr, typename std\+::remove\+\_\+reference$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$\+::\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}} new\+\_\+value)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1AsAtomicImpl_a7d4a9ea0c0d495ee50668782992c067f}\label{classv8_1_1base_1_1AsAtomicImpl_a7d4a9ea0c0d495ee50668782992c067f}} 
+{\footnotesize template$<$typename T $>$ }\\static void {\bfseries Relaxed\+\_\+\+Store} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$addr, typename std\+::remove\+\_\+reference$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$\+::\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}} new\+\_\+value)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1AsAtomicImpl_a7f0822bfa029b3b16a629903973d539b}\label{classv8_1_1base_1_1AsAtomicImpl_a7f0822bfa029b3b16a629903973d539b}} 
+{\footnotesize template$<$typename T $>$ }\\static \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} {\bfseries Release\+\_\+\+Compare\+And\+Swap} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$addr, typename std\+::remove\+\_\+reference$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$\+::\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}} old\+\_\+value, typename std\+::remove\+\_\+reference$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$\+::\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}} new\+\_\+value)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1AsAtomicImpl_a248ac45a7ef7747e70d841a05ff0c83b}\label{classv8_1_1base_1_1AsAtomicImpl_a248ac45a7ef7747e70d841a05ff0c83b}} 
+{\footnotesize template$<$typename T $>$ }\\static \mbox{\hyperlink{classbool}{bool}} {\bfseries Set\+Bits} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$addr, \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} bits, \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} mask)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T\+Atomic\+Storage\+Type$>$\newline
+class v8\+::base\+::\+As\+Atomic\+Impl$<$ T\+Atomic\+Storage\+Type $>$}
+
+
+
+Definition at line 63 of file atomic-\/utils.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/base/atomic-\/utils.\+h\end{DoxyCompactItemize}

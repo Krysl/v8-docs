@@ -1,0 +1,88 @@
+\hypertarget{classv8__inspector_1_1InjectedScript}{}\section{v8\+\_\+inspector\+:\+:Injected\+Script Class Reference}
+\label{classv8__inspector_1_1InjectedScript}\index{v8\+\_\+inspector\+::\+Injected\+Script@{v8\+\_\+inspector\+::\+Injected\+Script}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8__inspector_1_1InjectedScript_1_1CallFrameScope}{Call\+Frame\+Scope}}
+\item 
+class \mbox{\hyperlink{classv8__inspector_1_1InjectedScript_1_1ContextScope}{Context\+Scope}}
+\item 
+class \mbox{\hyperlink{classv8__inspector_1_1InjectedScript_1_1ObjectScope}{Object\+Scope}}
+\item 
+class \mbox{\hyperlink{classv8__inspector_1_1InjectedScript_1_1ProtocolPromiseHandler}{Protocol\+Promise\+Handler}}
+\item 
+class \mbox{\hyperlink{classv8__inspector_1_1InjectedScript_1_1Scope}{Scope}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_a503b378495277d5508a707966016d9ed}\label{classv8__inspector_1_1InjectedScript_a503b378495277d5508a707966016d9ed}} 
+{\bfseries Injected\+Script} (\mbox{\hyperlink{classv8__inspector_1_1InspectedContext}{Inspected\+Context}} $\ast$, \mbox{\hyperlink{classint}{int}} session\+Id)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_ae62bf57c9242e791e7cbad2cc995dfc5}\label{classv8__inspector_1_1InjectedScript_ae62bf57c9242e791e7cbad2cc995dfc5}} 
+\mbox{\hyperlink{classv8__inspector_1_1InspectedContext}{Inspected\+Context}} $\ast$ {\bfseries context} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_aaf8290249bb56f91ec5757f0573b3764}\label{classv8__inspector_1_1InjectedScript_aaf8290249bb56f91ec5757f0573b3764}} 
+Response {\bfseries get\+Properties} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{v8\+::\+Object}} $>$, const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&group\+Name, \mbox{\hyperlink{classbool}{bool}} own\+Properties, \mbox{\hyperlink{classbool}{bool}} accessor\+Properties\+Only, Wrap\+Mode wrap\+Mode, std\+::unique\+\_\+ptr$<$ protocol\+::\+Array$<$ protocol\+::\+Runtime\+::\+Property\+Descriptor $>$$>$ $\ast$result, Maybe$<$ protocol\+::\+Runtime\+::\+Exception\+Details $>$ $\ast$)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_a0313d5809932f40f1d56c037bbf4a9a7}\label{classv8__inspector_1_1InjectedScript_a0313d5809932f40f1d56c037bbf4a9a7}} 
+Response {\bfseries get\+Internal\+Properties} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$, const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&group\+Name, std\+::unique\+\_\+ptr$<$ protocol\+::\+Array$<$ protocol\+::\+Runtime\+::\+Internal\+Property\+Descriptor $>$$>$ $\ast$result)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_ab385959e22d37ddb4254e50b37896f94}\label{classv8__inspector_1_1InjectedScript_ab385959e22d37ddb4254e50b37896f94}} 
+void {\bfseries release\+Object} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&object\+Id)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_ad4ff7897fa956b61c11786c90d42d4d6}\label{classv8__inspector_1_1InjectedScript_ad4ff7897fa956b61c11786c90d42d4d6}} 
+Response {\bfseries wrap\+Object} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$, const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&group\+Name, Wrap\+Mode wrap\+Mode, std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+Remote\+Object $>$ $\ast$result)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_a76606b7c053f4efdedac75d3061483c7}\label{classv8__inspector_1_1InjectedScript_a76606b7c053f4efdedac75d3061483c7}} 
+Response {\bfseries wrap\+Object} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$, const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&group\+Name, Wrap\+Mode wrap\+Mode, \mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ custom\+Preview\+Config, \mbox{\hyperlink{classint}{int}} max\+Custom\+Preview\+Depth, std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+Remote\+Object $>$ $\ast$result)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_adae6f6cb2717efec34b187cacc0fda20}\label{classv8__inspector_1_1InjectedScript_adae6f6cb2717efec34b187cacc0fda20}} 
+std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+Remote\+Object $>$ {\bfseries wrap\+Table} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{v8\+::\+Object}} $>$ table, \mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Array}{v8\+::\+Array}} $>$ columns)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_a1979b1a9b5800a4bf7ceb93fe4d5eb4b}\label{classv8__inspector_1_1InjectedScript_a1979b1a9b5800a4bf7ceb93fe4d5eb4b}} 
+void {\bfseries add\+Promise\+Callback} (\mbox{\hyperlink{classv8__inspector_1_1V8InspectorSessionImpl}{V8\+Inspector\+Session\+Impl}} $\ast$session, \mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ value, const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&object\+Group, Wrap\+Mode wrap\+Mode, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1EvaluateCallback}{Evaluate\+Callback}} $>$ callback)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_ab49350c4ef1feba05e53285cd1ee30bc}\label{classv8__inspector_1_1InjectedScript_ab49350c4ef1feba05e53285cd1ee30bc}} 
+Response {\bfseries find\+Object} (const \mbox{\hyperlink{classv8__inspector_1_1RemoteObjectId}{Remote\+Object\+Id}} \&, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ $\ast$) const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_add2681d0ca4575cc27082a68e54b41bb}\label{classv8__inspector_1_1InjectedScript_add2681d0ca4575cc27082a68e54b41bb}} 
+\mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} {\bfseries object\+Group\+Name} (const \mbox{\hyperlink{classv8__inspector_1_1RemoteObjectId}{Remote\+Object\+Id}} \&) const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_a3d4c7cc305cf1b7b1b1fbe13cd4cb615}\label{classv8__inspector_1_1InjectedScript_a3d4c7cc305cf1b7b1b1fbe13cd4cb615}} 
+void {\bfseries release\+Object\+Group} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_a3962d99cc34ac149e791f2d4391df557}\label{classv8__inspector_1_1InjectedScript_a3962d99cc34ac149e791f2d4391df557}} 
+void {\bfseries set\+Custom\+Object\+Formatter\+Enabled} (\mbox{\hyperlink{classbool}{bool}})
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_a3e9f2f39f8d29a4d56bd3bad0c3b5ac7}\label{classv8__inspector_1_1InjectedScript_a3e9f2f39f8d29a4d56bd3bad0c3b5ac7}} 
+Response {\bfseries resolve\+Call\+Argument} (protocol\+::\+Runtime\+::\+Call\+Argument $\ast$, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ $\ast$result)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_ae486162e53ac4704494634c8169271d1}\label{classv8__inspector_1_1InjectedScript_ae486162e53ac4704494634c8169271d1}} 
+Response {\bfseries create\+Exception\+Details} (const v8\+::\+Try\+Catch \&, const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&group\+Name, Wrap\+Mode wrap\+Mode, Maybe$<$ protocol\+::\+Runtime\+::\+Exception\+Details $>$ $\ast$result)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_af5487d827413dc9887f87e42ad823ced}\label{classv8__inspector_1_1InjectedScript_af5487d827413dc9887f87e42ad823ced}} 
+Response {\bfseries wrap\+Evaluate\+Result} (\mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ maybe\+Result\+Value, const v8\+::\+Try\+Catch \&, const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&object\+Group, Wrap\+Mode wrap\+Mode, std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+Remote\+Object $>$ $\ast$result, Maybe$<$ protocol\+::\+Runtime\+::\+Exception\+Details $>$ $\ast$)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_a17be7d8fa6ca6f3183e78e6568944c3e}\label{classv8__inspector_1_1InjectedScript_a17be7d8fa6ca6f3183e78e6568944c3e}} 
+\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ {\bfseries last\+Evaluation\+Result} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_a2d9fd1c98aa26d60b65e278da1877cba}\label{classv8__inspector_1_1InjectedScript_a2d9fd1c98aa26d60b65e278da1877cba}} 
+void {\bfseries set\+Last\+Evaluation\+Result} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ result)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InjectedScript_a5063206ac9fb6b349c19b13058a5dc9b}\label{classv8__inspector_1_1InjectedScript_a5063206ac9fb6b349c19b13058a5dc9b}} 
+\mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} {\bfseries bind\+Object} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$, const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&group\+Name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 66 of file injected-\/script.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/inspector/injected-\/script.\+h\item 
+v8/src/inspector/injected-\/script.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,220 @@
+\hypertarget{classv8_1_1internal_1_1IC}{}\section{v8\+:\+:internal\+:\+:IC Class Reference}
+\label{classv8_1_1internal_1_1IC}\index{v8\+::internal\+::\+IC@{v8\+::internal\+::\+IC}}
+Inheritance diagram for v8\+:\+:internal\+:\+:IC\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.692308cm]{classv8_1_1internal_1_1IC}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_ad746d8b0ce82eec3a86b4744ca50798a}\label{classv8_1_1internal_1_1IC_ad746d8b0ce82eec3a86b4744ca50798a}} 
+typedef Inline\+Cache\+State {\bfseries State}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_ae6e2bab1fc3f1fba4815a99b1f306c8d}\label{classv8_1_1internal_1_1IC_ae6e2bab1fc3f1fba4815a99b1f306c8d}} 
+{\bfseries IC} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackVector}{Feedback\+Vector}} $>$ vector, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a44761904b47f546a821e76605ba889df}\label{classv8_1_1internal_1_1IC_a44761904b47f546a821e76605ba889df}} 
+State {\bfseries state} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_ac39f7749198dfeda1c9afbaa55a64b24}\label{classv8_1_1internal_1_1IC_ac39f7749198dfeda1c9afbaa55a64b24}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries address} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a50579cded027ba2f7e5396ca5e3ad400}\label{classv8_1_1internal_1_1IC_a50579cded027ba2f7e5396ca5e3ad400}} 
+void {\bfseries Update\+State} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ receiver, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_ae3912e99b7c08c6dc9851985767afe71}\label{classv8_1_1internal_1_1IC_ae3912e99b7c08c6dc9851985767afe71}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Recompute\+Handler\+For\+Name} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a4458ef77a18b34013ce04d0baea9de39}\label{classv8_1_1internal_1_1IC_a4458ef77a18b34013ce04d0baea9de39}} 
+void {\bfseries Mark\+Recompute\+Handler} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_abd135f9d55b4c3b7ca77ff960159f704}\label{classv8_1_1internal_1_1IC_abd135f9d55b4c3b7ca77ff960159f704}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Any\+Load} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a64f78feb5543ca5ee45209e1b853f902}\label{classv8_1_1internal_1_1IC_a64f78feb5543ca5ee45209e1b853f902}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Any\+Store} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a6a3e67ca6cb128b56a45f172c3722f15}\label{classv8_1_1internal_1_1IC_a6a3e67ca6cb128b56a45f172c3722f15}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Handler} (\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a08bfbe6979fcf7b336fcdfb61ab0e64b}\label{classv8_1_1internal_1_1IC_a08bfbe6979fcf7b336fcdfb61ab0e64b}} 
+static void {\bfseries On\+Feedback\+Changed} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackVector}{Feedback\+Vector}} $\ast$vector, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot, \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $\ast$host\+\_\+function, const \mbox{\hyperlink{classchar}{char}} $\ast$reason)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a4223490a1d2ede4ea2dd62fbe131795a}\label{classv8_1_1internal_1_1IC_a4223490a1d2ede4ea2dd62fbe131795a}} 
+static void {\bfseries On\+Feedback\+Changed} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackNexus}{Feedback\+Nexus}} $\ast$nexus, \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $\ast$host\+\_\+function, const \mbox{\hyperlink{classchar}{char}} $\ast$reason)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_ae06ba10ed8e62f0be402a1b599d81215}\label{classv8_1_1internal_1_1IC_ae06ba10ed8e62f0be402a1b599d81215}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Keyed\+Polymorphism} = 4
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a0f447dbf28b2f48b243ed2d631de0408}\label{classv8_1_1internal_1_1IC_a0f447dbf28b2f48b243ed2d631de0408}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Polymorphic\+Map\+Count} = 4
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_afe29da2b7c28894877c57b24a7c4f2a6}\label{classv8_1_1internal_1_1IC_afe29da2b7c28894877c57b24a7c4f2a6}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries fp} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_ae3f073796d1c328aa615eaf0bce47701}\label{classv8_1_1internal_1_1IC_ae3f073796d1c328aa615eaf0bce47701}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries pc} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a3258c0d1f71f6a32353cf3319455d073}\label{classv8_1_1internal_1_1IC_a3258c0d1f71f6a32353cf3319455d073}} 
+void {\bfseries set\+\_\+slow\+\_\+stub\+\_\+reason} (const \mbox{\hyperlink{classchar}{char}} $\ast$reason)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a790b764e0094402a9a27322fab61c7c8}\label{classv8_1_1internal_1_1IC_a790b764e0094402a9a27322fab61c7c8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a65e2b66b8d776387d233b40cb664e07d}\label{classv8_1_1internal_1_1IC_a65e2b66b8d776387d233b40cb664e07d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $\ast$ {\bfseries Get\+Host\+Function} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a981717517e26c43eb51c1e179d10dd44}\label{classv8_1_1internal_1_1IC_a981717517e26c43eb51c1e179d10dd44}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Address\+Is\+Deoptimized\+Code} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a39bce448a405f3137d7fb8a8c3d2cda1}\label{classv8_1_1internal_1_1IC_a39bce448a405f3137d7fb8a8c3d2cda1}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+vector\+\_\+set} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a47ca21a1fbdb0b1146cb42f3844a9b62}\label{classv8_1_1internal_1_1IC_a47ca21a1fbdb0b1146cb42f3844a9b62}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries vector\+\_\+needs\+\_\+update} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a2f741236d469be54f4c8806103249025}\label{classv8_1_1internal_1_1IC_a2f741236d469be54f4c8806103249025}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Configure\+Vector\+State} (I\+C\+::\+State new\+\_\+state, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_adbea65ebb4ed2f310805fddf1026a095}\label{classv8_1_1internal_1_1IC_adbea65ebb4ed2f310805fddf1026a095}} 
+void {\bfseries Configure\+Vector\+State} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_ae95403f898bfb88cbbfb2ced662c4ad1}\label{classv8_1_1internal_1_1IC_ae95403f898bfb88cbbfb2ced662c4ad1}} 
+void {\bfseries Configure\+Vector\+State} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ map, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ handler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a2a2bcd21c1fdf66e5e8a09f73e81b872}\label{classv8_1_1internal_1_1IC_a2a2bcd21c1fdf66e5e8a09f73e81b872}} 
+void {\bfseries Configure\+Vector\+State} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ map, const \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}} \&handler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_ad511d9161f189dc5d3b6aceb35d92007}\label{classv8_1_1internal_1_1IC_ad511d9161f189dc5d3b6aceb35d92007}} 
+void {\bfseries Configure\+Vector\+State} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, Map\+Handles const \&maps, Maybe\+Object\+Handles $\ast$handlers)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_ac4072f911634765d5b5777c71b9dd68a}\label{classv8_1_1internal_1_1IC_ac4072f911634765d5b5777c71b9dd68a}} 
+\mbox{\hyperlink{classchar}{char}} {\bfseries Transition\+Mark\+From\+State} (I\+C\+::\+State state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_af37837a5140c88c3179a970e690e091e}\label{classv8_1_1internal_1_1IC_af37837a5140c88c3179a970e690e091e}} 
+void {\bfseries Trace\+IC} (const \mbox{\hyperlink{classchar}{char}} $\ast$\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a8576e14981ac1ce2ae476299799eb694}\label{classv8_1_1internal_1_1IC_a8576e14981ac1ce2ae476299799eb694}} 
+void {\bfseries Trace\+IC} (const \mbox{\hyperlink{classchar}{char}} $\ast$\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ name, State old\+\_\+state, State new\+\_\+state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_ade2240792cd90e92ee9e5557513e6623}\label{classv8_1_1internal_1_1IC_ade2240792cd90e92ee9e5557513e6623}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Type\+Error} (Message\+Template, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_ae78e3ad7c18effdc35a4b307d497ad6d}\label{classv8_1_1internal_1_1IC_ae78e3ad7c18effdc35a4b307d497ad6d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Reference\+Error} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a1de2d809d3d50997e8a8e964123e19d3}\label{classv8_1_1internal_1_1IC_a1de2d809d3d50997e8a8e964123e19d3}} 
+void {\bfseries Trace\+Handler\+Cache\+Hit\+Stats} (\mbox{\hyperlink{classv8_1_1internal_1_1LookupIterator}{Lookup\+Iterator}} $\ast$lookup)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_accd84fe4cd421486aa3315b4518e22d3}\label{classv8_1_1internal_1_1IC_accd84fe4cd421486aa3315b4518e22d3}} 
+void {\bfseries Update\+Monomorphic\+IC} (const \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}} \&handler, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a7cd7c6305060a11db323b42d84d58685}\label{classv8_1_1internal_1_1IC_a7cd7c6305060a11db323b42d84d58685}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Update\+Polymorphic\+IC} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, const \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}} \&handler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a914410ef4188cce3198cd4ed5494218f}\label{classv8_1_1internal_1_1IC_a914410ef4188cce3198cd4ed5494218f}} 
+void {\bfseries Update\+Megamorphic\+Cache} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ map, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, const \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}} \&handler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a662830d348f7719272d576802879080e}\label{classv8_1_1internal_1_1IC_a662830d348f7719272d576802879080e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1StubCache}{Stub\+Cache}} $\ast$ {\bfseries stub\+\_\+cache} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_aa7a45201b57aadcc703589595732dd27}\label{classv8_1_1internal_1_1IC_aa7a45201b57aadcc703589595732dd27}} 
+void {\bfseries Copy\+I\+C\+To\+Megamorphic\+Cache} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a2b3e1d61d5e88fd6f77b2eaa916eddcd}\label{classv8_1_1internal_1_1IC_a2b3e1d61d5e88fd6f77b2eaa916eddcd}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Transition\+Of\+Monomorphic\+Target} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} source\+\_\+map, \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} target\+\_\+map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a6f12542cb9e1d2674f3eaf2e228f8e9a}\label{classv8_1_1internal_1_1IC_a6f12542cb9e1d2674f3eaf2e228f8e9a}} 
+void {\bfseries Patch\+Cache} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ handler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a511f589958a4020eba654c22b9aa5b9f}\label{classv8_1_1internal_1_1IC_a511f589958a4020eba654c22b9aa5b9f}} 
+void {\bfseries Patch\+Cache} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, const \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}} \&handler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a8b5bd465d7121a9addc65b6f47c1e321}\label{classv8_1_1internal_1_1IC_a8b5bd465d7121a9addc65b6f47c1e321}} 
+Feedback\+Slot\+Kind {\bfseries kind} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_aef996edfb7bdb8f31c5f7b6b66363cc3}\label{classv8_1_1internal_1_1IC_aef996edfb7bdb8f31c5f7b6b66363cc3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Global\+IC} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a45de236df07db3b6362d03c7cfe9119b}\label{classv8_1_1internal_1_1IC_a45de236df07db3b6362d03c7cfe9119b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Load\+IC} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a7547827a431def6b41ed9484bf233bb5}\label{classv8_1_1internal_1_1IC_a7547827a431def6b41ed9484bf233bb5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Load\+Global\+IC} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_ab84dd07f99eb536f7d4e08e7c128185d}\label{classv8_1_1internal_1_1IC_ab84dd07f99eb536f7d4e08e7c128185d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Keyed\+Load\+IC} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a4916bdf96d92457bc57891c26aba560d}\label{classv8_1_1internal_1_1IC_a4916bdf96d92457bc57891c26aba560d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Store\+Global\+IC} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a0f2f43df8d0eaf647ef0e955e841448c}\label{classv8_1_1internal_1_1IC_a0f2f43df8d0eaf647ef0e955e841448c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Store\+IC} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_ac8d87a48c33edf7dd1b0b1f1ed883ef4}\label{classv8_1_1internal_1_1IC_ac8d87a48c33edf7dd1b0b1f1ed883ef4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Store\+Own\+IC} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_adf3c27327a6acdc0e98c2748a6ee6bd1}\label{classv8_1_1internal_1_1IC_adf3c27327a6acdc0e98c2748a6ee6bd1}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Keyed\+Store\+IC} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a934b0dd9315b9360f2a6a321acb7d813}\label{classv8_1_1internal_1_1IC_a934b0dd9315b9360f2a6a321acb7d813}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+keyed} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a176a9c8761ec424b0666029e19f5d33d}\label{classv8_1_1internal_1_1IC_a176a9c8761ec424b0666029e19f5d33d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Should\+Recompute\+Handler} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_af8f84a82ace3a9e9bf03dba4829668c3}\label{classv8_1_1internal_1_1IC_af8f84a82ace3a9e9bf03dba4829668c3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ {\bfseries receiver\+\_\+map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a311e918bce9efd7bcecec44ba2bb3ee3}\label{classv8_1_1internal_1_1IC_a311e918bce9efd7bcecec44ba2bb3ee3}} 
+void {\bfseries update\+\_\+receiver\+\_\+map} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ receiver)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_aa2b0d09aecb439940e231c09b58e7580}\label{classv8_1_1internal_1_1IC_aa2b0d09aecb439940e231c09b58e7580}} 
+void {\bfseries Target\+Maps} (Map\+Handles $\ast$list)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_af1b022a248ae2ce8239b921ce3701b63}\label{classv8_1_1internal_1_1IC_af1b022a248ae2ce8239b921ce3701b63}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} {\bfseries First\+Target\+Map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_abbf2610ef98e4c0bf0e1cd9867527d43}\label{classv8_1_1internal_1_1IC_abbf2610ef98e4c0bf0e1cd9867527d43}} 
+State {\bfseries saved\+\_\+state} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_ac10e141b7bede2f69f8af8340a90d384}\label{classv8_1_1internal_1_1IC_ac10e141b7bede2f69f8af8340a90d384}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackNexus}{Feedback\+Nexus}} $\ast$ {\bfseries nexus} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a98079b0b4e6d8e4ab508241216ec60be}\label{classv8_1_1internal_1_1IC_a98079b0b4e6d8e4ab508241216ec60be}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1FeedbackNexus}{Feedback\+Nexus}} $\ast$ {\bfseries nexus} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IC_a0fac2b886cc57408920e2ac9180a85cc}\label{classv8_1_1internal_1_1IC_a0fac2b886cc57408920e2ac9180a85cc}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Address\+Is\+Deoptimized\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classuintptr__t}{Address}} address)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 25 of file ic.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ic/ic.\+h\item 
+v8/src/ic/ic-\/inl.\+h\item 
+v8/src/ic/ic.\+cc\end{DoxyCompactItemize}

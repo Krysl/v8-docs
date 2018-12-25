@@ -1,0 +1,80 @@
+\hypertarget{classv8__inspector_1_1InspectedContext}{}\section{v8\+\_\+inspector\+:\+:Inspected\+Context Class Reference}
+\label{classv8__inspector_1_1InspectedContext}\index{v8\+\_\+inspector\+::\+Inspected\+Context@{v8\+\_\+inspector\+::\+Inspected\+Context}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8__inspector_1_1InspectedContext_1_1WeakCallbackData}{Weak\+Callback\+Data}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InspectedContext_a14673ea8c3741539691db1746c2a592b}\label{classv8__inspector_1_1InspectedContext_a14673ea8c3741539691db1746c2a592b}} 
+\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$ {\bfseries context} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InspectedContext_a8476297bc62c949b48e9adb84d2c2458}\label{classv8__inspector_1_1InspectedContext_a8476297bc62c949b48e9adb84d2c2458}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries context\+Id} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InspectedContext_a371c0925894fcb051d707b612244d813}\label{classv8__inspector_1_1InspectedContext_a371c0925894fcb051d707b612244d813}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries context\+Group\+Id} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InspectedContext_a7ef6d338a8db04fa27044d250ededccd}\label{classv8__inspector_1_1InspectedContext_a7ef6d338a8db04fa27044d250ededccd}} 
+\mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} {\bfseries origin} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InspectedContext_a976b6d05a6087ed9ece0e6e7f6bb9b0b}\label{classv8__inspector_1_1InspectedContext_a976b6d05a6087ed9ece0e6e7f6bb9b0b}} 
+\mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} {\bfseries human\+Readable\+Name} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InspectedContext_afd8c38eb253cb06eb6e1abbca35cf2c8}\label{classv8__inspector_1_1InspectedContext_afd8c38eb253cb06eb6e1abbca35cf2c8}} 
+\mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} {\bfseries aux\+Data} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InspectedContext_aa4ffe5298b3696f0a9c21e1e4ce92167}\label{classv8__inspector_1_1InspectedContext_aa4ffe5298b3696f0a9c21e1e4ce92167}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+Reported} (\mbox{\hyperlink{classint}{int}} session\+Id) const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InspectedContext_a9b02a8c34bc141bff34ffedb9e766125}\label{classv8__inspector_1_1InspectedContext_a9b02a8c34bc141bff34ffedb9e766125}} 
+void {\bfseries set\+Reported} (\mbox{\hyperlink{classint}{int}} session\+Id, \mbox{\hyperlink{classbool}{bool}} reported)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InspectedContext_ae205a93281470ae5e7ccb68aba869f93}\label{classv8__inspector_1_1InspectedContext_ae205a93281470ae5e7ccb68aba869f93}} 
+v8\+::\+Isolate $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InspectedContext_a19f0b8c31e474dc9ad54ae13d9c755ec}\label{classv8__inspector_1_1InspectedContext_a19f0b8c31e474dc9ad54ae13d9c755ec}} 
+\mbox{\hyperlink{classv8__inspector_1_1V8InspectorImpl}{V8\+Inspector\+Impl}} $\ast$ {\bfseries inspector} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InspectedContext_abe68fb99f6d03d0cc08acdf239217dd5}\label{classv8__inspector_1_1InspectedContext_abe68fb99f6d03d0cc08acdf239217dd5}} 
+\mbox{\hyperlink{classv8__inspector_1_1InjectedScript}{Injected\+Script}} $\ast$ {\bfseries get\+Injected\+Script} (\mbox{\hyperlink{classint}{int}} session\+Id)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InspectedContext_afdc1898d764520c947e2610c77346fc5}\label{classv8__inspector_1_1InspectedContext_afdc1898d764520c947e2610c77346fc5}} 
+\mbox{\hyperlink{classv8__inspector_1_1InjectedScript}{Injected\+Script}} $\ast$ {\bfseries create\+Injected\+Script} (\mbox{\hyperlink{classint}{int}} session\+Id)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InspectedContext_a13496891bfda00c2f88ea6536cd0e4c1}\label{classv8__inspector_1_1InspectedContext_a13496891bfda00c2f88ea6536cd0e4c1}} 
+void {\bfseries discard\+Injected\+Script} (\mbox{\hyperlink{classint}{int}} session\+Id)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InspectedContext_ae3c7ed4492c85ecf6e9c59b6e191c25c}\label{classv8__inspector_1_1InspectedContext_ae3c7ed4492c85ecf6e9c59b6e191c25c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries add\+Internal\+Object} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{v8\+::\+Object}} $>$ object, V8\+Internal\+Value\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InspectedContext_ac50a51ef3dd317948774e9ac45a56692}\label{classv8__inspector_1_1InspectedContext_ac50a51ef3dd317948774e9ac45a56692}} 
+V8\+Internal\+Value\+Type {\bfseries get\+Internal\+Type} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{v8\+::\+Object}} $>$ object)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InspectedContext_a40b319b66c235b91b5091af2b4b49c56}\label{classv8__inspector_1_1InspectedContext_a40b319b66c235b91b5091af2b4b49c56}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries context\+Id} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1InspectedContext_a5ce5a412f1b3b4cd9575ea6d931ae724}\label{classv8__inspector_1_1InspectedContext_a5ce5a412f1b3b4cd9575ea6d931ae724}} 
+class {\bfseries V8\+Inspector\+Impl}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file inspected-\/context.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/inspector/inspected-\/context.\+h\item 
+v8/src/inspector/inspected-\/context.\+cc\end{DoxyCompactItemize}

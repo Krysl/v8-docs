@@ -1,0 +1,186 @@
+\hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor}{}\section{v8\+:\+:internal\+:\+:torque\+:\+:Implementation\+Visitor Class Reference}
+\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor}\index{v8\+::internal\+::torque\+::\+Implementation\+Visitor@{v8\+::internal\+::torque\+::\+Implementation\+Visitor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:torque\+:\+:Implementation\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1torque_1_1ImplementationVisitor}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1ImplementationVisitor_1_1BindingsManagersScope}{Bindings\+Managers\+Scope}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a3b8ae2743599accaf568f7ed6b4596aa}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a3b8ae2743599accaf568f7ed6b4596aa}} 
+void {\bfseries Generate\+Builtin\+Definitions} (std\+::string \&file\+\_\+name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a983bcad78c07f3d0054559aa23881a76}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a983bcad78c07f3d0054559aa23881a76}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Expression}{Expression}} $\ast$expr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a85673aff42938921ab178c23c26c1ff1}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a85673aff42938921ab178c23c26c1ff1}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Statement}{Statement}} $\ast$stmt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a6e7fa6320c79821aa5d7d60aae0afd0b}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a6e7fa6320c79821aa5d7d60aae0afd0b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1StructExpression}{Struct\+Expression}} $\ast$decl)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_aa11affc623c3f7e2aefceefac6c6c256}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_aa11affc623c3f7e2aefceefac6c6c256}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1LocationReference}{Location\+Reference}} {\bfseries Get\+Location\+Reference} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Expression}{Expression}} $\ast$location)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a23fbe1587c3dbb00ec28dd5a58497320}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a23fbe1587c3dbb00ec28dd5a58497320}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1LocationReference}{Location\+Reference}} {\bfseries Get\+Location\+Reference} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1IdentifierExpression}{Identifier\+Expression}} $\ast$expr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_af2bb0854bb2d286c1eeb62303d3d9d97}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_af2bb0854bb2d286c1eeb62303d3d9d97}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1LocationReference}{Location\+Reference}} {\bfseries Get\+Location\+Reference} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1FieldAccessExpression}{Field\+Access\+Expression}} $\ast$expr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a398de68d6ac0b3a226e58c815f607a11}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a398de68d6ac0b3a226e58c815f607a11}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1LocationReference}{Location\+Reference}} {\bfseries Get\+Location\+Reference} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1ElementAccessExpression}{Element\+Access\+Expression}} $\ast$expr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a26025b998702410125aa097b9f999f88}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a26025b998702410125aa097b9f999f88}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Generate\+Fetch\+From\+Location} (const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1LocationReference}{Location\+Reference}} \&reference)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a56a8145c876fe15a94b8f8a6f970ec57}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a56a8145c876fe15a94b8f8a6f970ec57}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Get\+Builtin\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Builtin}{Builtin}} $\ast$builtin)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a3869b6434984a4ebd9b688a54a1b374e}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a3869b6434984a4ebd9b688a54a1b374e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1IdentifierExpression}{Identifier\+Expression}} $\ast$expr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_ac72d880cca4b19fa915b0b1cdf6d6576}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_ac72d880cca4b19fa915b0b1cdf6d6576}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1FieldAccessExpression}{Field\+Access\+Expression}} $\ast$expr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a3c7b9b06c98d4b3f901777e4f4346160}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a3c7b9b06c98d4b3f901777e4f4346160}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1ElementAccessExpression}{Element\+Access\+Expression}} $\ast$expr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_aecd23c2d8ddc2ead7d661317c1cd533b}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_aecd23c2d8ddc2ead7d661317c1cd533b}} 
+void {\bfseries Visit\+All\+Declarables} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a576da861ba59fc4fe11f0f57e3c0c4a6}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a576da861ba59fc4fe11f0f57e3c0c4a6}} 
+void {\bfseries Visit} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Declarable}{Declarable}} $\ast$delarable)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_aca3a32773d13e26e3009603af42ac6a9}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_aca3a32773d13e26e3009603af42ac6a9}} 
+void {\bfseries Visit} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1TypeAlias}{Type\+Alias}} $\ast$decl)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a129dea2e5092900562d8de29773fa4d4}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a129dea2e5092900562d8de29773fa4d4}} 
+void {\bfseries Visit} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Macro}{Macro}} $\ast$macro)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a963f81cac20af3a0c856f9c03140b93a}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a963f81cac20af3a0c856f9c03140b93a}} 
+void {\bfseries Visit} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Builtin}{Builtin}} $\ast$builtin)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a37ea0b94c538c414a8528e68be9cff63}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a37ea0b94c538c414a8528e68be9cff63}} 
+void {\bfseries Visit} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1NamespaceConstant}{Namespace\+Constant}} $\ast$decl)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_adfbd5fc1adec91f3f7426a80d3647450}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_adfbd5fc1adec91f3f7426a80d3647450}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1CallExpression}{Call\+Expression}} $\ast$expr, \mbox{\hyperlink{classbool}{bool}} is\+\_\+tail=false)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a9d7fae260c69c24b140676efa4ac4f92}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a9d7fae260c69c24b140676efa4ac4f92}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1IntrinsicCallExpression}{Intrinsic\+Call\+Expression}} $\ast$intrinsic)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_af925c3ba6993500a0de263a013359443}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_af925c3ba6993500a0de263a013359443}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1TailCallStatement}{Tail\+Call\+Statement}} $\ast$stmt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a65688aece46751eab7a83cefe767619e}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a65688aece46751eab7a83cefe767619e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1ConditionalExpression}{Conditional\+Expression}} $\ast$expr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_aef144eb48b4ec09f43c051d73731172f}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_aef144eb48b4ec09f43c051d73731172f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1LogicalOrExpression}{Logical\+Or\+Expression}} $\ast$expr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a49cf8a2ee61f3ef01e9e730c6b00ec9c}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a49cf8a2ee61f3ef01e9e730c6b00ec9c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1LogicalAndExpression}{Logical\+And\+Expression}} $\ast$expr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a72d88b99e325d84b28c799fbeb483d56}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a72d88b99e325d84b28c799fbeb483d56}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1IncrementDecrementExpression}{Increment\+Decrement\+Expression}} $\ast$expr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_ae11351bf0384ac89afa7a2f8f110f045}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_ae11351bf0384ac89afa7a2f8f110f045}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1AssignmentExpression}{Assignment\+Expression}} $\ast$expr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a4c5538284cd213991bb7b62d963777b0}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a4c5538284cd213991bb7b62d963777b0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1StringLiteralExpression}{String\+Literal\+Expression}} $\ast$expr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a6e0ce1a8c5c5031da450475b204af27a}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a6e0ce1a8c5c5031da450475b204af27a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1NumberLiteralExpression}{Number\+Literal\+Expression}} $\ast$expr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a734c3feaa129e8dad7f04254c4835e1e}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a734c3feaa129e8dad7f04254c4835e1e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1AssumeTypeImpossibleExpression}{Assume\+Type\+Impossible\+Expression}} $\ast$expr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a2349d1a9f6daffbef7e0b897a9dc77f4}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a2349d1a9f6daffbef7e0b897a9dc77f4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1TryLabelExpression}{Try\+Label\+Expression}} $\ast$expr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a894876ce7e3c2ead3e02492441b7afdf}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a894876ce7e3c2ead3e02492441b7afdf}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1VisitResult}{Visit\+Result}} {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1StatementExpression}{Statement\+Expression}} $\ast$expr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a7767e5eb36d285368dcafbee117fc264}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a7767e5eb36d285368dcafbee117fc264}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1ReturnStatement}{Return\+Statement}} $\ast$stmt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a4fd9c136de9450317e7f417595c0c4d8}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a4fd9c136de9450317e7f417595c0c4d8}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1GotoStatement}{Goto\+Statement}} $\ast$stmt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a26fdb16abbf897f663765781da44430d}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a26fdb16abbf897f663765781da44430d}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1IfStatement}{If\+Statement}} $\ast$stmt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a3fef51ffa847ab73ac53ef6dfe3a3a2a}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a3fef51ffa847ab73ac53ef6dfe3a3a2a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1WhileStatement}{While\+Statement}} $\ast$stmt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a25c9c6a349f83c81361c7b98cbf54442}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a25c9c6a349f83c81361c7b98cbf54442}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1BreakStatement}{Break\+Statement}} $\ast$stmt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a3e90826655e562aa21ffdce51e863a35}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a3e90826655e562aa21ffdce51e863a35}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1ContinueStatement}{Continue\+Statement}} $\ast$stmt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_ab54f0da3409aaedae9b07f46636f5bf4}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_ab54f0da3409aaedae9b07f46636f5bf4}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1ForLoopStatement}{For\+Loop\+Statement}} $\ast$stmt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a1c24513c67de16fd63db7eef1997a170}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a1c24513c67de16fd63db7eef1997a170}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1VarDeclarationStatement}{Var\+Declaration\+Statement}} $\ast$stmt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a40a2163167fefd4c915eeafcd1ca3ab7}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a40a2163167fefd4c915eeafcd1ca3ab7}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1VarDeclarationStatement}{Var\+Declaration\+Statement}} $\ast$stmt, \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1BlockBindings}{Block\+Bindings}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1LocalValue}{Local\+Value}} $>$ $\ast$block\+\_\+bindings)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_afc220f0e60cb3a93054bd79bacc2d487}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_afc220f0e60cb3a93054bd79bacc2d487}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1ForOfLoopStatement}{For\+Of\+Loop\+Statement}} $\ast$stmt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a646bfac8c304e90156af125efbb78a76}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a646bfac8c304e90156af125efbb78a76}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1BlockStatement}{Block\+Statement}} $\ast$block)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a7358501691c265e93e5de194d537eaf7}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a7358501691c265e93e5de194d537eaf7}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1ExpressionStatement}{Expression\+Statement}} $\ast$stmt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a3b8e367a28e4edb1156ad323ba6319be}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a3b8e367a28e4edb1156ad323ba6319be}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1DebugStatement}{Debug\+Statement}} $\ast$stmt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a5369cfbf63212e05c19e76f3379f2891}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a5369cfbf63212e05c19e76f3379f2891}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1AssertStatement}{Assert\+Statement}} $\ast$stmt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a3b565f7adc25c84e92a0c190d10c79d7}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a3b565f7adc25c84e92a0c190d10c79d7}} 
+void {\bfseries Begin\+Namespace\+File} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Namespace}{Namespace}} $\ast$nspace)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a2de0552cf5d80a9e0b8ae3537a16a9fe}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a2de0552cf5d80a9e0b8ae3537a16a9fe}} 
+void {\bfseries End\+Namespace\+File} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Namespace}{Namespace}} $\ast$nspace)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a57cd4b09a442375e71cfe7a7a1aef251}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a57cd4b09a442375e71cfe7a7a1aef251}} 
+void {\bfseries Generate\+Implementation} (const std\+::string \&dir, \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Namespace}{Namespace}} $\ast$nspace)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a81c534a3c3e0728371dfb9b1de2400cf}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a81c534a3c3e0728371dfb9b1de2400cf}} 
+{\bfseries D\+E\+C\+L\+A\+R\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+U\+A\+L\+\_\+\+V\+A\+R\+I\+A\+B\+LE} (Value\+Bindings\+Manager, \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1BindingsManager}{Bindings\+Manager}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1LocalValue}{Local\+Value}} $>$)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a03c79e01af2ecda6eee9fa41346c610e}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_a03c79e01af2ecda6eee9fa41346c610e}} 
+{\bfseries D\+E\+C\+L\+A\+R\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+U\+A\+L\+\_\+\+V\+A\+R\+I\+A\+B\+LE} (Label\+Bindings\+Manager, \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1BindingsManager}{Bindings\+Manager}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1LocalLabel}{Local\+Label}} $>$)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_aa62acb7d498e86be2909559793408531}\label{classv8_1_1internal_1_1torque_1_1ImplementationVisitor_aa62acb7d498e86be2909559793408531}} 
+{\bfseries D\+E\+C\+L\+A\+R\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+U\+A\+L\+\_\+\+V\+A\+R\+I\+A\+B\+LE} (Current\+Callable, \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Callable}{Callable}} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 200 of file implementation-\/visitor.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/torque/implementation-\/visitor.\+h\item 
+v8/src/torque/implementation-\/visitor.\+cc\end{DoxyCompactItemize}

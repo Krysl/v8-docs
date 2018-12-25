@@ -1,0 +1,86 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Interpreter\+:\+:Thread Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread}\index{v8\+::internal\+::wasm\+::\+Wasm\+Interpreter\+::\+Thread@{v8\+::internal\+::wasm\+::\+Wasm\+Interpreter\+::\+Thread}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_ac180a02ba1edb4e660142eb31f063efd}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_ac180a02ba1edb4e660142eb31f063efd}} 
+enum {\bfseries Exception\+Handling\+Result} \{ {\bfseries H\+A\+N\+D\+L\+ED}, 
+{\bfseries U\+N\+W\+O\+U\+ND}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_ad85c512f4ea8a4be553b21dd98e84243}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_ad85c512f4ea8a4be553b21dd98e84243}} 
+State {\bfseries state} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a3c187b2c4ab33bd6744e37fb3116a991}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a3c187b2c4ab33bd6744e37fb3116a991}} 
+void {\bfseries Init\+Frame} (const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFunction}{Wasm\+Function}} $\ast$function, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmValue}{Wasm\+Value}} $\ast$args)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_ad9f7f349e868eea635348b64abe727b6}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_ad9f7f349e868eea635348b64abe727b6}} 
+State {\bfseries Run} (\mbox{\hyperlink{classint}{int}} num\+\_\+steps=-\/1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a0d7dfc0f816c938e1c54ca99a965fb92}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a0d7dfc0f816c938e1c54ca99a965fb92}} 
+State {\bfseries Step} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a10630cbe025ba4da2202817bacd1b47f}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a10630cbe025ba4da2202817bacd1b47f}} 
+void {\bfseries Pause} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_af7a222d0926d321496d215d083f4d8c7}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_af7a222d0926d321496d215d083f4d8c7}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a0fc0af0675369be116d6d73b2b5b94ad}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a0fc0af0675369be116d6d73b2b5b94ad}} 
+Exception\+Handling\+Result {\bfseries Handle\+Exception} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a0fd08cf2e065fdcc6f7806891dd90504}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a0fd08cf2e065fdcc6f7806891dd90504}} 
+\mbox{\hyperlink{classsize__t}{pc\+\_\+t}} {\bfseries Get\+Breakpoint\+Pc} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_af381f64d13070d72408def46820a344b}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_af381f64d13070d72408def46820a344b}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Frame\+Count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a069acce37dbae6437609287a38c917b5}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a069acce37dbae6437609287a38c917b5}} 
+Frame\+Ptr {\bfseries Get\+Frame} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a4859310753607f7dfc3d6450da916228}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a4859310753607f7dfc3d6450da916228}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmValue}{Wasm\+Value}} {\bfseries Get\+Return\+Value} (\mbox{\hyperlink{classint}{int}} index=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a344094217b1143c876659f5fe59308a0}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a344094217b1143c876659f5fe59308a0}} 
+Trap\+Reason {\bfseries Get\+Trap\+Reason} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a6d52ec08e69ecb9b518d2e7f95b1f179}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a6d52ec08e69ecb9b518d2e7f95b1f179}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Possible\+Nondeterminism} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_aee32b93f8454f8fad258d0dd7b2893f4}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_aee32b93f8454f8fad258d0dd7b2893f4}} 
+uint64\+\_\+t {\bfseries Num\+Interpreted\+Calls} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_abaf27568226fdeaf3dca202698bc6e50}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_abaf27568226fdeaf3dca202698bc6e50}} 
+void {\bfseries Add\+Break\+Flags} (uint8\+\_\+t flags)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_aab182ec6ca0d1f813dff370a32f719ac}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_aab182ec6ca0d1f813dff370a32f719ac}} 
+void {\bfseries Clear\+Break\+Flags} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a308e8f8e8b86f5a2ba2d35ffa3b459ce}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a308e8f8e8b86f5a2ba2d35ffa3b459ce}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Num\+Activations} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a5991020905aea1753532861c7c8b322b}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a5991020905aea1753532861c7c8b322b}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Start\+Activation} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_ab3753e2e36ee297845cfaa5e8b5f4bbd}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_ab3753e2e36ee297845cfaa5e8b5f4bbd}} 
+void {\bfseries Finish\+Activation} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} activation\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a69c9b5a94fe323cecf523cf4a286ff9a}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread_a69c9b5a94fe323cecf523cf4a286ff9a}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Activation\+Frame\+Base} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} activation\+\_\+id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 108 of file wasm-\/interpreter.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/wasm-\/interpreter.\+h\item 
+v8/src/wasm/wasm-\/interpreter.\+cc\end{DoxyCompactItemize}

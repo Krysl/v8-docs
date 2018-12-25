@@ -11,11 +11,11 @@
 {\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Maybe\+Local} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ S $>$ that)
 \item 
 \mbox{\Hypertarget{classv8_1_1MaybeLocal_aa321cd3ec18e64d893bc14b21e4624f4}\label{classv8_1_1MaybeLocal_aa321cd3ec18e64d893bc14b21e4624f4}} 
-V8\+\_\+\+I\+N\+L\+I\+NE bool {\bfseries Is\+Empty} () const
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Empty} () const
 \item 
-{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT V8\+\_\+\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{classv8_1_1MaybeLocal_aa12fc83adccbf02f502a2aaeed9c32ab}{To\+Local}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ S $>$ $\ast$out) const
+{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{classv8_1_1MaybeLocal_aa12fc83adccbf02f502a2aaeed9c32ab}{To\+Local}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ S $>$ $\ast$out) const
 \item 
-V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ \mbox{\hyperlink{classv8_1_1MaybeLocal_a9b2c9d50fca5897e3a03fd4c25d12415}{To\+Local\+Checked}} ()
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ \mbox{\hyperlink{classv8_1_1MaybeLocal_a9b2c9d50fca5897e3a03fd4c25d12415}{To\+Local\+Checked}} ()
 \item 
 {\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ S $>$ \mbox{\hyperlink{classv8_1_1MaybeLocal_ad99cb1e7ac1a4eac34c144faa4262407}{From\+Maybe}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ S $>$ default\+\_\+value) const
 \end{DoxyCompactItemize}
@@ -38,9 +38,9 @@ Definition at line 87 of file v8.\+h.
 \index{v8\+::\+Maybe\+Local@{v8\+::\+Maybe\+Local}!From\+Maybe@{From\+Maybe}}
 \index{From\+Maybe@{From\+Maybe}!v8\+::\+Maybe\+Local@{v8\+::\+Maybe\+Local}}
 \subsubsection{\texorpdfstring{From\+Maybe()}{FromMaybe()}}
-{\footnotesize\ttfamily template$<$class T $>$ \\
+{\footnotesize\ttfamily template$<$class T$>$ \\
 template$<$class S $>$ \\
-V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$S$>$ \mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ T $>$\+::From\+Maybe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ S $>$}]{default\+\_\+value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$S$>$ \mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$\+::From\+Maybe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ S $>$}]{default\+\_\+value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 Converts this Maybe\+Local$<$$>$ to a Local$<$$>$, using a default value if this Maybe\+Local$<$$>$ is empty. 
 
@@ -50,9 +50,9 @@ Definition at line 363 of file v8.\+h.
 \index{v8\+::\+Maybe\+Local@{v8\+::\+Maybe\+Local}!To\+Local@{To\+Local}}
 \index{To\+Local@{To\+Local}!v8\+::\+Maybe\+Local@{v8\+::\+Maybe\+Local}}
 \subsubsection{\texorpdfstring{To\+Local()}{ToLocal()}}
-{\footnotesize\ttfamily template$<$class T $>$ \\
+{\footnotesize\ttfamily template$<$class T$>$ \\
 template$<$class S $>$ \\
-V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT V8\+\_\+\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ T $>$\+::To\+Local (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ S $>$ $\ast$}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$\+::To\+Local (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ S $>$ $\ast$}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 Converts this Maybe\+Local$<$$>$ to a Local$<$$>$. If this Maybe\+Local$<$$>$ is empty, $\vert$false$\vert$ is returned and $\vert$out$\vert$ is left untouched. 
 
@@ -63,7 +63,7 @@ Definition at line 347 of file v8.\+h.
 \index{To\+Local\+Checked@{To\+Local\+Checked}!v8\+::\+Maybe\+Local@{v8\+::\+Maybe\+Local}}
 \subsubsection{\texorpdfstring{To\+Local\+Checked()}{ToLocalChecked()}}
 {\footnotesize\ttfamily template$<$class T $>$ \\
-\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ \mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ T $>$\+::To\+Local\+Checked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ \mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$\+::To\+Local\+Checked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Converts this Maybe\+Local$<$$>$ to a Local$<$$>$. If this Maybe\+Local$<$$>$ is empty, V8 will crash the process. 
 

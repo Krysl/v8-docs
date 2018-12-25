@@ -1,0 +1,116 @@
+\hypertarget{classv8_1_1internal_1_1WasmModuleObject}{}\section{v8\+:\+:internal\+:\+:Wasm\+Module\+Object Class Reference}
+\label{classv8_1_1internal_1_1WasmModuleObject}\index{v8\+::internal\+::\+Wasm\+Module\+Object@{v8\+::internal\+::\+Wasm\+Module\+Object}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Wasm\+Module\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1WasmModuleObject}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_ad0bfa4a428febfc11d70a2f7751ef935}\label{classv8_1_1internal_1_1WasmModuleObject_ad0bfa4a428febfc11d70a2f7751ef935}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1NativeModule}{wasm\+::\+Native\+Module}} $\ast$ {\bfseries native\+\_\+module} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_ab44fb59800de5bb58e0c1ef4f8dbaee1}\label{classv8_1_1internal_1_1WasmModuleObject_ab44fb59800de5bb58e0c1ef4f8dbaee1}} 
+const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{wasm\+::\+Wasm\+Module}} $\ast$ {\bfseries module} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a842d04bd505ce431d5a5a0e909833939}\label{classv8_1_1internal_1_1WasmModuleObject_a842d04bd505ce431d5a5a0e909833939}} 
+void {\bfseries reset\+\_\+breakpoint\+\_\+infos} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a9f4be490f0f99fe0284aab1eee3fd9ea}\label{classv8_1_1internal_1_1WasmModuleObject_a9f4be490f0f99fe0284aab1eee3fd9ea}} 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+F\+I\+E\+L\+D\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+C\+O\+N\+S\+T\+A\+N\+TS} (J\+S\+Object\+::k\+Header\+Size, W\+A\+S\+M\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+F\+I\+E\+L\+DS) static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$ New(\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a0fb3204fee294be5e43a15a7d161d2e7}\label{classv8_1_1internal_1_1WasmModuleObject_a0fb3204fee294be5e43a15a7d161d2e7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+asm\+\_\+js} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a1f85a21d4ec075dfa572c90f3ba93608}\label{classv8_1_1internal_1_1WasmModuleObject_a1f85a21d4ec075dfa572c90f3ba93608}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ {\bfseries Get\+Raw\+Function\+Name} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} func\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a8320623e23e119b2482d3633714fd2a6}\label{classv8_1_1internal_1_1WasmModuleObject_a8320623e23e119b2482d3633714fd2a6}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Function\+Offset} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} func\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a61bf883b69daddea3214904f4bc9749d}\label{classv8_1_1internal_1_1WasmModuleObject_a61bf883b69daddea3214904f4bc9749d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Containing\+Function} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} byte\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_ab2ec75bf8de557f644f11716d05651ef}\label{classv8_1_1internal_1_1WasmModuleObject_ab2ec75bf8de557f644f11716d05651ef}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Get\+Position\+Info} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} position, \mbox{\hyperlink{structv8_1_1internal_1_1Script_1_1PositionInfo}{Script\+::\+Position\+Info}} $\ast$info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a1c7f7a2871653fc17b606ba79bd5e407}\label{classv8_1_1internal_1_1WasmModuleObject_a1c7f7a2871653fc17b606ba79bd5e407}} 
+\mbox{\hyperlink{structv8_1_1debug_1_1WasmDisassembly}{debug\+::\+Wasm\+Disassembly}} {\bfseries Disassemble\+Function} (\mbox{\hyperlink{classint}{int}} func\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_aaf0d0a5ac382cb29e5951f849835204b}\label{classv8_1_1internal_1_1WasmModuleObject_aaf0d0a5ac382cb29e5951f849835204b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Get\+Possible\+Breakpoints} (const \mbox{\hyperlink{classv8_1_1debug_1_1Location}{debug\+::\+Location}} \&start, const \mbox{\hyperlink{classv8_1_1debug_1_1Location}{debug\+::\+Location}} \&end, std\+::vector$<$ \mbox{\hyperlink{classv8_1_1debug_1_1BreakLocation}{debug\+::\+Break\+Location}} $>$ $\ast$locations)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a531e34d73ffd285897e5e2c6bf97a7d6}\label{classv8_1_1internal_1_1WasmModuleObject_a531e34d73ffd285897e5e2c6bf97a7d6}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1NativeModule}{wasm\+::\+Native\+Module}} $>$ native\+\_\+module, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $>$ script, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} code\+\_\+size\+\_\+estimate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a77e0190c1ede044efe18b2a4d1996fb9}\label{classv8_1_1internal_1_1WasmModuleObject_a77e0190c1ede044efe18b2a4d1996fb9}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1NativeModule}{wasm\+::\+Native\+Module}} $>$ native\+\_\+module, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $>$ script, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ export\+\_\+wrappers, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} code\+\_\+size\+\_\+estimate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a6e17a6dce3f954f276f46f1a7421ee0a}\label{classv8_1_1internal_1_1WasmModuleObject_a6e17a6dce3f954f276f46f1a7421ee0a}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Set\+Break\+Point} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$, \mbox{\hyperlink{classint}{int}} $\ast$position, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BreakPoint}{Break\+Point}} $>$ break\+\_\+point)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a5edaaa1cc10da25108e8c2f9b4a09c73}\label{classv8_1_1internal_1_1WasmModuleObject_a5edaaa1cc10da25108e8c2f9b4a09c73}} 
+static void {\bfseries Add\+Breakpoint} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$, \mbox{\hyperlink{classint}{int}} position, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BreakPoint}{Break\+Point}} $>$ break\+\_\+point)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_afdaaa332ab42a597c122dba1923f9e0a}\label{classv8_1_1internal_1_1WasmModuleObject_afdaaa332ab42a597c122dba1923f9e0a}} 
+static void {\bfseries Set\+Breakpoints\+On\+New\+Instance} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmInstanceObject}{Wasm\+Instance\+Object}} $>$)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a2b9799176598e7e260b214127a105c6b}\label{classv8_1_1internal_1_1WasmModuleObject_a2b9799176598e7e260b214127a105c6b}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Get\+Module\+Name\+Or\+Null} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_afd317800360ea354fb2f83f6611b08d9}\label{classv8_1_1internal_1_1WasmModuleObject_afd317800360ea354fb2f83f6611b08d9}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Get\+Function\+Name\+Or\+Null} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} func\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a274750aa189ccbc9d13cdb25874cb18c}\label{classv8_1_1internal_1_1WasmModuleObject_a274750aa189ccbc9d13cdb25874cb18c}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Get\+Function\+Name} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} func\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a00c78f0419428b4526d850633361f529}\label{classv8_1_1internal_1_1WasmModuleObject_a00c78f0419428b4526d850633361f529}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Source\+Position} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} func\+\_\+index, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} byte\+\_\+offset, \mbox{\hyperlink{classbool}{bool}} is\+\_\+at\+\_\+number\+\_\+conversion)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a3645cb06c2f3ba8898703f22ced53a19}\label{classv8_1_1internal_1_1WasmModuleObject_a3645cb06c2f3ba8898703f22ced53a19}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Extract\+Utf8\+String\+From\+Module\+Bytes} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WireBytesRef}{wasm\+::\+Wire\+Bytes\+Ref}} ref)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_aeb89fb2603af25ba7afeb73ae678cd2c}\label{classv8_1_1internal_1_1WasmModuleObject_aeb89fb2603af25ba7afeb73ae678cd2c}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Extract\+Utf8\+String\+From\+Module\+Bytes} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ wire\+\_\+byte, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WireBytesRef}{wasm\+::\+Wire\+Bytes\+Ref}} ref)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a7cf9c98788b3f5035b982dcb07dc872f}\label{classv8_1_1internal_1_1WasmModuleObject_a7cf9c98788b3f5035b982dcb07dc872f}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ {\bfseries Check\+Break\+Points} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$, \mbox{\hyperlink{classint}{int}} position)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a04470ea4b3068da73f2ab6aafe04f1f7}\label{classv8_1_1internal_1_1WasmModuleObject_a04470ea4b3068da73f2ab6aafe04f1f7}} 
+const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{wasm\+::\+Wasm\+Features}} \& {\bfseries enabled}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_acc475920f7ff3c9c49acba61ddb977c9}\label{classv8_1_1internal_1_1WasmModuleObject_acc475920f7ff3c9c49acba61ddb977c9}} 
+const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{wasm\+::\+Wasm\+Features}} std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{wasm\+::\+Wasm\+Module}} $>$ {\bfseries module}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a3603a6dc806a5d298fe37e5d0d99fdda}\label{classv8_1_1internal_1_1WasmModuleObject_a3603a6dc806a5d298fe37e5d0d99fdda}} 
+const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{wasm\+::\+Wasm\+Features}} std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{wasm\+::\+Wasm\+Module}} $>$ \mbox{\hyperlink{classv8_1_1internal_1_1OwnedVector}{Owned\+Vector}}$<$ const uint8\+\_\+t $>$ {\bfseries wire\+\_\+bytes}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_ae9f2b3bed4c89bc3ada7121d586f0217}\label{classv8_1_1internal_1_1WasmModuleObject_ae9f2b3bed4c89bc3ada7121d586f0217}} 
+const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{wasm\+::\+Wasm\+Features}} std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{wasm\+::\+Wasm\+Module}} $>$ \mbox{\hyperlink{classv8_1_1internal_1_1OwnedVector}{Owned\+Vector}}$<$ const uint8\+\_\+t $>$ \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $>$ {\bfseries script}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmModuleObject_a9ad8c372fd0a8d4a4c5bf063e7a2cdbc}\label{classv8_1_1internal_1_1WasmModuleObject_a9ad8c372fd0a8d4a4c5bf063e7a2cdbc}} 
+const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{wasm\+::\+Wasm\+Features}} std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{wasm\+::\+Wasm\+Module}} $>$ \mbox{\hyperlink{classv8_1_1internal_1_1OwnedVector}{Owned\+Vector}}$<$ const uint8\+\_\+t $>$ \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $>$ \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ByteArray}{Byte\+Array}} $>$ {\bfseries asm\+\_\+js\+\_\+offset\+\_\+table}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 109 of file wasm-\/objects.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/wasm-\/objects.\+h\item 
+v8/src/wasm/wasm-\/objects-\/inl.\+h\item 
+v8/src/wasm/wasm-\/objects.\+cc\end{DoxyCompactItemize}

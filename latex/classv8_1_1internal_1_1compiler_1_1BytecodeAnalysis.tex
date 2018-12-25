@@ -1,0 +1,51 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Bytecode\+Analysis Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis}\index{v8\+::internal\+::compiler\+::\+Bytecode\+Analysis@{v8\+::internal\+::compiler\+::\+Bytecode\+Analysis}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_ae8e4252bdd6cbecb1afd0c3dc93ab9a8}\label{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_ae8e4252bdd6cbecb1afd0c3dc93ab9a8}} 
+{\bfseries Bytecode\+Analysis} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray}{Bytecode\+Array}} $>$ bytecode\+\_\+array, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classbool}{bool}} do\+\_\+liveness\+\_\+analysis)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_a9d902072187281840de72654bc82413e}\label{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_a9d902072187281840de72654bc82413e}} 
+void {\bfseries Analyze} (\mbox{\hyperlink{classv8_1_1internal_1_1BailoutId}{Bailout\+Id}} osr\+\_\+bailout\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_ad808c62759c34def9f0061c4937c91cd}\label{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_ad808c62759c34def9f0061c4937c91cd}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Loop\+Header} (\mbox{\hyperlink{classint}{int}} offset) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_ac2ec9d606613da8f051d273abec35a7c}\label{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_ac2ec9d606613da8f051d273abec35a7c}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Loop\+Offset\+For} (\mbox{\hyperlink{classint}{int}} offset) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_a96c982ea5fddce20f373c0e5ec604ad3}\label{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_a96c982ea5fddce20f373c0e5ec604ad3}} 
+const \mbox{\hyperlink{structv8_1_1internal_1_1compiler_1_1LoopInfo}{Loop\+Info}} \& {\bfseries Get\+Loop\+Info\+For} (\mbox{\hyperlink{classint}{int}} header\+\_\+offset) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_aaac53bcb7acb02cf7b4fcabf90c5b1a2}\label{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_aaac53bcb7acb02cf7b4fcabf90c5b1a2}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1ResumeJumpTarget}{Resume\+Jump\+Target}} $>$ \& {\bfseries resume\+\_\+jump\+\_\+targets} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_a7eae68a4c85c4df839bc3e19b62a5ded}\label{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_a7eae68a4c85c4df839bc3e19b62a5ded}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Osr\+Entry\+Point} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_a4c32d8fb1934b5374be02981cf40d043}\label{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_a4c32d8fb1934b5374be02981cf40d043}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries osr\+\_\+entry\+\_\+point} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_a2d9d432342045dafdb545514938a5506}\label{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_a2d9d432342045dafdb545514938a5506}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState}{Bytecode\+Liveness\+State}} $\ast$ {\bfseries Get\+In\+Liveness\+For} (\mbox{\hyperlink{classint}{int}} offset) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_a61b418ef9cb2a3abdb2f111eafe96730}\label{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_a61b418ef9cb2a3abdb2f111eafe96730}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState}{Bytecode\+Liveness\+State}} $\ast$ {\bfseries Get\+Out\+Liveness\+For} (\mbox{\hyperlink{classint}{int}} offset) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_a543dedab04ccec67ab334e8de37e7c7b}\label{classv8_1_1internal_1_1compiler_1_1BytecodeAnalysis_a543dedab04ccec67ab334e8de37e7c7b}} 
+std\+::ostream \& {\bfseries Print\+Liveness\+To} (std\+::ostream \&os) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 95 of file bytecode-\/analysis.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/bytecode-\/analysis.\+h\item 
+v8/src/compiler/bytecode-\/analysis.\+cc\end{DoxyCompactItemize}

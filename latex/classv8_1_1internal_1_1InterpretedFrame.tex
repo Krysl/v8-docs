@@ -1,0 +1,80 @@
+\hypertarget{classv8_1_1internal_1_1InterpretedFrame}{}\section{v8\+:\+:internal\+:\+:Interpreted\+Frame Class Reference}
+\label{classv8_1_1internal_1_1InterpretedFrame}\index{v8\+::internal\+::\+Interpreted\+Frame@{v8\+::internal\+::\+Interpreted\+Frame}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Interpreted\+Frame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1InterpretedFrame}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpretedFrame_a7dbb54cfdbbee5b7f93bd85dba4157c1}\label{classv8_1_1internal_1_1InterpretedFrame_a7dbb54cfdbbee5b7f93bd85dba4157c1}} 
+Type {\bfseries type} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpretedFrame_a7a23fb2f2999e893e12e838e4a2c4739}\label{classv8_1_1internal_1_1InterpretedFrame_a7a23fb2f2999e893e12e838e4a2c4739}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries position} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpretedFrame_a9b997e24419fe747402b2c3cf1b4d4be}\label{classv8_1_1internal_1_1InterpretedFrame_a9b997e24419fe747402b2c3cf1b4d4be}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Lookup\+Exception\+Handler\+In\+Table} (\mbox{\hyperlink{classint}{int}} $\ast$data, Handler\+Table\+::\+Catch\+Prediction $\ast$prediction) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpretedFrame_a985a37615979fc957e99100b2cb484f8}\label{classv8_1_1internal_1_1InterpretedFrame_a985a37615979fc957e99100b2cb484f8}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Bytecode\+Offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpretedFrame_a544cdc5b93167c2a47b0acdd240eb923}\label{classv8_1_1internal_1_1InterpretedFrame_a544cdc5b93167c2a47b0acdd240eb923}} 
+void {\bfseries Patch\+Bytecode\+Offset} (\mbox{\hyperlink{classint}{int}} new\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpretedFrame_ad0189191dd996291250bc0985d0cac8b}\label{classv8_1_1internal_1_1InterpretedFrame_ad0189191dd996291250bc0985d0cac8b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray}{Bytecode\+Array}} {\bfseries Get\+Bytecode\+Array} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpretedFrame_ae48aa02b9bba72bf079a0d4c1cb0295e}\label{classv8_1_1internal_1_1InterpretedFrame_ae48aa02b9bba72bf079a0d4c1cb0295e}} 
+void {\bfseries Patch\+Bytecode\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray}{Bytecode\+Array}} bytecode\+\_\+array)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpretedFrame_a10024c9abd2c97eb3d2106f7f7eee861}\label{classv8_1_1internal_1_1InterpretedFrame_a10024c9abd2c97eb3d2106f7f7eee861}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Read\+Interpreter\+Register} (\mbox{\hyperlink{classint}{int}} register\+\_\+index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpretedFrame_ae394bee44558113608123162a1b942fd}\label{classv8_1_1internal_1_1InterpretedFrame_ae394bee44558113608123162a1b942fd}} 
+void {\bfseries Write\+Interpreter\+Register} (\mbox{\hyperlink{classint}{int}} register\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpretedFrame_aed5e95610300852dd51a544b6bcfa1b3}\label{classv8_1_1internal_1_1InterpretedFrame_aed5e95610300852dd51a544b6bcfa1b3}} 
+void {\bfseries Summarize} (std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FrameSummary}{Frame\+Summary}} $>$ $\ast$frames) const override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpretedFrame_a4f3fdd3e5851262fe32bb35ffcea9dea}\label{classv8_1_1internal_1_1InterpretedFrame_a4f3fdd3e5851262fe32bb35ffcea9dea}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Bytecode\+Offset} (\mbox{\hyperlink{classuintptr__t}{Address}} fp)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpretedFrame_a0cf5b08ed439a133e5d9141fbb18cba7}\label{classv8_1_1internal_1_1InterpretedFrame_a0cf5b08ed439a133e5d9141fbb18cba7}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1InterpretedFrame}{Interpreted\+Frame}} $\ast$ {\bfseries cast} (\mbox{\hyperlink{classv8_1_1internal_1_1StackFrame}{Stack\+Frame}} $\ast$frame)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpretedFrame_ab0e08279788deabbf22fc02bd884ef6a}\label{classv8_1_1internal_1_1InterpretedFrame_ab0e08279788deabbf22fc02bd884ef6a}} 
+{\bfseries Interpreted\+Frame} (\mbox{\hyperlink{classv8_1_1internal_1_1StackFrameIteratorBase}{Stack\+Frame\+Iterator\+Base}} $\ast$iterator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpretedFrame_a1d43d8624c07917629b0a738dbebc792}\label{classv8_1_1internal_1_1InterpretedFrame_a1d43d8624c07917629b0a738dbebc792}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Get\+Expression\+Address} (\mbox{\hyperlink{classint}{int}} n) const override
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpretedFrame_ac7310421866976ca454bbe11c5f926c3}\label{classv8_1_1internal_1_1InterpretedFrame_ac7310421866976ca454bbe11c5f926c3}} 
+class {\bfseries Stack\+Frame\+Iterator\+Base}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 832 of file frames.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/frames.\+h\item 
+v8/src/frames-\/inl.\+h\item 
+v8/src/frames.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,57 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1VirtualObject}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Virtual\+Object Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1VirtualObject}\index{v8\+::internal\+::compiler\+::\+Virtual\+Object@{v8\+::internal\+::compiler\+::\+Virtual\+Object}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Virtual\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1compiler_1_1VirtualObject}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1VirtualObject_ab27d79fcafdb35ca5266d01ddda4f0ef}\label{classv8_1_1internal_1_1compiler_1_1VirtualObject_ab27d79fcafdb35ca5266d01ddda4f0ef}} 
+typedef \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Id}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1VirtualObject_a3f9d6466ba8ec16e97eeaf99d7bd230e}\label{classv8_1_1internal_1_1compiler_1_1VirtualObject_a3f9d6466ba8ec16e97eeaf99d7bd230e}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Variable}{Variable}} $>$\+::const\+\_\+iterator {\bfseries const\+\_\+iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1VirtualObject_a9c0201bed46121ffa2f566fe3a6bea25}\label{classv8_1_1internal_1_1compiler_1_1VirtualObject_a9c0201bed46121ffa2f566fe3a6bea25}} 
+{\bfseries Virtual\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1VariableTracker}{Variable\+Tracker}} $\ast$var\+\_\+states, \mbox{\hyperlink{classuint32__t}{Id}} id, \mbox{\hyperlink{classint}{int}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1VirtualObject_aef2dfb2186257939cbaa835295616149}\label{classv8_1_1internal_1_1compiler_1_1VirtualObject_aef2dfb2186257939cbaa835295616149}} 
+\mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Variable}{Variable}} $>$ {\bfseries Field\+At} (\mbox{\hyperlink{classint}{int}} offset) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1VirtualObject_a6007fffefc40ade4a21fe28551ec139d}\label{classv8_1_1internal_1_1compiler_1_1VirtualObject_a6007fffefc40ade4a21fe28551ec139d}} 
+\mbox{\hyperlink{classuint32__t}{Id}} {\bfseries id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1VirtualObject_ae6e7742c262de7d435686c9ee19a8b91}\label{classv8_1_1internal_1_1compiler_1_1VirtualObject_ae6e7742c262de7d435686c9ee19a8b91}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1VirtualObject_a9349ef14745ee74f35f7900283fcd22d}\label{classv8_1_1internal_1_1compiler_1_1VirtualObject_a9349ef14745ee74f35f7900283fcd22d}} 
+void {\bfseries Set\+Escaped} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1VirtualObject_a9ff32488db4159528f1fb5cf6ec9d002}\label{classv8_1_1internal_1_1compiler_1_1VirtualObject_a9ff32488db4159528f1fb5cf6ec9d002}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Escaped} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1VirtualObject_a6f2a21d1ddb8004e9286644c87725a07}\label{classv8_1_1internal_1_1compiler_1_1VirtualObject_a6f2a21d1ddb8004e9286644c87725a07}} 
+const\+\_\+iterator {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1VirtualObject_adf300f881e38edee1706f31f389362a2}\label{classv8_1_1internal_1_1compiler_1_1VirtualObject_adf300f881e38edee1706f31f389362a2}} 
+const\+\_\+iterator {\bfseries end} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 118 of file escape-\/analysis.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/escape-\/analysis.\+h\item 
+v8/src/compiler/escape-\/analysis.\+cc\end{DoxyCompactItemize}

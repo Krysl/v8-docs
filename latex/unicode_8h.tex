@@ -1,0 +1,78 @@
+\hypertarget{unicode_8h}{}\section{v8/src/unicode.h File Reference}
+\label{unicode_8h}\index{v8/src/unicode.\+h@{v8/src/unicode.\+h}}
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}src/globals.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/third\+\_\+party/utf8-\/decoder/utf8-\/decoder.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/utils.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classunibrow_1_1Predicate}{unibrow\+::\+Predicate$<$ T, size $>$}}
+\item 
+class \mbox{\hyperlink{classunibrow_1_1Mapping}{unibrow\+::\+Mapping$<$ T, size $>$}}
+\item 
+class \mbox{\hyperlink{classunibrow_1_1UnicodeData}{unibrow\+::\+Unicode\+Data}}
+\item 
+class \mbox{\hyperlink{classunibrow_1_1Utf16}{unibrow\+::\+Utf16}}
+\item 
+class \mbox{\hyperlink{classunibrow_1_1Utf8}{unibrow\+::\+Utf8}}
+\item 
+struct \mbox{\hyperlink{structunibrow_1_1Uppercase}{unibrow\+::\+Uppercase}}
+\item 
+struct \mbox{\hyperlink{structunibrow_1_1Letter}{unibrow\+::\+Letter}}
+\item 
+struct \mbox{\hyperlink{structunibrow_1_1ID__Start}{unibrow\+::\+I\+D\+\_\+\+Start}}
+\item 
+struct \mbox{\hyperlink{structunibrow_1_1ID__Continue}{unibrow\+::\+I\+D\+\_\+\+Continue}}
+\item 
+struct \mbox{\hyperlink{structunibrow_1_1WhiteSpace}{unibrow\+::\+White\+Space}}
+\item 
+struct \mbox{\hyperlink{structunibrow_1_1ToLowercase}{unibrow\+::\+To\+Lowercase}}
+\item 
+struct \mbox{\hyperlink{structunibrow_1_1ToUppercase}{unibrow\+::\+To\+Uppercase}}
+\item 
+struct \mbox{\hyperlink{structunibrow_1_1Ecma262Canonicalize}{unibrow\+::\+Ecma262\+Canonicalize}}
+\item 
+struct \mbox{\hyperlink{structunibrow_1_1Ecma262UnCanonicalize}{unibrow\+::\+Ecma262\+Un\+Canonicalize}}
+\item 
+struct \mbox{\hyperlink{structunibrow_1_1CanonicalizationRange}{unibrow\+::\+Canonicalization\+Range}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{unicode_8h_a26d471df427ae476bd9a47254334b7e1}\label{unicode_8h_a26d471df427ae476bd9a47254334b7e1}} 
+typedef \mbox{\hyperlink{classunsigned}{unsigned}} \mbox{\hyperlink{classint}{int}} {\bfseries unibrow\+::uchar}
+\item 
+\mbox{\Hypertarget{unicode_8h_a81e169d976356d0979aaf9d5a1510650}\label{unicode_8h_a81e169d976356d0979aaf9d5a1510650}} 
+typedef \mbox{\hyperlink{classunsigned}{unsigned}} \mbox{\hyperlink{classchar}{char}} {\bfseries unibrow\+::byte}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{unicode_8h_a979cd6803e0a46b57e4da1cc94f59ee7}\label{unicode_8h_a979cd6803e0a46b57e4da1cc94f59ee7}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries unibrow\+::\+Is\+Line\+Terminator} (uchar c)
+\item 
+\mbox{\Hypertarget{unicode_8h_a92f06e11c223563b192137a7b2e700df}\label{unicode_8h_a92f06e11c223563b192137a7b2e700df}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries unibrow\+::\+Is\+String\+Literal\+Line\+Terminator} (uchar c)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classint}{int}} \mbox{\hyperlink{unicode_8h_a2600c7e87038daf623754744942800a8}{unibrow\+::k\+Max\+Mapping\+Size}} = 4
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definitions and convenience functions for working with unicode. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{unicode_8h_file_a2600c7e87038daf623754744942800a8}\label{unicode_8h_file_a2600c7e87038daf623754744942800a8}} 
+\index{unicode.\+h@{unicode.\+h}!k\+Max\+Mapping\+Size@{k\+Max\+Mapping\+Size}}
+\index{k\+Max\+Mapping\+Size@{k\+Max\+Mapping\+Size}!unicode.\+h@{unicode.\+h}}
+\subsubsection{\texorpdfstring{k\+Max\+Mapping\+Size}{kMaxMappingSize}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} unibrow\+::k\+Max\+Mapping\+Size = 4}
+
+The max length of the result of converting the case of a single character. 
+
+Definition at line 26 of file unicode.\+h.
+

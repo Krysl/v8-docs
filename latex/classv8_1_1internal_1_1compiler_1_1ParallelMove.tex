@@ -1,0 +1,39 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1ParallelMove}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Parallel\+Move Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1ParallelMove}\index{v8\+::internal\+::compiler\+::\+Parallel\+Move@{v8\+::internal\+::compiler\+::\+Parallel\+Move}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Parallel\+Move\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.604584cm]{classv8_1_1internal_1_1compiler_1_1ParallelMove}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1ParallelMove_aed2ca933d925ca250be848dc259c346e}\label{classv8_1_1internal_1_1compiler_1_1ParallelMove_aed2ca933d925ca250be848dc259c346e}} 
+{\bfseries Parallel\+Move} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1ParallelMove_aaf0c874d2238b471f1fdfd94ff8b7245}\label{classv8_1_1internal_1_1compiler_1_1ParallelMove_aaf0c874d2238b471f1fdfd94ff8b7245}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1MoveOperands}{Move\+Operands}} $\ast$ {\bfseries Add\+Move} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} \&from, const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} \&to)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1ParallelMove_a814609dc9d73a7e4c4ff72951d8e2d16}\label{classv8_1_1internal_1_1compiler_1_1ParallelMove_a814609dc9d73a7e4c4ff72951d8e2d16}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1MoveOperands}{Move\+Operands}} $\ast$ {\bfseries Add\+Move} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} \&from, const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} \&to, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$operand\+\_\+allocation\+\_\+zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1ParallelMove_a0ecdc8451787c27950361ccf78943adb}\label{classv8_1_1internal_1_1compiler_1_1ParallelMove_a0ecdc8451787c27950361ccf78943adb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Redundant} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1ParallelMove_a7c3bb4acfa5060ddb36850a1e13b5aaa}\label{classv8_1_1internal_1_1compiler_1_1ParallelMove_a7c3bb4acfa5060ddb36850a1e13b5aaa}} 
+void {\bfseries Prepare\+Insert\+After} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1MoveOperands}{Move\+Operands}} $\ast$move, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1MoveOperands}{Move\+Operands}} $\ast$$>$ $\ast$to\+\_\+eliminate) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 703 of file instruction.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/backend/instruction.\+h\item 
+v8/src/compiler/backend/instruction.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,59 @@
+\hypertarget{classv8_1_1internal_1_1CompilationJob}{}\section{v8\+:\+:internal\+:\+:Compilation\+Job Class Reference}
+\label{classv8_1_1internal_1_1CompilationJob}\index{v8\+::internal\+::\+Compilation\+Job@{v8\+::internal\+::\+Compilation\+Job}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Compilation\+Job\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.879195cm]{classv8_1_1internal_1_1CompilationJob}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationJob_a5139448eb71cada82780ab292fe35e9e}\label{classv8_1_1internal_1_1CompilationJob_a5139448eb71cada82780ab292fe35e9e}} 
+enum {\bfseries Status} \{ {\bfseries S\+U\+C\+C\+E\+E\+D\+ED}, 
+{\bfseries F\+A\+I\+L\+ED}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationJob_a3afd0efea3b42e5d02bad3ced82af814}\label{classv8_1_1internal_1_1CompilationJob_a3afd0efea3b42e5d02bad3ced82af814}} 
+enum {\bfseries State} \{ \newline
+{\bfseries k\+Ready\+To\+Prepare}, 
+{\bfseries k\+Ready\+To\+Execute}, 
+{\bfseries k\+Ready\+To\+Finalize}, 
+{\bfseries k\+Succeeded}, 
+\newline
+{\bfseries k\+Failed}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationJob_a46a61d1a138b6002dd0a43db010490d0}\label{classv8_1_1internal_1_1CompilationJob_a46a61d1a138b6002dd0a43db010490d0}} 
+{\bfseries Compilation\+Job} (\mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} stack\+\_\+limit, State initial\+\_\+state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationJob_a3a1255517c860f474bae022ff12b3102}\label{classv8_1_1internal_1_1CompilationJob_a3a1255517c860f474bae022ff12b3102}} 
+void {\bfseries set\+\_\+stack\+\_\+limit} (\mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} stack\+\_\+limit)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationJob_ab77bc6b60d138f6ce2670d2d4092af13}\label{classv8_1_1internal_1_1CompilationJob_ab77bc6b60d138f6ce2670d2d4092af13}} 
+\mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} {\bfseries stack\+\_\+limit} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationJob_a74bf51dfcb1b01a06445bcc1c57a1db9}\label{classv8_1_1internal_1_1CompilationJob_a74bf51dfcb1b01a06445bcc1c57a1db9}} 
+State {\bfseries state} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationJob_a12ee3c64b905b8cd7150a61005f576b4}\label{classv8_1_1internal_1_1CompilationJob_a12ee3c64b905b8cd7150a61005f576b4}} 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT Status {\bfseries Update\+State} (Status status, State next\+\_\+state)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 178 of file compiler.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler.\+h\end{DoxyCompactItemize}

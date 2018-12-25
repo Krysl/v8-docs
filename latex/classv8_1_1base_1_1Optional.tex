@@ -1,0 +1,138 @@
+\hypertarget{classv8_1_1base_1_1Optional}{}\section{v8\+:\+:base\+:\+:Optional$<$ T $>$ Class Template Reference}
+\label{classv8_1_1base_1_1Optional}\index{v8\+::base\+::\+Optional$<$ T $>$@{v8\+::base\+::\+Optional$<$ T $>$}}
+Inheritance diagram for v8\+:\+:base\+:\+:Optional$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.329412cm]{classv8_1_1base_1_1Optional}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a362c214686f555792d0fb25ab6cee607}\label{classv8_1_1base_1_1Optional_a362c214686f555792d0fb25ab6cee607}} 
+using {\bfseries value\+\_\+type} = \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a40c311fae36751117f36cbe251bdbb6a}\label{classv8_1_1base_1_1Optional_a40c311fae36751117f36cbe251bdbb6a}} 
+constexpr {\bfseries Optional} (const \mbox{\hyperlink{classv8_1_1base_1_1Optional}{Optional}} \&other)=default
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a4d5a0f84ed1678dc6647edc8127300c3}\label{classv8_1_1base_1_1Optional_a4d5a0f84ed1678dc6647edc8127300c3}} 
+constexpr {\bfseries Optional} (\mbox{\hyperlink{classv8_1_1base_1_1Optional}{Optional}} \&\&other)=default
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_aff776d9111417521b84aea3c36e5ff17}\label{classv8_1_1base_1_1Optional_aff776d9111417521b84aea3c36e5ff17}} 
+constexpr {\bfseries Optional} (\mbox{\hyperlink{structv8_1_1base_1_1nullopt__t}{nullopt\+\_\+t}})
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a4b6258b007a59720f13b3a0d7157b8bd}\label{classv8_1_1base_1_1Optional_a4b6258b007a59720f13b3a0d7157b8bd}} 
+{\footnotesize template$<$typename U , typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+constructible$<$ T, const U \&$>$\+::value \&\&!internal\+::\+Is\+Convertible\+From\+Optional$<$ T, U $>$\+::value \&\&std\+::is\+\_\+convertible$<$ const U \&, T $>$\+::value, bool $>$\+::type  = false$>$ }\\{\bfseries Optional} (const \mbox{\hyperlink{classv8_1_1base_1_1Optional}{Optional}}$<$ U $>$ \&other)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a4b6258b007a59720f13b3a0d7157b8bd}\label{classv8_1_1base_1_1Optional_a4b6258b007a59720f13b3a0d7157b8bd}} 
+{\footnotesize template$<$typename U , typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+constructible$<$ T, const U \&$>$\+::value \&\&!internal\+::\+Is\+Convertible\+From\+Optional$<$ T, U $>$\+::value \&\&!std\+::is\+\_\+convertible$<$ const U \&, T $>$\+::value, bool $>$\+::type  = false$>$ }\\{\bfseries Optional} (const \mbox{\hyperlink{classv8_1_1base_1_1Optional}{Optional}}$<$ U $>$ \&other)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a2db7ed6a130655410a1ef7f05124587a}\label{classv8_1_1base_1_1Optional_a2db7ed6a130655410a1ef7f05124587a}} 
+{\footnotesize template$<$typename U , typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+constructible$<$ T, U \&\&$>$\+::value \&\&!internal\+::\+Is\+Convertible\+From\+Optional$<$ T, U $>$\+::value \&\&std\+::is\+\_\+convertible$<$ U \&\&, T $>$\+::value, bool $>$\+::type  = false$>$ }\\{\bfseries Optional} (\mbox{\hyperlink{classv8_1_1base_1_1Optional}{Optional}}$<$ U $>$ \&\&other)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a2db7ed6a130655410a1ef7f05124587a}\label{classv8_1_1base_1_1Optional_a2db7ed6a130655410a1ef7f05124587a}} 
+{\footnotesize template$<$typename U , typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+constructible$<$ T, U \&\&$>$\+::value \&\&!internal\+::\+Is\+Convertible\+From\+Optional$<$ T, U $>$\+::value \&\&!std\+::is\+\_\+convertible$<$ U \&\&, T $>$\+::value, bool $>$\+::type  = false$>$ }\\{\bfseries Optional} (\mbox{\hyperlink{classv8_1_1base_1_1Optional}{Optional}}$<$ U $>$ \&\&other)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a8cd6bd1d90188a45831c33d1b51a78ef}\label{classv8_1_1base_1_1Optional_a8cd6bd1d90188a45831c33d1b51a78ef}} 
+{\footnotesize template$<$class... Args$>$ }\\constexpr {\bfseries Optional} (\mbox{\hyperlink{structv8_1_1base_1_1in__place__t}{in\+\_\+place\+\_\+t}}, Args \&\&... args)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_ac49de9aad99c47cfaa74787c7da8ba73}\label{classv8_1_1base_1_1Optional_ac49de9aad99c47cfaa74787c7da8ba73}} 
+{\footnotesize template$<$class U , class... Args, class  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+constructible$<$                value\+\_\+type, std\+::initializer\+\_\+list$<$\+U$>$\&, Args...$>$\+::value$>$\+::type$>$ }\\constexpr {\bfseries Optional} (\mbox{\hyperlink{structv8_1_1base_1_1in__place__t}{in\+\_\+place\+\_\+t}}, std\+::initializer\+\_\+list$<$ U $>$ il, Args \&\&... args)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a12b49e09d8dcf8bfad0c10472731e6b3}\label{classv8_1_1base_1_1Optional_a12b49e09d8dcf8bfad0c10472731e6b3}} 
+{\footnotesize template$<$typename U  = value\+\_\+type, typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+constructible$<$ T, U \&\&$>$\+::value \&\&!std\+::is\+\_\+same$<$ internal\+::\+Remove\+Cv\+Ref\+T$<$ U $>$, in\+\_\+place\+\_\+t $>$\+::value \&\&!std\+::is\+\_\+same$<$ internal\+::\+Remove\+Cv\+Ref\+T$<$ U $>$, Optional$<$ T $>$$>$\+::value \&\&std\+::is\+\_\+convertible$<$ U \&\&, T $>$\+::value, bool $>$\+::type  = false$>$ }\\constexpr {\bfseries Optional} (U \&\&value)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a12b49e09d8dcf8bfad0c10472731e6b3}\label{classv8_1_1base_1_1Optional_a12b49e09d8dcf8bfad0c10472731e6b3}} 
+{\footnotesize template$<$typename U  = value\+\_\+type, typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+constructible$<$ T, U \&\&$>$\+::value \&\&!std\+::is\+\_\+same$<$ internal\+::\+Remove\+Cv\+Ref\+T$<$ U $>$, in\+\_\+place\+\_\+t $>$\+::value \&\&!std\+::is\+\_\+same$<$ internal\+::\+Remove\+Cv\+Ref\+T$<$ U $>$, Optional$<$ T $>$$>$\+::value \&\&!std\+::is\+\_\+convertible$<$ U \&\&, T $>$\+::value, bool $>$\+::type  = false$>$ }\\constexpr {\bfseries Optional} (U \&\&value)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a1db27f33265ee721e949d3d8428998ab}\label{classv8_1_1base_1_1Optional_a1db27f33265ee721e949d3d8428998ab}} 
+\mbox{\hyperlink{classv8_1_1base_1_1Optional}{Optional}} \& {\bfseries operator=} (const \mbox{\hyperlink{classv8_1_1base_1_1Optional}{Optional}} \&other)=default
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a2c9789f2d98689de5101df1e9da2f43e}\label{classv8_1_1base_1_1Optional_a2c9789f2d98689de5101df1e9da2f43e}} 
+\mbox{\hyperlink{classv8_1_1base_1_1Optional}{Optional}} \& {\bfseries operator=} (\mbox{\hyperlink{classv8_1_1base_1_1Optional}{Optional}} \&\&other)=default
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a7b249323ee2f1a1d1fabfaca007d1a87}\label{classv8_1_1base_1_1Optional_a7b249323ee2f1a1d1fabfaca007d1a87}} 
+\mbox{\hyperlink{classv8_1_1base_1_1Optional}{Optional}} \& {\bfseries operator=} (\mbox{\hyperlink{structv8_1_1base_1_1nullopt__t}{nullopt\+\_\+t}})
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a5cae544ed71ad1b7c3b375c3cef0a69b}\label{classv8_1_1base_1_1Optional_a5cae544ed71ad1b7c3b375c3cef0a69b}} 
+{\footnotesize template$<$typename U $>$ }\\std\+::enable\+\_\+if$<$ !std\+::is\+\_\+same$<$ internal\+::\+Remove\+Cv\+RefT$<$ U $>$, \mbox{\hyperlink{classv8_1_1base_1_1Optional}{Optional}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ $>$\+::value \&\&std\+::is\+\_\+constructible$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, U $>$\+::value \&\&std\+::is\+\_\+assignable$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \&, U $>$\+::value \&\&(!std\+::is\+\_\+scalar$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$\+::value$\vert$$\vert$!std\+::is\+\_\+same$<$ typename std\+::decay$<$ U $>$\+::\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$\+::value), \mbox{\hyperlink{classv8_1_1base_1_1Optional}{Optional}} \& $>$\+::\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}} {\bfseries operator=} (U \&\&value)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_ab63b425a78eed7296a073fa466358fd8}\label{classv8_1_1base_1_1Optional_ab63b425a78eed7296a073fa466358fd8}} 
+{\footnotesize template$<$typename U $>$ }\\std\+::enable\+\_\+if$<$!\mbox{\hyperlink{structv8_1_1base_1_1internal_1_1IsAssignableFromOptional}{internal\+::\+Is\+Assignable\+From\+Optional}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, U $>$\+::value \&\&std\+::is\+\_\+constructible$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, const U \& $>$\+::value \&\&std\+::is\+\_\+assignable$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \&, const U \& $>$\+::value, \mbox{\hyperlink{classv8_1_1base_1_1Optional}{Optional}} \& $>$\+::\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}} {\bfseries operator=} (const \mbox{\hyperlink{classv8_1_1base_1_1Optional}{Optional}}$<$ U $>$ \&other)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a738277fa080201c3da76b9c6bab04399}\label{classv8_1_1base_1_1Optional_a738277fa080201c3da76b9c6bab04399}} 
+{\footnotesize template$<$typename U $>$ }\\std\+::enable\+\_\+if$<$!\mbox{\hyperlink{structv8_1_1base_1_1internal_1_1IsAssignableFromOptional}{internal\+::\+Is\+Assignable\+From\+Optional}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, U $>$\+::value \&\&std\+::is\+\_\+constructible$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, U $>$\+::value \&\&std\+::is\+\_\+assignable$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \&, U $>$\+::value, \mbox{\hyperlink{classv8_1_1base_1_1Optional}{Optional}} \& $>$\+::\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}} {\bfseries operator=} (\mbox{\hyperlink{classv8_1_1base_1_1Optional}{Optional}}$<$ U $>$ \&\&other)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a6d4ac5bc840a32704ec43b3d964ae2b5}\label{classv8_1_1base_1_1Optional_a6d4ac5bc840a32704ec43b3d964ae2b5}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$ {\bfseries operator-\/$>$} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_ae8ebf143900e6e6f519a4f0b3847d7dc}\label{classv8_1_1base_1_1Optional_ae8ebf143900e6e6f519a4f0b3847d7dc}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$ {\bfseries operator-\/$>$} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a465d8278f197ab4ebcdc848b46758064}\label{classv8_1_1base_1_1Optional_a465d8278f197ab4ebcdc848b46758064}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \& {\bfseries operator$\ast$} () const \&
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_ac0c8296affe16d307797e2e7c0d9a0ed}\label{classv8_1_1base_1_1Optional_ac0c8296affe16d307797e2e7c0d9a0ed}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \& {\bfseries operator$\ast$} () \&
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_acc21cc676819dfde25bf736cdf3c3bf8}\label{classv8_1_1base_1_1Optional_acc21cc676819dfde25bf736cdf3c3bf8}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \&\& {\bfseries operator$\ast$} () const \&\&
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a765949124687e391130ebe3da7266c1b}\label{classv8_1_1base_1_1Optional_a765949124687e391130ebe3da7266c1b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \&\& {\bfseries operator$\ast$} () \&\&
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a5bd5b0dc4b1ae68c0c6928173187ffe5}\label{classv8_1_1base_1_1Optional_a5bd5b0dc4b1ae68c0c6928173187ffe5}} 
+constexpr {\bfseries operator bool} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a1573cf9ce370551f8e2a60f4ac156220}\label{classv8_1_1base_1_1Optional_a1573cf9ce370551f8e2a60f4ac156220}} 
+constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a92ddcfa0be41a989d1d327633e736cd1}\label{classv8_1_1base_1_1Optional_a92ddcfa0be41a989d1d327633e736cd1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \& {\bfseries value} () \&
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_af27bff867132e4470d055184f8543e8f}\label{classv8_1_1base_1_1Optional_af27bff867132e4470d055184f8543e8f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \& {\bfseries value} () const \&
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a10edf16a27fc7b268377f372915e2875}\label{classv8_1_1base_1_1Optional_a10edf16a27fc7b268377f372915e2875}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \&\& {\bfseries value} () \&\&
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_aae143916e43a56e625f36b9912c389a1}\label{classv8_1_1base_1_1Optional_aae143916e43a56e625f36b9912c389a1}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \&\& {\bfseries value} () const \&\&
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a54048343b5a4b6c2f1c9e0d8bdfcb9d9}\label{classv8_1_1base_1_1Optional_a54048343b5a4b6c2f1c9e0d8bdfcb9d9}} 
+{\footnotesize template$<$class U $>$ }\\constexpr \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} {\bfseries value\+\_\+or} (U \&\&default\+\_\+value) const \&
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_ad51604ba917a03eeced13eaaa15d4fcc}\label{classv8_1_1base_1_1Optional_ad51604ba917a03eeced13eaaa15d4fcc}} 
+{\footnotesize template$<$class U $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} {\bfseries value\+\_\+or} (U \&\&default\+\_\+value) \&\&
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_ab692d330cb71089e6c0e4ff7cde3c7fe}\label{classv8_1_1base_1_1Optional_ab692d330cb71089e6c0e4ff7cde3c7fe}} 
+void {\bfseries swap} (\mbox{\hyperlink{classv8_1_1base_1_1Optional}{Optional}} \&other)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a26390821b8ab19bc248d3cf56cd88274}\label{classv8_1_1base_1_1Optional_a26390821b8ab19bc248d3cf56cd88274}} 
+void {\bfseries reset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_ad0f0d5652352dc0054e1c80592a4d0c6}\label{classv8_1_1base_1_1Optional_ad0f0d5652352dc0054e1c80592a4d0c6}} 
+{\footnotesize template$<$class... Args$>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \& {\bfseries emplace} (Args \&\&... args)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Optional_a02293fa948e9a4565e4f8f7040f228b2}\label{classv8_1_1base_1_1Optional_a02293fa948e9a4565e4f8f7040f228b2}} 
+{\footnotesize template$<$class U , class... Args$>$ }\\std\+::enable\+\_\+if$<$ std\+::is\+\_\+constructible$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, std\+::initializer\+\_\+list$<$ U $>$ \&, Args \&\&... $>$\+::value, \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \& $>$\+::\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}} {\bfseries emplace} (std\+::initializer\+\_\+list$<$ U $>$ il, Args \&\&... args)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class v8\+::base\+::\+Optional$<$ T $>$}
+
+
+
+Definition at line 40 of file optional.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/base/optional.\+h\end{DoxyCompactItemize}

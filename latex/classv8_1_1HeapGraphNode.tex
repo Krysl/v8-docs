@@ -31,17 +31,17 @@ enum {\bfseries Type} \{ \newline
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-Type \mbox{\hyperlink{classv8_1_1HeapGraphNode_a9bd100b1338413f6153fe56a3fac60f1}{Get\+Type}} () const
+Type \mbox{\hyperlink{classv8_1_1HeapGraphNode_a93db89e657229ddc9820beb1b6dad046}{Get\+Type}} () const
 \item 
-\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1HeapGraphNode_a3a9d366c11fe526a11eea8dc878a58c0}{Get\+Name}} () const
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1HeapGraphNode_a030f9646498eec5f689c8f6c8fe09168}{Get\+Name}} () const
 \item 
-Snapshot\+Object\+Id \mbox{\hyperlink{classv8_1_1HeapGraphNode_a62cd677be9c23067c6e2394b1fd154c6}{Get\+Id}} () const
+\mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} \mbox{\hyperlink{classv8_1_1HeapGraphNode_a62cd677be9c23067c6e2394b1fd154c6}{Get\+Id}} () const
 \item 
-size\+\_\+t \mbox{\hyperlink{classv8_1_1HeapGraphNode_ad61965a12cabdc7a4eeeb7e6aade46ba}{Get\+Shallow\+Size}} () const
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} \mbox{\hyperlink{classv8_1_1HeapGraphNode_ad61965a12cabdc7a4eeeb7e6aade46ba}{Get\+Shallow\+Size}} () const
 \item 
-int \mbox{\hyperlink{classv8_1_1HeapGraphNode_afb0afb27e5d5ae27b54376bc69f095ae}{Get\+Children\+Count}} () const
+\mbox{\hyperlink{classint}{int}} \mbox{\hyperlink{classv8_1_1HeapGraphNode_afb0afb27e5d5ae27b54376bc69f095ae}{Get\+Children\+Count}} () const
 \item 
-const \mbox{\hyperlink{classv8_1_1HeapGraphEdge}{Heap\+Graph\+Edge}} $\ast$ \mbox{\hyperlink{classv8_1_1HeapGraphNode_a3dc91726c26eb1c167706b112cd74564}{Get\+Child}} (int index) const
+const \mbox{\hyperlink{classv8_1_1HeapGraphEdge}{Heap\+Graph\+Edge}} $\ast$ \mbox{\hyperlink{classv8_1_1HeapGraphNode_ad3a8d2b97d9ffbdafc5c0b23f20427cf}{Get\+Child}} (\mbox{\hyperlink{classint}{int}} index) const
 \end{DoxyCompactItemize}
 
 
@@ -53,44 +53,69 @@ Definition at line 398 of file v8-\/profiler.\+h.
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classv8_1_1HeapGraphNode_a3dc91726c26eb1c167706b112cd74564}\label{classv8_1_1HeapGraphNode_a3dc91726c26eb1c167706b112cd74564}} 
+\mbox{\Hypertarget{classv8_1_1HeapGraphNode_ad3a8d2b97d9ffbdafc5c0b23f20427cf}\label{classv8_1_1HeapGraphNode_ad3a8d2b97d9ffbdafc5c0b23f20427cf}} 
 \index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Child@{Get\+Child}}
 \index{Get\+Child@{Get\+Child}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
 \subsubsection{\texorpdfstring{Get\+Child()}{GetChild()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{classv8_1_1HeapGraphEdge}{Heap\+Graph\+Edge}}$\ast$ v8\+::\+Heap\+Graph\+Node\+::\+Get\+Child (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classv8_1_1HeapGraphEdge}{Heap\+Graph\+Edge}} $\ast$ v8\+::\+Heap\+Graph\+Node\+::\+Get\+Child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classint}{int}}}]{index }\end{DoxyParamCaption}) const}
 
-Retrieves a child by index. \mbox{\Hypertarget{classv8_1_1HeapGraphNode_afb0afb27e5d5ae27b54376bc69f095ae}\label{classv8_1_1HeapGraphNode_afb0afb27e5d5ae27b54376bc69f095ae}} 
+Retrieves a child by index. 
+
+Definition at line 10315 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1HeapGraphNode_afb0afb27e5d5ae27b54376bc69f095ae}\label{classv8_1_1HeapGraphNode_afb0afb27e5d5ae27b54376bc69f095ae}} 
 \index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Children\+Count@{Get\+Children\+Count}}
 \index{Get\+Children\+Count@{Get\+Children\+Count}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
 \subsubsection{\texorpdfstring{Get\+Children\+Count()}{GetChildrenCount()}}
-{\footnotesize\ttfamily int v8\+::\+Heap\+Graph\+Node\+::\+Get\+Children\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classint}{int}} v8\+::\+Heap\+Graph\+Node\+::\+Get\+Children\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns child nodes count of the node. \mbox{\Hypertarget{classv8_1_1HeapGraphNode_a62cd677be9c23067c6e2394b1fd154c6}\label{classv8_1_1HeapGraphNode_a62cd677be9c23067c6e2394b1fd154c6}} 
+Returns child nodes count of the node. 
+
+Definition at line 10310 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1HeapGraphNode_a62cd677be9c23067c6e2394b1fd154c6}\label{classv8_1_1HeapGraphNode_a62cd677be9c23067c6e2394b1fd154c6}} 
 \index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Id@{Get\+Id}}
 \index{Get\+Id@{Get\+Id}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
 \subsubsection{\texorpdfstring{Get\+Id()}{GetId()}}
-{\footnotesize\ttfamily Snapshot\+Object\+Id v8\+::\+Heap\+Graph\+Node\+::\+Get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} v8\+::\+Heap\+Graph\+Node\+::\+Get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns node id. For the same heap object, the id remains the same across all snapshots. \mbox{\Hypertarget{classv8_1_1HeapGraphNode_a3a9d366c11fe526a11eea8dc878a58c0}\label{classv8_1_1HeapGraphNode_a3a9d366c11fe526a11eea8dc878a58c0}} 
+Returns node id. For the same heap object, the id remains the same across all snapshots. 
+
+Definition at line 10300 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1HeapGraphNode_a030f9646498eec5f689c8f6c8fe09168}\label{classv8_1_1HeapGraphNode_a030f9646498eec5f689c8f6c8fe09168}} 
 \index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Name@{Get\+Name}}
 \index{Get\+Name@{Get\+Name}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
 \subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1String}{String}}$>$ v8\+::\+Heap\+Graph\+Node\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ v8\+::\+Heap\+Graph\+Node\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns node name. Depending on node\textquotesingle{}s type this can be the name of the constructor (for objects), the name of the function (for closures), string value, or an empty string (for compiled code). \mbox{\Hypertarget{classv8_1_1HeapGraphNode_ad61965a12cabdc7a4eeeb7e6aade46ba}\label{classv8_1_1HeapGraphNode_ad61965a12cabdc7a4eeeb7e6aade46ba}} 
+Returns node name. Depending on node\textquotesingle{}s type this can be the name of the constructor (for objects), the name of the function (for closures), string value, or an empty string (for compiled code). 
+
+Definition at line 10293 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1HeapGraphNode_ad61965a12cabdc7a4eeeb7e6aade46ba}\label{classv8_1_1HeapGraphNode_ad61965a12cabdc7a4eeeb7e6aade46ba}} 
 \index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Shallow\+Size@{Get\+Shallow\+Size}}
 \index{Get\+Shallow\+Size@{Get\+Shallow\+Size}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
 \subsubsection{\texorpdfstring{Get\+Shallow\+Size()}{GetShallowSize()}}
-{\footnotesize\ttfamily size\+\_\+t v8\+::\+Heap\+Graph\+Node\+::\+Get\+Shallow\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsize__t}{size\+\_\+t}} v8\+::\+Heap\+Graph\+Node\+::\+Get\+Shallow\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns node\textquotesingle{}s own size, in bytes. \mbox{\Hypertarget{classv8_1_1HeapGraphNode_a9bd100b1338413f6153fe56a3fac60f1}\label{classv8_1_1HeapGraphNode_a9bd100b1338413f6153fe56a3fac60f1}} 
+Returns node\textquotesingle{}s own size, in bytes. 
+
+Definition at line 10305 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1HeapGraphNode_a93db89e657229ddc9820beb1b6dad046}\label{classv8_1_1HeapGraphNode_a93db89e657229ddc9820beb1b6dad046}} 
 \index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Type@{Get\+Type}}
 \index{Get\+Type@{Get\+Type}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
 \subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
-{\footnotesize\ttfamily Type v8\+::\+Heap\+Graph\+Node\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily Heap\+Graph\+Node\+::\+Type v8\+::\+Heap\+Graph\+Node\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 Returns node type (see Heap\+Graph\+Node\+::\+Type). 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Definition at line 10288 of file api.\+cc.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8-\/profiler.\+h\end{DoxyCompactItemize}
+v8/include/v8-\/profiler.\+h\item 
+v8/src/api.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+\hypertarget{classv8_1_1internal_1_1ZoneAllocator}{}\section{v8\+:\+:internal\+:\+:Zone\+Allocator$<$ T $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1ZoneAllocator}\index{v8\+::internal\+::\+Zone\+Allocator$<$ T $>$@{v8\+::internal\+::\+Zone\+Allocator$<$ T $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Zone\+Allocator$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1ZoneAllocator}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1ZoneAllocator_1_1rebind}{rebind}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_a0a0db7e9f833c43dc8696f68d39ec609}\label{classv8_1_1internal_1_1ZoneAllocator_a0a0db7e9f833c43dc8696f68d39ec609}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$ {\bfseries pointer}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_add6f9c87f1bc3b62a9635bc63f023331}\label{classv8_1_1internal_1_1ZoneAllocator_add6f9c87f1bc3b62a9635bc63f023331}} 
+typedef const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$ {\bfseries const\+\_\+pointer}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_a30331a30b34de823ed3cb20837c615b7}\label{classv8_1_1internal_1_1ZoneAllocator_a30331a30b34de823ed3cb20837c615b7}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \& {\bfseries reference}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_a1fbdef7a28c8fa16bd01add5c77a601c}\label{classv8_1_1internal_1_1ZoneAllocator_a1fbdef7a28c8fa16bd01add5c77a601c}} 
+typedef const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \& {\bfseries const\+\_\+reference}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_a9af1fd30b2c25969662c10cf67a014ab}\label{classv8_1_1internal_1_1ZoneAllocator_a9af1fd30b2c25969662c10cf67a014ab}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_a6cd53716ce435d55ed871b5ab2447b69}\label{classv8_1_1internal_1_1ZoneAllocator_a6cd53716ce435d55ed871b5ab2447b69}} 
+typedef \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries size\+\_\+type}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_a02ee944a788c74a7261083fd91e7f83f}\label{classv8_1_1internal_1_1ZoneAllocator_a02ee944a788c74a7261083fd91e7f83f}} 
+typedef ptrdiff\+\_\+t {\bfseries difference\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_aa18da5937e907ca24335c1695432df5d}\label{classv8_1_1internal_1_1ZoneAllocator_aa18da5937e907ca24335c1695432df5d}} 
+{\bfseries Zone\+Allocator} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)  throw ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_aef360fa9708570b7b55c4963cdad772b}\label{classv8_1_1internal_1_1ZoneAllocator_aef360fa9708570b7b55c4963cdad772b}} 
+{\bfseries Zone\+Allocator} (const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneAllocator}{Zone\+Allocator}} \&other)  throw ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_a477e072add97bb5904aedb4e620d20bd}\label{classv8_1_1internal_1_1ZoneAllocator_a477e072add97bb5904aedb4e620d20bd}} 
+{\footnotesize template$<$typename U $>$ }\\{\bfseries Zone\+Allocator} (const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneAllocator}{Zone\+Allocator}}$<$ U $>$ \&other)  throw ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_a9eede71bca224b41de2b9c7b5903ae8c}\label{classv8_1_1internal_1_1ZoneAllocator_a9eede71bca224b41de2b9c7b5903ae8c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$ {\bfseries address} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \&x) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_a102d5294d8b6ed1b61c5eb27ead93829}\label{classv8_1_1internal_1_1ZoneAllocator_a102d5294d8b6ed1b61c5eb27ead93829}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$ {\bfseries address} (const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \&x) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_a96f29f0a2d8e4e375433d20326897c8f}\label{classv8_1_1internal_1_1ZoneAllocator_a96f29f0a2d8e4e375433d20326897c8f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$ {\bfseries allocate} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} n, const void $\ast$hint=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_a656a2c49bbc20598115e703fa54515d4}\label{classv8_1_1internal_1_1ZoneAllocator_a656a2c49bbc20598115e703fa54515d4}} 
+void {\bfseries deallocate} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$p, \mbox{\hyperlink{classsize__t}{size\+\_\+t}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_a8d270fc7b97199ce2126e3fd8a4b7629}\label{classv8_1_1internal_1_1ZoneAllocator_a8d270fc7b97199ce2126e3fd8a4b7629}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries max\+\_\+size} () const  throw ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_a93d27d7aae1b0578d424237598378bf4}\label{classv8_1_1internal_1_1ZoneAllocator_a93d27d7aae1b0578d424237598378bf4}} 
+{\footnotesize template$<$typename U , typename... Args$>$ }\\void {\bfseries construct} (U $\ast$p, Args \&\&... args)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_a4b2b07bd4146b7c4a6936746eb057cbe}\label{classv8_1_1internal_1_1ZoneAllocator_a4b2b07bd4146b7c4a6936746eb057cbe}} 
+{\footnotesize template$<$typename U $>$ }\\void {\bfseries destroy} (U $\ast$p)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_a5a1817f49d7ebd85d831a3c873c53fd5}\label{classv8_1_1internal_1_1ZoneAllocator_a5a1817f49d7ebd85d831a3c873c53fd5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries operator==} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneAllocator}{Zone\+Allocator}} const \&other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_a483f665c6894adbf087470270df69a23}\label{classv8_1_1internal_1_1ZoneAllocator_a483f665c6894adbf087470270df69a23}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries operator!=} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneAllocator}{Zone\+Allocator}} const \&other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_a8f37f54d271b50d1b10e3d024259c1c3}\label{classv8_1_1internal_1_1ZoneAllocator_a8f37f54d271b50d1b10e3d024259c1c3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$ {\bfseries zone} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneAllocator_a3e627fa11818b8d284b0aeabbe30347c}\label{classv8_1_1internal_1_1ZoneAllocator_a3e627fa11818b8d284b0aeabbe30347c}} 
+{\footnotesize template$<$typename U $>$ }\\class {\bfseries Zone\+Allocator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class v8\+::internal\+::\+Zone\+Allocator$<$ T $>$}
+
+
+
+Definition at line 15 of file zone-\/allocator.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/zone/zone-\/allocator.\+h\end{DoxyCompactItemize}

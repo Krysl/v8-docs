@@ -1,0 +1,88 @@
+\hypertarget{classv8_1_1internal_1_1Compiler}{}\section{v8\+:\+:internal\+:\+:Compiler Class Reference}
+\label{classv8_1_1internal_1_1Compiler}\index{v8\+::internal\+::\+Compiler@{v8\+::internal\+::\+Compiler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Compiler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1Compiler}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1Compiler_1_1ScriptDetails}{Script\+Details}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Compiler_ab59ab49f4051abae5d94e22871913b96}\label{classv8_1_1internal_1_1Compiler_ab59ab49f4051abae5d94e22871913b96}} 
+enum {\bfseries Clear\+Exception\+Flag} \{ {\bfseries K\+E\+E\+P\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}, 
+{\bfseries C\+L\+E\+A\+R\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Compiler_aff8ad726e6e98d3ac5f694920f5b67e3}\label{classv8_1_1internal_1_1Compiler_aff8ad726e6e98d3ac5f694920f5b67e3}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Compile} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ shared, Clear\+Exception\+Flag flag)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Compiler_afbc8e9fe9de9febf48d6c71c79978671}\label{classv8_1_1internal_1_1Compiler_afbc8e9fe9de9febf48d6c71c79978671}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Compile} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ function, Clear\+Exception\+Flag flag)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Compiler_ad629d712fc453a783d180175348eec1e}\label{classv8_1_1internal_1_1Compiler_ad629d712fc453a783d180175348eec1e}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Compile\+Optimized} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ function, Concurrency\+Mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Compiler_accb339c331e8d14febeabddf6dcc4a32}\label{classv8_1_1internal_1_1Compiler_accb339c331e8d14febeabddf6dcc4a32}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ {\bfseries Compile\+For\+Live\+Edit} (\mbox{\hyperlink{classv8_1_1internal_1_1ParseInfo}{Parse\+Info}} $\ast$parse\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Compiler_ad4f7a1d1db39f21bac8c44e41cc85458}\label{classv8_1_1internal_1_1Compiler_ad4f7a1d1db39f21bac8c44e41cc85458}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Finalize\+Background\+Compile\+Task} (\mbox{\hyperlink{classv8_1_1internal_1_1BackgroundCompileTask}{Background\+Compile\+Task}} $\ast$task, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ shared\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Clear\+Exception\+Flag flag)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Compiler_a3ee205766255f2f39a0eeab07c4122bf}\label{classv8_1_1internal_1_1Compiler_a3ee205766255f2f39a0eeab07c4122bf}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Finalize\+Optimized\+Compilation\+Job} (\mbox{\hyperlink{classv8_1_1internal_1_1OptimizedCompilationJob}{Optimized\+Compilation\+Job}} $\ast$job, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Compiler_a53477c5a6b447bb8e3b937d948f6d57a}\label{classv8_1_1internal_1_1Compiler_a53477c5a6b447bb8e3b937d948f6d57a}} 
+static void {\bfseries Post\+Instantiation} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ function, Pretenure\+Flag)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Compiler_ad25c9c0a230918763f92d398ef2e7805}\label{classv8_1_1internal_1_1Compiler_ad25c9c0a230918763f92d398ef2e7805}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Parse\+And\+Analyze} (\mbox{\hyperlink{classv8_1_1internal_1_1ParseInfo}{Parse\+Info}} $\ast$parse\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ shared\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Compiler_a833a9eb88b79466ef7450db27f3e99e8}\label{classv8_1_1internal_1_1Compiler_a833a9eb88b79466ef7450db27f3e99e8}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Analyze} (\mbox{\hyperlink{classv8_1_1internal_1_1ParseInfo}{Parse\+Info}} $\ast$parse\+\_\+info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Compiler_a09fe359c69b483ca308c9891f2de6bc6}\label{classv8_1_1internal_1_1Compiler_a09fe359c69b483ca308c9891f2de6bc6}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ {\bfseries Get\+Function\+From\+Eval} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ source, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ outer\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, Language\+Mode language\+\_\+mode, Parse\+Restriction restriction, \mbox{\hyperlink{classint}{int}} parameters\+\_\+end\+\_\+pos, \mbox{\hyperlink{classint}{int}} eval\+\_\+scope\+\_\+position, \mbox{\hyperlink{classint}{int}} eval\+\_\+position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Compiler_a9731c45c3e69839f592543868c1c7912}\label{classv8_1_1internal_1_1Compiler_a9731c45c3e69839f592543868c1c7912}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ {\bfseries Get\+Wrapped\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ source, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ arguments, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, const \mbox{\hyperlink{structv8_1_1internal_1_1Compiler_1_1ScriptDetails}{Script\+Details}} \&script\+\_\+details, \mbox{\hyperlink{classv8_1_1ScriptOriginOptions}{Script\+Origin\+Options}} origin\+\_\+options, \mbox{\hyperlink{classv8_1_1internal_1_1ScriptData}{Script\+Data}} $\ast$cached\+\_\+data, v8\+::\+Script\+Compiler\+::\+Compile\+Options compile\+\_\+options, \mbox{\hyperlink{classv8_1_1ScriptCompiler_a7f13fa15484cfc500ae51927756e0d60}{v8\+::\+Script\+Compiler\+::\+No\+Cache\+Reason}} no\+\_\+cache\+\_\+reason)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Compiler_a271b0b1d354fd3be04fb01d4fdedeb1c}\label{classv8_1_1internal_1_1Compiler_a271b0b1d354fd3be04fb01d4fdedeb1c}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Code\+Generation\+From\+Strings\+Allowed} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ source)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Compiler_a088e9a3ab4f065fb2268eaa8becbcab6}\label{classv8_1_1internal_1_1Compiler_a088e9a3ab4f065fb2268eaa8becbcab6}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ {\bfseries Get\+Function\+From\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ source, Parse\+Restriction restriction, \mbox{\hyperlink{classint}{int}} parameters\+\_\+end\+\_\+pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Compiler_a660cabc06d9c55931405db1e2991c333}\label{classv8_1_1internal_1_1Compiler_a660cabc06d9c55931405db1e2991c333}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ {\bfseries Get\+Shared\+Function\+Info\+For\+Script} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ source, const \mbox{\hyperlink{structv8_1_1internal_1_1Compiler_1_1ScriptDetails}{Script\+Details}} \&script\+\_\+details, \mbox{\hyperlink{classv8_1_1ScriptOriginOptions}{Script\+Origin\+Options}} origin\+\_\+options, v8\+::\+Extension $\ast$extension, \mbox{\hyperlink{classv8_1_1internal_1_1ScriptData}{Script\+Data}} $\ast$cached\+\_\+data, Script\+Compiler\+::\+Compile\+Options compile\+\_\+options, \mbox{\hyperlink{classv8_1_1ScriptCompiler_a7f13fa15484cfc500ae51927756e0d60}{Script\+Compiler\+::\+No\+Cache\+Reason}} no\+\_\+cache\+\_\+reason, Natives\+Flag is\+\_\+natives\+\_\+code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Compiler_a4c0fb830833e82305f9d8c3fe9e89273}\label{classv8_1_1internal_1_1Compiler_a4c0fb830833e82305f9d8c3fe9e89273}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ {\bfseries Get\+Shared\+Function\+Info\+For\+Streamed\+Script} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ source, const \mbox{\hyperlink{structv8_1_1internal_1_1Compiler_1_1ScriptDetails}{Script\+Details}} \&script\+\_\+details, \mbox{\hyperlink{classv8_1_1ScriptOriginOptions}{Script\+Origin\+Options}} origin\+\_\+options, \mbox{\hyperlink{structv8_1_1internal_1_1ScriptStreamingData}{Script\+Streaming\+Data}} $\ast$streaming\+\_\+data)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Compiler_af5a9759867899ffe7c5577944b612216}\label{classv8_1_1internal_1_1Compiler_af5a9759867899ffe7c5577944b612216}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ {\bfseries Get\+Shared\+Function\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1FunctionLiteral}{Function\+Literal}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $>$ script, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Compiler_a4f21f1972ec31d424fe031636384b386}\label{classv8_1_1internal_1_1Compiler_a4f21f1972ec31d424fe031636384b386}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Get\+Optimized\+Code\+For\+O\+SR} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ function, \mbox{\hyperlink{classv8_1_1internal_1_1BailoutId}{Bailout\+Id}} osr\+\_\+offset, \mbox{\hyperlink{classv8_1_1internal_1_1JavaScriptFrame}{Java\+Script\+Frame}} $\ast$osr\+\_\+frame)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 49 of file compiler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler.\+h\item 
+v8/src/compiler.\+cc\end{DoxyCompactItemize}

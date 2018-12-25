@@ -1,0 +1,371 @@
+\hypertarget{classv8_1_1internal_1_1SharedFunctionInfo}{}\section{v8\+:\+:internal\+:\+:Shared\+Function\+Info Class Reference}
+\label{classv8_1_1internal_1_1SharedFunctionInfo}\index{v8\+::internal\+::\+Shared\+Function\+Info@{v8\+::internal\+::\+Shared\+Function\+Info}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Shared\+Function\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1SharedFunctionInfo}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo_1_1GlobalIterator}{Global\+Iterator}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo_1_1ScriptIterator}{Script\+Iterator}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a32db14f4f290541c8236a51609e5a7dc}\label{classv8_1_1internal_1_1SharedFunctionInfo_a32db14f4f290541c8236a51609e5a7dc}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1FixedBodyDescriptor}{Fixed\+Body\+Descriptor}}$<$ k\+Start\+Of\+Pointer\+Fields\+Offset, k\+End\+Of\+Tagged\+Fields\+Offset, k\+Aligned\+Size $>$ {\bfseries Body\+Descriptor}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a40b40e995ec4c8ffbca4e2acb366ddb8}\label{classv8_1_1internal_1_1SharedFunctionInfo_a40b40e995ec4c8ffbca4e2acb366ddb8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} {\bfseries Name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a93bb5a06e7b0cc0767b35430e5491086}\label{classv8_1_1internal_1_1SharedFunctionInfo_a93bb5a06e7b0cc0767b35430e5491086}} 
+void {\bfseries Set\+Name} (\mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_ae734af4243049eac4a8cad7bd9836f88}\label{classv8_1_1internal_1_1SharedFunctionInfo_ae734af4243049eac4a8cad7bd9836f88}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} {\bfseries Get\+Code} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a266e8d275d996ebab979e6304ead50b1}\label{classv8_1_1internal_1_1SharedFunctionInfo_a266e8d275d996ebab979e6304ead50b1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} {\bfseries abstract\+\_\+code} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a5a7973bf0292f5295593e7b35821c866}\label{classv8_1_1internal_1_1SharedFunctionInfo_a5a7973bf0292f5295593e7b35821c866}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Interpreted} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_aae35319d83e59701a70a060ba28f6bc7}\label{classv8_1_1internal_1_1SharedFunctionInfo_aae35319d83e59701a70a060ba28f6bc7}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classint}{int}} {\bfseries End\+Position} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a9461713730cafff3b421a85b1a8468f2}\label{classv8_1_1internal_1_1SharedFunctionInfo_a9461713730cafff3b421a85b1a8468f2}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classint}{int}} {\bfseries Start\+Position} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a85f635fb80696484dd77bfd38745c106}\label{classv8_1_1internal_1_1SharedFunctionInfo_a85f635fb80696484dd77bfd38745c106}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Set\+Position} (\mbox{\hyperlink{classint}{int}} start\+\_\+position, \mbox{\hyperlink{classint}{int}} end\+\_\+position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a3117ed24998e755497560bf0737e21cc}\label{classv8_1_1internal_1_1SharedFunctionInfo_a3117ed24998e755497560bf0737e21cc}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Outer\+Scope\+Info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a2ceff899424ad28765cac6cbe7d8dd99}\label{classv8_1_1internal_1_1SharedFunctionInfo_a2ceff899424ad28765cac6cbe7d8dd99}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ScopeInfo}{Scope\+Info}} {\bfseries Get\+Outer\+Scope\+Info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_abc9c17639fe583f498513ec81d8ae316}\label{classv8_1_1internal_1_1SharedFunctionInfo_abc9c17639fe583f498513ec81d8ae316}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Feedback\+Metadata} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_aed1523370433691e42ef5a5bc7c9b3de}\label{classv8_1_1internal_1_1SharedFunctionInfo_aed1523370433691e42ef5a5bc7c9b3de}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+compiled} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a9e925d58027fcb2a60313ad2551ebe03}\label{classv8_1_1internal_1_1SharedFunctionInfo_a9e925d58027fcb2a60313ad2551ebe03}} 
+uint16\+\_\+t {\bfseries Get\+Length} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_ace86792fa1c28ab4a109f189f9a6b6a6}\label{classv8_1_1internal_1_1SharedFunctionInfo_ace86792fa1c28ab4a109f189f9a6b6a6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Length} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a6e17b5750109e31cce11bacb15cd8765}\label{classv8_1_1internal_1_1SharedFunctionInfo_a6e17b5750109e31cce11bacb15cd8765}} 
+void {\bfseries set\+\_\+length} (\mbox{\hyperlink{classint}{int}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_abb11e938d3999768b4961fcd6806c015}\label{classv8_1_1internal_1_1SharedFunctionInfo_abb11e938d3999768b4961fcd6806c015}} 
+void {\bfseries Dont\+Adapt\+Arguments} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a121847703f1224fd30fe928702734f1b}\label{classv8_1_1internal_1_1SharedFunctionInfo_a121847703f1224fd30fe928702734f1b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Api\+Function} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a06ec705e16fb000a2f4474b57d7a2df1}\label{classv8_1_1internal_1_1SharedFunctionInfo_a06ec705e16fb000a2f4474b57d7a2df1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1FunctionTemplateInfo}{Function\+Template\+Info}} $\ast$ {\bfseries get\+\_\+api\+\_\+func\+\_\+data} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a7cdf6046f9ead523c811e70a34c91b33}\label{classv8_1_1internal_1_1SharedFunctionInfo_a7cdf6046f9ead523c811e70a34c91b33}} 
+void {\bfseries set\+\_\+api\+\_\+func\+\_\+data} (\mbox{\hyperlink{classv8_1_1internal_1_1FunctionTemplateInfo}{Function\+Template\+Info}} $\ast$data)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a60521aa49148ec3ff121e973e123d3c9}\label{classv8_1_1internal_1_1SharedFunctionInfo_a60521aa49148ec3ff121e973e123d3c9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Bytecode\+Array} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a3b22a9c4b3d8ff51fb8bfe62f18ba9fd}\label{classv8_1_1internal_1_1SharedFunctionInfo_a3b22a9c4b3d8ff51fb8bfe62f18ba9fd}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray}{Bytecode\+Array}} {\bfseries Get\+Bytecode\+Array} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_ac6e9670df8af91672cd2b57d975ade51}\label{classv8_1_1internal_1_1SharedFunctionInfo_ac6e9670df8af91672cd2b57d975ade51}} 
+void {\bfseries set\+\_\+bytecode\+\_\+array} (\mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray}{Bytecode\+Array}} bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a7d4696c2048f2720243181e2ac4f69ab}\label{classv8_1_1internal_1_1SharedFunctionInfo_a7d4696c2048f2720243181e2ac4f69ab}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} {\bfseries Interpreter\+Trampoline} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a1573b99e291994d72a9159077217c52b}\label{classv8_1_1internal_1_1SharedFunctionInfo_a1573b99e291994d72a9159077217c52b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Interpreter\+Data} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a2b3e08a3a00150f54e1780051da68e0e}\label{classv8_1_1internal_1_1SharedFunctionInfo_a2b3e08a3a00150f54e1780051da68e0e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1InterpreterData}{Interpreter\+Data}} $\ast$ {\bfseries interpreter\+\_\+data} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a075b1c44522c58dd1190ddb96114d913}\label{classv8_1_1internal_1_1SharedFunctionInfo_a075b1c44522c58dd1190ddb96114d913}} 
+void {\bfseries set\+\_\+interpreter\+\_\+data} (\mbox{\hyperlink{classv8_1_1internal_1_1InterpreterData}{Interpreter\+Data}} $\ast$interpreter\+\_\+data)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a71bfccef3ef5bd485828c620c5268e19}\label{classv8_1_1internal_1_1SharedFunctionInfo_a71bfccef3ef5bd485828c620c5268e19}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray}{Bytecode\+Array}} {\bfseries Get\+Debug\+Bytecode\+Array} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_aeb2b08b580a62efee6989cdf04484e1f}\label{classv8_1_1internal_1_1SharedFunctionInfo_aeb2b08b580a62efee6989cdf04484e1f}} 
+void {\bfseries Set\+Debug\+Bytecode\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray}{Bytecode\+Array}} bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a6a671dee503331399f735258173a26ad}\label{classv8_1_1internal_1_1SharedFunctionInfo_a6a671dee503331399f735258173a26ad}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Asm\+Wasm\+Data} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a81705d787301c4e98a55f62d4ed627e3}\label{classv8_1_1internal_1_1SharedFunctionInfo_a81705d787301c4e98a55f62d4ed627e3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1AsmWasmData}{Asm\+Wasm\+Data}} $\ast$ {\bfseries asm\+\_\+wasm\+\_\+data} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a5aef1b9ad4cac4479387e45f3815bc15}\label{classv8_1_1internal_1_1SharedFunctionInfo_a5aef1b9ad4cac4479387e45f3815bc15}} 
+void {\bfseries set\+\_\+asm\+\_\+wasm\+\_\+data} (\mbox{\hyperlink{classv8_1_1internal_1_1AsmWasmData}{Asm\+Wasm\+Data}} $\ast$data)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_aa023d495ad0fd20d8ad6d9c971e750b5}\label{classv8_1_1internal_1_1SharedFunctionInfo_aa023d495ad0fd20d8ad6d9c971e750b5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Builtin\+Id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a75f8ca94ef795ca54d3fb01c654d7040}\label{classv8_1_1internal_1_1SharedFunctionInfo_a75f8ca94ef795ca54d3fb01c654d7040}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries builtin\+\_\+id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_af3c1c4a09917be8a8e4730cd9c8134c5}\label{classv8_1_1internal_1_1SharedFunctionInfo_af3c1c4a09917be8a8e4730cd9c8134c5}} 
+void {\bfseries set\+\_\+builtin\+\_\+id} (\mbox{\hyperlink{classint}{int}} builtin\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a70015311186bff72efa84fcf53d9943e}\label{classv8_1_1internal_1_1SharedFunctionInfo_a70015311186bff72efa84fcf53d9943e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Uncompiled\+Data} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a8757a3cc99a14c77942de64ce3a68996}\label{classv8_1_1internal_1_1SharedFunctionInfo_a8757a3cc99a14c77942de64ce3a68996}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1UncompiledData}{Uncompiled\+Data}} $\ast$ {\bfseries uncompiled\+\_\+data} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a46356aab24450ead575ad4ae437406b5}\label{classv8_1_1internal_1_1SharedFunctionInfo_a46356aab24450ead575ad4ae437406b5}} 
+void {\bfseries set\+\_\+uncompiled\+\_\+data} (\mbox{\hyperlink{classv8_1_1internal_1_1UncompiledData}{Uncompiled\+Data}} $\ast$data)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a5834a7ffc89dc64ecd27514cc4b9dfc9}\label{classv8_1_1internal_1_1SharedFunctionInfo_a5834a7ffc89dc64ecd27514cc4b9dfc9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Uncompiled\+Data\+With\+Pre\+Parsed\+Scope} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a24aa76480cc2a2994d695fc1dbc52d58}\label{classv8_1_1internal_1_1SharedFunctionInfo_a24aa76480cc2a2994d695fc1dbc52d58}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1UncompiledDataWithPreParsedScope}{Uncompiled\+Data\+With\+Pre\+Parsed\+Scope}} $\ast$ {\bfseries uncompiled\+\_\+data\+\_\+with\+\_\+pre\+\_\+parsed\+\_\+scope} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a6e09020be3a11d4095200021970f996b}\label{classv8_1_1internal_1_1SharedFunctionInfo_a6e09020be3a11d4095200021970f996b}} 
+void {\bfseries set\+\_\+uncompiled\+\_\+data\+\_\+with\+\_\+pre\+\_\+parsed\+\_\+scope} (\mbox{\hyperlink{classv8_1_1internal_1_1UncompiledDataWithPreParsedScope}{Uncompiled\+Data\+With\+Pre\+Parsed\+Scope}} $\ast$data)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a94ce7e012d5b169bb6a43bbfe9b3ff1f}\label{classv8_1_1internal_1_1SharedFunctionInfo_a94ce7e012d5b169bb6a43bbfe9b3ff1f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Uncompiled\+Data\+Without\+Pre\+Parsed\+Scope} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a90cc8dd69830f193591df301e481a478}\label{classv8_1_1internal_1_1SharedFunctionInfo_a90cc8dd69830f193591df301e481a478}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Wasm\+Exported\+Function\+Data} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a6a799620e08097aae7bc9e6f0d0c1636}\label{classv8_1_1internal_1_1SharedFunctionInfo_a6a799620e08097aae7bc9e6f0d0c1636}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1WasmExportedFunctionData}{Wasm\+Exported\+Function\+Data}} $\ast$ {\bfseries wasm\+\_\+exported\+\_\+function\+\_\+data} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_adcf0cccfa3c596e665713ebba7b0469a}\label{classv8_1_1internal_1_1SharedFunctionInfo_adcf0cccfa3c596e665713ebba7b0469a}} 
+void {\bfseries set\+\_\+wasm\+\_\+exported\+\_\+function\+\_\+data} (\mbox{\hyperlink{classv8_1_1internal_1_1WasmExportedFunctionData}{Wasm\+Exported\+Function\+Data}} $\ast$data)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_ae3795d06655a9ef7e8fcaca0385244cc}\label{classv8_1_1internal_1_1SharedFunctionInfo_ae3795d06655a9ef7e8fcaca0385244cc}} 
+void {\bfseries Clear\+Pre\+Parsed\+Scope\+Data} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_af63617feefe1b2defe4a7633a004c7d4}\label{classv8_1_1internal_1_1SharedFunctionInfo_af63617feefe1b2defe4a7633a004c7d4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Builtin\+Function\+Id} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_aa692cbbeff7afd977e667765cca43f20}\label{classv8_1_1internal_1_1SharedFunctionInfo_aa692cbbeff7afd977e667765cca43f20}} 
+Builtin\+Function\+Id {\bfseries builtin\+\_\+function\+\_\+id} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a561a7cb8de50f03d19610d103eedc5e0}\label{classv8_1_1internal_1_1SharedFunctionInfo_a561a7cb8de50f03d19610d103eedc5e0}} 
+void {\bfseries set\+\_\+builtin\+\_\+function\+\_\+id} (Builtin\+Function\+Id id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a3417d39c7ee82be9284543a57b048a58}\label{classv8_1_1internal_1_1SharedFunctionInfo_a3417d39c7ee82be9284543a57b048a58}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} ((std\+::is\+\_\+same$<$ std\+::underlying\+\_\+type$<$ Builtin\+Function\+Id $>$\+::\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, uint8\+\_\+t $>$\+::value))
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a0e6a45428e32f7722ae2a405f67c9cda}\label{classv8_1_1internal_1_1SharedFunctionInfo_a0e6a45428e32f7722ae2a405f67c9cda}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Inferred\+Name} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a23cee60a6d81026cab86e4521195029a}\label{classv8_1_1internal_1_1SharedFunctionInfo_a23cee60a6d81026cab86e4521195029a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} {\bfseries inferred\+\_\+name} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_abbfb7d9c3304a4d04a8c52e4bf8fb0bd}\label{classv8_1_1internal_1_1SharedFunctionInfo_abbfb7d9c3304a4d04a8c52e4bf8fb0bd}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classint}{int}} {\bfseries Function\+Literal\+Id} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_aaf4d96a03fe3906284d8eded3d3259bb}\label{classv8_1_1internal_1_1SharedFunctionInfo_aaf4d96a03fe3906284d8eded3d3259bb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Break\+Info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_af3081d458bf5d13cc2e118ca493ddb07}\label{classv8_1_1internal_1_1SharedFunctionInfo_af3081d458bf5d13cc2e118ca493ddb07}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Break\+At\+Entry} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_ae4cc28d3db5eb22668605e06d6aa1361}\label{classv8_1_1internal_1_1SharedFunctionInfo_ae4cc28d3db5eb22668605e06d6aa1361}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Coverage\+Info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_adb94a8b38d326b20c9cfb9978213b6f2}\label{classv8_1_1internal_1_1SharedFunctionInfo_adb94a8b38d326b20c9cfb9978213b6f2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CoverageInfo}{Coverage\+Info}} {\bfseries Get\+Coverage\+Info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a8906319646bea020ea53957a9291786d}\label{classv8_1_1internal_1_1SharedFunctionInfo_a8906319646bea020ea53957a9291786d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} {\bfseries Debug\+Name} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a4f77b9fc77540b659cbb2a0fb49e0e99}\label{classv8_1_1internal_1_1SharedFunctionInfo_a4f77b9fc77540b659cbb2a0fb49e0e99}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Passes\+Filter} (const \mbox{\hyperlink{classchar}{char}} $\ast$raw\+\_\+filter)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_acde5fd920338a7073839fce3c41f345b}\label{classv8_1_1internal_1_1SharedFunctionInfo_acde5fd920338a7073839fce3c41f345b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries script} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a2e249a1fcaadbfa0264645cd26f76f56}\label{classv8_1_1internal_1_1SharedFunctionInfo_a2e249a1fcaadbfa0264645cd26f76f56}} 
+void {\bfseries set\+\_\+script} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$script)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a1f390ab0f197b65e2be3c9ee0d9e7520}\label{classv8_1_1internal_1_1SharedFunctionInfo_a1f390ab0f197b65e2be3c9ee0d9e7520}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Debug\+Info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a463f00fa05e592b37f45b9facdcb2255}\label{classv8_1_1internal_1_1SharedFunctionInfo_a463f00fa05e592b37f45b9facdcb2255}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1DebugInfo}{Debug\+Info}} $\ast$ {\bfseries Get\+Debug\+Info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a3daef3a73e5c89d1f82767ff23061d80}\label{classv8_1_1internal_1_1SharedFunctionInfo_a3daef3a73e5c89d1f82767ff23061d80}} 
+void {\bfseries Set\+Debug\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1DebugInfo}{Debug\+Info}} $\ast$debug\+\_\+info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a30fe042ca7d8c3874ca95e759e649923}\label{classv8_1_1internal_1_1SharedFunctionInfo_a30fe042ca7d8c3874ca95e759e649923}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries function\+\_\+token\+\_\+position} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a89452e862f7c4c295608f93ab0e1a202}\label{classv8_1_1internal_1_1SharedFunctionInfo_a89452e862f7c4c295608f93ab0e1a202}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Shared\+Name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a1508b0f7c775a99604b9b71c264d21e5}\label{classv8_1_1internal_1_1SharedFunctionInfo_a1508b0f7c775a99604b9b71c264d21e5}} 
+Language\+Mode {\bfseries language\+\_\+mode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_ae43209f7f1d45525f7c9960a47d21955}\label{classv8_1_1internal_1_1SharedFunctionInfo_ae43209f7f1d45525f7c9960a47d21955}} 
+void {\bfseries set\+\_\+language\+\_\+mode} (Language\+Mode language\+\_\+mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a568c00794e5645962253db5f79adc80a}\label{classv8_1_1internal_1_1SharedFunctionInfo_a568c00794e5645962253db5f79adc80a}} 
+Function\+Kind {\bfseries kind} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_aa18272fab1d1d4693a0a22284c4b5647}\label{classv8_1_1internal_1_1SharedFunctionInfo_aa18272fab1d1d4693a0a22284c4b5647}} 
+void {\bfseries clear\+\_\+padding} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_ac7eb894e717c22dd2da0b0714e47e863}\label{classv8_1_1internal_1_1SharedFunctionInfo_ac7eb894e717c22dd2da0b0714e47e863}} 
+void {\bfseries Update\+Function\+Map\+Index} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a1ce9441cfdd3ca71080d4682ee6d34a6}\label{classv8_1_1internal_1_1SharedFunctionInfo_a1ce9441cfdd3ca71080d4682ee6d34a6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries optimization\+\_\+disabled} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a6f0f4b9063afb493cd2dcfaab70bef36}\label{classv8_1_1internal_1_1SharedFunctionInfo_a6f0f4b9063afb493cd2dcfaab70bef36}} 
+Bailout\+Reason {\bfseries disable\+\_\+optimization\+\_\+reason} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a9c791bcf70aca02b948f0b6f0b999f4e}\label{classv8_1_1internal_1_1SharedFunctionInfo_a9c791bcf70aca02b948f0b6f0b999f4e}} 
+void {\bfseries Disable\+Optimization} (Bailout\+Reason reason)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_aaeddf7f3ee124953d999da5dd2cf2912}\label{classv8_1_1internal_1_1SharedFunctionInfo_aaeddf7f3ee124953d999da5dd2cf2912}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Source\+Code} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a0b1c9061a9ec4dbbc6f732f506b0fdf3}\label{classv8_1_1internal_1_1SharedFunctionInfo_a0b1c9061a9ec4dbbc6f732f506b0fdf3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Subject\+To\+Debugging} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_ad13ce932001964028480be635c48a026}\label{classv8_1_1internal_1_1SharedFunctionInfo_ad13ce932001964028480be635c48a026}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+User\+Java\+Script} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a5de609220e28fdba9a86c49dd3bf39e3}\label{classv8_1_1internal_1_1SharedFunctionInfo_a5de609220e28fdba9a86c49dd3bf39e3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Discard\+Compiled} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_aab93be19f41a3a1c3cc52c0ef0590794}\label{classv8_1_1internal_1_1SharedFunctionInfo_aab93be19f41a3a1c3cc52c0ef0590794}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Inlineable} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a6e3ea25186cfb597d5ef46ff6e9ffab9}\label{classv8_1_1internal_1_1SharedFunctionInfo_a6e3ea25186cfb597d5ef46ff6e9ffab9}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Source\+Size} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a16e3068b54bc4eed747b3cb426b5faf1}\label{classv8_1_1internal_1_1SharedFunctionInfo_a16e3068b54bc4eed747b3cb426b5faf1}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+simple\+\_\+parameters} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a3bce73e63e86ddeae7a2753d5b075ec8}\label{classv8_1_1internal_1_1SharedFunctionInfo_a3bce73e63e86ddeae7a2753d5b075ec8}} 
+void {\bfseries Set\+Expected\+Nof\+Properties\+From\+Estimate} (\mbox{\hyperlink{classv8_1_1internal_1_1FunctionLiteral}{Function\+Literal}} $\ast$literal)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a112f5d828c9ca7bcbf28ce9817d27722}\label{classv8_1_1internal_1_1SharedFunctionInfo_a112f5d828c9ca7bcbf28ce9817d27722}} 
+void {\bfseries Set\+Function\+Token\+Position} (\mbox{\hyperlink{classint}{int}} function\+\_\+token\+\_\+position, \mbox{\hyperlink{classint}{int}} start\+\_\+position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a7d1360bac7638d79ac026b19502fae08}\label{classv8_1_1internal_1_1SharedFunctionInfo_a7d1360bac7638d79ac026b19502fae08}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries construct\+\_\+as\+\_\+builtin} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_adc7549d98cf761ca9d12f3d0958470ed}\label{classv8_1_1internal_1_1SharedFunctionInfo_adc7549d98cf761ca9d12f3d0958470ed}} 
+void {\bfseries Calculate\+Construct\+As\+Builtin} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_ae2735d26112a61850c302fd2aadf7cde}\label{classv8_1_1internal_1_1SharedFunctionInfo_ae2735d26112a61850c302fd2aadf7cde}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Maximum\+Function\+Token\+Offset+1==k\+Function\+Token\+Out\+Of\+Range)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a6b123c5f5077b7d6e275efb9d0909013}\label{classv8_1_1internal_1_1SharedFunctionInfo_a6b123c5f5077b7d6e275efb9d0909013}} 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+F\+I\+E\+L\+D\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+C\+O\+N\+S\+T\+A\+N\+TS} (Heap\+Object\+::k\+Header\+Size, S\+H\+A\+R\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+I\+N\+F\+O\+\_\+\+F\+I\+E\+L\+DS) static const \mbox{\hyperlink{classint}{int}} k\+Aligned\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a4ee7d9b00b997c42dda0873301df1e86}\label{classv8_1_1internal_1_1SharedFunctionInfo_a4ee7d9b00b997c42dda0873301df1e86}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Bailout\+Reason\+::k\+Last\+Error\+Message$<$=Disabled\+Optimization\+Reason\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_af5c28099341aba2714a07f71848b8281}\label{classv8_1_1internal_1_1SharedFunctionInfo_af5c28099341aba2714a07f71848b8281}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Last\+Function\+Kind$<$=Function\+Kind\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a412cd6ecec557248c20d8aa4ec372994}\label{classv8_1_1internal_1_1SharedFunctionInfo_a412cd6ecec557248c20d8aa4ec372994}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries needs\+\_\+home\+\_\+object} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a7581456722c296cb8f2f86eca3502d33}\label{classv8_1_1internal_1_1SharedFunctionInfo_a7581456722c296cb8f2f86eca3502d33}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Set\+Script} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ shared, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ script\+\_\+object, \mbox{\hyperlink{classint}{int}} function\+\_\+literal\+\_\+id, \mbox{\hyperlink{classbool}{bool}} reset\+\_\+preparsed\+\_\+scope\+\_\+data=true)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_add45f1d92220d817772ee4575d360f1e}\label{classv8_1_1internal_1_1SharedFunctionInfo_add45f1d92220d817772ee4575d360f1e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Get\+Source\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ shared)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_aa05972c33a927bc743786fa4a64eecc8}\label{classv8_1_1internal_1_1SharedFunctionInfo_aa05972c33a927bc743786fa4a64eecc8}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Get\+Source\+Code\+Harmony} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ shared)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_abffd555644afadd77c46f24461360c5f}\label{classv8_1_1internal_1_1SharedFunctionInfo_abffd555644afadd77c46f24461360c5f}} 
+static void {\bfseries Discard\+Compiled} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ shared\+\_\+info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a58195b65d873880bb2e09bb0ded5b5cd}\label{classv8_1_1internal_1_1SharedFunctionInfo_a58195b65d873880bb2e09bb0ded5b5cd}} 
+static void {\bfseries Init\+From\+Function\+Literal} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ shared\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1FunctionLiteral}{Function\+Literal}} $\ast$lit, \mbox{\hyperlink{classbool}{bool}} is\+\_\+toplevel)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_ab4ca26bb36c1f76d5ee7e715ac057dab}\label{classv8_1_1internal_1_1SharedFunctionInfo_ab4ca26bb36c1f76d5ee7e715ac057dab}} 
+static constexpr \mbox{\hyperlink{classv8_1_1internal_1_1ObjectPtr}{Object\+Ptr}} const {\bfseries k\+No\+Shared\+Name\+Sentinel} = Smi\+::k\+Zero
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a729064902568c99387215e69f5dcbfc3}\label{classv8_1_1internal_1_1SharedFunctionInfo_a729064902568c99387215e69f5dcbfc3}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Entries\+Start} = 0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_ae457da58033018f41b8300f61a4961d7}\label{classv8_1_1internal_1_1SharedFunctionInfo_ae457da58033018f41b8300f61a4961d7}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Context\+Offset} = 0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a0d13a7375ce7bdd5590a7ace53e7515d}\label{classv8_1_1internal_1_1SharedFunctionInfo_a0d13a7375ce7bdd5590a7ace53e7515d}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Cached\+Code\+Offset} = 1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_ae6a1d8883ff11916d52d1b13b0c6a41d}\label{classv8_1_1internal_1_1SharedFunctionInfo_ae6a1d8883ff11916d52d1b13b0c6a41d}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Entry\+Length} = 2
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_aaf4511ccafdd97f715e55e7e8cf8a967}\label{classv8_1_1internal_1_1SharedFunctionInfo_aaf4511ccafdd97f715e55e7e8cf8a967}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Initial\+Length} = k\+Entries\+Start + k\+Entry\+Length
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a1e596df8d07293d1c359639d9b111b8f}\label{classv8_1_1internal_1_1SharedFunctionInfo_a1e596df8d07293d1c359639d9b111b8f}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Not\+Found} = -\/1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a2a6e517ac573fb950e9e04c6797c6694}\label{classv8_1_1internal_1_1SharedFunctionInfo_a2a6e517ac573fb950e9e04c6797c6694}} 
+static const uint16\+\_\+t {\bfseries k\+Invalid\+Length} = static\+\_\+cast$<$uint16\+\_\+t$>$(-\/1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a50b5b53cc5dba480b9ba28740580f565}\label{classv8_1_1internal_1_1SharedFunctionInfo_a50b5b53cc5dba480b9ba28740580f565}} 
+static const uint16\+\_\+t {\bfseries k\+Dont\+Adapt\+Arguments\+Sentinel} = static\+\_\+cast$<$uint16\+\_\+t$>$(-\/1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a32ad78302ef60b56964345fb334290e3}\label{classv8_1_1internal_1_1SharedFunctionInfo_a32ad78302ef60b56964345fb334290e3}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Maximum\+Function\+Token\+Offset} = k\+Max\+U\+Int16 -\/ 1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a271354a57231d2874b207ca131d20b31}\label{classv8_1_1internal_1_1SharedFunctionInfo_a271354a57231d2874b207ca131d20b31}} 
+static const uint16\+\_\+t {\bfseries k\+Function\+Token\+Out\+Of\+Range} = static\+\_\+cast$<$uint16\+\_\+t$>$(-\/1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a8a0382a46019b8d44d2c8fd27a436e90}\label{classv8_1_1internal_1_1SharedFunctionInfo_a8a0382a46019b8d44d2c8fd27a436e90}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Unique\+Id\+Field\+Size} = 0
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a328c093d609680cca505905c6d49901a}\label{classv8_1_1internal_1_1SharedFunctionInfo_a328c093d609680cca505905c6d49901a}} 
+class {\bfseries Factory}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedFunctionInfo_a29c5c7a1e13f0404746b9261f3764a7f}\label{classv8_1_1internal_1_1SharedFunctionInfo_a29c5c7a1e13f0404746b9261f3764a7f}} 
+class {\bfseries V8\+Heap\+Explorer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 184 of file shared-\/function-\/info.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/shared-\/function-\/info.\+h\item 
+v8/src/objects/shared-\/function-\/info-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

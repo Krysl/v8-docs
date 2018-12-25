@@ -1,0 +1,36 @@
+var classv8_1_1internal_1_1Translation =
+[
+    [ "Opcode", "classv8_1_1internal_1_1Translation.html#a130e9d6fcd45b2819bbe3378feaa27e8", [
+      [ "LAST", "classv8_1_1internal_1_1Translation.html#a130e9d6fcd45b2819bbe3378feaa27e8a521779458a3eb92425c927302fed45d1", null ]
+    ] ],
+    [ "Translation", "classv8_1_1internal_1_1Translation.html#ab218d753addf64427d5e6c8869a05e63", null ],
+    [ "AddUpdateFeedback", "classv8_1_1internal_1_1Translation.html#afa2a2bc74c93f88695fafd222287630f", null ],
+    [ "ArgumentsElements", "classv8_1_1internal_1_1Translation.html#afeab692c60395febbaaea03dd7fb19e9", null ],
+    [ "ArgumentsLength", "classv8_1_1internal_1_1Translation.html#a98065c091ebc1ebf2476d72db1fdad7c", null ],
+    [ "BeginArgumentsAdaptorFrame", "classv8_1_1internal_1_1Translation.html#a77d66fbf76b5a76bf843b2d0dbd52e1e", null ],
+    [ "BeginBuiltinContinuationFrame", "classv8_1_1internal_1_1Translation.html#a1e24e08c8588c2157957832b094edcc2", null ],
+    [ "BeginCapturedObject", "classv8_1_1internal_1_1Translation.html#a569a5a7758c2a91f71bc5dca5fb82a37", null ],
+    [ "BeginConstructStubFrame", "classv8_1_1internal_1_1Translation.html#a8b81ca40dbaee8fb6d4ee10aa72d0bbe", null ],
+    [ "BeginInterpretedFrame", "classv8_1_1internal_1_1Translation.html#a3936c9a348ec62f049ae5ae6d9a9c595", null ],
+    [ "BeginJavaScriptBuiltinContinuationFrame", "classv8_1_1internal_1_1Translation.html#a40bac84fe95c9ca4f53f116457a1548c", null ],
+    [ "BeginJavaScriptBuiltinContinuationWithCatchFrame", "classv8_1_1internal_1_1Translation.html#aa2e7d9f98062fb43a5ac37419a84948e", null ],
+    [ "DuplicateObject", "classv8_1_1internal_1_1Translation.html#a182d5da607bff8f6efb68351277585e8", null ],
+    [ "index", "classv8_1_1internal_1_1Translation.html#a2791ed21a07f2527fdfb509e19dab71a", null ],
+    [ "StoreBoolRegister", "classv8_1_1internal_1_1Translation.html#ac164b55420857e73480e32017ad3b177", null ],
+    [ "StoreBoolStackSlot", "classv8_1_1internal_1_1Translation.html#a77990552cf090e2c0f9e27e76d152603", null ],
+    [ "StoreDoubleRegister", "classv8_1_1internal_1_1Translation.html#a47d2e6237511df59f59c4de3d67017a3", null ],
+    [ "StoreDoubleStackSlot", "classv8_1_1internal_1_1Translation.html#a3812755cfbd84551fd17cd16eb67b78b", null ],
+    [ "StoreFloatRegister", "classv8_1_1internal_1_1Translation.html#a5068ec895b6a34a5eb2f7fdf7c013a24", null ],
+    [ "StoreFloatStackSlot", "classv8_1_1internal_1_1Translation.html#a94aca4b0728e6aaa87b56f810422c733", null ],
+    [ "StoreInt32Register", "classv8_1_1internal_1_1Translation.html#a33ec5872f55cda8ab9c8e1042cc183ee", null ],
+    [ "StoreInt32StackSlot", "classv8_1_1internal_1_1Translation.html#a1f78159d4e4db2374d1b337dbcac056d", null ],
+    [ "StoreInt64Register", "classv8_1_1internal_1_1Translation.html#aea3badeffa8b8da51e9e5a6d85da01fc", null ],
+    [ "StoreInt64StackSlot", "classv8_1_1internal_1_1Translation.html#af8b7c150ef7deea33eab0ea646021c94", null ],
+    [ "StoreJSFrameFunction", "classv8_1_1internal_1_1Translation.html#ac3534c9461fc9adb357152aa3e22b6f3", null ],
+    [ "StoreLiteral", "classv8_1_1internal_1_1Translation.html#ac02fa53a5c31a53fd1539746932c9dc3", null ],
+    [ "StoreRegister", "classv8_1_1internal_1_1Translation.html#a096c2857a2fb8eb6b5b8f8e22e2400b3", null ],
+    [ "StoreStackSlot", "classv8_1_1internal_1_1Translation.html#aad73d53e5e82bb0f252384dbb100df74", null ],
+    [ "StoreUint32Register", "classv8_1_1internal_1_1Translation.html#a51fc7040da1f2e93d2b1e223231a56c8", null ],
+    [ "StoreUint32StackSlot", "classv8_1_1internal_1_1Translation.html#a6026c0fa04cac723aff6aff0307369bc", null ],
+    [ "zone", "classv8_1_1internal_1_1Translation.html#a92d07bd73b1e478fb9961aadce664beb", null ]
+];

@@ -1,0 +1,66 @@
+\hypertarget{classv8_1_1internal_1_1VirtualMemory}{}\section{v8\+:\+:internal\+:\+:Virtual\+Memory Class Reference}
+\label{classv8_1_1internal_1_1VirtualMemory}\index{v8\+::internal\+::\+Virtual\+Memory@{v8\+::internal\+::\+Virtual\+Memory}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VirtualMemory_a3dea48f83d6becf3a8bc7cb88489309f}\label{classv8_1_1internal_1_1VirtualMemory_a3dea48f83d6becf3a8bc7cb88489309f}} 
+{\bfseries Virtual\+Memory} (\mbox{\hyperlink{classv8_1_1PageAllocator}{v8\+::\+Page\+Allocator}} $\ast$page\+\_\+allocator, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, void $\ast$hint, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} alignment=1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VirtualMemory_a58073a6248c11e807ceffc8c56efb4ec}\label{classv8_1_1internal_1_1VirtualMemory_a58073a6248c11e807ceffc8c56efb4ec}} 
+{\bfseries Virtual\+Memory} (\mbox{\hyperlink{classv8_1_1PageAllocator}{v8\+::\+Page\+Allocator}} $\ast$page\+\_\+allocator, \mbox{\hyperlink{classuintptr__t}{Address}} address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VirtualMemory_a406bd7297b3ea0403108e0961aef7d9a}\label{classv8_1_1internal_1_1VirtualMemory_a406bd7297b3ea0403108e0961aef7d9a}} 
+{\bfseries Virtual\+Memory} (\mbox{\hyperlink{classv8_1_1internal_1_1VirtualMemory}{Virtual\+Memory}} \&\&other) V8\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VirtualMemory_a73af6a92304a1d7123c559aaae416445}\label{classv8_1_1internal_1_1VirtualMemory_a73af6a92304a1d7123c559aaae416445}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1VirtualMemory}{Virtual\+Memory}} \& {\bfseries operator=} (\mbox{\hyperlink{classv8_1_1internal_1_1VirtualMemory}{Virtual\+Memory}} \&\&other) V8\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VirtualMemory_a4e314fe91c3c610bb8495aa6435cba9f}\label{classv8_1_1internal_1_1VirtualMemory_a4e314fe91c3c610bb8495aa6435cba9f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Reserved} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VirtualMemory_aacdcb5f689db1e7346aa047b27637c00}\label{classv8_1_1internal_1_1VirtualMemory_aacdcb5f689db1e7346aa047b27637c00}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VirtualMemory_a9c7beaf13c4ed4a1e87eeddc83577d09}\label{classv8_1_1internal_1_1VirtualMemory_a9c7beaf13c4ed4a1e87eeddc83577d09}} 
+\mbox{\hyperlink{classv8_1_1PageAllocator}{v8\+::\+Page\+Allocator}} $\ast$ {\bfseries page\+\_\+allocator} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VirtualMemory_a189b2051e0b85c97fd761d87f2ee207a}\label{classv8_1_1internal_1_1VirtualMemory_a189b2051e0b85c97fd761d87f2ee207a}} 
+const \mbox{\hyperlink{classv8_1_1base_1_1AddressRegion}{base\+::\+Address\+Region}} \& {\bfseries region} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VirtualMemory_ae9a440f195e1f00ff57e360c163d9b33}\label{classv8_1_1internal_1_1VirtualMemory_ae9a440f195e1f00ff57e360c163d9b33}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries address} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VirtualMemory_a5dd4e21fcfe750201d1d054d088c1368}\label{classv8_1_1internal_1_1VirtualMemory_a5dd4e21fcfe750201d1d054d088c1368}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VirtualMemory_a48f0249dbd8fb6b9fdd45b51037e9c90}\label{classv8_1_1internal_1_1VirtualMemory_a48f0249dbd8fb6b9fdd45b51037e9c90}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VirtualMemory_ab9d171acf0e9958c506fd0e7c885f529}\label{classv8_1_1internal_1_1VirtualMemory_ab9d171acf0e9958c506fd0e7c885f529}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Set\+Permissions} (\mbox{\hyperlink{classuintptr__t}{Address}} address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classv8_1_1PageAllocator_a88f74b164fe97e053259f67a95758415}{Page\+Allocator\+::\+Permission}} access)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VirtualMemory_ab1cc06b20f4379874b06e8c894d7e8ea}\label{classv8_1_1internal_1_1VirtualMemory_ab1cc06b20f4379874b06e8c894d7e8ea}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Release} (\mbox{\hyperlink{classuintptr__t}{Address}} free\+\_\+start)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VirtualMemory_aa4fb97fe4e7e8e388986c1a8b55da893}\label{classv8_1_1internal_1_1VirtualMemory_aa4fb97fe4e7e8e388986c1a8b55da893}} 
+void {\bfseries Free} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VirtualMemory_ad1b618904a13169cb168de8a31b5ce70}\label{classv8_1_1internal_1_1VirtualMemory_ad1b618904a13169cb168de8a31b5ce70}} 
+void {\bfseries Take\+Control} (\mbox{\hyperlink{classv8_1_1internal_1_1VirtualMemory}{Virtual\+Memory}} $\ast$from)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VirtualMemory_aa042bf38c14b45e6750c932036afcb0f}\label{classv8_1_1internal_1_1VirtualMemory_aa042bf38c14b45e6750c932036afcb0f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries In\+VM} (\mbox{\hyperlink{classuintptr__t}{Address}} address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 163 of file allocation.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/allocation.\+h\item 
+v8/src/allocation.\+cc\end{DoxyCompactItemize}

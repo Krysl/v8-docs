@@ -1,0 +1,90 @@
+\hypertarget{classv8_1_1platform_1_1DefaultPlatform}{}\section{v8\+:\+:platform\+:\+:Default\+Platform Class Reference}
+\label{classv8_1_1platform_1_1DefaultPlatform}\index{v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}}
+Inheritance diagram for v8\+:\+:platform\+:\+:Default\+Platform\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1platform_1_1DefaultPlatform}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_aa0e1584be0968a748319f759a91189f6}\label{classv8_1_1platform_1_1DefaultPlatform_aa0e1584be0968a748319f759a91189f6}} 
+using {\bfseries Time\+Function} = double($\ast$)()
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_a22897d0a7df7a614975d59909a7e2940}\label{classv8_1_1platform_1_1DefaultPlatform_a22897d0a7df7a614975d59909a7e2940}} 
+{\bfseries Default\+Platform} (Idle\+Task\+Support idle\+\_\+task\+\_\+support=Idle\+Task\+Support\+::k\+Disabled, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1TracingController}{v8\+::\+Tracing\+Controller}} $>$ tracing\+\_\+controller=\{\})
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_a7dcc9c2ff945dfa873df908419b52599}\label{classv8_1_1platform_1_1DefaultPlatform_a7dcc9c2ff945dfa873df908419b52599}} 
+void {\bfseries Set\+Thread\+Pool\+Size} (\mbox{\hyperlink{classint}{int}} thread\+\_\+pool\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_a7ad121414a3d4e5779fae9d4afd751ba}\label{classv8_1_1platform_1_1DefaultPlatform_a7ad121414a3d4e5779fae9d4afd751ba}} 
+void {\bfseries Ensure\+Background\+Task\+Runner\+Initialized} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_ac7d53e62683ecf2098da089b60aafda2}\label{classv8_1_1platform_1_1DefaultPlatform_ac7d53e62683ecf2098da089b60aafda2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Pump\+Message\+Loop} (v8\+::\+Isolate $\ast$isolate, Message\+Loop\+Behavior behavior=Message\+Loop\+Behavior\+::k\+Do\+Not\+Wait)
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_a358a8f892ad44ed1d97b13f44be0bcf0}\label{classv8_1_1platform_1_1DefaultPlatform_a358a8f892ad44ed1d97b13f44be0bcf0}} 
+void {\bfseries Run\+Idle\+Tasks} (v8\+::\+Isolate $\ast$isolate, double idle\+\_\+time\+\_\+in\+\_\+seconds)
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_aa7d95aad0db131e1709fd44b6dd65a1e}\label{classv8_1_1platform_1_1DefaultPlatform_aa7d95aad0db131e1709fd44b6dd65a1e}} 
+void {\bfseries Set\+Tracing\+Controller} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1TracingController}{v8\+::\+Tracing\+Controller}} $>$ tracing\+\_\+controller)
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_a81b61879b99c4ef7e5562aa548045f42}\label{classv8_1_1platform_1_1DefaultPlatform_a81b61879b99c4ef7e5562aa548045f42}} 
+void {\bfseries Set\+Time\+Function\+For\+Testing} (Time\+Function time\+\_\+function)
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_a31b2dbb9643a97ab89d763e1dfc90a9f}\label{classv8_1_1platform_1_1DefaultPlatform_a31b2dbb9643a97ab89d763e1dfc90a9f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Worker\+Threads} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_a9c8020287295fb8cdd673e09ea286c61}\label{classv8_1_1platform_1_1DefaultPlatform_a9c8020287295fb8cdd673e09ea286c61}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1TaskRunner}{Task\+Runner}} $>$ {\bfseries Get\+Foreground\+Task\+Runner} (v8\+::\+Isolate $\ast$isolate) override
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_a7def01f08f58adaa4f1fda77a93988dc}\label{classv8_1_1platform_1_1DefaultPlatform_a7def01f08f58adaa4f1fda77a93988dc}} 
+void {\bfseries Call\+On\+Worker\+Thread} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1Task}{Task}} $>$ task) override
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_a54d7b07473d95a4dcec17068f25094e6}\label{classv8_1_1platform_1_1DefaultPlatform_a54d7b07473d95a4dcec17068f25094e6}} 
+void {\bfseries Call\+Delayed\+On\+Worker\+Thread} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1Task}{Task}} $>$ task, double delay\+\_\+in\+\_\+seconds) override
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_ac7d7fb6996ce70dced9b3ad0848c267f}\label{classv8_1_1platform_1_1DefaultPlatform_ac7d7fb6996ce70dced9b3ad0848c267f}} 
+void {\bfseries Call\+On\+Foreground\+Thread} (v8\+::\+Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Task}{Task}} $\ast$task) override
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_a3dbdde1854d4b58c923359ca44de4ddc}\label{classv8_1_1platform_1_1DefaultPlatform_a3dbdde1854d4b58c923359ca44de4ddc}} 
+void {\bfseries Call\+Delayed\+On\+Foreground\+Thread} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Task}{Task}} $\ast$task, double delay\+\_\+in\+\_\+seconds) override
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_a7863da2c41903c325e4f33fa832e76fd}\label{classv8_1_1platform_1_1DefaultPlatform_a7863da2c41903c325e4f33fa832e76fd}} 
+void {\bfseries Call\+Idle\+On\+Foreground\+Thread} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1IdleTask}{Idle\+Task}} $\ast$task) override
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_a002ce8f7666b3eece368b39c67d69f07}\label{classv8_1_1platform_1_1DefaultPlatform_a002ce8f7666b3eece368b39c67d69f07}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Idle\+Tasks\+Enabled} (Isolate $\ast$isolate) override
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_a18e7c05daaf277740e84db0e6712fc46}\label{classv8_1_1platform_1_1DefaultPlatform_a18e7c05daaf277740e84db0e6712fc46}} 
+double {\bfseries Monotonically\+Increasing\+Time} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_ac4ebe4d87a83e71845b2a708d73ef195}\label{classv8_1_1platform_1_1DefaultPlatform_ac4ebe4d87a83e71845b2a708d73ef195}} 
+double {\bfseries Current\+Clock\+Time\+Millis} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_a397fb3678955433ef1ba947c8d6f7b47}\label{classv8_1_1platform_1_1DefaultPlatform_a397fb3678955433ef1ba947c8d6f7b47}} 
+\mbox{\hyperlink{classv8_1_1TracingController}{v8\+::\+Tracing\+Controller}} $\ast$ {\bfseries Get\+Tracing\+Controller} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_aeea6aef7dc875ccb7113cc014c91517e}\label{classv8_1_1platform_1_1DefaultPlatform_aeea6aef7dc875ccb7113cc014c91517e}} 
+Stack\+Trace\+Printer {\bfseries Get\+Stack\+Trace\+Printer} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultPlatform_a992060971393638e46e628c89858be6b}\label{classv8_1_1platform_1_1DefaultPlatform_a992060971393638e46e628c89858be6b}} 
+\mbox{\hyperlink{classv8_1_1PageAllocator}{v8\+::\+Page\+Allocator}} $\ast$ {\bfseries Get\+Page\+Allocator} () override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 32 of file default-\/platform.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/libplatform/default-\/platform.\+h\item 
+v8/src/libplatform/default-\/platform.\+cc\end{DoxyCompactItemize}

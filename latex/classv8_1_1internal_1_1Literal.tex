@@ -1,0 +1,103 @@
+\hypertarget{classv8_1_1internal_1_1Literal}{}\section{v8\+:\+:internal\+:\+:Literal Class Reference}
+\label{classv8_1_1internal_1_1Literal}\index{v8\+::internal\+::\+Literal@{v8\+::internal\+::\+Literal}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Literal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1Literal}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_aebdc45fab4b314d13410bd3285391f1c}\label{classv8_1_1internal_1_1Literal_aebdc45fab4b314d13410bd3285391f1c}} 
+enum {\bfseries Type} \{ \newline
+{\bfseries k\+Smi}, 
+{\bfseries k\+Heap\+Number}, 
+{\bfseries k\+Big\+Int}, 
+{\bfseries k\+String}, 
+\newline
+{\bfseries k\+Symbol}, 
+{\bfseries k\+Boolean}, 
+{\bfseries k\+Undefined}, 
+{\bfseries k\+Null}, 
+\newline
+{\bfseries k\+The\+Hole}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_aa5cdbce162b66bc4eea9c95f504e27ed}\label{classv8_1_1internal_1_1Literal_aa5cdbce162b66bc4eea9c95f504e27ed}} 
+Type {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_ab801eee49b842399bd4180145e450869}\label{classv8_1_1internal_1_1Literal_ab801eee49b842399bd4180145e450869}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Property\+Name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_a0794e1a8d9d6ba7433c5a78d8c57ac69}\label{classv8_1_1internal_1_1Literal_a0794e1a8d9d6ba7433c5a78d8c57ac69}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries As\+Array\+Index} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} $\ast$index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_ab4b6e7f1adc1a307adf007c55d70a606}\label{classv8_1_1internal_1_1Literal_ab4b6e7f1adc1a307adf007c55d70a606}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$ {\bfseries As\+Raw\+Property\+Name} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_a51ab6c416bbe612a4c4faca7d2592f24}\label{classv8_1_1internal_1_1Literal_a51ab6c416bbe612a4c4faca7d2592f24}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} {\bfseries As\+Smi\+Literal} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_abb4c94e71c472cbfb953c5abe42244b9}\label{classv8_1_1internal_1_1Literal_abb4c94e71c472cbfb953c5abe42244b9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Number} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_ad9b460a286873fb14efa5ac22ca75352}\label{classv8_1_1internal_1_1Literal_ad9b460a286873fb14efa5ac22ca75352}} 
+double {\bfseries As\+Number} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_a8de2256ce6f0e6b287b00a2bcdfbb71f}\label{classv8_1_1internal_1_1Literal_a8de2256ce6f0e6b287b00a2bcdfbb71f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1AstBigInt}{Ast\+Big\+Int}} {\bfseries As\+Big\+Int} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_a3389c90376b97b59092d41d729515766}\label{classv8_1_1internal_1_1Literal_a3389c90376b97b59092d41d729515766}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+String} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_ae202102a45e067444444ac259f432377}\label{classv8_1_1internal_1_1Literal_ae202102a45e067444444ac259f432377}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$ {\bfseries As\+Raw\+String} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_abf691d29797c926fe5cf35c9aabe69a6}\label{classv8_1_1internal_1_1Literal_abf691d29797c926fe5cf35c9aabe69a6}} 
+Ast\+Symbol {\bfseries As\+Symbol} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_ae3f085fa8fecbf6ed6c3a00ed8bb6239}\label{classv8_1_1internal_1_1Literal_ae3f085fa8fecbf6ed6c3a00ed8bb6239}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classbool}{bool}} {\bfseries To\+Boolean\+Is\+True} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_ac644b187d1620e6f76d612d2f43bf97d}\label{classv8_1_1internal_1_1Literal_ac644b187d1620e6f76d612d2f43bf97d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries To\+Boolean\+Is\+False} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_a2320971a611642f4523ea38effae35da}\label{classv8_1_1internal_1_1Literal_a2320971a611642f4523ea38effae35da}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries To\+Uint32} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} $\ast$value) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_a0c7f65666c573ef056eedfab7b6c3fa1}\label{classv8_1_1internal_1_1Literal_a0c7f65666c573ef056eedfab7b6c3fa1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Build\+Value} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_a3d473e923ccc91b435159fde350974a8}\label{classv8_1_1internal_1_1Literal_a3d473e923ccc91b435159fde350974a8}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Hash} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_a1035dab7bb6d4fab33e9ebae88d93673}\label{classv8_1_1internal_1_1Literal_a1035dab7bb6d4fab33e9ebae88d93673}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Match} (void $\ast$literal1, void $\ast$literal2)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Literal_a8d587c8ad3515ff6433eb83c578e795f}\label{classv8_1_1internal_1_1Literal_a8d587c8ad3515ff6433eb83c578e795f}} 
+class {\bfseries Ast\+Node\+Factory}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1073 of file ast.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ast/ast.\+h\item 
+v8/src/ast/ast.\+cc\end{DoxyCompactItemize}

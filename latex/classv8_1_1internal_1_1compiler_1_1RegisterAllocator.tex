@@ -1,0 +1,84 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Register\+Allocator Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator}\index{v8\+::internal\+::compiler\+::\+Register\+Allocator@{v8\+::internal\+::compiler\+::\+Register\+Allocator}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Register\+Allocator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1compiler_1_1RegisterAllocator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a541582eca277a75f71e1a1a83e54307a}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a541582eca277a75f71e1a1a83e54307a}} 
+{\bfseries Register\+Allocator} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData}{Register\+Allocation\+Data}} $\ast$data, Register\+Kind kind)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_af3c1de4fc176d004479dacbefadb6845}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_af3c1de4fc176d004479dacbefadb6845}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData}{Register\+Allocation\+Data}} $\ast$ {\bfseries data} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a2c90ad5bc209219d7f0aac769005f5a9}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a2c90ad5bc209219d7f0aac769005f5a9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionSequence}{Instruction\+Sequence}} $\ast$ {\bfseries code} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_ae72a88d7fa616bcf2649cd1a35335b99}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_ae72a88d7fa616bcf2649cd1a35335b99}} 
+Register\+Kind {\bfseries mode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a92764e4343744eaff1d85166fab6a8fd}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a92764e4343744eaff1d85166fab6a8fd}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries num\+\_\+registers} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_aed859ec2a157456f6e565610eb8c9c74}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_aed859ec2a157456f6e565610eb8c9c74}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries num\+\_\+allocatable\+\_\+registers} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a713093a6360fffbe049af1f3769d4ac4}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a713093a6360fffbe049af1f3769d4ac4}} 
+const \mbox{\hyperlink{classint}{int}} $\ast$ {\bfseries allocatable\+\_\+register\+\_\+codes} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_ae9cb16f089a82ff1b82be45afae7c31a}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_ae9cb16f089a82ff1b82be45afae7c31a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries check\+\_\+fp\+\_\+aliasing} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a63a56714278d376405b0c84c597df7f7}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a63a56714278d376405b0c84c597df7f7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} {\bfseries Get\+Split\+Position\+For\+Instruction} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LiveRange}{Live\+Range}} $\ast$range, \mbox{\hyperlink{classint}{int}} instruction\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_ae50fb0cf0dda91b45554b48e5094121c}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_ae50fb0cf0dda91b45554b48e5094121c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$ {\bfseries allocation\+\_\+zone} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a9c62285116fc84ee4068eac98ef4ca8a}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a9c62285116fc84ee4068eac98ef4ca8a}} 
+void {\bfseries Split\+And\+Spill\+Ranges\+Defined\+By\+Memory\+Operand} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_aeb162c1b8d19f9cd2b07d8d06e95451a}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_aeb162c1b8d19f9cd2b07d8d06e95451a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LiveRange}{Live\+Range}} $\ast$ {\bfseries Split\+Range\+At} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LiveRange}{Live\+Range}} $\ast$range, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a124e5230090fb4f62c2456094329bd55}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a124e5230090fb4f62c2456094329bd55}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Process\+Range} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LiveRange}{Live\+Range}} $\ast$range) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a17dafaa2ab828f17cdd4a075b6d3492b}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a17dafaa2ab828f17cdd4a075b6d3492b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LiveRange}{Live\+Range}} $\ast$ {\bfseries Split\+Between} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LiveRange}{Live\+Range}} $\ast$range, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} start, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} end)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a95714b88dadd2a8bafbaedc614eca6f6}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a95714b88dadd2a8bafbaedc614eca6f6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} {\bfseries Find\+Optimal\+Split\+Pos} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} start, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} end)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a629789d8d5ce5de31c3a5c8011a592fc}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a629789d8d5ce5de31c3a5c8011a592fc}} 
+void {\bfseries Spill} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LiveRange}{Live\+Range}} $\ast$range)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_ad30a3b9ae9719de4e5bd9f1f6b2e3fbf}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_ad30a3b9ae9719de4e5bd9f1f6b2e3fbf}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} {\bfseries Find\+Optimal\+Spilling\+Pos} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LiveRange}{Live\+Range}} $\ast$range, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_ae2174cad1f1656d126f0a47c1586c674}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_ae2174cad1f1656d126f0a47c1586c674}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$ $>$ \& {\bfseries Get\+Fixed\+Registers} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a47d1062f896dc303472f4f40572e96a6}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocator_a47d1062f896dc303472f4f40572e96a6}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Register\+Name} (\mbox{\hyperlink{classint}{int}} allocation\+\_\+index) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 948 of file register-\/allocator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/backend/register-\/allocator.\+h\item 
+v8/src/compiler/backend/register-\/allocator.\+cc\end{DoxyCompactItemize}

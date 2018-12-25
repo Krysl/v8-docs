@@ -1,0 +1,114 @@
+\hypertarget{classv8_1_1internal_1_1ModuleDescriptor}{}\section{v8\+:\+:internal\+:\+:Module\+Descriptor Class Reference}
+\label{classv8_1_1internal_1_1ModuleDescriptor}\index{v8\+::internal\+::\+Module\+Descriptor@{v8\+::internal\+::\+Module\+Descriptor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Module\+Descriptor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1ModuleDescriptor}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1ModuleDescriptor_1_1AstRawStringComparer}{Ast\+Raw\+String\+Comparer}}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1ModuleDescriptor_1_1Entry}{Entry}}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1ModuleDescriptor_1_1ModuleRequest}{Module\+Request}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_a66cdeaa292a82e29de05c3673d7a7c20}\label{classv8_1_1internal_1_1ModuleDescriptor_a66cdeaa292a82e29de05c3673d7a7c20}} 
+enum {\bfseries Cell\+Index\+Kind} \{ {\bfseries k\+Invalid}, 
+{\bfseries k\+Export}, 
+{\bfseries k\+Import}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_a53d5dc46a3e92d58b67979b7d1b73732}\label{classv8_1_1internal_1_1ModuleDescriptor_a53d5dc46a3e92d58b67979b7d1b73732}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1ZoneMap}{Zone\+Map}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$, \mbox{\hyperlink{structv8_1_1internal_1_1ModuleDescriptor_1_1ModuleRequest}{Module\+Request}}, \mbox{\hyperlink{structv8_1_1internal_1_1ModuleDescriptor_1_1AstRawStringComparer}{Ast\+Raw\+String\+Comparer}} $>$ {\bfseries Module\+Request\+Map}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_ae122bcdff1ec39ccc1b62b3267eec5db}\label{classv8_1_1internal_1_1ModuleDescriptor_ae122bcdff1ec39ccc1b62b3267eec5db}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1ZoneMultimap}{Zone\+Multimap}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$, \mbox{\hyperlink{structv8_1_1internal_1_1ModuleDescriptor_1_1Entry}{Entry}} $\ast$, \mbox{\hyperlink{structv8_1_1internal_1_1ModuleDescriptor_1_1AstRawStringComparer}{Ast\+Raw\+String\+Comparer}} $>$ {\bfseries Regular\+Export\+Map}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_aafe010635d4b67de7c74b2011a1c6d1f}\label{classv8_1_1internal_1_1ModuleDescriptor_aafe010635d4b67de7c74b2011a1c6d1f}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1ZoneMap}{Zone\+Map}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$, \mbox{\hyperlink{structv8_1_1internal_1_1ModuleDescriptor_1_1Entry}{Entry}} $\ast$, \mbox{\hyperlink{structv8_1_1internal_1_1ModuleDescriptor_1_1AstRawStringComparer}{Ast\+Raw\+String\+Comparer}} $>$ {\bfseries Regular\+Import\+Map}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_aa9a5266f9aafaf52e3bf90d3ce3732cb}\label{classv8_1_1internal_1_1ModuleDescriptor_aa9a5266f9aafaf52e3bf90d3ce3732cb}} 
+{\bfseries Module\+Descriptor} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_ac40c13c6e69b6d5bd0d4994046e0629a}\label{classv8_1_1internal_1_1ModuleDescriptor_ac40c13c6e69b6d5bd0d4994046e0629a}} 
+void {\bfseries Add\+Import} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$import\+\_\+name, const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$local\+\_\+name, const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$module\+\_\+request, const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Scanner\+::\+Location}} loc, const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Scanner\+::\+Location}} specifier\+\_\+loc, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_a71c63d97be380a475c6ed21649473930}\label{classv8_1_1internal_1_1ModuleDescriptor_a71c63d97be380a475c6ed21649473930}} 
+void {\bfseries Add\+Star\+Import} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$local\+\_\+name, const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$module\+\_\+request, const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Scanner\+::\+Location}} loc, const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Scanner\+::\+Location}} specifier\+\_\+loc, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_a8256e4f9ae01cd342b4aa344957d0e4f}\label{classv8_1_1internal_1_1ModuleDescriptor_a8256e4f9ae01cd342b4aa344957d0e4f}} 
+void {\bfseries Add\+Empty\+Import} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$module\+\_\+request, const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Scanner\+::\+Location}} specifier\+\_\+loc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_a6fc099174b3b5955150d560d53d095bc}\label{classv8_1_1internal_1_1ModuleDescriptor_a6fc099174b3b5955150d560d53d095bc}} 
+void {\bfseries Add\+Export} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$local\+\_\+name, const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$export\+\_\+name, const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Scanner\+::\+Location}} loc, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_a7fb9e11c98a5a99bae23f160d59e5eca}\label{classv8_1_1internal_1_1ModuleDescriptor_a7fb9e11c98a5a99bae23f160d59e5eca}} 
+void {\bfseries Add\+Export} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$export\+\_\+name, const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$import\+\_\+name, const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$module\+\_\+request, const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Scanner\+::\+Location}} loc, const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Scanner\+::\+Location}} specifier\+\_\+loc, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_a0082968655d6483b09973114b6051a22}\label{classv8_1_1internal_1_1ModuleDescriptor_a0082968655d6483b09973114b6051a22}} 
+void {\bfseries Add\+Star\+Export} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$module\+\_\+request, const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Scanner\+::\+Location}} loc, const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Scanner\+::\+Location}} specifier\+\_\+loc, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_a3ad600d5bf6488282b1e5bfc4232c204}\label{classv8_1_1internal_1_1ModuleDescriptor_a3ad600d5bf6488282b1e5bfc4232c204}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Validate} (\mbox{\hyperlink{classv8_1_1internal_1_1ModuleScope}{Module\+Scope}} $\ast$module\+\_\+scope, \mbox{\hyperlink{classv8_1_1internal_1_1PendingCompilationErrorHandler}{Pending\+Compilation\+Error\+Handler}} $\ast$error\+\_\+handler, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_a905d9e90d7fe4a3e65019aba802e1f74}\label{classv8_1_1internal_1_1ModuleDescriptor_a905d9e90d7fe4a3e65019aba802e1f74}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneMap}{Module\+Request\+Map}} \& {\bfseries module\+\_\+requests} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_a45f7d60c7904fbfc58737705989cf995}\label{classv8_1_1internal_1_1ModuleDescriptor_a45f7d60c7904fbfc58737705989cf995}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ const \mbox{\hyperlink{structv8_1_1internal_1_1ModuleDescriptor_1_1Entry}{Entry}} $\ast$ $>$ \& {\bfseries namespace\+\_\+imports} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_a1b39a7219ecd7cd65687cb49fd23b490}\label{classv8_1_1internal_1_1ModuleDescriptor_a1b39a7219ecd7cd65687cb49fd23b490}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneMap}{Regular\+Import\+Map}} \& {\bfseries regular\+\_\+imports} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_a55acc798a7d7366a73d5a0eb9e0ddcc4}\label{classv8_1_1internal_1_1ModuleDescriptor_a55acc798a7d7366a73d5a0eb9e0ddcc4}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ const \mbox{\hyperlink{structv8_1_1internal_1_1ModuleDescriptor_1_1Entry}{Entry}} $\ast$ $>$ \& {\bfseries special\+\_\+exports} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_a79639310a0eff539fa2e09099bd9ceb8}\label{classv8_1_1internal_1_1ModuleDescriptor_a79639310a0eff539fa2e09099bd9ceb8}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneMultimap}{Regular\+Export\+Map}} \& {\bfseries regular\+\_\+exports} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_a798f281003d2a30938e542341a751d36}\label{classv8_1_1internal_1_1ModuleDescriptor_a798f281003d2a30938e542341a751d36}} 
+void {\bfseries Add\+Regular\+Export} (\mbox{\hyperlink{structv8_1_1internal_1_1ModuleDescriptor_1_1Entry}{Entry}} $\ast$entry)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_a8c5c60c7bdacafd09e5646ac4f258dbf}\label{classv8_1_1internal_1_1ModuleDescriptor_a8c5c60c7bdacafd09e5646ac4f258dbf}} 
+void {\bfseries Add\+Special\+Export} (const \mbox{\hyperlink{structv8_1_1internal_1_1ModuleDescriptor_1_1Entry}{Entry}} $\ast$entry, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_a57bacd16d5305ec95886125ee4ba2d1d}\label{classv8_1_1internal_1_1ModuleDescriptor_a57bacd16d5305ec95886125ee4ba2d1d}} 
+void {\bfseries Add\+Regular\+Import} (\mbox{\hyperlink{structv8_1_1internal_1_1ModuleDescriptor_1_1Entry}{Entry}} $\ast$entry)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_acd4e41dda9ae18bf25d3a3ba6f56dc3e}\label{classv8_1_1internal_1_1ModuleDescriptor_acd4e41dda9ae18bf25d3a3ba6f56dc3e}} 
+void {\bfseries Add\+Namespace\+Import} (const \mbox{\hyperlink{structv8_1_1internal_1_1ModuleDescriptor_1_1Entry}{Entry}} $\ast$entry, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_af7186722a7d8c4fcbb61df5b8868a284}\label{classv8_1_1internal_1_1ModuleDescriptor_af7186722a7d8c4fcbb61df5b8868a284}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ {\bfseries Serialize\+Regular\+Exports} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_a955791762a312f33accbd5a4c7d2d105}\label{classv8_1_1internal_1_1ModuleDescriptor_a955791762a312f33accbd5a4c7d2d105}} 
+void {\bfseries Deserialize\+Regular\+Exports} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1AstValueFactory}{Ast\+Value\+Factory}} $\ast$avfactory, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ModuleInfo}{Module\+Info}} $>$ module\+\_\+info)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleDescriptor_a981243233715792c374cb1b3dcc8562e}\label{classv8_1_1internal_1_1ModuleDescriptor_a981243233715792c374cb1b3dcc8562e}} 
+static Cell\+Index\+Kind {\bfseries Get\+Cell\+Index\+Kind} (\mbox{\hyperlink{classint}{int}} cell\+\_\+index)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file modules.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ast/modules.\+h\item 
+v8/src/ast/modules.\+cc\end{DoxyCompactItemize}

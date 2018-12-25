@@ -1,0 +1,90 @@
+\hypertarget{classv8_1_1internal_1_1CharacterRange}{}\section{v8\+:\+:internal\+:\+:Character\+Range Class Reference}
+\label{classv8_1_1internal_1_1CharacterRange}\index{v8\+::internal\+::\+Character\+Range@{v8\+::internal\+::\+Character\+Range}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_a1c257176d47561b468f2d9fcba3768ee}\label{classv8_1_1internal_1_1CharacterRange_a1c257176d47561b468f2d9fcba3768ee}} 
+{\bfseries Character\+Range} (void $\ast$null)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_a84c0fb224399883bcb7dd49c7d931300}\label{classv8_1_1internal_1_1CharacterRange_a84c0fb224399883bcb7dd49c7d931300}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Contains} (uc32 i)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_a0d5074f9a67ed18805afac793d98efde}\label{classv8_1_1internal_1_1CharacterRange_a0d5074f9a67ed18805afac793d98efde}} 
+uc32 {\bfseries from} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_a043b323901eedeac660aeca2584c74e6}\label{classv8_1_1internal_1_1CharacterRange_a043b323901eedeac660aeca2584c74e6}} 
+void {\bfseries set\+\_\+from} (uc32 value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_adb1a90ad72f795a40d620142f55a9bd2}\label{classv8_1_1internal_1_1CharacterRange_adb1a90ad72f795a40d620142f55a9bd2}} 
+uc32 {\bfseries to} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_a730aeee22db49c1f0077fa09fc450564}\label{classv8_1_1internal_1_1CharacterRange_a730aeee22db49c1f0077fa09fc450564}} 
+void {\bfseries set\+\_\+to} (uc32 value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_a291c287ee7cb98c102dc433db3aac1e6}\label{classv8_1_1internal_1_1CharacterRange_a291c287ee7cb98c102dc433db3aac1e6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+valid} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_a2cfef11be8ffac4371e3b9b87fb9bbd6}\label{classv8_1_1internal_1_1CharacterRange_a2cfef11be8ffac4371e3b9b87fb9bbd6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Everything} (uc32 max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_aef36eef7241d9380d60df9a8bbaf71ec}\label{classv8_1_1internal_1_1CharacterRange_aef36eef7241d9380d60df9a8bbaf71ec}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Singleton} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_a91f845cc383cc9802b1281c636cdf880}\label{classv8_1_1internal_1_1CharacterRange_a91f845cc383cc9802b1281c636cdf880}} 
+static void {\bfseries Add\+Class\+Escape} (\mbox{\hyperlink{classchar}{char}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} $>$ $\ast$ranges, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_a41bcaf098fa2ebbb726c162a182759d6}\label{classv8_1_1internal_1_1CharacterRange_a41bcaf098fa2ebbb726c162a182759d6}} 
+static void {\bfseries Add\+Class\+Escape} (\mbox{\hyperlink{classchar}{char}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} $>$ $\ast$ranges, \mbox{\hyperlink{classbool}{bool}} add\+\_\+unicode\+\_\+case\+\_\+equivalents, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_a6bfe19b63871347a50b077122d9dc8c2}\label{classv8_1_1internal_1_1CharacterRange_a6bfe19b63871347a50b077122d9dc8c2}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const \mbox{\hyperlink{classint}{int}} $>$ {\bfseries Get\+Word\+Bounds} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_a6c3ef8e750a0d1b8b4a1bf76fc423f1f}\label{classv8_1_1internal_1_1CharacterRange_a6c3ef8e750a0d1b8b4a1bf76fc423f1f}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} {\bfseries Singleton} (uc32 value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_a32b358e230887d725cff947f04fcc928}\label{classv8_1_1internal_1_1CharacterRange_a32b358e230887d725cff947f04fcc928}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} {\bfseries Range} (uc32 from, uc32 to)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_ad9b69fc9e62b3eaae9d56d57ffe1ed08}\label{classv8_1_1internal_1_1CharacterRange_ad9b69fc9e62b3eaae9d56d57ffe1ed08}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} {\bfseries Everything} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_a966123234c6ebffc83325eb2d58931de}\label{classv8_1_1internal_1_1CharacterRange_a966123234c6ebffc83325eb2d58931de}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} $>$ $\ast$ {\bfseries List} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} range)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_a96cdf77b7a17b3cac6522d41bab0ef7c}\label{classv8_1_1internal_1_1CharacterRange_a96cdf77b7a17b3cac6522d41bab0ef7c}} 
+static void {\bfseries Add\+Case\+Equivalents} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} $>$ $\ast$ranges, \mbox{\hyperlink{classbool}{bool}} is\+\_\+one\+\_\+byte)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_ad10e80af3f62972193297b904469cc06}\label{classv8_1_1internal_1_1CharacterRange_ad10e80af3f62972193297b904469cc06}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Canonical} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} $>$ $\ast$ranges)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_a0fc9872753da38b12f6dc6faaee66f9a}\label{classv8_1_1internal_1_1CharacterRange_a0fc9872753da38b12f6dc6faaee66f9a}} 
+static void {\bfseries Canonicalize} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} $>$ $\ast$ranges)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_a91a4a22eb1abca8e998f6a004a120c4f}\label{classv8_1_1internal_1_1CharacterRange_a91a4a22eb1abca8e998f6a004a120c4f}} 
+static void {\bfseries Negate} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} $>$ $\ast$src, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} $>$ $\ast$dst, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_af71c0127ae30da61d62047b96dfa1804}\label{classv8_1_1internal_1_1CharacterRange_af71c0127ae30da61d62047b96dfa1804}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Start\+Marker} = (1 $<$$<$ 24)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CharacterRange_a9bd1ec7131c945c2d221c4d43dec04fb}\label{classv8_1_1internal_1_1CharacterRange_a9bd1ec7131c945c2d221c4d43dec04fb}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Payload\+Mask} = (1 $<$$<$ 24) -\/ 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 78 of file regexp-\/ast.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/regexp-\/ast.\+h\item 
+v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,60 @@
+\hypertarget{classv8_1_1platform_1_1DefaultForegroundTaskRunner}{}\section{v8\+:\+:platform\+:\+:Default\+Foreground\+Task\+Runner Class Reference}
+\label{classv8_1_1platform_1_1DefaultForegroundTaskRunner}\index{v8\+::platform\+::\+Default\+Foreground\+Task\+Runner@{v8\+::platform\+::\+Default\+Foreground\+Task\+Runner}}
+Inheritance diagram for v8\+:\+:platform\+:\+:Default\+Foreground\+Task\+Runner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1platform_1_1DefaultForegroundTaskRunner}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultForegroundTaskRunner_a1222d6bb883a836840ee781e3dfbc33f}\label{classv8_1_1platform_1_1DefaultForegroundTaskRunner_a1222d6bb883a836840ee781e3dfbc33f}} 
+using {\bfseries Time\+Function} = double($\ast$)()
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultForegroundTaskRunner_a5dc5e969e4a3ba22fb80999d609308f7}\label{classv8_1_1platform_1_1DefaultForegroundTaskRunner_a5dc5e969e4a3ba22fb80999d609308f7}} 
+{\bfseries Default\+Foreground\+Task\+Runner} (Idle\+Task\+Support idle\+\_\+task\+\_\+support, Time\+Function time\+\_\+function)
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultForegroundTaskRunner_a09ab9f269f09c73814cddbc967265cce}\label{classv8_1_1platform_1_1DefaultForegroundTaskRunner_a09ab9f269f09c73814cddbc967265cce}} 
+void {\bfseries Terminate} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultForegroundTaskRunner_a2034bcb0e46b55dad446e7cf76d22c87}\label{classv8_1_1platform_1_1DefaultForegroundTaskRunner_a2034bcb0e46b55dad446e7cf76d22c87}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1Task}{Task}} $>$ {\bfseries Pop\+Task\+From\+Queue} (Message\+Loop\+Behavior wait\+\_\+for\+\_\+work)
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultForegroundTaskRunner_a4864af369db103469b3daea83ddbd8e7}\label{classv8_1_1platform_1_1DefaultForegroundTaskRunner_a4864af369db103469b3daea83ddbd8e7}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1IdleTask}{Idle\+Task}} $>$ {\bfseries Pop\+Task\+From\+Idle\+Queue} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultForegroundTaskRunner_a6d9d16f7d4ac83529f8d65d7c528b255}\label{classv8_1_1platform_1_1DefaultForegroundTaskRunner_a6d9d16f7d4ac83529f8d65d7c528b255}} 
+void {\bfseries Wait\+For\+Task\+Locked} (const base\+::\+Mutex\+Guard \&)
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultForegroundTaskRunner_ae86e21d09c2828455645d9579623ecbf}\label{classv8_1_1platform_1_1DefaultForegroundTaskRunner_ae86e21d09c2828455645d9579623ecbf}} 
+double {\bfseries Monotonically\+Increasing\+Time} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultForegroundTaskRunner_adae62b0d8f45ebe0dd6f6a79636db6b2}\label{classv8_1_1platform_1_1DefaultForegroundTaskRunner_adae62b0d8f45ebe0dd6f6a79636db6b2}} 
+void {\bfseries Post\+Task} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1Task}{Task}} $>$ task) override
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultForegroundTaskRunner_a51ac3c5e525915d7da14e62df8360260}\label{classv8_1_1platform_1_1DefaultForegroundTaskRunner_a51ac3c5e525915d7da14e62df8360260}} 
+void {\bfseries Post\+Delayed\+Task} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1Task}{Task}} $>$ task, double delay\+\_\+in\+\_\+seconds) override
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultForegroundTaskRunner_a9a786d811ce222e8dc3ecd0045d089a6}\label{classv8_1_1platform_1_1DefaultForegroundTaskRunner_a9a786d811ce222e8dc3ecd0045d089a6}} 
+void {\bfseries Post\+Idle\+Task} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1IdleTask}{Idle\+Task}} $>$ task) override
+\item 
+\mbox{\Hypertarget{classv8_1_1platform_1_1DefaultForegroundTaskRunner_a44360ea2412113db3a6caed4e58b59ae}\label{classv8_1_1platform_1_1DefaultForegroundTaskRunner_a44360ea2412113db3a6caed4e58b59ae}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Idle\+Tasks\+Enabled} () override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file default-\/foreground-\/task-\/runner.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/libplatform/default-\/foreground-\/task-\/runner.\+h\item 
+v8/src/libplatform/default-\/foreground-\/task-\/runner.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener}{}\section{v8\+:\+:internal\+:\+:External\+Code\+Event\+Listener Class Reference}
+\label{classv8_1_1internal_1_1ExternalCodeEventListener}\index{v8\+::internal\+::\+External\+Code\+Event\+Listener@{v8\+::internal\+::\+External\+Code\+Event\+Listener}}
+Inheritance diagram for v8\+:\+:internal\+:\+:External\+Code\+Event\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1ExternalCodeEventListener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener_a488fd03dc934b0104ac4bb9e1fcc9782}\label{classv8_1_1internal_1_1ExternalCodeEventListener_a488fd03dc934b0104ac4bb9e1fcc9782}} 
+{\bfseries External\+Code\+Event\+Listener} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener_ab237aa582f39ce444db94a7291809049}\label{classv8_1_1internal_1_1ExternalCodeEventListener_ab237aa582f39ce444db94a7291809049}} 
+void {\bfseries Code\+Create\+Event} (Log\+Events\+And\+Tags tag, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, const \mbox{\hyperlink{classchar}{char}} $\ast$comment) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener_a99cf1dbbd1cb3ed73d487d47dbf9b89a}\label{classv8_1_1internal_1_1ExternalCodeEventListener_a99cf1dbbd1cb3ed73d487d47dbf9b89a}} 
+void {\bfseries Code\+Create\+Event} (Log\+Events\+And\+Tags tag, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener_ada28e41fe92e55a0403219ba0b1ee885}\label{classv8_1_1internal_1_1ExternalCodeEventListener_ada28e41fe92e55a0403219ba0b1ee885}} 
+void {\bfseries Code\+Create\+Event} (Log\+Events\+And\+Tags tag, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$shared, \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener_a58a393a15ae44a9b7856ffeb54f646df}\label{classv8_1_1internal_1_1ExternalCodeEventListener_a58a393a15ae44a9b7856ffeb54f646df}} 
+void {\bfseries Code\+Create\+Event} (Log\+Events\+And\+Tags tag, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$shared, \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} source, \mbox{\hyperlink{classint}{int}} line, \mbox{\hyperlink{classint}{int}} column) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener_a4cbcfbb998e7a320fc5fe50860c59bd9}\label{classv8_1_1internal_1_1ExternalCodeEventListener_a4cbcfbb998e7a320fc5fe50860c59bd9}} 
+void {\bfseries Code\+Create\+Event} (Log\+Events\+And\+Tags tag, const \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCode}{wasm\+::\+Wasm\+Code}} $\ast$code, \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{wasm\+::\+Wasm\+Name}} name) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener_af522c65cb985b5d6ddaa8b852d55803e}\label{classv8_1_1internal_1_1ExternalCodeEventListener_af522c65cb985b5d6ddaa8b852d55803e}} 
+void {\bfseries Reg\+Exp\+Code\+Create\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} source) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener_a41f6aca6526cee283bb1a0c109ed88b2}\label{classv8_1_1internal_1_1ExternalCodeEventListener_a41f6aca6526cee283bb1a0c109ed88b2}} 
+void {\bfseries Callback\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, \mbox{\hyperlink{classuintptr__t}{Address}} entry\+\_\+point) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener_a5bcd33951d40687572e539d197e0bf17}\label{classv8_1_1internal_1_1ExternalCodeEventListener_a5bcd33951d40687572e539d197e0bf17}} 
+void {\bfseries Getter\+Callback\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, \mbox{\hyperlink{classuintptr__t}{Address}} entry\+\_\+point) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener_a3d28d0b30565e57dfdfa4fa6799a82c3}\label{classv8_1_1internal_1_1ExternalCodeEventListener_a3d28d0b30565e57dfdfa4fa6799a82c3}} 
+void {\bfseries Setter\+Callback\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, \mbox{\hyperlink{classuintptr__t}{Address}} entry\+\_\+point) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener_a700e44d849d838675336d26cc2865102}\label{classv8_1_1internal_1_1ExternalCodeEventListener_a700e44d849d838675336d26cc2865102}} 
+void {\bfseries Shared\+Function\+Info\+Move\+Event} (\mbox{\hyperlink{classuintptr__t}{Address}} from, \mbox{\hyperlink{classuintptr__t}{Address}} to) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener_a82a4894de3c05619d51d0f4103bef07c}\label{classv8_1_1internal_1_1ExternalCodeEventListener_a82a4894de3c05619d51d0f4103bef07c}} 
+void {\bfseries Code\+Move\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} from, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} to) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener_a656f842b014b9179598047b622b59157}\label{classv8_1_1internal_1_1ExternalCodeEventListener_a656f842b014b9179598047b622b59157}} 
+void {\bfseries Code\+Disable\+Opt\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$shared) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener_afb9fc79c9edc24acf5549e8db9c60d09}\label{classv8_1_1internal_1_1ExternalCodeEventListener_afb9fc79c9edc24acf5549e8db9c60d09}} 
+void {\bfseries Code\+Moving\+G\+C\+Event} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener_aad6030f0830af5fe3998f8695f8e0e70}\label{classv8_1_1internal_1_1ExternalCodeEventListener_aad6030f0830af5fe3998f8695f8e0e70}} 
+void {\bfseries Code\+Deopt\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} code, Deoptimize\+Kind kind, \mbox{\hyperlink{classuintptr__t}{Address}} pc, \mbox{\hyperlink{classint}{int}} fp\+\_\+to\+\_\+sp\+\_\+delta) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener_a88c0134408bf85cec43c45058872d23b}\label{classv8_1_1internal_1_1ExternalCodeEventListener_a88c0134408bf85cec43c45058872d23b}} 
+void {\bfseries Start\+Listening} (\mbox{\hyperlink{classv8_1_1CodeEventHandler}{Code\+Event\+Handler}} $\ast$code\+\_\+event\+\_\+handler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener_ab781bc2611374a07a833776afa77c970}\label{classv8_1_1internal_1_1ExternalCodeEventListener_ab781bc2611374a07a833776afa77c970}} 
+void {\bfseries Stop\+Listening} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalCodeEventListener_a9d014d0003c4db78b900a7e960e4be36}\label{classv8_1_1internal_1_1ExternalCodeEventListener_a9d014d0003c4db78b900a7e960e4be36}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+listening\+\_\+to\+\_\+code\+\_\+events} () override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 454 of file log.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/log.\+h\item 
+v8/src/log.\+cc\end{DoxyCompactItemize}

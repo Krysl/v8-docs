@@ -96,6 +96,16 @@ $(document).ready(function(){initNavTree('classv8_1_1Platform.html','');});
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for v8::Platform:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classv8_1_1Platform.png" usemap="#v8::Platform_map" alt=""/>
+  <map id="v8::Platform_map" name="v8::Platform_map">
+<area href="classv8_1_1DelayedTasksPlatform.html" alt="v8::DelayedTasksPlatform" shape="rect" coords="0,56,157,80"/>
+<area href="classv8_1_1PredictablePlatform.html" alt="v8::PredictablePlatform" shape="rect" coords="167,56,324,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -109,9 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab7c1886dd8131f7389b805bc98276702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ed41bddc1d1ebe51c55539198d0026e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Platform.html#a7ed41bddc1d1ebe51c55539198d0026e">OnCriticalMemoryPressure</a> ()</td></tr>
 <tr class="separator:a7ed41bddc1d1ebe51c55539198d0026e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0de4b8a7bb8865ce65beb5afbaabe4cc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Platform.html#a0de4b8a7bb8865ce65beb5afbaabe4cc">OnCriticalMemoryPressure</a> (size_t length)</td></tr>
+<tr class="memitem:a0de4b8a7bb8865ce65beb5afbaabe4cc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Platform.html#a0de4b8a7bb8865ce65beb5afbaabe4cc">OnCriticalMemoryPressure</a> (<a class="el" href="classsize__t.html">size_t</a> length)</td></tr>
 <tr class="separator:a0de4b8a7bb8865ce65beb5afbaabe4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57cdd7eb4c482bfb806c378beeda716d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Platform.html#a57cdd7eb4c482bfb806c378beeda716d">NumberOfWorkerThreads</a> ()=0</td></tr>
+<tr class="memitem:a57cdd7eb4c482bfb806c378beeda716d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Platform.html#a57cdd7eb4c482bfb806c378beeda716d">NumberOfWorkerThreads</a> ()=0</td></tr>
 <tr class="separator:a57cdd7eb4c482bfb806c378beeda716d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0d18c6bbefa133c5d11ec8a460d0278"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classv8_1_1TaskRunner.html">v8::TaskRunner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Platform.html#af0d18c6bbefa133c5d11ec8a460d0278">GetForegroundTaskRunner</a> (Isolate *isolate)=0</td></tr>
 <tr class="separator:af0d18c6bbefa133c5d11ec8a460d0278"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,7 +137,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7bdd7f9f31ce5fe5c5f0fd8a0e597d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2164bf101f39010ec95e117a69a4e782"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Platform.html#a2164bf101f39010ec95e117a69a4e782">V8_DEPRECATE_SOON</a> (&quot;Use a taskrunner acquired by <a class="el" href="classv8_1_1Platform.html#af0d18c6bbefa133c5d11ec8a460d0278">GetForegroundTaskRunner</a> instead.&quot;, virtual void CallIdleOnForegroundThread(Isolate *isolate, <a class="el" href="classv8_1_1IdleTask.html">IdleTask</a> *task))</td></tr>
 <tr class="separator:a2164bf101f39010ec95e117a69a4e782"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad229642bf16a066d2e8d866dc128141e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Platform.html#ad229642bf16a066d2e8d866dc128141e">IdleTasksEnabled</a> (Isolate *isolate)</td></tr>
+<tr class="memitem:ad229642bf16a066d2e8d866dc128141e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Platform.html#ad229642bf16a066d2e8d866dc128141e">IdleTasksEnabled</a> (Isolate *isolate)</td></tr>
 <tr class="separator:ad229642bf16a066d2e8d866dc128141e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d4d7c2dcf6b0c7113099b97fa7f57b7"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Platform.html#a6d4d7c2dcf6b0c7113099b97fa7f57b7">MonotonicallyIncreasingTime</a> ()=0</td></tr>
 <tr class="separator:a6d4d7c2dcf6b0c7113099b97fa7f57b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,8 +152,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a18ccdaf3a1a738bd4082dbbe749d026b"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Platform.html#a18ccdaf3a1a738bd4082dbbe749d026b">SystemClockTimeMillis</a> ()</td></tr>
-<tr class="separator:a18ccdaf3a1a738bd4082dbbe749d026b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf17a5dcca8d35e130a0d2e9d4fa0fc"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Platform.html#accf17a5dcca8d35e130a0d2e9d4fa0fc">SystemClockTimeMillis</a> ()</td></tr>
+<tr class="separator:accf17a5dcca8d35e130a0d2e9d4fa0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>V8 <a class="el" href="classv8_1_1Platform.html">Platform</a> abstraction layer.</p>
@@ -215,6 +225,8 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Schedules a task to be invoked on a worker thread after |delay_in_seconds| expires. </p>
 
+<p>Implemented in <a class="el" href="classv8_1_1DelayedTasksPlatform.html#aeb214faee105e6335c5a93601cac54c7">v8::DelayedTasksPlatform</a>, and <a class="el" href="classv8_1_1PredictablePlatform.html#aebe343ebe283f3ffdc905282fbfeb5ad">v8::PredictablePlatform</a>.</p>
+
 </div>
 </div>
 <a id="a92dc9c2f54c9a0fea87e15df8d58d699"></a>
@@ -242,6 +254,8 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Schedules a task to be invoked on a worker thread. </p>
 
+<p>Implemented in <a class="el" href="classv8_1_1DelayedTasksPlatform.html#a9c9cbee600d68caf36aa3c0555ff567f">v8::DelayedTasksPlatform</a>, and <a class="el" href="classv8_1_1PredictablePlatform.html#a9b41e6b1041c62d9ff5e76a3a7a0aa69">v8::PredictablePlatform</a>.</p>
+
 </div>
 </div>
 <a id="a8aa46c7f8e492351ebe1bc8168ec9c2f"></a>
@@ -267,6 +281,8 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Current wall-clock time in milliseconds since epoch. This function is expected to return at least millisecond-precision values. </p>
+
+<p>Implemented in <a class="el" href="classv8_1_1DelayedTasksPlatform.html#a12819f1b8581ce7a19f5a6eabae6c14c">v8::DelayedTasksPlatform</a>, and <a class="el" href="classv8_1_1PredictablePlatform.html#a910c1b4977cca092adec3d11b3f3b242">v8::PredictablePlatform</a>.</p>
 
 </div>
 </div>
@@ -323,6 +339,8 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a <a class="el" href="classv8_1_1TaskRunner.html">TaskRunner</a> which can be used to post a task on the foreground. This function should only be called from a foreground thread. </p>
 
+<p>Implemented in <a class="el" href="classv8_1_1DelayedTasksPlatform.html#a822079611fe0e01d3bc5dcf5eaa7f811">v8::DelayedTasksPlatform</a>, and <a class="el" href="classv8_1_1PredictablePlatform.html#adcf0ce1eba22ca032ed59098e60ce059">v8::PredictablePlatform</a>.</p>
+
 </div>
 </div>
 <a id="ab7c1886dd8131f7389b805bc98276702"></a>
@@ -348,6 +366,8 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Allows the embedder to manage memory page allocations. </p>
+
+<p>Reimplemented in <a class="el" href="classv8_1_1DelayedTasksPlatform.html#aa4c38247e7c468f4ad4f449451bb08ae">v8::DelayedTasksPlatform</a>, and <a class="el" href="classv8_1_1PredictablePlatform.html#ac9e493b7320d723958f47c93dfd1db70">v8::PredictablePlatform</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00275">275</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
 
@@ -405,6 +425,8 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns an instance of a <a class="el" href="classv8_1_1TracingController.html">v8::TracingController</a>. This must be non-nullptr. </p>
 
+<p>Implemented in <a class="el" href="classv8_1_1DelayedTasksPlatform.html#a7d8406d5b169da8645d65bb06bc8bbc6">v8::DelayedTasksPlatform</a>, and <a class="el" href="classv8_1_1PredictablePlatform.html#acea822c93bd1f6a51439d21a59aa5d48">v8::PredictablePlatform</a>.</p>
+
 </div>
 </div>
 <a id="ad229642bf16a066d2e8d866dc128141e"></a>
@@ -417,7 +439,7 @@ Static Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool v8::Platform::IdleTasksEnabled </td>
+          <td class="memname">virtual <a class="el" href="classbool.html">bool</a> v8::Platform::IdleTasksEnabled </td>
           <td>(</td>
           <td class="paramtype">Isolate *&#160;</td>
           <td class="paramname"><em>isolate</em></td><td>)</td>
@@ -431,6 +453,8 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns true if idle tasks are enabled for the given |isolate|. </p>
+
+<p>Reimplemented in <a class="el" href="classv8_1_1DelayedTasksPlatform.html#a1ac3788b072ee705cd2de6cc08556295">v8::DelayedTasksPlatform</a>, and <a class="el" href="classv8_1_1PredictablePlatform.html#ad79dbc4e7ebdbbe1c3cc90872161f845">v8::PredictablePlatform</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00380">380</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
 
@@ -460,6 +484,8 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Monotonically increasing time in seconds from an arbitrary fixed point in the past. This function is expected to return at least millisecond-precision values. For this reason, it is recommended that the fixed point be no further in the past than the epoch. </p>
 
+<p>Implemented in <a class="el" href="classv8_1_1DelayedTasksPlatform.html#a071eea7329b3d7ed1f2b9c4a444bf128">v8::DelayedTasksPlatform</a>, and <a class="el" href="classv8_1_1PredictablePlatform.html#a5ea9a10dff864d311e3612ec340a6710">v8::PredictablePlatform</a>.</p>
+
 </div>
 </div>
 <a id="a57cdd7eb4c482bfb806c378beeda716d"></a>
@@ -472,7 +498,7 @@ Static Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int v8::Platform::NumberOfWorkerThreads </td>
+          <td class="memname">virtual <a class="el" href="classint.html">int</a> v8::Platform::NumberOfWorkerThreads </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -485,6 +511,8 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Gets the number of worker threads used by Call(BlockingTask)OnWorkerThread(). This can be used to estimate the number of tasks a work package should be split into. A return value of 0 means that there are no worker threads available. Note that a value of 0 won't prohibit V8 from posting tasks using |CallOnWorkerThread|. </p>
+
+<p>Implemented in <a class="el" href="classv8_1_1DelayedTasksPlatform.html#a1a3aa3e67db9adaac185eeac940e6a97">v8::DelayedTasksPlatform</a>, and <a class="el" href="classv8_1_1PredictablePlatform.html#abe8bf7e862a8403649bb3548ceab61ff">v8::PredictablePlatform</a>.</p>
 
 </div>
 </div>
@@ -512,6 +540,8 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Enables the embedder to respond in cases where V8 can't allocate large blocks of memory. V8 retries the failed allocation once after calling this method. On success, execution continues; otherwise V8 exits with a fatal error. Embedder overrides of this function must NOT call back into V8. </p>
 
+<p>Reimplemented in <a class="el" href="classv8_1_1DelayedTasksPlatform.html#a3f545fedfc3298d49a02b4b9f4aa500c">v8::DelayedTasksPlatform</a>, and <a class="el" href="classv8_1_1PredictablePlatform.html#abeea60c323e795787753638133ff525e">v8::PredictablePlatform</a>.</p>
+
 <p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00287">287</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
 
 </div>
@@ -526,9 +556,9 @@ Static Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool v8::Platform::OnCriticalMemoryPressure </td>
+          <td class="memname">virtual <a class="el" href="classbool.html">bool</a> v8::Platform::OnCriticalMemoryPressure </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classsize__t.html">size_t</a>&#160;</td>
           <td class="paramname"><em>length</em></td><td>)</td>
           <td></td>
         </tr>
@@ -542,12 +572,14 @@ Static Protected Member Functions</h2></td></tr>
 <p>Enables the embedder to respond in cases where V8 can't allocate large memory regions. The |length| parameter is the amount of memory needed. Returns true if memory is now available. Returns false if no memory could be made available. V8 will retry allocations until this method returns false.</p>
 <p>Embedder overrides of this function must NOT call back into V8. </p>
 
+<p>Reimplemented in <a class="el" href="classv8_1_1DelayedTasksPlatform.html#a0e71d1dd7f3096bccd5a118506e87597">v8::DelayedTasksPlatform</a>, and <a class="el" href="classv8_1_1PredictablePlatform.html#a358d24a36a74e1c9e2a9bbae6e81bff1">v8::PredictablePlatform</a>.</p>
+
 <p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00301">301</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
 
 </div>
 </div>
-<a id="a18ccdaf3a1a738bd4082dbbe749d026b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18ccdaf3a1a738bd4082dbbe749d026b">&#9670;&nbsp;</a></span>SystemClockTimeMillis()</h2>
+<a id="accf17a5dcca8d35e130a0d2e9d4fa0fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accf17a5dcca8d35e130a0d2e9d4fa0fc">&#9670;&nbsp;</a></span>SystemClockTimeMillis()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -556,7 +588,7 @@ Static Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static double v8::Platform::SystemClockTimeMillis </td>
+          <td class="memname">double v8::Platform::SystemClockTimeMillis </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -569,6 +601,8 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Default implementation of current wall-clock time in milliseconds since epoch. Useful for implementing |CurrentClockTimeMillis| if nothing special needed. </p>
+
+<p class="definition">Definition at line <a class="el" href="v8_8cc_source.html#l00154">154</a> of file <a class="el" href="v8_8cc_source.html">v8.cc</a>.</p>
 
 </div>
 </div>
@@ -685,8 +719,9 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>v8/include/<a class="el" href="v8-platform_8h_source.html">v8-platform.h</a></li>
+<li>v8/src/<a class="el" href="v8_8cc_source.html">v8.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -694,7 +729,7 @@ Static Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1Platform.html">Platform</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 14:33:06 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:40:31 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

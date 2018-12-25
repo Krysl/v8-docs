@@ -6,14 +6,14 @@
 \mbox{\Hypertarget{classv8_1_1WasmModuleObjectBuilderStreaming_a38ecb92cde61095525a4b2728ba091aa}\label{classv8_1_1WasmModuleObjectBuilderStreaming_a38ecb92cde61095525a4b2728ba091aa}} 
 {\bfseries Wasm\+Module\+Object\+Builder\+Streaming} (Isolate $\ast$isolate)
 \item 
-void \mbox{\hyperlink{classv8_1_1WasmModuleObjectBuilderStreaming_ac67b675b7241a18a3b773dab2f0fd458}{On\+Bytes\+Received}} (const uint8\+\_\+t $\ast$, size\+\_\+t size)
+void \mbox{\hyperlink{classv8_1_1WasmModuleObjectBuilderStreaming_ac67b675b7241a18a3b773dab2f0fd458}{On\+Bytes\+Received}} (const uint8\+\_\+t $\ast$, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
 \item 
 \mbox{\Hypertarget{classv8_1_1WasmModuleObjectBuilderStreaming_a679a8781a81a4c926e82924d1a2f2446}\label{classv8_1_1WasmModuleObjectBuilderStreaming_a679a8781a81a4c926e82924d1a2f2446}} 
 void {\bfseries Finish} ()
 \item 
 void \mbox{\hyperlink{classv8_1_1WasmModuleObjectBuilderStreaming_ac8a2a6e122799d746ded69f80a295fb5}{Abort}} (\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ exception)
 \item 
-\mbox{\Hypertarget{classv8_1_1WasmModuleObjectBuilderStreaming_a1b5def1cfb9746d6e196a5a44ffe6308}\label{classv8_1_1WasmModuleObjectBuilderStreaming_a1b5def1cfb9746d6e196a5a44ffe6308}} 
+\mbox{\Hypertarget{classv8_1_1WasmModuleObjectBuilderStreaming_a71f39c9483219ec7b866da416c321590}\label{classv8_1_1WasmModuleObjectBuilderStreaming_a71f39c9483219ec7b866da416c321590}} 
 \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Promise}{Promise}} $>$ {\bfseries Get\+Promise} ()
 \end{DoxyCompactItemize}
 
@@ -32,14 +32,23 @@ Definition at line 4440 of file v8.\+h.
 \subsubsection{\texorpdfstring{Abort()}{Abort()}}
 {\footnotesize\ttfamily void v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming\+::\+Abort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$}]{exception }\end{DoxyParamCaption})}
 
-Abort streaming compilation. If \{exception\} has a value, then the promise associated with streaming compilation is rejected with that value. If \{exception\} does not have value, the promise does not get rejected. \mbox{\Hypertarget{classv8_1_1WasmModuleObjectBuilderStreaming_ac67b675b7241a18a3b773dab2f0fd458}\label{classv8_1_1WasmModuleObjectBuilderStreaming_ac67b675b7241a18a3b773dab2f0fd458}} 
+Abort streaming compilation. If \{exception\} has a value, then the promise associated with streaming compilation is rejected with that value. If \{exception\} does not have value, the promise does not get rejected. 
+
+Definition at line 7539 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1WasmModuleObjectBuilderStreaming_ac67b675b7241a18a3b773dab2f0fd458}\label{classv8_1_1WasmModuleObjectBuilderStreaming_ac67b675b7241a18a3b773dab2f0fd458}} 
 \index{v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming@{v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming}!On\+Bytes\+Received@{On\+Bytes\+Received}}
 \index{On\+Bytes\+Received@{On\+Bytes\+Received}!v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming@{v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming}}
 \subsubsection{\texorpdfstring{On\+Bytes\+Received()}{OnBytesReceived()}}
-{\footnotesize\ttfamily void v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming\+::\+On\+Bytes\+Received (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming\+::\+On\+Bytes\+Received (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes,  }\item[{\mbox{\hyperlink{classsize__t}{size\+\_\+t}}}]{size }\end{DoxyParamCaption})}
 
 The buffer passed into On\+Bytes\+Received is owned by the caller. 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Definition at line 7532 of file api.\+cc.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8.\+h\end{DoxyCompactItemize}
+v8/include/v8.\+h\item 
+v8/src/api.\+cc\end{DoxyCompactItemize}

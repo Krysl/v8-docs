@@ -1,0 +1,77 @@
+\hypertarget{classv8_1_1internal_1_1PreParser}{}\section{v8\+:\+:internal\+:\+:Pre\+Parser Class Reference}
+\label{classv8_1_1internal_1_1PreParser}\index{v8\+::internal\+::\+Pre\+Parser@{v8\+::internal\+::\+Pre\+Parser}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Pre\+Parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1PreParser}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParser_ac699e8c83f71d51ea5ad08af12acf9f9}\label{classv8_1_1internal_1_1PreParser_ac699e8c83f71d51ea5ad08af12acf9f9}} 
+enum {\bfseries Pre\+Parse\+Result} \{ {\bfseries k\+Pre\+Parse\+Stack\+Overflow}, 
+{\bfseries k\+Pre\+Parse\+Abort}, 
+{\bfseries k\+Pre\+Parse\+Not\+Identifiable\+Error}, 
+{\bfseries k\+Pre\+Parse\+Success}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParser_a88411e7cd2cbc7a480a32471f2db01e8}\label{classv8_1_1internal_1_1PreParser_a88411e7cd2cbc7a480a32471f2db01e8}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1PreParserIdentifier}{Pre\+Parser\+Identifier}} {\bfseries Identifier}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParser_ae3385c22c7148a44bad3c3b3d6265867}\label{classv8_1_1internal_1_1PreParser_ae3385c22c7148a44bad3c3b3d6265867}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries Expression}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParser_a63f5606243398ad8e868162f6103eb96}\label{classv8_1_1internal_1_1PreParser_a63f5606243398ad8e868162f6103eb96}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries Statement}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParser_a058c34c9f7cf51c66e037e903d6dbf71}\label{classv8_1_1internal_1_1PreParser_a058c34c9f7cf51c66e037e903d6dbf71}} 
+{\bfseries Pre\+Parser} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1Scanner}{Scanner}} $\ast$scanner, \mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} stack\+\_\+limit, \mbox{\hyperlink{classv8_1_1internal_1_1AstValueFactory}{Ast\+Value\+Factory}} $\ast$ast\+\_\+value\+\_\+factory, \mbox{\hyperlink{classv8_1_1internal_1_1PendingCompilationErrorHandler}{Pending\+Compilation\+Error\+Handler}} $\ast$pending\+\_\+error\+\_\+handler, \mbox{\hyperlink{classv8_1_1internal_1_1RuntimeCallStats}{Runtime\+Call\+Stats}} $\ast$runtime\+\_\+call\+\_\+stats, \mbox{\hyperlink{classv8_1_1internal_1_1Logger}{Logger}} $\ast$logger, \mbox{\hyperlink{classint}{int}} script\+\_\+id=-\/1, \mbox{\hyperlink{classbool}{bool}} parsing\+\_\+module=false, \mbox{\hyperlink{classbool}{bool}} parsing\+\_\+on\+\_\+main\+\_\+thread=true)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParser_a37e6e689186722143ca2d1b20a9cb28a}\label{classv8_1_1internal_1_1PreParser_a37e6e689186722143ca2d1b20a9cb28a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserLogger}{Pre\+Parser\+Logger}} $\ast$ {\bfseries logger} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParser_a797eb485607cc71f946606f1033e3fcb}\label{classv8_1_1internal_1_1PreParser_a797eb485607cc71f946606f1033e3fcb}} 
+Pre\+Parse\+Result {\bfseries Pre\+Parse\+Program} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParser_a339d337fc67d7763babb835a58b513a2}\label{classv8_1_1internal_1_1PreParser_a339d337fc67d7763babb835a58b513a2}} 
+Pre\+Parse\+Result {\bfseries Pre\+Parse\+Function} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$function\+\_\+name, Function\+Kind kind, Function\+Literal\+::\+Function\+Type function\+\_\+type, \mbox{\hyperlink{classv8_1_1internal_1_1DeclarationScope}{Declaration\+Scope}} $\ast$function\+\_\+scope, \mbox{\hyperlink{classbool}{bool}} may\+\_\+abort, \mbox{\hyperlink{classint}{int}} $\ast$use\+\_\+counts, \mbox{\hyperlink{classv8_1_1internal_1_1ProducedPreParsedScopeData}{Produced\+Pre\+Parsed\+Scope\+Data}} $\ast$$\ast$produced\+\_\+preparser\+\_\+scope\+\_\+data, \mbox{\hyperlink{classint}{int}} script\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParser_a4c70a73f5eea018dbe0b7fb1234f1fdf}\label{classv8_1_1internal_1_1PreParser_a4c70a73f5eea018dbe0b7fb1234f1fdf}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParsedScopeDataBuilder}{Pre\+Parsed\+Scope\+Data\+Builder}} $\ast$ {\bfseries preparsed\+\_\+scope\+\_\+data\+\_\+builder} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParser_ada8c3350f9bd03cfd32b6a1771a7a820}\label{classv8_1_1internal_1_1PreParser_ada8c3350f9bd03cfd32b6a1771a7a820}} 
+void {\bfseries set\+\_\+preparsed\+\_\+scope\+\_\+data\+\_\+builder} (\mbox{\hyperlink{classv8_1_1internal_1_1PreParsedScopeDataBuilder}{Pre\+Parsed\+Scope\+Data\+Builder}} $\ast$preparsed\+\_\+scope\+\_\+data\+\_\+builder)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParser_a4f817a07175f26f958a236be63a52f06}\label{classv8_1_1internal_1_1PreParser_a4f817a07175f26f958a236be63a52f06}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Pre\+Parser} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParser_a42aa03d8512d02e295b9406e6ad7500a}\label{classv8_1_1internal_1_1PreParser_a42aa03d8512d02e295b9406e6ad7500a}} 
+class {\bfseries Parser\+Base$<$ Pre\+Parser $>$}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParser_a1622c906ba36ab422b3817f9d9357ed2}\label{classv8_1_1internal_1_1PreParser_a1622c906ba36ab422b3817f9d9357ed2}} 
+class {\bfseries v8\+::internal\+::\+Expression\+Classifier$<$ Parser\+Types$<$ Pre\+Parser $>$ $>$}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 950 of file preparser.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/parsing/preparser.\+h\item 
+v8/src/parsing/preparser.\+cc\end{DoxyCompactItemize}

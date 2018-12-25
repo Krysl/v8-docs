@@ -1,0 +1,92 @@
+\hypertarget{classv8_1_1internal_1_1DeoptimizationData}{}\section{v8\+:\+:internal\+:\+:Deoptimization\+Data Class Reference}
+\label{classv8_1_1internal_1_1DeoptimizationData}\index{v8\+::internal\+::\+Deoptimization\+Data@{v8\+::internal\+::\+Deoptimization\+Data}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Deoptimization\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1DeoptimizationData}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_a4d84510b0dc16235b943b9cdb2deacd8}\label{classv8_1_1internal_1_1DeoptimizationData_a4d84510b0dc16235b943b9cdb2deacd8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1BailoutId}{Bailout\+Id}} {\bfseries Bytecode\+Offset} (\mbox{\hyperlink{classint}{int}} i)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_aaf1ee172c26cd7896b5ed0fcd896888c}\label{classv8_1_1internal_1_1DeoptimizationData_aaf1ee172c26cd7896b5ed0fcd896888c}} 
+void {\bfseries Set\+Bytecode\+Offset} (\mbox{\hyperlink{classint}{int}} i, \mbox{\hyperlink{classv8_1_1internal_1_1BailoutId}{Bailout\+Id}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_aebe320a3f0d781ba35e685c945b46267}\label{classv8_1_1internal_1_1DeoptimizationData_aebe320a3f0d781ba35e685c945b46267}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Deopt\+Count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_a462331a1c7cb113663f8d404c8afe1f2}\label{classv8_1_1internal_1_1DeoptimizationData_a462331a1c7cb113663f8d404c8afe1f2}} 
+class \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$ {\bfseries Get\+Inlined\+Function} (\mbox{\hyperlink{classint}{int}} index)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_ae4bb5aa974b3d813ae54bbbb0b35879b}\label{classv8_1_1internal_1_1DeoptimizationData_ae4bb5aa974b3d813ae54bbbb0b35879b}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1DeoptimizationData}{Deoptimization\+Data}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} deopt\+\_\+entry\+\_\+count, Pretenure\+Flag pretenure)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_ae5293da192afbe72a4f532a50ba76315}\label{classv8_1_1internal_1_1DeoptimizationData_ae5293da192afbe72a4f532a50ba76315}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1DeoptimizationData}{Deoptimization\+Data}} $>$ {\bfseries Empty} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_abdde7d560075f729fbca7c12f7a6dec7}\label{classv8_1_1internal_1_1DeoptimizationData_abdde7d560075f729fbca7c12f7a6dec7}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Translation\+Byte\+Array\+Index} = 0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_a068ccdd4b8476f253d58f00ee0f936c3}\label{classv8_1_1internal_1_1DeoptimizationData_a068ccdd4b8476f253d58f00ee0f936c3}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Inlined\+Function\+Count\+Index} = 1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_a5e63ffea324c417b954662103a22ebc1}\label{classv8_1_1internal_1_1DeoptimizationData_a5e63ffea324c417b954662103a22ebc1}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Literal\+Array\+Index} = 2
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_a6372aaf57bd3f43d81f1dce2cecb25fb}\label{classv8_1_1internal_1_1DeoptimizationData_a6372aaf57bd3f43d81f1dce2cecb25fb}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Osr\+Bytecode\+Offset\+Index} = 3
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_ac1e6f0eab28c8ac0534e9b907a856345}\label{classv8_1_1internal_1_1DeoptimizationData_ac1e6f0eab28c8ac0534e9b907a856345}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Osr\+Pc\+Offset\+Index} = 4
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_a948d19eebad6f633536a1a32bf8751be}\label{classv8_1_1internal_1_1DeoptimizationData_a948d19eebad6f633536a1a32bf8751be}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Optimization\+Id\+Index} = 5
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_a81c3fda02b8f0760d18e61c82a33e614}\label{classv8_1_1internal_1_1DeoptimizationData_a81c3fda02b8f0760d18e61c82a33e614}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Shared\+Function\+Info\+Index} = 6
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_a7469d111465c10bd1f8d2a13ea816e72}\label{classv8_1_1internal_1_1DeoptimizationData_a7469d111465c10bd1f8d2a13ea816e72}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Inlining\+Positions\+Index} = 7
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_afd017ea62745d74a47535c286e3cd37c}\label{classv8_1_1internal_1_1DeoptimizationData_afd017ea62745d74a47535c286e3cd37c}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+First\+Deopt\+Entry\+Index} = 8
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_a3c730ab7058ed9644bc997ec53720021}\label{classv8_1_1internal_1_1DeoptimizationData_a3c730ab7058ed9644bc997ec53720021}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Bytecode\+Offset\+Raw\+Offset} = 0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_ad4121b67c06ab27dd613e8b467bd70d7}\label{classv8_1_1internal_1_1DeoptimizationData_ad4121b67c06ab27dd613e8b467bd70d7}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Translation\+Index\+Offset} = 1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_aa787a7adcb99033852ae022fa8aa396b}\label{classv8_1_1internal_1_1DeoptimizationData_aa787a7adcb99033852ae022fa8aa396b}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Pc\+Offset} = 2
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_a565e78129c3b05640982f0480189379e}\label{classv8_1_1internal_1_1DeoptimizationData_a565e78129c3b05640982f0480189379e}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Deopt\+Entry\+Size} = 3
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeoptimizationData_a669339f300d550b70e64469611187bf4}\label{classv8_1_1internal_1_1DeoptimizationData_a669339f300d550b70e64469611187bf4}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Not\+Inlined\+Index} = -\/1
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 820 of file code.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/code.\+h\item 
+v8/src/objects/code-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

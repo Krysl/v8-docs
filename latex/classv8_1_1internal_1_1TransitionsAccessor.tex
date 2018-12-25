@@ -1,0 +1,133 @@
+\hypertarget{classv8_1_1internal_1_1TransitionsAccessor}{}\section{v8\+:\+:internal\+:\+:Transitions\+Accessor Class Reference}
+\label{classv8_1_1internal_1_1TransitionsAccessor}\index{v8\+::internal\+::\+Transitions\+Accessor@{v8\+::internal\+::\+Transitions\+Accessor}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a6d93984a167cb84a4fe9d1231818464b}\label{classv8_1_1internal_1_1TransitionsAccessor_a6d93984a167cb84a4fe9d1231818464b}} 
+enum {\bfseries Requested\+Location} \{ {\bfseries k\+Any\+Location}, 
+{\bfseries k\+Field\+Only}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a280593c33519a44c39eb3b6adc317982}\label{classv8_1_1internal_1_1TransitionsAccessor_a280593c33519a44c39eb3b6adc317982}} 
+typedef void($\ast$ {\bfseries Traverse\+Callback}) (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, void $\ast$data)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a3490a8ff22a044300d49532787689227}\label{classv8_1_1internal_1_1TransitionsAccessor_a3490a8ff22a044300d49532787689227}} 
+{\bfseries Transitions\+Accessor} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1PerThreadAssertScopeDebugOnly}{Disallow\+Heap\+Allocation}} $\ast$no\+\_\+gc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_afa4453af3d969481ddad6638d92fc9f2}\label{classv8_1_1internal_1_1TransitionsAccessor_afa4453af3d969481ddad6638d92fc9f2}} 
+{\bfseries Transitions\+Accessor} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a62cd4b02d66cbdcca544da96a418c5ab}\label{classv8_1_1internal_1_1TransitionsAccessor_a62cd4b02d66cbdcca544da96a418c5ab}} 
+void {\bfseries Insert} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ target, Simple\+Transition\+Flag flag)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a27808b78cf1869d8b46ffca9f67b9679}\label{classv8_1_1internal_1_1TransitionsAccessor_a27808b78cf1869d8b46ffca9f67b9679}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} {\bfseries Search\+Transition} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, Property\+Kind kind, Property\+Attributes attributes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a857eb1887f98c805017ab410786aac9c}\label{classv8_1_1internal_1_1TransitionsAccessor_a857eb1887f98c805017ab410786aac9c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} {\bfseries Search\+Special} (\mbox{\hyperlink{classv8_1_1internal_1_1Symbol}{Symbol}} name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a4bbe4971a7c0a2f574b143e610dc5fe0}\label{classv8_1_1internal_1_1TransitionsAccessor_a4bbe4971a7c0a2f574b143e610dc5fe0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ {\bfseries Find\+Transition\+To\+Data\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, Requested\+Location requested\+\_\+location=k\+Any\+Location)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a867eb1131c486aedbd3fcacc51ec75aa}\label{classv8_1_1internal_1_1TransitionsAccessor_a867eb1131c486aedbd3fcacc51ec75aa}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ {\bfseries Find\+Transition\+To\+Field} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a3b2867b6229d1e362b21deb40728350e}\label{classv8_1_1internal_1_1TransitionsAccessor_a3b2867b6229d1e362b21deb40728350e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Expected\+Transition\+Key} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a1f8f955c8f5d808d6768106af17e03cd}\label{classv8_1_1internal_1_1TransitionsAccessor_a1f8f955c8f5d808d6768106af17e03cd}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ {\bfseries Expected\+Transition\+Target} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_aa4b5eedb0e7983fa2f8b6a827a1f3f7e}\label{classv8_1_1internal_1_1TransitionsAccessor_aa4b5eedb0e7983fa2f8b6a827a1f3f7e}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Transitions} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a5ac28064521f05a5b33e817fd8668368}\label{classv8_1_1internal_1_1TransitionsAccessor_a5ac28064521f05a5b33e817fd8668368}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Have\+More\+Transitions} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_afb61b1dd68c653ff83b8960d0739a552}\label{classv8_1_1internal_1_1TransitionsAccessor_afb61b1dd68c653ff83b8960d0739a552}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} {\bfseries Get\+Key} (\mbox{\hyperlink{classint}{int}} transition\+\_\+number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a4fad05075e01125d241d27efbb7eafdd}\label{classv8_1_1internal_1_1TransitionsAccessor_a4fad05075e01125d241d27efbb7eafdd}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} {\bfseries Get\+Target} (\mbox{\hyperlink{classint}{int}} transition\+\_\+number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_ac83a3d836e92cfdac0e6174ba803e604}\label{classv8_1_1internal_1_1TransitionsAccessor_ac83a3d836e92cfdac0e6174ba803e604}} 
+void {\bfseries Traverse\+Transition\+Tree} (Traverse\+Callback callback, void $\ast$data)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a3fa9f9ec480f36dc2525b29ffa32c4a2}\label{classv8_1_1internal_1_1TransitionsAccessor_a3fa9f9ec480f36dc2525b29ffa32c4a2}} 
+void {\bfseries Put\+Prototype\+Transition} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ prototype, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ target\+\_\+map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a60a6e909beb1a83adf0a1938f80bd776}\label{classv8_1_1internal_1_1TransitionsAccessor_a60a6e909beb1a83adf0a1938f80bd776}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ {\bfseries Get\+Prototype\+Transition} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ prototype)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a082aa2c4223d6d1f855d0a22c6bc3100}\label{classv8_1_1internal_1_1TransitionsAccessor_a082aa2c4223d6d1f855d0a22c6bc3100}} 
+void {\bfseries Set\+Migration\+Target} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} migration\+\_\+target)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_ada2cff8b2040b477efa1444280fea40b}\label{classv8_1_1internal_1_1TransitionsAccessor_ada2cff8b2040b477efa1444280fea40b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} {\bfseries Get\+Migration\+Target} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_aede4a2de26e976f2a511775419998888}\label{classv8_1_1internal_1_1TransitionsAccessor_aede4a2de26e976f2a511775419998888}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Special\+Transition} (\mbox{\hyperlink{classv8_1_1internal_1_1ReadOnlyRoots}{Read\+Only\+Roots}} roots, \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a258e8c92172cdbb083e5708371929cb0}\label{classv8_1_1internal_1_1TransitionsAccessor_a258e8c92172cdbb083e5708371929cb0}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails}{Property\+Details}} {\bfseries Get\+Target\+Details} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} target)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a918c4ebddb612375eeb24c4b67fb0dc7}\label{classv8_1_1internal_1_1TransitionsAccessor_a918c4ebddb612375eeb24c4b67fb0dc7}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Matching\+Map} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} target, \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, Property\+Kind kind, Property\+Attributes attributes)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a8761aefac342e5acc8b3e13bd00b877e}\label{classv8_1_1internal_1_1TransitionsAccessor_a8761aefac342e5acc8b3e13bd00b877e}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Number\+Of\+Transitions} = 1024 + 512
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a9681ec16adaf752faf5f210ad3e72b1f}\label{classv8_1_1internal_1_1TransitionsAccessor_a9681ec16adaf752faf5f210ad3e72b1f}} 
+enum {\bfseries Encoding} \{ \newline
+{\bfseries k\+Prototype\+Info}, 
+{\bfseries k\+Uninitialized}, 
+{\bfseries k\+Migration\+Target}, 
+{\bfseries k\+Weak\+Ref}, 
+\newline
+{\bfseries k\+Full\+Transition\+Array}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a47f6000558927d401ffb82b95d7175f0}\label{classv8_1_1internal_1_1TransitionsAccessor_a47f6000558927d401ffb82b95d7175f0}} 
+void {\bfseries Reload} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_ae5320a66e898f3a99139acf8139b6c65}\label{classv8_1_1internal_1_1TransitionsAccessor_ae5320a66e898f3a99139acf8139b6c65}} 
+Encoding {\bfseries encoding} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_ae585a96455613b2bc2ae3ea75a061d8b}\label{classv8_1_1internal_1_1TransitionsAccessor_ae585a96455613b2bc2ae3ea75a061d8b}} 
+class {\bfseries Mark\+Compact\+Collector}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TransitionsAccessor_a84418f812b59fa163990cbcdb2f3b7a5}\label{classv8_1_1internal_1_1TransitionsAccessor_a84418f812b59fa163990cbcdb2f3b7a5}} 
+class {\bfseries Transition\+Array}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 39 of file transitions.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/transitions.\+h\item 
+v8/src/transitions-\/inl.\+h\item 
+v8/src/transitions.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,124 @@
+\hypertarget{classv8_1_1internal_1_1HeapProfiler}{}\section{v8\+:\+:internal\+:\+:Heap\+Profiler Class Reference}
+\label{classv8_1_1internal_1_1HeapProfiler}\index{v8\+::internal\+::\+Heap\+Profiler@{v8\+::internal\+::\+Heap\+Profiler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Heap\+Profiler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1HeapProfiler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a9db62c5fefbbac5e205b512ae91ab7a5}\label{classv8_1_1internal_1_1HeapProfiler_a9db62c5fefbbac5e205b512ae91ab7a5}} 
+{\bfseries Heap\+Profiler} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a73df699bfc0779341b604234eeb6d809}\label{classv8_1_1internal_1_1HeapProfiler_a73df699bfc0779341b604234eeb6d809}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapSnapshot}{Heap\+Snapshot}} $\ast$ {\bfseries Take\+Snapshot} (\mbox{\hyperlink{classv8_1_1ActivityControl}{v8\+::\+Activity\+Control}} $\ast$control, \mbox{\hyperlink{classv8_1_1HeapProfiler_1_1ObjectNameResolver}{v8\+::\+Heap\+Profiler\+::\+Object\+Name\+Resolver}} $\ast$resolver)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_aa552bb2e9de9ebc13562a8e0ee7130f9}\label{classv8_1_1internal_1_1HeapProfiler_aa552bb2e9de9ebc13562a8e0ee7130f9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Start\+Sampling\+Heap\+Profiler} (uint64\+\_\+t sample\+\_\+interval, \mbox{\hyperlink{classint}{int}} stack\+\_\+depth, v8\+::\+Heap\+Profiler\+::\+Sampling\+Flags)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a41401a85a0bebc56c4e9f7181de92e25}\label{classv8_1_1internal_1_1HeapProfiler_a41401a85a0bebc56c4e9f7181de92e25}} 
+void {\bfseries Stop\+Sampling\+Heap\+Profiler} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a86086b88dc16e57899c00bf16d963e54}\label{classv8_1_1internal_1_1HeapProfiler_a86086b88dc16e57899c00bf16d963e54}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+sampling\+\_\+allocations} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a99eb6162d9266d584c75119074cddde6}\label{classv8_1_1internal_1_1HeapProfiler_a99eb6162d9266d584c75119074cddde6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1AllocationProfile}{Allocation\+Profile}} $\ast$ {\bfseries Get\+Allocation\+Profile} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a7efaf5b020faba52d5006f6122977fb2}\label{classv8_1_1internal_1_1HeapProfiler_a7efaf5b020faba52d5006f6122977fb2}} 
+void {\bfseries Start\+Heap\+Objects\+Tracking} (\mbox{\hyperlink{classbool}{bool}} track\+\_\+allocations)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a4ee8e40dc2d3ef72428da51cb7eafdee}\label{classv8_1_1internal_1_1HeapProfiler_a4ee8e40dc2d3ef72428da51cb7eafdee}} 
+void {\bfseries Stop\+Heap\+Objects\+Tracking} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_aefef83b904214c49ccda3822eda87a8c}\label{classv8_1_1internal_1_1HeapProfiler_aefef83b904214c49ccda3822eda87a8c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1AllocationTracker}{Allocation\+Tracker}} $\ast$ {\bfseries allocation\+\_\+tracker} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a660896b5f7acda76179d9b9596a3ff80}\label{classv8_1_1internal_1_1HeapProfiler_a660896b5f7acda76179d9b9596a3ff80}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapObjectsMap}{Heap\+Objects\+Map}} $\ast$ {\bfseries heap\+\_\+object\+\_\+map} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a2c3b79b27d7d31d3c379d80d7d4a5820}\label{classv8_1_1internal_1_1HeapProfiler_a2c3b79b27d7d31d3c379d80d7d4a5820}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1StringsStorage}{Strings\+Storage}} $\ast$ {\bfseries names} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a3e8339bfde2671aacc0f9ffb6869d1f6}\label{classv8_1_1internal_1_1HeapProfiler_a3e8339bfde2671aacc0f9ffb6869d1f6}} 
+\mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} {\bfseries Push\+Heap\+Objects\+Stats} (\mbox{\hyperlink{classv8_1_1OutputStream}{Output\+Stream}} $\ast$stream, \mbox{\hyperlink{classint64__t}{int64\+\_\+t}} $\ast$timestamp\+\_\+us)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a674d9a5803aa04e8c5091289aae7d562}\label{classv8_1_1internal_1_1HeapProfiler_a674d9a5803aa04e8c5091289aae7d562}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Snapshots\+Count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a6e1700f861f6260c7e2ecc53c6b7f53b}\label{classv8_1_1internal_1_1HeapProfiler_a6e1700f861f6260c7e2ecc53c6b7f53b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapSnapshot}{Heap\+Snapshot}} $\ast$ {\bfseries Get\+Snapshot} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_aec86d7e69472ced74bd92574696b4a0e}\label{classv8_1_1internal_1_1HeapProfiler_aec86d7e69472ced74bd92574696b4a0e}} 
+\mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} {\bfseries Get\+Snapshot\+Object\+Id} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ obj)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a95d369db8e294e4eb4d8e931d1eebf8e}\label{classv8_1_1internal_1_1HeapProfiler_a95d369db8e294e4eb4d8e931d1eebf8e}} 
+void {\bfseries Delete\+All\+Snapshots} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_abe0002601a7d13e03bf48713b7e2d3a0}\label{classv8_1_1internal_1_1HeapProfiler_abe0002601a7d13e03bf48713b7e2d3a0}} 
+void {\bfseries Remove\+Snapshot} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapSnapshot}{Heap\+Snapshot}} $\ast$snapshot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_aef6308a35e96bc89e13295b9f08124f4}\label{classv8_1_1internal_1_1HeapProfiler_aef6308a35e96bc89e13295b9f08124f4}} 
+void {\bfseries Object\+Move\+Event} (\mbox{\hyperlink{classuintptr__t}{Address}} from, \mbox{\hyperlink{classuintptr__t}{Address}} to, \mbox{\hyperlink{classint}{int}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a5d01f0ae788b5750b8666b5bcaac1227}\label{classv8_1_1internal_1_1HeapProfiler_a5d01f0ae788b5750b8666b5bcaac1227}} 
+void {\bfseries Allocation\+Event} (\mbox{\hyperlink{classuintptr__t}{Address}} addr, \mbox{\hyperlink{classint}{int}} size) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a9cab209e97b9fe157554bdc45257140d}\label{classv8_1_1internal_1_1HeapProfiler_a9cab209e97b9fe157554bdc45257140d}} 
+void {\bfseries Update\+Object\+Size\+Event} (\mbox{\hyperlink{classuintptr__t}{Address}} addr, \mbox{\hyperlink{classint}{int}} size) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a4e741b3c78bcfc59084d52ec8d0148d1}\label{classv8_1_1internal_1_1HeapProfiler_a4e741b3c78bcfc59084d52ec8d0148d1}} 
+void {\bfseries Define\+Wrapper\+Class} (uint16\+\_\+t class\+\_\+id, \mbox{\hyperlink{classv8_1_1HeapProfiler_a677025dd201fd832e0464e5ab0b0d0d4}{v8\+::\+Heap\+Profiler\+::\+Wrapper\+Info\+Callback}} callback)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a2c74f3148efb1f50112d7fc85174a1aa}\label{classv8_1_1internal_1_1HeapProfiler_a2c74f3148efb1f50112d7fc85174a1aa}} 
+\mbox{\hyperlink{classv8_1_1RetainedObjectInfo}{v8\+::\+Retained\+Object\+Info}} $\ast$ {\bfseries Execute\+Wrapper\+Class\+Callback} (uint16\+\_\+t class\+\_\+id, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$$\ast$wrapper)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a5c0fdf648d550993f526838dc2bcccd6}\label{classv8_1_1internal_1_1HeapProfiler_a5c0fdf648d550993f526838dc2bcccd6}} 
+void {\bfseries Set\+Get\+Retainer\+Infos\+Callback} (\mbox{\hyperlink{classv8_1_1HeapProfiler_a7f34c8eb67f9502e5778695187ea0e96}{v8\+::\+Heap\+Profiler\+::\+Get\+Retainer\+Infos\+Callback}} callback)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_ae038a19f43b491da9ce17a6649ebd1da}\label{classv8_1_1internal_1_1HeapProfiler_ae038a19f43b491da9ce17a6649ebd1da}} 
+\mbox{\hyperlink{structv8_1_1HeapProfiler_1_1RetainerInfos}{v8\+::\+Heap\+Profiler\+::\+Retainer\+Infos}} {\bfseries Get\+Retainer\+Infos} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a9147af2ae9b92afc4ed18262e7f5d708}\label{classv8_1_1internal_1_1HeapProfiler_a9147af2ae9b92afc4ed18262e7f5d708}} 
+void {\bfseries Add\+Build\+Embedder\+Graph\+Callback} (\mbox{\hyperlink{classv8_1_1HeapProfiler_a29c98afa5ce0ea543eef904201bc3e40}{v8\+::\+Heap\+Profiler\+::\+Build\+Embedder\+Graph\+Callback}} callback, void $\ast$data)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a715ea7827adcf8eceb081ffb70f3d3a1}\label{classv8_1_1internal_1_1HeapProfiler_a715ea7827adcf8eceb081ffb70f3d3a1}} 
+void {\bfseries Remove\+Build\+Embedder\+Graph\+Callback} (\mbox{\hyperlink{classv8_1_1HeapProfiler_a29c98afa5ce0ea543eef904201bc3e40}{v8\+::\+Heap\+Profiler\+::\+Build\+Embedder\+Graph\+Callback}} callback, void $\ast$data)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_aff06ab999c7142f9e77e02db7eca5d85}\label{classv8_1_1internal_1_1HeapProfiler_aff06ab999c7142f9e77e02db7eca5d85}} 
+void {\bfseries Build\+Embedder\+Graph} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1EmbedderGraph}{v8\+::\+Embedder\+Graph}} $\ast$graph)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_a98bbf4843d20d90713e9fa1af356f0d1}\label{classv8_1_1internal_1_1HeapProfiler_a98bbf4843d20d90713e9fa1af356f0d1}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Build\+Embedder\+Graph\+Callback} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_ae87176da078ec37dd37f8d5581bbd4d3}\label{classv8_1_1internal_1_1HeapProfiler_ae87176da078ec37dd37f8d5581bbd4d3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+tracking\+\_\+object\+\_\+moves} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_adf0791d9132710ee924b9e5c0bacd486}\label{classv8_1_1internal_1_1HeapProfiler_adf0791d9132710ee924b9e5c0bacd486}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ {\bfseries Find\+Heap\+Object\+By\+Id} (\mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_aabb83158ff4b7d07a8972e140217d696}\label{classv8_1_1internal_1_1HeapProfiler_aabb83158ff4b7d07a8972e140217d696}} 
+void {\bfseries Clear\+Heap\+Object\+Map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_acc795f70a0d73747e6ebf24e9885df97}\label{classv8_1_1internal_1_1HeapProfiler_acc795f70a0d73747e6ebf24e9885df97}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapProfiler_aa574fd29ad25169f2560b866c1810e67}\label{classv8_1_1internal_1_1HeapProfiler_aa574fd29ad25169f2560b866c1810e67}} 
+void {\bfseries Query\+Objects} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1debug_1_1QueryObjectPredicate}{debug\+::\+Query\+Object\+Predicate}} $\ast$predicate, \mbox{\hyperlink{classv8_1_1PersistentValueVector}{v8\+::\+Persistent\+Value\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1Object}{v8\+::\+Object}} $>$ $\ast$objects)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 27 of file heap-\/profiler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/heap-\/profiler.\+h\item 
+v8/src/api.\+cc\item 
+v8/src/profiler/heap-\/profiler.\+cc\end{DoxyCompactItemize}

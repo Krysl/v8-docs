@@ -1,0 +1,72 @@
+\hypertarget{classv8_1_1internal_1_1MemoryController}{}\section{v8\+:\+:internal\+:\+:Memory\+Controller Class Reference}
+\label{classv8_1_1internal_1_1MemoryController}\index{v8\+::internal\+::\+Memory\+Controller@{v8\+::internal\+::\+Memory\+Controller}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Memory\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1MemoryController}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryController_acb7d7480ad315cf1f2d3931e70df22a1}\label{classv8_1_1internal_1_1MemoryController_acb7d7480ad315cf1f2d3931e70df22a1}} 
+{\bfseries Memory\+Controller} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, double min\+\_\+growing\+\_\+factor, double max\+\_\+growing\+\_\+factor, double conservative\+\_\+growing\+\_\+factor, double target\+\_\+mutator\+\_\+utilization)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryController_a185a9c3886d10142bb61c4b445c94c95}\label{classv8_1_1internal_1_1MemoryController_a185a9c3886d10142bb61c4b445c94c95}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Calculate\+Allocation\+Limit} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} curr\+\_\+size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} max\+\_\+size, double max\+\_\+factor, double gc\+\_\+speed, double mutator\+\_\+speed, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} new\+\_\+space\+\_\+capacity, Heap\+::\+Heap\+Growing\+Mode growing\+\_\+mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryController_a6641492b25c65c40dfa1395a3c97aeec}\label{classv8_1_1internal_1_1MemoryController_a6641492b25c65c40dfa1395a3c97aeec}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Minimum\+Allocation\+Limit\+Growing\+Step} (Heap\+::\+Heap\+Growing\+Mode growing\+\_\+mode)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryController_a6314af3e71162abfc24e00aa2761e98d}\label{classv8_1_1internal_1_1MemoryController_a6314af3e71162abfc24e00aa2761e98d}} 
+double {\bfseries Growing\+Factor} (double gc\+\_\+speed, double mutator\+\_\+speed, double max\+\_\+factor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryController_a0a6682eef131508992181c1cb1ca1b0e}\label{classv8_1_1internal_1_1MemoryController_a0a6682eef131508992181c1cb1ca1b0e}} 
+virtual const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Controller\+Name} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryController_a53a7568bbd1c21194edb7aee6db2176d}\label{classv8_1_1internal_1_1MemoryController_a53a7568bbd1c21194edb7aee6db2176d}} 
+{\bfseries F\+R\+I\+E\+N\+D\+\_\+\+T\+E\+ST} (Heap\+Controller\+Test, Heap\+Growing\+Factor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryController_a43483461d13408bcc361e77aac6193dc}\label{classv8_1_1internal_1_1MemoryController_a43483461d13408bcc361e77aac6193dc}} 
+{\bfseries F\+R\+I\+E\+N\+D\+\_\+\+T\+E\+ST} (Heap\+Controller\+Test, Max\+Heap\+Growing\+Factor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryController_a5ab8c0114c5fd23d0dd8f61f03d3c901}\label{classv8_1_1internal_1_1MemoryController_a5ab8c0114c5fd23d0dd8f61f03d3c901}} 
+{\bfseries F\+R\+I\+E\+N\+D\+\_\+\+T\+E\+ST} (Heap\+Controller\+Test, Max\+Old\+Generation\+Size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryController_a1ad499786f57f3b2fb4d533c4df08d37}\label{classv8_1_1internal_1_1MemoryController_a1ad499786f57f3b2fb4d533c4df08d37}} 
+{\bfseries F\+R\+I\+E\+N\+D\+\_\+\+T\+E\+ST} (Heap\+Controller\+Test, Old\+Generation\+Allocation\+Limit)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryController_acee6b883f29f47f17e49cca8bddbe4d1}\label{classv8_1_1internal_1_1MemoryController_acee6b883f29f47f17e49cca8bddbe4d1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$const {\bfseries heap\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryController_a12631420f774542fca53ee7cf3133741}\label{classv8_1_1internal_1_1MemoryController_a12631420f774542fca53ee7cf3133741}} 
+const double {\bfseries min\+\_\+growing\+\_\+factor\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryController_a1debd5984cc27fe59cf91597942947b3}\label{classv8_1_1internal_1_1MemoryController_a1debd5984cc27fe59cf91597942947b3}} 
+const double {\bfseries max\+\_\+growing\+\_\+factor\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryController_a9b42d40504361a7247545918c577ac0a}\label{classv8_1_1internal_1_1MemoryController_a9b42d40504361a7247545918c577ac0a}} 
+const double {\bfseries conservative\+\_\+growing\+\_\+factor\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryController_ab81c60e03755790f6bd6a19a7057892d}\label{classv8_1_1internal_1_1MemoryController_ab81c60e03755790f6bd6a19a7057892d}} 
+const double {\bfseries target\+\_\+mutator\+\_\+utilization\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file heap-\/controller.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/heap-\/controller.\+h\item 
+v8/src/heap/heap-\/controller.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecode\+Register\+Optimizer\+:\+:Register\+Info Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo}\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Register\+Optimizer\+::\+Register\+Info@{v8\+::internal\+::interpreter\+::\+Bytecode\+Register\+Optimizer\+::\+Register\+Info}}
+Inheritance diagram for v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecode\+Register\+Optimizer\+:\+:Register\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_a29d31d98dd5b43c40db37b5bdb92a83c}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_a29d31d98dd5b43c40db37b5bdb92a83c}} 
+{\bfseries Register\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1Register}{Register}} reg, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} equivalence\+\_\+id, \mbox{\hyperlink{classbool}{bool}} materialized, \mbox{\hyperlink{classbool}{bool}} allocated)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_af4a62f6fa5077de5b424d904601e83ce}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_af4a62f6fa5077de5b424d904601e83ce}} 
+void {\bfseries Add\+To\+Equivalence\+Set\+Of} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo}{Register\+Info}} $\ast$info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_a47e04a235d3d6de1ca9300c609a4de21}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_a47e04a235d3d6de1ca9300c609a4de21}} 
+void {\bfseries Move\+To\+New\+Equivalence\+Set} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} equivalence\+\_\+id, \mbox{\hyperlink{classbool}{bool}} materialized)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_ae0b6908dee8cf14f3dc08c8e4975ef71}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_ae0b6908dee8cf14f3dc08c8e4975ef71}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Only\+Member\+Of\+Equivalence\+Set} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_aa359eb46c72106897d56157d5aaf8fb4}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_aa359eb46c72106897d56157d5aaf8fb4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Only\+Materialized\+Member\+Of\+Equivalence\+Set} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_ac681e421ea57ffbe5e53e5bee080e77d}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_ac681e421ea57ffbe5e53e5bee080e77d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+In\+Same\+Equivalence\+Set} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo}{Register\+Info}} $\ast$info) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_a0e90dd5e9f2e5130c34cb16e04229ff6}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_a0e90dd5e9f2e5130c34cb16e04229ff6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo}{Register\+Info}} $\ast$ {\bfseries Get\+Allocated\+Equivalent} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_a21d93d046cb71cca228237d815156c0e}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_a21d93d046cb71cca228237d815156c0e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo}{Register\+Info}} $\ast$ {\bfseries Get\+Materialized\+Equivalent} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_aa7cf5577c4b05dcf2016fdaaed7f0494}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_aa7cf5577c4b05dcf2016fdaaed7f0494}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo}{Register\+Info}} $\ast$ {\bfseries Get\+Materialized\+Equivalent\+Other\+Than} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1Register}{Register}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_acb5473a6c60a53e57107c129267dc07e}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_acb5473a6c60a53e57107c129267dc07e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo}{Register\+Info}} $\ast$ {\bfseries Get\+Equivalent\+To\+Materialize} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_ae06fb0fde0ef589778d380fcac0f9d04}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_ae06fb0fde0ef589778d380fcac0f9d04}} 
+void {\bfseries Mark\+Temporaries\+As\+Unmaterialized} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1Register}{Register}} temporary\+\_\+base)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_ad0df3e18dbecaf0a9d26719961a46b0d}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_ad0df3e18dbecaf0a9d26719961a46b0d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo}{Register\+Info}} $\ast$ {\bfseries Get\+Equivalent} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_a1cf37b147d03d753c0e4166ecf684a7e}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_a1cf37b147d03d753c0e4166ecf684a7e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1Register}{Register}} {\bfseries register\+\_\+value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_ac9f09a3bcf4cf15a161dc197179b911c}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_ac9f09a3bcf4cf15a161dc197179b911c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries materialized} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_aea770ca7fdd85c7ceba043e3e3a16ecf}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_aea770ca7fdd85c7ceba043e3e3a16ecf}} 
+void {\bfseries set\+\_\+materialized} (\mbox{\hyperlink{classbool}{bool}} materialized)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_a2da2ffe639f897f16c8ab022c522cf9c}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_a2da2ffe639f897f16c8ab022c522cf9c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries allocated} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_ac5ca4776accc4a824948e822919efe9d}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_ac5ca4776accc4a824948e822919efe9d}} 
+void {\bfseries set\+\_\+allocated} (\mbox{\hyperlink{classbool}{bool}} allocated)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_a4524e4c37438eca0d04d356dcd1621d9}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_a4524e4c37438eca0d04d356dcd1621d9}} 
+void {\bfseries set\+\_\+equivalence\+\_\+id} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} equivalence\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_a6fac789355a76a14c199ba1c2a5dfb86}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_a6fac789355a76a14c199ba1c2a5dfb86}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries equivalence\+\_\+id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_aeffa9b045b9481a90dd61d50ac6fbe8a}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_aeffa9b045b9481a90dd61d50ac6fbe8a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries needs\+\_\+flush} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_a24a3eb0f432bc17a164d1485a8e0a05c}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo_a24a3eb0f432bc17a164d1485a8e0a05c}} 
+void {\bfseries set\+\_\+needs\+\_\+flush} (\mbox{\hyperlink{classbool}{bool}} needs\+\_\+flush)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file bytecode-\/register-\/optimizer.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/interpreter/bytecode-\/register-\/optimizer.\+cc\end{DoxyCompactItemize}

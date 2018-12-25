@@ -1,0 +1,133 @@
+\hypertarget{classv8_1_1internal_1_1Space}{}\section{v8\+:\+:internal\+:\+:Space Class Reference}
+\label{classv8_1_1internal_1_1Space}\index{v8\+::internal\+::\+Space@{v8\+::internal\+::\+Space}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Space\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.500000cm]{classv8_1_1internal_1_1Space}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_a25c01d5742d602b1b1d8ebdb035f666f}\label{classv8_1_1internal_1_1Space_a25c01d5742d602b1b1d8ebdb035f666f}} 
+{\bfseries Space} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, Allocation\+Space id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_ac6225465688c26858b8a5f53fe8c6cb9}\label{classv8_1_1internal_1_1Space_ac6225465688c26858b8a5f53fe8c6cb9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$ {\bfseries heap} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_a934a26e2755bc4f0d8060cfb3d051cdf}\label{classv8_1_1internal_1_1Space_a934a26e2755bc4f0d8060cfb3d051cdf}} 
+Allocation\+Space {\bfseries identity} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_ae5f4e1a282bffe2801b1887ef17f7f6b}\label{classv8_1_1internal_1_1Space_ae5f4e1a282bffe2801b1887ef17f7f6b}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries name} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_aa0e92a1328875808ba0f8aa7c4ed94c2}\label{classv8_1_1internal_1_1Space_aa0e92a1328875808ba0f8aa7c4ed94c2}} 
+virtual V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Add\+Allocation\+Observer} (\mbox{\hyperlink{classv8_1_1internal_1_1AllocationObserver}{Allocation\+Observer}} $\ast$observer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_abb4bd10a0085845b3666b96dec3090bd}\label{classv8_1_1internal_1_1Space_abb4bd10a0085845b3666b96dec3090bd}} 
+virtual V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Remove\+Allocation\+Observer} (\mbox{\hyperlink{classv8_1_1internal_1_1AllocationObserver}{Allocation\+Observer}} $\ast$observer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_ab95cabf4a018591c1039d1095026b45e}\label{classv8_1_1internal_1_1Space_ab95cabf4a018591c1039d1095026b45e}} 
+virtual V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Pause\+Allocation\+Observers} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_ad69a71f89b17d90e42f54aa6f45def25}\label{classv8_1_1internal_1_1Space_ad69a71f89b17d90e42f54aa6f45def25}} 
+virtual V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Resume\+Allocation\+Observers} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_acbe0e528471ff37d13f089d27d9cad09}\label{classv8_1_1internal_1_1Space_acbe0e528471ff37d13f089d27d9cad09}} 
+virtual V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Start\+Next\+Inline\+Allocation\+Step} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_a5dd08babbd0d3582b20912f0f35a5e40}\label{classv8_1_1internal_1_1Space_a5dd08babbd0d3582b20912f0f35a5e40}} 
+void {\bfseries Allocation\+Step} (\mbox{\hyperlink{classint}{int}} bytes\+\_\+since\+\_\+last, \mbox{\hyperlink{classuintptr__t}{Address}} soon\+\_\+object, \mbox{\hyperlink{classint}{int}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_a88c8357e28b6d087207d8cc5c10adb77}\label{classv8_1_1internal_1_1Space_a88c8357e28b6d087207d8cc5c10adb77}} 
+virtual \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Committed\+Memory} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_a09844b089591b79c8916402ccdda86fa}\label{classv8_1_1internal_1_1Space_a09844b089591b79c8916402ccdda86fa}} 
+virtual \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Maximum\+Committed\+Memory} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_a5a16f0e8c8fd5bd4866be2a470cc8707}\label{classv8_1_1internal_1_1Space_a5a16f0e8c8fd5bd4866be2a470cc8707}} 
+virtual \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Size} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_a3ab8aba4950b0557ea65f7de08d7d99b}\label{classv8_1_1internal_1_1Space_a3ab8aba4950b0557ea65f7de08d7d99b}} 
+virtual \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Size\+Of\+Objects} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_aa1f4b42fba0c67f5dbf98230ac009b70}\label{classv8_1_1internal_1_1Space_aa1f4b42fba0c67f5dbf98230ac009b70}} 
+virtual \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Committed\+Physical\+Memory} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_ad0db4cff5f0048a4e12c53d2bf595590}\label{classv8_1_1internal_1_1Space_ad0db4cff5f0048a4e12c53d2bf595590}} 
+virtual \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Available} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_a34965d2c93d16a1fd062d17512193153}\label{classv8_1_1internal_1_1Space_a34965d2c93d16a1fd062d17512193153}} 
+virtual \mbox{\hyperlink{classint}{int}} {\bfseries Round\+Size\+Down\+To\+Object\+Alignment} (\mbox{\hyperlink{classint}{int}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_a1f517793f261cc6bac46d4c9176ed0c2}\label{classv8_1_1internal_1_1Space_a1f517793f261cc6bac46d4c9176ed0c2}} 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ObjectIterator}{Object\+Iterator}} $>$ {\bfseries Get\+Object\+Iterator} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_aac2ce91783e8cac8a2f79ccb16aab8b6}\label{classv8_1_1internal_1_1Space_aac2ce91783e8cac8a2f79ccb16aab8b6}} 
+void {\bfseries Account\+Committed} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_a7ac93e9ded293572d01e1d794aab0826}\label{classv8_1_1internal_1_1Space_a7ac93e9ded293572d01e1d794aab0826}} 
+void {\bfseries Account\+Uncommitted} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_ae33fcdfec9cb21c744f0b484a741be78}\label{classv8_1_1internal_1_1Space_ae33fcdfec9cb21c744f0b484a741be78}} 
+void {\bfseries Increment\+External\+Backing\+Store\+Bytes} (External\+Backing\+Store\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} amount)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_ae3d67ba43ce4c08f70095d96e0ab1df9}\label{classv8_1_1internal_1_1Space_ae3d67ba43ce4c08f70095d96e0ab1df9}} 
+void {\bfseries Decrement\+External\+Backing\+Store\+Bytes} (External\+Backing\+Store\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} amount)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_a8958d2acbc696b614ea7f6914863e245}\label{classv8_1_1internal_1_1Space_a8958d2acbc696b614ea7f6914863e245}} 
+virtual \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries External\+Backing\+Store\+Bytes} (External\+Backing\+Store\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_a82ef7bdcb1823a97efa573cd03f62b93}\label{classv8_1_1internal_1_1Space_a82ef7bdcb1823a97efa573cd03f62b93}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void $\ast$ {\bfseries Get\+Random\+Mmap\+Addr} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_a94208293db2631ea056be7c45471f5cd}\label{classv8_1_1internal_1_1Space_a94208293db2631ea056be7c45471f5cd}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$ {\bfseries first\+\_\+page} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_a6b97aa8fd9389143c59e36bbca75eca7}\label{classv8_1_1internal_1_1Space_a6b97aa8fd9389143c59e36bbca75eca7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$ {\bfseries last\+\_\+page} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_a649e7bef4280801ddbbc70b5b2fe4236}\label{classv8_1_1internal_1_1Space_a649e7bef4280801ddbbc70b5b2fe4236}} 
+\mbox{\hyperlink{classv8_1_1base_1_1List}{base\+::\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $>$ \& {\bfseries memory\+\_\+chunk\+\_\+list} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_a0bb12027c2842ed45b62aaf6c21ea881}\label{classv8_1_1internal_1_1Space_a0bb12027c2842ed45b62aaf6c21ea881}} 
+static void {\bfseries Move\+External\+Backing\+Store\+Bytes} (External\+Backing\+Store\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1Space}{Space}} $\ast$from, \mbox{\hyperlink{classv8_1_1internal_1_1Space}{Space}} $\ast$to, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} amount)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_acbf2bdad84c14c8accec48a4b2d8a860}\label{classv8_1_1internal_1_1Space_acbf2bdad84c14c8accec48a4b2d8a860}} 
+intptr\+\_\+t {\bfseries Get\+Next\+Inline\+Allocation\+Step\+Size} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_afbcff6b754d7a3dda35c2e639b6dc693}\label{classv8_1_1internal_1_1Space_afbcff6b754d7a3dda35c2e639b6dc693}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Allocation\+Observers\+Active} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_a9845a253be7bdd5f79f794f2165b7b5f}\label{classv8_1_1internal_1_1Space_a9845a253be7bdd5f79f794f2165b7b5f}} 
+std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1AllocationObserver}{Allocation\+Observer}} $\ast$ $>$ {\bfseries allocation\+\_\+observers\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_af92d1e7de17ae749e985476c33f61397}\label{classv8_1_1internal_1_1Space_af92d1e7de17ae749e985476c33f61397}} 
+\mbox{\hyperlink{classv8_1_1base_1_1List}{base\+::\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $>$ {\bfseries memory\+\_\+chunk\+\_\+list\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Space_a1dbf5d8f9218662108a65ca7395e4887}\label{classv8_1_1internal_1_1Space_a1dbf5d8f9218662108a65ca7395e4887}} 
+std\+::atomic$<$ \mbox{\hyperlink{classsize__t}{size\+\_\+t}} $>$ $\ast$ {\bfseries external\+\_\+backing\+\_\+store\+\_\+bytes\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 938 of file spaces.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/spaces.\+h\item 
+v8/src/heap/spaces-\/inl.\+h\item 
+v8/src/heap/spaces.\+cc\end{DoxyCompactItemize}

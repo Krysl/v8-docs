@@ -1,0 +1,76 @@
+\hypertarget{classv8_1_1internal_1_1Call}{}\section{v8\+:\+:internal\+:\+:Call Class Reference}
+\label{classv8_1_1internal_1_1Call}\index{v8\+::internal\+::\+Call@{v8\+::internal\+::\+Call}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Call\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1Call}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Call_ac6d809a066023f5d0fae3545e3df4fce}\label{classv8_1_1internal_1_1Call_ac6d809a066023f5d0fae3545e3df4fce}} 
+enum {\bfseries Call\+Type} \{ \newline
+{\bfseries G\+L\+O\+B\+A\+L\+\_\+\+C\+A\+LL}, 
+{\bfseries W\+I\+T\+H\+\_\+\+C\+A\+LL}, 
+{\bfseries N\+A\+M\+E\+D\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+C\+A\+LL}, 
+{\bfseries K\+E\+Y\+E\+D\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+C\+A\+LL}, 
+\newline
+{\bfseries N\+A\+M\+E\+D\+\_\+\+S\+U\+P\+E\+R\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+C\+A\+LL}, 
+{\bfseries K\+E\+Y\+E\+D\+\_\+\+S\+U\+P\+E\+R\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+C\+A\+LL}, 
+{\bfseries S\+U\+P\+E\+R\+\_\+\+C\+A\+LL}, 
+{\bfseries R\+E\+S\+O\+L\+V\+E\+D\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+C\+A\+LL}, 
+\newline
+{\bfseries O\+T\+H\+E\+R\+\_\+\+C\+A\+LL}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Call_a956989aff39b4c7c2692cbb2b070c6d6}\label{classv8_1_1internal_1_1Call_a956989aff39b4c7c2692cbb2b070c6d6}} 
+enum {\bfseries Possibly\+Eval} \{ {\bfseries I\+S\+\_\+\+P\+O\+S\+S\+I\+B\+L\+Y\+\_\+\+E\+V\+AL}, 
+{\bfseries N\+O\+T\+\_\+\+E\+V\+AL}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Call_a3ddebf0897ed6baa729e48a486e4146f}\label{classv8_1_1internal_1_1Call_a3ddebf0897ed6baa729e48a486e4146f}} 
+enum {\bfseries Tagged\+Template\+Tag} \{ {\bfseries k\+True}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Call_a7807fdf1f502d7654683abacf5bc5731}\label{classv8_1_1internal_1_1Call_a7807fdf1f502d7654683abacf5bc5731}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$ {\bfseries expression} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Call_a0a67e6b91d18ef44808ef99efa9db709}\label{classv8_1_1internal_1_1Call_a0a67e6b91d18ef44808ef99efa9db709}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $>$ $\ast$ {\bfseries arguments} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Call_a7cc8f98923e98908e18b0364db576a47}\label{classv8_1_1internal_1_1Call_a7cc8f98923e98908e18b0364db576a47}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+possibly\+\_\+eval} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Call_a39fc7130ba9bba511aef802cfb7d62c6}\label{classv8_1_1internal_1_1Call_a39fc7130ba9bba511aef802cfb7d62c6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+tagged\+\_\+template} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Call_a7fcf79cfeb4ccc37661e1e25905d64f8}\label{classv8_1_1internal_1_1Call_a7fcf79cfeb4ccc37661e1e25905d64f8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries only\+\_\+last\+\_\+arg\+\_\+is\+\_\+spread} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Call_a8bdcb354f3a82d0476ff2d314ecd7f33}\label{classv8_1_1internal_1_1Call_a8bdcb354f3a82d0476ff2d314ecd7f33}} 
+Call\+Type {\bfseries Get\+Call\+Type} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Call_a8d587c8ad3515ff6433eb83c578e795f}\label{classv8_1_1internal_1_1Call_a8d587c8ad3515ff6433eb83c578e795f}} 
+class {\bfseries Ast\+Node\+Factory}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1783 of file ast.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ast/ast.\+h\item 
+v8/src/ast/ast.\+cc\end{DoxyCompactItemize}

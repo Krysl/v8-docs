@@ -1,0 +1,41 @@
+\hypertarget{structv8_1_1internal_1_1PointerWithPayloadTraits}{}\section{v8\+:\+:internal\+:\+:Pointer\+With\+Payload\+Traits$<$ Pointer\+Type $>$ Struct Template Reference}
+\label{structv8_1_1internal_1_1PointerWithPayloadTraits}\index{v8\+::internal\+::\+Pointer\+With\+Payload\+Traits$<$ Pointer\+Type $>$@{v8\+::internal\+::\+Pointer\+With\+Payload\+Traits$<$ Pointer\+Type $>$}}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Pointer\+Type$>$\newline
+struct v8\+::internal\+::\+Pointer\+With\+Payload\+Traits$<$ Pointer\+Type $>$}
+
+
+
+Definition at line 18 of file pointer-\/with-\/payload.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structv8_1_1internal_1_1PointerWithPayloadTraits_aedcea6175d31ed6be203e00014aad875}\label{structv8_1_1internal_1_1PointerWithPayloadTraits_aedcea6175d31ed6be203e00014aad875}} 
+\index{v8\+::internal\+::\+Pointer\+With\+Payload\+Traits@{v8\+::internal\+::\+Pointer\+With\+Payload\+Traits}!value@{value}}
+\index{value@{value}!v8\+::internal\+::\+Pointer\+With\+Payload\+Traits@{v8\+::internal\+::\+Pointer\+With\+Payload\+Traits}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily template$<$typename Pointer\+Type $>$ \\
+constexpr \mbox{\hyperlink{classint}{int}} \mbox{\hyperlink{structv8_1_1internal_1_1PointerWithPayloadTraits}{v8\+::internal\+::\+Pointer\+With\+Payload\+Traits}}$<$ Pointer\+Type $>$\+::value\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      \textcolor{keyword}{alignof}(PointerType) >= 8 ? 3 : \textcolor{keyword}{alignof}(PointerType) >= 4 ? 2 : 1
+\end{DoxyCode}
+
+
+Definition at line 19 of file pointer-\/with-\/payload.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/pointer-\/with-\/payload.\+h\end{DoxyCompactItemize}

@@ -14,15 +14,15 @@ enum {\bfseries Serialization\+Format} \{ {\bfseries k\+J\+S\+ON} = 0
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-const \mbox{\hyperlink{classv8_1_1HeapGraphNode}{Heap\+Graph\+Node}} $\ast$ \mbox{\hyperlink{classv8_1_1HeapSnapshot_a2c47b582466501d54cb6e26f36dc978c}{Get\+Root}} () const
+const \mbox{\hyperlink{classv8_1_1HeapGraphNode}{Heap\+Graph\+Node}} $\ast$ \mbox{\hyperlink{classv8_1_1HeapSnapshot_ab636eb9db043fed952d87d03525bcbd5}{Get\+Root}} () const
 \item 
-const \mbox{\hyperlink{classv8_1_1HeapGraphNode}{Heap\+Graph\+Node}} $\ast$ \mbox{\hyperlink{classv8_1_1HeapSnapshot_a0aec9c1535c27bc8b1b55579969203fc}{Get\+Node\+By\+Id}} (Snapshot\+Object\+Id id) const
+const \mbox{\hyperlink{classv8_1_1HeapGraphNode}{Heap\+Graph\+Node}} $\ast$ \mbox{\hyperlink{classv8_1_1HeapSnapshot_a17777c4ef00f142ef176b54f433e2d44}{Get\+Node\+By\+Id}} (\mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} id) const
 \item 
-int \mbox{\hyperlink{classv8_1_1HeapSnapshot_a6878bb7eb14674e754fef18080153003}{Get\+Nodes\+Count}} () const
+\mbox{\hyperlink{classint}{int}} \mbox{\hyperlink{classv8_1_1HeapSnapshot_a6878bb7eb14674e754fef18080153003}{Get\+Nodes\+Count}} () const
 \item 
-const \mbox{\hyperlink{classv8_1_1HeapGraphNode}{Heap\+Graph\+Node}} $\ast$ \mbox{\hyperlink{classv8_1_1HeapSnapshot_ac5e9333d91030870b2648f2f8e9505d7}{Get\+Node}} (int index) const
+const \mbox{\hyperlink{classv8_1_1HeapGraphNode}{Heap\+Graph\+Node}} $\ast$ \mbox{\hyperlink{classv8_1_1HeapSnapshot_ac469912038b7f19fe71c2f73a18b10e4}{Get\+Node}} (\mbox{\hyperlink{classint}{int}} index) const
 \item 
-Snapshot\+Object\+Id \mbox{\hyperlink{classv8_1_1HeapSnapshot_ab85fc78102f4e7a3c4f2bf66a3665908}{Get\+Max\+Snapshot\+J\+S\+Object\+Id}} () const
+\mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} \mbox{\hyperlink{classv8_1_1HeapSnapshot_ab85fc78102f4e7a3c4f2bf66a3665908}{Get\+Max\+Snapshot\+J\+S\+Object\+Id}} () const
 \item 
 void \mbox{\hyperlink{classv8_1_1HeapSnapshot_aeaa6073009e4041839dff7a860d2548a}{Delete}} ()
 \item 
@@ -44,41 +44,65 @@ Definition at line 479 of file v8-\/profiler.\+h.
 \subsubsection{\texorpdfstring{Delete()}{Delete()}}
 {\footnotesize\ttfamily void v8\+::\+Heap\+Snapshot\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Deletes the snapshot and removes it from \mbox{\hyperlink{classv8_1_1HeapProfiler}{Heap\+Profiler}}\textquotesingle{}s list. All pointers to nodes, edges and paths previously returned become invalid. \mbox{\Hypertarget{classv8_1_1HeapSnapshot_ab85fc78102f4e7a3c4f2bf66a3665908}\label{classv8_1_1HeapSnapshot_ab85fc78102f4e7a3c4f2bf66a3665908}} 
+Deletes the snapshot and removes it from \mbox{\hyperlink{classv8_1_1HeapProfiler}{Heap\+Profiler}}\textquotesingle{}s list. All pointers to nodes, edges and paths previously returned become invalid. 
+
+Definition at line 10326 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1HeapSnapshot_ab85fc78102f4e7a3c4f2bf66a3665908}\label{classv8_1_1HeapSnapshot_ab85fc78102f4e7a3c4f2bf66a3665908}} 
 \index{v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}!Get\+Max\+Snapshot\+J\+S\+Object\+Id@{Get\+Max\+Snapshot\+J\+S\+Object\+Id}}
 \index{Get\+Max\+Snapshot\+J\+S\+Object\+Id@{Get\+Max\+Snapshot\+J\+S\+Object\+Id}!v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}}
 \subsubsection{\texorpdfstring{Get\+Max\+Snapshot\+J\+S\+Object\+Id()}{GetMaxSnapshotJSObjectId()}}
-{\footnotesize\ttfamily Snapshot\+Object\+Id v8\+::\+Heap\+Snapshot\+::\+Get\+Max\+Snapshot\+J\+S\+Object\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} v8\+::\+Heap\+Snapshot\+::\+Get\+Max\+Snapshot\+J\+S\+Object\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns a max seen JS object Id. \mbox{\Hypertarget{classv8_1_1HeapSnapshot_ac5e9333d91030870b2648f2f8e9505d7}\label{classv8_1_1HeapSnapshot_ac5e9333d91030870b2648f2f8e9505d7}} 
+Returns a max seen JS object Id. 
+
+Definition at line 10359 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1HeapSnapshot_ac469912038b7f19fe71c2f73a18b10e4}\label{classv8_1_1HeapSnapshot_ac469912038b7f19fe71c2f73a18b10e4}} 
 \index{v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}!Get\+Node@{Get\+Node}}
 \index{Get\+Node@{Get\+Node}!v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}}
 \subsubsection{\texorpdfstring{Get\+Node()}{GetNode()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{classv8_1_1HeapGraphNode}{Heap\+Graph\+Node}}$\ast$ v8\+::\+Heap\+Snapshot\+::\+Get\+Node (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classv8_1_1HeapGraphNode}{Heap\+Graph\+Node}} $\ast$ v8\+::\+Heap\+Snapshot\+::\+Get\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classint}{int}}}]{index }\end{DoxyParamCaption}) const}
 
-Returns a node by index. \mbox{\Hypertarget{classv8_1_1HeapSnapshot_a0aec9c1535c27bc8b1b55579969203fc}\label{classv8_1_1HeapSnapshot_a0aec9c1535c27bc8b1b55579969203fc}} 
+Returns a node by index. 
+
+Definition at line 10353 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1HeapSnapshot_a17777c4ef00f142ef176b54f433e2d44}\label{classv8_1_1HeapSnapshot_a17777c4ef00f142ef176b54f433e2d44}} 
 \index{v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}!Get\+Node\+By\+Id@{Get\+Node\+By\+Id}}
 \index{Get\+Node\+By\+Id@{Get\+Node\+By\+Id}!v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}}
 \subsubsection{\texorpdfstring{Get\+Node\+By\+Id()}{GetNodeById()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{classv8_1_1HeapGraphNode}{Heap\+Graph\+Node}}$\ast$ v8\+::\+Heap\+Snapshot\+::\+Get\+Node\+By\+Id (\begin{DoxyParamCaption}\item[{Snapshot\+Object\+Id}]{id }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classv8_1_1HeapGraphNode}{Heap\+Graph\+Node}} $\ast$ v8\+::\+Heap\+Snapshot\+::\+Get\+Node\+By\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}}}]{id }\end{DoxyParamCaption}) const}
 
-Returns a node by its id. \mbox{\Hypertarget{classv8_1_1HeapSnapshot_a6878bb7eb14674e754fef18080153003}\label{classv8_1_1HeapSnapshot_a6878bb7eb14674e754fef18080153003}} 
+Returns a node by its id. 
+
+Definition at line 10342 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1HeapSnapshot_a6878bb7eb14674e754fef18080153003}\label{classv8_1_1HeapSnapshot_a6878bb7eb14674e754fef18080153003}} 
 \index{v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}!Get\+Nodes\+Count@{Get\+Nodes\+Count}}
 \index{Get\+Nodes\+Count@{Get\+Nodes\+Count}!v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}}
 \subsubsection{\texorpdfstring{Get\+Nodes\+Count()}{GetNodesCount()}}
-{\footnotesize\ttfamily int v8\+::\+Heap\+Snapshot\+::\+Get\+Nodes\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classint}{int}} v8\+::\+Heap\+Snapshot\+::\+Get\+Nodes\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns total nodes count in the snapshot. \mbox{\Hypertarget{classv8_1_1HeapSnapshot_a2c47b582466501d54cb6e26f36dc978c}\label{classv8_1_1HeapSnapshot_a2c47b582466501d54cb6e26f36dc978c}} 
+Returns total nodes count in the snapshot. 
+
+Definition at line 10348 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1HeapSnapshot_ab636eb9db043fed952d87d03525bcbd5}\label{classv8_1_1HeapSnapshot_ab636eb9db043fed952d87d03525bcbd5}} 
 \index{v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}!Get\+Root@{Get\+Root}}
 \index{Get\+Root@{Get\+Root}!v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}}
 \subsubsection{\texorpdfstring{Get\+Root()}{GetRoot()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{classv8_1_1HeapGraphNode}{Heap\+Graph\+Node}}$\ast$ v8\+::\+Heap\+Snapshot\+::\+Get\+Root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classv8_1_1HeapGraphNode}{Heap\+Graph\+Node}} $\ast$ v8\+::\+Heap\+Snapshot\+::\+Get\+Root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns the root node of the heap graph. \mbox{\Hypertarget{classv8_1_1HeapSnapshot_ad2e9773fcdc6785e799400c39d9eeba1}\label{classv8_1_1HeapSnapshot_ad2e9773fcdc6785e799400c39d9eeba1}} 
+Returns the root node of the heap graph. 
+
+Definition at line 10337 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1HeapSnapshot_ad2e9773fcdc6785e799400c39d9eeba1}\label{classv8_1_1HeapSnapshot_ad2e9773fcdc6785e799400c39d9eeba1}} 
 \index{v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}!Serialize@{Serialize}}
 \index{Serialize@{Serialize}!v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}}
 \subsubsection{\texorpdfstring{Serialize()}{Serialize()}}
-{\footnotesize\ttfamily void v8\+::\+Heap\+Snapshot\+::\+Serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1OutputStream}{Output\+Stream}} $\ast$}]{stream,  }\item[{Serialization\+Format}]{format = {\ttfamily kJSON} }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily void v8\+::\+Heap\+Snapshot\+::\+Serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1OutputStream}{Output\+Stream}} $\ast$}]{stream,  }\item[{Heap\+Snapshot\+::\+Serialization\+Format}]{format = {\ttfamily kJSON} }\end{DoxyParamCaption}) const}
 
 Prepare a serialized representation of the snapshot. The result is written into the stream provided in chunks of specified size. The total length of the serialized snapshot is unknown in advance, it can be roughly equal to JS heap size (that means, it can be really big -\/ tens of megabytes).
 
@@ -88,6 +112,11 @@ For the \mbox{\hyperlink{classv8_1_1JSON}{J\+S\+ON}} format, heap contents are r
 
 Nodes reference strings, other nodes, and edges by their indexes in corresponding arrays. 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Definition at line 10364 of file api.\+cc.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8-\/profiler.\+h\end{DoxyCompactItemize}
+v8/include/v8-\/profiler.\+h\item 
+v8/src/api.\+cc\end{DoxyCompactItemize}

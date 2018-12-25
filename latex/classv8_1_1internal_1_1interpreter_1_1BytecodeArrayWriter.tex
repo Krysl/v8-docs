@@ -1,0 +1,51 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecode\+Array\+Writer Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter}\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Array\+Writer@{v8\+::internal\+::interpreter\+::\+Bytecode\+Array\+Writer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_a6dbcb850a77552828f544b1dc650ebb7}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_a6dbcb850a77552828f544b1dc650ebb7}} 
+{\bfseries Bytecode\+Array\+Writer} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder}{Constant\+Array\+Builder}} $\ast$constant\+\_\+array\+\_\+builder, Source\+Position\+Table\+Builder\+::\+Recording\+Mode source\+\_\+position\+\_\+mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_a0757630dc5eae2cb010c0bee292a1f55}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_a0757630dc5eae2cb010c0bee292a1f55}} 
+void {\bfseries Write} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeNode}{Bytecode\+Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_a280753471b65f9c6e9b319327ebcf7b7}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_a280753471b65f9c6e9b319327ebcf7b7}} 
+void {\bfseries Write\+Jump} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeNode}{Bytecode\+Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeLabel}{Bytecode\+Label}} $\ast$label)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_a24374ffe04555f391282216d50ace79e}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_a24374ffe04555f391282216d50ace79e}} 
+void {\bfseries Write\+Switch} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeNode}{Bytecode\+Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeJumpTable}{Bytecode\+Jump\+Table}} $\ast$jump\+\_\+table)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_a6c8b9165871ebf44c351618373043bd1}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_a6c8b9165871ebf44c351618373043bd1}} 
+void {\bfseries Bind\+Label} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeLabel}{Bytecode\+Label}} $\ast$label)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_abd6e5d6b46f157927fbe7d8e5efae9ce}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_abd6e5d6b46f157927fbe7d8e5efae9ce}} 
+void {\bfseries Bind\+Label} (const \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeLabel}{Bytecode\+Label}} \&target, \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeLabel}{Bytecode\+Label}} $\ast$label)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_a95841c11c6ffecdf4414393267046959}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_a95841c11c6ffecdf4414393267046959}} 
+void {\bfseries Bind\+Jump\+Table\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeJumpTable}{Bytecode\+Jump\+Table}} $\ast$jump\+\_\+table, \mbox{\hyperlink{classint}{int}} case\+\_\+value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_a5d1d24c9f630788612bc43af1c3f4d96}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_a5d1d24c9f630788612bc43af1c3f4d96}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray}{Bytecode\+Array}} $>$ {\bfseries To\+Bytecode\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} register\+\_\+count, \mbox{\hyperlink{classint}{int}} parameter\+\_\+count, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ByteArray}{Byte\+Array}} $>$ handler\+\_\+table)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_ad970d8fb172c7475f3b1574d4ca49c13}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_ad970d8fb172c7475f3b1574d4ca49c13}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Remainder\+Of\+Block\+Is\+Dead} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_ad2da9d2800829396156c2b02372b9772}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayWriter_ad2da9d2800829396156c2b02372b9772}} 
+class {\bfseries bytecode\+\_\+array\+\_\+writer\+\_\+unittest\+::\+Bytecode\+Array\+Writer\+Unittest}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 32 of file bytecode-\/array-\/writer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/interpreter/bytecode-\/array-\/writer.\+h\item 
+v8/src/interpreter/bytecode-\/array-\/writer.\+cc\end{DoxyCompactItemize}

@@ -93,21 +93,30 @@ $(document).ready(function(){initNavTree('classv8_1_1ScriptCompiler_1_1ExternalS
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="v8_8h_source.html">v8.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="include_2v8_8h_source.html">v8.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for v8::ScriptCompiler::ExternalSourceStream:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classv8_1_1ScriptCompiler_1_1ExternalSourceStream.png" usemap="#v8::ScriptCompiler::ExternalSourceStream_map" alt=""/>
+  <map id="v8::ScriptCompiler::ExternalSourceStream_map" name="v8::ScriptCompiler::ExternalSourceStream_map">
+<area href="classv8_1_1DummySourceStream.html" alt="v8::DummySourceStream" shape="rect" coords="0,56,247,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac3a0221b5725f0b612a6342d8e83d899"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1ScriptCompiler_1_1ExternalSourceStream.html#ac3a0221b5725f0b612a6342d8e83d899">GetMoreData</a> (const uint8_t **src)=0</td></tr>
+<tr class="memitem:ac3a0221b5725f0b612a6342d8e83d899"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classsize__t.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1ScriptCompiler_1_1ExternalSourceStream.html#ac3a0221b5725f0b612a6342d8e83d899">GetMoreData</a> (const uint8_t **src)=0</td></tr>
 <tr class="separator:ac3a0221b5725f0b612a6342d8e83d899"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6848508547b3508a2d016738f12561e8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1ScriptCompiler_1_1ExternalSourceStream.html#a6848508547b3508a2d016738f12561e8">SetBookmark</a> ()</td></tr>
-<tr class="separator:a6848508547b3508a2d016738f12561e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a425cf1ba265eeca194b805fe5c52bc19"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1ScriptCompiler_1_1ExternalSourceStream.html#a425cf1ba265eeca194b805fe5c52bc19">ResetToBookmark</a> ()</td></tr>
-<tr class="separator:a425cf1ba265eeca194b805fe5c52bc19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0012cebde92a3a61ec033e3abc2dd2ee"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1ScriptCompiler_1_1ExternalSourceStream.html#a0012cebde92a3a61ec033e3abc2dd2ee">SetBookmark</a> ()</td></tr>
+<tr class="separator:a0012cebde92a3a61ec033e3abc2dd2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af950fd00676e6bdb8642791f651b161a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1ScriptCompiler_1_1ExternalSourceStream.html#af950fd00676e6bdb8642791f651b161a">ResetToBookmark</a> ()</td></tr>
+<tr class="separator:af950fd00676e6bdb8642791f651b161a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>For streaming incomplete script data to V8. The embedder should implement a subclass of this class. </p>
 
-<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l01337">1337</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="include_2v8_8h_source.html#l01337">1337</a> of file <a class="el" href="include_2v8_8h_source.html">v8.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac3a0221b5725f0b612a6342d8e83d899"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3a0221b5725f0b612a6342d8e83d899">&#9670;&nbsp;</a></span>GetMoreData()</h2>
@@ -119,7 +128,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual size_t v8::ScriptCompiler::ExternalSourceStream::GetMoreData </td>
+          <td class="memname">virtual <a class="el" href="classsize__t.html">size_t</a> v8::ScriptCompiler::ExternalSourceStream::GetMoreData </td>
           <td>(</td>
           <td class="paramtype">const uint8_t **&#160;</td>
           <td class="paramname"><em>src</em></td><td>)</td>
@@ -137,10 +146,12 @@ Public Member Functions</h2></td></tr>
 <p>When streaming UTF-16 data, V8 does not handle characters split between two data chunks. The embedder has to make sure that chunks have an even length.</p>
 <p>If the embedder wants to cancel the streaming, they should make the next GetMoreData call return 0. V8 will interpret it as end of data (and most probably, parsing will fail). The streaming task will return as soon as V8 has parsed the data it received so far. </p>
 
+<p>Implemented in <a class="el" href="classv8_1_1DummySourceStream.html#a0b4b9e3f0d0747d169ba75e68fe596d7">v8::DummySourceStream</a>.</p>
+
 </div>
 </div>
-<a id="a425cf1ba265eeca194b805fe5c52bc19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a425cf1ba265eeca194b805fe5c52bc19">&#9670;&nbsp;</a></span>ResetToBookmark()</h2>
+<a id="af950fd00676e6bdb8642791f651b161a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af950fd00676e6bdb8642791f651b161a">&#9670;&nbsp;</a></span>ResetToBookmark()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,7 +160,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void v8::ScriptCompiler::ExternalSourceStream::ResetToBookmark </td>
+          <td class="memname">void v8::ScriptCompiler::ExternalSourceStream::ResetToBookmark </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -163,10 +174,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>V8 calls this to return to a previously set bookmark. </p>
 
+<p class="definition">Definition at line <a class="el" href="api_8cc_source.html#l02022">2022</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
-<a id="a6848508547b3508a2d016738f12561e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6848508547b3508a2d016738f12561e8">&#9670;&nbsp;</a></span>SetBookmark()</h2>
+<a id="a0012cebde92a3a61ec033e3abc2dd2ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0012cebde92a3a61ec033e3abc2dd2ee">&#9670;&nbsp;</a></span>SetBookmark()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,7 +188,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool v8::ScriptCompiler::ExternalSourceStream::SetBookmark </td>
+          <td class="memname"><a class="el" href="classbool.html">bool</a> v8::ScriptCompiler::ExternalSourceStream::SetBookmark </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -190,10 +203,13 @@ Public Member Functions</h2></td></tr>
 <p>V8 calls this method to set a 'bookmark' at the current position in the source stream, for the purpose of (maybe) later calling ResetToBookmark. If ResetToBookmark is called later, then subsequent calls to GetMoreData should return the same data as they did when SetBookmark was called earlier.</p>
 <p>The embedder may return 'false' to indicate it cannot provide this functionality. </p>
 
+<p class="definition">Definition at line <a class="el" href="api_8cc_source.html#l02020">2020</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>v8/include/<a class="el" href="v8_8h_source.html">v8.h</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>v8/include/<a class="el" href="include_2v8_8h_source.html">v8.h</a></li>
+<li>v8/src/<a class="el" href="api_8cc_source.html">api.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -201,7 +217,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1ScriptCompiler.html">ScriptCompiler</a></li><li class="navelem"><a class="el" href="classv8_1_1ScriptCompiler_1_1ExternalSourceStream.html">ExternalSourceStream</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 14:33:08 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:40:34 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

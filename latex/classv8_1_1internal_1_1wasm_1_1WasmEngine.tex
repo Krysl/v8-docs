@@ -1,0 +1,96 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Engine Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1WasmEngine}\index{v8\+::internal\+::wasm\+::\+Wasm\+Engine@{v8\+::internal\+::wasm\+::\+Wasm\+Engine}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_aaf88e443756927e9a1bde00d2e78a196}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_aaf88e443756927e9a1bde00d2e78a196}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Sync\+Validate} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{Wasm\+Features}} \&enabled, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1ModuleWireBytes}{Module\+Wire\+Bytes}} \&bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_a842b15c32ff8d4f3ccffcbab32e21ce9}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_a842b15c32ff8d4f3ccffcbab32e21ce9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1AsmWasmData}{Asm\+Wasm\+Data}} $>$ {\bfseries Sync\+Compile\+Translated\+Asm\+Js} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1ErrorThrower}{Error\+Thrower}} $\ast$thrower, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1ModuleWireBytes}{Module\+Wire\+Bytes}} \&bytes, \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const byte $>$ asm\+\_\+js\+\_\+offset\+\_\+table\+\_\+bytes, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapNumber}{Heap\+Number}} $>$ uses\+\_\+bitset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_a2f4b59db1fd3eec79204f0e3628f1074}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_a2f4b59db1fd3eec79204f0e3628f1074}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$ {\bfseries Finalize\+Translated\+Asm\+Js} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1AsmWasmData}{Asm\+Wasm\+Data}} $>$ asm\+\_\+wasm\+\_\+data, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $>$ script)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_a6892238feb266e57371ed9aa88c38ee6}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_a6892238feb266e57371ed9aa88c38ee6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$ {\bfseries Sync\+Compile} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{Wasm\+Features}} \&enabled, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1ErrorThrower}{Error\+Thrower}} $\ast$thrower, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1ModuleWireBytes}{Module\+Wire\+Bytes}} \&bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_acaaae132f9415e5194a088e8f466328a}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_acaaae132f9415e5194a088e8f466328a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmInstanceObject}{Wasm\+Instance\+Object}} $>$ {\bfseries Sync\+Instantiate} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1ErrorThrower}{Error\+Thrower}} $\ast$thrower, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$ module\+\_\+object, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ imports, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArrayBuffer}{J\+S\+Array\+Buffer}} $>$ memory)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_aaacfae0e6099d8696eda0a2d8d7fecf4}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_aaacfae0e6099d8696eda0a2d8d7fecf4}} 
+void {\bfseries Async\+Compile} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{Wasm\+Features}} \&enabled, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1CompilationResultResolver}{Compilation\+Result\+Resolver}} $>$ resolver, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1ModuleWireBytes}{Module\+Wire\+Bytes}} \&bytes, \mbox{\hyperlink{classbool}{bool}} is\+\_\+shared)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_aefce4d20fbd0cf19f61519ad741bf1dd}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_aefce4d20fbd0cf19f61519ad741bf1dd}} 
+void {\bfseries Async\+Instantiate} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1InstantiationResultResolver}{Instantiation\+Result\+Resolver}} $>$ resolver, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$ module\+\_\+object, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ imports)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_ab7e9fa577a810aa1ee66a110c7349d1f}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_ab7e9fa577a810aa1ee66a110c7349d1f}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1StreamingDecoder}{Streaming\+Decoder}} $>$ {\bfseries Start\+Streaming\+Compilation} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{Wasm\+Features}} \&enabled, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1CompilationResultResolver}{Compilation\+Result\+Resolver}} $>$ resolver)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_a381b86c1c5f9a4b82b6172e343df5f74}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_a381b86c1c5f9a4b82b6172e343df5f74}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Compile\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1NativeModule}{Native\+Module}} $\ast$native\+\_\+module, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} function\+\_\+index, Execution\+Tier tier)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_a904933c8cee59fd4e7ba4e1d73afc6ad}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_a904933c8cee59fd4e7ba4e1d73afc6ad}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1NativeModule}{Native\+Module}} $>$ {\bfseries Export\+Native\+Module} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$ module\+\_\+object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_ae9574a38d771411fadc441fa58b875cf}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_ae9574a38d771411fadc441fa58b875cf}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$ {\bfseries Import\+Native\+Module} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1NativeModule}{Native\+Module}} $>$ shared\+\_\+module)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_ab09e92a7aa8374889c1a6928bab813ed}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_ab09e92a7aa8374889c1a6928bab813ed}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCodeManager}{Wasm\+Code\+Manager}} $\ast$ {\bfseries code\+\_\+manager} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_a7f0d4c368b7d4cf712a46d022bedec09}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_a7f0d4c368b7d4cf712a46d022bedec09}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker}{Wasm\+Memory\+Tracker}} $\ast$ {\bfseries memory\+\_\+tracker} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_a92bf3bf6d5ba9b15735d9ae1a3643817}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_a92bf3bf6d5ba9b15735d9ae1a3643817}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1AccountingAllocator}{Accounting\+Allocator}} $\ast$ {\bfseries allocator} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_a6ba64d2431a10ea5ff7a0c33cf8a03f8}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_a6ba64d2431a10ea5ff7a0c33cf8a03f8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CompilationStatistics}{Compilation\+Statistics}} $\ast$ {\bfseries Get\+Or\+Create\+Turbo\+Statistics} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_a54471342125fa1a1edbfce3cbabc9ab6}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_a54471342125fa1a1edbfce3cbabc9ab6}} 
+void {\bfseries Dump\+And\+Reset\+Turbo\+Statistics} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_a935fb8d614cf2741a9b6bb23671b0e76}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_a935fb8d614cf2741a9b6bb23671b0e76}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CodeTracer}{Code\+Tracer}} $\ast$ {\bfseries Get\+Code\+Tracer} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_a8378f5ecdd236147a0b3c590c12899b8}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_a8378f5ecdd236147a0b3c590c12899b8}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob}{Async\+Compile\+Job}} $>$ {\bfseries Remove\+Compile\+Job} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob}{Async\+Compile\+Job}} $\ast$job)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_ab6afdb3fea4c987fb6d9d515c5faa630}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_ab6afdb3fea4c987fb6d9d515c5faa630}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Running\+Compile\+Job} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_aa103ab294ff94d0c588ea065e30e7038}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_aa103ab294ff94d0c588ea065e30e7038}} 
+void {\bfseries Delete\+Compile\+Jobs\+On\+Isolate} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_af7ca4a2df3e7f8a56c31571ade78372e}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_af7ca4a2df3e7f8a56c31571ade78372e}} 
+void {\bfseries Add\+Isolate} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_adb290a299b20f78b6b32641fc21325c5}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_adb290a299b20f78b6b32641fc21325c5}} 
+void {\bfseries Remove\+Isolate} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_a0dc3794ded31c3d4f26cb020d2ffe332}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_a0dc3794ded31c3d4f26cb020d2ffe332}} 
+static void {\bfseries Initialize\+Once\+Per\+Process} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_a3bda543358e208aec76ae5da75d96eb2}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_a3bda543358e208aec76ae5da75d96eb2}} 
+static void {\bfseries Global\+Tear\+Down} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmEngine_a55249e6f91a12de658b138623593421b}\label{classv8_1_1internal_1_1wasm_1_1WasmEngine_a55249e6f91a12de658b138623593421b}} 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmEngine}{Wasm\+Engine}} $>$ {\bfseries Get\+Wasm\+Engine} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 48 of file wasm-\/engine.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/wasm-\/engine.\+h\item 
+v8/src/wasm/wasm-\/engine.\+cc\end{DoxyCompactItemize}

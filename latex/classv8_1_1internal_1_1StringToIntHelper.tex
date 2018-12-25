@@ -1,0 +1,106 @@
+\hypertarget{classv8_1_1internal_1_1StringToIntHelper}{}\section{v8\+:\+:internal\+:\+:String\+To\+Int\+Helper Class Reference}
+\label{classv8_1_1internal_1_1StringToIntHelper}\index{v8\+::internal\+::\+String\+To\+Int\+Helper@{v8\+::internal\+::\+String\+To\+Int\+Helper}}
+Inheritance diagram for v8\+:\+:internal\+:\+:String\+To\+Int\+Helper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1StringToIntHelper}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_a55eff296e0969e0a61323e31bceacc68}\label{classv8_1_1internal_1_1StringToIntHelper_a55eff296e0969e0a61323e31bceacc68}} 
+{\bfseries String\+To\+Int\+Helper} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ subject, \mbox{\hyperlink{classint}{int}} radix)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_a6810a69fca9d0acd37c1354be0ac8cf5}\label{classv8_1_1internal_1_1StringToIntHelper_a6810a69fca9d0acd37c1354be0ac8cf5}} 
+{\bfseries String\+To\+Int\+Helper} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ subject)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_af80520d3b1267c6bdd9ed3fab1f24b90}\label{classv8_1_1internal_1_1StringToIntHelper_af80520d3b1267c6bdd9ed3fab1f24b90}} 
+{\bfseries String\+To\+Int\+Helper} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const uint8\+\_\+t $\ast$subject, \mbox{\hyperlink{classint}{int}} length)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_a40ccc996ea74f912ccc03a26e29133b0}\label{classv8_1_1internal_1_1StringToIntHelper_a40ccc996ea74f912ccc03a26e29133b0}} 
+enum {\bfseries State} \{ \newline
+{\bfseries k\+Running}, 
+{\bfseries k\+Error}, 
+{\bfseries k\+Junk}, 
+{\bfseries k\+Empty}, 
+\newline
+{\bfseries k\+Zero}, 
+{\bfseries k\+Done}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_a4c50b2079478007d54e5df830dac0fcc}\label{classv8_1_1internal_1_1StringToIntHelper_a4c50b2079478007d54e5df830dac0fcc}} 
+enum {\bfseries Sign} \{ {\bfseries k\+Negative}, 
+{\bfseries k\+Positive}, 
+{\bfseries k\+None}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_a408d36113d7981141269d8da4908ffb5}\label{classv8_1_1internal_1_1StringToIntHelper_a408d36113d7981141269d8da4908ffb5}} 
+virtual void {\bfseries Allocate\+Result} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_a7e1f0a44fd15e60ed769f00e3b027e00}\label{classv8_1_1internal_1_1StringToIntHelper_a7e1f0a44fd15e60ed769f00e3b027e00}} 
+virtual void {\bfseries Result\+Multiply\+Add} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} multiplier, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} part)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_a9171f9c77ba52a880880fb98d649fae4}\label{classv8_1_1internal_1_1StringToIntHelper_a9171f9c77ba52a880880fb98d649fae4}} 
+void {\bfseries Parse\+Int} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_a9741312c11082d4ad32127dbbea79dbe}\label{classv8_1_1internal_1_1StringToIntHelper_a9741312c11082d4ad32127dbbea79dbe}} 
+virtual void {\bfseries Handle\+Special\+Cases} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_a4cb078738556c1b6a446fcf30bcd82f4}\label{classv8_1_1internal_1_1StringToIntHelper_a4cb078738556c1b6a446fcf30bcd82f4}} 
+void {\bfseries set\+\_\+allow\+\_\+binary\+\_\+and\+\_\+octal\+\_\+prefixes} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_ae5a761be631876e388d061f56c284dd9}\label{classv8_1_1internal_1_1StringToIntHelper_ae5a761be631876e388d061f56c284dd9}} 
+void {\bfseries set\+\_\+disallow\+\_\+trailing\+\_\+junk} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_a47007b5ad84fe60833b0c616c82967ea}\label{classv8_1_1internal_1_1StringToIntHelper_a47007b5ad84fe60833b0c616c82967ea}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+One\+Byte} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_a6b9af09388edece46bfa1925d876794d}\label{classv8_1_1internal_1_1StringToIntHelper_a6b9af09388edece46bfa1925d876794d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ {\bfseries Get\+One\+Byte\+Vector} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_a7708873d848d7c90663e2c1dc9557193}\label{classv8_1_1internal_1_1StringToIntHelper_a7708873d848d7c90663e2c1dc9557193}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uc16 $>$ {\bfseries Get\+Two\+Byte\+Vector} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_ad44fa2baf1924e11f07c626981edeec2}\label{classv8_1_1internal_1_1StringToIntHelper_ad44fa2baf1924e11f07c626981edeec2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_abf947b3b6129b69de439f480d012eff0}\label{classv8_1_1internal_1_1StringToIntHelper_abf947b3b6129b69de439f480d012eff0}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries radix} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_aaae24f1a947dfafc4dee5f7e262a7935}\label{classv8_1_1internal_1_1StringToIntHelper_aaae24f1a947dfafc4dee5f7e262a7935}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries cursor} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_adca90b85a20b2af2013f2e2c1e177505}\label{classv8_1_1internal_1_1StringToIntHelper_adca90b85a20b2af2013f2e2c1e177505}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries length} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_ad9f8fcda6ee41b30679dc032b9aa6b20}\label{classv8_1_1internal_1_1StringToIntHelper_ad9f8fcda6ee41b30679dc032b9aa6b20}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries negative} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_a6b3386a547dc31974bb8547c26f8c521}\label{classv8_1_1internal_1_1StringToIntHelper_a6b3386a547dc31974bb8547c26f8c521}} 
+Sign {\bfseries sign} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_a3b8ed1a2fa95ce794b4cb548a6485eb0}\label{classv8_1_1internal_1_1StringToIntHelper_a3b8ed1a2fa95ce794b4cb548a6485eb0}} 
+State {\bfseries state} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToIntHelper_a16893f439330e9763090dbad80303f3c}\label{classv8_1_1internal_1_1StringToIntHelper_a16893f439330e9763090dbad80303f3c}} 
+void {\bfseries set\+\_\+state} (State state)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 173 of file conversions.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/conversions.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,39 @@
+\hypertarget{classv8_1_1internal_1_1SafepointTableBuilder}{}\section{v8\+:\+:internal\+:\+:Safepoint\+Table\+Builder Class Reference}
+\label{classv8_1_1internal_1_1SafepointTableBuilder}\index{v8\+::internal\+::\+Safepoint\+Table\+Builder@{v8\+::internal\+::\+Safepoint\+Table\+Builder}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointTableBuilder_ab0a292835bce588fe0c4602504cdc1ad}\label{classv8_1_1internal_1_1SafepointTableBuilder_ab0a292835bce588fe0c4602504cdc1ad}} 
+{\bfseries Safepoint\+Table\+Builder} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointTableBuilder_a4a80f9b8b6d2e04d57e5ab2fba0b4878}\label{classv8_1_1internal_1_1SafepointTableBuilder_a4a80f9b8b6d2e04d57e5ab2fba0b4878}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries Get\+Code\+Offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointTableBuilder_acf2e61d1c6a047afe288b7b2e3b57ebb}\label{classv8_1_1internal_1_1SafepointTableBuilder_acf2e61d1c6a047afe288b7b2e3b57ebb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Safepoint}{Safepoint}} {\bfseries Define\+Safepoint} (\mbox{\hyperlink{classv8_1_1internal_1_1Assembler}{Assembler}} $\ast$assembler, Safepoint\+::\+Kind kind, \mbox{\hyperlink{classint}{int}} arguments, Safepoint\+::\+Deopt\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointTableBuilder_abb1e6e27a1cc5504a6adae3cbce6f32e}\label{classv8_1_1internal_1_1SafepointTableBuilder_abb1e6e27a1cc5504a6adae3cbce6f32e}} 
+void {\bfseries Record\+Lazy\+Deoptimization\+Index} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointTableBuilder_acbc0eff22c056e8198e23331b3f96465}\label{classv8_1_1internal_1_1SafepointTableBuilder_acbc0eff22c056e8198e23331b3f96465}} 
+void {\bfseries Bump\+Last\+Lazy\+Safepoint\+Index} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointTableBuilder_a4ec6ed5fb87b280f249ff82349d08cd3}\label{classv8_1_1internal_1_1SafepointTableBuilder_a4ec6ed5fb87b280f249ff82349d08cd3}} 
+void {\bfseries Emit} (\mbox{\hyperlink{classv8_1_1internal_1_1Assembler}{Assembler}} $\ast$assembler, \mbox{\hyperlink{classint}{int}} bits\+\_\+per\+\_\+entry)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointTableBuilder_a641e1b08f818fd5f9ecc67c34a4e9207}\label{classv8_1_1internal_1_1SafepointTableBuilder_a641e1b08f818fd5f9ecc67c34a4e9207}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Update\+Deoptimization\+Info} (\mbox{\hyperlink{classint}{int}} pc, \mbox{\hyperlink{classint}{int}} trampoline, \mbox{\hyperlink{classint}{int}} start)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 202 of file safepoint-\/table.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/safepoint-\/table.\+h\item 
+v8/src/safepoint-\/table.\+cc\end{DoxyCompactItemize}

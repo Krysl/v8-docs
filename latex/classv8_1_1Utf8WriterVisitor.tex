@@ -1,0 +1,41 @@
+\hypertarget{classv8_1_1Utf8WriterVisitor}{}\section{v8\+:\+:Utf8\+Writer\+Visitor Class Reference}
+\label{classv8_1_1Utf8WriterVisitor}\index{v8\+::\+Utf8\+Writer\+Visitor@{v8\+::\+Utf8\+Writer\+Visitor}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1Utf8WriterVisitor_a3694f00cd1412b382316d2e5d4702a95}\label{classv8_1_1Utf8WriterVisitor_a3694f00cd1412b382316d2e5d4702a95}} 
+{\bfseries Utf8\+Writer\+Visitor} (\mbox{\hyperlink{classchar}{char}} $\ast$buffer, \mbox{\hyperlink{classint}{int}} capacity, \mbox{\hyperlink{classbool}{bool}} skip\+\_\+capacity\+\_\+check, \mbox{\hyperlink{classbool}{bool}} replace\+\_\+invalid\+\_\+utf8)
+\item 
+\mbox{\Hypertarget{classv8_1_1Utf8WriterVisitor_a73670ab93ce35d25d59d586ed991c3f2}\label{classv8_1_1Utf8WriterVisitor_a73670ab93ce35d25d59d586ed991c3f2}} 
+{\footnotesize template$<$typename Char $>$ }\\void {\bfseries Visit} (const Char $\ast$chars, const \mbox{\hyperlink{classint}{int}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1Utf8WriterVisitor_af6feff57948c678630eff22c27b08ff4}\label{classv8_1_1Utf8WriterVisitor_af6feff57948c678630eff22c27b08ff4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Done} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1Utf8WriterVisitor_a8853146988d0c7f9383c7efcbc243678}\label{classv8_1_1Utf8WriterVisitor_a8853146988d0c7f9383c7efcbc243678}} 
+void {\bfseries Visit\+One\+Byte\+String} (const uint8\+\_\+t $\ast$chars, \mbox{\hyperlink{classint}{int}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1Utf8WriterVisitor_adb4582dcbadea98625a7097edae60fff}\label{classv8_1_1Utf8WriterVisitor_adb4582dcbadea98625a7097edae60fff}} 
+void {\bfseries Visit\+Two\+Byte\+String} (const uint16\+\_\+t $\ast$chars, \mbox{\hyperlink{classint}{int}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1Utf8WriterVisitor_a3e5ed708404a4e97695ff679184c4fdd}\label{classv8_1_1Utf8WriterVisitor_a3e5ed708404a4e97695ff679184c4fdd}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Complete\+Write} (\mbox{\hyperlink{classbool}{bool}} write\+\_\+null, \mbox{\hyperlink{classint}{int}} $\ast$utf16\+\_\+chars\+\_\+read\+\_\+out)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1Utf8WriterVisitor_a2eebbdadedbf85598f175196b22cfe48}\label{classv8_1_1Utf8WriterVisitor_a2eebbdadedbf85598f175196b22cfe48}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Write\+End\+Character} (uint16\+\_\+t character, \mbox{\hyperlink{classint}{int}} last\+\_\+character, \mbox{\hyperlink{classint}{int}} remaining, \mbox{\hyperlink{classchar}{char}} $\ast$const buffer, \mbox{\hyperlink{classbool}{bool}} replace\+\_\+invalid\+\_\+utf8)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 5325 of file api.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/api.\+cc\end{DoxyCompactItemize}

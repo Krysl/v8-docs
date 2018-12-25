@@ -1,0 +1,76 @@
+\hypertarget{classv8_1_1internal_1_1JSWeakFactory}{}\section{v8\+:\+:internal\+:\+:J\+S\+Weak\+Factory Class Reference}
+\label{classv8_1_1internal_1_1JSWeakFactory}\index{v8\+::internal\+::\+J\+S\+Weak\+Factory@{v8\+::internal\+::\+J\+S\+Weak\+Factory}}
+Inheritance diagram for v8\+:\+:internal\+:\+:J\+S\+Weak\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1JSWeakFactory}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1JSWeakFactory_1_1ScheduledForCleanupField}{Scheduled\+For\+Cleanup\+Field}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakFactory_ab1f9260e6849e2814c6fb65a570509b9}\label{classv8_1_1internal_1_1JSWeakFactory_ab1f9260e6849e2814c6fb65a570509b9}} 
+void {\bfseries Add\+Weak\+Cell} (\mbox{\hyperlink{classv8_1_1internal_1_1JSWeakCell}{J\+S\+Weak\+Cell}} $\ast$weak\+\_\+cell)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakFactory_ad400f6a6f04c8aa550d053331836304e}\label{classv8_1_1internal_1_1JSWeakFactory_ad400f6a6f04c8aa550d053331836304e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Needs\+Cleanup} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakFactory_a65942e9fadb63f04921b310a12588b10}\label{classv8_1_1internal_1_1JSWeakFactory_a65942e9fadb63f04921b310a12588b10}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries scheduled\+\_\+for\+\_\+cleanup} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakFactory_acac2d25007d45cd29ae4138f49018481}\label{classv8_1_1internal_1_1JSWeakFactory_acac2d25007d45cd29ae4138f49018481}} 
+void {\bfseries set\+\_\+scheduled\+\_\+for\+\_\+cleanup} (\mbox{\hyperlink{classbool}{bool}} scheduled\+\_\+for\+\_\+cleanup)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakFactory_adf61092ff5851a5a66a3f819492864f0}\label{classv8_1_1internal_1_1JSWeakFactory_adf61092ff5851a5a66a3f819492864f0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1JSWeakCell}{J\+S\+Weak\+Cell}} $\ast$ {\bfseries Pop\+Cleared\+Cell} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakFactory_a3b11f19b499b81ed4fabb07c1764bf52}\label{classv8_1_1internal_1_1JSWeakFactory_a3b11f19b499b81ed4fabb07c1764bf52}} 
+static void {\bfseries Cleanup} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSWeakFactory}{J\+S\+Weak\+Factory}} $>$ weak\+\_\+factory, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakFactory_a41cea40227bcdec771f7bee9852dc240}\label{classv8_1_1internal_1_1JSWeakFactory_a41cea40227bcdec771f7bee9852dc240}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Native\+Context\+Offset} = J\+S\+Object\+::k\+Header\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakFactory_a990004d17e70977a3f6a312e0378c598}\label{classv8_1_1internal_1_1JSWeakFactory_a990004d17e70977a3f6a312e0378c598}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Cleanup\+Offset} = k\+Native\+Context\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakFactory_a3077f0cd7c4608a06cdaace17cbc6f47}\label{classv8_1_1internal_1_1JSWeakFactory_a3077f0cd7c4608a06cdaace17cbc6f47}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Active\+Cells\+Offset} = k\+Cleanup\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakFactory_a9da19b5b9d37a10d38d935d65c731547}\label{classv8_1_1internal_1_1JSWeakFactory_a9da19b5b9d37a10d38d935d65c731547}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Cleared\+Cells\+Offset} = k\+Active\+Cells\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakFactory_a88be08c7f3d890603be2c72067caa7f4}\label{classv8_1_1internal_1_1JSWeakFactory_a88be08c7f3d890603be2c72067caa7f4}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Next\+Offset} = k\+Cleared\+Cells\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakFactory_a4ac559e0461c73c81e7e04ce07abbe04}\label{classv8_1_1internal_1_1JSWeakFactory_a4ac559e0461c73c81e7e04ce07abbe04}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Flags\+Offset} = k\+Next\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakFactory_a223d0c0d733ac252157a458c551be13f}\label{classv8_1_1internal_1_1JSWeakFactory_a223d0c0d733ac252157a458c551be13f}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Size} = k\+Flags\+Offset + k\+Pointer\+Size
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 21 of file js-\/weak-\/refs.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/js-\/weak-\/refs.\+h\item 
+v8/src/objects/js-\/weak-\/refs-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

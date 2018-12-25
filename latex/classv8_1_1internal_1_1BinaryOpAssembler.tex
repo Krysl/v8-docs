@@ -1,0 +1,52 @@
+\hypertarget{classv8_1_1internal_1_1BinaryOpAssembler}{}\section{v8\+:\+:internal\+:\+:Binary\+Op\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1BinaryOpAssembler}\index{v8\+::internal\+::\+Binary\+Op\+Assembler@{v8\+::internal\+::\+Binary\+Op\+Assembler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Binary\+Op\+Assembler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1BinaryOpAssembler}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BinaryOpAssembler_a73b15d97ccad0d1d8c2f6eec74d5aba9}\label{classv8_1_1internal_1_1BinaryOpAssembler_a73b15d97ccad0d1d8c2f6eec74d5aba9}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{compiler\+::\+Node}} {\bfseries Node}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BinaryOpAssembler_ac94e49d12ab0ee5bbd697b24fc226981}\label{classv8_1_1internal_1_1BinaryOpAssembler_ac94e49d12ab0ee5bbd697b24fc226981}} 
+{\bfseries Binary\+Op\+Assembler} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerState}{compiler\+::\+Code\+Assembler\+State}} $\ast$state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BinaryOpAssembler_ae56299eca1f298ba2644420a3e324140}\label{classv8_1_1internal_1_1BinaryOpAssembler_ae56299eca1f298ba2644420a3e324140}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Generate\+\_\+\+Add\+With\+Feedback} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$lhs, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$rhs, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$slot\+\_\+id, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$feedback\+\_\+vector, \mbox{\hyperlink{classbool}{bool}} rhs\+\_\+is\+\_\+smi)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BinaryOpAssembler_a40c8c46b224ff0f5300deba5974a9ce2}\label{classv8_1_1internal_1_1BinaryOpAssembler_a40c8c46b224ff0f5300deba5974a9ce2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Generate\+\_\+\+Subtract\+With\+Feedback} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$lhs, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$rhs, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$slot\+\_\+id, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$feedback\+\_\+vector, \mbox{\hyperlink{classbool}{bool}} rhs\+\_\+is\+\_\+smi)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BinaryOpAssembler_ac738ccf0b995a9e1551eea22e81e1c57}\label{classv8_1_1internal_1_1BinaryOpAssembler_ac738ccf0b995a9e1551eea22e81e1c57}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Generate\+\_\+\+Multiply\+With\+Feedback} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$lhs, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$rhs, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$slot\+\_\+id, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$feedback\+\_\+vector, \mbox{\hyperlink{classbool}{bool}} rhs\+\_\+is\+\_\+smi)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BinaryOpAssembler_aee9fe3f6a033afee49cf5e676bf2823a}\label{classv8_1_1internal_1_1BinaryOpAssembler_aee9fe3f6a033afee49cf5e676bf2823a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Generate\+\_\+\+Divide\+With\+Feedback} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$dividend, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$divisor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$slot\+\_\+id, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$feedback\+\_\+vector, \mbox{\hyperlink{classbool}{bool}} rhs\+\_\+is\+\_\+smi)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BinaryOpAssembler_a07546bfb544ec3ced912225185bebd6a}\label{classv8_1_1internal_1_1BinaryOpAssembler_a07546bfb544ec3ced912225185bebd6a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Generate\+\_\+\+Modulus\+With\+Feedback} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$dividend, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$divisor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$slot\+\_\+id, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$feedback\+\_\+vector, \mbox{\hyperlink{classbool}{bool}} rhs\+\_\+is\+\_\+smi)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BinaryOpAssembler_a9a01e203a4298388f4a27781c06bd93b}\label{classv8_1_1internal_1_1BinaryOpAssembler_a9a01e203a4298388f4a27781c06bd93b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Generate\+\_\+\+Exponentiate\+With\+Feedback} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$dividend, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$divisor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$slot\+\_\+id, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$feedback\+\_\+vector, \mbox{\hyperlink{classbool}{bool}} rhs\+\_\+is\+\_\+smi)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file binary-\/op-\/assembler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ic/binary-\/op-\/assembler.\+h\item 
+v8/src/ic/binary-\/op-\/assembler.\+cc\end{DoxyCompactItemize}

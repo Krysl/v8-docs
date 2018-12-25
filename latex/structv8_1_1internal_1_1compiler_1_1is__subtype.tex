@@ -1,0 +1,42 @@
+\hypertarget{structv8_1_1internal_1_1compiler_1_1is__subtype}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:is\+\_\+subtype$<$ T, U $>$ Struct Template Reference}
+\label{structv8_1_1internal_1_1compiler_1_1is__subtype}\index{v8\+::internal\+::compiler\+::is\+\_\+subtype$<$ T, U $>$@{v8\+::internal\+::compiler\+::is\+\_\+subtype$<$ T, U $>$}}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{classbool}{bool}} {\bfseries value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T, class U$>$\newline
+struct v8\+::internal\+::compiler\+::is\+\_\+subtype$<$ T, U $>$}
+
+
+
+Definition at line 361 of file code-\/assembler.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structv8_1_1internal_1_1compiler_1_1is__subtype_aff8e11a5363d260541bde7ee33b2b48b}\label{structv8_1_1internal_1_1compiler_1_1is__subtype_aff8e11a5363d260541bde7ee33b2b48b}} 
+\index{v8\+::internal\+::compiler\+::is\+\_\+subtype@{v8\+::internal\+::compiler\+::is\+\_\+subtype}!value@{value}}
+\index{value@{value}!v8\+::internal\+::compiler\+::is\+\_\+subtype@{v8\+::internal\+::compiler\+::is\+\_\+subtype}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+const \mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{structv8_1_1internal_1_1compiler_1_1is__subtype}{v8\+::internal\+::compiler\+::is\+\_\+subtype}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, U $>$\+::value\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= std::is\_base\_of<U, T>::value ||
+                            (std::is\_base\_of<U, HeapObject>::value &&
+                             std::is\_base\_of<HeapObjectPtr, T>::value)
+\end{DoxyCode}
+
+
+Definition at line 362 of file code-\/assembler.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/code-\/assembler.\+h\end{DoxyCompactItemize}

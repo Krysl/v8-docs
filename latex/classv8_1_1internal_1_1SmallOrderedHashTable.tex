@@ -1,0 +1,256 @@
+\hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable}{}\section{v8\+:\+:internal\+:\+:Small\+Ordered\+Hash\+Table$<$ Derived $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1SmallOrderedHashTable}\index{v8\+::internal\+::\+Small\+Ordered\+Hash\+Table$<$ Derived $>$@{v8\+::internal\+::\+Small\+Ordered\+Hash\+Table$<$ Derived $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Small\+Ordered\+Hash\+Table$<$ Derived $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1SmallOrderedHashTable}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1SmallOrderedHashTable_1_1BodyDescriptor}{Body\+Descriptor}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a491ef2e340296b12122eaa80aa03bf99}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a491ef2e340296b12122eaa80aa03bf99}} 
+typedef \mbox{\hyperlink{classint}{int}} {\bfseries Offset}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_aa5a72db951fc5aa38f6e99603149bad4}\label{classv8_1_1internal_1_1SmallOrderedHashTable_aa5a72db951fc5aa38f6e99603149bad4}} 
+typedef \mbox{\hyperlink{classint}{int}} {\bfseries Byte\+Index}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a9902d0f0fae61437717c70daa7f5c2c4}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a9902d0f0fae61437717c70daa7f5c2c4}} 
+void {\bfseries Initialize} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} capacity)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a97c91c3a23a988f2d82b16dd87baf612}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a97c91c3a23a988f2d82b16dd87baf612}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a29ed6df2c7d8f1abf185176177a0ca5f}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a29ed6df2c7d8f1abf185176177a0ca5f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Find\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a31c1db63f0cda28ff9be1e1993969d9d}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a31c1db63f0cda28ff9be1e1993969d9d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Capacity} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_aa61e04b5ffdab1d15aa8f135ad212afa}\label{classv8_1_1internal_1_1SmallOrderedHashTable_aa61e04b5ffdab1d15aa8f135ad212afa}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Elements} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a8086b5e7e30da0d2fb0466b2323ddbfd}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a8086b5e7e30da0d2fb0466b2323ddbfd}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Deleted\+Elements} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a1b88f1bd6db206ba8808103af81456b0}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a1b88f1bd6db206ba8808103af81456b0}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Buckets} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_ad7890ac86ccfe31ade4597494148cea3}\label{classv8_1_1internal_1_1SmallOrderedHashTable_ad7890ac86ccfe31ade4597494148cea3}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Max\+Capacity$<$ k\+Not\+Found)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a4ec76674b229c57b65d289aacb6cff2f}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a4ec76674b229c57b65d289aacb6cff2f}} 
+{\footnotesize template$<$$>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SmallOrderedHashSet}{Small\+Ordered\+Hash\+Set}} $>$ {\bfseries Allocate} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} capacity, Pretenure\+Flag pretenure)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_abe8d18ff799332b407d0296ef0cb7341}\label{classv8_1_1internal_1_1SmallOrderedHashTable_abe8d18ff799332b407d0296ef0cb7341}} 
+{\footnotesize template$<$$>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SmallOrderedHashMap}{Small\+Ordered\+Hash\+Map}} $>$ {\bfseries Allocate} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} capacity, Pretenure\+Flag pretenure)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a6edaa3df3fc35809f61b360cd6e7f579}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a6edaa3df3fc35809f61b360cd6e7f579}} 
+{\footnotesize template$<$$>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SmallOrderedNameDictionary}{Small\+Ordered\+Name\+Dictionary}} $>$ {\bfseries Allocate} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} capacity, Pretenure\+Flag pretenure)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a68f31148f2ad5f103213de73921ec724}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a68f31148f2ad5f103213de73921ec724}} 
+{\footnotesize template$<$$>$ }\\\mbox{\hyperlink{classint}{int}} {\bfseries Find\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$key)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a15786cb9d3bb12b4d8c8c63322623110}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a15786cb9d3bb12b4d8c8c63322623110}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$ {\bfseries Allocate} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} capacity, Pretenure\+Flag pretenure=N\+O\+T\+\_\+\+T\+E\+N\+U\+R\+ED)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_af3df3818bc0aa92a10fbbb75d559523b}\label{classv8_1_1internal_1_1SmallOrderedHashTable_af3df3818bc0aa92a10fbbb75d559523b}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Delete} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Derived table, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a825238db8ee64b9aaf6fb0fe46146598}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a825238db8ee64b9aaf6fb0fe46146598}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ Derived $>$ {\bfseries Grow} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$ table)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a93209473ff6cec8f2137e5d3b0fb2c6f}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a93209473ff6cec8f2137e5d3b0fb2c6f}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$ {\bfseries Rehash} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$ table, \mbox{\hyperlink{classint}{int}} new\+\_\+capacity)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a0a27c14486086f4289ed06502d902153}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a0a27c14486086f4289ed06502d902153}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Size\+For} (\mbox{\hyperlink{classint}{int}} capacity)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_adf8e79299a66f6e68360a6cb9c0efdfd}\label{classv8_1_1internal_1_1SmallOrderedHashTable_adf8e79299a66f6e68360a6cb9c0efdfd}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Min\+Capacity} = 4
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_ac92e7b96b45d04b24351fb109e050494}\label{classv8_1_1internal_1_1SmallOrderedHashTable_ac92e7b96b45d04b24351fb109e050494}} 
+static const byte {\bfseries k\+Not\+Found} = 0x\+FF
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a4155597a5992f4a37f9e522325602c33}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a4155597a5992f4a37f9e522325602c33}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Capacity} = 254
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a4a50c8d2de681b12a1ae7074d38c981f}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a4a50c8d2de681b12a1ae7074d38c981f}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Load\+Factor} = 2
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_adf8d1af8180a39287c57ba1ab502fd23}\label{classv8_1_1internal_1_1SmallOrderedHashTable_adf8d1af8180a39287c57ba1ab502fd23}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Growth\+Hack} = 256
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a2000cfc9843fad8fdc2b156e7ee4616a}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a2000cfc9843fad8fdc2b156e7ee4616a}} 
+void {\bfseries Set\+Data\+Entry} (\mbox{\hyperlink{classint}{int}} entry, \mbox{\hyperlink{classint}{int}} relative\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a61ca0eebe61fc4267055f54abf583ab9}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a61ca0eebe61fc4267055f54abf583ab9}} 
+\mbox{\hyperlink{classint}{Offset}} {\bfseries Get\+Buckets\+Start\+Offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a475c42698239fc3b50316fbcfb174e0f}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a475c42698239fc3b50316fbcfb174e0f}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Get\+Hash\+Table\+Start\+Address} (\mbox{\hyperlink{classint}{int}} capacity) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_adbe0d4c74301c0614660a496ae8555c9}\label{classv8_1_1internal_1_1SmallOrderedHashTable_adbe0d4c74301c0614660a496ae8555c9}} 
+void {\bfseries Set\+First\+Entry} (\mbox{\hyperlink{classint}{int}} bucket, byte value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a422d1fb6a30d98fce5146a6b23fff215}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a422d1fb6a30d98fce5146a6b23fff215}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+First\+Entry} (\mbox{\hyperlink{classint}{int}} bucket) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a98553d2be1d8f4d2a0a7edd8608c4a11}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a98553d2be1d8f4d2a0a7edd8608c4a11}} 
+\mbox{\hyperlink{classint}{Offset}} {\bfseries Get\+Chain\+Table\+Offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a84e8db261d64faca6db4619d24ef42af}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a84e8db261d64faca6db4619d24ef42af}} 
+void {\bfseries Set\+Next\+Entry} (\mbox{\hyperlink{classint}{int}} entry, \mbox{\hyperlink{classint}{int}} next\+\_\+entry)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a193898f6324de3677e7f1cb77df0af1e}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a193898f6324de3677e7f1cb77df0af1e}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Next\+Entry} (\mbox{\hyperlink{classint}{int}} entry) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a0a2c88bced00c364854f88a7707d8614}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a0a2c88bced00c364854f88a7707d8614}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Get\+Data\+Entry} (\mbox{\hyperlink{classint}{int}} entry, \mbox{\hyperlink{classint}{int}} relative\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a2162da468017a08fc14302228c79b2a0}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a2162da468017a08fc14302228c79b2a0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Key\+At} (\mbox{\hyperlink{classint}{int}} entry) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_ad34399287cc8fe3608c287be1b01bbcf}\label{classv8_1_1internal_1_1SmallOrderedHashTable_ad34399287cc8fe3608c287be1b01bbcf}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Hash\+To\+Bucket} (\mbox{\hyperlink{classint}{int}} hash) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a7abc2f09990a7da868a6169d0b600357}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a7abc2f09990a7da868a6169d0b600357}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Hash\+To\+First\+Entry} (\mbox{\hyperlink{classint}{int}} hash) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_aa88c04df21573bda65b973ab990cfd70}\label{classv8_1_1internal_1_1SmallOrderedHashTable_aa88c04df21573bda65b973ab990cfd70}} 
+void {\bfseries Set\+Number\+Of\+Buckets} (\mbox{\hyperlink{classint}{int}} num)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_aa35e999506753b6a7a93167b318c600f}\label{classv8_1_1internal_1_1SmallOrderedHashTable_aa35e999506753b6a7a93167b318c600f}} 
+void {\bfseries Set\+Number\+Of\+Elements} (\mbox{\hyperlink{classint}{int}} num)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a4c124b32699182cc63ad8c16e354ecd5}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a4c124b32699182cc63ad8c16e354ecd5}} 
+void {\bfseries Set\+Number\+Of\+Deleted\+Elements} (\mbox{\hyperlink{classint}{int}} num)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a718683d99cff845b2f2f12725f2d8ae5}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a718683d99cff845b2f2f12725f2d8ae5}} 
+byte {\bfseries get\+Byte} (\mbox{\hyperlink{classint}{Offset}} offset, \mbox{\hyperlink{classint}{Byte\+Index}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a30fb01bcd28a2d0c0701a317eaee01c5}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a30fb01bcd28a2d0c0701a317eaee01c5}} 
+void {\bfseries set\+Byte} (\mbox{\hyperlink{classint}{Offset}} offset, \mbox{\hyperlink{classint}{Byte\+Index}} index, byte value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_aa6f60fcc706ea5b0ee15ce3a301ded0a}\label{classv8_1_1internal_1_1SmallOrderedHashTable_aa6f60fcc706ea5b0ee15ce3a301ded0a}} 
+\mbox{\hyperlink{classint}{Offset}} {\bfseries Get\+Data\+Entry\+Offset} (\mbox{\hyperlink{classint}{int}} entry, \mbox{\hyperlink{classint}{int}} relative\+\_\+index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a68185c7f3189f546dd54e8753d3e7144}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a68185c7f3189f546dd54e8753d3e7144}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Used\+Capacity} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_acf419c9345613aa4c88167083980c7d0}\label{classv8_1_1internal_1_1SmallOrderedHashTable_acf419c9345613aa4c88167083980c7d0}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries Data\+Table\+Size\+For} (\mbox{\hyperlink{classint}{int}} capacity)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a9e299848e38db61618996bd59d503c24}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a9e299848e38db61618996bd59d503c24}} 
+static const \mbox{\hyperlink{classint}{Offset}} {\bfseries k\+Number\+Of\+Elements\+Offset} = k\+Header\+Size
+\item 
+static const \mbox{\hyperlink{classint}{Offset}} {\bfseries k\+Number\+Of\+Deleted\+Elements\+Offset}
+\item 
+static const \mbox{\hyperlink{classint}{Offset}} {\bfseries k\+Number\+Of\+Buckets\+Offset}
+\item 
+static const constexpr \mbox{\hyperlink{classint}{Offset}} {\bfseries k\+Data\+Table\+Start\+Offset}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a874717d2700f5cb3733ed210298e478b}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a874717d2700f5cb3733ed210298e478b}} 
+class {\bfseries Ordered\+Hash\+Map\+Handler}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a08d359103ef81c342ab82dfe29263546}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a08d359103ef81c342ab82dfe29263546}} 
+class {\bfseries Ordered\+Hash\+Set\+Handler}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_ab0fdd46d6a0fd9cdf4ce8df83e1efadd}\label{classv8_1_1internal_1_1SmallOrderedHashTable_ab0fdd46d6a0fd9cdf4ce8df83e1efadd}} 
+class {\bfseries Code\+Stub\+Assembler}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Derived$>$\newline
+class v8\+::internal\+::\+Small\+Ordered\+Hash\+Table$<$ Derived $>$}
+
+
+
+Definition at line 275 of file ordered-\/hash-\/table.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_a1e26093cad3c51f4fdf8705e39d13c62}\label{classv8_1_1internal_1_1SmallOrderedHashTable_a1e26093cad3c51f4fdf8705e39d13c62}} 
+\index{v8\+::internal\+::\+Small\+Ordered\+Hash\+Table@{v8\+::internal\+::\+Small\+Ordered\+Hash\+Table}!k\+Data\+Table\+Start\+Offset@{k\+Data\+Table\+Start\+Offset}}
+\index{k\+Data\+Table\+Start\+Offset@{k\+Data\+Table\+Start\+Offset}!v8\+::internal\+::\+Small\+Ordered\+Hash\+Table@{v8\+::internal\+::\+Small\+Ordered\+Hash\+Table}}
+\subsubsection{\texorpdfstring{k\+Data\+Table\+Start\+Offset}{kDataTableStartOffset}}
+{\footnotesize\ttfamily template$<$class Derived$>$ \\
+const constexpr \mbox{\hyperlink{classint}{Offset}} \mbox{\hyperlink{classv8_1_1internal_1_1SmallOrderedHashTable}{v8\+::internal\+::\+Small\+Ordered\+Hash\+Table}}$<$ Derived $>$\+::k\+Data\+Table\+Start\+Offset\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      RoundUp<kPointerSize>(kNumberOfBucketsOffset)
+\end{DoxyCode}
+
+
+Definition at line 463 of file ordered-\/hash-\/table.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_ab5e6e67e2bd48a42a46a8450aabd2775}\label{classv8_1_1internal_1_1SmallOrderedHashTable_ab5e6e67e2bd48a42a46a8450aabd2775}} 
+\index{v8\+::internal\+::\+Small\+Ordered\+Hash\+Table@{v8\+::internal\+::\+Small\+Ordered\+Hash\+Table}!k\+Number\+Of\+Buckets\+Offset@{k\+Number\+Of\+Buckets\+Offset}}
+\index{k\+Number\+Of\+Buckets\+Offset@{k\+Number\+Of\+Buckets\+Offset}!v8\+::internal\+::\+Small\+Ordered\+Hash\+Table@{v8\+::internal\+::\+Small\+Ordered\+Hash\+Table}}
+\subsubsection{\texorpdfstring{k\+Number\+Of\+Buckets\+Offset}{kNumberOfBucketsOffset}}
+{\footnotesize\ttfamily template$<$class Derived$>$ \\
+const \mbox{\hyperlink{classint}{Offset}} \mbox{\hyperlink{classv8_1_1internal_1_1SmallOrderedHashTable}{v8\+::internal\+::\+Small\+Ordered\+Hash\+Table}}$<$ Derived $>$\+::k\+Number\+Of\+Buckets\+Offset\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kNumberOfDeletedElementsOffset + kOneByteSize
+\end{DoxyCode}
+
+
+Definition at line 461 of file ordered-\/hash-\/table.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1SmallOrderedHashTable_ad4b74290e748fed2c615ef434a1fcee1}\label{classv8_1_1internal_1_1SmallOrderedHashTable_ad4b74290e748fed2c615ef434a1fcee1}} 
+\index{v8\+::internal\+::\+Small\+Ordered\+Hash\+Table@{v8\+::internal\+::\+Small\+Ordered\+Hash\+Table}!k\+Number\+Of\+Deleted\+Elements\+Offset@{k\+Number\+Of\+Deleted\+Elements\+Offset}}
+\index{k\+Number\+Of\+Deleted\+Elements\+Offset@{k\+Number\+Of\+Deleted\+Elements\+Offset}!v8\+::internal\+::\+Small\+Ordered\+Hash\+Table@{v8\+::internal\+::\+Small\+Ordered\+Hash\+Table}}
+\subsubsection{\texorpdfstring{k\+Number\+Of\+Deleted\+Elements\+Offset}{kNumberOfDeletedElementsOffset}}
+{\footnotesize\ttfamily template$<$class Derived$>$ \\
+const \mbox{\hyperlink{classint}{Offset}} \mbox{\hyperlink{classv8_1_1internal_1_1SmallOrderedHashTable}{v8\+::internal\+::\+Small\+Ordered\+Hash\+Table}}$<$ Derived $>$\+::k\+Number\+Of\+Deleted\+Elements\+Offset\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kNumberOfElementsOffset + kOneByteSize
+\end{DoxyCode}
+
+
+Definition at line 459 of file ordered-\/hash-\/table.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/ordered-\/hash-\/table.\+h\item 
+v8/src/objects/ordered-\/hash-\/table.\+cc\item 
+v8/src/objects-\/inl.\+h\end{DoxyCompactItemize}

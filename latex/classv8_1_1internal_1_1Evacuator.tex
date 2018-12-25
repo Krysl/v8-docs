@@ -1,0 +1,105 @@
+\hypertarget{classv8_1_1internal_1_1Evacuator}{}\section{v8\+:\+:internal\+:\+:Evacuator Class Reference}
+\label{classv8_1_1internal_1_1Evacuator}\index{v8\+::internal\+::\+Evacuator@{v8\+::internal\+::\+Evacuator}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Evacuator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1Evacuator}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_a314fa42d39b9fa20e11342a5337383ef}\label{classv8_1_1internal_1_1Evacuator_a314fa42d39b9fa20e11342a5337383ef}} 
+enum {\bfseries Evacuation\+Mode} \{ {\bfseries k\+Objects\+New\+To\+Old}, 
+{\bfseries k\+Page\+New\+To\+Old}, 
+{\bfseries k\+Objects\+Old\+To\+Old}, 
+{\bfseries k\+Page\+New\+To\+New}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_a52a3fa7198613e2656e56bd619428995}\label{classv8_1_1internal_1_1Evacuator_a52a3fa7198613e2656e56bd619428995}} 
+{\bfseries Evacuator} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, \mbox{\hyperlink{classv8_1_1internal_1_1RecordMigratedSlotVisitor}{Record\+Migrated\+Slot\+Visitor}} $\ast$record\+\_\+visitor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_aea11393389175038beacc47295513c07}\label{classv8_1_1internal_1_1Evacuator_aea11393389175038beacc47295513c07}} 
+void {\bfseries Evacuate\+Page} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_aff74cdcc3d9b14d81a3a023f13e403f1}\label{classv8_1_1internal_1_1Evacuator_aff74cdcc3d9b14d81a3a023f13e403f1}} 
+void {\bfseries Add\+Observer} (\mbox{\hyperlink{classv8_1_1internal_1_1MigrationObserver}{Migration\+Observer}} $\ast$observer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_ac796527afb0f320c5fcdbabb255f741b}\label{classv8_1_1internal_1_1Evacuator_ac796527afb0f320c5fcdbabb255f741b}} 
+void {\bfseries Finalize} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_a49bfa112b58c7f31ba9cf74372b86406}\label{classv8_1_1internal_1_1Evacuator_a49bfa112b58c7f31ba9cf74372b86406}} 
+virtual G\+C\+Tracer\+::\+Background\+Scope\+::\+Scope\+Id {\bfseries Get\+Background\+Tracing\+Scope} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_a6ac2dddaa2b1b1ddb1a576575595016c}\label{classv8_1_1internal_1_1Evacuator_a6ac2dddaa2b1b1ddb1a576575595016c}} 
+static Evacuation\+Mode {\bfseries Compute\+Evacuation\+Mode} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_a9c67e24363baa037a4ca54f62d4d058a}\label{classv8_1_1internal_1_1Evacuator_a9c67e24363baa037a4ca54f62d4d058a}} 
+static intptr\+\_\+t {\bfseries New\+Space\+Page\+Evacuation\+Threshold} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_aa3eb7d2a0acf66ffa6306d4af1abb784}\label{classv8_1_1internal_1_1Evacuator_aa3eb7d2a0acf66ffa6306d4af1abb784}} 
+virtual void {\bfseries Raw\+Evacuate\+Page} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk, intptr\+\_\+t $\ast$saved\+\_\+live\+\_\+bytes)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_a49f82f5ab43f4a9644a4b74aa0494085}\label{classv8_1_1internal_1_1Evacuator_a49f82f5ab43f4a9644a4b74aa0494085}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$ {\bfseries heap} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_ace3364584e04bb959c0969999c820b7f}\label{classv8_1_1internal_1_1Evacuator_ace3364584e04bb959c0969999c820b7f}} 
+void {\bfseries Report\+Compaction\+Progress} (double duration, intptr\+\_\+t bytes\+\_\+compacted)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_ab742b02acfc2907cbcb8345cf302094c}\label{classv8_1_1internal_1_1Evacuator_ab742b02acfc2907cbcb8345cf302094c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$ {\bfseries heap\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_a639cae11545b70682943bb5768332f76}\label{classv8_1_1internal_1_1Evacuator_a639cae11545b70682943bb5768332f76}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1LocalAllocator}{Local\+Allocator}} {\bfseries local\+\_\+allocator\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_aca54279acf9425e4e3a69f368bb24023}\label{classv8_1_1internal_1_1Evacuator_aca54279acf9425e4e3a69f368bb24023}} 
+Heap\+::\+Pretenuring\+Feedback\+Map {\bfseries local\+\_\+pretenuring\+\_\+feedback\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_aaf0b310376fca6d434f0f86665f54cc3}\label{classv8_1_1internal_1_1Evacuator_aaf0b310376fca6d434f0f86665f54cc3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1EvacuateNewSpaceVisitor}{Evacuate\+New\+Space\+Visitor}} {\bfseries new\+\_\+space\+\_\+visitor\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_a938323a230a933782bb9f4eafbfcc76c}\label{classv8_1_1internal_1_1Evacuator_a938323a230a933782bb9f4eafbfcc76c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1EvacuateNewSpacePageVisitor}{Evacuate\+New\+Space\+Page\+Visitor}}$<$ Page\+Evacuation\+Mode\+::\+N\+E\+W\+\_\+\+T\+O\+\_\+\+N\+EW $>$ {\bfseries new\+\_\+to\+\_\+new\+\_\+page\+\_\+visitor\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_a406eaf37c604a7e051cb57a3a7389576}\label{classv8_1_1internal_1_1Evacuator_a406eaf37c604a7e051cb57a3a7389576}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1EvacuateNewSpacePageVisitor}{Evacuate\+New\+Space\+Page\+Visitor}}$<$ Page\+Evacuation\+Mode\+::\+N\+E\+W\+\_\+\+T\+O\+\_\+\+O\+LD $>$ {\bfseries new\+\_\+to\+\_\+old\+\_\+page\+\_\+visitor\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_a637b8c1d84de69d52244d7936307cf39}\label{classv8_1_1internal_1_1Evacuator_a637b8c1d84de69d52244d7936307cf39}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1EvacuateOldSpaceVisitor}{Evacuate\+Old\+Space\+Visitor}} {\bfseries old\+\_\+space\+\_\+visitor\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_a7e7e6db642a2a69847319b2b0107634d}\label{classv8_1_1internal_1_1Evacuator_a7e7e6db642a2a69847319b2b0107634d}} 
+double {\bfseries duration\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_a8cd5f5f0a98465d866842dcff1c47f47}\label{classv8_1_1internal_1_1Evacuator_a8cd5f5f0a98465d866842dcff1c47f47}} 
+intptr\+\_\+t {\bfseries bytes\+\_\+compacted\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Evacuator_a88def71cc944b7f7942965fcf86568c6}\label{classv8_1_1internal_1_1Evacuator_a88def71cc944b7f7942965fcf86568c6}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Initial\+Local\+Pretenuring\+Feedback\+Capacity} = 256
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 2394 of file mark-\/compact.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/mark-\/compact.\+cc\end{DoxyCompactItemize}

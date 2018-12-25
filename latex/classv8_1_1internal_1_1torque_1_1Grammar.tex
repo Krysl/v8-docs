@@ -1,0 +1,99 @@
+\hypertarget{classv8_1_1internal_1_1torque_1_1Grammar}{}\section{v8\+:\+:internal\+:\+:torque\+:\+:Grammar Class Reference}
+\label{classv8_1_1internal_1_1torque_1_1Grammar}\index{v8\+::internal\+::torque\+::\+Grammar@{v8\+::internal\+::torque\+::\+Grammar}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_a1598ba4a21ce1f3a3165a764422ca755}\label{classv8_1_1internal_1_1torque_1_1Grammar_a1598ba4a21ce1f3a3165a764422ca755}} 
+using {\bfseries Pattern\+Function} = Lexer\+::\+Pattern\+Function
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_a3e2e65d0801eeea499c4afd29f37e600}\label{classv8_1_1internal_1_1torque_1_1Grammar_a3e2e65d0801eeea499c4afd29f37e600}} 
+{\bfseries Grammar} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$start)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_ab59e3e448a25a5c389c2162e60a57766}\label{classv8_1_1internal_1_1torque_1_1Grammar_ab59e3e448a25a5c389c2162e60a57766}} 
+\mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1ParseResult}{Parse\+Result}} $>$ {\bfseries Parse} (const std\+::string \&input)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_a454021c6d9a324066f01c24e99f89488}\label{classv8_1_1internal_1_1torque_1_1Grammar_a454021c6d9a324066f01c24e99f89488}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$ {\bfseries Token} (const std\+::string \&s)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_aa92a27b231b1e5f3e7314cbea0786420}\label{classv8_1_1internal_1_1torque_1_1Grammar_aa92a27b231b1e5f3e7314cbea0786420}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$ {\bfseries Pattern} (Pattern\+Function pattern)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_a3c7a9d96dc6baff9612eff658213fcb7}\label{classv8_1_1internal_1_1torque_1_1Grammar_a3c7a9d96dc6baff9612eff658213fcb7}} 
+void {\bfseries Set\+Whitespace} (Pattern\+Function ws)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_a25319e13e6e56ccbe90d50477b38bf37}\label{classv8_1_1internal_1_1torque_1_1Grammar_a25319e13e6e56ccbe90d50477b38bf37}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$ {\bfseries New\+Symbol} (std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Rule}{Rule}} $>$ rules=\{\})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_aa92695741b74f295ef303c15c4ec6e9f}\label{classv8_1_1internal_1_1torque_1_1Grammar_aa92695741b74f295ef303c15c4ec6e9f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$ {\bfseries Sequence} (std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$$>$ symbols)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_a76a8566abe0b2880dfac1299d69fff00}\label{classv8_1_1internal_1_1torque_1_1Grammar_a76a8566abe0b2880dfac1299d69fff00}} 
+{\footnotesize template$<$class T , class Result  = T$>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$ {\bfseries Try\+Or\+Default} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$s)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_a597399960d8fc73faa4453c16ca97e7c}\label{classv8_1_1internal_1_1torque_1_1Grammar_a597399960d8fc73faa4453c16ca97e7c}} 
+{\footnotesize template$<$class T $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$ {\bfseries Nonempty\+List} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$element, \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$$>$ separator=\{\})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_aad08eea474a1e7206a2e6441743eb2cc}\label{classv8_1_1internal_1_1torque_1_1Grammar_aad08eea474a1e7206a2e6441743eb2cc}} 
+{\footnotesize template$<$class T $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$ {\bfseries List} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$element, \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$$>$ separator=\{\})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_a2675a91e4bfc1600391b427144190b9d}\label{classv8_1_1internal_1_1torque_1_1Grammar_a2675a91e4bfc1600391b427144190b9d}} 
+{\footnotesize template$<$class T $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$ {\bfseries Optional} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$x)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_ac8be8266e8e9cbdde7702c5644824f9f}\label{classv8_1_1internal_1_1torque_1_1Grammar_ac8be8266e8e9cbdde7702c5644824f9f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$ {\bfseries Check\+If} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$x)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_ae0bed965387a8d9be3ddebc380348f64}\label{classv8_1_1internal_1_1torque_1_1Grammar_ae0bed965387a8d9be3ddebc380348f64}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Lexer}{Lexer}} \& {\bfseries lexer} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_a3dff1c4eb5d3abf399b36993fa4c7a6a}\label{classv8_1_1internal_1_1torque_1_1Grammar_a3dff1c4eb5d3abf399b36993fa4c7a6a}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classbool}{bool}} {\bfseries Match\+Char} (\mbox{\hyperlink{classint}{int}}($\ast$char\+\_\+class)(\mbox{\hyperlink{classint}{int}}), \mbox{\hyperlink{classchar}{Input\+Position}} $\ast$pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_aad2a0e67ae8e035f5d78f1d71197c31d}\label{classv8_1_1internal_1_1torque_1_1Grammar_aad2a0e67ae8e035f5d78f1d71197c31d}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classbool}{bool}} {\bfseries Match\+Char} (\mbox{\hyperlink{classbool}{bool}}($\ast$char\+\_\+class)(\mbox{\hyperlink{classchar}{char}}), \mbox{\hyperlink{classchar}{Input\+Position}} $\ast$pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_ab0b56837f0f197141b03c8b36c1db437}\label{classv8_1_1internal_1_1torque_1_1Grammar_ab0b56837f0f197141b03c8b36c1db437}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classbool}{bool}} {\bfseries Match\+Any\+Char} (\mbox{\hyperlink{classchar}{Input\+Position}} $\ast$pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_adc53679933c1efc1a394aed50c5cd4c0}\label{classv8_1_1internal_1_1torque_1_1Grammar_adc53679933c1efc1a394aed50c5cd4c0}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classbool}{bool}} {\bfseries Match\+String} (const \mbox{\hyperlink{classchar}{char}} $\ast$s, \mbox{\hyperlink{classchar}{Input\+Position}} $\ast$pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_a5c84e2f52182fa46c44fe900c7e26f80}\label{classv8_1_1internal_1_1torque_1_1Grammar_a5c84e2f52182fa46c44fe900c7e26f80}} 
+static \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1ParseResult}{Parse\+Result}} $>$ {\bfseries Yield\+Matched\+Input} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1ParseResultIterator}{Parse\+Result\+Iterator}} $\ast$child\+\_\+results)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_a24ba108dccf298a2434768250ba357af}\label{classv8_1_1internal_1_1torque_1_1Grammar_a24ba108dccf298a2434768250ba357af}} 
+{\footnotesize template$<$class T , T value$>$ }\\static \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1ParseResult}{Parse\+Result}} $>$ {\bfseries Yield\+Integral\+Constant} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1ParseResultIterator}{Parse\+Result\+Iterator}} $\ast$child\+\_\+results)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_acc945f1a391e5e8eae7771ecac3c5f98}\label{classv8_1_1internal_1_1torque_1_1Grammar_acc945f1a391e5e8eae7771ecac3c5f98}} 
+{\footnotesize template$<$class T $>$ }\\static \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1ParseResult}{Parse\+Result}} $>$ {\bfseries Yield\+Default\+Value} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1ParseResultIterator}{Parse\+Result\+Iterator}} $\ast$child\+\_\+results)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_a6831e1b624d58172db47759267b37ad1}\label{classv8_1_1internal_1_1torque_1_1Grammar_a6831e1b624d58172db47759267b37ad1}} 
+{\footnotesize template$<$class From , class To $>$ }\\static \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1ParseResult}{Parse\+Result}} $>$ {\bfseries Cast\+Parse\+Result} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1ParseResultIterator}{Parse\+Result\+Iterator}} $\ast$child\+\_\+results)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_a77113e93b37dc968b21711e284e03365}\label{classv8_1_1internal_1_1torque_1_1Grammar_a77113e93b37dc968b21711e284e03365}} 
+{\footnotesize template$<$class T $>$ }\\static \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1ParseResult}{Parse\+Result}} $>$ {\bfseries Make\+Singleton\+Vector} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1ParseResultIterator}{Parse\+Result\+Iterator}} $\ast$child\+\_\+results)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Grammar_a6cae6d2f9f5eb69fa37b824eec44fb9d}\label{classv8_1_1internal_1_1torque_1_1Grammar_a6cae6d2f9f5eb69fa37b824eec44fb9d}} 
+{\footnotesize template$<$class T $>$ }\\static \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1ParseResult}{Parse\+Result}} $>$ {\bfseries Make\+Extended\+Vector} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1ParseResultIterator}{Parse\+Result\+Iterator}} $\ast$child\+\_\+results)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 342 of file earley-\/parser.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/torque/earley-\/parser.\+h\item 
+v8/src/torque/earley-\/parser.\+cc\end{DoxyCompactItemize}

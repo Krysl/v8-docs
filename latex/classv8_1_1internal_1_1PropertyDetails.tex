@@ -1,0 +1,214 @@
+\hypertarget{classv8_1_1internal_1_1PropertyDetails}{}\section{v8\+:\+:internal\+:\+:Property\+Details Class Reference}
+\label{classv8_1_1internal_1_1PropertyDetails}\index{v8\+::internal\+::\+Property\+Details@{v8\+::internal\+::\+Property\+Details}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails_1_1AttributesField}{Attributes\+Field}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails_1_1ConstnessField}{Constness\+Field}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails_1_1DescriptorPointer}{Descriptor\+Pointer}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails_1_1DictionaryStorageField}{Dictionary\+Storage\+Field}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails_1_1FieldIndexField}{Field\+Index\+Field}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails_1_1KindField}{Kind\+Field}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails_1_1LocationField}{Location\+Field}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails_1_1PropertyCellTypeField}{Property\+Cell\+Type\+Field}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails_1_1RepresentationField}{Representation\+Field}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_ab827432c274fec7564d738f6aa951f19}\label{classv8_1_1internal_1_1PropertyDetails_ab827432c274fec7564d738f6aa951f19}} 
+enum {\bfseries Print\+Mode} \{ \newline
+{\bfseries k\+Print\+Attributes} = 1 $<$$<$ 0, 
+{\bfseries k\+Print\+Field\+Index} = 1 $<$$<$ 1, 
+{\bfseries k\+Print\+Representation} = 1 $<$$<$ 2, 
+{\bfseries k\+Print\+Pointer} = 1 $<$$<$ 3, 
+\newline
+{\bfseries k\+For\+Properties} = k\+Print\+Field\+Index, 
+{\bfseries k\+For\+Transitions} = k\+Print\+Attributes, 
+{\bfseries k\+Print\+Full} = -\/1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a0a0b675362cea435412996b60bc2b013}\label{classv8_1_1internal_1_1PropertyDetails_a0a0b675362cea435412996b60bc2b013}} 
+{\bfseries Property\+Details} (Property\+Kind kind, Property\+Attributes attributes, Property\+Cell\+Type cell\+\_\+type, \mbox{\hyperlink{classint}{int}} dictionary\+\_\+index=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a6e73d58ecdf7637297fee4cff5735133}\label{classv8_1_1internal_1_1PropertyDetails_a6e73d58ecdf7637297fee4cff5735133}} 
+{\bfseries Property\+Details} (Property\+Kind kind, Property\+Attributes attributes, Property\+Location location, Property\+Constness constness, \mbox{\hyperlink{classv8_1_1internal_1_1Representation}{Representation}} representation, \mbox{\hyperlink{classint}{int}} field\+\_\+index=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a0f703d7edfdae22b1b760b8e27f7b2fe}\label{classv8_1_1internal_1_1PropertyDetails_a0f703d7edfdae22b1b760b8e27f7b2fe}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries pointer} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_af35118c94c3ec2e26d6ff018c7432f71}\label{classv8_1_1internal_1_1PropertyDetails_af35118c94c3ec2e26d6ff018c7432f71}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails}{Property\+Details}} {\bfseries set\+\_\+pointer} (\mbox{\hyperlink{classint}{int}} i) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_acea4c550f0ffed6a827a3b4903ac33bd}\label{classv8_1_1internal_1_1PropertyDetails_acea4c550f0ffed6a827a3b4903ac33bd}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails}{Property\+Details}} {\bfseries set\+\_\+cell\+\_\+type} (Property\+Cell\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a8a8b77dd9dca0ea49cde28ccf89c97ec}\label{classv8_1_1internal_1_1PropertyDetails_a8a8b77dd9dca0ea49cde28ccf89c97ec}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails}{Property\+Details}} {\bfseries set\+\_\+index} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_af9019cf66ce66e5b72d44cefef51d419}\label{classv8_1_1internal_1_1PropertyDetails_af9019cf66ce66e5b72d44cefef51d419}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails}{Property\+Details}} {\bfseries Copy\+With\+Representation} (\mbox{\hyperlink{classv8_1_1internal_1_1Representation}{Representation}} representation) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a234fe6d21a8a424c1c1b831317e1c2fd}\label{classv8_1_1internal_1_1PropertyDetails_a234fe6d21a8a424c1c1b831317e1c2fd}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails}{Property\+Details}} {\bfseries Copy\+With\+Constness} (Property\+Constness constness) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_ac3c702e188d4fb0473c73b73915a399a}\label{classv8_1_1internal_1_1PropertyDetails_ac3c702e188d4fb0473c73b73915a399a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails}{Property\+Details}} {\bfseries Copy\+Add\+Attributes} (Property\+Attributes new\+\_\+attributes) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a44c5a622037baf0c43597d2914e36bb9}\label{classv8_1_1internal_1_1PropertyDetails_a44c5a622037baf0c43597d2914e36bb9}} 
+{\bfseries Property\+Details} (\mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} smi)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_ad070c06c0f465353bd654defb3f8a439}\label{classv8_1_1internal_1_1PropertyDetails_ad070c06c0f465353bd654defb3f8a439}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} {\bfseries As\+Smi} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a84ec5d54214083de458bfc43b8c3ac1b}\label{classv8_1_1internal_1_1PropertyDetails_a84ec5d54214083de458bfc43b8c3ac1b}} 
+Property\+Kind {\bfseries kind} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a2d8f536f39a3ab2754cdd721de544ae4}\label{classv8_1_1internal_1_1PropertyDetails_a2d8f536f39a3ab2754cdd721de544ae4}} 
+Property\+Location {\bfseries location} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_aa6d8ec62f0979d0aea956c801aabb815}\label{classv8_1_1internal_1_1PropertyDetails_aa6d8ec62f0979d0aea956c801aabb815}} 
+Property\+Constness {\bfseries constness} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a21bd1ca61406d144db4b384a71cdcc96}\label{classv8_1_1internal_1_1PropertyDetails_a21bd1ca61406d144db4b384a71cdcc96}} 
+Property\+Attributes {\bfseries attributes} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a5fc786f6c94e8ae60b799350509ef5ae}\label{classv8_1_1internal_1_1PropertyDetails_a5fc786f6c94e8ae60b799350509ef5ae}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries dictionary\+\_\+index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a4355e88929d3f1f8d7855d80a064d492}\label{classv8_1_1internal_1_1PropertyDetails_a4355e88929d3f1f8d7855d80a064d492}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Representation}{Representation}} {\bfseries representation} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_ab123d3791892acdc8ac37eef4218e4f4}\label{classv8_1_1internal_1_1PropertyDetails_ab123d3791892acdc8ac37eef4218e4f4}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries field\+\_\+index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a41c3bf3679cb8c8826d73c79459fc697}\label{classv8_1_1internal_1_1PropertyDetails_a41c3bf3679cb8c8826d73c79459fc697}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries field\+\_\+width\+\_\+in\+\_\+words} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a40d32626d7102bebb7496fc143762eb7}\label{classv8_1_1internal_1_1PropertyDetails_a40d32626d7102bebb7496fc143762eb7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Read\+Only} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_ab8505d546d4dc5f141737afa61bc09a4}\label{classv8_1_1internal_1_1PropertyDetails_ab8505d546d4dc5f141737afa61bc09a4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Configurable} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a8bdc7c3753df8cba447bc78809e0ec2a}\label{classv8_1_1internal_1_1PropertyDetails_a8bdc7c3753df8cba447bc78809e0ec2a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Dont\+Enum} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_adb09808574dfebd5a4eaeafd31cd6429}\label{classv8_1_1internal_1_1PropertyDetails_adb09808574dfebd5a4eaeafd31cd6429}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Enumerable} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a536f7bd0ad8d23bac25741b8c5255276}\label{classv8_1_1internal_1_1PropertyDetails_a536f7bd0ad8d23bac25741b8c5255276}} 
+Property\+Cell\+Type {\bfseries cell\+\_\+type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a7b615a8d0b1fdf97f6fbda8ca4f3442d}\label{classv8_1_1internal_1_1PropertyDetails_a7b615a8d0b1fdf97f6fbda8ca4f3442d}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Dictionary\+Storage\+Field\+::k\+Next$<$=31)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a9ec0d1bfe701004ec09036cfc022e33e}\label{classv8_1_1internal_1_1PropertyDetails_a9ec0d1bfe701004ec09036cfc022e33e}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Field\+Index\+Field\+::k\+Next$<$=31)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_aa15a5fc0b91bfc7fae7bef349240e0f6}\label{classv8_1_1internal_1_1PropertyDetails_aa15a5fc0b91bfc7fae7bef349240e0f6}} 
+void {\bfseries Print\+As\+Slow\+To} (std\+::ostream \&out)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a84b1c2bb878391f781e69d9da94ba8b3}\label{classv8_1_1internal_1_1PropertyDetails_a84b1c2bb878391f781e69d9da94ba8b3}} 
+void {\bfseries Print\+As\+Fast\+To} (std\+::ostream \&out, Print\+Mode mode=k\+Print\+Full)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a378750fba5d3432f2afbb0c0683096ae}\label{classv8_1_1internal_1_1PropertyDetails_a378750fba5d3432f2afbb0c0683096ae}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails}{Property\+Details}} {\bfseries Empty} (Property\+Cell\+Type cell\+\_\+type=Property\+Cell\+Type\+::k\+No\+Cell)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_aba5d8cbae5e913ab4eb3b2349a220c20}\label{classv8_1_1internal_1_1PropertyDetails_aba5d8cbae5e913ab4eb3b2349a220c20}} 
+static uint8\+\_\+t {\bfseries Encode\+Representation} (\mbox{\hyperlink{classv8_1_1internal_1_1Representation}{Representation}} representation)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_ac46e9f823025517f697c92b65c8303d1}\label{classv8_1_1internal_1_1PropertyDetails_ac46e9f823025517f697c92b65c8303d1}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Representation}{Representation}} {\bfseries Decode\+Representation} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} bits)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a8d2b4f5f20af6dc0d8f1327f3167134c}\label{classv8_1_1internal_1_1PropertyDetails_a8d2b4f5f20af6dc0d8f1327f3167134c}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Valid\+Index} (\mbox{\hyperlink{classint}{int}} index)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Attributes\+Read\+Only\+Mask}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Attributes\+Dont\+Delete\+Mask}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Attributes\+Dont\+Enum\+Mask}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a772f09c4b200155e67c8412048bc104d}\label{classv8_1_1internal_1_1PropertyDetails_a772f09c4b200155e67c8412048bc104d}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Initial\+Index} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 233 of file property-\/details.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_acf4b83e29b79b07284481faea5d74ed3}\label{classv8_1_1internal_1_1PropertyDetails_acf4b83e29b79b07284481faea5d74ed3}} 
+\index{v8\+::internal\+::\+Property\+Details@{v8\+::internal\+::\+Property\+Details}!k\+Attributes\+Dont\+Delete\+Mask@{k\+Attributes\+Dont\+Delete\+Mask}}
+\index{k\+Attributes\+Dont\+Delete\+Mask@{k\+Attributes\+Dont\+Delete\+Mask}!v8\+::internal\+::\+Property\+Details@{v8\+::internal\+::\+Property\+Details}}
+\subsubsection{\texorpdfstring{k\+Attributes\+Dont\+Delete\+Mask}{kAttributesDontDeleteMask}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Property\+Details\+::k\+Attributes\+Dont\+Delete\+Mask\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      (DONT\_DELETE << AttributesField::kShift)
+\end{DoxyCode}
+
+
+Definition at line 345 of file property-\/details.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a80cb8e0a96cfc282f53a0c0c9dc9e9bd}\label{classv8_1_1internal_1_1PropertyDetails_a80cb8e0a96cfc282f53a0c0c9dc9e9bd}} 
+\index{v8\+::internal\+::\+Property\+Details@{v8\+::internal\+::\+Property\+Details}!k\+Attributes\+Dont\+Enum\+Mask@{k\+Attributes\+Dont\+Enum\+Mask}}
+\index{k\+Attributes\+Dont\+Enum\+Mask@{k\+Attributes\+Dont\+Enum\+Mask}!v8\+::internal\+::\+Property\+Details@{v8\+::internal\+::\+Property\+Details}}
+\subsubsection{\texorpdfstring{k\+Attributes\+Dont\+Enum\+Mask}{kAttributesDontEnumMask}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Property\+Details\+::k\+Attributes\+Dont\+Enum\+Mask\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      (DONT\_ENUM << AttributesField::kShift)
+\end{DoxyCode}
+
+
+Definition at line 347 of file property-\/details.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDetails_a8125f4da997364ee7cdc4eb3c83d2342}\label{classv8_1_1internal_1_1PropertyDetails_a8125f4da997364ee7cdc4eb3c83d2342}} 
+\index{v8\+::internal\+::\+Property\+Details@{v8\+::internal\+::\+Property\+Details}!k\+Attributes\+Read\+Only\+Mask@{k\+Attributes\+Read\+Only\+Mask}}
+\index{k\+Attributes\+Read\+Only\+Mask@{k\+Attributes\+Read\+Only\+Mask}!v8\+::internal\+::\+Property\+Details@{v8\+::internal\+::\+Property\+Details}}
+\subsubsection{\texorpdfstring{k\+Attributes\+Read\+Only\+Mask}{kAttributesReadOnlyMask}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Property\+Details\+::k\+Attributes\+Read\+Only\+Mask\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      (READ\_ONLY << AttributesField::kShift)
+\end{DoxyCode}
+
+
+Definition at line 343 of file property-\/details.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/property-\/details.\+h\item 
+v8/src/objects-\/inl.\+h\item 
+v8/src/property.\+cc\end{DoxyCompactItemize}

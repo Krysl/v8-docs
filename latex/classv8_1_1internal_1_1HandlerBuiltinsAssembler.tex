@@ -1,0 +1,60 @@
+\hypertarget{classv8_1_1internal_1_1HandlerBuiltinsAssembler}{}\section{v8\+:\+:internal\+:\+:Handler\+Builtins\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1HandlerBuiltinsAssembler}\index{v8\+::internal\+::\+Handler\+Builtins\+Assembler@{v8\+::internal\+::\+Handler\+Builtins\+Assembler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Handler\+Builtins\+Assembler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1HandlerBuiltinsAssembler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerBuiltinsAssembler_ab0d93c89650b8eb33eab5d240f83d4fd}\label{classv8_1_1internal_1_1HandlerBuiltinsAssembler_ab0d93c89650b8eb33eab5d240f83d4fd}} 
+{\bfseries Handler\+Builtins\+Assembler} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerState}{compiler\+::\+Code\+Assembler\+State}} $\ast$state)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerBuiltinsAssembler_a1fa6d50914e95a10d403a621cf152889}\label{classv8_1_1internal_1_1HandlerBuiltinsAssembler_a1fa6d50914e95a10d403a621cf152889}} 
+typedef std\+::function$<$ void(Elements\+Kind)$>$ {\bfseries Elements\+Kind\+Switch\+Case}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerBuiltinsAssembler_ae867a3b0a88b3f802b3578c8a5566017}\label{classv8_1_1internal_1_1HandlerBuiltinsAssembler_ae867a3b0a88b3f802b3578c8a5566017}} 
+typedef std\+::function$<$ void(Elements\+Kind, Elements\+Kind)$>$ {\bfseries Elements\+Kind\+Transition\+Switch\+Case}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerBuiltinsAssembler_aadce05904e0d7ed4d043ab72948309a4}\label{classv8_1_1internal_1_1HandlerBuiltinsAssembler_aadce05904e0d7ed4d043ab72948309a4}} 
+void {\bfseries Generate\+\_\+\+Keyed\+Store\+I\+C\+\_\+\+Sloppy\+Arguments} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerBuiltinsAssembler_adc7ed797dc9a3f18d5e74d8c4de4562a}\label{classv8_1_1internal_1_1HandlerBuiltinsAssembler_adc7ed797dc9a3f18d5e74d8c4de4562a}} 
+void {\bfseries Generate\+\_\+\+Keyed\+Store\+I\+C\+\_\+\+Slow} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerBuiltinsAssembler_adcb2f83805d238d11b6d1124ffe4f841}\label{classv8_1_1internal_1_1HandlerBuiltinsAssembler_adcb2f83805d238d11b6d1124ffe4f841}} 
+void {\bfseries Generate\+\_\+\+Store\+In\+Array\+Literal\+I\+C\+\_\+\+Slow} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerBuiltinsAssembler_a611c5d6413da7d86eff0cdb375059ccc}\label{classv8_1_1internal_1_1HandlerBuiltinsAssembler_a611c5d6413da7d86eff0cdb375059ccc}} 
+void {\bfseries Dispatch\+By\+Elements\+Kind} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1Int32T}{Int32T}} $>$ elements\+\_\+kind, const Elements\+Kind\+Switch\+Case \&case\+\_\+function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerBuiltinsAssembler_af161155f57beab705631b14c48779452}\label{classv8_1_1internal_1_1HandlerBuiltinsAssembler_af161155f57beab705631b14c48779452}} 
+void {\bfseries Dispatch\+For\+Elements\+Kind\+Transition} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1Int32T}{Int32T}} $>$ from\+\_\+kind, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1Int32T}{Int32T}} $>$ to\+\_\+kind, const Elements\+Kind\+Transition\+Switch\+Case \&case\+\_\+function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerBuiltinsAssembler_a8a97c6c2f5b2071187f23d278d7a2ff3}\label{classv8_1_1internal_1_1HandlerBuiltinsAssembler_a8a97c6c2f5b2071187f23d278d7a2ff3}} 
+void {\bfseries Generate\+\_\+\+Elements\+Transition\+And\+Store} (Keyed\+Access\+Store\+Mode store\+\_\+mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerBuiltinsAssembler_a5863ae86a5c501d89297385976e03a92}\label{classv8_1_1internal_1_1HandlerBuiltinsAssembler_a5863ae86a5c501d89297385976e03a92}} 
+void {\bfseries Generate\+\_\+\+Store\+Fast\+Element\+IC} (Keyed\+Access\+Store\+Mode store\+\_\+mode)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file builtins-\/handler-\/gen.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/builtins/builtins-\/handler-\/gen.\+cc\end{DoxyCompactItemize}

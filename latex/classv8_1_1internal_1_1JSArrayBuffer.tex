@@ -1,0 +1,90 @@
+\hypertarget{classv8_1_1internal_1_1JSArrayBuffer}{}\section{v8\+:\+:internal\+:\+:J\+S\+Array\+Buffer Class Reference}
+\label{classv8_1_1internal_1_1JSArrayBuffer}\index{v8\+::internal\+::\+J\+S\+Array\+Buffer@{v8\+::internal\+::\+J\+S\+Array\+Buffer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:J\+S\+Array\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1JSArrayBuffer}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1JSArrayBuffer_1_1Allocation}{Allocation}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1JSArrayBuffer_1_1BodyDescriptor}{Body\+Descriptor}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArrayBuffer_a8e6c63f3717c65d389e42505a870d101}\label{classv8_1_1internal_1_1JSArrayBuffer_a8e6c63f3717c65d389e42505a870d101}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries allocation\+\_\+length} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArrayBuffer_a8e1336b76d19405ad54434de5a11c4d5}\label{classv8_1_1internal_1_1JSArrayBuffer_a8e1336b76d19405ad54434de5a11c4d5}} 
+void $\ast$ {\bfseries allocation\+\_\+base} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArrayBuffer_a947dcf8e5b9cb2273d7330e8ba9746e7}\label{classv8_1_1internal_1_1JSArrayBuffer_a947dcf8e5b9cb2273d7330e8ba9746e7}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries clear\+\_\+padding} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArrayBuffer_ab8aa5ae4495b3caf14dad14329d40fe6}\label{classv8_1_1internal_1_1JSArrayBuffer_ab8aa5ae4495b3caf14dad14329d40fe6}} 
+void {\bfseries Neuter} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArrayBuffer_a52b461ddc2412fef45d5e8ab0d079a0c}\label{classv8_1_1internal_1_1JSArrayBuffer_a52b461ddc2412fef45d5e8ab0d079a0c}} 
+void {\bfseries Free\+Backing\+Store\+From\+Main\+Thread} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArrayBuffer_a391c7485a7691c01411e73eabc67853b}\label{classv8_1_1internal_1_1JSArrayBuffer_a391c7485a7691c01411e73eabc67853b}} 
+static void {\bfseries Free\+Backing\+Store} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{structv8_1_1internal_1_1JSArrayBuffer_1_1Allocation}{Allocation}} allocation)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArrayBuffer_a19da6c2ab04b86c766c9ff7d080a97e8}\label{classv8_1_1internal_1_1JSArrayBuffer_a19da6c2ab04b86c766c9ff7d080a97e8}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Setup} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArrayBuffer}{J\+S\+Array\+Buffer}} $>$ array\+\_\+buffer, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classbool}{bool}} is\+\_\+external, void $\ast$data, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} allocated\+\_\+length, Shared\+Flag shared\+\_\+flag=Shared\+Flag\+::k\+Not\+Shared, \mbox{\hyperlink{classbool}{bool}} is\+\_\+wasm\+\_\+memory=false)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArrayBuffer_aa354f686c94caa314a2bc9dcfbfdc2dc}\label{classv8_1_1internal_1_1JSArrayBuffer_aa354f686c94caa314a2bc9dcfbfdc2dc}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Setup\+As\+Empty} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArrayBuffer}{J\+S\+Array\+Buffer}} $>$ array\+\_\+buffer, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArrayBuffer_a65dc55353c84f26b38ca95f0021946bf}\label{classv8_1_1internal_1_1JSArrayBuffer_a65dc55353c84f26b38ca95f0021946bf}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Setup\+Allocating\+Data} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArrayBuffer}{J\+S\+Array\+Buffer}} $>$ array\+\_\+buffer, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} allocated\+\_\+length, \mbox{\hyperlink{classbool}{bool}} initialize=true, Shared\+Flag shared\+\_\+flag=Shared\+Flag\+::k\+Not\+Shared) V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArrayBuffer_aaa9641b33f3b26b38930cbb552f8770c}\label{classv8_1_1internal_1_1JSArrayBuffer_aaa9641b33f3b26b38930cbb552f8770c}} 
+static constexpr \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Max\+Byte\+Length} = k\+Max\+Safe\+Integer
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Size\+With\+Embedder\+Fields}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file js-\/array-\/buffer.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSArrayBuffer_aff1c4adcc51bc0a44208ddf0d40463cb}\label{classv8_1_1internal_1_1JSArrayBuffer_aff1c4adcc51bc0a44208ddf0d40463cb}} 
+\index{v8\+::internal\+::\+J\+S\+Array\+Buffer@{v8\+::internal\+::\+J\+S\+Array\+Buffer}!k\+Size\+With\+Embedder\+Fields@{k\+Size\+With\+Embedder\+Fields}}
+\index{k\+Size\+With\+Embedder\+Fields@{k\+Size\+With\+Embedder\+Fields}!v8\+::internal\+::\+J\+S\+Array\+Buffer@{v8\+::internal\+::\+J\+S\+Array\+Buffer}}
+\subsubsection{\texorpdfstring{k\+Size\+With\+Embedder\+Fields}{kSizeWithEmbedderFields}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+J\+S\+Array\+Buffer\+::k\+Size\+With\+Embedder\+Fields\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kHeaderSize +
+      v8::ArrayBuffer::kEmbedderFieldCount * kEmbedderDataSlotSize
+\end{DoxyCode}
+
+
+Definition at line 138 of file js-\/array-\/buffer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/js-\/array-\/buffer.\+h\item 
+v8/src/objects/js-\/array-\/buffer-\/inl.\+h\item 
+v8/src/objects/js-\/array-\/buffer.\+cc\end{DoxyCompactItemize}

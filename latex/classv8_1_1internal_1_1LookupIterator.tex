@@ -1,0 +1,247 @@
+\hypertarget{classv8_1_1internal_1_1LookupIterator}{}\section{v8\+:\+:internal\+:\+:Lookup\+Iterator Class Reference}
+\label{classv8_1_1internal_1_1LookupIterator}\index{v8\+::internal\+::\+Lookup\+Iterator@{v8\+::internal\+::\+Lookup\+Iterator}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_ab4619027a1f080b1d2d82bfc2462fada}\label{classv8_1_1internal_1_1LookupIterator_ab4619027a1f080b1d2d82bfc2462fada}} 
+enum {\bfseries Configuration} \{ \newline
+{\bfseries k\+Interceptor} = 1 $<$$<$ 0, 
+{\bfseries k\+Prototype\+Chain} = 1 $<$$<$ 1, 
+{\bfseries O\+W\+N\+\_\+\+S\+K\+I\+P\+\_\+\+I\+N\+T\+E\+R\+C\+E\+P\+T\+OR} = 0, 
+{\bfseries O\+WN} = k\+Interceptor, 
+\newline
+{\bfseries P\+R\+O\+T\+O\+T\+Y\+P\+E\+\_\+\+C\+H\+A\+I\+N\+\_\+\+S\+K\+I\+P\+\_\+\+I\+N\+T\+E\+R\+C\+E\+P\+T\+OR} = k\+Prototype\+Chain, 
+{\bfseries P\+R\+O\+T\+O\+T\+Y\+P\+E\+\_\+\+C\+H\+A\+IN} = k\+Prototype\+Chain $\vert$ k\+Interceptor, 
+{\bfseries D\+E\+F\+A\+U\+LT} = P\+R\+O\+T\+O\+T\+Y\+P\+E\+\_\+\+C\+H\+A\+IN
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_aa7fbcb80d73cb5ee869915438ee81ca9}\label{classv8_1_1internal_1_1LookupIterator_aa7fbcb80d73cb5ee869915438ee81ca9}} 
+enum {\bfseries State} \{ \newline
+{\bfseries A\+C\+C\+E\+S\+S\+\_\+\+C\+H\+E\+CK}, 
+{\bfseries I\+N\+T\+E\+G\+E\+R\+\_\+\+I\+N\+D\+E\+X\+E\+D\+\_\+\+E\+X\+O\+T\+IC}, 
+{\bfseries I\+N\+T\+E\+R\+C\+E\+P\+T\+OR}, 
+{\bfseries J\+S\+P\+R\+O\+XY}, 
+\newline
+{\bfseries N\+O\+T\+\_\+\+F\+O\+U\+ND}, 
+{\bfseries A\+C\+C\+E\+S\+S\+OR}, 
+{\bfseries D\+A\+TA}, 
+{\bfseries T\+R\+A\+N\+S\+I\+T\+I\+ON}, 
+\newline
+{\bfseries B\+E\+F\+O\+R\+E\+\_\+\+P\+R\+O\+P\+E\+R\+TY} = I\+N\+T\+E\+R\+C\+E\+P\+T\+OR
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_ad5b694bb52570b3f9c17f1914906de4d}\label{classv8_1_1internal_1_1LookupIterator_ad5b694bb52570b3f9c17f1914906de4d}} 
+{\bfseries Lookup\+Iterator} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ receiver, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, Configuration configuration=D\+E\+F\+A\+U\+LT)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_aab5fa93f1766b5e3439801ff178d6420}\label{classv8_1_1internal_1_1LookupIterator_aab5fa93f1766b5e3439801ff178d6420}} 
+{\bfseries Lookup\+Iterator} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ receiver, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ holder, Configuration configuration=D\+E\+F\+A\+U\+LT)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a94ca20beb3e9f631946155759e3434d1}\label{classv8_1_1internal_1_1LookupIterator_a94ca20beb3e9f631946155759e3434d1}} 
+{\bfseries Lookup\+Iterator} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ receiver, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ holder, Configuration configuration=D\+E\+F\+A\+U\+LT)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a57289058504ed3871c09c7a017dae4d1}\label{classv8_1_1internal_1_1LookupIterator_a57289058504ed3871c09c7a017dae4d1}} 
+{\bfseries Lookup\+Iterator} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ receiver, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index, Configuration configuration=D\+E\+F\+A\+U\+LT)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_ae5651124d18e96dbd4dbcb7a25f2abde}\label{classv8_1_1internal_1_1LookupIterator_ae5651124d18e96dbd4dbcb7a25f2abde}} 
+{\bfseries Lookup\+Iterator} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ receiver, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ holder, Configuration configuration=D\+E\+F\+A\+U\+LT)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a6789f0bd0560d2f11e5b0b24b4ec5113}\label{classv8_1_1internal_1_1LookupIterator_a6789f0bd0560d2f11e5b0b24b4ec5113}} 
+void {\bfseries Restart} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_aeb66f90bcb1add987938e1740def38ba}\label{classv8_1_1internal_1_1LookupIterator_aeb66f90bcb1add987938e1740def38ba}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a24e611b805657d1625446318292c9760}\label{classv8_1_1internal_1_1LookupIterator_a24e611b805657d1625446318292c9760}} 
+State {\bfseries state} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a359aa31638342a8981d725eead1849e8}\label{classv8_1_1internal_1_1LookupIterator_a359aa31638342a8981d725eead1849e8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ {\bfseries name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a143353a00b2b70eb1cbbba358a6daffc}\label{classv8_1_1internal_1_1LookupIterator_a143353a00b2b70eb1cbbba358a6daffc}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ {\bfseries Get\+Name} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a775aafcf733a44b36da08045d68db7c2}\label{classv8_1_1internal_1_1LookupIterator_a775aafcf733a44b36da08045d68db7c2}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a75925d33e955b0a316ce94399da56dfc}\label{classv8_1_1internal_1_1LookupIterator_a75925d33e955b0a316ce94399da56dfc}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Element} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a3f635c9cc898b7bd870925bd0d44dfe6}\label{classv8_1_1internal_1_1LookupIterator_a3f635c9cc898b7bd870925bd0d44dfe6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Found} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a266004eb9dc5821235319fdf25307c9b}\label{classv8_1_1internal_1_1LookupIterator_a266004eb9dc5821235319fdf25307c9b}} 
+void {\bfseries Next} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_aaa6d707225dd9f303db526a49dd01a14}\label{classv8_1_1internal_1_1LookupIterator_aaa6d707225dd9f303db526a49dd01a14}} 
+void {\bfseries Not\+Found} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_ada0a7ce484bf480cf44a717d4fab0b92}\label{classv8_1_1internal_1_1LookupIterator_ada0a7ce484bf480cf44a717d4fab0b92}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$ {\bfseries heap} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a4170dbeeac3ad524d0429bceec6c2d76}\label{classv8_1_1internal_1_1LookupIterator_a4170dbeeac3ad524d0429bceec6c2d76}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Factory}{Factory}} $\ast$ {\bfseries factory} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a6b6f1748ed2fcb657c79bbed493efe22}\label{classv8_1_1internal_1_1LookupIterator_a6b6f1748ed2fcb657c79bbed493efe22}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Get\+Receiver} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_ad2aafedfe201f978e84a355ec3922265}\label{classv8_1_1internal_1_1LookupIterator_ad2aafedfe201f978e84a355ec3922265}} 
+{\footnotesize template$<$class T $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries Get\+Store\+Target} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a9b01a81cc16a9955bdc86ddf82c8a74a}\label{classv8_1_1internal_1_1LookupIterator_a9b01a81cc16a9955bdc86ddf82c8a74a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+dictionary\+\_\+holder} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_ac9c15ac7f7ab79d6c8b0df56b9e16237}\label{classv8_1_1internal_1_1LookupIterator_ac9c15ac7f7ab79d6c8b0df56b9e16237}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ {\bfseries transition\+\_\+map} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a1dd8ca5e8641f2d6801c6cde880f309b}\label{classv8_1_1internal_1_1LookupIterator_a1dd8ca5e8641f2d6801c6cde880f309b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1PropertyCell}{Property\+Cell}} $>$ {\bfseries transition\+\_\+cell} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a1cd04df4413b0f0258011295e9c92d8f}\label{classv8_1_1internal_1_1LookupIterator_a1cd04df4413b0f0258011295e9c92d8f}} 
+{\footnotesize template$<$class T $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries Get\+Holder} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a99303e897817cc5949c9bdc9ded131d8}\label{classv8_1_1internal_1_1LookupIterator_a99303e897817cc5949c9bdc9ded131d8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Holder\+Is\+Receiver} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_aad851d6bc47e426534c482e961ecac1d}\label{classv8_1_1internal_1_1LookupIterator_aad851d6bc47e426534c482e961ecac1d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Holder\+Is\+Receiver\+Or\+Hidden\+Prototype} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_aef1cbf8ad89bd185b5c8aa8336ebc2e9}\label{classv8_1_1internal_1_1LookupIterator_aef1cbf8ad89bd185b5c8aa8336ebc2e9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries check\+\_\+prototype\+\_\+chain} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a844ceff26cd9a605b89e6af547cf8e0f}\label{classv8_1_1internal_1_1LookupIterator_a844ceff26cd9a605b89e6af547cf8e0f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Access} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_af9732779c468d17a5f55a77a437fc31f}\label{classv8_1_1internal_1_1LookupIterator_af9732779c468d17a5f55a77a437fc31f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Extending\+Non\+Extensible} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ receiver)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a000dd63b89214020aa31df70cfb5423a}\label{classv8_1_1internal_1_1LookupIterator_a000dd63b89214020aa31df70cfb5423a}} 
+void {\bfseries Prepare\+For\+Data\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_afb22f2a68a43aa02cab9cc562319dcca}\label{classv8_1_1internal_1_1LookupIterator_afb22f2a68a43aa02cab9cc562319dcca}} 
+void {\bfseries Prepare\+Transition\+To\+Data\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ receiver, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, Property\+Attributes attributes, Store\+Origin store\+\_\+origin)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a7ad4f96f7b5910f26c0499410722f6e7}\label{classv8_1_1internal_1_1LookupIterator_a7ad4f96f7b5910f26c0499410722f6e7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Cacheable\+Transition} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_ade6298a0923ea1215ef87e6325922351}\label{classv8_1_1internal_1_1LookupIterator_ade6298a0923ea1215ef87e6325922351}} 
+void {\bfseries Apply\+Transition\+To\+Data\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ receiver)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a5e550ce94ad5b30a2f015327885116e3}\label{classv8_1_1internal_1_1LookupIterator_a5e550ce94ad5b30a2f015327885116e3}} 
+void {\bfseries Reconfigure\+Data\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, Property\+Attributes attributes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a6993053451b18dd631d19b70b9a0e1c8}\label{classv8_1_1internal_1_1LookupIterator_a6993053451b18dd631d19b70b9a0e1c8}} 
+void {\bfseries Delete} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_ac652bfae25b6732d2f2cfe16f9021191}\label{classv8_1_1internal_1_1LookupIterator_ac652bfae25b6732d2f2cfe16f9021191}} 
+void {\bfseries Transition\+To\+Accessor\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ getter, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ setter, Property\+Attributes attributes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_adc45fcbe58da31c4ab68a7e54b3c05b6}\label{classv8_1_1internal_1_1LookupIterator_adc45fcbe58da31c4ab68a7e54b3c05b6}} 
+void {\bfseries Transition\+To\+Accessor\+Pair} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ pair, Property\+Attributes attributes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a072c93ca1945309202592211efb2a058}\label{classv8_1_1internal_1_1LookupIterator_a072c93ca1945309202592211efb2a058}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails}{Property\+Details}} {\bfseries property\+\_\+details} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a30af8db8dad19da275386150b49e34d0}\label{classv8_1_1internal_1_1LookupIterator_a30af8db8dad19da275386150b49e34d0}} 
+Property\+Attributes {\bfseries property\+\_\+attributes} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_abf694098a132dd288e43a4f7f8eb7451}\label{classv8_1_1internal_1_1LookupIterator_abf694098a132dd288e43a4f7f8eb7451}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Configurable} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a00331b3bbd0760e9150c753c36adfe60}\label{classv8_1_1internal_1_1LookupIterator_a00331b3bbd0760e9150c753c36adfe60}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Read\+Only} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_ac6f17a7898a26f1d918e3c88615e7295}\label{classv8_1_1internal_1_1LookupIterator_ac6f17a7898a26f1d918e3c88615e7295}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Enumerable} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_ac59875d475968cceaed5643fce638312}\label{classv8_1_1internal_1_1LookupIterator_ac59875d475968cceaed5643fce638312}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Representation}{Representation}} {\bfseries representation} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a1ae5a56909af33af5f2503727459b45d}\label{classv8_1_1internal_1_1LookupIterator_a1ae5a56909af33af5f2503727459b45d}} 
+Property\+Location {\bfseries location} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_ad7751a97243e6679914d023dffdca6ea}\label{classv8_1_1internal_1_1LookupIterator_ad7751a97243e6679914d023dffdca6ea}} 
+Property\+Constness {\bfseries constness} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a94c06a2bc540b3634a5780ff041a5932}\label{classv8_1_1internal_1_1LookupIterator_a94c06a2bc540b3634a5780ff041a5932}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ {\bfseries Get\+Field\+Owner\+Map} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a332e8938fb18e38d3f57bc2e923174dc}\label{classv8_1_1internal_1_1LookupIterator_a332e8938fb18e38d3f57bc2e923174dc}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1FieldIndex}{Field\+Index}} {\bfseries Get\+Field\+Index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_ab66ff1f3630e341b9a59129228a4c917}\label{classv8_1_1internal_1_1LookupIterator_ab66ff1f3630e341b9a59129228a4c917}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FieldType}{Field\+Type}} $>$ {\bfseries Get\+Field\+Type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a1e0c5d6204318cac4415c74c18b3a0ae}\label{classv8_1_1internal_1_1LookupIterator_a1e0c5d6204318cac4415c74c18b3a0ae}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Field\+Descriptor\+Index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a1e1d200e6f36d8b6e51b86a11633f224}\label{classv8_1_1internal_1_1LookupIterator_a1e1d200e6f36d8b6e51b86a11633f224}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Accessor\+Index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a61e748328ef9f73eb3949233df46c113}\label{classv8_1_1internal_1_1LookupIterator_a61e748328ef9f73eb3949233df46c113}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Constant\+Index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a259f04beeab106b5a98639e9f9ac998c}\label{classv8_1_1internal_1_1LookupIterator_a259f04beeab106b5a98639e9f9ac998c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1PropertyCell}{Property\+Cell}} $>$ {\bfseries Get\+Property\+Cell} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_ab56283186147ea82efabeeab577d3782}\label{classv8_1_1internal_1_1LookupIterator_ab56283186147ea82efabeeab577d3782}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Get\+Accessors} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a67df975d97368ebe397672a1579700a0}\label{classv8_1_1internal_1_1LookupIterator_a67df975d97368ebe397672a1579700a0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1InterceptorInfo}{Interceptor\+Info}} $>$ {\bfseries Get\+Interceptor} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_acf6ca38d3978cca4bbe838e317207167}\label{classv8_1_1internal_1_1LookupIterator_acf6ca38d3978cca4bbe838e317207167}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1InterceptorInfo}{Interceptor\+Info}} $>$ {\bfseries Get\+Interceptor\+For\+Failed\+Access\+Check} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_abd3b3ac281a61fd934eab5555eca1060}\label{classv8_1_1internal_1_1LookupIterator_abd3b3ac281a61fd934eab5555eca1060}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Get\+Data\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a83a30d7926712c808ceedf6fbbaf7b52}\label{classv8_1_1internal_1_1LookupIterator_a83a30d7926712c808ceedf6fbbaf7b52}} 
+void {\bfseries Write\+Data\+Value} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, \mbox{\hyperlink{classbool}{bool}} initializing\+\_\+store)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a750733aad7489d482878a46ac2ec9ff7}\label{classv8_1_1internal_1_1LookupIterator_a750733aad7489d482878a46ac2ec9ff7}} 
+void {\bfseries Update\+Protector} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a50ad3d00314546a1e89b603cab7fbc53}\label{classv8_1_1internal_1_1LookupIterator_a50ad3d00314546a1e89b603cab7fbc53}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Try\+Lookup\+Cached\+Property} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_aa2636a847b92aa11eaf787f5a1896390}\label{classv8_1_1internal_1_1LookupIterator_aa2636a847b92aa11eaf787f5a1896390}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Lookup\+Cached\+Property} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a0e314a1f96d62cc3d58533aea65eb3a2}\label{classv8_1_1internal_1_1LookupIterator_a0e314a1f96d62cc3d58533aea65eb3a2}} 
+{\footnotesize template$<$bool is\+\_\+element$>$ }\\void {\bfseries Start} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_ada5b1e2e249036efcc799f937738c6c8}\label{classv8_1_1internal_1_1LookupIterator_ada5b1e2e249036efcc799f937738c6c8}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1LookupIterator}{Lookup\+Iterator}} {\bfseries Property\+Or\+Element} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ receiver, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, Configuration configuration=D\+E\+F\+A\+U\+LT)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a0f4df452bbef58f2e4e00c300d6e0010}\label{classv8_1_1internal_1_1LookupIterator_a0f4df452bbef58f2e4e00c300d6e0010}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1LookupIterator}{Lookup\+Iterator}} {\bfseries Property\+Or\+Element} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ receiver, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ holder, Configuration configuration=D\+E\+F\+A\+U\+LT)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a0fa46a19202428727d9f9daede9425e7}\label{classv8_1_1internal_1_1LookupIterator_a0fa46a19202428727d9f9daede9425e7}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1LookupIterator}{Lookup\+Iterator}} {\bfseries Property\+Or\+Element} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ receiver, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key, \mbox{\hyperlink{classbool}{bool}} $\ast$success, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ holder, Configuration configuration=D\+E\+F\+A\+U\+LT)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_af935b2c63192f1946d7a212b32760ee2}\label{classv8_1_1internal_1_1LookupIterator_af935b2c63192f1946d7a212b32760ee2}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1LookupIterator}{Lookup\+Iterator}} {\bfseries Property\+Or\+Element} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ receiver, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key, \mbox{\hyperlink{classbool}{bool}} $\ast$success, Configuration configuration=D\+E\+F\+A\+U\+LT)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LookupIterator_a49f2afc9d0b7da8648165c217fc9ae47}\label{classv8_1_1internal_1_1LookupIterator_a49f2afc9d0b7da8648165c217fc9ae47}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1LookupIterator}{Lookup\+Iterator}} {\bfseries For\+Transition\+Handler} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ receiver, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ maybe\+\_\+transition\+\_\+map)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file lookup.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/lookup.\+h\item 
+v8/src/lookup-\/inl.\+h\item 
+v8/src/lookup.\+cc\end{DoxyCompactItemize}

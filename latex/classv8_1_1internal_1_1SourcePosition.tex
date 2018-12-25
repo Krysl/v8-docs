@@ -1,0 +1,72 @@
+\hypertarget{classv8_1_1internal_1_1SourcePosition}{}\section{v8\+:\+:internal\+:\+:Source\+Position Class Reference}
+\label{classv8_1_1internal_1_1SourcePosition}\index{v8\+::internal\+::\+Source\+Position@{v8\+::internal\+::\+Source\+Position}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SourcePosition_af0e99702f968696eb00b053940c27c3d}\label{classv8_1_1internal_1_1SourcePosition_af0e99702f968696eb00b053940c27c3d}} 
+{\bfseries Source\+Position} (\mbox{\hyperlink{classint}{int}} script\+\_\+offset, \mbox{\hyperlink{classint}{int}} inlining\+\_\+id=k\+Not\+Inlined)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SourcePosition_ac7845ddff63e1b193c963c60d743f0be}\label{classv8_1_1internal_1_1SourcePosition_ac7845ddff63e1b193c963c60d743f0be}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Known} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SourcePosition_a5270439ccccef04f79f86b6387f3755b}\label{classv8_1_1internal_1_1SourcePosition_a5270439ccccef04f79f86b6387f3755b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+Inlined} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SourcePosition_a971ea498185d3fe8788739d5002e33f7}\label{classv8_1_1internal_1_1SourcePosition_a971ea498185d3fe8788739d5002e33f7}} 
+std\+::vector$<$ \mbox{\hyperlink{structv8_1_1internal_1_1SourcePositionInfo}{Source\+Position\+Info}} $>$ {\bfseries Inlining\+Stack} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ code) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SourcePosition_a1d4705a4df0f0c16c8df90647f84ed79}\label{classv8_1_1internal_1_1SourcePosition_a1d4705a4df0f0c16c8df90647f84ed79}} 
+std\+::vector$<$ \mbox{\hyperlink{structv8_1_1internal_1_1SourcePositionInfo}{Source\+Position\+Info}} $>$ {\bfseries Inlining\+Stack} (\mbox{\hyperlink{classv8_1_1internal_1_1OptimizedCompilationInfo}{Optimized\+Compilation\+Info}} $\ast$cinfo) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SourcePosition_af2fa78f51547121e8b7fbf221369d1b1}\label{classv8_1_1internal_1_1SourcePosition_af2fa78f51547121e8b7fbf221369d1b1}} 
+void {\bfseries Print} (std\+::ostream \&out, \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} code) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SourcePosition_afba5470728af203c593993f55d1324de}\label{classv8_1_1internal_1_1SourcePosition_afba5470728af203c593993f55d1324de}} 
+void {\bfseries Print\+Json} (std\+::ostream \&out) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SourcePosition_a303c0c4fa47bd9368489bdd75b5931ec}\label{classv8_1_1internal_1_1SourcePosition_a303c0c4fa47bd9368489bdd75b5931ec}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Script\+Offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SourcePosition_a4f6f04a3737d21954fe3773063b46f2f}\label{classv8_1_1internal_1_1SourcePosition_a4f6f04a3737d21954fe3773063b46f2f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Inlining\+Id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SourcePosition_a4d0477ee08373342de4898036fa76497}\label{classv8_1_1internal_1_1SourcePosition_a4d0477ee08373342de4898036fa76497}} 
+void {\bfseries Set\+Script\+Offset} (\mbox{\hyperlink{classint}{int}} script\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SourcePosition_a64ec29311418609cc62efd1399244a3c}\label{classv8_1_1internal_1_1SourcePosition_a64ec29311418609cc62efd1399244a3c}} 
+void {\bfseries Set\+Inlining\+Id} (\mbox{\hyperlink{classint}{int}} inlining\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SourcePosition_a1da880a0dca3efaa16f5ea2fe6a73058}\label{classv8_1_1internal_1_1SourcePosition_a1da880a0dca3efaa16f5ea2fe6a73058}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+No\+Source\+Position==-\/1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SourcePosition_a54969e55ca67bfe1f234d84e0e5b7069}\label{classv8_1_1internal_1_1SourcePosition_a54969e55ca67bfe1f234d84e0e5b7069}} 
+\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} {\bfseries raw} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SourcePosition_a55c6238897a170cf326f1387d12fddc3}\label{classv8_1_1internal_1_1SourcePosition_a55c6238897a170cf326f1387d12fddc3}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1SourcePosition}{Source\+Position}} {\bfseries Unknown} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SourcePosition_a0dda2b6075541741eb2101ac49965c9e}\label{classv8_1_1internal_1_1SourcePosition_a0dda2b6075541741eb2101ac49965c9e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1SourcePosition}{Source\+Position}} {\bfseries From\+Raw} (\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} raw)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SourcePosition_a82ff8870419b8c79f71ed1093390b277}\label{classv8_1_1internal_1_1SourcePosition_a82ff8870419b8c79f71ed1093390b277}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Not\+Inlined} = -\/1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 31 of file source-\/position.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/source-\/position.\+h\item 
+v8/src/source-\/position.\+cc\end{DoxyCompactItemize}

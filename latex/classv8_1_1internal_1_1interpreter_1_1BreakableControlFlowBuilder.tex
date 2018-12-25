@@ -1,0 +1,87 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Breakable\+Control\+Flow\+Builder Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder}\index{v8\+::internal\+::interpreter\+::\+Breakable\+Control\+Flow\+Builder@{v8\+::internal\+::interpreter\+::\+Breakable\+Control\+Flow\+Builder}}
+Inheritance diagram for v8\+:\+:internal\+:\+:interpreter\+:\+:Breakable\+Control\+Flow\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.761006cm]{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a2907cd33105e8d774aaaad0f8e0707e4}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a2907cd33105e8d774aaaad0f8e0707e4}} 
+{\bfseries Breakable\+Control\+Flow\+Builder} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayBuilder}{Bytecode\+Array\+Builder}} $\ast$builder, \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder}{Block\+Coverage\+Builder}} $\ast$block\+\_\+coverage\+\_\+builder, \mbox{\hyperlink{classv8_1_1internal_1_1AstNode}{Ast\+Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_ace27cb19fc5e5324faed5df2d7f82cd6}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_ace27cb19fc5e5324faed5df2d7f82cd6}} 
+void {\bfseries Break} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a5033f44e31ae4e4a57e40e343fe16839}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a5033f44e31ae4e4a57e40e343fe16839}} 
+void {\bfseries Break\+If\+True} (Bytecode\+Array\+Builder\+::\+To\+Boolean\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_ad0ecba9e2bed4dcaa0f3b1625b75efed}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_ad0ecba9e2bed4dcaa0f3b1625b75efed}} 
+void {\bfseries Break\+If\+False} (Bytecode\+Array\+Builder\+::\+To\+Boolean\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a6b2505084ac90c72908f416b23bff6b4}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a6b2505084ac90c72908f416b23bff6b4}} 
+void {\bfseries Break\+If\+Undefined} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a84be8f1a74d6fea4681b20d50ceed260}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a84be8f1a74d6fea4681b20d50ceed260}} 
+void {\bfseries Break\+If\+Null} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a28660d839c35f19f8e8fd80f62f43589}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a28660d839c35f19f8e8fd80f62f43589}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeLabels}{Bytecode\+Labels}} $\ast$ {\bfseries break\+\_\+labels} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a1b6cefdb9a019e03095ef4c3202bc3c7}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a1b6cefdb9a019e03095ef4c3202bc3c7}} 
+void {\bfseries set\+\_\+needs\+\_\+continuation\+\_\+counter} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a114ccdc2bf4787419e2366028928f213}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a114ccdc2bf4787419e2366028928f213}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries needs\+\_\+continuation\+\_\+counter} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_ac2d6bf7863cabdb0869aa9001338feb0}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_ac2d6bf7863cabdb0869aa9001338feb0}} 
+void {\bfseries Emit\+Jump} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeLabels}{Bytecode\+Labels}} $\ast$labels)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a6ffb3f15536938b1be9d3cac1aa66656}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a6ffb3f15536938b1be9d3cac1aa66656}} 
+void {\bfseries Emit\+Jump\+If\+True} (Bytecode\+Array\+Builder\+::\+To\+Boolean\+Mode mode, \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeLabels}{Bytecode\+Labels}} $\ast$labels)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a9a7757131da38447e753b134d2ee4d42}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a9a7757131da38447e753b134d2ee4d42}} 
+void {\bfseries Emit\+Jump\+If\+False} (Bytecode\+Array\+Builder\+::\+To\+Boolean\+Mode mode, \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeLabels}{Bytecode\+Labels}} $\ast$labels)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a5b2bd24738f3ad4c1177a6e7869753b8}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a5b2bd24738f3ad4c1177a6e7869753b8}} 
+void {\bfseries Emit\+Jump\+If\+Undefined} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeLabels}{Bytecode\+Labels}} $\ast$labels)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a95c6a22e3731e9debb51bd83c2347bcf}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a95c6a22e3731e9debb51bd83c2347bcf}} 
+void {\bfseries Emit\+Jump\+If\+Null} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeLabels}{Bytecode\+Labels}} $\ast$labels)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a4bf60a2d400acd42265c5a75e92380be}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a4bf60a2d400acd42265c5a75e92380be}} 
+void {\bfseries Bind\+Break\+Target} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a20ee6311600856bd0c46794fe5d63b3d}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a20ee6311600856bd0c46794fe5d63b3d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeLabels}{Bytecode\+Labels}} {\bfseries break\+\_\+labels\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a33d9a14b910d51e8f24627657474a70c}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_a33d9a14b910d51e8f24627657474a70c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1AstNode}{Ast\+Node}} $\ast$ {\bfseries node\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_ac2abe1ece44643459ad0652f37f1f7ed}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_ac2abe1ece44643459ad0652f37f1f7ed}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries needs\+\_\+continuation\+\_\+counter\+\_\+} = false
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_aca7c8e9086bca5eddd881cee9c79390a}\label{classv8_1_1internal_1_1interpreter_1_1BreakableControlFlowBuilder_aca7c8e9086bca5eddd881cee9c79390a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder}{Block\+Coverage\+Builder}} $\ast$ {\bfseries block\+\_\+coverage\+\_\+builder\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 34 of file control-\/flow-\/builders.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/interpreter/control-\/flow-\/builders.\+h\item 
+v8/src/interpreter/control-\/flow-\/builders.\+cc\end{DoxyCompactItemize}

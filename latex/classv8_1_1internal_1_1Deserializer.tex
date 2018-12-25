@@ -1,0 +1,106 @@
+\hypertarget{classv8_1_1internal_1_1Deserializer}{}\section{v8\+:\+:internal\+:\+:Deserializer Class Reference}
+\label{classv8_1_1internal_1_1Deserializer}\index{v8\+::internal\+::\+Deserializer@{v8\+::internal\+::\+Deserializer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Deserializer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.641509cm]{classv8_1_1internal_1_1Deserializer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a7ddc0f395c112a6d124311cd7567ce83}\label{classv8_1_1internal_1_1Deserializer_a7ddc0f395c112a6d124311cd7567ce83}} 
+void {\bfseries Set\+Rehashability} (\mbox{\hyperlink{classbool}{bool}} v)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a3139d45a84bc2b1eca5691231e58bb9e}\label{classv8_1_1internal_1_1Deserializer_a3139d45a84bc2b1eca5691231e58bb9e}} 
+{\footnotesize template$<$class Data $>$ }\\{\bfseries Deserializer} (\mbox{\hyperlink{classv8_1_1Data}{Data}} $\ast$data, \mbox{\hyperlink{classbool}{bool}} deserializing\+\_\+user\+\_\+code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a1466d0682628662163d3b9fbaab41a1e}\label{classv8_1_1internal_1_1Deserializer_a1466d0682628662163d3b9fbaab41a1e}} 
+void {\bfseries Initialize} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a89963f6dbee71f8241c29da5d8c9e4df}\label{classv8_1_1internal_1_1Deserializer_a89963f6dbee71f8241c29da5d8c9e4df}} 
+void {\bfseries Deserialize\+Deferred\+Objects} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_aafd133208a6d73b6882a0b6fc9f4bfc2}\label{classv8_1_1internal_1_1Deserializer_aafd133208a6d73b6882a0b6fc9f4bfc2}} 
+void {\bfseries Log\+New\+Object\+Events} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_afb15f3186fa9d8bcc584a3e350ce007c}\label{classv8_1_1internal_1_1Deserializer_afb15f3186fa9d8bcc584a3e350ce007c}} 
+void {\bfseries Log\+Script\+Events} (\mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $\ast$script)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a5bebec2574c347f736a4dc5cd40ff9a5}\label{classv8_1_1internal_1_1Deserializer_a5bebec2574c347f736a4dc5cd40ff9a5}} 
+void {\bfseries Log\+New\+Map\+Events} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a5d171b0586015f2e9988cac14149d41b}\label{classv8_1_1internal_1_1Deserializer_a5d171b0586015f2e9988cac14149d41b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$ {\bfseries Get\+Back\+Referenced\+Object} (\mbox{\hyperlink{classint}{int}} space)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a83f278e70cb5e98cc018ea0f00a1947b}\label{classv8_1_1internal_1_1Deserializer_a83f278e70cb5e98cc018ea0f00a1947b}} 
+void {\bfseries Add\+Attached\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ attached\+\_\+object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_ae09ee5548d1a9f0058991b3b267e0bbf}\label{classv8_1_1internal_1_1Deserializer_ae09ee5548d1a9f0058991b3b267e0bbf}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a8ed322dd624bc6248909742c244daca3}\label{classv8_1_1internal_1_1Deserializer_a8ed322dd624bc6248909742c244daca3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1SnapshotByteSource}{Snapshot\+Byte\+Source}} $\ast$ {\bfseries source} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a80bb6b1dc425702d88d3b65d9e61af4f}\label{classv8_1_1internal_1_1Deserializer_a80bb6b1dc425702d88d3b65d9e61af4f}} 
+const std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1AllocationSite}{Allocation\+Site}} $\ast$ $>$ \& {\bfseries new\+\_\+allocation\+\_\+sites} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a067fbe5da0f7d5e5e4ad9cc4264f77fd}\label{classv8_1_1internal_1_1Deserializer_a067fbe5da0f7d5e5e4ad9cc4264f77fd}} 
+const std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ \& {\bfseries new\+\_\+code\+\_\+objects} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a7fb67a5fc9f74bd05d66c47be6a58d6d}\label{classv8_1_1internal_1_1Deserializer_a7fb67a5fc9f74bd05d66c47be6a58d6d}} 
+const std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ \& {\bfseries new\+\_\+maps} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a6905aa08c09a9463c04d1388167f5860}\label{classv8_1_1internal_1_1Deserializer_a6905aa08c09a9463c04d1388167f5860}} 
+const std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1AccessorInfo}{Accessor\+Info}} $\ast$ $>$ \& {\bfseries accessor\+\_\+infos} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_af8ceb949b6fe5c3e2759059b789512dc}\label{classv8_1_1internal_1_1Deserializer_af8ceb949b6fe5c3e2759059b789512dc}} 
+const std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CallHandlerInfo}{Call\+Handler\+Info}} $\ast$ $>$ \& {\bfseries call\+\_\+handler\+\_\+infos} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a9900ef2c027a50ddee644c2a29811504}\label{classv8_1_1internal_1_1Deserializer_a9900ef2c027a50ddee644c2a29811504}} 
+const std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ $>$ \& {\bfseries new\+\_\+internalized\+\_\+strings} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_aad92226e8ccc3690223245d1b0b338b9}\label{classv8_1_1internal_1_1Deserializer_aad92226e8ccc3690223245d1b0b338b9}} 
+const std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $>$ $>$ \& {\bfseries new\+\_\+scripts} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a49ef689eeafac337b0c03c36af6b1e06}\label{classv8_1_1internal_1_1Deserializer_a49ef689eeafac337b0c03c36af6b1e06}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1DeserializerAllocator}{Deserializer\+Allocator}} $\ast$ {\bfseries allocator} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a1459b2a7b0998a3a30e56b5f14eeba06}\label{classv8_1_1internal_1_1Deserializer_a1459b2a7b0998a3a30e56b5f14eeba06}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries deserializing\+\_\+user\+\_\+code} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a6c8b74c1dbaca3da043bc38c9f2385b4}\label{classv8_1_1internal_1_1Deserializer_a6c8b74c1dbaca3da043bc38c9f2385b4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries can\+\_\+rehash} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a44c58f1efaced2dc0f286382598dec26}\label{classv8_1_1internal_1_1Deserializer_a44c58f1efaced2dc0f286382598dec26}} 
+void {\bfseries Rehash} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a1382ad0863b0ac0a93f8043c663cd9b9}\label{classv8_1_1internal_1_1Deserializer_a1382ad0863b0ac0a93f8043c663cd9b9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deserializer_a235ef6d95e010ab42f7277082620cb0a}\label{classv8_1_1internal_1_1Deserializer_a235ef6d95e010ab42f7277082620cb0a}} 
+class {\bfseries Deserializer\+Allocator}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 37 of file deserializer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/snapshot/deserializer.\+h\item 
+v8/src/snapshot/deserializer.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,99 @@
+\hypertarget{classv8_1_1internal_1_1HeapNumberBase}{}\section{v8\+:\+:internal\+:\+:Heap\+Number\+Base Class Reference}
+\label{classv8_1_1internal_1_1HeapNumberBase}\index{v8\+::internal\+::\+Heap\+Number\+Base@{v8\+::internal\+::\+Heap\+Number\+Base}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Heap\+Number\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1HeapNumberBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapNumberBase_a975a993f5b12dbd32bb4b1ca637559c6}\label{classv8_1_1internal_1_1HeapNumberBase_a975a993f5b12dbd32bb4b1ca637559c6}} 
+double {\bfseries value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapNumberBase_ac035c918847581ac617b073597e45fbf}\label{classv8_1_1internal_1_1HeapNumberBase_ac035c918847581ac617b073597e45fbf}} 
+void {\bfseries set\+\_\+value} (double value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapNumberBase_a5ade44b6d58022a1b34e89945a9e4e1c}\label{classv8_1_1internal_1_1HeapNumberBase_a5ade44b6d58022a1b34e89945a9e4e1c}} 
+uint64\+\_\+t {\bfseries value\+\_\+as\+\_\+bits} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapNumberBase_ac38230539997a8936014db858e2dfde4}\label{classv8_1_1internal_1_1HeapNumberBase_ac38230539997a8936014db858e2dfde4}} 
+void {\bfseries set\+\_\+value\+\_\+as\+\_\+bits} (uint64\+\_\+t bits)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapNumberBase_afab42639dab79c6aa2b55135292efe1d}\label{classv8_1_1internal_1_1HeapNumberBase_afab42639dab79c6aa2b55135292efe1d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries get\+\_\+exponent} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapNumberBase_a51e7aec30d5e95cfede1a6f3c92ad98b}\label{classv8_1_1internal_1_1HeapNumberBase_a51e7aec30d5e95cfede1a6f3c92ad98b}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries get\+\_\+sign} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapNumberBase_a581606e80f5862d01cb220125375e9cd}\label{classv8_1_1internal_1_1HeapNumberBase_a581606e80f5862d01cb220125375e9cd}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Value\+Offset} = Heap\+Object\+::k\+Header\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapNumberBase_a34e125631e2f4ec3a5365cbec4236598}\label{classv8_1_1internal_1_1HeapNumberBase_a34e125631e2f4ec3a5365cbec4236598}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Size} = k\+Value\+Offset + k\+Double\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapNumberBase_a223ed39af6ab7810a4e2aea55f848be9}\label{classv8_1_1internal_1_1HeapNumberBase_a223ed39af6ab7810a4e2aea55f848be9}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Sign\+Mask} = 0x80000000u
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapNumberBase_a65bb9b45b5f19851137474c1fb99b3a8}\label{classv8_1_1internal_1_1HeapNumberBase_a65bb9b45b5f19851137474c1fb99b3a8}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Exponent\+Mask} = 0x7ff00000u
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapNumberBase_aa722388106fdce183900cb4303bf958e}\label{classv8_1_1internal_1_1HeapNumberBase_aa722388106fdce183900cb4303bf958e}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Mantissa\+Mask} = 0xfffffu
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapNumberBase_a3ce0afe3e3cfbe9065959d99e1533f56}\label{classv8_1_1internal_1_1HeapNumberBase_a3ce0afe3e3cfbe9065959d99e1533f56}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Mantissa\+Bits} = 52
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapNumberBase_a8bd66a945f22e6fd8da0fc459a1e0469}\label{classv8_1_1internal_1_1HeapNumberBase_a8bd66a945f22e6fd8da0fc459a1e0469}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Exponent\+Bits} = 11
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapNumberBase_ab68ddc8c2e25e3320005b3b63dadeb17}\label{classv8_1_1internal_1_1HeapNumberBase_ab68ddc8c2e25e3320005b3b63dadeb17}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Exponent\+Bias} = 1023
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapNumberBase_a5e500a46e0aef75cb934f0f2f9485347}\label{classv8_1_1internal_1_1HeapNumberBase_a5e500a46e0aef75cb934f0f2f9485347}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Exponent\+Shift} = 20
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Infinity\+Or\+Nan\+Exponent}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapNumberBase_a0dcd1eaefe47c839d9f6f9552e06b085}\label{classv8_1_1internal_1_1HeapNumberBase_a0dcd1eaefe47c839d9f6f9552e06b085}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Mantissa\+Bits\+In\+Top\+Word} = 20
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapNumberBase_a19495a439dc49a51dc7622b52909c2a1}\label{classv8_1_1internal_1_1HeapNumberBase_a19495a439dc49a51dc7622b52909c2a1}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Non\+Mantissa\+Bits\+In\+Top\+Word} = 12
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1238 of file objects.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapNumberBase_a922e2190daca1bdcc09489b13ccab4d1}\label{classv8_1_1internal_1_1HeapNumberBase_a922e2190daca1bdcc09489b13ccab4d1}} 
+\index{v8\+::internal\+::\+Heap\+Number\+Base@{v8\+::internal\+::\+Heap\+Number\+Base}!k\+Infinity\+Or\+Nan\+Exponent@{k\+Infinity\+Or\+Nan\+Exponent}}
+\index{k\+Infinity\+Or\+Nan\+Exponent@{k\+Infinity\+Or\+Nan\+Exponent}!v8\+::internal\+::\+Heap\+Number\+Base@{v8\+::internal\+::\+Heap\+Number\+Base}}
+\subsubsection{\texorpdfstring{k\+Infinity\+Or\+Nan\+Exponent}{kInfinityOrNanExponent}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Heap\+Number\+Base\+::k\+Infinity\+Or\+Nan\+Exponent\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      (kExponentMask >> kExponentShift) - kExponentBias
+\end{DoxyCode}
+
+
+Definition at line 1274 of file objects.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects.\+h\item 
+v8/src/objects-\/inl.\+h\end{DoxyCompactItemize}

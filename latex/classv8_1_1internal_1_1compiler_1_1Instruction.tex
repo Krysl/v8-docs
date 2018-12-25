@@ -1,0 +1,187 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Instruction Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1Instruction}\index{v8\+::internal\+::compiler\+::\+Instruction@{v8\+::internal\+::compiler\+::\+Instruction}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_ac16ebb6b4b65e5787eebc6ddeb3ed53a}\label{classv8_1_1internal_1_1compiler_1_1Instruction_ac16ebb6b4b65e5787eebc6ddeb3ed53a}} 
+enum {\bfseries Gap\+Position} \{ {\bfseries S\+T\+A\+RT}, 
+{\bfseries E\+ND}, 
+{\bfseries F\+I\+R\+S\+T\+\_\+\+G\+A\+P\+\_\+\+P\+O\+S\+I\+T\+I\+ON} = S\+T\+A\+RT, 
+{\bfseries L\+A\+S\+T\+\_\+\+G\+A\+P\+\_\+\+P\+O\+S\+I\+T\+I\+ON} = E\+ND
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_ad7b056aedc5ce9b3c2fe5385c6633727}\label{classv8_1_1internal_1_1compiler_1_1Instruction_ad7b056aedc5ce9b3c2fe5385c6633727}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1BitField}{Bit\+Field}}$<$ \mbox{\hyperlink{classsize__t}{size\+\_\+t}}, 0, 8 $>$ {\bfseries Output\+Count\+Field}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a541589c9df1453b674ee550f17efd83b}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a541589c9df1453b674ee550f17efd83b}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1BitField}{Bit\+Field}}$<$ \mbox{\hyperlink{classsize__t}{size\+\_\+t}}, 8, 16 $>$ {\bfseries Input\+Count\+Field}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a4b71e02061ae1993e77fb58c8c1ecb49}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a4b71e02061ae1993e77fb58c8c1ecb49}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1BitField}{Bit\+Field}}$<$ \mbox{\hyperlink{classsize__t}{size\+\_\+t}}, 24, 6 $>$ {\bfseries Temp\+Count\+Field}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a4a465b1fc5059a8d795fb74318664145}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a4a465b1fc5059a8d795fb74318664145}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Output\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_ae8311382e8213ded1bf5c6fb94e983bf}\label{classv8_1_1internal_1_1compiler_1_1Instruction_ae8311382e8213ded1bf5c6fb94e983bf}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} $\ast$ {\bfseries Output\+At} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} i) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a244a50b359370eedfd35f0fa9682e845}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a244a50b359370eedfd35f0fa9682e845}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} $\ast$ {\bfseries Output\+At} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} i)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_ab44f7f201d5157dde715060a31ba8782}\label{classv8_1_1internal_1_1compiler_1_1Instruction_ab44f7f201d5157dde715060a31ba8782}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Output} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a7508ac0758452caf0d38562f660ba60d}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a7508ac0758452caf0d38562f660ba60d}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} $\ast$ {\bfseries Output} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_ab6305d1e22397656b2c79ada42c90ed2}\label{classv8_1_1internal_1_1compiler_1_1Instruction_ab6305d1e22397656b2c79ada42c90ed2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} $\ast$ {\bfseries Output} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a7397ee156e6480bacb532b0c9a8a9600}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a7397ee156e6480bacb532b0c9a8a9600}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Input\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a251b5a8aa6e4f3fe251c9c0a47b62c8f}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a251b5a8aa6e4f3fe251c9c0a47b62c8f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} $\ast$ {\bfseries Input\+At} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} i) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a458a91f87d064cb25ecbe586e8859fce}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a458a91f87d064cb25ecbe586e8859fce}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} $\ast$ {\bfseries Input\+At} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} i)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a137497f10530d39a31901f1ae68b4c11}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a137497f10530d39a31901f1ae68b4c11}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Temp\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a831e4cbd39906543b4c3bc42e7bacd46}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a831e4cbd39906543b4c3bc42e7bacd46}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} $\ast$ {\bfseries Temp\+At} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} i) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_aae4cf77af5d3b828be7130686643b7a6}\label{classv8_1_1internal_1_1compiler_1_1Instruction_aae4cf77af5d3b828be7130686643b7a6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} $\ast$ {\bfseries Temp\+At} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} i)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a3073637a83dfb080f4163832e16c1f75}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a3073637a83dfb080f4163832e16c1f75}} 
+Instruction\+Code {\bfseries opcode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a110e8decb235f9f15274d9ba08215f0a}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a110e8decb235f9f15274d9ba08215f0a}} 
+Arch\+Opcode {\bfseries arch\+\_\+opcode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a6071d298148db31de7ad9b26003468d9}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a6071d298148db31de7ad9b26003468d9}} 
+Addressing\+Mode {\bfseries addressing\+\_\+mode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a1ddc16901774a387ac514c8a766115b6}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a1ddc16901774a387ac514c8a766115b6}} 
+Flags\+Mode {\bfseries flags\+\_\+mode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a809fc6f536900a7da8ad7b3f33d451ce}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a809fc6f536900a7da8ad7b3f33d451ce}} 
+Flags\+Condition {\bfseries flags\+\_\+condition} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a04bcb34c6fc1372b297ad05de333d338}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a04bcb34c6fc1372b297ad05de333d338}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Instruction}{Instruction}} $\ast$ {\bfseries Mark\+As\+Call} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a0fda28324d2637361f573fea3c7c33f7}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a0fda28324d2637361f573fea3c7c33f7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Call} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a9fc25f86458ae866f77f2e0ab43b5631}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a9fc25f86458ae866f77f2e0ab43b5631}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Needs\+Reference\+Map} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a70e0c2a82ef36ba01083b5d9628f9908}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a70e0c2a82ef36ba01083b5d9628f9908}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Reference\+Map} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a96f0f7f37f3f1efae3f67033dd3d4804}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a96f0f7f37f3f1efae3f67033dd3d4804}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Clobbers\+Registers} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a0333dbe99da42540933ef00fb60a6497}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a0333dbe99da42540933ef00fb60a6497}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Clobbers\+Temps} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a60d5c91b44a8e3c0caf66c4245d8989d}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a60d5c91b44a8e3c0caf66c4245d8989d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Clobbers\+Double\+Registers} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a4deb2573de4778a5521ddab58417a00e}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a4deb2573de4778a5521ddab58417a00e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1ReferenceMap}{Reference\+Map}} $\ast$ {\bfseries reference\+\_\+map} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_ab7794f633e3aae61d2d04377b86fdca2}\label{classv8_1_1internal_1_1compiler_1_1Instruction_ab7794f633e3aae61d2d04377b86fdca2}} 
+void {\bfseries set\+\_\+reference\+\_\+map} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1ReferenceMap}{Reference\+Map}} $\ast$map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_adb7d2016a2552537b0e3b745f97f40ea}\label{classv8_1_1internal_1_1compiler_1_1Instruction_adb7d2016a2552537b0e3b745f97f40ea}} 
+void {\bfseries Overwrite\+With\+Nop} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_aabdaed9c8a364750937952985e88cb72}\label{classv8_1_1internal_1_1compiler_1_1Instruction_aabdaed9c8a364750937952985e88cb72}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Nop} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a03df6fda0669b277368902600f399798}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a03df6fda0669b277368902600f399798}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Deoptimize\+Call} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_ac0fcbafadd6fd4caa9e70df32599973f}\label{classv8_1_1internal_1_1compiler_1_1Instruction_ac0fcbafadd6fd4caa9e70df32599973f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Trap} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_acd8f7f05fa57a36ab5e2886cc072c6cf}\label{classv8_1_1internal_1_1compiler_1_1Instruction_acd8f7f05fa57a36ab5e2886cc072c6cf}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Jump} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a3b52b369aa07340d6df374a901a7cd86}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a3b52b369aa07340d6df374a901a7cd86}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Ret} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a7f5a841cdb2c1d19894a1060fa8a9323}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a7f5a841cdb2c1d19894a1060fa8a9323}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Tail\+Call} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_ade57ee3e49f7eb783dc4ef4b5e2fc54e}\label{classv8_1_1internal_1_1compiler_1_1Instruction_ade57ee3e49f7eb783dc4ef4b5e2fc54e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Throw} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a5965a0a4c7e6c4f31d51593f41eda19c}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a5965a0a4c7e6c4f31d51593f41eda19c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1ParallelMove}{Parallel\+Move}} $\ast$ {\bfseries Get\+Or\+Create\+Parallel\+Move} (Gap\+Position pos, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_ae22ba27557d85b3a917b460da496a233}\label{classv8_1_1internal_1_1compiler_1_1Instruction_ae22ba27557d85b3a917b460da496a233}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1ParallelMove}{Parallel\+Move}} $\ast$ {\bfseries Get\+Parallel\+Move} (Gap\+Position pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a86d2da3790fc2f42eec136dae23d9c7a}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a86d2da3790fc2f42eec136dae23d9c7a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1ParallelMove}{Parallel\+Move}} $\ast$ {\bfseries Get\+Parallel\+Move} (Gap\+Position pos) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a8411f3332ae945845526f186f13cfe16}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a8411f3332ae945845526f186f13cfe16}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Are\+Moves\+Redundant} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a6004a060dda98a36ce68f15e7671a447}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a6004a060dda98a36ce68f15e7671a447}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1ParallelMove}{Parallel\+Move}} $\ast$const  $\ast$ {\bfseries parallel\+\_\+moves} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a387dcda3aa7c8025df0473b3a306e3b1}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a387dcda3aa7c8025df0473b3a306e3b1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1ParallelMove}{Parallel\+Move}} $\ast$$\ast$ {\bfseries parallel\+\_\+moves} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a1b77853988e69e23d99a1d56ed2ab17d}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a1b77853988e69e23d99a1d56ed2ab17d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionBlock}{Instruction\+Block}} $\ast$ {\bfseries block} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_aefa319cc23338ef774a5001824189208}\label{classv8_1_1internal_1_1compiler_1_1Instruction_aefa319cc23338ef774a5001824189208}} 
+void {\bfseries set\+\_\+block} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionBlock}{Instruction\+Block}} $\ast$block)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a9e6d51d16c006654aa9b966f213b4704}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a9e6d51d16c006654aa9b966f213b4704}} 
+void {\bfseries Print} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a62ca7574f6fe058cae23d3a3b59866b3}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a62ca7574f6fe058cae23d3a3b59866b3}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Instruction}{Instruction}} $\ast$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, Instruction\+Code opcode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_aa1017ec442404b7318ebbba64fa33c8e}\label{classv8_1_1internal_1_1compiler_1_1Instruction_aa1017ec442404b7318ebbba64fa33c8e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Instruction}{Instruction}} $\ast$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, Instruction\+Code opcode, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} output\+\_\+count, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} $\ast$outputs, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} input\+\_\+count, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} $\ast$inputs, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} temp\+\_\+count, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} $\ast$temps)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a930a334f132f75a1ec49fa3800f4f1a8}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a930a334f132f75a1ec49fa3800f4f1a8}} 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Max\+Output\+Count} = Output\+Count\+Field\+::k\+Max
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_af7eaf97100daf27ac13aa3d865e59e88}\label{classv8_1_1internal_1_1compiler_1_1Instruction_af7eaf97100daf27ac13aa3d865e59e88}} 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Max\+Input\+Count} = Input\+Count\+Field\+::k\+Max
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Instruction_a6633fd2ba6cba2934880852c9275ca95}\label{classv8_1_1internal_1_1compiler_1_1Instruction_a6633fd2ba6cba2934880852c9275ca95}} 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Max\+Temp\+Count} = Temp\+Count\+Field\+::k\+Max
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 767 of file instruction.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/backend/instruction.\+h\item 
+v8/src/compiler/backend/instruction.\+cc\end{DoxyCompactItemize}

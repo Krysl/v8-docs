@@ -1,20 +1,26 @@
 \hypertarget{classv8_1_1ValueSerializer_1_1Delegate}{}\section{v8\+:\+:Value\+Serializer\+:\+:Delegate Class Reference}
 \label{classv8_1_1ValueSerializer_1_1Delegate}\index{v8\+::\+Value\+Serializer\+::\+Delegate@{v8\+::\+Value\+Serializer\+::\+Delegate}}
+Inheritance diagram for v8\+:\+:Value\+Serializer\+:\+:Delegate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1ValueSerializer_1_1Delegate}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{classv8_1_1ValueSerializer_1_1Delegate_a3681bfcd9a6c45f0b12bd7a8bdf34d85}{Throw\+Data\+Clone\+Error}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ message)=0
 \item 
-virtual \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ bool $>$ \mbox{\hyperlink{classv8_1_1ValueSerializer_1_1Delegate_ae97808060b22d7a94517f725922b72c6}{Write\+Host\+Object}} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{Object}} $>$ object)
+virtual \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ \mbox{\hyperlink{classv8_1_1ValueSerializer_1_1Delegate_a9cdf9bb45300507456548161cbe656b5}{Write\+Host\+Object}} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{Object}} $>$ object)
 \item 
-virtual \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{classv8_1_1ValueSerializer_1_1Delegate_a963946ef185d992552e8d9e0e4016137}{Get\+Shared\+Array\+Buffer\+Id}} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}} $>$ shared\+\_\+array\+\_\+buffer)
+virtual \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} $>$ \mbox{\hyperlink{classv8_1_1ValueSerializer_1_1Delegate_ac12b5cfd7480c19f0b9af0b47d05a77e}{Get\+Shared\+Array\+Buffer\+Id}} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}} $>$ shared\+\_\+array\+\_\+buffer)
 \item 
-\mbox{\Hypertarget{classv8_1_1ValueSerializer_1_1Delegate_aa4dada6ecdbb5e3ba4189bfb7c5ffc80}\label{classv8_1_1ValueSerializer_1_1Delegate_aa4dada6ecdbb5e3ba4189bfb7c5ffc80}} 
-virtual \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ uint32\+\_\+t $>$ {\bfseries Get\+Wasm\+Module\+Transfer\+Id} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1WasmCompiledModule}{Wasm\+Compiled\+Module}} $>$ module)
+\mbox{\Hypertarget{classv8_1_1ValueSerializer_1_1Delegate_a148282d2c8de6413c47bef4b62bc487b}\label{classv8_1_1ValueSerializer_1_1Delegate_a148282d2c8de6413c47bef4b62bc487b}} 
+virtual \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} $>$ {\bfseries Get\+Wasm\+Module\+Transfer\+Id} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1WasmCompiledModule}{Wasm\+Compiled\+Module}} $>$ module)
 \item 
-virtual void $\ast$ \mbox{\hyperlink{classv8_1_1ValueSerializer_1_1Delegate_a28e0ab8d14f5c9391df47cf75b4594fc}{Reallocate\+Buffer\+Memory}} (void $\ast$old\+\_\+buffer, size\+\_\+t size, size\+\_\+t $\ast$actual\+\_\+size)
+virtual void $\ast$ \mbox{\hyperlink{classv8_1_1ValueSerializer_1_1Delegate_ade3ce68ebf5a3f3eba2f8f091177f155}{Reallocate\+Buffer\+Memory}} (void $\ast$old\+\_\+buffer, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} $\ast$actual\+\_\+size)
 \item 
-virtual void \mbox{\hyperlink{classv8_1_1ValueSerializer_1_1Delegate_a6cea3e757221e6e15b0fdb708482a176}{Free\+Buffer\+Memory}} (void $\ast$buffer)
+virtual void \mbox{\hyperlink{classv8_1_1ValueSerializer_1_1Delegate_a9cd4ab0061b4a26b4b0d695d31992f82}{Free\+Buffer\+Memory}} (void $\ast$buffer)
 \end{DoxyCompactItemize}
 
 
@@ -26,46 +32,79 @@ Definition at line 1879 of file v8.\+h.
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classv8_1_1ValueSerializer_1_1Delegate_a6cea3e757221e6e15b0fdb708482a176}\label{classv8_1_1ValueSerializer_1_1Delegate_a6cea3e757221e6e15b0fdb708482a176}} 
+\mbox{\Hypertarget{classv8_1_1ValueSerializer_1_1Delegate_a9cd4ab0061b4a26b4b0d695d31992f82}\label{classv8_1_1ValueSerializer_1_1Delegate_a9cd4ab0061b4a26b4b0d695d31992f82}} 
 \index{v8\+::\+Value\+Serializer\+::\+Delegate@{v8\+::\+Value\+Serializer\+::\+Delegate}!Free\+Buffer\+Memory@{Free\+Buffer\+Memory}}
 \index{Free\+Buffer\+Memory@{Free\+Buffer\+Memory}!v8\+::\+Value\+Serializer\+::\+Delegate@{v8\+::\+Value\+Serializer\+::\+Delegate}}
 \subsubsection{\texorpdfstring{Free\+Buffer\+Memory()}{FreeBufferMemory()}}
-{\footnotesize\ttfamily virtual void v8\+::\+Value\+Serializer\+::\+Delegate\+::\+Free\+Buffer\+Memory (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void v8\+::\+Value\+Serializer\+::\+Delegate\+::\+Free\+Buffer\+Memory (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 Frees a buffer allocated with $\vert$\+Reallocate\+Buffer\+Memory$\vert$.
 
-The default implementation uses the stdlib\textquotesingle{}s {\ttfamily free()} function. \mbox{\Hypertarget{classv8_1_1ValueSerializer_1_1Delegate_a963946ef185d992552e8d9e0e4016137}\label{classv8_1_1ValueSerializer_1_1Delegate_a963946ef185d992552e8d9e0e4016137}} 
+The default implementation uses the stdlib\textquotesingle{}s {\ttfamily free()} function. 
+
+Reimplemented in \mbox{\hyperlink{classv8_1_1Serializer_af406a9e21fccfce3a5faed52182a69a6}{v8\+::\+Serializer}}.
+
+
+
+Definition at line 3070 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1ValueSerializer_1_1Delegate_ac12b5cfd7480c19f0b9af0b47d05a77e}\label{classv8_1_1ValueSerializer_1_1Delegate_ac12b5cfd7480c19f0b9af0b47d05a77e}} 
 \index{v8\+::\+Value\+Serializer\+::\+Delegate@{v8\+::\+Value\+Serializer\+::\+Delegate}!Get\+Shared\+Array\+Buffer\+Id@{Get\+Shared\+Array\+Buffer\+Id}}
 \index{Get\+Shared\+Array\+Buffer\+Id@{Get\+Shared\+Array\+Buffer\+Id}!v8\+::\+Value\+Serializer\+::\+Delegate@{v8\+::\+Value\+Serializer\+::\+Delegate}}
 \subsubsection{\texorpdfstring{Get\+Shared\+Array\+Buffer\+Id()}{GetSharedArrayBufferId()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$uint32\+\_\+t$>$ v8\+::\+Value\+Serializer\+::\+Delegate\+::\+Get\+Shared\+Array\+Buffer\+Id (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}} $>$}]{shared\+\_\+array\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} $>$ v8\+::\+Value\+Serializer\+::\+Delegate\+::\+Get\+Shared\+Array\+Buffer\+Id (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}} $>$}]{shared\+\_\+array\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 Called when the \mbox{\hyperlink{classv8_1_1ValueSerializer}{Value\+Serializer}} is going to serialize a \mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}} object. The embedder must return an ID for the object, using the same ID if this \mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}} has already been serialized in this buffer. When deserializing, this ID will be passed to Value\+Deserializer\+::\+Get\+Shared\+Array\+Buffer\+From\+Id as $\vert$clone\+\_\+id$\vert$.
 
-If the object cannot be serialized, an exception should be thrown and Nothing$<$uint32\+\_\+t$>$() returned. \mbox{\Hypertarget{classv8_1_1ValueSerializer_1_1Delegate_a28e0ab8d14f5c9391df47cf75b4594fc}\label{classv8_1_1ValueSerializer_1_1Delegate_a28e0ab8d14f5c9391df47cf75b4594fc}} 
+If the object cannot be serialized, an exception should be thrown and Nothing$<$uint32\+\_\+t$>$() returned. 
+
+Reimplemented in \mbox{\hyperlink{classv8_1_1Serializer_a573f904a1db660126a98ecec16f142be}{v8\+::\+Serializer}}.
+
+
+
+Definition at line 3049 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1ValueSerializer_1_1Delegate_ade3ce68ebf5a3f3eba2f8f091177f155}\label{classv8_1_1ValueSerializer_1_1Delegate_ade3ce68ebf5a3f3eba2f8f091177f155}} 
 \index{v8\+::\+Value\+Serializer\+::\+Delegate@{v8\+::\+Value\+Serializer\+::\+Delegate}!Reallocate\+Buffer\+Memory@{Reallocate\+Buffer\+Memory}}
 \index{Reallocate\+Buffer\+Memory@{Reallocate\+Buffer\+Memory}!v8\+::\+Value\+Serializer\+::\+Delegate@{v8\+::\+Value\+Serializer\+::\+Delegate}}
 \subsubsection{\texorpdfstring{Reallocate\+Buffer\+Memory()}{ReallocateBufferMemory()}}
-{\footnotesize\ttfamily virtual void$\ast$ v8\+::\+Value\+Serializer\+::\+Delegate\+::\+Reallocate\+Buffer\+Memory (\begin{DoxyParamCaption}\item[{void $\ast$}]{old\+\_\+buffer,  }\item[{size\+\_\+t}]{size,  }\item[{size\+\_\+t $\ast$}]{actual\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void $\ast$ v8\+::\+Value\+Serializer\+::\+Delegate\+::\+Reallocate\+Buffer\+Memory (\begin{DoxyParamCaption}\item[{void $\ast$}]{old\+\_\+buffer,  }\item[{\mbox{\hyperlink{classsize__t}{size\+\_\+t}}}]{size,  }\item[{\mbox{\hyperlink{classsize__t}{size\+\_\+t}} $\ast$}]{actual\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 Allocates memory for the buffer of at least the size provided. The actual size (which may be greater or equal) is written to $\vert$actual\+\_\+size$\vert$. If no buffer has been allocated yet, nullptr will be provided.
 
 If the memory cannot be allocated, nullptr should be returned. $\vert$actual\+\_\+size$\vert$ will be ignored. It is assumed that $\vert$old\+\_\+buffer$\vert$ is still valid in this case and has not been modified.
 
-The default implementation uses the stdlib\textquotesingle{}s {\ttfamily realloc()} function. \mbox{\Hypertarget{classv8_1_1ValueSerializer_1_1Delegate_a3681bfcd9a6c45f0b12bd7a8bdf34d85}\label{classv8_1_1ValueSerializer_1_1Delegate_a3681bfcd9a6c45f0b12bd7a8bdf34d85}} 
+The default implementation uses the stdlib\textquotesingle{}s {\ttfamily realloc()} function. 
+
+Reimplemented in \mbox{\hyperlink{classv8_1_1Serializer_a0642983ee43067669e17c87411167a02}{v8\+::\+Serializer}}.
+
+
+
+Definition at line 3063 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1ValueSerializer_1_1Delegate_a3681bfcd9a6c45f0b12bd7a8bdf34d85}\label{classv8_1_1ValueSerializer_1_1Delegate_a3681bfcd9a6c45f0b12bd7a8bdf34d85}} 
 \index{v8\+::\+Value\+Serializer\+::\+Delegate@{v8\+::\+Value\+Serializer\+::\+Delegate}!Throw\+Data\+Clone\+Error@{Throw\+Data\+Clone\+Error}}
 \index{Throw\+Data\+Clone\+Error@{Throw\+Data\+Clone\+Error}!v8\+::\+Value\+Serializer\+::\+Delegate@{v8\+::\+Value\+Serializer\+::\+Delegate}}
 \subsubsection{\texorpdfstring{Throw\+Data\+Clone\+Error()}{ThrowDataCloneError()}}
 {\footnotesize\ttfamily virtual void v8\+::\+Value\+Serializer\+::\+Delegate\+::\+Throw\+Data\+Clone\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
-Handles the case where a Data\+Clone\+Error would be thrown in the structured clone spec. Other V8 embedders may throw some other appropriate exception type. \mbox{\Hypertarget{classv8_1_1ValueSerializer_1_1Delegate_ae97808060b22d7a94517f725922b72c6}\label{classv8_1_1ValueSerializer_1_1Delegate_ae97808060b22d7a94517f725922b72c6}} 
+Handles the case where a Data\+Clone\+Error would be thrown in the structured clone spec. Other V8 embedders may throw some other appropriate exception type. 
+
+Implemented in \mbox{\hyperlink{classv8_1_1Serializer_a97707713e9bfe28e117bd15d40e3afc6}{v8\+::\+Serializer}}.
+
+\mbox{\Hypertarget{classv8_1_1ValueSerializer_1_1Delegate_a9cdf9bb45300507456548161cbe656b5}\label{classv8_1_1ValueSerializer_1_1Delegate_a9cdf9bb45300507456548161cbe656b5}} 
 \index{v8\+::\+Value\+Serializer\+::\+Delegate@{v8\+::\+Value\+Serializer\+::\+Delegate}!Write\+Host\+Object@{Write\+Host\+Object}}
 \index{Write\+Host\+Object@{Write\+Host\+Object}!v8\+::\+Value\+Serializer\+::\+Delegate@{v8\+::\+Value\+Serializer\+::\+Delegate}}
 \subsubsection{\texorpdfstring{Write\+Host\+Object()}{WriteHostObject()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$bool$>$ v8\+::\+Value\+Serializer\+::\+Delegate\+::\+Write\+Host\+Object (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{Object}} $>$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ v8\+::\+Value\+Serializer\+::\+Delegate\+::\+Write\+Host\+Object (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{Object}} $>$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 The embedder overrides this method to write some kind of host object, if possible. If not, a suitable exception should be thrown and Nothing$<$bool$>$() returned. 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Definition at line 3040 of file api.\+cc.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8.\+h\end{DoxyCompactItemize}
+v8/include/v8.\+h\item 
+v8/src/api.\+cc\end{DoxyCompactItemize}

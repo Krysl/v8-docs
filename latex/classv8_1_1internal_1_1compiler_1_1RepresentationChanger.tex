@@ -1,0 +1,57 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationChanger}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Representation\+Changer Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1RepresentationChanger}\index{v8\+::internal\+::compiler\+::\+Representation\+Changer@{v8\+::internal\+::compiler\+::\+Representation\+Changer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_ab47d442dae0649a232840eaa9b8ede97}\label{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_ab47d442dae0649a232840eaa9b8ede97}} 
+{\bfseries Representation\+Changer} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSGraph}{J\+S\+Graph}} $\ast$jsgraph, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_ab0e2ad9e4430f46cba853cf357e41888}\label{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_ab0e2ad9e4430f46cba853cf357e41888}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Get\+Representation\+For} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, Machine\+Representation output\+\_\+rep, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} output\+\_\+type, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$use\+\_\+node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UseInfo}{Use\+Info}} use\+\_\+info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_a3557bda5a7d328d82d0bc8d947bf8012}\label{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_a3557bda5a7d328d82d0bc8d947bf8012}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int32\+Operator\+For} (Ir\+Opcode\+::\+Value opcode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_a3a487e97ba3463c4e189d4c7bb8b17b2}\label{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_a3a487e97ba3463c4e189d4c7bb8b17b2}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int32\+Overflow\+Operator\+For} (Ir\+Opcode\+::\+Value opcode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_aec6ba6173d43d8b364dd2898988146cf}\label{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_aec6ba6173d43d8b364dd2898988146cf}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int64\+Operator\+For} (Ir\+Opcode\+::\+Value opcode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_ab3356998ff3a07025087f2bf961627ff}\label{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_ab3356998ff3a07025087f2bf961627ff}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Tagged\+Signed\+Operator\+For} (Ir\+Opcode\+::\+Value opcode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_a3d0ab51e48ec788fbeda436c429b7489}\label{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_a3d0ab51e48ec788fbeda436c429b7489}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Uint32\+Operator\+For} (Ir\+Opcode\+::\+Value opcode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_a5e37586450e9bc1a753b2d49ffe6ba2e}\label{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_a5e37586450e9bc1a753b2d49ffe6ba2e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Uint32\+Overflow\+Operator\+For} (Ir\+Opcode\+::\+Value opcode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_af90ecce935332b99486eeca3d40c7788}\label{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_af90ecce935332b99486eeca3d40c7788}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Operator\+For} (Ir\+Opcode\+::\+Value opcode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_aaaf59fc19bc6087a9f51db1fd9393db1}\label{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_aaaf59fc19bc6087a9f51db1fd9393db1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} {\bfseries Type\+For\+Base\+Pointer} (const \mbox{\hyperlink{structv8_1_1internal_1_1compiler_1_1FieldAccess}{Field\+Access}} \&access)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_acfe2a682467a902aff834841f51de246}\label{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_acfe2a682467a902aff834841f51de246}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} {\bfseries Type\+For\+Base\+Pointer} (const \mbox{\hyperlink{structv8_1_1internal_1_1compiler_1_1ElementAccess}{Element\+Access}} \&access)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_a5656d08ac32912064eddbf38094fd134}\label{classv8_1_1internal_1_1compiler_1_1RepresentationChanger_a5656d08ac32912064eddbf38094fd134}} 
+class {\bfseries Representation\+Changer\+Tester}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 275 of file representation-\/change.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/representation-\/change.\+h\item 
+v8/src/compiler/representation-\/change.\+cc\end{DoxyCompactItemize}

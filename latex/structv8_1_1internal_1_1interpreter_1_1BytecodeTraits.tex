@@ -1,0 +1,173 @@
+\hypertarget{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecode\+Traits$<$ accumulator\+\_\+use, operands $>$ Struct Template Reference}
+\label{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits}\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits$<$ accumulator\+\_\+use, operands $>$@{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits$<$ accumulator\+\_\+use, operands $>$}}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const Operand\+Type {\bfseries k\+Operand\+Types} \mbox{[}$\,$\mbox{]}
+\item 
+static const Operand\+Type\+Info {\bfseries k\+Operand\+Type\+Infos} \mbox{[}$\,$\mbox{]}
+\item 
+static const Operand\+Size {\bfseries k\+Single\+Scale\+Operand\+Sizes} \mbox{[}$\,$\mbox{]}
+\item 
+static const Operand\+Size {\bfseries k\+Double\+Scale\+Operand\+Sizes} \mbox{[}$\,$\mbox{]}
+\item 
+static const Operand\+Size {\bfseries k\+Quadruple\+Scale\+Operand\+Sizes} \mbox{[}$\,$\mbox{]}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Single\+Scale\+Size}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Double\+Scale\+Size}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Quadruple\+Scale\+Size}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_acdcd362cba965b4cff5bddcb8b1a84e7}\label{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_acdcd362cba965b4cff5bddcb8b1a84e7}} 
+static const Accumulator\+Use {\bfseries k\+Accumulator\+Use} = accumulator\+\_\+use
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_afdaa3de1b46f8108a160e636c25a0b4e}\label{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_afdaa3de1b46f8108a160e636c25a0b4e}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Operand\+Count} = sizeof...(operands)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$Accumulator\+Use accumulator\+\_\+use, Operand\+Type... operands$>$\newline
+struct v8\+::internal\+::interpreter\+::\+Bytecode\+Traits$<$ accumulator\+\_\+use, operands $>$}
+
+
+
+Definition at line 80 of file bytecode-\/traits.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_a24bacf0524c0269b9a58771bbeb3ae1d}\label{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_a24bacf0524c0269b9a58771bbeb3ae1d}} 
+\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits@{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}!k\+Double\+Scale\+Operand\+Sizes@{k\+Double\+Scale\+Operand\+Sizes}}
+\index{k\+Double\+Scale\+Operand\+Sizes@{k\+Double\+Scale\+Operand\+Sizes}!v8\+::internal\+::interpreter\+::\+Bytecode\+Traits@{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}}
+\subsubsection{\texorpdfstring{k\+Double\+Scale\+Operand\+Sizes}{kDoubleScaleOperandSizes}}
+{\footnotesize\ttfamily template$<$Accumulator\+Use accumulator\+\_\+use, Operand\+Type... operands$>$ \\
+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON const Operand\+Size \mbox{\hyperlink{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits}{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}}$<$ accumulator\+\_\+use, operands $>$\+::k\+Double\+Scale\+Operand\+Sizes\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+        OperandScaler<operands, OperandScale::kDouble>::kOperandSize...\}
+\end{DoxyCode}
+
+
+Definition at line 84 of file bytecode-\/traits.\+h.
+
+\mbox{\Hypertarget{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_a973546ad40ad6f4e7fb3cf04ead3ceab}\label{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_a973546ad40ad6f4e7fb3cf04ead3ceab}} 
+\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits@{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}!k\+Double\+Scale\+Size@{k\+Double\+Scale\+Size}}
+\index{k\+Double\+Scale\+Size@{k\+Double\+Scale\+Size}!v8\+::internal\+::interpreter\+::\+Bytecode\+Traits@{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}}
+\subsubsection{\texorpdfstring{k\+Double\+Scale\+Size}{kDoubleScaleSize}}
+{\footnotesize\ttfamily template$<$Accumulator\+Use accumulator\+\_\+use, Operand\+Type... operands$>$ \\
+const \mbox{\hyperlink{classint}{int}} \mbox{\hyperlink{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits}{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}}$<$ accumulator\+\_\+use, operands $>$\+::k\+Double\+Scale\+Size\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= SumHelper<
+      1, OperandScaler<operands, OperandScale::kDouble>::kSize...>::kValue
+\end{DoxyCode}
+
+
+Definition at line 88 of file bytecode-\/traits.\+h.
+
+\mbox{\Hypertarget{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_a59e7189f4d1360082f3a11a61241ca11}\label{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_a59e7189f4d1360082f3a11a61241ca11}} 
+\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits@{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}!k\+Operand\+Type\+Infos@{k\+Operand\+Type\+Infos}}
+\index{k\+Operand\+Type\+Infos@{k\+Operand\+Type\+Infos}!v8\+::internal\+::interpreter\+::\+Bytecode\+Traits@{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}}
+\subsubsection{\texorpdfstring{k\+Operand\+Type\+Infos}{kOperandTypeInfos}}
+{\footnotesize\ttfamily template$<$Accumulator\+Use accumulator\+\_\+use, Operand\+Type... operands$>$ \\
+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON const Operand\+Type\+Info \mbox{\hyperlink{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits}{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}}$<$ accumulator\+\_\+use, operands $>$\+::k\+Operand\+Type\+Infos\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+        OperandTraits<operands>::kOperandTypeInfo...\}
+\end{DoxyCode}
+
+
+Definition at line 82 of file bytecode-\/traits.\+h.
+
+\mbox{\Hypertarget{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_a18a7c2ad72489ff9834b0459793b7a56}\label{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_a18a7c2ad72489ff9834b0459793b7a56}} 
+\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits@{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}!k\+Operand\+Types@{k\+Operand\+Types}}
+\index{k\+Operand\+Types@{k\+Operand\+Types}!v8\+::internal\+::interpreter\+::\+Bytecode\+Traits@{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}}
+\subsubsection{\texorpdfstring{k\+Operand\+Types}{kOperandTypes}}
+{\footnotesize\ttfamily template$<$Accumulator\+Use accumulator\+\_\+use, Operand\+Type... operands$>$ \\
+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON const Operand\+Type \mbox{\hyperlink{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits}{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}}$<$ accumulator\+\_\+use, operands $>$\+::k\+Operand\+Types\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+        operands...\}
+\end{DoxyCode}
+
+
+Definition at line 81 of file bytecode-\/traits.\+h.
+
+\mbox{\Hypertarget{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_a099c18eefbd65eb855a2e254731d020c}\label{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_a099c18eefbd65eb855a2e254731d020c}} 
+\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits@{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}!k\+Quadruple\+Scale\+Operand\+Sizes@{k\+Quadruple\+Scale\+Operand\+Sizes}}
+\index{k\+Quadruple\+Scale\+Operand\+Sizes@{k\+Quadruple\+Scale\+Operand\+Sizes}!v8\+::internal\+::interpreter\+::\+Bytecode\+Traits@{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}}
+\subsubsection{\texorpdfstring{k\+Quadruple\+Scale\+Operand\+Sizes}{kQuadrupleScaleOperandSizes}}
+{\footnotesize\ttfamily template$<$Accumulator\+Use accumulator\+\_\+use, Operand\+Type... operands$>$ \\
+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON const Operand\+Size \mbox{\hyperlink{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits}{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}}$<$ accumulator\+\_\+use, operands $>$\+::k\+Quadruple\+Scale\+Operand\+Sizes\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    OperandScaler<operands, OperandScale::kQuadruple>::kOperandSize...\}
+\end{DoxyCode}
+
+
+Definition at line 85 of file bytecode-\/traits.\+h.
+
+\mbox{\Hypertarget{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_a9e8702dbbdd38b628e7a21dd646c6747}\label{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_a9e8702dbbdd38b628e7a21dd646c6747}} 
+\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits@{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}!k\+Quadruple\+Scale\+Size@{k\+Quadruple\+Scale\+Size}}
+\index{k\+Quadruple\+Scale\+Size@{k\+Quadruple\+Scale\+Size}!v8\+::internal\+::interpreter\+::\+Bytecode\+Traits@{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}}
+\subsubsection{\texorpdfstring{k\+Quadruple\+Scale\+Size}{kQuadrupleScaleSize}}
+{\footnotesize\ttfamily template$<$Accumulator\+Use accumulator\+\_\+use, Operand\+Type... operands$>$ \\
+const \mbox{\hyperlink{classint}{int}} \mbox{\hyperlink{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits}{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}}$<$ accumulator\+\_\+use, operands $>$\+::k\+Quadruple\+Scale\+Size\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= SumHelper<
+      1, OperandScaler<operands, OperandScale::kQuadruple>::kSize...>::kValue
+\end{DoxyCode}
+
+
+Definition at line 90 of file bytecode-\/traits.\+h.
+
+\mbox{\Hypertarget{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_abcaf2b595c3970826dbe7abe30c7ebe6}\label{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_abcaf2b595c3970826dbe7abe30c7ebe6}} 
+\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits@{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}!k\+Single\+Scale\+Operand\+Sizes@{k\+Single\+Scale\+Operand\+Sizes}}
+\index{k\+Single\+Scale\+Operand\+Sizes@{k\+Single\+Scale\+Operand\+Sizes}!v8\+::internal\+::interpreter\+::\+Bytecode\+Traits@{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}}
+\subsubsection{\texorpdfstring{k\+Single\+Scale\+Operand\+Sizes}{kSingleScaleOperandSizes}}
+{\footnotesize\ttfamily template$<$Accumulator\+Use accumulator\+\_\+use, Operand\+Type... operands$>$ \\
+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON const Operand\+Size \mbox{\hyperlink{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits}{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}}$<$ accumulator\+\_\+use, operands $>$\+::k\+Single\+Scale\+Operand\+Sizes\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+        OperandScaler<operands, OperandScale::kSingle>::kOperandSize...\}
+\end{DoxyCode}
+
+
+Definition at line 83 of file bytecode-\/traits.\+h.
+
+\mbox{\Hypertarget{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_a3db6a9edc3e8c06ff3cf7d30844c976e}\label{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits_a3db6a9edc3e8c06ff3cf7d30844c976e}} 
+\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits@{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}!k\+Single\+Scale\+Size@{k\+Single\+Scale\+Size}}
+\index{k\+Single\+Scale\+Size@{k\+Single\+Scale\+Size}!v8\+::internal\+::interpreter\+::\+Bytecode\+Traits@{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}}
+\subsubsection{\texorpdfstring{k\+Single\+Scale\+Size}{kSingleScaleSize}}
+{\footnotesize\ttfamily template$<$Accumulator\+Use accumulator\+\_\+use, Operand\+Type... operands$>$ \\
+const \mbox{\hyperlink{classint}{int}} \mbox{\hyperlink{structv8_1_1internal_1_1interpreter_1_1BytecodeTraits}{v8\+::internal\+::interpreter\+::\+Bytecode\+Traits}}$<$ accumulator\+\_\+use, operands $>$\+::k\+Single\+Scale\+Size\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= SumHelper<
+      1, OperandScaler<operands, OperandScale::kSingle>::kSize...>::kValue
+\end{DoxyCode}
+
+
+Definition at line 86 of file bytecode-\/traits.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/interpreter/bytecode-\/traits.\+h\end{DoxyCompactItemize}

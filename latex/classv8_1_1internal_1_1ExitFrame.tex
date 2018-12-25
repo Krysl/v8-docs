@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1internal_1_1ExitFrame}{}\section{v8\+:\+:internal\+:\+:Exit\+Frame Class Reference}
+\label{classv8_1_1internal_1_1ExitFrame}\index{v8\+::internal\+::\+Exit\+Frame@{v8\+::internal\+::\+Exit\+Frame}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Exit\+Frame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1ExitFrame}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitFrame_a260050026dbc797863485faea19fa023}\label{classv8_1_1internal_1_1ExitFrame_a260050026dbc797863485faea19fa023}} 
+Type {\bfseries type} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitFrame_a8f7eb407270631cffcca94b75ec4917f}\label{classv8_1_1internal_1_1ExitFrame_a8f7eb407270631cffcca94b75ec4917f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} {\bfseries unchecked\+\_\+code} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitFrame_af9ae5ef4184f0cd194457f7ebce59448}\label{classv8_1_1internal_1_1ExitFrame_af9ae5ef4184f0cd194457f7ebce59448}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$\& {\bfseries code\+\_\+slot} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitFrame_a557476490b1e874bfeb69da5991820e1}\label{classv8_1_1internal_1_1ExitFrame_a557476490b1e874bfeb69da5991820e1}} 
+void {\bfseries Iterate} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v) const override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitFrame_a6cfb53b1f5eb6913010c446e7813f825}\label{classv8_1_1internal_1_1ExitFrame_a6cfb53b1f5eb6913010c446e7813f825}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ExitFrame}{Exit\+Frame}} $\ast$ {\bfseries cast} (\mbox{\hyperlink{classv8_1_1internal_1_1StackFrame}{Stack\+Frame}} $\ast$frame)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitFrame_af0f367c49f10592cba56310be5d6f7b6}\label{classv8_1_1internal_1_1ExitFrame_af0f367c49f10592cba56310be5d6f7b6}} 
+static Type {\bfseries Get\+State\+For\+Frame\+Pointer} (\mbox{\hyperlink{classuintptr__t}{Address}} fp, \mbox{\hyperlink{structv8_1_1internal_1_1StackFrame_1_1State}{State}} $\ast$state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitFrame_a68645e1e5b7b6014d97a50dd8434ac29}\label{classv8_1_1internal_1_1ExitFrame_a68645e1e5b7b6014d97a50dd8434ac29}} 
+static \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Compute\+Stack\+Pointer} (\mbox{\hyperlink{classuintptr__t}{Address}} fp)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitFrame_a158678bd502c5acce98e62135a3a8e30}\label{classv8_1_1internal_1_1ExitFrame_a158678bd502c5acce98e62135a3a8e30}} 
+static Stack\+Frame\+::\+Type {\bfseries Compute\+Frame\+Type} (\mbox{\hyperlink{classuintptr__t}{Address}} fp)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitFrame_a1c3835075d1f0f6b8b31896ca89f1a77}\label{classv8_1_1internal_1_1ExitFrame_a1c3835075d1f0f6b8b31896ca89f1a77}} 
+static void {\bfseries Fill\+State} (\mbox{\hyperlink{classuintptr__t}{Address}} fp, \mbox{\hyperlink{classuintptr__t}{Address}} sp, \mbox{\hyperlink{structv8_1_1internal_1_1StackFrame_1_1State}{State}} $\ast$state)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitFrame_a0664071bd3448a6cd032da63b6fafbe5}\label{classv8_1_1internal_1_1ExitFrame_a0664071bd3448a6cd032da63b6fafbe5}} 
+{\bfseries Exit\+Frame} (\mbox{\hyperlink{classv8_1_1internal_1_1StackFrameIteratorBase}{Stack\+Frame\+Iterator\+Base}} $\ast$iterator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitFrame_a1ce2e57a6f5494d5cdfb59fcd3315df1}\label{classv8_1_1internal_1_1ExitFrame_a1ce2e57a6f5494d5cdfb59fcd3315df1}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Get\+Caller\+Stack\+Pointer} () const override
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitFrame_ac7310421866976ca454bbe11c5f926c3}\label{classv8_1_1internal_1_1ExitFrame_ac7310421866976ca454bbe11c5f926c3}} 
+class {\bfseries Stack\+Frame\+Iterator\+Base}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 377 of file frames.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/frames.\+h\item 
+v8/src/frames-\/inl.\+h\item 
+v8/src/frames.\+cc\end{DoxyCompactItemize}

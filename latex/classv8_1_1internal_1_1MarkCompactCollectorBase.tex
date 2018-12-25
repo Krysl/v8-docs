@@ -1,0 +1,112 @@
+\hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase}{}\section{v8\+:\+:internal\+:\+:Mark\+Compact\+Collector\+Base Class Reference}
+\label{classv8_1_1internal_1_1MarkCompactCollectorBase}\index{v8\+::internal\+::\+Mark\+Compact\+Collector\+Base@{v8\+::internal\+::\+Mark\+Compact\+Collector\+Base}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Mark\+Compact\+Collector\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1MarkCompactCollectorBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_ace841a22145c47a627b29cfe3a0758b0}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_ace841a22145c47a627b29cfe3a0758b0}} 
+virtual void {\bfseries Set\+Up} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_ab89541bec7384374725dcc50c395ad1b}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_ab89541bec7384374725dcc50c395ad1b}} 
+virtual void {\bfseries Tear\+Down} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_a5a524c040e67874931db9c5c9191b05e}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_a5a524c040e67874931db9c5c9191b05e}} 
+virtual void {\bfseries Collect\+Garbage} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_a133d0aafbb3dcdcb1e33186c5bc3b4b4}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_a133d0aafbb3dcdcb1e33186c5bc3b4b4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$ {\bfseries heap} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_a9caa2bdaa6249067b9b39b06b20cb7cc}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_a9caa2bdaa6249067b9b39b06b20cb7cc}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_aff8e46342b2fa8db9252102602505996}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_aff8e46342b2fa8db9252102602505996}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Main\+Thread} = 0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_ad2a02f97303adff27a1a628793970403}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_ad2a02f97303adff27a1a628793970403}} 
+{\bfseries Mark\+Compact\+Collector\+Base} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_ade50448fcbd9fedc2ba3b68b8acfe468}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_ade50448fcbd9fedc2ba3b68b8acfe468}} 
+virtual void {\bfseries Mark\+Live\+Objects} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_a5d61fcd61462a769d4181e51af644fbc}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_a5d61fcd61462a769d4181e51af644fbc}} 
+virtual void {\bfseries Process\+Marking\+Worklist} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_af5bb7bac7805c290f6c6d389f36b45a5}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_af5bb7bac7805c290f6c6d389f36b45a5}} 
+virtual void {\bfseries Clear\+Non\+Live\+References} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_ab1bbbf0e38677169fe5c1882ce07c0db}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_ab1bbbf0e38677169fe5c1882ce07c0db}} 
+virtual void {\bfseries Evacuate\+Prologue} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_aa02561bca2cd02b832a1a3d13a6a19c8}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_aa02561bca2cd02b832a1a3d13a6a19c8}} 
+virtual void {\bfseries Evacuate\+Epilogue} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_a5345a5d1d2bfe90cfe4c39b407b2c452}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_a5345a5d1d2bfe90cfe4c39b407b2c452}} 
+virtual void {\bfseries Evacuate} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_a9d0793fbe1313eaee68ba30ce5e2a0ff}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_a9d0793fbe1313eaee68ba30ce5e2a0ff}} 
+virtual void {\bfseries Evacuate\+Pages\+In\+Parallel} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_a63f2e0dc3d27d83a0b829eeb6015c575}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_a63f2e0dc3d27d83a0b829eeb6015c575}} 
+virtual void {\bfseries Update\+Pointers\+After\+Evacuation} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_ab4212e9a493b8275a676c91b9b26b42f}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_ab4212e9a493b8275a676c91b9b26b42f}} 
+virtual \mbox{\hyperlink{classv8_1_1internal_1_1UpdatingItem}{Updating\+Item}} $\ast$ {\bfseries Create\+To\+Space\+Updating\+Item} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk, \mbox{\hyperlink{classuintptr__t}{Address}} start, \mbox{\hyperlink{classuintptr__t}{Address}} end)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_a5740324e42b040b8c30ac187a099cf6e}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_a5740324e42b040b8c30ac187a099cf6e}} 
+virtual \mbox{\hyperlink{classv8_1_1internal_1_1UpdatingItem}{Updating\+Item}} $\ast$ {\bfseries Create\+Remembered\+Set\+Updating\+Item} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk, Remembered\+Set\+Updating\+Mode updating\+\_\+mode)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_a732d57ec3cc1bf0ae6435ad70bd6cf29}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_a732d57ec3cc1bf0ae6435ad70bd6cf29}} 
+{\footnotesize template$<$class Evacuator , class Collector $>$ }\\void {\bfseries Create\+And\+Execute\+Evacuation\+Tasks} (\mbox{\hyperlink{classv8_1_1internal_1_1Collector}{Collector}} $\ast$collector, \mbox{\hyperlink{classv8_1_1internal_1_1ItemParallelJob}{Item\+Parallel\+Job}} $\ast$job, \mbox{\hyperlink{classv8_1_1internal_1_1RecordMigratedSlotVisitor}{Record\+Migrated\+Slot\+Visitor}} $\ast$record\+\_\+visitor, \mbox{\hyperlink{classv8_1_1internal_1_1MigrationObserver}{Migration\+Observer}} $\ast$migration\+\_\+observer, const intptr\+\_\+t live\+\_\+bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_a8edf52bbdac0dcdf3a6d6a8800af5881}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_a8edf52bbdac0dcdf3a6d6a8800af5881}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Should\+Move\+Page} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$p, intptr\+\_\+t live\+\_\+bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_a652bb0c38712bb623515cbf9574df1e5}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_a652bb0c38712bb623515cbf9574df1e5}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Collect\+To\+Space\+Updating\+Items} (\mbox{\hyperlink{classv8_1_1internal_1_1ItemParallelJob}{Item\+Parallel\+Job}} $\ast$job)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_afe5ff8b7186ac76bbc3da64d094e78ab}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_afe5ff8b7186ac76bbc3da64d094e78ab}} 
+{\footnotesize template$<$typename Iterateable\+Space $>$ }\\\mbox{\hyperlink{classint}{int}} {\bfseries Collect\+Remembered\+Set\+Updating\+Items} (\mbox{\hyperlink{classv8_1_1internal_1_1ItemParallelJob}{Item\+Parallel\+Job}} $\ast$job, Iterateable\+Space $\ast$space, Remembered\+Set\+Updating\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_a13bdf08b51439ecf5b4ae3afacafd7c1}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_a13bdf08b51439ecf5b4ae3afacafd7c1}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Parallel\+Compaction\+Tasks} (\mbox{\hyperlink{classint}{int}} pages)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_aca536649f59e06c753d29edc105aac91}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_aca536649f59e06c753d29edc105aac91}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Parallel\+Pointer\+Update\+Tasks} (\mbox{\hyperlink{classint}{int}} pages, \mbox{\hyperlink{classint}{int}} slots)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_aa0e42727c6b0b55792bc71d11c6bd752}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_aa0e42727c6b0b55792bc71d11c6bd752}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Parallel\+To\+Space\+Pointer\+Update\+Tasks} (\mbox{\hyperlink{classint}{int}} pages)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_a2c01c126a581df3afba94e429b10fd91}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_a2c01c126a581df3afba94e429b10fd91}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$ {\bfseries heap\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollectorBase_a5d7ea08a0e2408dbaa12976d7bbe4ad4}\label{classv8_1_1internal_1_1MarkCompactCollectorBase_a5d7ea08a0e2408dbaa12976d7bbe4ad4}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries old\+\_\+to\+\_\+new\+\_\+slots\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 236 of file mark-\/compact.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/mark-\/compact.\+h\item 
+v8/src/heap/mark-\/compact-\/inl.\+h\item 
+v8/src/heap/mark-\/compact.\+cc\end{DoxyCompactItemize}

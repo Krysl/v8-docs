@@ -1,0 +1,66 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Simplified\+Lowering Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering}\index{v8\+::internal\+::compiler\+::\+Simplified\+Lowering@{v8\+::internal\+::compiler\+::\+Simplified\+Lowering}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a8a060f1a82371ae9aa5cbc7d9a5a4224}\label{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a8a060f1a82371ae9aa5cbc7d9a5a4224}} 
+{\bfseries Simplified\+Lowering} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSGraph}{J\+S\+Graph}} $\ast$jsgraph, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSHeapBroker}{J\+S\+Heap\+Broker}} $\ast$broker, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SourcePositionTable}{Source\+Position\+Table}} $\ast$source\+\_\+position, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1NodeOriginTable}{Node\+Origin\+Table}} $\ast$node\+\_\+origins, Poisoning\+Mitigation\+Level poisoning\+\_\+level)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_aaa6438ebf75ae0cd397e843b3b9bc183}\label{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_aaa6438ebf75ae0cd397e843b3b9bc183}} 
+void {\bfseries Lower\+All\+Nodes} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a79c31d9c5b1f14c40d62bfc1b164d2e5}\label{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a79c31d9c5b1f14c40d62bfc1b164d2e5}} 
+void {\bfseries Do\+Max} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} const $\ast$op, Machine\+Representation rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a68178dba4d910ef3870c29cdee9fb123}\label{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a68178dba4d910ef3870c29cdee9fb123}} 
+void {\bfseries Do\+Min} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} const $\ast$op, Machine\+Representation rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a8c7c08bd2694d5109e59bf28189b5e0e}\label{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a8c7c08bd2694d5109e59bf28189b5e0e}} 
+void {\bfseries Do\+J\+S\+To\+Number\+Or\+Numeric\+Truncates\+To\+Float64} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RepresentationSelector}{Representation\+Selector}} $\ast$selector)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a8c1ff63d95be51f953bd31c8e3f821dc}\label{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a8c1ff63d95be51f953bd31c8e3f821dc}} 
+void {\bfseries Do\+J\+S\+To\+Number\+Or\+Numeric\+Truncates\+To\+Word32} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RepresentationSelector}{Representation\+Selector}} $\ast$selector)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a9926f79fb9319966b60a577da7b7a3be}\label{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a9926f79fb9319966b60a577da7b7a3be}} 
+void {\bfseries Do\+Shift} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} const $\ast$op, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} rhs\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a5ebb46ad1b485e19eb088046f0334e73}\label{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a5ebb46ad1b485e19eb088046f0334e73}} 
+void {\bfseries Do\+Integral32\+To\+Bit} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_ac5fe8baa94bbd2d40bcf96d88ecc0be9}\label{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_ac5fe8baa94bbd2d40bcf96d88ecc0be9}} 
+void {\bfseries Do\+Ordered\+Number\+To\+Bit} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a9b9fb9df1583f9109a2973f295545fcb}\label{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a9b9fb9df1583f9109a2973f295545fcb}} 
+void {\bfseries Do\+Number\+To\+Bit} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a1ec115d4213b22393173eb3fdc9ef0e6}\label{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a1ec115d4213b22393173eb3fdc9ef0e6}} 
+void {\bfseries Do\+Integer\+To\+Uint8\+Clamped} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a1272a0c080e80b78278543155cf828c8}\label{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a1272a0c080e80b78278543155cf828c8}} 
+void {\bfseries Do\+Number\+To\+Uint8\+Clamped} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a8adfde1c76fee4e425db337c258e63d4}\label{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a8adfde1c76fee4e425db337c258e63d4}} 
+void {\bfseries Do\+Signed32\+To\+Uint8\+Clamped} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a2b362ffac48c987676301b76a08d13b1}\label{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_a2b362ffac48c987676301b76a08d13b1}} 
+void {\bfseries Do\+Unsigned32\+To\+Uint8\+Clamped} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_ad8d54b364c13d0305a845ae6fcb97830}\label{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering_ad8d54b364c13d0305a845ae6fcb97830}} 
+class {\bfseries Representation\+Selector}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file simplified-\/lowering.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/simplified-\/lowering.\+h\item 
+v8/src/compiler/simplified-\/lowering.\+cc\end{DoxyCompactItemize}

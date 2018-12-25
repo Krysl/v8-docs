@@ -1,0 +1,53 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Async\+Streaming\+Processor Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor}\index{v8\+::internal\+::wasm\+::\+Async\+Streaming\+Processor@{v8\+::internal\+::wasm\+::\+Async\+Streaming\+Processor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:wasm\+:\+:Async\+Streaming\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_a9da068ebd21214867da972e51689bee5}\label{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_a9da068ebd21214867da972e51689bee5}} 
+{\bfseries Async\+Streaming\+Processor} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob}{Async\+Compile\+Job}} $\ast$job)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_ad0ce6ccb29f971786defc2c2ef8a727a}\label{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_ad0ce6ccb29f971786defc2c2ef8a727a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Process\+Module\+Header} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ bytes, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_aaa6e1d9497457e5a257a709da4818786}\label{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_aaa6e1d9497457e5a257a709da4818786}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Process\+Section} (Section\+Code section\+\_\+code, \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ bytes, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_a6b2d28acd23f1a0029bdbb7198cb7f19}\label{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_a6b2d28acd23f1a0029bdbb7198cb7f19}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Process\+Code\+Section\+Header} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} functions\+\_\+count, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WireBytesStorage}{Wire\+Bytes\+Storage}} $>$) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_a254e2b58ae9aea32a5b7598d6db9f80d}\label{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_a254e2b58ae9aea32a5b7598d6db9f80d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Process\+Function\+Body} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ bytes, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_a19842d57ed6e47f88fc3ccb57cd43619}\label{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_a19842d57ed6e47f88fc3ccb57cd43619}} 
+void {\bfseries On\+Finished\+Chunk} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_a71228a56974b4732b934cef2f41f5b38}\label{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_a71228a56974b4732b934cef2f41f5b38}} 
+void {\bfseries On\+Finished\+Stream} (\mbox{\hyperlink{classv8_1_1internal_1_1OwnedVector}{Owned\+Vector}}$<$ uint8\+\_\+t $>$ bytes) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_a93f061ce296025f77c649165727788e1}\label{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_a93f061ce296025f77c649165727788e1}} 
+void {\bfseries On\+Error} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1Result}{Decode\+Result}} result) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_a807224ecf5ba4eaf8434dea9b99a78a8}\label{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_a807224ecf5ba4eaf8434dea9b99a78a8}} 
+void {\bfseries On\+Abort} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_a3b341c705984fdf54fa5e4be1ac5f135}\label{classv8_1_1internal_1_1wasm_1_1AsyncStreamingProcessor_a3b341c705984fdf54fa5e4be1ac5f135}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Deserialize} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ wire\+\_\+bytes, \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ module\+\_\+bytes) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 2288 of file module-\/compiler.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/module-\/compiler.\+cc\end{DoxyCompactItemize}

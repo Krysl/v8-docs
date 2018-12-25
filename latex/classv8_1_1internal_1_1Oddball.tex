@@ -1,0 +1,127 @@
+\hypertarget{classv8_1_1internal_1_1Oddball}{}\section{v8\+:\+:internal\+:\+:Oddball Class Reference}
+\label{classv8_1_1internal_1_1Oddball}\index{v8\+::internal\+::\+Oddball@{v8\+::internal\+::\+Oddball}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Oddball\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1Oddball}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a45d95a2cd4e1df3c4e74b41286dd61b8}\label{classv8_1_1internal_1_1Oddball_a45d95a2cd4e1df3c4e74b41286dd61b8}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1FixedBodyDescriptor}{Fixed\+Body\+Descriptor}}$<$ k\+To\+String\+Offset, k\+Type\+Of\+Offset+k\+Pointer\+Size, k\+Size $>$ {\bfseries Body\+Descriptor}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_ab09202526206f3b2f60923fdefb1ffbf}\label{classv8_1_1internal_1_1Oddball_ab09202526206f3b2f60923fdefb1ffbf}} 
+double {\bfseries to\+\_\+number\+\_\+raw} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_ac159738887b097e944744bb5624dbe90}\label{classv8_1_1internal_1_1Oddball_ac159738887b097e944744bb5624dbe90}} 
+void {\bfseries set\+\_\+to\+\_\+number\+\_\+raw} (double value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_ad7278e71a5e5e55bed308dd65d10046d}\label{classv8_1_1internal_1_1Oddball_ad7278e71a5e5e55bed308dd65d10046d}} 
+void {\bfseries set\+\_\+to\+\_\+number\+\_\+raw\+\_\+as\+\_\+bits} (uint64\+\_\+t bits)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a142872419b9f45090919571978cff560}\label{classv8_1_1internal_1_1Oddball_a142872419b9f45090919571978cff560}} 
+byte {\bfseries kind} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a23ac73dee2b9eccc79fad51864a92061}\label{classv8_1_1internal_1_1Oddball_a23ac73dee2b9eccc79fad51864a92061}} 
+void {\bfseries set\+\_\+kind} (byte kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a006489f581dec0fe6d2bc2c467fa2817}\label{classv8_1_1internal_1_1Oddball_a006489f581dec0fe6d2bc2c467fa2817}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+To\+Number\+Raw\+Offset==Heap\+Number\+::k\+Value\+Offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_adaa90c45078014efb0017364c9fc7505}\label{classv8_1_1internal_1_1Oddball_adaa90c45078014efb0017364c9fc7505}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Kind\+Offset==Internals\+::k\+Oddball\+Kind\+Offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a8b098918d70d60336f7cb6686df4cee3}\label{classv8_1_1internal_1_1Oddball_a8b098918d70d60336f7cb6686df4cee3}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Null==Internals\+::k\+Null\+Oddball\+Kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_ac59ae66d1803a5c087b45515d9358891}\label{classv8_1_1internal_1_1Oddball_ac59ae66d1803a5c087b45515d9358891}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Undefined==Internals\+::k\+Undefined\+Oddball\+Kind)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a1a5d9c9c0e298850bc20379ff80a5602}\label{classv8_1_1internal_1_1Oddball_a1a5d9c9c0e298850bc20379ff80a5602}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries To\+Number} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Oddball}{Oddball}} $>$ input)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a526ba73cfd30a120b8b7bb95b3269f10}\label{classv8_1_1internal_1_1Oddball_a526ba73cfd30a120b8b7bb95b3269f10}} 
+static void {\bfseries Initialize} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Oddball}{Oddball}} $>$ oddball, const \mbox{\hyperlink{classchar}{char}} $\ast$to\+\_\+string, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ to\+\_\+number, const \mbox{\hyperlink{classchar}{char}} $\ast$type\+\_\+of, byte kind)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a359c026098ad7b1d1c64b5d80e139ffd}\label{classv8_1_1internal_1_1Oddball_a359c026098ad7b1d1c64b5d80e139ffd}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+To\+Number\+Raw\+Offset} = Heap\+Object\+::k\+Header\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_aa6a9637c9e8da1a28f83c788c1027013}\label{classv8_1_1internal_1_1Oddball_aa6a9637c9e8da1a28f83c788c1027013}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+To\+String\+Offset} = k\+To\+Number\+Raw\+Offset + k\+Double\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a15f1533c8dc4c622d3a14c291103d5e3}\label{classv8_1_1internal_1_1Oddball_a15f1533c8dc4c622d3a14c291103d5e3}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+To\+Number\+Offset} = k\+To\+String\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a0df5c29f24ad428f01022a78853b89ce}\label{classv8_1_1internal_1_1Oddball_a0df5c29f24ad428f01022a78853b89ce}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Type\+Of\+Offset} = k\+To\+Number\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a3aa86ed02d356c506c27a284e683b865}\label{classv8_1_1internal_1_1Oddball_a3aa86ed02d356c506c27a284e683b865}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Kind\+Offset} = k\+Type\+Of\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a94ef696c3fd95d44b6ace00ae799d890}\label{classv8_1_1internal_1_1Oddball_a94ef696c3fd95d44b6ace00ae799d890}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Size} = k\+Kind\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a3556ea40330ca7f13d1546b9a5ab278c}\label{classv8_1_1internal_1_1Oddball_a3556ea40330ca7f13d1546b9a5ab278c}} 
+static const byte {\bfseries k\+False} = 0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a7dd4be392c0689925b57abb5898c8b47}\label{classv8_1_1internal_1_1Oddball_a7dd4be392c0689925b57abb5898c8b47}} 
+static const byte {\bfseries k\+True} = 1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a0286390eeab3d5ff7cd0e0dd09712c1b}\label{classv8_1_1internal_1_1Oddball_a0286390eeab3d5ff7cd0e0dd09712c1b}} 
+static const byte {\bfseries k\+Not\+Boolean\+Mask} = static\+\_\+cast$<$byte$>$($\sim$1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a56d93ed85d040bf41eb738a1f0e0c2f2}\label{classv8_1_1internal_1_1Oddball_a56d93ed85d040bf41eb738a1f0e0c2f2}} 
+static const byte {\bfseries k\+The\+Hole} = 2
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a7e9e260f9a1ee980b4ac12e2d534ff27}\label{classv8_1_1internal_1_1Oddball_a7e9e260f9a1ee980b4ac12e2d534ff27}} 
+static const byte {\bfseries k\+Null} = 3
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a033dce401ba10d3d68a4fc848464bd53}\label{classv8_1_1internal_1_1Oddball_a033dce401ba10d3d68a4fc848464bd53}} 
+static const byte {\bfseries k\+Arguments\+Marker} = 4
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a38ddddfd10d8732bcef0714b3bd57008}\label{classv8_1_1internal_1_1Oddball_a38ddddfd10d8732bcef0714b3bd57008}} 
+static const byte {\bfseries k\+Undefined} = 5
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_ab030131494be698f1e666ce7d50cc873}\label{classv8_1_1internal_1_1Oddball_ab030131494be698f1e666ce7d50cc873}} 
+static const byte {\bfseries k\+Uninitialized} = 6
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_af181f2f5cc1b00216ed1a2ebacecc40e}\label{classv8_1_1internal_1_1Oddball_af181f2f5cc1b00216ed1a2ebacecc40e}} 
+static const byte {\bfseries k\+Other} = 7
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a56b06e715a40821036ac6fec67b7ec60}\label{classv8_1_1internal_1_1Oddball_a56b06e715a40821036ac6fec67b7ec60}} 
+static const byte {\bfseries k\+Exception} = 8
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a2fd3c39d2e5319a9e0adef6c8af29dde}\label{classv8_1_1internal_1_1Oddball_a2fd3c39d2e5319a9e0adef6c8af29dde}} 
+static const byte {\bfseries k\+Optimized\+Out} = 9
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a23c51a879da822543f18a64b81367059}\label{classv8_1_1internal_1_1Oddball_a23c51a879da822543f18a64b81367059}} 
+static const byte {\bfseries k\+Stale\+Register} = 10
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Oddball_a71734783dd0e9742c02189ed5e7dc8a2}\label{classv8_1_1internal_1_1Oddball_a71734783dd0e9742c02189ed5e7dc8a2}} 
+static const byte {\bfseries k\+Self\+Reference\+Marker} = 10
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1436 of file objects.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects.\+h\item 
+v8/src/objects-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

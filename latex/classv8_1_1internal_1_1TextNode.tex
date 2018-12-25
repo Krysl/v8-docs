@@ -1,0 +1,76 @@
+\hypertarget{classv8_1_1internal_1_1TextNode}{}\section{v8\+:\+:internal\+:\+:Text\+Node Class Reference}
+\label{classv8_1_1internal_1_1TextNode}\index{v8\+::internal\+::\+Text\+Node@{v8\+::internal\+::\+Text\+Node}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Text\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1TextNode}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TextNode_ad82f037bc18bc07fe99b03473cca0713}\label{classv8_1_1internal_1_1TextNode_ad82f037bc18bc07fe99b03473cca0713}} 
+{\bfseries Text\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1TextElement}{Text\+Element}} $>$ $\ast$elms, \mbox{\hyperlink{classbool}{bool}} read\+\_\+backward, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TextNode_a37623d87d91c4df2206bd2e39705caf0}\label{classv8_1_1internal_1_1TextNode_a37623d87d91c4df2206bd2e39705caf0}} 
+{\bfseries Text\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCharacterClass}{Reg\+Exp\+Character\+Class}} $\ast$that, \mbox{\hyperlink{classbool}{bool}} read\+\_\+backward, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TextNode_a0ae2eb39c21a52e8bd01d76cd6d3dfc9}\label{classv8_1_1internal_1_1TextNode_a0ae2eb39c21a52e8bd01d76cd6d3dfc9}} 
+void {\bfseries Accept} (\mbox{\hyperlink{classv8_1_1internal_1_1NodeVisitor}{Node\+Visitor}} $\ast$visitor) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TextNode_ab4ef65dbfccabe8abcdb129a259bd282}\label{classv8_1_1internal_1_1TextNode_ab4ef65dbfccabe8abcdb129a259bd282}} 
+void {\bfseries Emit} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classv8_1_1internal_1_1Trace}{Trace}} $\ast$trace) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TextNode_a944bd7d0b24872c34a3a4f70c8352d50}\label{classv8_1_1internal_1_1TextNode_a944bd7d0b24872c34a3a4f70c8352d50}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Eats\+At\+Least} (\mbox{\hyperlink{classint}{int}} still\+\_\+to\+\_\+find, \mbox{\hyperlink{classint}{int}} budget, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TextNode_a56cf231eb07793c5fff6026b831a5a5a}\label{classv8_1_1internal_1_1TextNode_a56cf231eb07793c5fff6026b831a5a5a}} 
+void {\bfseries Get\+Quick\+Check\+Details} (\mbox{\hyperlink{classv8_1_1internal_1_1QuickCheckDetails}{Quick\+Check\+Details}} $\ast$details, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classint}{int}} characters\+\_\+filled\+\_\+in, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TextNode_adaf2c35d3b69231b4bbb700f87ff0eb4}\label{classv8_1_1internal_1_1TextNode_adaf2c35d3b69231b4bbb700f87ff0eb4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1TextElement}{Text\+Element}} $>$ $\ast$ {\bfseries elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TextNode_ab4c9edf867bef53a95e33253d04468ac}\label{classv8_1_1internal_1_1TextNode_ab4c9edf867bef53a95e33253d04468ac}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries read\+\_\+backward} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TextNode_ab554495b2be955377b56b8f11cdd33db}\label{classv8_1_1internal_1_1TextNode_ab554495b2be955377b56b8f11cdd33db}} 
+void {\bfseries Make\+Case\+Independent} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classbool}{bool}} is\+\_\+one\+\_\+byte)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TextNode_a71027af872adea3e6a46d1442854f7f5}\label{classv8_1_1internal_1_1TextNode_a71027af872adea3e6a46d1442854f7f5}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Greedy\+Loop\+Text\+Length} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TextNode_a30c819737608f81a3a450d992be18b9d}\label{classv8_1_1internal_1_1TextNode_a30c819737608f81a3a450d992be18b9d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ {\bfseries Get\+Successor\+Of\+Omnivorous\+Text\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TextNode_acfbc8ff9972cd1e9ffb95c25b8778824}\label{classv8_1_1internal_1_1TextNode_acfbc8ff9972cd1e9ffb95c25b8778824}} 
+void {\bfseries Fill\+In\+B\+M\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} offset, \mbox{\hyperlink{classint}{int}} budget, \mbox{\hyperlink{classv8_1_1internal_1_1BoyerMooreLookahead}{Boyer\+Moore\+Lookahead}} $\ast$bm, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TextNode_a12a59535555258c7ef5415d28e6bc152}\label{classv8_1_1internal_1_1TextNode_a12a59535555258c7ef5415d28e6bc152}} 
+void {\bfseries Calculate\+Offsets} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TextNode_acc999bc2e2b18f416895032b006d66e2}\label{classv8_1_1internal_1_1TextNode_acc999bc2e2b18f416895032b006d66e2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ {\bfseries Filter\+One\+Byte} (\mbox{\hyperlink{classint}{int}} depth) override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TextNode_a2e529a6a68a9ce43c24ae533bcaac1b2}\label{classv8_1_1internal_1_1TextNode_a2e529a6a68a9ce43c24ae533bcaac1b2}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1TextNode}{Text\+Node}} $\ast$ {\bfseries Create\+For\+Character\+Ranges} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} $>$ $\ast$ranges, \mbox{\hyperlink{classbool}{bool}} read\+\_\+backward, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{J\+S\+Reg\+Exp\+::\+Flags}} flags)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TextNode_a5750e4be821cb13123a6c94e935c70c9}\label{classv8_1_1internal_1_1TextNode_a5750e4be821cb13123a6c94e935c70c9}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1TextNode}{Text\+Node}} $\ast$ {\bfseries Create\+For\+Surrogate\+Pair} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} lead, \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} trail, \mbox{\hyperlink{classbool}{bool}} read\+\_\+backward, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{J\+S\+Reg\+Exp\+::\+Flags}} flags)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 692 of file jsregexp.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/jsregexp.\+h\item 
+v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

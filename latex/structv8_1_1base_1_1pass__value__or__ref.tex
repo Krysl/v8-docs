@@ -1,0 +1,29 @@
+\hypertarget{structv8_1_1base_1_1pass__value__or__ref}{}\section{v8\+:\+:base\+:\+:pass\+\_\+value\+\_\+or\+\_\+ref$<$ T, remove\+\_\+array\+\_\+extend $>$ Struct Template Reference}
+\label{structv8_1_1base_1_1pass__value__or__ref}\index{v8\+::base\+::pass\+\_\+value\+\_\+or\+\_\+ref$<$ T, remove\+\_\+array\+\_\+extend $>$@{v8\+::base\+::pass\+\_\+value\+\_\+or\+\_\+ref$<$ T, remove\+\_\+array\+\_\+extend $>$}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1base_1_1pass__value__or__ref_a2d9b88751bcde84b45091310fd699247}\label{structv8_1_1base_1_1pass__value__or__ref_a2d9b88751bcde84b45091310fd699247}} 
+using {\bfseries noref\+\_\+t} = typename std\+::remove\+\_\+reference$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$\+::type
+\item 
+\mbox{\Hypertarget{structv8_1_1base_1_1pass__value__or__ref_ae1fa83c50754122660597b6e91c5f6a8}\label{structv8_1_1base_1_1pass__value__or__ref_ae1fa83c50754122660597b6e91c5f6a8}} 
+using {\bfseries decay\+\_\+t} = typename std\+::conditional$<$ std\+::is\+\_\+array$<$ noref\+\_\+t $>$\+::value \&\&!remove\+\_\+array\+\_\+extend, noref\+\_\+t, typename std\+::decay$<$ noref\+\_\+t $>$\+::type $>$\+::type
+\item 
+\mbox{\Hypertarget{structv8_1_1base_1_1pass__value__or__ref_a985375ad961f2ce2becf23fafb764ccc}\label{structv8_1_1base_1_1pass__value__or__ref_a985375ad961f2ce2becf23fafb764ccc}} 
+using {\bfseries type} = typename std\+::conditional$<$ std\+::is\+\_\+scalar$<$ decay\+\_\+t $>$\+::value$\vert$$\vert$std\+::is\+\_\+array$<$ decay\+\_\+t $>$\+::value, decay\+\_\+t, const decay\+\_\+t \& $>$\+::type
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T, bool remove\+\_\+array\+\_\+extend = true$>$\newline
+struct v8\+::base\+::pass\+\_\+value\+\_\+or\+\_\+ref$<$ T, remove\+\_\+array\+\_\+extend $>$}
+
+
+
+Definition at line 65 of file template-\/utils.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/base/template-\/utils.\+h\end{DoxyCompactItemize}

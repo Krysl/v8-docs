@@ -1,0 +1,66 @@
+\hypertarget{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer}{}\section{v8\+:\+:internal\+:\+:Serializer\+:\+:Object\+Serializer Class Reference}
+\label{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer}\index{v8\+::internal\+::\+Serializer\+::\+Object\+Serializer@{v8\+::internal\+::\+Serializer\+::\+Object\+Serializer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Serializer\+:\+:Object\+Serializer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a8125b62ec7355cbc5b26389da3e112a0}\label{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a8125b62ec7355cbc5b26389da3e112a0}} 
+{\bfseries Object\+Serializer} (\mbox{\hyperlink{classv8_1_1internal_1_1Serializer}{Serializer}} $\ast$serializer, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$obj, \mbox{\hyperlink{classv8_1_1internal_1_1SnapshotByteSink}{Snapshot\+Byte\+Sink}} $\ast$sink, How\+To\+Code how\+\_\+to\+\_\+code, Where\+To\+Point where\+\_\+to\+\_\+point)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a828349a29e9fde5e7ddd3c32350c479a}\label{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a828349a29e9fde5e7ddd3c32350c479a}} 
+void {\bfseries Serialize} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a0abcc7d2448a3dfe6735d678038c5a9c}\label{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a0abcc7d2448a3dfe6735d678038c5a9c}} 
+void {\bfseries Serialize\+Object} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a38c2c0ae3537fe25ec45162aeb077664}\label{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a38c2c0ae3537fe25ec45162aeb077664}} 
+void {\bfseries Serialize\+Deferred} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_abc26796d7de581a7b17ec6038c9c353c}\label{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_abc26796d7de581a7b17ec6038c9c353c}} 
+void {\bfseries Visit\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} end) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a3597dec3ba7b5b1bd652b208b451a572}\label{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a3597dec3ba7b5b1bd652b208b451a572}} 
+void {\bfseries Visit\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} end) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a09856aff851f4fe8ead0c1dcc4acee1c}\label{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a09856aff851f4fe8ead0c1dcc4acee1c}} 
+void {\bfseries Visit\+Embedded\+Pointer} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$target) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_accf136c155817ddf6024ae640cc37ec7}\label{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_accf136c155817ddf6024ae640cc37ec7}} 
+void {\bfseries Visit\+External\+Reference} (\mbox{\hyperlink{classv8_1_1internal_1_1Foreign}{Foreign}} $\ast$host, \mbox{\hyperlink{classuintptr__t}{Address}} $\ast$p) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_abd8813b328d1bf280243069f6115cd78}\label{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_abd8813b328d1bf280243069f6115cd78}} 
+void {\bfseries Visit\+External\+Reference} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$rinfo) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_afb8402ce6b0927be41f552981b878972}\label{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_afb8402ce6b0927be41f552981b878972}} 
+void {\bfseries Visit\+Internal\+Reference} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$rinfo) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a0ad8abda5cc93a536140adf4c95c2d1c}\label{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a0ad8abda5cc93a536140adf4c95c2d1c}} 
+void {\bfseries Visit\+Code\+Target} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$target) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a783f752877d6037dccf5468ec12a94e6}\label{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a783f752877d6037dccf5468ec12a94e6}} 
+void {\bfseries Visit\+Runtime\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$reloc) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a55cb24a3bd0b38a0bacba7613b0214e7}\label{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a55cb24a3bd0b38a0bacba7613b0214e7}} 
+void {\bfseries Visit\+Off\+Heap\+Target} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$target) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a6c9c20b1f3c5f689ff9004b5511dc516}\label{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer_a6c9c20b1f3c5f689ff9004b5511dc516}} 
+void {\bfseries Visit\+Reloc\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1RelocIterator}{Reloc\+Iterator}} $\ast$it) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 300 of file serializer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/snapshot/serializer.\+h\item 
+v8/src/snapshot/serializer.\+cc\end{DoxyCompactItemize}

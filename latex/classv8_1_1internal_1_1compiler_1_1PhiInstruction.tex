@@ -1,0 +1,51 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1PhiInstruction}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Phi\+Instruction Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1PhiInstruction}\index{v8\+::internal\+::compiler\+::\+Phi\+Instruction@{v8\+::internal\+::compiler\+::\+Phi\+Instruction}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Phi\+Instruction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1PhiInstruction}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PhiInstruction_ab3e2fb4170336928ff7ba714359e7856}\label{classv8_1_1internal_1_1compiler_1_1PhiInstruction_ab3e2fb4170336928ff7ba714359e7856}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} $>$ {\bfseries Inputs}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PhiInstruction_a913a59d9a1a1a99aa901a6fb66afb66d}\label{classv8_1_1internal_1_1compiler_1_1PhiInstruction_a913a59d9a1a1a99aa901a6fb66afb66d}} 
+{\bfseries Phi\+Instruction} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classint}{int}} virtual\+\_\+register, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} input\+\_\+count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PhiInstruction_aa1c3ab51327ba7b508b7e9bd082cf633}\label{classv8_1_1internal_1_1compiler_1_1PhiInstruction_aa1c3ab51327ba7b508b7e9bd082cf633}} 
+void {\bfseries Set\+Input} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} offset, \mbox{\hyperlink{classint}{int}} virtual\+\_\+register)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PhiInstruction_a11e9bd1cde962ad19651090e8e0309f4}\label{classv8_1_1internal_1_1compiler_1_1PhiInstruction_a11e9bd1cde962ad19651090e8e0309f4}} 
+void {\bfseries Rename\+Input} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} offset, \mbox{\hyperlink{classint}{int}} virtual\+\_\+register)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PhiInstruction_a6abf9a978efb0d4f40c1ecf15ef125f2}\label{classv8_1_1internal_1_1compiler_1_1PhiInstruction_a6abf9a978efb0d4f40c1ecf15ef125f2}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries virtual\+\_\+register} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PhiInstruction_a75827c26759f0593652e04fdffb6d69d}\label{classv8_1_1internal_1_1compiler_1_1PhiInstruction_a75827c26759f0593652e04fdffb6d69d}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Int\+Vector}} \& {\bfseries operands} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PhiInstruction_a48f8de671c2f0d3ba337a8807051cf55}\label{classv8_1_1internal_1_1compiler_1_1PhiInstruction_a48f8de671c2f0d3ba337a8807051cf55}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} \& {\bfseries output} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PhiInstruction_a871b32649094231f1491d8a41da377c4}\label{classv8_1_1internal_1_1compiler_1_1PhiInstruction_a871b32649094231f1491d8a41da377c4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} \& {\bfseries output} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1306 of file instruction.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/backend/instruction.\+h\item 
+v8/src/compiler/backend/instruction.\+cc\end{DoxyCompactItemize}

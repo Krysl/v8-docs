@@ -1,0 +1,126 @@
+\hypertarget{classv8_1_1internal_1_1HeapObjectsMap}{}\section{v8\+:\+:internal\+:\+:Heap\+Objects\+Map Class Reference}
+\label{classv8_1_1internal_1_1HeapObjectsMap}\index{v8\+::internal\+::\+Heap\+Objects\+Map@{v8\+::internal\+::\+Heap\+Objects\+Map}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1HeapObjectsMap_1_1TimeInterval}{Time\+Interval}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectsMap_ae05dd1e9392b3a3389440228746546d2}\label{classv8_1_1internal_1_1HeapObjectsMap_ae05dd1e9392b3a3389440228746546d2}} 
+{\bfseries Heap\+Objects\+Map} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectsMap_acdb7cbef595dbc409a453d73efa68ceb}\label{classv8_1_1internal_1_1HeapObjectsMap_acdb7cbef595dbc409a453d73efa68ceb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$ {\bfseries heap} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectsMap_ab5d737fbbba9b33cd3c853eb7b506cf4}\label{classv8_1_1internal_1_1HeapObjectsMap_ab5d737fbbba9b33cd3c853eb7b506cf4}} 
+\mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} {\bfseries Find\+Entry} (\mbox{\hyperlink{classuintptr__t}{Address}} addr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectsMap_a0782b8e7d38d2d3f8805bf9525b933c6}\label{classv8_1_1internal_1_1HeapObjectsMap_a0782b8e7d38d2d3f8805bf9525b933c6}} 
+\mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} {\bfseries Find\+Or\+Add\+Entry} (\mbox{\hyperlink{classuintptr__t}{Address}} addr, \mbox{\hyperlink{classunsigned}{unsigned}} \mbox{\hyperlink{classint}{int}} size, \mbox{\hyperlink{classbool}{bool}} accessed=true)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectsMap_a4dbb05ebfb10dd823495d0802692a1f5}\label{classv8_1_1internal_1_1HeapObjectsMap_a4dbb05ebfb10dd823495d0802692a1f5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Move\+Object} (\mbox{\hyperlink{classuintptr__t}{Address}} from, \mbox{\hyperlink{classuintptr__t}{Address}} to, \mbox{\hyperlink{classint}{int}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectsMap_a15a31776da26230e3641837998095544}\label{classv8_1_1internal_1_1HeapObjectsMap_a15a31776da26230e3641837998095544}} 
+void {\bfseries Update\+Object\+Size} (\mbox{\hyperlink{classuintptr__t}{Address}} addr, \mbox{\hyperlink{classint}{int}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectsMap_a52b2767a4297aed98cf12972445a3775}\label{classv8_1_1internal_1_1HeapObjectsMap_a52b2767a4297aed98cf12972445a3775}} 
+\mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} {\bfseries last\+\_\+assigned\+\_\+id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectsMap_a73ec46f75f7c486e3fcec5643766c442}\label{classv8_1_1internal_1_1HeapObjectsMap_a73ec46f75f7c486e3fcec5643766c442}} 
+void {\bfseries Stop\+Heap\+Objects\+Tracking} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectsMap_a814bf7c07146cb91a42206cfcb71d7bf}\label{classv8_1_1internal_1_1HeapObjectsMap_a814bf7c07146cb91a42206cfcb71d7bf}} 
+\mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} {\bfseries Push\+Heap\+Objects\+Stats} (\mbox{\hyperlink{classv8_1_1OutputStream}{Output\+Stream}} $\ast$stream, \mbox{\hyperlink{classint64__t}{int64\+\_\+t}} $\ast$timestamp\+\_\+us)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectsMap_a2c9d0f200953b276746ee601813b8134}\label{classv8_1_1internal_1_1HeapObjectsMap_a2c9d0f200953b276746ee601813b8134}} 
+const std\+::vector$<$ \mbox{\hyperlink{structv8_1_1internal_1_1HeapObjectsMap_1_1TimeInterval}{Time\+Interval}} $>$ \& {\bfseries samples} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectsMap_a246be15ede06e7dd8211be57c67b140c}\label{classv8_1_1internal_1_1HeapObjectsMap_a246be15ede06e7dd8211be57c67b140c}} 
+\mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} {\bfseries Generate\+Id} (\mbox{\hyperlink{classv8_1_1RetainedObjectInfo}{v8\+::\+Retained\+Object\+Info}} $\ast$info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectsMap_af0743759fc64433e0a2b207168dfb566}\label{classv8_1_1internal_1_1HeapObjectsMap_af0743759fc64433e0a2b207168dfb566}} 
+void {\bfseries Update\+Heap\+Objects\+Map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectsMap_a11421eef0d71d30bee53d0112e19efeb}\label{classv8_1_1internal_1_1HeapObjectsMap_a11421eef0d71d30bee53d0112e19efeb}} 
+void {\bfseries Remove\+Dead\+Entries} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectsMap_a11bef81d3f530538f97fc8dd362d2e2d}\label{classv8_1_1internal_1_1HeapObjectsMap_a11bef81d3f530538f97fc8dd362d2e2d}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Object\+Id\+Step} = 2
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectsMap_a04fba906564af1ded2c829fe22b0f6d0}\label{classv8_1_1internal_1_1HeapObjectsMap_a04fba906564af1ded2c829fe22b0f6d0}} 
+static const \mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} {\bfseries k\+Internal\+Root\+Object\+Id} = 1
+\item 
+static const \mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} {\bfseries k\+Gc\+Roots\+Object\+Id}
+\item 
+static const \mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} {\bfseries k\+Gc\+Roots\+First\+Subroot\+Id}
+\item 
+static const \mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} {\bfseries k\+First\+Available\+Object\+Id}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 232 of file heap-\/snapshot-\/generator.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectsMap_a0424e15b8207599ea3fae3c69eb0fa26}\label{classv8_1_1internal_1_1HeapObjectsMap_a0424e15b8207599ea3fae3c69eb0fa26}} 
+\index{v8\+::internal\+::\+Heap\+Objects\+Map@{v8\+::internal\+::\+Heap\+Objects\+Map}!k\+First\+Available\+Object\+Id@{k\+First\+Available\+Object\+Id}}
+\index{k\+First\+Available\+Object\+Id@{k\+First\+Available\+Object\+Id}!v8\+::internal\+::\+Heap\+Objects\+Map@{v8\+::internal\+::\+Heap\+Objects\+Map}}
+\subsubsection{\texorpdfstring{k\+First\+Available\+Object\+Id}{kFirstAvailableObjectId}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} v8\+::internal\+::\+Heap\+Objects\+Map\+::k\+First\+Available\+Object\+Id\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+    HeapObjectsMap::kGcRootsFirstSubrootId +
+    \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(Root::kNumberOfRoots) * HeapObjectsMap::kObjectIdStep
+\end{DoxyCode}
+
+
+Definition at line 269 of file heap-\/snapshot-\/generator.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectsMap_a1328bc87783492d376630e24758bbc69}\label{classv8_1_1internal_1_1HeapObjectsMap_a1328bc87783492d376630e24758bbc69}} 
+\index{v8\+::internal\+::\+Heap\+Objects\+Map@{v8\+::internal\+::\+Heap\+Objects\+Map}!k\+Gc\+Roots\+First\+Subroot\+Id@{k\+Gc\+Roots\+First\+Subroot\+Id}}
+\index{k\+Gc\+Roots\+First\+Subroot\+Id@{k\+Gc\+Roots\+First\+Subroot\+Id}!v8\+::internal\+::\+Heap\+Objects\+Map@{v8\+::internal\+::\+Heap\+Objects\+Map}}
+\subsubsection{\texorpdfstring{k\+Gc\+Roots\+First\+Subroot\+Id}{kGcRootsFirstSubrootId}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} v8\+::internal\+::\+Heap\+Objects\+Map\+::k\+Gc\+Roots\+First\+Subroot\+Id\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+    HeapObjectsMap::kGcRootsObjectId + HeapObjectsMap::kObjectIdStep
+\end{DoxyCode}
+
+
+Definition at line 268 of file heap-\/snapshot-\/generator.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectsMap_abf649a7b9e771c6b8dbe9ef581d5eaac}\label{classv8_1_1internal_1_1HeapObjectsMap_abf649a7b9e771c6b8dbe9ef581d5eaac}} 
+\index{v8\+::internal\+::\+Heap\+Objects\+Map@{v8\+::internal\+::\+Heap\+Objects\+Map}!k\+Gc\+Roots\+Object\+Id@{k\+Gc\+Roots\+Object\+Id}}
+\index{k\+Gc\+Roots\+Object\+Id@{k\+Gc\+Roots\+Object\+Id}!v8\+::internal\+::\+Heap\+Objects\+Map@{v8\+::internal\+::\+Heap\+Objects\+Map}}
+\subsubsection{\texorpdfstring{k\+Gc\+Roots\+Object\+Id}{kGcRootsObjectId}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} v8\+::internal\+::\+Heap\+Objects\+Map\+::k\+Gc\+Roots\+Object\+Id\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+    HeapObjectsMap::kInternalRootObjectId + HeapObjectsMap::kObjectIdStep
+\end{DoxyCode}
+
+
+Definition at line 267 of file heap-\/snapshot-\/generator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/heap-\/snapshot-\/generator.\+h\item 
+v8/src/profiler/heap-\/snapshot-\/generator.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,59 @@
+\hypertarget{structv8_1_1internal_1_1UnionT}{}\section{v8\+:\+:internal\+:\+:UnionT$<$ T1, T2 $>$ Struct Template Reference}
+\label{structv8_1_1internal_1_1UnionT}\index{v8\+::internal\+::\+Union\+T$<$ T1, T2 $>$@{v8\+::internal\+::\+Union\+T$<$ T1, T2 $>$}}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr \mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} {\bfseries k\+Machine\+Type}
+\item 
+static const Machine\+Representation {\bfseries k\+Machine\+Representation}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T1, class T2$>$\newline
+struct v8\+::internal\+::\+Union\+T$<$ T1, T2 $>$}
+
+
+
+Definition at line 225 of file code-\/assembler.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structv8_1_1internal_1_1UnionT_ae672253135cd88dd6e2a3e530df781c5}\label{structv8_1_1internal_1_1UnionT_ae672253135cd88dd6e2a3e530df781c5}} 
+\index{v8\+::internal\+::\+UnionT@{v8\+::internal\+::\+UnionT}!k\+Machine\+Representation@{k\+Machine\+Representation}}
+\index{k\+Machine\+Representation@{k\+Machine\+Representation}!v8\+::internal\+::\+UnionT@{v8\+::internal\+::\+UnionT}}
+\subsubsection{\texorpdfstring{k\+Machine\+Representation}{kMachineRepresentation}}
+{\footnotesize\ttfamily template$<$class T1 , class T2 $>$ \\
+const Machine\+Representation \mbox{\hyperlink{structv8_1_1internal_1_1UnionT}{v8\+::internal\+::\+UnionT}}$<$ T1, T2 $>$\+::k\+Machine\+Representation\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kMachineType.representation()
+\end{DoxyCode}
+
+
+Definition at line 238 of file code-\/assembler.\+h.
+
+\mbox{\Hypertarget{structv8_1_1internal_1_1UnionT_aa61b80103ec339df5b4b141086e730d1}\label{structv8_1_1internal_1_1UnionT_aa61b80103ec339df5b4b141086e730d1}} 
+\index{v8\+::internal\+::\+UnionT@{v8\+::internal\+::\+UnionT}!k\+Machine\+Type@{k\+Machine\+Type}}
+\index{k\+Machine\+Type@{k\+Machine\+Type}!v8\+::internal\+::\+UnionT@{v8\+::internal\+::\+UnionT}}
+\subsubsection{\texorpdfstring{k\+Machine\+Type}{kMachineType}}
+{\footnotesize\ttfamily template$<$class T1 , class T2 $>$ \\
+constexpr \mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} \mbox{\hyperlink{structv8_1_1internal_1_1UnionT}{v8\+::internal\+::\+UnionT}}$<$ T1, T2 $>$\+::k\+Machine\+Type\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      CommonMachineType(MachineTypeOf<T1>::value, MachineTypeOf<T2>::value)
+\end{DoxyCode}
+
+
+Definition at line 236 of file code-\/assembler.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/code-\/assembler.\+h\end{DoxyCompactItemize}

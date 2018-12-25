@@ -1,11 +1,11 @@
 var classv8_1_1FunctionTemplate =
 [
-    [ "GetFunction", "classv8_1_1FunctionTemplate.html#a77aa424e4ed297452be0412930340262", null ],
+    [ "GetFunction", "classv8_1_1FunctionTemplate.html#a9ad017f1503a6d5f89df82acbd799421", null ],
     [ "HasInstance", "classv8_1_1FunctionTemplate.html#a90d838f3456d300bd19d2a2cb98645bd", null ],
     [ "Inherit", "classv8_1_1FunctionTemplate.html#abc11c462facf11bafd541892815c5425", null ],
-    [ "InstanceTemplate", "classv8_1_1FunctionTemplate.html#a00dd9725566908e8fd14064542f5a781", null ],
-    [ "NewRemoteInstance", "classv8_1_1FunctionTemplate.html#a06fffd3d45d4f2f1aec8df075961af59", null ],
-    [ "PrototypeTemplate", "classv8_1_1FunctionTemplate.html#aa2bcc2652b5f0fdbc666d943ccf72021", null ],
+    [ "InstanceTemplate", "classv8_1_1FunctionTemplate.html#acc7ec612c5eb38e5f76f75eaf1efd776", null ],
+    [ "NewRemoteInstance", "classv8_1_1FunctionTemplate.html#ab648225a70140a7c4ebf4391bd917b21", null ],
+    [ "PrototypeTemplate", "classv8_1_1FunctionTemplate.html#a086408da7fe81f69f0d3bbcb95e83cc7", null ],
     [ "ReadOnlyPrototype", "classv8_1_1FunctionTemplate.html#a91d2e0643e8c5a53ab1d75f7766c2422", null ],
     [ "RemovePrototype", "classv8_1_1FunctionTemplate.html#a4a184aca244174c7fe52d58871d3129e", null ],
     [ "SetAcceptAnyReceiver", "classv8_1_1FunctionTemplate.html#a5ffdc68d8035b02ed7583950b76ef91f", null ],

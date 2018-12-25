@@ -1,0 +1,79 @@
+\hypertarget{classv8_1_1internal_1_1ConcurrentMarking}{}\section{v8\+:\+:internal\+:\+:Concurrent\+Marking Class Reference}
+\label{classv8_1_1internal_1_1ConcurrentMarking}\index{v8\+::internal\+::\+Concurrent\+Marking@{v8\+::internal\+::\+Concurrent\+Marking}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1ConcurrentMarking_1_1PauseScope}{Pause\+Scope}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1ConcurrentMarking_1_1Task}{Task}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarking_aee8fd462ab10c7db4ee21677cd7a59cb}\label{classv8_1_1internal_1_1ConcurrentMarking_aee8fd462ab10c7db4ee21677cd7a59cb}} 
+enum {\bfseries Stop\+Request} \{ {\bfseries P\+R\+E\+E\+M\+P\+T\+\_\+\+T\+A\+S\+KS}, 
+{\bfseries C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+O\+N\+G\+O\+I\+N\+G\+\_\+\+T\+A\+S\+KS}, 
+{\bfseries C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+T\+A\+S\+K\+S\+\_\+\+F\+O\+R\+\_\+\+T\+E\+S\+T\+I\+NG}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarking_af35da9505e9c2ddaf40e97b3137ade20}\label{classv8_1_1internal_1_1ConcurrentMarking_af35da9505e9c2ddaf40e97b3137ade20}} 
+using {\bfseries Marking\+Worklist} = \mbox{\hyperlink{classv8_1_1internal_1_1Worklist}{Worklist}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$, 64 $>$
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarking_a45354292f0ad6f6bfebaa17625c778c6}\label{classv8_1_1internal_1_1ConcurrentMarking_a45354292f0ad6f6bfebaa17625c778c6}} 
+using {\bfseries Embedder\+Tracing\+Worklist} = \mbox{\hyperlink{classv8_1_1internal_1_1Worklist}{Worklist}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$, 16 $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarking_ad0fab9e42c1617358bc81e7563fdfbc5}\label{classv8_1_1internal_1_1ConcurrentMarking_ad0fab9e42c1617358bc81e7563fdfbc5}} 
+{\bfseries Concurrent\+Marking} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, \mbox{\hyperlink{classv8_1_1internal_1_1Worklist}{Marking\+Worklist}} $\ast$shared, \mbox{\hyperlink{classv8_1_1internal_1_1Worklist}{Marking\+Worklist}} $\ast$bailout, \mbox{\hyperlink{classv8_1_1internal_1_1Worklist}{Marking\+Worklist}} $\ast$on\+\_\+hold, \mbox{\hyperlink{structv8_1_1internal_1_1WeakObjects}{Weak\+Objects}} $\ast$weak\+\_\+objects, \mbox{\hyperlink{classv8_1_1internal_1_1Worklist}{Embedder\+Tracing\+Worklist}} $\ast$embedder\+\_\+objects)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarking_af006221aa81108fbce1d278f35f951e6}\label{classv8_1_1internal_1_1ConcurrentMarking_af006221aa81108fbce1d278f35f951e6}} 
+void {\bfseries Schedule\+Tasks} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarking_ae53fd45450b62fc0edd137c9d5d89387}\label{classv8_1_1internal_1_1ConcurrentMarking_ae53fd45450b62fc0edd137c9d5d89387}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Stop} (Stop\+Request stop\+\_\+request)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarking_a51ee38e4186ebfe81604e6f17b085334}\label{classv8_1_1internal_1_1ConcurrentMarking_a51ee38e4186ebfe81604e6f17b085334}} 
+void {\bfseries Reschedule\+Tasks\+If\+Needed} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarking_aba18d9004a203020413436da69fd25c7}\label{classv8_1_1internal_1_1ConcurrentMarking_aba18d9004a203020413436da69fd25c7}} 
+void {\bfseries Flush\+Live\+Bytes} (\mbox{\hyperlink{classv8_1_1internal_1_1MajorNonAtomicMarkingState}{Major\+Non\+Atomic\+Marking\+State}} $\ast$marking\+\_\+state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarking_a1dd36a40979f8de1ebf7ff0bb880c1f4}\label{classv8_1_1internal_1_1ConcurrentMarking_a1dd36a40979f8de1ebf7ff0bb880c1f4}} 
+void {\bfseries Clear\+Liveness} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarking_a07226969a224e92213fbce986508c2a5}\label{classv8_1_1internal_1_1ConcurrentMarking_a07226969a224e92213fbce986508c2a5}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Task\+Count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarking_a06980681d462120291c2047124cd6a3a}\label{classv8_1_1internal_1_1ConcurrentMarking_a06980681d462120291c2047124cd6a3a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Stopped} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarking_a31d998afac0de0ac1d99011985247e9a}\label{classv8_1_1internal_1_1ConcurrentMarking_a31d998afac0de0ac1d99011985247e9a}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Total\+Marked\+Bytes} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarking_a6c4bbd33065693cc4f40a171e67934e1}\label{classv8_1_1internal_1_1ConcurrentMarking_a6c4bbd33065693cc4f40a171e67934e1}} 
+void {\bfseries set\+\_\+ephemeron\+\_\+marked} (\mbox{\hyperlink{classbool}{bool}} ephemeron\+\_\+marked)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarking_af0389265b9b869b24650848a3fe4a0e5}\label{classv8_1_1internal_1_1ConcurrentMarking_af0389265b9b869b24650848a3fe4a0e5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries ephemeron\+\_\+marked} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConcurrentMarking_a9306d2a237d4cc2ed7fb19d1d3680269}\label{classv8_1_1internal_1_1ConcurrentMarking_a9306d2a237d4cc2ed7fb19d1d3680269}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Tasks} = 7
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 30 of file concurrent-\/marking.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/concurrent-\/marking.\+h\item 
+v8/src/heap/concurrent-\/marking.\+cc\end{DoxyCompactItemize}

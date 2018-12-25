@@ -1,0 +1,152 @@
+\hypertarget{classv8_1_1internal_1_1Module}{}\section{v8\+:\+:internal\+:\+:Module Class Reference}
+\label{classv8_1_1internal_1_1Module}\index{v8\+::internal\+::\+Module@{v8\+::internal\+::\+Module}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Module\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1Module}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1Module_1_1ResolveSet}{Resolve\+Set}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_a09ce29de807d3dae0277a0479d3e2cee}\label{classv8_1_1internal_1_1Module_a09ce29de807d3dae0277a0479d3e2cee}} 
+enum {\bfseries Status} \{ \newline
+{\bfseries k\+Uninstantiated}, 
+{\bfseries k\+Pre\+Instantiating}, 
+{\bfseries k\+Instantiating}, 
+{\bfseries k\+Instantiated}, 
+\newline
+{\bfseries k\+Evaluating}, 
+{\bfseries k\+Evaluated}, 
+{\bfseries k\+Errored}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_a73cc59c26b777eb09080a28a5673d808}\label{classv8_1_1internal_1_1Module_a73cc59c26b777eb09080a28a5673d808}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Get\+Exception} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_aa28874d9ac07760ad157d4a6ba6965c2}\label{classv8_1_1internal_1_1Module_aa28874d9ac07760ad157d4a6ba6965c2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$ {\bfseries Get\+Shared\+Function\+Info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_a3b26167a39d14bd3b42a9ce015082a92}\label{classv8_1_1internal_1_1Module_a3b26167a39d14bd3b42a9ce015082a92}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ModuleInfo}{Module\+Info}} {\bfseries info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_ad92e23f84e017ee03d14b1295a80da22}\label{classv8_1_1internal_1_1Module_ad92e23f84e017ee03d14b1295a80da22}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Cell}{Cell}} $\ast$ {\bfseries Get\+Cell} (\mbox{\hyperlink{classint}{int}} cell\+\_\+index)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_ac0d9d3bc17cff1f5a1efa91e0951b04c}\label{classv8_1_1internal_1_1Module_ac0d9d3bc17cff1f5a1efa91e0951b04c}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classbool}{bool}} {\bfseries Instantiate} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Module}{Module}} $>$ module, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$ context, v8\+::\+Module\+::\+Resolve\+Callback callback)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_a3417736f09a9024b975a370ec5bde29e}\label{classv8_1_1internal_1_1Module_a3417736f09a9024b975a370ec5bde29e}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Evaluate} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Module}{Module}} $>$ module)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_ae2d9ad82553a258a859ce00e1e819510}\label{classv8_1_1internal_1_1Module_ae2d9ad82553a258a859ce00e1e819510}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Load\+Variable} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Module}{Module}} $>$ module, \mbox{\hyperlink{classint}{int}} cell\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_ae6591b5da3b3eb993484d0dd1e6bf9e3}\label{classv8_1_1internal_1_1Module_ae6591b5da3b3eb993484d0dd1e6bf9e3}} 
+static void {\bfseries Store\+Variable} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Module}{Module}} $>$ module, \mbox{\hyperlink{classint}{int}} cell\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_a811341c01b0896a85e129734a1ff8520}\label{classv8_1_1internal_1_1Module_a811341c01b0896a85e129734a1ff8520}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Import\+Index} (\mbox{\hyperlink{classint}{int}} cell\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_a181af20cf56b4ecea7254b2be738d4a1}\label{classv8_1_1internal_1_1Module_a181af20cf56b4ecea7254b2be738d4a1}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Export\+Index} (\mbox{\hyperlink{classint}{int}} cell\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_aa47b1b92c2b697ef3be0cbe1f904d3e4}\label{classv8_1_1internal_1_1Module_aa47b1b92c2b697ef3be0cbe1f904d3e4}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSModuleNamespace}{J\+S\+Module\+Namespace}} $>$ {\bfseries Get\+Module\+Namespace} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Module}{Module}} $>$ module, \mbox{\hyperlink{classint}{int}} module\+\_\+request)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_a24e2086b4fd04059cdc7f118c125dd5a}\label{classv8_1_1internal_1_1Module_a24e2086b4fd04059cdc7f118c125dd5a}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSModuleNamespace}{J\+S\+Module\+Namespace}} $>$ {\bfseries Get\+Module\+Namespace} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Module}{Module}} $>$ module)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_a72f89b9117bfaef3b72016e28f120b7c}\label{classv8_1_1internal_1_1Module_a72f89b9117bfaef3b72016e28f120b7c}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Code\+Offset} = Heap\+Object\+::k\+Header\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_a52c14eebd22781512556092cad0f548c}\label{classv8_1_1internal_1_1Module_a52c14eebd22781512556092cad0f548c}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Exports\+Offset} = k\+Code\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_a1e78068943cdc06af607f8fffe6739ff}\label{classv8_1_1internal_1_1Module_a1e78068943cdc06af607f8fffe6739ff}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Regular\+Exports\+Offset} = k\+Exports\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_a8196862f1f85f330daa0086628f79b40}\label{classv8_1_1internal_1_1Module_a8196862f1f85f330daa0086628f79b40}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Regular\+Imports\+Offset} = k\+Regular\+Exports\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_ac55428ad602036aa911a969bec6b91ec}\label{classv8_1_1internal_1_1Module_ac55428ad602036aa911a969bec6b91ec}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Hash\+Offset} = k\+Regular\+Imports\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_acc7ed09c625db6ed33c3bc29edd90e81}\label{classv8_1_1internal_1_1Module_acc7ed09c625db6ed33c3bc29edd90e81}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Module\+Namespace\+Offset} = k\+Hash\+Offset + k\+Pointer\+Size
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Requested\+Modules\+Offset}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_a217ef3bea7ef3cd754661b9432082fb4}\label{classv8_1_1internal_1_1Module_a217ef3bea7ef3cd754661b9432082fb4}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Status\+Offset} = k\+Requested\+Modules\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_aa94c752dad7af01f0e8a161f496d8824}\label{classv8_1_1internal_1_1Module_aa94c752dad7af01f0e8a161f496d8824}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Dfs\+Index\+Offset} = k\+Status\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_ac0b2961af426000656963b919c13b41f}\label{classv8_1_1internal_1_1Module_ac0b2961af426000656963b919c13b41f}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Dfs\+Ancestor\+Index\+Offset} = k\+Dfs\+Index\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_a033daa4cf7f524d0befff8b89598f4b3}\label{classv8_1_1internal_1_1Module_a033daa4cf7f524d0befff8b89598f4b3}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Exception\+Offset} = k\+Dfs\+Ancestor\+Index\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_a579bdbbbcebacd518baee5d9a5d94e17}\label{classv8_1_1internal_1_1Module_a579bdbbbcebacd518baee5d9a5d94e17}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Script\+Offset} = k\+Exception\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_a35f196d4de6f05b7cfce2db7528b92fc}\label{classv8_1_1internal_1_1Module_a35f196d4de6f05b7cfce2db7528b92fc}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Import\+Meta\+Offset} = k\+Script\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_abcb2dbe1b8fa6fd006f38b44b523e98f}\label{classv8_1_1internal_1_1Module_abcb2dbe1b8fa6fd006f38b44b523e98f}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Size} = k\+Import\+Meta\+Offset + k\+Pointer\+Size
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_a328c093d609680cca505905c6d49901a}\label{classv8_1_1internal_1_1Module_a328c093d609680cca505905c6d49901a}} 
+class {\bfseries Factory}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 29 of file module.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1Module_a2b866e6b7f692fde4543a3fe5ab97d93}\label{classv8_1_1internal_1_1Module_a2b866e6b7f692fde4543a3fe5ab97d93}} 
+\index{v8\+::internal\+::\+Module@{v8\+::internal\+::\+Module}!k\+Requested\+Modules\+Offset@{k\+Requested\+Modules\+Offset}}
+\index{k\+Requested\+Modules\+Offset@{k\+Requested\+Modules\+Offset}!v8\+::internal\+::\+Module@{v8\+::internal\+::\+Module}}
+\subsubsection{\texorpdfstring{k\+Requested\+Modules\+Offset}{kRequestedModulesOffset}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Module\+::k\+Requested\+Modules\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kModuleNamespaceOffset + kPointerSize
+\end{DoxyCode}
+
+
+Definition at line 132 of file module.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/module.\+h\item 
+v8/src/objects/module-\/inl.\+h\item 
+v8/src/objects/module.\+cc\end{DoxyCompactItemize}

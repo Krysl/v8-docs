@@ -1,0 +1,95 @@
+\hypertarget{classv8_1_1internal_1_1WeakArrayList}{}\section{v8\+:\+:internal\+:\+:Weak\+Array\+List Class Reference}
+\label{classv8_1_1internal_1_1WeakArrayList}\index{v8\+::internal\+::\+Weak\+Array\+List@{v8\+::internal\+::\+Weak\+Array\+List}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Weak\+Array\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1WeakArrayList}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1WeakArrayList_1_1Iterator}{Iterator}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakArrayList_a099fa2ee905d2db35235b0f5e76d20a3}\label{classv8_1_1internal_1_1WeakArrayList_a099fa2ee905d2db35235b0f5e76d20a3}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1FlexibleWeakBodyDescriptor}{Weak\+Array\+Body\+Descriptor}} {\bfseries Body\+Descriptor}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakArrayList_ab203c57bb0f9e4f5436bfb8c57d5ee9d}\label{classv8_1_1internal_1_1WeakArrayList_ab203c57bb0f9e4f5436bfb8c57d5ee9d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} {\bfseries Get} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakArrayList_a64793fef14a8b207a17b5b7ff5956815}\label{classv8_1_1internal_1_1WeakArrayList_a64793fef14a8b207a17b5b7ff5956815}} 
+void {\bfseries Set} (\mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} value, Write\+Barrier\+Mode mode=U\+P\+D\+A\+T\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+A\+R\+R\+I\+ER)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakArrayList_ac9b6767e183b3cddb07f9258059b2723}\label{classv8_1_1internal_1_1WeakArrayList_ac9b6767e183b3cddb07f9258059b2723}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} {\bfseries data\+\_\+start} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakArrayList_aec7b858bbf61de357d2e42d46f993239}\label{classv8_1_1internal_1_1WeakArrayList_aec7b858bbf61de357d2e42d46f993239}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Full} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakArrayList_aaf856e131586bb24043aad2816670fc5}\label{classv8_1_1internal_1_1WeakArrayList_aaf856e131586bb24043aad2816670fc5}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries synchronized\+\_\+capacity} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakArrayList_a98d20f669e5d05d839621314b7a917f2}\label{classv8_1_1internal_1_1WeakArrayList_a98d20f669e5d05d839621314b7a917f2}} 
+void {\bfseries synchronized\+\_\+set\+\_\+capacity} (\mbox{\hyperlink{classint}{int}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakArrayList_a800155cc7dbd8dcf4e0b0769e314173a}\label{classv8_1_1internal_1_1WeakArrayList_a800155cc7dbd8dcf4e0b0769e314173a}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Count\+Live\+Weak\+References} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakArrayList_a8b490a085dd0b70cf1d880b5d35058ad}\label{classv8_1_1internal_1_1WeakArrayList_a8b490a085dd0b70cf1d880b5d35058ad}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Remove\+One} (const \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}} \&value)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakArrayList_a21920ce7e9d13086c1451d9541dc8840}\label{classv8_1_1internal_1_1WeakArrayList_a21920ce7e9d13086c1451d9541dc8840}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WeakArrayList}{Weak\+Array\+List}} $>$ {\bfseries Add\+To\+End} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WeakArrayList}{Weak\+Array\+List}} $>$ array, const \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}} \&value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakArrayList_a7b1758f08880d0869e4a5713ef013582}\label{classv8_1_1internal_1_1WeakArrayList_a7b1758f08880d0869e4a5713ef013582}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries Size\+For\+Capacity} (\mbox{\hyperlink{classint}{int}} capacity)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakArrayList_a8f04a7a79f9d0e0bda21e59f17d6bfaf}\label{classv8_1_1internal_1_1WeakArrayList_a8f04a7a79f9d0e0bda21e59f17d6bfaf}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WeakArrayList}{Weak\+Array\+List}} $>$ {\bfseries Ensure\+Space} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WeakArrayList}{Weak\+Array\+List}} $>$ array, \mbox{\hyperlink{classint}{int}} length, Pretenure\+Flag pretenure=N\+O\+T\+\_\+\+T\+E\+N\+U\+R\+ED)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Capacity}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 338 of file fixed-\/array.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakArrayList_af5feacfbcc69aeff03a7507c16c26d10}\label{classv8_1_1internal_1_1WeakArrayList_af5feacfbcc69aeff03a7507c16c26d10}} 
+\index{v8\+::internal\+::\+Weak\+Array\+List@{v8\+::internal\+::\+Weak\+Array\+List}!k\+Max\+Capacity@{k\+Max\+Capacity}}
+\index{k\+Max\+Capacity@{k\+Max\+Capacity}!v8\+::internal\+::\+Weak\+Array\+List@{v8\+::internal\+::\+Weak\+Array\+List}}
+\subsubsection{\texorpdfstring{k\+Max\+Capacity}{kMaxCapacity}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Weak\+Array\+List\+::k\+Max\+Capacity\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      (FixedArray::kMaxSize - kHeaderSize) / kTaggedSize
+\end{DoxyCode}
+
+
+Definition at line 385 of file fixed-\/array.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/fixed-\/array.\+h\item 
+v8/src/objects/fixed-\/array-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

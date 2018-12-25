@@ -1,0 +1,59 @@
+\hypertarget{classv8_1_1internal_1_1JSBoundFunction}{}\section{v8\+:\+:internal\+:\+:J\+S\+Bound\+Function Class Reference}
+\label{classv8_1_1internal_1_1JSBoundFunction}\index{v8\+::internal\+::\+J\+S\+Bound\+Function@{v8\+::internal\+::\+J\+S\+Bound\+Function}}
+Inheritance diagram for v8\+:\+:internal\+:\+:J\+S\+Bound\+Function\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1JSBoundFunction}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSBoundFunction_a9d2ecf7c72a7fc553d8f3901c9da75ce}\label{classv8_1_1internal_1_1JSBoundFunction_a9d2ecf7c72a7fc553d8f3901c9da75ce}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries raw\+\_\+bound\+\_\+target\+\_\+function} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSBoundFunction_abfe268881f314599a7df612a13a2686a}\label{classv8_1_1internal_1_1JSBoundFunction_abfe268881f314599a7df612a13a2686a}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Get\+Name} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSBoundFunction}{J\+S\+Bound\+Function}} $>$ function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSBoundFunction_ab01e21aa219540ac975f162c44c07921}\label{classv8_1_1internal_1_1JSBoundFunction_ab01e21aa219540ac975f162c44c07921}} 
+static \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classint}{int}} $>$ {\bfseries Get\+Length} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSBoundFunction}{J\+S\+Bound\+Function}} $>$ function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSBoundFunction_a8e212c3a1099155f0086edcf13899c21}\label{classv8_1_1internal_1_1JSBoundFunction_a8e212c3a1099155f0086edcf13899c21}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ {\bfseries Get\+Function\+Realm} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSBoundFunction}{J\+S\+Bound\+Function}} $>$ function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSBoundFunction_a0f16413d1796af697a95e2d736e8cfc0}\label{classv8_1_1internal_1_1JSBoundFunction_a0f16413d1796af697a95e2d736e8cfc0}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries To\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSBoundFunction}{J\+S\+Bound\+Function}} $>$ function)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSBoundFunction_a62d0e4a5d1205ca5db1560e9a5672a83}\label{classv8_1_1internal_1_1JSBoundFunction_a62d0e4a5d1205ca5db1560e9a5672a83}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Bound\+Target\+Function\+Offset} = J\+S\+Object\+::k\+Header\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSBoundFunction_a9ffc641da476a34eb80b3fdfbb3847b3}\label{classv8_1_1internal_1_1JSBoundFunction_a9ffc641da476a34eb80b3fdfbb3847b3}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Bound\+This\+Offset} = k\+Bound\+Target\+Function\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSBoundFunction_a16d857627dcbec39f014440c076a2e0b}\label{classv8_1_1internal_1_1JSBoundFunction_a16d857627dcbec39f014440c076a2e0b}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Bound\+Arguments\+Offset} = k\+Bound\+This\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSBoundFunction_aeebf3de5eb07077231f3dda43c17354f}\label{classv8_1_1internal_1_1JSBoundFunction_aeebf3de5eb07077231f3dda43c17354f}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Size} = k\+Bound\+Arguments\+Offset + k\+Pointer\+Size
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 856 of file js-\/objects.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/js-\/objects.\+h\item 
+v8/src/objects/js-\/objects-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,82 @@
+\hypertarget{classv8_1_1internal_1_1CpuProfiler}{}\section{v8\+:\+:internal\+:\+:Cpu\+Profiler Class Reference}
+\label{classv8_1_1internal_1_1CpuProfiler}\index{v8\+::internal\+::\+Cpu\+Profiler@{v8\+::internal\+::\+Cpu\+Profiler}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_a6a4f9804517f929f447fc7636bce09d9}\label{classv8_1_1internal_1_1CpuProfiler_a6a4f9804517f929f447fc7636bce09d9}} 
+typedef v8\+::\+Cpu\+Profiling\+Mode {\bfseries Profiling\+Mode}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_a58e54bb45700330634856222e2f1dffd}\label{classv8_1_1internal_1_1CpuProfiler_a58e54bb45700330634856222e2f1dffd}} 
+{\bfseries Cpu\+Profiler} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_a77f0537da41544e43bd55833c4d89d0c}\label{classv8_1_1internal_1_1CpuProfiler_a77f0537da41544e43bd55833c4d89d0c}} 
+{\bfseries Cpu\+Profiler} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1CpuProfilesCollection}{Cpu\+Profiles\+Collection}} $\ast$profiles, \mbox{\hyperlink{classv8_1_1internal_1_1ProfileGenerator}{Profile\+Generator}} $\ast$test\+\_\+generator, \mbox{\hyperlink{classv8_1_1internal_1_1ProfilerEventsProcessor}{Profiler\+Events\+Processor}} $\ast$test\+\_\+processor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_a967c226a0cbbcd9244269645ad3a1c0d}\label{classv8_1_1internal_1_1CpuProfiler_a967c226a0cbbcd9244269645ad3a1c0d}} 
+void {\bfseries set\+\_\+sampling\+\_\+interval} (\mbox{\hyperlink{classv8_1_1base_1_1TimeDelta}{base\+::\+Time\+Delta}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_a0ef016f320d592f5b72d1c56a70a6a2f}\label{classv8_1_1internal_1_1CpuProfiler_a0ef016f320d592f5b72d1c56a70a6a2f}} 
+void {\bfseries Collect\+Sample} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_a7b008c841e19ddb3cad52f133b99d8ef}\label{classv8_1_1internal_1_1CpuProfiler_a7b008c841e19ddb3cad52f133b99d8ef}} 
+void {\bfseries Start\+Profiling} (const \mbox{\hyperlink{classchar}{char}} $\ast$title, \mbox{\hyperlink{classbool}{bool}} record\+\_\+samples=false, Profiling\+Mode mode=Profiling\+Mode\+::k\+Leaf\+Node\+Line\+Numbers)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_aed656ad09ab027b8ec051160d166c4be}\label{classv8_1_1internal_1_1CpuProfiler_aed656ad09ab027b8ec051160d166c4be}} 
+void {\bfseries Start\+Profiling} (\mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} title, \mbox{\hyperlink{classbool}{bool}} record\+\_\+samples, Profiling\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_a1ce853fee2c3e8959ac78d2c8af24ac1}\label{classv8_1_1internal_1_1CpuProfiler_a1ce853fee2c3e8959ac78d2c8af24ac1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CpuProfile}{Cpu\+Profile}} $\ast$ {\bfseries Stop\+Profiling} (const \mbox{\hyperlink{classchar}{char}} $\ast$title)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_a3a2590822a9b3bcb08c00ce5a9350cb8}\label{classv8_1_1internal_1_1CpuProfiler_a3a2590822a9b3bcb08c00ce5a9350cb8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CpuProfile}{Cpu\+Profile}} $\ast$ {\bfseries Stop\+Profiling} (\mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} title)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_a90fbf0a71839b8d0839a17ee368f3f8b}\label{classv8_1_1internal_1_1CpuProfiler_a90fbf0a71839b8d0839a17ee368f3f8b}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Profiles\+Count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_a2461e90f11f7197a17ac783770794daf}\label{classv8_1_1internal_1_1CpuProfiler_a2461e90f11f7197a17ac783770794daf}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CpuProfile}{Cpu\+Profile}} $\ast$ {\bfseries Get\+Profile} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_abf236281634b032566ef3e1153319892}\label{classv8_1_1internal_1_1CpuProfiler_abf236281634b032566ef3e1153319892}} 
+void {\bfseries Delete\+All\+Profiles} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_af88e6831fb01b203b0a110077f1260f0}\label{classv8_1_1internal_1_1CpuProfiler_af88e6831fb01b203b0a110077f1260f0}} 
+void {\bfseries Delete\+Profile} (\mbox{\hyperlink{classv8_1_1internal_1_1CpuProfile}{Cpu\+Profile}} $\ast$profile)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_a22690164a698a2940f6d6c3f538e665d}\label{classv8_1_1internal_1_1CpuProfiler_a22690164a698a2940f6d6c3f538e665d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+profiling} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_a35b284cd40b3f708cfa45f916aa4f815}\label{classv8_1_1internal_1_1CpuProfiler_a35b284cd40b3f708cfa45f916aa4f815}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ProfileGenerator}{Profile\+Generator}} $\ast$ {\bfseries generator} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_ac7ef26e773cc4512d653fcf527bc27e8}\label{classv8_1_1internal_1_1CpuProfiler_ac7ef26e773cc4512d653fcf527bc27e8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ProfilerEventsProcessor}{Profiler\+Events\+Processor}} $\ast$ {\bfseries processor} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_a9e2e55693c5f077fd1a5fb0fe42bbafe}\label{classv8_1_1internal_1_1CpuProfiler_a9e2e55693c5f077fd1a5fb0fe42bbafe}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_aaa98be6d3af28e88fe63c83c0422dc8f}\label{classv8_1_1internal_1_1CpuProfiler_aaa98be6d3af28e88fe63c83c0422dc8f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ProfilerListener}{Profiler\+Listener}} $\ast$ {\bfseries profiler\+\_\+listener\+\_\+for\+\_\+test} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfiler_a2b0ba96ea3c616f99a9efae99a2de73d}\label{classv8_1_1internal_1_1CpuProfiler_a2b0ba96ea3c616f99a9efae99a2de73d}} 
+static void {\bfseries Collect\+Sample} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 209 of file cpu-\/profiler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/cpu-\/profiler.\+h\item 
+v8/src/api.\+cc\item 
+v8/src/profiler/cpu-\/profiler.\+cc\end{DoxyCompactItemize}

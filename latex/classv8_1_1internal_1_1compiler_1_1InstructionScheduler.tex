@@ -1,0 +1,59 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionScheduler}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Instruction\+Scheduler Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1InstructionScheduler}\index{v8\+::internal\+::compiler\+::\+Instruction\+Scheduler@{v8\+::internal\+::compiler\+::\+Instruction\+Scheduler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Instruction\+Scheduler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1InstructionScheduler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionScheduler_a05e3da1730c88297d072e4a72aa9b95d}\label{classv8_1_1internal_1_1compiler_1_1InstructionScheduler_a05e3da1730c88297d072e4a72aa9b95d}} 
+{\bfseries Instruction\+Scheduler} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionSequence}{Instruction\+Sequence}} $\ast$sequence)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionScheduler_a2fdf835db37886ba20a703d0d464613a}\label{classv8_1_1internal_1_1compiler_1_1InstructionScheduler_a2fdf835db37886ba20a703d0d464613a}} 
+void {\bfseries Start\+Block} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RpoNumber}{Rpo\+Number}} rpo)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionScheduler_aef690db2c8ec7eab249c4bd5c1a3f4b7}\label{classv8_1_1internal_1_1compiler_1_1InstructionScheduler_aef690db2c8ec7eab249c4bd5c1a3f4b7}} 
+void {\bfseries End\+Block} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RpoNumber}{Rpo\+Number}} rpo)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionScheduler_abd121cebb713f0e800ed05ed10ea3d3f}\label{classv8_1_1internal_1_1compiler_1_1InstructionScheduler_abd121cebb713f0e800ed05ed10ea3d3f}} 
+void {\bfseries Add\+Instruction} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Instruction}{Instruction}} $\ast$instr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionScheduler_a7e3ba64a2973e70f1f6211807279dfd0}\label{classv8_1_1internal_1_1compiler_1_1InstructionScheduler_a7e3ba64a2973e70f1f6211807279dfd0}} 
+void {\bfseries Add\+Terminator} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Instruction}{Instruction}} $\ast$instr)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionScheduler_a3a12caa2a5f6def102ff7e343f7b8e5f}\label{classv8_1_1internal_1_1compiler_1_1InstructionScheduler_a3a12caa2a5f6def102ff7e343f7b8e5f}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Scheduler\+Supported} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionScheduler_a0cfb29ca2399ac98b222a549d9aaf9f6}\label{classv8_1_1internal_1_1compiler_1_1InstructionScheduler_a0cfb29ca2399ac98b222a549d9aaf9f6}} 
+class {\bfseries Instruction\+Scheduler\+Tester}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 29 of file instruction-\/scheduler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/backend/instruction-\/scheduler.\+h\item 
+v8/src/compiler/backend/arm/instruction-\/scheduler-\/arm.\+cc\item 
+v8/src/compiler/backend/arm64/instruction-\/scheduler-\/arm64.\+cc\item 
+v8/src/compiler/backend/ia32/instruction-\/scheduler-\/ia32.\+cc\item 
+v8/src/compiler/backend/instruction-\/scheduler.\+cc\item 
+v8/src/compiler/backend/mips/instruction-\/scheduler-\/mips.\+cc\item 
+v8/src/compiler/backend/mips64/instruction-\/scheduler-\/mips64.\+cc\item 
+v8/src/compiler/backend/ppc/instruction-\/scheduler-\/ppc.\+cc\item 
+v8/src/compiler/backend/s390/instruction-\/scheduler-\/s390.\+cc\item 
+v8/src/compiler/backend/x64/instruction-\/scheduler-\/x64.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\hypertarget{structv8_1_1internal_1_1wasm_1_1WasmInitExpr}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Init\+Expr Struct Reference}
+\label{structv8_1_1internal_1_1wasm_1_1WasmInitExpr}\index{v8\+::internal\+::wasm\+::\+Wasm\+Init\+Expr@{v8\+::internal\+::wasm\+::\+Wasm\+Init\+Expr}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmInitExpr_a0af42ba84db5aa9dee81706a562051f7}\label{structv8_1_1internal_1_1wasm_1_1WasmInitExpr_a0af42ba84db5aa9dee81706a562051f7}} 
+enum {\bfseries Wasm\+Init\+Kind} \{ \newline
+{\bfseries k\+None}, 
+{\bfseries k\+Global\+Index}, 
+{\bfseries k\+I32\+Const}, 
+{\bfseries k\+I64\+Const}, 
+\newline
+{\bfseries k\+F32\+Const}, 
+{\bfseries k\+F64\+Const}, 
+{\bfseries k\+Any\+Ref\+Const}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmInitExpr_a7758815bd7f10a8e2d9231faa204e662}\label{structv8_1_1internal_1_1wasm_1_1WasmInitExpr_a7758815bd7f10a8e2d9231faa204e662}} 
+{\bfseries Wasm\+Init\+Expr} (int32\+\_\+t v)
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmInitExpr_a91e344cfd46b715775f52d3530ec0c75}\label{structv8_1_1internal_1_1wasm_1_1WasmInitExpr_a91e344cfd46b715775f52d3530ec0c75}} 
+{\bfseries Wasm\+Init\+Expr} (\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} v)
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmInitExpr_af321a532da4b498cf8cee8dc300d7988}\label{structv8_1_1internal_1_1wasm_1_1WasmInitExpr_af321a532da4b498cf8cee8dc300d7988}} 
+{\bfseries Wasm\+Init\+Expr} (float v)
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmInitExpr_ae715563543540bcfc6188ab74928e07f}\label{structv8_1_1internal_1_1wasm_1_1WasmInitExpr_ae715563543540bcfc6188ab74928e07f}} 
+{\bfseries Wasm\+Init\+Expr} (double v)
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmInitExpr_abceb08bd20cff87cae2a8b06f7b5b2a4}\label{structv8_1_1internal_1_1wasm_1_1WasmInitExpr_abceb08bd20cff87cae2a8b06f7b5b2a4}} 
+{\bfseries Wasm\+Init\+Expr} (Wasm\+Init\+Kind kind, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} global\+\_\+index)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmInitExpr_a4a54777aa57900a61e4b5e76e70143de}\label{structv8_1_1internal_1_1wasm_1_1WasmInitExpr_a4a54777aa57900a61e4b5e76e70143de}} 
+enum v8\+::internal\+::wasm\+::\+Wasm\+Init\+Expr\+::\+Wasm\+Init\+Kind {\bfseries kind}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmInitExpr_a891befe0dacffb787dc10bc20710f58f}\label{structv8_1_1internal_1_1wasm_1_1WasmInitExpr_a891befe0dacffb787dc10bc20710f58f}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>int32\_t {\bfseries i32\_const}\\
+\>\mbox{\hyperlink{classint64__t}{int64\_t}} {\bfseries i64\_const}\\
+\>float {\bfseries f32\_const}\\
+\>double {\bfseries f64\_const}\\
+\>\mbox{\hyperlink{classuint32__t}{uint32\_t}} {\bfseries global\_index}\\
+\} {\bfseries val}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 598 of file wasm-\/opcodes.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/wasm-\/opcodes.\+h\end{DoxyCompactItemize}

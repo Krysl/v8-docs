@@ -1,0 +1,141 @@
+\hypertarget{classv8_1_1internal_1_1Deoptimizer}{}\section{v8\+:\+:internal\+:\+:Deoptimizer Class Reference}
+\label{classv8_1_1internal_1_1Deoptimizer}\index{v8\+::internal\+::\+Deoptimizer@{v8\+::internal\+::\+Deoptimizer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Deoptimizer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1Deoptimizer}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1Deoptimizer_1_1DeoptInfo}{Deopt\+Info}}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1Deoptimizer_1_1JumpTableEntry}{Jump\+Table\+Entry}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1Deoptimizer_1_1TableEntryGenerator}{Table\+Entry\+Generator}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_ad8e5c420c0980b209bdf3c9881c77f2b}\label{classv8_1_1internal_1_1Deoptimizer_ad8e5c420c0980b209bdf3c9881c77f2b}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries output\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_aca9cf976ccd1353ca8e4bc9c1d43cfa3}\label{classv8_1_1internal_1_1Deoptimizer_aca9cf976ccd1353ca8e4bc9c1d43cfa3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ {\bfseries function} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_a75dd114b5d93d72800b501423b2cbe10}\label{classv8_1_1internal_1_1Deoptimizer_a75dd114b5d93d72800b501423b2cbe10}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries compiled\+\_\+code} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_acb97f57060b8e8d665ef902a3dc60a91}\label{classv8_1_1internal_1_1Deoptimizer_acb97f57060b8e8d665ef902a3dc60a91}} 
+Deoptimize\+Kind {\bfseries deopt\+\_\+kind} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_aeb8197a7e02536240f2b60513603192e}\label{classv8_1_1internal_1_1Deoptimizer_aeb8197a7e02536240f2b60513603192e}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries jsframe\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_aac23e40197e70fd8f258865f1990065c}\label{classv8_1_1internal_1_1Deoptimizer_aac23e40197e70fd8f258865f1990065c}} 
+void {\bfseries Materialize\+Heap\+Objects} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_adff0dfe3f8d9760bcb4ae409f03b279d}\label{classv8_1_1internal_1_1Deoptimizer_adff0dfe3f8d9760bcb4ae409f03b279d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_af09f0f35ba838e625b61f8a3f65843a8}\label{classv8_1_1internal_1_1Deoptimizer_af09f0f35ba838e625b61f8a3f65843a8}} 
+static \mbox{\hyperlink{structv8_1_1internal_1_1Deoptimizer_1_1DeoptInfo}{Deopt\+Info}} {\bfseries Get\+Deopt\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} code, \mbox{\hyperlink{classuintptr__t}{Address}} from)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_a0063f5e56ac9f2099c7ca5c6db1dd361}\label{classv8_1_1internal_1_1Deoptimizer_a0063f5e56ac9f2099c7ca5c6db1dd361}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Compute\+Source\+Position\+From\+Bytecode\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$shared, \mbox{\hyperlink{classv8_1_1internal_1_1BailoutId}{Bailout\+Id}} node\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_af51f56df0988bd350f6b4bc378c45ff0}\label{classv8_1_1internal_1_1Deoptimizer_af51f56df0988bd350f6b4bc378c45ff0}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Message\+For} (Deoptimize\+Kind kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_a95cb1c4fe5c140ec11582a0733258b58}\label{classv8_1_1internal_1_1Deoptimizer_a95cb1c4fe5c140ec11582a0733258b58}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Deoptimizer}{Deoptimizer}} $\ast$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $\ast$function, Deoptimize\+Kind kind, \mbox{\hyperlink{classunsigned}{unsigned}} bailout\+\_\+id, \mbox{\hyperlink{classuintptr__t}{Address}} from, \mbox{\hyperlink{classint}{int}} fp\+\_\+to\+\_\+sp\+\_\+delta, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_a078aeb9b54269abe7f5f922c2ca540e8}\label{classv8_1_1internal_1_1Deoptimizer_a078aeb9b54269abe7f5f922c2ca540e8}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Deoptimizer}{Deoptimizer}} $\ast$ {\bfseries Grab} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_a5f129cfaa014424fd6ae474e49c76764}\label{classv8_1_1internal_1_1Deoptimizer_a5f129cfaa014424fd6ae474e49c76764}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1DeoptimizedFrameInfo}{Deoptimized\+Frame\+Info}} $\ast$ {\bfseries Debugger\+Inspectable\+Frame} (\mbox{\hyperlink{classv8_1_1internal_1_1JavaScriptFrame}{Java\+Script\+Frame}} $\ast$frame, \mbox{\hyperlink{classint}{int}} jsframe\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_acd0cd16e81e6d8ccbf37b495cf6850f6}\label{classv8_1_1internal_1_1Deoptimizer_acd0cd16e81e6d8ccbf37b495cf6850f6}} 
+static void {\bfseries Deoptimize\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $\ast$function, \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} code=\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}}())
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_a6bb35276c37391b101bba2759894c2d0}\label{classv8_1_1internal_1_1Deoptimizer_a6bb35276c37391b101bba2759894c2d0}} 
+static void {\bfseries Deoptimize\+All} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_a7cbb81963c0529cc90612511d408db06}\label{classv8_1_1internal_1_1Deoptimizer_a7cbb81963c0529cc90612511d408db06}} 
+static void {\bfseries Deoptimize\+Marked\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_a27cf077b48bd6ef6ff9905b2ebccc6c1}\label{classv8_1_1internal_1_1Deoptimizer_a27cf077b48bd6ef6ff9905b2ebccc6c1}} 
+static void {\bfseries Compute\+Output\+Frames} (\mbox{\hyperlink{classv8_1_1internal_1_1Deoptimizer}{Deoptimizer}} $\ast$deoptimizer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_aa766b954cd35516026021d30f08f2f37}\label{classv8_1_1internal_1_1Deoptimizer_aa766b954cd35516026021d30f08f2f37}} 
+static \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Get\+Deoptimization\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} id, Deoptimize\+Kind kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_a31109e27a98da31d4bbdc4f3a5afba91}\label{classv8_1_1internal_1_1Deoptimizer_a31109e27a98da31d4bbdc4f3a5afba91}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Deoptimization\+Id} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classuintptr__t}{Address}} addr, Deoptimize\+Kind kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_aa963f63754f39c9b05aa8b360f06ad80}\label{classv8_1_1internal_1_1Deoptimizer_aa963f63754f39c9b05aa8b360f06ad80}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Deoptimization\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classuintptr__t}{Address}} addr, Deoptimize\+Kind $\ast$\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_a596fc3bd6f8ae86360b9aecb5a240ce6}\label{classv8_1_1internal_1_1Deoptimizer_a596fc3bd6f8ae86360b9aecb5a240ce6}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries input\+\_\+offset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_a76a3faf66ccb1821e439a49f206b51bf}\label{classv8_1_1internal_1_1Deoptimizer_a76a3faf66ccb1821e439a49f206b51bf}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries output\+\_\+count\+\_\+offset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_a210da11b9db7b0d1fab095ff6d9d122d}\label{classv8_1_1internal_1_1Deoptimizer_a210da11b9db7b0d1fab095ff6d9d122d}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries output\+\_\+offset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_a0bb7b04295b51b5a23c59e77dbc84c74}\label{classv8_1_1internal_1_1Deoptimizer_a0bb7b04295b51b5a23c59e77dbc84c74}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries caller\+\_\+frame\+\_\+top\+\_\+offset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_a880004c229c7157a3d87ce9ea312f889}\label{classv8_1_1internal_1_1Deoptimizer_a880004c229c7157a3d87ce9ea312f889}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Deoptimized\+Code\+Count} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_a3a2d0b03a687fd56401dc0e3dcc5058c}\label{classv8_1_1internal_1_1Deoptimizer_a3a2d0b03a687fd56401dc0e3dcc5058c}} 
+static void {\bfseries Ensure\+Code\+For\+Deoptimization\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Deoptimize\+Kind kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_ada52e7aaad0d28536e4b4bb90106eb63}\label{classv8_1_1internal_1_1Deoptimizer_ada52e7aaad0d28536e4b4bb90106eb63}} 
+static void {\bfseries Ensure\+Code\+For\+Max\+Deoptimization\+Entries} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_a670edfccf46146bdfbb870239c84f0a9}\label{classv8_1_1internal_1_1Deoptimizer_a670edfccf46146bdfbb870239c84f0a9}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Not\+Deoptimization\+Entry} = -\/1
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_aff6aeca06ec3fdfaa59793a0bbbf8010}\label{classv8_1_1internal_1_1Deoptimizer_aff6aeca06ec3fdfaa59793a0bbbf8010}} 
+class {\bfseries Frame\+Writer}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_a224be72dc184a8c14bfe381aba312774}\label{classv8_1_1internal_1_1Deoptimizer_a224be72dc184a8c14bfe381aba312774}} 
+class {\bfseries Frame\+Description}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Deoptimizer_ad768f50809f35947f37316cdfe284e92}\label{classv8_1_1internal_1_1Deoptimizer_ad768f50809f35947f37316cdfe284e92}} 
+class {\bfseries Deoptimized\+Frame\+Info}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 409 of file deoptimizer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/deoptimizer.\+h\item 
+v8/src/arm/deoptimizer-\/arm.\+cc\item 
+v8/src/arm64/deoptimizer-\/arm64.\+cc\item 
+v8/src/deoptimizer.\+cc\item 
+v8/src/mips/deoptimizer-\/mips.\+cc\item 
+v8/src/mips64/deoptimizer-\/mips64.\+cc\item 
+v8/src/ppc/deoptimizer-\/ppc.\+cc\item 
+v8/src/s390/deoptimizer-\/s390.\+cc\end{DoxyCompactItemize}

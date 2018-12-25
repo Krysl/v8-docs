@@ -1,0 +1,161 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Live\+Range Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1LiveRange}\index{v8\+::internal\+::compiler\+::\+Live\+Range@{v8\+::internal\+::compiler\+::\+Live\+Range}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Live\+Range\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1compiler_1_1LiveRange}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a0711a0c18403cd47392a4c34f4b7ca8d}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a0711a0c18403cd47392a4c34f4b7ca8d}} 
+enum {\bfseries Hint\+Connection\+Option} \+: bool \{ {\bfseries Do\+Not\+Connect\+Hints} = false, 
+{\bfseries Connect\+Hints} = true
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_acad12a167e1fd0620e8c639c8ace6f55}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_acad12a167e1fd0620e8c639c8ace6f55}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UseInterval}{Use\+Interval}} $\ast$ {\bfseries first\+\_\+interval} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a002c82e0e15d2bc8d4f8a4c7c687ee4a}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a002c82e0e15d2bc8d4f8a4c7c687ee4a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UsePosition}{Use\+Position}} $\ast$ {\bfseries first\+\_\+pos} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a9caf8fed59cdc51e78606c2d7e539c2f}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a9caf8fed59cdc51e78606c2d7e539c2f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$ {\bfseries Top\+Level} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_aab5d4a7e07a3834dd269178458c30876}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_aab5d4a7e07a3834dd269178458c30876}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$ {\bfseries Top\+Level} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a5262966bdf4ce958ac435d8f47156ab6}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a5262966bdf4ce958ac435d8f47156ab6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Top\+Level} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a604d8d88e1243b21e503004781b4cd75}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a604d8d88e1243b21e503004781b4cd75}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LiveRange}{Live\+Range}} $\ast$ {\bfseries next} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a42379999e440adf6b28593f4653b07b4}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a42379999e440adf6b28593f4653b07b4}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries relative\+\_\+id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a28a3b5eaf86be6ed6b590b0113863cf4}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a28a3b5eaf86be6ed6b590b0113863cf4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Empty} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_ac0cdda189e0157ea59999cf56723cd3a}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_ac0cdda189e0157ea59999cf56723cd3a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} {\bfseries Get\+Assigned\+Operand} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a69905c2314518a93e4c39f7af80a922c}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a69905c2314518a93e4c39f7af80a922c}} 
+Machine\+Representation {\bfseries representation} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a5e1809d81c4b2458999e7beeb32b08ec}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a5e1809d81c4b2458999e7beeb32b08ec}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries assigned\+\_\+register} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a798985721d1a2fc70e8501afdfeea1d8}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a798985721d1a2fc70e8501afdfeea1d8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Register\+Assigned} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_ac7e169474916a8a4b63786c435a197e4}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_ac7e169474916a8a4b63786c435a197e4}} 
+void {\bfseries set\+\_\+assigned\+\_\+register} (\mbox{\hyperlink{classint}{int}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_aa55b0b8c3942ccd2b52372b3d656cb30}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_aa55b0b8c3942ccd2b52372b3d656cb30}} 
+void {\bfseries Unset\+Assigned\+Register} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_adddfc647b3188e613448797a07cfef15}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_adddfc647b3188e613448797a07cfef15}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries spilled} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a89df2239ef516ac0f434db1f292bd59e}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a89df2239ef516ac0f434db1f292bd59e}} 
+void {\bfseries Spill} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a19f4fec6fa23b83b0d23edbe867cdbc4}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a19f4fec6fa23b83b0d23edbe867cdbc4}} 
+Register\+Kind {\bfseries kind} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_af5100310a98d5f099ba716745d4efc49}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_af5100310a98d5f099ba716745d4efc49}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UsePosition}{Use\+Position}} $\ast$ {\bfseries Next\+Use\+Position} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} start) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_ad55ec778797396dd0a25845aa33eab39}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_ad55ec778797396dd0a25845aa33eab39}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UsePosition}{Use\+Position}} $\ast$ {\bfseries Next\+Register\+Position} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} start) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a7c2f2f2aed03775ab97e6b725a5ed5cb}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a7c2f2f2aed03775ab97e6b725a5ed5cb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UsePosition}{Use\+Position}} $\ast$ {\bfseries Next\+Slot\+Position} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} start) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_ac83eafe002b988d6bc8d363732895b9e}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_ac83eafe002b988d6bc8d363732895b9e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UsePosition}{Use\+Position}} $\ast$ {\bfseries Next\+Use\+Position\+Register\+Is\+Beneficial} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} start) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a3211ddcdcac4f434be57687a9d97ee53}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a3211ddcdcac4f434be57687a9d97ee53}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} {\bfseries Next\+Lifetime\+Position\+Register\+Is\+Beneficial} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} \&start) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a7df6d77ebb40bd61beb88ee7878d6727}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a7df6d77ebb40bd61beb88ee7878d6727}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UsePosition}{Use\+Position}} $\ast$ {\bfseries Previous\+Use\+Position\+Register\+Is\+Beneficial} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} start) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_aab10b96f98c11e2776da61237606537c}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_aab10b96f98c11e2776da61237606537c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Be\+Spilled} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} pos) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_ae840b4bd065c74c8bf35117b55db80f3}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_ae840b4bd065c74c8bf35117b55db80f3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UsePosition}{Use\+Position}} $\ast$ {\bfseries Detach\+At} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} position, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LiveRange}{Live\+Range}} $\ast$result, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, Hint\+Connection\+Option connect\+\_\+hints)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_aaf254bec0af12a73e24c800a3c326f11}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_aaf254bec0af12a73e24c800a3c326f11}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LiveRange}{Live\+Range}} $\ast$ {\bfseries Split\+At} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} position, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_ae3b137c4140d7f693e883b9133301adb}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_ae3b137c4140d7f693e883b9133301adb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UsePosition}{Use\+Position}} $\ast$ {\bfseries First\+Hint\+Position} (\mbox{\hyperlink{classint}{int}} $\ast$register\+\_\+index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_af0e420728f03a5ce9d88136130da8e34}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_af0e420728f03a5ce9d88136130da8e34}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UsePosition}{Use\+Position}} $\ast$ {\bfseries First\+Hint\+Position} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_af135a836ae64d328fe0cea657bd6f49d}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_af135a836ae64d328fe0cea657bd6f49d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UsePosition}{Use\+Position}} $\ast$ {\bfseries current\+\_\+hint\+\_\+position} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a80d1dcd228a5b8214a5d4697a94a9f76}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a80d1dcd228a5b8214a5d4697a94a9f76}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} {\bfseries Start} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_add748c4c1b4297bf4ee2d8f0d18c5d3d}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_add748c4c1b4297bf4ee2d8f0d18c5d3d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} {\bfseries End} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_aa441b110551c82f14c50cf238796736c}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_aa441b110551c82f14c50cf238796736c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Should\+Be\+Allocated\+Before} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LiveRange}{Live\+Range}} $\ast$other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_ab3bc30ab6b6921b02c15fd336d824c58}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_ab3bc30ab6b6921b02c15fd336d824c58}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Cover} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} position) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a814fbe4587dc8369e40e0ec690f60d65}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a814fbe4587dc8369e40e0ec690f60d65}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Covers} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} position) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a5bf8d1e6ca8f7ec8053f128f84101f3e}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a5bf8d1e6ca8f7ec8053f128f84101f3e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} {\bfseries First\+Intersection} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LiveRange}{Live\+Range}} $\ast$other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a998a8309a27c54f23e29d9d653fdc3d5}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a998a8309a27c54f23e29d9d653fdc3d5}} 
+void {\bfseries Verify\+Child\+Structure} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a9692c1a6751d90ffe208ce6d7a68ed49}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a9692c1a6751d90ffe208ce6d7a68ed49}} 
+void {\bfseries Convert\+Uses\+To\+Operand} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} \&op, const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} \&spill\+\_\+op)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a8eedd6d46ccdb74dbecbf6f498db1603}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a8eedd6d46ccdb74dbecbf6f498db1603}} 
+void {\bfseries Set\+Use\+Hints} (\mbox{\hyperlink{classint}{int}} register\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a1fcf65b7ec0fc8d55652f95a77f73295}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a1fcf65b7ec0fc8d55652f95a77f73295}} 
+void {\bfseries Unset\+Use\+Hints} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a212e563486630a6fa386e05a108188e6}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a212e563486630a6fa386e05a108188e6}} 
+void {\bfseries Print} (const \mbox{\hyperlink{classv8_1_1internal_1_1RegisterConfiguration}{Register\+Configuration}} $\ast$config, \mbox{\hyperlink{classbool}{bool}} with\+\_\+children) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a692f1734eb2db5e65cb6e7313defcbe6}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a692f1734eb2db5e65cb6e7313defcbe6}} 
+void {\bfseries Print} (\mbox{\hyperlink{classbool}{bool}} with\+\_\+children) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LiveRange_a129402ecd87e17260440c4799385799b}\label{classv8_1_1internal_1_1compiler_1_1LiveRange_a129402ecd87e17260440c4799385799b}} 
+class {\bfseries Top\+Level\+Live\+Range}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 310 of file register-\/allocator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/backend/register-\/allocator.\+h\item 
+v8/src/compiler/backend/register-\/allocator.\+cc\end{DoxyCompactItemize}

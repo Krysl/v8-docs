@@ -1,0 +1,170 @@
+\hypertarget{classv8_1_1internal_1_1PreParserFactory}{}\section{v8\+:\+:internal\+:\+:Pre\+Parser\+Factory Class Reference}
+\label{classv8_1_1internal_1_1PreParserFactory}\index{v8\+::internal\+::\+Pre\+Parser\+Factory@{v8\+::internal\+::\+Pre\+Parser\+Factory}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a372a8fc981db489cc1d51b1726109166}\label{classv8_1_1internal_1_1PreParserFactory_a372a8fc981db489cc1d51b1726109166}} 
+{\bfseries Pre\+Parser\+Factory} (\mbox{\hyperlink{classv8_1_1internal_1_1AstValueFactory}{Ast\+Value\+Factory}} $\ast$ast\+\_\+value\+\_\+factory, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_acb7e5de35ab9b86ad105f81698103f7c}\label{classv8_1_1internal_1_1PreParserFactory_acb7e5de35ab9b86ad105f81698103f7c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1AstNodeFactory}{Ast\+Node\+Factory}} $\ast$ {\bfseries ast\+\_\+node\+\_\+factory} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a61d4937796c550212db81e6bf1ae5d0e}\label{classv8_1_1internal_1_1PreParserFactory_a61d4937796c550212db81e6bf1ae5d0e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+String\+Literal} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserIdentifier}{Pre\+Parser\+Identifier}} \&identifier, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a5549d27a221f2bf8abb9b3a6df4d08e7}\label{classv8_1_1internal_1_1PreParserFactory_a5549d27a221f2bf8abb9b3a6df4d08e7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Number\+Literal} (double number, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_ab8276c8f9cd1e92607ee29700e9b13ae}\label{classv8_1_1internal_1_1PreParserFactory_ab8276c8f9cd1e92607ee29700e9b13ae}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Undefined\+Literal} (\mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_acdf75edae09266db9ae7f346c528beda}\label{classv8_1_1internal_1_1PreParserFactory_acdf75edae09266db9ae7f346c528beda}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+The\+Hole\+Literal} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a6fccfaa1fc0b50b813db3e96a2cd71b3}\label{classv8_1_1internal_1_1PreParserFactory_a6fccfaa1fc0b50b813db3e96a2cd71b3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Reg\+Exp\+Literal} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserIdentifier}{Pre\+Parser\+Identifier}} \&js\+\_\+pattern, \mbox{\hyperlink{classint}{int}} js\+\_\+flags, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_af89441c75f706a6725035d0c402c9836}\label{classv8_1_1internal_1_1PreParserFactory_af89441c75f706a6725035d0c402c9836}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Array\+Literal} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpressionList}{Pre\+Parser\+Expression\+List}} \&values, \mbox{\hyperlink{classint}{int}} first\+\_\+spread\+\_\+index, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_aef1bbb7140e59d70d88ce4d698cc637a}\label{classv8_1_1internal_1_1PreParserFactory_aef1bbb7140e59d70d88ce4d698cc637a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Class\+Literal\+Property} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&key, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&value, Class\+Literal\+Property\+::\+Kind kind, \mbox{\hyperlink{classbool}{bool}} is\+\_\+static, \mbox{\hyperlink{classbool}{bool}} is\+\_\+computed\+\_\+name, \mbox{\hyperlink{classbool}{bool}} is\+\_\+private)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a70b4e0701018372d513b5ab04f3b2801}\label{classv8_1_1internal_1_1PreParserFactory_a70b4e0701018372d513b5ab04f3b2801}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Object\+Literal\+Property} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&key, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&value, Object\+Literal\+Property\+::\+Kind kind, \mbox{\hyperlink{classbool}{bool}} is\+\_\+computed\+\_\+name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_ab386b3d66827d08a7766a5139664302c}\label{classv8_1_1internal_1_1PreParserFactory_ab386b3d66827d08a7766a5139664302c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Object\+Literal\+Property} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&key, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&value, \mbox{\hyperlink{classbool}{bool}} is\+\_\+computed\+\_\+name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a0b9055dc3df40b086f66e83a573e5500}\label{classv8_1_1internal_1_1PreParserFactory_a0b9055dc3df40b086f66e83a573e5500}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Object\+Literal} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpressionList}{Pre\+Parser\+Expression\+List}} \&properties, \mbox{\hyperlink{classint}{int}} boilerplate\+\_\+properties, \mbox{\hyperlink{classint}{int}} pos, \mbox{\hyperlink{classbool}{bool}} has\+\_\+rest\+\_\+property)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a5f4355f77f1a41bcb6b55fa0e98bec08}\label{classv8_1_1internal_1_1PreParserFactory_a5f4355f77f1a41bcb6b55fa0e98bec08}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Variable\+Proxy} (void $\ast$variable)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a47b335d563baa61afbb707b0cb4c8cdd}\label{classv8_1_1internal_1_1PreParserFactory_a47b335d563baa61afbb707b0cb4c8cdd}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Property} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&obj, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&key, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_acb667d079ebed2002b16b6605e3bc131}\label{classv8_1_1internal_1_1PreParserFactory_acb667d079ebed2002b16b6605e3bc131}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Unary\+Operation} (Token\+::\+Value op, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&expression, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a1f7ab4f8a7dfea27792634bab54bb8c1}\label{classv8_1_1internal_1_1PreParserFactory_a1f7ab4f8a7dfea27792634bab54bb8c1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Binary\+Operation} (Token\+::\+Value op, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&left, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&right, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a87f0ee1e663988b1e911d1c7fed03887}\label{classv8_1_1internal_1_1PreParserFactory_a87f0ee1e663988b1e911d1c7fed03887}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Compare\+Operation} (Token\+::\+Value op, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&left, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&right, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a9e63212d7725ca92e15e59a2fbd91dca}\label{classv8_1_1internal_1_1PreParserFactory_a9e63212d7725ca92e15e59a2fbd91dca}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Rewritable\+Expression} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&expression, \mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$scope)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_ad00170545ea46c03bbab9d0bc0160225}\label{classv8_1_1internal_1_1PreParserFactory_ad00170545ea46c03bbab9d0bc0160225}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Assignment} (Token\+::\+Value op, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&left, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&right, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a50837240b7bdafc1e3f0c93d3ecb6360}\label{classv8_1_1internal_1_1PreParserFactory_a50837240b7bdafc1e3f0c93d3ecb6360}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Yield} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&expression, \mbox{\hyperlink{classint}{int}} pos, Suspend\+::\+On\+Abrupt\+Resume on\+\_\+abrupt\+\_\+resume)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a8ed26814e9adb030214adb28fcfddd5b}\label{classv8_1_1internal_1_1PreParserFactory_a8ed26814e9adb030214adb28fcfddd5b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Await} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&expression, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_aec60404c5c817d1ef1f71109e0256899}\label{classv8_1_1internal_1_1PreParserFactory_aec60404c5c817d1ef1f71109e0256899}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Yield\+Star} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&iterable, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a077078e96679b4dd741967953ec4dec6}\label{classv8_1_1internal_1_1PreParserFactory_a077078e96679b4dd741967953ec4dec6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Conditional} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&condition, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&then\+\_\+expression, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&else\+\_\+expression, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a671063dbfeadcb2e7f7a19a6eced7584}\label{classv8_1_1internal_1_1PreParserFactory_a671063dbfeadcb2e7f7a19a6eced7584}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Count\+Operation} (Token\+::\+Value op, \mbox{\hyperlink{classbool}{bool}} is\+\_\+prefix, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&expression, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a811fbf8c8725d71a10a2c0c71effd33a}\label{classv8_1_1internal_1_1PreParserFactory_a811fbf8c8725d71a10a2c0c71effd33a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Call} (\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} expression, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpressionList}{Pre\+Parser\+Expression\+List}} \&arguments, \mbox{\hyperlink{classint}{int}} pos, Call\+::\+Possibly\+Eval possibly\+\_\+eval=Call\+::\+N\+O\+T\+\_\+\+E\+V\+AL)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a2cccb27d6e5547c77ae94146ddd1c8b6}\label{classv8_1_1internal_1_1PreParserFactory_a2cccb27d6e5547c77ae94146ddd1c8b6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Tagged\+Template} (\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} expression, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpressionList}{Pre\+Parser\+Expression\+List}} \&arguments, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a815eb8f8f5d04b2f9d0626ce58052908}\label{classv8_1_1internal_1_1PreParserFactory_a815eb8f8f5d04b2f9d0626ce58052908}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Call\+New} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&expression, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpressionList}{Pre\+Parser\+Expression\+List}} \&arguments, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_ada9c0ffe503b14e425f2e9de374332d1}\label{classv8_1_1internal_1_1PreParserFactory_ada9c0ffe503b14e425f2e9de374332d1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries New\+Return\+Statement} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&expression, \mbox{\hyperlink{classint}{int}} pos, \mbox{\hyperlink{classint}{int}} continuation\+\_\+pos=k\+No\+Source\+Position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_ac1601f02c9bd809c5c2564c70fb578a9}\label{classv8_1_1internal_1_1PreParserFactory_ac1601f02c9bd809c5c2564c70fb578a9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries New\+Async\+Return\+Statement} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&expression, \mbox{\hyperlink{classint}{int}} pos, \mbox{\hyperlink{classint}{int}} continuation\+\_\+pos=k\+No\+Source\+Position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a525c9f82a9d0445e9ddc3e33a98aa543}\label{classv8_1_1internal_1_1PreParserFactory_a525c9f82a9d0445e9ddc3e33a98aa543}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Function\+Literal} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserIdentifier}{Pre\+Parser\+Identifier}} \&name, \mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$scope, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserScopedStatementList}{Pre\+Parser\+Scoped\+Statement\+List}} \&body, \mbox{\hyperlink{classint}{int}} expected\+\_\+property\+\_\+count, \mbox{\hyperlink{classint}{int}} parameter\+\_\+count, \mbox{\hyperlink{classint}{int}} function\+\_\+length, Function\+Literal\+::\+Parameter\+Flag has\+\_\+duplicate\+\_\+parameters, Function\+Literal\+::\+Function\+Type function\+\_\+type, Function\+Literal\+::\+Eager\+Compile\+Hint eager\+\_\+compile\+\_\+hint, \mbox{\hyperlink{classint}{int}} position, \mbox{\hyperlink{classbool}{bool}} has\+\_\+braces, \mbox{\hyperlink{classint}{int}} function\+\_\+literal\+\_\+id, \mbox{\hyperlink{classv8_1_1internal_1_1ProducedPreParsedScopeData}{Produced\+Pre\+Parsed\+Scope\+Data}} $\ast$produced\+\_\+preparsed\+\_\+scope\+\_\+data=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a2ae5399bdd9ca16f780f09773666e87e}\label{classv8_1_1internal_1_1PreParserFactory_a2ae5399bdd9ca16f780f09773666e87e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Spread} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&expression, \mbox{\hyperlink{classint}{int}} pos, \mbox{\hyperlink{classint}{int}} expr\+\_\+pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a788cba89e0ed058cf76b8d68f46e255d}\label{classv8_1_1internal_1_1PreParserFactory_a788cba89e0ed058cf76b8d68f46e255d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Empty\+Parentheses} (\mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_acf87ca012461e97ac4711dc8fd801e11}\label{classv8_1_1internal_1_1PreParserFactory_acf87ca012461e97ac4711dc8fd801e11}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries Empty\+Statement} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a158e969ff61faf01676d443e8897c556}\label{classv8_1_1internal_1_1PreParserFactory_a158e969ff61faf01676d443e8897c556}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries New\+Block} (\mbox{\hyperlink{classint}{int}} capacity, \mbox{\hyperlink{classbool}{bool}} ignore\+\_\+completion\+\_\+value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_afa566dd4437f194ea60552cf70db66ee}\label{classv8_1_1internal_1_1PreParserFactory_afa566dd4437f194ea60552cf70db66ee}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries New\+Block} (\mbox{\hyperlink{classbool}{bool}} ignore\+\_\+completion\+\_\+value, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$labels)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a142ab7b806d5accd14ed1ad21c5796c3}\label{classv8_1_1internal_1_1PreParserFactory_a142ab7b806d5accd14ed1ad21c5796c3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries New\+Block} (\mbox{\hyperlink{classbool}{bool}} ignore\+\_\+completion\+\_\+value, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserScopedStatementList}{Pre\+Parser\+Scoped\+Statement\+List}} \&list)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_ad928315bc583c5d5408b2ba3d67d6d6c}\label{classv8_1_1internal_1_1PreParserFactory_ad928315bc583c5d5408b2ba3d67d6d6c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries New\+Debugger\+Statement} (\mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a7e943fd484fc8c452398e87ca8b9b018}\label{classv8_1_1internal_1_1PreParserFactory_a7e943fd484fc8c452398e87ca8b9b018}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries New\+Expression\+Statement} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&expr, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_afa47b2a28f33323ea825b082d688cb9a}\label{classv8_1_1internal_1_1PreParserFactory_afa47b2a28f33323ea825b082d688cb9a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries New\+If\+Statement} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&condition, \mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} then\+\_\+statement, \mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} else\+\_\+statement, \mbox{\hyperlink{classint}{int}} pos, \mbox{\hyperlink{structv8_1_1internal_1_1SourceRange}{Source\+Range}} then\+\_\+range=\{\}, \mbox{\hyperlink{structv8_1_1internal_1_1SourceRange}{Source\+Range}} else\+\_\+range=\{\})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_af3e971a46e21617b24af2ad9299802c5}\label{classv8_1_1internal_1_1PreParserFactory_af3e971a46e21617b24af2ad9299802c5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries New\+Break\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} target, \mbox{\hyperlink{classint}{int}} pos, \mbox{\hyperlink{classint}{int}} continuation\+\_\+pos=k\+No\+Source\+Position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a071e6e0a18355175ff63e40de2a73fe4}\label{classv8_1_1internal_1_1PreParserFactory_a071e6e0a18355175ff63e40de2a73fe4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries New\+Continue\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} target, \mbox{\hyperlink{classint}{int}} pos, \mbox{\hyperlink{classint}{int}} continuation\+\_\+pos=k\+No\+Source\+Position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a58e749b19ef584e3e354d32036757b31}\label{classv8_1_1internal_1_1PreParserFactory_a58e749b19ef584e3e354d32036757b31}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries New\+With\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$scope, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&expression, \mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} statement, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_aad8b8ded25f76beccd9dfc0c9a755b77}\label{classv8_1_1internal_1_1PreParserFactory_aad8b8ded25f76beccd9dfc0c9a755b77}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries New\+Do\+While\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$labels, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$own\+\_\+labels, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a9a591c09234f499bb4a612dff5f1d6c6}\label{classv8_1_1internal_1_1PreParserFactory_a9a591c09234f499bb4a612dff5f1d6c6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries New\+While\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$labels, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$own\+\_\+labels, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a649e6822618cdbaac1a4de77fbb1d278}\label{classv8_1_1internal_1_1PreParserFactory_a649e6822618cdbaac1a4de77fbb1d278}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries New\+Switch\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$labels, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&tag, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_aaeb2743b5153e02ca75720cbcf4b5cbd}\label{classv8_1_1internal_1_1PreParserFactory_aaeb2743b5153e02ca75720cbcf4b5cbd}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries New\+Case\+Clause} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&label, const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserScopedStatementList}{Pre\+Parser\+Scoped\+Statement\+List}} \&statements)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a0129a0ca82b3ed208fca5eacd0c8da22}\label{classv8_1_1internal_1_1PreParserFactory_a0129a0ca82b3ed208fca5eacd0c8da22}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries New\+For\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$labels, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$own\+\_\+labels, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a6050e46dff2aedc8155e5ba4b7f95de1}\label{classv8_1_1internal_1_1PreParserFactory_a6050e46dff2aedc8155e5ba4b7f95de1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries New\+For\+Each\+Statement} (For\+Each\+Statement\+::\+Visit\+Mode visit\+\_\+mode, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$labels, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$own\+\_\+labels, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a018925592d17428868b25bf1e76a9c45}\label{classv8_1_1internal_1_1PreParserFactory_a018925592d17428868b25bf1e76a9c45}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserStatement}{Pre\+Parser\+Statement}} {\bfseries New\+For\+Of\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$labels, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$own\+\_\+labels, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_a0f9233f7862af694af452b715c9857f3}\label{classv8_1_1internal_1_1PreParserFactory_a0f9233f7862af694af452b715c9857f3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Call\+Runtime} (Runtime\+::\+Function\+Id id, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneChunkList}{Zone\+Chunk\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} $>$ $\ast$arguments, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParserFactory_ac5d225363ccafa1dfa728d6738081e6c}\label{classv8_1_1internal_1_1PreParserFactory_ac5d225363ccafa1dfa728d6738081e6c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} {\bfseries New\+Import\+Call\+Expression} (const \mbox{\hyperlink{classv8_1_1internal_1_1PreParserExpression}{Pre\+Parser\+Expression}} \&args, \mbox{\hyperlink{classint}{int}} pos)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 536 of file preparser.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/parsing/preparser.\+h\end{DoxyCompactItemize}

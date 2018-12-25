@@ -1,0 +1,60 @@
+\hypertarget{structv8_1_1internal_1_1compiler_1_1AddMatcher}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Add\+Matcher$<$ Binop\+Matcher, Add\+Opcode, Sub\+Opcode, k\+Mul\+Opcode, k\+Shift\+Opcode $>$ Struct Template Reference}
+\label{structv8_1_1internal_1_1compiler_1_1AddMatcher}\index{v8\+::internal\+::compiler\+::\+Add\+Matcher$<$ Binop\+Matcher, Add\+Opcode, Sub\+Opcode, k\+Mul\+Opcode, k\+Shift\+Opcode $>$@{v8\+::internal\+::compiler\+::\+Add\+Matcher$<$ Binop\+Matcher, Add\+Opcode, Sub\+Opcode, k\+Mul\+Opcode, k\+Shift\+Opcode $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Add\+Matcher$<$ Binop\+Matcher, Add\+Opcode, Sub\+Opcode, k\+Mul\+Opcode, k\+Shift\+Opcode $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.649842cm]{structv8_1_1internal_1_1compiler_1_1AddMatcher}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1compiler_1_1AddMatcher_a56dd5d7b87962d28d0b499d0cf7d63e6}\label{structv8_1_1internal_1_1compiler_1_1AddMatcher_a56dd5d7b87962d28d0b499d0cf7d63e6}} 
+typedef \mbox{\hyperlink{structv8_1_1internal_1_1compiler_1_1ScaleMatcher}{Scale\+Matcher}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1compiler_1_1BinopMatcher}{Binop\+Matcher}}, k\+Mul\+Opcode, k\+Shift\+Opcode $>$ {\bfseries Matcher}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1compiler_1_1AddMatcher_aa5b57b0aff1e35b0605be084d8662093}\label{structv8_1_1internal_1_1compiler_1_1AddMatcher_aa5b57b0aff1e35b0605be084d8662093}} 
+{\bfseries Add\+Matcher} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classbool}{bool}} allow\+\_\+input\+\_\+swap)
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1compiler_1_1AddMatcher_a5b39c9416c51aa743c6b1354a0439d91}\label{structv8_1_1internal_1_1compiler_1_1AddMatcher_a5b39c9416c51aa743c6b1354a0439d91}} 
+{\bfseries Add\+Matcher} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1compiler_1_1AddMatcher_a808ff6e42dde142411e16cb0d621edb6}\label{structv8_1_1internal_1_1compiler_1_1AddMatcher_a808ff6e42dde142411e16cb0d621edb6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Index\+Input} () const
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1compiler_1_1AddMatcher_a9d46485a3c1ddd663256ce35231138cf}\label{structv8_1_1internal_1_1compiler_1_1AddMatcher_a9d46485a3c1ddd663256ce35231138cf}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Index\+Input} () const
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1compiler_1_1AddMatcher_a97906b2b753fadd9d696a0e4a8fae5a1}\label{structv8_1_1internal_1_1compiler_1_1AddMatcher_a97906b2b753fadd9d696a0e4a8fae5a1}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries scale} () const
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1compiler_1_1AddMatcher_a195f227cbea2dbcc195600da005e53ce}\label{structv8_1_1internal_1_1compiler_1_1AddMatcher_a195f227cbea2dbcc195600da005e53ce}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries power\+\_\+of\+\_\+two\+\_\+plus\+\_\+one} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1compiler_1_1AddMatcher_a102d500a376329fc6d2d5c4381d5b078}\label{structv8_1_1internal_1_1compiler_1_1AddMatcher_a102d500a376329fc6d2d5c4381d5b078}} 
+static const Ir\+Opcode\+::\+Value {\bfseries k\+Add\+Opcode} = Add\+Opcode
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1compiler_1_1AddMatcher_aac3956ca03dcc543a5d809a8601cb922}\label{structv8_1_1internal_1_1compiler_1_1AddMatcher_aac3956ca03dcc543a5d809a8601cb922}} 
+static const Ir\+Opcode\+::\+Value {\bfseries k\+Sub\+Opcode} = Sub\+Opcode
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Binop\+Matcher, Ir\+Opcode\+::\+Value Add\+Opcode, Ir\+Opcode\+::\+Value Sub\+Opcode, Ir\+Opcode\+::\+Value k\+Mul\+Opcode, Ir\+Opcode\+::\+Value k\+Shift\+Opcode$>$\newline
+struct v8\+::internal\+::compiler\+::\+Add\+Matcher$<$ Binop\+Matcher, Add\+Opcode, Sub\+Opcode, k\+Mul\+Opcode, k\+Shift\+Opcode $>$}
+
+
+
+Definition at line 349 of file node-\/matchers.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/node-\/matchers.\+h\end{DoxyCompactItemize}

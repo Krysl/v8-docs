@@ -28,7 +28,7 @@ void {\bfseries operator=} (const \mbox{\hyperlink{classv8_1_1HandleScope}{Handl
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static int \mbox{\hyperlink{classv8_1_1HandleScope_abab7214c9b9388b02f575fd5270b7e2f}{Number\+Of\+Handles}} (Isolate $\ast$isolate)
+static \mbox{\hyperlink{classint}{int}} \mbox{\hyperlink{classv8_1_1HandleScope_aac722821557f314a9cbe6b8ed8fc9d01}{Number\+Of\+Handles}} (Isolate $\ast$isolate)
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -39,8 +39,8 @@ void {\bfseries Initialize} (Isolate $\ast$isolate)
 \subsection*{Static Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classv8_1_1HandleScope_a1dfeb02024b2b75746a1aa1f0b2e94fa}\label{classv8_1_1HandleScope_a1dfeb02024b2b75746a1aa1f0b2e94fa}} 
-static internal\+::\+Address $\ast$ {\bfseries Create\+Handle} (internal\+::\+Isolate $\ast$isolate, internal\+::\+Address value)
+\mbox{\Hypertarget{classv8_1_1HandleScope_a21380ab50614c23122d2041525b2baa8}\label{classv8_1_1HandleScope_a21380ab50614c23122d2041525b2baa8}} 
+static \mbox{\hyperlink{classuintptr__t}{internal\+::\+Address}} $\ast$ {\bfseries Create\+Handle} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{internal\+::\+Isolate}} $\ast$isolate, \mbox{\hyperlink{classuintptr__t}{internal\+::\+Address}} value)
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -66,14 +66,19 @@ Definition at line 838 of file v8.\+h.
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classv8_1_1HandleScope_abab7214c9b9388b02f575fd5270b7e2f}\label{classv8_1_1HandleScope_abab7214c9b9388b02f575fd5270b7e2f}} 
+\mbox{\Hypertarget{classv8_1_1HandleScope_aac722821557f314a9cbe6b8ed8fc9d01}\label{classv8_1_1HandleScope_aac722821557f314a9cbe6b8ed8fc9d01}} 
 \index{v8\+::\+Handle\+Scope@{v8\+::\+Handle\+Scope}!Number\+Of\+Handles@{Number\+Of\+Handles}}
 \index{Number\+Of\+Handles@{Number\+Of\+Handles}!v8\+::\+Handle\+Scope@{v8\+::\+Handle\+Scope}}
 \subsubsection{\texorpdfstring{Number\+Of\+Handles()}{NumberOfHandles()}}
-{\footnotesize\ttfamily static int v8\+::\+Handle\+Scope\+::\+Number\+Of\+Handles (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classint}{int}} v8\+::\+Handle\+Scope\+::\+Number\+Of\+Handles (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Counts the number of allocated handles. 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Definition at line 1085 of file api.\+cc.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8.\+h\end{DoxyCompactItemize}
+v8/include/v8.\+h\item 
+v8/src/api.\+cc\end{DoxyCompactItemize}

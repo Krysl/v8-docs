@@ -1,0 +1,43 @@
+\hypertarget{classdisasm_1_1Disassembler}{}\section{disasm\+:\+:Disassembler Class Reference}
+\label{classdisasm_1_1Disassembler}\index{disasm\+::\+Disassembler@{disasm\+::\+Disassembler}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdisasm_1_1Disassembler_a9b5e1a9549f5088ee4893a903ac44436}\label{classdisasm_1_1Disassembler_a9b5e1a9549f5088ee4893a903ac44436}} 
+enum {\bfseries Unimplemented\+Opcode\+Action} \+: int8\+\_\+t \{ {\bfseries k\+Continue\+On\+Unimplemented\+Opcode}, 
+{\bfseries k\+Abort\+On\+Unimplemented\+Opcode}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdisasm_1_1Disassembler_aca324f01ef8d203210ca909bec93a5ea}\label{classdisasm_1_1Disassembler_aca324f01ef8d203210ca909bec93a5ea}} 
+{\bfseries Disassembler} (const \mbox{\hyperlink{classdisasm_1_1NameConverter}{Name\+Converter}} \&converter, Unimplemented\+Opcode\+Action unimplemented\+\_\+opcode\+\_\+action=k\+Abort\+On\+Unimplemented\+Opcode)
+\item 
+\mbox{\Hypertarget{classdisasm_1_1Disassembler_acbb7e8edf6caf55cbe105832f9ae88ea}\label{classdisasm_1_1Disassembler_acbb7e8edf6caf55cbe105832f9ae88ea}} 
+Unimplemented\+Opcode\+Action {\bfseries unimplemented\+\_\+opcode\+\_\+action} () const
+\item 
+\mbox{\Hypertarget{classdisasm_1_1Disassembler_ad9cd04c72d0e03d72f0620a67dc95b8f}\label{classdisasm_1_1Disassembler_ad9cd04c72d0e03d72f0620a67dc95b8f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Instruction\+Decode} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{v8\+::internal\+::\+Vector}}$<$ \mbox{\hyperlink{classchar}{char}} $>$ buffer, byte $\ast$instruction)
+\item 
+\mbox{\Hypertarget{classdisasm_1_1Disassembler_afb85ab5c4d646b7a1aeea00797c05b30}\label{classdisasm_1_1Disassembler_afb85ab5c4d646b7a1aeea00797c05b30}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Constant\+Pool\+Size\+At} (byte $\ast$instruction)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdisasm_1_1Disassembler_a81d16cbce8f84245d36d374e0054acc2}\label{classdisasm_1_1Disassembler_a81d16cbce8f84245d36d374e0054acc2}} 
+static void {\bfseries Disassemble} (F\+I\+LE $\ast$f, byte $\ast$begin, byte $\ast$end, Unimplemented\+Opcode\+Action unimplemented\+\_\+action=k\+Abort\+On\+Unimplemented\+Opcode)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 39 of file disasm.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/disasm.\+h\end{DoxyCompactItemize}

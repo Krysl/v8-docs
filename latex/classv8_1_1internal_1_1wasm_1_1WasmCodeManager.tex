@@ -1,0 +1,57 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCodeManager}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Code\+Manager Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1WasmCodeManager}\index{v8\+::internal\+::wasm\+::\+Wasm\+Code\+Manager@{v8\+::internal\+::wasm\+::\+Wasm\+Code\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_ab8e84676f1a42155d9b723c7b101047c}\label{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_ab8e84676f1a42155d9b723c7b101047c}} 
+{\bfseries Wasm\+Code\+Manager} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker}{Wasm\+Memory\+Tracker}} $\ast$memory\+\_\+tracker, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} max\+\_\+committed)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_a026784df2e9d15b94b4737bab288b220}\label{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_a026784df2e9d15b94b4737bab288b220}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1NativeModule}{Native\+Module}} $>$ {\bfseries New\+Native\+Module} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{Wasm\+Features}} \&enabled\+\_\+features, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} code\+\_\+size\+\_\+estimate, \mbox{\hyperlink{classbool}{bool}} can\+\_\+request\+\_\+more, std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{Wasm\+Module}} $>$ module)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_a65237f5b80dae7a92d86f131b6df4461}\label{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_a65237f5b80dae7a92d86f131b6df4461}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1NativeModule}{Native\+Module}} $\ast$ {\bfseries Lookup\+Native\+Module} (\mbox{\hyperlink{classuintptr__t}{Address}} pc) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_a2be288a7720a1f7bdf64f5060b7c782a}\label{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_a2be288a7720a1f7bdf64f5060b7c782a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCode}{Wasm\+Code}} $\ast$ {\bfseries Lookup\+Code} (\mbox{\hyperlink{classuintptr__t}{Address}} pc) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_a817bd8a7c74ad215be06d7387681d028}\label{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_a817bd8a7c74ad215be06d7387681d028}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries remaining\+\_\+uncommitted\+\_\+code\+\_\+space} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_a7401433454f3dec37dd14ab8b435c3cd}\label{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_a7401433454f3dec37dd14ab8b435c3cd}} 
+void {\bfseries Sample\+Module\+Sizes} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_a63e429333e97d3b7df4eb6b413148c2f}\label{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_a63e429333e97d3b7df4eb6b413148c2f}} 
+void {\bfseries Set\+Max\+Committed\+Memory\+For\+Testing} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} limit)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_a467f8764d4d5a71b6569eddfb2352e23}\label{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_a467f8764d4d5a71b6569eddfb2352e23}} 
+static void {\bfseries Install\+Sampling\+G\+C\+Callback} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_a830e39b25c460d141bb51369e782d2ec}\label{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_a830e39b25c460d141bb51369e782d2ec}} 
+static \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Estimate\+Native\+Module\+Code\+Size} (const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{Wasm\+Module}} $\ast$module)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_a7c142bbb8bf99c83617f41f1655caa00}\label{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_a7c142bbb8bf99c83617f41f1655caa00}} 
+static \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Estimate\+Native\+Module\+Non\+Code\+Size} (const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{Wasm\+Module}} $\ast$module)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_ab2eba8bcd9cf5215e8ce842fad93a987}\label{classv8_1_1internal_1_1wasm_1_1WasmCodeManager_ab2eba8bcd9cf5215e8ce842fad93a987}} 
+class {\bfseries Native\+Module}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 465 of file wasm-\/code-\/manager.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/wasm-\/code-\/manager.\+h\item 
+v8/src/wasm/wasm-\/code-\/manager.\+cc\end{DoxyCompactItemize}

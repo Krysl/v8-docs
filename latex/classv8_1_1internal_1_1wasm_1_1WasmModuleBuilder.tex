@@ -1,0 +1,84 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Module\+Builder Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder}\index{v8\+::internal\+::wasm\+::\+Wasm\+Module\+Builder@{v8\+::internal\+::wasm\+::\+Wasm\+Module\+Builder}}
+Inheritance diagram for v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Module\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a1ed9372caba8893eb4fda26de20c8722}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a1ed9372caba8893eb4fda26de20c8722}} 
+{\bfseries Wasm\+Module\+Builder} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a080ad497a73a377c53c7bd6980bbfedf}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a080ad497a73a377c53c7bd6980bbfedf}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Add\+Import} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const \mbox{\hyperlink{classchar}{char}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1Signature}{Function\+Sig}} $\ast$sig)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a29e887529b67f35efab9090fa61b0e2b}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a29e887529b67f35efab9090fa61b0e2b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmFunctionBuilder}{Wasm\+Function\+Builder}} $\ast$ {\bfseries Add\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1Signature}{Function\+Sig}} $\ast$sig=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a7c2d9c29e1aaaf1020aa6fc091fda66c}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a7c2d9c29e1aaaf1020aa6fc091fda66c}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Add\+Global} (Value\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classbool}{bool}} exported, \mbox{\hyperlink{classbool}{bool}} mutability=true, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmInitExpr}{Wasm\+Init\+Expr}} \&init=\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmInitExpr}{Wasm\+Init\+Expr}}())
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_aa4753c545446dccacf184abd8110b9a3}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_aa4753c545446dccacf184abd8110b9a3}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Add\+Global\+Import} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const \mbox{\hyperlink{classchar}{char}} $>$ name, Value\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a771213126c783fa1d383bf9f4d897643}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a771213126c783fa1d383bf9f4d897643}} 
+void {\bfseries Add\+Data\+Segment} (const byte $\ast$data, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} size, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} dest)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a29a6c9b1450c84e6e784f8e76c23c688}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a29a6c9b1450c84e6e784f8e76c23c688}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Add\+Signature} (\mbox{\hyperlink{classv8_1_1internal_1_1Signature}{Function\+Sig}} $\ast$sig)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a072dd55e015e77d5a6abc14d468b0979}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a072dd55e015e77d5a6abc14d468b0979}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Allocate\+Indirect\+Functions} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a09920257a6b9fc3f48a8eae0207198a5}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a09920257a6b9fc3f48a8eae0207198a5}} 
+void {\bfseries Set\+Indirect\+Function} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} indirect, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} direct)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a6196bb929c0c0a7720fb65ee6b60c849}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a6196bb929c0c0a7720fb65ee6b60c849}} 
+void {\bfseries Mark\+Start\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmFunctionBuilder}{Wasm\+Function\+Builder}} $\ast$builder)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_aae5501d23ad0880dbb43735ac721cb5d}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_aae5501d23ad0880dbb43735ac721cb5d}} 
+void {\bfseries Add\+Export} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const \mbox{\hyperlink{classchar}{char}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmFunctionBuilder}{Wasm\+Function\+Builder}} $\ast$builder)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a70c43857cdb229f241d3549b7b672e86}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a70c43857cdb229f241d3549b7b672e86}} 
+void {\bfseries Set\+Min\+Memory\+Size} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_aad3030a809ab8aa018ee23120b638faa}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_aad3030a809ab8aa018ee23120b638faa}} 
+void {\bfseries Set\+Max\+Memory\+Size} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a7f3d5675444ed73edb443b52231cf6ca}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a7f3d5675444ed73edb443b52231cf6ca}} 
+void {\bfseries Set\+Has\+Shared\+Memory} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a91832529420eac90dbff8f7d05b5069c}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a91832529420eac90dbff8f7d05b5069c}} 
+void {\bfseries Write\+To} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1ZoneBuffer}{Zone\+Buffer}} \&buffer) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a1d62c143fd85eb53596ed0b09eee89ef}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a1d62c143fd85eb53596ed0b09eee89ef}} 
+void {\bfseries Write\+Asm\+Js\+Offset\+Table} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1ZoneBuffer}{Zone\+Buffer}} \&buffer) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_aebbeb45e0f1e4d3b178c21622e81e403}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_aebbeb45e0f1e4d3b178c21622e81e403}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$ {\bfseries zone} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a529f5905f2124bebda0c00364b729e6d}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a529f5905f2124bebda0c00364b729e6d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Signature}{Function\+Sig}} $\ast$ {\bfseries Get\+Signature} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a0210e47d50d0e44fd0f929739a275fae}\label{classv8_1_1internal_1_1wasm_1_1WasmModuleBuilder_a0210e47d50d0e44fd0f929739a275fae}} 
+class {\bfseries Wasm\+Function\+Builder}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 221 of file wasm-\/module-\/builder.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/wasm-\/module-\/builder.\+h\item 
+v8/src/wasm/wasm-\/module-\/builder.\+cc\end{DoxyCompactItemize}

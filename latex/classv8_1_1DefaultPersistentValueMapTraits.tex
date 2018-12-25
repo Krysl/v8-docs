@@ -14,7 +14,7 @@ Inheritance diagram for v8\+:\+:Default\+Persistent\+Value\+Map\+Traits$<$ K, V 
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classv8_1_1DefaultPersistentValueMapTraits_a05cbd536d6bb9ba4949198351e074854}\label{classv8_1_1DefaultPersistentValueMapTraits_a05cbd536d6bb9ba4949198351e074854}} 
-typedef \mbox{\hyperlink{classv8_1_1PersistentValueMap}{Persistent\+Value\+Map}}$<$ K, V, \mbox{\hyperlink{classv8_1_1DefaultPersistentValueMapTraits}{Default\+Persistent\+Value\+Map\+Traits}}$<$ K, V $>$ $>$ {\bfseries Map\+Type}
+typedef \mbox{\hyperlink{classv8_1_1PersistentValueMap}{Persistent\+Value\+Map}}$<$ K, \mbox{\hyperlink{classV}{V}}, \mbox{\hyperlink{classv8_1_1DefaultPersistentValueMapTraits}{Default\+Persistent\+Value\+Map\+Traits}}$<$ K, \mbox{\hyperlink{classV}{V}} $>$ $>$ {\bfseries Map\+Type}
 \item 
 \mbox{\Hypertarget{classv8_1_1DefaultPersistentValueMapTraits_a379f8c42e727a9576fb0954bb0245d8f}\label{classv8_1_1DefaultPersistentValueMapTraits_a379f8c42e727a9576fb0954bb0245d8f}} 
 typedef void {\bfseries Weak\+Callback\+Data\+Type}
@@ -23,7 +23,7 @@ typedef void {\bfseries Weak\+Callback\+Data\+Type}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classv8_1_1DefaultPersistentValueMapTraits_a63b6fc80207ce6ac7d1eaa306b68768c}\label{classv8_1_1DefaultPersistentValueMapTraits_a63b6fc80207ce6ac7d1eaa306b68768c}} 
-static Weak\+Callback\+Data\+Type $\ast$ {\bfseries Weak\+Callback\+Parameter} (\mbox{\hyperlink{classv8_1_1PersistentValueMap}{Map\+Type}} $\ast$map, const K \&key, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ V $>$ value)
+static Weak\+Callback\+Data\+Type $\ast$ {\bfseries Weak\+Callback\+Parameter} (\mbox{\hyperlink{classv8_1_1PersistentValueMap}{Map\+Type}} $\ast$map, const K \&key, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classV}{V}} $>$ value)
 \item 
 \mbox{\Hypertarget{classv8_1_1DefaultPersistentValueMapTraits_ad5a476677abdec41871199920820e8bd}\label{classv8_1_1DefaultPersistentValueMapTraits_ad5a476677abdec41871199920820e8bd}} 
 static \mbox{\hyperlink{classv8_1_1PersistentValueMap}{Map\+Type}} $\ast$ {\bfseries Map\+From\+Weak\+Callback\+Info} (const \mbox{\hyperlink{classv8_1_1WeakCallbackInfo}{Weak\+Callback\+Info}}$<$ Weak\+Callback\+Data\+Type $>$ \&data)
@@ -35,7 +35,7 @@ static K {\bfseries Key\+From\+Weak\+Callback\+Info} (const \mbox{\hyperlink{cla
 static void {\bfseries Dispose\+Callback\+Data} (Weak\+Callback\+Data\+Type $\ast$data)
 \item 
 \mbox{\Hypertarget{classv8_1_1DefaultPersistentValueMapTraits_a28f1a2d349eb5a6ad376b6e968d51490}\label{classv8_1_1DefaultPersistentValueMapTraits_a28f1a2d349eb5a6ad376b6e968d51490}} 
-static void {\bfseries Dispose} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Global}{Global}}$<$ V $>$ value, K key)
+static void {\bfseries Dispose} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Global}{Global}}$<$ \mbox{\hyperlink{classV}{V}} $>$ value, K key)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}

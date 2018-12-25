@@ -1,0 +1,75 @@
+\hypertarget{classv8_1_1internal_1_1HeapSnapshot}{}\section{v8\+:\+:internal\+:\+:Heap\+Snapshot Class Reference}
+\label{classv8_1_1internal_1_1HeapSnapshot}\index{v8\+::internal\+::\+Heap\+Snapshot@{v8\+::internal\+::\+Heap\+Snapshot}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_ae9a20fbe788ade1a582bdd9fc9245ee9}\label{classv8_1_1internal_1_1HeapSnapshot_ae9a20fbe788ade1a582bdd9fc9245ee9}} 
+{\bfseries Heap\+Snapshot} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapProfiler}{Heap\+Profiler}} $\ast$profiler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_a92b437132b6ad4bafb6bd8edd5815554}\label{classv8_1_1internal_1_1HeapSnapshot_a92b437132b6ad4bafb6bd8edd5815554}} 
+void {\bfseries Delete} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_ae6ea43e4d6f1b10288a03b009f363c89}\label{classv8_1_1internal_1_1HeapSnapshot_ae6ea43e4d6f1b10288a03b009f363c89}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapProfiler}{Heap\+Profiler}} $\ast$ {\bfseries profiler} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_a4f80e65fbba028522b77e26d0a0f94a1}\label{classv8_1_1internal_1_1HeapSnapshot_a4f80e65fbba028522b77e26d0a0f94a1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $\ast$ {\bfseries root} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_ad64e88f6d9da9118f27241be6a3194b2}\label{classv8_1_1internal_1_1HeapSnapshot_ad64e88f6d9da9118f27241be6a3194b2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $\ast$ {\bfseries gc\+\_\+roots} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_a3edded26a99bf4b2478edc212c1d655a}\label{classv8_1_1internal_1_1HeapSnapshot_a3edded26a99bf4b2478edc212c1d655a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $\ast$ {\bfseries gc\+\_\+subroot} (Root root) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_a9335bae989d17454e4d789759f2b8afe}\label{classv8_1_1internal_1_1HeapSnapshot_a9335bae989d17454e4d789759f2b8afe}} 
+std\+::deque$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $>$ \& {\bfseries entries} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_a2865e9f46584bd30c43d104c02241fce}\label{classv8_1_1internal_1_1HeapSnapshot_a2865e9f46584bd30c43d104c02241fce}} 
+std\+::deque$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapGraphEdge}{Heap\+Graph\+Edge}} $>$ \& {\bfseries edges} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_a5c91fa9078fba4625cec3330c730c73d}\label{classv8_1_1internal_1_1HeapSnapshot_a5c91fa9078fba4625cec3330c730c73d}} 
+std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapGraphEdge}{Heap\+Graph\+Edge}} $\ast$ $>$ \& {\bfseries children} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_a36b4f35dce8b6f62b8bcde3434231266}\label{classv8_1_1internal_1_1HeapSnapshot_a36b4f35dce8b6f62b8bcde3434231266}} 
+const std\+::vector$<$ \mbox{\hyperlink{structv8_1_1internal_1_1SourceLocation}{Source\+Location}} $>$ \& {\bfseries locations} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_a728b4c7878a21901a906fca5f0880d98}\label{classv8_1_1internal_1_1HeapSnapshot_a728b4c7878a21901a906fca5f0880d98}} 
+void {\bfseries Remember\+Last\+J\+S\+Object\+Id} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_a35ced2c7dcdbede622282f2b93aab3bd}\label{classv8_1_1internal_1_1HeapSnapshot_a35ced2c7dcdbede622282f2b93aab3bd}} 
+\mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} {\bfseries max\+\_\+snapshot\+\_\+js\+\_\+object\+\_\+id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_af733d3871ba284b459d5a7efed5d42e0}\label{classv8_1_1internal_1_1HeapSnapshot_af733d3871ba284b459d5a7efed5d42e0}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+complete} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_a8e0861799ccc8e659cb9d0d4d285a3ef}\label{classv8_1_1internal_1_1HeapSnapshot_a8e0861799ccc8e659cb9d0d4d285a3ef}} 
+void {\bfseries Add\+Location} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $\ast$entry, \mbox{\hyperlink{classint}{int}} script\+Id, \mbox{\hyperlink{classint}{int}} line, \mbox{\hyperlink{classint}{int}} col)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_a9028b9fa71881d3260ef1b037d58d4f6}\label{classv8_1_1internal_1_1HeapSnapshot_a9028b9fa71881d3260ef1b037d58d4f6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $\ast$ {\bfseries Add\+Entry} (Heap\+Entry\+::\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, const \mbox{\hyperlink{classchar}{char}} $\ast$name, \mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} id, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classunsigned}{unsigned}} trace\+\_\+node\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_a0f939339bb8e7574baf78d2b059d50d1}\label{classv8_1_1internal_1_1HeapSnapshot_a0f939339bb8e7574baf78d2b059d50d1}} 
+void {\bfseries Add\+Synthetic\+Root\+Entries} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_aa8f063ba3910f5bfb9b324fc52a92cca}\label{classv8_1_1internal_1_1HeapSnapshot_aa8f063ba3910f5bfb9b324fc52a92cca}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $\ast$ {\bfseries Get\+Entry\+By\+Id} (\mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_afa5230c9502d22f7441b990892c91dd8}\label{classv8_1_1internal_1_1HeapSnapshot_afa5230c9502d22f7441b990892c91dd8}} 
+void {\bfseries Fill\+Children} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapSnapshot_a3c183f20e6935d16ec6a852cfb77b252}\label{classv8_1_1internal_1_1HeapSnapshot_a3c183f20e6935d16ec6a852cfb77b252}} 
+void {\bfseries Print} (\mbox{\hyperlink{classint}{int}} max\+\_\+depth)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 176 of file heap-\/snapshot-\/generator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/heap-\/snapshot-\/generator.\+h\item 
+v8/src/profiler/heap-\/snapshot-\/generator.\+cc\end{DoxyCompactItemize}

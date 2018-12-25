@@ -94,18 +94,27 @@ $(document).ready(function(){initNavTree('classv8_1_1RetainedObjectInfo.html',''
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="v8-profiler_8h_source.html">v8-profiler.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for v8::RetainedObjectInfo:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classv8_1_1RetainedObjectInfo.png" usemap="#v8::RetainedObjectInfo_map" alt=""/>
+  <map id="v8::RetainedObjectInfo_map" name="v8::RetainedObjectInfo_map">
+<area href="classv8_1_1internal_1_1NativeGroupRetainedObjectInfo.html" alt="v8::internal::NativeGroupRetainedObjectInfo" shape="rect" coords="0,56,258,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5011203f7c5949049ba36b8059f03eca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1RetainedObjectInfo.html#a5011203f7c5949049ba36b8059f03eca">Dispose</a> ()=0</td></tr>
 <tr class="separator:a5011203f7c5949049ba36b8059f03eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a286103bb076c85415919c86b1838c990"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1RetainedObjectInfo.html#a286103bb076c85415919c86b1838c990">IsEquivalent</a> (<a class="el" href="classv8_1_1RetainedObjectInfo.html">RetainedObjectInfo</a> *other)=0</td></tr>
+<tr class="memitem:a286103bb076c85415919c86b1838c990"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1RetainedObjectInfo.html#a286103bb076c85415919c86b1838c990">IsEquivalent</a> (<a class="el" href="classv8_1_1RetainedObjectInfo.html">RetainedObjectInfo</a> *other)=0</td></tr>
 <tr class="separator:a286103bb076c85415919c86b1838c990"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fdbfa242b95615e63f08433419c8066"><td class="memItemLeft" align="right" valign="top">virtual intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1RetainedObjectInfo.html#a6fdbfa242b95615e63f08433419c8066">GetHash</a> ()=0</td></tr>
 <tr class="separator:a6fdbfa242b95615e63f08433419c8066"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad19106fc7f0499fd45005077551d54c0"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1RetainedObjectInfo.html#ad19106fc7f0499fd45005077551d54c0">GetLabel</a> ()=0</td></tr>
+<tr class="memitem:ad19106fc7f0499fd45005077551d54c0"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classchar.html">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1RetainedObjectInfo.html#ad19106fc7f0499fd45005077551d54c0">GetLabel</a> ()=0</td></tr>
 <tr class="separator:ad19106fc7f0499fd45005077551d54c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf835370c5516f2a89dd2d3f83dee10b"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1RetainedObjectInfo.html#adf835370c5516f2a89dd2d3f83dee10b">GetGroupLabel</a> ()</td></tr>
+<tr class="memitem:adf835370c5516f2a89dd2d3f83dee10b"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classchar.html">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1RetainedObjectInfo.html#adf835370c5516f2a89dd2d3f83dee10b">GetGroupLabel</a> ()</td></tr>
 <tr class="separator:adf835370c5516f2a89dd2d3f83dee10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6865597469bc7d28bd8ec71b4b890bd"><td class="memItemLeft" align="right" valign="top">virtual intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1RetainedObjectInfo.html#ae6865597469bc7d28bd8ec71b4b890bd">GetElementCount</a> ()</td></tr>
 <tr class="separator:ae6865597469bc7d28bd8ec71b4b890bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +160,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Called by V8 when it no longer needs an instance. </p>
 
+<p>Implemented in <a class="el" href="classv8_1_1internal_1_1NativeGroupRetainedObjectInfo.html#a27dc763171801350dc7f7b2b9e74ee42">v8::internal::NativeGroupRetainedObjectInfo</a>.</p>
+
 </div>
 </div>
 <a id="ae6865597469bc7d28bd8ec71b4b890bd"></a>
@@ -191,7 +202,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const char* v8::RetainedObjectInfo::GetGroupLabel </td>
+          <td class="memname">virtual const <a class="el" href="classchar.html">char</a>* v8::RetainedObjectInfo::GetGroupLabel </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -233,6 +244,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns hash value for the instance. Equivalent instances must have the same hash value. </p>
 
+<p>Implemented in <a class="el" href="classv8_1_1internal_1_1NativeGroupRetainedObjectInfo.html#a0bb1682d322ad1c63b22058cf5a75a6f">v8::internal::NativeGroupRetainedObjectInfo</a>.</p>
+
 </div>
 </div>
 <a id="ad19106fc7f0499fd45005077551d54c0"></a>
@@ -245,7 +258,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const char* v8::RetainedObjectInfo::GetLabel </td>
+          <td class="memname">virtual const <a class="el" href="classchar.html">char</a>* v8::RetainedObjectInfo::GetLabel </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -258,6 +271,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns human-readable label. It must be a null-terminated UTF-8 encoded string. V8 copies its contents during a call to GetLabel. </p>
+
+<p>Implemented in <a class="el" href="classv8_1_1internal_1_1NativeGroupRetainedObjectInfo.html#a8b9d63379a9e6647ecbe169d6f9223ee">v8::internal::NativeGroupRetainedObjectInfo</a>.</p>
 
 </div>
 </div>
@@ -299,7 +314,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool v8::RetainedObjectInfo::IsEquivalent </td>
+          <td class="memname">virtual <a class="el" href="classbool.html">bool</a> v8::RetainedObjectInfo::IsEquivalent </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classv8_1_1RetainedObjectInfo.html">RetainedObjectInfo</a> *&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
@@ -314,6 +329,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns whether two instances are equivalent. </p>
 
+<p>Implemented in <a class="el" href="classv8_1_1internal_1_1NativeGroupRetainedObjectInfo.html#a8d54367b99192c9081d03ccdc8e97612">v8::internal::NativeGroupRetainedObjectInfo</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -325,7 +342,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1RetainedObjectInfo.html">RetainedObjectInfo</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 14:33:08 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:40:34 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

@@ -1,0 +1,45 @@
+\hypertarget{classv8_1_1internal_1_1TypedSlotSet}{}\section{v8\+:\+:internal\+:\+:Typed\+Slot\+Set Class Reference}
+\label{classv8_1_1internal_1_1TypedSlotSet}\index{v8\+::internal\+::\+Typed\+Slot\+Set@{v8\+::internal\+::\+Typed\+Slot\+Set}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Typed\+Slot\+Set\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1TypedSlotSet}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TypedSlotSet_ad001304aa91a8a6885dce63d2eac48a0}\label{classv8_1_1internal_1_1TypedSlotSet_ad001304aa91a8a6885dce63d2eac48a0}} 
+enum {\bfseries Iteration\+Mode} \{ {\bfseries P\+R\+E\+F\+R\+E\+E\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+C\+H\+U\+N\+KS}, 
+{\bfseries K\+E\+E\+P\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+C\+H\+U\+N\+KS}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TypedSlotSet_a317b8c8a66c92042fd84c36a691e4d6a}\label{classv8_1_1internal_1_1TypedSlotSet_a317b8c8a66c92042fd84c36a691e4d6a}} 
+{\bfseries Typed\+Slot\+Set} (\mbox{\hyperlink{classuintptr__t}{Address}} page\+\_\+start)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TypedSlotSet_a29352b7d397fcac46cce405180c96143}\label{classv8_1_1internal_1_1TypedSlotSet_a29352b7d397fcac46cce405180c96143}} 
+{\footnotesize template$<$typename Callback $>$ }\\\mbox{\hyperlink{classint}{int}} {\bfseries Iterate} (Callback callback, Iteration\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TypedSlotSet_ad22d4961ed462a9b2e2febc05d5b1825}\label{classv8_1_1internal_1_1TypedSlotSet_ad22d4961ed462a9b2e2febc05d5b1825}} 
+void {\bfseries Clear\+Invalid\+Slots} (const std\+::map$<$ \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}}, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} $>$ \&invalid\+\_\+ranges)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TypedSlotSet_a0ecabc42bcf668719d2dd92dc4e2c951}\label{classv8_1_1internal_1_1TypedSlotSet_a0ecabc42bcf668719d2dd92dc4e2c951}} 
+void {\bfseries Free\+To\+Be\+Freed\+Chunks} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 437 of file slot-\/set.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/slot-\/set.\+h\item 
+v8/src/heap/slot-\/set.\+cc\end{DoxyCompactItemize}

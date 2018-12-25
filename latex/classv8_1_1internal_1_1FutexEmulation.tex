@@ -1,0 +1,51 @@
+\hypertarget{classv8_1_1internal_1_1FutexEmulation}{}\section{v8\+:\+:internal\+:\+:Futex\+Emulation Class Reference}
+\label{classv8_1_1internal_1_1FutexEmulation}\index{v8\+::internal\+::\+Futex\+Emulation@{v8\+::internal\+::\+Futex\+Emulation}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Futex\+Emulation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1FutexEmulation}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FutexEmulation_a6d61be5e753e50ee663275ccb345204c}\label{classv8_1_1internal_1_1FutexEmulation_a6d61be5e753e50ee663275ccb345204c}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Wait\+Js} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArrayBuffer}{J\+S\+Array\+Buffer}} $>$ array\+\_\+buffer, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} addr, int32\+\_\+t value, double rel\+\_\+timeout\+\_\+ms)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FutexEmulation_ac465f50c7ed498ef70cb87c233af910f}\label{classv8_1_1internal_1_1FutexEmulation_ac465f50c7ed498ef70cb87c233af910f}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Wait} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArrayBuffer}{J\+S\+Array\+Buffer}} $>$ array\+\_\+buffer, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} addr, int32\+\_\+t value, double rel\+\_\+timeout\+\_\+ms)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FutexEmulation_adfe362cc5f3dd60406b90eb020fbd965}\label{classv8_1_1internal_1_1FutexEmulation_adfe362cc5f3dd60406b90eb020fbd965}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Wake} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArrayBuffer}{J\+S\+Array\+Buffer}} $>$ array\+\_\+buffer, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} addr, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} num\+\_\+waiters\+\_\+to\+\_\+wake)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FutexEmulation_ad4ce86d6563fa7de7dd400bbd89f62d8}\label{classv8_1_1internal_1_1FutexEmulation_ad4ce86d6563fa7de7dd400bbd89f62d8}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Num\+Waiters\+For\+Testing} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArrayBuffer}{J\+S\+Array\+Buffer}} $>$ array\+\_\+buffer, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} addr)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FutexEmulation_a44e18f878cf35172c8b7e186aa6732cb}\label{classv8_1_1internal_1_1FutexEmulation_a44e18f878cf35172c8b7e186aa6732cb}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Wake\+All} = U\+I\+N\+T32\+\_\+\+M\+AX
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FutexEmulation_a468b1954483b12644e4ac971b41740f2}\label{classv8_1_1internal_1_1FutexEmulation_a468b1954483b12644e4ac971b41740f2}} 
+class {\bfseries Futex\+Wait\+List\+Node}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FutexEmulation_a03178b4ef32a1c9f950260c0a07b7cef}\label{classv8_1_1internal_1_1FutexEmulation_a03178b4ef32a1c9f950260c0a07b7cef}} 
+class {\bfseries Atomics\+Wait\+Wake\+Handle}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 110 of file futex-\/emulation.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/futex-\/emulation.\+h\item 
+v8/src/futex-\/emulation.\+cc\end{DoxyCompactItemize}

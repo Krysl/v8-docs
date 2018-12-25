@@ -1,0 +1,64 @@
+\hypertarget{classv8_1_1internal_1_1FreeSpace}{}\section{v8\+:\+:internal\+:\+:Free\+Space Class Reference}
+\label{classv8_1_1internal_1_1FreeSpace}\index{v8\+::internal\+::\+Free\+Space@{v8\+::internal\+::\+Free\+Space}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Free\+Space\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1FreeSpace}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeSpace_a5a8579c666adffd4c716ac1e00525cda}\label{classv8_1_1internal_1_1FreeSpace_a5a8579c666adffd4c716ac1e00525cda}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeSpace_ae6e7329405deeb3d629da55f78a56a86}\label{classv8_1_1internal_1_1FreeSpace_ae6e7329405deeb3d629da55f78a56a86}} 
+void {\bfseries set\+\_\+size} (\mbox{\hyperlink{classint}{int}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeSpace_a274094b74f326c906efe5f25e0224583}\label{classv8_1_1internal_1_1FreeSpace_a274094b74f326c906efe5f25e0224583}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries relaxed\+\_\+read\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeSpace_ac177f8898c8f9b567526250cc1e0e907}\label{classv8_1_1internal_1_1FreeSpace_ac177f8898c8f9b567526250cc1e0e907}} 
+void {\bfseries relaxed\+\_\+write\+\_\+size} (\mbox{\hyperlink{classint}{int}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeSpace_add46e42a33fdf2fca5a450f278f54f48}\label{classv8_1_1internal_1_1FreeSpace_add46e42a33fdf2fca5a450f278f54f48}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Size} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeSpace_ad6b65705011e8b68d15f1982412d748a}\label{classv8_1_1internal_1_1FreeSpace_ad6b65705011e8b68d15f1982412d748a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1FreeSpace}{Free\+Space}} $\ast$ {\bfseries next} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeSpace_a6310268fe3056a1ba45db0daeb66229b}\label{classv8_1_1internal_1_1FreeSpace_a6310268fe3056a1ba45db0daeb66229b}} 
+void {\bfseries set\+\_\+next} (\mbox{\hyperlink{classv8_1_1internal_1_1FreeSpace}{Free\+Space}} $\ast$next)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeSpace_aa3f4712f46d50f0bd97622c0db7c2701}\label{classv8_1_1internal_1_1FreeSpace_aa3f4712f46d50f0bd97622c0db7c2701}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1FreeSpace}{Free\+Space}} $\ast$ {\bfseries cast} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$obj)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeSpace_a7fd33f05c7a8d5417c28228c73f8608a}\label{classv8_1_1internal_1_1FreeSpace_a7fd33f05c7a8d5417c28228c73f8608a}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Size\+Offset} = Heap\+Object\+::k\+Header\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeSpace_a16df757f9e0a708e78211a0ba872eaae}\label{classv8_1_1internal_1_1FreeSpace_a16df757f9e0a708e78211a0ba872eaae}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Next\+Offset} = P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+L\+I\+GN(k\+Size\+Offset + k\+Pointer\+Size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeSpace_aed878e2a659e31ccfe1479f0f7ffa8a9}\label{classv8_1_1internal_1_1FreeSpace_aed878e2a659e31ccfe1479f0f7ffa8a9}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Size} = k\+Next\+Offset + k\+Pointer\+Size
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1330 of file objects.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects.\+h\item 
+v8/src/objects-\/inl.\+h\end{DoxyCompactItemize}

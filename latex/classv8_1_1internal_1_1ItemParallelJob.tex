@@ -1,0 +1,43 @@
+\hypertarget{classv8_1_1internal_1_1ItemParallelJob}{}\section{v8\+:\+:internal\+:\+:Item\+Parallel\+Job Class Reference}
+\label{classv8_1_1internal_1_1ItemParallelJob}\index{v8\+::internal\+::\+Item\+Parallel\+Job@{v8\+::internal\+::\+Item\+Parallel\+Job}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1ItemParallelJob_1_1Item}{Item}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1ItemParallelJob_1_1Task}{Task}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ItemParallelJob_a7c8e87da3b4830fea7cf63b186f15700}\label{classv8_1_1internal_1_1ItemParallelJob_a7c8e87da3b4830fea7cf63b186f15700}} 
+{\bfseries Item\+Parallel\+Job} (\mbox{\hyperlink{classv8_1_1internal_1_1CancelableTaskManager}{Cancelable\+Task\+Manager}} $\ast$cancelable\+\_\+task\+\_\+manager, \mbox{\hyperlink{classv8_1_1base_1_1Semaphore}{base\+::\+Semaphore}} $\ast$pending\+\_\+tasks)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ItemParallelJob_aeb3bcccbbf53ae07a1ddfd9b35f66674}\label{classv8_1_1internal_1_1ItemParallelJob_aeb3bcccbbf53ae07a1ddfd9b35f66674}} 
+void {\bfseries Add\+Task} (\mbox{\hyperlink{classv8_1_1internal_1_1ItemParallelJob_1_1Task}{Task}} $\ast$task)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ItemParallelJob_ab63591755796895ecccf1005e1058d58}\label{classv8_1_1internal_1_1ItemParallelJob_ab63591755796895ecccf1005e1058d58}} 
+void {\bfseries Add\+Item} (\mbox{\hyperlink{classv8_1_1internal_1_1ItemParallelJob_1_1Item}{Item}} $\ast$item)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ItemParallelJob_a1380becc8b4d1f17b4d60ad4121bc543}\label{classv8_1_1internal_1_1ItemParallelJob_a1380becc8b4d1f17b4d60ad4121bc543}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Items} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ItemParallelJob_ab908d93ebf0f004029957a88b5328c68}\label{classv8_1_1internal_1_1ItemParallelJob_ab908d93ebf0f004029957a88b5328c68}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Tasks} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ItemParallelJob_a7c3822b76d9485d5d038e8c999623fab}\label{classv8_1_1internal_1_1ItemParallelJob_a7c3822b76d9485d5d038e8c999623fab}} 
+void {\bfseries Run} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Counters}{Counters}} $>$ \&async\+\_\+counters)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 42 of file item-\/parallel-\/job.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/item-\/parallel-\/job.\+h\item 
+v8/src/heap/item-\/parallel-\/job.\+cc\end{DoxyCompactItemize}

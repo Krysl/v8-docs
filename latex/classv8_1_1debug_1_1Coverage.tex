@@ -1,0 +1,64 @@
+\hypertarget{classv8_1_1debug_1_1Coverage}{}\section{v8\+:\+:debug\+:\+:Coverage Class Reference}
+\label{classv8_1_1debug_1_1Coverage}\index{v8\+::debug\+::\+Coverage@{v8\+::debug\+::\+Coverage}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1debug_1_1Coverage_1_1BlockData}{Block\+Data}}
+\item 
+class \mbox{\hyperlink{classv8_1_1debug_1_1Coverage_1_1FunctionData}{Function\+Data}}
+\item 
+class \mbox{\hyperlink{classv8_1_1debug_1_1Coverage_1_1ScriptData}{Script\+Data}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1Coverage_abe32905368fbf1082081c9ac4387bd2a}\label{classv8_1_1debug_1_1Coverage_abe32905368fbf1082081c9ac4387bd2a}} 
+enum {\bfseries Mode} \{ \newline
+{\bfseries k\+Best\+Effort}, 
+{\bfseries k\+Precise\+Count}, 
+{\bfseries k\+Precise\+Binary}, 
+{\bfseries k\+Block\+Count}, 
+\newline
+{\bfseries k\+Block\+Binary}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1Coverage_a7bdcdbed256507df025bc5dba878ffbe}\label{classv8_1_1debug_1_1Coverage_a7bdcdbed256507df025bc5dba878ffbe}} 
+{\bfseries M\+O\+V\+E\+\_\+\+O\+N\+L\+Y\+\_\+\+N\+O\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+OR} (\mbox{\hyperlink{classv8_1_1debug_1_1Coverage}{Coverage}})
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1Coverage_afc0356c43296a0df11da5ebf1cab8049}\label{classv8_1_1debug_1_1Coverage_afc0356c43296a0df11da5ebf1cab8049}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Script\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1Coverage_ad4a55e808ceed0c4ac5c9abe51039f76}\label{classv8_1_1debug_1_1Coverage_ad4a55e808ceed0c4ac5c9abe51039f76}} 
+\mbox{\hyperlink{classv8_1_1debug_1_1Coverage_1_1ScriptData}{Script\+Data}} {\bfseries Get\+Script\+Data} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} i) const
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1Coverage_ab86b71059e98f00664682109f07f1b3c}\label{classv8_1_1debug_1_1Coverage_ab86b71059e98f00664682109f07f1b3c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Empty} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1Coverage_aed67415f98c28938939ac7a01e6bc49a}\label{classv8_1_1debug_1_1Coverage_aed67415f98c28938939ac7a01e6bc49a}} 
+static \mbox{\hyperlink{classv8_1_1debug_1_1Coverage}{Coverage}} {\bfseries Collect\+Precise} (Isolate $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1Coverage_a050ccf29e342dfd6384d7e6ecc8768fe}\label{classv8_1_1debug_1_1Coverage_a050ccf29e342dfd6384d7e6ecc8768fe}} 
+static \mbox{\hyperlink{classv8_1_1debug_1_1Coverage}{Coverage}} {\bfseries Collect\+Best\+Effort} (Isolate $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1Coverage_aecbcf13f0fff39e490ff5b66c0688442}\label{classv8_1_1debug_1_1Coverage_aecbcf13f0fff39e490ff5b66c0688442}} 
+static void {\bfseries Select\+Mode} (Isolate $\ast$isolate, Mode mode)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 224 of file debug-\/interface.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/debug/debug-\/interface.\+h\item 
+v8/src/api.\+cc\end{DoxyCompactItemize}

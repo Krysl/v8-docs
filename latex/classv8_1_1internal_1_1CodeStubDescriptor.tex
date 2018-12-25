@@ -1,0 +1,78 @@
+\hypertarget{classv8_1_1internal_1_1CodeStubDescriptor}{}\section{v8\+:\+:internal\+:\+:Code\+Stub\+Descriptor Class Reference}
+\label{classv8_1_1internal_1_1CodeStubDescriptor}\index{v8\+::internal\+::\+Code\+Stub\+Descriptor@{v8\+::internal\+::\+Code\+Stub\+Descriptor}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_a2daf19518c230bf6ca4b4434a931800d}\label{classv8_1_1internal_1_1CodeStubDescriptor_a2daf19518c230bf6ca4b4434a931800d}} 
+{\bfseries Code\+Stub\+Descriptor} (\mbox{\hyperlink{classv8_1_1internal_1_1CodeStub}{Code\+Stub}} $\ast$stub)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_af07f54357f40df027679c9596651d586}\label{classv8_1_1internal_1_1CodeStubDescriptor_af07f54357f40df027679c9596651d586}} 
+{\bfseries Code\+Stub\+Descriptor} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} stub\+\_\+key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_ad688411c8c3330f898ddb8fc3aec1433}\label{classv8_1_1internal_1_1CodeStubDescriptor_ad688411c8c3330f898ddb8fc3aec1433}} 
+void {\bfseries Initialize} (\mbox{\hyperlink{classuintptr__t}{Address}} deoptimization\+\_\+handler=k\+Null\+Address, \mbox{\hyperlink{classint}{int}} hint\+\_\+stack\+\_\+parameter\+\_\+count=-\/1, Stub\+Function\+Mode function\+\_\+mode=N\+O\+T\+\_\+\+J\+S\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+T\+U\+B\+\_\+\+M\+O\+DE)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_a9a24498445b47d467dffb394535c2bed}\label{classv8_1_1internal_1_1CodeStubDescriptor_a9a24498445b47d467dffb394535c2bed}} 
+void {\bfseries Initialize} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} stack\+\_\+parameter\+\_\+count, \mbox{\hyperlink{classuintptr__t}{Address}} deoptimization\+\_\+handler=k\+Null\+Address, \mbox{\hyperlink{classint}{int}} hint\+\_\+stack\+\_\+parameter\+\_\+count=-\/1, Stub\+Function\+Mode function\+\_\+mode=N\+O\+T\+\_\+\+J\+S\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+T\+U\+B\+\_\+\+M\+O\+DE)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_adb16950e653000a0e74ac075569c27a0}\label{classv8_1_1internal_1_1CodeStubDescriptor_adb16950e653000a0e74ac075569c27a0}} 
+void {\bfseries Set\+Miss\+Handler} (Runtime\+::\+Function\+Id id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_a2846ef8ca7ab73d3022493aa91202dd8}\label{classv8_1_1internal_1_1CodeStubDescriptor_a2846ef8ca7ab73d3022493aa91202dd8}} 
+void {\bfseries set\+\_\+call\+\_\+descriptor} (\mbox{\hyperlink{classv8_1_1internal_1_1CallInterfaceDescriptor}{Call\+Interface\+Descriptor}} d)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_a53104316ee7132d0c1220b7a2190c4ab}\label{classv8_1_1internal_1_1CodeStubDescriptor_a53104316ee7132d0c1220b7a2190c4ab}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CallInterfaceDescriptor}{Call\+Interface\+Descriptor}} {\bfseries call\+\_\+descriptor} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_a67fd0f891972e1d6cf1efd9705892fe4}\label{classv8_1_1internal_1_1CodeStubDescriptor_a67fd0f891972e1d6cf1efd9705892fe4}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Register\+Parameter\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_ab78f1743b6e6375a4ab82c45c0dff040}\label{classv8_1_1internal_1_1CodeStubDescriptor_ab78f1743b6e6375a4ab82c45c0dff040}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Stack\+Parameter\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_a1be4eca5d377fabc4d3c91f0f59cfb5e}\label{classv8_1_1internal_1_1CodeStubDescriptor_a1be4eca5d377fabc4d3c91f0f59cfb5e}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Parameter\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_a4d11fb65f12a893e5c5b06beeb57729d}\label{classv8_1_1internal_1_1CodeStubDescriptor_a4d11fb65f12a893e5c5b06beeb57729d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries Get\+Register\+Parameter} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_a2ca863707ac3cf42057fb8438617c80d}\label{classv8_1_1internal_1_1CodeStubDescriptor_a2ca863707ac3cf42057fb8438617c80d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} {\bfseries Get\+Parameter\+Type} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_ae8efb53e1f6828dea51f435c5183ac55}\label{classv8_1_1internal_1_1CodeStubDescriptor_ae8efb53e1f6828dea51f435c5183ac55}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} {\bfseries miss\+\_\+handler} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_a6f0b084c14315bbd0b852ecf476384b6}\label{classv8_1_1internal_1_1CodeStubDescriptor_a6f0b084c14315bbd0b852ecf476384b6}} 
+Runtime\+::\+Function\+Id {\bfseries miss\+\_\+handler\+\_\+id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_a1a64ea054755f002501c99bcceb0bb3f}\label{classv8_1_1internal_1_1CodeStubDescriptor_a1a64ea054755f002501c99bcceb0bb3f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+miss\+\_\+handler} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_a1555aab1ed3bf69a15a301df86d0de4e}\label{classv8_1_1internal_1_1CodeStubDescriptor_a1555aab1ed3bf69a15a301df86d0de4e}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Handler\+Parameter\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_a3468ffd74f6ac45cadb0d24b9d60016a}\label{classv8_1_1internal_1_1CodeStubDescriptor_a3468ffd74f6ac45cadb0d24b9d60016a}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries hint\+\_\+stack\+\_\+parameter\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_adf8dd00b6d7e0a8f97afba8f16762c10}\label{classv8_1_1internal_1_1CodeStubDescriptor_adf8dd00b6d7e0a8f97afba8f16762c10}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries stack\+\_\+parameter\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_ad73ffc45a1f8f5def94863ed40dfe6c2}\label{classv8_1_1internal_1_1CodeStubDescriptor_ad73ffc45a1f8f5def94863ed40dfe6c2}} 
+Stub\+Function\+Mode {\bfseries function\+\_\+mode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubDescriptor_a281b171fa1d3d9bbd0487f48aa51d870}\label{classv8_1_1internal_1_1CodeStubDescriptor_a281b171fa1d3d9bbd0487f48aa51d870}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries deoptimization\+\_\+handler} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 267 of file code-\/stubs.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/code-\/stubs.\+h\item 
+v8/src/code-\/stubs.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\hypertarget{classv8_1_1internal_1_1ThreadManager}{}\section{v8\+:\+:internal\+:\+:Thread\+Manager Class Reference}
+\label{classv8_1_1internal_1_1ThreadManager}\index{v8\+::internal\+::\+Thread\+Manager@{v8\+::internal\+::\+Thread\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadManager_a8de7abc8b0763f0e1117b61f074410da}\label{classv8_1_1internal_1_1ThreadManager_a8de7abc8b0763f0e1117b61f074410da}} 
+void {\bfseries Lock} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadManager_ab7d0f390011373f4b036548923add1bf}\label{classv8_1_1internal_1_1ThreadManager_ab7d0f390011373f4b036548923add1bf}} 
+void {\bfseries Unlock} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadManager_a82ab5fde3a1bffba6b7c03da73be99fc}\label{classv8_1_1internal_1_1ThreadManager_a82ab5fde3a1bffba6b7c03da73be99fc}} 
+void {\bfseries Init\+Thread} (const \mbox{\hyperlink{classv8_1_1internal_1_1ExecutionAccess}{Execution\+Access}} \&)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadManager_a36506aaa6d781c749efe48996b48e2a0}\label{classv8_1_1internal_1_1ThreadManager_a36506aaa6d781c749efe48996b48e2a0}} 
+void {\bfseries Archive\+Thread} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadManager_ac7d4ad5d9a21d88fc2d50f5d91a62442}\label{classv8_1_1internal_1_1ThreadManager_ac7d4ad5d9a21d88fc2d50f5d91a62442}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Restore\+Thread} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadManager_a7ff25a1bc335c55e57bae1f262f5ac0e}\label{classv8_1_1internal_1_1ThreadManager_a7ff25a1bc335c55e57bae1f262f5ac0e}} 
+void {\bfseries Free\+Thread\+Resources} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadManager_a8a5b4eb523ed06c372852b14b5825efb}\label{classv8_1_1internal_1_1ThreadManager_a8a5b4eb523ed06c372852b14b5825efb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Archived} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadManager_a041c4cd7b983c468cc33e2c8e687f60e}\label{classv8_1_1internal_1_1ThreadManager_a041c4cd7b983c468cc33e2c8e687f60e}} 
+void {\bfseries Iterate} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadManager_a2fec67e06e5fc2f061ac8f87bb2bb080}\label{classv8_1_1internal_1_1ThreadManager_a2fec67e06e5fc2f061ac8f87bb2bb080}} 
+void {\bfseries Iterate\+Archived\+Threads} (\mbox{\hyperlink{classv8_1_1internal_1_1ThreadVisitor}{Thread\+Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadManager_a76827c7de3e7dcba0f6729ad3657a265}\label{classv8_1_1internal_1_1ThreadManager_a76827c7de3e7dcba0f6729ad3657a265}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Locked\+By\+Current\+Thread} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadManager_a20de7ca0770f36132c2f48462ff07e08}\label{classv8_1_1internal_1_1ThreadManager_a20de7ca0770f36132c2f48462ff07e08}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ThreadId}{Thread\+Id}} {\bfseries Current\+Id} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadManager_a727811d1054cd52d32130897f5362a13}\label{classv8_1_1internal_1_1ThreadManager_a727811d1054cd52d32130897f5362a13}} 
+void {\bfseries Terminate\+Execution} (\mbox{\hyperlink{classv8_1_1internal_1_1ThreadId}{Thread\+Id}} thread\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadManager_a31381c48c7f8608f4a2ab582a2c4c729}\label{classv8_1_1internal_1_1ThreadManager_a31381c48c7f8608f4a2ab582a2c4c729}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ThreadState}{Thread\+State}} $\ast$ {\bfseries First\+Thread\+State\+In\+Use} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadManager_ae7610d3c55e69ceffd65c6b734813f0b}\label{classv8_1_1internal_1_1ThreadManager_ae7610d3c55e69ceffd65c6b734813f0b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ThreadState}{Thread\+State}} $\ast$ {\bfseries Get\+Free\+Thread\+State} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadManager_aba4f0964bdacf2bbf62cf876e5d28d0a}\label{classv8_1_1internal_1_1ThreadManager_aba4f0964bdacf2bbf62cf876e5d28d0a}} 
+class {\bfseries Isolate}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ThreadManager_aa9bf73e11f97e69db675bb6d4c212a2a}\label{classv8_1_1internal_1_1ThreadManager_aa9bf73e11f97e69db675bb6d4c212a2a}} 
+class {\bfseries Thread\+State}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 65 of file v8threads.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/v8threads.\+h\item 
+v8/src/v8threads.\+cc\end{DoxyCompactItemize}

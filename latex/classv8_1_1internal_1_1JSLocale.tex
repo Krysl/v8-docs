@@ -1,0 +1,122 @@
+\hypertarget{classv8_1_1internal_1_1JSLocale}{}\section{v8\+:\+:internal\+:\+:J\+S\+Locale Class Reference}
+\label{classv8_1_1internal_1_1JSLocale}\index{v8\+::internal\+::\+J\+S\+Locale@{v8\+::internal\+::\+J\+S\+Locale}}
+Inheritance diagram for v8\+:\+:internal\+:\+:J\+S\+Locale\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1JSLocale}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_a16663a288c5a2192068cf25bf79f358c}\label{classv8_1_1internal_1_1JSLocale_a16663a288c5a2192068cf25bf79f358c}} 
+enum {\bfseries Case\+First} \{ {\bfseries U\+P\+P\+ER}, 
+{\bfseries L\+O\+W\+ER}, 
+{\bfseries F\+A\+L\+S\+E\+\_\+\+V\+A\+L\+UE}, 
+{\bfseries C\+O\+U\+NT}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_ab7b92dc327d348bee75ffeb7634b164b}\label{classv8_1_1internal_1_1JSLocale_ab7b92dc327d348bee75ffeb7634b164b}} 
+enum {\bfseries Numeric} \{ {\bfseries N\+O\+T\+S\+ET}, 
+{\bfseries T\+R\+U\+E\+\_\+\+V\+A\+L\+UE}, 
+{\bfseries F\+A\+L\+S\+E\+\_\+\+V\+A\+L\+UE}, 
+{\bfseries C\+O\+U\+NT}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_a45eedf3d3a52118875c2b0b63b41db36}\label{classv8_1_1internal_1_1JSLocale_a45eedf3d3a52118875c2b0b63b41db36}} 
+enum {\bfseries Hour\+Cycle} \{ \newline
+{\bfseries H11}, 
+{\bfseries H12}, 
+{\bfseries H23}, 
+{\bfseries H24}, 
+\newline
+{\bfseries C\+O\+U\+NT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_a1ef8ad84d88b236f8ddded124558f4de}\label{classv8_1_1internal_1_1JSLocale_a1ef8ad84d88b236f8ddded124558f4de}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Case\+First\+As\+String} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_ab66f17d645b62d57a2afd02cd1eb1ae8}\label{classv8_1_1internal_1_1JSLocale_ab66f17d645b62d57a2afd02cd1eb1ae8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Numeric\+As\+String} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_a07fbc61ff7f5ecfefb6f8c684fe0ffde}\label{classv8_1_1internal_1_1JSLocale_a07fbc61ff7f5ecfefb6f8c684fe0ffde}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Hour\+Cycle\+As\+String} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_ae2358115a2ab5a1e2ebce2c4bfdb5764}\label{classv8_1_1internal_1_1JSLocale_ae2358115a2ab5a1e2ebce2c4bfdb5764}} 
+void {\bfseries set\+\_\+case\+\_\+first} (Case\+First case\+\_\+first)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_a1fb853ecf97f7e972db5c884e99d24fc}\label{classv8_1_1internal_1_1JSLocale_a1fb853ecf97f7e972db5c884e99d24fc}} 
+Case\+First {\bfseries case\+\_\+first} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_af7ea36c8d88651d342fb58f7a54dc4c5}\label{classv8_1_1internal_1_1JSLocale_af7ea36c8d88651d342fb58f7a54dc4c5}} 
+void {\bfseries set\+\_\+numeric} (Numeric numeric)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_aac9700e99fa6f4f903069a1c74647e1b}\label{classv8_1_1internal_1_1JSLocale_aac9700e99fa6f4f903069a1c74647e1b}} 
+Numeric {\bfseries numeric} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_a846e5e26b8a6afe0895e4477884ae8e0}\label{classv8_1_1internal_1_1JSLocale_a846e5e26b8a6afe0895e4477884ae8e0}} 
+void {\bfseries set\+\_\+hour\+\_\+cycle} (Hour\+Cycle hour\+\_\+cycle)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_aa26001c18c44ef9178a9f8a6332db892}\label{classv8_1_1internal_1_1JSLocale_aa26001c18c44ef9178a9f8a6332db892}} 
+Hour\+Cycle {\bfseries hour\+\_\+cycle} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_a7b4630e8aab0cc59fe48fccbbb636ef8}\label{classv8_1_1internal_1_1JSLocale_a7b4630e8aab0cc59fe48fccbbb636ef8}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Case\+First\+::\+U\+P\+P\+ER$<$=Case\+First\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_ae5051f85e8f597635c4a7ac108393a43}\label{classv8_1_1internal_1_1JSLocale_ae5051f85e8f597635c4a7ac108393a43}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Case\+First\+::\+L\+O\+W\+ER$<$=Case\+First\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_aa461a878a20001eb0de62bbd302256b0}\label{classv8_1_1internal_1_1JSLocale_aa461a878a20001eb0de62bbd302256b0}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Case\+First\+::\+F\+A\+L\+S\+E\+\_\+\+V\+A\+L\+UE$<$=Case\+First\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_a649bd21bf2bfb1517f45ecaaefed143b}\label{classv8_1_1internal_1_1JSLocale_a649bd21bf2bfb1517f45ecaaefed143b}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Numeric\+::\+N\+O\+T\+S\+ET$<$=Numeric\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_a16988075f9c1a2b02c51eaaf72a6421d}\label{classv8_1_1internal_1_1JSLocale_a16988075f9c1a2b02c51eaaf72a6421d}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Numeric\+::\+F\+A\+L\+S\+E\+\_\+\+V\+A\+L\+UE$<$=Numeric\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_a32f7f9266f7ef31da473a621a63d3292}\label{classv8_1_1internal_1_1JSLocale_a32f7f9266f7ef31da473a621a63d3292}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Numeric\+::\+T\+R\+U\+E\+\_\+\+V\+A\+L\+UE$<$=Numeric\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_a93010fe5d0c9e7c3a2d10eb80d793583}\label{classv8_1_1internal_1_1JSLocale_a93010fe5d0c9e7c3a2d10eb80d793583}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Hour\+Cycle\+::\+H11$<$=Hour\+Cycle\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_a1e6a47a847f0d19c370349041e70db5e}\label{classv8_1_1internal_1_1JSLocale_a1e6a47a847f0d19c370349041e70db5e}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Hour\+Cycle\+::\+H12$<$=Hour\+Cycle\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_ae51b047dc323d6b3ff0c5fae82a9040b}\label{classv8_1_1internal_1_1JSLocale_ae51b047dc323d6b3ff0c5fae82a9040b}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Hour\+Cycle\+::\+H23$<$=Hour\+Cycle\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_a1cb6cacd5cd60db3f61864686658a7ee}\label{classv8_1_1internal_1_1JSLocale_a1cb6cacd5cd60db3f61864686658a7ee}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Hour\+Cycle\+::\+H24$<$=Hour\+Cycle\+Bits\+::k\+Max)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_aedccc0c7514c95682811a7f734b3446c}\label{classv8_1_1internal_1_1JSLocale_aedccc0c7514c95682811a7f734b3446c}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSLocale}{J\+S\+Locale}} $>$ {\bfseries Initialize} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSLocale}{J\+S\+Locale}} $>$ locale\+\_\+holder, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ locale, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ options)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_af600b74409b741ac12ccf760b49aecc4}\label{classv8_1_1internal_1_1JSLocale_af600b74409b741ac12ccf760b49aecc4}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Maximize} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} locale)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSLocale_ab905c08dcdc8f5a309bd4e24982d5940}\label{classv8_1_1internal_1_1JSLocale_ab905c08dcdc8f5a309bd4e24982d5940}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Minimize} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} locale)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file js-\/locale.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/js-\/locale.\+h\item 
+v8/src/objects/js-\/locale-\/inl.\+h\item 
+v8/src/objects/js-\/locale.\+cc\end{DoxyCompactItemize}

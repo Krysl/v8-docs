@@ -10,19 +10,19 @@
 \mbox{\Hypertarget{classv8_1_1PersistentValueVector_ab6b9994133c30359ad7a02d3cc05219c}\label{classv8_1_1PersistentValueVector_ab6b9994133c30359ad7a02d3cc05219c}} 
 {\bfseries Persistent\+Value\+Vector} (Isolate $\ast$isolate)
 \item 
-void \mbox{\hyperlink{classv8_1_1PersistentValueVector_a02376c6d16be29084db46f65473477fb}{Append}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ V $>$ value)
+void \mbox{\hyperlink{classv8_1_1PersistentValueVector_a02376c6d16be29084db46f65473477fb}{Append}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classV}{V}} $>$ value)
 \item 
-void \mbox{\hyperlink{classv8_1_1PersistentValueVector_ad076923fd0046196670e87e996582546}{Append}} (\mbox{\hyperlink{classv8_1_1Global}{Global}}$<$ V $>$ persistent)
+void \mbox{\hyperlink{classv8_1_1PersistentValueVector_ad076923fd0046196670e87e996582546}{Append}} (\mbox{\hyperlink{classv8_1_1Global}{Global}}$<$ \mbox{\hyperlink{classV}{V}} $>$ persistent)
 \item 
-bool \mbox{\hyperlink{classv8_1_1PersistentValueVector_aa45dd4d1ee94a2c199a28a0bb2e432f1}{Is\+Empty}} () const
+\mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{classv8_1_1PersistentValueVector_aa45dd4d1ee94a2c199a28a0bb2e432f1}{Is\+Empty}} () const
 \item 
-size\+\_\+t \mbox{\hyperlink{classv8_1_1PersistentValueVector_adf4e13701de97acc753ca294c66b9f35}{Size}} () const
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} \mbox{\hyperlink{classv8_1_1PersistentValueVector_adf4e13701de97acc753ca294c66b9f35}{Size}} () const
 \item 
-\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ V $>$ \mbox{\hyperlink{classv8_1_1PersistentValueVector_a0788f334c7f61355863244379042ce76}{Get}} (size\+\_\+t index) const
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classV}{V}} $>$ \mbox{\hyperlink{classv8_1_1PersistentValueVector_a0788f334c7f61355863244379042ce76}{Get}} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} index) const
 \item 
 void \mbox{\hyperlink{classv8_1_1PersistentValueVector_ad07f449c2004b4f3d91e58cabde99a53}{Clear}} ()
 \item 
-void \mbox{\hyperlink{classv8_1_1PersistentValueVector_ad4cccfee3a275986578276efe0c78510}{Reserve\+Capacity}} (size\+\_\+t capacity)
+void \mbox{\hyperlink{classv8_1_1PersistentValueVector_ad4cccfee3a275986578276efe0c78510}{Reserve\+Capacity}} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} capacity)
 \end{DoxyCompactItemize}
 
 
@@ -43,8 +43,8 @@ Definition at line 567 of file v8-\/util.\+h.
 \index{v8\+::\+Persistent\+Value\+Vector@{v8\+::\+Persistent\+Value\+Vector}!Append@{Append}}
 \index{Append@{Append}!v8\+::\+Persistent\+Value\+Vector@{v8\+::\+Persistent\+Value\+Vector}}
 \subsubsection{\texorpdfstring{Append()}{Append()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily template$<$typename V , typename Traits  = Default\+Persistent\+Value\+Vector\+Traits$>$ \\
-void \mbox{\hyperlink{classv8_1_1PersistentValueVector}{v8\+::\+Persistent\+Value\+Vector}}$<$ V, Traits $>$\+::Append (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ V $>$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename V, typename Traits = Default\+Persistent\+Value\+Vector\+Traits$>$ \\
+void \mbox{\hyperlink{classv8_1_1PersistentValueVector}{v8\+::\+Persistent\+Value\+Vector}}$<$ \mbox{\hyperlink{classV}{V}}, Traits $>$\+::Append (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classV}{V}} $>$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Append a value to the vector. 
 
@@ -54,8 +54,8 @@ Definition at line 578 of file v8-\/util.\+h.
 \index{v8\+::\+Persistent\+Value\+Vector@{v8\+::\+Persistent\+Value\+Vector}!Append@{Append}}
 \index{Append@{Append}!v8\+::\+Persistent\+Value\+Vector@{v8\+::\+Persistent\+Value\+Vector}}
 \subsubsection{\texorpdfstring{Append()}{Append()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily template$<$typename V , typename Traits  = Default\+Persistent\+Value\+Vector\+Traits$>$ \\
-void \mbox{\hyperlink{classv8_1_1PersistentValueVector}{v8\+::\+Persistent\+Value\+Vector}}$<$ V, Traits $>$\+::Append (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Global}{Global}}$<$ V $>$}]{persistent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename V, typename Traits = Default\+Persistent\+Value\+Vector\+Traits$>$ \\
+void \mbox{\hyperlink{classv8_1_1PersistentValueVector}{v8\+::\+Persistent\+Value\+Vector}}$<$ \mbox{\hyperlink{classV}{V}}, Traits $>$\+::Append (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Global}{Global}}$<$ \mbox{\hyperlink{classV}{V}} $>$}]{persistent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Append a persistent\textquotesingle{}s value to the vector. 
 
@@ -65,8 +65,8 @@ Definition at line 586 of file v8-\/util.\+h.
 \index{v8\+::\+Persistent\+Value\+Vector@{v8\+::\+Persistent\+Value\+Vector}!Clear@{Clear}}
 \index{Clear@{Clear}!v8\+::\+Persistent\+Value\+Vector@{v8\+::\+Persistent\+Value\+Vector}}
 \subsubsection{\texorpdfstring{Clear()}{Clear()}}
-{\footnotesize\ttfamily template$<$typename V , typename Traits  = Default\+Persistent\+Value\+Vector\+Traits$>$ \\
-void \mbox{\hyperlink{classv8_1_1PersistentValueVector}{v8\+::\+Persistent\+Value\+Vector}}$<$ V, Traits $>$\+::Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename V, typename Traits = Default\+Persistent\+Value\+Vector\+Traits$>$ \\
+void \mbox{\hyperlink{classv8_1_1PersistentValueVector}{v8\+::\+Persistent\+Value\+Vector}}$<$ \mbox{\hyperlink{classV}{V}}, Traits $>$\+::Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Remove all elements from the vector. 
 
@@ -76,8 +76,8 @@ Definition at line 614 of file v8-\/util.\+h.
 \index{v8\+::\+Persistent\+Value\+Vector@{v8\+::\+Persistent\+Value\+Vector}!Get@{Get}}
 \index{Get@{Get}!v8\+::\+Persistent\+Value\+Vector@{v8\+::\+Persistent\+Value\+Vector}}
 \subsubsection{\texorpdfstring{Get()}{Get()}}
-{\footnotesize\ttfamily template$<$typename V , typename Traits  = Default\+Persistent\+Value\+Vector\+Traits$>$ \\
-\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$V$>$ \mbox{\hyperlink{classv8_1_1PersistentValueVector}{v8\+::\+Persistent\+Value\+Vector}}$<$ V, Traits $>$\+::Get (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename V, typename Traits = Default\+Persistent\+Value\+Vector\+Traits$>$ \\
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classV}{V}}$>$ \mbox{\hyperlink{classv8_1_1PersistentValueVector}{v8\+::\+Persistent\+Value\+Vector}}$<$ \mbox{\hyperlink{classV}{V}}, Traits $>$\+::Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsize__t}{size\+\_\+t}}}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 Retrieve the i-\/th value in the vector. 
 
@@ -87,8 +87,8 @@ Definition at line 607 of file v8-\/util.\+h.
 \index{v8\+::\+Persistent\+Value\+Vector@{v8\+::\+Persistent\+Value\+Vector}!Is\+Empty@{Is\+Empty}}
 \index{Is\+Empty@{Is\+Empty}!v8\+::\+Persistent\+Value\+Vector@{v8\+::\+Persistent\+Value\+Vector}}
 \subsubsection{\texorpdfstring{Is\+Empty()}{IsEmpty()}}
-{\footnotesize\ttfamily template$<$typename V , typename Traits  = Default\+Persistent\+Value\+Vector\+Traits$>$ \\
-bool \mbox{\hyperlink{classv8_1_1PersistentValueVector}{v8\+::\+Persistent\+Value\+Vector}}$<$ V, Traits $>$\+::Is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename V, typename Traits = Default\+Persistent\+Value\+Vector\+Traits$>$ \\
+\mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{classv8_1_1PersistentValueVector}{v8\+::\+Persistent\+Value\+Vector}}$<$ \mbox{\hyperlink{classV}{V}}, Traits $>$\+::Is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 Are there any values in the vector? 
 
@@ -98,8 +98,8 @@ Definition at line 593 of file v8-\/util.\+h.
 \index{v8\+::\+Persistent\+Value\+Vector@{v8\+::\+Persistent\+Value\+Vector}!Reserve\+Capacity@{Reserve\+Capacity}}
 \index{Reserve\+Capacity@{Reserve\+Capacity}!v8\+::\+Persistent\+Value\+Vector@{v8\+::\+Persistent\+Value\+Vector}}
 \subsubsection{\texorpdfstring{Reserve\+Capacity()}{ReserveCapacity()}}
-{\footnotesize\ttfamily template$<$typename V , typename Traits  = Default\+Persistent\+Value\+Vector\+Traits$>$ \\
-void \mbox{\hyperlink{classv8_1_1PersistentValueVector}{v8\+::\+Persistent\+Value\+Vector}}$<$ V, Traits $>$\+::Reserve\+Capacity (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename V, typename Traits = Default\+Persistent\+Value\+Vector\+Traits$>$ \\
+void \mbox{\hyperlink{classv8_1_1PersistentValueVector}{v8\+::\+Persistent\+Value\+Vector}}$<$ \mbox{\hyperlink{classV}{V}}, Traits $>$\+::Reserve\+Capacity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsize__t}{size\+\_\+t}}}]{capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Reserve capacity in the vector. (Efficiency gains depend on the backing implementation.) 
 
@@ -109,8 +109,8 @@ Definition at line 627 of file v8-\/util.\+h.
 \index{v8\+::\+Persistent\+Value\+Vector@{v8\+::\+Persistent\+Value\+Vector}!Size@{Size}}
 \index{Size@{Size}!v8\+::\+Persistent\+Value\+Vector@{v8\+::\+Persistent\+Value\+Vector}}
 \subsubsection{\texorpdfstring{Size()}{Size()}}
-{\footnotesize\ttfamily template$<$typename V , typename Traits  = Default\+Persistent\+Value\+Vector\+Traits$>$ \\
-size\+\_\+t \mbox{\hyperlink{classv8_1_1PersistentValueVector}{v8\+::\+Persistent\+Value\+Vector}}$<$ V, Traits $>$\+::Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename V, typename Traits = Default\+Persistent\+Value\+Vector\+Traits$>$ \\
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} \mbox{\hyperlink{classv8_1_1PersistentValueVector}{v8\+::\+Persistent\+Value\+Vector}}$<$ \mbox{\hyperlink{classV}{V}}, Traits $>$\+::Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 How many elements are in the vector? 
 

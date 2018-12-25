@@ -1,0 +1,80 @@
+\hypertarget{classv8__inspector_1_1V8ProfilerAgentImpl}{}\section{v8\+\_\+inspector\+:\+:V8\+Profiler\+Agent\+Impl Class Reference}
+\label{classv8__inspector_1_1V8ProfilerAgentImpl}\index{v8\+\_\+inspector\+::\+V8\+Profiler\+Agent\+Impl@{v8\+\_\+inspector\+::\+V8\+Profiler\+Agent\+Impl}}
+Inheritance diagram for v8\+\_\+inspector\+:\+:V8\+Profiler\+Agent\+Impl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8__inspector_1_1V8ProfilerAgentImpl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8__inspector_1_1V8ProfilerAgentImpl_1_1ProfileDescriptor}{Profile\+Descriptor}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8ProfilerAgentImpl_a8d2941790148ce0020d4c25b6b9c3214}\label{classv8__inspector_1_1V8ProfilerAgentImpl_a8d2941790148ce0020d4c25b6b9c3214}} 
+{\bfseries V8\+Profiler\+Agent\+Impl} (\mbox{\hyperlink{classv8__inspector_1_1V8InspectorSessionImpl}{V8\+Inspector\+Session\+Impl}} $\ast$, protocol\+::\+Frontend\+Channel $\ast$, protocol\+::\+Dictionary\+Value $\ast$state)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8ProfilerAgentImpl_a8d57db13de2252ddabca468d71755a49}\label{classv8__inspector_1_1V8ProfilerAgentImpl_a8d57db13de2252ddabca468d71755a49}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries enabled} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8ProfilerAgentImpl_a1fa8bf4be865f165f8c09275ae4842f0}\label{classv8__inspector_1_1V8ProfilerAgentImpl_a1fa8bf4be865f165f8c09275ae4842f0}} 
+void {\bfseries restore} ()
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8ProfilerAgentImpl_ad71baebb14c42d7d232d1d492ee1af5d}\label{classv8__inspector_1_1V8ProfilerAgentImpl_ad71baebb14c42d7d232d1d492ee1af5d}} 
+Response {\bfseries enable} () override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8ProfilerAgentImpl_ac7ca2f249c34c46cbe0685255a4a4bee}\label{classv8__inspector_1_1V8ProfilerAgentImpl_ac7ca2f249c34c46cbe0685255a4a4bee}} 
+Response {\bfseries disable} () override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8ProfilerAgentImpl_ab05c748e7b7027641e38bb054f6baca7}\label{classv8__inspector_1_1V8ProfilerAgentImpl_ab05c748e7b7027641e38bb054f6baca7}} 
+Response {\bfseries set\+Sampling\+Interval} (\mbox{\hyperlink{classint}{int}}) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8ProfilerAgentImpl_a48f1b392afef578cbae079f57c8bde22}\label{classv8__inspector_1_1V8ProfilerAgentImpl_a48f1b392afef578cbae079f57c8bde22}} 
+Response {\bfseries start} () override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8ProfilerAgentImpl_ae7f8170a85ec4473170b65fa572f98a8}\label{classv8__inspector_1_1V8ProfilerAgentImpl_ae7f8170a85ec4473170b65fa572f98a8}} 
+Response {\bfseries stop} (std\+::unique\+\_\+ptr$<$ protocol\+::\+Profiler\+::\+Profile $>$ $\ast$) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8ProfilerAgentImpl_a352e105a6e08f0cba382b0c431eb47f7}\label{classv8__inspector_1_1V8ProfilerAgentImpl_a352e105a6e08f0cba382b0c431eb47f7}} 
+Response {\bfseries start\+Precise\+Coverage} (Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ binary, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ detailed) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8ProfilerAgentImpl_a230e48301429fc00ba4b8ac75f28409e}\label{classv8__inspector_1_1V8ProfilerAgentImpl_a230e48301429fc00ba4b8ac75f28409e}} 
+Response {\bfseries stop\+Precise\+Coverage} () override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8ProfilerAgentImpl_ab6ccf72fe2ba7c352e12fdd5e0ed8025}\label{classv8__inspector_1_1V8ProfilerAgentImpl_ab6ccf72fe2ba7c352e12fdd5e0ed8025}} 
+Response {\bfseries take\+Precise\+Coverage} (std\+::unique\+\_\+ptr$<$ protocol\+::\+Array$<$ protocol\+::\+Profiler\+::\+Script\+Coverage $>$$>$ $\ast$out\+\_\+result) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8ProfilerAgentImpl_ab7b75f2d8cd96538dd18024f8f1b4c5c}\label{classv8__inspector_1_1V8ProfilerAgentImpl_ab7b75f2d8cd96538dd18024f8f1b4c5c}} 
+Response {\bfseries get\+Best\+Effort\+Coverage} (std\+::unique\+\_\+ptr$<$ protocol\+::\+Array$<$ protocol\+::\+Profiler\+::\+Script\+Coverage $>$$>$ $\ast$out\+\_\+result) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8ProfilerAgentImpl_a93dcad27dbbe5350c2e5f02c791bb735}\label{classv8__inspector_1_1V8ProfilerAgentImpl_a93dcad27dbbe5350c2e5f02c791bb735}} 
+Response {\bfseries start\+Type\+Profile} () override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8ProfilerAgentImpl_a43562e2121d9c93761920373fe48fbb7}\label{classv8__inspector_1_1V8ProfilerAgentImpl_a43562e2121d9c93761920373fe48fbb7}} 
+Response {\bfseries stop\+Type\+Profile} () override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8ProfilerAgentImpl_a9f8cd259ce7bb4af80eaba7c047e5cb8}\label{classv8__inspector_1_1V8ProfilerAgentImpl_a9f8cd259ce7bb4af80eaba7c047e5cb8}} 
+Response {\bfseries take\+Type\+Profile} (std\+::unique\+\_\+ptr$<$ protocol\+::\+Array$<$ protocol\+::\+Profiler\+::\+Script\+Type\+Profile $>$$>$ $\ast$out\+\_\+result) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8ProfilerAgentImpl_a43201f3bfcb2399ae62717d2b15cbc10}\label{classv8__inspector_1_1V8ProfilerAgentImpl_a43201f3bfcb2399ae62717d2b15cbc10}} 
+void {\bfseries console\+Profile} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&title)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8ProfilerAgentImpl_af389935ae2baccabef3b9bea8f1421ec}\label{classv8__inspector_1_1V8ProfilerAgentImpl_af389935ae2baccabef3b9bea8f1421ec}} 
+void {\bfseries console\+Profile\+End} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&title)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file v8-\/profiler-\/agent-\/impl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/inspector/v8-\/profiler-\/agent-\/impl.\+h\item 
+v8/src/inspector/v8-\/profiler-\/agent-\/impl.\+cc\end{DoxyCompactItemize}

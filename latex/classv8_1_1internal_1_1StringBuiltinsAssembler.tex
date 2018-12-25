@@ -1,0 +1,106 @@
+\hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler}{}\section{v8\+:\+:internal\+:\+:String\+Builtins\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1StringBuiltinsAssembler}\index{v8\+::internal\+::\+String\+Builtins\+Assembler@{v8\+::internal\+::\+String\+Builtins\+Assembler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:String\+Builtins\+Assembler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.653136cm]{classv8_1_1internal_1_1StringBuiltinsAssembler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_ad75b2b6ac35d184939ee005a4d455a46}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_ad75b2b6ac35d184939ee005a4d455a46}} 
+{\bfseries String\+Builtins\+Assembler} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerState}{compiler\+::\+Code\+Assembler\+State}} $\ast$state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_af964d9a6dffc58939f8f6018d722e252}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_af964d9a6dffc58939f8f6018d722e252}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Get\+Substitution} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$subject\+\_\+string, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$match\+\_\+start\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$match\+\_\+end\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$replace\+\_\+string)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_a56820542eea1ab8c6e577a8ea249ad67}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_a56820542eea1ab8c6e577a8ea249ad67}} 
+void {\bfseries String\+Equal\+\_\+\+Core} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$lhs, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$lhs\+\_\+instance\+\_\+type, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$rhs, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$rhs\+\_\+instance\+\_\+type, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ length, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+equal, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+not\+\_\+equal, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+indirect)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_a5694b6ec6169b3c9eb72ae319533dc9d}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_a5694b6ec6169b3c9eb72ae319533dc9d}} 
+void {\bfseries Branch\+If\+String\+Primitive\+With\+No\+Custom\+Iteration} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+true, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+false)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_a9add15edfcabc1c76a57446e75b999ab}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_a9add15edfcabc1c76a57446e75b999ab}} 
+typedef std\+::function$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ receiver, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ length, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ index)$>$ {\bfseries String\+At\+Accessor}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_a259db4fd59361900a596d4506dc77fe0}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_a259db4fd59361900a596d4506dc77fe0}} 
+typedef std\+::function$<$ void()$>$ {\bfseries Node\+Function0}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_a495f40d73ca92920770607bd1aaca6b3}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_a495f40d73ca92920770607bd1aaca6b3}} 
+typedef std\+::function$<$ void(\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$fn)$>$ {\bfseries Node\+Function1}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_a2abc0914a25e67f1429c22a87b92755d}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_a2abc0914a25e67f1429c22a87b92755d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArray}{J\+S\+Array}} $>$ {\bfseries String\+To\+List} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ string)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_a6bb074fc32fb5299e388899b3ff76241}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_a6bb074fc32fb5299e388899b3ff76241}} 
+void {\bfseries String\+Equal\+\_\+\+Loop} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$lhs, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$lhs\+\_\+instance\+\_\+type, \mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} lhs\+\_\+type, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$rhs, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$rhs\+\_\+instance\+\_\+type, \mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} rhs\+\_\+type, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ length, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+equal, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+not\+\_\+equal)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_a5e53c451c8515409026fd7ae0a687cb1}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_a5e53c451c8515409026fd7ae0a687cb1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Direct\+String\+Data} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$string, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$string\+\_\+instance\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_ae8e165e71cfb5633babf0525052c3381}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_ae8e165e71cfb5633babf0525052c3381}} 
+void {\bfseries Dispatch\+On\+String\+Encodings} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const lhs\+\_\+instance\+\_\+type, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const rhs\+\_\+instance\+\_\+type, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+one\+\_\+one, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+one\+\_\+two, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+two\+\_\+one, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+two\+\_\+two)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_a899cca8c15fe454b4c78f13d9a3a5d56}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_a899cca8c15fe454b4c78f13d9a3a5d56}} 
+{\footnotesize template$<$typename Subject\+Char , typename Pattern\+Char $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Call\+Search\+String\+Raw} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const subject\+\_\+ptr, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const subject\+\_\+length, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const search\+\_\+ptr, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const search\+\_\+length, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const start\+\_\+position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_ac6bd884e6313e753bb0013c447231604}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_ac6bd884e6313e753bb0013c447231604}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Pointer\+To\+String\+Data\+At\+Index} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const string\+\_\+data, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const index, String\+::\+Encoding encoding)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_a16ca9a73fd301479a78147762ff97069}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_a16ca9a73fd301479a78147762ff97069}} 
+void {\bfseries Convert\+And\+Bounds\+Check\+Start\+Argument} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerVariable}{Variable}} $\ast$var\+\_\+start, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$start, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$string\+\_\+length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_aaeb6e0902c6deb3986008dbef3de9d53}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_aaeb6e0902c6deb3986008dbef3de9d53}} 
+void {\bfseries Generate\+String\+Equal} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$left, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$right)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_a36d66c74dc0fe3d374f849927b519a22}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_a36d66c74dc0fe3d374f849927b519a22}} 
+void {\bfseries Generate\+String\+Relational\+Comparison} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$left, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$right, Operation op)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_a22497c75e817c40a963eb4d1a0a8e733}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_a22497c75e817c40a963eb4d1a0a8e733}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries To\+Smi\+Between\+Zero\+And} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SloppyTNode}{Sloppy\+T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SloppyTNode}{Sloppy\+T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SloppyTNode}{Sloppy\+T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ limit)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_aacdb230eff2e0e87fa5ddf833342be79}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_aacdb230eff2e0e87fa5ddf833342be79}} 
+void {\bfseries Generate\+String\+At} (const \mbox{\hyperlink{classchar}{char}} $\ast$method\+\_\+name, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$receiver, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ maybe\+\_\+position, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ default\+\_\+return, const String\+At\+Accessor \&accessor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_a3edb780afb564d559310c9bda56edb9a}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_a3edb780afb564d559310c9bda56edb9a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1Int32T}{Int32T}} $>$ {\bfseries Load\+Surrogate\+Pair\+At} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SloppyTNode}{Sloppy\+T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ string, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SloppyTNode}{Sloppy\+T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ length, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SloppyTNode}{Sloppy\+T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ index, Unicode\+Encoding encoding)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_a06e3410db72f5ea4a8c3647230fd8448}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_a06e3410db72f5ea4a8c3647230fd8448}} 
+void {\bfseries String\+Index\+Of} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const subject\+\_\+string, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const search\+\_\+string, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const position, const std\+::function$<$ void(\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$)$>$ \&f\+\_\+return)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_a36457c4898a2e012aa855708fc0b2e11}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_a36457c4898a2e012aa855708fc0b2e11}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Index\+Of\+Dollar\+Char} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const string)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_a10a005e1a9b2bb5a1890cfb07374a36f}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_a10a005e1a9b2bb5a1890cfb07374a36f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArray}{J\+S\+Array}} $>$ {\bfseries String\+To\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ subject\+\_\+string, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ subject\+\_\+length, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1UnionT}{Number}} $>$ limit\+\_\+number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_afc076dfa296653c40e7aef8da4238dfa}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_afc076dfa296653c40e7aef8da4238dfa}} 
+void {\bfseries Require\+Object\+Coercible} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const value, const \mbox{\hyperlink{classchar}{char}} $\ast$method\+\_\+name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_a48d177cc90b5d39742e06d542c1b2274}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_a48d177cc90b5d39742e06d542c1b2274}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1BoolT}{BoolT}} $>$ {\bfseries Smi\+Is\+Negative} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringBuiltinsAssembler_a187f15154cfe0204f1b5e530e9289969}\label{classv8_1_1internal_1_1StringBuiltinsAssembler_a187f15154cfe0204f1b5e530e9289969}} 
+void {\bfseries Maybe\+Call\+Function\+At\+Symbol} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const object, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const maybe\+\_\+string, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Symbol}{Symbol}} $>$ symbol, \mbox{\hyperlink{structv8_1_1internal_1_1CodeStubAssembler_1_1DescriptorIndexAndName}{Descriptor\+Index\+And\+Name}} symbol\+\_\+index, const Node\+Function0 \&regexp\+\_\+call, const Node\+Function1 \&generic\+\_\+call)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file builtins-\/string-\/gen.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/builtins/builtins-\/string-\/gen.\+h\item 
+v8/src/builtins/builtins-\/string-\/gen.\+cc\end{DoxyCompactItemize}

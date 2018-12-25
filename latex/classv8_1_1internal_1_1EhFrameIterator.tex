@@ -1,0 +1,60 @@
+\hypertarget{classv8_1_1internal_1_1EhFrameIterator}{}\section{v8\+:\+:internal\+:\+:Eh\+Frame\+Iterator Class Reference}
+\label{classv8_1_1internal_1_1EhFrameIterator}\index{v8\+::internal\+::\+Eh\+Frame\+Iterator@{v8\+::internal\+::\+Eh\+Frame\+Iterator}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameIterator_ab3400429dd074a27ff816b911ac3773b}\label{classv8_1_1internal_1_1EhFrameIterator_ab3400429dd074a27ff816b911ac3773b}} 
+{\bfseries Eh\+Frame\+Iterator} (const byte $\ast$start, const byte $\ast$end)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameIterator_ae8d6c1fe3e900b692cf30adb6492ef5c}\label{classv8_1_1internal_1_1EhFrameIterator_ae8d6c1fe3e900b692cf30adb6492ef5c}} 
+void {\bfseries Skip\+Cie} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameIterator_a12ec0a9a3d6195f11c8d83df4622e5f7}\label{classv8_1_1internal_1_1EhFrameIterator_a12ec0a9a3d6195f11c8d83df4622e5f7}} 
+void {\bfseries Skip\+To\+Fde\+Directives} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameIterator_ae6195a5e9197e681758dfb96ff3a8619}\label{classv8_1_1internal_1_1EhFrameIterator_ae6195a5e9197e681758dfb96ff3a8619}} 
+void {\bfseries Skip} (\mbox{\hyperlink{classint}{int}} how\+\_\+many)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameIterator_aa209980a8191d5fd5d33fa189e0c8f00}\label{classv8_1_1internal_1_1EhFrameIterator_aa209980a8191d5fd5d33fa189e0c8f00}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Get\+Next\+U\+Int32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameIterator_ad3578662fb96a179a77d15ebbc7bb314}\label{classv8_1_1internal_1_1EhFrameIterator_ad3578662fb96a179a77d15ebbc7bb314}} 
+uint16\+\_\+t {\bfseries Get\+Next\+U\+Int16} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameIterator_a77c5a5da7babd2616a2469444b77cdff}\label{classv8_1_1internal_1_1EhFrameIterator_a77c5a5da7babd2616a2469444b77cdff}} 
+byte {\bfseries Get\+Next\+Byte} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameIterator_aa8202940ae5c96866677ac421b6b2115}\label{classv8_1_1internal_1_1EhFrameIterator_aa8202940ae5c96866677ac421b6b2115}} 
+Eh\+Frame\+Constants\+::\+Dwarf\+Opcodes {\bfseries Get\+Next\+Opcode} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameIterator_adb20dcec9670d74b14881ad6832dc1ad}\label{classv8_1_1internal_1_1EhFrameIterator_adb20dcec9670d74b14881ad6832dc1ad}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Get\+Next\+U\+Leb128} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameIterator_a6cad4f6143ab3b24ac8eff1022b22b3c}\label{classv8_1_1internal_1_1EhFrameIterator_a6cad4f6143ab3b24ac8eff1022b22b3c}} 
+int32\+\_\+t {\bfseries Get\+Next\+S\+Leb128} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameIterator_a54b215c575aa01c89ba58d328da3ded1}\label{classv8_1_1internal_1_1EhFrameIterator_a54b215c575aa01c89ba58d328da3ded1}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Done} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameIterator_aae32f25757744560a5f30bfd79fb7bbf}\label{classv8_1_1internal_1_1EhFrameIterator_aae32f25757744560a5f30bfd79fb7bbf}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Current\+Offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameIterator_a0bfca86398df5ca39ab8ada319079f91}\label{classv8_1_1internal_1_1EhFrameIterator_a0bfca86398df5ca39ab8ada319079f91}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Buffer\+Size} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameIterator_a9374313b8c577aace2a3da542d6f3285}\label{classv8_1_1internal_1_1EhFrameIterator_a9374313b8c577aace2a3da542d6f3285}} 
+const void $\ast$ {\bfseries current\+\_\+address} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 207 of file eh-\/frame.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/eh-\/frame.\+h\item 
+v8/src/eh-\/frame.\+cc\end{DoxyCompactItemize}

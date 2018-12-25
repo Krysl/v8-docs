@@ -1,0 +1,82 @@
+\hypertarget{classv8_1_1internal_1_1FreeList}{}\section{v8\+:\+:internal\+:\+:Free\+List Class Reference}
+\label{classv8_1_1internal_1_1FreeList}\index{v8\+::internal\+::\+Free\+List@{v8\+::internal\+::\+Free\+List}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_af27c5d955f1289d9ffa4cf090139e224}\label{classv8_1_1internal_1_1FreeList_af27c5d955f1289d9ffa4cf090139e224}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Free} (\mbox{\hyperlink{classuintptr__t}{Address}} start, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size\+\_\+in\+\_\+bytes, Free\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_a5445af000ebba58ade2e4566fd2ea9c7}\label{classv8_1_1internal_1_1FreeList_a5445af000ebba58ade2e4566fd2ea9c7}} 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1FreeSpace}{Free\+Space}} $\ast$ {\bfseries Allocate} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} size\+\_\+in\+\_\+bytes, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} $\ast$node\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_ab4abea8fbd917cb43b9b440ef1010342}\label{classv8_1_1internal_1_1FreeList_ab4abea8fbd917cb43b9b440ef1010342}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_a83333dbec29d445106f9bcfbe4313816}\label{classv8_1_1internal_1_1FreeList_a83333dbec29d445106f9bcfbe4313816}} 
+void {\bfseries Reset\+Stats} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_abf51753a0ae52b9c3b3143fe2d6e2dc6}\label{classv8_1_1internal_1_1FreeList_abf51753a0ae52b9c3b3143fe2d6e2dc6}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Available} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_a7c78f22b1971e2943be876918d163dd0}\label{classv8_1_1internal_1_1FreeList_a7c78f22b1971e2943be876918d163dd0}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Empty} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_aeeb8bd0cb83326e7985985b468597d14}\label{classv8_1_1internal_1_1FreeList_aeeb8bd0cb83326e7985985b468597d14}} 
+void {\bfseries Repair\+Lists} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_af041d94e7e27581a5ffb7055a0af864b}\label{classv8_1_1internal_1_1FreeList_af041d94e7e27581a5ffb7055a0af864b}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Evict\+Free\+List\+Items} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_a79583a8994240cfcbe9b62633fd974c6}\label{classv8_1_1internal_1_1FreeList_a79583a8994240cfcbe9b62633fd974c6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Contains\+Page\+Free\+List\+Items} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_acbcb42c967055ca5c0c12282eaa9aabb}\label{classv8_1_1internal_1_1FreeList_acbcb42c967055ca5c0c12282eaa9aabb}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries wasted\+\_\+bytes} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_a874575254a8775cea516360ac77fa79f}\label{classv8_1_1internal_1_1FreeList_a874575254a8775cea516360ac77fa79f}} 
+{\footnotesize template$<$typename Callback $>$ }\\void {\bfseries For\+All\+Free\+List\+Categories} (Free\+List\+Category\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, Callback callback)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_a3f8c32e83ac1e62650e96615d3a85e49}\label{classv8_1_1internal_1_1FreeList_a3f8c32e83ac1e62650e96615d3a85e49}} 
+{\footnotesize template$<$typename Callback $>$ }\\void {\bfseries For\+All\+Free\+List\+Categories} (Callback callback)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_a5e449f34c8035d4f353c10cb8bfc6272}\label{classv8_1_1internal_1_1FreeList_a5e449f34c8035d4f353c10cb8bfc6272}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Add\+Category} (\mbox{\hyperlink{classv8_1_1internal_1_1FreeListCategory}{Free\+List\+Category}} $\ast$category)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_ae9eb2b754f476bc5b138d7b5e9407550}\label{classv8_1_1internal_1_1FreeList_ae9eb2b754f476bc5b138d7b5e9407550}} 
+void {\bfseries Remove\+Category} (\mbox{\hyperlink{classv8_1_1internal_1_1FreeListCategory}{Free\+List\+Category}} $\ast$category)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_af3cbe43b30d422110caba0e7f86bf673}\label{classv8_1_1internal_1_1FreeList_af3cbe43b30d422110caba0e7f86bf673}} 
+void {\bfseries Print\+Categories} (Free\+List\+Category\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_ab93c1f4ef5eff83050c9ceba3b16b548}\label{classv8_1_1internal_1_1FreeList_ab93c1f4ef5eff83050c9ceba3b16b548}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$ {\bfseries Get\+Page\+For\+Category\+Type} (Free\+List\+Category\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_a301749b00fbfdbbb2c4746e301f8bfe9}\label{classv8_1_1internal_1_1FreeList_a301749b00fbfdbbb2c4746e301f8bfe9}} 
+static \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Guaranteed\+Allocatable} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} maximum\+\_\+freed)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_a12a26263cf9a2e2139a0f3fc76a5f246}\label{classv8_1_1internal_1_1FreeList_a12a26263cf9a2e2139a0f3fc76a5f246}} 
+static Free\+List\+Category\+Type {\bfseries Select\+Free\+List\+Category\+Type} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} size\+\_\+in\+\_\+bytes)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeList_ac7b8d83f9833f7883a102608d8720210}\label{classv8_1_1internal_1_1FreeList_ac7b8d83f9833f7883a102608d8720210}} 
+class {\bfseries Free\+List\+Category}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1761 of file spaces.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/spaces.\+h\item 
+v8/src/heap/spaces-\/inl.\+h\item 
+v8/src/heap/spaces.\+cc\end{DoxyCompactItemize}

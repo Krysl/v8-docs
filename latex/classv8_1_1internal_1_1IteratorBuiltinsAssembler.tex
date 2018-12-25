@@ -1,0 +1,58 @@
+\hypertarget{classv8_1_1internal_1_1IteratorBuiltinsAssembler}{}\section{v8\+:\+:internal\+:\+:Iterator\+Builtins\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1IteratorBuiltinsAssembler}\index{v8\+::internal\+::\+Iterator\+Builtins\+Assembler@{v8\+::internal\+::\+Iterator\+Builtins\+Assembler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Iterator\+Builtins\+Assembler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.424242cm]{classv8_1_1internal_1_1IteratorBuiltinsAssembler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IteratorBuiltinsAssembler_a24a081592f250b8e73e77d33ec91b2cc}\label{classv8_1_1internal_1_1IteratorBuiltinsAssembler_a24a081592f250b8e73e77d33ec91b2cc}} 
+{\bfseries Iterator\+Builtins\+Assembler} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerState}{compiler\+::\+Code\+Assembler\+State}} $\ast$state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IteratorBuiltinsAssembler_a4526865324393c1c6a2d1a73f474f0d2}\label{classv8_1_1internal_1_1IteratorBuiltinsAssembler_a4526865324393c1c6a2d1a73f474f0d2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Get\+Iterator\+Method} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IteratorBuiltinsAssembler_a0f1a21d57643c0f0f4371a3a28502093}\label{classv8_1_1internal_1_1IteratorBuiltinsAssembler_a0f1a21d57643c0f0f4371a3a28502093}} 
+Iterator\+Record {\bfseries Get\+Iterator} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$object, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+exception=nullptr, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerVariable}{Variable}} $\ast$exception=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IteratorBuiltinsAssembler_afb6b7e741042da4dd58ba565dd013d01}\label{classv8_1_1internal_1_1IteratorBuiltinsAssembler_afb6b7e741042da4dd58ba565dd013d01}} 
+Iterator\+Record {\bfseries Get\+Iterator} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$object, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$method, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+exception=nullptr, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerVariable}{Variable}} $\ast$exception=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IteratorBuiltinsAssembler_a109c701ff5a41c111b1aa49d73e74b16}\label{classv8_1_1internal_1_1IteratorBuiltinsAssembler_a109c701ff5a41c111b1aa49d73e74b16}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Iterator\+Step} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, const Iterator\+Record \&iterator, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+done, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$fast\+\_\+iterator\+\_\+result\+\_\+map=nullptr, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+exception=nullptr, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerVariable}{Variable}} $\ast$exception=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IteratorBuiltinsAssembler_ab1cc5d99c96e49814dd8b37dc390842b}\label{classv8_1_1internal_1_1IteratorBuiltinsAssembler_ab1cc5d99c96e49814dd8b37dc390842b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Iterator\+Step} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, const Iterator\+Record \&iterator, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$fast\+\_\+iterator\+\_\+result\+\_\+map, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+done)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IteratorBuiltinsAssembler_a8f6d4c587297b353c2481583429362d5}\label{classv8_1_1internal_1_1IteratorBuiltinsAssembler_a8f6d4c587297b353c2481583429362d5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Iterator\+Value} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$result, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$fast\+\_\+iterator\+\_\+result\+\_\+map=nullptr, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+exception=nullptr, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerVariable}{Variable}} $\ast$exception=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IteratorBuiltinsAssembler_a39172e9d9da952cc8fbf7dda6e0f53da}\label{classv8_1_1internal_1_1IteratorBuiltinsAssembler_a39172e9d9da952cc8fbf7dda6e0f53da}} 
+void {\bfseries Iterator\+Close\+On\+Exception} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, const Iterator\+Record \&iterator, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+exception, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerVariable}{Variable}} $\ast$exception)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IteratorBuiltinsAssembler_a0a65298fede56e7d65ebfcd3d990ffec}\label{classv8_1_1internal_1_1IteratorBuiltinsAssembler_a0a65298fede56e7d65ebfcd3d990ffec}} 
+void {\bfseries Iterator\+Close\+On\+Exception} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, const Iterator\+Record \&iterator, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ exception)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IteratorBuiltinsAssembler_a78c0742d15f31153895badaf6ac476d0}\label{classv8_1_1internal_1_1IteratorBuiltinsAssembler_a78c0742d15f31153895badaf6ac476d0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArray}{J\+S\+Array}} $>$ {\bfseries Iterable\+To\+List} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ iterable, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ iterator\+\_\+fn)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IteratorBuiltinsAssembler_a2caf072d54b833bf1603aa183f8138b2}\label{classv8_1_1internal_1_1IteratorBuiltinsAssembler_a2caf072d54b833bf1603aa183f8138b2}} 
+void {\bfseries Fast\+Iterable\+To\+List} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ iterable, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TypedCodeAssemblerVariable}{T\+Variable}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ $\ast$var\+\_\+result, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$slow)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file builtins-\/iterator-\/gen.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/builtins/builtins-\/iterator-\/gen.\+h\item 
+v8/src/builtins/builtins-\/iterator-\/gen.\+cc\end{DoxyCompactItemize}

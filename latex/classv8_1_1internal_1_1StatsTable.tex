@@ -1,0 +1,45 @@
+\hypertarget{classv8_1_1internal_1_1StatsTable}{}\section{v8\+:\+:internal\+:\+:Stats\+Table Class Reference}
+\label{classv8_1_1internal_1_1StatsTable}\index{v8\+::internal\+::\+Stats\+Table@{v8\+::internal\+::\+Stats\+Table}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StatsTable_a8b3d3e6111d0e6fc92e2c5fac1d7bf63}\label{classv8_1_1internal_1_1StatsTable_a8b3d3e6111d0e6fc92e2c5fac1d7bf63}} 
+void {\bfseries Set\+Counter\+Function} (Counter\+Lookup\+Callback f)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StatsTable_aed9d933a4c6b5f41a43e53d9d9f6fac8}\label{classv8_1_1internal_1_1StatsTable_aed9d933a4c6b5f41a43e53d9d9f6fac8}} 
+void {\bfseries Set\+Create\+Histogram\+Function} (Create\+Histogram\+Callback f)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StatsTable_a91179b8d1c0e9f9ec3761ca189925dfb}\label{classv8_1_1internal_1_1StatsTable_a91179b8d1c0e9f9ec3761ca189925dfb}} 
+void {\bfseries Set\+Add\+Histogram\+Sample\+Function} (Add\+Histogram\+Sample\+Callback f)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StatsTable_a607e4515194c726815a932296a1642bb}\label{classv8_1_1internal_1_1StatsTable_a607e4515194c726815a932296a1642bb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Counter\+Function} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StatsTable_a2f44cca1e2acf134a52485e02c79e70c}\label{classv8_1_1internal_1_1StatsTable_a2f44cca1e2acf134a52485e02c79e70c}} 
+\mbox{\hyperlink{classint}{int}} $\ast$ {\bfseries Find\+Location} (const \mbox{\hyperlink{classchar}{char}} $\ast$name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StatsTable_a0dd8ef255a6791a7132f44b4360ed68b}\label{classv8_1_1internal_1_1StatsTable_a0dd8ef255a6791a7132f44b4360ed68b}} 
+void $\ast$ {\bfseries Create\+Histogram} (const \mbox{\hyperlink{classchar}{char}} $\ast$name, \mbox{\hyperlink{classint}{int}} min, \mbox{\hyperlink{classint}{int}} max, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} buckets)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StatsTable_a225a48909c94185e3a5f7b7f39bb33e1}\label{classv8_1_1internal_1_1StatsTable_a225a48909c94185e3a5f7b7f39bb33e1}} 
+void {\bfseries Add\+Histogram\+Sample} (void $\ast$histogram, \mbox{\hyperlink{classint}{int}} sample)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StatsTable_a5545327f141103b96b160ddc48274bc0}\label{classv8_1_1internal_1_1StatsTable_a5545327f141103b96b160ddc48274bc0}} 
+class {\bfseries Counters}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 31 of file counters.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/counters.\+h\item 
+v8/src/counters.\+cc\end{DoxyCompactItemize}

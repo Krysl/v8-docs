@@ -1,0 +1,80 @@
+\hypertarget{classv8_1_1internal_1_1TypedSlots}{}\section{v8\+:\+:internal\+:\+:Typed\+Slots Class Reference}
+\label{classv8_1_1internal_1_1TypedSlots}\index{v8\+::internal\+::\+Typed\+Slots@{v8\+::internal\+::\+Typed\+Slots}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Typed\+Slots\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1TypedSlots}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1TypedSlots_1_1Chunk}{Chunk}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1TypedSlots_1_1OffsetField}{Offset\+Field}}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1TypedSlots_1_1TypedSlot}{Typed\+Slot}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1TypedSlots_1_1TypeField}{Type\+Field}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TypedSlots_a78b48c5e5424f929c9f1e384d33ea676}\label{classv8_1_1internal_1_1TypedSlots_a78b48c5e5424f929c9f1e384d33ea676}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Insert} (Slot\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} host\+\_\+offset, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TypedSlots_ab6f9d3955ebd1c8f4a8ea4dc77fc449f}\label{classv8_1_1internal_1_1TypedSlots_ab6f9d3955ebd1c8f4a8ea4dc77fc449f}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Merge} (\mbox{\hyperlink{classv8_1_1internal_1_1TypedSlots}{Typed\+Slots}} $\ast$other)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TypedSlots_a0707d5403da240a6561a9262a7785c83}\label{classv8_1_1internal_1_1TypedSlots_a0707d5403da240a6561a9262a7785c83}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Offset} = 1 $<$$<$ 29
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TypedSlots_a3460f69c60dd820a369d3e21d64aad7f}\label{classv8_1_1internal_1_1TypedSlots_a3460f69c60dd820a369d3e21d64aad7f}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1TypedSlots_1_1Chunk}{Chunk}} $\ast$ {\bfseries Ensure\+Chunk} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TypedSlots_a4ea2efaab7a683e331462fc462c53a97}\label{classv8_1_1internal_1_1TypedSlots_a4ea2efaab7a683e331462fc462c53a97}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1TypedSlots_1_1Chunk}{Chunk}} $\ast$ {\bfseries New\+Chunk} (\mbox{\hyperlink{structv8_1_1internal_1_1TypedSlots_1_1Chunk}{Chunk}} $\ast$next, \mbox{\hyperlink{classint}{int}} capacity)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TypedSlots_ae546e09e8382746f338b8209b66aa9e0}\label{classv8_1_1internal_1_1TypedSlots_ae546e09e8382746f338b8209b66aa9e0}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Next\+Capacity} (\mbox{\hyperlink{classint}{int}} capacity)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TypedSlots_a4b2107b4989c8d44f89182841e43372a}\label{classv8_1_1internal_1_1TypedSlots_a4b2107b4989c8d44f89182841e43372a}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1TypedSlots_1_1Chunk}{Chunk}} $\ast$ {\bfseries head\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TypedSlots_a743350a92713ee2b125cb813d51887a8}\label{classv8_1_1internal_1_1TypedSlots_a743350a92713ee2b125cb813d51887a8}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1TypedSlots_1_1Chunk}{Chunk}} $\ast$ {\bfseries tail\+\_\+} = nullptr
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TypedSlots_a7b4fdd0a99f0f0496054261a1b2519c6}\label{classv8_1_1internal_1_1TypedSlots_a7b4fdd0a99f0f0496054261a1b2519c6}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Initial\+Buffer\+Size} = 100
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TypedSlots_a11084615d9d27deac4ec7ed14ac77bb0}\label{classv8_1_1internal_1_1TypedSlots_a11084615d9d27deac4ec7ed14ac77bb0}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Buffer\+Size} = 16 $\ast$ KB
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 402 of file slot-\/set.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/slot-\/set.\+h\item 
+v8/src/heap/slot-\/set.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,479 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Liftoff\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler}\index{v8\+::internal\+::wasm\+::\+Liftoff\+Assembler@{v8\+::internal\+::wasm\+::\+Liftoff\+Assembler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:wasm\+:\+:Liftoff\+Assembler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState}{Cache\+State}}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1ParallelRegisterMoveTuple}{Parallel\+Register\+Move\+Tuple}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState}{Var\+State}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ad17aac79709ba48bcb3083ce636368ea}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ad17aac79709ba48bcb3083ce636368ea}} 
+{\bfseries A\+S\+S\+E\+R\+T\+\_\+\+T\+R\+I\+V\+I\+A\+L\+L\+Y\+\_\+\+C\+O\+P\+Y\+A\+B\+LE} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState}{Var\+State}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a28f28d4c4d0b1370f0e772ca12fe0f07}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a28f28d4c4d0b1370f0e772ca12fe0f07}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} {\bfseries Pop\+To\+Register} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} pinned=\{\})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a08cfaeb35662999886414a088f31442d}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a08cfaeb35662999886414a088f31442d}} 
+void {\bfseries Push\+Register} (Value\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_af9675ebf98bb42baa8db2c785e75135f}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_af9675ebf98bb42baa8db2c785e75135f}} 
+void {\bfseries Spill\+Register} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aed73f8bfd50d306cc889b876775703ee}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aed73f8bfd50d306cc889b876775703ee}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Get\+Num\+Uses} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a931725f44402c9973b43498572fe9c48}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a931725f44402c9973b43498572fe9c48}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} {\bfseries Get\+Unused\+Register} (Reg\+Class rc, std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} $>$ try\+\_\+first, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} pinned=\{\})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a1be3eb05d374daf63f0dec8f3c13ab0b}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a1be3eb05d374daf63f0dec8f3c13ab0b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} {\bfseries Get\+Unused\+Register} (Reg\+Class rc, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} pinned=\{\})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a049113d313e9ce708198ab364cf4051d}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a049113d313e9ce708198ab364cf4051d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} {\bfseries Get\+Unused\+Register} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} candidates, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} pinned=\{\})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a703bb53b0582a75158c70200013666e4}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a703bb53b0582a75158c70200013666e4}} 
+void {\bfseries Merge\+Full\+Stack\+With} (\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState}{Cache\+State}} \&)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aa07ad480a980e65e75b3151d86b4ec6d}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aa07ad480a980e65e75b3151d86b4ec6d}} 
+void {\bfseries Merge\+Stack\+With} (\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState}{Cache\+State}} \&, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} arity)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a1331d9f23ed9cd00ba10c080c0d8c5e8}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a1331d9f23ed9cd00ba10c080c0d8c5e8}} 
+void {\bfseries Spill} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a789a7cb9611c33f3b5e63fb948afdbd9}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a789a7cb9611c33f3b5e63fb948afdbd9}} 
+void {\bfseries Spill\+Locals} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a508cc3d28a6eb5ef05d84f323a8cbb57}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a508cc3d28a6eb5ef05d84f323a8cbb57}} 
+void {\bfseries Spill\+All\+Registers} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_abece1be1961460f4f32b6e525bcf3eba}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_abece1be1961460f4f32b6e525bcf3eba}} 
+void {\bfseries Record\+Used\+Spill\+Slot} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ab402c9ad42a449e1be361e936a847090}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ab402c9ad42a449e1be361e936a847090}} 
+void {\bfseries Prepare\+Call} (\mbox{\hyperlink{classv8_1_1internal_1_1Signature}{Function\+Sig}} $\ast$, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CallDescriptor}{compiler\+::\+Call\+Descriptor}} $\ast$, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} $\ast$target=nullptr, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} $\ast$target\+\_\+instance=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_abe281c575e4791f11fbc9757a863677c}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_abe281c575e4791f11fbc9757a863677c}} 
+void {\bfseries Finish\+Call} (\mbox{\hyperlink{classv8_1_1internal_1_1Signature}{Function\+Sig}} $\ast$, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CallDescriptor}{compiler\+::\+Call\+Descriptor}} $\ast$)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a12410e769eea95d65041728d9ee71fc9}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a12410e769eea95d65041728d9ee71fc9}} 
+void {\bfseries Move} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} src, Value\+Type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aadd6fa8c3e15cff8d2752653018580e4}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aadd6fa8c3e15cff8d2752653018580e4}} 
+void {\bfseries Parallel\+Register\+Move} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1ParallelRegisterMoveTuple}{Parallel\+Register\+Move\+Tuple}} $>$)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a2b8cd0e129570db995c6c80bdca53dae}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a2b8cd0e129570db995c6c80bdca53dae}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Prepare\+Stack\+Frame} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_af218b06fbfe8e3ad1c6f839939d341a1}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_af218b06fbfe8e3ad1c6f839939d341a1}} 
+void {\bfseries Patch\+Prepare\+Stack\+Frame} (\mbox{\hyperlink{classint}{int}} offset, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} stack\+\_\+slots)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ac40f25920c5797b0369bf93bc9c00c4c}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ac40f25920c5797b0369bf93bc9c00c4c}} 
+void {\bfseries Finish\+Code} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a8d33dac229ea2cdb040aa0cd96793387}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a8d33dac229ea2cdb040aa0cd96793387}} 
+void {\bfseries Abort\+Compilation} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a74feead6c3350782a1651e543439456d}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a74feead6c3350782a1651e543439456d}} 
+void {\bfseries Load\+Constant} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}}, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmValue}{Wasm\+Value}}, Reloc\+Info\+::\+Mode rmode=Reloc\+Info\+::\+N\+O\+NE)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a99127287a534a0a3328e21d4f75943cb}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a99127287a534a0a3328e21d4f75943cb}} 
+void {\bfseries Load\+From\+Instance} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset, \mbox{\hyperlink{classint}{int}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a1663430d6d3d57b3645ea739a8176f7f}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a1663430d6d3d57b3645ea739a8176f7f}} 
+void {\bfseries Spill\+Instance} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} instance)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a2482d2b81979df01e1552e0f11e08dd9}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a2482d2b81979df01e1552e0f11e08dd9}} 
+void {\bfseries Fill\+Instance\+Into} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a04863fd2251e893db6cf25b848c9d9b7}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a04863fd2251e893db6cf25b848c9d9b7}} 
+void {\bfseries Load} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} src\+\_\+addr, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} offset\+\_\+reg, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset\+\_\+imm, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LoadType}{Load\+Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} pinned, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} $\ast$protected\+\_\+load\+\_\+pc=nullptr, \mbox{\hyperlink{classbool}{bool}} is\+\_\+load\+\_\+mem=false)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_adaf21d0cc72084b3a463fae2fd591b3a}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_adaf21d0cc72084b3a463fae2fd591b3a}} 
+void {\bfseries Store} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst\+\_\+addr, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} offset\+\_\+reg, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset\+\_\+imm, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} src, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1StoreType}{Store\+Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} pinned, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} $\ast$protected\+\_\+store\+\_\+pc=nullptr, \mbox{\hyperlink{classbool}{bool}} is\+\_\+store\+\_\+mem=false)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a30baa5c1f4fc6afbbd8ac73ce0beb711}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a30baa5c1f4fc6afbbd8ac73ce0beb711}} 
+void {\bfseries Load\+Caller\+Frame\+Slot} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}}, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} caller\+\_\+slot\+\_\+idx, Value\+Type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ad9b71c2d900fd4044363bf5affa802fb}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ad9b71c2d900fd4044363bf5affa802fb}} 
+void {\bfseries Move\+Stack\+Value} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} dst\+\_\+index, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} src\+\_\+index, Value\+Type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a58fe016c4f7cfd3033417226b0660a80}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a58fe016c4f7cfd3033417226b0660a80}} 
+void {\bfseries Move} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} src, Value\+Type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aadc0fe5e7cd554755a156e3024ee779b}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aadc0fe5e7cd554755a156e3024ee779b}} 
+void {\bfseries Move} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} src, Value\+Type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a7468b95131bc0e91af520154dc0432ca}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a7468b95131bc0e91af520154dc0432ca}} 
+void {\bfseries Spill} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}}, Value\+Type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_af886334e8175cecccf880ab2ee666250}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_af886334e8175cecccf880ab2ee666250}} 
+void {\bfseries Spill} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmValue}{Wasm\+Value}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a971a23c1e0bb1ef161d185716f1bf820}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a971a23c1e0bb1ef161d185716f1bf820}} 
+void {\bfseries Fill} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}}, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index, Value\+Type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a5177e5fe59a89e9a0beb53b8c1e98333}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a5177e5fe59a89e9a0beb53b8c1e98333}} 
+void {\bfseries Fill\+I64\+Half} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}}, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} half\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_afa912a81a2b8ca91c587135e5da5c35b}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_afa912a81a2b8ca91c587135e5da5c35b}} 
+void {\bfseries emit\+\_\+i32\+\_\+add} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ac37921452db723a9ff9c8929d5fcc80b}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ac37921452db723a9ff9c8929d5fcc80b}} 
+void {\bfseries emit\+\_\+i32\+\_\+sub} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a9e25abc1107d56f91c7e55cfbef014fd}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a9e25abc1107d56f91c7e55cfbef014fd}} 
+void {\bfseries emit\+\_\+i32\+\_\+mul} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a58866973caf5f57b63477a04c205fb72}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a58866973caf5f57b63477a04c205fb72}} 
+void {\bfseries emit\+\_\+i32\+\_\+divs} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rhs, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$trap\+\_\+div\+\_\+by\+\_\+zero, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$trap\+\_\+div\+\_\+unrepresentable)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a921d27514ae77a9f6e0030f3ecbb34c9}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a921d27514ae77a9f6e0030f3ecbb34c9}} 
+void {\bfseries emit\+\_\+i32\+\_\+divu} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rhs, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$trap\+\_\+div\+\_\+by\+\_\+zero)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a1394668bebba9fc8ede72d20db2f1bef}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a1394668bebba9fc8ede72d20db2f1bef}} 
+void {\bfseries emit\+\_\+i32\+\_\+rems} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rhs, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$trap\+\_\+rem\+\_\+by\+\_\+zero)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a67417ae2a22abf39dbd3f715e5dca3f6}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a67417ae2a22abf39dbd3f715e5dca3f6}} 
+void {\bfseries emit\+\_\+i32\+\_\+remu} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rhs, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$trap\+\_\+rem\+\_\+by\+\_\+zero)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a5f3b0a3ce41ef88a6021dfa089f0778d}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a5f3b0a3ce41ef88a6021dfa089f0778d}} 
+void {\bfseries emit\+\_\+i32\+\_\+and} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a77e8f9e1436e53c98fb823b309fc49b1}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a77e8f9e1436e53c98fb823b309fc49b1}} 
+void {\bfseries emit\+\_\+i32\+\_\+or} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a708363f7550341c9c8d184eb76dac6a4}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a708363f7550341c9c8d184eb76dac6a4}} 
+void {\bfseries emit\+\_\+i32\+\_\+xor} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ad7612f8e936ce96a06463f369bf30c3e}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ad7612f8e936ce96a06463f369bf30c3e}} 
+void {\bfseries emit\+\_\+i32\+\_\+shl} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} src, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} amount, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} pinned=\{\})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_acf68fa4ca58aa1535cd7f51d191258dd}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_acf68fa4ca58aa1535cd7f51d191258dd}} 
+void {\bfseries emit\+\_\+i32\+\_\+sar} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} src, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} amount, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} pinned=\{\})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_afef3c80deaef6b06cc909cff71a5a39b}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_afef3c80deaef6b06cc909cff71a5a39b}} 
+void {\bfseries emit\+\_\+i32\+\_\+shr} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} src, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} amount, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} pinned=\{\})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_abb8789a74586c210d282c7e1fcb7b718}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_abb8789a74586c210d282c7e1fcb7b718}} 
+void {\bfseries emit\+\_\+i32\+\_\+shr} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} src, \mbox{\hyperlink{classint}{int}} amount)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a16d980623514996354fa2ca60d4206e7}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a16d980623514996354fa2ca60d4206e7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries emit\+\_\+i32\+\_\+clz} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a5e0c0e3df7d3d79b152232b754d107fc}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a5e0c0e3df7d3d79b152232b754d107fc}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries emit\+\_\+i32\+\_\+ctz} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aaca2588f3c5c33a3a7d6f39ae59a269d}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aaca2588f3c5c33a3a7d6f39ae59a269d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries emit\+\_\+i32\+\_\+popcnt} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a4c38c040883b5d2ea69ff5d0cba5fc5b}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a4c38c040883b5d2ea69ff5d0cba5fc5b}} 
+void {\bfseries emit\+\_\+i64\+\_\+add} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ab6ab4fb442803fd36dbb6efb548bdf38}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ab6ab4fb442803fd36dbb6efb548bdf38}} 
+void {\bfseries emit\+\_\+i64\+\_\+sub} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ae485e4e8c9d73241a1e61222cd7df3e0}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ae485e4e8c9d73241a1e61222cd7df3e0}} 
+void {\bfseries emit\+\_\+i64\+\_\+mul} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ac20c3e2644ee12f69ac3ca35d976149e}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ac20c3e2644ee12f69ac3ca35d976149e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries emit\+\_\+i64\+\_\+divs} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} rhs, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$trap\+\_\+div\+\_\+by\+\_\+zero, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$trap\+\_\+div\+\_\+unrepresentable)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a7e8840ee3262c0bf992a6a3cfdbb20ca}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a7e8840ee3262c0bf992a6a3cfdbb20ca}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries emit\+\_\+i64\+\_\+divu} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} rhs, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$trap\+\_\+div\+\_\+by\+\_\+zero)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a7209515d7e106d80cf9abff46d79bddf}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a7209515d7e106d80cf9abff46d79bddf}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries emit\+\_\+i64\+\_\+rems} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} rhs, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$trap\+\_\+rem\+\_\+by\+\_\+zero)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a1f49b1c325882cd2f62a2f76d7325423}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a1f49b1c325882cd2f62a2f76d7325423}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries emit\+\_\+i64\+\_\+remu} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} rhs, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$trap\+\_\+rem\+\_\+by\+\_\+zero)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_af02c1bb45db92da83c04804e356832d9}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_af02c1bb45db92da83c04804e356832d9}} 
+void {\bfseries emit\+\_\+i64\+\_\+and} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_abccf432f0a3b25f5d0fca98c3b0f00de}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_abccf432f0a3b25f5d0fca98c3b0f00de}} 
+void {\bfseries emit\+\_\+i64\+\_\+or} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a8f9aedf295a1d6ff75ce69a9b880213d}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a8f9aedf295a1d6ff75ce69a9b880213d}} 
+void {\bfseries emit\+\_\+i64\+\_\+xor} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a747730ac3a6b24a36b772fd843a6ad75}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a747730ac3a6b24a36b772fd843a6ad75}} 
+void {\bfseries emit\+\_\+i64\+\_\+shl} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} src, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} amount, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} pinned=\{\})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a60a95e045fa8c710052d2746f0402637}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a60a95e045fa8c710052d2746f0402637}} 
+void {\bfseries emit\+\_\+i64\+\_\+sar} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} src, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} amount, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} pinned=\{\})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ab7f9e64556f6523a36fcbc63b0266f99}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ab7f9e64556f6523a36fcbc63b0266f99}} 
+void {\bfseries emit\+\_\+i64\+\_\+shr} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} src, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} amount, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} pinned=\{\})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a469b4f9e9f349fe1bd9b0715fed56c15}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a469b4f9e9f349fe1bd9b0715fed56c15}} 
+void {\bfseries emit\+\_\+i64\+\_\+shr} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} src, \mbox{\hyperlink{classint}{int}} amount)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_af3ff0c874015683a706696f6732b5717}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_af3ff0c874015683a706696f6732b5717}} 
+void {\bfseries emit\+\_\+i32\+\_\+to\+\_\+intptr} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a5c191c24245cdd17373c2ae864ce41c0}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a5c191c24245cdd17373c2ae864ce41c0}} 
+void {\bfseries emit\+\_\+ptrsize\+\_\+add} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a8c9625cebd315aca5756fb5bf2380bf1}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a8c9625cebd315aca5756fb5bf2380bf1}} 
+void {\bfseries emit\+\_\+ptrsize\+\_\+sub} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a15e38e892ca93045cbb185c34365f5c7}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a15e38e892ca93045cbb185c34365f5c7}} 
+void {\bfseries emit\+\_\+ptrsize\+\_\+and} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a652fb6fee83d32d2b0496f602e22703c}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a652fb6fee83d32d2b0496f602e22703c}} 
+void {\bfseries emit\+\_\+ptrsize\+\_\+shr} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} src, \mbox{\hyperlink{classint}{int}} amount)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_afa036318e083d2c753d55336114ec703}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_afa036318e083d2c753d55336114ec703}} 
+void {\bfseries emit\+\_\+f32\+\_\+add} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_abd3294d31944036836fcec9a52ecaa97}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_abd3294d31944036836fcec9a52ecaa97}} 
+void {\bfseries emit\+\_\+f32\+\_\+sub} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a21cfbf92565bd004145cf0147c635ec2}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a21cfbf92565bd004145cf0147c635ec2}} 
+void {\bfseries emit\+\_\+f32\+\_\+mul} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ac90cbf3a80a0d1369b0d5a14ec779004}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ac90cbf3a80a0d1369b0d5a14ec779004}} 
+void {\bfseries emit\+\_\+f32\+\_\+div} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a10454fe98e9c17f2dee8bb59fb9186b0}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a10454fe98e9c17f2dee8bb59fb9186b0}} 
+void {\bfseries emit\+\_\+f32\+\_\+min} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a1dd365c84579bfcaa7ef0af3c7e3e4c6}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a1dd365c84579bfcaa7ef0af3c7e3e4c6}} 
+void {\bfseries emit\+\_\+f32\+\_\+max} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a418d9ca9ae6cb06a0a5482a9915c7105}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a418d9ca9ae6cb06a0a5482a9915c7105}} 
+void {\bfseries emit\+\_\+f32\+\_\+copysign} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a66e375d035fb9e5ae6df8659bc6dde21}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a66e375d035fb9e5ae6df8659bc6dde21}} 
+void {\bfseries emit\+\_\+f32\+\_\+abs} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a58a13ce23610ebf5f265b581f13861be}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a58a13ce23610ebf5f265b581f13861be}} 
+void {\bfseries emit\+\_\+f32\+\_\+neg} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ae1bac777a1a2cd385bc43549f04717e9}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ae1bac777a1a2cd385bc43549f04717e9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries emit\+\_\+f32\+\_\+ceil} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a1c5aaf40c98e703b90cf026e791cc06c}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a1c5aaf40c98e703b90cf026e791cc06c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries emit\+\_\+f32\+\_\+floor} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aecb0b5856a1f23c8fac2157c1c568bda}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aecb0b5856a1f23c8fac2157c1c568bda}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries emit\+\_\+f32\+\_\+trunc} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a28b0c65dc2a6ecd3b24280c46c3d5877}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a28b0c65dc2a6ecd3b24280c46c3d5877}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries emit\+\_\+f32\+\_\+nearest\+\_\+int} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_abcde110bcbb8f92f5b6c14c814034b17}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_abcde110bcbb8f92f5b6c14c814034b17}} 
+void {\bfseries emit\+\_\+f32\+\_\+sqrt} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a96ac9167569cf3ee40e74098d596974a}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a96ac9167569cf3ee40e74098d596974a}} 
+void {\bfseries emit\+\_\+f64\+\_\+add} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a57616a3e3f33608b584d7255c34a10c9}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a57616a3e3f33608b584d7255c34a10c9}} 
+void {\bfseries emit\+\_\+f64\+\_\+sub} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a15e90bc38c7c0ae8f170ecbae345ebe4}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a15e90bc38c7c0ae8f170ecbae345ebe4}} 
+void {\bfseries emit\+\_\+f64\+\_\+mul} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a03c79c5659d361bc708f348b519da6c6}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a03c79c5659d361bc708f348b519da6c6}} 
+void {\bfseries emit\+\_\+f64\+\_\+div} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a44afb568d343f0eaf2baab63d147c071}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a44afb568d343f0eaf2baab63d147c071}} 
+void {\bfseries emit\+\_\+f64\+\_\+min} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a9521498765d95e3115d90361550da9a1}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a9521498765d95e3115d90361550da9a1}} 
+void {\bfseries emit\+\_\+f64\+\_\+max} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a6342c6079e9a47d9515cc0515a895599}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a6342c6079e9a47d9515cc0515a895599}} 
+void {\bfseries emit\+\_\+f64\+\_\+copysign} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ab62480cc66bd3fae261f4e0f6f63f01a}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ab62480cc66bd3fae261f4e0f6f63f01a}} 
+void {\bfseries emit\+\_\+f64\+\_\+abs} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a69ae0cf0e8a4df963506168fab72e9c5}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a69ae0cf0e8a4df963506168fab72e9c5}} 
+void {\bfseries emit\+\_\+f64\+\_\+neg} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a10ecd20f60e86e3810745b38fbaa74bd}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a10ecd20f60e86e3810745b38fbaa74bd}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries emit\+\_\+f64\+\_\+ceil} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a9f19f2d7dc62936cb9bf86b631fe5c2f}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a9f19f2d7dc62936cb9bf86b631fe5c2f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries emit\+\_\+f64\+\_\+floor} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a45f61e9c661b8e3b7ca8ba770cfbd1d4}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a45f61e9c661b8e3b7ca8ba770cfbd1d4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries emit\+\_\+f64\+\_\+trunc} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a91287fe267ed02616eaac5e6a178e4a9}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a91287fe267ed02616eaac5e6a178e4a9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries emit\+\_\+f64\+\_\+nearest\+\_\+int} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aef0e7ff8e40e575bc7015ab06a0cff31}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aef0e7ff8e40e575bc7015ab06a0cff31}} 
+void {\bfseries emit\+\_\+f64\+\_\+sqrt} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ae73380395f5d705d1f5066925bdf4705}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ae73380395f5d705d1f5066925bdf4705}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries emit\+\_\+type\+\_\+conversion} (Wasm\+Opcode opcode, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} src, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$trap=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_afc28dddf06152621fe0e19146081cb8a}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_afc28dddf06152621fe0e19146081cb8a}} 
+void {\bfseries emit\+\_\+i32\+\_\+signextend\+\_\+i8} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a57fe44d5dd810324e24dfe9a1f8d99a6}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a57fe44d5dd810324e24dfe9a1f8d99a6}} 
+void {\bfseries emit\+\_\+i32\+\_\+signextend\+\_\+i16} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a78eb620110790e6b7f4ab9104f107146}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a78eb620110790e6b7f4ab9104f107146}} 
+void {\bfseries emit\+\_\+i64\+\_\+signextend\+\_\+i8} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a3e516429db3e81a16a37e8f05c526ab0}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a3e516429db3e81a16a37e8f05c526ab0}} 
+void {\bfseries emit\+\_\+i64\+\_\+signextend\+\_\+i16} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a47a0a685261e7d6c313625e2a3f5562d}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a47a0a685261e7d6c313625e2a3f5562d}} 
+void {\bfseries emit\+\_\+i64\+\_\+signextend\+\_\+i32} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a2d757e30f896db24a50a8c477d470b98}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a2d757e30f896db24a50a8c477d470b98}} 
+void {\bfseries emit\+\_\+jump} (\mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a42d39ff5bbf4385c4b935407232e1f3a}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a42d39ff5bbf4385c4b935407232e1f3a}} 
+void {\bfseries emit\+\_\+jump} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aa316a93f5ee87a4c1470c61737c53d35}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aa316a93f5ee87a4c1470c61737c53d35}} 
+void {\bfseries emit\+\_\+cond\+\_\+jump} (Condition, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$, Value\+Type value, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rhs=no\+\_\+reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a18d9d9578ce003ead834ffcc63f12e6b}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a18d9d9578ce003ead834ffcc63f12e6b}} 
+void {\bfseries emit\+\_\+i32\+\_\+eqz} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ac1c2f9423714a4598bd9d8a36f38faa8}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ac1c2f9423714a4598bd9d8a36f38faa8}} 
+void {\bfseries emit\+\_\+i32\+\_\+set\+\_\+cond} (Condition, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ad562fb71fee1888543ea692c251ecab2}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ad562fb71fee1888543ea692c251ecab2}} 
+void {\bfseries emit\+\_\+i64\+\_\+eqz} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aa7f82fafaf29a4073173d70563c9028a}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aa7f82fafaf29a4073173d70563c9028a}} 
+void {\bfseries emit\+\_\+i64\+\_\+set\+\_\+cond} (Condition condition, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aa0dffc53e99737a6b87524e470c2d845}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aa0dffc53e99737a6b87524e470c2d845}} 
+void {\bfseries emit\+\_\+f32\+\_\+set\+\_\+cond} (Condition condition, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a462601a4c92479f2c761df10f606d99c}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a462601a4c92479f2c761df10f606d99c}} 
+void {\bfseries emit\+\_\+f64\+\_\+set\+\_\+cond} (Condition condition, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} dst, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ae7a1c828fd1a5be4047d7bdfc77c1393}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ae7a1c828fd1a5be4047d7bdfc77c1393}} 
+void {\bfseries Stack\+Check} (\mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$ool\+\_\+code, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} limit\+\_\+address)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a59de3c0f86eb9deb2855cceec351c7a1}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a59de3c0f86eb9deb2855cceec351c7a1}} 
+void {\bfseries Call\+Trap\+Callback\+For\+Testing} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a75ec0e50dc2bc1370fe1aa3acf754594}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a75ec0e50dc2bc1370fe1aa3acf754594}} 
+void {\bfseries Assert\+Unreachable} (Abort\+Reason reason)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ad161e49b309b399d6927bd80512da532}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ad161e49b309b399d6927bd80512da532}} 
+void {\bfseries Push\+Registers} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ad98942e9ad79aa0dd1ec068d263e9e50}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ad98942e9ad79aa0dd1ec068d263e9e50}} 
+void {\bfseries Pop\+Registers} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a8430c1d6833dc4d4148528b2564674cd}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a8430c1d6833dc4d4148528b2564674cd}} 
+void {\bfseries Drop\+Stack\+Slots\+And\+Ret} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} num\+\_\+stack\+\_\+slots)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_adc54961ba954c1967398d8cf6e5b4995}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_adc54961ba954c1967398d8cf6e5b4995}} 
+void {\bfseries CallC} (\mbox{\hyperlink{classv8_1_1internal_1_1Signature}{Function\+Sig}} $\ast$sig, const \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} $\ast$args, const \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} $\ast$rets, Value\+Type out\+\_\+argument\+\_\+type, \mbox{\hyperlink{classint}{int}} stack\+\_\+bytes, \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} ext\+\_\+ref)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a8da0de00d1d6a791a9f3a2252735d57f}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a8da0de00d1d6a791a9f3a2252735d57f}} 
+void {\bfseries Call\+Native\+Wasm\+Code} (\mbox{\hyperlink{classuintptr__t}{Address}} addr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_af326944883936b7bad8db6fee42190ea}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_af326944883936b7bad8db6fee42190ea}} 
+void {\bfseries Call\+Indirect} (\mbox{\hyperlink{classv8_1_1internal_1_1Signature}{Function\+Sig}} $\ast$sig, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CallDescriptor}{compiler\+::\+Call\+Descriptor}} $\ast$call\+\_\+descriptor, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} target)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a1e635fc01f4ae5de38fc53165d31d16a}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a1e635fc01f4ae5de38fc53165d31d16a}} 
+void {\bfseries Call\+Runtime\+Stub} (Wasm\+Code\+::\+Runtime\+Stub\+Id sid)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_acf2d43dbbbeba5e8eb26796f085cd91c}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_acf2d43dbbbeba5e8eb26796f085cd91c}} 
+void {\bfseries Allocate\+Stack\+Slot} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} addr, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a4b7334ec7c82cc09516a572bd5a105c7}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a4b7334ec7c82cc09516a572bd5a105c7}} 
+void {\bfseries Deallocate\+Stack\+Slot} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a91f620639956e4d777bcd9de2647f511}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a91f620639956e4d777bcd9de2647f511}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries num\+\_\+locals} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ac08c7344ac7cb0fdefd7556c05f5f1f7}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ac08c7344ac7cb0fdefd7556c05f5f1f7}} 
+void {\bfseries set\+\_\+num\+\_\+locals} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} num\+\_\+locals)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ad22fda739fb3190de09ac7fe6cb1e5cb}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ad22fda739fb3190de09ac7fe6cb1e5cb}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Get\+Total\+Frame\+Slot\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a019073bf2416633f5585ffe6af131699}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a019073bf2416633f5585ffe6af131699}} 
+Value\+Type {\bfseries local\+\_\+type} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aa778807b0daa74d8c7a0ca9a8d1f099c}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aa778807b0daa74d8c7a0ca9a8d1f099c}} 
+void {\bfseries set\+\_\+local\+\_\+type} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index, Value\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ab55914b04c33a177879d5b25367ed5c7}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_ab55914b04c33a177879d5b25367ed5c7}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState}{Cache\+State}} $\ast$ {\bfseries cache\+\_\+state} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aaa61cee1e850e81e447407e0a54aee64}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aaa61cee1e850e81e447407e0a54aee64}} 
+const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState}{Cache\+State}} $\ast$ {\bfseries cache\+\_\+state} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a6ce8dabb0edc69cb5906b80ecc3a24a8}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a6ce8dabb0edc69cb5906b80ecc3a24a8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries did\+\_\+bailout} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a109d9c63e2fd47dce984907695ac3c1a}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a109d9c63e2fd47dce984907695ac3c1a}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries bailout\+\_\+reason} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a3987b8b7d7d830e8412540731f4b90a8}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a3987b8b7d7d830e8412540731f4b90a8}} 
+void {\bfseries bailout} (const \mbox{\hyperlink{classchar}{char}} $\ast$reason)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a2a243de756425e668b40a29d78fc75e2}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_a2a243de756425e668b40a29d78fc75e2}} 
+static constexpr \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Stack\+Slot\+Size} = 8
+\item 
+static constexpr Value\+Type {\bfseries k\+Wasm\+Int\+Ptr}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 32 of file liftoff-\/assembler.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aa18d5bd9d51c17ab3c118c32a374a89f}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_aa18d5bd9d51c17ab3c118c32a374a89f}} 
+\index{v8\+::internal\+::wasm\+::\+Liftoff\+Assembler@{v8\+::internal\+::wasm\+::\+Liftoff\+Assembler}!k\+Wasm\+Int\+Ptr@{k\+Wasm\+Int\+Ptr}}
+\index{k\+Wasm\+Int\+Ptr@{k\+Wasm\+Int\+Ptr}!v8\+::internal\+::wasm\+::\+Liftoff\+Assembler@{v8\+::internal\+::wasm\+::\+Liftoff\+Assembler}}
+\subsubsection{\texorpdfstring{k\+Wasm\+Int\+Ptr}{kWasmIntPtr}}
+{\footnotesize\ttfamily constexpr Value\+Type v8\+::internal\+::wasm\+::\+Liftoff\+Assembler\+::k\+Wasm\+Int\+Ptr\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kPointerSize == 8 ? kWasmI64 : kWasmI32
+\end{DoxyCode}
+
+
+Definition at line 37 of file liftoff-\/assembler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/baseline/liftoff-\/assembler.\+h\item 
+v8/src/wasm/baseline/arm/liftoff-\/assembler-\/arm.\+h\item 
+v8/src/wasm/baseline/arm64/liftoff-\/assembler-\/arm64.\+h\item 
+v8/src/wasm/baseline/ia32/liftoff-\/assembler-\/ia32.\+h\item 
+v8/src/wasm/baseline/liftoff-\/assembler.\+cc\item 
+v8/src/wasm/baseline/mips/liftoff-\/assembler-\/mips.\+h\item 
+v8/src/wasm/baseline/mips64/liftoff-\/assembler-\/mips64.\+h\item 
+v8/src/wasm/baseline/ppc/liftoff-\/assembler-\/ppc.\+h\item 
+v8/src/wasm/baseline/s390/liftoff-\/assembler-\/s390.\+h\item 
+v8/src/wasm/baseline/x64/liftoff-\/assembler-\/x64.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,28 @@
+var classv8_1_1internal_1_1VariableProxy =
+[
+    [ "PreParserNext", "structv8_1_1internal_1_1VariableProxy_1_1PreParserNext.html", null ],
+    [ "UnresolvedNext", "structv8_1_1internal_1_1VariableProxy_1_1UnresolvedNext.html", null ],
+    [ "BindTo", "classv8_1_1internal_1_1VariableProxy.html#a59cea07955f145b7fe4d6c1ebf369452", null ],
+    [ "hole_check_mode", "classv8_1_1internal_1_1VariableProxy.html#ab7b31d978ed3777b286d01310936b32d", null ],
+    [ "is_assigned", "classv8_1_1internal_1_1VariableProxy.html#a89578154e3606f4d91442d9442209241", null ],
+    [ "is_new_target", "classv8_1_1internal_1_1VariableProxy.html#a4f72fe7aaf0bb1a987846d4ce1a58706", null ],
+    [ "is_private_name", "classv8_1_1internal_1_1VariableProxy.html#a1fa97fb23e25f0718d296e49a7719cfc", null ],
+    [ "is_removed_from_unresolved", "classv8_1_1internal_1_1VariableProxy.html#ad91f6a2d19b4b2cb1bbe38f005080ff2", null ],
+    [ "is_resolved", "classv8_1_1internal_1_1VariableProxy.html#ae914e0a2f4143256edcdd1eb534d2523", null ],
+    [ "is_this", "classv8_1_1internal_1_1VariableProxy.html#acdb9747cc3e81fd5f9cd517bb73cce0b", null ],
+    [ "IsValidReferenceExpression", "classv8_1_1internal_1_1VariableProxy.html#a6c0e748176acffdbdfc60d61efaca24c", null ],
+    [ "mark_removed_from_unresolved", "classv8_1_1internal_1_1VariableProxy.html#a30bc7e45c752b94008efa2ef33f65364", null ],
+    [ "name", "classv8_1_1internal_1_1VariableProxy.html#a01f27ba5aae2154eecc698d65dfb8308", null ],
+    [ "next_unresolved", "classv8_1_1internal_1_1VariableProxy.html#a1c18fe17f5d67a7f44132a2f64e343ee", null ],
+    [ "raw_name", "classv8_1_1internal_1_1VariableProxy.html#af17af683a19179170c25ea8499fbb9d7", null ],
+    [ "set_is_assigned", "classv8_1_1internal_1_1VariableProxy.html#a33d6a9f6768d5c12bf0d57734716d6a6", null ],
+    [ "set_is_new_target", "classv8_1_1internal_1_1VariableProxy.html#a2a26c830c70172fdf88a6c171ffa59af", null ],
+    [ "set_is_private_name", "classv8_1_1internal_1_1VariableProxy.html#ab27a3d0c7f98c7ae084324cac17a022c", null ],
+    [ "set_is_resolved", "classv8_1_1internal_1_1VariableProxy.html#ac03971ba1afc8a76243c678870cf092c", null ],
+    [ "set_needs_hole_check", "classv8_1_1internal_1_1VariableProxy.html#affe0243e70307731aa65d74ef5e0b8d5", null ],
+    [ "set_var", "classv8_1_1internal_1_1VariableProxy.html#ac8cb651fb9705a200f0d453d1c557ff7", null ],
+    [ "var", "classv8_1_1internal_1_1VariableProxy.html#aa27eb3c4ffdbb2fe9b3a4a7df51e4915", null ],
+    [ "AstNodeFactory", "classv8_1_1internal_1_1VariableProxy.html#a8d587c8ad3515ff6433eb83c578e795f", null ],
+    [ "raw_name_", "classv8_1_1internal_1_1VariableProxy.html#af9603eecf02bfa83ebbb700d4251a62e", null ],
+    [ "var_", "classv8_1_1internal_1_1VariableProxy.html#ae1fb2de5d8c3f8bdfb973b4752624c4a", null ]
+];

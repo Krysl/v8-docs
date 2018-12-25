@@ -1,0 +1,69 @@
+\hypertarget{classv8_1_1internal_1_1TranslatedState}{}\section{v8\+:\+:internal\+:\+:Translated\+State Class Reference}
+\label{classv8_1_1internal_1_1TranslatedState}\index{v8\+::internal\+::\+Translated\+State@{v8\+::internal\+::\+Translated\+State}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedState_a153eb09bc74719d6fb259982cf8fcdc2}\label{classv8_1_1internal_1_1TranslatedState_a153eb09bc74719d6fb259982cf8fcdc2}} 
+typedef std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1TranslatedFrame}{Translated\+Frame}} $>$\+::iterator {\bfseries iterator}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedState_a26e186a96d8e29d5738e3a0b38fd3d37}\label{classv8_1_1internal_1_1TranslatedState_a26e186a96d8e29d5738e3a0b38fd3d37}} 
+typedef std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1TranslatedFrame}{Translated\+Frame}} $>$\+::const\+\_\+iterator {\bfseries const\+\_\+iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedState_a61ce2255527cfb6affb239d11418184b}\label{classv8_1_1internal_1_1TranslatedState_a61ce2255527cfb6affb239d11418184b}} 
+{\bfseries Translated\+State} (const \mbox{\hyperlink{classv8_1_1internal_1_1JavaScriptFrame}{Java\+Script\+Frame}} $\ast$frame)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedState_af6da36d8b4ea48fb3f56da5b9a2a69a4}\label{classv8_1_1internal_1_1TranslatedState_af6da36d8b4ea48fb3f56da5b9a2a69a4}} 
+void {\bfseries Prepare} (\mbox{\hyperlink{classuintptr__t}{Address}} stack\+\_\+frame\+\_\+pointer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedState_a57354ec27ce552ad319e9890c1e8192e}\label{classv8_1_1internal_1_1TranslatedState_a57354ec27ce552ad319e9890c1e8192e}} 
+void {\bfseries Store\+Materialized\+Values\+And\+Deopt} (\mbox{\hyperlink{classv8_1_1internal_1_1JavaScriptFrame}{Java\+Script\+Frame}} $\ast$frame)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedState_a0d7181aec0643e3c070248ee1429acf2}\label{classv8_1_1internal_1_1TranslatedState_a0d7181aec0643e3c070248ee1429acf2}} 
+iterator {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedState_a3f7c5ec0be6c661c55a127993baf3e24}\label{classv8_1_1internal_1_1TranslatedState_a3f7c5ec0be6c661c55a127993baf3e24}} 
+iterator {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedState_a12d4621144656c39d37ac93338321dfb}\label{classv8_1_1internal_1_1TranslatedState_a12d4621144656c39d37ac93338321dfb}} 
+const\+\_\+iterator {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedState_a300b169abc28b08f9eb75a2b7e35ef3a}\label{classv8_1_1internal_1_1TranslatedState_a300b169abc28b08f9eb75a2b7e35ef3a}} 
+const\+\_\+iterator {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedState_a0810bb0c912ff00d226d483cbad42a71}\label{classv8_1_1internal_1_1TranslatedState_a0810bb0c912ff00d226d483cbad42a71}} 
+std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1TranslatedFrame}{Translated\+Frame}} $>$ \& {\bfseries frames} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedState_add1929b6d844e3939dd9ad5dd48bedef}\label{classv8_1_1internal_1_1TranslatedState_add1929b6d844e3939dd9ad5dd48bedef}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1TranslatedFrame}{Translated\+Frame}} $\ast$ {\bfseries Get\+Frame\+From\+J\+S\+Frame\+Index} (\mbox{\hyperlink{classint}{int}} jsframe\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedState_a38fa0d6f1798ae6ed395a398f263306e}\label{classv8_1_1internal_1_1TranslatedState_a38fa0d6f1798ae6ed395a398f263306e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1TranslatedFrame}{Translated\+Frame}} $\ast$ {\bfseries Get\+Arguments\+Info\+From\+J\+S\+Frame\+Index} (\mbox{\hyperlink{classint}{int}} jsframe\+\_\+index, \mbox{\hyperlink{classint}{int}} $\ast$arguments\+\_\+count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedState_a3f7e0c9a867318e6ca1277a882667027}\label{classv8_1_1internal_1_1TranslatedState_a3f7e0c9a867318e6ca1277a882667027}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedState_a5511bc823539a5e62fceda2c63678df2}\label{classv8_1_1internal_1_1TranslatedState_a5511bc823539a5e62fceda2c63678df2}} 
+void {\bfseries Init} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classuintptr__t}{Address}} input\+\_\+frame\+\_\+pointer, \mbox{\hyperlink{classv8_1_1internal_1_1TranslationIterator}{Translation\+Iterator}} $\ast$iterator, \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} literal\+\_\+array, \mbox{\hyperlink{classv8_1_1internal_1_1RegisterValues}{Register\+Values}} $\ast$registers, F\+I\+LE $\ast$trace\+\_\+file, \mbox{\hyperlink{classint}{int}} parameter\+\_\+count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedState_aada178d5e86c2538090b5d750fc4c8bc}\label{classv8_1_1internal_1_1TranslatedState_aada178d5e86c2538090b5d750fc4c8bc}} 
+void {\bfseries Verify\+Materialized\+Objects} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedState_a9d6bb4c635d370f25b77bd35bc0d22df}\label{classv8_1_1internal_1_1TranslatedState_a9d6bb4c635d370f25b77bd35bc0d22df}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Do\+Update\+Feedback} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 299 of file deoptimizer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/deoptimizer.\+h\item 
+v8/src/deoptimizer.\+cc\end{DoxyCompactItemize}

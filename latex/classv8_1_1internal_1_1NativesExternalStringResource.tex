@@ -1,0 +1,72 @@
+\hypertarget{classv8_1_1internal_1_1NativesExternalStringResource}{}\section{v8\+:\+:internal\+:\+:Natives\+External\+String\+Resource Class Reference}
+\label{classv8_1_1internal_1_1NativesExternalStringResource}\index{v8\+::internal\+::\+Natives\+External\+String\+Resource@{v8\+::internal\+::\+Natives\+External\+String\+Resource}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Natives\+External\+String\+Resource\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1NativesExternalStringResource}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativesExternalStringResource_a5605996f005d88e86f047cbac47c4093}\label{classv8_1_1internal_1_1NativesExternalStringResource_a5605996f005d88e86f047cbac47c4093}} 
+{\bfseries Natives\+External\+String\+Resource} (Native\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classint}{int}} index)
+\item 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ \mbox{\hyperlink{classv8_1_1internal_1_1NativesExternalStringResource_a80047e38c07b82d4632e7f0e35ff24b0}{data}} () const override
+\item 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} \mbox{\hyperlink{classv8_1_1internal_1_1NativesExternalStringResource_aea52fbf749b2a249d23ce74caa8db7f1}{length}} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativesExternalStringResource_a93be9f3743f942c888dbcec1f3dd239d}\label{classv8_1_1internal_1_1NativesExternalStringResource_a93be9f3743f942c888dbcec1f3dd239d}} 
+\mbox{\hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource}{v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource}} $\ast$ {\bfseries Encode\+For\+Serialization} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativesExternalStringResource_a64948ba3b56877c800a86f2b836b27f8}\label{classv8_1_1internal_1_1NativesExternalStringResource_a64948ba3b56877c800a86f2b836b27f8}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1NativesExternalStringResource}{Natives\+External\+String\+Resource}} $\ast$ {\bfseries Decode\+For\+Deserialization} (const \mbox{\hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource}{v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource}} $\ast$encoded)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 64 of file natives.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativesExternalStringResource_a80047e38c07b82d4632e7f0e35ff24b0}\label{classv8_1_1internal_1_1NativesExternalStringResource_a80047e38c07b82d4632e7f0e35ff24b0}} 
+\index{v8\+::internal\+::\+Natives\+External\+String\+Resource@{v8\+::internal\+::\+Natives\+External\+String\+Resource}!data@{data}}
+\index{data@{data}!v8\+::internal\+::\+Natives\+External\+String\+Resource@{v8\+::internal\+::\+Natives\+External\+String\+Resource}}
+\subsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classchar}{char}}$\ast$ v8\+::internal\+::\+Natives\+External\+String\+Resource\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The string data from the underlying buffer. 
+
+Implements \mbox{\hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource_aaeca31240d3dbf990d1b974e3c64593e}{v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource}}.
+
+
+
+Definition at line 69 of file natives.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativesExternalStringResource_aea52fbf749b2a249d23ce74caa8db7f1}\label{classv8_1_1internal_1_1NativesExternalStringResource_aea52fbf749b2a249d23ce74caa8db7f1}} 
+\index{v8\+::internal\+::\+Natives\+External\+String\+Resource@{v8\+::internal\+::\+Natives\+External\+String\+Resource}!length@{length}}
+\index{length@{length}!v8\+::internal\+::\+Natives\+External\+String\+Resource@{v8\+::internal\+::\+Natives\+External\+String\+Resource}}
+\subsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsize__t}{size\+\_\+t}} v8\+::internal\+::\+Natives\+External\+String\+Resource\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The number of Latin-\/1 characters in the string. 
+
+Implements \mbox{\hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource_ad6b702f05798bcfc3975cb922f32b5ab}{v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource}}.
+
+
+
+Definition at line 70 of file natives.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/snapshot/natives.\+h\item 
+v8/src/snapshot/natives-\/common.\+cc\end{DoxyCompactItemize}

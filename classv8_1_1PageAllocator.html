@@ -95,6 +95,15 @@ $(document).ready(function(){initNavTree('classv8_1_1PageAllocator.html','');});
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for v8::PageAllocator:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classv8_1_1PageAllocator.png" usemap="#v8::PageAllocator_map" alt=""/>
+  <map id="v8::PageAllocator_map" name="v8::PageAllocator_map">
+<area href="classv8_1_1base_1_1BoundedPageAllocator.html" alt="v8::base::BoundedPageAllocator" shape="rect" coords="0,56,195,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -111,23 +120,23 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a92c2f6dbb3afa6c47dafd4c12ab4641f"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#a92c2f6dbb3afa6c47dafd4c12ab4641f">AllocatePageSize</a> ()=0</td></tr>
+<tr class="memitem:a92c2f6dbb3afa6c47dafd4c12ab4641f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classsize__t.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#a92c2f6dbb3afa6c47dafd4c12ab4641f">AllocatePageSize</a> ()=0</td></tr>
 <tr class="separator:a92c2f6dbb3afa6c47dafd4c12ab4641f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad817d87004151e3824997415f2dc57e9"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#ad817d87004151e3824997415f2dc57e9">CommitPageSize</a> ()=0</td></tr>
+<tr class="memitem:ad817d87004151e3824997415f2dc57e9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classsize__t.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#ad817d87004151e3824997415f2dc57e9">CommitPageSize</a> ()=0</td></tr>
 <tr class="separator:ad817d87004151e3824997415f2dc57e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9481a73527915fd200f6e1e9ed4b3eba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#a9481a73527915fd200f6e1e9ed4b3eba">SetRandomMmapSeed</a> (int64_t seed)=0</td></tr>
+<tr class="memitem:a9481a73527915fd200f6e1e9ed4b3eba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#a9481a73527915fd200f6e1e9ed4b3eba">SetRandomMmapSeed</a> (<a class="el" href="classint64__t.html">int64_t</a> seed)=0</td></tr>
 <tr class="separator:a9481a73527915fd200f6e1e9ed4b3eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37f194f9c5fdbe5105476cbd1432418c"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#a37f194f9c5fdbe5105476cbd1432418c">GetRandomMmapAddr</a> ()=0</td></tr>
 <tr class="separator:a37f194f9c5fdbe5105476cbd1432418c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3a25ddd2601701f80ee67c4bf017ef7"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#ab3a25ddd2601701f80ee67c4bf017ef7">AllocatePages</a> (void *address, size_t length, size_t alignment, <a class="el" href="classv8_1_1PageAllocator.html#a88f74b164fe97e053259f67a95758415">Permission</a> permissions)=0</td></tr>
+<tr class="memitem:ab3a25ddd2601701f80ee67c4bf017ef7"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#ab3a25ddd2601701f80ee67c4bf017ef7">AllocatePages</a> (void *address, <a class="el" href="classsize__t.html">size_t</a> length, <a class="el" href="classsize__t.html">size_t</a> alignment, <a class="el" href="classv8_1_1PageAllocator.html#a88f74b164fe97e053259f67a95758415">Permission</a> permissions)=0</td></tr>
 <tr class="separator:ab3a25ddd2601701f80ee67c4bf017ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc2e3fdc768aba7d35ce0cf44f14586c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#abc2e3fdc768aba7d35ce0cf44f14586c">FreePages</a> (void *address, size_t length)=0</td></tr>
+<tr class="memitem:abc2e3fdc768aba7d35ce0cf44f14586c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#abc2e3fdc768aba7d35ce0cf44f14586c">FreePages</a> (void *address, <a class="el" href="classsize__t.html">size_t</a> length)=0</td></tr>
 <tr class="separator:abc2e3fdc768aba7d35ce0cf44f14586c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6eb6bd93c8880dd022a61a13c65f66c0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#a6eb6bd93c8880dd022a61a13c65f66c0">ReleasePages</a> (void *address, size_t length, size_t new_length)=0</td></tr>
+<tr class="memitem:a6eb6bd93c8880dd022a61a13c65f66c0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#a6eb6bd93c8880dd022a61a13c65f66c0">ReleasePages</a> (void *address, <a class="el" href="classsize__t.html">size_t</a> length, <a class="el" href="classsize__t.html">size_t</a> new_length)=0</td></tr>
 <tr class="separator:a6eb6bd93c8880dd022a61a13c65f66c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3817d5bfaba9ec280a6cfb60e6adda0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#aa3817d5bfaba9ec280a6cfb60e6adda0">SetPermissions</a> (void *address, size_t length, <a class="el" href="classv8_1_1PageAllocator.html#a88f74b164fe97e053259f67a95758415">Permission</a> permissions)=0</td></tr>
+<tr class="memitem:aa3817d5bfaba9ec280a6cfb60e6adda0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#aa3817d5bfaba9ec280a6cfb60e6adda0">SetPermissions</a> (void *address, <a class="el" href="classsize__t.html">size_t</a> length, <a class="el" href="classv8_1_1PageAllocator.html#a88f74b164fe97e053259f67a95758415">Permission</a> permissions)=0</td></tr>
 <tr class="separator:aa3817d5bfaba9ec280a6cfb60e6adda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0de847c922e25f63d82494d997f441d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#ad0de847c922e25f63d82494d997f441d">DiscardSystemPages</a> (void *address, size_t size)</td></tr>
+<tr class="memitem:ad0de847c922e25f63d82494d997f441d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1PageAllocator.html#ad0de847c922e25f63d82494d997f441d">DiscardSystemPages</a> (void *address, <a class="el" href="classsize__t.html">size_t</a> size)</td></tr>
 <tr class="separator:ad0de847c922e25f63d82494d997f441d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -172,13 +181,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classsize__t.html">size_t</a>&#160;</td>
           <td class="paramname"><em>length</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classsize__t.html">size_t</a>&#160;</td>
           <td class="paramname"><em>alignment</em>, </td>
         </tr>
         <tr>
@@ -201,6 +210,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Allocates memory in range with the given alignment and permission. </p>
 
+<p>Implemented in <a class="el" href="classv8_1_1base_1_1BoundedPageAllocator.html#a0de34af3c63e3a50ed6f8613720286b6">v8::base::BoundedPageAllocator</a>.</p>
+
 </div>
 </div>
 <a id="a92c2f6dbb3afa6c47dafd4c12ab4641f"></a>
@@ -213,7 +224,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual size_t v8::PageAllocator::AllocatePageSize </td>
+          <td class="memname">virtual <a class="el" href="classsize__t.html">size_t</a> v8::PageAllocator::AllocatePageSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -227,6 +238,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Gets the page granularity for AllocatePages and FreePages. Addresses and lengths for those calls should be multiples of <a class="el" href="classv8_1_1PageAllocator.html#a92c2f6dbb3afa6c47dafd4c12ab4641f">AllocatePageSize()</a>. </p>
 
+<p>Implemented in <a class="el" href="classv8_1_1base_1_1BoundedPageAllocator.html#af7b999d6c3a3526636230bf6b7d72784">v8::base::BoundedPageAllocator</a>.</p>
+
 </div>
 </div>
 <a id="ad817d87004151e3824997415f2dc57e9"></a>
@@ -239,7 +252,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual size_t v8::PageAllocator::CommitPageSize </td>
+          <td class="memname">virtual <a class="el" href="classsize__t.html">size_t</a> v8::PageAllocator::CommitPageSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -253,6 +266,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Gets the page granularity for SetPermissions and ReleasePages. Addresses and lengths for those calls should be multiples of <a class="el" href="classv8_1_1PageAllocator.html#ad817d87004151e3824997415f2dc57e9">CommitPageSize()</a>. </p>
 
+<p>Implemented in <a class="el" href="classv8_1_1base_1_1BoundedPageAllocator.html#a68462e5a1751aa3a8fb0068deca16c5f">v8::base::BoundedPageAllocator</a>.</p>
+
 </div>
 </div>
 <a id="ad0de847c922e25f63d82494d997f441d"></a>
@@ -265,7 +280,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool v8::PageAllocator::DiscardSystemPages </td>
+          <td class="memname">virtual <a class="el" href="classbool.html">bool</a> v8::PageAllocator::DiscardSystemPages </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>address</em>, </td>
@@ -273,7 +288,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classsize__t.html">size_t</a>&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -290,6 +305,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Frees memory in the given [address, address + size) range. address and size should be operating system page-aligned. The next write to this memory area brings the memory transparently back. </p>
 
+<p>Reimplemented in <a class="el" href="classv8_1_1base_1_1BoundedPageAllocator.html#a31ae3d1e2696d53c6ac47e2f525bc1e7">v8::base::BoundedPageAllocator</a>.</p>
+
 <p class="definition">Definition at line <a class="el" href="v8-platform_8h_source.html#l00259">259</a> of file <a class="el" href="v8-platform_8h_source.html">v8-platform.h</a>.</p>
 
 </div>
@@ -304,7 +321,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool v8::PageAllocator::FreePages </td>
+          <td class="memname">virtual <a class="el" href="classbool.html">bool</a> v8::PageAllocator::FreePages </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>address</em>, </td>
@@ -312,7 +329,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classsize__t.html">size_t</a>&#160;</td>
           <td class="paramname"><em>length</em>&#160;</td>
         </tr>
         <tr>
@@ -328,6 +345,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Frees memory in a range that was allocated by a call to AllocatePages. </p>
+
+<p>Implemented in <a class="el" href="classv8_1_1base_1_1BoundedPageAllocator.html#a52bf55c7bd934bd67982d37691c15573">v8::base::BoundedPageAllocator</a>.</p>
 
 </div>
 </div>
@@ -355,6 +374,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a randomized address, suitable for memory allocation under ASLR. The address will be aligned to AllocatePageSize. </p>
 
+<p>Implemented in <a class="el" href="classv8_1_1base_1_1BoundedPageAllocator.html#aafb1cb9ac6fed20bdba0806a46f28bfc">v8::base::BoundedPageAllocator</a>.</p>
+
 </div>
 </div>
 <a id="a6eb6bd93c8880dd022a61a13c65f66c0"></a>
@@ -367,7 +388,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool v8::PageAllocator::ReleasePages </td>
+          <td class="memname">virtual <a class="el" href="classbool.html">bool</a> v8::PageAllocator::ReleasePages </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>address</em>, </td>
@@ -375,13 +396,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classsize__t.html">size_t</a>&#160;</td>
           <td class="paramname"><em>length</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classsize__t.html">size_t</a>&#160;</td>
           <td class="paramname"><em>new_length</em>&#160;</td>
         </tr>
         <tr>
@@ -398,6 +419,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Releases memory in a range that was allocated by a call to AllocatePages. </p>
 
+<p>Implemented in <a class="el" href="classv8_1_1base_1_1BoundedPageAllocator.html#abf47c5cae52f79c77bfc6bdcbcced44a">v8::base::BoundedPageAllocator</a>.</p>
+
 </div>
 </div>
 <a id="aa3817d5bfaba9ec280a6cfb60e6adda0"></a>
@@ -410,7 +433,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool v8::PageAllocator::SetPermissions </td>
+          <td class="memname">virtual <a class="el" href="classbool.html">bool</a> v8::PageAllocator::SetPermissions </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>address</em>, </td>
@@ -418,7 +441,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classsize__t.html">size_t</a>&#160;</td>
           <td class="paramname"><em>length</em>, </td>
         </tr>
         <tr>
@@ -441,6 +464,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets permissions on pages in an allocated range. </p>
 
+<p>Implemented in <a class="el" href="classv8_1_1base_1_1BoundedPageAllocator.html#ae5b6f900d5722eb27be5eb376b8228a3">v8::base::BoundedPageAllocator</a>.</p>
+
 </div>
 </div>
 <a id="a9481a73527915fd200f6e1e9ed4b3eba"></a>
@@ -455,7 +480,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void v8::PageAllocator::SetRandomMmapSeed </td>
           <td>(</td>
-          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classint64__t.html">int64_t</a>&#160;</td>
           <td class="paramname"><em>seed</em></td><td>)</td>
           <td></td>
         </tr>
@@ -468,6 +493,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the random seed so that <a class="el" href="classv8_1_1PageAllocator.html#a37f194f9c5fdbe5105476cbd1432418c">GetRandomMmapAddr()</a> will generate repeatable sequences of random mmap addresses. </p>
 
+<p>Implemented in <a class="el" href="classv8_1_1base_1_1BoundedPageAllocator.html#a53d343cc7d2acb2f059e6dd4ea29bc0f">v8::base::BoundedPageAllocator</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -479,7 +506,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1PageAllocator.html">PageAllocator</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 14:33:05 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:40:30 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

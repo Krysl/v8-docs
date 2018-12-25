@@ -1,5 +1,11 @@
 \hypertarget{classv8__inspector_1_1V8InspectorSession}{}\section{v8\+\_\+inspector\+:\+:V8\+Inspector\+Session Class Reference}
 \label{classv8__inspector_1_1V8InspectorSession}\index{v8\+\_\+inspector\+::\+V8\+Inspector\+Session@{v8\+\_\+inspector\+::\+V8\+Inspector\+Session}}
+Inheritance diagram for v8\+\_\+inspector\+:\+:V8\+Inspector\+Session\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8__inspector_1_1V8InspectorSession}
+\end{center}
+\end{figure}
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -30,7 +36,7 @@ virtual void {\bfseries cancel\+Pause\+On\+Next\+Statement} ()=0
 virtual void {\bfseries break\+Program} (const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&break\+Reason, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&break\+Details)=0
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_ae98e6ad6dd45492ce828737f7176b501}\label{classv8__inspector_1_1V8InspectorSession_ae98e6ad6dd45492ce828737f7176b501}} 
-virtual void {\bfseries set\+Skip\+All\+Pauses} (bool)=0
+virtual void {\bfseries set\+Skip\+All\+Pauses} (\mbox{\hyperlink{classbool}{bool}})=0
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_ace573efed7184ee701f06cb2543d4e15}\label{classv8__inspector_1_1V8InspectorSession_ace573efed7184ee701f06cb2543d4e15}} 
 virtual void {\bfseries resume} ()=0
@@ -39,13 +45,13 @@ virtual void {\bfseries resume} ()=0
 virtual void {\bfseries step\+Over} ()=0
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_acaa137f90ce833744a2a16bda60490c5}\label{classv8__inspector_1_1V8InspectorSession_acaa137f90ce833744a2a16bda60490c5}} 
-virtual std\+::vector$<$ std\+::unique\+\_\+ptr$<$ protocol\+::\+Debugger\+::\+A\+P\+I\+::\+Search\+Match $>$ $>$ {\bfseries search\+In\+Text\+By\+Lines} (const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&text, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&query, bool case\+Sensitive, bool is\+Regex)=0
+virtual std\+::vector$<$ std\+::unique\+\_\+ptr$<$ protocol\+::\+Debugger\+::\+A\+P\+I\+::\+Search\+Match $>$ $>$ {\bfseries search\+In\+Text\+By\+Lines} (const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&text, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&query, \mbox{\hyperlink{classbool}{bool}} case\+Sensitive, \mbox{\hyperlink{classbool}{bool}} is\+Regex)=0
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_a7568a840a4c681cbca9ec7ad50aba0e6}\label{classv8__inspector_1_1V8InspectorSession_a7568a840a4c681cbca9ec7ad50aba0e6}} 
-virtual std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+A\+P\+I\+::\+Remote\+Object $>$ {\bfseries wrap\+Object} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&group\+Name, bool generate\+Preview)=0
+virtual std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+A\+P\+I\+::\+Remote\+Object $>$ {\bfseries wrap\+Object} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&group\+Name, \mbox{\hyperlink{classbool}{bool}} generate\+Preview)=0
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_adbe69bb66c76882db82482db3712b554}\label{classv8__inspector_1_1V8InspectorSession_adbe69bb66c76882db82482db3712b554}} 
-virtual bool {\bfseries unwrap\+Object} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1StringBuffer}{String\+Buffer}} $>$ $\ast$error, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&object\+Id, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ $\ast$, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$ $\ast$, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1StringBuffer}{String\+Buffer}} $>$ $\ast$object\+Group)=0
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries unwrap\+Object} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1StringBuffer}{String\+Buffer}} $>$ $\ast$error, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&object\+Id, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ $\ast$, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$ $\ast$, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1StringBuffer}{String\+Buffer}} $>$ $\ast$object\+Group)=0
 \item 
 \mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_a3a7e04f754c93086d7e61ad483bd38aa}\label{classv8__inspector_1_1V8InspectorSession_a3a7e04f754c93086d7e61ad483bd38aa}} 
 virtual void {\bfseries release\+Object\+Group} (const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&)=0
@@ -53,8 +59,8 @@ virtual void {\bfseries release\+Object\+Group} (const \mbox{\hyperlink{classv8_
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_a34718345c6d8f43eb07222af2fd8c232}\label{classv8__inspector_1_1V8InspectorSession_a34718345c6d8f43eb07222af2fd8c232}} 
-static bool {\bfseries can\+Dispatch\+Method} (const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&method)
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_a3d58da86d01d8c9f94e09825b498ec5e}\label{classv8__inspector_1_1V8InspectorSession_a3d58da86d01d8c9f94e09825b498ec5e}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries can\+Dispatch\+Method} (const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&method)
 \end{DoxyCompactItemize}
 
 
@@ -65,6 +71,7 @@ Definition at line 119 of file v8-\/inspector.\+h.
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8-\/inspector.\+h\end{DoxyCompactItemize}
+v8/include/v8-\/inspector.\+h\item 
+v8/src/inspector/v8-\/inspector-\/session-\/impl.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,138 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Native\+Module Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1NativeModule}\index{v8\+::internal\+::wasm\+::\+Native\+Module@{v8\+::internal\+::wasm\+::\+Native\+Module}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_abf2b9da42f849a3dfdc3e928a1e4bb67}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_abf2b9da42f849a3dfdc3e928a1e4bb67}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCode}{Wasm\+Code}} $\ast$ {\bfseries Add\+Code} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index, const \mbox{\hyperlink{structv8_1_1internal_1_1CodeDesc}{Code\+Desc}} \&desc, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} stack\+\_\+slots, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} safepoint\+\_\+table\+\_\+offset, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} handler\+\_\+table\+\_\+offset, \mbox{\hyperlink{classv8_1_1internal_1_1OwnedVector}{Owned\+Vector}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1trap__handler_1_1ProtectedInstructionData}{trap\+\_\+handler\+::\+Protected\+Instruction\+Data}} $>$ protected\+\_\+instructions, \mbox{\hyperlink{classv8_1_1internal_1_1OwnedVector}{Owned\+Vector}}$<$ const byte $>$ source\+\_\+position\+\_\+table, Wasm\+Code\+::\+Kind kind, Wasm\+Code\+::\+Tier tier)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_ad1e70f491a0a6bf87a7c1cdbc5881349}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_ad1e70f491a0a6bf87a7c1cdbc5881349}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCode}{Wasm\+Code}} $\ast$ {\bfseries Add\+Deserialized\+Code} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const byte $>$ instructions, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} stack\+\_\+slots, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} safepoint\+\_\+table\+\_\+offset, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} handler\+\_\+table\+\_\+offset, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} constant\+\_\+pool\+\_\+offset, \mbox{\hyperlink{classv8_1_1internal_1_1OwnedVector}{Owned\+Vector}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1trap__handler_1_1ProtectedInstructionData}{trap\+\_\+handler\+::\+Protected\+Instruction\+Data}} $>$ protected\+\_\+instructions, \mbox{\hyperlink{classv8_1_1internal_1_1OwnedVector}{Owned\+Vector}}$<$ const byte $>$ reloc\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1OwnedVector}{Owned\+Vector}}$<$ const byte $>$ source\+\_\+position\+\_\+table, Wasm\+Code\+::\+Tier tier)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_af80876cf6e9c60241e8a3521aa4e0e1e}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_af80876cf6e9c60241e8a3521aa4e0e1e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCode}{Wasm\+Code}} $\ast$ {\bfseries Add\+Code\+For\+Testing} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_ab7390d95a818851c5c0d830771d747b0}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_ab7390d95a818851c5c0d830771d747b0}} 
+void {\bfseries Set\+Lazy\+Builtin} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a047263b80ca530b947139ffaa3c4a359}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a047263b80ca530b947139ffaa3c4a359}} 
+void {\bfseries Set\+Runtime\+Stubs} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a6de0dd2de08c6ef7bc9d3e55c3f09c1b}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a6de0dd2de08c6ef7bc9d3e55c3f09c1b}} 
+void {\bfseries Publish\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCode}{Wasm\+Code}} $\ast$code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_adb1324f119ec435c60f5872cdd888711}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_adb1324f119ec435c60f5872cdd888711}} 
+void {\bfseries Publish\+Interpreter\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCode}{Wasm\+Code}} $\ast$code, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_adf6b2b8aa4372a116ce5e820353adebc}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_adf6b2b8aa4372a116ce5e820353adebc}} 
+std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCode}{Wasm\+Code}} $\ast$ $>$ {\bfseries Snapshot\+Code\+Table} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_ad87e86a80a1201990931bf22d3992b6b}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_ad87e86a80a1201990931bf22d3992b6b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCode}{Wasm\+Code}} $\ast$ {\bfseries code} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a5a13071bbb4d52d277503aa1dbefc07b}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a5a13071bbb4d52d277503aa1dbefc07b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+code} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_af706a16a03add04289e9f08bf1e85cf2}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_af706a16a03add04289e9f08bf1e85cf2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCode}{Wasm\+Code}} $\ast$ {\bfseries runtime\+\_\+stub} (Wasm\+Code\+::\+Runtime\+Stub\+Id index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_aad381026fba28fc729be46402fef86e7}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_aad381026fba28fc729be46402fef86e7}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries jump\+\_\+table\+\_\+start} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a6ef8cffef726c13e33c09cb71f6d365a}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a6ef8cffef726c13e33c09cb71f6d365a}} 
+ptrdiff\+\_\+t {\bfseries jump\+\_\+table\+\_\+offset} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} func\+\_\+index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a4b72390438947658b28b73a081a5cce9}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a4b72390438947658b28b73a081a5cce9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+jump\+\_\+table\+\_\+slot} (\mbox{\hyperlink{classuintptr__t}{Address}} address) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a7cfca323626e5774bfcb85511ce5c6b4}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a7cfca323626e5774bfcb85511ce5c6b4}} 
+void {\bfseries Disable\+Trap\+Handler} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a648b0e7105f5393502955765775a24ed}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a648b0e7105f5393502955765775a24ed}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Get\+Call\+Target\+For\+Function} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} func\+\_\+index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_adda8e2ac30083dec687f18bca0ab5364}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_adda8e2ac30083dec687f18bca0ab5364}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Get\+Function\+Index\+From\+Jump\+Table\+Slot} (\mbox{\hyperlink{classuintptr__t}{Address}} slot\+\_\+address) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_aa484e20639c513d10fdf8ed40e0c20f1}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_aa484e20639c513d10fdf8ed40e0c20f1}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Set\+Executable} (\mbox{\hyperlink{classbool}{bool}} executable)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a681d9765150a305cb980bee8c01044a2}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a681d9765150a305cb980bee8c01044a2}} 
+void {\bfseries Reserve\+Code\+Table\+For\+Testing} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} max\+\_\+functions)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a1e5b8de55af13bda7ad24dafedeb4a87}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a1e5b8de55af13bda7ad24dafedeb4a87}} 
+void {\bfseries Log\+Wasm\+Codes} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a12ee394961265deb9fa5849b828da678}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a12ee394961265deb9fa5849b828da678}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1CompilationState}{Compilation\+State}} $\ast$ {\bfseries compilation\+\_\+state} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_ab3c224bc685b554bd322ece49a6a931c}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_ab3c224bc685b554bd322ece49a6a931c}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1CompilationEnv}{Compilation\+Env}} {\bfseries Create\+Compilation\+Env} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a4210dcf60ee0c22b95de93af93f17f86}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a4210dcf60ee0c22b95de93af93f17f86}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries num\+\_\+functions} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_af886dc3d493824b7a1ae1e1f5ae02e42}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_af886dc3d493824b7a1ae1e1f5ae02e42}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries num\+\_\+imported\+\_\+functions} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a40382c55f411812ce126deb4530295ee}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a40382c55f411812ce126deb4530295ee}} 
+Use\+Trap\+Handler {\bfseries use\+\_\+trap\+\_\+handler} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a6e2cf8eb151bb99832f4a74921d151dc}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a6e2cf8eb151bb99832f4a74921d151dc}} 
+void {\bfseries set\+\_\+lazy\+\_\+compile\+\_\+frozen} (\mbox{\hyperlink{classbool}{bool}} frozen)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a9a49a036ab412a6c462feba4042ef5e8}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a9a49a036ab412a6c462feba4042ef5e8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries lazy\+\_\+compile\+\_\+frozen} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a78ac020650dd08077da82b4767e2e1d3}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a78ac020650dd08077da82b4767e2e1d3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const byte $>$ {\bfseries wire\+\_\+bytes} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a04f2f50aa9d1cbc1dc28e60dbe687f74}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a04f2f50aa9d1cbc1dc28e60dbe687f74}} 
+const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{Wasm\+Module}} $\ast$ {\bfseries module} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_abacd1cb85a612977eef0bc38deb0e076}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_abacd1cb85a612977eef0bc38deb0e076}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries committed\+\_\+code\+\_\+space} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_af07ab2b867fb96ce2391f12269919b5d}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_af07ab2b867fb96ce2391f12269919b5d}} 
+void {\bfseries Set\+Wire\+Bytes} (\mbox{\hyperlink{classv8_1_1internal_1_1OwnedVector}{Owned\+Vector}}$<$ const byte $>$ wire\+\_\+bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a5cff149410fcd416933af17dab385ba0}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a5cff149410fcd416933af17dab385ba0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCode}{Wasm\+Code}} $\ast$ {\bfseries Lookup} (\mbox{\hyperlink{classuintptr__t}{Address}}) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a56f00bc0f4803105298a4a7de67bce46}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a56f00bc0f4803105298a4a7de67bce46}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmImportWrapperCache}{Wasm\+Import\+Wrapper\+Cache}} $\ast$ {\bfseries import\+\_\+wrapper\+\_\+cache} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_aa56d79eed88a12fc6b03a842b822cf99}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_aa56d79eed88a12fc6b03a842b822cf99}} 
+const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{Wasm\+Features}} \& {\bfseries enabled\+\_\+features} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_aa7c69a1e088e8649b270101b27f16a02}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_aa7c69a1e088e8649b270101b27f16a02}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries k\+Can\+Allocate\+More\+Memory} = true
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a0ec92359918c6ef6fe010cafb580eb86}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a0ec92359918c6ef6fe010cafb580eb86}} 
+class {\bfseries Wasm\+Code}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_a07083c066ffccdb3af5b8a33f626fdb2}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_a07083c066ffccdb3af5b8a33f626fdb2}} 
+class {\bfseries Wasm\+Code\+Manager}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1NativeModule_ac921996be779e252a5667657d9b5f762}\label{classv8_1_1internal_1_1wasm_1_1NativeModule_ac921996be779e252a5667657d9b5f762}} 
+class {\bfseries Native\+Module\+Modification\+Scope}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 209 of file wasm-\/code-\/manager.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/wasm-\/code-\/manager.\+h\item 
+v8/src/wasm/wasm-\/code-\/manager.\+cc\end{DoxyCompactItemize}

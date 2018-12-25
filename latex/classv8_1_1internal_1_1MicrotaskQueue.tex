@@ -1,0 +1,103 @@
+\hypertarget{classv8_1_1internal_1_1MicrotaskQueue}{}\section{v8\+:\+:internal\+:\+:Microtask\+Queue Class Reference}
+\label{classv8_1_1internal_1_1MicrotaskQueue}\index{v8\+::internal\+::\+Microtask\+Queue@{v8\+::internal\+::\+Microtask\+Queue}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MicrotaskQueue_a87e0bb654aeae8da494dfeb14d7a64e0}\label{classv8_1_1internal_1_1MicrotaskQueue_a87e0bb654aeae8da494dfeb14d7a64e0}} 
+void {\bfseries Enqueue\+Microtask} (\mbox{\hyperlink{classv8_1_1internal_1_1Microtask}{Microtask}} $\ast$microtask)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MicrotaskQueue_aaa0dc3795c313ffa164da19dd50f4fc2}\label{classv8_1_1internal_1_1MicrotaskQueue_aaa0dc3795c313ffa164da19dd50f4fc2}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Run\+Microtasks} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MicrotaskQueue_a8d4d95ab5c39f431f2c7d2d98688beab}\label{classv8_1_1internal_1_1MicrotaskQueue_a8d4d95ab5c39f431f2c7d2d98688beab}} 
+void {\bfseries Iterate\+Microtasks} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$visitor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MicrotaskQueue_a5cd348b62cdd9f017c609d039fcd1308}\label{classv8_1_1internal_1_1MicrotaskQueue_a5cd348b62cdd9f017c609d039fcd1308}} 
+intptr\+\_\+t {\bfseries capacity} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MicrotaskQueue_a7209bf6df85bdc067b3dc73261ef355a}\label{classv8_1_1internal_1_1MicrotaskQueue_a7209bf6df85bdc067b3dc73261ef355a}} 
+intptr\+\_\+t {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MicrotaskQueue_aaa3648a97cbb8c0b94581d6404ee7c37}\label{classv8_1_1internal_1_1MicrotaskQueue_aaa3648a97cbb8c0b94581d6404ee7c37}} 
+intptr\+\_\+t {\bfseries start} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MicrotaskQueue_ad1cf74a59544c1c8e84e6a1c617aad0b}\label{classv8_1_1internal_1_1MicrotaskQueue_ad1cf74a59544c1c8e84e6a1c617aad0b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MicrotaskQueue}{Microtask\+Queue}} $\ast$ {\bfseries next} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MicrotaskQueue_a80d32341e84539e2a419cfa222bea2ba}\label{classv8_1_1internal_1_1MicrotaskQueue_a80d32341e84539e2a419cfa222bea2ba}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MicrotaskQueue}{Microtask\+Queue}} $\ast$ {\bfseries prev} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MicrotaskQueue_a739c1ad542abf496dce792ceb0ecb3d6}\label{classv8_1_1internal_1_1MicrotaskQueue_a739c1ad542abf496dce792ceb0ecb3d6}} 
+static void {\bfseries Set\+Up\+Default\+Microtask\+Queue} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MicrotaskQueue_afa424a9370b3aadfd466a8709a394abc}\label{classv8_1_1internal_1_1MicrotaskQueue_afa424a9370b3aadfd466a8709a394abc}} 
+static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1MicrotaskQueue}{Microtask\+Queue}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MicrotaskQueue_a64dea5dabf395ad8510769e93827c53a}\label{classv8_1_1internal_1_1MicrotaskQueue_a64dea5dabf395ad8510769e93827c53a}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Call\+Enqueue\+Microtask} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, intptr\+\_\+t microtask\+\_\+queue\+\_\+pointer, \mbox{\hyperlink{classv8_1_1internal_1_1Microtask}{Microtask}} $\ast$microtask)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Ring\+Buffer\+Offset}
+\item 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Capacity\+Offset}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MicrotaskQueue_a63f461f64c753251175926ec789e64c0}\label{classv8_1_1internal_1_1MicrotaskQueue_a63f461f64c753251175926ec789e64c0}} 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Size\+Offset} = offsetof(\mbox{\hyperlink{classv8_1_1internal_1_1MicrotaskQueue}{Microtask\+Queue}}, size\+\_\+)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MicrotaskQueue_af2873ba916dfe4147898ff7d37e07683}\label{classv8_1_1internal_1_1MicrotaskQueue_af2873ba916dfe4147898ff7d37e07683}} 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Start\+Offset} = offsetof(\mbox{\hyperlink{classv8_1_1internal_1_1MicrotaskQueue}{Microtask\+Queue}}, start\+\_\+)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MicrotaskQueue_a6634cbbe7acba35bc64f4864a416231c}\label{classv8_1_1internal_1_1MicrotaskQueue_a6634cbbe7acba35bc64f4864a416231c}} 
+static const intptr\+\_\+t {\bfseries k\+Minimum\+Capacity} = 8
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 21 of file microtask-\/queue.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1MicrotaskQueue_a8ff1a71729da40796fd6032be51e5c87}\label{classv8_1_1internal_1_1MicrotaskQueue_a8ff1a71729da40796fd6032be51e5c87}} 
+\index{v8\+::internal\+::\+Microtask\+Queue@{v8\+::internal\+::\+Microtask\+Queue}!k\+Capacity\+Offset@{k\+Capacity\+Offset}}
+\index{k\+Capacity\+Offset@{k\+Capacity\+Offset}!v8\+::internal\+::\+Microtask\+Queue@{v8\+::internal\+::\+Microtask\+Queue}}
+\subsubsection{\texorpdfstring{k\+Capacity\+Offset}{kCapacityOffset}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} v8\+::internal\+::\+Microtask\+Queue\+::k\+Capacity\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+    offsetof(MicrotaskQueue, capacity\_)
+\end{DoxyCode}
+
+
+Definition at line 51 of file microtask-\/queue.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1MicrotaskQueue_a5bf8a7c6832ef7c777b39ab4e2f78ce9}\label{classv8_1_1internal_1_1MicrotaskQueue_a5bf8a7c6832ef7c777b39ab4e2f78ce9}} 
+\index{v8\+::internal\+::\+Microtask\+Queue@{v8\+::internal\+::\+Microtask\+Queue}!k\+Ring\+Buffer\+Offset@{k\+Ring\+Buffer\+Offset}}
+\index{k\+Ring\+Buffer\+Offset@{k\+Ring\+Buffer\+Offset}!v8\+::internal\+::\+Microtask\+Queue@{v8\+::internal\+::\+Microtask\+Queue}}
+\subsubsection{\texorpdfstring{k\+Ring\+Buffer\+Offset}{kRingBufferOffset}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} v8\+::internal\+::\+Microtask\+Queue\+::k\+Ring\+Buffer\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+    offsetof(MicrotaskQueue, ring\_buffer\_)
+\end{DoxyCode}
+
+
+Definition at line 50 of file microtask-\/queue.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/microtask-\/queue.\+h\item 
+v8/src/microtask-\/queue.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,137 @@
+\hypertarget{classv8_1_1internal_1_1JavaScriptFrame}{}\section{v8\+:\+:internal\+:\+:Java\+Script\+Frame Class Reference}
+\label{classv8_1_1internal_1_1JavaScriptFrame}\index{v8\+::internal\+::\+Java\+Script\+Frame@{v8\+::internal\+::\+Java\+Script\+Frame}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Java\+Script\+Frame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.618497cm]{classv8_1_1internal_1_1JavaScriptFrame}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a0e308f31621f806b77fe6290d680ef81}\label{classv8_1_1internal_1_1JavaScriptFrame_a0e308f31621f806b77fe6290d680ef81}} 
+Type {\bfseries type} () const override=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a0937c6b32623e0dcc1d839c36d082132}\label{classv8_1_1internal_1_1JavaScriptFrame_a0937c6b32623e0dcc1d839c36d082132}} 
+void {\bfseries Summarize} (std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FrameSummary}{Frame\+Summary}} $>$ $\ast$frames) const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_ac9864eab8e333fc72eba94e1c6c18469}\label{classv8_1_1internal_1_1JavaScriptFrame_ac9864eab8e333fc72eba94e1c6c18469}} 
+virtual \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $\ast$ {\bfseries function} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a9ccad9e21d94731675e1393b3a754545}\label{classv8_1_1internal_1_1JavaScriptFrame_a9ccad9e21d94731675e1393b3a754545}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries unchecked\+\_\+function} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a75c15db7564b1adb51917399922f1ae2}\label{classv8_1_1internal_1_1JavaScriptFrame_a75c15db7564b1adb51917399922f1ae2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries receiver} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_aadfec5e7391da589ffc39ac2324486d7}\label{classv8_1_1internal_1_1JavaScriptFrame_aadfec5e7391da589ffc39ac2324486d7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries context} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a28e7098a42fb581adccb5ed8a99f2b6c}\label{classv8_1_1internal_1_1JavaScriptFrame_a28e7098a42fb581adccb5ed8a99f2b6c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $\ast$ {\bfseries script} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a425d98c0b980f47ce7e2f9075b62bcab}\label{classv8_1_1internal_1_1JavaScriptFrame_a425d98c0b980f47ce7e2f9075b62bcab}} 
+void {\bfseries set\+\_\+receiver} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a6a684585cf4d59274d9d173bd13d856a}\label{classv8_1_1internal_1_1JavaScriptFrame_a6a684585cf4d59274d9d173bd13d856a}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Get\+Parameter\+Slot} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_ae57d56c29c7f3ad2d950544b5fd2af16}\label{classv8_1_1internal_1_1JavaScriptFrame_ae57d56c29c7f3ad2d950544b5fd2af16}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Get\+Parameter} (\mbox{\hyperlink{classint}{int}} index) const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a29073dbcb873e27c90aa91e0246b3dfe}\label{classv8_1_1internal_1_1JavaScriptFrame_a29073dbcb873e27c90aa91e0246b3dfe}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Compute\+Parameters\+Count} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a16cfef2a3546d9088940314ee15a2293}\label{classv8_1_1internal_1_1JavaScriptFrame_a16cfef2a3546d9088940314ee15a2293}} 
+void {\bfseries Set\+Parameter\+Value} (\mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a06bcba9f51be79f81afe54db178d497a}\label{classv8_1_1internal_1_1JavaScriptFrame_a06bcba9f51be79f81afe54db178d497a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Constructor} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_aee6d6624cb19d97163e2fee04c755778}\label{classv8_1_1internal_1_1JavaScriptFrame_aee6d6624cb19d97163e2fee04c755778}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Inlined\+Frames} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a613cee32f3b9f3e14cc803ba133c3348}\label{classv8_1_1internal_1_1JavaScriptFrame_a613cee32f3b9f3e14cc803ba133c3348}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+adapted\+\_\+arguments} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a52d4f58bd9f50043925a533dcf8b0843}\label{classv8_1_1internal_1_1JavaScriptFrame_a52d4f58bd9f50043925a533dcf8b0843}} 
+void {\bfseries Iterate} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v) const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a2eedcbe1491ac1dec887dbee63bc50f5}\label{classv8_1_1internal_1_1JavaScriptFrame_a2eedcbe1491ac1dec887dbee63bc50f5}} 
+void {\bfseries Print} (\mbox{\hyperlink{classv8_1_1internal_1_1StringStream}{String\+Stream}} $\ast$accumulator, Print\+Mode mode, \mbox{\hyperlink{classint}{int}} index) const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a3bdcd25723269875bc5bfe3b3c910b19}\label{classv8_1_1internal_1_1JavaScriptFrame_a3bdcd25723269875bc5bfe3b3c910b19}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} {\bfseries unchecked\+\_\+code} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_acdfeef19598f359117cd354d8e3d3d33}\label{classv8_1_1internal_1_1JavaScriptFrame_acdfeef19598f359117cd354d8e3d3d33}} 
+virtual void {\bfseries Get\+Functions} (std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$$>$ $\ast$functions) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a176ca9b657756e46944504efa9054dba}\label{classv8_1_1internal_1_1JavaScriptFrame_a176ca9b657756e46944504efa9054dba}} 
+void {\bfseries Get\+Functions} (std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$$>$ $\ast$functions) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_ac4cbe476e95a9f4704e464f30406e23d}\label{classv8_1_1internal_1_1JavaScriptFrame_ac4cbe476e95a9f4704e464f30406e23d}} 
+virtual \mbox{\hyperlink{classint}{int}} {\bfseries Lookup\+Exception\+Handler\+In\+Table} (\mbox{\hyperlink{classint}{int}} $\ast$data, Handler\+Table\+::\+Catch\+Prediction $\ast$prediction)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_aeac2817ca9aa85228525437bb63ba93a}\label{classv8_1_1internal_1_1JavaScriptFrame_aeac2817ca9aa85228525437bb63ba93a}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries fp\+\_\+register} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a9e00a6dd7a2c9facca672c58dbc71df6}\label{classv8_1_1internal_1_1JavaScriptFrame_a9e00a6dd7a2c9facca672c58dbc71df6}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries context\+\_\+register} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_af5bce3abfebd253e22d34c5f2e6a14ff}\label{classv8_1_1internal_1_1JavaScriptFrame_af5bce3abfebd253e22d34c5f2e6a14ff}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries constant\+\_\+pool\+\_\+pointer\+\_\+register} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_ac66e5118c1b57fd1508b201694cd7d54}\label{classv8_1_1internal_1_1JavaScriptFrame_ac66e5118c1b57fd1508b201694cd7d54}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1JavaScriptFrame}{Java\+Script\+Frame}} $\ast$ {\bfseries cast} (\mbox{\hyperlink{classv8_1_1internal_1_1StackFrame}{Stack\+Frame}} $\ast$frame)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_ace490fcc362923d5a310299cd07c2024}\label{classv8_1_1internal_1_1JavaScriptFrame_ace490fcc362923d5a310299cd07c2024}} 
+static void {\bfseries Print\+Function\+And\+Offset} (\mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $\ast$function, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classint}{int}} code\+\_\+offset, F\+I\+LE $\ast$file, \mbox{\hyperlink{classbool}{bool}} print\+\_\+line\+\_\+number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a69de8494527b217bfd2bcde82196cd31}\label{classv8_1_1internal_1_1JavaScriptFrame_a69de8494527b217bfd2bcde82196cd31}} 
+static void {\bfseries Print\+Top} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, F\+I\+LE $\ast$file, \mbox{\hyperlink{classbool}{bool}} print\+\_\+args, \mbox{\hyperlink{classbool}{bool}} print\+\_\+line\+\_\+number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a7982d38a54be21611985ca000f753d0c}\label{classv8_1_1internal_1_1JavaScriptFrame_a7982d38a54be21611985ca000f753d0c}} 
+static void {\bfseries Collect\+Function\+And\+Offset\+For\+I\+C\+Stats} (\mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $\ast$function, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classint}{int}} code\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a61c67343d067a6bae7d540baa78ef25e}\label{classv8_1_1internal_1_1JavaScriptFrame_a61c67343d067a6bae7d540baa78ef25e}} 
+static void {\bfseries Collect\+Top\+Frame\+For\+I\+C\+Stats} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a75cddddb27dcc0eb6db3cddd6629d531}\label{classv8_1_1internal_1_1JavaScriptFrame_a75cddddb27dcc0eb6db3cddd6629d531}} 
+{\bfseries Java\+Script\+Frame} (\mbox{\hyperlink{classv8_1_1internal_1_1StackFrameIteratorBase}{Stack\+Frame\+Iterator\+Base}} $\ast$iterator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a137d1ca2beb6143c7f37f0c086d5289a}\label{classv8_1_1internal_1_1JavaScriptFrame_a137d1ca2beb6143c7f37f0c086d5289a}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Get\+Caller\+Stack\+Pointer} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a05f34a73bbc7dbf535aa896de1928434}\label{classv8_1_1internal_1_1JavaScriptFrame_a05f34a73bbc7dbf535aa896de1928434}} 
+virtual \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Number\+Of\+Incoming\+Arguments} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_a766472e0a76c066b3a89de5c991a16a7}\label{classv8_1_1internal_1_1JavaScriptFrame_a766472e0a76c066b3a89de5c991a16a7}} 
+virtual void {\bfseries Print\+Frame\+Kind} (\mbox{\hyperlink{classv8_1_1internal_1_1StringStream}{String\+Stream}} $\ast$accumulator) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JavaScriptFrame_ac7310421866976ca454bbe11c5f926c3}\label{classv8_1_1internal_1_1JavaScriptFrame_ac7310421866976ca454bbe11c5f926c3}} 
+class {\bfseries Stack\+Frame\+Iterator\+Base}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 674 of file frames.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/frames.\+h\item 
+v8/src/frames-\/inl.\+h\item 
+v8/src/frames.\+cc\end{DoxyCompactItemize}

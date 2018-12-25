@@ -1,0 +1,68 @@
+\hypertarget{classv8_1_1internal_1_1RecordMigratedSlotVisitor}{}\section{v8\+:\+:internal\+:\+:Record\+Migrated\+Slot\+Visitor Class Reference}
+\label{classv8_1_1internal_1_1RecordMigratedSlotVisitor}\index{v8\+::internal\+::\+Record\+Migrated\+Slot\+Visitor@{v8\+::internal\+::\+Record\+Migrated\+Slot\+Visitor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Record\+Migrated\+Slot\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1RecordMigratedSlotVisitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RecordMigratedSlotVisitor_a293de89eb85dd53543ee17300e50f246}\label{classv8_1_1internal_1_1RecordMigratedSlotVisitor_a293de89eb85dd53543ee17300e50f246}} 
+{\bfseries Record\+Migrated\+Slot\+Visitor} (\mbox{\hyperlink{classv8_1_1internal_1_1MarkCompactCollector}{Mark\+Compact\+Collector}} $\ast$collector)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RecordMigratedSlotVisitor_a95521fe2007eb5e871833d6822d26628}\label{classv8_1_1internal_1_1RecordMigratedSlotVisitor_a95521fe2007eb5e871833d6822d26628}} 
+void {\bfseries Visit\+Pointer} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} p) final
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RecordMigratedSlotVisitor_a78d47a48da4aa446003f8e91bda66d94}\label{classv8_1_1internal_1_1RecordMigratedSlotVisitor_a78d47a48da4aa446003f8e91bda66d94}} 
+void {\bfseries Visit\+Pointer} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} p) final
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RecordMigratedSlotVisitor_a437a096ec8e71de7039dc9e1034d63e0}\label{classv8_1_1internal_1_1RecordMigratedSlotVisitor_a437a096ec8e71de7039dc9e1034d63e0}} 
+void {\bfseries Visit\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} end) final
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RecordMigratedSlotVisitor_a0efe11b186d86f633f615656fd215cd3}\label{classv8_1_1internal_1_1RecordMigratedSlotVisitor_a0efe11b186d86f633f615656fd215cd3}} 
+void {\bfseries Visit\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} end) final
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RecordMigratedSlotVisitor_ad74be875c4567e4394a4ee59addb4a54}\label{classv8_1_1internal_1_1RecordMigratedSlotVisitor_ad74be875c4567e4394a4ee59addb4a54}} 
+void {\bfseries Visit\+Code\+Target} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$rinfo) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RecordMigratedSlotVisitor_ae7d553697fed9ecffcc89284f4ad7765}\label{classv8_1_1internal_1_1RecordMigratedSlotVisitor_ae7d553697fed9ecffcc89284f4ad7765}} 
+void {\bfseries Visit\+Embedded\+Pointer} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$rinfo) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RecordMigratedSlotVisitor_afe24818a94cac7cf463c2878d3836349}\label{classv8_1_1internal_1_1RecordMigratedSlotVisitor_afe24818a94cac7cf463c2878d3836349}} 
+void {\bfseries Visit\+External\+Reference} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$rinfo) final
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RecordMigratedSlotVisitor_ab026cf6a4a65454dccb677637b4af4be}\label{classv8_1_1internal_1_1RecordMigratedSlotVisitor_ab026cf6a4a65454dccb677637b4af4be}} 
+void {\bfseries Visit\+External\+Reference} (\mbox{\hyperlink{classv8_1_1internal_1_1Foreign}{Foreign}} $\ast$host, \mbox{\hyperlink{classuintptr__t}{Address}} $\ast$p) final
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RecordMigratedSlotVisitor_a3967e2d1b192a3698e693fbc86a88cdc}\label{classv8_1_1internal_1_1RecordMigratedSlotVisitor_a3967e2d1b192a3698e693fbc86a88cdc}} 
+void {\bfseries Visit\+Runtime\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$rinfo) final
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RecordMigratedSlotVisitor_aa175eca9d921d5b39550bbd7fcaf7c00}\label{classv8_1_1internal_1_1RecordMigratedSlotVisitor_aa175eca9d921d5b39550bbd7fcaf7c00}} 
+void {\bfseries Visit\+Internal\+Reference} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$rinfo) final
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RecordMigratedSlotVisitor_a143c9723613d76908e2ac3d8e6bc746e}\label{classv8_1_1internal_1_1RecordMigratedSlotVisitor_a143c9723613d76908e2ac3d8e6bc746e}} 
+virtual void {\bfseries Record\+Migrated\+Slot} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} value, \mbox{\hyperlink{classuintptr__t}{Address}} slot)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RecordMigratedSlotVisitor_a459a48da514fc34c7fb5223d5da4018f}\label{classv8_1_1internal_1_1RecordMigratedSlotVisitor_a459a48da514fc34c7fb5223d5da4018f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MarkCompactCollector}{Mark\+Compact\+Collector}} $\ast$ {\bfseries collector\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1041 of file mark-\/compact.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/mark-\/compact.\+cc\end{DoxyCompactItemize}

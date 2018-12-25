@@ -1,0 +1,61 @@
+\hypertarget{classv8_1_1internal_1_1MaybeHandle}{}\section{v8\+:\+:internal\+:\+:Maybe\+Handle$<$ T $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1MaybeHandle}\index{v8\+::internal\+::\+Maybe\+Handle$<$ T $>$@{v8\+::internal\+::\+Maybe\+Handle$<$ T $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeHandle_a54d57e6b5e3cfeb3e55d7cffd72ecb6e}\label{classv8_1_1internal_1_1MaybeHandle_a54d57e6b5e3cfeb3e55d7cffd72ecb6e}} 
+{\footnotesize template$<$typename S , typename  = typename std\+::enable\+\_\+if$<$                            std\+::is\+\_\+convertible$<$\+S$\ast$, T$\ast$$>$\+::value $\vert$$\vert$                            std\+::is\+\_\+same$<$\+T, Object$>$\+::value $\vert$$\vert$                            (std\+::is\+\_\+same$<$\+T, Heap\+Object$>$\+::value \&\&                             (std\+::is\+\_\+same$<$\+S, Fixed\+Array$>$\+::value $\vert$$\vert$                              std\+::is\+\_\+same$<$\+S, Map$>$\+::value))$>$\+::type$>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Maybe\+Handle} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ S $>$ handle)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeHandle_ad059b75dd3de2c62ebfefc9a928fbc63}\label{classv8_1_1internal_1_1MaybeHandle_ad059b75dd3de2c62ebfefc9a928fbc63}} 
+{\footnotesize template$<$typename S , typename  = typename std\+::enable\+\_\+if$<$                            std\+::is\+\_\+convertible$<$\+S$\ast$, T$\ast$$>$\+::value $\vert$$\vert$                            std\+::is\+\_\+same$<$\+T, Object$>$\+::value $\vert$$\vert$                            (std\+::is\+\_\+same$<$\+T, Heap\+Object$>$\+::value \&\&                             std\+::is\+\_\+same$<$\+S, Map$>$\+::value)$>$\+::type$>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Maybe\+Handle} (\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ S $>$ maybe\+\_\+handle)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeHandle_af11f95db6457bca8fb7fb6f73b5e9712}\label{classv8_1_1internal_1_1MaybeHandle_af11f95db6457bca8fb7fb6f73b5e9712}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Maybe\+Handle} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$object, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeHandle_ab9b2071029c6065ad1e2c1766fcdaf1a}\label{classv8_1_1internal_1_1MaybeHandle_ab9b2071029c6065ad1e2c1766fcdaf1a}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Assert} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeHandle_afaeeb16301915dc7963e84bb1b053498}\label{classv8_1_1internal_1_1MaybeHandle_afaeeb16301915dc7963e84bb1b053498}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Check} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeHandle_a20a9cc0a9d9a203c12abb863ff5792fa}\label{classv8_1_1internal_1_1MaybeHandle_a20a9cc0a9d9a203c12abb863ff5792fa}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries To\+Handle\+Checked} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeHandle_a3b5231fab67972a216796d0a596ab003}\label{classv8_1_1internal_1_1MaybeHandle_a3b5231fab67972a216796d0a596ab003}} 
+{\footnotesize template$<$typename S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries To\+Handle} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ S $>$ $\ast$out) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeHandle_adc1b32f0905bf78ce86b2b050575b07d}\label{classv8_1_1internal_1_1MaybeHandle_adc1b32f0905bf78ce86b2b050575b07d}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries address} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeHandle_a76d0200bf11d6f7628c7119d730efa44}\label{classv8_1_1internal_1_1MaybeHandle_a76d0200bf11d6f7628c7119d730efa44}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+null} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeHandle_a6d515c6370181fe91cc93c8952c5e357}\label{classv8_1_1internal_1_1MaybeHandle_a6d515c6370181fe91cc93c8952c5e357}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$ {\bfseries location\+\_\+} = nullptr
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeHandle_a43ca95cbc5708225727b3674f4690233}\label{classv8_1_1internal_1_1MaybeHandle_a43ca95cbc5708225727b3674f4690233}} 
+{\footnotesize template$<$typename $>$ }\\class {\bfseries Maybe\+Handle}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class v8\+::internal\+::\+Maybe\+Handle$<$ T $>$}
+
+
+
+Definition at line 561 of file globals.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/globals.\+h\item 
+v8/src/maybe-\/handles.\+h\item 
+v8/src/maybe-\/handles-\/inl.\+h\end{DoxyCompactItemize}

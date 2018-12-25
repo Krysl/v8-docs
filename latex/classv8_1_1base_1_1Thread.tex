@@ -1,0 +1,95 @@
+\hypertarget{classv8_1_1base_1_1Thread}{}\section{v8\+:\+:base\+:\+:Thread Class Reference}
+\label{classv8_1_1base_1_1Thread}\index{v8\+::base\+::\+Thread@{v8\+::base\+::\+Thread}}
+Inheritance diagram for v8\+:\+:base\+:\+:Thread\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.787234cm]{classv8_1_1base_1_1Thread}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1base_1_1Thread_1_1Options}{Options}}
+\item 
+class \mbox{\hyperlink{classv8_1_1base_1_1Thread_1_1PlatformData}{Platform\+Data}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Thread_a7cc230d1c9c2c354fb0f6032813f9d0f}\label{classv8_1_1base_1_1Thread_a7cc230d1c9c2c354fb0f6032813f9d0f}} 
+typedef int32\+\_\+t {\bfseries Local\+Storage\+Key}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Thread_a3ddcd0a37fd3751be4e1cac06bedc447}\label{classv8_1_1base_1_1Thread_a3ddcd0a37fd3751be4e1cac06bedc447}} 
+{\bfseries Thread} (const \mbox{\hyperlink{classv8_1_1base_1_1Thread_1_1Options}{Options}} \&options)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Thread_a456aa1166279b4b0394abb2efe082753}\label{classv8_1_1base_1_1Thread_a456aa1166279b4b0394abb2efe082753}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Thread_a7001182e6207ce8dccb8fd0a8d5f3864}\label{classv8_1_1base_1_1Thread_a7001182e6207ce8dccb8fd0a8d5f3864}} 
+void {\bfseries Start\+Synchronously} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Thread_a03b039733dcd3df63085e74c587df9b7}\label{classv8_1_1base_1_1Thread_a03b039733dcd3df63085e74c587df9b7}} 
+void {\bfseries Join} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Thread_aa8ce4978d083d9790f64a7685347ee9b}\label{classv8_1_1base_1_1Thread_aa8ce4978d083d9790f64a7685347ee9b}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Thread_a04c541b44be4fe9e6a878684e5232a87}\label{classv8_1_1base_1_1Thread_a04c541b44be4fe9e6a878684e5232a87}} 
+virtual void {\bfseries Run} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Thread_a835107ac2f4dd322ef7998c8b543b336}\label{classv8_1_1base_1_1Thread_a835107ac2f4dd322ef7998c8b543b336}} 
+\mbox{\hyperlink{classv8_1_1base_1_1Thread_1_1PlatformData}{Platform\+Data}} $\ast$ {\bfseries data} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Thread_af31dcce079481573bddda99840e56a88}\label{classv8_1_1base_1_1Thread_af31dcce079481573bddda99840e56a88}} 
+void {\bfseries Notify\+Started\+And\+Run} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Thread_abc63f50589a8aa1cfc856f625bb1cee6}\label{classv8_1_1base_1_1Thread_abc63f50589a8aa1cfc856f625bb1cee6}} 
+static Local\+Storage\+Key {\bfseries Create\+Thread\+Local\+Key} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Thread_a7200eefbe28a522417b36aae04021948}\label{classv8_1_1base_1_1Thread_a7200eefbe28a522417b36aae04021948}} 
+static void {\bfseries Delete\+Thread\+Local\+Key} (Local\+Storage\+Key key)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Thread_ac67b609a15f0a5753e1aa51e9ca612e7}\label{classv8_1_1base_1_1Thread_ac67b609a15f0a5753e1aa51e9ca612e7}} 
+static void $\ast$ {\bfseries Get\+Thread\+Local} (Local\+Storage\+Key key)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Thread_a701eea751770634a5f94e76c219f5d95}\label{classv8_1_1base_1_1Thread_a701eea751770634a5f94e76c219f5d95}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Thread\+Local\+Int} (Local\+Storage\+Key key)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Thread_afead45228e4beabf84527e07159af24e}\label{classv8_1_1base_1_1Thread_afead45228e4beabf84527e07159af24e}} 
+static void {\bfseries Set\+Thread\+Local} (Local\+Storage\+Key key, void $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Thread_adbfc14f059c50bc461e84f4e2edacb2c}\label{classv8_1_1base_1_1Thread_adbfc14f059c50bc461e84f4e2edacb2c}} 
+static void {\bfseries Set\+Thread\+Local\+Int} (Local\+Storage\+Key key, \mbox{\hyperlink{classint}{int}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Thread_aef314b004eff7370f34cd92d8eaa1530}\label{classv8_1_1base_1_1Thread_aef314b004eff7370f34cd92d8eaa1530}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Thread\+Local} (Local\+Storage\+Key key)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Thread_ace7e08cfb836780a435c23ffc0bb0a06}\label{classv8_1_1base_1_1Thread_ace7e08cfb836780a435c23ffc0bb0a06}} 
+static void $\ast$ {\bfseries Get\+Existing\+Thread\+Local} (Local\+Storage\+Key key)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1Thread_add5f4a186f3af7d6781fb36847309e7e}\label{classv8_1_1base_1_1Thread_add5f4a186f3af7d6781fb36847309e7e}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Thread\+Name\+Length} = 16
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 308 of file platform.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/base/platform/platform.\+h\item 
+v8/src/base/platform/platform-\/posix.\+cc\item 
+v8/src/base/platform/platform-\/win32.\+cc\end{DoxyCompactItemize}

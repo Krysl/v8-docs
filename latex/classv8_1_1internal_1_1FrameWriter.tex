@@ -1,0 +1,47 @@
+\hypertarget{classv8_1_1internal_1_1FrameWriter}{}\section{v8\+:\+:internal\+:\+:Frame\+Writer Class Reference}
+\label{classv8_1_1internal_1_1FrameWriter}\index{v8\+::internal\+::\+Frame\+Writer@{v8\+::internal\+::\+Frame\+Writer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameWriter_a69ae1a4abaf21bf37898a483694acbea}\label{classv8_1_1internal_1_1FrameWriter_a69ae1a4abaf21bf37898a483694acbea}} 
+{\bfseries Frame\+Writer} (\mbox{\hyperlink{classv8_1_1internal_1_1Deoptimizer}{Deoptimizer}} $\ast$deoptimizer, \mbox{\hyperlink{classv8_1_1internal_1_1FrameDescription}{Frame\+Description}} $\ast$frame, \mbox{\hyperlink{classv8_1_1internal_1_1CodeTracer_1_1Scope}{Code\+Tracer\+::\+Scope}} $\ast$trace\+\_\+scope)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameWriter_a21f0dd5c779f03fdb04b4f6dd6da0d35}\label{classv8_1_1internal_1_1FrameWriter_a21f0dd5c779f03fdb04b4f6dd6da0d35}} 
+void {\bfseries Push\+Raw\+Value} (intptr\+\_\+t value, const \mbox{\hyperlink{classchar}{char}} $\ast$debug\+\_\+hint)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameWriter_ab044050c19d4fab86e71723c75b8cb40}\label{classv8_1_1internal_1_1FrameWriter_ab044050c19d4fab86e71723c75b8cb40}} 
+void {\bfseries Push\+Raw\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$obj, const \mbox{\hyperlink{classchar}{char}} $\ast$debug\+\_\+hint)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameWriter_ade4d3a9ecca7e9360e2f4b1d91419234}\label{classv8_1_1internal_1_1FrameWriter_ade4d3a9ecca7e9360e2f4b1d91419234}} 
+void {\bfseries Push\+Caller\+Pc} (intptr\+\_\+t pc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameWriter_ae02b3240575777950c4f85c0518028c5}\label{classv8_1_1internal_1_1FrameWriter_ae02b3240575777950c4f85c0518028c5}} 
+void {\bfseries Push\+Caller\+Fp} (intptr\+\_\+t fp)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameWriter_a47162731e631d44fe3537371ea707e92}\label{classv8_1_1internal_1_1FrameWriter_a47162731e631d44fe3537371ea707e92}} 
+void {\bfseries Push\+Caller\+Constant\+Pool} (intptr\+\_\+t cp)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameWriter_a865c96cd2bcdae2c41b1c585c9a55212}\label{classv8_1_1internal_1_1FrameWriter_a865c96cd2bcdae2c41b1c585c9a55212}} 
+void {\bfseries Push\+Translated\+Value} (const \mbox{\hyperlink{classv8_1_1internal_1_1TranslatedFrame_1_1iterator}{Translated\+Frame\+::iterator}} \&iterator, const \mbox{\hyperlink{classchar}{char}} $\ast$debug\+\_\+hint=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameWriter_a8b310c9ebd751f9c358a52a820067ad6}\label{classv8_1_1internal_1_1FrameWriter_a8b310c9ebd751f9c358a52a820067ad6}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries top\+\_\+offset} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameWriter_abdae2515ee9c8225a1ebe582cdff87c2}\label{classv8_1_1internal_1_1FrameWriter_abdae2515ee9c8225a1ebe582cdff87c2}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries N\+O\+\_\+\+I\+N\+P\+U\+T\+\_\+\+I\+N\+D\+EX} = -\/1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 34 of file deoptimizer.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/deoptimizer.\+cc\end{DoxyCompactItemize}

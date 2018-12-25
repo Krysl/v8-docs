@@ -1,0 +1,104 @@
+\hypertarget{classv8_1_1internal_1_1ExternalReference}{}\section{v8\+:\+:internal\+:\+:External\+Reference Class Reference}
+\label{classv8_1_1internal_1_1ExternalReference}\index{v8\+::internal\+::\+External\+Reference@{v8\+::internal\+::\+External\+Reference}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReference_adff3beccbe252a111d27e4d3a845575b}\label{classv8_1_1internal_1_1ExternalReference_adff3beccbe252a111d27e4d3a845575b}} 
+enum {\bfseries Type} \{ \newline
+{\bfseries B\+U\+I\+L\+T\+I\+N\+\_\+\+C\+A\+LL}, 
+{\bfseries B\+U\+I\+L\+T\+I\+N\+\_\+\+C\+A\+L\+L\+\_\+\+P\+A\+IR}, 
+{\bfseries B\+U\+I\+L\+T\+I\+N\+\_\+\+C\+O\+M\+P\+A\+R\+E\+\_\+\+C\+A\+LL}, 
+{\bfseries B\+U\+I\+L\+T\+I\+N\+\_\+\+F\+P\+\_\+\+F\+P\+\_\+\+C\+A\+LL}, 
+\newline
+{\bfseries B\+U\+I\+L\+T\+I\+N\+\_\+\+F\+P\+\_\+\+C\+A\+LL}, 
+{\bfseries B\+U\+I\+L\+T\+I\+N\+\_\+\+F\+P\+\_\+\+I\+N\+T\+\_\+\+C\+A\+LL}, 
+{\bfseries D\+I\+R\+E\+C\+T\+\_\+\+A\+P\+I\+\_\+\+C\+A\+LL}, 
+{\bfseries P\+R\+O\+F\+I\+L\+I\+N\+G\+\_\+\+A\+P\+I\+\_\+\+C\+A\+LL}, 
+\newline
+{\bfseries D\+I\+R\+E\+C\+T\+\_\+\+G\+E\+T\+T\+E\+R\+\_\+\+C\+A\+LL}, 
+{\bfseries P\+R\+O\+F\+I\+L\+I\+N\+G\+\_\+\+G\+E\+T\+T\+E\+R\+\_\+\+C\+A\+LL}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReference_acd897747072a3127f568d336b3c23f1c}\label{classv8_1_1internal_1_1ExternalReference_acd897747072a3127f568d336b3c23f1c}} 
+typedef \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries External\+Reference\+Redirector}(\mbox{\hyperlink{classuintptr__t}{Address}} original, Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReference_aadf8c6aed72f2104bd107b194c7d86a8}\label{classv8_1_1internal_1_1ExternalReference_aadf8c6aed72f2104bd107b194c7d86a8}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries address} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReference_af4f8bd08709c2b99f51c5dea884e63af}\label{classv8_1_1internal_1_1ExternalReference_af4f8bd08709c2b99f51c5dea884e63af}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} {\bfseries Create} (const \mbox{\hyperlink{classv8_1_1internal_1_1SCTableReference}{S\+C\+Table\+Reference}} \&table\+\_\+ref)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReference_a410438403c75f4eaefd53cfa70cf9b8c}\label{classv8_1_1internal_1_1ExternalReference_a410438403c75f4eaefd53cfa70cf9b8c}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} {\bfseries Create} (\mbox{\hyperlink{classv8_1_1internal_1_1StatsCounter}{Stats\+Counter}} $\ast$counter)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReference_a3315782316202a950ebc0d699fbfb972}\label{classv8_1_1internal_1_1ExternalReference_a3315782316202a950ebc0d699fbfb972}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} {\bfseries Create} (\mbox{\hyperlink{classv8_1_1ApiFunction}{Api\+Function}} $\ast$ptr, Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReference_aa87b77883c1780adaefcb47e936e1e79}\label{classv8_1_1internal_1_1ExternalReference_aa87b77883c1780adaefcb47e936e1e79}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} {\bfseries Create} (const \mbox{\hyperlink{structv8_1_1internal_1_1Runtime_1_1Function}{Runtime\+::\+Function}} $\ast$f)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReference_a8efed421ed08bde30841030479ccd655}\label{classv8_1_1internal_1_1ExternalReference_a8efed421ed08bde30841030479ccd655}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} {\bfseries Create} (Isolate\+Address\+Id id, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReference_a5e069d6fe8373362cd6dd009dcc2e7f1}\label{classv8_1_1internal_1_1ExternalReference_a5e069d6fe8373362cd6dd009dcc2e7f1}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} {\bfseries Create} (Runtime\+::\+Function\+Id id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReference_a80e7d3ff3dd30d34dd8e5c1c0eaf15d1}\label{classv8_1_1internal_1_1ExternalReference_a80e7d3ff3dd30d34dd8e5c1c0eaf15d1}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} {\bfseries Create} (\mbox{\hyperlink{classuintptr__t}{Address}} address)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReference_ae4601b1de55466f38270b80ce7ec7113}\label{classv8_1_1internal_1_1ExternalReference_ae4601b1de55466f38270b80ce7ec7113}} 
+{\footnotesize template$<$typename Subject\+Char , typename Pattern\+Char $>$ }\\static \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} {\bfseries search\+\_\+string\+\_\+raw} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReference_af5c06d7a276ed3ed9237a9493783df79}\label{classv8_1_1internal_1_1ExternalReference_af5c06d7a276ed3ed9237a9493783df79}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} {\bfseries page\+\_\+flags} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReference_a7203a1ac2ac49590c74c8c6fb33034ba}\label{classv8_1_1internal_1_1ExternalReference_a7203a1ac2ac49590c74c8c6fb33034ba}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} {\bfseries From\+Raw\+Address} (\mbox{\hyperlink{classuintptr__t}{Address}} address)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReference_a7d93edbe1c23f70152144231d03c52b0}\label{classv8_1_1internal_1_1ExternalReference_a7d93edbe1c23f70152144231d03c52b0}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE static V8\+\_\+\+N\+O\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} {\bfseries runtime\+\_\+function\+\_\+table\+\_\+address\+\_\+for\+\_\+unittests} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+External\+Reference\+Count}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 224 of file external-\/reference.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReference_a60bae333c90f7bccebd433815264c2ea}\label{classv8_1_1internal_1_1ExternalReference_a60bae333c90f7bccebd433815264c2ea}} 
+\index{v8\+::internal\+::\+External\+Reference@{v8\+::internal\+::\+External\+Reference}!k\+External\+Reference\+Count@{k\+External\+Reference\+Count}}
+\index{k\+External\+Reference\+Count@{k\+External\+Reference\+Count}!v8\+::internal\+::\+External\+Reference@{v8\+::internal\+::\+External\+Reference}}
+\subsubsection{\texorpdfstring{k\+External\+Reference\+Count}{kExternalReferenceCount}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+External\+Reference\+::k\+External\+Reference\+Count\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+\textcolor{preprocessor}{#define COUNT\_EXTERNAL\_REFERENCE(name, desc) }
+
+          EXTERNAL\_REFERENCE\_LIST\_WITH\_ISOLATE(COUNT\_EXTERNAL\_REFERENCE)
+\end{DoxyCode}
+
+
+Definition at line 270 of file external-\/reference.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/external-\/reference.\+h\item 
+v8/src/external-\/reference.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\hypertarget{structv8_1_1base_1_1is__signed__vs__unsigned}{}\section{v8\+:\+:base\+:\+:is\+\_\+signed\+\_\+vs\+\_\+unsigned$<$ Lhs, Rhs $>$ Struct Template Reference}
+\label{structv8_1_1base_1_1is__signed__vs__unsigned}\index{v8\+::base\+::is\+\_\+signed\+\_\+vs\+\_\+unsigned$<$ Lhs, Rhs $>$@{v8\+::base\+::is\+\_\+signed\+\_\+vs\+\_\+unsigned$<$ Lhs, Rhs $>$}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1base_1_1is__signed__vs__unsigned_ad972f732de2612e543f0e115baaa842b}\label{structv8_1_1base_1_1is__signed__vs__unsigned_ad972f732de2612e543f0e115baaa842b}} 
+using {\bfseries lhs\+\_\+underlying} = typename comparison\+\_\+underlying\+\_\+type$<$ Lhs $>$\+::\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}
+\item 
+\mbox{\Hypertarget{structv8_1_1base_1_1is__signed__vs__unsigned_a61b91813dd9c699a982fe8666ea732da}\label{structv8_1_1base_1_1is__signed__vs__unsigned_a61b91813dd9c699a982fe8666ea732da}} 
+using {\bfseries rhs\+\_\+underlying} = typename comparison\+\_\+underlying\+\_\+type$<$ Rhs $>$\+::\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Lhs, typename Rhs$>$\newline
+struct v8\+::base\+::is\+\_\+signed\+\_\+vs\+\_\+unsigned$<$ Lhs, Rhs $>$}
+
+
+
+Definition at line 223 of file logging.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structv8_1_1base_1_1is__signed__vs__unsigned_aaecc8bcf158e63be38530e8050dfa955}\label{structv8_1_1base_1_1is__signed__vs__unsigned_aaecc8bcf158e63be38530e8050dfa955}} 
+\index{v8\+::base\+::is\+\_\+signed\+\_\+vs\+\_\+unsigned@{v8\+::base\+::is\+\_\+signed\+\_\+vs\+\_\+unsigned}!value@{value}}
+\index{value@{value}!v8\+::base\+::is\+\_\+signed\+\_\+vs\+\_\+unsigned@{v8\+::base\+::is\+\_\+signed\+\_\+vs\+\_\+unsigned}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily template$<$typename Lhs, typename Rhs$>$ \\
+constexpr \mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{structv8_1_1base_1_1is__signed__vs__unsigned}{v8\+::base\+::is\+\_\+signed\+\_\+vs\+\_\+unsigned}}$<$ Lhs, Rhs $>$\+::value\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= std::is\_integral<lhs\_underlying>::value &&
+                                std::is\_integral<rhs\_underlying>::value &&
+                                std::is\_signed<lhs\_underlying>::value &&
+                                std::is\_unsigned<rhs\_underlying>::value
+\end{DoxyCode}
+
+
+Definition at line 226 of file logging.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/base/logging.\+h\end{DoxyCompactItemize}

@@ -13,16 +13,16 @@ Inheritance diagram for v8\+:\+:Symbol\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ \mbox{\hyperlink{classv8_1_1Symbol_a8ed6ef9221bc26fbe978bfc5e33f31b4}{Name}} () const
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ \mbox{\hyperlink{classv8_1_1Symbol_a8b6346ed4f396a1286fc50a95d84b79c}{Name}} () const
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Symbol}{Symbol}} $>$ \mbox{\hyperlink{classv8_1_1Symbol_add1f6084974464105b56595d34c14ab9}{New}} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ name=\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$())
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Symbol}{Symbol}} $>$ \mbox{\hyperlink{classv8_1_1Symbol_ac241ffee8282d3067f8ed0da7be2adb8}{New}} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ name=\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$())
 \item 
-static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Symbol}{Symbol}} $>$ \mbox{\hyperlink{classv8_1_1Symbol_a8a4a6bdc7d3e31c71cf48fa5cb811fc8}{For}} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ name)
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Symbol}{Symbol}} $>$ \mbox{\hyperlink{classv8_1_1Symbol_a4bde7380260d3c1cab6289a8029b34c4}{For}} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ name)
 \item 
-static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Symbol}{Symbol}} $>$ \mbox{\hyperlink{classv8_1_1Symbol_ac3937f0b0b831c4be495a399f26d7301}{For\+Api}} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ name)
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Symbol}{Symbol}} $>$ \mbox{\hyperlink{classv8_1_1Symbol_af1c88cf1c86bf5254bd60013e04de941}{For\+Api}} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ name)
 \item 
 \mbox{\Hypertarget{classv8_1_1Symbol_a9ce03e853ed34c0192bef63d88d2f9c6}\label{classv8_1_1Symbol_a9ce03e853ed34c0192bef63d88d2f9c6}} 
 static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Symbol}{Symbol}} $>$ {\bfseries Get\+Async\+Iterator} (Isolate $\ast$isolate)
@@ -70,32 +70,49 @@ Definition at line 2931 of file v8.\+h.
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classv8_1_1Symbol_a8a4a6bdc7d3e31c71cf48fa5cb811fc8}\label{classv8_1_1Symbol_a8a4a6bdc7d3e31c71cf48fa5cb811fc8}} 
+\mbox{\Hypertarget{classv8_1_1Symbol_a4bde7380260d3c1cab6289a8029b34c4}\label{classv8_1_1Symbol_a4bde7380260d3c1cab6289a8029b34c4}} 
 \index{v8\+::\+Symbol@{v8\+::\+Symbol}!For@{For}}
 \index{For@{For}!v8\+::\+Symbol@{v8\+::\+Symbol}}
 \subsubsection{\texorpdfstring{For()}{For()}}
-{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Symbol}{Symbol}}$>$ v8\+::\+Symbol\+::\+For (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Symbol}{Symbol}} $>$ v8\+::\+Symbol\+::\+For (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Access global symbol registry. Note that symbols created this way are never collected, so they should only be used for statically fixed properties. Also, there is only one global name space for the names used as keys. To minimize the potential for clashes, use qualified names as keys. \mbox{\Hypertarget{classv8_1_1Symbol_ac3937f0b0b831c4be495a399f26d7301}\label{classv8_1_1Symbol_ac3937f0b0b831c4be495a399f26d7301}} 
+Access global symbol registry. Note that symbols created this way are never collected, so they should only be used for statically fixed properties. Also, there is only one global name space for the names used as keys. To minimize the potential for clashes, use qualified names as keys. 
+
+Definition at line 7906 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1Symbol_af1c88cf1c86bf5254bd60013e04de941}\label{classv8_1_1Symbol_af1c88cf1c86bf5254bd60013e04de941}} 
 \index{v8\+::\+Symbol@{v8\+::\+Symbol}!For\+Api@{For\+Api}}
 \index{For\+Api@{For\+Api}!v8\+::\+Symbol@{v8\+::\+Symbol}}
 \subsubsection{\texorpdfstring{For\+Api()}{ForApi()}}
-{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Symbol}{Symbol}}$>$ v8\+::\+Symbol\+::\+For\+Api (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Symbol}{Symbol}} $>$ v8\+::\+Symbol\+::\+For\+Api (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Retrieve a global symbol. Similar to $\vert$\+For$\vert$, but using a separate registry that is not accessible by (and cannot clash with) Java\+Script code. \mbox{\Hypertarget{classv8_1_1Symbol_a8ed6ef9221bc26fbe978bfc5e33f31b4}\label{classv8_1_1Symbol_a8ed6ef9221bc26fbe978bfc5e33f31b4}} 
+Retrieve a global symbol. Similar to $\vert$\+For$\vert$, but using a separate registry that is not accessible by (and cannot clash with) Java\+Script code. 
+
+Definition at line 7914 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1Symbol_a8b6346ed4f396a1286fc50a95d84b79c}\label{classv8_1_1Symbol_a8b6346ed4f396a1286fc50a95d84b79c}} 
 \index{v8\+::\+Symbol@{v8\+::\+Symbol}!Name@{Name}}
 \index{Name@{Name}!v8\+::\+Symbol@{v8\+::\+Symbol}}
 \subsubsection{\texorpdfstring{Name()}{Name()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Value}{Value}}$>$ v8\+::\+Symbol\+::\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ v8\+::\+Symbol\+::\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns the print name string of the symbol, or undefined if none. \mbox{\Hypertarget{classv8_1_1Symbol_add1f6084974464105b56595d34c14ab9}\label{classv8_1_1Symbol_add1f6084974464105b56595d34c14ab9}} 
+Returns the print name string of the symbol, or undefined if none. 
+
+Definition at line 5718 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1Symbol_ac241ffee8282d3067f8ed0da7be2adb8}\label{classv8_1_1Symbol_ac241ffee8282d3067f8ed0da7be2adb8}} 
 \index{v8\+::\+Symbol@{v8\+::\+Symbol}!New@{New}}
 \index{New@{New}!v8\+::\+Symbol@{v8\+::\+Symbol}}
 \subsubsection{\texorpdfstring{New()}{New()}}
-{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Symbol}{Symbol}}$>$ v8\+::\+Symbol\+::\+New (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{name = {\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$~\mbox{\hyperlink{classv8_1_1String}{String}}~$>$()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Symbol}{Symbol}} $>$ v8\+::\+Symbol\+::\+New (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{name = {\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1String}{String}}$>$()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Create a symbol. If name is not empty, it will be used as the description. 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Definition at line 7896 of file api.\+cc.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8.\+h\end{DoxyCompactItemize}
+v8/include/v8.\+h\item 
+v8/src/api.\+cc\end{DoxyCompactItemize}

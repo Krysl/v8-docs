@@ -1,0 +1,121 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Code\+Generator Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator}\index{v8\+::internal\+::compiler\+::\+Code\+Generator@{v8\+::internal\+::compiler\+::\+Code\+Generator}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Code\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1CodeGenerator}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeGenerator_1_1JumpTable}{Jump\+Table}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a9951f2bcc087981c6e6cab0a90618419}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a9951f2bcc087981c6e6cab0a90618419}} 
+{\bfseries Code\+Generator} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$codegen\+\_\+zone, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Frame}{Frame}} $\ast$frame, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Linkage}{Linkage}} $\ast$linkage, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionSequence}{Instruction\+Sequence}} $\ast$code, \mbox{\hyperlink{classv8_1_1internal_1_1OptimizedCompilationInfo}{Optimized\+Compilation\+Info}} $\ast$info, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OsrHelper}{Osr\+Helper}} $>$ osr\+\_\+helper, \mbox{\hyperlink{classint}{int}} start\+\_\+source\+\_\+position, \mbox{\hyperlink{classv8_1_1internal_1_1JumpOptimizationInfo}{Jump\+Optimization\+Info}} $\ast$jump\+\_\+opt, Poisoning\+Mitigation\+Level poisoning\+\_\+level, const \mbox{\hyperlink{structv8_1_1internal_1_1AssemblerOptions}{Assembler\+Options}} \&options, int32\+\_\+t builtin\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a66b300247e9913b6e1e1d8b79c7f857c}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a66b300247e9913b6e1e1d8b79c7f857c}} 
+void {\bfseries Assemble\+Code} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a90a701a71ad5699639d55b2847f6974a}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a90a701a71ad5699639d55b2847f6974a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Finalize\+Code} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_aeb54a776eb2d4fbf7119382ef9253d60}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_aeb54a776eb2d4fbf7119382ef9253d60}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1OwnedVector}{Owned\+Vector}}$<$ byte $>$ {\bfseries Get\+Source\+Position\+Table} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a46823e83501b59a17b715bfb942dde20}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a46823e83501b59a17b715bfb942dde20}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1OwnedVector}{Owned\+Vector}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1trap__handler_1_1ProtectedInstructionData}{trap\+\_\+handler\+::\+Protected\+Instruction\+Data}} $>$ {\bfseries Get\+Protected\+Instructions} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a8e5c7a2cc726f16e24e8d22a84f1aa86}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a8e5c7a2cc726f16e24e8d22a84f1aa86}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionSequence}{Instruction\+Sequence}} $\ast$ {\bfseries code} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a7d7cd911b4db4af57a0d58644a95285a}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a7d7cd911b4db4af57a0d58644a95285a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1FrameAccessState}{Frame\+Access\+State}} $\ast$ {\bfseries frame\+\_\+access\+\_\+state} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a4b2c98383bd478672d839c14561ea8f1}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a4b2c98383bd478672d839c14561ea8f1}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Frame}{Frame}} $\ast$ {\bfseries frame} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a02e9a42ddcfc6e2221dd30441cd8d17c}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a02e9a42ddcfc6e2221dd30441cd8d17c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a658a8f65659a41f2f2acc0e7bf4792de}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a658a8f65659a41f2f2acc0e7bf4792de}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Linkage}{Linkage}} $\ast$ {\bfseries linkage} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_aa2f2a6a082ff9e96f2afc9f19cb195af}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_aa2f2a6a082ff9e96f2afc9f19cb195af}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$ {\bfseries Get\+Label} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RpoNumber}{Rpo\+Number}} rpo)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a5f52ff55fa301254dac58fdf48c14b5a}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a5f52ff55fa301254dac58fdf48c14b5a}} 
+void {\bfseries Add\+Protected\+Instruction\+Landing} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} instr\+\_\+offset, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} landing\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_af18f1d498e4f90979f680d45f53265de}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_af18f1d498e4f90979f680d45f53265de}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries wasm\+\_\+runtime\+\_\+exception\+\_\+support} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a41f5c21d6bb81bc09c00806a177adb83}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a41f5c21d6bb81bc09c00806a177adb83}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1SourcePosition}{Source\+Position}} {\bfseries start\+\_\+source\+\_\+position} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_aab974c42a37ef9c849a648bcff7d2e46}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_aab974c42a37ef9c849a648bcff7d2e46}} 
+void {\bfseries Assemble\+Source\+Position} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Instruction}{Instruction}} $\ast$instr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a88834150cdd54e0c0df2595e345f4ac5}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a88834150cdd54e0c0df2595e345f4ac5}} 
+void {\bfseries Assemble\+Source\+Position} (\mbox{\hyperlink{classv8_1_1internal_1_1SourcePosition}{Source\+Position}} source\+\_\+position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a2a26b8eb4c0add510993b6ee5004e0d8}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a2a26b8eb4c0add510993b6ee5004e0d8}} 
+void {\bfseries Record\+Safepoint} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1ReferenceMap}{Reference\+Map}} $\ast$references, Safepoint\+::\+Kind kind, \mbox{\hyperlink{classint}{int}} arguments, Safepoint\+::\+Deopt\+Mode deopt\+\_\+mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_abf27d06360712125eddbc0449f405473}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_abf27d06360712125eddbc0449f405473}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$ {\bfseries zone} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_aa7ad5d377fb772f8b1a82ce2b84413d4}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_aa7ad5d377fb772f8b1a82ce2b84413d4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1TurboAssembler}{Turbo\+Assembler}} $\ast$ {\bfseries tasm} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_ac3515e8223d54c6a5afba21ff75ce7bd}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_ac3515e8223d54c6a5afba21ff75ce7bd}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Get\+Safepoint\+Table\+Offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_ac49679c60efb4d21dd8b7bd258b8f2cc}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_ac49679c60efb4d21dd8b7bd258b8f2cc}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Get\+Handler\+Table\+Offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_ac78132fa902aa718ed02ae5e8899a23e}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_ac78132fa902aa718ed02ae5e8899a23e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classint}{int}} $>$ \& {\bfseries block\+\_\+starts} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_ae60547be8aed32eae047718ba78cd4f5}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_ae60547be8aed32eae047718ba78cd4f5}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classint}{int}} $>$ \& {\bfseries instr\+\_\+starts} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a27e295454098050a93845e8e8f917663}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_a27e295454098050a93845e8e8f917663}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Binary\+Search\+Switch\+Minimal\+Cases} = 4
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_abbc0d1dda26f4692c37dbc47aa30debd}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_abbc0d1dda26f4692c37dbc47aa30debd}} 
+class {\bfseries Out\+Of\+Line\+Code}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CodeGenerator_ab33a05f3bd244fd879f794b73d3d9ccb}\label{classv8_1_1internal_1_1compiler_1_1CodeGenerator_ab33a05f3bd244fd879f794b73d3d9ccb}} 
+class {\bfseries Code\+Generator\+Tester}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 89 of file code-\/generator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/backend/code-\/generator.\+h\item 
+v8/src/compiler/backend/arm/code-\/generator-\/arm.\+cc\item 
+v8/src/compiler/backend/arm64/code-\/generator-\/arm64.\+cc\item 
+v8/src/compiler/backend/code-\/generator.\+cc\item 
+v8/src/compiler/backend/ia32/code-\/generator-\/ia32.\+cc\item 
+v8/src/compiler/backend/mips/code-\/generator-\/mips.\+cc\item 
+v8/src/compiler/backend/mips64/code-\/generator-\/mips64.\+cc\item 
+v8/src/compiler/backend/ppc/code-\/generator-\/ppc.\+cc\item 
+v8/src/compiler/backend/s390/code-\/generator-\/s390.\+cc\item 
+v8/src/compiler/backend/x64/code-\/generator-\/x64.\+cc\end{DoxyCompactItemize}

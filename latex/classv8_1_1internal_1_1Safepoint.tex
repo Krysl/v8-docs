@@ -1,0 +1,68 @@
+\hypertarget{classv8_1_1internal_1_1Safepoint}{}\section{v8\+:\+:internal\+:\+:Safepoint Class Reference}
+\label{classv8_1_1internal_1_1Safepoint}\index{v8\+::internal\+::\+Safepoint@{v8\+::internal\+::\+Safepoint}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Safepoint_abd8d805eb3f6987595279455edc5a97d}\label{classv8_1_1internal_1_1Safepoint_abd8d805eb3f6987595279455edc5a97d}} 
+enum {\bfseries Kind} \{ {\bfseries k\+Simple} = 0, 
+{\bfseries k\+With\+Registers} = 1 $<$$<$ 0, 
+{\bfseries k\+With\+Doubles} = 1 $<$$<$ 1, 
+{\bfseries k\+With\+Registers\+And\+Doubles} = k\+With\+Registers $\vert$ k\+With\+Doubles
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Safepoint_a6a8989f5aff011b748a09f941f38fd09}\label{classv8_1_1internal_1_1Safepoint_a6a8989f5aff011b748a09f941f38fd09}} 
+enum {\bfseries Deopt\+Mode} \{ {\bfseries k\+No\+Lazy\+Deopt}, 
+{\bfseries k\+Lazy\+Deopt}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Safepoint_a52bb658b33baae5aeab365ae8c99d011}\label{classv8_1_1internal_1_1Safepoint_a52bb658b33baae5aeab365ae8c99d011}} 
+void {\bfseries Define\+Pointer\+Slot} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Safepoint_ab606af1c9ccbb05cf0cedee02deed48e}\label{classv8_1_1internal_1_1Safepoint_ab606af1c9ccbb05cf0cedee02deed48e}} 
+void {\bfseries Define\+Pointer\+Register} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} reg)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+No\+Deoptimization\+Index}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Safepoint_a2d6731928ba3d3e308c38b4cbd451264}\label{classv8_1_1internal_1_1Safepoint_a2d6731928ba3d3e308c38b4cbd451264}} 
+class {\bfseries Safepoint\+Table\+Builder}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 173 of file safepoint-\/table.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1Safepoint_aa4ba2afdb5b2fa7fe2708c7b10b75df7}\label{classv8_1_1internal_1_1Safepoint_aa4ba2afdb5b2fa7fe2708c7b10b75df7}} 
+\index{v8\+::internal\+::\+Safepoint@{v8\+::internal\+::\+Safepoint}!k\+No\+Deoptimization\+Index@{k\+No\+Deoptimization\+Index}}
+\index{k\+No\+Deoptimization\+Index@{k\+No\+Deoptimization\+Index}!v8\+::internal\+::\+Safepoint@{v8\+::internal\+::\+Safepoint}}
+\subsubsection{\texorpdfstring{k\+No\+Deoptimization\+Index}{kNoDeoptimizationIndex}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Safepoint\+::k\+No\+Deoptimization\+Index\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      (1 << (SafepointEntry::kDeoptIndexBits)) - 1
+\end{DoxyCode}
+
+
+Definition at line 187 of file safepoint-\/table.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/safepoint-\/table.\+h\item 
+v8/src/safepoint-\/table.\+cc\end{DoxyCompactItemize}

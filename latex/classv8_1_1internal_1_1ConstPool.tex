@@ -1,0 +1,63 @@
+\hypertarget{classv8_1_1internal_1_1ConstPool}{}\section{v8\+:\+:internal\+:\+:Const\+Pool Class Reference}
+\label{classv8_1_1internal_1_1ConstPool}\index{v8\+::internal\+::\+Const\+Pool@{v8\+::internal\+::\+Const\+Pool}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstPool_a10cd51c71aa865ccd6dec22f830bcfe5}\label{classv8_1_1internal_1_1ConstPool_a10cd51c71aa865ccd6dec22f830bcfe5}} 
+{\bfseries Const\+Pool} (\mbox{\hyperlink{classv8_1_1internal_1_1Assembler}{Assembler}} $\ast$assm)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstPool_a37be23b9f30680f5e4c2e145e50bbe25}\label{classv8_1_1internal_1_1ConstPool_a37be23b9f30680f5e4c2e145e50bbe25}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Record\+Entry} (intptr\+\_\+t data, Reloc\+Info\+::\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstPool_a164710973a00b3f8f3e0ad7926e63ae4}\label{classv8_1_1internal_1_1ConstPool_a164710973a00b3f8f3e0ad7926e63ae4}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Entry\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstPool_af083d890988d2b259c5576c43caa5e20}\label{classv8_1_1internal_1_1ConstPool_af083d890988d2b259c5576c43caa5e20}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Empty} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstPool_adf9bf9b440686da05462a7b9d734f57f}\label{classv8_1_1internal_1_1ConstPool_adf9bf9b440686da05462a7b9d734f57f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Distance\+To\+First\+Use} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstPool_a194bc8abbe406d30b3c01834dfda7af8}\label{classv8_1_1internal_1_1ConstPool_a194bc8abbe406d30b3c01834dfda7af8}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Max\+Pc\+Offset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstPool_ade9c2b9a5ca36f8b2ff6b9df077187c8}\label{classv8_1_1internal_1_1ConstPool_ade9c2b9a5ca36f8b2ff6b9df077187c8}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Worst\+Case\+Size} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstPool_a7564d0079adb1c574dc1f505cf56e97a}\label{classv8_1_1internal_1_1ConstPool_a7564d0079adb1c574dc1f505cf56e97a}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Size\+If\+Emitted\+At\+Current\+Pc} (\mbox{\hyperlink{classbool}{bool}} require\+\_\+jump)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstPool_aa6ea87074c1835b249d592f1c696a219}\label{classv8_1_1internal_1_1ConstPool_aa6ea87074c1835b249d592f1c696a219}} 
+void {\bfseries Emit} (\mbox{\hyperlink{classbool}{bool}} require\+\_\+jump)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstPool_ad00c13ed8f086484fa21e453c39cc05c}\label{classv8_1_1internal_1_1ConstPool_ad00c13ed8f086484fa21e453c39cc05c}} 
+void {\bfseries Clear} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstPool_a10cd51c71aa865ccd6dec22f830bcfe5}\label{classv8_1_1internal_1_1ConstPool_a10cd51c71aa865ccd6dec22f830bcfe5}} 
+{\bfseries Const\+Pool} (\mbox{\hyperlink{classv8_1_1internal_1_1Assembler}{Assembler}} $\ast$assm)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstPool_ae79636ee350a5a50181067043a0f4479}\label{classv8_1_1internal_1_1ConstPool_ae79636ee350a5a50181067043a0f4479}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Try\+Record\+Entry} (intptr\+\_\+t data, Reloc\+Info\+::\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstPool_af083d890988d2b259c5576c43caa5e20}\label{classv8_1_1internal_1_1ConstPool_af083d890988d2b259c5576c43caa5e20}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Empty} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstPool_ab2bab8aa08530c1421d1b18ea70d5121}\label{classv8_1_1internal_1_1ConstPool_ab2bab8aa08530c1421d1b18ea70d5121}} 
+void {\bfseries Patch\+Entries} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstPool_ad00c13ed8f086484fa21e453c39cc05c}\label{classv8_1_1internal_1_1ConstPool_ad00c13ed8f086484fa21e453c39cc05c}} 
+void {\bfseries Clear} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 848 of file assembler-\/arm64.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/arm64/assembler-\/arm64.\+h\item 
+v8/src/x64/assembler-\/x64.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,68 @@
+\hypertarget{classv8_1_1internal_1_1OptimizedFrame}{}\section{v8\+:\+:internal\+:\+:Optimized\+Frame Class Reference}
+\label{classv8_1_1internal_1_1OptimizedFrame}\index{v8\+::internal\+::\+Optimized\+Frame@{v8\+::internal\+::\+Optimized\+Frame}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Optimized\+Frame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1OptimizedFrame}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedFrame_a064a608fb7fdf2ae985cdf17dae2f2af}\label{classv8_1_1internal_1_1OptimizedFrame_a064a608fb7fdf2ae985cdf17dae2f2af}} 
+Type {\bfseries type} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedFrame_ac21dea56cb97c5d1fed4ad0293199052}\label{classv8_1_1internal_1_1OptimizedFrame_ac21dea56cb97c5d1fed4ad0293199052}} 
+void {\bfseries Iterate} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v) const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedFrame_a10eb1d2f9d6857408bd7c88670ead87d}\label{classv8_1_1internal_1_1OptimizedFrame_a10eb1d2f9d6857408bd7c88670ead87d}} 
+void {\bfseries Get\+Functions} (std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$$>$ $\ast$functions) const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedFrame_a1fb6523e46c50d55377be381a905046f}\label{classv8_1_1internal_1_1OptimizedFrame_a1fb6523e46c50d55377be381a905046f}} 
+void {\bfseries Summarize} (std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FrameSummary}{Frame\+Summary}} $>$ $\ast$frames) const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedFrame_aab3a9c1c4cbdec62a14f3c6ded471dd6}\label{classv8_1_1internal_1_1OptimizedFrame_aab3a9c1c4cbdec62a14f3c6ded471dd6}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Lookup\+Exception\+Handler\+In\+Table} (\mbox{\hyperlink{classint}{int}} $\ast$data, Handler\+Table\+::\+Catch\+Prediction $\ast$prediction) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedFrame_a244dc405c7404f0876e96e5f895d9c3a}\label{classv8_1_1internal_1_1OptimizedFrame_a244dc405c7404f0876e96e5f895d9c3a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1DeoptimizationData}{Deoptimization\+Data}} {\bfseries Get\+Deoptimization\+Data} (\mbox{\hyperlink{classint}{int}} $\ast$deopt\+\_\+index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedFrame_ae8b06031671cce6a56ddeb82e1894ca7}\label{classv8_1_1internal_1_1OptimizedFrame_ae8b06031671cce6a56ddeb82e1894ca7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries receiver} () const override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedFrame_adff8cbaa5829ce12dc64a4544769577a}\label{classv8_1_1internal_1_1OptimizedFrame_adff8cbaa5829ce12dc64a4544769577a}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Stack\+Slot\+Offset\+Relative\+To\+Fp} (\mbox{\hyperlink{classint}{int}} slot\+\_\+index)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedFrame_a1bbc29fa53c627003b0536cbaaadd379}\label{classv8_1_1internal_1_1OptimizedFrame_a1bbc29fa53c627003b0536cbaaadd379}} 
+{\bfseries Optimized\+Frame} (\mbox{\hyperlink{classv8_1_1internal_1_1StackFrameIteratorBase}{Stack\+Frame\+Iterator\+Base}} $\ast$iterator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedFrame_ad51f89441abee30b846dcd9723da4f03}\label{classv8_1_1internal_1_1OptimizedFrame_ad51f89441abee30b846dcd9723da4f03}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Number\+Of\+Incoming\+Arguments} () const override
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedFrame_ac7310421866976ca454bbe11c5f926c3}\label{classv8_1_1internal_1_1OptimizedFrame_ac7310421866976ca454bbe11c5f926c3}} 
+class {\bfseries Stack\+Frame\+Iterator\+Base}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 796 of file frames.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/frames.\+h\item 
+v8/src/frames-\/inl.\+h\item 
+v8/src/frames.\+cc\end{DoxyCompactItemize}

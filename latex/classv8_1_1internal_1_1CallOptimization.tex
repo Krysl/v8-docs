@@ -1,0 +1,60 @@
+\hypertarget{classv8_1_1internal_1_1CallOptimization}{}\section{v8\+:\+:internal\+:\+:Call\+Optimization Class Reference}
+\label{classv8_1_1internal_1_1CallOptimization}\index{v8\+::internal\+::\+Call\+Optimization@{v8\+::internal\+::\+Call\+Optimization}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallOptimization_a0e0a49814579066e63f71cde5caa02db}\label{classv8_1_1internal_1_1CallOptimization_a0e0a49814579066e63f71cde5caa02db}} 
+enum {\bfseries Holder\+Lookup} \{ {\bfseries k\+Holder\+Not\+Found}, 
+{\bfseries k\+Holder\+Is\+Receiver}, 
+{\bfseries k\+Holder\+Found}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallOptimization_a0abb342073cd68893f39c20b6f765f60}\label{classv8_1_1internal_1_1CallOptimization_a0abb342073cd68893f39c20b6f765f60}} 
+{\bfseries Call\+Optimization} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallOptimization_ae57ffe0121bb1aa3cd8d5bcd533614a6}\label{classv8_1_1internal_1_1CallOptimization_ae57ffe0121bb1aa3cd8d5bcd533614a6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} {\bfseries Get\+Accessor\+Context} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} holder\+\_\+map) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallOptimization_a59cef861a9ccb0a037a5f9011f6d628a}\label{classv8_1_1internal_1_1CallOptimization_a59cef861a9ccb0a037a5f9011f6d628a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Cross\+Context\+Lazy\+Accessor\+Pair} (\mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} native\+\_\+context, \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} holder\+\_\+map) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallOptimization_a00a96eee50d1e0eecafe2393008021c9}\label{classv8_1_1internal_1_1CallOptimization_a00a96eee50d1e0eecafe2393008021c9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+constant\+\_\+call} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallOptimization_a40de04e374874a3574a864cf1eab7a80}\label{classv8_1_1internal_1_1CallOptimization_a40de04e374874a3574a864cf1eab7a80}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ {\bfseries constant\+\_\+function} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallOptimization_a2ddcead8ddf9bf45a19a0d2a181683f3}\label{classv8_1_1internal_1_1CallOptimization_a2ddcead8ddf9bf45a19a0d2a181683f3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+simple\+\_\+api\+\_\+call} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallOptimization_accb66e478287562a24215befdd051abb}\label{classv8_1_1internal_1_1CallOptimization_accb66e478287562a24215befdd051abb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FunctionTemplateInfo}{Function\+Template\+Info}} $>$ {\bfseries expected\+\_\+receiver\+\_\+type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallOptimization_ac8922d4130b7a05d12ada87cb8d438d9}\label{classv8_1_1internal_1_1CallOptimization_ac8922d4130b7a05d12ada87cb8d438d9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CallHandlerInfo}{Call\+Handler\+Info}} $>$ {\bfseries api\+\_\+call\+\_\+info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallOptimization_a4bb64022038aefd62d836cc48e02850b}\label{classv8_1_1internal_1_1CallOptimization_a4bb64022038aefd62d836cc48e02850b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ {\bfseries Lookup\+Holder\+Of\+Expected\+Type} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ receiver\+\_\+map, Holder\+Lookup $\ast$holder\+\_\+lookup) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallOptimization_a1b9265b52b11bf07e8a0ad46da757fc6}\label{classv8_1_1internal_1_1CallOptimization_a1b9265b52b11bf07e8a0ad46da757fc6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Compatible\+Receiver} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ receiver, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ holder) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallOptimization_aa60df6df8709243709fc1075256afc88}\label{classv8_1_1internal_1_1CallOptimization_aa60df6df8709243709fc1075256afc88}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Compatible\+Receiver\+Map} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ receiver\+\_\+map, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ holder) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file call-\/optimization.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ic/call-\/optimization.\+h\item 
+v8/src/ic/call-\/optimization.\+cc\end{DoxyCompactItemize}

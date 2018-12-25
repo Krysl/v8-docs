@@ -1,0 +1,119 @@
+\hypertarget{classv8_1_1internal_1_1RegExpNode}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Node Class Reference}
+\label{classv8_1_1internal_1_1RegExpNode}\index{v8\+::internal\+::\+Reg\+Exp\+Node@{v8\+::internal\+::\+Reg\+Exp\+Node}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Reg\+Exp\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.163636cm]{classv8_1_1internal_1_1RegExpNode}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_add9600e01845a3ef14f42ab18177ca3c}\label{classv8_1_1internal_1_1RegExpNode_add9600e01845a3ef14f42ab18177ca3c}} 
+{\bfseries Reg\+Exp\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_ac6b89282f32103ee66d71780f738350b}\label{classv8_1_1internal_1_1RegExpNode_ac6b89282f32103ee66d71780f738350b}} 
+virtual void {\bfseries Accept} (\mbox{\hyperlink{classv8_1_1internal_1_1NodeVisitor}{Node\+Visitor}} $\ast$visitor)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_ab9cd401dec1ad113895eab29871317c6}\label{classv8_1_1internal_1_1RegExpNode_ab9cd401dec1ad113895eab29871317c6}} 
+virtual void {\bfseries Emit} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classv8_1_1internal_1_1Trace}{Trace}} $\ast$trace)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_aea14efd681709d8fd872361f05c4abf8}\label{classv8_1_1internal_1_1RegExpNode_aea14efd681709d8fd872361f05c4abf8}} 
+virtual \mbox{\hyperlink{classint}{int}} {\bfseries Eats\+At\+Least} (\mbox{\hyperlink{classint}{int}} still\+\_\+to\+\_\+find, \mbox{\hyperlink{classint}{int}} budget, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_a9926645d60a5ce538c4c79f8e7151ca2}\label{classv8_1_1internal_1_1RegExpNode_a9926645d60a5ce538c4c79f8e7151ca2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Emit\+Quick\+Check} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classv8_1_1internal_1_1Trace}{Trace}} $\ast$bounds\+\_\+check\+\_\+trace, \mbox{\hyperlink{classv8_1_1internal_1_1Trace}{Trace}} $\ast$trace, \mbox{\hyperlink{classbool}{bool}} preload\+\_\+has\+\_\+checked\+\_\+bounds, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+possible\+\_\+success, \mbox{\hyperlink{classv8_1_1internal_1_1QuickCheckDetails}{Quick\+Check\+Details}} $\ast$details\+\_\+return, \mbox{\hyperlink{classbool}{bool}} fall\+\_\+through\+\_\+on\+\_\+failure)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_add5e1fa780c60d5b3a910c00ed713ff6}\label{classv8_1_1internal_1_1RegExpNode_add5e1fa780c60d5b3a910c00ed713ff6}} 
+virtual void {\bfseries Get\+Quick\+Check\+Details} (\mbox{\hyperlink{classv8_1_1internal_1_1QuickCheckDetails}{Quick\+Check\+Details}} $\ast$details, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classint}{int}} characters\+\_\+filled\+\_\+in, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_aa7f55d54a0ffe45d303773b96ac5ef68}\label{classv8_1_1internal_1_1RegExpNode_aa7f55d54a0ffe45d303773b96ac5ef68}} 
+virtual \mbox{\hyperlink{classint}{int}} {\bfseries Greedy\+Loop\+Text\+Length} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_a3e648c04dbac6ee8045e8aeeafeb905e}\label{classv8_1_1internal_1_1RegExpNode_a3e648c04dbac6ee8045e8aeeafeb905e}} 
+virtual \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ {\bfseries Get\+Successor\+Of\+Omnivorous\+Text\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_a409f7d70b3e445a4ba65606759a3fa14}\label{classv8_1_1internal_1_1RegExpNode_a409f7d70b3e445a4ba65606759a3fa14}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Keep\+Recursing} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_a208754eba18d54c32d3d047c851d52f7}\label{classv8_1_1internal_1_1RegExpNode_a208754eba18d54c32d3d047c851d52f7}} 
+virtual void {\bfseries Fill\+In\+B\+M\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} offset, \mbox{\hyperlink{classint}{int}} budget, \mbox{\hyperlink{classv8_1_1internal_1_1BoyerMooreLookahead}{Boyer\+Moore\+Lookahead}} $\ast$bm, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_af7be8be6f2b52a02345624604a236310}\label{classv8_1_1internal_1_1RegExpNode_af7be8be6f2b52a02345624604a236310}} 
+virtual \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ {\bfseries Filter\+One\+Byte} (\mbox{\hyperlink{classint}{int}} depth)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_a5106a9e3526079e16cc999ba4bbadad1}\label{classv8_1_1internal_1_1RegExpNode_a5106a9e3526079e16cc999ba4bbadad1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ {\bfseries replacement} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_abe1b803364b2e377ec428bc9920c94ca}\label{classv8_1_1internal_1_1RegExpNode_abe1b803364b2e377ec428bc9920c94ca}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ {\bfseries set\+\_\+replacement} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$replacement)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_a6267579804303b6f30263d6470949ffe}\label{classv8_1_1internal_1_1RegExpNode_a6267579804303b6f30263d6470949ffe}} 
+void {\bfseries Save\+B\+M\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1BoyerMooreLookahead}{Boyer\+Moore\+Lookahead}} $\ast$bm, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start, \mbox{\hyperlink{classint}{int}} offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_a1a0b5a61d350613e23c5014f80e79d3e}\label{classv8_1_1internal_1_1RegExpNode_a1a0b5a61d350613e23c5014f80e79d3e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$ {\bfseries label} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_aa140eaf712345d61115c6cfbc8042cc9}\label{classv8_1_1internal_1_1RegExpNode_aa140eaf712345d61115c6cfbc8042cc9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries on\+\_\+work\+\_\+list} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_af06878e6453358c2cec014fd3e7e97bd}\label{classv8_1_1internal_1_1RegExpNode_af06878e6453358c2cec014fd3e7e97bd}} 
+void {\bfseries set\+\_\+on\+\_\+work\+\_\+list} (\mbox{\hyperlink{classbool}{bool}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_a9a3f9318b3322877937dbd62b479531d}\label{classv8_1_1internal_1_1RegExpNode_a9a3f9318b3322877937dbd62b479531d}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1NodeInfo}{Node\+Info}} $\ast$ {\bfseries info} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_a11d15a06b5e058ace41d292bdb261c9a}\label{classv8_1_1internal_1_1RegExpNode_a11d15a06b5e058ace41d292bdb261c9a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1BoyerMooreLookahead}{Boyer\+Moore\+Lookahead}} $\ast$ {\bfseries bm\+\_\+info} (\mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_a132a31421b99711e1482b7a9aa35ad57}\label{classv8_1_1internal_1_1RegExpNode_a132a31421b99711e1482b7a9aa35ad57}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$ {\bfseries zone} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_acdf311f0dacb16f281babbdd2ed30a70}\label{classv8_1_1internal_1_1RegExpNode_acdf311f0dacb16f281babbdd2ed30a70}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Node\+Is\+Too\+Complex\+For\+Greedy\+Loops} = k\+Min\+Int
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_ac77fc160c5ff5db7808583c401c65ede}\label{classv8_1_1internal_1_1RegExpNode_ac77fc160c5ff5db7808583c401c65ede}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Recursion\+Budget} = 200
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_aee16545e1cda3652a44891cefb9e60ad}\label{classv8_1_1internal_1_1RegExpNode_aee16545e1cda3652a44891cefb9e60ad}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Copies\+Code\+Generated} = 10
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_a500fa4ebb18d4f45d6ea99e6da33defc}\label{classv8_1_1internal_1_1RegExpNode_a500fa4ebb18d4f45d6ea99e6da33defc}} 
+enum {\bfseries Limit\+Result} \{ {\bfseries D\+O\+NE}, 
+{\bfseries C\+O\+N\+T\+I\+N\+UE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_a5b390ba923933075f890a385a6b1b5ee}\label{classv8_1_1internal_1_1RegExpNode_a5b390ba923933075f890a385a6b1b5ee}} 
+Limit\+Result {\bfseries Limit\+Versions} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classv8_1_1internal_1_1Trace}{Trace}} $\ast$trace)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_a1d97a915147648cff2a1792e2651547c}\label{classv8_1_1internal_1_1RegExpNode_a1d97a915147648cff2a1792e2651547c}} 
+void {\bfseries set\+\_\+bm\+\_\+info} (\mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start, \mbox{\hyperlink{classv8_1_1internal_1_1BoyerMooreLookahead}{Boyer\+Moore\+Lookahead}} $\ast$bm)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpNode_aac19aaa0fa38bce51ee5b9977c9cf2c5}\label{classv8_1_1internal_1_1RegExpNode_aac19aaa0fa38bce51ee5b9977c9cf2c5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ {\bfseries replacement\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 459 of file jsregexp.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/jsregexp.\+h\item 
+v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

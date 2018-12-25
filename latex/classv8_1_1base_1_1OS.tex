@@ -1,0 +1,200 @@
+\hypertarget{classv8_1_1base_1_1OS}{}\section{v8\+:\+:base\+:\+:OS Class Reference}
+\label{classv8_1_1base_1_1OS}\index{v8\+::base\+::\+OS@{v8\+::base\+::\+OS}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1base_1_1OS_1_1MemoryMappedFile}{Memory\+Mapped\+File}}
+\item 
+struct \mbox{\hyperlink{structv8_1_1base_1_1OS_1_1SharedLibraryAddress}{Shared\+Library\+Address}}
+\item 
+struct \mbox{\hyperlink{structv8_1_1base_1_1OS_1_1StackFrame}{Stack\+Frame}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a784ff62e67203e60451e5952454046e4}\label{classv8_1_1base_1_1OS_a784ff62e67203e60451e5952454046e4}} 
+enum {\bfseries Memory\+Permission} \{ \newline
+{\bfseries k\+No\+Access}, 
+{\bfseries k\+Read}, 
+{\bfseries k\+Read\+Write}, 
+{\bfseries k\+Read\+Write\+Execute}, 
+\newline
+{\bfseries k\+Read\+Execute}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a439c1176d441a94b4d6d1b6c8db3b53a}\label{classv8_1_1base_1_1OS_a439c1176d441a94b4d6d1b6c8db3b53a}} 
+static void {\bfseries Initialize} (\mbox{\hyperlink{classbool}{bool}} hard\+\_\+abort, const \mbox{\hyperlink{classchar}{char}} $\ast$const gc\+\_\+fake\+\_\+mmap)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_ab14abe0c27358916e32d1d5552ac182f}\label{classv8_1_1base_1_1OS_ab14abe0c27358916e32d1d5552ac182f}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Get\+User\+Time} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} $\ast$secs, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} $\ast$usecs)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_ad95b9514ae4123f8d0a5456d6f2cc204}\label{classv8_1_1base_1_1OS_ad95b9514ae4123f8d0a5456d6f2cc204}} 
+static double {\bfseries Time\+Current\+Millis} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_ad481e6ce21d8194ec47b14e59e8aadaf}\label{classv8_1_1base_1_1OS_ad481e6ce21d8194ec47b14e59e8aadaf}} 
+static \mbox{\hyperlink{classv8_1_1base_1_1TimezoneCache}{Timezone\+Cache}} $\ast$ {\bfseries Create\+Timezone\+Cache} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a6dc6ca7fa1417c3b8ae2d70fb19ab023}\label{classv8_1_1base_1_1OS_a6dc6ca7fa1417c3b8ae2d70fb19ab023}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Last\+Error} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a847804239d3654d9dc61325fd7a8b195}\label{classv8_1_1base_1_1OS_a847804239d3654d9dc61325fd7a8b195}} 
+static F\+I\+LE $\ast$ {\bfseries F\+Open} (const \mbox{\hyperlink{classchar}{char}} $\ast$path, const \mbox{\hyperlink{classchar}{char}} $\ast$mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_afc81cb4b82d6a51170eb77b2ac4cbd97}\label{classv8_1_1base_1_1OS_afc81cb4b82d6a51170eb77b2ac4cbd97}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Remove} (const \mbox{\hyperlink{classchar}{char}} $\ast$path)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_aa010f31048d7a2baf7f30973bc5854d0}\label{classv8_1_1base_1_1OS_aa010f31048d7a2baf7f30973bc5854d0}} 
+static \mbox{\hyperlink{classchar}{char}} {\bfseries Directory\+Separator} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_ae9b48025d23fcd0a98f968d90e7107d4}\label{classv8_1_1base_1_1OS_ae9b48025d23fcd0a98f968d90e7107d4}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+Directory\+Separator} (const \mbox{\hyperlink{classchar}{char}} ch)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a7984e131b66b92c725f30666de50d4e6}\label{classv8_1_1base_1_1OS_a7984e131b66b92c725f30666de50d4e6}} 
+static F\+I\+LE $\ast$ {\bfseries Open\+Temporary\+File} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_afa68bde0181d52d77a29c110255bf9e2}\label{classv8_1_1base_1_1OS_afa68bde0181d52d77a29c110255bf9e2}} 
+static {\bfseries P\+R\+I\+N\+T\+F\+\_\+\+F\+O\+R\+M\+AT} (1, 2) void Print(const \mbox{\hyperlink{classchar}{char}} $\ast$format
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a068bf3678403943a7e9450afcc57b978}\label{classv8_1_1base_1_1OS_a068bf3678403943a7e9450afcc57b978}} 
+static static {\bfseries P\+R\+I\+N\+T\+F\+\_\+\+F\+O\+R\+M\+AT} (1, 0) void V\+Print(const \mbox{\hyperlink{classchar}{char}} $\ast$format
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a7483e74426cd21f16559d17148d837b4}\label{classv8_1_1base_1_1OS_a7483e74426cd21f16559d17148d837b4}} 
+static {\bfseries P\+R\+I\+N\+T\+F\+\_\+\+F\+O\+R\+M\+AT} (2, 3) void F\+Print(F\+I\+LE $\ast$out
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a2a636218497d7d88c88cdad2e6cc30d5}\label{classv8_1_1base_1_1OS_a2a636218497d7d88c88cdad2e6cc30d5}} 
+static const \mbox{\hyperlink{classchar}{char}} static {\bfseries P\+R\+I\+N\+T\+F\+\_\+\+F\+O\+R\+M\+AT} (2, 0) void V\+F\+Print(F\+I\+LE $\ast$out
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a60d63758e5e0110e020f240116e7bb6e}\label{classv8_1_1base_1_1OS_a60d63758e5e0110e020f240116e7bb6e}} 
+static {\bfseries P\+R\+I\+N\+T\+F\+\_\+\+F\+O\+R\+M\+AT} (1, 2) void Print\+Error(const \mbox{\hyperlink{classchar}{char}} $\ast$format
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_aafc23e67df04850d7dd3a3cb0c660b17}\label{classv8_1_1base_1_1OS_aafc23e67df04850d7dd3a3cb0c660b17}} 
+static static {\bfseries P\+R\+I\+N\+T\+F\+\_\+\+F\+O\+R\+M\+AT} (1, 0) void V\+Print\+Error(const \mbox{\hyperlink{classchar}{char}} $\ast$format
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a1e1f6886901ee75380b7f0514952ea2f}\label{classv8_1_1base_1_1OS_a1e1f6886901ee75380b7f0514952ea2f}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Lazy\+Commits} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a04656670e0be067dfe2a93bd2c809b7c}\label{classv8_1_1base_1_1OS_a04656670e0be067dfe2a93bd2c809b7c}} 
+static void {\bfseries Sleep} (\mbox{\hyperlink{classv8_1_1base_1_1TimeDelta}{Time\+Delta}} interval)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a3abddefa2e7ad8ab0628e6b44fad5a6b}\label{classv8_1_1base_1_1OS_a3abddefa2e7ad8ab0628e6b44fad5a6b}} 
+static void {\bfseries Abort} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_affd1b5cd2e2a82058f49432ffc5236e6}\label{classv8_1_1base_1_1OS_affd1b5cd2e2a82058f49432ffc5236e6}} 
+static void {\bfseries Debug\+Break} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_ab13f2ea1271ff3fb5ce240414f5a86f6}\label{classv8_1_1base_1_1OS_ab13f2ea1271ff3fb5ce240414f5a86f6}} 
+static {\bfseries P\+R\+I\+N\+T\+F\+\_\+\+F\+O\+R\+M\+AT} (3, 4) \mbox{\hyperlink{classint}{int}} S\+N\+PrintF(\mbox{\hyperlink{classchar}{char}} $\ast$str
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a7707c6d4774957b773ff8ee046912ffa}\label{classv8_1_1base_1_1OS_a7707c6d4774957b773ff8ee046912ffa}} 
+static \mbox{\hyperlink{classint}{int}} const \mbox{\hyperlink{classchar}{char}} static {\bfseries P\+R\+I\+N\+T\+F\+\_\+\+F\+O\+R\+M\+AT} (3, 0) \mbox{\hyperlink{classint}{int}} V\+S\+N\+PrintF(\mbox{\hyperlink{classchar}{char}} $\ast$str
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_abec10fefb549e2a4942a54f58a94c4bb}\label{classv8_1_1base_1_1OS_abec10fefb549e2a4942a54f58a94c4bb}} 
+static \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Str\+Chr} (\mbox{\hyperlink{classchar}{char}} $\ast$str, \mbox{\hyperlink{classint}{int}} c)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_aa2d5f71adc225182f5266fb2e4db2251}\label{classv8_1_1base_1_1OS_aa2d5f71adc225182f5266fb2e4db2251}} 
+static void {\bfseries Str\+N\+Cpy} (\mbox{\hyperlink{classchar}{char}} $\ast$dest, \mbox{\hyperlink{classint}{int}} length, const \mbox{\hyperlink{classchar}{char}} $\ast$src, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} n)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a9cf3746d7a51ec0026075a73469171bd}\label{classv8_1_1base_1_1OS_a9cf3746d7a51ec0026075a73469171bd}} 
+static std\+::vector$<$ \mbox{\hyperlink{structv8_1_1base_1_1OS_1_1SharedLibraryAddress}{Shared\+Library\+Address}} $>$ {\bfseries Get\+Shared\+Library\+Addresses} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a13338b78af444988376b9ea52903b1c4}\label{classv8_1_1base_1_1OS_a13338b78af444988376b9ea52903b1c4}} 
+static void {\bfseries Signal\+Code\+Moving\+GC} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a155958d2b20ee8b323dbc13cb496b981}\label{classv8_1_1base_1_1OS_a155958d2b20ee8b323dbc13cb496b981}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Arm\+Using\+Hard\+Float} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_ab5546854ab1604735a7ff8112651266a}\label{classv8_1_1base_1_1OS_ab5546854ab1604735a7ff8112651266a}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Activation\+Frame\+Alignment} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a885bdc89bb37ed241b7e312597ad831a}\label{classv8_1_1base_1_1OS_a885bdc89bb37ed241b7e312597ad831a}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Current\+Process\+Id} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_ab21ab688f2e6bcbeb2a40246967ec96f}\label{classv8_1_1base_1_1OS_ab21ab688f2e6bcbeb2a40246967ec96f}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Current\+Thread\+Id} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a287990fe7c0e39359181673f0da8a8cc}\label{classv8_1_1base_1_1OS_a287990fe7c0e39359181673f0da8a8cc}} 
+static void {\bfseries Exit\+Process} (\mbox{\hyperlink{classint}{int}} exit\+\_\+code)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a1a63277c4801c90d2f13e1ff1d4dea64}\label{classv8_1_1base_1_1OS_a1a63277c4801c90d2f13e1ff1d4dea64}} 
+static static va\+\_\+list {\bfseries args}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a2df245594e67255e3331276fb5bdb22d}\label{classv8_1_1base_1_1OS_a2df245594e67255e3331276fb5bdb22d}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries format}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_ad48be97874702511e157cb036a1e4828}\label{classv8_1_1base_1_1OS_ad48be97874702511e157cb036a1e4828}} 
+static const \mbox{\hyperlink{classchar}{char}} static const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries format}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a4f52cade227a1654c2113aa33af7f92b}\label{classv8_1_1base_1_1OS_a4f52cade227a1654c2113aa33af7f92b}} 
+static const \mbox{\hyperlink{classchar}{char}} static const \mbox{\hyperlink{classchar}{char}} va\+\_\+list {\bfseries args}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_adcf01466ae36305154d61c4b3e7ce924}\label{classv8_1_1base_1_1OS_adcf01466ae36305154d61c4b3e7ce924}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries length}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a2d3026206a49e6bb2cb4d09d57f86f33}\label{classv8_1_1base_1_1OS_a2d3026206a49e6bb2cb4d09d57f86f33}} 
+static \mbox{\hyperlink{classint}{int}} const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries format}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a03a7915adb5028d39c7155f64e5a48be}\label{classv8_1_1base_1_1OS_a03a7915adb5028d39c7155f64e5a48be}} 
+static \mbox{\hyperlink{classint}{int}} const \mbox{\hyperlink{classchar}{char}} static \mbox{\hyperlink{classint}{int}} {\bfseries length}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_affa1d7ab7b6beba461a75db9d789b72f}\label{classv8_1_1base_1_1OS_affa1d7ab7b6beba461a75db9d789b72f}} 
+static \mbox{\hyperlink{classint}{int}} const \mbox{\hyperlink{classchar}{char}} static \mbox{\hyperlink{classint}{int}} const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries format}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_aaee2d36cf44123a6191a520e702be6c7}\label{classv8_1_1base_1_1OS_aaee2d36cf44123a6191a520e702be6c7}} 
+static \mbox{\hyperlink{classint}{int}} const \mbox{\hyperlink{classchar}{char}} static \mbox{\hyperlink{classint}{int}} const \mbox{\hyperlink{classchar}{char}} va\+\_\+list {\bfseries args}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a4fee8706153911cacd3c3c58f17e49c6}\label{classv8_1_1base_1_1OS_a4fee8706153911cacd3c3c58f17e49c6}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$const {\bfseries Log\+File\+Open\+Mode} = \char`\"{}w\char`\"{}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_abb7fec618d8fdfb357903e5f30aed605}\label{classv8_1_1base_1_1OS_abb7fec618d8fdfb357903e5f30aed605}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Stack\+Walk\+Error} = -\/1
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a56a4e15bc8d825319f97c24c4f86c7ca}\label{classv8_1_1base_1_1OS_a56a4e15bc8d825319f97c24c4f86c7ca}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Stack\+Walk\+Max\+Name\+Len} = 256
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_ab2145f00362a85b3d6e1be7654d44774}\label{classv8_1_1base_1_1OS_ab2145f00362a85b3d6e1be7654d44774}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Stack\+Walk\+Max\+Text\+Len} = 256
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_aef5475229308093e4e94c5a41d93d01b}\label{classv8_1_1base_1_1OS_aef5475229308093e4e94c5a41d93d01b}} 
+class {\bfseries Memory\+Mapped\+File}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a04f12d0ce175fa7d323ae305cf7b73f2}\label{classv8_1_1base_1_1OS_a04f12d0ce175fa7d323ae305cf7b73f2}} 
+class {\bfseries Posix\+Memory\+Mapped\+File}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1OS_a82e6b639c5556d2c4805d007a8461191}\label{classv8_1_1base_1_1OS_a82e6b639c5556d2c4805d007a8461191}} 
+class {\bfseries v8\+::base\+::\+Page\+Allocator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 107 of file platform.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/base/platform/platform.\+h\item 
+v8/src/base/platform/platform-\/aix.\+cc\item 
+v8/src/base/platform/platform-\/cygwin.\+cc\item 
+v8/src/base/platform/platform-\/freebsd.\+cc\item 
+v8/src/base/platform/platform-\/fuchsia.\+cc\item 
+v8/src/base/platform/platform-\/linux.\+cc\item 
+v8/src/base/platform/platform-\/macos.\+cc\item 
+v8/src/base/platform/platform-\/openbsd.\+cc\item 
+v8/src/base/platform/platform-\/posix.\+cc\item 
+v8/src/base/platform/platform-\/qnx.\+cc\item 
+v8/src/base/platform/platform-\/solaris.\+cc\item 
+v8/src/base/platform/platform-\/win32.\+cc\end{DoxyCompactItemize}

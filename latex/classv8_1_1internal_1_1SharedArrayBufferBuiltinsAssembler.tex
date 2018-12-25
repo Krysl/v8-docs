@@ -1,0 +1,54 @@
+\hypertarget{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler}{}\section{v8\+:\+:internal\+:\+:Shared\+Array\+Buffer\+Builtins\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler}\index{v8\+::internal\+::\+Shared\+Array\+Buffer\+Builtins\+Assembler@{v8\+::internal\+::\+Shared\+Array\+Buffer\+Builtins\+Assembler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Shared\+Array\+Buffer\+Builtins\+Assembler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.837838cm]{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler_a4765a530375d3cfc81062c0238ea94ae}\label{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler_a4765a530375d3cfc81062c0238ea94ae}} 
+{\bfseries Shared\+Array\+Buffer\+Builtins\+Assembler} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerState}{compiler\+::\+Code\+Assembler\+State}} $\ast$state)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler_a89120b7950818a22809ecfc2083cdec6}\label{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler_a89120b7950818a22809ecfc2083cdec6}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$(Code\+Assembler\+::$\ast$ {\bfseries Assembler\+Function}) (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$base, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$offset, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$value, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$value\+\_\+high)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler_aafc61e258bff6133bca940758eb45acd}\label{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler_aafc61e258bff6133bca940758eb45acd}} 
+void {\bfseries Validate\+Shared\+Typed\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$tagged, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$$\ast$out\+\_\+instance\+\_\+type, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$$\ast$out\+\_\+backing\+\_\+store)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler_ae9581b3c8b2318fbb11e60fb56eec50a}\label{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler_ae9581b3c8b2318fbb11e60fb56eec50a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Convert\+Tagged\+Atomic\+Index\+To\+Word32} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$tagged, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$$\ast$number\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler_aece102f5ae6d37be9742508007ee03c2}\label{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler_aece102f5ae6d37be9742508007ee03c2}} 
+void {\bfseries Validate\+Atomic\+Index} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$array, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$index\+\_\+word, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler_a2df2f27f4d1afa997f0ab17ee3c615da}\label{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler_a2df2f27f4d1afa997f0ab17ee3c615da}} 
+void {\bfseries Atomic\+Binop\+Builtin\+Common} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$array, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$value, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, Assembler\+Function function, Runtime\+::\+Function\+Id runtime\+\_\+function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler_abc1a49c97cb450c866a7bfa32e1cd45f}\label{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler_abc1a49c97cb450c866a7bfa32e1cd45f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Big\+Int\+From\+Signed64} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$signed64)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler_a82f02871ee313ebe1b37984c6879b8cf}\label{classv8_1_1internal_1_1SharedArrayBufferBuiltinsAssembler_a82f02871ee313ebe1b37984c6879b8cf}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Big\+Int\+From\+Unsigned64} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$unsigned64)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file builtins-\/sharedarraybuffer-\/gen.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/builtins/builtins-\/sharedarraybuffer-\/gen.\+cc\end{DoxyCompactItemize}

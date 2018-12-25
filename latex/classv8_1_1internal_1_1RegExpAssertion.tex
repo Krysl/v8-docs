@@ -1,0 +1,70 @@
+\hypertarget{classv8_1_1internal_1_1RegExpAssertion}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Assertion Class Reference}
+\label{classv8_1_1internal_1_1RegExpAssertion}\index{v8\+::internal\+::\+Reg\+Exp\+Assertion@{v8\+::internal\+::\+Reg\+Exp\+Assertion}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Reg\+Exp\+Assertion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1RegExpAssertion}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpAssertion_a726548397a09020b1228fdfa4f410c29}\label{classv8_1_1internal_1_1RegExpAssertion_a726548397a09020b1228fdfa4f410c29}} 
+enum {\bfseries Assertion\+Type} \{ \newline
+{\bfseries S\+T\+A\+R\+T\+\_\+\+O\+F\+\_\+\+L\+I\+NE}, 
+{\bfseries S\+T\+A\+R\+T\+\_\+\+O\+F\+\_\+\+I\+N\+P\+UT}, 
+{\bfseries E\+N\+D\+\_\+\+O\+F\+\_\+\+L\+I\+NE}, 
+{\bfseries E\+N\+D\+\_\+\+O\+F\+\_\+\+I\+N\+P\+UT}, 
+\newline
+{\bfseries B\+O\+U\+N\+D\+A\+RY}, 
+{\bfseries N\+O\+N\+\_\+\+B\+O\+U\+N\+D\+A\+RY}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpAssertion_afe41c616ea992de0c1170dd80f72bc10}\label{classv8_1_1internal_1_1RegExpAssertion_afe41c616ea992de0c1170dd80f72bc10}} 
+{\bfseries Reg\+Exp\+Assertion} (Assertion\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{J\+S\+Reg\+Exp\+::\+Flags}} flags)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpAssertion_a0606f394e1699af2dbbb8d72a466d066}\label{classv8_1_1internal_1_1RegExpAssertion_a0606f394e1699af2dbbb8d72a466d066}} 
+void $\ast$ {\bfseries Accept} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpVisitor}{Reg\+Exp\+Visitor}} $\ast$visitor, void $\ast$data) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpAssertion_a6fbe8b61b97d9cc28bbc5d015b55e8ba}\label{classv8_1_1internal_1_1RegExpAssertion_a6fbe8b61b97d9cc28bbc5d015b55e8ba}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ {\bfseries To\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpAssertion_a6ecb119f925edc2e456428efb6542e7d}\label{classv8_1_1internal_1_1RegExpAssertion_a6ecb119f925edc2e456428efb6542e7d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpAssertion}{Reg\+Exp\+Assertion}} $\ast$ {\bfseries As\+Assertion} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpAssertion_aab40f853b6b7862af64c12b6b10f9ef5}\label{classv8_1_1internal_1_1RegExpAssertion_aab40f853b6b7862af64c12b6b10f9ef5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Assertion} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpAssertion_a90ad621f84e8eabd1ecb43999897f5df}\label{classv8_1_1internal_1_1RegExpAssertion_a90ad621f84e8eabd1ecb43999897f5df}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Anchored\+At\+Start} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpAssertion_a4f6c10ba865665f43d18bf7177a1fec2}\label{classv8_1_1internal_1_1RegExpAssertion_a4f6c10ba865665f43d18bf7177a1fec2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Anchored\+At\+End} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpAssertion_af6541c01d316e53a10095a4a2c88bdec}\label{classv8_1_1internal_1_1RegExpAssertion_af6541c01d316e53a10095a4a2c88bdec}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries min\+\_\+match} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpAssertion_a67392097713d7e6c4b68cc596877e165}\label{classv8_1_1internal_1_1RegExpAssertion_a67392097713d7e6c4b68cc596877e165}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries max\+\_\+match} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpAssertion_a2cd52eb460d7c3108f58e6584cf683ad}\label{classv8_1_1internal_1_1RegExpAssertion_a2cd52eb460d7c3108f58e6584cf683ad}} 
+Assertion\+Type {\bfseries assertion\+\_\+type} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 265 of file regexp-\/ast.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/regexp-\/ast.\+h\item 
+v8/src/regexp/jsregexp.\+cc\item 
+v8/src/regexp/regexp-\/ast.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\hypertarget{classv8_1_1internal_1_1BigIntBase}{}\section{v8\+:\+:internal\+:\+:Big\+Int\+Base Class Reference}
+\label{classv8_1_1internal_1_1BigIntBase}\index{v8\+::internal\+::\+Big\+Int\+Base@{v8\+::internal\+::\+Big\+Int\+Base}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Big\+Int\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1BigIntBase}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1BigIntBase_1_1LengthBits}{Length\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1BigIntBase_1_1SignBits}{Sign\+Bits}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigIntBase_a97ca3f51c3cc5f7e4089ce884c4a05cc}\label{classv8_1_1internal_1_1BigIntBase_a97ca3f51c3cc5f7e4089ce884c4a05cc}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries length} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigIntBase_ae833ffb5b9fad1a8cdb2016c7f594639}\label{classv8_1_1internal_1_1BigIntBase_ae833ffb5b9fad1a8cdb2016c7f594639}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries synchronized\+\_\+length} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigIntBase_a869c82b9f16302637fa02d875c418156}\label{classv8_1_1internal_1_1BigIntBase_a869c82b9f16302637fa02d875c418156}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Max\+Length$<$=((1$<$$<$ k\+Length\+Field\+Bits) -\/ 1))
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigIntBase_a939866012f3854c76221480a386fec36}\label{classv8_1_1internal_1_1BigIntBase_a939866012f3854c76221480a386fec36}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Length\+Bits\+::k\+Next$<$=32)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigIntBase_add1f8c646b2fb78ca6e5a2cdc3402863}\label{classv8_1_1internal_1_1BigIntBase_add1f8c646b2fb78ca6e5a2cdc3402863}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Length\+Bits} = k\+Max\+Int -\/ k\+Pointer\+Size $\ast$ k\+Bits\+Per\+Byte -\/ 1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigIntBase_a767057ea1a716061139729ebf700364b}\label{classv8_1_1internal_1_1BigIntBase_a767057ea1a716061139729ebf700364b}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Length} = k\+Max\+Length\+Bits / (k\+Pointer\+Size $\ast$ k\+Bits\+Per\+Byte)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigIntBase_a1976a48e4f5d807723e5cdca7643720e}\label{classv8_1_1internal_1_1BigIntBase_a1976a48e4f5d807723e5cdca7643720e}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Length\+Field\+Bits} = 30
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigIntBase_aaf5af2e75773d224c9a875c4558061f2}\label{classv8_1_1internal_1_1BigIntBase_aaf5af2e75773d224c9a875c4558061f2}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Bitfield\+Offset} = Heap\+Object\+::k\+Header\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigIntBase_a25344da305756c81f98ea88d958b61a4}\label{classv8_1_1internal_1_1BigIntBase_a25344da305756c81f98ea88d958b61a4}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Digits\+Offset} = k\+Bitfield\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigIntBase_aca984448e6370ec67beab030e79bb06e}\label{classv8_1_1internal_1_1BigIntBase_aca984448e6370ec67beab030e79bb06e}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Header\+Size} = k\+Digits\+Offset
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigIntBase_aff3b291dd1446db56aa682a943b4d2e3}\label{classv8_1_1internal_1_1BigIntBase_aff3b291dd1446db56aa682a943b4d2e3}} 
+class {\bfseries \+::v8\+::internal\+::\+Big\+Int}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigIntBase_a7f815bd8712ef8864bfc57d18e85e032}\label{classv8_1_1internal_1_1BigIntBase_a7f815bd8712ef8864bfc57d18e85e032}} 
+class {\bfseries Mutable\+Big\+Int}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file bigint.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/bigint.\+h\end{DoxyCompactItemize}

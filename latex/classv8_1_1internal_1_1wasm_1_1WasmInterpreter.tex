@@ -1,0 +1,84 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Interpreter Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter}\index{v8\+::internal\+::wasm\+::\+Wasm\+Interpreter@{v8\+::internal\+::wasm\+::\+Wasm\+Interpreter}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread}{Thread}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_a3b8474c4efe284e1355383cc20ef971d}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_a3b8474c4efe284e1355383cc20ef971d}} 
+enum {\bfseries State} \{ \newline
+{\bfseries S\+T\+O\+P\+P\+ED}, 
+{\bfseries R\+U\+N\+N\+I\+NG}, 
+{\bfseries P\+A\+U\+S\+ED}, 
+{\bfseries F\+I\+N\+I\+S\+H\+ED}, 
+\newline
+{\bfseries T\+R\+A\+P\+P\+ED}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_ad4aae87f7e6bc8a943c97c2362937e04}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_ad4aae87f7e6bc8a943c97c2362937e04}} 
+enum {\bfseries Break\+Flag} \+: uint8\+\_\+t \{ {\bfseries None} = 0, 
+{\bfseries After\+Return} = 1 $<$$<$ 0, 
+{\bfseries After\+Call} = 1 $<$$<$ 1
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_a1794de09cafc495438a00633765b8532}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_a1794de09cafc495438a00633765b8532}} 
+using {\bfseries Frame\+Ptr} = std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1InterpretedFrame}{Interpreted\+Frame}}, \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1InterpretedFrameDeleter}{Interpreted\+Frame\+Deleter}} $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_adbef8a2505ba8a4e3943679c00688486}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_adbef8a2505ba8a4e3943679c00688486}} 
+{\bfseries Wasm\+Interpreter} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{Wasm\+Module}} $\ast$module, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1ModuleWireBytes}{Module\+Wire\+Bytes}} \&wire\+\_\+bytes, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmInstanceObject}{Wasm\+Instance\+Object}} $>$ instance)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_a8c21ea0823c606ceb8679c627739f06e}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_a8c21ea0823c606ceb8679c627739f06e}} 
+void {\bfseries Run} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_ac0e46b69b536edfb2ad798e044c23d31}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_ac0e46b69b536edfb2ad798e044c23d31}} 
+void {\bfseries Pause} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_a5a76092285a19cebd60c0f384617f8f7}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_a5a76092285a19cebd60c0f384617f8f7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Set\+Breakpoint} (const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFunction}{Wasm\+Function}} $\ast$function, \mbox{\hyperlink{classsize__t}{pc\+\_\+t}} pc, \mbox{\hyperlink{classbool}{bool}} enabled)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_a64a21df63044a1d7bbb48ec2275e83c8}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_a64a21df63044a1d7bbb48ec2275e83c8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Get\+Breakpoint} (const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFunction}{Wasm\+Function}} $\ast$function, \mbox{\hyperlink{classsize__t}{pc\+\_\+t}} pc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_acd5766f06b240a8e6e8d3639ed74946f}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_acd5766f06b240a8e6e8d3639ed74946f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Set\+Tracing} (const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFunction}{Wasm\+Function}} $\ast$function, \mbox{\hyperlink{classbool}{bool}} enabled)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_a2112068287675168978119a66852311c}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_a2112068287675168978119a66852311c}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Thread\+Count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_aec6d2dcd43f600dfb96e55d0f20c9071}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_aec6d2dcd43f600dfb96e55d0f20c9071}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_1_1Thread}{Thread}} $\ast$ {\bfseries Get\+Thread} (\mbox{\hyperlink{classint}{int}} id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_a0a7a5f67ec2572b02d8eb922419384e1}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_a0a7a5f67ec2572b02d8eb922419384e1}} 
+void {\bfseries Add\+Function\+For\+Testing} (const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFunction}{Wasm\+Function}} $\ast$function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_a6143b60fdd8722e1a831a9511218a173}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_a6143b60fdd8722e1a831a9511218a173}} 
+void {\bfseries Set\+Function\+Code\+For\+Testing} (const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFunction}{Wasm\+Function}} $\ast$function, const byte $\ast$start, const byte $\ast$end)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_ae92c5d911adc718652b9f369e0391e47}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_ae92c5d911adc718652b9f369e0391e47}} 
+void {\bfseries Set\+Call\+Indirect\+Test\+Mode} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_ab04cf07bde3bed727c4c9e4816881911}\label{classv8_1_1internal_1_1wasm_1_1WasmInterpreter_ab04cf07bde3bed727c4c9e4816881911}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ZoneMap}{Control\+Transfer\+Map}} {\bfseries Compute\+Control\+Transfers\+For\+Testing} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{Wasm\+Module}} $\ast$module, const byte $\ast$start, const byte $\ast$end)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 85 of file wasm-\/interpreter.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/wasm-\/interpreter.\+h\item 
+v8/src/wasm/wasm-\/interpreter.\+cc\end{DoxyCompactItemize}

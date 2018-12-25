@@ -1,0 +1,76 @@
+\hypertarget{classv8_1_1internal_1_1ProfileNode}{}\section{v8\+:\+:internal\+:\+:Profile\+Node Class Reference}
+\label{classv8_1_1internal_1_1ProfileNode}\index{v8\+::internal\+::\+Profile\+Node@{v8\+::internal\+::\+Profile\+Node}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_a785b81d8926be1218eb07b398d3cbd44}\label{classv8_1_1internal_1_1ProfileNode_a785b81d8926be1218eb07b398d3cbd44}} 
+{\bfseries Profile\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1ProfileTree}{Profile\+Tree}} $\ast$tree, \mbox{\hyperlink{classv8_1_1internal_1_1CodeEntry}{Code\+Entry}} $\ast$entry, \mbox{\hyperlink{classv8_1_1internal_1_1ProfileNode}{Profile\+Node}} $\ast$parent, \mbox{\hyperlink{classint}{int}} line\+\_\+number=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_aadd62ffa8b431134ace6b04909a5602e}\label{classv8_1_1internal_1_1ProfileNode_aadd62ffa8b431134ace6b04909a5602e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ProfileNode}{Profile\+Node}} $\ast$ {\bfseries Find\+Child} (\mbox{\hyperlink{classv8_1_1internal_1_1CodeEntry}{Code\+Entry}} $\ast$entry, \mbox{\hyperlink{classint}{int}} line\+\_\+number=v8\+::\+Cpu\+Profile\+Node\+::k\+No\+Line\+Number\+Info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_a75cbdc06b4117fcce3cd9bddc106b9bd}\label{classv8_1_1internal_1_1ProfileNode_a75cbdc06b4117fcce3cd9bddc106b9bd}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ProfileNode}{Profile\+Node}} $\ast$ {\bfseries Find\+Or\+Add\+Child} (\mbox{\hyperlink{classv8_1_1internal_1_1CodeEntry}{Code\+Entry}} $\ast$entry, \mbox{\hyperlink{classint}{int}} line\+\_\+number=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_a651b8b8c09b8a8dda1acb22d41bebd09}\label{classv8_1_1internal_1_1ProfileNode_a651b8b8c09b8a8dda1acb22d41bebd09}} 
+void {\bfseries Increment\+Self\+Ticks} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_af4feb4a8fec76e8bc6d0426ae261bb0c}\label{classv8_1_1internal_1_1ProfileNode_af4feb4a8fec76e8bc6d0426ae261bb0c}} 
+void {\bfseries Increase\+Self\+Ticks} (\mbox{\hyperlink{classunsigned}{unsigned}} amount)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_a778b6f214de8367560f62a963fad3d37}\label{classv8_1_1internal_1_1ProfileNode_a778b6f214de8367560f62a963fad3d37}} 
+void {\bfseries Increment\+Line\+Ticks} (\mbox{\hyperlink{classint}{int}} src\+\_\+line)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_a034224a00f654afc4b33262cd46d3fb6}\label{classv8_1_1internal_1_1ProfileNode_a034224a00f654afc4b33262cd46d3fb6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CodeEntry}{Code\+Entry}} $\ast$ {\bfseries entry} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_a60efca09718668796c648fa5b791f41b}\label{classv8_1_1internal_1_1ProfileNode_a60efca09718668796c648fa5b791f41b}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries self\+\_\+ticks} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_a4a8728bb0f53a2809b8d1e77bb2e0799}\label{classv8_1_1internal_1_1ProfileNode_a4a8728bb0f53a2809b8d1e77bb2e0799}} 
+const std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ProfileNode}{Profile\+Node}} $\ast$ $>$ $\ast$ {\bfseries children} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_a90201f7197ceaa18d490e6d54207f8d1}\label{classv8_1_1internal_1_1ProfileNode_a90201f7197ceaa18d490e6d54207f8d1}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_a47a34ba7366dcbf6a38fa4e185776d08}\label{classv8_1_1internal_1_1ProfileNode_a47a34ba7366dcbf6a38fa4e185776d08}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries function\+\_\+id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_acfbfeca70506178e2c05d25f87d3e346}\label{classv8_1_1internal_1_1ProfileNode_acfbfeca70506178e2c05d25f87d3e346}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ProfileNode}{Profile\+Node}} $\ast$ {\bfseries parent} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_a68833560ccc4e4c6dc4c022afb268f09}\label{classv8_1_1internal_1_1ProfileNode_a68833560ccc4e4c6dc4c022afb268f09}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries line\+\_\+number} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_a5fa218dea61d8211cf55b935f25f36d3}\label{classv8_1_1internal_1_1ProfileNode_a5fa218dea61d8211cf55b935f25f36d3}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Hit\+Line\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_a869fb932c05c6a408ab54e48cfa1248e}\label{classv8_1_1internal_1_1ProfileNode_a869fb932c05c6a408ab54e48cfa1248e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Get\+Line\+Ticks} (\mbox{\hyperlink{structv8_1_1CpuProfileNode_1_1LineTick}{v8\+::\+Cpu\+Profile\+Node\+::\+Line\+Tick}} $\ast$entries, \mbox{\hyperlink{classunsigned}{unsigned}} \mbox{\hyperlink{classint}{int}} length) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_aef32ed3f614d3be0712f5386532bd62b}\label{classv8_1_1internal_1_1ProfileNode_aef32ed3f614d3be0712f5386532bd62b}} 
+void {\bfseries Collect\+Deopt\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1CodeEntry}{Code\+Entry}} $\ast$entry)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_a19c05d119643b6f6ddfe35e96628a075}\label{classv8_1_1internal_1_1ProfileNode_a19c05d119643b6f6ddfe35e96628a075}} 
+const std\+::vector$<$ \mbox{\hyperlink{structv8_1_1CpuProfileDeoptInfo}{Cpu\+Profile\+Deopt\+Info}} $>$ \& {\bfseries deopt\+\_\+infos} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_a8649e45e8c47b9b5cb6cbadfed5d4ae5}\label{classv8_1_1internal_1_1ProfileNode_a8649e45e8c47b9b5cb6cbadfed5d4ae5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileNode_a197b95750e6a2103f6b2f87128b84b39}\label{classv8_1_1internal_1_1ProfileNode_a197b95750e6a2103f6b2f87128b84b39}} 
+void {\bfseries Print} (\mbox{\hyperlink{classint}{int}} indent)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 200 of file profile-\/generator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/profile-\/generator.\+h\item 
+v8/src/profiler/profile-\/generator-\/inl.\+h\item 
+v8/src/profiler/profile-\/generator.\+cc\end{DoxyCompactItemize}

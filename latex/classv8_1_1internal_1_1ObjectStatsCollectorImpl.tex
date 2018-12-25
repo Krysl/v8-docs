@@ -1,0 +1,45 @@
+\hypertarget{classv8_1_1internal_1_1ObjectStatsCollectorImpl}{}\section{v8\+:\+:internal\+:\+:Object\+Stats\+Collector\+Impl Class Reference}
+\label{classv8_1_1internal_1_1ObjectStatsCollectorImpl}\index{v8\+::internal\+::\+Object\+Stats\+Collector\+Impl@{v8\+::internal\+::\+Object\+Stats\+Collector\+Impl}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStatsCollectorImpl_acfa7d5c7ab3ac4dbd027c986730a85cf}\label{classv8_1_1internal_1_1ObjectStatsCollectorImpl_acfa7d5c7ab3ac4dbd027c986730a85cf}} 
+enum {\bfseries Phase} \{ {\bfseries k\+Phase1}, 
+{\bfseries k\+Phase2}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStatsCollectorImpl_a4ca8b75bfc0a8803354f7419ac605c91}\label{classv8_1_1internal_1_1ObjectStatsCollectorImpl_a4ca8b75bfc0a8803354f7419ac605c91}} 
+enum {\bfseries Collect\+Field\+Stats} \{ {\bfseries k\+No}, 
+{\bfseries k\+Yes}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStatsCollectorImpl_a5400ffa3965ec12e451443e9ddb1529d}\label{classv8_1_1internal_1_1ObjectStatsCollectorImpl_a5400ffa3965ec12e451443e9ddb1529d}} 
+{\bfseries Object\+Stats\+Collector\+Impl} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectStats}{Object\+Stats}} $\ast$stats)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStatsCollectorImpl_a54e924df78e66dc193a8bbf2cab34371}\label{classv8_1_1internal_1_1ObjectStatsCollectorImpl_a54e924df78e66dc193a8bbf2cab34371}} 
+void {\bfseries Collect\+Global\+Statistics} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStatsCollectorImpl_ac7444d6ec430bb18dc09a2153ce73ee4}\label{classv8_1_1internal_1_1ObjectStatsCollectorImpl_ac7444d6ec430bb18dc09a2153ce73ee4}} 
+void {\bfseries Collect\+Statistics} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$obj, Phase phase, Collect\+Field\+Stats collect\+\_\+field\+\_\+stats)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStatsCollectorImpl_a65b0dc5c10e855868618234568ce9638}\label{classv8_1_1internal_1_1ObjectStatsCollectorImpl_a65b0dc5c10e855868618234568ce9638}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Number\+Of\+Phases} = k\+Phase2 + 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 320 of file object-\/stats.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/object-\/stats.\+cc\end{DoxyCompactItemize}

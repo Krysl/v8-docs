@@ -1,0 +1,165 @@
+\hypertarget{classv8_1_1internal_1_1BigInt}{}\section{v8\+:\+:internal\+:\+:Big\+Int Class Reference}
+\label{classv8_1_1internal_1_1BigInt}\index{v8\+::internal\+::\+Big\+Int@{v8\+::internal\+::\+Big\+Int}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Big\+Int\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1BigInt}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1BigInt_1_1BodyDescriptor}{Body\+Descriptor}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a9a1646f29fdc3c92d223a1ad46d3c282}\label{classv8_1_1internal_1_1BigInt_a9a1646f29fdc3c92d223a1ad46d3c282}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries To\+Boolean} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a5571b054ddb0b1cefe7b11312795c805}\label{classv8_1_1internal_1_1BigInt_a5571b054ddb0b1cefe7b11312795c805}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Hash} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a057c028277687dce2c2d8ef45b292359}\label{classv8_1_1internal_1_1BigInt_a057c028277687dce2c2d8ef45b292359}} 
+\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} {\bfseries As\+Int64} (\mbox{\hyperlink{classbool}{bool}} $\ast$lossless=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_adc126d4a907861d07704fe1e43b3c5a8}\label{classv8_1_1internal_1_1BigInt_adc126d4a907861d07704fe1e43b3c5a8}} 
+uint64\+\_\+t {\bfseries As\+Uint64} (\mbox{\hyperlink{classbool}{bool}} $\ast$lossless=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a9b1c7b72c86e46cdc0fea6b737598fa3}\label{classv8_1_1internal_1_1BigInt_a9b1c7b72c86e46cdc0fea6b737598fa3}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Words64\+Count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_ab0e7a4b3be15ad1b0efae339f4888fd0}\label{classv8_1_1internal_1_1BigInt_ab0e7a4b3be15ad1b0efae339f4888fd0}} 
+void {\bfseries To\+Words\+Array64} (\mbox{\hyperlink{classint}{int}} $\ast$sign\+\_\+bit, \mbox{\hyperlink{classint}{int}} $\ast$words64\+\_\+count, uint64\+\_\+t $\ast$words)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_aa373f8aecc298760f6af6b8431c2f70a}\label{classv8_1_1internal_1_1BigInt_aa373f8aecc298760f6af6b8431c2f70a}} 
+void {\bfseries Big\+Int\+Short\+Print} (std\+::ostream \&os)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_ab9b3c6eefd7d6def6ee31e1db26bd505}\label{classv8_1_1internal_1_1BigInt_ab9b3c6eefd7d6def6ee31e1db26bd505}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Unary\+Minus} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a4ba27849e7a620587856f0ea2547a8b5}\label{classv8_1_1internal_1_1BigInt_a4ba27849e7a620587856f0ea2547a8b5}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Bitwise\+Not} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a6b08b4c1e80fec1f561f62d8a71e4242}\label{classv8_1_1internal_1_1BigInt_a6b08b4c1e80fec1f561f62d8a71e4242}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Exponentiate} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ base, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ exponent)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a373a079bfadcc7756dfdfe0a9371e016}\label{classv8_1_1internal_1_1BigInt_a373a079bfadcc7756dfdfe0a9371e016}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Multiply} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a927a4f10f05a4bf7c1cfb6e06ef08901}\label{classv8_1_1internal_1_1BigInt_a927a4f10f05a4bf7c1cfb6e06ef08901}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Divide} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_aba18491c9d8af052a5b7476326a08d84}\label{classv8_1_1internal_1_1BigInt_aba18491c9d8af052a5b7476326a08d84}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Remainder} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a8392d949edb5e319d2f66567d904e419}\label{classv8_1_1internal_1_1BigInt_a8392d949edb5e319d2f66567d904e419}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Add} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_aa323e7cca62d378bfbbe06d496a43752}\label{classv8_1_1internal_1_1BigInt_aa323e7cca62d378bfbbe06d496a43752}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Subtract} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a8544b57c766ce15653fe12fff8d966c4}\label{classv8_1_1internal_1_1BigInt_a8544b57c766ce15653fe12fff8d966c4}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Left\+Shift} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a0ebbd1f9a83c1d206bd6a27fa4ba7898}\label{classv8_1_1internal_1_1BigInt_a0ebbd1f9a83c1d206bd6a27fa4ba7898}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Signed\+Right\+Shift} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a36b4fbf2c9302b843c47f4572a00557b}\label{classv8_1_1internal_1_1BigInt_a36b4fbf2c9302b843c47f4572a00557b}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Unsigned\+Right\+Shift} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a19424e070ff8e5be9e3c163bb75831eb}\label{classv8_1_1internal_1_1BigInt_a19424e070ff8e5be9e3c163bb75831eb}} 
+static Comparison\+Result {\bfseries Compare\+To\+Big\+Int} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_af7c3b5c3e6c0ac8303d66a5d5d5e2e6b}\label{classv8_1_1internal_1_1BigInt_af7c3b5c3e6c0ac8303d66a5d5d5e2e6b}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Equal\+To\+Big\+Int} (\mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $\ast$x, \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $\ast$y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_ad90763f64772e8638feeab79c4d7701c}\label{classv8_1_1internal_1_1BigInt_ad90763f64772e8638feeab79c4d7701c}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Bitwise\+And} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_ad160892e5c4b771a469dddd28a62b42f}\label{classv8_1_1internal_1_1BigInt_ad160892e5c4b771a469dddd28a62b42f}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Bitwise\+Xor} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a522daf96af4cd0f9cdd19ff5399fc1f0}\label{classv8_1_1internal_1_1BigInt_a522daf96af4cd0f9cdd19ff5399fc1f0}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Bitwise\+Or} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a4bdb2a187ca74ce2d515d31695e39f5c}\label{classv8_1_1internal_1_1BigInt_a4bdb2a187ca74ce2d515d31695e39f5c}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Increment} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_af95c19873bcd404aec5d20d8e5dd4a2d}\label{classv8_1_1internal_1_1BigInt_af95c19873bcd404aec5d20d8e5dd4a2d}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Decrement} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a315ec21c483dcfcd1c98e02b0fedea9a}\label{classv8_1_1internal_1_1BigInt_a315ec21c483dcfcd1c98e02b0fedea9a}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Equal\+To\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a2927d5f7222951f5a8afa374dc5fe080}\label{classv8_1_1internal_1_1BigInt_a2927d5f7222951f5a8afa374dc5fe080}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Equal\+To\+Number} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_afeb9e88c2fbfc5e49332482ffddedbff}\label{classv8_1_1internal_1_1BigInt_afeb9e88c2fbfc5e49332482ffddedbff}} 
+static Comparison\+Result {\bfseries Compare\+To\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a731216c3539d455b5ff6a7f28ee5cc08}\label{classv8_1_1internal_1_1BigInt_a731216c3539d455b5ff6a7f28ee5cc08}} 
+static Comparison\+Result {\bfseries Compare\+To\+Number} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a681f6355319a36f0f617d2ff006ee5d5}\label{classv8_1_1internal_1_1BigInt_a681f6355319a36f0f617d2ff006ee5d5}} 
+static Comparison\+Result {\bfseries Compare\+To\+Double} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x, double y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_aa6134775b820094609c322e8a488477a}\label{classv8_1_1internal_1_1BigInt_aa6134775b820094609c322e8a488477a}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries As\+IntN} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, uint64\+\_\+t n, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a6e46f286fd7d5f7c3109265d9bedf42a}\label{classv8_1_1internal_1_1BigInt_a6e46f286fd7d5f7c3109265d9bedf42a}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries As\+UintN} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, uint64\+\_\+t n, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a92f1266cb08a3cb5f75b768e474943a1}\label{classv8_1_1internal_1_1BigInt_a92f1266cb08a3cb5f75b768e474943a1}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries From\+Int64} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint64__t}{int64\+\_\+t}} n)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a7df25eb1750797b26ce9588754f919c3}\label{classv8_1_1internal_1_1BigInt_a7df25eb1750797b26ce9588754f919c3}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries From\+Uint64} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, uint64\+\_\+t n)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_aeabcd1e06ea0d8c1e330df4858ac86ef}\label{classv8_1_1internal_1_1BigInt_aeabcd1e06ea0d8c1e330df4858ac86ef}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries From\+Words64} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} sign\+\_\+bit, \mbox{\hyperlink{classint}{int}} words64\+\_\+count, const uint64\+\_\+t $\ast$words)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a026cc7ab0f7fdf88734bb60bcb770c8a}\label{classv8_1_1internal_1_1BigInt_a026cc7ab0f7fdf88734bb60bcb770c8a}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Size\+For} (\mbox{\hyperlink{classint}{int}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_abddf48eb621c0b26b81545911ba243cb}\label{classv8_1_1internal_1_1BigInt_abddf48eb621c0b26b81545911ba243cb}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries To\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ bigint, \mbox{\hyperlink{classint}{int}} radix=10, Should\+Throw should\+\_\+throw=k\+Throw\+On\+Error)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_ae05ddc4fbfa9fc820c13fd192663f39d}\label{classv8_1_1internal_1_1BigInt_ae05ddc4fbfa9fc820c13fd192663f39d}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries To\+Number} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ x)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a2faa6ede8f2a5649cd7eea80e9e732ca}\label{classv8_1_1internal_1_1BigInt_a2faa6ede8f2a5649cd7eea80e9e732ca}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries From\+Number} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_aaf6b78ba3d9b32d57042368c2512c512}\label{classv8_1_1internal_1_1BigInt_aaf6b78ba3d9b32d57042368c2512c512}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries From\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ obj)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a824a6e9897dbc421f5f723b52794ee4f}\label{classv8_1_1internal_1_1BigInt_a824a6e9897dbc421f5f723b52794ee4f}} 
+class {\bfseries String\+To\+Big\+Int\+Helper}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_af0a555a8d5a1b2db6b416af6d4da4454}\label{classv8_1_1internal_1_1BigInt_af0a555a8d5a1b2db6b416af6d4da4454}} 
+class {\bfseries Value\+Deserializer}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BigInt_a5793d9b5b7bb3d1e2e305bc9e4ac0884}\label{classv8_1_1internal_1_1BigInt_a5793d9b5b7bb3d1e2e305bc9e4ac0884}} 
+class {\bfseries Value\+Serializer}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 104 of file bigint.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/bigint.\+h\item 
+v8/src/objects/bigint.\+cc\end{DoxyCompactItemize}

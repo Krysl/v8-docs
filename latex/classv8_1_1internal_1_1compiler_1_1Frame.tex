@@ -1,0 +1,66 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1Frame}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Frame Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1Frame}\index{v8\+::internal\+::compiler\+::\+Frame@{v8\+::internal\+::compiler\+::\+Frame}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Frame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1Frame}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Frame_a14a536ee3a23a553cb93e15d21dd1502}\label{classv8_1_1internal_1_1compiler_1_1Frame_a14a536ee3a23a553cb93e15d21dd1502}} 
+{\bfseries Frame} (\mbox{\hyperlink{classint}{int}} fixed\+\_\+frame\+\_\+size\+\_\+in\+\_\+slots)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Frame_a2384e11dcff01ac245ba0e8913111a30}\label{classv8_1_1internal_1_1compiler_1_1Frame_a2384e11dcff01ac245ba0e8913111a30}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Total\+Frame\+Slot\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Frame_a8b9a178897cd90a701389188e30134b6}\label{classv8_1_1internal_1_1compiler_1_1Frame_a8b9a178897cd90a701389188e30134b6}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Fixed\+Slot\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Frame_a41fffd14b525647b45c9fd83b7aadf15}\label{classv8_1_1internal_1_1compiler_1_1Frame_a41fffd14b525647b45c9fd83b7aadf15}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Spill\+Slot\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Frame_a46d799aa20249e625c9330d0f6fbd011}\label{classv8_1_1internal_1_1compiler_1_1Frame_a46d799aa20249e625c9330d0f6fbd011}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Return\+Slot\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Frame_a0d49fa15e4d05e9d3733d34ce3afee32}\label{classv8_1_1internal_1_1compiler_1_1Frame_a0d49fa15e4d05e9d3733d34ce3afee32}} 
+void {\bfseries Set\+Allocated\+Registers} (\mbox{\hyperlink{classv8_1_1internal_1_1BitVector}{Bit\+Vector}} $\ast$regs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Frame_a6d2f8cefe32fe80c3052dfbf538b75dd}\label{classv8_1_1internal_1_1compiler_1_1Frame_a6d2f8cefe32fe80c3052dfbf538b75dd}} 
+void {\bfseries Set\+Allocated\+Double\+Registers} (\mbox{\hyperlink{classv8_1_1internal_1_1BitVector}{Bit\+Vector}} $\ast$regs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Frame_afb1cd3f18d1b370a1cb532bdc82f26b0}\label{classv8_1_1internal_1_1compiler_1_1Frame_afb1cd3f18d1b370a1cb532bdc82f26b0}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Did\+Allocate\+Double\+Registers} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Frame_addcec30d9bd94de8f64e507d0c61e91d}\label{classv8_1_1internal_1_1compiler_1_1Frame_addcec30d9bd94de8f64e507d0c61e91d}} 
+void {\bfseries Align\+Saved\+Callee\+Register\+Slots} (\mbox{\hyperlink{classint}{int}} alignment=k\+Double\+Size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Frame_a4e64d39cd47e6a1761f353367648a6e0}\label{classv8_1_1internal_1_1compiler_1_1Frame_a4e64d39cd47e6a1761f353367648a6e0}} 
+void {\bfseries Allocate\+Saved\+Callee\+Register\+Slots} (\mbox{\hyperlink{classint}{int}} count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Frame_a88d31ef621d20d428a8af4ad1773acdd}\label{classv8_1_1internal_1_1compiler_1_1Frame_a88d31ef621d20d428a8af4ad1773acdd}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Allocate\+Spill\+Slot} (\mbox{\hyperlink{classint}{int}} width, \mbox{\hyperlink{classint}{int}} alignment=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Frame_a4446dbe2511c4877685de0e6b8c3428a}\label{classv8_1_1internal_1_1compiler_1_1Frame_a4446dbe2511c4877685de0e6b8c3428a}} 
+void {\bfseries Ensure\+Return\+Slots} (\mbox{\hyperlink{classint}{int}} count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Frame_ae75e2c220522bf150ba87b81b5bb0433}\label{classv8_1_1internal_1_1compiler_1_1Frame_ae75e2c220522bf150ba87b81b5bb0433}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Align\+Frame} (\mbox{\hyperlink{classint}{int}} alignment=k\+Double\+Size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Frame_a3b2080967bb6f7ed3bdbae804ccbbefd}\label{classv8_1_1internal_1_1compiler_1_1Frame_a3b2080967bb6f7ed3bdbae804ccbbefd}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Reserve\+Spill\+Slots} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} slot\+\_\+count)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 89 of file frame.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/frame.\+h\item 
+v8/src/compiler/frame.\+cc\end{DoxyCompactItemize}

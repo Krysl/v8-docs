@@ -96,6 +96,15 @@ $(document).ready(function(){initNavTree('structv8_1_1TickSample.html','');});
 <div class="title">v8::TickSample Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for v8::TickSample:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="structv8_1_1TickSample.png" usemap="#v8::TickSample_map" alt=""/>
+  <map id="v8::TickSample_map" name="v8::TickSample_map">
+<area href="structv8_1_1internal_1_1TickSample.html" alt="v8::internal::TickSample" shape="rect" coords="0,56,144,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -106,13 +115,13 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5e763b4b249b3fba53241b82d4ef6eeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structv8_1_1TickSample.html#a5e763b4b249b3fba53241b82d4ef6eeb">Init</a> (Isolate *isolate, const <a class="el" href="structv8_1_1RegisterState.html">v8::RegisterState</a> &amp;state, RecordCEntryFrame record_c_entry_frame, bool update_stats, bool use_simulator_reg_state=true)</td></tr>
-<tr class="separator:a5e763b4b249b3fba53241b82d4ef6eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71cbf35dee4a229fdcd3c1a4c1bbd87d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structv8_1_1TickSample.html#a71cbf35dee4a229fdcd3c1a4c1bbd87d">Init</a> (Isolate *isolate, const <a class="el" href="structv8_1_1RegisterState.html">v8::RegisterState</a> &amp;state, RecordCEntryFrame record_c_entry_frame, <a class="el" href="classbool.html">bool</a> update_stats, <a class="el" href="classbool.html">bool</a> use_simulator_reg_state=true)</td></tr>
+<tr class="separator:a71cbf35dee4a229fdcd3c1a4c1bbd87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a297e05d112f3c749bfead215393646c1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structv8_1_1TickSample.html#a297e05d112f3c749bfead215393646c1">GetStackSample</a> (Isolate *isolate, <a class="el" href="structv8_1_1RegisterState.html">v8::RegisterState</a> *state, RecordCEntryFrame record_c_entry_frame, void **frames, size_t frames_limit, <a class="el" href="structv8_1_1SampleInfo.html">v8::SampleInfo</a> *sample_info, bool use_simulator_reg_state=true)</td></tr>
-<tr class="separator:a297e05d112f3c749bfead215393646c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf2b58bf6ef55494723cceb35f8cc9b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structv8_1_1TickSample.html#a4cf2b58bf6ef55494723cceb35f8cc9b">GetStackSample</a> (Isolate *isolate, <a class="el" href="structv8_1_1RegisterState.html">v8::RegisterState</a> *state, RecordCEntryFrame record_c_entry_frame, void **frames, <a class="el" href="classsize__t.html">size_t</a> frames_limit, <a class="el" href="structv8_1_1SampleInfo.html">v8::SampleInfo</a> *sample_info, <a class="el" href="classbool.html">bool</a> use_simulator_reg_state=true)</td></tr>
+<tr class="separator:a4cf2b58bf6ef55494723cceb35f8cc9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -136,30 +145,30 @@ union {</td></tr>
 void *&#160;</td><td class="memItemRight" valign="bottom"><b>stack</b> [kMaxFramesCount]</td></tr>
 <tr class="separator:ae85c9bd6ff1da565d7e3066615a4d450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00bfe6e03f75c291e220777fe74272d5"><td class="memItemLeft" align="right" valign="top"><a id="a00bfe6e03f75c291e220777fe74272d5"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>frames_count</b>: kMaxFramesCountLog2</td></tr>
+<a class="el" href="classunsigned.html">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><b>frames_count</b>: kMaxFramesCountLog2</td></tr>
 <tr class="separator:a00bfe6e03f75c291e220777fe74272d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7c90f53d4ac6ab23727e21369f70b6e"><td class="memItemLeft" align="right" valign="top"><a id="aa7c90f53d4ac6ab23727e21369f70b6e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_external_callback</b>: 1</td></tr>
+<a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>has_external_callback</b>: 1</td></tr>
 <tr class="separator:aa7c90f53d4ac6ab23727e21369f70b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aece17f054264917dcf20fd9ef0616930"><td class="memItemLeft" align="right" valign="top"><a id="aece17f054264917dcf20fd9ef0616930"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>update_stats</b>: 1</td></tr>
+<a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>update_stats</b>: 1</td></tr>
 <tr class="separator:aece17f054264917dcf20fd9ef0616930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a74b64cf598134b781b4ae1c65c31a70a"><td class="memItemLeft" align="right" valign="top"><a id="a74b64cf598134b781b4ae1c65c31a70a"></a>
-static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>kMaxFramesCountLog2</b> = 8</td></tr>
+static const <a class="el" href="classunsigned.html">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><b>kMaxFramesCountLog2</b> = 8</td></tr>
 <tr class="separator:a74b64cf598134b781b4ae1c65c31a70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f1b6ed32cd88d137e70d99adaa37d64"><td class="memItemLeft" align="right" valign="top"><a id="a7f1b6ed32cd88d137e70d99adaa37d64"></a>
-static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>kMaxFramesCount</b> = (1 &lt;&lt; kMaxFramesCountLog2) - 1</td></tr>
+static const <a class="el" href="classunsigned.html">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><b>kMaxFramesCount</b> = (1 &lt;&lt; kMaxFramesCountLog2) - 1</td></tr>
 <tr class="separator:a7f1b6ed32cd88d137e70d99adaa37d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="v8-profiler_8h_source.html#l00051">51</a> of file <a class="el" href="v8-profiler_8h_source.html">v8-profiler.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a297e05d112f3c749bfead215393646c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a297e05d112f3c749bfead215393646c1">&#9670;&nbsp;</a></span>GetStackSample()</h2>
+<a id="a4cf2b58bf6ef55494723cceb35f8cc9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cf2b58bf6ef55494723cceb35f8cc9b">&#9670;&nbsp;</a></span>GetStackSample()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,7 +177,7 @@ static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>kMax
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool v8::TickSample::GetStackSample </td>
+          <td class="memname"><a class="el" href="classbool.html">bool</a> v8::TickSample::GetStackSample </td>
           <td>(</td>
           <td class="paramtype">Isolate *&#160;</td>
           <td class="paramname"><em>isolate</em>, </td>
@@ -194,7 +203,7 @@ static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>kMax
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classsize__t.html">size_t</a>&#160;</td>
           <td class="paramname"><em>frames_limit</em>, </td>
         </tr>
         <tr>
@@ -206,7 +215,7 @@ static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>kMax
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
+          <td class="paramtype"><a class="el" href="classbool.html">bool</a>&#160;</td>
           <td class="paramname"><em>use_simulator_reg_state</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
@@ -235,16 +244,18 @@ static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>kMax
 </dl>
 <dl class="section note"><dt>Note</dt><dd>GetStackSample is thread and signal safe and should only be called when the JS thread is paused or interrupted. Otherwise the behavior is undefined. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="tick-sample_8cc_source.html#l00183">183</a> of file <a class="el" href="tick-sample_8cc_source.html">tick-sample.cc</a>.</p>
+
 </div>
 </div>
-<a id="a5e763b4b249b3fba53241b82d4ef6eeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e763b4b249b3fba53241b82d4ef6eeb">&#9670;&nbsp;</a></span>Init()</h2>
+<a id="a71cbf35dee4a229fdcd3c1a4c1bbd87d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71cbf35dee4a229fdcd3c1a4c1bbd87d">&#9670;&nbsp;</a></span>Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void v8::TickSample::Init </td>
+          <td class="memname">DISABLE_ASAN void v8::TickSample::Init </td>
           <td>(</td>
           <td class="paramtype">Isolate *&#160;</td>
           <td class="paramname"><em>isolate</em>, </td>
@@ -264,13 +275,13 @@ static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>kMax
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
+          <td class="paramtype"><a class="el" href="classbool.html">bool</a>&#160;</td>
           <td class="paramname"><em>update_stats</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
+          <td class="paramtype"><a class="el" href="classbool.html">bool</a>&#160;</td>
           <td class="paramname"><em>use_simulator_reg_state</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
@@ -291,10 +302,13 @@ static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>kMax
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="tick-sample_8cc_source.html#l00148">148</a> of file <a class="el" href="tick-sample_8cc_source.html">tick-sample.cc</a>.</p>
+
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>v8/include/<a class="el" href="v8-profiler_8h_source.html">v8-profiler.h</a></li>
+<li>v8/src/profiler/<a class="el" href="tick-sample_8cc_source.html">tick-sample.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -302,7 +316,7 @@ static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>kMax
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="structv8_1_1TickSample.html">TickSample</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 14:33:12 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:40:39 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

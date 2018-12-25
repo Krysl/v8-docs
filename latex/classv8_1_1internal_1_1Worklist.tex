@@ -1,0 +1,82 @@
+\hypertarget{classv8_1_1internal_1_1Worklist}{}\section{v8\+:\+:internal\+:\+:Worklist$<$ Entry\+Type, S\+E\+G\+M\+E\+N\+T\+\_\+\+S\+I\+ZE $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1Worklist}\index{v8\+::internal\+::\+Worklist$<$ Entry\+Type, S\+E\+G\+M\+E\+N\+T\+\_\+\+S\+I\+Z\+E $>$@{v8\+::internal\+::\+Worklist$<$ Entry\+Type, S\+E\+G\+M\+E\+N\+T\+\_\+\+S\+I\+Z\+E $>$}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1Worklist_1_1View}{View}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Worklist_a80026cf4e50a6a907434d59468d8ff49}\label{classv8_1_1internal_1_1Worklist_a80026cf4e50a6a907434d59468d8ff49}} 
+{\bfseries Worklist} (\mbox{\hyperlink{classint}{int}} num\+\_\+tasks)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Worklist_a02fb6c5571c0f8857e5b2e1a6678fded}\label{classv8_1_1internal_1_1Worklist_a02fb6c5571c0f8857e5b2e1a6678fded}} 
+void {\bfseries Swap} (\mbox{\hyperlink{classv8_1_1internal_1_1Worklist}{Worklist}}$<$ Entry\+Type, S\+E\+G\+M\+E\+N\+T\+\_\+\+S\+I\+ZE $>$ \&other)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Worklist_ac638c54ab8a4f8021e2e0c1e31a99f72}\label{classv8_1_1internal_1_1Worklist_ac638c54ab8a4f8021e2e0c1e31a99f72}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Push} (\mbox{\hyperlink{classint}{int}} task\+\_\+id, Entry\+Type entry)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Worklist_a9bd282d04d7e84f3dcd8cd04b5377ee9}\label{classv8_1_1internal_1_1Worklist_a9bd282d04d7e84f3dcd8cd04b5377ee9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Pop} (\mbox{\hyperlink{classint}{int}} task\+\_\+id, Entry\+Type $\ast$entry)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Worklist_a71f34c284c55b56e488760827f03979b}\label{classv8_1_1internal_1_1Worklist_a71f34c284c55b56e488760827f03979b}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Local\+Push\+Segment\+Size} (\mbox{\hyperlink{classint}{int}} task\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Worklist_a8d75237b8b72463e8e5cb6b8af7e8386}\label{classv8_1_1internal_1_1Worklist_a8d75237b8b72463e8e5cb6b8af7e8386}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Local\+Empty} (\mbox{\hyperlink{classint}{int}} task\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Worklist_ad6f6b350de8c4121e394ee9253ea2d1f}\label{classv8_1_1internal_1_1Worklist_ad6f6b350de8c4121e394ee9253ea2d1f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Global\+Pool\+Empty} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Worklist_aaacb777f8a253298f45b96a9b61736e7}\label{classv8_1_1internal_1_1Worklist_aaacb777f8a253298f45b96a9b61736e7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Empty} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Worklist_ae05cc316f4fb4b9868aff70f16693a22}\label{classv8_1_1internal_1_1Worklist_ae05cc316f4fb4b9868aff70f16693a22}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Are\+Locals\+Empty} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Worklist_a16f74bb12cd27c34cfaf9e7ed02cdab4}\label{classv8_1_1internal_1_1Worklist_a16f74bb12cd27c34cfaf9e7ed02cdab4}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Local\+Size} (\mbox{\hyperlink{classint}{int}} task\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Worklist_ad681112e72a127b010cb48917ac88a30}\label{classv8_1_1internal_1_1Worklist_ad681112e72a127b010cb48917ac88a30}} 
+void {\bfseries Clear} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Worklist_a39e7c67b8ff572d4a4b50dae9bd4c5d8}\label{classv8_1_1internal_1_1Worklist_a39e7c67b8ff572d4a4b50dae9bd4c5d8}} 
+{\footnotesize template$<$typename Callback $>$ }\\void {\bfseries Update} (Callback callback)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Worklist_a94ec2eb41f27643dc190850edfc6d2d6}\label{classv8_1_1internal_1_1Worklist_a94ec2eb41f27643dc190850edfc6d2d6}} 
+{\footnotesize template$<$typename Callback $>$ }\\void {\bfseries Iterate} (Callback callback)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Worklist_a3cf4b528e51c809e79f3da3e50d960ec}\label{classv8_1_1internal_1_1Worklist_a3cf4b528e51c809e79f3da3e50d960ec}} 
+{\footnotesize template$<$typename Callback $>$ }\\void {\bfseries Iterate\+Global\+Pool} (Callback callback)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Worklist_ab0b57617237dd517e04bbc5fe000ccfa}\label{classv8_1_1internal_1_1Worklist_ab0b57617237dd517e04bbc5fe000ccfa}} 
+void {\bfseries Flush\+To\+Global} (\mbox{\hyperlink{classint}{int}} task\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Worklist_aaa99d1ef92e24761e5fbef01742120bc}\label{classv8_1_1internal_1_1Worklist_aaa99d1ef92e24761e5fbef01742120bc}} 
+void {\bfseries Merge\+Global\+Pool} (\mbox{\hyperlink{classv8_1_1internal_1_1Worklist}{Worklist}} $\ast$other)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Worklist_a0d3a385648a7abf942ad435d598a4bff}\label{classv8_1_1internal_1_1Worklist_a0d3a385648a7abf942ad435d598a4bff}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Num\+Tasks} = 8
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Worklist_a3da8321b5396a1c541f2d54a233b6ffa}\label{classv8_1_1internal_1_1Worklist_a3da8321b5396a1c541f2d54a233b6ffa}} 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Segment\+Capacity} = S\+E\+G\+M\+E\+N\+T\+\_\+\+S\+I\+ZE
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Entry\+Type, int S\+E\+G\+M\+E\+N\+T\+\_\+\+S\+I\+ZE$>$\newline
+class v8\+::internal\+::\+Worklist$<$ Entry\+Type, S\+E\+G\+M\+E\+N\+T\+\_\+\+S\+I\+Z\+E $>$}
+
+
+
+Definition at line 28 of file worklist.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/worklist.\+h\end{DoxyCompactItemize}

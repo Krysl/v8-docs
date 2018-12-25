@@ -1,0 +1,46 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1HeapObjectType}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Heap\+Object\+Type Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1HeapObjectType}\index{v8\+::internal\+::compiler\+::\+Heap\+Object\+Type@{v8\+::internal\+::compiler\+::\+Heap\+Object\+Type}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1HeapObjectType_a42d81b6cf7a086e76b28e2ec51193572}\label{classv8_1_1internal_1_1compiler_1_1HeapObjectType_a42d81b6cf7a086e76b28e2ec51193572}} 
+enum {\bfseries Flag} \+: uint8\+\_\+t \{ {\bfseries k\+Undetectable} = 1 $<$$<$ 0, 
+{\bfseries k\+Callable} = 1 $<$$<$ 1
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1HeapObjectType_a7ffe1abb323a95ab8d85025e35dac53d}\label{classv8_1_1internal_1_1compiler_1_1HeapObjectType_a7ffe1abb323a95ab8d85025e35dac53d}} 
+typedef \mbox{\hyperlink{classv8_1_1base_1_1Flags}{base\+::\+Flags}}$<$ Flag $>$ {\bfseries Flags}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1HeapObjectType_ade7c5b1c64c9b31d5195d0593ef9b476}\label{classv8_1_1internal_1_1compiler_1_1HeapObjectType_ade7c5b1c64c9b31d5195d0593ef9b476}} 
+{\bfseries Heap\+Object\+Type} (Instance\+Type instance\+\_\+type, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{Flags}} flags, Oddball\+Type oddball\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1HeapObjectType_a5f50dd81b359668dfdeab130af7494f5}\label{classv8_1_1internal_1_1compiler_1_1HeapObjectType_a5f50dd81b359668dfdeab130af7494f5}} 
+Oddball\+Type {\bfseries oddball\+\_\+type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1HeapObjectType_a79496d5f06a37ce9e75670f2334ea28b}\label{classv8_1_1internal_1_1compiler_1_1HeapObjectType_a79496d5f06a37ce9e75670f2334ea28b}} 
+Instance\+Type {\bfseries instance\+\_\+type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1HeapObjectType_aa59b475b14dda12a64bf4932e81a6768}\label{classv8_1_1internal_1_1compiler_1_1HeapObjectType_aa59b475b14dda12a64bf4932e81a6768}} 
+\mbox{\hyperlink{classv8_1_1base_1_1Flags}{Flags}} {\bfseries flags} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1HeapObjectType_a33bd62bc808ffeb1d485c56ac2cf4d56}\label{classv8_1_1internal_1_1compiler_1_1HeapObjectType_a33bd62bc808ffeb1d485c56ac2cf4d56}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+callable} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1HeapObjectType_a48ba9858b161c7007a7efcc5437b695e}\label{classv8_1_1internal_1_1compiler_1_1HeapObjectType_a48ba9858b161c7007a7efcc5437b695e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+undetectable} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 140 of file js-\/heap-\/broker.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/js-\/heap-\/broker.\+h\end{DoxyCompactItemize}

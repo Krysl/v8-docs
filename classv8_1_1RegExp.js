@@ -9,6 +9,6 @@ var classv8_1_1RegExp =
       [ "kUnicode", "classv8_1_1RegExp.html#aa4718a5c1f18472aff3bf51ed694fc5aa7cab6d3fa03cb271acebe4519387c368", null ],
       [ "kDotAll", "classv8_1_1RegExp.html#aa4718a5c1f18472aff3bf51ed694fc5aa1370931ee206aa07233d3c593eafc553", null ]
     ] ],
-    [ "GetFlags", "classv8_1_1RegExp.html#aaf00a07b6f8368a1a99bf0bac327af21", null ],
-    [ "GetSource", "classv8_1_1RegExp.html#ad43d2879796a6991ff19954f4755778a", null ]
+    [ "GetFlags", "classv8_1_1RegExp.html#a1f3357d22f9f403ee7bdad393b740b7a", null ],
+    [ "GetSource", "classv8_1_1RegExp.html#a21bc6ac9419240fb1a774365c28cea08", null ]
 ];

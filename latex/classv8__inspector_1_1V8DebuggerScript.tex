@@ -1,0 +1,129 @@
+\hypertarget{classv8__inspector_1_1V8DebuggerScript}{}\section{v8\+\_\+inspector\+:\+:V8\+Debugger\+Script Class Reference}
+\label{classv8__inspector_1_1V8DebuggerScript}\index{v8\+\_\+inspector\+::\+V8\+Debugger\+Script@{v8\+\_\+inspector\+::\+V8\+Debugger\+Script}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_a749cf00fb04978121f2da79311d57c2e}\label{classv8__inspector_1_1V8DebuggerScript_a749cf00fb04978121f2da79311d57c2e}} 
+const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \& {\bfseries script\+Id} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_acf7b5f671588e4a28f745e95f4b6519a}\label{classv8__inspector_1_1V8DebuggerScript_acf7b5f671588e4a28f745e95f4b6519a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+Source\+U\+R\+L\+Comment} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_a80232143b069dcbf96e253fe2d1bfc69}\label{classv8__inspector_1_1V8DebuggerScript_a80232143b069dcbf96e253fe2d1bfc69}} 
+const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \& {\bfseries source\+U\+RL} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_a159d6eeda554f6761c90394b785d3bf8}\label{classv8__inspector_1_1V8DebuggerScript_a159d6eeda554f6761c90394b785d3bf8}} 
+virtual const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \& {\bfseries source\+Mapping\+U\+RL} () const =0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_a11228de74c6fa248e06649526cdf3961}\label{classv8__inspector_1_1V8DebuggerScript_a11228de74c6fa248e06649526cdf3961}} 
+virtual \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} {\bfseries source} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} pos, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} len=U\+I\+N\+T\+\_\+\+M\+AX) const =0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_a539b9f8217c004171132102bffb58027}\label{classv8__inspector_1_1V8DebuggerScript_a539b9f8217c004171132102bffb58027}} 
+virtual const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \& {\bfseries hash} () const =0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_aaa5c520b64bb480455737f6f4fbc706e}\label{classv8__inspector_1_1V8DebuggerScript_aaa5c520b64bb480455737f6f4fbc706e}} 
+virtual \mbox{\hyperlink{classint}{int}} {\bfseries start\+Line} () const =0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_a900f32f637888af66c86c203132f208b}\label{classv8__inspector_1_1V8DebuggerScript_a900f32f637888af66c86c203132f208b}} 
+virtual \mbox{\hyperlink{classint}{int}} {\bfseries start\+Column} () const =0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_acd43cfb996bb3b202053393ef478a418}\label{classv8__inspector_1_1V8DebuggerScript_acd43cfb996bb3b202053393ef478a418}} 
+virtual \mbox{\hyperlink{classint}{int}} {\bfseries end\+Line} () const =0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_a92f40a01b2472ffaf5f9018d8bdf2a53}\label{classv8__inspector_1_1V8DebuggerScript_a92f40a01b2472ffaf5f9018d8bdf2a53}} 
+virtual \mbox{\hyperlink{classint}{int}} {\bfseries end\+Column} () const =0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_addbfd230d4900207ac77160bfdf559d1}\label{classv8__inspector_1_1V8DebuggerScript_addbfd230d4900207ac77160bfdf559d1}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries execution\+Context\+Id} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_a62d9eb831c4517fe47e91fa58fadcc82}\label{classv8__inspector_1_1V8DebuggerScript_a62d9eb831c4517fe47e91fa58fadcc82}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+Live\+Edit} () const =0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_abc0b0ce52b913cfd31a8c932e1d00484}\label{classv8__inspector_1_1V8DebuggerScript_abc0b0ce52b913cfd31a8c932e1d00484}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+Module} () const =0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_addd32ddef6c2dd656a9d9ff7bfc5f0d0}\label{classv8__inspector_1_1V8DebuggerScript_addd32ddef6c2dd656a9d9ff7bfc5f0d0}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+Source\+Loaded\+Lazily} () const =0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_aa8cc14e5fc34fff3d991503ca20fc4de}\label{classv8__inspector_1_1V8DebuggerScript_aa8cc14e5fc34fff3d991503ca20fc4de}} 
+virtual \mbox{\hyperlink{classint}{int}} {\bfseries length} () const =0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_ad80e71d13ed4aedbc0885b08e90cfb18}\label{classv8__inspector_1_1V8DebuggerScript_ad80e71d13ed4aedbc0885b08e90cfb18}} 
+void {\bfseries set\+Source\+U\+RL} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_ae7feae7061832efe33dbbefb167284dd}\label{classv8__inspector_1_1V8DebuggerScript_ae7feae7061832efe33dbbefb167284dd}} 
+virtual void {\bfseries set\+Source\+Mapping\+U\+RL} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_ad172047d48d77f3a8ad08304087b1c2d}\label{classv8__inspector_1_1V8DebuggerScript_ad172047d48d77f3a8ad08304087b1c2d}} 
+virtual void {\bfseries set\+Source} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&source, \mbox{\hyperlink{classbool}{bool}} preview, \mbox{\hyperlink{structv8_1_1debug_1_1LiveEditResult}{v8\+::debug\+::\+Live\+Edit\+Result}} $\ast$result)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_ac0dc55917bf1dd04a69e85ba2e7ca245}\label{classv8__inspector_1_1V8DebuggerScript_ac0dc55917bf1dd04a69e85ba2e7ca245}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries get\+Possible\+Breakpoints} (const \mbox{\hyperlink{classv8_1_1debug_1_1Location}{v8\+::debug\+::\+Location}} \&start, const \mbox{\hyperlink{classv8_1_1debug_1_1Location}{v8\+::debug\+::\+Location}} \&end, \mbox{\hyperlink{classbool}{bool}} ignore\+Nested\+Functions, std\+::vector$<$ \mbox{\hyperlink{classv8_1_1debug_1_1BreakLocation}{v8\+::debug\+::\+Break\+Location}} $>$ $\ast$locations)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_ae74a3ac062f928e2eb3da3b9cd4f20a5}\label{classv8__inspector_1_1V8DebuggerScript_ae74a3ac062f928e2eb3da3b9cd4f20a5}} 
+virtual void {\bfseries reset\+Blackboxed\+State\+Cache} ()=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_a2df16eb084c948d8d6741b469935292d}\label{classv8__inspector_1_1V8DebuggerScript_a2df16eb084c948d8d6741b469935292d}} 
+virtual \mbox{\hyperlink{classint}{int}} {\bfseries offset} (\mbox{\hyperlink{classint}{int}} line\+Number, \mbox{\hyperlink{classint}{int}} column\+Number) const =0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_ae5ea6e42bbc7321f65c96a13963f9f91}\label{classv8__inspector_1_1V8DebuggerScript_ae5ea6e42bbc7321f65c96a13963f9f91}} 
+virtual \mbox{\hyperlink{classv8_1_1debug_1_1Location}{v8\+::debug\+::\+Location}} {\bfseries location} (\mbox{\hyperlink{classint}{int}} offset) const =0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_a3ae4423e0cb79324d9ef1d65db8e83be}\label{classv8__inspector_1_1V8DebuggerScript_a3ae4423e0cb79324d9ef1d65db8e83be}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries set\+Breakpoint} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&condition, \mbox{\hyperlink{classv8_1_1debug_1_1Location}{v8\+::debug\+::\+Location}} $\ast$location, \mbox{\hyperlink{classint}{int}} $\ast$id) const =0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_a394e25831ac20cbc746ab94f889ec4cd}\label{classv8__inspector_1_1V8DebuggerScript_a394e25831ac20cbc746ab94f889ec4cd}} 
+static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8DebuggerScript}{V8\+Debugger\+Script}} $>$ {\bfseries Create} (v8\+::\+Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1debug_1_1Script}{v8\+::debug\+::\+Script}} $>$ script, \mbox{\hyperlink{classbool}{bool}} is\+Live\+Edit, \mbox{\hyperlink{classv8__inspector_1_1V8InspectorClient}{V8\+Inspector\+Client}} $\ast$client)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_a6b2b6efd63eea94f65aeb68b6887414c}\label{classv8__inspector_1_1V8DebuggerScript_a6b2b6efd63eea94f65aeb68b6887414c}} 
+static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8DebuggerScript}{V8\+Debugger\+Script}} $>$ {\bfseries Create\+Wasm} (v8\+::\+Isolate $\ast$isolate, \mbox{\hyperlink{classv8__inspector_1_1WasmTranslation}{Wasm\+Translation}} $\ast$wasm\+Translation, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1debug_1_1WasmScript}{v8\+::debug\+::\+Wasm\+Script}} $>$ underlying\+Script, \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} id, \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} url, \mbox{\hyperlink{classint}{int}} function\+Index)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_a2862b155d07c13a207c99017d789b0bf}\label{classv8__inspector_1_1V8DebuggerScript_a2862b155d07c13a207c99017d789b0bf}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+No\+Offset} = -\/1
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_a558ca1611c6eae6b36d263346813eb94}\label{classv8__inspector_1_1V8DebuggerScript_a558ca1611c6eae6b36d263346813eb94}} 
+{\bfseries V8\+Debugger\+Script} (v8\+::\+Isolate $\ast$, \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} id, \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} url)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_ab8131542efa716d26b348392d4d62b1b}\label{classv8__inspector_1_1V8DebuggerScript_ab8131542efa716d26b348392d4d62b1b}} 
+virtual \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1debug_1_1Script}{v8\+::debug\+::\+Script}} $>$ {\bfseries script} () const =0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_ad4a2821b58914ffba8f730310f263fc7}\label{classv8__inspector_1_1V8DebuggerScript_ad4a2821b58914ffba8f730310f263fc7}} 
+\mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} {\bfseries m\+\_\+id}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_af82dc216034a744dcb7f4fd12ffd7b92}\label{classv8__inspector_1_1V8DebuggerScript_af82dc216034a744dcb7f4fd12ffd7b92}} 
+\mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} {\bfseries m\+\_\+url}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_adddcd02a09aee3891aa6ff714e162da7}\label{classv8__inspector_1_1V8DebuggerScript_adddcd02a09aee3891aa6ff714e162da7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries m\+\_\+has\+Source\+U\+R\+L\+Comment} = false
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_a107b4449749bc60fd7833ecdbd430f7b}\label{classv8__inspector_1_1V8DebuggerScript_a107b4449749bc60fd7833ecdbd430f7b}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries m\+\_\+execution\+Context\+Id} = 0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerScript_a1506ffe2c9030e890470c10b9ce1589e}\label{classv8__inspector_1_1V8DebuggerScript_a1506ffe2c9030e890470c10b9ce1589e}} 
+v8\+::\+Isolate $\ast$ {\bfseries m\+\_\+isolate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 46 of file v8-\/debugger-\/script.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/inspector/v8-\/debugger-\/script.\+h\item 
+v8/src/inspector/v8-\/debugger-\/script.\+cc\end{DoxyCompactItemize}

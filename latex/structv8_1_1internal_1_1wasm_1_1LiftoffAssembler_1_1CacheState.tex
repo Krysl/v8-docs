@@ -1,0 +1,90 @@
+\hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Liftoff\+Assembler\+:\+:Cache\+State Struct Reference}
+\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState}\index{v8\+::internal\+::wasm\+::\+Liftoff\+Assembler\+::\+Cache\+State@{v8\+::internal\+::wasm\+::\+Liftoff\+Assembler\+::\+Cache\+State}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a73c6c91f08985fc09cda83b236a5e290}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a73c6c91f08985fc09cda83b236a5e290}} 
+{\bfseries Cache\+State} (\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState}{Cache\+State}} \&\&)=default
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_ab4854ab3f9ef0df9fe5bfc8063961981}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_ab4854ab3f9ef0df9fe5bfc8063961981}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState}{Cache\+State}} \& {\bfseries operator=} (\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState}{Cache\+State}} \&\&)=default
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_ac7de89e3a8af938538518b4369a9ce32}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_ac7de89e3a8af938538518b4369a9ce32}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+unused\+\_\+register} (Reg\+Class rc, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} pinned=\{\}) const
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a4021d51729e98f434eebc98396c20d44}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a4021d51729e98f434eebc98396c20d44}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+unused\+\_\+register} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} candidates, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} pinned=\{\}) const
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a47d2a1e87d4be31ca542159701f507aa}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a47d2a1e87d4be31ca542159701f507aa}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} {\bfseries unused\+\_\+register} (Reg\+Class rc, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} pinned=\{\}) const
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_af43441f32f8ca9071dae6ed589216f32}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_af43441f32f8ca9071dae6ed589216f32}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} {\bfseries unused\+\_\+register} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} candidates, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} pinned=\{\}) const
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_af820adf39429ab1f85a958462bef56e3}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_af820adf39429ab1f85a958462bef56e3}} 
+void {\bfseries inc\+\_\+used} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} reg)
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a584dfef9f0e2943eba8ac32599f25aa5}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a584dfef9f0e2943eba8ac32599f25aa5}} 
+void {\bfseries dec\+\_\+used} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} reg)
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a6be7f9493222979a9c4808b5598b70f0}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a6be7f9493222979a9c4808b5598b70f0}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+used} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} reg) const
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_acf044dfcbb992e83525a51e941c22cd0}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_acf044dfcbb992e83525a51e941c22cd0}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries get\+\_\+use\+\_\+count} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} reg) const
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_ab65768ab07079a1678e4000a4ab795ea}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_ab65768ab07079a1678e4000a4ab795ea}} 
+void {\bfseries clear\+\_\+used} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} reg)
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_af6cc512b51eaba3c8478715925872851}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_af6cc512b51eaba3c8478715925872851}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+free} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} reg) const
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a86225afcb0582e0c4cdc5e1e8706beb7}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a86225afcb0582e0c4cdc5e1e8706beb7}} 
+void {\bfseries reset\+\_\+used\+\_\+registers} ()
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a8ae6915a44702224c4f01b858816ccc1}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a8ae6915a44702224c4f01b858816ccc1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} {\bfseries Get\+Next\+Spill\+Reg} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} candidates, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} pinned=\{\})
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a8369d61c635ff4d25d7a8f93ac52b7d7}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a8369d61c635ff4d25d7a8f93ac52b7d7}} 
+void {\bfseries Init\+Merge} (const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState}{Cache\+State}} \&source, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} num\+\_\+locals, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} arity)
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_ad644c9b3e80f6ecca1a9a8e12e9babc9}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_ad644c9b3e80f6ecca1a9a8e12e9babc9}} 
+void {\bfseries Steal} (\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState}{Cache\+State}} \&source)
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a7de3159aaa95dc902b9ed7179762d7e9}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a7de3159aaa95dc902b9ed7179762d7e9}} 
+void {\bfseries Split} (const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState}{Cache\+State}} \&source)
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a35fd415b19981b549128a74d5eb6cbd3}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a35fd415b19981b549128a74d5eb6cbd3}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries stack\+\_\+height} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a07476cda8a7cbc4bf0b1c3234e0c9821}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a07476cda8a7cbc4bf0b1c3234e0c9821}} 
+std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState}{Var\+State}} $>$ {\bfseries stack\+\_\+state}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_ad39cb865a21d3afcbdcffc691f400362}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_ad39cb865a21d3afcbdcffc691f400362}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} {\bfseries used\+\_\+registers}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a0a053f00d7cdd700b68e14f698301c13}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a0a053f00d7cdd700b68e14f698301c13}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries register\+\_\+use\+\_\+count} \mbox{[}k\+After\+Max\+Liftoff\+Reg\+Code\mbox{]} = \{0\}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a4807fc139516c831af01ceca9ef87e38}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a4807fc139516c831af01ceca9ef87e38}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} {\bfseries last\+\_\+spilled\+\_\+regs}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a150fcf755276c2a335cf3f96acf45fb6}\label{structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState_a150fcf755276c2a335cf3f96acf45fb6}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries stack\+\_\+base} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 113 of file liftoff-\/assembler.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/baseline/liftoff-\/assembler.\+h\item 
+v8/src/wasm/baseline/liftoff-\/assembler.\+cc\end{DoxyCompactItemize}

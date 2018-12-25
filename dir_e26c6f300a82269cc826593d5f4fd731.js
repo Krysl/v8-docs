@@ -13,6 +13,6 @@ var dir_e26c6f300a82269cc826593d5f4fd731 =
     [ "v8-version.h", "v8-version_8h_source.html", null ],
     [ "v8-wasm-trap-handler-posix.h", "v8-wasm-trap-handler-posix_8h_source.html", null ],
     [ "v8-wasm-trap-handler-win.h", "v8-wasm-trap-handler-win_8h_source.html", null ],
-    [ "v8.h", "v8_8h_source.html", null ],
+    [ "v8.h", "include_2v8_8h_source.html", null ],
     [ "v8config.h", "v8config_8h_source.html", null ]
 ];

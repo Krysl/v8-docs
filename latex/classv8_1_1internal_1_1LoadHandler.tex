@@ -1,0 +1,140 @@
+\hypertarget{classv8_1_1internal_1_1LoadHandler}{}\section{v8\+:\+:internal\+:\+:Load\+Handler Class Reference}
+\label{classv8_1_1internal_1_1LoadHandler}\index{v8\+::internal\+::\+Load\+Handler@{v8\+::internal\+::\+Load\+Handler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Load\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1LoadHandler}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1LoadHandler_1_1AllowOutOfBoundsBits}{Allow\+Out\+Of\+Bounds\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1LoadHandler_1_1ConvertHoleBits}{Convert\+Hole\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1LoadHandler_1_1DescriptorBits}{Descriptor\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1LoadHandler_1_1DoAccessCheckOnReceiverBits}{Do\+Access\+Check\+On\+Receiver\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1LoadHandler_1_1ElementsKindBits}{Elements\+Kind\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1LoadHandler_1_1ExportsIndexBits}{Exports\+Index\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1LoadHandler_1_1FieldIndexBits}{Field\+Index\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1LoadHandler_1_1IsDoubleBits}{Is\+Double\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1LoadHandler_1_1IsInobjectBits}{Is\+Inobject\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1LoadHandler_1_1IsJsArrayBits}{Is\+Js\+Array\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1LoadHandler_1_1KindBits}{Kind\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1LoadHandler_1_1LookupOnReceiverBits}{Lookup\+On\+Receiver\+Bits}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_af9bbc69b2507ed53c01fced3e2b388ad}\label{classv8_1_1internal_1_1LoadHandler_af9bbc69b2507ed53c01fced3e2b388ad}} 
+enum {\bfseries Kind} \{ \newline
+{\bfseries k\+Element}, 
+{\bfseries k\+Indexed\+String}, 
+{\bfseries k\+Normal}, 
+{\bfseries k\+Global}, 
+\newline
+{\bfseries k\+Field}, 
+{\bfseries k\+Constant}, 
+{\bfseries k\+Accessor}, 
+{\bfseries k\+Native\+Data\+Property}, 
+\newline
+{\bfseries k\+Api\+Getter}, 
+{\bfseries k\+Api\+Getter\+Holder\+Is\+Prototype}, 
+{\bfseries k\+Interceptor}, 
+{\bfseries k\+Proxy}, 
+\newline
+{\bfseries k\+Non\+Existent}, 
+{\bfseries k\+Module\+Export}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_a92f1bfd030e6102b96ca5aa05bbd0a6d}\label{classv8_1_1internal_1_1LoadHandler_a92f1bfd030e6102b96ca5aa05bbd0a6d}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Descriptor\+Bits\+::k\+Next$<$=k\+Smi\+Value\+Size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_aad0453b2488dc7cfdda6ddd6b51f6e6e}\label{classv8_1_1internal_1_1LoadHandler_aad0453b2488dc7cfdda6ddd6b51f6e6e}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Field\+Index\+Bits\+::k\+Next$<$=k\+Smi\+Value\+Size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_ab209a7751b039b320522fb830282c97b}\label{classv8_1_1internal_1_1LoadHandler_ab209a7751b039b320522fb830282c97b}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Elements\+Kind\+Bits\+::k\+Next$<$=k\+Smi\+Value\+Size)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_a5afd4f59470157640f454fa63a61a21d}\label{classv8_1_1internal_1_1LoadHandler_a5afd4f59470157640f454fa63a61a21d}} 
+static Kind {\bfseries Get\+Handler\+Kind} (\mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} smi\+\_\+handler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_a50aa3cc894af3ed304a2a29be9aa7119}\label{classv8_1_1internal_1_1LoadHandler_a50aa3cc894af3ed304a2a29be9aa7119}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Load\+Normal} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_ae99ae083d2edfc59ad924d520204178f}\label{classv8_1_1internal_1_1LoadHandler_ae99ae083d2edfc59ad924d520204178f}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Load\+Global} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_a5af6c4be807c5f94757436b69ce9888b}\label{classv8_1_1internal_1_1LoadHandler_a5af6c4be807c5f94757436b69ce9888b}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Load\+Interceptor} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_a52ad4faa472742f44c102bfc801f7626}\label{classv8_1_1internal_1_1LoadHandler_a52ad4faa472742f44c102bfc801f7626}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Load\+Field} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1FieldIndex}{Field\+Index}} field\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_ae14099dae0f2ea920fc2f1bf39b666f2}\label{classv8_1_1internal_1_1LoadHandler_ae14099dae0f2ea920fc2f1bf39b666f2}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Load\+Constant} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} descriptor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_a7f95bf4c56319560a2bcd9a06c12e4fd}\label{classv8_1_1internal_1_1LoadHandler_a7f95bf4c56319560a2bcd9a06c12e4fd}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Load\+Accessor} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} descriptor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_a4cebd61635fd406afe6c8822c86f5318}\label{classv8_1_1internal_1_1LoadHandler_a4cebd61635fd406afe6c8822c86f5318}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Load\+Proxy} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_a0f6f6dc65ac79b844890fcbbbc769625}\label{classv8_1_1internal_1_1LoadHandler_a0f6f6dc65ac79b844890fcbbbc769625}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Load\+Native\+Data\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} descriptor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_a779e644b52dfa8fe080e2df1f4a94052}\label{classv8_1_1internal_1_1LoadHandler_a779e644b52dfa8fe080e2df1f4a94052}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Load\+Api\+Getter} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classbool}{bool}} holder\+\_\+is\+\_\+receiver)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_a8cb25930a6db6abf820c66d6967422b5}\label{classv8_1_1internal_1_1LoadHandler_a8cb25930a6db6abf820c66d6967422b5}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Load\+Module\+Export} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_a4fd0ad7e2014a21871b012383927e3ee}\label{classv8_1_1internal_1_1LoadHandler_a4fd0ad7e2014a21871b012383927e3ee}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Load\+Full\+Chain} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ receiver\+\_\+map, const \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}} \&holder, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ smi\+\_\+handler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_a8e3f8e846f9211c5945c06a0304ad89c}\label{classv8_1_1internal_1_1LoadHandler_a8e3f8e846f9211c5945c06a0304ad89c}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Load\+From\+Prototype} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ receiver\+\_\+map, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ holder, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ smi\+\_\+handler, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}} maybe\+\_\+data1=\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}}(), \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}} maybe\+\_\+data2=\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}}())
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_a59bb68f4205db0c06be28dea89864c0f}\label{classv8_1_1internal_1_1LoadHandler_a59bb68f4205db0c06be28dea89864c0f}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Load\+Non\+Existent} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_aee8eb5231d40fe8d7614862e415af1bc}\label{classv8_1_1internal_1_1LoadHandler_aee8eb5231d40fe8d7614862e415af1bc}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Load\+Element} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Elements\+Kind elements\+\_\+kind, \mbox{\hyperlink{classbool}{bool}} convert\+\_\+hole\+\_\+to\+\_\+undefined, \mbox{\hyperlink{classbool}{bool}} is\+\_\+js\+\_\+array, Keyed\+Access\+Load\+Mode load\+\_\+mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_aa43a58dfef18a794abdfd3ac6379d788}\label{classv8_1_1internal_1_1LoadHandler_aa43a58dfef18a794abdfd3ac6379d788}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Load\+Indexed\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Keyed\+Access\+Load\+Mode load\+\_\+mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoadHandler_ac7f8f4be0b7cefa5d733bd772b3ea5f1}\label{classv8_1_1internal_1_1LoadHandler_ac7f8f4be0b7cefa5d733bd772b3ea5f1}} 
+static Keyed\+Access\+Load\+Mode {\bfseries Get\+Keyed\+Access\+Load\+Mode} (\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} handler)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 27 of file handler-\/configuration.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ic/handler-\/configuration.\+h\item 
+v8/src/ic/handler-\/configuration-\/inl.\+h\item 
+v8/src/ic/handler-\/configuration.\+cc\end{DoxyCompactItemize}

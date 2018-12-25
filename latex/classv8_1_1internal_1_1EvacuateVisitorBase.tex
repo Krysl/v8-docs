@@ -1,0 +1,76 @@
+\hypertarget{classv8_1_1internal_1_1EvacuateVisitorBase}{}\section{v8\+:\+:internal\+:\+:Evacuate\+Visitor\+Base Class Reference}
+\label{classv8_1_1internal_1_1EvacuateVisitorBase}\index{v8\+::internal\+::\+Evacuate\+Visitor\+Base@{v8\+::internal\+::\+Evacuate\+Visitor\+Base}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Evacuate\+Visitor\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1EvacuateVisitorBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EvacuateVisitorBase_a9e08b20159fa7ad1617e50bb2ca66be2}\label{classv8_1_1internal_1_1EvacuateVisitorBase_a9e08b20159fa7ad1617e50bb2ca66be2}} 
+void {\bfseries Add\+Observer} (\mbox{\hyperlink{classv8_1_1internal_1_1MigrationObserver}{Migration\+Observer}} $\ast$observer)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EvacuateVisitorBase_ae9ded849599f0cf5c83e5cd69d290cb2}\label{classv8_1_1internal_1_1EvacuateVisitorBase_ae9ded849599f0cf5c83e5cd69d290cb2}} 
+enum {\bfseries Migration\+Mode} \{ {\bfseries k\+Fast}, 
+{\bfseries k\+Observed}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EvacuateVisitorBase_a332ee0d6a5bd76ddcdb560e5e06aa14f}\label{classv8_1_1internal_1_1EvacuateVisitorBase_a332ee0d6a5bd76ddcdb560e5e06aa14f}} 
+typedef void($\ast$ {\bfseries Migrate\+Function}) (\mbox{\hyperlink{classv8_1_1internal_1_1EvacuateVisitorBase}{Evacuate\+Visitor\+Base}} $\ast$base, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$dst, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$src, \mbox{\hyperlink{classint}{int}} size, Allocation\+Space dest)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EvacuateVisitorBase_a1998baffb4a84bbe1131d7c96b47f9e3}\label{classv8_1_1internal_1_1EvacuateVisitorBase_a1998baffb4a84bbe1131d7c96b47f9e3}} 
+{\bfseries Evacuate\+Visitor\+Base} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, \mbox{\hyperlink{classv8_1_1internal_1_1LocalAllocator}{Local\+Allocator}} $\ast$local\+\_\+allocator, \mbox{\hyperlink{classv8_1_1internal_1_1RecordMigratedSlotVisitor}{Record\+Migrated\+Slot\+Visitor}} $\ast$record\+\_\+visitor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EvacuateVisitorBase_ab95fdf1eafaf2fbbd8a7e739317c2ce4}\label{classv8_1_1internal_1_1EvacuateVisitorBase_ab95fdf1eafaf2fbbd8a7e739317c2ce4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Try\+Evacuate\+Object} (Allocation\+Space target\+\_\+space, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object, \mbox{\hyperlink{classint}{int}} size, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$$\ast$target\+\_\+object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EvacuateVisitorBase_a380b0191f4cbca39d188c30f6669fa91}\label{classv8_1_1internal_1_1EvacuateVisitorBase_a380b0191f4cbca39d188c30f6669fa91}} 
+void {\bfseries Execute\+Migration\+Observers} (Allocation\+Space dest, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$src, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$dst, \mbox{\hyperlink{classint}{int}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EvacuateVisitorBase_a16e82cad517d23dd3fe4cce573fe1b5d}\label{classv8_1_1internal_1_1EvacuateVisitorBase_a16e82cad517d23dd3fe4cce573fe1b5d}} 
+void {\bfseries Migrate\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$dst, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$src, \mbox{\hyperlink{classint}{int}} size, Allocation\+Space dest)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EvacuateVisitorBase_a3e104c8ec889e3a99f27e46c56b74cc2}\label{classv8_1_1internal_1_1EvacuateVisitorBase_a3e104c8ec889e3a99f27e46c56b74cc2}} 
+{\footnotesize template$<$Migration\+Mode mode$>$ }\\static void {\bfseries Raw\+Migrate\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1EvacuateVisitorBase}{Evacuate\+Visitor\+Base}} $\ast$base, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$dst, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$src, \mbox{\hyperlink{classint}{int}} size, Allocation\+Space dest)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EvacuateVisitorBase_a0c3cbd23e8f28a0038f6d93b38bbdbbb}\label{classv8_1_1internal_1_1EvacuateVisitorBase_a0c3cbd23e8f28a0038f6d93b38bbdbbb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$ {\bfseries heap\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EvacuateVisitorBase_aa2ff3229aa16c450bb038cfbaae3be8f}\label{classv8_1_1internal_1_1EvacuateVisitorBase_aa2ff3229aa16c450bb038cfbaae3be8f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1LocalAllocator}{Local\+Allocator}} $\ast$ {\bfseries local\+\_\+allocator\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EvacuateVisitorBase_a6a58e9aa2a85e1afbd833fb49c17df54}\label{classv8_1_1internal_1_1EvacuateVisitorBase_a6a58e9aa2a85e1afbd833fb49c17df54}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RecordMigratedSlotVisitor}{Record\+Migrated\+Slot\+Visitor}} $\ast$ {\bfseries record\+\_\+visitor\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EvacuateVisitorBase_af11ebcfa59df555e097b381c1125beb0}\label{classv8_1_1internal_1_1EvacuateVisitorBase_af11ebcfa59df555e097b381c1125beb0}} 
+std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1MigrationObserver}{Migration\+Observer}} $\ast$ $>$ {\bfseries observers\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EvacuateVisitorBase_afd183ddd5f921860066ac73daedb16be}\label{classv8_1_1internal_1_1EvacuateVisitorBase_afd183ddd5f921860066ac73daedb16be}} 
+Migrate\+Function {\bfseries migration\+\_\+function\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1147 of file mark-\/compact.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/mark-\/compact.\+cc\end{DoxyCompactItemize}

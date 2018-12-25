@@ -1,0 +1,50 @@
+\hypertarget{classv8__inspector_1_1ValueMirror}{}\section{v8\+\_\+inspector\+:\+:Value\+Mirror Class Reference}
+\label{classv8__inspector_1_1ValueMirror}\index{v8\+\_\+inspector\+::\+Value\+Mirror@{v8\+\_\+inspector\+::\+Value\+Mirror}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8__inspector_1_1ValueMirror_1_1PropertyAccumulator}{Property\+Accumulator}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1ValueMirror_a6b705c7524e3ecf9216bc0171fc3d411}\label{classv8__inspector_1_1ValueMirror_a6b705c7524e3ecf9216bc0171fc3d411}} 
+virtual protocol\+::\+Response {\bfseries build\+Remote\+Object} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$ context, Wrap\+Mode mode, std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+Remote\+Object $>$ $\ast$result)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1ValueMirror_a5d0da5182ea4ff747cc0622fc793d8b6}\label{classv8__inspector_1_1ValueMirror_a5d0da5182ea4ff747cc0622fc793d8b6}} 
+virtual void {\bfseries build\+Property\+Preview} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$ context, const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&name, std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+Property\+Preview $>$ $\ast$)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1ValueMirror_ad0acdfb864c8b7c50398b9b25a19c568}\label{classv8__inspector_1_1ValueMirror_ad0acdfb864c8b7c50398b9b25a19c568}} 
+virtual void {\bfseries build\+Object\+Preview} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$ context, \mbox{\hyperlink{classbool}{bool}} generate\+Preview\+For\+Table, \mbox{\hyperlink{classint}{int}} $\ast$name\+Limit, \mbox{\hyperlink{classint}{int}} $\ast$index\+Limit, std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+Object\+Preview $>$ $\ast$)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1ValueMirror_a631bf60e0bfe23c268395ce65a7e0eaf}\label{classv8__inspector_1_1ValueMirror_a631bf60e0bfe23c268395ce65a7e0eaf}} 
+virtual void {\bfseries build\+Entry\+Preview} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$ context, \mbox{\hyperlink{classint}{int}} $\ast$name\+Limit, \mbox{\hyperlink{classint}{int}} $\ast$index\+Limit, std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+Object\+Preview $>$ $\ast$)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1ValueMirror_a65a7d83000476813797a16d197af8d92}\label{classv8__inspector_1_1ValueMirror_a65a7d83000476813797a16d197af8d92}} 
+virtual \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ {\bfseries v8\+Value} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1ValueMirror_a0ac9f5a0c2335f79c93d00f1c6d1adf8}\label{classv8__inspector_1_1ValueMirror_a0ac9f5a0c2335f79c93d00f1c6d1adf8}} 
+static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1ValueMirror}{Value\+Mirror}} $>$ {\bfseries create} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$ context, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ value)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1ValueMirror_aa77d4981aca8a87c2d0e1f39deeb99e0}\label{classv8__inspector_1_1ValueMirror_aa77d4981aca8a87c2d0e1f39deeb99e0}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries get\+Properties} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$ context, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{v8\+::\+Object}} $>$ object, \mbox{\hyperlink{classbool}{bool}} own\+Properties, \mbox{\hyperlink{classbool}{bool}} accessor\+Properties\+Only, \mbox{\hyperlink{classv8__inspector_1_1ValueMirror_1_1PropertyAccumulator}{Property\+Accumulator}} $\ast$accumulator)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1ValueMirror_ab8ba9bf60183fb5587f21febe850be8e}\label{classv8__inspector_1_1ValueMirror_ab8ba9bf60183fb5587f21febe850be8e}} 
+static void {\bfseries get\+Internal\+Properties} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$ context, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{v8\+::\+Object}} $>$ object, std\+::vector$<$ \mbox{\hyperlink{structv8__inspector_1_1InternalPropertyMirror}{Internal\+Property\+Mirror}} $>$ $\ast$mirrors)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 42 of file value-\/mirror.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/inspector/value-\/mirror.\+h\item 
+v8/src/inspector/value-\/mirror.\+cc\end{DoxyCompactItemize}

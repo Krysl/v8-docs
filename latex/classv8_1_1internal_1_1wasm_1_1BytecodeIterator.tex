@@ -1,0 +1,52 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1BytecodeIterator}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Bytecode\+Iterator Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1BytecodeIterator}\index{v8\+::internal\+::wasm\+::\+Bytecode\+Iterator@{v8\+::internal\+::wasm\+::\+Bytecode\+Iterator}}
+Inheritance diagram for v8\+:\+:internal\+:\+:wasm\+:\+:Bytecode\+Iterator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1wasm_1_1BytecodeIterator}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1BytecodeIterator_1_1offset__iterator}{offset\+\_\+iterator}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1BytecodeIterator_1_1opcode__iterator}{opcode\+\_\+iterator}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1BytecodeIterator_afca8ac710cd3b4fd187f465c8772b6ce}\label{classv8_1_1internal_1_1wasm_1_1BytecodeIterator_afca8ac710cd3b4fd187f465c8772b6ce}} 
+{\bfseries Bytecode\+Iterator} (const byte $\ast$start, const byte $\ast$end, \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1BodyLocalDecls}{Body\+Local\+Decls}} $\ast$decls=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1BytecodeIterator_a6238ab63341d65ee905b1719c43b01a4}\label{classv8_1_1internal_1_1wasm_1_1BytecodeIterator_a6238ab63341d65ee905b1719c43b01a4}} 
+\mbox{\hyperlink{classv8_1_1base_1_1iterator__range}{base\+::iterator\+\_\+range}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1BytecodeIterator_1_1opcode__iterator}{opcode\+\_\+iterator}} $>$ {\bfseries opcodes} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1BytecodeIterator_a1f2a5db083d1a2306739605f85c6c875}\label{classv8_1_1internal_1_1wasm_1_1BytecodeIterator_a1f2a5db083d1a2306739605f85c6c875}} 
+\mbox{\hyperlink{classv8_1_1base_1_1iterator__range}{base\+::iterator\+\_\+range}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1BytecodeIterator_1_1offset__iterator}{offset\+\_\+iterator}} $>$ {\bfseries offsets} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1BytecodeIterator_a629869a6270842a211f8c53c7decf8ba}\label{classv8_1_1internal_1_1wasm_1_1BytecodeIterator_a629869a6270842a211f8c53c7decf8ba}} 
+Wasm\+Opcode {\bfseries current} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1BytecodeIterator_aeffa27162f4dce4f196670293525d1cb}\label{classv8_1_1internal_1_1wasm_1_1BytecodeIterator_aeffa27162f4dce4f196670293525d1cb}} 
+void {\bfseries next} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1BytecodeIterator_ade698e29c6c371e62fed768588316e1f}\label{classv8_1_1internal_1_1wasm_1_1BytecodeIterator_ade698e29c6c371e62fed768588316e1f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+next} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1BytecodeIterator_ae8c3928828a7fe73a49ea2d212470afe}\label{classv8_1_1internal_1_1wasm_1_1BytecodeIterator_ae8c3928828a7fe73a49ea2d212470afe}} 
+Wasm\+Opcode {\bfseries prefixed\+\_\+opcode} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 88 of file function-\/body-\/decoder.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/function-\/body-\/decoder.\+h\item 
+v8/src/wasm/function-\/body-\/decoder.\+cc\end{DoxyCompactItemize}

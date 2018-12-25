@@ -1,0 +1,73 @@
+\hypertarget{classv8_1_1internal_1_1ConstantPoolEntry}{}\section{v8\+:\+:internal\+:\+:Constant\+Pool\+Entry Class Reference}
+\label{classv8_1_1internal_1_1ConstantPoolEntry}\index{v8\+::internal\+::\+Constant\+Pool\+Entry@{v8\+::internal\+::\+Constant\+Pool\+Entry}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstantPoolEntry_a7544bf628d1729f4c2043ac53cf4eb34}\label{classv8_1_1internal_1_1ConstantPoolEntry_a7544bf628d1729f4c2043ac53cf4eb34}} 
+enum {\bfseries Type} \{ {\bfseries I\+N\+T\+P\+TR}, 
+{\bfseries D\+O\+U\+B\+LE}, 
+{\bfseries N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+T\+Y\+P\+ES}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstantPoolEntry_a3b552e534b5468e4b9fc4c6dfc67e3c8}\label{classv8_1_1internal_1_1ConstantPoolEntry_a3b552e534b5468e4b9fc4c6dfc67e3c8}} 
+enum {\bfseries Access} \{ {\bfseries R\+E\+G\+U\+L\+AR}, 
+{\bfseries O\+V\+E\+R\+F\+L\+O\+W\+ED}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstantPoolEntry_a7e126bd1a28f792b50a45a69c74feb15}\label{classv8_1_1internal_1_1ConstantPoolEntry_a7e126bd1a28f792b50a45a69c74feb15}} 
+{\bfseries Constant\+Pool\+Entry} (\mbox{\hyperlink{classint}{int}} position, intptr\+\_\+t value, \mbox{\hyperlink{classbool}{bool}} sharing\+\_\+ok, Reloc\+Info\+::\+Mode rmode=Reloc\+Info\+::\+N\+O\+NE)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstantPoolEntry_a54aa8eb405f32559f40ffa974b9c3c20}\label{classv8_1_1internal_1_1ConstantPoolEntry_a54aa8eb405f32559f40ffa974b9c3c20}} 
+{\bfseries Constant\+Pool\+Entry} (\mbox{\hyperlink{classint}{int}} position, \mbox{\hyperlink{classv8_1_1internal_1_1Double}{Double}} value, Reloc\+Info\+::\+Mode rmode=Reloc\+Info\+::\+N\+O\+NE)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstantPoolEntry_a9a8ff3456fd8c3f97729d0b4a6d11de9}\label{classv8_1_1internal_1_1ConstantPoolEntry_a9a8ff3456fd8c3f97729d0b4a6d11de9}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries position} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstantPoolEntry_a83d2472a93bce7206cb9cf3b0f33414f}\label{classv8_1_1internal_1_1ConstantPoolEntry_a83d2472a93bce7206cb9cf3b0f33414f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries sharing\+\_\+ok} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstantPoolEntry_ac9eecd76954e644d9f682ce17a72ae97}\label{classv8_1_1internal_1_1ConstantPoolEntry_ac9eecd76954e644d9f682ce17a72ae97}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+merged} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstantPoolEntry_a72d3deb110bcdea1945cfdac6ace18fe}\label{classv8_1_1internal_1_1ConstantPoolEntry_a72d3deb110bcdea1945cfdac6ace18fe}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries merged\+\_\+index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstantPoolEntry_a5990c4b32551a11641b0bcc894fe8fd4}\label{classv8_1_1internal_1_1ConstantPoolEntry_a5990c4b32551a11641b0bcc894fe8fd4}} 
+void {\bfseries set\+\_\+merged\+\_\+index} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstantPoolEntry_a86c735e8ab9811d8b0c442efcc3b6ab2}\label{classv8_1_1internal_1_1ConstantPoolEntry_a86c735e8ab9811d8b0c442efcc3b6ab2}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstantPoolEntry_a8d63e159ab6e3dc4bdfa6c7b317dc898}\label{classv8_1_1internal_1_1ConstantPoolEntry_a8d63e159ab6e3dc4bdfa6c7b317dc898}} 
+void {\bfseries set\+\_\+offset} (\mbox{\hyperlink{classint}{int}} offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstantPoolEntry_a3ece91621f31dbf81f9bf4befc65d3b0}\label{classv8_1_1internal_1_1ConstantPoolEntry_a3ece91621f31dbf81f9bf4befc65d3b0}} 
+intptr\+\_\+t {\bfseries value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstantPoolEntry_a902d87dbfab074fd20a1ef5d553930f2}\label{classv8_1_1internal_1_1ConstantPoolEntry_a902d87dbfab074fd20a1ef5d553930f2}} 
+uint64\+\_\+t {\bfseries value64} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstantPoolEntry_a97af118195afdf4c79202a9c541139ba}\label{classv8_1_1internal_1_1ConstantPoolEntry_a97af118195afdf4c79202a9c541139ba}} 
+Reloc\+Info\+::\+Mode {\bfseries rmode} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ConstantPoolEntry_a11980869d87e0390dcea4827cc067fb0}\label{classv8_1_1internal_1_1ConstantPoolEntry_a11980869d87e0390dcea4827cc067fb0}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries size} (Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 21 of file constant-\/pool.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/constant-\/pool.\+h\end{DoxyCompactItemize}

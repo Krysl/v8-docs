@@ -1,0 +1,97 @@
+\hypertarget{classv8_1_1internal_1_1MemoryReducer}{}\section{v8\+:\+:internal\+:\+:Memory\+Reducer Class Reference}
+\label{classv8_1_1internal_1_1MemoryReducer}\index{v8\+::internal\+::\+Memory\+Reducer@{v8\+::internal\+::\+Memory\+Reducer}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1MemoryReducer_1_1Event}{Event}}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1MemoryReducer_1_1State}{State}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryReducer_a458cd23d6f4121f9bd6bd3e3d241b4a7}\label{classv8_1_1internal_1_1MemoryReducer_a458cd23d6f4121f9bd6bd3e3d241b4a7}} 
+enum {\bfseries Action} \{ {\bfseries k\+Done}, 
+{\bfseries k\+Wait}, 
+{\bfseries k\+Run}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryReducer_a2853ab10b53e2913c5e06cc170d2d3bf}\label{classv8_1_1internal_1_1MemoryReducer_a2853ab10b53e2913c5e06cc170d2d3bf}} 
+enum {\bfseries Event\+Type} \{ {\bfseries k\+Timer}, 
+{\bfseries k\+Mark\+Compact}, 
+{\bfseries k\+Possible\+Garbage}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryReducer_ac96b54dd8d2483419d8798146dc6e332}\label{classv8_1_1internal_1_1MemoryReducer_ac96b54dd8d2483419d8798146dc6e332}} 
+{\bfseries Memory\+Reducer} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryReducer_a1a5730063f4fecc950e8f86529e298d8}\label{classv8_1_1internal_1_1MemoryReducer_a1a5730063f4fecc950e8f86529e298d8}} 
+void {\bfseries Notify\+Mark\+Compact} (const \mbox{\hyperlink{structv8_1_1internal_1_1MemoryReducer_1_1Event}{Event}} \&event)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryReducer_a3c5d18afac0c49c61ef034a72d7efca5}\label{classv8_1_1internal_1_1MemoryReducer_a3c5d18afac0c49c61ef034a72d7efca5}} 
+void {\bfseries Notify\+Possible\+Garbage} (const \mbox{\hyperlink{structv8_1_1internal_1_1MemoryReducer_1_1Event}{Event}} \&event)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryReducer_a6e32ad630b941e4dc5e11e46ed987180}\label{classv8_1_1internal_1_1MemoryReducer_a6e32ad630b941e4dc5e11e46ed987180}} 
+void {\bfseries Notify\+Background\+Idle\+Notification} (const \mbox{\hyperlink{structv8_1_1internal_1_1MemoryReducer_1_1Event}{Event}} \&event)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryReducer_a92bb3db5e54080dd68d5988d1a6b6f22}\label{classv8_1_1internal_1_1MemoryReducer_a92bb3db5e54080dd68d5988d1a6b6f22}} 
+void {\bfseries Schedule\+Timer} (double delay\+\_\+ms)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryReducer_a3010ec7bd3d474cac493524bcec6b19b}\label{classv8_1_1internal_1_1MemoryReducer_a3010ec7bd3d474cac493524bcec6b19b}} 
+void {\bfseries Tear\+Down} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryReducer_a6d461b494e05eb173fab49be31f4f485}\label{classv8_1_1internal_1_1MemoryReducer_a6d461b494e05eb173fab49be31f4f485}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$ {\bfseries heap} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryReducer_a892aacadda91617fc2d8420102258380}\label{classv8_1_1internal_1_1MemoryReducer_a892aacadda91617fc2d8420102258380}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Should\+Grow\+Heap\+Slowly} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryReducer_acb773a2429f9006c75dda44558b28250}\label{classv8_1_1internal_1_1MemoryReducer_acb773a2429f9006c75dda44558b28250}} 
+static \mbox{\hyperlink{structv8_1_1internal_1_1MemoryReducer_1_1State}{State}} {\bfseries Step} (const \mbox{\hyperlink{structv8_1_1internal_1_1MemoryReducer_1_1State}{State}} \&state, const \mbox{\hyperlink{structv8_1_1internal_1_1MemoryReducer_1_1Event}{Event}} \&event)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryReducer_a9560a6e073f69b8bbb7f3f91025405e9}\label{classv8_1_1internal_1_1MemoryReducer_a9560a6e073f69b8bbb7f3f91025405e9}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Long\+Delay\+Ms} = 8000
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryReducer_ab7e2131ef74777b24fdf47f2a0f1c925}\label{classv8_1_1internal_1_1MemoryReducer_ab7e2131ef74777b24fdf47f2a0f1c925}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Short\+Delay\+Ms} = 500
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryReducer_aea8eec9cb70717cff5db71c98545dc22}\label{classv8_1_1internal_1_1MemoryReducer_aea8eec9cb70717cff5db71c98545dc22}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Watchdog\+Delay\+Ms} = 100000
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryReducer_aed193ce51a1f1f504c51869abe024b7b}\label{classv8_1_1internal_1_1MemoryReducer_aed193ce51a1f1f504c51869abe024b7b}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Number\+Of\+G\+Cs} = 3
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryReducer_a4f3d452e0ed4ba216d104a47908ee815}\label{classv8_1_1internal_1_1MemoryReducer_a4f3d452e0ed4ba216d104a47908ee815}} 
+static const double {\bfseries k\+Committed\+Memory\+Factor} = 1.\+1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryReducer_a6558d1f96e8713f098912eb4139356cb}\label{classv8_1_1internal_1_1MemoryReducer_a6558d1f96e8713f098912eb4139356cb}} 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Committed\+Memory\+Delta} = 10 $\ast$ MB
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemoryReducer_aee0aab59f992bea8603b7be9e9b2f30d}\label{classv8_1_1internal_1_1MemoryReducer_aee0aab59f992bea8603b7be9e9b2f30d}} 
+class {\bfseries Heap\+Tester}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 83 of file memory-\/reducer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/memory-\/reducer.\+h\item 
+v8/src/heap/memory-\/reducer.\+cc\end{DoxyCompactItemize}

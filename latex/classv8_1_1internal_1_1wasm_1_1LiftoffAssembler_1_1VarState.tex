@@ -1,0 +1,80 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Liftoff\+Assembler\+:\+:Var\+State Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState}\index{v8\+::internal\+::wasm\+::\+Liftoff\+Assembler\+::\+Var\+State@{v8\+::internal\+::wasm\+::\+Liftoff\+Assembler\+::\+Var\+State}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a5b4a578480f4764639bace213f2c546a}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a5b4a578480f4764639bace213f2c546a}} 
+enum {\bfseries Location} \+: uint8\+\_\+t \{ {\bfseries k\+Stack}, 
+{\bfseries k\+Register}, 
+{\bfseries K\+Int\+Const}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a744662e94a7c8d13b94942647558a564}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a744662e94a7c8d13b94942647558a564}} 
+{\bfseries Var\+State} (Value\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a99d2f128a0926b217e415761cd689ee5}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a99d2f128a0926b217e415761cd689ee5}} 
+{\bfseries Var\+State} (Value\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} r)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_ab1953342a04a73d7810cca7caa278d46}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_ab1953342a04a73d7810cca7caa278d46}} 
+{\bfseries Var\+State} (Value\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, int32\+\_\+t i32\+\_\+const)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a06358d1c9e11d8d4e3eb602db085af45}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a06358d1c9e11d8d4e3eb602db085af45}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries operator==} (const \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState}{Var\+State}} \&other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_ad4fb49b9fb36c9f8d7d7ca602858864f}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_ad4fb49b9fb36c9f8d7d7ca602858864f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+stack} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a1da3adb1cd6d4dea6fa7264fcf8fb03b}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a1da3adb1cd6d4dea6fa7264fcf8fb03b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+gp\+\_\+reg} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a8e65327e59ed800b2d3c4d36ec5dc5b9}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a8e65327e59ed800b2d3c4d36ec5dc5b9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+fp\+\_\+reg} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a9fc7d4afdba15feb63e22ab179cac2a9}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a9fc7d4afdba15feb63e22ab179cac2a9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+reg} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a0e5af3404d69f1a7380cbc72e3700838}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a0e5af3404d69f1a7380cbc72e3700838}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+const} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a99ef065ce5f38cfa782795a40f920d03}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a99ef065ce5f38cfa782795a40f920d03}} 
+Value\+Type {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a3a66b949fc187055b75cb1932576524e}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a3a66b949fc187055b75cb1932576524e}} 
+Location {\bfseries loc} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_ad6788f191c0b73bca0e331033a651824}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_ad6788f191c0b73bca0e331033a651824}} 
+int32\+\_\+t {\bfseries i32\+\_\+const} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a2a64144d8fb69258f1543d2643831cbb}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a2a64144d8fb69258f1543d2643831cbb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmValue}{Wasm\+Value}} {\bfseries constant} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a9a5b499abcb1e2b816e773eac4eda8b6}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a9a5b499abcb1e2b816e773eac4eda8b6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries gp\+\_\+reg} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a6d19ba3c835785af9a880526f2386731}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a6d19ba3c835785af9a880526f2386731}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} {\bfseries fp\+\_\+reg} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a87d27708c8bb954a3f837727a55f2795}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a87d27708c8bb954a3f837727a55f2795}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} {\bfseries reg} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a733acf3f74318d3037516208d0b0c81f}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_a733acf3f74318d3037516208d0b0c81f}} 
+Reg\+Class {\bfseries reg\+\_\+class} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_ab82cc6a5a89b12afcfcea190dede37b0}\label{classv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1VarState_ab82cc6a5a89b12afcfcea190dede37b0}} 
+void {\bfseries Make\+Stack} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 40 of file liftoff-\/assembler.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/baseline/liftoff-\/assembler.\+h\end{DoxyCompactItemize}

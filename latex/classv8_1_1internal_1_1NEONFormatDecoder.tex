@@ -1,0 +1,91 @@
+\hypertarget{classv8_1_1internal_1_1NEONFormatDecoder}{}\section{v8\+:\+:internal\+:\+:N\+E\+O\+N\+Format\+Decoder Class Reference}
+\label{classv8_1_1internal_1_1NEONFormatDecoder}\index{v8\+::internal\+::\+N\+E\+O\+N\+Format\+Decoder@{v8\+::internal\+::\+N\+E\+O\+N\+Format\+Decoder}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_a5f3240a2f6ba9d123763017adf55e3fd}\label{classv8_1_1internal_1_1NEONFormatDecoder_a5f3240a2f6ba9d123763017adf55e3fd}} 
+enum {\bfseries Substitution\+Mode} \{ {\bfseries k\+Placeholder}, 
+{\bfseries k\+Format}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_a732da8a19ff5909b0ca7c588b4a8963e}\label{classv8_1_1internal_1_1NEONFormatDecoder_a732da8a19ff5909b0ca7c588b4a8963e}} 
+{\bfseries N\+E\+O\+N\+Format\+Decoder} (const \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$instr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_aea02daf67ef972b9eecf22e0d6fb1f98}\label{classv8_1_1internal_1_1NEONFormatDecoder_aea02daf67ef972b9eecf22e0d6fb1f98}} 
+{\bfseries N\+E\+O\+N\+Format\+Decoder} (const \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$instr, const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$format)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_a7549fcc185815f31b7d275bbfeef256a}\label{classv8_1_1internal_1_1NEONFormatDecoder_a7549fcc185815f31b7d275bbfeef256a}} 
+{\bfseries N\+E\+O\+N\+Format\+Decoder} (const \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$instr, const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$format0, const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$format1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_adf58ff7c8e79f40072a7985624b1a65a}\label{classv8_1_1internal_1_1NEONFormatDecoder_adf58ff7c8e79f40072a7985624b1a65a}} 
+{\bfseries N\+E\+O\+N\+Format\+Decoder} (const \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$instr, const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$format0, const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$format1, const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$format2)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_a483f12be340a4984e56972180522bf63}\label{classv8_1_1internal_1_1NEONFormatDecoder_a483f12be340a4984e56972180522bf63}} 
+void {\bfseries Set\+Format\+Maps} (const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$format0, const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$format1=nullptr, const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$format2=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_a09f25e615c37c3d6425b999c9d787089}\label{classv8_1_1internal_1_1NEONFormatDecoder_a09f25e615c37c3d6425b999c9d787089}} 
+void {\bfseries Set\+Format\+Map} (\mbox{\hyperlink{classunsigned}{unsigned}} index, const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$format)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_ae1d7850f870c3e9c1fd322e15dbdc784}\label{classv8_1_1internal_1_1NEONFormatDecoder_ae1d7850f870c3e9c1fd322e15dbdc784}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Substitute\+Placeholders} (const \mbox{\hyperlink{classchar}{char}} $\ast$string)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_a58fa805178e6c1fc7bdbe10701345137}\label{classv8_1_1internal_1_1NEONFormatDecoder_a58fa805178e6c1fc7bdbe10701345137}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Substitute} (const \mbox{\hyperlink{classchar}{char}} $\ast$string, Substitution\+Mode mode0=k\+Format, Substitution\+Mode mode1=k\+Format, Substitution\+Mode mode2=k\+Format)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_a67dde15de21fb376eb20b943a900ad3e}\label{classv8_1_1internal_1_1NEONFormatDecoder_a67dde15de21fb376eb20b943a900ad3e}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Mnemonic} (const \mbox{\hyperlink{classchar}{char}} $\ast$mnemonic)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_a10272e5fd50e63ddfc01d9fb92d595da}\label{classv8_1_1internal_1_1NEONFormatDecoder_a10272e5fd50e63ddfc01d9fb92d595da}} 
+Vector\+Format {\bfseries Get\+Vector\+Format} (\mbox{\hyperlink{classint}{int}} format\+\_\+index=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_a5848a6c12820630cf1f670d8b81eb2dd}\label{classv8_1_1internal_1_1NEONFormatDecoder_a5848a6c12820630cf1f670d8b81eb2dd}} 
+Vector\+Format {\bfseries Get\+Vector\+Format} (const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$format\+\_\+map)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_a4b857198e93d01c40d380b5541a3638c}\label{classv8_1_1internal_1_1NEONFormatDecoder_a4b857198e93d01c40d380b5541a3638c}} 
+static const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$ {\bfseries Integer\+Format\+Map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_aa2bb6171a3620862b947471a3e2bad06}\label{classv8_1_1internal_1_1NEONFormatDecoder_aa2bb6171a3620862b947471a3e2bad06}} 
+static const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$ {\bfseries Long\+Integer\+Format\+Map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_a5e0d914afa6ac2712fd4392266ac23e6}\label{classv8_1_1internal_1_1NEONFormatDecoder_a5e0d914afa6ac2712fd4392266ac23e6}} 
+static const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$ {\bfseries F\+P\+Format\+Map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_a66d029821750ccb70b73a68450b71f5a}\label{classv8_1_1internal_1_1NEONFormatDecoder_a66d029821750ccb70b73a68450b71f5a}} 
+static const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$ {\bfseries Load\+Store\+Format\+Map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_a5191cb584fc89e07e62361e5724e7477}\label{classv8_1_1internal_1_1NEONFormatDecoder_a5191cb584fc89e07e62361e5724e7477}} 
+static const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$ {\bfseries Logical\+Format\+Map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_a7f8ed62f8d449014525925bcab549aee}\label{classv8_1_1internal_1_1NEONFormatDecoder_a7f8ed62f8d449014525925bcab549aee}} 
+static const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$ {\bfseries Triangular\+Format\+Map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_a25661c07ec03dbf89abd92fd9c6fc2cb}\label{classv8_1_1internal_1_1NEONFormatDecoder_a25661c07ec03dbf89abd92fd9c6fc2cb}} 
+static const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$ {\bfseries Scalar\+Format\+Map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_a3dc46401d05486753caf204a6b27ea6b}\label{classv8_1_1internal_1_1NEONFormatDecoder_a3dc46401d05486753caf204a6b27ea6b}} 
+static const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$ {\bfseries Long\+Scalar\+Format\+Map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_a69f84db081da67ac2617f6dcc62fd261}\label{classv8_1_1internal_1_1NEONFormatDecoder_a69f84db081da67ac2617f6dcc62fd261}} 
+static const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$ {\bfseries F\+P\+Scalar\+Format\+Map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NEONFormatDecoder_a22b0d89011db1fe87c5fb06ed6fb7472}\label{classv8_1_1internal_1_1NEONFormatDecoder_a22b0d89011db1fe87c5fb06ed6fb7472}} 
+static const \mbox{\hyperlink{structv8_1_1internal_1_1NEONFormatMap}{N\+E\+O\+N\+Format\+Map}} $\ast$ {\bfseries Triangular\+Scalar\+Format\+Map} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 642 of file instructions-\/arm64.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/arm64/instructions-\/arm64.\+h\end{DoxyCompactItemize}

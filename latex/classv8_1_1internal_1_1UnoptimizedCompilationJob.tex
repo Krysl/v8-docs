@@ -1,0 +1,55 @@
+\hypertarget{classv8_1_1internal_1_1UnoptimizedCompilationJob}{}\section{v8\+:\+:internal\+:\+:Unoptimized\+Compilation\+Job Class Reference}
+\label{classv8_1_1internal_1_1UnoptimizedCompilationJob}\index{v8\+::internal\+::\+Unoptimized\+Compilation\+Job@{v8\+::internal\+::\+Unoptimized\+Compilation\+Job}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Unoptimized\+Compilation\+Job\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.818792cm]{classv8_1_1internal_1_1UnoptimizedCompilationJob}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1UnoptimizedCompilationJob_abd2d43c7b1815c1ad082e9498b29c5c4}\label{classv8_1_1internal_1_1UnoptimizedCompilationJob_abd2d43c7b1815c1ad082e9498b29c5c4}} 
+{\bfseries Unoptimized\+Compilation\+Job} (intptr\+\_\+t stack\+\_\+limit, \mbox{\hyperlink{classv8_1_1internal_1_1ParseInfo}{Parse\+Info}} $\ast$parse\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1UnoptimizedCompilationInfo}{Unoptimized\+Compilation\+Info}} $\ast$compilation\+\_\+info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1UnoptimizedCompilationJob_aea0b51d06ade525965f8a8810eebee4f}\label{classv8_1_1internal_1_1UnoptimizedCompilationJob_aea0b51d06ade525965f8a8810eebee4f}} 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT Status {\bfseries Execute\+Job} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1UnoptimizedCompilationJob_a8c34f61d449c00438df2cd0ca6b918dd}\label{classv8_1_1internal_1_1UnoptimizedCompilationJob_a8c34f61d449c00438df2cd0ca6b918dd}} 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT Status {\bfseries Finalize\+Job} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ shared\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1UnoptimizedCompilationJob_ac32604c62477f5b3f9119f7feaa712e1}\label{classv8_1_1internal_1_1UnoptimizedCompilationJob_ac32604c62477f5b3f9119f7feaa712e1}} 
+void {\bfseries Record\+Compilation\+Stats} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1UnoptimizedCompilationJob_a19f41f07d0036225c436152e585cb3a7}\label{classv8_1_1internal_1_1UnoptimizedCompilationJob_a19f41f07d0036225c436152e585cb3a7}} 
+void {\bfseries Record\+Function\+Compilation} (Code\+Event\+Listener\+::\+Log\+Events\+And\+Tags tag, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ shared, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1UnoptimizedCompilationJob_a4a66ac4ad7b1408770398402f1a9d987}\label{classv8_1_1internal_1_1UnoptimizedCompilationJob_a4a66ac4ad7b1408770398402f1a9d987}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ParseInfo}{Parse\+Info}} $\ast$ {\bfseries parse\+\_\+info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1UnoptimizedCompilationJob_a382ff911966bb75725935cfa2e8e6454}\label{classv8_1_1internal_1_1UnoptimizedCompilationJob_a382ff911966bb75725935cfa2e8e6454}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1UnoptimizedCompilationInfo}{Unoptimized\+Compilation\+Info}} $\ast$ {\bfseries compilation\+\_\+info} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1UnoptimizedCompilationJob_a6501f0941b33a3e01657704da0bcf47a}\label{classv8_1_1internal_1_1UnoptimizedCompilationJob_a6501f0941b33a3e01657704da0bcf47a}} 
+virtual Status {\bfseries Execute\+Job\+Impl} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1UnoptimizedCompilationJob_aba3bd0490844992a1dff02b36c2bb249}\label{classv8_1_1internal_1_1UnoptimizedCompilationJob_aba3bd0490844992a1dff02b36c2bb249}} 
+virtual Status {\bfseries Finalize\+Job\+Impl} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ shared\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)=0
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 221 of file compiler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler.\+h\item 
+v8/src/compiler.\+cc\end{DoxyCompactItemize}

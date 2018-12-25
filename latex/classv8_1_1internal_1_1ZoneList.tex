@@ -1,0 +1,130 @@
+\hypertarget{classv8_1_1internal_1_1ZoneList}{}\section{v8\+:\+:internal\+:\+:Zone\+List$<$ T $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1ZoneList}\index{v8\+::internal\+::\+Zone\+List$<$ T $>$@{v8\+::internal\+::\+Zone\+List$<$ T $>$}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_aac779d5b2f0212441129206fa7c3b4cb}\label{classv8_1_1internal_1_1ZoneList_aac779d5b2f0212441129206fa7c3b4cb}} 
+typedef T $\ast$ {\bfseries iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_af1f7621b6c2be40916af5fc5a46ce517}\label{classv8_1_1internal_1_1ZoneList_af1f7621b6c2be40916af5fc5a46ce517}} 
+{\bfseries Zone\+List} (\mbox{\hyperlink{classint}{int}} capacity, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a0c9f0cf394b32080ae7db834d007d930}\label{classv8_1_1internal_1_1ZoneList_a0c9f0cf394b32080ae7db834d007d930}} 
+{\bfseries Zone\+List} (std\+::initializer\+\_\+list$<$ T $>$ list, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_adebcf6abb4a1df45ad36a8dadc8be12b}\label{classv8_1_1internal_1_1ZoneList_adebcf6abb4a1df45ad36a8dadc8be12b}} 
+{\bfseries Zone\+List} (const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ T $>$ \&other, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a1724773fcb43343199036c4ac97a1816}\label{classv8_1_1internal_1_1ZoneList_a1724773fcb43343199036c4ac97a1816}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries operator delete} (void $\ast$p, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneAllocationPolicy}{Zone\+Allocation\+Policy}} allocator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a957293196cdba1ac253cf42a7075bb7e}\label{classv8_1_1internal_1_1ZoneList_a957293196cdba1ac253cf42a7075bb7e}} 
+void $\ast$ {\bfseries operator new} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a747da341048f1b76f3e57bcb695a8851}\label{classv8_1_1internal_1_1ZoneList_a747da341048f1b76f3e57bcb695a8851}} 
+T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (\mbox{\hyperlink{classint}{int}} i) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_ae9cba02ea54bb13759dd07145f6b4521}\label{classv8_1_1internal_1_1ZoneList_ae9cba02ea54bb13759dd07145f6b4521}} 
+T \& {\bfseries at} (\mbox{\hyperlink{classint}{int}} i) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_abdca0c55c8e52b768af0c0674ead9fbc}\label{classv8_1_1internal_1_1ZoneList_abdca0c55c8e52b768af0c0674ead9fbc}} 
+T \& {\bfseries last} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_ad7d60470577032878bd35e54b884e4e4}\label{classv8_1_1internal_1_1ZoneList_ad7d60470577032878bd35e54b884e4e4}} 
+T \& {\bfseries first} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a374ca1ae2c2c8b966c3310b8f27acc21}\label{classv8_1_1internal_1_1ZoneList_a374ca1ae2c2c8b966c3310b8f27acc21}} 
+iterator {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_ad3d98761e3b30777fb00d31ec5707e5f}\label{classv8_1_1internal_1_1ZoneList_ad3d98761e3b30777fb00d31ec5707e5f}} 
+iterator {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_abef0b8dd1c648df9a02625235b1c6961}\label{classv8_1_1internal_1_1ZoneList_abef0b8dd1c648df9a02625235b1c6961}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+empty} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a7fa8e0ba1f7a1c0557b4dc3b291bb1ed}\label{classv8_1_1internal_1_1ZoneList_a7fa8e0ba1f7a1c0557b4dc3b291bb1ed}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries length} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a170b9d3efce32a732605c2876a5735f9}\label{classv8_1_1internal_1_1ZoneList_a170b9d3efce32a732605c2876a5735f9}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries capacity} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_aff34606588b1ac3dad5255c014e48224}\label{classv8_1_1internal_1_1ZoneList_aff34606588b1ac3dad5255c014e48224}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ T $>$ {\bfseries To\+Vector} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a63e58cd084145b09490b0ee6efc5e329}\label{classv8_1_1internal_1_1ZoneList_a63e58cd084145b09490b0ee6efc5e329}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ T $>$ {\bfseries To\+Vector} (\mbox{\hyperlink{classint}{int}} start, \mbox{\hyperlink{classint}{int}} length) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a4b7b884592e1ef93cf4238580f8eb1be}\label{classv8_1_1internal_1_1ZoneList_a4b7b884592e1ef93cf4238580f8eb1be}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const T $>$ {\bfseries To\+Const\+Vector} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a9a63ebef2e0e48e689218b497a1a2e87}\label{classv8_1_1internal_1_1ZoneList_a9a63ebef2e0e48e689218b497a1a2e87}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Initialize} (\mbox{\hyperlink{classint}{int}} capacity, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_aeab81ed4336f7c008d0f7b4d1dbec9ab}\label{classv8_1_1internal_1_1ZoneList_aeab81ed4336f7c008d0f7b4d1dbec9ab}} 
+void {\bfseries Add} (const T \&element, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a29ba25b011cf596755f997c4b9bc0377}\label{classv8_1_1internal_1_1ZoneList_a29ba25b011cf596755f997c4b9bc0377}} 
+void {\bfseries Add\+All} (const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ T $>$ \&other, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a27b3ed6a0f59815446a11caccbb06f18}\label{classv8_1_1internal_1_1ZoneList_a27b3ed6a0f59815446a11caccbb06f18}} 
+void {\bfseries Add\+All} (const \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ T $>$ \&other, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a9b806a6d23f9dcdeee94eae91977414b}\label{classv8_1_1internal_1_1ZoneList_a9b806a6d23f9dcdeee94eae91977414b}} 
+void {\bfseries Insert\+At} (\mbox{\hyperlink{classint}{int}} index, const T \&element, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_aa2e59a14a6cf6cacd7b92dd2b448ca0b}\label{classv8_1_1internal_1_1ZoneList_aa2e59a14a6cf6cacd7b92dd2b448ca0b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ T $>$ {\bfseries Add\+Block} (T value, \mbox{\hyperlink{classint}{int}} count, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a63e3bb4959f8f39d148163cc6331be8d}\label{classv8_1_1internal_1_1ZoneList_a63e3bb4959f8f39d148163cc6331be8d}} 
+void {\bfseries Set} (\mbox{\hyperlink{classint}{int}} index, const T \&element)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a5b6d289d5c66b02d682dd4b0f3b079aa}\label{classv8_1_1internal_1_1ZoneList_a5b6d289d5c66b02d682dd4b0f3b079aa}} 
+T {\bfseries Remove} (\mbox{\hyperlink{classint}{int}} i)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a96ed79442bd782e28e5e8de08beb0bd9}\label{classv8_1_1internal_1_1ZoneList_a96ed79442bd782e28e5e8de08beb0bd9}} 
+V8\+\_\+\+I\+N\+L\+I\+NE T {\bfseries Remove\+Last} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a67ed2b88e41d86f603ab82ad1032aa48}\label{classv8_1_1internal_1_1ZoneList_a67ed2b88e41d86f603ab82ad1032aa48}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Clear} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_ab5326f399c34623de703eba5318d6663}\label{classv8_1_1internal_1_1ZoneList_ab5326f399c34623de703eba5318d6663}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Rewind} (\mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_ad6f42c20cb61527977ca9f8409486402}\label{classv8_1_1internal_1_1ZoneList_ad6f42c20cb61527977ca9f8409486402}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Contains} (const T \&elm) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a91df1e6f75d954dffb7063fdf990b654}\label{classv8_1_1internal_1_1ZoneList_a91df1e6f75d954dffb7063fdf990b654}} 
+{\footnotesize template$<$class Visitor $>$ }\\void {\bfseries Iterate} (Visitor $\ast$visitor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a6ed0d7aa417a231cc2523936c4c5504c}\label{classv8_1_1internal_1_1ZoneList_a6ed0d7aa417a231cc2523936c4c5504c}} 
+{\footnotesize template$<$typename Compare\+Function $>$ }\\void {\bfseries Sort} (Compare\+Function cmp)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a454295d8e1b85d0fb3a5f28664d5753d}\label{classv8_1_1internal_1_1ZoneList_a454295d8e1b85d0fb3a5f28664d5753d}} 
+{\footnotesize template$<$typename Compare\+Function $>$ }\\void {\bfseries Stable\+Sort} (Compare\+Function cmp, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} start, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_ad34e89232a7e498218bab40cb231798d}\label{classv8_1_1internal_1_1ZoneList_ad34e89232a7e498218bab40cb231798d}} 
+void {\bfseries operator delete} (void $\ast$pointer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneList_a92bd2e802a848cf5986f45a740c740c3}\label{classv8_1_1internal_1_1ZoneList_a92bd2e802a848cf5986f45a740c740c3}} 
+void {\bfseries operator delete} (void $\ast$pointer, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class v8\+::internal\+::\+Zone\+List$<$ T $>$}
+
+
+
+Definition at line 17 of file expression-\/classifier.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/parsing/expression-\/classifier.\+h\item 
+v8/src/zone/zone.\+h\item 
+v8/src/zone/zone-\/list-\/inl.\+h\end{DoxyCompactItemize}

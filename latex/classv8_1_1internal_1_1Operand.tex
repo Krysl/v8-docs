@@ -1,0 +1,471 @@
+\hypertarget{classv8_1_1internal_1_1Operand}{}\section{v8\+:\+:internal\+:\+:Operand Class Reference}
+\label{classv8_1_1internal_1_1Operand}\index{v8\+::internal\+::\+Operand@{v8\+::internal\+::\+Operand}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Operand\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1Operand}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1Operand_1_1Data}{Data}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ad16a1a70a71a30a8a05f19afa9fed976}\label{classv8_1_1internal_1_1Operand_ad16a1a70a71a30a8a05f19afa9fed976}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (int32\+\_\+t immediate, Reloc\+Info\+::\+Mode rmode=Reloc\+Info\+::\+N\+O\+NE)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a8ff01211ace7b032a0ff733298fa3bde}\label{classv8_1_1internal_1_1Operand_a8ff01211ace7b032a0ff733298fa3bde}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (const \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} \&f)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a89275469683feb79dbec2790f984cf2d}\label{classv8_1_1internal_1_1Operand_a89275469683feb79dbec2790f984cf2d}} 
+{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ handle)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a249305d66784e81ae4159b33c061e7f2}\label{classv8_1_1internal_1_1Operand_a249305d66784e81ae4159b33c061e7f2}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_af4145d243c4a3b8f27e497f8a15f2d87}\label{classv8_1_1internal_1_1Operand_af4145d243c4a3b8f27e497f8a15f2d87}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rm)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a1f0c9654c35e3d227088257c9a93c172}\label{classv8_1_1internal_1_1Operand_a1f0c9654c35e3d227088257c9a93c172}} 
+{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rm, Shift\+Op shift\+\_\+op, \mbox{\hyperlink{classint}{int}} shift\+\_\+imm)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a79e4fffed4127de2bf5f0674856a41e5}\label{classv8_1_1internal_1_1Operand_a79e4fffed4127de2bf5f0674856a41e5}} 
+{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rm, Shift\+Op shift\+\_\+op, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a85c589158d773dfd18246ac02243ce1c}\label{classv8_1_1internal_1_1Operand_a85c589158d773dfd18246ac02243ce1c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Register} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ac54504a0390149053d04c1c570b1964f}\label{classv8_1_1internal_1_1Operand_ac54504a0390149053d04c1c570b1964f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Immediate\+Shifted\+Register} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ade099697ab8a6849eee480a9692d275b}\label{classv8_1_1internal_1_1Operand_ade099697ab8a6849eee480a9692d275b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Register\+Shifted\+Register} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a1b972dbb1d3ef5862dd3d8a434e4dda3}\label{classv8_1_1internal_1_1Operand_a1b972dbb1d3ef5862dd3d8a434e4dda3}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Instructions\+Required} (const \mbox{\hyperlink{classv8_1_1internal_1_1Assembler}{Assembler}} $\ast$assembler, Instr instr=0) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a7a161d87720340a22a1a0ce8382016c7}\label{classv8_1_1internal_1_1Operand_a7a161d87720340a22a1a0ce8382016c7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Must\+Output\+Reloc\+Info} (const \mbox{\hyperlink{classv8_1_1internal_1_1Assembler}{Assembler}} $\ast$assembler) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_af8ae196ec3645d6e0e370c2c84d57357}\label{classv8_1_1internal_1_1Operand_af8ae196ec3645d6e0e370c2c84d57357}} 
+int32\+\_\+t {\bfseries immediate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a8da286359e60a5ab8ba6e368fdca7d8b}\label{classv8_1_1internal_1_1Operand_a8da286359e60a5ab8ba6e368fdca7d8b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Immediate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a9beaf04cfc4aea3a9d725172753766ed}\label{classv8_1_1internal_1_1Operand_a9beaf04cfc4aea3a9d725172753766ed}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapObjectRequest}{Heap\+Object\+Request}} {\bfseries heap\+\_\+object\+\_\+request} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_adc7ce8d04bde8ab9674a1bdc9689e5ee}\label{classv8_1_1internal_1_1Operand_adc7ce8d04bde8ab9674a1bdc9689e5ee}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Heap\+Object\+Request} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ad0495c31017fd74b04574225b3af4d39}\label{classv8_1_1internal_1_1Operand_ad0495c31017fd74b04574225b3af4d39}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries rm} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a65326562f2205395b86359b8f80cc804}\label{classv8_1_1internal_1_1Operand_a65326562f2205395b86359b8f80cc804}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries rs} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ab6360936c1ec6ab289c1a2fe3b9d9191}\label{classv8_1_1internal_1_1Operand_ab6360936c1ec6ab289c1a2fe3b9d9191}} 
+Shift\+Op {\bfseries shift\+\_\+op} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a1af963dd843b63c0c2aaa9ccd339c47f}\label{classv8_1_1internal_1_1Operand_a1af963dd843b63c0c2aaa9ccd339c47f}} 
+{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} reg, Shift shift=L\+SL, \mbox{\hyperlink{classunsigned}{unsigned}} shift\+\_\+amount=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_aae672cf521d2681ac927432410638373}\label{classv8_1_1internal_1_1Operand_aae672cf521d2681ac927432410638373}} 
+{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} reg, Extend extend, \mbox{\hyperlink{classunsigned}{unsigned}} shift\+\_\+amount=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_adc7ce8d04bde8ab9674a1bdc9689e5ee}\label{classv8_1_1internal_1_1Operand_adc7ce8d04bde8ab9674a1bdc9689e5ee}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Heap\+Object\+Request} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a9beaf04cfc4aea3a9d725172753766ed}\label{classv8_1_1internal_1_1Operand_a9beaf04cfc4aea3a9d725172753766ed}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapObjectRequest}{Heap\+Object\+Request}} {\bfseries heap\+\_\+object\+\_\+request} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a88c99f7cbc3dbe691728270bf58d3e8b}\label{classv8_1_1internal_1_1Operand_a88c99f7cbc3dbe691728270bf58d3e8b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Immediate}{Immediate}} {\bfseries immediate\+\_\+for\+\_\+heap\+\_\+object\+\_\+request} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a16973e53cbf4acd5dec14b1c2c58410f}\label{classv8_1_1internal_1_1Operand_a16973e53cbf4acd5dec14b1c2c58410f}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ handle)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_abfdd57ab46b4569f2262434f10a8ee5b}\label{classv8_1_1internal_1_1Operand_abfdd57ab46b4569f2262434f10a8ee5b}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} t)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a9d61addaaab7feba8f2b3af60a703fe7}\label{classv8_1_1internal_1_1Operand_a9d61addaaab7feba8f2b3af60a703fe7}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} t, Reloc\+Info\+::\+Mode rmode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a8da286359e60a5ab8ba6e368fdca7d8b}\label{classv8_1_1internal_1_1Operand_a8da286359e60a5ab8ba6e368fdca7d8b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Immediate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_aedfc62f7834cfedb88869ed40cbdb973}\label{classv8_1_1internal_1_1Operand_aedfc62f7834cfedb88869ed40cbdb973}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Shifted\+Register} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a40bfcf259a2a3af5351db206ed509c4f}\label{classv8_1_1internal_1_1Operand_a40bfcf259a2a3af5351db206ed509c4f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Extended\+Register} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a9a3d12f998645ee0c6c76065c9443db3}\label{classv8_1_1internal_1_1Operand_a9a3d12f998645ee0c6c76065c9443db3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Zero} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_abdfed015d12f48588247b3c1ea8434a2}\label{classv8_1_1internal_1_1Operand_abdfed015d12f48588247b3c1ea8434a2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries To\+Extended\+Register} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_af73702a23c76397b9a5486c0f1505e4e}\label{classv8_1_1internal_1_1Operand_af73702a23c76397b9a5486c0f1505e4e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Immediate}{Immediate}} {\bfseries immediate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a51a7d5eaf3952758e6f50389917ef998}\label{classv8_1_1internal_1_1Operand_a51a7d5eaf3952758e6f50389917ef998}} 
+\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} {\bfseries Immediate\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a6a702ba2ac4863abc2073045bc944faa}\label{classv8_1_1internal_1_1Operand_a6a702ba2ac4863abc2073045bc944faa}} 
+Reloc\+Info\+::\+Mode {\bfseries Immediate\+R\+Mode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a2a80076be6d84a6030e554639c2e3dae}\label{classv8_1_1internal_1_1Operand_a2a80076be6d84a6030e554639c2e3dae}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries reg} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a539d14d89c286675f3e02677aa7c9a69}\label{classv8_1_1internal_1_1Operand_a539d14d89c286675f3e02677aa7c9a69}} 
+Shift {\bfseries shift} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_aea48644e681324f0a0988d6feb8dfbbe}\label{classv8_1_1internal_1_1Operand_aea48644e681324f0a0988d6feb8dfbbe}} 
+Extend {\bfseries extend} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a8bd31cadc708d33be85ae56d9452e3d7}\label{classv8_1_1internal_1_1Operand_a8bd31cadc708d33be85ae56d9452e3d7}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries shift\+\_\+amount} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a9fd0146fb876fdaf66d7b6ae43901371}\label{classv8_1_1internal_1_1Operand_a9fd0146fb876fdaf66d7b6ae43901371}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Needs\+Relocation} (const \mbox{\hyperlink{classv8_1_1internal_1_1Assembler}{Assembler}} $\ast$assembler) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_aff3d3418ff786b40afec32f1a7e63a96}\label{classv8_1_1internal_1_1Operand_aff3d3418ff786b40afec32f1a7e63a96}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a84297f7ec7218c893e6dfa211a00cff3}\label{classv8_1_1internal_1_1Operand_a84297f7ec7218c893e6dfa211a00cff3}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1XMMRegister}{X\+M\+M\+Register}} xmm\+\_\+reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ac94fc71d788656430bb8842069e545ff}\label{classv8_1_1internal_1_1Operand_ac94fc71d788656430bb8842069e545ff}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (int32\+\_\+t disp, Reloc\+Info\+::\+Mode rmode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a20cd972fc6de3b9510a19f1ca02926dd}\label{classv8_1_1internal_1_1Operand_a20cd972fc6de3b9510a19f1ca02926dd}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Immediate}{Immediate}} imm)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a10bd5cc68f71fe0dfae7063f78e11bfb}\label{classv8_1_1internal_1_1Operand_a10bd5cc68f71fe0dfae7063f78e11bfb}} 
+{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} base, int32\+\_\+t disp, Reloc\+Info\+::\+Mode rmode=Reloc\+Info\+::\+N\+O\+NE)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_aaeabdf39a1861fc1151ca8eeb0c16a2a}\label{classv8_1_1internal_1_1Operand_aaeabdf39a1861fc1151ca8eeb0c16a2a}} 
+{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} base, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} index, Scale\+Factor scale, int32\+\_\+t disp, Reloc\+Info\+::\+Mode rmode=Reloc\+Info\+::\+N\+O\+NE)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ad52280f518ff1c4219e902eab58239e2}\label{classv8_1_1internal_1_1Operand_ad52280f518ff1c4219e902eab58239e2}} 
+{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} index, Scale\+Factor scale, int32\+\_\+t disp, Reloc\+Info\+::\+Mode rmode=Reloc\+Info\+::\+N\+O\+NE)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a02ed862022e9d0e210c25cadd648ad4e}\label{classv8_1_1internal_1_1Operand_a02ed862022e9d0e210c25cadd648ad4e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+reg} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} reg) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a48b18c673800ad1fbd39246d727c1d7f}\label{classv8_1_1internal_1_1Operand_a48b18c673800ad1fbd39246d727c1d7f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+reg} (\mbox{\hyperlink{classv8_1_1internal_1_1XMMRegister}{X\+M\+M\+Register}} reg) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_adecdfb611d70453ff8101711e8c871f6}\label{classv8_1_1internal_1_1Operand_adecdfb611d70453ff8101711e8c871f6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+reg\+\_\+only} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a2a80076be6d84a6030e554639c2e3dae}\label{classv8_1_1internal_1_1Operand_a2a80076be6d84a6030e554639c2e3dae}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries reg} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ae40d462095483591a10f5f3185b35361}\label{classv8_1_1internal_1_1Operand_ae40d462095483591a10f5f3185b35361}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (int32\+\_\+t immediate, Reloc\+Info\+::\+Mode rmode=Reloc\+Info\+::\+N\+O\+NE)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a538d1dcaf002542b9144b5fbc062d728}\label{classv8_1_1internal_1_1Operand_a538d1dcaf002542b9144b5fbc062d728}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (const \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} \&f)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ac4940851b5bce9e48d3ab3b0144b99ba}\label{classv8_1_1internal_1_1Operand_ac4940851b5bce9e48d3ab3b0144b99ba}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (const \mbox{\hyperlink{classchar}{char}} $\ast$s)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a89275469683feb79dbec2790f984cf2d}\label{classv8_1_1internal_1_1Operand_a89275469683feb79dbec2790f984cf2d}} 
+{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ handle)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a027e7cab65c73c00b2ef5381724dd3be}\label{classv8_1_1internal_1_1Operand_a027e7cab65c73c00b2ef5381724dd3be}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_afa91505837ddc2da0a1e92af8b54b097}\label{classv8_1_1internal_1_1Operand_afa91505837ddc2da0a1e92af8b54b097}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rm)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ac88d4705afba9fa8171c85bc2e38d3f2}\label{classv8_1_1internal_1_1Operand_ac88d4705afba9fa8171c85bc2e38d3f2}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+reg} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a9dd1c171305a3bf1a9c61cc837a4f477}\label{classv8_1_1internal_1_1Operand_a9dd1c171305a3bf1a9c61cc837a4f477}} 
+int32\+\_\+t {\bfseries immediate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a8da286359e60a5ab8ba6e368fdca7d8b}\label{classv8_1_1internal_1_1Operand_a8da286359e60a5ab8ba6e368fdca7d8b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Immediate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a9beaf04cfc4aea3a9d725172753766ed}\label{classv8_1_1internal_1_1Operand_a9beaf04cfc4aea3a9d725172753766ed}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapObjectRequest}{Heap\+Object\+Request}} {\bfseries heap\+\_\+object\+\_\+request} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_adc7ce8d04bde8ab9674a1bdc9689e5ee}\label{classv8_1_1internal_1_1Operand_adc7ce8d04bde8ab9674a1bdc9689e5ee}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Heap\+Object\+Request} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ad0495c31017fd74b04574225b3af4d39}\label{classv8_1_1internal_1_1Operand_ad0495c31017fd74b04574225b3af4d39}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries rm} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a426ed4df4a3c04c315a06be3fe26fc3a}\label{classv8_1_1internal_1_1Operand_a426ed4df4a3c04c315a06be3fe26fc3a}} 
+Reloc\+Info\+::\+Mode {\bfseries rmode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a1ab13f06cfdce53181905475b667f48d}\label{classv8_1_1internal_1_1Operand_a1ab13f06cfdce53181905475b667f48d}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} immediate, Reloc\+Info\+::\+Mode rmode=Reloc\+Info\+::\+N\+O\+NE)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a538d1dcaf002542b9144b5fbc062d728}\label{classv8_1_1internal_1_1Operand_a538d1dcaf002542b9144b5fbc062d728}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (const \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} \&f)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ac4940851b5bce9e48d3ab3b0144b99ba}\label{classv8_1_1internal_1_1Operand_ac4940851b5bce9e48d3ab3b0144b99ba}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (const \mbox{\hyperlink{classchar}{char}} $\ast$s)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a89275469683feb79dbec2790f984cf2d}\label{classv8_1_1internal_1_1Operand_a89275469683feb79dbec2790f984cf2d}} 
+{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ handle)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a027e7cab65c73c00b2ef5381724dd3be}\label{classv8_1_1internal_1_1Operand_a027e7cab65c73c00b2ef5381724dd3be}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_afa91505837ddc2da0a1e92af8b54b097}\label{classv8_1_1internal_1_1Operand_afa91505837ddc2da0a1e92af8b54b097}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rm)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ac595e80d0e3d2f2033227a0b58795587}\label{classv8_1_1internal_1_1Operand_ac595e80d0e3d2f2033227a0b58795587}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+reg} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_af8ae196ec3645d6e0e370c2c84d57357}\label{classv8_1_1internal_1_1Operand_af8ae196ec3645d6e0e370c2c84d57357}} 
+\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} {\bfseries immediate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a8da286359e60a5ab8ba6e368fdca7d8b}\label{classv8_1_1internal_1_1Operand_a8da286359e60a5ab8ba6e368fdca7d8b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Immediate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a9beaf04cfc4aea3a9d725172753766ed}\label{classv8_1_1internal_1_1Operand_a9beaf04cfc4aea3a9d725172753766ed}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapObjectRequest}{Heap\+Object\+Request}} {\bfseries heap\+\_\+object\+\_\+request} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_adc7ce8d04bde8ab9674a1bdc9689e5ee}\label{classv8_1_1internal_1_1Operand_adc7ce8d04bde8ab9674a1bdc9689e5ee}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Heap\+Object\+Request} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ad0495c31017fd74b04574225b3af4d39}\label{classv8_1_1internal_1_1Operand_ad0495c31017fd74b04574225b3af4d39}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries rm} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a426ed4df4a3c04c315a06be3fe26fc3a}\label{classv8_1_1internal_1_1Operand_a426ed4df4a3c04c315a06be3fe26fc3a}} 
+Reloc\+Info\+::\+Mode {\bfseries rmode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a06953845aca3ef2752a5700b0dc82efb}\label{classv8_1_1internal_1_1Operand_a06953845aca3ef2752a5700b0dc82efb}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (intptr\+\_\+t immediate, Reloc\+Info\+::\+Mode rmode=Reloc\+Info\+::\+N\+O\+NE)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a538d1dcaf002542b9144b5fbc062d728}\label{classv8_1_1internal_1_1Operand_a538d1dcaf002542b9144b5fbc062d728}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (const \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} \&f)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a89275469683feb79dbec2790f984cf2d}\label{classv8_1_1internal_1_1Operand_a89275469683feb79dbec2790f984cf2d}} 
+{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ handle)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a027e7cab65c73c00b2ef5381724dd3be}\label{classv8_1_1internal_1_1Operand_a027e7cab65c73c00b2ef5381724dd3be}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_afa91505837ddc2da0a1e92af8b54b097}\label{classv8_1_1internal_1_1Operand_afa91505837ddc2da0a1e92af8b54b097}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rm)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ac595e80d0e3d2f2033227a0b58795587}\label{classv8_1_1internal_1_1Operand_ac595e80d0e3d2f2033227a0b58795587}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+reg} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a844776d6bd0526be04231cd8442bc644}\label{classv8_1_1internal_1_1Operand_a844776d6bd0526be04231cd8442bc644}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries must\+\_\+output\+\_\+reloc\+\_\+info} (const \mbox{\hyperlink{classv8_1_1internal_1_1Assembler}{Assembler}} $\ast$assembler) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a1208356f90c3adeabb7fe4c60ae95fdf}\label{classv8_1_1internal_1_1Operand_a1208356f90c3adeabb7fe4c60ae95fdf}} 
+intptr\+\_\+t {\bfseries immediate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a8da286359e60a5ab8ba6e368fdca7d8b}\label{classv8_1_1internal_1_1Operand_a8da286359e60a5ab8ba6e368fdca7d8b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Immediate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a9beaf04cfc4aea3a9d725172753766ed}\label{classv8_1_1internal_1_1Operand_a9beaf04cfc4aea3a9d725172753766ed}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapObjectRequest}{Heap\+Object\+Request}} {\bfseries heap\+\_\+object\+\_\+request} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ad0495c31017fd74b04574225b3af4d39}\label{classv8_1_1internal_1_1Operand_ad0495c31017fd74b04574225b3af4d39}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries rm} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_adc7ce8d04bde8ab9674a1bdc9689e5ee}\label{classv8_1_1internal_1_1Operand_adc7ce8d04bde8ab9674a1bdc9689e5ee}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Heap\+Object\+Request} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a06953845aca3ef2752a5700b0dc82efb}\label{classv8_1_1internal_1_1Operand_a06953845aca3ef2752a5700b0dc82efb}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (intptr\+\_\+t immediate, Reloc\+Info\+::\+Mode rmode=Reloc\+Info\+::\+N\+O\+NE)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a538d1dcaf002542b9144b5fbc062d728}\label{classv8_1_1internal_1_1Operand_a538d1dcaf002542b9144b5fbc062d728}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (const \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} \&f)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a89275469683feb79dbec2790f984cf2d}\label{classv8_1_1internal_1_1Operand_a89275469683feb79dbec2790f984cf2d}} 
+{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ handle)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a027e7cab65c73c00b2ef5381724dd3be}\label{classv8_1_1internal_1_1Operand_a027e7cab65c73c00b2ef5381724dd3be}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_afa91505837ddc2da0a1e92af8b54b097}\label{classv8_1_1internal_1_1Operand_afa91505837ddc2da0a1e92af8b54b097}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rm)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ac595e80d0e3d2f2033227a0b58795587}\label{classv8_1_1internal_1_1Operand_ac595e80d0e3d2f2033227a0b58795587}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+reg} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a844776d6bd0526be04231cd8442bc644}\label{classv8_1_1internal_1_1Operand_a844776d6bd0526be04231cd8442bc644}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries must\+\_\+output\+\_\+reloc\+\_\+info} (const \mbox{\hyperlink{classv8_1_1internal_1_1Assembler}{Assembler}} $\ast$assembler) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a1208356f90c3adeabb7fe4c60ae95fdf}\label{classv8_1_1internal_1_1Operand_a1208356f90c3adeabb7fe4c60ae95fdf}} 
+intptr\+\_\+t {\bfseries immediate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a9beaf04cfc4aea3a9d725172753766ed}\label{classv8_1_1internal_1_1Operand_a9beaf04cfc4aea3a9d725172753766ed}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapObjectRequest}{Heap\+Object\+Request}} {\bfseries heap\+\_\+object\+\_\+request} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a6f6fed066eb53f1de5d19e6517afd3d7}\label{classv8_1_1internal_1_1Operand_a6f6fed066eb53f1de5d19e6517afd3d7}} 
+void {\bfseries set\+Bits} (\mbox{\hyperlink{classint}{int}} n)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ad0495c31017fd74b04574225b3af4d39}\label{classv8_1_1internal_1_1Operand_ad0495c31017fd74b04574225b3af4d39}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries rm} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a7382bdb350d686c618496c1fa33e7896}\label{classv8_1_1internal_1_1Operand_a7382bdb350d686c618496c1fa33e7896}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+heap\+\_\+object\+\_\+request} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a426ed4df4a3c04c315a06be3fe26fc3a}\label{classv8_1_1internal_1_1Operand_a426ed4df4a3c04c315a06be3fe26fc3a}} 
+Reloc\+Info\+::\+Mode {\bfseries rmode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a337eadcc06be14f928c97643189494c0}\label{classv8_1_1internal_1_1Operand_a337eadcc06be14f928c97643189494c0}} 
+{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} base, int32\+\_\+t disp)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ae473b7df0e6fc91fc219f6876eb958cf}\label{classv8_1_1internal_1_1Operand_ae473b7df0e6fc91fc219f6876eb958cf}} 
+{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} base, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} index, Scale\+Factor scale, int32\+\_\+t disp)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ae74a29227ef381fa0d234a40ca05827a}\label{classv8_1_1internal_1_1Operand_ae74a29227ef381fa0d234a40ca05827a}} 
+{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} index, Scale\+Factor scale, int32\+\_\+t disp)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a5f210f1c59d5cb9fbe4e7b395e9d319d}\label{classv8_1_1internal_1_1Operand_a5f210f1c59d5cb9fbe4e7b395e9d319d}} 
+{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} base, int32\+\_\+t offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a2a1828e18961a690e24e33c4d908d9f5}\label{classv8_1_1internal_1_1Operand_a2a1828e18961a690e24e33c4d908d9f5}} 
+{\bfseries Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$label, \mbox{\hyperlink{classint}{int}} addend=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a22af344a18b84a6f9a849d6aa40a2b1b}\label{classv8_1_1internal_1_1Operand_a22af344a18b84a6f9a849d6aa40a2b1b}} 
+{\bfseries Operand} (const \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} \&)=default
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ae7947af87b4e118311fee17aea836aba}\label{classv8_1_1internal_1_1Operand_ae7947af87b4e118311fee17aea836aba}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Address\+Uses\+Register} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} reg) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_aebe8f07c0966b2a4c463dba81db036d7}\label{classv8_1_1internal_1_1Operand_aebe8f07c0966b2a4c463dba81db036d7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries requires\+\_\+rex} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_adeb4256a106fd3ff75cfac6bd59faedf}\label{classv8_1_1internal_1_1Operand_adeb4256a106fd3ff75cfac6bd59faedf}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries operand\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a8f2d1cfdd8e7d7f7014f0b04b5cc4b95}\label{classv8_1_1internal_1_1Operand_a8f2d1cfdd8e7d7f7014f0b04b5cc4b95}} 
+const \mbox{\hyperlink{structv8_1_1internal_1_1Operand_1_1Data}{Data}} \& {\bfseries data} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a8719476aaceaa8dd20362ea00fd588c8}\label{classv8_1_1internal_1_1Operand_a8719476aaceaa8dd20362ea00fd588c8}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Zero} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a502974af2a648b7688919d1ed9e99eb7}\label{classv8_1_1internal_1_1Operand_a502974af2a648b7688919d1ed9e99eb7}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Smi\+Untag} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rm)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a7a8d199a291289f2d164588d70bbd0fa}\label{classv8_1_1internal_1_1Operand_a7a8d199a291289f2d164588d70bbd0fa}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Pointer\+Offset\+From\+Smi\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_aab94bf7a2d376fa83419edac5e828485}\label{classv8_1_1internal_1_1Operand_aab94bf7a2d376fa83419edac5e828485}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Double\+Offset\+From\+Smi\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_acf6f1fd77d9ac5d43608db185e9ee29b}\label{classv8_1_1internal_1_1Operand_acf6f1fd77d9ac5d43608db185e9ee29b}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Embedded\+Number} (double number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a3c9527809810de0034efe67b914f9ee1}\label{classv8_1_1internal_1_1Operand_a3c9527809810de0034efe67b914f9ee1}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Embedded\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1CodeStub}{Code\+Stub}} $\ast$stub)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_aed8c3e6c09f724bdfb40c4705b89bc83}\label{classv8_1_1internal_1_1Operand_aed8c3e6c09f724bdfb40c4705b89bc83}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Embedded\+String\+Constant} (const \mbox{\hyperlink{classv8_1_1internal_1_1StringConstantBase}{String\+Constant\+Base}} $\ast$str)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_acf6f1fd77d9ac5d43608db185e9ee29b}\label{classv8_1_1internal_1_1Operand_acf6f1fd77d9ac5d43608db185e9ee29b}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Embedded\+Number} (double number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a3c9527809810de0034efe67b914f9ee1}\label{classv8_1_1internal_1_1Operand_a3c9527809810de0034efe67b914f9ee1}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Embedded\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1CodeStub}{Code\+Stub}} $\ast$stub)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_aed8c3e6c09f724bdfb40c4705b89bc83}\label{classv8_1_1internal_1_1Operand_aed8c3e6c09f724bdfb40c4705b89bc83}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Embedded\+String\+Constant} (const \mbox{\hyperlink{classv8_1_1internal_1_1StringConstantBase}{String\+Constant\+Base}} $\ast$str)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_abbaaa835826e5c40aa859b4969ae12fc}\label{classv8_1_1internal_1_1Operand_abbaaa835826e5c40aa859b4969ae12fc}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Untag\+Smi} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} smi)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ab192154b2af9a0d8d42a399cc7ba193b}\label{classv8_1_1internal_1_1Operand_ab192154b2af9a0d8d42a399cc7ba193b}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Untag\+Smi\+And\+Scale} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} smi, \mbox{\hyperlink{classint}{int}} scale)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a8735cc5b5211b32926425a07e93fa08c}\label{classv8_1_1internal_1_1Operand_a8735cc5b5211b32926425a07e93fa08c}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Jump\+Table} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} index, Scale\+Factor scale, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$table)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a2ade51913dd16c845d0d93fbbcbef8a2}\label{classv8_1_1internal_1_1Operand_a2ade51913dd16c845d0d93fbbcbef8a2}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries For\+Register\+Plus\+Immediate} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} base, \mbox{\hyperlink{classv8_1_1internal_1_1Immediate}{Immediate}} imm)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_acf6f1fd77d9ac5d43608db185e9ee29b}\label{classv8_1_1internal_1_1Operand_acf6f1fd77d9ac5d43608db185e9ee29b}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Embedded\+Number} (double number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a3c9527809810de0034efe67b914f9ee1}\label{classv8_1_1internal_1_1Operand_a3c9527809810de0034efe67b914f9ee1}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Embedded\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1CodeStub}{Code\+Stub}} $\ast$stub)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_aed8c3e6c09f724bdfb40c4705b89bc83}\label{classv8_1_1internal_1_1Operand_aed8c3e6c09f724bdfb40c4705b89bc83}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Embedded\+String\+Constant} (const \mbox{\hyperlink{classv8_1_1internal_1_1StringConstantBase}{String\+Constant\+Base}} $\ast$str)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_acf6f1fd77d9ac5d43608db185e9ee29b}\label{classv8_1_1internal_1_1Operand_acf6f1fd77d9ac5d43608db185e9ee29b}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Embedded\+Number} (double number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a3c9527809810de0034efe67b914f9ee1}\label{classv8_1_1internal_1_1Operand_a3c9527809810de0034efe67b914f9ee1}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Embedded\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1CodeStub}{Code\+Stub}} $\ast$stub)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_aed8c3e6c09f724bdfb40c4705b89bc83}\label{classv8_1_1internal_1_1Operand_aed8c3e6c09f724bdfb40c4705b89bc83}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Embedded\+String\+Constant} (const \mbox{\hyperlink{classv8_1_1internal_1_1StringConstantBase}{String\+Constant\+Base}} $\ast$str)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_af63e5b52f98f22839e89fd46fb9a412b}\label{classv8_1_1internal_1_1Operand_af63e5b52f98f22839e89fd46fb9a412b}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Zero} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_acf6f1fd77d9ac5d43608db185e9ee29b}\label{classv8_1_1internal_1_1Operand_acf6f1fd77d9ac5d43608db185e9ee29b}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Embedded\+Number} (double number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_aed8c3e6c09f724bdfb40c4705b89bc83}\label{classv8_1_1internal_1_1Operand_aed8c3e6c09f724bdfb40c4705b89bc83}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Embedded\+String\+Constant} (const \mbox{\hyperlink{classv8_1_1internal_1_1StringConstantBase}{String\+Constant\+Base}} $\ast$str)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a3c9527809810de0034efe67b914f9ee1}\label{classv8_1_1internal_1_1Operand_a3c9527809810de0034efe67b914f9ee1}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Embedded\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1CodeStub}{Code\+Stub}} $\ast$stub)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_af63e5b52f98f22839e89fd46fb9a412b}\label{classv8_1_1internal_1_1Operand_af63e5b52f98f22839e89fd46fb9a412b}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Zero} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a5c5472d96f57a54256f0a0ab449bb52b}\label{classv8_1_1internal_1_1Operand_a5c5472d96f57a54256f0a0ab449bb52b}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Embedded\+Number} (double value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_aed8c3e6c09f724bdfb40c4705b89bc83}\label{classv8_1_1internal_1_1Operand_aed8c3e6c09f724bdfb40c4705b89bc83}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Embedded\+String\+Constant} (const \mbox{\hyperlink{classv8_1_1internal_1_1StringConstantBase}{String\+Constant\+Base}} $\ast$str)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_ab679df99d1569d09fdf3358620a4ad34}\label{classv8_1_1internal_1_1Operand_ab679df99d1569d09fdf3358620a4ad34}} 
+class {\bfseries Assembler}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Operand_a08fd3eef827fdec5b4bb544beb64e19d}\label{classv8_1_1internal_1_1Operand_a08fd3eef827fdec5b4bb544beb64e19d}} 
+class {\bfseries Macro\+Assembler}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 397 of file assembler-\/arm.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/arm/assembler-\/arm.\+h\item 
+v8/src/arm64/assembler-\/arm64.\+h\item 
+v8/src/ia32/assembler-\/ia32.\+h\item 
+v8/src/mips/assembler-\/mips.\+h\item 
+v8/src/mips64/assembler-\/mips64.\+h\item 
+v8/src/ppc/assembler-\/ppc.\+h\item 
+v8/src/s390/assembler-\/s390.\+h\item 
+v8/src/x64/assembler-\/x64.\+h\item 
+v8/src/arm/assembler-\/arm-\/inl.\+h\item 
+v8/src/arm64/assembler-\/arm64-\/inl.\+h\item 
+v8/src/ia32/assembler-\/ia32-\/inl.\+h\item 
+v8/src/mips/assembler-\/mips-\/inl.\+h\item 
+v8/src/mips64/assembler-\/mips64-\/inl.\+h\item 
+v8/src/ppc/assembler-\/ppc-\/inl.\+h\item 
+v8/src/s390/assembler-\/s390-\/inl.\+h\end{DoxyCompactItemize}

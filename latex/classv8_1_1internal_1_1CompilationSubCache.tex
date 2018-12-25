@@ -1,0 +1,63 @@
+\hypertarget{classv8_1_1internal_1_1CompilationSubCache}{}\section{v8\+:\+:internal\+:\+:Compilation\+Sub\+Cache Class Reference}
+\label{classv8_1_1internal_1_1CompilationSubCache}\index{v8\+::internal\+::\+Compilation\+Sub\+Cache@{v8\+::internal\+::\+Compilation\+Sub\+Cache}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Compilation\+Sub\+Cache\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.602289cm]{classv8_1_1internal_1_1CompilationSubCache}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationSubCache_a33089004169c56ebb3bcb3d52c17da1f}\label{classv8_1_1internal_1_1CompilationSubCache_a33089004169c56ebb3bcb3d52c17da1f}} 
+{\bfseries Compilation\+Sub\+Cache} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} generations)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationSubCache_a022b165acb35e9396529db1b8890c12b}\label{classv8_1_1internal_1_1CompilationSubCache_a022b165acb35e9396529db1b8890c12b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CompilationCacheTable}{Compilation\+Cache\+Table}} $>$ {\bfseries Get\+Table} (\mbox{\hyperlink{classint}{int}} generation)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationSubCache_ae3ea21dea1eae5c6a87757a3b22bd580}\label{classv8_1_1internal_1_1CompilationSubCache_ae3ea21dea1eae5c6a87757a3b22bd580}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CompilationCacheTable}{Compilation\+Cache\+Table}} $>$ {\bfseries Get\+First\+Table} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationSubCache_ae7a8d0f24eed9faee92379512444c68b}\label{classv8_1_1internal_1_1CompilationSubCache_ae7a8d0f24eed9faee92379512444c68b}} 
+void {\bfseries Set\+First\+Table} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CompilationCacheTable}{Compilation\+Cache\+Table}} $>$ value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationSubCache_a5cce5a7f798869e8f075334d11a04fa5}\label{classv8_1_1internal_1_1CompilationSubCache_a5cce5a7f798869e8f075334d11a04fa5}} 
+void {\bfseries Age} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationSubCache_a83f3d896404ce0f15cd1bf80cd27a106}\label{classv8_1_1internal_1_1CompilationSubCache_a83f3d896404ce0f15cd1bf80cd27a106}} 
+void {\bfseries Iterate} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationSubCache_a9d3e099a1911e1e7a836b7df82d2e03b}\label{classv8_1_1internal_1_1CompilationSubCache_a9d3e099a1911e1e7a836b7df82d2e03b}} 
+void {\bfseries Clear} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationSubCache_a3fd0a729c12e76a804fc2fe3145ffd56}\label{classv8_1_1internal_1_1CompilationSubCache_a3fd0a729c12e76a804fc2fe3145ffd56}} 
+void {\bfseries Remove} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ function\+\_\+info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationSubCache_aa52ea32923a9315f2737467f210b8704}\label{classv8_1_1internal_1_1CompilationSubCache_aa52ea32923a9315f2737467f210b8704}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries generations} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationSubCache_ac9d60da247fabc94383eabd9825fc203}\label{classv8_1_1internal_1_1CompilationSubCache_ac9d60da247fabc94383eabd9825fc203}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+First\+Generation} = 0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationSubCache_ade6feffbd1eb87a71e3bcfabe1d675d6}\label{classv8_1_1internal_1_1CompilationSubCache_ade6feffbd1eb87a71e3bcfabe1d675d6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file compilation-\/cache.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compilation-\/cache.\+h\item 
+v8/src/compilation-\/cache.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Pipeline\+Impl Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl}\index{v8\+::internal\+::compiler\+::\+Pipeline\+Impl@{v8\+::internal\+::compiler\+::\+Pipeline\+Impl}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a7c75662469b34411b3ef0749bfa60695}\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a7c75662469b34411b3ef0749bfa60695}} 
+{\bfseries Pipeline\+Impl} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1PipelineData}{Pipeline\+Data}} $\ast$data)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl_aa22056694d9a71a732c2afb04e822d5a}\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl_aa22056694d9a71a732c2afb04e822d5a}} 
+{\footnotesize template$<$typename Phase $>$ }\\void {\bfseries Run} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl_afb5bfe4ffc38769e7966deee37aa31a2}\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl_afb5bfe4ffc38769e7966deee37aa31a2}} 
+{\footnotesize template$<$typename Phase , typename Arg0 $>$ }\\void {\bfseries Run} (Arg0 arg\+\_\+0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl_ac1440054f93a94b0eac502a0617df912}\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl_ac1440054f93a94b0eac502a0617df912}} 
+{\footnotesize template$<$typename Phase , typename Arg0 , typename Arg1 $>$ }\\void {\bfseries Run} (Arg0 arg\+\_\+0, Arg1 arg\+\_\+1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a3140c73fd272d19920b4aea085d3e2fc}\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a3140c73fd272d19920b4aea085d3e2fc}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Create\+Graph} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl_acd1af9ca0ef839d08d7854e80d944b9f}\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl_acd1af9ca0ef839d08d7854e80d944b9f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Optimize\+Graph} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Linkage}{Linkage}} $\ast$linkage)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a2252cadc496ed9970b2a289fc91a81c6}\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a2252cadc496ed9970b2a289fc91a81c6}} 
+void {\bfseries Compute\+Scheduled\+Graph} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a10fb3c6343d45066d6e0809c58f1e7e6}\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a10fb3c6343d45066d6e0809c58f1e7e6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Select\+Instructions} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Linkage}{Linkage}} $\ast$linkage)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a176da1a2046cd1895a341d60a104e557}\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a176da1a2046cd1895a341d60a104e557}} 
+void {\bfseries Assemble\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Linkage}{Linkage}} $\ast$linkage)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a79500c0f1ec087d5a066600fc068f7c8}\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a79500c0f1ec087d5a066600fc068f7c8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Finalize\+Code} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl_ac49a7ba7b8ed7d6f5f37dd39592e5f73}\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl_ac49a7ba7b8ed7d6f5f37dd39592e5f73}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Commit\+Dependencies} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a31436bb554500a44fbe5196d1d7817a6}\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a31436bb554500a44fbe5196d1d7817a6}} 
+void {\bfseries Verify\+Generated\+Code\+Is\+Idempotent} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a5902a52f83068f881b63cd17a20bea5d}\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a5902a52f83068f881b63cd17a20bea5d}} 
+void {\bfseries Run\+Print\+And\+Verify} (const \mbox{\hyperlink{classchar}{char}} $\ast$phase, \mbox{\hyperlink{classbool}{bool}} untyped=false)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl_ae759187f886ac53068e7d8473b73ef70}\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl_ae759187f886ac53068e7d8473b73ef70}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Generate\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CallDescriptor}{Call\+Descriptor}} $\ast$call\+\_\+descriptor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl_adb9be7db1d373d155fac2b551fe7ee86}\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl_adb9be7db1d373d155fac2b551fe7ee86}} 
+void {\bfseries Allocate\+Registers} (const \mbox{\hyperlink{classv8_1_1internal_1_1RegisterConfiguration}{Register\+Configuration}} $\ast$config, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CallDescriptor}{Call\+Descriptor}} $\ast$call\+\_\+descriptor, \mbox{\hyperlink{classbool}{bool}} run\+\_\+verifier)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl_ae868646156a9108929fa86bcb3ffcb32}\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl_ae868646156a9108929fa86bcb3ffcb32}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1OptimizedCompilationInfo}{Optimized\+Compilation\+Info}} $\ast$ {\bfseries info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a1a4f23cc874374bea011613937d020f7}\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a1a4f23cc874374bea011613937d020f7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a98d8c36f0fcfe0215da72b19ab6c9bb9}\label{classv8_1_1internal_1_1compiler_1_1PipelineImpl_a98d8c36f0fcfe0215da72b19ab6c9bb9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeGenerator}{Code\+Generator}} $\ast$ {\bfseries code\+\_\+generator} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 499 of file pipeline.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/pipeline.\+cc\end{DoxyCompactItemize}

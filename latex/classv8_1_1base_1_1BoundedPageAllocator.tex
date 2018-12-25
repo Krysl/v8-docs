@@ -1,0 +1,192 @@
+\hypertarget{classv8_1_1base_1_1BoundedPageAllocator}{}\section{v8\+:\+:base\+:\+:Bounded\+Page\+Allocator Class Reference}
+\label{classv8_1_1base_1_1BoundedPageAllocator}\index{v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}}
+Inheritance diagram for v8\+:\+:base\+:\+:Bounded\+Page\+Allocator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1base_1_1BoundedPageAllocator}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1BoundedPageAllocator_a4cc36ab3266994416b4f2eaf49003b34}\label{classv8_1_1base_1_1BoundedPageAllocator_a4cc36ab3266994416b4f2eaf49003b34}} 
+typedef \mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} {\bfseries Address}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1BoundedPageAllocator_aa6d298a5738d655554536267aedba6bc}\label{classv8_1_1base_1_1BoundedPageAllocator_aa6d298a5738d655554536267aedba6bc}} 
+{\bfseries Bounded\+Page\+Allocator} (\mbox{\hyperlink{classv8_1_1PageAllocator}{v8\+::\+Page\+Allocator}} $\ast$page\+\_\+allocator, \mbox{\hyperlink{classuintptr__t}{Address}} start, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} allocate\+\_\+page\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1BoundedPageAllocator_aa8e5cc481084f4dfa3ee3dc68084f8e5}\label{classv8_1_1base_1_1BoundedPageAllocator_aa8e5cc481084f4dfa3ee3dc68084f8e5}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1BoundedPageAllocator_a459d26a32a75ec7e9585463866ccbb38}\label{classv8_1_1base_1_1BoundedPageAllocator_a459d26a32a75ec7e9585463866ccbb38}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1BoundedPageAllocator_a76e61198e5317b3a67b18de065ce1f14}\label{classv8_1_1base_1_1BoundedPageAllocator_a76e61198e5317b3a67b18de065ce1f14}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries contains} (\mbox{\hyperlink{classuintptr__t}{Address}} address) const
+\item 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} \mbox{\hyperlink{classv8_1_1base_1_1BoundedPageAllocator_af7b999d6c3a3526636230bf6b7d72784}{Allocate\+Page\+Size}} () override
+\item 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} \mbox{\hyperlink{classv8_1_1base_1_1BoundedPageAllocator_a68462e5a1751aa3a8fb0068deca16c5f}{Commit\+Page\+Size}} () override
+\item 
+void \mbox{\hyperlink{classv8_1_1base_1_1BoundedPageAllocator_a53d343cc7d2acb2f059e6dd4ea29bc0f}{Set\+Random\+Mmap\+Seed}} (\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} seed) override
+\item 
+void $\ast$ \mbox{\hyperlink{classv8_1_1base_1_1BoundedPageAllocator_aafb1cb9ac6fed20bdba0806a46f28bfc}{Get\+Random\+Mmap\+Addr}} () override
+\item 
+void $\ast$ \mbox{\hyperlink{classv8_1_1base_1_1BoundedPageAllocator_a0de34af3c63e3a50ed6f8613720286b6}{Allocate\+Pages}} (void $\ast$hint, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} alignment, \mbox{\hyperlink{classv8_1_1PageAllocator_a88f74b164fe97e053259f67a95758415}{Permission}} access) override
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1BoundedPageAllocator_a282d7487ccd135307e166d5af65f65a6}\label{classv8_1_1base_1_1BoundedPageAllocator_a282d7487ccd135307e166d5af65f65a6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Allocate\+Pages\+At} (\mbox{\hyperlink{classuintptr__t}{Address}} address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classv8_1_1PageAllocator_a88f74b164fe97e053259f67a95758415}{Permission}} access)
+\item 
+\mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{classv8_1_1base_1_1BoundedPageAllocator_a52bf55c7bd934bd67982d37691c15573}{Free\+Pages}} (void $\ast$address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size) override
+\item 
+\mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{classv8_1_1base_1_1BoundedPageAllocator_abf47c5cae52f79c77bfc6bdcbcced44a}{Release\+Pages}} (void $\ast$address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} new\+\_\+size) override
+\item 
+\mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{classv8_1_1base_1_1BoundedPageAllocator_ae5b6f900d5722eb27be5eb376b8228a3}{Set\+Permissions}} (void $\ast$address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classv8_1_1PageAllocator_a88f74b164fe97e053259f67a95758415}{Permission}} access) override
+\item 
+\mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{classv8_1_1base_1_1BoundedPageAllocator_a31ae3d1e2696d53c6ac47e2f525bc1e7}{Discard\+System\+Pages}} (void $\ast$address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file bounded-\/page-\/allocator.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1base_1_1BoundedPageAllocator_a0de34af3c63e3a50ed6f8613720286b6}\label{classv8_1_1base_1_1BoundedPageAllocator_a0de34af3c63e3a50ed6f8613720286b6}} 
+\index{v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}!Allocate\+Pages@{Allocate\+Pages}}
+\index{Allocate\+Pages@{Allocate\+Pages}!v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}}
+\subsubsection{\texorpdfstring{Allocate\+Pages()}{AllocatePages()}}
+{\footnotesize\ttfamily void $\ast$ v8\+::base\+::\+Bounded\+Page\+Allocator\+::\+Allocate\+Pages (\begin{DoxyParamCaption}\item[{void $\ast$}]{address,  }\item[{\mbox{\hyperlink{classsize__t}{size\+\_\+t}}}]{length,  }\item[{\mbox{\hyperlink{classsize__t}{size\+\_\+t}}}]{alignment,  }\item[{\mbox{\hyperlink{classv8_1_1PageAllocator_a88f74b164fe97e053259f67a95758415}{Permission}}}]{permissions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Allocates memory in range with the given alignment and permission. 
+
+Implements \mbox{\hyperlink{classv8_1_1PageAllocator_ab3a25ddd2601701f80ee67c4bf017ef7}{v8\+::\+Page\+Allocator}}.
+
+
+
+Definition at line 28 of file bounded-\/page-\/allocator.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1base_1_1BoundedPageAllocator_af7b999d6c3a3526636230bf6b7d72784}\label{classv8_1_1base_1_1BoundedPageAllocator_af7b999d6c3a3526636230bf6b7d72784}} 
+\index{v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}!Allocate\+Page\+Size@{Allocate\+Page\+Size}}
+\index{Allocate\+Page\+Size@{Allocate\+Page\+Size}!v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}}
+\subsubsection{\texorpdfstring{Allocate\+Page\+Size()}{AllocatePageSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsize__t}{size\+\_\+t}} v8\+::base\+::\+Bounded\+Page\+Allocator\+::\+Allocate\+Page\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Gets the page granularity for Allocate\+Pages and Free\+Pages. Addresses and lengths for those calls should be multiples of \mbox{\hyperlink{classv8_1_1base_1_1BoundedPageAllocator_af7b999d6c3a3526636230bf6b7d72784}{Allocate\+Page\+Size()}}. 
+
+Implements \mbox{\hyperlink{classv8_1_1PageAllocator_a92c2f6dbb3afa6c47dafd4c12ab4641f}{v8\+::\+Page\+Allocator}}.
+
+
+
+Definition at line 44 of file bounded-\/page-\/allocator.\+h.
+
+\mbox{\Hypertarget{classv8_1_1base_1_1BoundedPageAllocator_a68462e5a1751aa3a8fb0068deca16c5f}\label{classv8_1_1base_1_1BoundedPageAllocator_a68462e5a1751aa3a8fb0068deca16c5f}} 
+\index{v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}!Commit\+Page\+Size@{Commit\+Page\+Size}}
+\index{Commit\+Page\+Size@{Commit\+Page\+Size}!v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}}
+\subsubsection{\texorpdfstring{Commit\+Page\+Size()}{CommitPageSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsize__t}{size\+\_\+t}} v8\+::base\+::\+Bounded\+Page\+Allocator\+::\+Commit\+Page\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Gets the page granularity for Set\+Permissions and Release\+Pages. Addresses and lengths for those calls should be multiples of \mbox{\hyperlink{classv8_1_1base_1_1BoundedPageAllocator_a68462e5a1751aa3a8fb0068deca16c5f}{Commit\+Page\+Size()}}. 
+
+Implements \mbox{\hyperlink{classv8_1_1PageAllocator_ad817d87004151e3824997415f2dc57e9}{v8\+::\+Page\+Allocator}}.
+
+
+
+Definition at line 46 of file bounded-\/page-\/allocator.\+h.
+
+\mbox{\Hypertarget{classv8_1_1base_1_1BoundedPageAllocator_a31ae3d1e2696d53c6ac47e2f525bc1e7}\label{classv8_1_1base_1_1BoundedPageAllocator_a31ae3d1e2696d53c6ac47e2f525bc1e7}} 
+\index{v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}!Discard\+System\+Pages@{Discard\+System\+Pages}}
+\index{Discard\+System\+Pages@{Discard\+System\+Pages}!v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}}
+\subsubsection{\texorpdfstring{Discard\+System\+Pages()}{DiscardSystemPages()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbool}{bool}} v8\+::base\+::\+Bounded\+Page\+Allocator\+::\+Discard\+System\+Pages (\begin{DoxyParamCaption}\item[{void $\ast$}]{address,  }\item[{\mbox{\hyperlink{classsize__t}{size\+\_\+t}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Frees memory in the given \mbox{[}address, address + size) range. address and size should be operating system page-\/aligned. The next write to this memory area brings the memory transparently back. 
+
+Reimplemented from \mbox{\hyperlink{classv8_1_1PageAllocator_ad0de847c922e25f63d82494d997f441d}{v8\+::\+Page\+Allocator}}.
+
+
+
+Definition at line 114 of file bounded-\/page-\/allocator.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1base_1_1BoundedPageAllocator_a52bf55c7bd934bd67982d37691c15573}\label{classv8_1_1base_1_1BoundedPageAllocator_a52bf55c7bd934bd67982d37691c15573}} 
+\index{v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}!Free\+Pages@{Free\+Pages}}
+\index{Free\+Pages@{Free\+Pages}!v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}}
+\subsubsection{\texorpdfstring{Free\+Pages()}{FreePages()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbool}{bool}} v8\+::base\+::\+Bounded\+Page\+Allocator\+::\+Free\+Pages (\begin{DoxyParamCaption}\item[{void $\ast$}]{address,  }\item[{\mbox{\hyperlink{classsize__t}{size\+\_\+t}}}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Frees memory in a range that was allocated by a call to Allocate\+Pages. 
+
+Implements \mbox{\hyperlink{classv8_1_1PageAllocator_abc2e3fdc768aba7d35ce0cf44f14586c}{v8\+::\+Page\+Allocator}}.
+
+
+
+Definition at line 62 of file bounded-\/page-\/allocator.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1base_1_1BoundedPageAllocator_aafb1cb9ac6fed20bdba0806a46f28bfc}\label{classv8_1_1base_1_1BoundedPageAllocator_aafb1cb9ac6fed20bdba0806a46f28bfc}} 
+\index{v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}!Get\+Random\+Mmap\+Addr@{Get\+Random\+Mmap\+Addr}}
+\index{Get\+Random\+Mmap\+Addr@{Get\+Random\+Mmap\+Addr}!v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}}
+\subsubsection{\texorpdfstring{Get\+Random\+Mmap\+Addr()}{GetRandomMmapAddr()}}
+{\footnotesize\ttfamily void$\ast$ v8\+::base\+::\+Bounded\+Page\+Allocator\+::\+Get\+Random\+Mmap\+Addr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns a randomized address, suitable for memory allocation under A\+S\+LR. The address will be aligned to Allocate\+Page\+Size. 
+
+Implements \mbox{\hyperlink{classv8_1_1PageAllocator_a37f194f9c5fdbe5105476cbd1432418c}{v8\+::\+Page\+Allocator}}.
+
+
+
+Definition at line 52 of file bounded-\/page-\/allocator.\+h.
+
+\mbox{\Hypertarget{classv8_1_1base_1_1BoundedPageAllocator_abf47c5cae52f79c77bfc6bdcbcced44a}\label{classv8_1_1base_1_1BoundedPageAllocator_abf47c5cae52f79c77bfc6bdcbcced44a}} 
+\index{v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}!Release\+Pages@{Release\+Pages}}
+\index{Release\+Pages@{Release\+Pages}!v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}}
+\subsubsection{\texorpdfstring{Release\+Pages()}{ReleasePages()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbool}{bool}} v8\+::base\+::\+Bounded\+Page\+Allocator\+::\+Release\+Pages (\begin{DoxyParamCaption}\item[{void $\ast$}]{address,  }\item[{\mbox{\hyperlink{classsize__t}{size\+\_\+t}}}]{length,  }\item[{\mbox{\hyperlink{classsize__t}{size\+\_\+t}}}]{new\+\_\+length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Releases memory in a range that was allocated by a call to Allocate\+Pages. 
+
+Implements \mbox{\hyperlink{classv8_1_1PageAllocator_a6eb6bd93c8880dd022a61a13c65f66c0}{v8\+::\+Page\+Allocator}}.
+
+
+
+Definition at line 73 of file bounded-\/page-\/allocator.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1base_1_1BoundedPageAllocator_ae5b6f900d5722eb27be5eb376b8228a3}\label{classv8_1_1base_1_1BoundedPageAllocator_ae5b6f900d5722eb27be5eb376b8228a3}} 
+\index{v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}!Set\+Permissions@{Set\+Permissions}}
+\index{Set\+Permissions@{Set\+Permissions}!v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}}
+\subsubsection{\texorpdfstring{Set\+Permissions()}{SetPermissions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbool}{bool}} v8\+::base\+::\+Bounded\+Page\+Allocator\+::\+Set\+Permissions (\begin{DoxyParamCaption}\item[{void $\ast$}]{address,  }\item[{\mbox{\hyperlink{classsize__t}{size\+\_\+t}}}]{length,  }\item[{\mbox{\hyperlink{classv8_1_1PageAllocator_a88f74b164fe97e053259f67a95758415}{Permission}}}]{permissions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Sets permissions on pages in an allocated range. 
+
+Implements \mbox{\hyperlink{classv8_1_1PageAllocator_aa3817d5bfaba9ec280a6cfb60e6adda0}{v8\+::\+Page\+Allocator}}.
+
+
+
+Definition at line 106 of file bounded-\/page-\/allocator.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1base_1_1BoundedPageAllocator_a53d343cc7d2acb2f059e6dd4ea29bc0f}\label{classv8_1_1base_1_1BoundedPageAllocator_a53d343cc7d2acb2f059e6dd4ea29bc0f}} 
+\index{v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}!Set\+Random\+Mmap\+Seed@{Set\+Random\+Mmap\+Seed}}
+\index{Set\+Random\+Mmap\+Seed@{Set\+Random\+Mmap\+Seed}!v8\+::base\+::\+Bounded\+Page\+Allocator@{v8\+::base\+::\+Bounded\+Page\+Allocator}}
+\subsubsection{\texorpdfstring{Set\+Random\+Mmap\+Seed()}{SetRandomMmapSeed()}}
+{\footnotesize\ttfamily void v8\+::base\+::\+Bounded\+Page\+Allocator\+::\+Set\+Random\+Mmap\+Seed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classint64__t}{int64\+\_\+t}}}]{seed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Sets the random seed so that \mbox{\hyperlink{classv8_1_1base_1_1BoundedPageAllocator_aafb1cb9ac6fed20bdba0806a46f28bfc}{Get\+Random\+Mmap\+Addr()}} will generate repeatable sequences of random mmap addresses. 
+
+Implements \mbox{\hyperlink{classv8_1_1PageAllocator_a9481a73527915fd200f6e1e9ed4b3eba}{v8\+::\+Page\+Allocator}}.
+
+
+
+Definition at line 48 of file bounded-\/page-\/allocator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/base/bounded-\/page-\/allocator.\+h\item 
+v8/src/base/bounded-\/page-\/allocator.\+cc\end{DoxyCompactItemize}

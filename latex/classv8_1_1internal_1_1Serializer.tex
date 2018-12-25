@@ -1,0 +1,143 @@
+\hypertarget{classv8_1_1internal_1_1Serializer}{}\section{v8\+:\+:internal\+:\+:Serializer Class Reference}
+\label{classv8_1_1internal_1_1Serializer}\index{v8\+::internal\+::\+Serializer@{v8\+::internal\+::\+Serializer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Serializer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.333333cm]{classv8_1_1internal_1_1Serializer}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1Serializer_1_1ObjectSerializer}{Object\+Serializer}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1Serializer_1_1RecursionScope}{Recursion\+Scope}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a3b236552a1009ebd6561919c67cf0f7a}\label{classv8_1_1internal_1_1Serializer_a3b236552a1009ebd6561919c67cf0f7a}} 
+{\bfseries Serializer} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a09ba46d68ef5f3e2655af921f9ccc4bb}\label{classv8_1_1internal_1_1Serializer_a09ba46d68ef5f3e2655af921f9ccc4bb}} 
+std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SerializedData_1_1Reservation}{Serialized\+Data\+::\+Reservation}} $>$ {\bfseries Encode\+Reservations} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_aaf38bb4621efa336a8def8dbe68e1cb8}\label{classv8_1_1internal_1_1Serializer_aaf38bb4621efa336a8def8dbe68e1cb8}} 
+const std\+::vector$<$ byte $>$ $\ast$ {\bfseries Payload} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a3c1b05ba9e6afa61c3ae8622a5fbd915}\label{classv8_1_1internal_1_1Serializer_a3c1b05ba9e6afa61c3ae8622a5fbd915}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Reference\+Map\+Contains} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$o)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_ab8e7deae3fc51a8dfcf3329cc74ffa1b}\label{classv8_1_1internal_1_1Serializer_ab8e7deae3fc51a8dfcf3329cc74ffa1b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a96ef0df54684240f4839fc03c1e6717c}\label{classv8_1_1internal_1_1Serializer_a96ef0df54684240f4839fc03c1e6717c}} 
+void {\bfseries Serialize\+Deferred\+Objects} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a98c44c473660f94be2ec5e3762e2c547}\label{classv8_1_1internal_1_1Serializer_a98c44c473660f94be2ec5e3762e2c547}} 
+virtual void {\bfseries Serialize\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$o, How\+To\+Code how\+\_\+to\+\_\+code, Where\+To\+Point where\+\_\+to\+\_\+point, \mbox{\hyperlink{classint}{int}} skip)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a181b6db5c2e7783a59da433d60d378d1}\label{classv8_1_1internal_1_1Serializer_a181b6db5c2e7783a59da433d60d378d1}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Must\+Be\+Deferred} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_ade8bf661f154e9e6769b0e125064d3d7}\label{classv8_1_1internal_1_1Serializer_ade8bf661f154e9e6769b0e125064d3d7}} 
+void {\bfseries Visit\+Root\+Pointers} (Root root, const \mbox{\hyperlink{classchar}{char}} $\ast$description, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} end) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_afc06db54eef4c3c066f161f5ab8e48ee}\label{classv8_1_1internal_1_1Serializer_afc06db54eef4c3c066f161f5ab8e48ee}} 
+void {\bfseries Serialize\+Root\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a9bc6f69dfcec21a24efde69fa60d69eb}\label{classv8_1_1internal_1_1Serializer_a9bc6f69dfcec21a24efde69fa60d69eb}} 
+void {\bfseries Put\+Root} (Root\+Index root\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object, How\+To\+Code how, Where\+To\+Point where, \mbox{\hyperlink{classint}{int}} skip)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a19e9b99831f3b25b6293c9ba534638f6}\label{classv8_1_1internal_1_1Serializer_a19e9b99831f3b25b6293c9ba534638f6}} 
+void {\bfseries Put\+Smi} (\mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} smi)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_ae682c77924def2a0761c797817ef022f}\label{classv8_1_1internal_1_1Serializer_ae682c77924def2a0761c797817ef022f}} 
+void {\bfseries Put\+Back\+Reference} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object, \mbox{\hyperlink{classv8_1_1internal_1_1SerializerReference}{Serializer\+Reference}} reference)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_ab00b15d580f86950196f870c5eff7dc8}\label{classv8_1_1internal_1_1Serializer_ab00b15d580f86950196f870c5eff7dc8}} 
+void {\bfseries Put\+Attached\+Reference} (\mbox{\hyperlink{classv8_1_1internal_1_1SerializerReference}{Serializer\+Reference}} reference, How\+To\+Code how\+\_\+to\+\_\+code, Where\+To\+Point where\+\_\+to\+\_\+point)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_ab2d4d6dc19c242d9e0ea92aaa0ac55df}\label{classv8_1_1internal_1_1Serializer_ab2d4d6dc19c242d9e0ea92aaa0ac55df}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Put\+Alignment\+Prefix} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a3e56f661db8d5786586a3eaa09f4e1f4}\label{classv8_1_1internal_1_1Serializer_a3e56f661db8d5786586a3eaa09f4e1f4}} 
+void {\bfseries Put\+Next\+Chunk} (\mbox{\hyperlink{classint}{int}} space)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a9b8ed25b56817e9c859ae0c20048b998}\label{classv8_1_1internal_1_1Serializer_a9b8ed25b56817e9c859ae0c20048b998}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Serialize\+Root} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$obj, How\+To\+Code how\+\_\+to\+\_\+code, Where\+To\+Point where\+\_\+to\+\_\+point, \mbox{\hyperlink{classint}{int}} skip)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a5c4ab48ff2b4fb6dc85e250f57121969}\label{classv8_1_1internal_1_1Serializer_a5c4ab48ff2b4fb6dc85e250f57121969}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Serialize\+Hot\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$obj, How\+To\+Code how\+\_\+to\+\_\+code, Where\+To\+Point where\+\_\+to\+\_\+point, \mbox{\hyperlink{classint}{int}} skip)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a5d04f4c778e3f2c126bdd4832375bbba}\label{classv8_1_1internal_1_1Serializer_a5d04f4c778e3f2c126bdd4832375bbba}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Serialize\+Back\+Reference} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$obj, How\+To\+Code how\+\_\+to\+\_\+code, Where\+To\+Point where\+\_\+to\+\_\+point, \mbox{\hyperlink{classint}{int}} skip)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a6af39a7db0acbb54143a8ac51ed65d67}\label{classv8_1_1internal_1_1Serializer_a6af39a7db0acbb54143a8ac51ed65d67}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Object\+Is\+Bytecode\+Handler} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$obj) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a7e2eb2286a158742af313150f62b1b7a}\label{classv8_1_1internal_1_1Serializer_a7e2eb2286a158742af313150f62b1b7a}} 
+void {\bfseries Flush\+Skip} (\mbox{\hyperlink{classint}{int}} skip)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a1b2b87d06484b99484378e1fcbfed6a8}\label{classv8_1_1internal_1_1Serializer_a1b2b87d06484b99484378e1fcbfed6a8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ExternalReferenceEncoder_1_1Value}{External\+Reference\+Encoder\+::\+Value}} {\bfseries Encode\+External\+Reference} (\mbox{\hyperlink{classuintptr__t}{Address}} addr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_ab5a0fb29fbf0f1c4db6044eafd5d5b97}\label{classv8_1_1internal_1_1Serializer_ab5a0fb29fbf0f1c4db6044eafd5d5b97}} 
+void {\bfseries Pad} (\mbox{\hyperlink{classint}{int}} padding\+\_\+offset=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a02df94cb146e256696d93d0062282d28}\label{classv8_1_1internal_1_1Serializer_a02df94cb146e256696d93d0062282d28}} 
+void {\bfseries Initialize\+Code\+Address\+Map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a9997e25c7520d3d61923df799dd8652b}\label{classv8_1_1internal_1_1Serializer_a9997e25c7520d3d61923df799dd8652b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} {\bfseries Copy\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a75fd7fb8eaacf0ce9874137e56d0e887}\label{classv8_1_1internal_1_1Serializer_a75fd7fb8eaacf0ce9874137e56d0e887}} 
+void {\bfseries Queue\+Deferred\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$obj)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_aa71724460718545dc17a6ce88b2c4300}\label{classv8_1_1internal_1_1Serializer_aa71724460718545dc17a6ce88b2c4300}} 
+void {\bfseries Output\+Statistics} (const \mbox{\hyperlink{classchar}{char}} $\ast$name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_aa5fc7dd5cdc84a3ff41bcc9287cb09d0}\label{classv8_1_1internal_1_1Serializer_aa5fc7dd5cdc84a3ff41bcc9287cb09d0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1SerializerReferenceMap}{Serializer\+Reference\+Map}} $\ast$ {\bfseries reference\+\_\+map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_acff7806fce4b2795cc3a4fe40fe16665}\label{classv8_1_1internal_1_1Serializer_acff7806fce4b2795cc3a4fe40fe16665}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1RootIndexMap}{Root\+Index\+Map}} $\ast$ {\bfseries root\+\_\+index\+\_\+map} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a884d2eb464f0e40297ff32557ac36a69}\label{classv8_1_1internal_1_1Serializer_a884d2eb464f0e40297ff32557ac36a69}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1SerializerAllocator}{Serializer\+Allocator}} $\ast$ {\bfseries allocator} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a322d102b0677bdcf00688f1ac431dfc0}\label{classv8_1_1internal_1_1Serializer_a322d102b0677bdcf00688f1ac431dfc0}} 
+static void {\bfseries Flush\+Skip} (\mbox{\hyperlink{classv8_1_1internal_1_1SnapshotByteSink}{Snapshot\+Byte\+Sink}} $\ast$sink, \mbox{\hyperlink{classint}{int}} skip)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_a6c1513b0ef81406f8b5ae65f22492480}\label{classv8_1_1internal_1_1Serializer_a6c1513b0ef81406f8b5ae65f22492480}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1SnapshotByteSink}{Snapshot\+Byte\+Sink}} {\bfseries sink\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Serializer_af4b359a77e908e48f44781bd5adf4cd3}\label{classv8_1_1internal_1_1Serializer_af4b359a77e908e48f44781bd5adf4cd3}} 
+class {\bfseries Serializer\+Allocator}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 157 of file serializer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/snapshot/serializer.\+h\item 
+v8/src/snapshot/serializer.\+cc\end{DoxyCompactItemize}

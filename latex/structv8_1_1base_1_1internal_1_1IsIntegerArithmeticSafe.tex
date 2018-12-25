@@ -1,0 +1,44 @@
+\hypertarget{structv8_1_1base_1_1internal_1_1IsIntegerArithmeticSafe}{}\section{v8\+:\+:base\+:\+:internal\+:\+:Is\+Integer\+Arithmetic\+Safe$<$ T, Lhs, Rhs $>$ Struct Template Reference}
+\label{structv8_1_1base_1_1internal_1_1IsIntegerArithmeticSafe}\index{v8\+::base\+::internal\+::\+Is\+Integer\+Arithmetic\+Safe$<$ T, Lhs, Rhs $>$@{v8\+::base\+::internal\+::\+Is\+Integer\+Arithmetic\+Safe$<$ T, Lhs, Rhs $>$}}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{classbool}{bool}} {\bfseries value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T, typename Lhs, typename Rhs$>$\newline
+struct v8\+::base\+::internal\+::\+Is\+Integer\+Arithmetic\+Safe$<$ T, Lhs, Rhs $>$}
+
+
+
+Definition at line 517 of file safe\+\_\+math\+\_\+impl.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structv8_1_1base_1_1internal_1_1IsIntegerArithmeticSafe_a52e992f56789e94edf26f3c7d20eb0eb}\label{structv8_1_1base_1_1internal_1_1IsIntegerArithmeticSafe_a52e992f56789e94edf26f3c7d20eb0eb}} 
+\index{v8\+::base\+::internal\+::\+Is\+Integer\+Arithmetic\+Safe@{v8\+::base\+::internal\+::\+Is\+Integer\+Arithmetic\+Safe}!value@{value}}
+\index{value@{value}!v8\+::base\+::internal\+::\+Is\+Integer\+Arithmetic\+Safe@{v8\+::base\+::internal\+::\+Is\+Integer\+Arithmetic\+Safe}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily template$<$typename T , typename Lhs , typename Rhs $>$ \\
+const \mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{structv8_1_1base_1_1internal_1_1IsIntegerArithmeticSafe}{v8\+::base\+::internal\+::\+Is\+Integer\+Arithmetic\+Safe}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, Lhs, Rhs $>$\+::value\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= !std::numeric\_limits<T>::is\_iec559 &&
+                            StaticDstRangeRelationToSrcRange<T, Lhs>::value ==
+                                NUMERIC\_RANGE\_CONTAINED &&
+                            \textcolor{keyword}{sizeof}(T) >= (2 * \textcolor{keyword}{sizeof}(Lhs)) &&
+                            StaticDstRangeRelationToSrcRange<T
+\end{DoxyCode}
+
+
+Definition at line 518 of file safe\+\_\+math\+\_\+impl.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/base/safe\+\_\+math\+\_\+impl.\+h\end{DoxyCompactItemize}

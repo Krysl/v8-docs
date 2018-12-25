@@ -1,0 +1,75 @@
+\hypertarget{classv8_1_1internal_1_1JSV8BreakIterator}{}\section{v8\+:\+:internal\+:\+:J\+S\+V8\+Break\+Iterator Class Reference}
+\label{classv8_1_1internal_1_1JSV8BreakIterator}\index{v8\+::internal\+::\+J\+S\+V8\+Break\+Iterator@{v8\+::internal\+::\+J\+S\+V8\+Break\+Iterator}}
+Inheritance diagram for v8\+:\+:internal\+:\+:J\+S\+V8\+Break\+Iterator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1JSV8BreakIterator}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSV8BreakIterator_a7494c1332f57e3a6c2cf5a1b74871605}\label{classv8_1_1internal_1_1JSV8BreakIterator_a7494c1332f57e3a6c2cf5a1b74871605}} 
+enum {\bfseries Type} \{ \newline
+{\bfseries C\+H\+A\+R\+A\+C\+T\+ER}, 
+{\bfseries W\+O\+RD}, 
+{\bfseries S\+E\+N\+T\+E\+N\+CE}, 
+{\bfseries L\+I\+NE}, 
+\newline
+{\bfseries C\+O\+U\+NT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSV8BreakIterator_ae95436e67772fddeae1da4ce3ee87898}\label{classv8_1_1internal_1_1JSV8BreakIterator_ae95436e67772fddeae1da4ce3ee87898}} 
+void {\bfseries set\+\_\+type} (Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSV8BreakIterator_addde943b721f46bc65239f5b4ee4006e}\label{classv8_1_1internal_1_1JSV8BreakIterator_addde943b721f46bc65239f5b4ee4006e}} 
+Type {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSV8BreakIterator_aa10c9fabfe1375a7238dd2b097a0aaf6}\label{classv8_1_1internal_1_1JSV8BreakIterator_aa10c9fabfe1375a7238dd2b097a0aaf6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Type\+As\+String} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSV8BreakIterator_a5b84066fc6ad70b0d0aac237bc49253d}\label{classv8_1_1internal_1_1JSV8BreakIterator_a5b84066fc6ad70b0d0aac237bc49253d}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSV8BreakIterator}{J\+S\+V8\+Break\+Iterator}} $>$ {\bfseries Initialize} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSV8BreakIterator}{J\+S\+V8\+Break\+Iterator}} $>$ break\+\_\+iterator, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ input\+\_\+locales, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ input\+\_\+options)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSV8BreakIterator_ac8ba15545b277222cabd8950803e551e}\label{classv8_1_1internal_1_1JSV8BreakIterator_ac8ba15545b277222cabd8950803e551e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ {\bfseries Resolved\+Options} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSV8BreakIterator}{J\+S\+V8\+Break\+Iterator}} $>$ break\+\_\+iterator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSV8BreakIterator_a320ff69020e1c9df0a34532fd6441603}\label{classv8_1_1internal_1_1JSV8BreakIterator_a320ff69020e1c9df0a34532fd6441603}} 
+static std\+::set$<$ std\+::string $>$ {\bfseries Get\+Available\+Locales} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSV8BreakIterator_a545356f97ff0b276ff9c7e57f4d13a99}\label{classv8_1_1internal_1_1JSV8BreakIterator_a545356f97ff0b276ff9c7e57f4d13a99}} 
+static void {\bfseries Adopt\+Text} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSV8BreakIterator}{J\+S\+V8\+Break\+Iterator}} $>$ break\+\_\+iterator, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ text)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSV8BreakIterator_aadde7acde94ea00a0a4aef606c2f47af}\label{classv8_1_1internal_1_1JSV8BreakIterator_aadde7acde94ea00a0a4aef606c2f47af}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Current} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSV8BreakIterator}{J\+S\+V8\+Break\+Iterator}} $>$ break\+\_\+iterator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSV8BreakIterator_a83047f7dcd657ea199d9dc20b2fd572c}\label{classv8_1_1internal_1_1JSV8BreakIterator_a83047f7dcd657ea199d9dc20b2fd572c}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries First} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSV8BreakIterator}{J\+S\+V8\+Break\+Iterator}} $>$ break\+\_\+iterator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSV8BreakIterator_aa1fa09f2c20e399bfcf20edac78be7a4}\label{classv8_1_1internal_1_1JSV8BreakIterator_aa1fa09f2c20e399bfcf20edac78be7a4}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Next} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSV8BreakIterator}{J\+S\+V8\+Break\+Iterator}} $>$ break\+\_\+iterator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSV8BreakIterator_a1655c19d4df6d8f1f5f08f9ee5b74de4}\label{classv8_1_1internal_1_1JSV8BreakIterator_a1655c19d4df6d8f1f5f08f9ee5b74de4}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} {\bfseries Break\+Type} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSV8BreakIterator}{J\+S\+V8\+Break\+Iterator}} $>$ break\+\_\+iterator)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 29 of file js-\/break-\/iterator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/js-\/break-\/iterator.\+h\item 
+v8/src/objects/js-\/break-\/iterator-\/inl.\+h\item 
+v8/src/objects/js-\/break-\/iterator.\+cc\end{DoxyCompactItemize}

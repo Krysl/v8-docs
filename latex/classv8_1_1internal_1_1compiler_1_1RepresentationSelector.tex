@@ -1,0 +1,259 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Representation\+Selector Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector}\index{v8\+::internal\+::compiler\+::\+Representation\+Selector@{v8\+::internal\+::compiler\+::\+Representation\+Selector}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_1_1NodeInfo}{Node\+Info}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a2fd81ce4d25509c87c0d094cf9538509}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a2fd81ce4d25509c87c0d094cf9538509}} 
+{\bfseries Representation\+Selector} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSGraph}{J\+S\+Graph}} $\ast$jsgraph, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSHeapBroker}{J\+S\+Heap\+Broker}} $\ast$broker, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RepresentationChanger}{Representation\+Changer}} $\ast$changer, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SourcePositionTable}{Source\+Position\+Table}} $\ast$source\+\_\+positions, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1NodeOriginTable}{Node\+Origin\+Table}} $\ast$node\+\_\+origins)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a23eb4f937ae863461025cf0b0a56ce73}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a23eb4f937ae863461025cf0b0a56ce73}} 
+void {\bfseries Run\+Type\+Propagation\+Phase} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aa9cda8d0b7f07fea2d8b336d30be1b6c}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aa9cda8d0b7f07fea2d8b336d30be1b6c}} 
+void {\bfseries Reset\+Node\+Info\+State} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a2dd0290eacf01b17961390f5419b2548}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a2dd0290eacf01b17961390f5419b2548}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries Type\+Of} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_adde94e147fab95d9a143e491e790b184}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_adde94e147fab95d9a143e491e790b184}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries Feedback\+Type\+Of} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_ac2de13e2cfb9eb385cf2ff81c3418467}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_ac2de13e2cfb9eb385cf2ff81c3418467}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries Type\+Phi} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_ac1b915495302e2347630ef502a97e90c}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_ac1b915495302e2347630ef502a97e90c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries Type\+Select} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a7df137eeeba20e0d6ba27941f1d44f71}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a7df137eeeba20e0d6ba27941f1d44f71}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Update\+Feedback\+Type} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a34e499175cfe28423577cc17e42eac07}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a34e499175cfe28423577cc17e42eac07}} 
+void {\bfseries Print\+Node\+Feedback\+Type} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$n)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_ac65a3236135da8a504577ce970c9a572}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_ac65a3236135da8a504577ce970c9a572}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries Weaken} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} previous\+\_\+type, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} current\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a14c4fa842f9618bbf71954de16c16df4}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a14c4fa842f9618bbf71954de16c16df4}} 
+void {\bfseries Run\+Truncation\+Propagation\+Phase} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aa5fd951362b54fb920c49784e873345c}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aa5fd951362b54fb920c49784e873345c}} 
+void {\bfseries Run} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering}{Simplified\+Lowering}} $\ast$lowering)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a13b6ed923717c0fea01aa1ddc6cee062}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a13b6ed923717c0fea01aa1ddc6cee062}} 
+void {\bfseries Enqueue\+Initial} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aa0864b9a1c7ac1ac13d37cd493309967}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aa0864b9a1c7ac1ac13d37cd493309967}} 
+void {\bfseries Enqueue\+Input} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$use\+\_\+node, \mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UseInfo}{Use\+Info}} use\+\_\+info=Use\+Info\+::\+None())
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a8256c9e0e716e4ca6c84c06e3629d579}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a8256c9e0e716e4ca6c84c06e3629d579}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries lower} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a9de8c4a7b1fb389ce813e1d0d9e723f1}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a9de8c4a7b1fb389ce813e1d0d9e723f1}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries retype} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a45a97cee398c565ec856770ab95e0d23}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a45a97cee398c565ec856770ab95e0d23}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries propagate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a39661cc41d6d8603e43d804898ab3ab8}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a39661cc41d6d8603e43d804898ab3ab8}} 
+void {\bfseries Set\+Output} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, Machine\+Representation representation, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} restriction\+\_\+type=Type\+::\+Any())
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a47738ac46c1ff96084328b52a48fb9c4}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a47738ac46c1ff96084328b52a48fb9c4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries Get\+Upper\+Bound} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a5c5ac24fc610ac0b1b33a137246f8971}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a5c5ac24fc610ac0b1b33a137246f8971}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Input\+Cannot\+Be} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a0ef14d04b7e77d8dc10b6fe2e662b9b1}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a0ef14d04b7e77d8dc10b6fe2e662b9b1}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Input\+Is} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a76874159a4fcdf0a68e21a8ca25e7700}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a76874159a4fcdf0a68e21a8ca25e7700}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Both\+Inputs\+Are\+Signed32} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a394d88e71446b9392fd28486baf91b5e}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a394d88e71446b9392fd28486baf91b5e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Both\+Inputs\+Are\+Unsigned32} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a3e1a5827562bf98f5543128b5fa54d13}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a3e1a5827562bf98f5543128b5fa54d13}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Both\+Inputs\+Are} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a39c40f9d0822a5a8e4daff6d88056447}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a39c40f9d0822a5a8e4daff6d88056447}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Node\+Representation\+Tagged} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_af9a9cb92d42551d173edacd3b2793960}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_af9a9cb92d42551d173edacd3b2793960}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries One\+Input\+Cannot\+Be} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a35b96a4c074e1a95bba7dbca0f170ff9}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a35b96a4c074e1a95bba7dbca0f170ff9}} 
+void {\bfseries Convert\+Input} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UseInfo}{Use\+Info}} use, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} input\+\_\+type=Type\+::\+Invalid())
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_ac8d63d9bd87a3c590e6e62da7492e655}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_ac8d63d9bd87a3c590e6e62da7492e655}} 
+void {\bfseries Process\+Input} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UseInfo}{Use\+Info}} use)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a0a7d6bffe757ca2903453df5dad19ecb}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a0a7d6bffe757ca2903453df5dad19ecb}} 
+void {\bfseries Process\+Remaining\+Inputs} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a9cfa3a67487287572002fe1a34f28a2c}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a9cfa3a67487287572002fe1a34f28a2c}} 
+void {\bfseries Visit\+Inputs} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aa7a6c6ed9f94d9caf9cee18408a3da7a}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aa7a6c6ed9f94d9caf9cee18408a3da7a}} 
+void {\bfseries Visit\+Return} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a9a3d336306615f40f87c7803bb1bec02}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a9a3d336306615f40f87c7803bb1bec02}} 
+void {\bfseries Visit\+Unused} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aa7416456276525e54b6f8b4437b3b4c3}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aa7416456276525e54b6f8b4437b3b4c3}} 
+void {\bfseries Visit\+Noop} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Truncation}{Truncation}} truncation)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aa062139111667e751dcef0d8cecd21a0}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aa062139111667e751dcef0d8cecd21a0}} 
+void {\bfseries Visit\+Binop} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UseInfo}{Use\+Info}} left\+\_\+use, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UseInfo}{Use\+Info}} right\+\_\+use, Machine\+Representation output, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} restriction\+\_\+type=Type\+::\+Any())
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aec4bc7fad92822a7af96593a45bad11b}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aec4bc7fad92822a7af96593a45bad11b}} 
+void {\bfseries Visit\+Binop} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UseInfo}{Use\+Info}} input\+\_\+use, Machine\+Representation output, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} restriction\+\_\+type=Type\+::\+Any())
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aa53a7d7eb213c36d1e161d89823497d2}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aa53a7d7eb213c36d1e161d89823497d2}} 
+void {\bfseries Visit\+Speculative\+Int32\+Binop} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_ae69aa8deb3150f36649e6f4811bfd555}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_ae69aa8deb3150f36649e6f4811bfd555}} 
+void {\bfseries Visit\+Unop} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UseInfo}{Use\+Info}} input\+\_\+use, Machine\+Representation output, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} restriction\+\_\+type=Type\+::\+Any())
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a9f88059066def839ba4e3f9635bec2b8}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a9f88059066def839ba4e3f9635bec2b8}} 
+void {\bfseries Visit\+Leaf} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, Machine\+Representation output)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a17f1a03fc87260b32eb2cf47f8428bcb}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a17f1a03fc87260b32eb2cf47f8428bcb}} 
+void {\bfseries Visit\+Float64\+Binop} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_ade780fba47c0a14d5f0e77d7c52eed66}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_ade780fba47c0a14d5f0e77d7c52eed66}} 
+void {\bfseries Visit\+Int64\+Binop} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a761cb9274a1100c68059ef578b78c48c}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a761cb9274a1100c68059ef578b78c48c}} 
+void {\bfseries Visit\+Word32\+Truncating\+Binop} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a21c3f326aed07089e53c246f3e6e4662}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a21c3f326aed07089e53c246f3e6e4662}} 
+Machine\+Representation {\bfseries Get\+Output\+Info\+For\+Phi} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Truncation}{Truncation}} use)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aa05d6aee45e01d3fd411eb63a22d6576}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aa05d6aee45e01d3fd411eb63a22d6576}} 
+void {\bfseries Visit\+Select} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Truncation}{Truncation}} truncation, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering}{Simplified\+Lowering}} $\ast$lowering)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a688bc9e584da49bd68bed72a281a7374}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a688bc9e584da49bd68bed72a281a7374}} 
+void {\bfseries Visit\+Phi} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Truncation}{Truncation}} truncation, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering}{Simplified\+Lowering}} $\ast$lowering)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a456b36f5e068ce2b7535adbde4f1a1c3}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a456b36f5e068ce2b7535adbde4f1a1c3}} 
+void {\bfseries Visit\+Object\+Is} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering}{Simplified\+Lowering}} $\ast$lowering)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a830b00be3fb66a4958d50d8a12869ab9}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a830b00be3fb66a4958d50d8a12869ab9}} 
+void {\bfseries Visit\+Check} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering}{Simplified\+Lowering}} $\ast$lowering)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a382f242ae26901648a4ab428aa9b6db3}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a382f242ae26901648a4ab428aa9b6db3}} 
+void {\bfseries Visit\+Call} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering}{Simplified\+Lowering}} $\ast$lowering)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a20d6d9a99d9887033e88a65e874ee12b}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a20d6d9a99d9887033e88a65e874ee12b}} 
+void {\bfseries Visit\+State\+Values} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_ab9dfccf8d88d14b23181c1e667057cf8}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_ab9dfccf8d88d14b23181c1e667057cf8}} 
+void {\bfseries Visit\+Frame\+State} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a59eb5384ba5cb913f878e724a2b8a24b}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a59eb5384ba5cb913f878e724a2b8a24b}} 
+void {\bfseries Visit\+Object\+State} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a8dea1f88f20b4678679764245ed75298}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a8dea1f88f20b4678679764245ed75298}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int32\+Op} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aa8a9785babec636ef321fc08837a5f01}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_aa8a9785babec636ef321fc08837a5f01}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int32\+Overflow\+Op} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a1ae2827655177b023416553d8e842c8e}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a1ae2827655177b023416553d8e842c8e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int64\+Op} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a06ca706e0243a1ed3f6355674dc15347}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a06ca706e0243a1ed3f6355674dc15347}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Uint32\+Op} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a1e0f16316a48108f04b4ca69f196867a}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a1e0f16316a48108f04b4ca69f196867a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Uint32\+Overflow\+Op} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_ae567cdfcdf93bb5487b1f7711da640f7}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_ae567cdfcdf93bb5487b1f7711da640f7}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Op} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a821b787338eae0e5a5ef835d9f3bf259}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a821b787338eae0e5a5ef835d9f3bf259}} 
+Write\+Barrier\+Kind {\bfseries Write\+Barrier\+Kind\+For} (Base\+Taggedness base\+\_\+taggedness, Machine\+Representation field\+\_\+representation, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} field\+\_\+type, Machine\+Representation value\+\_\+representation, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a79456adc1fd700c5588b6e64059108da}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a79456adc1fd700c5588b6e64059108da}} 
+Write\+Barrier\+Kind {\bfseries Write\+Barrier\+Kind\+For} (Base\+Taggedness base\+\_\+taggedness, Machine\+Representation field\+\_\+representation, \mbox{\hyperlink{classint}{int}} field\+\_\+offset, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} field\+\_\+type, Machine\+Representation value\+\_\+representation, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a5dc1675342c459f6dc8c9b43a8cd6db6}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a5dc1675342c459f6dc8c9b43a8cd6db6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Graph}{Graph}} $\ast$ {\bfseries graph} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a8ffc573aedeb5cdaf4411aaf18be1a22}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a8ffc573aedeb5cdaf4411aaf18be1a22}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CommonOperatorBuilder}{Common\+Operator\+Builder}} $\ast$ {\bfseries common} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_ac35f7e66b1267d349d831faf7c0841c6}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_ac35f7e66b1267d349d831faf7c0841c6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SimplifiedOperatorBuilder}{Simplified\+Operator\+Builder}} $\ast$ {\bfseries simplified} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a3e9380668381f03792df904f73553de1}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a3e9380668381f03792df904f73553de1}} 
+void {\bfseries Lower\+To\+Checked\+Int32\+Mul} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Truncation}{Truncation}} truncation, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} input0\+\_\+type, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} input1\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a337b6e76259c6dab3665de2470f36299}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a337b6e76259c6dab3665de2470f36299}} 
+void {\bfseries Change\+To\+Int32\+Overflow\+Op} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a7f46a8990860b9a4e21447a5020fd7ce}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a7f46a8990860b9a4e21447a5020fd7ce}} 
+void {\bfseries Change\+To\+Uint32\+Overflow\+Op} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a33343760df60a3cc92bfed7a6f9f4979}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a33343760df60a3cc92bfed7a6f9f4979}} 
+void {\bfseries Visit\+Speculative\+Integer\+Additive\+Op} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Truncation}{Truncation}} truncation, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering}{Simplified\+Lowering}} $\ast$lowering)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a3052466f91cb1647f8bd18a6a952c239}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a3052466f91cb1647f8bd18a6a952c239}} 
+void {\bfseries Visit\+Speculative\+Additive\+Op} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Truncation}{Truncation}} truncation, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering}{Simplified\+Lowering}} $\ast$lowering)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a10b8c52cec4be34fca7a93ad47aeb229}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a10b8c52cec4be34fca7a93ad47aeb229}} 
+void {\bfseries Visit\+Speculative\+Number\+Modulus} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Truncation}{Truncation}} truncation, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering}{Simplified\+Lowering}} $\ast$lowering)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a153201a3455ba972891a4a03e84c9a20}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a153201a3455ba972891a4a03e84c9a20}} 
+void {\bfseries Insert\+Unreachable\+If\+Necessary} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a8f98dcf814e0f21c332d3c417a75d84d}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a8f98dcf814e0f21c332d3c417a75d84d}} 
+void {\bfseries Visit\+Check\+Bounds} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering}{Simplified\+Lowering}} $\ast$lowering)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a1ee36edb47f10146b3bf45abf8ab13a5}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a1ee36edb47f10146b3bf45abf8ab13a5}} 
+void {\bfseries Visit\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Truncation}{Truncation}} truncation, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SimplifiedLowering}{Simplified\+Lowering}} $\ast$lowering)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a64aed096cd7192965e674d8b2d3773af}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a64aed096cd7192965e674d8b2d3773af}} 
+void {\bfseries Defer\+Replacement} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$replacement)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a3191e9cb395d1f73950745f674b57bf0}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a3191e9cb395d1f73950745f674b57bf0}} 
+void {\bfseries Kill} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a65644f583ab34a59ecc209bc8f5b4c0e}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a65644f583ab34a59ecc209bc8f5b4c0e}} 
+void {\bfseries Print\+Output\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_1_1NodeInfo}{Node\+Info}} $\ast$info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a5f8699f812456ff9cb18add372e0c208}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a5f8699f812456ff9cb18add372e0c208}} 
+void {\bfseries Print\+Representation} (Machine\+Representation rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a27f5b34c3f40f5295b170b9dec8432bd}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a27f5b34c3f40f5295b170b9dec8432bd}} 
+void {\bfseries Print\+Truncation} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Truncation}{Truncation}} truncation)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a493703e3bfd0e53f641592874a6e7783}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a493703e3bfd0e53f641592874a6e7783}} 
+void {\bfseries Print\+Use\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1UseInfo}{Use\+Info}} info)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a736147abc69d5697420e93bcff74cef7}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a736147abc69d5697420e93bcff74cef7}} 
+static Machine\+Semantic {\bfseries Deopt\+Value\+Semantic\+Of} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a646e6080f7ae0c01e9a0fda32e227603}\label{classv8_1_1internal_1_1compiler_1_1RepresentationSelector_a646e6080f7ae0c01e9a0fda32e227603}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} {\bfseries Deopt\+Machine\+Type\+Of} (Machine\+Representation rep, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 245 of file simplified-\/lowering.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/simplified-\/lowering.\+cc\end{DoxyCompactItemize}

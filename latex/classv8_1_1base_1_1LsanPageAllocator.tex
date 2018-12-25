@@ -1,0 +1,51 @@
+\hypertarget{classv8_1_1base_1_1LsanPageAllocator}{}\section{v8\+:\+:base\+:\+:Lsan\+Page\+Allocator Class Reference}
+\label{classv8_1_1base_1_1LsanPageAllocator}\index{v8\+::base\+::\+Lsan\+Page\+Allocator@{v8\+::base\+::\+Lsan\+Page\+Allocator}}
+Inheritance diagram for v8\+:\+:base\+:\+:Lsan\+Page\+Allocator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1base_1_1LsanPageAllocator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1LsanPageAllocator_a6a9d1c006434ae1ed5f89bc9883ca12f}\label{classv8_1_1base_1_1LsanPageAllocator_a6a9d1c006434ae1ed5f89bc9883ca12f}} 
+{\bfseries Lsan\+Page\+Allocator} (\mbox{\hyperlink{classv8_1_1PageAllocator}{v8\+::\+Page\+Allocator}} $\ast$page\+\_\+allocator)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1LsanPageAllocator_a8c3c3a461821c9e80569efad81b39c7b}\label{classv8_1_1base_1_1LsanPageAllocator_a8c3c3a461821c9e80569efad81b39c7b}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Allocate\+Page\+Size} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1LsanPageAllocator_a7e5a89ff828eb54a4cd538e77ebf2226}\label{classv8_1_1base_1_1LsanPageAllocator_a7e5a89ff828eb54a4cd538e77ebf2226}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Commit\+Page\+Size} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1LsanPageAllocator_a1aef2aced2520541315dfbb4ad61ba5f}\label{classv8_1_1base_1_1LsanPageAllocator_a1aef2aced2520541315dfbb4ad61ba5f}} 
+void {\bfseries Set\+Random\+Mmap\+Seed} (\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} seed) override
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1LsanPageAllocator_a83f8da6e8b55a14d5849b248b13b3166}\label{classv8_1_1base_1_1LsanPageAllocator_a83f8da6e8b55a14d5849b248b13b3166}} 
+void $\ast$ {\bfseries Get\+Random\+Mmap\+Addr} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1LsanPageAllocator_a56a872aa178c1ed257d7c5630f89fa34}\label{classv8_1_1base_1_1LsanPageAllocator_a56a872aa178c1ed257d7c5630f89fa34}} 
+void $\ast$ {\bfseries Allocate\+Pages} (void $\ast$address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} alignment, \mbox{\hyperlink{classv8_1_1PageAllocator_a88f74b164fe97e053259f67a95758415}{Page\+Allocator\+::\+Permission}} access) override
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1LsanPageAllocator_a6a624340b363e673ad8cb11fb510d575}\label{classv8_1_1base_1_1LsanPageAllocator_a6a624340b363e673ad8cb11fb510d575}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Free\+Pages} (void $\ast$address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size) override
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1LsanPageAllocator_afce0e6b140f92c1866732b13bb1c0694}\label{classv8_1_1base_1_1LsanPageAllocator_afce0e6b140f92c1866732b13bb1c0694}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Release\+Pages} (void $\ast$address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} new\+\_\+size) override
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1LsanPageAllocator_a0f5faf5c47e1176996096134d87ca2b8}\label{classv8_1_1base_1_1LsanPageAllocator_a0f5faf5c47e1176996096134d87ca2b8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Set\+Permissions} (void $\ast$address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classv8_1_1PageAllocator_a88f74b164fe97e053259f67a95758415}{Page\+Allocator\+::\+Permission}} access) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file lsan-\/page-\/allocator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/base/lsan-\/page-\/allocator.\+h\item 
+v8/src/base/lsan-\/page-\/allocator.\+cc\end{DoxyCompactItemize}

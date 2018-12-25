@@ -1,0 +1,35 @@
+\hypertarget{classv8_1_1debug_1_1DebugDelegate}{}\section{v8\+:\+:debug\+:\+:Debug\+Delegate Class Reference}
+\label{classv8_1_1debug_1_1DebugDelegate}\index{v8\+::debug\+::\+Debug\+Delegate@{v8\+::debug\+::\+Debug\+Delegate}}
+Inheritance diagram for v8\+:\+:debug\+:\+:Debug\+Delegate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1debug_1_1DebugDelegate}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1DebugDelegate_a364d4f8d4e068a9f52e9ebb4783bd3b5}\label{classv8_1_1debug_1_1DebugDelegate_a364d4f8d4e068a9f52e9ebb4783bd3b5}} 
+virtual void {\bfseries Script\+Compiled} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1debug_1_1Script}{Script}} $>$ script, \mbox{\hyperlink{classbool}{bool}} is\+\_\+live\+\_\+edited, \mbox{\hyperlink{classbool}{bool}} has\+\_\+compile\+\_\+error)
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1DebugDelegate_a9045506c15bd3ed6e52ec722cba9d46b}\label{classv8_1_1debug_1_1DebugDelegate_a9045506c15bd3ed6e52ec722cba9d46b}} 
+virtual void {\bfseries Break\+Program\+Requested} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$ paused\+\_\+context, const std\+::vector$<$ \mbox{\hyperlink{classint}{debug\+::\+Breakpoint\+Id}} $>$ \&inspector\+\_\+break\+\_\+points\+\_\+hit)
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1DebugDelegate_a7312aeb0f76638d06ba10d39386fb0f1}\label{classv8_1_1debug_1_1DebugDelegate_a7312aeb0f76638d06ba10d39386fb0f1}} 
+virtual void {\bfseries Exception\+Thrown} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$ paused\+\_\+context, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ exception, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ promise, \mbox{\hyperlink{classbool}{bool}} is\+\_\+uncaught, Exception\+Type exception\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1DebugDelegate_aad15be3c7e017374bc3fee156ed272b9}\label{classv8_1_1debug_1_1DebugDelegate_aad15be3c7e017374bc3fee156ed272b9}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Function\+Blackboxed} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1debug_1_1Script}{debug\+::\+Script}} $>$ script, const \mbox{\hyperlink{classv8_1_1debug_1_1Location}{debug\+::\+Location}} \&start, const \mbox{\hyperlink{classv8_1_1debug_1_1Location}{debug\+::\+Location}} \&end)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 159 of file debug-\/interface.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/debug/debug-\/interface.\+h\end{DoxyCompactItemize}

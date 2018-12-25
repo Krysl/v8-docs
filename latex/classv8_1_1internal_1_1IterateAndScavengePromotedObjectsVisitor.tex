@@ -1,0 +1,35 @@
+\hypertarget{classv8_1_1internal_1_1IterateAndScavengePromotedObjectsVisitor}{}\section{v8\+:\+:internal\+:\+:Iterate\+And\+Scavenge\+Promoted\+Objects\+Visitor Class Reference}
+\label{classv8_1_1internal_1_1IterateAndScavengePromotedObjectsVisitor}\index{v8\+::internal\+::\+Iterate\+And\+Scavenge\+Promoted\+Objects\+Visitor@{v8\+::internal\+::\+Iterate\+And\+Scavenge\+Promoted\+Objects\+Visitor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Iterate\+And\+Scavenge\+Promoted\+Objects\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1IterateAndScavengePromotedObjectsVisitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IterateAndScavengePromotedObjectsVisitor_a9b230776b3af85c1b949c004c3594a89}\label{classv8_1_1internal_1_1IterateAndScavengePromotedObjectsVisitor_a9b230776b3af85c1b949c004c3594a89}} 
+{\bfseries Iterate\+And\+Scavenge\+Promoted\+Objects\+Visitor} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, \mbox{\hyperlink{classv8_1_1internal_1_1Scavenger}{Scavenger}} $\ast$scavenger, \mbox{\hyperlink{classbool}{bool}} record\+\_\+slots)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IterateAndScavengePromotedObjectsVisitor_a67806482b0522361916daf4331270459}\label{classv8_1_1internal_1_1IterateAndScavengePromotedObjectsVisitor_a67806482b0522361916daf4331270459}} 
+void {\bfseries Visit\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} end) final
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IterateAndScavengePromotedObjectsVisitor_a09740fd667c4656a91edcd29313d97b5}\label{classv8_1_1internal_1_1IterateAndScavengePromotedObjectsVisitor_a09740fd667c4656a91edcd29313d97b5}} 
+void {\bfseries Visit\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} end) final
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IterateAndScavengePromotedObjectsVisitor_a20d62b0dd7624dec83a637c0efa752fa}\label{classv8_1_1internal_1_1IterateAndScavengePromotedObjectsVisitor_a20d62b0dd7624dec83a637c0efa752fa}} 
+void {\bfseries Handle\+Slot} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObjectSlot}{Heap\+Object\+Slot}} slot, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$target)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 73 of file scavenger.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/scavenger.\+cc\end{DoxyCompactItemize}

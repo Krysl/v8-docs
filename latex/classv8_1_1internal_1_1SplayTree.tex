@@ -1,0 +1,98 @@
+\hypertarget{classv8_1_1internal_1_1SplayTree}{}\section{v8\+:\+:internal\+:\+:Splay\+Tree$<$ Config, Allocation\+Policy $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1SplayTree}\index{v8\+::internal\+::\+Splay\+Tree$<$ Config, Allocation\+Policy $>$@{v8\+::internal\+::\+Splay\+Tree$<$ Config, Allocation\+Policy $>$}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1SplayTree_1_1Locator}{Locator}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1SplayTree_1_1Node}{Node}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_a37fb72d02bb9916a61b98b985bd376ba}\label{classv8_1_1internal_1_1SplayTree_a37fb72d02bb9916a61b98b985bd376ba}} 
+typedef Config\+::\+Key {\bfseries Key}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_aa2d8e0e29b39457fa56226c8e18c41f7}\label{classv8_1_1internal_1_1SplayTree_aa2d8e0e29b39457fa56226c8e18c41f7}} 
+typedef Config\+::\+Value {\bfseries Value}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_a32079df13e173728baa4e30b22835155}\label{classv8_1_1internal_1_1SplayTree_a32079df13e173728baa4e30b22835155}} 
+{\bfseries Splay\+Tree} (Allocation\+Policy allocator=Allocation\+Policy())
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_af4ee22fb6484bf8101ec645947373fe7}\label{classv8_1_1internal_1_1SplayTree_af4ee22fb6484bf8101ec645947373fe7}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void $\ast$ {\bfseries operator new} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, Allocation\+Policy allocator=Allocation\+Policy())
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_ab53e46664c782b145822d6348575334e}\label{classv8_1_1internal_1_1SplayTree_ab53e46664c782b145822d6348575334e}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries operator delete} (void $\ast$p)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_ab1b1e1545d50ab4ebf93774cdf9b9b5a}\label{classv8_1_1internal_1_1SplayTree_ab1b1e1545d50ab4ebf93774cdf9b9b5a}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries operator delete} (void $\ast$p, Allocation\+Policy policy)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_a1f246b50b6918ac8dd2651817ab43b20}\label{classv8_1_1internal_1_1SplayTree_a1f246b50b6918ac8dd2651817ab43b20}} 
+Allocation\+Policy {\bfseries allocator} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_a2df37e47951b6090ecd2787663a96ab3}\label{classv8_1_1internal_1_1SplayTree_a2df37e47951b6090ecd2787663a96ab3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Contains} (const Key \&key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_aeadaecb47733848fb6b6eb835b9a729c}\label{classv8_1_1internal_1_1SplayTree_aeadaecb47733848fb6b6eb835b9a729c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Insert} (const Key \&key, \mbox{\hyperlink{classv8_1_1internal_1_1SplayTree_1_1Locator}{Locator}} $\ast$locator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_ad055e7fd298d8c50d7772584469bda67}\label{classv8_1_1internal_1_1SplayTree_ad055e7fd298d8c50d7772584469bda67}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Find} (const Key \&key, \mbox{\hyperlink{classv8_1_1internal_1_1SplayTree_1_1Locator}{Locator}} $\ast$locator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_a1017cfc30654ba532f6039eff73de8c8}\label{classv8_1_1internal_1_1SplayTree_a1017cfc30654ba532f6039eff73de8c8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Find\+Greatest\+Less\+Than} (const Key \&key, \mbox{\hyperlink{classv8_1_1internal_1_1SplayTree_1_1Locator}{Locator}} $\ast$locator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_aa9c4bffb3e15a22809a9014f374530e1}\label{classv8_1_1internal_1_1SplayTree_aa9c4bffb3e15a22809a9014f374530e1}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Find\+Greatest} (\mbox{\hyperlink{classv8_1_1internal_1_1SplayTree_1_1Locator}{Locator}} $\ast$locator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_a95fb504c2fa06a211446d983e689e944}\label{classv8_1_1internal_1_1SplayTree_a95fb504c2fa06a211446d983e689e944}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Find\+Least\+Greater\+Than} (const Key \&key, \mbox{\hyperlink{classv8_1_1internal_1_1SplayTree_1_1Locator}{Locator}} $\ast$locator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_a1379eb90062c1a6b9e7173792d651e86}\label{classv8_1_1internal_1_1SplayTree_a1379eb90062c1a6b9e7173792d651e86}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Find\+Least} (\mbox{\hyperlink{classv8_1_1internal_1_1SplayTree_1_1Locator}{Locator}} $\ast$locator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_a401e85c47e6fc90f75ac37220d2a4bc2}\label{classv8_1_1internal_1_1SplayTree_a401e85c47e6fc90f75ac37220d2a4bc2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Move} (const Key \&old\+\_\+key, const Key \&new\+\_\+key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_a193702074e0c336766c28e68a8355c34}\label{classv8_1_1internal_1_1SplayTree_a193702074e0c336766c28e68a8355c34}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Remove} (const Key \&key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_a1ff226e5ca35dc162b0c5f878a7e6d8f}\label{classv8_1_1internal_1_1SplayTree_a1ff226e5ca35dc162b0c5f878a7e6d8f}} 
+void {\bfseries Clear} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_ad2d753c67a570c9d879fbf958b89feaa}\label{classv8_1_1internal_1_1SplayTree_ad2d753c67a570c9d879fbf958b89feaa}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+empty} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_aea827bdddbd85bf3b188f8b6c9a5a298}\label{classv8_1_1internal_1_1SplayTree_aea827bdddbd85bf3b188f8b6c9a5a298}} 
+void {\bfseries Splay} (const Key \&key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_a86bc3543b4ba7a00ea043ce4b08d8fae}\label{classv8_1_1internal_1_1SplayTree_a86bc3543b4ba7a00ea043ce4b08d8fae}} 
+{\footnotesize template$<$class Callback $>$ }\\void {\bfseries For\+Each} (Callback $\ast$callback)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SplayTree_a2c43926f549f2cc564e6b66fe5fdd040}\label{classv8_1_1internal_1_1SplayTree_a2c43926f549f2cc564e6b66fe5fdd040}} 
+void {\bfseries Reset\+Root} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Config, class Allocation\+Policy$>$\newline
+class v8\+::internal\+::\+Splay\+Tree$<$ Config, Allocation\+Policy $>$}
+
+
+
+Definition at line 583 of file globals.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/globals.\+h\item 
+v8/src/splay-\/tree.\+h\item 
+v8/src/splay-\/tree-\/inl.\+h\end{DoxyCompactItemize}

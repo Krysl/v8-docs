@@ -1,0 +1,51 @@
+\hypertarget{classv8_1_1internal_1_1CompilerDispatcher}{}\section{v8\+:\+:internal\+:\+:Compiler\+Dispatcher Class Reference}
+\label{classv8_1_1internal_1_1CompilerDispatcher}\index{v8\+::internal\+::\+Compiler\+Dispatcher@{v8\+::internal\+::\+Compiler\+Dispatcher}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilerDispatcher_ac831f25436eaf5a81895d004f5595efb}\label{classv8_1_1internal_1_1CompilerDispatcher_ac831f25436eaf5a81895d004f5595efb}} 
+typedef \mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} {\bfseries Job\+Id}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilerDispatcher_a8520543854f45ee379a9c085197cee17}\label{classv8_1_1internal_1_1CompilerDispatcher_a8520543854f45ee379a9c085197cee17}} 
+{\bfseries Compiler\+Dispatcher} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1Platform}{Platform}} $\ast$platform, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} max\+\_\+stack\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilerDispatcher_ae9306cbc6a9ef1527eccb4871055af5e}\label{classv8_1_1internal_1_1CompilerDispatcher_ae9306cbc6a9ef1527eccb4871055af5e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Enabled} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilerDispatcher_a47ce0f2c454970903b71346f70fd38da}\label{classv8_1_1internal_1_1CompilerDispatcher_a47ce0f2c454970903b71346f70fd38da}} 
+\mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{classuintptr__t}{Job\+Id}} $>$ {\bfseries Enqueue} (const \mbox{\hyperlink{classv8_1_1internal_1_1ParseInfo}{Parse\+Info}} $\ast$outer\+\_\+parse\+\_\+info, const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$function\+\_\+name, const \mbox{\hyperlink{classv8_1_1internal_1_1FunctionLiteral}{Function\+Literal}} $\ast$function\+\_\+literal)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilerDispatcher_aef003557ffb31a024eedcbd918f77278}\label{classv8_1_1internal_1_1CompilerDispatcher_aef003557ffb31a024eedcbd918f77278}} 
+void {\bfseries Register\+Shared\+Function\+Info} (\mbox{\hyperlink{classuintptr__t}{Job\+Id}} job\+\_\+id, \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilerDispatcher_ab951cb4354d748969fce3f8c72d72643}\label{classv8_1_1internal_1_1CompilerDispatcher_ab951cb4354d748969fce3f8c72d72643}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Enqueued} (\mbox{\hyperlink{classuintptr__t}{Job\+Id}} job\+\_\+id) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilerDispatcher_a3d5e718afdb5af49c3f224bd8a37a571}\label{classv8_1_1internal_1_1CompilerDispatcher_a3d5e718afdb5af49c3f224bd8a37a571}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Enqueued} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ function) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilerDispatcher_a6c9c5286f2de9aa0b67890ca5e14502b}\label{classv8_1_1internal_1_1CompilerDispatcher_a6c9c5286f2de9aa0b67890ca5e14502b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Finish\+Now} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilerDispatcher_aa3734b426b0aac7ce9a550b2086e3477}\label{classv8_1_1internal_1_1CompilerDispatcher_aa3734b426b0aac7ce9a550b2086e3477}} 
+void {\bfseries Abort\+Job} (\mbox{\hyperlink{classuintptr__t}{Job\+Id}} job\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilerDispatcher_acfc8f178d6c8c9f7f5b251b4854bf279}\label{classv8_1_1internal_1_1CompilerDispatcher_acfc8f178d6c8c9f7f5b251b4854bf279}} 
+void {\bfseries Abort\+All} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 76 of file compiler-\/dispatcher.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler-\/dispatcher/compiler-\/dispatcher.\+h\item 
+v8/src/compiler-\/dispatcher/compiler-\/dispatcher.\+cc\end{DoxyCompactItemize}

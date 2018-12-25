@@ -1,0 +1,257 @@
+\hypertarget{classv8_1_1Shell}{}\section{v8\+:\+:Shell Class Reference}
+\label{classv8_1_1Shell}\index{v8\+::\+Shell@{v8\+::\+Shell}}
+Inheritance diagram for v8\+:\+:Shell\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1Shell}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a5eb26a73b1d61be8721840a0ff25ff2c}\label{classv8_1_1Shell_a5eb26a73b1d61be8721840a0ff25ff2c}} 
+enum {\bfseries Print\+Result} \+: bool \{ {\bfseries k\+Print\+Result} = true, 
+{\bfseries k\+No\+Print\+Result} = false
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_ac566e95b4fc7a9c89378e28fb55c4a68}\label{classv8_1_1Shell_ac566e95b4fc7a9c89378e28fb55c4a68}} 
+enum {\bfseries Report\+Exceptions} \+: bool \{ {\bfseries k\+Report\+Exceptions} = true, 
+{\bfseries k\+No\+Report\+Exceptions} = false
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a1b4803744257c8850827360e1bde6c8b}\label{classv8_1_1Shell_a1b4803744257c8850827360e1bde6c8b}} 
+enum {\bfseries Process\+Message\+Queue} \+: bool \{ {\bfseries k\+Process\+Message\+Queue} = true, 
+{\bfseries k\+No\+Process\+Message\+Queue} = false
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a4182681183bd08826995386f070416bb}\label{classv8_1_1Shell_a4182681183bd08826995386f070416bb}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Execute\+String} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ source, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ name, Print\+Result print\+\_\+result, Report\+Exceptions report\+\_\+exceptions, Process\+Message\+Queue process\+\_\+message\+\_\+queue)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a1f76c0129b87a9da7d54e060827c025e}\label{classv8_1_1Shell_a1f76c0129b87a9da7d54e060827c025e}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Execute\+Module} (Isolate $\ast$isolate, const \mbox{\hyperlink{classchar}{char}} $\ast$file\+\_\+name)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a45ffe976e0fcd45629b6ff5f03e80943}\label{classv8_1_1Shell_a45ffe976e0fcd45629b6ff5f03e80943}} 
+static void {\bfseries Report\+Exception} (Isolate $\ast$isolate, Try\+Catch $\ast$try\+\_\+catch)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a7031e2aefd0be84b22df14c3e0abedcc}\label{classv8_1_1Shell_a7031e2aefd0be84b22df14c3e0abedcc}} 
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ {\bfseries Read\+File} (Isolate $\ast$isolate, const \mbox{\hyperlink{classchar}{char}} $\ast$name)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a7e4313b0046d027e73a03e6665821493}\label{classv8_1_1Shell_a7e4313b0046d027e73a03e6665821493}} 
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ Context $>$ {\bfseries Create\+Evaluation\+Context} (Isolate $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_ad869dfefa18309958f1bcc4f86cc8a2a}\label{classv8_1_1Shell_ad869dfefa18309958f1bcc4f86cc8a2a}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Run\+Main} (Isolate $\ast$isolate, \mbox{\hyperlink{classint}{int}} argc, \mbox{\hyperlink{classchar}{char}} $\ast$argv\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{classbool}{bool}} last\+\_\+run)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a057dfc36cac04373f5f6868b051be008}\label{classv8_1_1Shell_a057dfc36cac04373f5f6868b051be008}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Main} (\mbox{\hyperlink{classint}{int}} argc, \mbox{\hyperlink{classchar}{char}} $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_ac0d29ebee351c0948bcdd1f98ffd81aa}\label{classv8_1_1Shell_ac0d29ebee351c0948bcdd1f98ffd81aa}} 
+static void {\bfseries Exit} (\mbox{\hyperlink{classint}{int}} exit\+\_\+code)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a2d7f0ea798fb804ab288b801c2997449}\label{classv8_1_1Shell_a2d7f0ea798fb804ab288b801c2997449}} 
+static void {\bfseries On\+Exit} (Isolate $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_ad46dde06dc1dbf8c048b6ad7c55686c9}\label{classv8_1_1Shell_ad46dde06dc1dbf8c048b6ad7c55686c9}} 
+static void {\bfseries Collect\+Garbage} (Isolate $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_af8e2f54e646c0e31d1d9031306306084}\label{classv8_1_1Shell_af8e2f54e646c0e31d1d9031306306084}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Empty\+Message\+Queues} (Isolate $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a875287d47933d50a61041b4205ef1cd3}\label{classv8_1_1Shell_a875287d47933d50a61041b4205ef1cd3}} 
+static void {\bfseries Complete\+Message\+Loop} (Isolate $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_ad460c6d00a2acaa3d51a7a076ddd98d0}\label{classv8_1_1Shell_ad460c6d00a2acaa3d51a7a076ddd98d0}} 
+static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1SerializationData}{Serialization\+Data}} $>$ {\bfseries Serialize\+Value} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ value, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ transfer)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a23e9db916ab7fb980709bee587d431bb}\label{classv8_1_1Shell_a23e9db916ab7fb980709bee587d431bb}} 
+static \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ {\bfseries Deserialize\+Value} (Isolate $\ast$isolate, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1SerializationData}{Serialization\+Data}} $>$ data)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a1a5dca359368270ebf13267e7161028b}\label{classv8_1_1Shell_a1a5dca359368270ebf13267e7161028b}} 
+static void {\bfseries Cleanup\+Workers} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_ab3c2e43e32a1543b0a78f728bb3df63a}\label{classv8_1_1Shell_ab3c2e43e32a1543b0a78f728bb3df63a}} 
+static \mbox{\hyperlink{classint}{int}} $\ast$ {\bfseries Lookup\+Counter} (const \mbox{\hyperlink{classchar}{char}} $\ast$name)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a59e39d63603b1766c86614c7a9db0545}\label{classv8_1_1Shell_a59e39d63603b1766c86614c7a9db0545}} 
+static void $\ast$ {\bfseries Create\+Histogram} (const \mbox{\hyperlink{classchar}{char}} $\ast$name, \mbox{\hyperlink{classint}{int}} min, \mbox{\hyperlink{classint}{int}} max, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} buckets)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a0a1b3ff04a7253ba159519945ee7e2e8}\label{classv8_1_1Shell_a0a1b3ff04a7253ba159519945ee7e2e8}} 
+static void {\bfseries Add\+Histogram\+Sample} (void $\ast$histogram, \mbox{\hyperlink{classint}{int}} sample)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_af8dc3050b831dab01d9532612f517a9c}\label{classv8_1_1Shell_af8dc3050b831dab01d9532612f517a9c}} 
+static void {\bfseries Map\+Counters} (v8\+::\+Isolate $\ast$isolate, const \mbox{\hyperlink{classchar}{char}} $\ast$name)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a20b4f5fb7215088193a8bcf94a622f83}\label{classv8_1_1Shell_a20b4f5fb7215088193a8bcf94a622f83}} 
+static void {\bfseries Performance\+Now} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a9a9b12463634c52f521809404acfe972}\label{classv8_1_1Shell_a9a9b12463634c52f521809404acfe972}} 
+static void {\bfseries Realm\+Current} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a9b3772fd4ecaac0b3586e66e9c18bcde}\label{classv8_1_1Shell_a9b3772fd4ecaac0b3586e66e9c18bcde}} 
+static void {\bfseries Realm\+Owner} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_acee30321581bbf1c878a31ca8c54d546}\label{classv8_1_1Shell_acee30321581bbf1c878a31ca8c54d546}} 
+static void {\bfseries Realm\+Global} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a321307d1e9e6a587bbf3091195346f46}\label{classv8_1_1Shell_a321307d1e9e6a587bbf3091195346f46}} 
+static void {\bfseries Realm\+Create} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_af7b8027ff5eeea256c0ad789518ed6a4}\label{classv8_1_1Shell_af7b8027ff5eeea256c0ad789518ed6a4}} 
+static void {\bfseries Realm\+Navigate} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a6542d3a482412f8a90a7738696868a37}\label{classv8_1_1Shell_a6542d3a482412f8a90a7738696868a37}} 
+static void {\bfseries Realm\+Create\+Allow\+Cross\+Realm\+Access} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a8bb9ca4c151b7ed3e6bdd64d3f814a65}\label{classv8_1_1Shell_a8bb9ca4c151b7ed3e6bdd64d3f814a65}} 
+static void {\bfseries Realm\+Dispose} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_ab4b04a517ba41c1843ae1db5f03ee48b}\label{classv8_1_1Shell_ab4b04a517ba41c1843ae1db5f03ee48b}} 
+static void {\bfseries Realm\+Switch} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a2188e58aebf24a2991a9e5a8c6cc457c}\label{classv8_1_1Shell_a2188e58aebf24a2991a9e5a8c6cc457c}} 
+static void {\bfseries Realm\+Eval} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a18a4d640a41f7fdc9a178e3db8408a8f}\label{classv8_1_1Shell_a18a4d640a41f7fdc9a178e3db8408a8f}} 
+static void {\bfseries Realm\+Shared\+Get} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ property, const \mbox{\hyperlink{classv8_1_1PropertyCallbackInfo}{Property\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ \&info)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a88d66b6299a850963f0fc2226e19c157}\label{classv8_1_1Shell_a88d66b6299a850963f0fc2226e19c157}} 
+static void {\bfseries Realm\+Shared\+Set} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ property, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ value, const \mbox{\hyperlink{classv8_1_1PropertyCallbackInfo}{Property\+Callback\+Info}}$<$ void $>$ \&info)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_ab9ac6e3de29fda7cbc2331ec8b91a718}\label{classv8_1_1Shell_ab9ac6e3de29fda7cbc2331ec8b91a718}} 
+static void {\bfseries Async\+Hooks\+Create\+Hook} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a28a1550a3c18501b79fd921ba4d19963}\label{classv8_1_1Shell_a28a1550a3c18501b79fd921ba4d19963}} 
+static void {\bfseries Async\+Hooks\+Execution\+Async\+Id} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_ab22128c64873f672c07cf58db4608a67}\label{classv8_1_1Shell_ab22128c64873f672c07cf58db4608a67}} 
+static void {\bfseries Async\+Hooks\+Trigger\+Async\+Id} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a7b8bdce48fa4a1b5e9ce8df50fc0a655}\label{classv8_1_1Shell_a7b8bdce48fa4a1b5e9ce8df50fc0a655}} 
+static void {\bfseries Print} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a0557d6f0819b1f7eda96e6c09a5264f0}\label{classv8_1_1Shell_a0557d6f0819b1f7eda96e6c09a5264f0}} 
+static void {\bfseries Print\+Err} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_afd3888490889c1e9be9599cf4a2bad4f}\label{classv8_1_1Shell_afd3888490889c1e9be9599cf4a2bad4f}} 
+static void {\bfseries Write} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a2a71cc45c6fa1803cffde30aa51e8002}\label{classv8_1_1Shell_a2a71cc45c6fa1803cffde30aa51e8002}} 
+static void {\bfseries Wait\+Until\+Done} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a4e485e54f9a05bf62acc81a1fa57f77d}\label{classv8_1_1Shell_a4e485e54f9a05bf62acc81a1fa57f77d}} 
+static void {\bfseries Notify\+Done} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_ae7ab8288337d8e4ef62c9e8b65c5138e}\label{classv8_1_1Shell_ae7ab8288337d8e4ef62c9e8b65c5138e}} 
+static void {\bfseries Quit\+Once} (\mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ $\ast$args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a0ba86babc520a8e061820fab8fbccbbb}\label{classv8_1_1Shell_a0ba86babc520a8e061820fab8fbccbbb}} 
+static void {\bfseries Quit} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a67d9a8c0c96e9cf9a6bb22703ad019e7}\label{classv8_1_1Shell_a67d9a8c0c96e9cf9a6bb22703ad019e7}} 
+static void {\bfseries Version} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a05de5538b7e495ce8402923d15b16512}\label{classv8_1_1Shell_a05de5538b7e495ce8402923d15b16512}} 
+static void {\bfseries Read} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a35d2c0d84ddc58b9b51745d47d9acc25}\label{classv8_1_1Shell_a35d2c0d84ddc58b9b51745d47d9acc25}} 
+static void {\bfseries Read\+Buffer} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_afc4ac604ee375a1effbf9d8e55423db1}\label{classv8_1_1Shell_afc4ac604ee375a1effbf9d8e55423db1}} 
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ {\bfseries Read\+From\+Stdin} (Isolate $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a3f3a76857a48f6e107fe63bcc829396f}\label{classv8_1_1Shell_a3f3a76857a48f6e107fe63bcc829396f}} 
+static void {\bfseries Read\+Line} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_ab4fe0c5dd861c5d36733e2116c793155}\label{classv8_1_1Shell_ab4fe0c5dd861c5d36733e2116c793155}} 
+static void {\bfseries Load} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_af6b815331bf4ed64e58a8eb5d9153eda}\label{classv8_1_1Shell_af6b815331bf4ed64e58a8eb5d9153eda}} 
+static void {\bfseries Set\+Timeout} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a00ba91a1f9369a559118c0484db90009}\label{classv8_1_1Shell_a00ba91a1f9369a559118c0484db90009}} 
+static void {\bfseries Worker\+New} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a0864855c72409f26946bd551f1a36e72}\label{classv8_1_1Shell_a0864855c72409f26946bd551f1a36e72}} 
+static void {\bfseries Worker\+Post\+Message} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_ac9721473f8f8523b578096bf7f139016}\label{classv8_1_1Shell_ac9721473f8f8523b578096bf7f139016}} 
+static void {\bfseries Worker\+Get\+Message} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_aec3f8248244ba8b07d56446236272b20}\label{classv8_1_1Shell_aec3f8248244ba8b07d56446236272b20}} 
+static void {\bfseries Worker\+Terminate} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_ae09de0795a893adba7512629563cc340}\label{classv8_1_1Shell_ae09de0795a893adba7512629563cc340}} 
+static void {\bfseries System} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_aa08a16a91023b749f2d9e0956c8200e1}\label{classv8_1_1Shell_aa08a16a91023b749f2d9e0956c8200e1}} 
+static void {\bfseries Change\+Directory} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a0977b415540cff06625e711b5d3e2625}\label{classv8_1_1Shell_a0977b415540cff06625e711b5d3e2625}} 
+static void {\bfseries Set\+Environment} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_ae7ac04fd17a20acf9fb66812b611170e}\label{classv8_1_1Shell_ae7ac04fd17a20acf9fb66812b611170e}} 
+static void {\bfseries Unset\+Environment} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_af3f66a1cd6b81cd69e43e9453092b50f}\label{classv8_1_1Shell_af3f66a1cd6b81cd69e43e9453092b50f}} 
+static void {\bfseries Set\+U\+Mask} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a739dd021cf5875fe3b5372d4db31dbc3}\label{classv8_1_1Shell_a739dd021cf5875fe3b5372d4db31dbc3}} 
+static void {\bfseries Make\+Directory} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_aec493d82bcbc3295528d275f241cdfb6}\label{classv8_1_1Shell_aec493d82bcbc3295528d275f241cdfb6}} 
+static void {\bfseries Remove\+Directory} (const \mbox{\hyperlink{classv8_1_1FunctionCallbackInfo}{v8\+::\+Function\+Callback\+Info}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&args)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a61ac42c0dc0311daed5c13fda5adc502}\label{classv8_1_1Shell_a61ac42c0dc0311daed5c13fda5adc502}} 
+static \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Promise}{Promise}} $>$ {\bfseries Host\+Import\+Module\+Dynamically} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ Context $>$ context, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1ScriptOrModule}{Script\+Or\+Module}} $>$ referrer, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ specifier)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a78b0a922bcc329b887225e955011178c}\label{classv8_1_1Shell_a78b0a922bcc329b887225e955011178c}} 
+static void {\bfseries Host\+Initialize\+Import\+Meta\+Object} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ Context $>$ context, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Module}{Module}} $>$ module, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{Object}} $>$ meta)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a9a27fc787b741806d3039c66a44cc9d5}\label{classv8_1_1Shell_a9a27fc787b741806d3039c66a44cc9d5}} 
+static void {\bfseries Do\+Host\+Import\+Module\+Dynamically} (void $\ast$data)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a0c3ed68c0e468e6af07123281259de4c}\label{classv8_1_1Shell_a0c3ed68c0e468e6af07123281259de4c}} 
+static void {\bfseries Add\+O\+S\+Methods} (v8\+::\+Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1ObjectTemplate}{Object\+Template}} $>$ os\+\_\+template)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a2accf186325abc4d312accd69871e287}\label{classv8_1_1Shell_a2accf186325abc4d312accd69871e287}} 
+static void {\bfseries Set\+Wait\+Until\+Done} (Isolate $\ast$isolate, \mbox{\hyperlink{classbool}{bool}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_ac0c979ef9a81aa48cdc313b61eaa5fdc}\label{classv8_1_1Shell_ac0c979ef9a81aa48cdc313b61eaa5fdc}} 
+static \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Read\+Chars\+From\+Tcp\+Port} (const \mbox{\hyperlink{classchar}{char}} $\ast$name, \mbox{\hyperlink{classint}{int}} $\ast$size\+\_\+out)
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_ac35ffcdb759c89431f9efaef22e8321d}\label{classv8_1_1Shell_ac35ffcdb759c89431f9efaef22e8321d}} 
+static void {\bfseries set\+\_\+script\+\_\+executed} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_a8b2c0e4d8ba33edbdd5bfff327180dda}\label{classv8_1_1Shell_a8b2c0e4d8ba33edbdd5bfff327180dda}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries use\+\_\+interactive\+\_\+shell} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_acf6e5f3411221607708dec0b3700a7c2}\label{classv8_1_1Shell_acf6e5f3411221607708dec0b3700a7c2}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries k\+Prompt}
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_aedbe06af26de0fe7e4618cac0ce45790}\label{classv8_1_1Shell_aedbe06af26de0fe7e4618cac0ce45790}} 
+static \mbox{\hyperlink{classv8_1_1ShellOptions}{Shell\+Options}} {\bfseries options}
+\item 
+\mbox{\Hypertarget{classv8_1_1Shell_ad706b940496e9cccf4807a21424c7cc3}\label{classv8_1_1Shell_ad706b940496e9cccf4807a21424c7cc3}} 
+static \mbox{\hyperlink{classv8_1_1ArrayBuffer_1_1Allocator}{Array\+Buffer\+::\+Allocator}} $\ast$ {\bfseries array\+\_\+buffer\+\_\+allocator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 394 of file d8.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/d8.\+h\item 
+v8/src/d8-\/posix.\+cc\item 
+v8/src/d8-\/windows.\+cc\item 
+v8/src/d8.\+cc\end{DoxyCompactItemize}

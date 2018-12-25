@@ -1,0 +1,95 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Constant\+Array\+Builder Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder}\index{v8\+::internal\+::interpreter\+::\+Constant\+Array\+Builder@{v8\+::internal\+::interpreter\+::\+Constant\+Array\+Builder}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a6371038963d35f5030bf3458fe04edfd}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a6371038963d35f5030bf3458fe04edfd}} 
+{\bfseries Constant\+Array\+Builder} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a39db2f4fff66f145f4157faa88a3826a}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a39db2f4fff66f145f4157faa88a3826a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ {\bfseries To\+Fixed\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a9ef9f82b4bcd6aa3c392a61695c2ba69}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a9ef9f82b4bcd6aa3c392a61695c2ba69}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries At} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a0620f41346bea747d9465251e4c40b0f}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a0620f41346bea747d9465251e4c40b0f}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a78e063845c21f838199ea0eb2cb0ae23}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a78e063845c21f838199ea0eb2cb0ae23}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Insert} (\mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} smi)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_ab635ba09ea092cfa46345af61483ca7b}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_ab635ba09ea092cfa46345af61483ca7b}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Insert} (double number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_aabe03912596990a84fd3a2fd91acfdad}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_aabe03912596990a84fd3a2fd91acfdad}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Insert} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$raw\+\_\+string)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a08aad4b0abc2d5e07fb4b4655aa4cc30}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a08aad4b0abc2d5e07fb4b4655aa4cc30}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Insert} (\mbox{\hyperlink{classv8_1_1internal_1_1AstBigInt}{Ast\+Big\+Int}} bigint)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_abe8a37f513545bbbb179acbc178e2a01}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_abe8a37f513545bbbb179acbc178e2a01}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Insert} (const \mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$scope)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a05304110504b6b54751376738dc54965}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a05304110504b6b54751376738dc54965}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Insert\+Deferred} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_ae5281b1365dcb84cf8ee21b24549da44}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_ae5281b1365dcb84cf8ee21b24549da44}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Insert\+Jump\+Table} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_abb53efcc055df3ccfc181d3eab6f7728}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_abb53efcc055df3ccfc181d3eab6f7728}} 
+void {\bfseries Set\+Deferred\+At} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a5c010c753f700c3fdd5568a4b724c320}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a5c010c753f700c3fdd5568a4b724c320}} 
+void {\bfseries Set\+Jump\+Table\+Smi} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} smi)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a8fda4e9726a5a415f50df4b2174a7bfe}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a8fda4e9726a5a415f50df4b2174a7bfe}} 
+Operand\+Size {\bfseries Create\+Reserved\+Entry} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a0ae26a5c98431579c4526db3d5324428}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a0ae26a5c98431579c4526db3d5324428}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Commit\+Reserved\+Entry} (Operand\+Size operand\+\_\+size, \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a38ce057d19d0131b717c39e9c159d2c2}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a38ce057d19d0131b717c39e9c159d2c2}} 
+void {\bfseries Discard\+Reserved\+Entry} (Operand\+Size operand\+\_\+size)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a185835694d75f46dec545714852bc191}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a185835694d75f46dec545714852bc191}} 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k8\+Bit\+Capacity} = 1u $<$$<$ k\+Bits\+Per\+Byte
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_aa8e09522d1215aaf36760e41c0ca6403}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_aa8e09522d1215aaf36760e41c0ca6403}} 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k16\+Bit\+Capacity} = (1u $<$$<$ 2 $\ast$ k\+Bits\+Per\+Byte) -\/ k8\+Bit\+Capacity
+\item 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k32\+Bit\+Capacity}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 40 of file constant-\/array-\/builder.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a654feea91715a8a137f1fe884f599139}\label{classv8_1_1internal_1_1interpreter_1_1ConstantArrayBuilder_a654feea91715a8a137f1fe884f599139}} 
+\index{v8\+::internal\+::interpreter\+::\+Constant\+Array\+Builder@{v8\+::internal\+::interpreter\+::\+Constant\+Array\+Builder}!k32\+Bit\+Capacity@{k32\+Bit\+Capacity}}
+\index{k32\+Bit\+Capacity@{k32\+Bit\+Capacity}!v8\+::internal\+::interpreter\+::\+Constant\+Array\+Builder@{v8\+::internal\+::interpreter\+::\+Constant\+Array\+Builder}}
+\subsubsection{\texorpdfstring{k32\+Bit\+Capacity}{k32BitCapacity}}
+{\footnotesize\ttfamily S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} v8\+::internal\+::interpreter\+::\+Constant\+Array\+Builder\+::k32\+Bit\+Capacity\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kMaxUInt32 - k16BitCapacity - k8BitCapacity + 1
+\end{DoxyCode}
+
+
+Definition at line 49 of file constant-\/array-\/builder.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/interpreter/constant-\/array-\/builder.\+h\item 
+v8/src/interpreter/constant-\/array-\/builder.\+cc\end{DoxyCompactItemize}

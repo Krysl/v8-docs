@@ -1,0 +1,48 @@
+\hypertarget{classv8_1_1internal_1_1DataViewBuiltinsAssembler}{}\section{v8\+:\+:internal\+:\+:Data\+View\+Builtins\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1DataViewBuiltinsAssembler}\index{v8\+::internal\+::\+Data\+View\+Builtins\+Assembler@{v8\+::internal\+::\+Data\+View\+Builtins\+Assembler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Data\+View\+Builtins\+Assembler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1DataViewBuiltinsAssembler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DataViewBuiltinsAssembler_a2ac89586bf597c858a300190d733b458}\label{classv8_1_1internal_1_1DataViewBuiltinsAssembler_a2ac89586bf597c858a300190d733b458}} 
+{\bfseries Data\+View\+Builtins\+Assembler} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerState}{compiler\+::\+Code\+Assembler\+State}} $\ast$state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DataViewBuiltinsAssembler_a9f5eb65a61b2cbe8985f022b7ca23966}\label{classv8_1_1internal_1_1DataViewBuiltinsAssembler_a9f5eb65a61b2cbe8985f022b7ca23966}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1Int32T}{Int32T}} $>$ {\bfseries Load\+Uint8} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1RawPtrT}{Raw\+PtrT}} $>$ data\+\_\+pointer, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1UintPtrT}{Uint\+PtrT}} $>$ offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DataViewBuiltinsAssembler_aa5d813eb0bf639de531bba19013b8c51}\label{classv8_1_1internal_1_1DataViewBuiltinsAssembler_aa5d813eb0bf639de531bba19013b8c51}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1Int32T}{Int32T}} $>$ {\bfseries Load\+Int8} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1RawPtrT}{Raw\+PtrT}} $>$ data\+\_\+pointer, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1UintPtrT}{Uint\+PtrT}} $>$ offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DataViewBuiltinsAssembler_aaa49121464674eaa54b5bcdb797e6064}\label{classv8_1_1internal_1_1DataViewBuiltinsAssembler_aaa49121464674eaa54b5bcdb797e6064}} 
+void {\bfseries Store\+Word8} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1RawPtrT}{Raw\+PtrT}} $>$ data\+\_\+pointer, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1UintPtrT}{Uint\+PtrT}} $>$ offset, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1Word32T}{Word32T}} $>$ value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DataViewBuiltinsAssembler_a955f3adde90afc2605c1805aa532ccd9}\label{classv8_1_1internal_1_1DataViewBuiltinsAssembler_a955f3adde90afc2605c1805aa532ccd9}} 
+int32\+\_\+t {\bfseries Data\+View\+Element\+Size} (Elements\+Kind elements\+\_\+kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DataViewBuiltinsAssembler_a3336da6970e1c23ddd268a815b0ab46a}\label{classv8_1_1internal_1_1DataViewBuiltinsAssembler_a3336da6970e1c23ddd268a815b0ab46a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ {\bfseries Data\+View\+Encode\+Big\+Int\+Bits} (\mbox{\hyperlink{classbool}{bool}} sign, int32\+\_\+t digits)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DataViewBuiltinsAssembler_a779cd89a4d190146f826b2c7d08147a6}\label{classv8_1_1internal_1_1DataViewBuiltinsAssembler_a779cd89a4d190146f826b2c7d08147a6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1UintPtrT}{Uint\+PtrT}} $>$ {\bfseries Data\+View\+Decode\+Big\+Int\+Length} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DataViewBuiltinsAssembler_a946ee5970e06e31dcdc78af46fae1edb}\label{classv8_1_1internal_1_1DataViewBuiltinsAssembler_a946ee5970e06e31dcdc78af46fae1edb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1UintPtrT}{Uint\+PtrT}} $>$ {\bfseries Data\+View\+Decode\+Big\+Int\+Sign} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ value)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file builtins-\/data-\/view-\/gen.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/builtins/builtins-\/data-\/view-\/gen.\+h\end{DoxyCompactItemize}

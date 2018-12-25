@@ -1,0 +1,59 @@
+\hypertarget{classv8_1_1internal_1_1WasmMemoryObject}{}\section{v8\+:\+:internal\+:\+:Wasm\+Memory\+Object Class Reference}
+\label{classv8_1_1internal_1_1WasmMemoryObject}\index{v8\+::internal\+::\+Wasm\+Memory\+Object@{v8\+::internal\+::\+Wasm\+Memory\+Object}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Wasm\+Memory\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1WasmMemoryObject}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmMemoryObject_a7533a3f2e00617100e79a01ddd5d466d}\label{classv8_1_1internal_1_1WasmMemoryObject_a7533a3f2e00617100e79a01ddd5d466d}} 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+F\+I\+E\+L\+D\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+C\+O\+N\+S\+T\+A\+N\+TS} (J\+S\+Object\+::k\+Header\+Size, W\+A\+S\+M\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+F\+I\+E\+L\+DS) static void Add\+Instance(\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmMemoryObject_ac92f7d035daa100186051ee1707d2e7f}\label{classv8_1_1internal_1_1WasmMemoryObject_ac92f7d035daa100186051ee1707d2e7f}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries current\+\_\+pages} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmMemoryObject_a7ce26bf7f45ae37057ae2017749b25bf}\label{classv8_1_1internal_1_1WasmMemoryObject_a7ce26bf7f45ae37057ae2017749b25bf}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+maximum\+\_\+pages} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmMemoryObject_af0f2120b6c6bab8388b9d92f736f221d}\label{classv8_1_1internal_1_1WasmMemoryObject_af0f2120b6c6bab8388b9d92f736f221d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+full\+\_\+guard\+\_\+region} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmMemoryObject_a29910ceb1c03b6b7800c5b39f7f9ad8f}\label{classv8_1_1internal_1_1WasmMemoryObject_a29910ceb1c03b6b7800c5b39f7f9ad8f}} 
+static void {\bfseries Remove\+Instance} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmMemoryObject}{Wasm\+Memory\+Object}} $>$ memory, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmInstanceObject}{Wasm\+Instance\+Object}} $>$ object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmMemoryObject_a6538e4d8e66a941190df60cae222a8c3}\label{classv8_1_1internal_1_1WasmMemoryObject_a6538e4d8e66a941190df60cae222a8c3}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmMemoryObject}{Wasm\+Memory\+Object}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArrayBuffer}{J\+S\+Array\+Buffer}} $>$ buffer, int32\+\_\+t maximum)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmMemoryObject_af25cf1da2d298a8c13bf9c7cf5f1334d}\label{classv8_1_1internal_1_1WasmMemoryObject_af25cf1da2d298a8c13bf9c7cf5f1334d}} 
+static int32\+\_\+t {\bfseries Grow} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmMemoryObject}{Wasm\+Memory\+Object}} $>$, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} pages)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmMemoryObject_a0fa12659e24b0892dfa66c856612edca}\label{classv8_1_1internal_1_1WasmMemoryObject_a0fa12659e24b0892dfa66c856612edca}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmMemoryObject}{Wasm\+Memory\+Object}} $>$ {\bfseries memory}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmMemoryObject_abd6c301526e7814e678d8bb84a52c5ee}\label{classv8_1_1internal_1_1WasmMemoryObject_abd6c301526e7814e678d8bb84a52c5ee}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmMemoryObject}{Wasm\+Memory\+Object}} $>$ \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmInstanceObject}{Wasm\+Instance\+Object}} $>$ {\bfseries object}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 292 of file wasm-\/objects.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/wasm-\/objects.\+h\item 
+v8/src/wasm/wasm-\/objects-\/inl.\+h\item 
+v8/src/wasm/wasm-\/objects.\+cc\end{DoxyCompactItemize}

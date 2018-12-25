@@ -1,0 +1,70 @@
+\hypertarget{classv8_1_1internal_1_1ObjectHashTableBase}{}\section{v8\+:\+:internal\+:\+:Object\+Hash\+Table\+Base$<$ Derived, Shape $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1ObjectHashTableBase}\index{v8\+::internal\+::\+Object\+Hash\+Table\+Base$<$ Derived, Shape $>$@{v8\+::internal\+::\+Object\+Hash\+Table\+Base$<$ Derived, Shape $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Object\+Hash\+Table\+Base$<$ Derived, Shape $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1ObjectHashTableBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectHashTableBase_a58b1878cac9cb327c09061bed0d08550}\label{classv8_1_1internal_1_1ObjectHashTableBase_a58b1878cac9cb327c09061bed0d08550}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Lookup} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectHashTableBase_af9e083ac34badf6d6b801f523d93da2f}\label{classv8_1_1internal_1_1ObjectHashTableBase_af9e083ac34badf6d6b801f523d93da2f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Lookup} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key, int32\+\_\+t hash)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectHashTableBase_a9c99e873438cabbc9f2e34a5c8f01283}\label{classv8_1_1internal_1_1ObjectHashTableBase_a9c99e873438cabbc9f2e34a5c8f01283}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Lookup} (\mbox{\hyperlink{classv8_1_1internal_1_1ReadOnlyRoots}{Read\+Only\+Roots}} roots, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key, int32\+\_\+t hash)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectHashTableBase_a3d2e1b2f9dba2fe7db4714f03499e79e}\label{classv8_1_1internal_1_1ObjectHashTableBase_a3d2e1b2f9dba2fe7db4714f03499e79e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Value\+At} (\mbox{\hyperlink{classint}{int}} entry)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectHashTableBase_a45f343e604323fd12be43b0f861d7d16}\label{classv8_1_1internal_1_1ObjectHashTableBase_a45f343e604323fd12be43b0f861d7d16}} 
+static void {\bfseries Fill\+Entries\+With\+Holes} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectHashTableBase_ab9fa6b52438643808748dce949159d2f}\label{classv8_1_1internal_1_1ObjectHashTableBase_ab9fa6b52438643808748dce949159d2f}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$ {\bfseries Put} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$ table, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectHashTableBase_a514b023f883de89518605283f832b8f2}\label{classv8_1_1internal_1_1ObjectHashTableBase_a514b023f883de89518605283f832b8f2}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$ {\bfseries Put} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$ table, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, int32\+\_\+t hash)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectHashTableBase_a0b72c405cb871d613f1ab9b87346c82d}\label{classv8_1_1internal_1_1ObjectHashTableBase_a0b72c405cb871d613f1ab9b87346c82d}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$ {\bfseries Remove} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$ table, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key, \mbox{\hyperlink{classbool}{bool}} $\ast$was\+\_\+present)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectHashTableBase_a1e6e4fa96bb6d6ea68b3f9bef70a2696}\label{classv8_1_1internal_1_1ObjectHashTableBase_a1e6e4fa96bb6d6ea68b3f9bef70a2696}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$ {\bfseries Remove} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$ table, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key, \mbox{\hyperlink{classbool}{bool}} $\ast$was\+\_\+present, int32\+\_\+t hash)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectHashTableBase_a2d316ad9a341caaa8a5c25c333dfa0d0}\label{classv8_1_1internal_1_1ObjectHashTableBase_a2d316ad9a341caaa8a5c25c333dfa0d0}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Entry\+To\+Value\+Index} (\mbox{\hyperlink{classint}{int}} entry)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectHashTableBase_a389cb7ac05642ee33135f00aa8213a63}\label{classv8_1_1internal_1_1ObjectHashTableBase_a389cb7ac05642ee33135f00aa8213a63}} 
+void {\bfseries Add\+Entry} (\mbox{\hyperlink{classint}{int}} entry, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$key, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectHashTableBase_ab9bb9cb4b394cfcbc89c93db0aaf7ef4}\label{classv8_1_1internal_1_1ObjectHashTableBase_ab9bb9cb4b394cfcbc89c93db0aaf7ef4}} 
+void {\bfseries Remove\+Entry} (\mbox{\hyperlink{classint}{int}} entry)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Derived, typename Shape$>$\newline
+class v8\+::internal\+::\+Object\+Hash\+Table\+Base$<$ Derived, Shape $>$}
+
+
+
+Definition at line 277 of file hash-\/table.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/hash-\/table.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

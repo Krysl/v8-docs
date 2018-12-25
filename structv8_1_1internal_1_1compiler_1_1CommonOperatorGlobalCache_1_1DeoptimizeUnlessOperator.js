@@ -1,0 +1,4 @@
+var structv8_1_1internal_1_1compiler_1_1CommonOperatorGlobalCache_1_1DeoptimizeUnlessOperator =
+[
+    [ "DeoptimizeUnlessOperator", "structv8_1_1internal_1_1compiler_1_1CommonOperatorGlobalCache_1_1DeoptimizeUnlessOperator.html#a0581e028acc23704f3fe5b24bc158863", null ]
+];

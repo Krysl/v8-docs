@@ -1,0 +1,52 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1JSNativeContextSpecialization}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Native\+Context\+Specialization Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1JSNativeContextSpecialization}\index{v8\+::internal\+::compiler\+::\+J\+S\+Native\+Context\+Specialization@{v8\+::internal\+::compiler\+::\+J\+S\+Native\+Context\+Specialization}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Native\+Context\+Specialization\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1compiler_1_1JSNativeContextSpecialization}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSNativeContextSpecialization_ac5300a26368d26f68369e3cacc6d6cc8}\label{classv8_1_1internal_1_1compiler_1_1JSNativeContextSpecialization_ac5300a26368d26f68369e3cacc6d6cc8}} 
+enum {\bfseries Flag} \{ {\bfseries k\+No\+Flags} = 0u, 
+{\bfseries k\+Accessor\+Inlining\+Enabled} = 1u $<$$<$ 0, 
+{\bfseries k\+Bailout\+On\+Uninitialized} = 1u $<$$<$ 1
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSNativeContextSpecialization_a8bf4c1fac7e619700be7c15cfa75be9e}\label{classv8_1_1internal_1_1compiler_1_1JSNativeContextSpecialization_a8bf4c1fac7e619700be7c15cfa75be9e}} 
+typedef \mbox{\hyperlink{classv8_1_1base_1_1Flags}{base\+::\+Flags}}$<$ Flag $>$ {\bfseries Flags}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSNativeContextSpecialization_a2c8177b0fe4f45003a1d1db18c15c95a}\label{classv8_1_1internal_1_1compiler_1_1JSNativeContextSpecialization_a2c8177b0fe4f45003a1d1db18c15c95a}} 
+{\bfseries J\+S\+Native\+Context\+Specialization} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1AdvancedReducer_1_1Editor}{Editor}} $\ast$editor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSGraph}{J\+S\+Graph}} $\ast$jsgraph, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSHeapBroker}{J\+S\+Heap\+Broker}} $\ast$broker, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{Flags}} flags, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ native\+\_\+context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CompilationDependencies}{Compilation\+Dependencies}} $\ast$dependencies, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$shared\+\_\+zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSNativeContextSpecialization_a1727d3df94c0bbacf9ca75d81dfccff3}\label{classv8_1_1internal_1_1compiler_1_1JSNativeContextSpecialization_a1727d3df94c0bbacf9ca75d81dfccff3}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries reducer\+\_\+name} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSNativeContextSpecialization_ae691af2aa397791c9bbb927e6fd705dd}\label{classv8_1_1internal_1_1compiler_1_1JSNativeContextSpecialization_ae691af2aa397791c9bbb927e6fd705dd}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Reduction}{Reduction}} {\bfseries Reduce} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node) final
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSNativeContextSpecialization_a7fcdb732ee7bba63d4666bc8106bb9ad}\label{classv8_1_1internal_1_1compiler_1_1JSNativeContextSpecialization_a7fcdb732ee7bba63d4666bc8106bb9ad}} 
+static \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{classsize__t}{size\+\_\+t}} $>$ {\bfseries Get\+Max\+String\+Length} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSHeapBroker}{J\+S\+Heap\+Broker}} $\ast$broker, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 42 of file js-\/native-\/context-\/specialization.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/js-\/native-\/context-\/specialization.\+h\item 
+v8/src/compiler/js-\/native-\/context-\/specialization.\+cc\end{DoxyCompactItemize}

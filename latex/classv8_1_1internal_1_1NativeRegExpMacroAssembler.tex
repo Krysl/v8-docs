@@ -1,0 +1,72 @@
+\hypertarget{classv8_1_1internal_1_1NativeRegExpMacroAssembler}{}\section{v8\+:\+:internal\+:\+:Native\+Reg\+Exp\+Macro\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1NativeRegExpMacroAssembler}\index{v8\+::internal\+::\+Native\+Reg\+Exp\+Macro\+Assembler@{v8\+::internal\+::\+Native\+Reg\+Exp\+Macro\+Assembler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Native\+Reg\+Exp\+Macro\+Assembler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{classv8_1_1internal_1_1NativeRegExpMacroAssembler}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativeRegExpMacroAssembler_a0d5534efccb56e5c02e89be0081f406a}\label{classv8_1_1internal_1_1NativeRegExpMacroAssembler_a0d5534efccb56e5c02e89be0081f406a}} 
+enum {\bfseries Mode} \{ {\bfseries L\+A\+T\+I\+N1} = 1, 
+{\bfseries U\+C16} = 2
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativeRegExpMacroAssembler_a454f330d24fa368c4ea0ff628f1d28f1}\label{classv8_1_1internal_1_1NativeRegExpMacroAssembler_a454f330d24fa368c4ea0ff628f1d28f1}} 
+enum {\bfseries Result} \{ {\bfseries R\+E\+T\+RY} = -\/2, 
+{\bfseries E\+X\+C\+E\+P\+T\+I\+ON} = -\/1, 
+{\bfseries F\+A\+I\+L\+U\+RE} = 0, 
+{\bfseries S\+U\+C\+C\+E\+SS} = 1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativeRegExpMacroAssembler_ad358daf117f249b9ae056f175def4b9d}\label{classv8_1_1internal_1_1NativeRegExpMacroAssembler_ad358daf117f249b9ae056f175def4b9d}} 
+{\bfseries Native\+Reg\+Exp\+Macro\+Assembler} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativeRegExpMacroAssembler_a346b8a739bb4d9161c396544757b884e}\label{classv8_1_1internal_1_1NativeRegExpMacroAssembler_a346b8a739bb4d9161c396544757b884e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Read\+Unaligned} () override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativeRegExpMacroAssembler_adf3c85eed3ff0ba2abc1f455bca600be}\label{classv8_1_1internal_1_1NativeRegExpMacroAssembler_adf3c85eed3ff0ba2abc1f455bca600be}} 
+static Result {\bfseries Match} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ regexp, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ subject, \mbox{\hyperlink{classint}{int}} $\ast$offsets\+\_\+vector, \mbox{\hyperlink{classint}{int}} offsets\+\_\+vector\+\_\+length, \mbox{\hyperlink{classint}{int}} previous\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativeRegExpMacroAssembler_a473d8e744726a35090f726c48927985c}\label{classv8_1_1internal_1_1NativeRegExpMacroAssembler_a473d8e744726a35090f726c48927985c}} 
+static \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Grow\+Stack} (\mbox{\hyperlink{classuintptr__t}{Address}} stack\+\_\+pointer, \mbox{\hyperlink{classuintptr__t}{Address}} $\ast$stack\+\_\+top, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativeRegExpMacroAssembler_a0f81f5766a87b4260c1917cd322ad781}\label{classv8_1_1internal_1_1NativeRegExpMacroAssembler_a0f81f5766a87b4260c1917cd322ad781}} 
+static const byte $\ast$ {\bfseries String\+Character\+Position} (\mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} subject, \mbox{\hyperlink{classint}{int}} start\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativeRegExpMacroAssembler_a57bfd27bee98c37c8007408c8326a1b0}\label{classv8_1_1internal_1_1NativeRegExpMacroAssembler_a57bfd27bee98c37c8007408c8326a1b0}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Check\+Stack\+Guard\+State} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} start\+\_\+index, \mbox{\hyperlink{classbool}{bool}} is\+\_\+direct\+\_\+call, \mbox{\hyperlink{classuintptr__t}{Address}} $\ast$return\+\_\+address, \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} re\+\_\+code, \mbox{\hyperlink{classuintptr__t}{Address}} $\ast$subject, const byte $\ast$$\ast$input\+\_\+start, const byte $\ast$$\ast$input\+\_\+end)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativeRegExpMacroAssembler_accf544c18ba07a35b990d2a71412a752}\label{classv8_1_1internal_1_1NativeRegExpMacroAssembler_accf544c18ba07a35b990d2a71412a752}} 
+static \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries word\+\_\+character\+\_\+map\+\_\+address} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativeRegExpMacroAssembler_af973025a5f5aee7a2da1d3cdf0feb1a1}\label{classv8_1_1internal_1_1NativeRegExpMacroAssembler_af973025a5f5aee7a2da1d3cdf0feb1a1}} 
+static Result {\bfseries Execute} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} input, \mbox{\hyperlink{classint}{int}} start\+\_\+offset, const byte $\ast$input\+\_\+start, const byte $\ast$input\+\_\+end, \mbox{\hyperlink{classint}{int}} $\ast$output, \mbox{\hyperlink{classint}{int}} output\+\_\+size, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativeRegExpMacroAssembler_ab96e1f9e3bc1f9938a06183c0ebf1fca}\label{classv8_1_1internal_1_1NativeRegExpMacroAssembler_ab96e1f9e3bc1f9938a06183c0ebf1fca}} 
+static const byte {\bfseries word\+\_\+character\+\_\+map} \mbox{[}256\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 198 of file regexp-\/macro-\/assembler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/regexp-\/macro-\/assembler.\+h\item 
+v8/src/regexp/regexp-\/macro-\/assembler.\+cc\end{DoxyCompactItemize}

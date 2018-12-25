@@ -1,0 +1,92 @@
+\hypertarget{classv8_1_1internal_1_1SafepointEntry}{}\section{v8\+:\+:internal\+:\+:Safepoint\+Entry Class Reference}
+\label{classv8_1_1internal_1_1SafepointEntry}\index{v8\+::internal\+::\+Safepoint\+Entry@{v8\+::internal\+::\+Safepoint\+Entry}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1SafepointEntry_1_1ArgumentsField}{Arguments\+Field}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1SafepointEntry_1_1DeoptimizationIndexField}{Deoptimization\+Index\+Field}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1SafepointEntry_1_1SaveDoublesField}{Save\+Doubles\+Field}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointEntry_a714b9ac0280fb736fce0b4bc375b1bbf}\label{classv8_1_1internal_1_1SafepointEntry_a714b9ac0280fb736fce0b4bc375b1bbf}} 
+{\bfseries Safepoint\+Entry} (\mbox{\hyperlink{classunsigned}{unsigned}} info, uint8\+\_\+t $\ast$bits, \mbox{\hyperlink{classint}{int}} trampoline\+\_\+pc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointEntry_a6ee4a4b1b646265e585d4ef9b8d8403e}\label{classv8_1_1internal_1_1SafepointEntry_a6ee4a4b1b646265e585d4ef9b8d8403e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+valid} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointEntry_a2d1d1d684af2456943055c68e298dcf8}\label{classv8_1_1internal_1_1SafepointEntry_a2d1d1d684af2456943055c68e298dcf8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Equals} (const \mbox{\hyperlink{classv8_1_1internal_1_1SafepointEntry}{Safepoint\+Entry}} \&other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointEntry_a9c00b6b4189a9f81b5e4f533eccd84a1}\label{classv8_1_1internal_1_1SafepointEntry_a9c00b6b4189a9f81b5e4f533eccd84a1}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointEntry_a08b40c6b4598f81680c2c0f50f010c1a}\label{classv8_1_1internal_1_1SafepointEntry_a08b40c6b4598f81680c2c0f50f010c1a}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries deoptimization\+\_\+index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointEntry_a82cecbcae9304d4057da0a7e92ba6d17}\label{classv8_1_1internal_1_1SafepointEntry_a82cecbcae9304d4057da0a7e92ba6d17}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries trampoline\+\_\+pc} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointEntry_a36f992a492584a3bf2d1238adb4609a5}\label{classv8_1_1internal_1_1SafepointEntry_a36f992a492584a3bf2d1238adb4609a5}} 
+void {\bfseries set\+\_\+trampoline\+\_\+pc} (\mbox{\hyperlink{classint}{int}} trampoline\+\_\+pc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointEntry_a43cf815353cb2203dead442a0b1df138}\label{classv8_1_1internal_1_1SafepointEntry_a43cf815353cb2203dead442a0b1df138}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries argument\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointEntry_ab55cb818f8186cb1d35ee1358feae7a5}\label{classv8_1_1internal_1_1SafepointEntry_ab55cb818f8186cb1d35ee1358feae7a5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+doubles} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointEntry_afd78375bea1199e6be5da9c1dd12ba23}\label{classv8_1_1internal_1_1SafepointEntry_afd78375bea1199e6be5da9c1dd12ba23}} 
+uint8\+\_\+t $\ast$ {\bfseries bits} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointEntry_a679f13816afae0d510bc33ae04172374}\label{classv8_1_1internal_1_1SafepointEntry_a679f13816afae0d510bc33ae04172374}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Registers} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointEntry_af17ef394206619509b3b9da8c5cf180d}\label{classv8_1_1internal_1_1SafepointEntry_af17ef394206619509b3b9da8c5cf180d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Register\+At} (\mbox{\hyperlink{classint}{int}} reg\+\_\+index) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointEntry_a31894265ea9ab2a0e102f114fc442fc0}\label{classv8_1_1internal_1_1SafepointEntry_a31894265ea9ab2a0e102f114fc442fc0}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Arguments\+Field\+Bits} = 3
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointEntry_a4108e18fe4bbc714ca298c135a34bbd7}\label{classv8_1_1internal_1_1SafepointEntry_a4108e18fe4bbc714ca298c135a34bbd7}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Save\+Doubles\+Field\+Bits} = 1
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Deopt\+Index\+Bits}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file safepoint-\/table.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1SafepointEntry_a23565fe7c5f420d94f53724293949f78}\label{classv8_1_1internal_1_1SafepointEntry_a23565fe7c5f420d94f53724293949f78}} 
+\index{v8\+::internal\+::\+Safepoint\+Entry@{v8\+::internal\+::\+Safepoint\+Entry}!k\+Deopt\+Index\+Bits@{k\+Deopt\+Index\+Bits}}
+\index{k\+Deopt\+Index\+Bits@{k\+Deopt\+Index\+Bits}!v8\+::internal\+::\+Safepoint\+Entry@{v8\+::internal\+::\+Safepoint\+Entry}}
+\subsubsection{\texorpdfstring{k\+Deopt\+Index\+Bits}{kDeoptIndexBits}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Safepoint\+Entry\+::k\+Deopt\+Index\+Bits\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      32 - kArgumentsFieldBits - kSaveDoublesFieldBits
+\end{DoxyCode}
+
+
+Definition at line 51 of file safepoint-\/table.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/safepoint-\/table.\+h\item 
+v8/src/safepoint-\/table.\+cc\end{DoxyCompactItemize}

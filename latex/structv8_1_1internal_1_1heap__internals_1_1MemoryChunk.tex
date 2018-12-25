@@ -1,0 +1,47 @@
+\hypertarget{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk}{}\section{v8\+:\+:internal\+:\+:heap\+\_\+internals\+:\+:Memory\+Chunk Struct Reference}
+\label{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk}\index{v8\+::internal\+::heap\+\_\+internals\+::\+Memory\+Chunk@{v8\+::internal\+::heap\+\_\+internals\+::\+Memory\+Chunk}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk_a006f8c55b6ba4e8d1746a7862a8c90f1}\label{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk_a006f8c55b6ba4e8d1746a7862a8c90f1}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Marking} () const
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk_ae921ff0e998b0783398b57847e15ff9d}\label{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk_ae921ff0e998b0783398b57847e15ff9d}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries In\+New\+Space} () const
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk_a923f5dbdfe6d292abfe86659777172b0}\label{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk_a923f5dbdfe6d292abfe86659777172b0}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} {\bfseries Get\+Flags} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk_a9a62e2ff31d60d37f0301886276ba329}\label{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk_a9a62e2ff31d60d37f0301886276ba329}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk}{heap\+\_\+internals\+::\+Memory\+Chunk}} $\ast$ {\bfseries From\+Heap\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk_a295233365788857b47cf5adf340575d5}\label{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk_a295233365788857b47cf5adf340575d5}} 
+static constexpr \mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} {\bfseries k\+Flags\+Offset} = sizeof(\mbox{\hyperlink{classsize__t}{size\+\_\+t}})
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk_ad3d3e9e79c76a2a45aa2ecd4bbcf45a0}\label{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk_ad3d3e9e79c76a2a45aa2ecd4bbcf45a0}} 
+static constexpr \mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} {\bfseries k\+Marking\+Bit} = \mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}}\{1\} $<$$<$ 18
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk_a8cbeb9632f3867a2e2901a553ecf3fce}\label{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk_a8cbeb9632f3867a2e2901a553ecf3fce}} 
+static constexpr \mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} {\bfseries k\+From\+Space\+Bit} = \mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}}\{1\} $<$$<$ 3
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk_a5e9d308076f0d2a2423cc792f785635f}\label{structv8_1_1internal_1_1heap__internals_1_1MemoryChunk_a5e9d308076f0d2a2423cc792f785635f}} 
+static constexpr \mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} {\bfseries k\+To\+Space\+Bit} = \mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}}\{1\} $<$$<$ 4
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file heap-\/write-\/barrier-\/inl.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/heap-\/write-\/barrier-\/inl.\+h\end{DoxyCompactItemize}

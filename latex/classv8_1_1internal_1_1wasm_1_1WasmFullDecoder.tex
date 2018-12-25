@@ -1,0 +1,69 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Full\+Decoder$<$ validate, Interface $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder}\index{v8\+::internal\+::wasm\+::\+Wasm\+Full\+Decoder$<$ validate, Interface $>$@{v8\+::internal\+::wasm\+::\+Wasm\+Full\+Decoder$<$ validate, Interface $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Full\+Decoder$<$ validate, Interface $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_a1359f0fe8aa0e9d62c300e995e2ff865}\label{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_a1359f0fe8aa0e9d62c300e995e2ff865}} 
+{\footnotesize template$<$typename... Interface\+Args$>$ }\\{\bfseries Wasm\+Full\+Decoder} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{Wasm\+Module}} $\ast$module, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{Wasm\+Features}} \&enabled, \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{Wasm\+Features}} $\ast$detected, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1FunctionBody}{Function\+Body}} \&body, Interface\+Args \&\&... interface\+\_\+args)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_a55f01185f6536f146ce164f6ed7d916a}\label{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_a55f01185f6536f146ce164f6ed7d916a}} 
+Interface \& {\bfseries interface} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_ab515da3ad88617021858c8098ddd2b98}\label{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_ab515da3ad88617021858c8098ddd2b98}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Decode} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_adc0f800ede12bba924edadce98036e77}\label{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_adc0f800ede12bba924edadce98036e77}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Trace\+Failed} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_a1708b809fd785ad97461985d2115ffeb}\label{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_a1708b809fd785ad97461985d2115ffeb}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Safe\+Opcode\+Name\+At} (const byte $\ast$pc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_a8647f12bd9c1dd255c10091e9826f1ec}\label{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_a8647f12bd9c1dd255c10091e9826f1ec}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$ {\bfseries zone} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_a67969357736ecd0f74b593bc42618a66}\label{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_a67969357736ecd0f74b593bc42618a66}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Num\+Locals} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_a2da470f81645365c7f0684e519dfeb56}\label{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_a2da470f81645365c7f0684e519dfeb56}} 
+Value\+Type {\bfseries Get\+Local\+Type} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_ada51705cf94c18c2fb1dc1598087f9c6}\label{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_ada51705cf94c18c2fb1dc1598087f9c6}} 
+\mbox{\hyperlink{classint}{Wasm\+Code\+Position}} {\bfseries position} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_aa5ac176e3d483300972a59f13050b3ad}\label{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_aa5ac176e3d483300972a59f13050b3ad}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries control\+\_\+depth} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_a6e7d8aaa3d56f0c0240d49ed4e29986b}\label{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_a6e7d8aaa3d56f0c0240d49ed4e29986b}} 
+Control $\ast$ {\bfseries control\+\_\+at} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} depth)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_af18d6e0b67e7861fa110f1283ef7b9e8}\label{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_af18d6e0b67e7861fa110f1283ef7b9e8}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries stack\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_a5c467a1dfc1f0434f2f38f9497b5b13c}\label{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_a5c467a1dfc1f0434f2f38f9497b5b13c}} 
+Value $\ast$ {\bfseries stack\+\_\+value} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} depth)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_abd5e81900a4c508274b8c0592370eff2}\label{classv8_1_1internal_1_1wasm_1_1WasmFullDecoder_abd5e81900a4c508274b8c0592370eff2}} 
+Value \& {\bfseries Get\+Merge\+Value\+From\+Stack} (Control $\ast$c, \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1Merge}{Merge}}$<$ Value $>$ $\ast$merge, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} i)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$Decoder\+::\+Validate\+Flag validate, typename Interface$>$\newline
+class v8\+::internal\+::wasm\+::\+Wasm\+Full\+Decoder$<$ validate, Interface $>$}
+
+
+
+Definition at line 1390 of file function-\/body-\/decoder-\/impl.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/function-\/body-\/decoder-\/impl.\+h\end{DoxyCompactItemize}

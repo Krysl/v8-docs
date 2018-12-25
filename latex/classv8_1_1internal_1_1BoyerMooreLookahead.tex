@@ -1,0 +1,57 @@
+\hypertarget{classv8_1_1internal_1_1BoyerMooreLookahead}{}\section{v8\+:\+:internal\+:\+:Boyer\+Moore\+Lookahead Class Reference}
+\label{classv8_1_1internal_1_1BoyerMooreLookahead}\index{v8\+::internal\+::\+Boyer\+Moore\+Lookahead@{v8\+::internal\+::\+Boyer\+Moore\+Lookahead}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Boyer\+Moore\+Lookahead\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1BoyerMooreLookahead}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BoyerMooreLookahead_ab6a48b1e2e6882f08b2b6675ff8df09c}\label{classv8_1_1internal_1_1BoyerMooreLookahead_ab6a48b1e2e6882f08b2b6675ff8df09c}} 
+{\bfseries Boyer\+Moore\+Lookahead} (\mbox{\hyperlink{classint}{int}} length, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BoyerMooreLookahead_adf8931d50830d985a1423b6b1b8612db}\label{classv8_1_1internal_1_1BoyerMooreLookahead_adf8931d50830d985a1423b6b1b8612db}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries length} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BoyerMooreLookahead_aa29b6ac73eb53c5bfce5be63b0a7ebd5}\label{classv8_1_1internal_1_1BoyerMooreLookahead_aa29b6ac73eb53c5bfce5be63b0a7ebd5}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries max\+\_\+char} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BoyerMooreLookahead_aa9e74726e490b7e55d846bfbf9117b74}\label{classv8_1_1internal_1_1BoyerMooreLookahead_aa9e74726e490b7e55d846bfbf9117b74}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$ {\bfseries compiler} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BoyerMooreLookahead_a59acc100fba6e91982d56037e23430a2}\label{classv8_1_1internal_1_1BoyerMooreLookahead_a59acc100fba6e91982d56037e23430a2}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Count} (\mbox{\hyperlink{classint}{int}} map\+\_\+number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BoyerMooreLookahead_a966ed7328590844feb533c01078ad12f}\label{classv8_1_1internal_1_1BoyerMooreLookahead_a966ed7328590844feb533c01078ad12f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1BoyerMoorePositionInfo}{Boyer\+Moore\+Position\+Info}} $\ast$ {\bfseries at} (\mbox{\hyperlink{classint}{int}} i)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BoyerMooreLookahead_af4c7e21eb752bb01e83017365c1f9df0}\label{classv8_1_1internal_1_1BoyerMooreLookahead_af4c7e21eb752bb01e83017365c1f9df0}} 
+void {\bfseries Set} (\mbox{\hyperlink{classint}{int}} map\+\_\+number, \mbox{\hyperlink{classint}{int}} character)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BoyerMooreLookahead_a10f6403132f37e64c3ea5b02e1476b1c}\label{classv8_1_1internal_1_1BoyerMooreLookahead_a10f6403132f37e64c3ea5b02e1476b1c}} 
+void {\bfseries Set\+Interval} (\mbox{\hyperlink{classint}{int}} map\+\_\+number, const \mbox{\hyperlink{classv8_1_1internal_1_1Interval}{Interval}} \&interval)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BoyerMooreLookahead_a36418e6a797298179b6386f16462b7d8}\label{classv8_1_1internal_1_1BoyerMooreLookahead_a36418e6a797298179b6386f16462b7d8}} 
+void {\bfseries Set\+All} (\mbox{\hyperlink{classint}{int}} map\+\_\+number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BoyerMooreLookahead_aa0c55e2cb8b8bb1c6781fead233fb37f}\label{classv8_1_1internal_1_1BoyerMooreLookahead_aa0c55e2cb8b8bb1c6781fead233fb37f}} 
+void {\bfseries Set\+Rest} (\mbox{\hyperlink{classint}{int}} from\+\_\+map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BoyerMooreLookahead_ade25cef1e93047f545c040b8b1af156d}\label{classv8_1_1internal_1_1BoyerMooreLookahead_ade25cef1e93047f545c040b8b1af156d}} 
+void {\bfseries Emit\+Skip\+Instructions} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpMacroAssembler}{Reg\+Exp\+Macro\+Assembler}} $\ast$masm)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1149 of file jsregexp.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/jsregexp.\+h\item 
+v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

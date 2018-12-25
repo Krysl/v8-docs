@@ -1,0 +1,81 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Operation\+Typer Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1OperationTyper}\index{v8\+::internal\+::compiler\+::\+Operation\+Typer@{v8\+::internal\+::compiler\+::\+Operation\+Typer}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_a40cb265ad6a94b132dae540bbc7799f3}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_a40cb265ad6a94b132dae540bbc7799f3}} 
+enum {\bfseries Comparison\+Outcome\+Flags} \{ {\bfseries k\+Comparison\+True} = 1, 
+{\bfseries k\+Comparison\+False} = 2, 
+{\bfseries k\+Comparison\+Undefined} = 4
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_a1b16dd6f9765d48b6c81a1c86afe38da}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_a1b16dd6f9765d48b6c81a1c86afe38da}} 
+{\bfseries Operation\+Typer} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSHeapBroker}{J\+S\+Heap\+Broker}} $\ast$broker, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_a61e40198ba2eae93b92c26d22bd5d989}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_a61e40198ba2eae93b92c26d22bd5d989}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries Merge} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} left, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} right)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_ae5552e2fc2be13d4cbc35d7db3857807}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_ae5552e2fc2be13d4cbc35d7db3857807}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries To\+Primitive} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_a0c0df0c1207d0dca2d959f1a508a5ed5}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_a0c0df0c1207d0dca2d959f1a508a5ed5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries To\+Number} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_a7b24c70a939cd511a31d068d1820849d}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_a7b24c70a939cd511a31d068d1820849d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries To\+Number\+Convert\+Big\+Int} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_a49456144b17921596efcc3f1e4a183b1}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_a49456144b17921596efcc3f1e4a183b1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries To\+Numeric} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_aeb671b1a162a5c80e1cb696393155d55}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_aeb671b1a162a5c80e1cb696393155d55}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries To\+Boolean} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_a79a79d5af409b6e0d3bd0fd3a06f99dd}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_a79a79d5af409b6e0d3bd0fd3a06f99dd}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries Weaken\+Range} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} current\+\_\+range, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} previous\+\_\+range)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_a2a21bb19478049639a56e7b407468f7e}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_a2a21bb19478049639a56e7b407468f7e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries Same\+Value} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_a2a5cdf25948aaed405ad3d9373baef1d}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_a2a5cdf25948aaed405ad3d9373baef1d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries Strict\+Equal} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_ae7acbbf10109e5de7c35d235e2f1e43d}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_ae7acbbf10109e5de7c35d235e2f1e43d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries Check\+Bounds} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_a3ae8390153d43b5807bb705b22920fe9}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_a3ae8390153d43b5807bb705b22920fe9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries Check\+Float64\+Hole} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_a446e9acdb11f2080e77ed7751eac9c21}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_a446e9acdb11f2080e77ed7751eac9c21}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries Check\+Number} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_a7bb38032f24d098c85a0497c65adfcb4}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_a7bb38032f24d098c85a0497c65adfcb4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries Convert\+Tagged\+Hole\+To\+Undefined} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_a30414ee2b5c359533c5db0c7b72b25af}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_a30414ee2b5c359533c5db0c7b72b25af}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries Type\+Type\+Guard} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$sigma\+\_\+op, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} input)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_a7e70c58390546802713a139b348d1e38}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_a7e70c58390546802713a139b348d1e38}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries singleton\+\_\+false} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_aaf889ac72afa7f1fadfc773b2c7e5519}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_aaf889ac72afa7f1fadfc773b2c7e5519}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries singleton\+\_\+true} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1OperationTyper_ab6a7f3f6e8ec13dc1da5fbf9336e0103}\label{classv8_1_1internal_1_1compiler_1_1OperationTyper_ab6a7f3f6e8ec13dc1da5fbf9336e0103}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries singleton\+\_\+the\+\_\+hole} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 28 of file operation-\/typer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/operation-\/typer.\+h\item 
+v8/src/compiler/operation-\/typer.\+cc\end{DoxyCompactItemize}

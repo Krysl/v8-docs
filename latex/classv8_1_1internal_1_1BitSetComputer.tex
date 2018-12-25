@@ -1,0 +1,44 @@
+\hypertarget{classv8_1_1internal_1_1BitSetComputer}{}\section{v8\+:\+:internal\+:\+:Bit\+Set\+Computer$<$ T, k\+Bits\+Per\+Item, k\+Bits\+Per\+Word, U $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1BitSetComputer}\index{v8\+::internal\+::\+Bit\+Set\+Computer$<$ T, k\+Bits\+Per\+Item, k\+Bits\+Per\+Word, U $>$@{v8\+::internal\+::\+Bit\+Set\+Computer$<$ T, k\+Bits\+Per\+Item, k\+Bits\+Per\+Word, U $>$}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitSetComputer_a510fc37b902e73b5cbbe471ab6ce2c15}\label{classv8_1_1internal_1_1BitSetComputer_a510fc37b902e73b5cbbe471ab6ce2c15}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries word\+\_\+count} (\mbox{\hyperlink{classint}{int}} items)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitSetComputer_a65f33303316c784bb461bca14603b379}\label{classv8_1_1internal_1_1BitSetComputer_a65f33303316c784bb461bca14603b379}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries index} (\mbox{\hyperlink{classint}{int}} base\+\_\+index, \mbox{\hyperlink{classint}{int}} item)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitSetComputer_a6b1768318b19d71f2c8f90524c4a3c15}\label{classv8_1_1internal_1_1BitSetComputer_a6b1768318b19d71f2c8f90524c4a3c15}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} {\bfseries decode} (U data, \mbox{\hyperlink{classint}{int}} item)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitSetComputer_a44fa109f0b4c0c7c13130ebd14708add}\label{classv8_1_1internal_1_1BitSetComputer_a44fa109f0b4c0c7c13130ebd14708add}} 
+static U {\bfseries encode} (U previous, \mbox{\hyperlink{classint}{int}} item, \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitSetComputer_ab63eae7e3c886f4a5194024e056bc561}\label{classv8_1_1internal_1_1BitSetComputer_ab63eae7e3c886f4a5194024e056bc561}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries shift} (\mbox{\hyperlink{classint}{int}} item)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitSetComputer_aa0be907049a9a722cae553a380435bd3}\label{classv8_1_1internal_1_1BitSetComputer_aa0be907049a9a722cae553a380435bd3}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Items\+Per\+Word} = k\+Bits\+Per\+Word / k\+Bits\+Per\+Item
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitSetComputer_aad919c363a83f30498923ca8122d780e}\label{classv8_1_1internal_1_1BitSetComputer_aad919c363a83f30498923ca8122d780e}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Mask} = (1 $<$$<$ k\+Bits\+Per\+Item) -\/ 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T, int k\+Bits\+Per\+Item, int k\+Bits\+Per\+Word, class U$>$\newline
+class v8\+::internal\+::\+Bit\+Set\+Computer$<$ T, k\+Bits\+Per\+Item, k\+Bits\+Per\+Word, U $>$}
+
+
+
+Definition at line 423 of file utils.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/utils.\+h\end{DoxyCompactItemize}

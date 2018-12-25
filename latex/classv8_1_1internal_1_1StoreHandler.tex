@@ -1,0 +1,115 @@
+\hypertarget{classv8_1_1internal_1_1StoreHandler}{}\section{v8\+:\+:internal\+:\+:Store\+Handler Class Reference}
+\label{classv8_1_1internal_1_1StoreHandler}\index{v8\+::internal\+::\+Store\+Handler@{v8\+::internal\+::\+Store\+Handler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Store\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1StoreHandler}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1StoreHandler_1_1DescriptorBits}{Descriptor\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1StoreHandler_1_1DoAccessCheckOnReceiverBits}{Do\+Access\+Check\+On\+Receiver\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1StoreHandler_1_1FieldIndexBits}{Field\+Index\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1StoreHandler_1_1FieldRepresentationBits}{Field\+Representation\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1StoreHandler_1_1IsInobjectBits}{Is\+Inobject\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1StoreHandler_1_1KindBits}{Kind\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1StoreHandler_1_1LookupOnReceiverBits}{Lookup\+On\+Receiver\+Bits}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreHandler_a546c4b0b53313386243621e502962daf}\label{classv8_1_1internal_1_1StoreHandler_a546c4b0b53313386243621e502962daf}} 
+enum {\bfseries Kind} \{ \newline
+{\bfseries k\+Element}, 
+{\bfseries k\+Field}, 
+{\bfseries k\+Const\+Field}, 
+{\bfseries k\+Accessor}, 
+\newline
+{\bfseries k\+Native\+Data\+Property}, 
+{\bfseries k\+Api\+Setter}, 
+{\bfseries k\+Api\+Setter\+Holder\+Is\+Prototype}, 
+{\bfseries k\+Global\+Proxy}, 
+\newline
+{\bfseries k\+Normal}, 
+{\bfseries k\+Proxy}, 
+{\bfseries k\+Kinds\+Number}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreHandler_a0644c5db325acec966a84fb4d1de0556}\label{classv8_1_1internal_1_1StoreHandler_a0644c5db325acec966a84fb4d1de0556}} 
+enum {\bfseries Field\+Representation} \{ {\bfseries k\+Smi}, 
+{\bfseries k\+Double}, 
+{\bfseries k\+Heap\+Object}, 
+{\bfseries k\+Tagged}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreHandler_a69d599ee27b93907a5acfa6c57b8419a}\label{classv8_1_1internal_1_1StoreHandler_a69d599ee27b93907a5acfa6c57b8419a}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Descriptor\+Bits\+::k\+Next$<$=k\+Smi\+Value\+Size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreHandler_a37d87a673fc3b0e98f432b137f248a37}\label{classv8_1_1internal_1_1StoreHandler_a37d87a673fc3b0e98f432b137f248a37}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Field\+Index\+Bits\+::k\+Next$<$=k\+Smi\+Value\+Size)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreHandler_a5e48a5230f15ecfad678320d08c4e85f}\label{classv8_1_1internal_1_1StoreHandler_a5e48a5230f15ecfad678320d08c4e85f}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Store\+Field} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} descriptor, \mbox{\hyperlink{classv8_1_1internal_1_1FieldIndex}{Field\+Index}} field\+\_\+index, Property\+Constness constness, \mbox{\hyperlink{classv8_1_1internal_1_1Representation}{Representation}} representation)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreHandler_a6b22fdda926710b720c446ab3bf90e73}\label{classv8_1_1internal_1_1StoreHandler_a6b22fdda926710b720c446ab3bf90e73}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}} {\bfseries Store\+Transition} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ transition\+\_\+map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreHandler_a57e97e408250e9b808def49ae6a54da3}\label{classv8_1_1internal_1_1StoreHandler_a57e97e408250e9b808def49ae6a54da3}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Store\+Native\+Data\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} descriptor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreHandler_ac0805aa379f770a90a5149717a6bfde1}\label{classv8_1_1internal_1_1StoreHandler_ac0805aa379f770a90a5149717a6bfde1}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Store\+Accessor} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} descriptor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreHandler_a12749e7387070200898f75822c23bd28}\label{classv8_1_1internal_1_1StoreHandler_a12749e7387070200898f75822c23bd28}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Store\+Api\+Setter} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classbool}{bool}} holder\+\_\+is\+\_\+receiver)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreHandler_a82579af6eb8277c9fe4c5ab56826f281}\label{classv8_1_1internal_1_1StoreHandler_a82579af6eb8277c9fe4c5ab56826f281}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Store\+Through\+Prototype} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ receiver\+\_\+map, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ holder, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ smi\+\_\+handler, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}} maybe\+\_\+data1=\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}}(), \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}} maybe\+\_\+data2=\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}}())
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreHandler_aca94cbb293d9a65273b8bc246a93248a}\label{classv8_1_1internal_1_1StoreHandler_aca94cbb293d9a65273b8bc246a93248a}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Store\+Element\+Transition} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ receiver\+\_\+map, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ transition, Keyed\+Access\+Store\+Mode store\+\_\+mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreHandler_a85b447f0d895996e6456b86386cfb8ff}\label{classv8_1_1internal_1_1StoreHandler_a85b447f0d895996e6456b86386cfb8ff}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Store\+Proxy} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ receiver\+\_\+map, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSProxy}{J\+S\+Proxy}} $>$ proxy, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ receiver)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreHandler_a67ff02217ff0b7e1f3024b5b75705229}\label{classv8_1_1internal_1_1StoreHandler_a67ff02217ff0b7e1f3024b5b75705229}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}} {\bfseries Store\+Global} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1PropertyCell}{Property\+Cell}} $>$ cell)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreHandler_a32b7371d227e63752e2739895810cc1f}\label{classv8_1_1internal_1_1StoreHandler_a32b7371d227e63752e2739895810cc1f}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Store\+Global\+Proxy} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreHandler_a16b1eb56c827571852da4f896218a31b}\label{classv8_1_1internal_1_1StoreHandler_a16b1eb56c827571852da4f896218a31b}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Store\+Normal} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreHandler_a568f97d10e381447e6d746d9996a43eb}\label{classv8_1_1internal_1_1StoreHandler_a568f97d10e381447e6d746d9996a43eb}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Store\+Proxy} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 187 of file handler-\/configuration.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ic/handler-\/configuration.\+h\item 
+v8/src/ic/handler-\/configuration-\/inl.\+h\item 
+v8/src/ic/handler-\/configuration.\+cc\end{DoxyCompactItemize}

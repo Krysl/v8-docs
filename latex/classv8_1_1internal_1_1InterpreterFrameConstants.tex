@@ -1,0 +1,181 @@
+\hypertarget{classv8_1_1internal_1_1InterpreterFrameConstants}{}\section{v8\+:\+:internal\+:\+:Interpreter\+Frame\+Constants Class Reference}
+\label{classv8_1_1internal_1_1InterpreterFrameConstants}\index{v8\+::internal\+::\+Interpreter\+Frame\+Constants@{v8\+::internal\+::\+Interpreter\+Frame\+Constants}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Interpreter\+Frame\+Constants\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1InterpreterFrameConstants}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpreterFrameConstants_a80b1fdef2b7a05386e8efe2b138e4359}\label{classv8_1_1internal_1_1InterpreterFrameConstants_a80b1fdef2b7a05386e8efe2b138e4359}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Register\+Stack\+Slot\+Count} (\mbox{\hyperlink{classint}{int}} register\+\_\+count)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Fixed\+Frame\+Size}
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Fixed\+Frame\+Size\+From\+Fp}
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Last\+Param\+From\+Fp}
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Caller\+P\+C\+Offset\+From\+Fp}
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Bytecode\+Array\+From\+Fp}
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Bytecode\+Offset\+From\+Fp}
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Register\+File\+From\+Fp}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpreterFrameConstants_a51cda60e77e5dba88587ee2d50626e24}\label{classv8_1_1internal_1_1InterpreterFrameConstants_a51cda60e77e5dba88587ee2d50626e24}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Expressions\+Offset} = k\+Register\+File\+From\+Fp
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Extra\+Slot\+Count}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpreterFrameConstants_a1d88fffd34319a8f4195615e97074dde}\label{classv8_1_1internal_1_1InterpreterFrameConstants_a1d88fffd34319a8f4195615e97074dde}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Bytecode\+Array\+Expression\+Index} = -\/2
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpreterFrameConstants_afca2adf4a004a9c3fe69d1ffbfadde35}\label{classv8_1_1internal_1_1InterpreterFrameConstants_afca2adf4a004a9c3fe69d1ffbfadde35}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Bytecode\+Offset\+Expression\+Index} = -\/1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpreterFrameConstants_acab9e4667fba3aa4caac682d86b85855}\label{classv8_1_1internal_1_1InterpreterFrameConstants_acab9e4667fba3aa4caac682d86b85855}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Register\+File\+Expression\+Index} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 289 of file frame-\/constants.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpreterFrameConstants_a9d119b1f5127b46525958a57b62127d6}\label{classv8_1_1internal_1_1InterpreterFrameConstants_a9d119b1f5127b46525958a57b62127d6}} 
+\index{v8\+::internal\+::\+Interpreter\+Frame\+Constants@{v8\+::internal\+::\+Interpreter\+Frame\+Constants}!k\+Bytecode\+Array\+From\+Fp@{k\+Bytecode\+Array\+From\+Fp}}
+\index{k\+Bytecode\+Array\+From\+Fp@{k\+Bytecode\+Array\+From\+Fp}!v8\+::internal\+::\+Interpreter\+Frame\+Constants@{v8\+::internal\+::\+Interpreter\+Frame\+Constants}}
+\subsubsection{\texorpdfstring{k\+Bytecode\+Array\+From\+Fp}{kBytecodeArrayFromFp}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Interpreter\+Frame\+Constants\+::k\+Bytecode\+Array\+From\+Fp\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      -StandardFrameConstants::kFixedFrameSizeFromFp - 1 * kPointerSize
+\end{DoxyCode}
+
+
+Definition at line 302 of file frame-\/constants.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpreterFrameConstants_abd85f1a448dcf859726487943080b0e3}\label{classv8_1_1internal_1_1InterpreterFrameConstants_abd85f1a448dcf859726487943080b0e3}} 
+\index{v8\+::internal\+::\+Interpreter\+Frame\+Constants@{v8\+::internal\+::\+Interpreter\+Frame\+Constants}!k\+Bytecode\+Offset\+From\+Fp@{k\+Bytecode\+Offset\+From\+Fp}}
+\index{k\+Bytecode\+Offset\+From\+Fp@{k\+Bytecode\+Offset\+From\+Fp}!v8\+::internal\+::\+Interpreter\+Frame\+Constants@{v8\+::internal\+::\+Interpreter\+Frame\+Constants}}
+\subsubsection{\texorpdfstring{k\+Bytecode\+Offset\+From\+Fp}{kBytecodeOffsetFromFp}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Interpreter\+Frame\+Constants\+::k\+Bytecode\+Offset\+From\+Fp\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      -StandardFrameConstants::kFixedFrameSizeFromFp - 2 * kPointerSize
+\end{DoxyCode}
+
+
+Definition at line 304 of file frame-\/constants.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpreterFrameConstants_af29d28dc6b5f72c187273d55dea15646}\label{classv8_1_1internal_1_1InterpreterFrameConstants_af29d28dc6b5f72c187273d55dea15646}} 
+\index{v8\+::internal\+::\+Interpreter\+Frame\+Constants@{v8\+::internal\+::\+Interpreter\+Frame\+Constants}!k\+Caller\+P\+C\+Offset\+From\+Fp@{k\+Caller\+P\+C\+Offset\+From\+Fp}}
+\index{k\+Caller\+P\+C\+Offset\+From\+Fp@{k\+Caller\+P\+C\+Offset\+From\+Fp}!v8\+::internal\+::\+Interpreter\+Frame\+Constants@{v8\+::internal\+::\+Interpreter\+Frame\+Constants}}
+\subsubsection{\texorpdfstring{k\+Caller\+P\+C\+Offset\+From\+Fp}{kCallerPCOffsetFromFp}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Interpreter\+Frame\+Constants\+::k\+Caller\+P\+C\+Offset\+From\+Fp\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      StandardFrameConstants::kCallerPCOffset
+\end{DoxyCode}
+
+
+Definition at line 300 of file frame-\/constants.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpreterFrameConstants_aaee3e7922c84992a889ec9657161c9b7}\label{classv8_1_1internal_1_1InterpreterFrameConstants_aaee3e7922c84992a889ec9657161c9b7}} 
+\index{v8\+::internal\+::\+Interpreter\+Frame\+Constants@{v8\+::internal\+::\+Interpreter\+Frame\+Constants}!k\+Extra\+Slot\+Count@{k\+Extra\+Slot\+Count}}
+\index{k\+Extra\+Slot\+Count@{k\+Extra\+Slot\+Count}!v8\+::internal\+::\+Interpreter\+Frame\+Constants@{v8\+::internal\+::\+Interpreter\+Frame\+Constants}}
+\subsubsection{\texorpdfstring{k\+Extra\+Slot\+Count}{kExtraSlotCount}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Interpreter\+Frame\+Constants\+::k\+Extra\+Slot\+Count\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      InterpreterFrameConstants::kFixedFrameSize / kPointerSize -
+      StandardFrameConstants::kFixedFrameSize / kPointerSize
+\end{DoxyCode}
+
+
+Definition at line 312 of file frame-\/constants.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpreterFrameConstants_ae4ccbdf376b0cd4d77d722dbfaa544ee}\label{classv8_1_1internal_1_1InterpreterFrameConstants_ae4ccbdf376b0cd4d77d722dbfaa544ee}} 
+\index{v8\+::internal\+::\+Interpreter\+Frame\+Constants@{v8\+::internal\+::\+Interpreter\+Frame\+Constants}!k\+Fixed\+Frame\+Size@{k\+Fixed\+Frame\+Size}}
+\index{k\+Fixed\+Frame\+Size@{k\+Fixed\+Frame\+Size}!v8\+::internal\+::\+Interpreter\+Frame\+Constants@{v8\+::internal\+::\+Interpreter\+Frame\+Constants}}
+\subsubsection{\texorpdfstring{k\+Fixed\+Frame\+Size}{kFixedFrameSize}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Interpreter\+Frame\+Constants\+::k\+Fixed\+Frame\+Size\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      StandardFrameConstants::kFixedFrameSize + 2 * kPointerSize
+\end{DoxyCode}
+
+
+Definition at line 292 of file frame-\/constants.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpreterFrameConstants_a67d84c408e9a45009791cb974303b1ec}\label{classv8_1_1internal_1_1InterpreterFrameConstants_a67d84c408e9a45009791cb974303b1ec}} 
+\index{v8\+::internal\+::\+Interpreter\+Frame\+Constants@{v8\+::internal\+::\+Interpreter\+Frame\+Constants}!k\+Fixed\+Frame\+Size\+From\+Fp@{k\+Fixed\+Frame\+Size\+From\+Fp}}
+\index{k\+Fixed\+Frame\+Size\+From\+Fp@{k\+Fixed\+Frame\+Size\+From\+Fp}!v8\+::internal\+::\+Interpreter\+Frame\+Constants@{v8\+::internal\+::\+Interpreter\+Frame\+Constants}}
+\subsubsection{\texorpdfstring{k\+Fixed\+Frame\+Size\+From\+Fp}{kFixedFrameSizeFromFp}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Interpreter\+Frame\+Constants\+::k\+Fixed\+Frame\+Size\+From\+Fp\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      StandardFrameConstants::kFixedFrameSizeFromFp + 2 * kPointerSize
+\end{DoxyCode}
+
+
+Definition at line 294 of file frame-\/constants.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpreterFrameConstants_a7700347b93467cc0999b36739c445e2e}\label{classv8_1_1internal_1_1InterpreterFrameConstants_a7700347b93467cc0999b36739c445e2e}} 
+\index{v8\+::internal\+::\+Interpreter\+Frame\+Constants@{v8\+::internal\+::\+Interpreter\+Frame\+Constants}!k\+Last\+Param\+From\+Fp@{k\+Last\+Param\+From\+Fp}}
+\index{k\+Last\+Param\+From\+Fp@{k\+Last\+Param\+From\+Fp}!v8\+::internal\+::\+Interpreter\+Frame\+Constants@{v8\+::internal\+::\+Interpreter\+Frame\+Constants}}
+\subsubsection{\texorpdfstring{k\+Last\+Param\+From\+Fp}{kLastParamFromFp}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Interpreter\+Frame\+Constants\+::k\+Last\+Param\+From\+Fp\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      StandardFrameConstants::kCallerSPOffset
+\end{DoxyCode}
+
+
+Definition at line 298 of file frame-\/constants.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1InterpreterFrameConstants_a9988d5056a3bd9d4e12aa8dbbc909065}\label{classv8_1_1internal_1_1InterpreterFrameConstants_a9988d5056a3bd9d4e12aa8dbbc909065}} 
+\index{v8\+::internal\+::\+Interpreter\+Frame\+Constants@{v8\+::internal\+::\+Interpreter\+Frame\+Constants}!k\+Register\+File\+From\+Fp@{k\+Register\+File\+From\+Fp}}
+\index{k\+Register\+File\+From\+Fp@{k\+Register\+File\+From\+Fp}!v8\+::internal\+::\+Interpreter\+Frame\+Constants@{v8\+::internal\+::\+Interpreter\+Frame\+Constants}}
+\subsubsection{\texorpdfstring{k\+Register\+File\+From\+Fp}{kRegisterFileFromFp}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Interpreter\+Frame\+Constants\+::k\+Register\+File\+From\+Fp\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      -StandardFrameConstants::kFixedFrameSizeFromFp - 3 * kPointerSize
+\end{DoxyCode}
+
+
+Definition at line 306 of file frame-\/constants.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/frame-\/constants.\+h\end{DoxyCompactItemize}

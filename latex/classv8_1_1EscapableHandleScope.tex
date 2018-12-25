@@ -16,10 +16,10 @@ Inheritance diagram for v8\+:\+:Escapable\+Handle\+Scope\+:\begin{figure}[H]
 \mbox{\Hypertarget{classv8_1_1EscapableHandleScope_aea39a7fd4dee6da31f3921ff891e1731}\label{classv8_1_1EscapableHandleScope_aea39a7fd4dee6da31f3921ff891e1731}} 
 {\bfseries Escapable\+Handle\+Scope} (Isolate $\ast$isolate)
 \item 
-{\footnotesize template$<$class T $>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ \mbox{\hyperlink{classv8_1_1EscapableHandleScope_afdf0d3850978f65d1a827f78b3a2b6fd}{Escape}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ value)
+{\footnotesize template$<$class T $>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ \mbox{\hyperlink{classv8_1_1EscapableHandleScope_afdf0d3850978f65d1a827f78b3a2b6fd}{Escape}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ value)
 \item 
 \mbox{\Hypertarget{classv8_1_1EscapableHandleScope_a7e0ca63c86c3f0cbc87784f601cf4ad5}\label{classv8_1_1EscapableHandleScope_a7e0ca63c86c3f0cbc87784f601cf4ad5}} 
-{\footnotesize template$<$class T $>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ T $>$ {\bfseries Escape\+Maybe} (\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ T $>$ value)
+{\footnotesize template$<$class T $>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries Escape\+Maybe} (\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ value)
 \item 
 \mbox{\Hypertarget{classv8_1_1EscapableHandleScope_a1a50d87127787da65c679a361fc8967d}\label{classv8_1_1EscapableHandleScope_a1a50d87127787da65c679a361fc8967d}} 
 {\bfseries Escapable\+Handle\+Scope} (const \mbox{\hyperlink{classv8_1_1EscapableHandleScope}{Escapable\+Handle\+Scope}} \&)=delete
@@ -43,7 +43,7 @@ Definition at line 894 of file v8.\+h.
 \index{Escape@{Escape}!v8\+::\+Escapable\+Handle\+Scope@{v8\+::\+Escapable\+Handle\+Scope}}
 \subsubsection{\texorpdfstring{Escape()}{Escape()}}
 {\footnotesize\ttfamily template$<$class T $>$ \\
-V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$T$>$ v8\+::\+Escapable\+Handle\+Scope\+::\+Escape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}$>$ v8\+::\+Escapable\+Handle\+Scope\+::\+Escape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Pushes the value into the previous scope and returns a handle to it. Cannot be called twice. 
 
@@ -51,6 +51,7 @@ Definition at line 904 of file v8.\+h.
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8.\+h\end{DoxyCompactItemize}
+v8/include/v8.\+h\item 
+v8/src/api.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,94 @@
+\hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor}{}\section{v8\+:\+:internal\+:\+:Profiler\+Events\+Processor Class Reference}
+\label{classv8_1_1internal_1_1ProfilerEventsProcessor}\index{v8\+::internal\+::\+Profiler\+Events\+Processor@{v8\+::internal\+::\+Profiler\+Events\+Processor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Profiler\+Events\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1ProfilerEventsProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_a6a62c345042e2d8386a2015f099c38b4}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_a6a62c345042e2d8386a2015f099c38b4}} 
+void {\bfseries Code\+Event\+Handler} (const \mbox{\hyperlink{classv8_1_1internal_1_1CodeEventsContainer}{Code\+Events\+Container}} \&evt\+\_\+rec) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_a08492c0959468e981dd075e850e217be}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_a08492c0959468e981dd075e850e217be}} 
+void {\bfseries Run} () override=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_a2c5ebee64884e9de0ca8edac68c91f5b}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_a2c5ebee64884e9de0ca8edac68c91f5b}} 
+void {\bfseries Stop\+Synchronously} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_ad26d2ddb70435d480657732bf8eccba7}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_ad26d2ddb70435d480657732bf8eccba7}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries running} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_a86cc7e6c442f57a7a545805a6cd5fecf}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_a86cc7e6c442f57a7a545805a6cd5fecf}} 
+void {\bfseries Enqueue} (const \mbox{\hyperlink{classv8_1_1internal_1_1CodeEventsContainer}{Code\+Events\+Container}} \&event)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_a420f446157fee53fc5ac28fd5b88828c}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_a420f446157fee53fc5ac28fd5b88828c}} 
+void {\bfseries Add\+Current\+Stack} (\mbox{\hyperlink{classbool}{bool}} update\+\_\+stats=false)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_af9cd823141426c9a3083bcc1d7e5a351}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_af9cd823141426c9a3083bcc1d7e5a351}} 
+void {\bfseries Add\+Deopt\+Stack} (\mbox{\hyperlink{classuintptr__t}{Address}} from, \mbox{\hyperlink{classint}{int}} fp\+\_\+to\+\_\+sp\+\_\+delta)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_a514ea4217b0d50c5ff46c83eda42c413}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_a514ea4217b0d50c5ff46c83eda42c413}} 
+void {\bfseries Add\+Sample} (\mbox{\hyperlink{structv8_1_1internal_1_1TickSample}{Tick\+Sample}} sample)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_a1e04e270f39aeb3c99488ce1e65eb154}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_a1e04e270f39aeb3c99488ce1e65eb154}} 
+enum {\bfseries Sample\+Processing\+Result} \{ {\bfseries One\+Sample\+Processed}, 
+{\bfseries Found\+Sample\+For\+Next\+Code\+Event}, 
+{\bfseries No\+Samples\+In\+Queue}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_ac97a9f2b4651c33e207453fcb0947f04}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_ac97a9f2b4651c33e207453fcb0947f04}} 
+{\bfseries Profiler\+Events\+Processor} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1ProfileGenerator}{Profile\+Generator}} $\ast$generator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_af06c8e8eb22d0da1dc1e9edbbabca0d2}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_af06c8e8eb22d0da1dc1e9edbbabca0d2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Process\+Code\+Event} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_a8b6ed3e332602e2156a60de8fbb30ff9}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_a8b6ed3e332602e2156a60de8fbb30ff9}} 
+virtual Sample\+Processing\+Result {\bfseries Process\+One\+Sample} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_abe12f8408ec5537032a7bc52b8b3c207}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_abe12f8408ec5537032a7bc52b8b3c207}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ProfileGenerator}{Profile\+Generator}} $\ast$ {\bfseries generator\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_a9d4c8ef93827a88a7d974f818bc9f3d2}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_a9d4c8ef93827a88a7d974f818bc9f3d2}} 
+base\+::\+Atomic32 {\bfseries running\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_a665cf1c8f1c968e7e3737f49f8c30d22}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_a665cf1c8f1c968e7e3737f49f8c30d22}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1LockedQueue}{Locked\+Queue}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CodeEventsContainer}{Code\+Events\+Container}} $>$ {\bfseries events\+\_\+buffer\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_ab7618f01a46fb423db580f06e65baeb9}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_ab7618f01a46fb423db580f06e65baeb9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1LockedQueue}{Locked\+Queue}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1TickSampleEventRecord}{Tick\+Sample\+Event\+Record}} $>$ {\bfseries ticks\+\_\+from\+\_\+vm\+\_\+buffer\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_a4444996d1fa5ffd5d6e8ae225d556544}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_a4444996d1fa5ffd5d6e8ae225d556544}} 
+std\+::atomic$<$ \mbox{\hyperlink{classunsigned}{unsigned}} $>$ {\bfseries last\+\_\+code\+\_\+event\+\_\+id\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_aea0a102c5b542b8706b2a9076e07f824}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_aea0a102c5b542b8706b2a9076e07f824}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries last\+\_\+processed\+\_\+code\+\_\+event\+\_\+id\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerEventsProcessor_a6280f9e4b5815a0f7eb04f91cebe225d}\label{classv8_1_1internal_1_1ProfilerEventsProcessor_a6280f9e4b5815a0f7eb04f91cebe225d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 133 of file cpu-\/profiler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/cpu-\/profiler.\+h\item 
+v8/src/profiler/cpu-\/profiler.\+cc\end{DoxyCompactItemize}

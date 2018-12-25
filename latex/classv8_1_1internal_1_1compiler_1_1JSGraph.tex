@@ -1,0 +1,70 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1JSGraph}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Graph Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1JSGraph}\index{v8\+::internal\+::compiler\+::\+J\+S\+Graph@{v8\+::internal\+::compiler\+::\+J\+S\+Graph}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Graph\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1compiler_1_1JSGraph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGraph_ab86eb832ed84711836a88ce93d33f51f}\label{classv8_1_1internal_1_1compiler_1_1JSGraph_ab86eb832ed84711836a88ce93d33f51f}} 
+{\bfseries J\+S\+Graph} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Graph}{Graph}} $\ast$graph, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CommonOperatorBuilder}{Common\+Operator\+Builder}} $\ast$common, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSOperatorBuilder}{J\+S\+Operator\+Builder}} $\ast$javascript, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SimplifiedOperatorBuilder}{Simplified\+Operator\+Builder}} $\ast$simplified, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder}{Machine\+Operator\+Builder}} $\ast$machine)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGraph_a0bd44651b5e363d44d8c551c572b17c8}\label{classv8_1_1internal_1_1compiler_1_1JSGraph_a0bd44651b5e363d44d8c551c572b17c8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries C\+Entry\+Stub\+Constant} (\mbox{\hyperlink{classint}{int}} result\+\_\+size, Save\+F\+P\+Regs\+Mode save\+\_\+doubles=k\+Dont\+Save\+F\+P\+Regs, Argv\+Mode argv\+\_\+mode=k\+Argv\+On\+Stack, \mbox{\hyperlink{classbool}{bool}} builtin\+\_\+exit\+\_\+frame=false)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGraph_a57bd6100acc2e0bdfa8b6c128be63a9f}\label{classv8_1_1internal_1_1compiler_1_1JSGraph_a57bd6100acc2e0bdfa8b6c128be63a9f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Padding\+Constant} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGraph_a3174978f25c8e0a6d0663c23ec15c737}\label{classv8_1_1internal_1_1compiler_1_1JSGraph_a3174978f25c8e0a6d0663c23ec15c737}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries No\+Context\+Constant} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGraph_af9becafdae6ec10310deedbb379296e7}\label{classv8_1_1internal_1_1compiler_1_1JSGraph_af9becafdae6ec10310deedbb379296e7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Heap\+Constant} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGraph_acbef236db1b4642c6168f30d4244af53}\label{classv8_1_1internal_1_1compiler_1_1JSGraph_acbef236db1b4642c6168f30d4244af53}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Constant} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGraph_a344ed7c8b776080a0bc6639fbfdd56c2}\label{classv8_1_1internal_1_1compiler_1_1JSGraph_a344ed7c8b776080a0bc6639fbfdd56c2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Constant} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1ObjectRef}{Object\+Ref}} \&value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGraph_a26d8e232abcba98b00b64cae4b2c863b}\label{classv8_1_1internal_1_1compiler_1_1JSGraph_a26d8e232abcba98b00b64cae4b2c863b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Constant} (double value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGraph_a01619157654194382250bba40de125ff}\label{classv8_1_1internal_1_1compiler_1_1JSGraph_a01619157654194382250bba40de125ff}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Boolean\+Constant} (\mbox{\hyperlink{classbool}{bool}} is\+\_\+true)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGraph_a122deaff5ad49bf7c475fb6a65f0ccf2}\label{classv8_1_1internal_1_1compiler_1_1JSGraph_a122deaff5ad49bf7c475fb6a65f0ccf2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Smi\+Constant} (int32\+\_\+t immediate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGraph_a8d4d26c021a7db680ab1cc0678a5b0d0}\label{classv8_1_1internal_1_1compiler_1_1JSGraph_a8d4d26c021a7db680ab1cc0678a5b0d0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSOperatorBuilder}{J\+S\+Operator\+Builder}} $\ast$ {\bfseries javascript} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGraph_a2a5cfb117e5973314835de306e18ccae}\label{classv8_1_1internal_1_1compiler_1_1JSGraph_a2a5cfb117e5973314835de306e18ccae}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SimplifiedOperatorBuilder}{Simplified\+Operator\+Builder}} $\ast$ {\bfseries simplified} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGraph_a3cdc4b9f4f26c716107febc5fbcc4d71}\label{classv8_1_1internal_1_1compiler_1_1JSGraph_a3cdc4b9f4f26c716107febc5fbcc4d71}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGraph_a02461ca9f4cae4050ce7c0c30209fec4}\label{classv8_1_1internal_1_1compiler_1_1JSGraph_a02461ca9f4cae4050ce7c0c30209fec4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Factory}{Factory}} $\ast$ {\bfseries factory} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGraph_a2e5ebf52b00b113944ce16a0fafddb20}\label{classv8_1_1internal_1_1compiler_1_1JSGraph_a2e5ebf52b00b113944ce16a0fafddb20}} 
+void {\bfseries Get\+Cached\+Nodes} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Node\+Vector}} $\ast$nodes)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file js-\/graph.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/js-\/graph.\+h\item 
+v8/src/compiler/js-\/graph.\+cc\end{DoxyCompactItemize}

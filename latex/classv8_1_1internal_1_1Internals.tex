@@ -14,179 +14,179 @@ static V8\+\_\+\+E\+X\+P\+O\+RT void {\bfseries Check\+Initialized\+Impl} (v8\+:
 static V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Check\+Initialized} (v8\+::\+Isolate $\ast$isolate)
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_adcdb38643eb538a720dbee4e77acea15}\label{classv8_1_1internal_1_1Internals_adcdb38643eb538a720dbee4e77acea15}} 
-static V8\+\_\+\+I\+N\+L\+I\+NE bool {\bfseries Has\+Heap\+Object\+Tag} (const internal\+::\+Address value)
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Heap\+Object\+Tag} (const \mbox{\hyperlink{classuintptr__t}{internal\+::\+Address}} value)
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a7489b2097139fa3f9dca4006178d7c0d}\label{classv8_1_1internal_1_1Internals_a7489b2097139fa3f9dca4006178d7c0d}} 
-static V8\+\_\+\+I\+N\+L\+I\+NE int {\bfseries Smi\+Value} (const internal\+::\+Address value)
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries Smi\+Value} (const \mbox{\hyperlink{classuintptr__t}{internal\+::\+Address}} value)
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_ae78e94e88a1205fa9133434e60c7fcae}\label{classv8_1_1internal_1_1Internals_ae78e94e88a1205fa9133434e60c7fcae}} 
-static V8\+\_\+\+I\+N\+L\+I\+NE constexpr internal\+::\+Address {\bfseries Int\+To\+Smi} (int value)
+static V8\+\_\+\+I\+N\+L\+I\+NE constexpr \mbox{\hyperlink{classuintptr__t}{internal\+::\+Address}} {\bfseries Int\+To\+Smi} (\mbox{\hyperlink{classint}{int}} value)
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a1d1d3013de2280bfd115a2600111714a}\label{classv8_1_1internal_1_1Internals_a1d1d3013de2280bfd115a2600111714a}} 
-static V8\+\_\+\+I\+N\+L\+I\+NE constexpr bool {\bfseries Is\+Valid\+Smi} (intptr\+\_\+t value)
+static V8\+\_\+\+I\+N\+L\+I\+NE constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Valid\+Smi} (intptr\+\_\+t value)
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a1e72cafe72b211a830d4043fa6cb292a}\label{classv8_1_1internal_1_1Internals_a1e72cafe72b211a830d4043fa6cb292a}} 
-static V8\+\_\+\+I\+N\+L\+I\+NE int {\bfseries Get\+Instance\+Type} (const internal\+::\+Address obj)
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Instance\+Type} (const \mbox{\hyperlink{classuintptr__t}{internal\+::\+Address}} obj)
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a1da181e205151dc45bc2de1f6c0a1713}\label{classv8_1_1internal_1_1Internals_a1da181e205151dc45bc2de1f6c0a1713}} 
-static V8\+\_\+\+I\+N\+L\+I\+NE int {\bfseries Get\+Oddball\+Kind} (const internal\+::\+Address obj)
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Oddball\+Kind} (const \mbox{\hyperlink{classuintptr__t}{internal\+::\+Address}} obj)
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_afbf930e9dfde745b54e1e7e03b5b96c8}\label{classv8_1_1internal_1_1Internals_afbf930e9dfde745b54e1e7e03b5b96c8}} 
-static V8\+\_\+\+I\+N\+L\+I\+NE bool {\bfseries Is\+External\+Two\+Byte\+String} (int instance\+\_\+type)
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+External\+Two\+Byte\+String} (\mbox{\hyperlink{classint}{int}} instance\+\_\+type)
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_aaa625b4cc76cec519a9a4bd8973015d3}\label{classv8_1_1internal_1_1Internals_aaa625b4cc76cec519a9a4bd8973015d3}} 
-static V8\+\_\+\+I\+N\+L\+I\+NE uint8\+\_\+t {\bfseries Get\+Node\+Flag} (internal\+::\+Address $\ast$obj, int shift)
+static V8\+\_\+\+I\+N\+L\+I\+NE uint8\+\_\+t {\bfseries Get\+Node\+Flag} (\mbox{\hyperlink{classuintptr__t}{internal\+::\+Address}} $\ast$obj, \mbox{\hyperlink{classint}{int}} shift)
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a7bceedc6da1b004ef3e689b8c50b77d9}\label{classv8_1_1internal_1_1Internals_a7bceedc6da1b004ef3e689b8c50b77d9}} 
-static V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Update\+Node\+Flag} (internal\+::\+Address $\ast$obj, bool value, int shift)
+static V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Update\+Node\+Flag} (\mbox{\hyperlink{classuintptr__t}{internal\+::\+Address}} $\ast$obj, \mbox{\hyperlink{classbool}{bool}} value, \mbox{\hyperlink{classint}{int}} shift)
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_af747dfbe0a82350ba86abde1756631e1}\label{classv8_1_1internal_1_1Internals_af747dfbe0a82350ba86abde1756631e1}} 
-static V8\+\_\+\+I\+N\+L\+I\+NE uint8\+\_\+t {\bfseries Get\+Node\+State} (internal\+::\+Address $\ast$obj)
+static V8\+\_\+\+I\+N\+L\+I\+NE uint8\+\_\+t {\bfseries Get\+Node\+State} (\mbox{\hyperlink{classuintptr__t}{internal\+::\+Address}} $\ast$obj)
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a50f41039e924a59c269d1340ce1da6b3}\label{classv8_1_1internal_1_1Internals_a50f41039e924a59c269d1340ce1da6b3}} 
-static V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Update\+Node\+State} (internal\+::\+Address $\ast$obj, uint8\+\_\+t value)
+static V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Update\+Node\+State} (\mbox{\hyperlink{classuintptr__t}{internal\+::\+Address}} $\ast$obj, uint8\+\_\+t value)
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_abe73d79832edf012f30a94ccc4b293d2}\label{classv8_1_1internal_1_1Internals_abe73d79832edf012f30a94ccc4b293d2}} 
-static V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Set\+Embedder\+Data} (v8\+::\+Isolate $\ast$isolate, uint32\+\_\+t slot, void $\ast$data)
+static V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Set\+Embedder\+Data} (v8\+::\+Isolate $\ast$isolate, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} slot, void $\ast$data)
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_ab53d3d4ef80770cb3e7d10effed86d10}\label{classv8_1_1internal_1_1Internals_ab53d3d4ef80770cb3e7d10effed86d10}} 
-static V8\+\_\+\+I\+N\+L\+I\+NE void $\ast$ {\bfseries Get\+Embedder\+Data} (const v8\+::\+Isolate $\ast$isolate, uint32\+\_\+t slot)
+static V8\+\_\+\+I\+N\+L\+I\+NE void $\ast$ {\bfseries Get\+Embedder\+Data} (const v8\+::\+Isolate $\ast$isolate, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} slot)
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a2bee569fd8bb0a97470679d88e22dc30}\label{classv8_1_1internal_1_1Internals_a2bee569fd8bb0a97470679d88e22dc30}} 
-static V8\+\_\+\+I\+N\+L\+I\+NE internal\+::\+Address $\ast$ {\bfseries Get\+Root} (v8\+::\+Isolate $\ast$isolate, int index)
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{internal\+::\+Address}} $\ast$ {\bfseries Get\+Root} (v8\+::\+Isolate $\ast$isolate, \mbox{\hyperlink{classint}{int}} index)
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a9a0239f7b97b5057d2a3c7137a3297b3}\label{classv8_1_1internal_1_1Internals_a9a0239f7b97b5057d2a3c7137a3297b3}} 
-{\footnotesize template$<$typename T $>$ }\\static V8\+\_\+\+I\+N\+L\+I\+NE T {\bfseries Read\+Field} (const internal\+::\+Address heap\+\_\+object\+\_\+ptr, int offset)
+{\footnotesize template$<$typename T $>$ }\\static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} {\bfseries Read\+Field} (const \mbox{\hyperlink{classuintptr__t}{internal\+::\+Address}} heap\+\_\+object\+\_\+ptr, \mbox{\hyperlink{classint}{int}} offset)
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a98cf4d5b60b963cc544cdd3aeda52335}\label{classv8_1_1internal_1_1Internals_a98cf4d5b60b963cc544cdd3aeda52335}} 
-{\footnotesize template$<$typename T $>$ }\\static V8\+\_\+\+I\+N\+L\+I\+NE T {\bfseries Read\+Embedder\+Data} (const v8\+::\+Context $\ast$context, int index)
+{\footnotesize template$<$typename T $>$ }\\static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} {\bfseries Read\+Embedder\+Data} (const v8\+::\+Context $\ast$context, \mbox{\hyperlink{classint}{int}} index)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a0902a596b5656b4592157eaacc020512}\label{classv8_1_1internal_1_1Internals_a0902a596b5656b4592157eaacc020512}} 
-static const int {\bfseries k\+Heap\+Object\+Map\+Offset} = 0
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Heap\+Object\+Map\+Offset} = 0
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a39ea290dfaa9de300bd79aa73a874a88}\label{classv8_1_1internal_1_1Internals_a39ea290dfaa9de300bd79aa73a874a88}} 
-static const int {\bfseries k\+Map\+Instance\+Type\+Offset} = 1 $\ast$ k\+Api\+Tagged\+Size + k\+Api\+Int\+Size
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Map\+Instance\+Type\+Offset} = 1 $\ast$ k\+Api\+Tagged\+Size + k\+Api\+Int\+Size
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a8c2b35069864f567ca0c571310dd90a1}\label{classv8_1_1internal_1_1Internals_a8c2b35069864f567ca0c571310dd90a1}} 
-static const int {\bfseries k\+String\+Resource\+Offset} = 1 $\ast$ k\+Api\+Tagged\+Size + 2 $\ast$ k\+Api\+Int\+Size
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+String\+Resource\+Offset} = 1 $\ast$ k\+Api\+Tagged\+Size + 2 $\ast$ k\+Api\+Int\+Size
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a98685d6861a07139720cd296f94f2b73}\label{classv8_1_1internal_1_1Internals_a98685d6861a07139720cd296f94f2b73}} 
-static const int {\bfseries k\+Oddball\+Kind\+Offset} = 4 $\ast$ k\+Api\+Tagged\+Size + k\+Api\+Double\+Size
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Oddball\+Kind\+Offset} = 4 $\ast$ k\+Api\+Tagged\+Size + k\+Api\+Double\+Size
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_ad4134449ee39b95e5ac035996aa7d66b}\label{classv8_1_1internal_1_1Internals_ad4134449ee39b95e5ac035996aa7d66b}} 
-static const int {\bfseries k\+Foreign\+Address\+Offset} = k\+Api\+Tagged\+Size
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Foreign\+Address\+Offset} = k\+Api\+Tagged\+Size
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_af8faf3ff3271d26bafa6ca0ea87e2a57}\label{classv8_1_1internal_1_1Internals_af8faf3ff3271d26bafa6ca0ea87e2a57}} 
-static const int {\bfseries k\+J\+S\+Object\+Header\+Size} = 3 $\ast$ k\+Api\+Tagged\+Size
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+J\+S\+Object\+Header\+Size} = 3 $\ast$ k\+Api\+Tagged\+Size
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a715ca62a5ddceac28d43c470db067675}\label{classv8_1_1internal_1_1Internals_a715ca62a5ddceac28d43c470db067675}} 
-static const int {\bfseries k\+Fixed\+Array\+Header\+Size} = 2 $\ast$ k\+Api\+Tagged\+Size
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Fixed\+Array\+Header\+Size} = 2 $\ast$ k\+Api\+Tagged\+Size
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a080e5babff09ca38831e9b887233c432}\label{classv8_1_1internal_1_1Internals_a080e5babff09ca38831e9b887233c432}} 
-static const int {\bfseries k\+Embedder\+Data\+Array\+Header\+Size} = 2 $\ast$ k\+Api\+Tagged\+Size
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Embedder\+Data\+Array\+Header\+Size} = 2 $\ast$ k\+Api\+Tagged\+Size
 \item 
-static const int {\bfseries k\+Embedder\+Data\+Slot\+Size}
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Embedder\+Data\+Slot\+Size}
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a691a2ab474f9e770dfea35a8c1a71abd}\label{classv8_1_1internal_1_1Internals_a691a2ab474f9e770dfea35a8c1a71abd}} 
-static const int {\bfseries k\+Native\+Context\+Embedder\+Data\+Offset} = 7 $\ast$ k\+Api\+Tagged\+Size
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Native\+Context\+Embedder\+Data\+Offset} = 7 $\ast$ k\+Api\+Tagged\+Size
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a5c39a86b30463928ea719def66916507}\label{classv8_1_1internal_1_1Internals_a5c39a86b30463928ea719def66916507}} 
-static const int {\bfseries k\+Full\+String\+Representation\+Mask} = 0x0f
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Full\+String\+Representation\+Mask} = 0x0f
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a1927ac3def13a57e03025e62ca46d1c5}\label{classv8_1_1internal_1_1Internals_a1927ac3def13a57e03025e62ca46d1c5}} 
-static const int {\bfseries k\+String\+Encoding\+Mask} = 0x8
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+String\+Encoding\+Mask} = 0x8
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a73faf917416d2519b65c7255e77a74ce}\label{classv8_1_1internal_1_1Internals_a73faf917416d2519b65c7255e77a74ce}} 
-static const int {\bfseries k\+External\+Two\+Byte\+Representation\+Tag} = 0x02
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+External\+Two\+Byte\+Representation\+Tag} = 0x02
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_ac789a0a139ccbacec0c5fb2d79427305}\label{classv8_1_1internal_1_1Internals_ac789a0a139ccbacec0c5fb2d79427305}} 
-static const int {\bfseries k\+External\+One\+Byte\+Representation\+Tag} = 0x0a
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+External\+One\+Byte\+Representation\+Tag} = 0x0a
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a258de87ae638f06a1deebccf4fd93c3f}\label{classv8_1_1internal_1_1Internals_a258de87ae638f06a1deebccf4fd93c3f}} 
-static const uint32\+\_\+t {\bfseries k\+Num\+Isolate\+Data\+Slots} = 4
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Num\+Isolate\+Data\+Slots} = 4
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_ad722bf4760df09958cd1062db4a5524c}\label{classv8_1_1internal_1_1Internals_ad722bf4760df09958cd1062db4a5524c}} 
-static const int {\bfseries k\+Isolate\+Embedder\+Data\+Offset} = 0
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Isolate\+Embedder\+Data\+Offset} = 0
 \item 
-static const int {\bfseries k\+External\+Memory\+Offset}
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+External\+Memory\+Offset}
 \item 
-static const int {\bfseries k\+External\+Memory\+Limit\+Offset}
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+External\+Memory\+Limit\+Offset}
 \item 
-static const int {\bfseries k\+External\+Memory\+At\+Last\+Mark\+Compact\+Offset}
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+External\+Memory\+At\+Last\+Mark\+Compact\+Offset}
 \item 
-static const int {\bfseries k\+Isolate\+Roots\+Offset}
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Isolate\+Roots\+Offset}
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a7281ff0eafed559e64613465b1a03296}\label{classv8_1_1internal_1_1Internals_a7281ff0eafed559e64613465b1a03296}} 
-static const int {\bfseries k\+Undefined\+Value\+Root\+Index} = 4
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Undefined\+Value\+Root\+Index} = 4
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_ac07a35d3efef0c107062b3eb88696e31}\label{classv8_1_1internal_1_1Internals_ac07a35d3efef0c107062b3eb88696e31}} 
-static const int {\bfseries k\+The\+Hole\+Value\+Root\+Index} = 5
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+The\+Hole\+Value\+Root\+Index} = 5
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_ab311cf753ec5c968052bd83ef21e83f8}\label{classv8_1_1internal_1_1Internals_ab311cf753ec5c968052bd83ef21e83f8}} 
-static const int {\bfseries k\+Null\+Value\+Root\+Index} = 6
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Null\+Value\+Root\+Index} = 6
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a93abd58b178eca469bade28e68b5c59e}\label{classv8_1_1internal_1_1Internals_a93abd58b178eca469bade28e68b5c59e}} 
-static const int {\bfseries k\+True\+Value\+Root\+Index} = 7
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+True\+Value\+Root\+Index} = 7
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a90b6837aa368bbe4ffd914e6f753b167}\label{classv8_1_1internal_1_1Internals_a90b6837aa368bbe4ffd914e6f753b167}} 
-static const int {\bfseries k\+False\+Value\+Root\+Index} = 8
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+False\+Value\+Root\+Index} = 8
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a6f669f3d98fe653b281b26be3bc0655a}\label{classv8_1_1internal_1_1Internals_a6f669f3d98fe653b281b26be3bc0655a}} 
-static const int {\bfseries k\+Empty\+String\+Root\+Index} = 9
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Empty\+String\+Root\+Index} = 9
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_af4fb6d499cb87f03031ad4d6be6bcd8f}\label{classv8_1_1internal_1_1Internals_af4fb6d499cb87f03031ad4d6be6bcd8f}} 
-static const int {\bfseries k\+Node\+Class\+Id\+Offset} = 1 $\ast$ k\+Api\+Tagged\+Size
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Node\+Class\+Id\+Offset} = 1 $\ast$ k\+Api\+Tagged\+Size
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_aee5606f2a44d43d8dafe344e0bb753ef}\label{classv8_1_1internal_1_1Internals_aee5606f2a44d43d8dafe344e0bb753ef}} 
-static const int {\bfseries k\+Node\+Flags\+Offset} = 1 $\ast$ k\+Api\+Tagged\+Size + 3
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Node\+Flags\+Offset} = 1 $\ast$ k\+Api\+Tagged\+Size + 3
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a853acc088978d38a5a69091cf857a46d}\label{classv8_1_1internal_1_1Internals_a853acc088978d38a5a69091cf857a46d}} 
-static const int {\bfseries k\+Node\+State\+Mask} = 0x7
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Node\+State\+Mask} = 0x7
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a8a5d4cc92a6952c2a50922c77a606e68}\label{classv8_1_1internal_1_1Internals_a8a5d4cc92a6952c2a50922c77a606e68}} 
-static const int {\bfseries k\+Node\+State\+Is\+Weak\+Value} = 2
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Node\+State\+Is\+Weak\+Value} = 2
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a843b53b17257ecd957eade0d9f21c5ab}\label{classv8_1_1internal_1_1Internals_a843b53b17257ecd957eade0d9f21c5ab}} 
-static const int {\bfseries k\+Node\+State\+Is\+Pending\+Value} = 3
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Node\+State\+Is\+Pending\+Value} = 3
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a18f3e757639b07bdabb8cda7dd4a8bdb}\label{classv8_1_1internal_1_1Internals_a18f3e757639b07bdabb8cda7dd4a8bdb}} 
-static const int {\bfseries k\+Node\+State\+Is\+Near\+Death\+Value} = 4
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Node\+State\+Is\+Near\+Death\+Value} = 4
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a228b2b58c77c17bc512b92d9e3aea48b}\label{classv8_1_1internal_1_1Internals_a228b2b58c77c17bc512b92d9e3aea48b}} 
-static const int {\bfseries k\+Node\+Is\+Independent\+Shift} = 3
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Node\+Is\+Independent\+Shift} = 3
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a34e042b2fa0c64f133d1605819678b36}\label{classv8_1_1internal_1_1Internals_a34e042b2fa0c64f133d1605819678b36}} 
-static const int {\bfseries k\+Node\+Is\+Active\+Shift} = 4
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Node\+Is\+Active\+Shift} = 4
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a6f4a54927b01a11f444fb2f00b47ca1d}\label{classv8_1_1internal_1_1Internals_a6f4a54927b01a11f444fb2f00b47ca1d}} 
-static const int {\bfseries k\+First\+Nonstring\+Type} = 0x80
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+First\+Nonstring\+Type} = 0x80
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a13081e936f8c96472f1b1496c70d4dc1}\label{classv8_1_1internal_1_1Internals_a13081e936f8c96472f1b1496c70d4dc1}} 
-static const int {\bfseries k\+Oddball\+Type} = 0x83
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Oddball\+Type} = 0x83
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a263195f36f9e8ee64af70dc267a85d55}\label{classv8_1_1internal_1_1Internals_a263195f36f9e8ee64af70dc267a85d55}} 
-static const int {\bfseries k\+Foreign\+Type} = 0x87
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Foreign\+Type} = 0x87
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_afa97943a189ab1866404416d2f8779bd}\label{classv8_1_1internal_1_1Internals_afa97943a189ab1866404416d2f8779bd}} 
-static const int {\bfseries k\+J\+S\+Special\+Api\+Object\+Type} = 0x410
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+J\+S\+Special\+Api\+Object\+Type} = 0x410
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_aef1693d7df34df433622fdb3e26767c8}\label{classv8_1_1internal_1_1Internals_aef1693d7df34df433622fdb3e26767c8}} 
-static const int {\bfseries k\+J\+S\+Api\+Object\+Type} = 0x420
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+J\+S\+Api\+Object\+Type} = 0x420
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a56b7062df5d9a7df491137d4c3341bcc}\label{classv8_1_1internal_1_1Internals_a56b7062df5d9a7df491137d4c3341bcc}} 
-static const int {\bfseries k\+J\+S\+Object\+Type} = 0x421
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+J\+S\+Object\+Type} = 0x421
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a39072b9e0ffea4031f4a1c514208b20d}\label{classv8_1_1internal_1_1Internals_a39072b9e0ffea4031f4a1c514208b20d}} 
-static const int {\bfseries k\+Undefined\+Oddball\+Kind} = 5
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Undefined\+Oddball\+Kind} = 5
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_a72243c5512cb5cab9d10b6f29e775180}\label{classv8_1_1internal_1_1Internals_a72243c5512cb5cab9d10b6f29e775180}} 
-static const int {\bfseries k\+Null\+Oddball\+Kind} = 3
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Null\+Oddball\+Kind} = 3
 \item 
 \mbox{\Hypertarget{classv8_1_1internal_1_1Internals_af85a33cd47a2c9ed5faa4e1a85a6afce}\label{classv8_1_1internal_1_1Internals_af85a33cd47a2c9ed5faa4e1a85a6afce}} 
-static constexpr int {\bfseries k\+External\+Allocation\+Soft\+Limit} = 64 $\ast$ 1024 $\ast$ 1024
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+External\+Allocation\+Soft\+Limit} = 64 $\ast$ 1024 $\ast$ 1024
 \end{DoxyCompactItemize}
 
 
@@ -202,7 +202,7 @@ Definition at line 115 of file v8-\/internal.\+h.
 \index{v8\+::internal\+::\+Internals@{v8\+::internal\+::\+Internals}!k\+Embedder\+Data\+Slot\+Size@{k\+Embedder\+Data\+Slot\+Size}}
 \index{k\+Embedder\+Data\+Slot\+Size@{k\+Embedder\+Data\+Slot\+Size}!v8\+::internal\+::\+Internals@{v8\+::internal\+::\+Internals}}
 \subsubsection{\texorpdfstring{k\+Embedder\+Data\+Slot\+Size}{kEmbedderDataSlotSize}}
-{\footnotesize\ttfamily const int v8\+::internal\+::\+Internals\+::k\+Embedder\+Data\+Slot\+Size\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Internals\+::k\+Embedder\+Data\+Slot\+Size\hspace{0.3cm}{\ttfamily [static]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
@@ -220,7 +220,7 @@ Definition at line 128 of file v8-\/internal.\+h.
 \index{v8\+::internal\+::\+Internals@{v8\+::internal\+::\+Internals}!k\+External\+Memory\+At\+Last\+Mark\+Compact\+Offset@{k\+External\+Memory\+At\+Last\+Mark\+Compact\+Offset}}
 \index{k\+External\+Memory\+At\+Last\+Mark\+Compact\+Offset@{k\+External\+Memory\+At\+Last\+Mark\+Compact\+Offset}!v8\+::internal\+::\+Internals@{v8\+::internal\+::\+Internals}}
 \subsubsection{\texorpdfstring{k\+External\+Memory\+At\+Last\+Mark\+Compact\+Offset}{kExternalMemoryAtLastMarkCompactOffset}}
-{\footnotesize\ttfamily const int v8\+::internal\+::\+Internals\+::k\+External\+Memory\+At\+Last\+Mark\+Compact\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Internals\+::k\+External\+Memory\+At\+Last\+Mark\+Compact\+Offset\hspace{0.3cm}{\ttfamily [static]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
@@ -235,7 +235,7 @@ Definition at line 146 of file v8-\/internal.\+h.
 \index{v8\+::internal\+::\+Internals@{v8\+::internal\+::\+Internals}!k\+External\+Memory\+Limit\+Offset@{k\+External\+Memory\+Limit\+Offset}}
 \index{k\+External\+Memory\+Limit\+Offset@{k\+External\+Memory\+Limit\+Offset}!v8\+::internal\+::\+Internals@{v8\+::internal\+::\+Internals}}
 \subsubsection{\texorpdfstring{k\+External\+Memory\+Limit\+Offset}{kExternalMemoryLimitOffset}}
-{\footnotesize\ttfamily const int v8\+::internal\+::\+Internals\+::k\+External\+Memory\+Limit\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Internals\+::k\+External\+Memory\+Limit\+Offset\hspace{0.3cm}{\ttfamily [static]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
@@ -250,7 +250,7 @@ Definition at line 144 of file v8-\/internal.\+h.
 \index{v8\+::internal\+::\+Internals@{v8\+::internal\+::\+Internals}!k\+External\+Memory\+Offset@{k\+External\+Memory\+Offset}}
 \index{k\+External\+Memory\+Offset@{k\+External\+Memory\+Offset}!v8\+::internal\+::\+Internals@{v8\+::internal\+::\+Internals}}
 \subsubsection{\texorpdfstring{k\+External\+Memory\+Offset}{kExternalMemoryOffset}}
-{\footnotesize\ttfamily const int v8\+::internal\+::\+Internals\+::k\+External\+Memory\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Internals\+::k\+External\+Memory\+Offset\hspace{0.3cm}{\ttfamily [static]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
@@ -265,7 +265,7 @@ Definition at line 142 of file v8-\/internal.\+h.
 \index{v8\+::internal\+::\+Internals@{v8\+::internal\+::\+Internals}!k\+Isolate\+Roots\+Offset@{k\+Isolate\+Roots\+Offset}}
 \index{k\+Isolate\+Roots\+Offset@{k\+Isolate\+Roots\+Offset}!v8\+::internal\+::\+Internals@{v8\+::internal\+::\+Internals}}
 \subsubsection{\texorpdfstring{k\+Isolate\+Roots\+Offset}{kIsolateRootsOffset}}
-{\footnotesize\ttfamily const int v8\+::internal\+::\+Internals\+::k\+Isolate\+Roots\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Internals\+::k\+Isolate\+Roots\+Offset\hspace{0.3cm}{\ttfamily [static]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}

@@ -1,0 +1,57 @@
+\hypertarget{classv8_1_1internal_1_1AccountingAllocator}{}\section{v8\+:\+:internal\+:\+:Accounting\+Allocator Class Reference}
+\label{classv8_1_1internal_1_1AccountingAllocator}\index{v8\+::internal\+::\+Accounting\+Allocator@{v8\+::internal\+::\+Accounting\+Allocator}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Accounting\+Allocator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1AccountingAllocator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccountingAllocator_aa75c3e7e7ce82180b26ea4450ac2937d}\label{classv8_1_1internal_1_1AccountingAllocator_aa75c3e7e7ce82180b26ea4450ac2937d}} 
+virtual \mbox{\hyperlink{classv8_1_1internal_1_1Segment}{Segment}} $\ast$ {\bfseries Get\+Segment} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccountingAllocator_a2a98c6a52bcda12c8a33b912f6630b96}\label{classv8_1_1internal_1_1AccountingAllocator_a2a98c6a52bcda12c8a33b912f6630b96}} 
+virtual void {\bfseries Return\+Segment} (\mbox{\hyperlink{classv8_1_1internal_1_1Segment}{Segment}} $\ast$memory)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccountingAllocator_aa81e107eb848411a28be8025d43bff4e}\label{classv8_1_1internal_1_1AccountingAllocator_aa81e107eb848411a28be8025d43bff4e}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Get\+Current\+Memory\+Usage} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccountingAllocator_aba1b43e2bfd23806015c414450eaefd3}\label{classv8_1_1internal_1_1AccountingAllocator_aba1b43e2bfd23806015c414450eaefd3}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Get\+Max\+Memory\+Usage} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccountingAllocator_afcb53f6ec4f7bf36c79bc4a66591d45c}\label{classv8_1_1internal_1_1AccountingAllocator_afcb53f6ec4f7bf36c79bc4a66591d45c}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Get\+Current\+Pool\+Size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccountingAllocator_a145522456193da0dbebf618d101571ed}\label{classv8_1_1internal_1_1AccountingAllocator_a145522456193da0dbebf618d101571ed}} 
+void {\bfseries Memory\+Pressure\+Notification} (Memory\+Pressure\+Level level)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccountingAllocator_a65fe549097fd29ec57b974cc4f36c3c3}\label{classv8_1_1internal_1_1AccountingAllocator_a65fe549097fd29ec57b974cc4f36c3c3}} 
+void {\bfseries Configure\+Segment\+Pool} (const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} max\+\_\+pool\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccountingAllocator_a08b927506f172711dffb0ab955444cc5}\label{classv8_1_1internal_1_1AccountingAllocator_a08b927506f172711dffb0ab955444cc5}} 
+virtual void {\bfseries Zone\+Creation} (const \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccountingAllocator_af830f8debf51a20b7215eb190b86b9ec}\label{classv8_1_1internal_1_1AccountingAllocator_af830f8debf51a20b7215eb190b86b9ec}} 
+virtual void {\bfseries Zone\+Destruction} (const \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccountingAllocator_a736911edc7ff18dc7215b9a5bb5fda9c}\label{classv8_1_1internal_1_1AccountingAllocator_a736911edc7ff18dc7215b9a5bb5fda9c}} 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Max\+Pool\+Size} = 8ul $\ast$ KB
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file accounting-\/allocator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/zone/accounting-\/allocator.\+h\item 
+v8/src/zone/accounting-\/allocator.\+cc\end{DoxyCompactItemize}

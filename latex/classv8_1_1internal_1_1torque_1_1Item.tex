@@ -1,0 +1,66 @@
+\hypertarget{classv8_1_1internal_1_1torque_1_1Item}{}\section{v8\+:\+:internal\+:\+:torque\+:\+:Item Class Reference}
+\label{classv8_1_1internal_1_1torque_1_1Item}\index{v8\+::internal\+::torque\+::\+Item@{v8\+::internal\+::torque\+::\+Item}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Item_a6bd67a3d12ed8a341d7207bc2a885cd7}\label{classv8_1_1internal_1_1torque_1_1Item_a6bd67a3d12ed8a341d7207bc2a885cd7}} 
+{\bfseries Item} (const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Rule}{Rule}} $\ast$rule, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} mark, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} start, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Item_a9cd7ae97ade0ec28414df549da12910a}\label{classv8_1_1internal_1_1torque_1_1Item_a9cd7ae97ade0ec28414df549da12910a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Complete} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Item_a6947c34ba20725f101e13312d1f06f46}\label{classv8_1_1internal_1_1torque_1_1Item_a6947c34ba20725f101e13312d1f06f46}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$ {\bfseries Next\+Symbol} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Item_a6bbf87383913f70ae01d695ce4387bc1}\label{classv8_1_1internal_1_1torque_1_1Item_a6bbf87383913f70ae01d695ce4387bc1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Item}{Item}} {\bfseries Advance} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} new\+\_\+pos, const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Item}{Item}} $\ast$child=nullptr) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Item_aa70b3405d9e8901e17f4288cd6a7a336}\label{classv8_1_1internal_1_1torque_1_1Item_aa70b3405d9e8901e17f4288cd6a7a336}} 
+std\+::vector$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Item}{Item}} $\ast$ $>$ {\bfseries Children} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Item_a2cd25bc0d8b1e1073863297e3afa205c}\label{classv8_1_1internal_1_1torque_1_1Item_a2cd25bc0d8b1e1073863297e3afa205c}} 
+std\+::string {\bfseries Split\+By\+Children} (const \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1LexerResult}{Lexer\+Result}} \&tokens) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Item_a7aa41b3ce1fab32d6b6b76420f8eb6a4}\label{classv8_1_1internal_1_1torque_1_1Item_a7aa41b3ce1fab32d6b6b76420f8eb6a4}} 
+void {\bfseries Check\+Ambiguity} (const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Item}{Item}} \&other, const \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1LexerResult}{Lexer\+Result}} \&tokens) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Item_ab8e0fe60c7cd036cdd7c918e4f6fdba0}\label{classv8_1_1internal_1_1torque_1_1Item_ab8e0fe60c7cd036cdd7c918e4f6fdba0}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1MatchedInput}{Matched\+Input}} {\bfseries Get\+Matched\+Input} (const \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1LexerResult}{Lexer\+Result}} \&tokens) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Item_a389ecece34fc43ea3c6a485437cbdea6}\label{classv8_1_1internal_1_1torque_1_1Item_a389ecece34fc43ea3c6a485437cbdea6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries operator==} (const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Item}{Item}} \&other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Item_a23556c5bd1eaa11c1b2a7ea7963b6614}\label{classv8_1_1internal_1_1torque_1_1Item_a23556c5bd1eaa11c1b2a7ea7963b6614}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Rule}{Rule}} $\ast$ {\bfseries rule} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Item_a30119b857c04c9791a7bd615a52266bf}\label{classv8_1_1internal_1_1torque_1_1Item_a30119b857c04c9791a7bd615a52266bf}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$ {\bfseries left} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Item_ab937aba3aa5c47aabb3ee6ff650e067e}\label{classv8_1_1internal_1_1torque_1_1Item_ab937aba3aa5c47aabb3ee6ff650e067e}} 
+const std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Symbol}{Symbol}} $\ast$ $>$ \& {\bfseries right} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Item_a5ae986d080bf046198793c3000797eb6}\label{classv8_1_1internal_1_1torque_1_1Item_a5ae986d080bf046198793c3000797eb6}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries pos} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Item_a87bf2ff7d07dcc47e719a5f774539d2c}\label{classv8_1_1internal_1_1torque_1_1Item_a87bf2ff7d07dcc47e719a5f774539d2c}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries start} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Item_a0b09f2dabc69dd49b9efa18b8744d1cd}\label{classv8_1_1internal_1_1torque_1_1Item_a0b09f2dabc69dd49b9efa18b8744d1cd}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries hash\+\_\+value} (const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Item}{Item}} \&i)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 208 of file earley-\/parser.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/torque/earley-\/parser.\+h\item 
+v8/src/torque/earley-\/parser.\+cc\end{DoxyCompactItemize}

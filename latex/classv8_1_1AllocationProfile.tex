@@ -4,6 +4,12 @@
 
 {\ttfamily \#include $<$v8-\/profiler.\+h$>$}
 
+Inheritance diagram for v8\+:\+:Allocation\+Profile\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1AllocationProfile}
+\end{center}
+\end{figure}
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -25,10 +31,10 @@ virtual const std\+::vector$<$ \mbox{\hyperlink{structv8_1_1AllocationProfile_1_
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classv8_1_1AllocationProfile_a26fdfe9e4846d26c83d0ad8c2ed2d783}\label{classv8_1_1AllocationProfile_a26fdfe9e4846d26c83d0ad8c2ed2d783}} 
-static const int {\bfseries k\+No\+Line\+Number\+Info} = Message\+::k\+No\+Line\+Number\+Info
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+No\+Line\+Number\+Info} = Message\+::k\+No\+Line\+Number\+Info
 \item 
 \mbox{\Hypertarget{classv8_1_1AllocationProfile_a9cfa103f73e82629694eee3734826eb7}\label{classv8_1_1AllocationProfile_a9cfa103f73e82629694eee3734826eb7}} 
-static const int {\bfseries k\+No\+Column\+Number\+Info} = Message\+::k\+No\+Column\+Info
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+No\+Column\+Number\+Info} = Message\+::k\+No\+Column\+Info
 \end{DoxyCompactItemize}
 
 
@@ -47,6 +53,10 @@ Definition at line 561 of file v8-\/profiler.\+h.
 {\footnotesize\ttfamily virtual \mbox{\hyperlink{structv8_1_1AllocationProfile_1_1Node}{Node}}$\ast$ v8\+::\+Allocation\+Profile\+::\+Get\+Root\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 Returns the root node of the call-\/graph. The root node corresponds to an empty JS call-\/stack. The lifetime of the returned Node$\ast$ is scoped to the containing \mbox{\hyperlink{classv8_1_1AllocationProfile}{Allocation\+Profile}}. 
+
+Implemented in \mbox{\hyperlink{classv8_1_1internal_1_1AllocationProfile_abb93406eaccd8b37de3e080d0620bc2b}{v8\+::internal\+::\+Allocation\+Profile}}.
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

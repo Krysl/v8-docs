@@ -1,0 +1,50 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1Verifier}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Verifier Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1Verifier}\index{v8\+::internal\+::compiler\+::\+Verifier@{v8\+::internal\+::compiler\+::\+Verifier}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Verifier_1_1Visitor}{Visitor}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Verifier_a78ad088def8544aa3b97a7610387725e}\label{classv8_1_1internal_1_1compiler_1_1Verifier_a78ad088def8544aa3b97a7610387725e}} 
+enum {\bfseries Typing} \{ {\bfseries T\+Y\+P\+ED}, 
+{\bfseries U\+N\+T\+Y\+P\+ED}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Verifier_a7a26af4705f82708e0143d946405f184}\label{classv8_1_1internal_1_1compiler_1_1Verifier_a7a26af4705f82708e0143d946405f184}} 
+enum {\bfseries Check\+Inputs} \{ {\bfseries k\+Values\+Only}, 
+{\bfseries k\+All}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Verifier_a940500618025bfc4f070267e2b999f93}\label{classv8_1_1internal_1_1compiler_1_1Verifier_a940500618025bfc4f070267e2b999f93}} 
+enum {\bfseries Code\+Type} \{ {\bfseries k\+Default}, 
+{\bfseries k\+Wasm}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Verifier_a63a73b6c09545b61ee69aebb7f86c45a}\label{classv8_1_1internal_1_1compiler_1_1Verifier_a63a73b6c09545b61ee69aebb7f86c45a}} 
+static void {\bfseries Run} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Graph}{Graph}} $\ast$graph, Typing typing=T\+Y\+P\+ED, Check\+Inputs check\+\_\+inputs=k\+All, Code\+Type code\+\_\+type=k\+Default)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Verifier_ad4ccd74b2c1820f3e00a863eb4d73515}\label{classv8_1_1internal_1_1compiler_1_1Verifier_ad4ccd74b2c1820f3e00a863eb4d73515}} 
+static void {\bfseries Verify\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Verifier_ab262c42f5331cbb6e489e73b310dac31}\label{classv8_1_1internal_1_1compiler_1_1Verifier_ab262c42f5331cbb6e489e73b310dac31}} 
+static void {\bfseries Verify\+Edge\+Input\+Replacement} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Edge}{Edge}} \&edge, const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$replacement)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file verifier.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/verifier.\+h\item 
+v8/src/compiler/verifier.\+cc\end{DoxyCompactItemize}

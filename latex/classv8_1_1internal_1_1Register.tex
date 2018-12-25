@@ -1,0 +1,86 @@
+\hypertarget{classv8_1_1internal_1_1Register}{}\section{v8\+:\+:internal\+:\+:Register Class Reference}
+\label{classv8_1_1internal_1_1Register}\index{v8\+::internal\+::\+Register@{v8\+::internal\+::\+Register}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Register\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.875000cm]{classv8_1_1internal_1_1Register}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Register_aa44ca9ea4626f46cd5e75d9fa4545d8a}\label{classv8_1_1internal_1_1Register_aa44ca9ea4626f46cd5e75d9fa4545d8a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+byte\+\_\+register} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Register_aa44ca9ea4626f46cd5e75d9fa4545d8a}\label{classv8_1_1internal_1_1Register_aa44ca9ea4626f46cd5e75d9fa4545d8a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+byte\+\_\+register} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Register_a2c8ac1a1994fba9a4c2128bc94c9b925}\label{classv8_1_1internal_1_1Register_a2c8ac1a1994fba9a4c2128bc94c9b925}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries high\+\_\+bit} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Register_acb1bd74143e970f9300bb85ef69e2ac3}\label{classv8_1_1internal_1_1Register_acb1bd74143e970f9300bb85ef69e2ac3}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries low\+\_\+bits} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Register_af72f1656ce6c0186ea16328bbc55ae9c}\label{classv8_1_1internal_1_1Register_af72f1656ce6c0186ea16328bbc55ae9c}} 
+static constexpr \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries no\+\_\+reg} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Register_a5f2333ab6c48cad393f5540636c39e68}\label{classv8_1_1internal_1_1Register_a5f2333ab6c48cad393f5540636c39e68}} 
+{\footnotesize template$<$int code, int size$>$ }\\static constexpr \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries Create} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Register_ab523a8bbaef5738cee35dca4b339da08}\label{classv8_1_1internal_1_1Register_ab523a8bbaef5738cee35dca4b339da08}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries Create} (\mbox{\hyperlink{classint}{int}} code, \mbox{\hyperlink{classint}{int}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Register_a6bc72db8c208ebd60c4fafe95167d380}\label{classv8_1_1internal_1_1Register_a6bc72db8c208ebd60c4fafe95167d380}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries X\+Reg\+From\+Code} (\mbox{\hyperlink{classunsigned}{unsigned}} code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Register_a38f966f971bdff0ce3230f9bdf3ee84f}\label{classv8_1_1internal_1_1Register_a38f966f971bdff0ce3230f9bdf3ee84f}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries W\+Reg\+From\+Code} (\mbox{\hyperlink{classunsigned}{unsigned}} code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Register_a43d9a3408aeddbfafaaf5cccce57ac59}\label{classv8_1_1internal_1_1Register_a43d9a3408aeddbfafaaf5cccce57ac59}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries from\+\_\+code} (\mbox{\hyperlink{classint}{int}} code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Register_acc30a2144322720398fa8f5d30530517}\label{classv8_1_1internal_1_1Register_acc30a2144322720398fa8f5d30530517}} 
+{\footnotesize template$<$int code$>$ }\\static \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries from\+\_\+code} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Register_a8195b5e37238aa3dcc33c1418b1eba08}\label{classv8_1_1internal_1_1Register_a8195b5e37238aa3dcc33c1418b1eba08}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Mantissa\+Offset} = 4
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Register_abc30e312466b5d2f8f081800a310d3a3}\label{classv8_1_1internal_1_1Register_abc30e312466b5d2f8f081800a310d3a3}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Exponent\+Offset} = 0
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Register_a960d84c54d6f69c7f2d3cf54e7fd6938}\label{classv8_1_1internal_1_1Register_a960d84c54d6f69c7f2d3cf54e7fd6938}} 
+class {\bfseries Register\+Base}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Register_a0b22bb42af03fab7eba8f423b58af909}\label{classv8_1_1internal_1_1Register_a0b22bb42af03fab7eba8f423b58af909}} 
+class {\bfseries Register\+Base$<$ Register, k\+Reg\+After\+Last $>$}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 161 of file assembler-\/arm.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/arm/assembler-\/arm.\+h\item 
+v8/src/ia32/assembler-\/ia32.\+h\item 
+v8/src/mips/assembler-\/mips.\+h\item 
+v8/src/mips64/assembler-\/mips64.\+h\item 
+v8/src/ppc/assembler-\/ppc.\+h\item 
+v8/src/s390/assembler-\/s390.\+h\item 
+v8/src/x64/assembler-\/x64.\+h\item 
+v8/src/arm64/assembler-\/arm64.\+h\item 
+v8/src/arm64/assembler-\/arm64-\/inl.\+h\end{DoxyCompactItemize}

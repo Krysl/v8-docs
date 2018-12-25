@@ -1,0 +1,52 @@
+\hypertarget{classv8_1_1internal_1_1EndNode}{}\section{v8\+:\+:internal\+:\+:End\+Node Class Reference}
+\label{classv8_1_1internal_1_1EndNode}\index{v8\+::internal\+::\+End\+Node@{v8\+::internal\+::\+End\+Node}}
+Inheritance diagram for v8\+:\+:internal\+:\+:End\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1EndNode}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EndNode_abac30d22b1fc00be81e100180e4ca83a}\label{classv8_1_1internal_1_1EndNode_abac30d22b1fc00be81e100180e4ca83a}} 
+enum {\bfseries Action} \{ {\bfseries A\+C\+C\+E\+PT}, 
+{\bfseries B\+A\+C\+K\+T\+R\+A\+CK}, 
+{\bfseries N\+E\+G\+A\+T\+I\+V\+E\+\_\+\+S\+U\+B\+M\+A\+T\+C\+H\+\_\+\+S\+U\+C\+C\+E\+SS}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EndNode_a83274b03e3eb90631e8e6cbe6304bd7b}\label{classv8_1_1internal_1_1EndNode_a83274b03e3eb90631e8e6cbe6304bd7b}} 
+{\bfseries End\+Node} (Action action, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EndNode_a372d8988a10aebff4d6a18b6be41a2f8}\label{classv8_1_1internal_1_1EndNode_a372d8988a10aebff4d6a18b6be41a2f8}} 
+void {\bfseries Accept} (\mbox{\hyperlink{classv8_1_1internal_1_1NodeVisitor}{Node\+Visitor}} $\ast$visitor) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EndNode_a66ababf835a989d72f0f5a674acffe3a}\label{classv8_1_1internal_1_1EndNode_a66ababf835a989d72f0f5a674acffe3a}} 
+void {\bfseries Emit} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classv8_1_1internal_1_1Trace}{Trace}} $\ast$trace) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EndNode_a2f6fd19ec92c603cea64eec5ad8db09a}\label{classv8_1_1internal_1_1EndNode_a2f6fd19ec92c603cea64eec5ad8db09a}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Eats\+At\+Least} (\mbox{\hyperlink{classint}{int}} still\+\_\+to\+\_\+find, \mbox{\hyperlink{classint}{int}} recursion\+\_\+depth, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EndNode_ab1c81a19575a674c5fcc50a7d886c846}\label{classv8_1_1internal_1_1EndNode_ab1c81a19575a674c5fcc50a7d886c846}} 
+void {\bfseries Get\+Quick\+Check\+Details} (\mbox{\hyperlink{classv8_1_1internal_1_1QuickCheckDetails}{Quick\+Check\+Details}} $\ast$details, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classint}{int}} characters\+\_\+filled\+\_\+in, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EndNode_a4e7515e0d715f45c5bea910368e1134e}\label{classv8_1_1internal_1_1EndNode_a4e7515e0d715f45c5bea910368e1134e}} 
+void {\bfseries Fill\+In\+B\+M\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} offset, \mbox{\hyperlink{classint}{int}} budget, \mbox{\hyperlink{classv8_1_1internal_1_1BoyerMooreLookahead}{Boyer\+Moore\+Lookahead}} $\ast$bm, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 835 of file jsregexp.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/jsregexp.\+h\item 
+v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

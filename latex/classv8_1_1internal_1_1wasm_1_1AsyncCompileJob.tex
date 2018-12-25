@@ -1,0 +1,63 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Async\+Compile\+Job Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob}\index{v8\+::internal\+::wasm\+::\+Async\+Compile\+Job@{v8\+::internal\+::wasm\+::\+Async\+Compile\+Job}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_1_1CompilationStateCallback}{Compilation\+State\+Callback}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_1_1CompileFailed}{Compile\+Failed}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_1_1CompileStep}{Compile\+Step}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_1_1CompileTask}{Compile\+Task}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_1_1CompileWrappers}{Compile\+Wrappers}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_1_1DecodeFail}{Decode\+Fail}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_1_1DecodeModule}{Decode\+Module}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_1_1FinishModule}{Finish\+Module}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_1_1PrepareAndStartCompile}{Prepare\+And\+Start\+Compile}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_afd5f32ea7f90e5cb335c5d65ed593768}\label{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_afd5f32ea7f90e5cb335c5d65ed593768}} 
+{\bfseries Async\+Compile\+Job} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{Wasm\+Features}} \&enabled\+\_\+features, std\+::unique\+\_\+ptr$<$ byte\mbox{[}$\,$\mbox{]}$>$ bytes\+\_\+copy, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} length, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1CompilationResultResolver}{Compilation\+Result\+Resolver}} $>$ resolver)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_a0a4a22d3cbec712dad3fe9a6c3846106}\label{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_a0a4a22d3cbec712dad3fe9a6c3846106}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_a5323277e186f3ae7566581ed5e08e518}\label{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_a5323277e186f3ae7566581ed5e08e518}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1StreamingDecoder}{Streaming\+Decoder}} $>$ {\bfseries Create\+Streaming\+Decoder} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_a1969624508b5f667f28f0bb9ff9dfb1a}\label{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_a1969624508b5f667f28f0bb9ff9dfb1a}} 
+void {\bfseries Abort} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_aa84200caacc713311e166e63a9b3759f}\label{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_aa84200caacc713311e166e63a9b3759f}} 
+void {\bfseries Cancel\+Pending\+Foreground\+Task} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_a63b00b6733c1470d1ab5d592880bce73}\label{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_a63b00b6733c1470d1ab5d592880bce73}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_af3171ef1750bbdf429a8319ca3aa9f3e}\label{classv8_1_1internal_1_1wasm_1_1AsyncCompileJob_af3171ef1750bbdf429a8319ca3aa9f3e}} 
+class {\bfseries Async\+Streaming\+Processor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 69 of file module-\/compiler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/module-\/compiler.\+h\item 
+v8/src/wasm/module-\/compiler.\+cc\end{DoxyCompactItemize}

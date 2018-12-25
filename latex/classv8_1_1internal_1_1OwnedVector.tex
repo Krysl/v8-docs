@@ -1,0 +1,53 @@
+\hypertarget{classv8_1_1internal_1_1OwnedVector}{}\section{v8\+:\+:internal\+:\+:Owned\+Vector$<$ T $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1OwnedVector}\index{v8\+::internal\+::\+Owned\+Vector$<$ T $>$@{v8\+::internal\+::\+Owned\+Vector$<$ T $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OwnedVector_a8d5b11905370ad27acfa2ea4084dd1ca}\label{classv8_1_1internal_1_1OwnedVector_a8d5b11905370ad27acfa2ea4084dd1ca}} 
+{\bfseries M\+O\+V\+E\+\_\+\+O\+N\+L\+Y\+\_\+\+W\+I\+T\+H\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\mbox{\hyperlink{classv8_1_1internal_1_1OwnedVector}{Owned\+Vector}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OwnedVector_a97477af6e9addfa7eda3789e7961927c}\label{classv8_1_1internal_1_1OwnedVector_a97477af6e9addfa7eda3789e7961927c}} 
+{\bfseries Owned\+Vector} (std\+::unique\+\_\+ptr$<$ T\mbox{[}$\,$\mbox{]}$>$ data, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OwnedVector_a59a2038d877906746b555b25a4a0fc8c}\label{classv8_1_1internal_1_1OwnedVector_a59a2038d877906746b555b25a4a0fc8c}} 
+{\footnotesize template$<$typename U , typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+convertible$<$                std\+::unique\+\_\+ptr$<$\+U$>$, std\+::unique\+\_\+ptr$<$\+T$>$$>$\+::value$>$\+::type$>$ }\\{\bfseries Owned\+Vector} (\mbox{\hyperlink{classv8_1_1internal_1_1OwnedVector}{Owned\+Vector}}$<$ U $>$ \&\&other)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OwnedVector_a649fd98a862f21b359de9197b2c4ee11}\label{classv8_1_1internal_1_1OwnedVector_a649fd98a862f21b359de9197b2c4ee11}} 
+constexpr \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OwnedVector_a8bb09d6491d0da6f89f23ae2fcbbb321}\label{classv8_1_1internal_1_1OwnedVector_a8bb09d6491d0da6f89f23ae2fcbbb321}} 
+constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+empty} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OwnedVector_a695e9e40600af95b3ee032f7ff1ff100}\label{classv8_1_1internal_1_1OwnedVector_a695e9e40600af95b3ee032f7ff1ff100}} 
+T $\ast$ {\bfseries start} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OwnedVector_a78b1c6aa8f3de066524eba3d5e3dd608}\label{classv8_1_1internal_1_1OwnedVector_a78b1c6aa8f3de066524eba3d5e3dd608}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ T $>$ {\bfseries as\+\_\+vector} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OwnedVector_a1f138b47a593237048d8378ada217b92}\label{classv8_1_1internal_1_1OwnedVector_a1f138b47a593237048d8378ada217b92}} 
+std\+::unique\+\_\+ptr$<$ T\mbox{[}$\,$\mbox{]}$>$ {\bfseries Release\+Data} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OwnedVector_a5dd10a8131d90b801f181ca50ed4ec2f}\label{classv8_1_1internal_1_1OwnedVector_a5dd10a8131d90b801f181ca50ed4ec2f}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1OwnedVector}{Owned\+Vector}}$<$ T $>$ {\bfseries New} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OwnedVector_a5e9b6bc519334b47e8f63dfadac8cfa5}\label{classv8_1_1internal_1_1OwnedVector_a5e9b6bc519334b47e8f63dfadac8cfa5}} 
+{\footnotesize template$<$typename U , typename Iterator  = typename std\+::common\+\_\+type$<$                            decltype(std\+::begin(std\+::declval$<$const U\&$>$())),                            decltype(std\+::end(std\+::declval$<$const U\&$>$()))$>$\+::type$>$ }\\static \mbox{\hyperlink{classv8_1_1internal_1_1OwnedVector}{Owned\+Vector}}$<$ T $>$ {\bfseries Of} (const U \&collection)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class v8\+::internal\+::\+Owned\+Vector$<$ T $>$}
+
+
+
+Definition at line 194 of file vector.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/vector.\+h\end{DoxyCompactItemize}

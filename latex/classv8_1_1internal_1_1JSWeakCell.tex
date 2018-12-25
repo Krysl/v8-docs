@@ -1,0 +1,57 @@
+\hypertarget{classv8_1_1internal_1_1JSWeakCell}{}\section{v8\+:\+:internal\+:\+:J\+S\+Weak\+Cell Class Reference}
+\label{classv8_1_1internal_1_1JSWeakCell}\index{v8\+::internal\+::\+J\+S\+Weak\+Cell@{v8\+::internal\+::\+J\+S\+Weak\+Cell}}
+Inheritance diagram for v8\+:\+:internal\+:\+:J\+S\+Weak\+Cell\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classv8_1_1internal_1_1JSWeakCell}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1JSWeakCell_1_1BodyDescriptor}{Body\+Descriptor}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakCell_a5e821058a168184ae4635f455bd7738e}\label{classv8_1_1internal_1_1JSWeakCell_a5e821058a168184ae4635f455bd7738e}} 
+void {\bfseries Nullify} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, std\+::function$<$ void(\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} slot, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$target)$>$ gc\+\_\+notify\+\_\+updated\+\_\+slot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakCell_ac57f2afd7c6e1c26e4c13af7f469347c}\label{classv8_1_1internal_1_1JSWeakCell_ac57f2afd7c6e1c26e4c13af7f469347c}} 
+void {\bfseries Clear} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakCell_ad5f213bf16793c5447751dc212a1e14f}\label{classv8_1_1internal_1_1JSWeakCell_ad5f213bf16793c5447751dc212a1e14f}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Factory\+Offset} = J\+S\+Object\+::k\+Header\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakCell_ae799c5736352319d97b7f439ef616494}\label{classv8_1_1internal_1_1JSWeakCell_ae799c5736352319d97b7f439ef616494}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Target\+Offset} = k\+Factory\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakCell_a61aafa20edfe3f861a1fa5c7cbd4e843}\label{classv8_1_1internal_1_1JSWeakCell_a61aafa20edfe3f861a1fa5c7cbd4e843}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Holdings\+Offset} = k\+Target\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakCell_a9e782739f10a635a36056ae15fe2310b}\label{classv8_1_1internal_1_1JSWeakCell_a9e782739f10a635a36056ae15fe2310b}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Prev\+Offset} = k\+Holdings\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakCell_a0b9a8e8f6ba150450bfe8f1e97702cab}\label{classv8_1_1internal_1_1JSWeakCell_a0b9a8e8f6ba150450bfe8f1e97702cab}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Next\+Offset} = k\+Prev\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSWeakCell_a8284d9909991e13058c25b47fc070713}\label{classv8_1_1internal_1_1JSWeakCell_a8284d9909991e13058c25b47fc070713}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Size} = k\+Next\+Offset + k\+Pointer\+Size
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 70 of file js-\/weak-\/refs.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/js-\/weak-\/refs.\+h\item 
+v8/src/objects/js-\/weak-\/refs-\/inl.\+h\end{DoxyCompactItemize}

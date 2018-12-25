@@ -1,0 +1,117 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Module\+Decoder\+Impl Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl}\index{v8\+::internal\+::wasm\+::\+Module\+Decoder\+Impl@{v8\+::internal\+::wasm\+::\+Module\+Decoder\+Impl}}
+Inheritance diagram for v8\+:\+:internal\+:\+:wasm\+:\+:Module\+Decoder\+Impl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_ace53d7ea18286d99c05bc069acec7097}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_ace53d7ea18286d99c05bc069acec7097}} 
+{\bfseries Module\+Decoder\+Impl} (const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{Wasm\+Features}} \&enabled, Module\+Origin origin)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a4c37124343c89390191cd8724bf653df}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a4c37124343c89390191cd8724bf653df}} 
+{\bfseries Module\+Decoder\+Impl} (const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{Wasm\+Features}} \&enabled, const byte $\ast$module\+\_\+start, const byte $\ast$module\+\_\+end, Module\+Origin origin)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a0dbc62a78a3b2ad2e3f7f0eb4ad119dd}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a0dbc62a78a3b2ad2e3f7f0eb4ad119dd}} 
+void {\bfseries on\+First\+Error} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a193713f7ad4b620b3b68075439536c7d}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a193713f7ad4b620b3b68075439536c7d}} 
+void {\bfseries Dump\+Module} (const \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const byte $>$ module\+\_\+bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a05458c91aa6c110542c5a7fe9b213427}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a05458c91aa6c110542c5a7fe9b213427}} 
+void {\bfseries Start\+Decoding} (\mbox{\hyperlink{classv8_1_1internal_1_1Counters}{Counters}} $\ast$counters, \mbox{\hyperlink{classv8_1_1internal_1_1AccountingAllocator}{Accounting\+Allocator}} $\ast$allocator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_acce01c02979d5aa55a9a9ab6c0f34d40}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_acce01c02979d5aa55a9a9ab6c0f34d40}} 
+void {\bfseries Decode\+Module\+Header} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ bytes, uint8\+\_\+t offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a8a82ea09b7640cdaf7db2833e1eedecb}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a8a82ea09b7640cdaf7db2833e1eedecb}} 
+void {\bfseries Decode\+Section} (Section\+Code section\+\_\+code, \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ bytes, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset, \mbox{\hyperlink{classbool}{bool}} verify\+\_\+functions=true)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_aaf3de70701483e97ffb790c2e7e73613}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_aaf3de70701483e97ffb790c2e7e73613}} 
+void {\bfseries Decode\+Type\+Section} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a9f520395afe16b1911acde386b5a4752}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a9f520395afe16b1911acde386b5a4752}} 
+void {\bfseries Decode\+Import\+Section} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a1677fae3b0de1b332c98e3e8bdb58768}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a1677fae3b0de1b332c98e3e8bdb58768}} 
+void {\bfseries Decode\+Function\+Section} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_acfa82dc467d1c90e5069773fe8659502}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_acfa82dc467d1c90e5069773fe8659502}} 
+void {\bfseries Decode\+Table\+Section} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_aa17e842def6953634a99d8730b5f9129}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_aa17e842def6953634a99d8730b5f9129}} 
+void {\bfseries Decode\+Memory\+Section} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_af448c4b0b623da69ea54244677f82485}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_af448c4b0b623da69ea54244677f82485}} 
+void {\bfseries Decode\+Global\+Section} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_adf9ff203dd8dd0859f5f56eb41b924ce}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_adf9ff203dd8dd0859f5f56eb41b924ce}} 
+void {\bfseries Decode\+Export\+Section} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a0b4d7f999d6d54a1cb7dedfcf3e0188b}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a0b4d7f999d6d54a1cb7dedfcf3e0188b}} 
+void {\bfseries Decode\+Start\+Section} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a712b92c4d92cb10358454c0464fabfd1}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a712b92c4d92cb10358454c0464fabfd1}} 
+void {\bfseries Decode\+Element\+Section} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_ae6ff24cbb3ce3d869effe70ccba69b36}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_ae6ff24cbb3ce3d869effe70ccba69b36}} 
+void {\bfseries Decode\+Code\+Section} (\mbox{\hyperlink{classbool}{bool}} verify\+\_\+functions)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_ac6a40e8fe6308ad5cfe3d5724e7de107}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_ac6a40e8fe6308ad5cfe3d5724e7de107}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Check\+Functions\+Count} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} functions\+\_\+count, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_af4fdc71b42d8e27ca6b618a24949e10d}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_af4fdc71b42d8e27ca6b618a24949e10d}} 
+void {\bfseries Decode\+Function\+Body} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} length, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset, \mbox{\hyperlink{classbool}{bool}} verify\+\_\+functions)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a1bdef7e055fc1f35401bd856d884114e}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a1bdef7e055fc1f35401bd856d884114e}} 
+void {\bfseries Decode\+Data\+Section} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a70a84c0f6fa6e22ce204d654f43bcaa7}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a70a84c0f6fa6e22ce204d654f43bcaa7}} 
+void {\bfseries Decode\+Name\+Section} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a6203c40abfa191e7faba79169b0d4724}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a6203c40abfa191e7faba79169b0d4724}} 
+void {\bfseries Decode\+Source\+Mapping\+U\+R\+L\+Section} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a6e77944d81acefee2eb37a620c45f438}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a6e77944d81acefee2eb37a620c45f438}} 
+void {\bfseries Decode\+Exception\+Section} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a196a29e3592658fd2a57a70660ab337a}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a196a29e3592658fd2a57a70660ab337a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1Result}{Module\+Result}} {\bfseries Finish\+Decoding} (\mbox{\hyperlink{classbool}{bool}} verify\+\_\+functions=true)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a8c9e0cb713a0c476c309a8aa8bae0578}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a8c9e0cb713a0c476c309a8aa8bae0578}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1Result}{Module\+Result}} {\bfseries Decode\+Module} (\mbox{\hyperlink{classv8_1_1internal_1_1Counters}{Counters}} $\ast$counters, \mbox{\hyperlink{classv8_1_1internal_1_1AccountingAllocator}{Accounting\+Allocator}} $\ast$allocator, \mbox{\hyperlink{classbool}{bool}} verify\+\_\+functions=true)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a67dd5613c48a57129228ffb5fe21e1c6}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a67dd5613c48a57129228ffb5fe21e1c6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1Result}{Function\+Result}} {\bfseries Decode\+Single\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1ModuleWireBytes}{Module\+Wire\+Bytes}} \&wire\+\_\+bytes, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{Wasm\+Module}} $\ast$module, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFunction}{Wasm\+Function}} $>$ function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a254d14e01a3e3c1db5767d2760e26c4c}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a254d14e01a3e3c1db5767d2760e26c4c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Signature}{Function\+Sig}} $\ast$ {\bfseries Decode\+Function\+Signature} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, const byte $\ast$start)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a4b39a0946c73a77303a0732082a00736}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a4b39a0946c73a77303a0732082a00736}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmInitExpr}{Wasm\+Init\+Expr}} {\bfseries Decode\+Init\+Expr} (const byte $\ast$start)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a40a806c68ff81f663b3b0930087ecc2a}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a40a806c68ff81f663b3b0930087ecc2a}} 
+const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{Wasm\+Module}} $>$ \& {\bfseries shared\+\_\+module} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a11cafd9a8896c529f15eb63926c30d8d}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a11cafd9a8896c529f15eb63926c30d8d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Counters}{Counters}} $\ast$ {\bfseries Get\+Counters} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a78c8921b9513f36dfd3bc093724d643f}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoderImpl_a78c8921b9513f36dfd3bc093724d643f}} 
+void {\bfseries Set\+Counters} (\mbox{\hyperlink{classv8_1_1internal_1_1Counters}{Counters}} $\ast$counters)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 252 of file module-\/decoder.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/module-\/decoder.\+cc\end{DoxyCompactItemize}

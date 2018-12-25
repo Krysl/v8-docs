@@ -1,0 +1,52 @@
+\hypertarget{classv8_1_1internal_1_1AllocationProfile}{}\section{v8\+:\+:internal\+:\+:Allocation\+Profile Class Reference}
+\label{classv8_1_1internal_1_1AllocationProfile}\index{v8\+::internal\+::\+Allocation\+Profile@{v8\+::internal\+::\+Allocation\+Profile}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Allocation\+Profile\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1AllocationProfile}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structv8_1_1AllocationProfile_1_1Node}{v8\+::\+Allocation\+Profile\+::\+Node}} $\ast$ \mbox{\hyperlink{classv8_1_1internal_1_1AllocationProfile_abb93406eaccd8b37de3e080d0620bc2b}{Get\+Root\+Node}} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationProfile_acbcf0c0cabf7c8d773e2cb27af6d0008}\label{classv8_1_1internal_1_1AllocationProfile_acbcf0c0cabf7c8d773e2cb27af6d0008}} 
+const std\+::vector$<$ \mbox{\hyperlink{structv8_1_1AllocationProfile_1_1Sample}{v8\+::\+Allocation\+Profile\+::\+Sample}} $>$ \& {\bfseries Get\+Samples} () override
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationProfile_a1c4268235229c6a40ca92cbcd4591c9b}\label{classv8_1_1internal_1_1AllocationProfile_a1c4268235229c6a40ca92cbcd4591c9b}} 
+class {\bfseries Sampling\+Heap\+Profiler}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file sampling-\/heap-\/profiler.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationProfile_abb93406eaccd8b37de3e080d0620bc2b}\label{classv8_1_1internal_1_1AllocationProfile_abb93406eaccd8b37de3e080d0620bc2b}} 
+\index{v8\+::internal\+::\+Allocation\+Profile@{v8\+::internal\+::\+Allocation\+Profile}!Get\+Root\+Node@{Get\+Root\+Node}}
+\index{Get\+Root\+Node@{Get\+Root\+Node}!v8\+::internal\+::\+Allocation\+Profile@{v8\+::internal\+::\+Allocation\+Profile}}
+\subsubsection{\texorpdfstring{Get\+Root\+Node()}{GetRootNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structv8_1_1AllocationProfile_1_1Node}{v8\+::\+Allocation\+Profile\+::\+Node}}$\ast$ v8\+::internal\+::\+Allocation\+Profile\+::\+Get\+Root\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns the root node of the call-\/graph. The root node corresponds to an empty JS call-\/stack. The lifetime of the returned Node$\ast$ is scoped to the containing \mbox{\hyperlink{classv8_1_1internal_1_1AllocationProfile}{Allocation\+Profile}}. 
+
+Implements \mbox{\hyperlink{classv8_1_1AllocationProfile_afea045dae30df5477088e2f0b7edb6c4}{v8\+::\+Allocation\+Profile}}.
+
+
+
+Definition at line 30 of file sampling-\/heap-\/profiler.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/sampling-\/heap-\/profiler.\+h\end{DoxyCompactItemize}

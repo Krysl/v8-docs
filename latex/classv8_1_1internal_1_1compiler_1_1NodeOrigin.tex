@@ -1,0 +1,62 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1NodeOrigin}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Node\+Origin Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1NodeOrigin}\index{v8\+::internal\+::compiler\+::\+Node\+Origin@{v8\+::internal\+::compiler\+::\+Node\+Origin}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1NodeOrigin_a2f9b6287838d06debde1bcccf5d41d72}\label{classv8_1_1internal_1_1compiler_1_1NodeOrigin_a2f9b6287838d06debde1bcccf5d41d72}} 
+enum {\bfseries Origin\+Kind} \{ {\bfseries k\+Wasm\+Bytecode}, 
+{\bfseries k\+Graph\+Node}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1NodeOrigin_a154b4fa26b7d3a7955fb99774afff3aa}\label{classv8_1_1internal_1_1compiler_1_1NodeOrigin_a154b4fa26b7d3a7955fb99774afff3aa}} 
+{\bfseries Node\+Origin} (const \mbox{\hyperlink{classchar}{char}} $\ast$phase\+\_\+name, const \mbox{\hyperlink{classchar}{char}} $\ast$reducer\+\_\+name, \mbox{\hyperlink{classuint32__t}{Node\+Id}} created\+\_\+from)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1NodeOrigin_a5b4d667d161dad66d74497930724c97c}\label{classv8_1_1internal_1_1compiler_1_1NodeOrigin_a5b4d667d161dad66d74497930724c97c}} 
+{\bfseries Node\+Origin} (const \mbox{\hyperlink{classchar}{char}} $\ast$phase\+\_\+name, const \mbox{\hyperlink{classchar}{char}} $\ast$reducer\+\_\+name, Origin\+Kind origin\+\_\+kind, uint64\+\_\+t created\+\_\+from)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1NodeOrigin_ae89671786a42fb51606d0ac6e6468583}\label{classv8_1_1internal_1_1compiler_1_1NodeOrigin_ae89671786a42fb51606d0ac6e6468583}} 
+{\bfseries Node\+Origin} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1NodeOrigin}{Node\+Origin}} \&other)=default
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1NodeOrigin_ab732886e9b2982801ba0744e5a49aa5d}\label{classv8_1_1internal_1_1compiler_1_1NodeOrigin_ab732886e9b2982801ba0744e5a49aa5d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Known} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1NodeOrigin_af8b008b34f32364e39134bcbfcb3cb01}\label{classv8_1_1internal_1_1compiler_1_1NodeOrigin_af8b008b34f32364e39134bcbfcb3cb01}} 
+\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} {\bfseries created\+\_\+from} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1NodeOrigin_a1124edae4fe7c5daaac83c48bf829ea5}\label{classv8_1_1internal_1_1compiler_1_1NodeOrigin_a1124edae4fe7c5daaac83c48bf829ea5}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries reducer\+\_\+name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1NodeOrigin_adcb5e5e599a13d74150fc81aed6ddbbe}\label{classv8_1_1internal_1_1compiler_1_1NodeOrigin_adcb5e5e599a13d74150fc81aed6ddbbe}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries phase\+\_\+name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1NodeOrigin_aea5fad4e838435cc24a10c13b1ada1a8}\label{classv8_1_1internal_1_1compiler_1_1NodeOrigin_aea5fad4e838435cc24a10c13b1ada1a8}} 
+Origin\+Kind {\bfseries origin\+\_\+kind} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1NodeOrigin_a8206c48dd6077ae7b2ec8191bc0c1f97}\label{classv8_1_1internal_1_1compiler_1_1NodeOrigin_a8206c48dd6077ae7b2ec8191bc0c1f97}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries operator==} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1NodeOrigin}{Node\+Origin}} \&o) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1NodeOrigin_a6885d9de2b213d86c8e7085a62a950b7}\label{classv8_1_1internal_1_1compiler_1_1NodeOrigin_a6885d9de2b213d86c8e7085a62a950b7}} 
+void {\bfseries Print\+Json} (std\+::ostream \&out) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1NodeOrigin_ae99e235ec0c1337b2718f24ec3b62623}\label{classv8_1_1internal_1_1compiler_1_1NodeOrigin_ae99e235ec0c1337b2718f24ec3b62623}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1NodeOrigin}{Node\+Origin}} {\bfseries Unknown} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file node-\/origin-\/table.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/node-\/origin-\/table.\+h\item 
+v8/src/compiler/node-\/origin-\/table.\+cc\end{DoxyCompactItemize}

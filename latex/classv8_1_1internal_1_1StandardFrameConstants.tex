@@ -1,0 +1,78 @@
+\hypertarget{classv8_1_1internal_1_1StandardFrameConstants}{}\section{v8\+:\+:internal\+:\+:Standard\+Frame\+Constants Class Reference}
+\label{classv8_1_1internal_1_1StandardFrameConstants}\index{v8\+::internal\+::\+Standard\+Frame\+Constants@{v8\+::internal\+::\+Standard\+Frame\+Constants}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Standard\+Frame\+Constants\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1StandardFrameConstants}
+\end{center}
+\end{figure}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StandardFrameConstants_a33acb6761fb2cd5a432472aceaf6a385}\label{classv8_1_1internal_1_1StandardFrameConstants_a33acb6761fb2cd5a432472aceaf6a385}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Fixed\+Frame\+Size\+From\+Fp} = 2 $\ast$ k\+Pointer\+Size + k\+C\+P\+Slot\+Size
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Fixed\+Frame\+Size}
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Fixed\+Slot\+Count\+From\+Fp}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StandardFrameConstants_a3bd3575cabe8b50d74dfdd77c278746f}\label{classv8_1_1internal_1_1StandardFrameConstants_a3bd3575cabe8b50d74dfdd77c278746f}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Fixed\+Slot\+Count} = k\+Fixed\+Frame\+Size / k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StandardFrameConstants_a20ba1d1c4c4bbd86851bcb4c6f798021}\label{classv8_1_1internal_1_1StandardFrameConstants_a20ba1d1c4c4bbd86851bcb4c6f798021}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Context\+Offset} = k\+Context\+Or\+Frame\+Type\+Offset
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StandardFrameConstants_a9732f9f43cfed9ce85f3ff9ca920dc82}\label{classv8_1_1internal_1_1StandardFrameConstants_a9732f9f43cfed9ce85f3ff9ca920dc82}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Function\+Offset} = -\/2 $\ast$ k\+Pointer\+Size -\/ k\+C\+P\+Slot\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StandardFrameConstants_a16e313ff143f71038776e2ec33169faf}\label{classv8_1_1internal_1_1StandardFrameConstants_a16e313ff143f71038776e2ec33169faf}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Expressions\+Offset} = -\/3 $\ast$ k\+Pointer\+Size -\/ k\+C\+P\+Slot\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StandardFrameConstants_a88622b7c21be1cd8f87663cc2252b81a}\label{classv8_1_1internal_1_1StandardFrameConstants_a88622b7c21be1cd8f87663cc2252b81a}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Last\+Object\+Offset} = k\+Context\+Offset
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 105 of file frame-\/constants.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1StandardFrameConstants_acc78671c91f7e43466115e9baebf0ce3}\label{classv8_1_1internal_1_1StandardFrameConstants_acc78671c91f7e43466115e9baebf0ce3}} 
+\index{v8\+::internal\+::\+Standard\+Frame\+Constants@{v8\+::internal\+::\+Standard\+Frame\+Constants}!k\+Fixed\+Frame\+Size@{k\+Fixed\+Frame\+Size}}
+\index{k\+Fixed\+Frame\+Size@{k\+Fixed\+Frame\+Size}!v8\+::internal\+::\+Standard\+Frame\+Constants@{v8\+::internal\+::\+Standard\+Frame\+Constants}}
+\subsubsection{\texorpdfstring{k\+Fixed\+Frame\+Size}{kFixedFrameSize}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Standard\+Frame\+Constants\+::k\+Fixed\+Frame\+Size\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kFixedFrameSizeAboveFp + kFixedFrameSizeFromFp
+\end{DoxyCode}
+
+
+Definition at line 108 of file frame-\/constants.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1StandardFrameConstants_ac5417a16133ef10a92078d855d8c410e}\label{classv8_1_1internal_1_1StandardFrameConstants_ac5417a16133ef10a92078d855d8c410e}} 
+\index{v8\+::internal\+::\+Standard\+Frame\+Constants@{v8\+::internal\+::\+Standard\+Frame\+Constants}!k\+Fixed\+Slot\+Count\+From\+Fp@{k\+Fixed\+Slot\+Count\+From\+Fp}}
+\index{k\+Fixed\+Slot\+Count\+From\+Fp@{k\+Fixed\+Slot\+Count\+From\+Fp}!v8\+::internal\+::\+Standard\+Frame\+Constants@{v8\+::internal\+::\+Standard\+Frame\+Constants}}
+\subsubsection{\texorpdfstring{k\+Fixed\+Slot\+Count\+From\+Fp}{kFixedSlotCountFromFp}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Standard\+Frame\+Constants\+::k\+Fixed\+Slot\+Count\+From\+Fp\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kFixedFrameSizeFromFp / kPointerSize
+\end{DoxyCode}
+
+
+Definition at line 110 of file frame-\/constants.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/frame-\/constants.\+h\end{DoxyCompactItemize}

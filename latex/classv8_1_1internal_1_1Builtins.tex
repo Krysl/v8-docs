@@ -1,0 +1,222 @@
+\hypertarget{classv8_1_1internal_1_1Builtins}{}\section{v8\+:\+:internal\+:\+:Builtins Class Reference}
+\label{classv8_1_1internal_1_1Builtins}\index{v8\+::internal\+::\+Builtins@{v8\+::internal\+::\+Builtins}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a7bed3cdecadcd0dc8acf6c5bcafcc321}\label{classv8_1_1internal_1_1Builtins_a7bed3cdecadcd0dc8acf6c5bcafcc321}} 
+enum {\bfseries Name} \+: int32\+\_\+t \{ {\bfseries B\+U\+I\+L\+T\+I\+N\+\_\+\+L\+I\+ST}, 
+{\bfseries k\+First\+Bytecode\+Handler}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a4b4b44a12366239fe85e8b802150a05e}\label{classv8_1_1internal_1_1Builtins_a4b4b44a12366239fe85e8b802150a05e}} 
+enum {\bfseries Kind} \{ \newline
+{\bfseries C\+PP}, 
+{\bfseries A\+PI}, 
+{\bfseries T\+FJ}, 
+{\bfseries T\+FC}, 
+\newline
+{\bfseries T\+FS}, 
+{\bfseries T\+FH}, 
+{\bfseries B\+CH}, 
+{\bfseries A\+SM}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a25980ddcd1fa714c819471480cbd87ff}\label{classv8_1_1internal_1_1Builtins_a25980ddcd1fa714c819471480cbd87ff}} 
+enum {\bfseries Exit\+Frame\+Type} \{ {\bfseries E\+X\+IT}, 
+{\bfseries B\+U\+I\+L\+T\+I\+N\+\_\+\+E\+X\+IT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a97c44fffbf3eb107fb5b103a4e0f63c7}\label{classv8_1_1internal_1_1Builtins_a97c44fffbf3eb107fb5b103a4e0f63c7}} 
+{\bfseries Builtins} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a0dd5f6b191e420297c6e6cfa801df51e}\label{classv8_1_1internal_1_1Builtins_a0dd5f6b191e420297c6e6cfa801df51e}} 
+void {\bfseries Tear\+Down} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a40f1da2773953f670eaecbd09275ea8f}\label{classv8_1_1internal_1_1Builtins_a40f1da2773953f670eaecbd09275ea8f}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Lookup} (\mbox{\hyperlink{classuintptr__t}{Address}} pc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_abf93e2758c8b7624fe71fdabc254283b}\label{classv8_1_1internal_1_1Builtins_abf93e2758c8b7624fe71fdabc254283b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Call\+Function} (Convert\+Receiver\+Mode=Convert\+Receiver\+Mode\+::k\+Any)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_acc1e2d06fe68563bfca2f892ff211af3}\label{classv8_1_1internal_1_1Builtins_acc1e2d06fe68563bfca2f892ff211af3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Call} (Convert\+Receiver\+Mode=Convert\+Receiver\+Mode\+::k\+Any)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a986aaf32afbf26d3909e079897971c76}\label{classv8_1_1internal_1_1Builtins_a986aaf32afbf26d3909e079897971c76}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Non\+Primitive\+To\+Primitive} (To\+Primitive\+Hint hint=To\+Primitive\+Hint\+::k\+Default)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a8bda196da1ca0088962ecae686d117ad}\label{classv8_1_1internal_1_1Builtins_a8bda196da1ca0088962ecae686d117ad}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Ordinary\+To\+Primitive} (Ordinary\+To\+Primitive\+Hint hint)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a92403d4b745023dd2c0742810f9359de}\label{classv8_1_1internal_1_1Builtins_a92403d4b745023dd2c0742810f9359de}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Interpreter\+Push\+Args\+Then\+Call} (Convert\+Receiver\+Mode receiver\+\_\+mode, Interpreter\+Push\+Args\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_aaae7ac23fe4b8ae389478c3749fc851c}\label{classv8_1_1internal_1_1Builtins_aaae7ac23fe4b8ae389478c3749fc851c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Interpreter\+Push\+Args\+Then\+Construct} (Interpreter\+Push\+Args\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a5c67e84d1914420a2d1f25042f1c11b6}\label{classv8_1_1internal_1_1Builtins_a5c67e84d1914420a2d1f25042f1c11b6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries New\+Function\+Context} (Scope\+Type scope\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a2dac24de5e5effd92c56b84d101e95e3}\label{classv8_1_1internal_1_1Builtins_a2dac24de5e5effd92c56b84d101e95e3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries J\+S\+Construct\+Stub\+Generic} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_abf5a3eab230ae79a3c9c7b2012904371}\label{classv8_1_1internal_1_1Builtins_abf5a3eab230ae79a3c9c7b2012904371}} 
+void {\bfseries set\+\_\+builtin} (\mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} builtin)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_ac10d50b0ae39206244892d0557155cfe}\label{classv8_1_1internal_1_1Builtins_ac10d50b0ae39206244892d0557155cfe}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} {\bfseries builtin} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a2a020d0ae21ceedcefcf99153f3afe5c}\label{classv8_1_1internal_1_1Builtins_a2a020d0ae21ceedcefcf99153f3afe5c}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries builtin\+\_\+handle} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_af98a2dd00732e7544b91c87d352ff6ae}\label{classv8_1_1internal_1_1Builtins_af98a2dd00732e7544b91c87d352ff6ae}} 
+void {\bfseries Print\+Builtin\+Code} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a6903398dedd6742ed58962f1dc507983}\label{classv8_1_1internal_1_1Builtins_a6903398dedd6742ed58962f1dc507983}} 
+void {\bfseries Print\+Builtin\+Size} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a0ae268f426bf8781f413c38c6c0a30d2}\label{classv8_1_1internal_1_1Builtins_a0ae268f426bf8781f413c38c6c0a30d2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Builtin\+Handle} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ maybe\+\_\+code, \mbox{\hyperlink{classint}{int}} $\ast$index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_ab03b173460284dc5552ce776ab906019}\label{classv8_1_1internal_1_1Builtins_ab03b173460284dc5552ce776ab906019}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+First\+Extra\+Wide\+Bytecode\+Handler+k\+Number\+Of\+Wide\+Bytecode\+Handlers==builtin\+\_\+count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a24daef3bee850abdeeda159a11ecd117}\label{classv8_1_1internal_1_1Builtins_a24daef3bee850abdeeda159a11ecd117}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+initialized} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a340b94e18b501a58536cf22aa7ca8f6e}\label{classv8_1_1internal_1_1Builtins_a340b94e18b501a58536cf22aa7ca8f6e}} 
+void {\bfseries Mark\+Initialized} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_ac14e46f164e0d99a1be4131f46387131}\label{classv8_1_1internal_1_1Builtins_ac14e46f164e0d99a1be4131f46387131}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Builtin\+Id} (\mbox{\hyperlink{classint}{int}} maybe\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a127e5ea4e1b958eafde365c530a3d5d7}\label{classv8_1_1internal_1_1Builtins_a127e5ea4e1b958eafde365c530a3d5d7}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1BailoutId}{Bailout\+Id}} {\bfseries Get\+Continuation\+Bailout\+Id} (Name name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a2909f75cc13bca0ea4de4b78097a622f}\label{classv8_1_1internal_1_1Builtins_a2909f75cc13bca0ea4de4b78097a622f}} 
+static Name {\bfseries Get\+Builtin\+From\+Bailout\+Id} (\mbox{\hyperlink{classv8_1_1internal_1_1BailoutId}{Bailout\+Id}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_ab1f13fa08873cef8c19a607fdf898b95}\label{classv8_1_1internal_1_1Builtins_ab1f13fa08873cef8c19a607fdf898b95}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Callable\+For} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Name name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_ac6eb723b31ff197d25c7433121470e33}\label{classv8_1_1internal_1_1Builtins_ac6eb723b31ff197d25c7433121470e33}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Stack\+Parameter\+Count} (Name name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a673b1730cd5306a971e601ab8a8b2722}\label{classv8_1_1internal_1_1Builtins_a673b1730cd5306a971e601ab8a8b2722}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries name} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_aa48ca9f9e47cffa7e90a63cbb5c2ff45}\label{classv8_1_1internal_1_1Builtins_aa48ca9f9e47cffa7e90a63cbb5c2ff45}} 
+static \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Cpp\+Entry\+Of} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a47729e5d97a951d231cb22102ff8186b}\label{classv8_1_1internal_1_1Builtins_a47729e5d97a951d231cb22102ff8186b}} 
+static Kind {\bfseries Kind\+Of} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a6793f0911197fdbd0dd9b610ee1a5520}\label{classv8_1_1internal_1_1Builtins_a6793f0911197fdbd0dd9b610ee1a5520}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Kind\+Name\+Of} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a3066ad3eb117789d90b75910725b7942}\label{classv8_1_1internal_1_1Builtins_a3066ad3eb117789d90b75910725b7942}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Cpp} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a62827e5559e2709d34280fda92d44a15}\label{classv8_1_1internal_1_1Builtins_a62827e5559e2709d34280fda92d44a15}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Cpp\+Implementation} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_ac9aa9163053340aaac705e1307fc2249}\label{classv8_1_1internal_1_1Builtins_ac9aa9163053340aaac705e1307fc2249}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Builtin} (const \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a6594cc4a034ad5dda3c1b45416da3e56}\label{classv8_1_1internal_1_1Builtins_a6594cc4a034ad5dda3c1b45416da3e56}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Isolate\+Independent\+Builtin} (const \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a98079a960b2bc6e22518064e5a691f44}\label{classv8_1_1internal_1_1Builtins_a98079a960b2bc6e22518064e5a691f44}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Isolate\+Independent} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_ab4e8a172c4b24e9ccda30df0cd28193c}\label{classv8_1_1internal_1_1Builtins_ab4e8a172c4b24e9ccda30df0cd28193c}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Wasm\+Runtime\+Stub} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_ae0b1d40df5f7bb73159ba36c76fc3b47}\label{classv8_1_1internal_1_1Builtins_ae0b1d40df5f7bb73159ba36c76fc3b47}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Invoke\+Api\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classbool}{bool}} is\+\_\+construct, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ function, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ receiver, \mbox{\hyperlink{classint}{int}} argc, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ args\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ new\+\_\+target)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_addd001b484dc39c991298c3074bac231}\label{classv8_1_1internal_1_1Builtins_addd001b484dc39c991298c3074bac231}} 
+static void {\bfseries Generate\+\_\+\+Adaptor} (\mbox{\hyperlink{classv8_1_1internal_1_1MacroAssembler}{Macro\+Assembler}} $\ast$masm, \mbox{\hyperlink{classuintptr__t}{Address}} builtin\+\_\+address, Exit\+Frame\+Type exit\+\_\+frame\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_aa2dfbd7f7db60623d37a24bc8f384926}\label{classv8_1_1internal_1_1Builtins_aa2dfbd7f7db60623d37a24bc8f384926}} 
+static void {\bfseries Generate\+\_\+\+C\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1MacroAssembler}{Macro\+Assembler}} $\ast$masm, \mbox{\hyperlink{classint}{int}} result\+\_\+size, Save\+F\+P\+Regs\+Mode save\+\_\+doubles, Argv\+Mode argv\+\_\+mode, \mbox{\hyperlink{classbool}{bool}} builtin\+\_\+exit\+\_\+frame)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_ae622b75b999f44d7cd2b02d9c4343a29}\label{classv8_1_1internal_1_1Builtins_ae622b75b999f44d7cd2b02d9c4343a29}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Allow\+Dynamic\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ target, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ target\+\_\+global\+\_\+proxy)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_af9814b49b2848e669c4bcf55c1b37073}\label{classv8_1_1internal_1_1Builtins_af9814b49b2848e669c4bcf55c1b37073}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Generate\+Off\+Heap\+Trampoline\+For} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classuintptr__t}{Address}} off\+\_\+heap\+\_\+entry)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_ab491f20117c9768ed8bf835ecf277a83}\label{classv8_1_1internal_1_1Builtins_ab491f20117c9768ed8bf835ecf277a83}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ByteArray}{Byte\+Array}} $>$ {\bfseries Generate\+Off\+Heap\+Trampoline\+Reloc\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_abb01088d2d81b4e91fc1522c963518cb}\label{classv8_1_1internal_1_1Builtins_abb01088d2d81b4e91fc1522c963518cb}} 
+static const int32\+\_\+t {\bfseries k\+No\+Builtin\+Id} = -\/1
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+First\+Wide\+Bytecode\+Handler}
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+First\+Extra\+Wide\+Bytecode\+Handler}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a809b0bd6557c908843668329a7333d1f}\label{classv8_1_1internal_1_1Builtins_a809b0bd6557c908843668329a7333d1f}} 
+class {\bfseries Setup\+Isolate\+Delegate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 38 of file builtins.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_ac62fd54b05b1d10c0c918f3be5dd6d90}\label{classv8_1_1internal_1_1Builtins_ac62fd54b05b1d10c0c918f3be5dd6d90}} 
+\index{v8\+::internal\+::\+Builtins@{v8\+::internal\+::\+Builtins}!k\+First\+Extra\+Wide\+Bytecode\+Handler@{k\+First\+Extra\+Wide\+Bytecode\+Handler}}
+\index{k\+First\+Extra\+Wide\+Bytecode\+Handler@{k\+First\+Extra\+Wide\+Bytecode\+Handler}!v8\+::internal\+::\+Builtins@{v8\+::internal\+::\+Builtins}}
+\subsubsection{\texorpdfstring{k\+First\+Extra\+Wide\+Bytecode\+Handler}{kFirstExtraWideBytecodeHandler}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Builtins\+::k\+First\+Extra\+Wide\+Bytecode\+Handler\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kFirstWideBytecodeHandler + kNumberOfWideBytecodeHandlers
+\end{DoxyCode}
+
+
+Definition at line 124 of file builtins.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1Builtins_a6751c9a4b56c6f3f1e4ae3eb6b474bc1}\label{classv8_1_1internal_1_1Builtins_a6751c9a4b56c6f3f1e4ae3eb6b474bc1}} 
+\index{v8\+::internal\+::\+Builtins@{v8\+::internal\+::\+Builtins}!k\+First\+Wide\+Bytecode\+Handler@{k\+First\+Wide\+Bytecode\+Handler}}
+\index{k\+First\+Wide\+Bytecode\+Handler@{k\+First\+Wide\+Bytecode\+Handler}!v8\+::internal\+::\+Builtins@{v8\+::internal\+::\+Builtins}}
+\subsubsection{\texorpdfstring{k\+First\+Wide\+Bytecode\+Handler}{kFirstWideBytecodeHandler}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Builtins\+::k\+First\+Wide\+Bytecode\+Handler\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kFirstBytecodeHandler + kNumberOfBytecodeHandlers
+\end{DoxyCode}
+
+
+Definition at line 122 of file builtins.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/builtins/builtins.\+h\item 
+v8/src/builtins/builtins-\/api.\+cc\item 
+v8/src/builtins/builtins-\/call.\+cc\item 
+v8/src/builtins/builtins-\/interpreter.\+cc\item 
+v8/src/builtins/builtins.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+\hypertarget{classv8_1_1internal_1_1ExpressionClassifier}{}\section{v8\+:\+:internal\+:\+:Expression\+Classifier$<$ Types $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1ExpressionClassifier}\index{v8\+::internal\+::\+Expression\+Classifier$<$ Types $>$@{v8\+::internal\+::\+Expression\+Classifier$<$ Types $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Expression\+Classifier$<$ Types $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.203008cm]{classv8_1_1internal_1_1ExpressionClassifier}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_a914f328bdc63b8cd3e7d7977a86353cd}\label{classv8_1_1internal_1_1ExpressionClassifier_a914f328bdc63b8cd3e7d7977a86353cd}} 
+using {\bfseries Base\+Class\+Type} = typename std\+::conditional$<$ Types\+::\+Expression\+Classifier\+Report\+Errors, typename \mbox{\hyperlink{classv8_1_1internal_1_1ExpressionClassifierErrorTracker}{Expression\+Classifier\+Error\+Tracker}}$<$ Types $>$\+::Base\+Class\+Type, typename \mbox{\hyperlink{classv8_1_1internal_1_1ExpressionClassifierEmptyErrorTracker}{Expression\+Classifier\+Empty\+Error\+Tracker}}$<$ Types $>$\+::Base\+Class\+Type $>$\+::\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_a821fb158c4573e841ec4573025a41b15}\label{classv8_1_1internal_1_1ExpressionClassifier_a821fb158c4573e841ec4573025a41b15}} 
+using {\bfseries TP} = typename Base\+Class\+Type\+::\+Target\+Production
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_af267a88d1f7dfec1f377a44f991b1e36}\label{classv8_1_1internal_1_1ExpressionClassifier_af267a88d1f7dfec1f377a44f991b1e36}} 
+{\bfseries Expression\+Classifier} (typename Types\+::\+Base $\ast$base)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_aa09c13d7b736e5260398cbd7ba164b10}\label{classv8_1_1internal_1_1ExpressionClassifier_aa09c13d7b736e5260398cbd7ba164b10}} 
+V8\+\_\+\+I\+N\+L\+I\+NE const Error \& {\bfseries expression\+\_\+error} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_ae659b4466edbde314bf74f18c4b379ec}\label{classv8_1_1internal_1_1ExpressionClassifier_ae659b4466edbde314bf74f18c4b379ec}} 
+V8\+\_\+\+I\+N\+L\+I\+NE const Error \& {\bfseries formal\+\_\+parameter\+\_\+initializer\+\_\+error} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_ac9ff49cfa0381ac3bc53897168db8e91}\label{classv8_1_1internal_1_1ExpressionClassifier_ac9ff49cfa0381ac3bc53897168db8e91}} 
+V8\+\_\+\+I\+N\+L\+I\+NE const Error \& {\bfseries pattern\+\_\+error} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_a1333c02b7b7f1637923460874b336546}\label{classv8_1_1internal_1_1ExpressionClassifier_a1333c02b7b7f1637923460874b336546}} 
+V8\+\_\+\+I\+N\+L\+I\+NE const Error \& {\bfseries binding\+\_\+pattern\+\_\+error} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_a855d9636e36382e75e91f493d5f29580}\label{classv8_1_1internal_1_1ExpressionClassifier_a855d9636e36382e75e91f493d5f29580}} 
+V8\+\_\+\+I\+N\+L\+I\+NE const Error \& {\bfseries strict\+\_\+mode\+\_\+formal\+\_\+parameter\+\_\+error} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_ad9ec25791a17add58f47277971af222e}\label{classv8_1_1internal_1_1ExpressionClassifier_ad9ec25791a17add58f47277971af222e}} 
+V8\+\_\+\+I\+N\+L\+I\+NE const Error \& {\bfseries let\+\_\+pattern\+\_\+error} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_a7fa32a6f1cd664c9c1a0dc9eedf32dff}\label{classv8_1_1internal_1_1ExpressionClassifier_a7fa32a6f1cd664c9c1a0dc9eedf32dff}} 
+V8\+\_\+\+I\+N\+L\+I\+NE const Error \& {\bfseries async\+\_\+arrow\+\_\+formal\+\_\+parameters\+\_\+error} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_a075483a46fa258d1c8876e348a81fe2b}\label{classv8_1_1internal_1_1ExpressionClassifier_a075483a46fa258d1c8876e348a81fe2b}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries does\+\_\+error\+\_\+reporting} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_a77f7bdd4cd5fddf47224825a2a5c4912}\label{classv8_1_1internal_1_1ExpressionClassifier_a77f7bdd4cd5fddf47224825a2a5c4912}} 
+void {\bfseries Record\+Expression\+Error} (const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Scanner\+::\+Location}} \&loc, Message\+Template message, const \mbox{\hyperlink{classchar}{char}} $\ast$arg=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_af05b0c918dc5dbb7c892b14a83f7137d}\label{classv8_1_1internal_1_1ExpressionClassifier_af05b0c918dc5dbb7c892b14a83f7137d}} 
+void {\bfseries Record\+Formal\+Parameter\+Initializer\+Error} (const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Scanner\+::\+Location}} \&loc, Message\+Template message, const \mbox{\hyperlink{classchar}{char}} $\ast$arg=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_a5f72a64ea737f813b5aa9b5295b361e6}\label{classv8_1_1internal_1_1ExpressionClassifier_a5f72a64ea737f813b5aa9b5295b361e6}} 
+void {\bfseries Record\+Pattern\+Error} (const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Scanner\+::\+Location}} \&loc, Message\+Template message, const \mbox{\hyperlink{classchar}{char}} $\ast$arg=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_a1444e90d50a97c5f9a276b7a65ff380d}\label{classv8_1_1internal_1_1ExpressionClassifier_a1444e90d50a97c5f9a276b7a65ff380d}} 
+void {\bfseries Record\+Binding\+Pattern\+Error} (const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Scanner\+::\+Location}} \&loc, Message\+Template message, const \mbox{\hyperlink{classchar}{char}} $\ast$arg=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_a0c05fc8923d064dc89b0920f76601a5a}\label{classv8_1_1internal_1_1ExpressionClassifier_a0c05fc8923d064dc89b0920f76601a5a}} 
+void {\bfseries Record\+Async\+Arrow\+Formal\+Parameters\+Error} (const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Scanner\+::\+Location}} \&loc, Message\+Template message, const \mbox{\hyperlink{classchar}{char}} $\ast$arg=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_aaaac2341264af2ab27e28568866d4048}\label{classv8_1_1internal_1_1ExpressionClassifier_aaaac2341264af2ab27e28568866d4048}} 
+void {\bfseries Record\+Strict\+Mode\+Formal\+Parameter\+Error} (const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Scanner\+::\+Location}} \&loc, Message\+Template message, const \mbox{\hyperlink{classchar}{char}} $\ast$arg=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_a2737588cf49401a55c80cac8b824bdfb}\label{classv8_1_1internal_1_1ExpressionClassifier_a2737588cf49401a55c80cac8b824bdfb}} 
+void {\bfseries Record\+Let\+Pattern\+Error} (const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Scanner\+::\+Location}} \&loc, Message\+Template message, const \mbox{\hyperlink{classchar}{char}} $\ast$arg=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifier_a0f630c0ee25dae4a48f697b3014f328b}\label{classv8_1_1internal_1_1ExpressionClassifier_a0f630c0ee25dae4a48f697b3014f328b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ExpressionClassifier}{Expression\+Classifier}} $\ast$ {\bfseries previous} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Types$>$\newline
+class v8\+::internal\+::\+Expression\+Classifier$<$ Types $>$}
+
+
+
+Definition at line 72 of file expression-\/classifier.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/parsing/expression-\/classifier.\+h\end{DoxyCompactItemize}

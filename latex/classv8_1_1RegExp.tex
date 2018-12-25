@@ -27,14 +27,14 @@ enum \mbox{\hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Flags
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1RegExp_ad43d2879796a6991ff19954f4755778a}{Get\+Source}} () const
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1RegExp_a21bc6ac9419240fb1a774365c28cea08}{Get\+Source}} () const
 \item 
-\mbox{\hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Flags}} \mbox{\hyperlink{classv8_1_1RegExp_aaf00a07b6f8368a1a99bf0bac327af21}{Get\+Flags}} () const
+\mbox{\hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Flags}} \mbox{\hyperlink{classv8_1_1RegExp_a1f3357d22f9f403ee7bdad393b740b7a}{Get\+Flags}} () const
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1RegExp}{Reg\+Exp}} $>$ \mbox{\hyperlink{classv8_1_1RegExp_a805f632fe98d58160773a4ba1e424b15}{New}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ Context $>$ context, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ pattern, \mbox{\hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Flags}} flags)
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1RegExp}{Reg\+Exp}} $>$ \mbox{\hyperlink{classv8_1_1RegExp_a70ef0ef612099975b84304236736135e}{New}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ Context $>$ context, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ pattern, \mbox{\hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Flags}} flags)
 \item 
 \mbox{\Hypertarget{classv8_1_1RegExp_ab3f85572312815cbdf5ee368d358c40f}\label{classv8_1_1RegExp_ab3f85572312815cbdf5ee368d358c40f}} 
 static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1RegExp}{Reg\+Exp}} $\ast$ {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1Value}{Value}} $\ast$obj)
@@ -62,28 +62,41 @@ Definition at line 5211 of file v8.\+h.
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classv8_1_1RegExp_aaf00a07b6f8368a1a99bf0bac327af21}\label{classv8_1_1RegExp_aaf00a07b6f8368a1a99bf0bac327af21}} 
+\mbox{\Hypertarget{classv8_1_1RegExp_a1f3357d22f9f403ee7bdad393b740b7a}\label{classv8_1_1RegExp_a1f3357d22f9f403ee7bdad393b740b7a}} 
 \index{v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}!Get\+Flags@{Get\+Flags}}
 \index{Get\+Flags@{Get\+Flags}!v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}}
 \subsubsection{\texorpdfstring{Get\+Flags()}{GetFlags()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Flags}} v8\+::\+Reg\+Exp\+::\+Get\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{v8\+::\+Reg\+Exp\+::\+Flags}} v8\+::\+Reg\+Exp\+::\+Get\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns the flags bit field. \mbox{\Hypertarget{classv8_1_1RegExp_ad43d2879796a6991ff19954f4755778a}\label{classv8_1_1RegExp_ad43d2879796a6991ff19954f4755778a}} 
+Returns the flags bit field. 
+
+Definition at line 6960 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1RegExp_a21bc6ac9419240fb1a774365c28cea08}\label{classv8_1_1RegExp_a21bc6ac9419240fb1a774365c28cea08}} 
 \index{v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}!Get\+Source@{Get\+Source}}
 \index{Get\+Source@{Get\+Source}!v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}}
 \subsubsection{\texorpdfstring{Get\+Source()}{GetSource()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1String}{String}}$>$ v8\+::\+Reg\+Exp\+::\+Get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{v8\+::\+String}} $>$ v8\+::\+Reg\+Exp\+::\+Get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns the value of the source property\+: a string representing the regular expression. \mbox{\Hypertarget{classv8_1_1RegExp_a805f632fe98d58160773a4ba1e424b15}\label{classv8_1_1RegExp_a805f632fe98d58160773a4ba1e424b15}} 
+Returns the value of the source property\+: a string representing the regular expression. 
+
+Definition at line 6941 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1RegExp_a70ef0ef612099975b84304236736135e}\label{classv8_1_1RegExp_a70ef0ef612099975b84304236736135e}} 
 \index{v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}!New@{New}}
 \index{New@{New}!v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}}
 \subsubsection{\texorpdfstring{New()}{New()}}
-{\footnotesize\ttfamily static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1RegExp}{Reg\+Exp}}$>$ v8\+::\+Reg\+Exp\+::\+New (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ Context $>$}]{context,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{pattern,  }\item[{\mbox{\hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Flags}}}]{flags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1RegExp}{v8\+::\+Reg\+Exp}} $>$ v8\+::\+Reg\+Exp\+::\+New (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ Context $>$}]{context,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{pattern,  }\item[{\mbox{\hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Flags}}}]{flags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Creates a regular expression from the given pattern string and the flags bit field. May throw a Java\+Script exception as described in E\+C\+M\+A-\/262, 15.\+10.\+4.\+1.
 
-For example, \mbox{\hyperlink{classv8_1_1RegExp_a805f632fe98d58160773a4ba1e424b15}{Reg\+Exp\+::\+New}}(v8\+::\+String\+::\+New(\char`\"{}foo\char`\"{}), static\+\_\+cast$<$\+Reg\+Exp\+::\+Flags$>$(k\+Global $\vert$ k\+Multiline)) is equivalent to evaluating \char`\"{}/foo/gm\char`\"{}. 
+For example, \mbox{\hyperlink{classv8_1_1RegExp_a70ef0ef612099975b84304236736135e}{Reg\+Exp\+::\+New}}(v8\+::\+String\+::\+New(\char`\"{}foo\char`\"{}), static\+\_\+cast$<$\+Reg\+Exp\+::\+Flags$>$(k\+Global $\vert$ k\+Multiline)) is equivalent to evaluating \char`\"{}/foo/gm\char`\"{}. 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Definition at line 6928 of file api.\+cc.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8.\+h\end{DoxyCompactItemize}
+v8/include/v8.\+h\item 
+v8/src/api.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,529 @@
+\hypertarget{classv8_1_1internal_1_1JSObject}{}\section{v8\+:\+:internal\+:\+:J\+S\+Object Class Reference}
+\label{classv8_1_1internal_1_1JSObject}\index{v8\+::internal\+::\+J\+S\+Object@{v8\+::internal\+::\+J\+S\+Object}}
+Inheritance diagram for v8\+:\+:internal\+:\+:J\+S\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classv8_1_1internal_1_1JSObject}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1JSObject_1_1BodyDescriptor}{Body\+Descriptor}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1JSObject_1_1FastBodyDescriptor}{Fast\+Body\+Descriptor}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a7f0e7a7d79b2a2169ba93fa1da932a69}\label{classv8_1_1internal_1_1JSObject_a7f0e7a7d79b2a2169ba93fa1da932a69}} 
+enum {\bfseries Accessor\+Info\+Handling} \{ {\bfseries F\+O\+R\+C\+E\+\_\+\+F\+I\+E\+LD}, 
+{\bfseries D\+O\+N\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+\+F\+I\+E\+LD}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a83339557af10b946ff90e16dbf35c27a}\label{classv8_1_1internal_1_1JSObject_a83339557af10b946ff90e16dbf35c27a}} 
+void {\bfseries initialize\+\_\+elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_aacee6b6c5d0d3e937ccf73c24a76f263}\label{classv8_1_1internal_1_1JSObject_aacee6b6c5d0d3e937ccf73c24a76f263}} 
+Elements\+Kind {\bfseries Get\+Elements\+Kind} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a64721eeac95d6da0cd947f4438fda365}\label{classv8_1_1internal_1_1JSObject_a64721eeac95d6da0cd947f4438fda365}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ElementsAccessor}{Elements\+Accessor}} $\ast$ {\bfseries Get\+Elements\+Accessor} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a2a7258bff90b3718679855880daa7771}\label{classv8_1_1internal_1_1JSObject_a2a7258bff90b3718679855880daa7771}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Smi\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_af813d9ae27bcc01c029b322486bad96b}\label{classv8_1_1internal_1_1JSObject_af813d9ae27bcc01c029b322486bad96b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Object\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a326c8a480bca2f7a25d56a35093818a5}\label{classv8_1_1internal_1_1JSObject_a326c8a480bca2f7a25d56a35093818a5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Smi\+Or\+Object\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a33a2b9a7252385b8deef2b33cc58be9d}\label{classv8_1_1internal_1_1JSObject_a33a2b9a7252385b8deef2b33cc58be9d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Fast\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a804b20a7c612e78ee13f1842c90ed72f}\label{classv8_1_1internal_1_1JSObject_a804b20a7c612e78ee13f1842c90ed72f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Fast\+Packed\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a3d6961d7b01e3e3987ee18d17bae0fe5}\label{classv8_1_1internal_1_1JSObject_a3d6961d7b01e3e3987ee18d17bae0fe5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Double\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_af32bc8ba89d44716fad82e96f60ccb26}\label{classv8_1_1internal_1_1JSObject_af32bc8ba89d44716fad82e96f60ccb26}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Holey\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_aa9a3c2c7c3ad44288bfb4896e2dea9bb}\label{classv8_1_1internal_1_1JSObject_aa9a3c2c7c3ad44288bfb4896e2dea9bb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Sloppy\+Arguments\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_abe59e5ad536de94a3bccfaf0474ff09c}\label{classv8_1_1internal_1_1JSObject_abe59e5ad536de94a3bccfaf0474ff09c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+String\+Wrapper\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ada8e6aa6e71a160a5f3d8eb71983efcf}\label{classv8_1_1internal_1_1JSObject_ada8e6aa6e71a160a5f3d8eb71983efcf}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Dictionary\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a2d90649ec9980ea9ec49d0928716a372}\label{classv8_1_1internal_1_1JSObject_a2d90649ec9980ea9ec49d0928716a372}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Fixed\+Typed\+Array\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a28961435d00c8a4e70b1dd46795a2b7f}\label{classv8_1_1internal_1_1JSObject_a28961435d00c8a4e70b1dd46795a2b7f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Fixed\+Uint8\+Clamped\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_af2fd4f642ed9cb63bb6dd8707e055000}\label{classv8_1_1internal_1_1JSObject_af2fd4f642ed9cb63bb6dd8707e055000}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Fixed\+Array\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a77477795c71bf1a19558c5499d069f01}\label{classv8_1_1internal_1_1JSObject_a77477795c71bf1a19558c5499d069f01}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Fixed\+Int8\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a0b8b556968b675e9f3c958c49faf0bb1}\label{classv8_1_1internal_1_1JSObject_a0b8b556968b675e9f3c958c49faf0bb1}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Fixed\+Uint8\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ac18b6f4005161c739d9b15ecdcd038cd}\label{classv8_1_1internal_1_1JSObject_ac18b6f4005161c739d9b15ecdcd038cd}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Fixed\+Int16\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ae1e3d8f1b9407cf49f4b07c59d3490a8}\label{classv8_1_1internal_1_1JSObject_ae1e3d8f1b9407cf49f4b07c59d3490a8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Fixed\+Uint16\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_abfc4f97045867e54b8ac73b7075ac885}\label{classv8_1_1internal_1_1JSObject_abfc4f97045867e54b8ac73b7075ac885}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Fixed\+Int32\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_aa38d2f4754b24ed0bf07c27bc5285f0e}\label{classv8_1_1internal_1_1JSObject_aa38d2f4754b24ed0bf07c27bc5285f0e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Fixed\+Uint32\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a582aa91137d5bab45123f808a59e3d00}\label{classv8_1_1internal_1_1JSObject_a582aa91137d5bab45123f808a59e3d00}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Fixed\+Float32\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a7e096a39dd2c3f87c517a1729982ed0a}\label{classv8_1_1internal_1_1JSObject_a7e096a39dd2c3f87c517a1729982ed0a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Fixed\+Float64\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a6c315eceee34984ba59721c06bd8a0ee}\label{classv8_1_1internal_1_1JSObject_a6c315eceee34984ba59721c06bd8a0ee}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Fixed\+Big\+Int64\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a813ae35dbb9c4f1d6e8f134dee1fe041}\label{classv8_1_1internal_1_1JSObject_a813ae35dbb9c4f1d6e8f134dee1fe041}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Fixed\+Big\+Uint64\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a031cd99f5593e0624d6e4010b8e7ba95}\label{classv8_1_1internal_1_1JSObject_a031cd99f5593e0624d6e4010b8e7ba95}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Fast\+Arguments\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a628a32858441ed9e5eb4d8fb162844e7}\label{classv8_1_1internal_1_1JSObject_a628a32858441ed9e5eb4d8fb162844e7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Slow\+Arguments\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a2d6d0f07ec3b24c6ccfe8299ad094000}\label{classv8_1_1internal_1_1JSObject_a2d6d0f07ec3b24c6ccfe8299ad094000}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Fast\+String\+Wrapper\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ab459f9bd907fc0ad2d3a60aeb989f177}\label{classv8_1_1internal_1_1JSObject_ab459f9bd907fc0ad2d3a60aeb989f177}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Slow\+String\+Wrapper\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a9fb83bdcc8396adf80be0ae88b18d95b}\label{classv8_1_1internal_1_1JSObject_a9fb83bdcc8396adf80be0ae88b18d95b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Enumerable\+Elements} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a4fd2794fe56cc1c0d8743f435c43a7fc}\label{classv8_1_1internal_1_1JSObject_a4fd2794fe56cc1c0d8743f435c43a7fc}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1NumberDictionary}{Number\+Dictionary}} {\bfseries element\+\_\+dictionary} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ac9430ceda4c1a2f280f7f42f880932df}\label{classv8_1_1internal_1_1JSObject_ac9430ceda4c1a2f280f7f42f880932df}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1InterceptorInfo}{Interceptor\+Info}} $\ast$ {\bfseries Get\+Named\+Interceptor} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_adb75ea2e8282ab687cee0d13b3728460}\label{classv8_1_1internal_1_1JSObject_adb75ea2e8282ab687cee0d13b3728460}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1InterceptorInfo}{Interceptor\+Info}} $\ast$ {\bfseries Get\+Indexed\+Interceptor} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ab02170f3f86ea1499627af6cd103fd83}\label{classv8_1_1internal_1_1JSObject_ab02170f3f86ea1499627af6cd103fd83}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Would\+Convert\+To\+Slow\+Elements} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a773cbcd6e76cc1969180ef399139b483}\label{classv8_1_1internal_1_1JSObject_a773cbcd6e76cc1969180ef399139b483}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Named\+Interceptor} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a21b64937063c2e27ea362cb38cf50980}\label{classv8_1_1internal_1_1JSObject_a21b64937063c2e27ea362cb38cf50980}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Indexed\+Interceptor} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a8348e940921ee398074b024464ec4707}\label{classv8_1_1internal_1_1JSObject_a8348e940921ee398074b024464ec4707}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Header\+Size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a25d470f8dcd1788791b6d525360077b3}\label{classv8_1_1internal_1_1JSObject_a25d470f8dcd1788791b6d525360077b3}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Embedder\+Field\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ae93389524e884f7630429728a92e9426}\label{classv8_1_1internal_1_1JSObject_ae93389524e884f7630429728a92e9426}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Embedder\+Field\+Offset} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ad51bd0d007a466a573cbc74a39a89577}\label{classv8_1_1internal_1_1JSObject_ad51bd0d007a466a573cbc74a39a89577}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Get\+Embedder\+Field} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a5c665b8de2ee9cd033971c8eeafae3b2}\label{classv8_1_1internal_1_1JSObject_a5c665b8de2ee9cd033971c8eeafae3b2}} 
+void {\bfseries Set\+Embedder\+Field} (\mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a4d6dbd1aa232a7225418a71ea61bd8e6}\label{classv8_1_1internal_1_1JSObject_a4d6dbd1aa232a7225418a71ea61bd8e6}} 
+void {\bfseries Set\+Embedder\+Field} (\mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_abfdabb335281f46fbd049520557dcfdd}\label{classv8_1_1internal_1_1JSObject_abfdabb335281f46fbd049520557dcfdd}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Api\+Wrapper} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a9402964f73878ae3f15cbc686f293d5c}\label{classv8_1_1internal_1_1JSObject_a9402964f73878ae3f15cbc686f293d5c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Droppable\+Api\+Wrapper} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a67e7aa8c225cbc5e039e0820a632028c}\label{classv8_1_1internal_1_1JSObject_a67e7aa8c225cbc5e039e0820a632028c}} 
+void {\bfseries Require\+Slow\+Elements} (\mbox{\hyperlink{classv8_1_1internal_1_1NumberDictionary}{Number\+Dictionary}} dictionary)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_aca96ec4753d32f784faafb0a4d7e896d}\label{classv8_1_1internal_1_1JSObject_aca96ec4753d32f784faafb0a4d7e896d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Unboxed\+Double\+Field} (\mbox{\hyperlink{classv8_1_1internal_1_1FieldIndex}{Field\+Index}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ae11828d659a1d8ce76a733b6e488a316}\label{classv8_1_1internal_1_1JSObject_ae11828d659a1d8ce76a733b6e488a316}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Raw\+Fast\+Property\+At} (\mbox{\hyperlink{classv8_1_1internal_1_1FieldIndex}{Field\+Index}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a361ae7a10b52d92210f7aad6c756f584}\label{classv8_1_1internal_1_1JSObject_a361ae7a10b52d92210f7aad6c756f584}} 
+double {\bfseries Raw\+Fast\+Double\+Property\+At} (\mbox{\hyperlink{classv8_1_1internal_1_1FieldIndex}{Field\+Index}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a85403deeaf77954ccaacc7d481bfda76}\label{classv8_1_1internal_1_1JSObject_a85403deeaf77954ccaacc7d481bfda76}} 
+uint64\+\_\+t {\bfseries Raw\+Fast\+Double\+Property\+As\+Bits\+At} (\mbox{\hyperlink{classv8_1_1internal_1_1FieldIndex}{Field\+Index}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a2a6776b07755bedb1322bb0c8623566f}\label{classv8_1_1internal_1_1JSObject_a2a6776b07755bedb1322bb0c8623566f}} 
+void {\bfseries Fast\+Property\+At\+Put} (\mbox{\hyperlink{classv8_1_1internal_1_1FieldIndex}{Field\+Index}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a214c2d4e01a0f6cb2d3f390838d2746d}\label{classv8_1_1internal_1_1JSObject_a214c2d4e01a0f6cb2d3f390838d2746d}} 
+void {\bfseries Raw\+Fast\+Property\+At\+Put} (\mbox{\hyperlink{classv8_1_1internal_1_1FieldIndex}{Field\+Index}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_afb4ed7317e2a278fb9f9c7addb57e3e1}\label{classv8_1_1internal_1_1JSObject_afb4ed7317e2a278fb9f9c7addb57e3e1}} 
+void {\bfseries Raw\+Fast\+Double\+Property\+As\+Bits\+At\+Put} (\mbox{\hyperlink{classv8_1_1internal_1_1FieldIndex}{Field\+Index}} index, uint64\+\_\+t bits)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a4db954302ef8fe567e8106eecb41b0d7}\label{classv8_1_1internal_1_1JSObject_a4db954302ef8fe567e8106eecb41b0d7}} 
+void {\bfseries Write\+To\+Field} (\mbox{\hyperlink{classint}{int}} descriptor, \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails}{Property\+Details}} details, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a4f8ffe19e26ca55d11efe84d24e08c13}\label{classv8_1_1internal_1_1JSObject_a4f8ffe19e26ca55d11efe84d24e08c13}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+In\+Object\+Property\+Offset} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a2780a1cf5386b77bd61264ea2831bbb1}\label{classv8_1_1internal_1_1JSObject_a2780a1cf5386b77bd61264ea2831bbb1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries In\+Object\+Property\+At} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a0b2a8eedcdcfd224ad0fb511381fbe4d}\label{classv8_1_1internal_1_1JSObject_a0b2a8eedcdcfd224ad0fb511381fbe4d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries In\+Object\+Property\+At\+Put} (\mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value, Write\+Barrier\+Mode mode=U\+P\+D\+A\+T\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+A\+R\+R\+I\+ER)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_abe3db529a763161c140e621276fdf45b}\label{classv8_1_1internal_1_1JSObject_abe3db529a763161c140e621276fdf45b}} 
+void {\bfseries Initialize\+Body} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classint}{int}} start\+\_\+offset, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$pre\+\_\+allocated\+\_\+value, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$filler\+\_\+value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a7055378a4956dab348a946e35ab9bf9b}\label{classv8_1_1internal_1_1JSObject_a7055378a4956dab348a946e35ab9bf9b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries References\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$obj)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a462b6fa796709b5af86864e5f67527a8}\label{classv8_1_1internal_1_1JSObject_a462b6fa796709b5af86864e5f67527a8}} 
+void {\bfseries J\+S\+Object\+Short\+Print} (\mbox{\hyperlink{classv8_1_1internal_1_1StringStream}{String\+Stream}} $\ast$accumulator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a2d71aa3a6c90bd1e05302663a48ab516}\label{classv8_1_1internal_1_1JSObject_a2d71aa3a6c90bd1e05302663a48ab516}} 
+void {\bfseries Print\+Instance\+Migration} (F\+I\+LE $\ast$file, \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} original\+\_\+map, \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} new\+\_\+map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ab8ea3e6f2a56010d4cb64faf49c87216}\label{classv8_1_1internal_1_1JSObject_ab8ea3e6f2a56010d4cb64faf49c87216}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Slow\+Reverse\+Lookup} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ac1eebc10c11125de8a8c0abbaf6ca1ec}\label{classv8_1_1internal_1_1JSObject_ac1eebc10c11125de8a8c0abbaf6ca1ec}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Max\+Number\+Of\+Descriptors+k\+Fields\+Added$<$=Property\+Array\+::k\+Max\+Length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a627ceb9c7966102a33d1f0df7d74ca3c}\label{classv8_1_1internal_1_1JSObject_a627ceb9c7966102a33d1f0df7d74ca3c}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Header\+Size==Internals\+::k\+J\+S\+Object\+Header\+Size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a788fb5b5b38414ae5011fcbacd99b5f3}\label{classv8_1_1internal_1_1JSObject_a788fb5b5b38414ae5011fcbacd99b5f3}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Max\+In\+Object\+Properties$<$=k\+Max\+Number\+Of\+Descriptors)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a2d616c8b3a54abc5a8f0304319f5f941}\label{classv8_1_1internal_1_1JSObject_a2d616c8b3a54abc5a8f0304319f5f941}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Max\+Embedder\+Fields$<$=k\+Max\+In\+Object\+Properties)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a781239b2920e67a657f230cc760a1132}\label{classv8_1_1internal_1_1JSObject_a781239b2920e67a657f230cc760a1132}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Fast\+Elements\+Usage} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a0b6eb22e303860dc8b4ad5b08b3a1c12}\label{classv8_1_1internal_1_1JSObject_a0b6eb22e303860dc8b4ad5b08b3a1c12}} 
+{\footnotesize template$<$Property\+Attributes attrs$>$ }\\\mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ {\bfseries Prevent\+Extensions\+With\+Transition} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, Should\+Throw should\+\_\+throw)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a4c18f7052941468f39fc83daca8b0edb}\label{classv8_1_1internal_1_1JSObject_a4c18f7052941468f39fc83daca8b0edb}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Unmodified\+Api\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} o)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_abde2263b904dde0d4bdbf09f36a2e2b9}\label{classv8_1_1internal_1_1JSObject_abde2263b904dde0d4bdbf09f36a2e2b9}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ constructor, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ new\+\_\+target, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1AllocationSite}{Allocation\+Site}} $>$ site)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a9068f77d5af0e07900cdf7fee2810880}\label{classv8_1_1internal_1_1JSObject_a9068f77d5af0e07900cdf7fee2810880}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ {\bfseries Get\+Function\+Realm} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_afc2b37e53eabed33def8cbdbaa571ad2}\label{classv8_1_1internal_1_1JSObject_afc2b37e53eabed33def8cbdbaa571ad2}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ {\bfseries Object\+Create} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ prototype)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a05e4934b13dffffd69ce05afe5970e22}\label{classv8_1_1internal_1_1JSObject_a05e4934b13dffffd69ce05afe5970e22}} 
+static void {\bfseries Set\+Map\+And\+Elements} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ map, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArrayBase}{Fixed\+Array\+Base}} $>$ elements)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a860fbef55494992879f2417330a6b6fc}\label{classv8_1_1internal_1_1JSObject_a860fbef55494992879f2417330a6b6fc}} 
+static void {\bfseries Ensure\+Writable\+Fast\+Elements} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a5582b53f7d7c5abab535b4b65663d48a}\label{classv8_1_1internal_1_1JSObject_a5582b53f7d7c5abab535b4b65663d48a}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ {\bfseries Set\+Property\+With\+Interceptor} (\mbox{\hyperlink{classv8_1_1internal_1_1LookupIterator}{Lookup\+Iterator}} $\ast$it, Should\+Throw should\+\_\+throw, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a7be0a80a7b622e42791a8f8b28db7ec9}\label{classv8_1_1internal_1_1JSObject_a7be0a80a7b622e42791a8f8b28db7ec9}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Define\+Own\+Property\+Ignore\+Attributes} (\mbox{\hyperlink{classv8_1_1internal_1_1LookupIterator}{Lookup\+Iterator}} $\ast$it, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, Property\+Attributes attributes, Accessor\+Info\+Handling handling=D\+O\+N\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+\+F\+I\+E\+LD)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a852a8ac6cb14bc3bcf6c0655af212bf4}\label{classv8_1_1internal_1_1JSObject_a852a8ac6cb14bc3bcf6c0655af212bf4}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ {\bfseries Define\+Own\+Property\+Ignore\+Attributes} (\mbox{\hyperlink{classv8_1_1internal_1_1LookupIterator}{Lookup\+Iterator}} $\ast$it, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, Property\+Attributes attributes, Should\+Throw should\+\_\+throw, Accessor\+Info\+Handling handling=D\+O\+N\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+\+F\+I\+E\+LD)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a9e0a607bf7dc42d4dc0461b1b20c6359}\label{classv8_1_1internal_1_1JSObject_a9e0a607bf7dc42d4dc0461b1b20c6359}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Set\+Own\+Property\+Ignore\+Attributes} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, Property\+Attributes attributes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_aeb24f48d160746218bd2298b8485890c}\label{classv8_1_1internal_1_1JSObject_aeb24f48d160746218bd2298b8485890c}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Set\+Own\+Element\+Ignore\+Attributes} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, Property\+Attributes attributes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a63981809a6caec14ae40a4387973a63c}\label{classv8_1_1internal_1_1JSObject_a63981809a6caec14ae40a4387973a63c}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Define\+Property\+Or\+Element\+Ignore\+Attributes} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, Property\+Attributes attributes=N\+O\+NE)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ac33f1c90b781690572f2ca2efb27180b}\label{classv8_1_1internal_1_1JSObject_ac33f1c90b781690572f2ca2efb27180b}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ {\bfseries Create\+Data\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1LookupIterator}{Lookup\+Iterator}} $\ast$it, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, Should\+Throw should\+\_\+throw=k\+Dont\+Throw)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_aca1c63456ba9dcaa9924736fa82cb74f}\label{classv8_1_1internal_1_1JSObject_aca1c63456ba9dcaa9924736fa82cb74f}} 
+static void {\bfseries Add\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, Property\+Attributes attributes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a92bd2c1a5c7797a9e8d4dd7d8f4a82ba}\label{classv8_1_1internal_1_1JSObject_a92bd2c1a5c7797a9e8d4dd7d8f4a82ba}} 
+static void {\bfseries Add\+Data\+Element} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ receiver, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, Property\+Attributes attributes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a03637647218c927f73ff61a2a94318ba}\label{classv8_1_1internal_1_1JSObject_a03637647218c927f73ff61a2a94318ba}} 
+static void {\bfseries Allocate\+Storage\+For\+Map} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_aecc850e35fb6912ed2d5b786abad1f64}\label{classv8_1_1internal_1_1JSObject_aecc850e35fb6912ed2d5b786abad1f64}} 
+static void {\bfseries Migrate\+Instance} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ instance)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a95233ff548a330733c02362f81275abb}\label{classv8_1_1internal_1_1JSObject_a95233ff548a330733c02362f81275abb}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Try\+Migrate\+Instance} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ instance)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ad6feff8781a3b737d1060771d67fba3d}\label{classv8_1_1internal_1_1JSObject_ad6feff8781a3b737d1060771d67fba3d}} 
+static void {\bfseries Set\+Normalized\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails}{Property\+Details}} details)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a6f8e02804d4b7f39678dc5dd35432bd3}\label{classv8_1_1internal_1_1JSObject_a6f8e02804d4b7f39678dc5dd35432bd3}} 
+static void {\bfseries Set\+Dictionary\+Element} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, Property\+Attributes attributes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_acf553b5cef4c5ce4285d1cf0754ad971}\label{classv8_1_1internal_1_1JSObject_acf553b5cef4c5ce4285d1cf0754ad971}} 
+static void {\bfseries Set\+Dictionary\+Arguments\+Element} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, Property\+Attributes attributes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ace30a53fa8cd5c3ae0760d490462ba22}\label{classv8_1_1internal_1_1JSObject_ace30a53fa8cd5c3ae0760d490462ba22}} 
+static void {\bfseries Optimize\+As\+Prototype} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classbool}{bool}} enable\+\_\+setup\+\_\+mode=true)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a342b5c9cabbf740064cf94830b92b330}\label{classv8_1_1internal_1_1JSObject_a342b5c9cabbf740064cf94830b92b330}} 
+static void {\bfseries Reoptimize\+If\+Prototype} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a8f0ee32ce7c1027bf0e9df29a29dc798}\label{classv8_1_1internal_1_1JSObject_a8f0ee32ce7c1027bf0e9df29a29dc798}} 
+static void {\bfseries Make\+Prototypes\+Fast} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ receiver, Where\+To\+Start where\+\_\+to\+\_\+start, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a149520fb4af4a58921f89c484ff42c37}\label{classv8_1_1internal_1_1JSObject_a149520fb4af4a58921f89c484ff42c37}} 
+static void {\bfseries Lazy\+Register\+Prototype\+User} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ user, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a483a05c02334b9ac2bf7a5a392e4fe33}\label{classv8_1_1internal_1_1JSObject_a483a05c02334b9ac2bf7a5a392e4fe33}} 
+static void {\bfseries Update\+Prototype\+User\+Registration} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ old\+\_\+map, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ new\+\_\+map, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a6fc204aeda743e38eb48d8ccd3312db8}\label{classv8_1_1internal_1_1JSObject_a6fc204aeda743e38eb48d8ccd3312db8}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Unregister\+Prototype\+User} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ user, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a4f15034be389b647c710a32cc5fc0278}\label{classv8_1_1internal_1_1JSObject_a4f15034be389b647c710a32cc5fc0278}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} {\bfseries Invalidate\+Prototype\+Chains} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a4706388f822c89915dbba8e10f0304a6}\label{classv8_1_1internal_1_1JSObject_a4706388f822c89915dbba8e10f0304a6}} 
+static void {\bfseries Invalidate\+Prototype\+Validity\+Cell} (\mbox{\hyperlink{classv8_1_1internal_1_1JSGlobalObject}{J\+S\+Global\+Object}} $\ast$global)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a9975b82083d56afea52ee20431d27805}\label{classv8_1_1internal_1_1JSObject_a9975b82083d56afea52ee20431d27805}} 
+static void {\bfseries Notify\+Map\+Change} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ old\+\_\+map, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ new\+\_\+map, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a6044c8524e73da74a49df715fd04620f}\label{classv8_1_1internal_1_1JSObject_a6044c8524e73da74a49df715fd04620f}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Prototype\+Has\+No\+Elements} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a028fee16567b1bd67627ebe79c22a590}\label{classv8_1_1internal_1_1JSObject_a028fee16567b1bd67627ebe79c22a590}} 
+static void {\bfseries Prototype\+Registry\+Compaction\+Callback} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$value, \mbox{\hyperlink{classint}{int}} old\+\_\+index, \mbox{\hyperlink{classint}{int}} new\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a53154dc4cc9df72366098b216110ab3c}\label{classv8_1_1internal_1_1JSObject_a53154dc4cc9df72366098b216110ab3c}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ Property\+Attributes $>$ {\bfseries Get\+Property\+Attributes\+With\+Interceptor} (\mbox{\hyperlink{classv8_1_1internal_1_1LookupIterator}{Lookup\+Iterator}} $\ast$it)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_afef16a884ae1a10b9e5893f60be19b28}\label{classv8_1_1internal_1_1JSObject_afef16a884ae1a10b9e5893f60be19b28}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ Property\+Attributes $>$ {\bfseries Get\+Property\+Attributes\+With\+Failed\+Access\+Check} (\mbox{\hyperlink{classv8_1_1internal_1_1LookupIterator}{Lookup\+Iterator}} $\ast$it)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ac97d1ed68e9433a947c6a74544c17028}\label{classv8_1_1internal_1_1JSObject_ac97d1ed68e9433a947c6a74544c17028}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Define\+Accessor} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ getter, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ setter, Property\+Attributes attributes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_aaae9bab283ec827c7ab4d388812aa5e0}\label{classv8_1_1internal_1_1JSObject_aaae9bab283ec827c7ab4d388812aa5e0}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Define\+Accessor} (\mbox{\hyperlink{classv8_1_1internal_1_1LookupIterator}{Lookup\+Iterator}} $\ast$it, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ getter, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ setter, Property\+Attributes attributes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ac59ddc97513bf9ecaba938c84300485f}\label{classv8_1_1internal_1_1JSObject_ac59ddc97513bf9ecaba938c84300485f}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Set\+Accessor} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1AccessorInfo}{Accessor\+Info}} $>$ info, Property\+Attributes attributes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a9c273ee11c01281f813ae34589bf33a9}\label{classv8_1_1internal_1_1JSObject_a9c273ee11c01281f813ae34589bf33a9}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Get\+Property\+With\+Interceptor} (\mbox{\hyperlink{classv8_1_1internal_1_1LookupIterator}{Lookup\+Iterator}} $\ast$it, \mbox{\hyperlink{classbool}{bool}} $\ast$done)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a88ea4331b596f30fb87883320b94b67c}\label{classv8_1_1internal_1_1JSObject_a88ea4331b596f30fb87883320b94b67c}} 
+static void {\bfseries Validate\+Elements} (\mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a341090eaa5e24dd4bbecd049e44d72ef}\label{classv8_1_1internal_1_1JSObject_a341090eaa5e24dd4bbecd049e44d72ef}} 
+static void {\bfseries Ensure\+Can\+Contain\+Heap\+Object\+Elements} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ obj)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a4c43159e750a3f795336df5c628fb9b0}\label{classv8_1_1internal_1_1JSObject_a4c43159e750a3f795336df5c628fb9b0}} 
+static void {\bfseries Ensure\+Can\+Contain\+Elements} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} elements, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} count, Ensure\+Elements\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ab287ab1b3b49b1d237ba1a8598997148}\label{classv8_1_1internal_1_1JSObject_ab287ab1b3b49b1d237ba1a8598997148}} 
+static void {\bfseries Ensure\+Can\+Contain\+Elements} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArrayBase}{Fixed\+Array\+Base}} $>$ elements, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} length, Ensure\+Elements\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a4cf79e36cdbb1e7fe97389ba3938bdf2}\label{classv8_1_1internal_1_1JSObject_a4cf79e36cdbb1e7fe97389ba3938bdf2}} 
+static void {\bfseries Ensure\+Can\+Contain\+Elements} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1Arguments}{Arguments}} $\ast$arguments, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} first\+\_\+arg, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} arg\+\_\+count, Ensure\+Elements\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ada94874ea21d5c573bf0fb4915bc346e}\label{classv8_1_1internal_1_1JSObject_ada94874ea21d5c573bf0fb4915bc346e}} 
+static \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries New\+Elements\+Capacity} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} old\+\_\+capacity)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ae2ddc49dc3e760c382341536d62a0ec2}\label{classv8_1_1internal_1_1JSObject_ae2ddc49dc3e760c382341536d62a0ec2}} 
+{\footnotesize template$<$Allocation\+Site\+Update\+Mode update\+\_\+or\+\_\+check = Allocation\+Site\+Update\+Mode\+::k\+Update$>$ }\\static \mbox{\hyperlink{classbool}{bool}} {\bfseries Update\+Allocation\+Site} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, Elements\+Kind to\+\_\+kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ae40588a8058db20241314b10b8bf315d}\label{classv8_1_1internal_1_1JSObject_ae40588a8058db20241314b10b8bf315d}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ {\bfseries Has\+Real\+Named\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a792d09543dde95abe7b8c1b8d555d9e5}\label{classv8_1_1internal_1_1JSObject_a792d09543dde95abe7b8c1b8d555d9e5}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ {\bfseries Has\+Real\+Element\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_af23b4c4843278854fc1701332f8468f1}\label{classv8_1_1internal_1_1JSObject_af23b4c4843278854fc1701332f8468f1}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ {\bfseries Has\+Real\+Named\+Callback\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_aff51f0ad29d67623ffa6eeef98d11f91}\label{classv8_1_1internal_1_1JSObject_aff51f0ad29d67623ffa6eeef98d11f91}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Header\+Size} (Instance\+Type instance\+\_\+type, \mbox{\hyperlink{classbool}{bool}} function\+\_\+has\+\_\+prototype\+\_\+slot=false)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a3577f8e4bf5f0a123522c6cc05fb3d8f}\label{classv8_1_1internal_1_1JSObject_a3577f8e4bf5f0a123522c6cc05fb3d8f}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Header\+Size} (const \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_aa08b1baac4131a01dd66bf285f0cb0e9}\label{classv8_1_1internal_1_1JSObject_aa08b1baac4131a01dd66bf285f0cb0e9}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Embedder\+Field\+Count} (const \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a97f098221e983f00c111222572171de4}\label{classv8_1_1internal_1_1JSObject_a97f098221e983f00c111222572171de4}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ {\bfseries Get\+Elements\+Transition\+Map} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, Elements\+Kind to\+\_\+kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a62f3dbe23fd6c8eff78781d2a95cb8cb}\label{classv8_1_1internal_1_1JSObject_a62f3dbe23fd6c8eff78781d2a95cb8cb}} 
+static void {\bfseries Transition\+Elements\+Kind} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, Elements\+Kind to\+\_\+kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ab60efe6c24eef80f411f54d9c6d89771}\label{classv8_1_1internal_1_1JSObject_ab60efe6c24eef80f411f54d9c6d89771}} 
+static void {\bfseries Migrate\+To\+Map} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ new\+\_\+map, \mbox{\hyperlink{classint}{int}} expected\+\_\+additional\+\_\+properties=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ae9c2b076f5af2c1cb6d9e7ed461d4444}\label{classv8_1_1internal_1_1JSObject_ae9c2b076f5af2c1cb6d9e7ed461d4444}} 
+static void {\bfseries Force\+Set\+Prototype} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ proto)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a5026b2a0ec46caabc4122ea7010608e4}\label{classv8_1_1internal_1_1JSObject_a5026b2a0ec46caabc4122ea7010608e4}} 
+static void {\bfseries Normalize\+Properties} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, Property\+Normalization\+Mode mode, \mbox{\hyperlink{classint}{int}} expected\+\_\+additional\+\_\+properties, const \mbox{\hyperlink{classchar}{char}} $\ast$reason)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a99e894d642aae160e50b9358d2116cbc}\label{classv8_1_1internal_1_1JSObject_a99e894d642aae160e50b9358d2116cbc}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1NumberDictionary}{Number\+Dictionary}} $>$ {\bfseries Normalize\+Elements} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a663c5f054f780e77e595402eef1c4d1e}\label{classv8_1_1internal_1_1JSObject_a663c5f054f780e77e595402eef1c4d1e}} 
+static void {\bfseries Migrate\+Slow\+To\+Fast} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classint}{int}} unused\+\_\+property\+\_\+fields, const \mbox{\hyperlink{classchar}{char}} $\ast$reason)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a6eb754b8c258aa12505635627566fa22}\label{classv8_1_1internal_1_1JSObject_a6eb754b8c258aa12505635627566fa22}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Fast\+Property\+At} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1Representation}{Representation}} representation, \mbox{\hyperlink{classv8_1_1internal_1_1FieldIndex}{Field\+Index}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a7019b0abb25e7f2d61b70947e000d9e7}\label{classv8_1_1internal_1_1JSObject_a7019b0abb25e7f2d61b70947e000d9e7}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ {\bfseries Set\+Prototype} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, \mbox{\hyperlink{classbool}{bool}} from\+\_\+javascript, Should\+Throw should\+\_\+throw)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_afa8bda3d05c5533c91174494a0f51022}\label{classv8_1_1internal_1_1JSObject_afa8bda3d05c5533c91174494a0f51022}} 
+static void {\bfseries Set\+Immutable\+Proto} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a6386daf1cab8152491a05737cfa5d089}\label{classv8_1_1internal_1_1JSObject_a6386daf1cab8152491a05737cfa5d089}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ {\bfseries Test\+Integrity\+Level} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, Integrity\+Level lvl)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_af05c52322395b156901a77e205704fda}\label{classv8_1_1internal_1_1JSObject_af05c52322395b156901a77e205704fda}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ {\bfseries Prevent\+Extensions} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, Should\+Throw should\+\_\+throw)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a018dcc60df3edec9c61cd4ab49187158}\label{classv8_1_1internal_1_1JSObject_a018dcc60df3edec9c61cd4ab49187158}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Extensible} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_ae3b6b123db0ee16d21150f68d6901700}\label{classv8_1_1internal_1_1JSObject_ae3b6b123db0ee16d21150f68d6901700}} 
+static void {\bfseries Print\+Elements\+Transition} (F\+I\+LE $\ast$file, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object, Elements\+Kind from\+\_\+kind, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArrayBase}{Fixed\+Array\+Base}} $>$ from\+\_\+elements, Elements\+Kind to\+\_\+kind, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArrayBase}{Fixed\+Array\+Base}} $>$ to\+\_\+elements)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a2519dad54d82b7dcd1e1c5325b7dd445}\label{classv8_1_1internal_1_1JSObject_a2519dad54d82b7dcd1e1c5325b7dd445}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries All\+Can\+Read} (\mbox{\hyperlink{classv8_1_1internal_1_1LookupIterator}{Lookup\+Iterator}} $\ast$it)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a3aa961becd98dcad9973ea001f71f99b}\label{classv8_1_1internal_1_1JSObject_a3aa961becd98dcad9973ea001f71f99b}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries All\+Can\+Write} (\mbox{\hyperlink{classv8_1_1internal_1_1LookupIterator}{Lookup\+Iterator}} $\ast$it)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_aed19da50cc7b8f912b31886c6d61b7b5}\label{classv8_1_1internal_1_1JSObject_aed19da50cc7b8f912b31886c6d61b7b5}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Min\+Added\+Elements\+Capacity} = 16
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a94879143e109d2b4105523b69de660a1}\label{classv8_1_1internal_1_1JSObject_a94879143e109d2b4105523b69de660a1}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Max\+Element\+Count} = 0xffffffffu
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a920eb1a5c2f03a3ca10ef3fcc5ac42fe}\label{classv8_1_1internal_1_1JSObject_a920eb1a5c2f03a3ca10ef3fcc5ac42fe}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Max\+Gap} = 1024
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_abb22b3e9cd78800bced6ef8dd68447ce}\label{classv8_1_1internal_1_1JSObject_abb22b3e9cd78800bced6ef8dd68447ce}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Unchecked\+Fast\+Elements\+Length} = 5000
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_af317066946eb7d04f0af04c0b1d69d93}\label{classv8_1_1internal_1_1JSObject_af317066946eb7d04f0af04c0b1d69d93}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Unchecked\+Old\+Fast\+Elements\+Length} = 500
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a7f5244c394b225cd572a03cb68ee22c2}\label{classv8_1_1internal_1_1JSObject_a7f5244c394b225cd572a03cb68ee22c2}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Initial\+Global\+Object\+Unused\+Properties\+Count} = 4
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a3d270856f8e8f80f2a80c0c37bda1c23}\label{classv8_1_1internal_1_1JSObject_a3d270856f8e8f80f2a80c0c37bda1c23}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Instance\+Size} = 255 $\ast$ k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a29b37dbc6571c3318647807794a433c8}\label{classv8_1_1internal_1_1JSObject_a29b37dbc6571c3318647807794a433c8}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Fields\+Added} = 3
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_adbdc81f5aec6d4defbcc3099b17f5142}\label{classv8_1_1internal_1_1JSObject_adbdc81f5aec6d4defbcc3099b17f5142}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Elements\+Offset} = J\+S\+Receiver\+::k\+Header\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a5ba6da4d81bc33d61cafa6a5b3f1e619}\label{classv8_1_1internal_1_1JSObject_a5ba6da4d81bc33d61cafa6a5b3f1e619}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Header\+Size} = k\+Elements\+Offset + k\+Pointer\+Size
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+In\+Object\+Properties}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Embedder\+Fields}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a52a8ab6293af62038e1f16e7f27701f2}\label{classv8_1_1internal_1_1JSObject_a52a8ab6293af62038e1f16e7f27701f2}} 
+class {\bfseries J\+S\+Receiver}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a0720b5f434e636e22a3ed34f847eec57}\label{classv8_1_1internal_1_1JSObject_a0720b5f434e636e22a3ed34f847eec57}} 
+class {\bfseries Object}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 273 of file js-\/objects.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a9737d12d68094880b12f3bd36143915d}\label{classv8_1_1internal_1_1JSObject_a9737d12d68094880b12f3bd36143915d}} 
+\index{v8\+::internal\+::\+J\+S\+Object@{v8\+::internal\+::\+J\+S\+Object}!k\+Max\+Embedder\+Fields@{k\+Max\+Embedder\+Fields}}
+\index{k\+Max\+Embedder\+Fields@{k\+Max\+Embedder\+Fields}!v8\+::internal\+::\+J\+S\+Object@{v8\+::internal\+::\+J\+S\+Object}}
+\subsubsection{\texorpdfstring{k\+Max\+Embedder\+Fields}{kMaxEmbedderFields}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+J\+S\+Object\+::k\+Max\+Embedder\+Fields\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      (((1 << kFirstInobjectPropertyOffsetBitCount) - 1 - kHeaderSize) >>
+       kPointerSizeLog2) /
+      kEmbedderDataSlotSizeInTaggedSlots
+\end{DoxyCode}
+
+
+Definition at line 748 of file js-\/objects.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSObject_a0bf606b9404224d74704d7ff09df5528}\label{classv8_1_1internal_1_1JSObject_a0bf606b9404224d74704d7ff09df5528}} 
+\index{v8\+::internal\+::\+J\+S\+Object@{v8\+::internal\+::\+J\+S\+Object}!k\+Max\+In\+Object\+Properties@{k\+Max\+In\+Object\+Properties}}
+\index{k\+Max\+In\+Object\+Properties@{k\+Max\+In\+Object\+Properties}!v8\+::internal\+::\+J\+S\+Object@{v8\+::internal\+::\+J\+S\+Object}}
+\subsubsection{\texorpdfstring{k\+Max\+In\+Object\+Properties}{kMaxInObjectProperties}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+J\+S\+Object\+::k\+Max\+In\+Object\+Properties\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      (kMaxInstanceSize - kHeaderSize) >> kPointerSizeLog2
+\end{DoxyCode}
+
+
+Definition at line 744 of file js-\/objects.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/js-\/objects.\+h\item 
+v8/src/objects/js-\/objects-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

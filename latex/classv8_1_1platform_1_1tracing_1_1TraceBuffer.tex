@@ -1,5 +1,11 @@
 \hypertarget{classv8_1_1platform_1_1tracing_1_1TraceBuffer}{}\section{v8\+:\+:platform\+:\+:tracing\+:\+:Trace\+Buffer Class Reference}
 \label{classv8_1_1platform_1_1tracing_1_1TraceBuffer}\index{v8\+::platform\+::tracing\+::\+Trace\+Buffer@{v8\+::platform\+::tracing\+::\+Trace\+Buffer}}
+Inheritance diagram for v8\+:\+:platform\+:\+:tracing\+:\+:Trace\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1platform_1_1tracing_1_1TraceBuffer}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -10,19 +16,19 @@ virtual \mbox{\hyperlink{classv8_1_1platform_1_1tracing_1_1TraceObject}{Trace\+O
 virtual \mbox{\hyperlink{classv8_1_1platform_1_1tracing_1_1TraceObject}{Trace\+Object}} $\ast$ {\bfseries Get\+Event\+By\+Handle} (uint64\+\_\+t handle)=0
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceBuffer_ad16dbfbda98253565b3af122e60aa636}\label{classv8_1_1platform_1_1tracing_1_1TraceBuffer_ad16dbfbda98253565b3af122e60aa636}} 
-virtual bool {\bfseries Flush} ()=0
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Flush} ()=0
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceBuffer_aa5389ad37c2d2c12cdbefba2a45731f1}\label{classv8_1_1platform_1_1tracing_1_1TraceBuffer_aa5389ad37c2d2c12cdbefba2a45731f1}} 
-static \mbox{\hyperlink{classv8_1_1platform_1_1tracing_1_1TraceBuffer}{Trace\+Buffer}} $\ast$ {\bfseries Create\+Trace\+Buffer\+Ring\+Buffer} (size\+\_\+t max\+\_\+chunks, \mbox{\hyperlink{classv8_1_1platform_1_1tracing_1_1TraceWriter}{Trace\+Writer}} $\ast$trace\+\_\+writer)
+\mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceBuffer_a470a0bf66ee97337ac700de9e39c8942}\label{classv8_1_1platform_1_1tracing_1_1TraceBuffer_a470a0bf66ee97337ac700de9e39c8942}} 
+static \mbox{\hyperlink{classv8_1_1platform_1_1tracing_1_1TraceBuffer}{Trace\+Buffer}} $\ast$ {\bfseries Create\+Trace\+Buffer\+Ring\+Buffer} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} max\+\_\+chunks, \mbox{\hyperlink{classv8_1_1platform_1_1tracing_1_1TraceWriter}{Trace\+Writer}} $\ast$trace\+\_\+writer)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceBuffer_a4957aae5f855daac2d581de0734f0d49}\label{classv8_1_1platform_1_1tracing_1_1TraceBuffer_a4957aae5f855daac2d581de0734f0d49}} 
-static const size\+\_\+t {\bfseries k\+Ring\+Buffer\+Chunks} = 1024
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Ring\+Buffer\+Chunks} = 1024
 \end{DoxyCompactItemize}
 
 
@@ -33,6 +39,7 @@ Definition at line 148 of file v8-\/tracing.\+h.
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/libplatform/v8-\/tracing.\+h\end{DoxyCompactItemize}
+v8/include/libplatform/v8-\/tracing.\+h\item 
+v8/src/libplatform/tracing/trace-\/buffer.\+cc\end{DoxyCompactItemize}

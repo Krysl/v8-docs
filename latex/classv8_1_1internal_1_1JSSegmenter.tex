@@ -1,0 +1,106 @@
+\hypertarget{classv8_1_1internal_1_1JSSegmenter}{}\section{v8\+:\+:internal\+:\+:J\+S\+Segmenter Class Reference}
+\label{classv8_1_1internal_1_1JSSegmenter}\index{v8\+::internal\+::\+J\+S\+Segmenter@{v8\+::internal\+::\+J\+S\+Segmenter}}
+Inheritance diagram for v8\+:\+:internal\+:\+:J\+S\+Segmenter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1JSSegmenter}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_a627484dbc1e11dc02a9c9271137c63e9}\label{classv8_1_1internal_1_1JSSegmenter_a627484dbc1e11dc02a9c9271137c63e9}} 
+enum {\bfseries Line\+Break\+Style} \{ \newline
+{\bfseries N\+O\+T\+S\+ET}, 
+{\bfseries S\+T\+R\+I\+CT}, 
+{\bfseries N\+O\+R\+M\+AL}, 
+{\bfseries L\+O\+O\+SE}, 
+\newline
+{\bfseries C\+O\+U\+NT}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_a290b44bfddfb5408f5eb63f3b9a1f271}\label{classv8_1_1internal_1_1JSSegmenter_a290b44bfddfb5408f5eb63f3b9a1f271}} 
+enum {\bfseries Granularity} \{ \newline
+{\bfseries G\+R\+A\+P\+H\+E\+ME}, 
+{\bfseries W\+O\+RD}, 
+{\bfseries S\+E\+N\+T\+E\+N\+CE}, 
+{\bfseries L\+I\+NE}, 
+\newline
+{\bfseries C\+O\+U\+NT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_ad45e47bbcc3a8ca1a560b9c30ca41e19}\label{classv8_1_1internal_1_1JSSegmenter_ad45e47bbcc3a8ca1a560b9c30ca41e19}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Line\+Break\+Style\+As\+String} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_a0679338204b24123407777e1f7d0dbd8}\label{classv8_1_1internal_1_1JSSegmenter_a0679338204b24123407777e1f7d0dbd8}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Line\+Break\+Style\+As\+C\+String} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_ad521e062c1e24b0744154d1bb8d14a7c}\label{classv8_1_1internal_1_1JSSegmenter_ad521e062c1e24b0744154d1bb8d14a7c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Granularity\+As\+String} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_aaa9ebcfa4593870f7d55e5bddfa4e0c5}\label{classv8_1_1internal_1_1JSSegmenter_aaa9ebcfa4593870f7d55e5bddfa4e0c5}} 
+void {\bfseries set\+\_\+line\+\_\+break\+\_\+style} (Line\+Break\+Style line\+\_\+break\+\_\+style)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_a6d077a6ef09d61c7cc2106fb4761394e}\label{classv8_1_1internal_1_1JSSegmenter_a6d077a6ef09d61c7cc2106fb4761394e}} 
+Line\+Break\+Style {\bfseries line\+\_\+break\+\_\+style} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_a5acc407a1f90aea965e199b0e0ad6f4b}\label{classv8_1_1internal_1_1JSSegmenter_a5acc407a1f90aea965e199b0e0ad6f4b}} 
+void {\bfseries set\+\_\+granularity} (Granularity granularity)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_a81544b399af411f36d2e59c3a0a4af33}\label{classv8_1_1internal_1_1JSSegmenter_a81544b399af411f36d2e59c3a0a4af33}} 
+Granularity {\bfseries granularity} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_af1762a04b76be1b23b27c425884ce589}\label{classv8_1_1internal_1_1JSSegmenter_af1762a04b76be1b23b27c425884ce589}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Line\+Break\+Style\+::\+N\+O\+T\+S\+ET$<$=Line\+Break\+Style\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_a3256057cbda7eddd3db4fa8a8cbcb1d1}\label{classv8_1_1internal_1_1JSSegmenter_a3256057cbda7eddd3db4fa8a8cbcb1d1}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Line\+Break\+Style\+::\+S\+T\+R\+I\+CT$<$=Line\+Break\+Style\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_ad229febe4ca29508ea5c96ae40f7eadc}\label{classv8_1_1internal_1_1JSSegmenter_ad229febe4ca29508ea5c96ae40f7eadc}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Line\+Break\+Style\+::\+N\+O\+R\+M\+AL$<$=Line\+Break\+Style\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_a8743ec2893bab99ccfc685955e747a58}\label{classv8_1_1internal_1_1JSSegmenter_a8743ec2893bab99ccfc685955e747a58}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Line\+Break\+Style\+::\+L\+O\+O\+SE$<$=Line\+Break\+Style\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_a3b4aa5ed56d22882de906ed54af66163}\label{classv8_1_1internal_1_1JSSegmenter_a3b4aa5ed56d22882de906ed54af66163}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Granularity\+::\+G\+R\+A\+P\+H\+E\+ME$<$=Granularity\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_aa4492d7158c95e8f42936e5fa3ae7296}\label{classv8_1_1internal_1_1JSSegmenter_aa4492d7158c95e8f42936e5fa3ae7296}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Granularity\+::\+W\+O\+RD$<$=Granularity\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_a0180f84443f91ce94f1325fd42c9e1a9}\label{classv8_1_1internal_1_1JSSegmenter_a0180f84443f91ce94f1325fd42c9e1a9}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Granularity\+::\+S\+E\+N\+T\+E\+N\+CE$<$=Granularity\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_ad40f90d0f265345c9b0ca878665708fd}\label{classv8_1_1internal_1_1JSSegmenter_ad40f90d0f265345c9b0ca878665708fd}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Granularity\+::\+L\+I\+NE$<$=Granularity\+Bits\+::k\+Max)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_a0de8dee6e971c3c9b5361dcc06f4dff9}\label{classv8_1_1internal_1_1JSSegmenter_a0de8dee6e971c3c9b5361dcc06f4dff9}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSSegmenter}{J\+S\+Segmenter}} $>$ {\bfseries Initialize} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSSegmenter}{J\+S\+Segmenter}} $>$ segmenter\+\_\+holder, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ locales, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ options)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_acd1815225517410faf96ee26111c97ba}\label{classv8_1_1internal_1_1JSSegmenter_acd1815225517410faf96ee26111c97ba}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ {\bfseries Resolved\+Options} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSSegmenter}{J\+S\+Segmenter}} $>$ segmenter\+\_\+holder)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSSegmenter_acf5d6ab3221e0685591c595795f4aa73}\label{classv8_1_1internal_1_1JSSegmenter_acf5d6ab3221e0685591c595795f4aa73}} 
+static std\+::set$<$ std\+::string $>$ {\bfseries Get\+Available\+Locales} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 31 of file js-\/segmenter.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/js-\/segmenter.\+h\item 
+v8/src/objects/js-\/segmenter-\/inl.\+h\item 
+v8/src/objects/js-\/segmenter.\+cc\end{DoxyCompactItemize}

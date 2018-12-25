@@ -1,0 +1,56 @@
+\hypertarget{classv8_1_1internal_1_1PatchingAssembler}{}\section{v8\+:\+:internal\+:\+:Patching\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1PatchingAssembler}\index{v8\+::internal\+::\+Patching\+Assembler@{v8\+::internal\+::\+Patching\+Assembler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Patching\+Assembler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.761905cm]{classv8_1_1internal_1_1PatchingAssembler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PatchingAssembler_a69d6153dc5c3a3184de9a150e1a11d21}\label{classv8_1_1internal_1_1PatchingAssembler_a69d6153dc5c3a3184de9a150e1a11d21}} 
+{\bfseries Patching\+Assembler} (const \mbox{\hyperlink{structv8_1_1internal_1_1AssemblerOptions}{Assembler\+Options}} \&options, byte $\ast$address, \mbox{\hyperlink{classint}{int}} instructions)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PatchingAssembler_a21f415deda7b93478ee24b0523fb45a0}\label{classv8_1_1internal_1_1PatchingAssembler_a21f415deda7b93478ee24b0523fb45a0}} 
+void {\bfseries Emit} (\mbox{\hyperlink{classuintptr__t}{Address}} addr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PatchingAssembler_a03f8107222c5246e3512af2d833cac34}\label{classv8_1_1internal_1_1PatchingAssembler_a03f8107222c5246e3512af2d833cac34}} 
+void {\bfseries Pad\+With\+Nops} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PatchingAssembler_a9e18e7959b7f1b484a89409709d27503}\label{classv8_1_1internal_1_1PatchingAssembler_a9e18e7959b7f1b484a89409709d27503}} 
+{\bfseries Patching\+Assembler} (const \mbox{\hyperlink{structv8_1_1internal_1_1AssemblerOptions}{Assembler\+Options}} \&options, byte $\ast$start, \mbox{\hyperlink{classunsigned}{unsigned}} count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PatchingAssembler_a9bd484c283ffdb983741703bd58c1d5f}\label{classv8_1_1internal_1_1PatchingAssembler_a9bd484c283ffdb983741703bd58c1d5f}} 
+void {\bfseries Patch\+Adr\+Far} (\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} target\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PatchingAssembler_a4ddb2518d2a09628196f025e6bf2882c}\label{classv8_1_1internal_1_1PatchingAssembler_a4ddb2518d2a09628196f025e6bf2882c}} 
+void {\bfseries Patch\+Sub\+Sp} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} immediate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PatchingAssembler_a69d6153dc5c3a3184de9a150e1a11d21}\label{classv8_1_1internal_1_1PatchingAssembler_a69d6153dc5c3a3184de9a150e1a11d21}} 
+{\bfseries Patching\+Assembler} (const \mbox{\hyperlink{structv8_1_1internal_1_1AssemblerOptions}{Assembler\+Options}} \&options, byte $\ast$address, \mbox{\hyperlink{classint}{int}} instructions)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PatchingAssembler_a2db6d5d7a7f1cca597bf18b8f160c909}\label{classv8_1_1internal_1_1PatchingAssembler_a2db6d5d7a7f1cca597bf18b8f160c909}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Adr\+Far\+Patchable\+N\+Nops} = 2
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PatchingAssembler_a57379a0fd4d9e23c8b6ca8decab5efbb}\label{classv8_1_1internal_1_1PatchingAssembler_a57379a0fd4d9e23c8b6ca8decab5efbb}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Adr\+Far\+Patchable\+N\+Instrs} = k\+Adr\+Far\+Patchable\+N\+Nops + 2
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1693 of file assembler-\/arm.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/arm/assembler-\/arm.\+h\item 
+v8/src/arm64/assembler-\/arm64.\+h\item 
+v8/src/ppc/assembler-\/ppc.\+h\end{DoxyCompactItemize}

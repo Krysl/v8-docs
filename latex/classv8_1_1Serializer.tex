@@ -1,0 +1,116 @@
+\hypertarget{classv8_1_1Serializer}{}\section{v8\+:\+:Serializer Class Reference}
+\label{classv8_1_1Serializer}\index{v8\+::\+Serializer@{v8\+::\+Serializer}}
+Inheritance diagram for v8\+:\+:Serializer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1Serializer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1Serializer_a4cf48df134b20c6f157f5aeaa8ee91ad}\label{classv8_1_1Serializer_a4cf48df134b20c6f157f5aeaa8ee91ad}} 
+{\bfseries Serializer} (Isolate $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1Serializer_a8d2e55c1cbd58dfc09dc66d6d36e1e25}\label{classv8_1_1Serializer_a8d2e55c1cbd58dfc09dc66d6d36e1e25}} 
+\mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ {\bfseries Write\+Value} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ Context $>$ context, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ value, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ transfer)
+\item 
+\mbox{\Hypertarget{classv8_1_1Serializer_a9d18106c1908b9d3f0242cf84a3e302c}\label{classv8_1_1Serializer_a9d18106c1908b9d3f0242cf84a3e302c}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1SerializationData}{Serialization\+Data}} $>$ {\bfseries Release} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1Serializer_ad882ae6d842079748f92d99b4f1a3442}\label{classv8_1_1Serializer_ad882ae6d842079748f92d99b4f1a3442}} 
+void {\bfseries Append\+Externalized\+Contents\+To} (std\+::vector$<$ \mbox{\hyperlink{classv8_1_1ExternalizedContents}{Externalized\+Contents}} $>$ $\ast$to)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classv8_1_1Serializer_a97707713e9bfe28e117bd15d40e3afc6}{Throw\+Data\+Clone\+Error}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ message) override
+\item 
+\mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} $>$ \mbox{\hyperlink{classv8_1_1Serializer_a573f904a1db660126a98ecec16f142be}{Get\+Shared\+Array\+Buffer\+Id}} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}} $>$ shared\+\_\+array\+\_\+buffer) override
+\item 
+\mbox{\Hypertarget{classv8_1_1Serializer_aad4c375adc118f39322de2fc938a2015}\label{classv8_1_1Serializer_aad4c375adc118f39322de2fc938a2015}} 
+\mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} $>$ {\bfseries Get\+Wasm\+Module\+Transfer\+Id} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1WasmCompiledModule}{Wasm\+Compiled\+Module}} $>$ module) override
+\item 
+void $\ast$ \mbox{\hyperlink{classv8_1_1Serializer_a0642983ee43067669e17c87411167a02}{Reallocate\+Buffer\+Memory}} (void $\ast$old\+\_\+buffer, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} $\ast$actual\+\_\+size) override
+\item 
+void \mbox{\hyperlink{classv8_1_1Serializer_af406a9e21fccfce3a5faed52182a69a6}{Free\+Buffer\+Memory}} (void $\ast$buffer) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3060 of file d8.\+cc.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1Serializer_af406a9e21fccfce3a5faed52182a69a6}\label{classv8_1_1Serializer_af406a9e21fccfce3a5faed52182a69a6}} 
+\index{v8\+::\+Serializer@{v8\+::\+Serializer}!Free\+Buffer\+Memory@{Free\+Buffer\+Memory}}
+\index{Free\+Buffer\+Memory@{Free\+Buffer\+Memory}!v8\+::\+Serializer@{v8\+::\+Serializer}}
+\subsubsection{\texorpdfstring{Free\+Buffer\+Memory()}{FreeBufferMemory()}}
+{\footnotesize\ttfamily void v8\+::\+Serializer\+::\+Free\+Buffer\+Memory (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Frees a buffer allocated with $\vert$\+Reallocate\+Buffer\+Memory$\vert$.
+
+The default implementation uses the stdlib\textquotesingle{}s {\ttfamily free()} function. 
+
+Reimplemented from \mbox{\hyperlink{classv8_1_1ValueSerializer_1_1Delegate_a9cd4ab0061b4a26b4b0d695d31992f82}{v8\+::\+Value\+Serializer\+::\+Delegate}}.
+
+
+
+Definition at line 3150 of file d8.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1Serializer_a573f904a1db660126a98ecec16f142be}\label{classv8_1_1Serializer_a573f904a1db660126a98ecec16f142be}} 
+\index{v8\+::\+Serializer@{v8\+::\+Serializer}!Get\+Shared\+Array\+Buffer\+Id@{Get\+Shared\+Array\+Buffer\+Id}}
+\index{Get\+Shared\+Array\+Buffer\+Id@{Get\+Shared\+Array\+Buffer\+Id}!v8\+::\+Serializer@{v8\+::\+Serializer}}
+\subsubsection{\texorpdfstring{Get\+Shared\+Array\+Buffer\+Id()}{GetSharedArrayBufferId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}}$>$ v8\+::\+Serializer\+::\+Get\+Shared\+Array\+Buffer\+Id (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}} $>$}]{shared\+\_\+array\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called when the \mbox{\hyperlink{classv8_1_1ValueSerializer}{Value\+Serializer}} is going to serialize a \mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}} object. The embedder must return an ID for the object, using the same ID if this \mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}} has already been serialized in this buffer. When deserializing, this ID will be passed to Value\+Deserializer\+::\+Get\+Shared\+Array\+Buffer\+From\+Id as $\vert$clone\+\_\+id$\vert$.
+
+If the object cannot be serialized, an exception should be thrown and Nothing$<$uint32\+\_\+t$>$() returned. 
+
+Reimplemented from \mbox{\hyperlink{classv8_1_1ValueSerializer_1_1Delegate_ac12b5cfd7480c19f0b9af0b47d05a77e}{v8\+::\+Value\+Serializer\+::\+Delegate}}.
+
+
+
+Definition at line 3107 of file d8.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1Serializer_a0642983ee43067669e17c87411167a02}\label{classv8_1_1Serializer_a0642983ee43067669e17c87411167a02}} 
+\index{v8\+::\+Serializer@{v8\+::\+Serializer}!Reallocate\+Buffer\+Memory@{Reallocate\+Buffer\+Memory}}
+\index{Reallocate\+Buffer\+Memory@{Reallocate\+Buffer\+Memory}!v8\+::\+Serializer@{v8\+::\+Serializer}}
+\subsubsection{\texorpdfstring{Reallocate\+Buffer\+Memory()}{ReallocateBufferMemory()}}
+{\footnotesize\ttfamily void$\ast$ v8\+::\+Serializer\+::\+Reallocate\+Buffer\+Memory (\begin{DoxyParamCaption}\item[{void $\ast$}]{old\+\_\+buffer,  }\item[{\mbox{\hyperlink{classsize__t}{size\+\_\+t}}}]{size,  }\item[{\mbox{\hyperlink{classsize__t}{size\+\_\+t}} $\ast$}]{actual\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Allocates memory for the buffer of at least the size provided. The actual size (which may be greater or equal) is written to $\vert$actual\+\_\+size$\vert$. If no buffer has been allocated yet, nullptr will be provided.
+
+If the memory cannot be allocated, nullptr should be returned. $\vert$actual\+\_\+size$\vert$ will be ignored. It is assumed that $\vert$old\+\_\+buffer$\vert$ is still valid in this case and has not been modified.
+
+The default implementation uses the stdlib\textquotesingle{}s {\ttfamily realloc()} function. 
+
+Reimplemented from \mbox{\hyperlink{classv8_1_1ValueSerializer_1_1Delegate_ade3ce68ebf5a3f3eba2f8f091177f155}{v8\+::\+Value\+Serializer\+::\+Delegate}}.
+
+
+
+Definition at line 3138 of file d8.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1Serializer_a97707713e9bfe28e117bd15d40e3afc6}\label{classv8_1_1Serializer_a97707713e9bfe28e117bd15d40e3afc6}} 
+\index{v8\+::\+Serializer@{v8\+::\+Serializer}!Throw\+Data\+Clone\+Error@{Throw\+Data\+Clone\+Error}}
+\index{Throw\+Data\+Clone\+Error@{Throw\+Data\+Clone\+Error}!v8\+::\+Serializer@{v8\+::\+Serializer}}
+\subsubsection{\texorpdfstring{Throw\+Data\+Clone\+Error()}{ThrowDataCloneError()}}
+{\footnotesize\ttfamily void v8\+::\+Serializer\+::\+Throw\+Data\+Clone\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Handles the case where a Data\+Clone\+Error would be thrown in the structured clone spec. Other V8 embedders may throw some other appropriate exception type. 
+
+Implements \mbox{\hyperlink{classv8_1_1ValueSerializer_1_1Delegate_a3681bfcd9a6c45f0b12bd7a8bdf34d85}{v8\+::\+Value\+Serializer\+::\+Delegate}}.
+
+
+
+Definition at line 3103 of file d8.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/d8.\+cc\end{DoxyCompactItemize}

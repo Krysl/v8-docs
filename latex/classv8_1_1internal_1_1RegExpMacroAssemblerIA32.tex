@@ -1,0 +1,162 @@
+\hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Macro\+Assembler\+I\+A32 Class Reference}
+\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32}\index{v8\+::internal\+::\+Reg\+Exp\+Macro\+Assembler\+I\+A32@{v8\+::internal\+::\+Reg\+Exp\+Macro\+Assembler\+I\+A32}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Reg\+Exp\+Macro\+Assembler\+I\+A32\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1RegExpMacroAssemblerIA32}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_acfcd0b7e094e612cbc8e1737858e2364}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_acfcd0b7e094e612cbc8e1737858e2364}} 
+{\bfseries Reg\+Exp\+Macro\+Assembler\+I\+A32} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, Mode mode, \mbox{\hyperlink{classint}{int}} registers\+\_\+to\+\_\+save)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_ad96cfd439f89c5a5344abe800ba067b3}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_ad96cfd439f89c5a5344abe800ba067b3}} 
+virtual \mbox{\hyperlink{classint}{int}} {\bfseries stack\+\_\+limit\+\_\+slack} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a916b914594f580c9d2be0529b45e6119}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a916b914594f580c9d2be0529b45e6119}} 
+virtual void {\bfseries Advance\+Current\+Position} (\mbox{\hyperlink{classint}{int}} by)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_adbd3b2736d3ec8c485d27bec5d8d036f}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_adbd3b2736d3ec8c485d27bec5d8d036f}} 
+virtual void {\bfseries Advance\+Register} (\mbox{\hyperlink{classint}{int}} reg, \mbox{\hyperlink{classint}{int}} by)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a35ce7638883eef399d53c7762255f881}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a35ce7638883eef399d53c7762255f881}} 
+virtual void {\bfseries Backtrack} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a94397279fdc1f7bbaf8d93d843f8c575}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a94397279fdc1f7bbaf8d93d843f8c575}} 
+virtual void {\bfseries Bind} (\mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$label)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a9ee06138571bafc6d9d9b8595faa6f4e}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a9ee06138571bafc6d9d9b8595faa6f4e}} 
+virtual void {\bfseries Check\+At\+Start} (\mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+at\+\_\+start)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a1ea0f2090e1722ce7f1ce4b4e64c5576}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a1ea0f2090e1722ce7f1ce4b4e64c5576}} 
+virtual void {\bfseries Check\+Character} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} c, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+equal)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a8e0d52d1ad8b9cd6fe8f0d08f54296ef}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a8e0d52d1ad8b9cd6fe8f0d08f54296ef}} 
+virtual void {\bfseries Check\+Character\+After\+And} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} c, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} mask, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+equal)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a5d0bf70cd682a67b96495d9b73f65c9b}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a5d0bf70cd682a67b96495d9b73f65c9b}} 
+virtual void {\bfseries Check\+Character\+GT} (uc16 limit, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+greater)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a3c7cf5235c8933272896a9e1272a8483}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a3c7cf5235c8933272896a9e1272a8483}} 
+virtual void {\bfseries Check\+Character\+LT} (uc16 limit, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+less)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a9442c1ac4106d7a2c710981e8e5b234d}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a9442c1ac4106d7a2c710981e8e5b234d}} 
+virtual void {\bfseries Check\+Greedy\+Loop} (\mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+tos\+\_\+equals\+\_\+current\+\_\+position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_aa47e9c48f838a20512915262c0264746}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_aa47e9c48f838a20512915262c0264746}} 
+virtual void {\bfseries Check\+Not\+At\+Start} (\mbox{\hyperlink{classint}{int}} cp\+\_\+offset, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+not\+\_\+at\+\_\+start)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a035dcb51eb1182c16a408b0c29f53cff}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a035dcb51eb1182c16a408b0c29f53cff}} 
+virtual void {\bfseries Check\+Not\+Back\+Reference} (\mbox{\hyperlink{classint}{int}} start\+\_\+reg, \mbox{\hyperlink{classbool}{bool}} read\+\_\+backward, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+no\+\_\+match)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_abf787bfa749bc155e6c00ceae04103dd}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_abf787bfa749bc155e6c00ceae04103dd}} 
+virtual void {\bfseries Check\+Not\+Back\+Reference\+Ignore\+Case} (\mbox{\hyperlink{classint}{int}} start\+\_\+reg, \mbox{\hyperlink{classbool}{bool}} read\+\_\+backward, \mbox{\hyperlink{classbool}{bool}} unicode, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+no\+\_\+match)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a166929a05dac7eae8623d87ea8f8a7a8}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a166929a05dac7eae8623d87ea8f8a7a8}} 
+virtual void {\bfseries Check\+Not\+Character} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} c, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+not\+\_\+equal)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a67b8feb622ba65e52941ce3ece8c280f}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a67b8feb622ba65e52941ce3ece8c280f}} 
+virtual void {\bfseries Check\+Not\+Character\+After\+And} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} c, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} mask, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+not\+\_\+equal)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a40e51e9bad5b9af1abafcfe97fd936b5}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a40e51e9bad5b9af1abafcfe97fd936b5}} 
+virtual void {\bfseries Check\+Not\+Character\+After\+Minus\+And} (uc16 c, uc16 minus, uc16 mask, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+not\+\_\+equal)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_aa580bf36d047a145e1fb53452507c36a}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_aa580bf36d047a145e1fb53452507c36a}} 
+virtual void {\bfseries Check\+Character\+In\+Range} (uc16 from, uc16 to, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+in\+\_\+range)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a47ce9cc04f523e74283efe32df5214f5}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a47ce9cc04f523e74283efe32df5214f5}} 
+virtual void {\bfseries Check\+Character\+Not\+In\+Range} (uc16 from, uc16 to, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+not\+\_\+in\+\_\+range)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a66db080239bfb6f8fdff5a8daeedae77}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a66db080239bfb6f8fdff5a8daeedae77}} 
+virtual void {\bfseries Check\+Bit\+In\+Table} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ByteArray}{Byte\+Array}} $>$ table, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+bit\+\_\+set)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_ab8a603afa1b792d76b0efc8087a56e47}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_ab8a603afa1b792d76b0efc8087a56e47}} 
+virtual void {\bfseries Check\+Position} (\mbox{\hyperlink{classint}{int}} cp\+\_\+offset, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+outside\+\_\+input)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a0c869f774ae12719a847e6ce9ac0968e}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a0c869f774ae12719a847e6ce9ac0968e}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Check\+Special\+Character\+Class} (uc16 \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+no\+\_\+match)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_ae2fb2c7ebeab34dba99bdebce90357e3}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_ae2fb2c7ebeab34dba99bdebce90357e3}} 
+virtual void {\bfseries Fail} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a5b146b01df1fec8e85873e3433d32ece}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a5b146b01df1fec8e85873e3433d32ece}} 
+virtual \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ {\bfseries Get\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ source)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a7d9b105b431d2c041dcaf579a5e07ad7}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a7d9b105b431d2c041dcaf579a5e07ad7}} 
+virtual void {\bfseries Go\+To} (\mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$label)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_aaa10ca08038847a4aafc612dfbf1f99e}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_aaa10ca08038847a4aafc612dfbf1f99e}} 
+virtual void {\bfseries If\+Register\+GE} (\mbox{\hyperlink{classint}{int}} reg, \mbox{\hyperlink{classint}{int}} comparand, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$if\+\_\+ge)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a17fa1557acfac1b38dc9b4d2f14dc6aa}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a17fa1557acfac1b38dc9b4d2f14dc6aa}} 
+virtual void {\bfseries If\+Register\+LT} (\mbox{\hyperlink{classint}{int}} reg, \mbox{\hyperlink{classint}{int}} comparand, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$if\+\_\+lt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_aee6b5b672fef83e564b688cb49ca1faf}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_aee6b5b672fef83e564b688cb49ca1faf}} 
+virtual void {\bfseries If\+Register\+Eq\+Pos} (\mbox{\hyperlink{classint}{int}} reg, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$if\+\_\+eq)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a25518d508ddc1a3b7f46cc81c3ad4709}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a25518d508ddc1a3b7f46cc81c3ad4709}} 
+virtual Irregexp\+Implementation {\bfseries Implementation} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a70ae46b2209eeb6f5c6c341e9e75a45d}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a70ae46b2209eeb6f5c6c341e9e75a45d}} 
+virtual void {\bfseries Load\+Current\+Character} (\mbox{\hyperlink{classint}{int}} cp\+\_\+offset, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+end\+\_\+of\+\_\+input, \mbox{\hyperlink{classbool}{bool}} check\+\_\+bounds=true, \mbox{\hyperlink{classint}{int}} characters=1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a17940a7e7adcb1bdd733f26efc5a535a}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a17940a7e7adcb1bdd733f26efc5a535a}} 
+virtual void {\bfseries Pop\+Current\+Position} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a9ae447d9f1c7099c34ed87bd4e25ba41}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a9ae447d9f1c7099c34ed87bd4e25ba41}} 
+virtual void {\bfseries Pop\+Register} (\mbox{\hyperlink{classint}{int}} register\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_ad2baaad9847dad7ce73177f83ec0a155}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_ad2baaad9847dad7ce73177f83ec0a155}} 
+virtual void {\bfseries Push\+Backtrack} (\mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$label)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_acd66249747a1cc211f794e839aad4784}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_acd66249747a1cc211f794e839aad4784}} 
+virtual void {\bfseries Push\+Current\+Position} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_aef768ba96f1fc2bb430e59cfa023a306}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_aef768ba96f1fc2bb430e59cfa023a306}} 
+virtual void {\bfseries Push\+Register} (\mbox{\hyperlink{classint}{int}} register\+\_\+index, Stack\+Check\+Flag check\+\_\+stack\+\_\+limit)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a2f417e1d6abbfffb2fbdacb6b0e3d21f}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a2f417e1d6abbfffb2fbdacb6b0e3d21f}} 
+virtual void {\bfseries Read\+Current\+Position\+From\+Register} (\mbox{\hyperlink{classint}{int}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_add9f6b984554f1493883e4731d47b5d5}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_add9f6b984554f1493883e4731d47b5d5}} 
+virtual void {\bfseries Read\+Stack\+Pointer\+From\+Register} (\mbox{\hyperlink{classint}{int}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a79b55c9084b98d1779990eee9b92ee2f}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a79b55c9084b98d1779990eee9b92ee2f}} 
+virtual void {\bfseries Set\+Current\+Position\+From\+End} (\mbox{\hyperlink{classint}{int}} by)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_acf3977adf9864f44f7d77741dd38e912}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_acf3977adf9864f44f7d77741dd38e912}} 
+virtual void {\bfseries Set\+Register} (\mbox{\hyperlink{classint}{int}} register\+\_\+index, \mbox{\hyperlink{classint}{int}} to)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a9b9f04a2468a95654fcf47cc1138e126}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_a9b9f04a2468a95654fcf47cc1138e126}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Succeed} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_abbc5bf6f018f59a42e35d9dc043d43d3}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_abbc5bf6f018f59a42e35d9dc043d43d3}} 
+virtual void {\bfseries Write\+Current\+Position\+To\+Register} (\mbox{\hyperlink{classint}{int}} reg, \mbox{\hyperlink{classint}{int}} cp\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_aa166f443e627743bed233f025faf5151}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_aa166f443e627743bed233f025faf5151}} 
+virtual void {\bfseries Clear\+Registers} (\mbox{\hyperlink{classint}{int}} reg\+\_\+from, \mbox{\hyperlink{classint}{int}} reg\+\_\+to)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_af72711a532acfce762ca951f20013a8a}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_af72711a532acfce762ca951f20013a8a}} 
+virtual void {\bfseries Write\+Stack\+Pointer\+To\+Register} (\mbox{\hyperlink{classint}{int}} reg)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_ab2de96e2a67a91358b6005082c2238fd}\label{classv8_1_1internal_1_1RegExpMacroAssemblerIA32_ab2de96e2a67a91358b6005082c2238fd}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Check\+Stack\+Guard\+State} (\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$return\+\_\+address, \mbox{\hyperlink{classuintptr__t}{Address}} raw\+\_\+code, \mbox{\hyperlink{classuintptr__t}{Address}} re\+\_\+frame)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file regexp-\/macro-\/assembler-\/ia32.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/ia32/regexp-\/macro-\/assembler-\/ia32.\+h\end{DoxyCompactItemize}

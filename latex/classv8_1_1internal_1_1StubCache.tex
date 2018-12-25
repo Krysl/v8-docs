@@ -1,0 +1,100 @@
+\hypertarget{classv8_1_1internal_1_1StubCache}{}\section{v8\+:\+:internal\+:\+:Stub\+Cache Class Reference}
+\label{classv8_1_1internal_1_1StubCache}\index{v8\+::internal\+::\+Stub\+Cache@{v8\+::internal\+::\+Stub\+Cache}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1StubCache_1_1Entry}{Entry}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_ab15c79e4f18b5d3fbc4ede4c256f35fb}\label{classv8_1_1internal_1_1StubCache_ab15c79e4f18b5d3fbc4ede4c256f35fb}} 
+enum {\bfseries Table} \{ {\bfseries k\+Primary}, 
+{\bfseries k\+Secondary}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_a1d7461d9541a76fea7335451d844449b}\label{classv8_1_1internal_1_1StubCache_a1d7461d9541a76fea7335451d844449b}} 
+void {\bfseries Initialize} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_a35d25392fec742f59661f67686e088b2}\label{classv8_1_1internal_1_1StubCache_a35d25392fec742f59661f67686e088b2}} 
+void {\bfseries Set} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} handler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_ab80ad2e45f300947de004c306949e624}\label{classv8_1_1internal_1_1StubCache_ab80ad2e45f300947de004c306949e624}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} {\bfseries Get} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_ab9c691287872be2c5d6dacb76b7635b4}\label{classv8_1_1internal_1_1StubCache_ab9c691287872be2c5d6dacb76b7635b4}} 
+void {\bfseries Clear} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_a575962f2abed80344525523caea0f6ff}\label{classv8_1_1internal_1_1StubCache_a575962f2abed80344525523caea0f6ff}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1SCTableReference}{S\+C\+Table\+Reference}} {\bfseries key\+\_\+reference} (Stub\+Cache\+::\+Table table)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_a5fafa8f381e563ececf1822dc4115660}\label{classv8_1_1internal_1_1StubCache_a5fafa8f381e563ececf1822dc4115660}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1SCTableReference}{S\+C\+Table\+Reference}} {\bfseries map\+\_\+reference} (Stub\+Cache\+::\+Table table)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_a24b58a5748ec9e5daddb55777e945319}\label{classv8_1_1internal_1_1StubCache_a24b58a5748ec9e5daddb55777e945319}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1SCTableReference}{S\+C\+Table\+Reference}} {\bfseries value\+\_\+reference} (Stub\+Cache\+::\+Table table)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_aab4c138ee8789856c0a67058107a9c58}\label{classv8_1_1internal_1_1StubCache_aab4c138ee8789856c0a67058107a9c58}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1StubCache_1_1Entry}{Stub\+Cache\+::\+Entry}} $\ast$ {\bfseries first\+\_\+entry} (Stub\+Cache\+::\+Table table)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_a09849599e472fa634b681bc3c2aef9af}\label{classv8_1_1internal_1_1StubCache_a09849599e472fa634b681bc3c2aef9af}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_a3da7a5deaea1235ff591685f3314ea9e}\label{classv8_1_1internal_1_1StubCache_a3da7a5deaea1235ff591685f3314ea9e}} 
+{\bfseries Stub\+Cache} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_aeebd9314dc3ee8996a0d19d573580698}\label{classv8_1_1internal_1_1StubCache_aeebd9314dc3ee8996a0d19d573580698}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Primary\+Offset\+For\+Testing} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_a53e5ff1d18762fa44df10fe6004a8010}\label{classv8_1_1internal_1_1StubCache_a53e5ff1d18762fa44df10fe6004a8010}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Secondary\+Offset\+For\+Testing} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, \mbox{\hyperlink{classint}{int}} seed)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_a07d471a2ba3f66c34c0dce09cb11bee8}\label{classv8_1_1internal_1_1StubCache_a07d471a2ba3f66c34c0dce09cb11bee8}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Cache\+Index\+Shift} = Name\+::k\+Hash\+Shift
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_a227170c5270d6466a4f116206a12f879}\label{classv8_1_1internal_1_1StubCache_a227170c5270d6466a4f116206a12f879}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Primary\+Table\+Bits} = 11
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_aadaf0bfada4516c5918921ed05bdfb74}\label{classv8_1_1internal_1_1StubCache_aadaf0bfada4516c5918921ed05bdfb74}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Primary\+Table\+Size} = (1 $<$$<$ k\+Primary\+Table\+Bits)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_a38beaddc959a149be39c0945b839c696}\label{classv8_1_1internal_1_1StubCache_a38beaddc959a149be39c0945b839c696}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Secondary\+Table\+Bits} = 9
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_a9166b165aa5c1debb4c3d83923948df8}\label{classv8_1_1internal_1_1StubCache_a9166b165aa5c1debb4c3d83923948df8}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Secondary\+Table\+Size} = (1 $<$$<$ k\+Secondary\+Table\+Bits)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_a46c6d3776aedbb61c9816a0d2ba439b9}\label{classv8_1_1internal_1_1StubCache_a46c6d3776aedbb61c9816a0d2ba439b9}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Secondary\+Magic} = 0xb16ca6e5
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_aba4f0964bdacf2bbf62cf876e5d28d0a}\label{classv8_1_1internal_1_1StubCache_aba4f0964bdacf2bbf62cf876e5d28d0a}} 
+class {\bfseries Isolate}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StubCache_ad842275e288fccee190c3166f1bc3eed}\label{classv8_1_1internal_1_1StubCache_ad842275e288fccee190c3166f1bc3eed}} 
+class {\bfseries S\+C\+Table\+Reference}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 32 of file stub-\/cache.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ic/stub-\/cache.\+h\item 
+v8/src/ic/stub-\/cache.\+cc\end{DoxyCompactItemize}

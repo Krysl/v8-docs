@@ -1,0 +1,66 @@
+\hypertarget{classv8_1_1internal_1_1SlotSet}{}\section{v8\+:\+:internal\+:\+:Slot\+Set Class Reference}
+\label{classv8_1_1internal_1_1SlotSet}\index{v8\+::internal\+::\+Slot\+Set@{v8\+::internal\+::\+Slot\+Set}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Slot\+Set\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1SlotSet}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SlotSet_a88761222bc45aa62ceaa255c923eb9ce}\label{classv8_1_1internal_1_1SlotSet_a88761222bc45aa62ceaa255c923eb9ce}} 
+enum {\bfseries Empty\+Bucket\+Mode} \{ {\bfseries F\+R\+E\+E\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+B\+U\+C\+K\+E\+TS}, 
+{\bfseries P\+R\+E\+F\+R\+E\+E\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+B\+U\+C\+K\+E\+TS}, 
+{\bfseries K\+E\+E\+P\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+B\+U\+C\+K\+E\+TS}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SlotSet_a3991eba2add7cf9153acbe6a5f23a4bb}\label{classv8_1_1internal_1_1SlotSet_a3991eba2add7cf9153acbe6a5f23a4bb}} 
+void {\bfseries Set\+Page\+Start} (\mbox{\hyperlink{classuintptr__t}{Address}} page\+\_\+start)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SlotSet_a05141866e8b3b7f85c06957c6cdc57cb}\label{classv8_1_1internal_1_1SlotSet_a05141866e8b3b7f85c06957c6cdc57cb}} 
+{\footnotesize template$<$Access\+Mode access\+\_\+mode = Access\+Mode\+::\+A\+T\+O\+M\+IC$>$ }\\void {\bfseries Insert} (\mbox{\hyperlink{classint}{int}} slot\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SlotSet_a2e460090d4c2ecfab5e42a77df808bab}\label{classv8_1_1internal_1_1SlotSet_a2e460090d4c2ecfab5e42a77df808bab}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Contains} (\mbox{\hyperlink{classint}{int}} slot\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SlotSet_a980b7dfc0d0145ff484d72763729a76b}\label{classv8_1_1internal_1_1SlotSet_a980b7dfc0d0145ff484d72763729a76b}} 
+void {\bfseries Remove} (\mbox{\hyperlink{classint}{int}} slot\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SlotSet_a4cf43d1d4089a1df2bf55948ef802eab}\label{classv8_1_1internal_1_1SlotSet_a4cf43d1d4089a1df2bf55948ef802eab}} 
+void {\bfseries Remove\+Range} (\mbox{\hyperlink{classint}{int}} start\+\_\+offset, \mbox{\hyperlink{classint}{int}} end\+\_\+offset, Empty\+Bucket\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SlotSet_a986636bf33efe2283031b903afd04148}\label{classv8_1_1internal_1_1SlotSet_a986636bf33efe2283031b903afd04148}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Lookup} (\mbox{\hyperlink{classint}{int}} slot\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SlotSet_a1568daca2eea49df733758eb974b525c}\label{classv8_1_1internal_1_1SlotSet_a1568daca2eea49df733758eb974b525c}} 
+{\footnotesize template$<$typename Callback $>$ }\\\mbox{\hyperlink{classint}{int}} {\bfseries Iterate} (Callback callback, Empty\+Bucket\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SlotSet_a0bd413da3d0dba3cb0c54e0754453307}\label{classv8_1_1internal_1_1SlotSet_a0bd413da3d0dba3cb0c54e0754453307}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Pre\+Freed\+Empty\+Buckets} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SlotSet_aaf4aade22905a8419144e22694602d02}\label{classv8_1_1internal_1_1SlotSet_aaf4aade22905a8419144e22694602d02}} 
+void {\bfseries Pre\+Free\+Empty\+Buckets} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SlotSet_a7df6ab804bef841d417b18ab36df271b}\label{classv8_1_1internal_1_1SlotSet_a7df6ab804bef841d417b18ab36df271b}} 
+void {\bfseries Free\+Empty\+Buckets} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SlotSet_a2b7af555951328472f307d102932bc98}\label{classv8_1_1internal_1_1SlotSet_a2b7af555951328472f307d102932bc98}} 
+void {\bfseries Free\+To\+Be\+Freed\+Buckets} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 27 of file slot-\/set.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/slot-\/set.\+h\end{DoxyCompactItemize}

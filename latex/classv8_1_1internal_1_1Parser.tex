@@ -1,0 +1,79 @@
+\hypertarget{classv8_1_1internal_1_1Parser}{}\section{v8\+:\+:internal\+:\+:Parser Class Reference}
+\label{classv8_1_1internal_1_1Parser}\index{v8\+::internal\+::\+Parser@{v8\+::internal\+::\+Parser}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1Parser}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Parser_a381ef18980cfd4edc5a94320f3ffdb56}\label{classv8_1_1internal_1_1Parser_a381ef18980cfd4edc5a94320f3ffdb56}} 
+{\bfseries Parser} (\mbox{\hyperlink{classv8_1_1internal_1_1ParseInfo}{Parse\+Info}} $\ast$info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Parser_a52beadf837b1240bdfd58b814082b96d}\label{classv8_1_1internal_1_1Parser_a52beadf837b1240bdfd58b814082b96d}} 
+void {\bfseries Parse\+On\+Background} (\mbox{\hyperlink{classv8_1_1internal_1_1ParseInfo}{Parse\+Info}} $\ast$info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Parser_a35cf1751f956acca6fc1db2f6290c204}\label{classv8_1_1internal_1_1Parser_a35cf1751f956acca6fc1db2f6290c204}} 
+void {\bfseries Initialize\+Empty\+Scope\+Chain} (\mbox{\hyperlink{classv8_1_1internal_1_1ParseInfo}{Parse\+Info}} $\ast$info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Parser_a6ab89cd0a4c61a2f459f353eaef183c2}\label{classv8_1_1internal_1_1Parser_a6ab89cd0a4c61a2f459f353eaef183c2}} 
+void {\bfseries Deserialize\+Scope\+Chain} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1ParseInfo}{Parse\+Info}} $\ast$info, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ScopeInfo}{Scope\+Info}} $>$ maybe\+\_\+outer\+\_\+scope\+\_\+info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Parser_a83c18db5b20691f8324713a239f8d975}\label{classv8_1_1internal_1_1Parser_a83c18db5b20691f8324713a239f8d975}} 
+void {\bfseries Update\+Statistics} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $>$ script)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Parser_ae26011456d1b1a5cc4e2f70f1d5396b6}\label{classv8_1_1internal_1_1Parser_ae26011456d1b1a5cc4e2f70f1d5396b6}} 
+void {\bfseries Handle\+Source\+U\+R\+L\+Comments} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $>$ script)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Parser_a8b261f28da2f25b1e8f44bb849774ef4}\label{classv8_1_1internal_1_1Parser_a8b261f28da2f25b1e8f44bb849774ef4}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Pre\+Parser} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Parser_afc69242dfa3444acf456dc297a778e31}\label{classv8_1_1internal_1_1Parser_afc69242dfa3444acf456dc297a778e31}} 
+class {\bfseries Parser\+Base$<$ Parser $>$}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Parser_a6945f4198235ca95e72869819339afae}\label{classv8_1_1internal_1_1Parser_a6945f4198235ca95e72869819339afae}} 
+class {\bfseries v8\+::internal\+::\+Expression\+Classifier\+Error\+Tracker$<$ Parser\+Types$<$ Parser $>$ $>$}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Parser_ad176235c91e9b3cd1c5d826507c73b31}\label{classv8_1_1internal_1_1Parser_ad176235c91e9b3cd1c5d826507c73b31}} 
+class {\bfseries Pattern\+Rewriter}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Parser_aa0cd6e888d222bf4b9d65b67a8011e59}\label{classv8_1_1internal_1_1Parser_aa0cd6e888d222bf4b9d65b67a8011e59}} 
+class {\bfseries Initializer\+Rewriter}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Parser_ae91175f36dbfc9486fc551dc2a8c634d}\label{classv8_1_1internal_1_1Parser_ae91175f36dbfc9486fc551dc2a8c634d}} 
+class {\bfseries Pre\+Parser\+Zone\+Scope}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Parser_ab4c50cf2cd55ecf29dfa76c165343021}\label{classv8_1_1internal_1_1Parser_ab4c50cf2cd55ecf29dfa76c165343021}} 
+class {\bfseries Parser\+Target}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Parser_adaee694825d204980325732bdc0b5428}\label{classv8_1_1internal_1_1Parser_adaee694825d204980325732bdc0b5428}} 
+class {\bfseries Parser\+Target\+Scope}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Parser_a925203dd2ac2ec2a777f34fbfeb6f1a7}\label{classv8_1_1internal_1_1Parser_a925203dd2ac2ec2a777f34fbfeb6f1a7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries v8\+::internal\+::parsing\+::\+Parse\+Program} (\mbox{\hyperlink{classv8_1_1internal_1_1ParseInfo}{Parse\+Info}} $\ast$, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Parser_a818b4960703afdde42bfa842a3fe60f5}\label{classv8_1_1internal_1_1Parser_a818b4960703afdde42bfa842a3fe60f5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries v8\+::internal\+::parsing\+::\+Parse\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1ParseInfo}{Parse\+Info}} $\ast$, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ shared\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 162 of file parser.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/parsing/parser.\+h\item 
+v8/src/parsing/parser.\+cc\item 
+v8/src/parsing/pattern-\/rewriter.\+cc\end{DoxyCompactItemize}

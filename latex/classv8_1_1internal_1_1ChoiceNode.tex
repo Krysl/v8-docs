@@ -1,0 +1,97 @@
+\hypertarget{classv8_1_1internal_1_1ChoiceNode}{}\section{v8\+:\+:internal\+:\+:Choice\+Node Class Reference}
+\label{classv8_1_1internal_1_1ChoiceNode}\index{v8\+::internal\+::\+Choice\+Node@{v8\+::internal\+::\+Choice\+Node}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Choice\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1ChoiceNode}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_a018fa28745789e0eb28b243570ed025c}\label{classv8_1_1internal_1_1ChoiceNode_a018fa28745789e0eb28b243570ed025c}} 
+{\bfseries Choice\+Node} (\mbox{\hyperlink{classint}{int}} expected\+\_\+size, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_aa22d77c134a593d9a516c7704e67df99}\label{classv8_1_1internal_1_1ChoiceNode_aa22d77c134a593d9a516c7704e67df99}} 
+void {\bfseries Accept} (\mbox{\hyperlink{classv8_1_1internal_1_1NodeVisitor}{Node\+Visitor}} $\ast$visitor) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_a43dcb33c0c050a62d779d8d7c82ab868}\label{classv8_1_1internal_1_1ChoiceNode_a43dcb33c0c050a62d779d8d7c82ab868}} 
+void {\bfseries Add\+Alternative} (\mbox{\hyperlink{classv8_1_1internal_1_1GuardedAlternative}{Guarded\+Alternative}} node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_a2e4d4b33b955dfbef9722332f9209906}\label{classv8_1_1internal_1_1ChoiceNode_a2e4d4b33b955dfbef9722332f9209906}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1GuardedAlternative}{Guarded\+Alternative}} $>$ $\ast$ {\bfseries alternatives} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_a0e140854cd34988a22154bca49ead44c}\label{classv8_1_1internal_1_1ChoiceNode_a0e140854cd34988a22154bca49ead44c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1DispatchTable}{Dispatch\+Table}} $\ast$ {\bfseries Get\+Table} (\mbox{\hyperlink{classbool}{bool}} ignore\+\_\+case)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_afac3b6042f7c9172a19242b5c233eaff}\label{classv8_1_1internal_1_1ChoiceNode_afac3b6042f7c9172a19242b5c233eaff}} 
+void {\bfseries Emit} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classv8_1_1internal_1_1Trace}{Trace}} $\ast$trace) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_a164d4fbae876530380d66f49dcc26dc1}\label{classv8_1_1internal_1_1ChoiceNode_a164d4fbae876530380d66f49dcc26dc1}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Eats\+At\+Least} (\mbox{\hyperlink{classint}{int}} still\+\_\+to\+\_\+find, \mbox{\hyperlink{classint}{int}} budget, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_afcd5ff9141d54e2d163a60a66cb3abbd}\label{classv8_1_1internal_1_1ChoiceNode_afcd5ff9141d54e2d163a60a66cb3abbd}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Eats\+At\+Least\+Helper} (\mbox{\hyperlink{classint}{int}} still\+\_\+to\+\_\+find, \mbox{\hyperlink{classint}{int}} budget, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ignore\+\_\+this\+\_\+node, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_a7e02f61adeacbaa83053799ddc1d6781}\label{classv8_1_1internal_1_1ChoiceNode_a7e02f61adeacbaa83053799ddc1d6781}} 
+void {\bfseries Get\+Quick\+Check\+Details} (\mbox{\hyperlink{classv8_1_1internal_1_1QuickCheckDetails}{Quick\+Check\+Details}} $\ast$details, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classint}{int}} characters\+\_\+filled\+\_\+in, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_a76e6061c827e68d87c885a71455eaffc}\label{classv8_1_1internal_1_1ChoiceNode_a76e6061c827e68d87c885a71455eaffc}} 
+void {\bfseries Fill\+In\+B\+M\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} offset, \mbox{\hyperlink{classint}{int}} budget, \mbox{\hyperlink{classv8_1_1internal_1_1BoyerMooreLookahead}{Boyer\+Moore\+Lookahead}} $\ast$bm, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_a424ff01754676f5bac9b7e5356332dc3}\label{classv8_1_1internal_1_1ChoiceNode_a424ff01754676f5bac9b7e5356332dc3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries being\+\_\+calculated} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_ac196fd8c0df4d1676a23fed33ad460c6}\label{classv8_1_1internal_1_1ChoiceNode_ac196fd8c0df4d1676a23fed33ad460c6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries not\+\_\+at\+\_\+start} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_a43edce21f575aebdb5417794138043be}\label{classv8_1_1internal_1_1ChoiceNode_a43edce21f575aebdb5417794138043be}} 
+void {\bfseries set\+\_\+not\+\_\+at\+\_\+start} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_a756fc92efb374945d6584a8f68ba9e1f}\label{classv8_1_1internal_1_1ChoiceNode_a756fc92efb374945d6584a8f68ba9e1f}} 
+void {\bfseries set\+\_\+being\+\_\+calculated} (\mbox{\hyperlink{classbool}{bool}} b)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_a92f25918d5b798881b60925507247cdf}\label{classv8_1_1internal_1_1ChoiceNode_a92f25918d5b798881b60925507247cdf}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries try\+\_\+to\+\_\+emit\+\_\+quick\+\_\+check\+\_\+for\+\_\+alternative} (\mbox{\hyperlink{classbool}{bool}} is\+\_\+first)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_ab00a04d448d8665a06af6f12a1d522ef}\label{classv8_1_1internal_1_1ChoiceNode_ab00a04d448d8665a06af6f12a1d522ef}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ {\bfseries Filter\+One\+Byte} (\mbox{\hyperlink{classint}{int}} depth) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_a807bb389712f32f0a2a356708b56d022}\label{classv8_1_1internal_1_1ChoiceNode_a807bb389712f32f0a2a356708b56d022}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries read\+\_\+backward} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_a4c728774f51d6874a8894a444486f10e}\label{classv8_1_1internal_1_1ChoiceNode_a4c728774f51d6874a8894a444486f10e}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Greedy\+Loop\+Text\+Length\+For\+Alternative} (\mbox{\hyperlink{classv8_1_1internal_1_1GuardedAlternative}{Guarded\+Alternative}} $\ast$alternative)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_a3820e11ba725590ffc4e1d5d3a2b19ad}\label{classv8_1_1internal_1_1ChoiceNode_a3820e11ba725590ffc4e1d5d3a2b19ad}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1GuardedAlternative}{Guarded\+Alternative}} $>$ $\ast$ {\bfseries alternatives\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_ab1c57f90b7cb7e0e0c0a088d6a0f8f6c}\label{classv8_1_1internal_1_1ChoiceNode_ab1c57f90b7cb7e0e0c0a088d6a0f8f6c}} 
+class {\bfseries Dispatch\+Table\+Constructor}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ChoiceNode_a1e23f70a55de946d03c863586003862d}\label{classv8_1_1internal_1_1ChoiceNode_a1e23f70a55de946d03c863586003862d}} 
+class {\bfseries Analysis}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 920 of file jsregexp.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/jsregexp.\+h\item 
+v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

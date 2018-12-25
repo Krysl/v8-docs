@@ -1,0 +1,44 @@
+\hypertarget{classv8_1_1internal_1_1LiveObjectVisitor}{}\section{v8\+:\+:internal\+:\+:Live\+Object\+Visitor Class Reference}
+\label{classv8_1_1internal_1_1LiveObjectVisitor}\index{v8\+::internal\+::\+Live\+Object\+Visitor@{v8\+::internal\+::\+Live\+Object\+Visitor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Live\+Object\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1LiveObjectVisitor}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveObjectVisitor_ab1c922908b4c4012ad95f31a4a4e3652}\label{classv8_1_1internal_1_1LiveObjectVisitor_ab1c922908b4c4012ad95f31a4a4e3652}} 
+enum {\bfseries Iteration\+Mode} \{ {\bfseries k\+Keep\+Marking}, 
+{\bfseries k\+Clear\+Markbits}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveObjectVisitor_abc101092a0a15992b68a1367e264cee2}\label{classv8_1_1internal_1_1LiveObjectVisitor_abc101092a0a15992b68a1367e264cee2}} 
+{\footnotesize template$<$class Visitor , typename Marking\+State $>$ }\\static \mbox{\hyperlink{classbool}{bool}} {\bfseries Visit\+Black\+Objects} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk, Marking\+State $\ast$state, Visitor $\ast$visitor, Iteration\+Mode iteration\+\_\+mode, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$$\ast$failed\+\_\+object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveObjectVisitor_a3aaf3c51c4da48bd802f7638f12f3eab}\label{classv8_1_1internal_1_1LiveObjectVisitor_a3aaf3c51c4da48bd802f7638f12f3eab}} 
+{\footnotesize template$<$class Visitor , typename Marking\+State $>$ }\\static void {\bfseries Visit\+Black\+Objects\+No\+Fail} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk, Marking\+State $\ast$state, Visitor $\ast$visitor, Iteration\+Mode iteration\+\_\+mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveObjectVisitor_aa97e85b57c70291459df64371dee3914}\label{classv8_1_1internal_1_1LiveObjectVisitor_aa97e85b57c70291459df64371dee3914}} 
+{\footnotesize template$<$class Visitor , typename Marking\+State $>$ }\\static void {\bfseries Visit\+Grey\+Objects\+No\+Fail} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk, Marking\+State $\ast$state, Visitor $\ast$visitor, Iteration\+Mode iteration\+\_\+mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveObjectVisitor_a19075b50dd180af1c5e2ee5507293a4c}\label{classv8_1_1internal_1_1LiveObjectVisitor_a19075b50dd180af1c5e2ee5507293a4c}} 
+{\footnotesize template$<$typename Marking\+State $>$ }\\static void {\bfseries Recompute\+Live\+Bytes} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk, Marking\+State $\ast$state)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 198 of file mark-\/compact.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/mark-\/compact.\+h\item 
+v8/src/heap/mark-\/compact.\+cc\end{DoxyCompactItemize}

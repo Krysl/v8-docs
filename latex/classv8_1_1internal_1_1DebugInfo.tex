@@ -1,0 +1,133 @@
+\hypertarget{classv8_1_1internal_1_1DebugInfo}{}\section{v8\+:\+:internal\+:\+:Debug\+Info Class Reference}
+\label{classv8_1_1internal_1_1DebugInfo}\index{v8\+::internal\+::\+Debug\+Info@{v8\+::internal\+::\+Debug\+Info}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Debug\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1DebugInfo}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_ab0d5b0ae59b77dd358efb540c74a631f}\label{classv8_1_1internal_1_1DebugInfo_ab0d5b0ae59b77dd358efb540c74a631f}} 
+enum {\bfseries Flag} \{ \newline
+{\bfseries k\+None} = 0, 
+{\bfseries k\+Has\+Break\+Info} = 1 $<$$<$ 0, 
+{\bfseries k\+Prepared\+For\+Debug\+Execution} = 1 $<$$<$ 1, 
+{\bfseries k\+Has\+Coverage\+Info} = 1 $<$$<$ 2, 
+\newline
+{\bfseries k\+Break\+At\+Entry} = 1 $<$$<$ 3, 
+{\bfseries k\+Can\+Break\+At\+Entry} = 1 $<$$<$ 4, 
+{\bfseries k\+Debug\+Execution\+Mode} = 1 $<$$<$ 5
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_a4dc865821f0d56b995ad5c3345d89f6a}\label{classv8_1_1internal_1_1DebugInfo_a4dc865821f0d56b995ad5c3345d89f6a}} 
+enum {\bfseries Execution\+Mode} \{ {\bfseries k\+Breakpoints} = 0, 
+{\bfseries k\+Side\+Effects} = k\+Debug\+Execution\+Mode
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_a659a05e7a11dfd24c5e90692fa971450}\label{classv8_1_1internal_1_1DebugInfo_a659a05e7a11dfd24c5e90692fa971450}} 
+enum {\bfseries Side\+Effect\+State} \{ {\bfseries k\+Not\+Computed} = 0, 
+{\bfseries k\+Has\+Side\+Effects} = 1, 
+{\bfseries k\+Requires\+Runtime\+Checks} = 2, 
+{\bfseries k\+Has\+No\+Side\+Effect} = 3
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_adcfd501b2e1d079c48b186f2b46f390b}\label{classv8_1_1internal_1_1DebugInfo_adcfd501b2e1d079c48b186f2b46f390b}} 
+typedef \mbox{\hyperlink{classv8_1_1base_1_1Flags}{base\+::\+Flags}}$<$ Flag $>$ {\bfseries Flags}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_aa28d22bfcd83df5195dfd2e04b720a31}\label{classv8_1_1internal_1_1DebugInfo_aa28d22bfcd83df5195dfd2e04b720a31}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Empty} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_ac57aa4fb4a047c9a174262c4e2c814ab}\label{classv8_1_1internal_1_1DebugInfo_ac57aa4fb4a047c9a174262c4e2c814ab}} 
+Execution\+Mode {\bfseries Debug\+Execution\+Mode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_a32fd8f3c56dd7eab3fac29a5e15f8cf4}\label{classv8_1_1internal_1_1DebugInfo_a32fd8f3c56dd7eab3fac29a5e15f8cf4}} 
+void {\bfseries Set\+Debug\+Execution\+Mode} (Execution\+Mode value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_a00da3b3beed9a5a223e71aaecc738a51}\label{classv8_1_1internal_1_1DebugInfo_a00da3b3beed9a5a223e71aaecc738a51}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Instrumented\+Bytecode\+Array} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_a57db72d187d45e8a06ffc08b3fbd3fd8}\label{classv8_1_1internal_1_1DebugInfo_a57db72d187d45e8a06ffc08b3fbd3fd8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray}{Bytecode\+Array}} {\bfseries Original\+Bytecode\+Array} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_ad97ef9d35ce3df71c05a5f3d529b441f}\label{classv8_1_1internal_1_1DebugInfo_ad97ef9d35ce3df71c05a5f3d529b441f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray}{Bytecode\+Array}} {\bfseries Debug\+Bytecode\+Array} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_a5ce1f31e3738705985a89c5957636798}\label{classv8_1_1internal_1_1DebugInfo_a5ce1f31e3738705985a89c5957636798}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Break\+Info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_a2a0bfe4d6e8e9ab37e5363a565e36774}\label{classv8_1_1internal_1_1DebugInfo_a2a0bfe4d6e8e9ab37e5363a565e36774}} 
+void {\bfseries Clear\+Break\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_a11aa63c2d6ed0eb06045fab2f6441fe2}\label{classv8_1_1internal_1_1DebugInfo_a11aa63c2d6ed0eb06045fab2f6441fe2}} 
+void {\bfseries Set\+Break\+At\+Entry} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_a809413888394c8294d0b51fafbadfc21}\label{classv8_1_1internal_1_1DebugInfo_a809413888394c8294d0b51fafbadfc21}} 
+void {\bfseries Clear\+Break\+At\+Entry} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_a5772a891f3301fb5b46197b2f2e96c85}\label{classv8_1_1internal_1_1DebugInfo_a5772a891f3301fb5b46197b2f2e96c85}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Break\+At\+Entry} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_a1325f18b40d385a8d4a965911b7d1477}\label{classv8_1_1internal_1_1DebugInfo_a1325f18b40d385a8d4a965911b7d1477}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Break\+Point} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} source\+\_\+position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_a672fc4ccc79c1810f0970ff72fc225f6}\label{classv8_1_1internal_1_1DebugInfo_a672fc4ccc79c1810f0970ff72fc225f6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Get\+Break\+Points} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} source\+\_\+position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_af32d2df481b4ad28a67129b926809f9a}\label{classv8_1_1internal_1_1DebugInfo_af32d2df481b4ad28a67129b926809f9a}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Break\+Point\+Count} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_ab82e3c4b731ae708b63dcdfb44699a5b}\label{classv8_1_1internal_1_1DebugInfo_ab82e3c4b731ae708b63dcdfb44699a5b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Break\+At\+Entry} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_ab04881562acf2b313d382d99d40d53c3}\label{classv8_1_1internal_1_1DebugInfo_ab04881562acf2b313d382d99d40d53c3}} 
+Side\+Effect\+State {\bfseries Get\+Side\+Effect\+State} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_a781b69a4db3168b2acb0bda3c25b7cad}\label{classv8_1_1internal_1_1DebugInfo_a781b69a4db3168b2acb0bda3c25b7cad}} 
+{\bfseries D\+E\+C\+L\+\_\+\+I\+N\+T\+\_\+\+A\+C\+C\+E\+S\+S\+O\+RS} (debugging\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_a28243dad293d5b649b54024d3dce781d}\label{classv8_1_1internal_1_1DebugInfo_a28243dad293d5b649b54024d3dce781d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Coverage\+Info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_a5d08063c26c80e0aef6f95c8c12ca07e}\label{classv8_1_1internal_1_1DebugInfo_a5d08063c26c80e0aef6f95c8c12ca07e}} 
+void {\bfseries Clear\+Coverage\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_a5e3bddbd6ec1b2b9774ffc54012a7237}\label{classv8_1_1internal_1_1DebugInfo_a5e3bddbd6ec1b2b9774ffc54012a7237}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Clear\+Break\+Point} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1DebugInfo}{Debug\+Info}} $>$ debug\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BreakPoint}{Break\+Point}} $>$ break\+\_\+point)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_a9e3fecebdb4add55d803f04a0c2215cb}\label{classv8_1_1internal_1_1DebugInfo_a9e3fecebdb4add55d803f04a0c2215cb}} 
+static void {\bfseries Set\+Break\+Point} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1DebugInfo}{Debug\+Info}} $>$ debug\+\_\+info, \mbox{\hyperlink{classint}{int}} source\+\_\+position, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BreakPoint}{Break\+Point}} $>$ break\+\_\+point)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_ab7ff70697fdfdc8b02e1b9fd9a7bfd79}\label{classv8_1_1internal_1_1DebugInfo_ab7ff70697fdfdc8b02e1b9fd9a7bfd79}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Find\+Break\+Point\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1DebugInfo}{Debug\+Info}} $>$ debug\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BreakPoint}{Break\+Point}} $>$ break\+\_\+point)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_ac7a050cc8b20bfba88c1441716cb158b}\label{classv8_1_1internal_1_1DebugInfo_ac7a050cc8b20bfba88c1441716cb158b}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+No\+Debugging\+Id} = 0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugInfo_a0b1600830cc1002be957fe793f3cf28c}\label{classv8_1_1internal_1_1DebugInfo_a0b1600830cc1002be957fe793f3cf28c}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Estimated\+Nof\+Break\+Points\+In\+Function} = 4
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file debug-\/objects.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/debug-\/objects.\+h\item 
+v8/src/objects/debug-\/objects-\/inl.\+h\item 
+v8/src/objects/debug-\/objects.\+cc\end{DoxyCompactItemize}

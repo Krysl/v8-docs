@@ -1,0 +1,77 @@
+\hypertarget{classv8_1_1internal_1_1WasmInterpreterEntryFrame}{}\section{v8\+:\+:internal\+:\+:Wasm\+Interpreter\+Entry\+Frame Class Reference}
+\label{classv8_1_1internal_1_1WasmInterpreterEntryFrame}\index{v8\+::internal\+::\+Wasm\+Interpreter\+Entry\+Frame@{v8\+::internal\+::\+Wasm\+Interpreter\+Entry\+Frame}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Wasm\+Interpreter\+Entry\+Frame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1WasmInterpreterEntryFrame}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmInterpreterEntryFrame_a7db66d2c1180dbd6c765e337ac8c5465}\label{classv8_1_1internal_1_1WasmInterpreterEntryFrame_a7db66d2c1180dbd6c765e337ac8c5465}} 
+Type {\bfseries type} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmInterpreterEntryFrame_abb209d120a5bbfe7a6cc8ff3610e70f2}\label{classv8_1_1internal_1_1WasmInterpreterEntryFrame_abb209d120a5bbfe7a6cc8ff3610e70f2}} 
+void {\bfseries Iterate} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v) const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmInterpreterEntryFrame_a27af350dceb7ba2910b260cdf6994838}\label{classv8_1_1internal_1_1WasmInterpreterEntryFrame_a27af350dceb7ba2910b260cdf6994838}} 
+void {\bfseries Print} (\mbox{\hyperlink{classv8_1_1internal_1_1StringStream}{String\+Stream}} $\ast$accumulator, Print\+Mode mode, \mbox{\hyperlink{classint}{int}} index) const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmInterpreterEntryFrame_a44b9911b6dc31e469936837f1fdf0236}\label{classv8_1_1internal_1_1WasmInterpreterEntryFrame_a44b9911b6dc31e469936837f1fdf0236}} 
+void {\bfseries Summarize} (std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FrameSummary}{Frame\+Summary}} $>$ $\ast$frames) const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmInterpreterEntryFrame_a5fcaec402417add19a475a989c557f48}\label{classv8_1_1internal_1_1WasmInterpreterEntryFrame_a5fcaec402417add19a475a989c557f48}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} {\bfseries unchecked\+\_\+code} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmInterpreterEntryFrame_aa9b2f2ffedd062d8547a9db0da9fbf89}\label{classv8_1_1internal_1_1WasmInterpreterEntryFrame_aa9b2f2ffedd062d8547a9db0da9fbf89}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1WasmDebugInfo}{Wasm\+Debug\+Info}} $\ast$ {\bfseries debug\+\_\+info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmInterpreterEntryFrame_a7df70fe944f7b4d8a52f89fa3101585a}\label{classv8_1_1internal_1_1WasmInterpreterEntryFrame_a7df70fe944f7b4d8a52f89fa3101585a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1WasmInstanceObject}{Wasm\+Instance\+Object}} $\ast$ {\bfseries wasm\+\_\+instance} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmInterpreterEntryFrame_ac5823c9d2eb0435b28ad27ca40c75622}\label{classv8_1_1internal_1_1WasmInterpreterEntryFrame_ac5823c9d2eb0435b28ad27ca40c75622}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $\ast$ {\bfseries script} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmInterpreterEntryFrame_a95ae9c36ef2c7ab8e3ba744419094146}\label{classv8_1_1internal_1_1WasmInterpreterEntryFrame_a95ae9c36ef2c7ab8e3ba744419094146}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries position} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmInterpreterEntryFrame_ab1f8bbf4c62dd426e231229d2c7384e5}\label{classv8_1_1internal_1_1WasmInterpreterEntryFrame_ab1f8bbf4c62dd426e231229d2c7384e5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries context} () const override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmInterpreterEntryFrame_aaacaf33025b3d163e1f270a9a104ec05}\label{classv8_1_1internal_1_1WasmInterpreterEntryFrame_aaacaf33025b3d163e1f270a9a104ec05}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1WasmInterpreterEntryFrame}{Wasm\+Interpreter\+Entry\+Frame}} $\ast$ {\bfseries cast} (\mbox{\hyperlink{classv8_1_1internal_1_1StackFrame}{Stack\+Frame}} $\ast$frame)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmInterpreterEntryFrame_a49315249319de582deab9e725fd5e632}\label{classv8_1_1internal_1_1WasmInterpreterEntryFrame_a49315249319de582deab9e725fd5e632}} 
+{\bfseries Wasm\+Interpreter\+Entry\+Frame} (\mbox{\hyperlink{classv8_1_1internal_1_1StackFrameIteratorBase}{Stack\+Frame\+Iterator\+Base}} $\ast$iterator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmInterpreterEntryFrame_a70a8464b2d9a649851a72ebfe8b36b65}\label{classv8_1_1internal_1_1WasmInterpreterEntryFrame_a70a8464b2d9a649851a72ebfe8b36b65}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Get\+Caller\+Stack\+Pointer} () const override
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmInterpreterEntryFrame_ac7310421866976ca454bbe11c5f926c3}\label{classv8_1_1internal_1_1WasmInterpreterEntryFrame_ac7310421866976ca454bbe11c5f926c3}} 
+class {\bfseries Stack\+Frame\+Iterator\+Base}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 973 of file frames.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/frames.\+h\item 
+v8/src/frames-\/inl.\+h\item 
+v8/src/frames.\+cc\end{DoxyCompactItemize}

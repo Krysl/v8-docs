@@ -1,0 +1,117 @@
+\hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Module Struct Reference}
+\label{structv8_1_1internal_1_1wasm_1_1WasmModule}\index{v8\+::internal\+::wasm\+::\+Wasm\+Module@{v8\+::internal\+::wasm\+::\+Wasm\+Module}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a9ab1665f3fa89d4a382756f3224c333c}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a9ab1665f3fa89d4a382756f3224c333c}} 
+{\bfseries M\+O\+V\+E\+\_\+\+O\+N\+L\+Y\+\_\+\+N\+O\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+OR} (\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{Wasm\+Module}})
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_af1b5cc2684dbc70512ab7dc467b696f7}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_af1b5cc2684dbc70512ab7dc467b696f7}} 
+{\bfseries Wasm\+Module} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $>$ signature\+\_\+zone=nullptr)
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a568f53d30d3aa8efadd709266917e07c}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a568f53d30d3aa8efadd709266917e07c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WireBytesRef}{Wire\+Bytes\+Ref}} {\bfseries Lookup\+Function\+Name} (const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1ModuleWireBytes}{Module\+Wire\+Bytes}} \&wire\+\_\+bytes, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} function\+\_\+index) const
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a9ec62974bccd1c2588ac61f3f32daef1}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a9ec62974bccd1c2588ac61f3f32daef1}} 
+void {\bfseries Add\+Function\+Name\+For\+Testing} (\mbox{\hyperlink{classint}{int}} function\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WireBytesRef}{Wire\+Bytes\+Ref}} name)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_af58814dd1595b4f79af54590aa84f799}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_af58814dd1595b4f79af54590aa84f799}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $>$ {\bfseries signature\+\_\+zone}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_ae9f88e01a642c70299e6e6f7c9a3c146}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_ae9f88e01a642c70299e6e6f7c9a3c146}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries initial\+\_\+pages} = 0
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a08106ef9ccdcab6955a80bf6653e3163}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a08106ef9ccdcab6955a80bf6653e3163}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries maximum\+\_\+pages} = 0
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a0b4ee46ecbb4d0bbeb489fe5df8fffda}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a0b4ee46ecbb4d0bbeb489fe5df8fffda}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+shared\+\_\+memory} = false
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a101db2e81f9decb6d778c07628db18e6}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a101db2e81f9decb6d778c07628db18e6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+maximum\+\_\+pages} = false
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a2e9f97b4c34ad17714950e0f76cf0e38}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a2e9f97b4c34ad17714950e0f76cf0e38}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+memory} = false
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a2bf25679a0e045b130f221c04b719e34}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a2bf25679a0e045b130f221c04b719e34}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries mem\+\_\+export} = false
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a56901830375bb8e0e1a796e712bace65}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a56901830375bb8e0e1a796e712bace65}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries start\+\_\+function\+\_\+index} = -\/1
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_ac6101242a2a805d0e982fff4ddcc4677}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_ac6101242a2a805d0e982fff4ddcc4677}} 
+std\+::vector$<$ \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmGlobal}{Wasm\+Global}} $>$ {\bfseries globals}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_aac5d3631704ea3501131b1416fa3dee8}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_aac5d3631704ea3501131b1416fa3dee8}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries globals\+\_\+buffer\+\_\+size} = 0
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a56f32c556f3ad6b75e11d3d0733cb2a5}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a56f32c556f3ad6b75e11d3d0733cb2a5}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries num\+\_\+imported\+\_\+mutable\+\_\+globals} = 0
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a81b4b2b056e744758f875acafe4c909a}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a81b4b2b056e744758f875acafe4c909a}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries num\+\_\+imported\+\_\+functions} = 0
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a5a60fa14372f7bc06d7d6f51d23b0bee}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a5a60fa14372f7bc06d7d6f51d23b0bee}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries num\+\_\+declared\+\_\+functions} = 0
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a7f0ca2c8a3b3c82713cd02e8c3827a22}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a7f0ca2c8a3b3c82713cd02e8c3827a22}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries num\+\_\+exported\+\_\+functions} = 0
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_ac76bdfa93432deb3dc1580b98a9b836e}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_ac76bdfa93432deb3dc1580b98a9b836e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WireBytesRef}{Wire\+Bytes\+Ref}} {\bfseries name} = \{0, 0\}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a1aa6a1224225b0383475abd4ecc217ef}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a1aa6a1224225b0383475abd4ecc217ef}} 
+std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Signature}{Function\+Sig}} $\ast$ $>$ {\bfseries signatures}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a6759d7de64686a41a9362d9a5c83281c}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a6759d7de64686a41a9362d9a5c83281c}} 
+std\+::vector$<$ \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} $>$ {\bfseries signature\+\_\+ids}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a79b743888793de4a17ae53dd93988de6}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a79b743888793de4a17ae53dd93988de6}} 
+std\+::vector$<$ \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFunction}{Wasm\+Function}} $>$ {\bfseries functions}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_adc0a70e660a7112df858945f38616edc}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_adc0a70e660a7112df858945f38616edc}} 
+std\+::vector$<$ \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmDataSegment}{Wasm\+Data\+Segment}} $>$ {\bfseries data\+\_\+segments}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_af40a46c2d14efc9c68b499d7a459d9b0}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_af40a46c2d14efc9c68b499d7a459d9b0}} 
+std\+::vector$<$ \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmTable}{Wasm\+Table}} $>$ {\bfseries tables}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a4f710e1d1dd945669cbebae2b51835e5}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a4f710e1d1dd945669cbebae2b51835e5}} 
+std\+::vector$<$ \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmImport}{Wasm\+Import}} $>$ {\bfseries import\+\_\+table}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a4dbe8d13d75f2c6c4a8f6e19fdb5eca1}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a4dbe8d13d75f2c6c4a8f6e19fdb5eca1}} 
+std\+::vector$<$ \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmExport}{Wasm\+Export}} $>$ {\bfseries export\+\_\+table}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a54dd2074bfc580f63bb13c45973da43d}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a54dd2074bfc580f63bb13c45973da43d}} 
+std\+::vector$<$ \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmException}{Wasm\+Exception}} $>$ {\bfseries exceptions}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_ac4ac9fc7b0c47f3b6879065cd74278d7}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_ac4ac9fc7b0c47f3b6879065cd74278d7}} 
+std\+::vector$<$ \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmTableInit}{Wasm\+Table\+Init}} $>$ {\bfseries table\+\_\+inits}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a40c66f7d86da5501b2767c4621274312}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a40c66f7d86da5501b2767c4621274312}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1SignatureMap}{Signature\+Map}} {\bfseries signature\+\_\+map}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_ae8e4fe37215c077dc7bbeec494634c35}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_ae8e4fe37215c077dc7bbeec494634c35}} 
+Module\+Origin {\bfseries origin} = k\+Wasm\+Origin
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_ab8c818baf236e4cffe613350e4a9bc2a}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_ab8c818baf236e4cffe613350e4a9bc2a}} 
+std\+::unique\+\_\+ptr$<$ std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}}, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WireBytesRef}{Wire\+Bytes\+Ref}} $>$ $>$ {\bfseries function\+\_\+names}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1wasm_1_1WasmModule_a2bfc4a4d013eff8be50eb097b0516c00}\label{structv8_1_1internal_1_1wasm_1_1WasmModule_a2bfc4a4d013eff8be50eb097b0516c00}} 
+std\+::string {\bfseries source\+\_\+map\+\_\+url}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 153 of file wasm-\/module.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/wasm-\/module.\+h\item 
+v8/src/wasm/wasm-\/module.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,51 @@
+\hypertarget{structv8_1_1debug_1_1LiveEditResult}{}\section{v8\+:\+:debug\+:\+:Live\+Edit\+Result Struct Reference}
+\label{structv8_1_1debug_1_1LiveEditResult}\index{v8\+::debug\+::\+Live\+Edit\+Result@{v8\+::debug\+::\+Live\+Edit\+Result}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1debug_1_1LiveEditResult_a0c9329ad68bf15a8a449e87f21f63d5d}\label{structv8_1_1debug_1_1LiveEditResult_a0c9329ad68bf15a8a449e87f21f63d5d}} 
+enum {\bfseries Status} \{ \newline
+{\bfseries OK}, 
+{\bfseries C\+O\+M\+P\+I\+L\+E\+\_\+\+E\+R\+R\+OR}, 
+{\bfseries B\+L\+O\+C\+K\+E\+D\+\_\+\+B\+Y\+\_\+\+R\+U\+N\+N\+I\+N\+G\+\_\+\+G\+E\+N\+E\+R\+A\+T\+OR}, 
+{\bfseries B\+L\+O\+C\+K\+E\+D\+\_\+\+B\+Y\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+A\+B\+O\+V\+E\+\_\+\+B\+R\+E\+A\+K\+\_\+\+F\+R\+A\+ME}, 
+\newline
+{\bfseries B\+L\+O\+C\+K\+E\+D\+\_\+\+B\+Y\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+B\+E\+L\+O\+W\+\_\+\+N\+O\+N\+\_\+\+D\+R\+O\+P\+P\+A\+B\+L\+E\+\_\+\+F\+R\+A\+ME}, 
+{\bfseries B\+L\+O\+C\+K\+E\+D\+\_\+\+B\+Y\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+F\+U\+N\+C\+T\+I\+ON}, 
+{\bfseries B\+L\+O\+C\+K\+E\+D\+\_\+\+B\+Y\+\_\+\+N\+E\+W\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+I\+N\+\_\+\+R\+E\+S\+T\+A\+R\+T\+\_\+\+F\+R\+A\+ME}, 
+{\bfseries F\+R\+A\+M\+E\+\_\+\+R\+E\+S\+T\+A\+R\+T\+\_\+\+I\+S\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1debug_1_1LiveEditResult_a86a3b95eeefb2288ae298e96b379ac22}\label{structv8_1_1debug_1_1LiveEditResult_a86a3b95eeefb2288ae298e96b379ac22}} 
+Status {\bfseries status} = OK
+\item 
+\mbox{\Hypertarget{structv8_1_1debug_1_1LiveEditResult_a4c8690f2094ec1aa084e39eb82ae472c}\label{structv8_1_1debug_1_1LiveEditResult_a4c8690f2094ec1aa084e39eb82ae472c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries stack\+\_\+changed} = false
+\item 
+\mbox{\Hypertarget{structv8_1_1debug_1_1LiveEditResult_ae59445706df933146d63f135999203d5}\label{structv8_1_1debug_1_1LiveEditResult_ae59445706df933146d63f135999203d5}} 
+\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1debug_1_1Script}{v8\+::debug\+::\+Script}} $>$ {\bfseries script}
+\item 
+\mbox{\Hypertarget{structv8_1_1debug_1_1LiveEditResult_a059bb902da1a8e8bd0a42d2adcb1cd38}\label{structv8_1_1debug_1_1LiveEditResult_a059bb902da1a8e8bd0a42d2adcb1cd38}} 
+\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{v8\+::\+String}} $>$ {\bfseries message}
+\item 
+\mbox{\Hypertarget{structv8_1_1debug_1_1LiveEditResult_ae74eebc8de9f1416f58e5f0e2aed32f7}\label{structv8_1_1debug_1_1LiveEditResult_ae74eebc8de9f1416f58e5f0e2aed32f7}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries line\+\_\+number} = -\/1
+\item 
+\mbox{\Hypertarget{structv8_1_1debug_1_1LiveEditResult_a8ab361737cf0ed727e6d02fa2676e01e}\label{structv8_1_1debug_1_1LiveEditResult_a8ab361737cf0ed727e6d02fa2676e01e}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries column\+\_\+number} = -\/1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 84 of file debug-\/interface.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/debug/debug-\/interface.\+h\end{DoxyCompactItemize}

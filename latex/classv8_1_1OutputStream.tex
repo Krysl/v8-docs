@@ -17,11 +17,11 @@ enum {\bfseries Write\+Result} \{ {\bfseries k\+Continue} = 0,
 \item 
 virtual void \mbox{\hyperlink{classv8_1_1OutputStream_a6c5c308367fc5776bcbedff0e94d6049}{End\+Of\+Stream}} ()=0
 \item 
-virtual int \mbox{\hyperlink{classv8_1_1OutputStream_a93bdaa790cbd66a7283fad2cca3f48f7}{Get\+Chunk\+Size}} ()
+virtual \mbox{\hyperlink{classint}{int}} \mbox{\hyperlink{classv8_1_1OutputStream_a93bdaa790cbd66a7283fad2cca3f48f7}{Get\+Chunk\+Size}} ()
 \item 
-virtual Write\+Result \mbox{\hyperlink{classv8_1_1OutputStream_a42adc62ebe43d00159f80328538f217f}{Write\+Ascii\+Chunk}} (char $\ast$data, int size)=0
+virtual Write\+Result \mbox{\hyperlink{classv8_1_1OutputStream_a42adc62ebe43d00159f80328538f217f}{Write\+Ascii\+Chunk}} (\mbox{\hyperlink{classchar}{char}} $\ast$data, \mbox{\hyperlink{classint}{int}} size)=0
 \item 
-virtual Write\+Result \mbox{\hyperlink{classv8_1_1OutputStream_a104fd1a0b5ef685e1d4967aaacbb9e9d}{Write\+Heap\+Stats\+Chunk}} (\mbox{\hyperlink{structv8_1_1HeapStatsUpdate}{Heap\+Stats\+Update}} $\ast$data, int count)
+virtual Write\+Result \mbox{\hyperlink{classv8_1_1OutputStream_a104fd1a0b5ef685e1d4967aaacbb9e9d}{Write\+Heap\+Stats\+Chunk}} (\mbox{\hyperlink{structv8_1_1HeapStatsUpdate}{Heap\+Stats\+Update}} $\ast$data, \mbox{\hyperlink{classint}{int}} count)
 \end{DoxyCompactItemize}
 
 
@@ -43,7 +43,7 @@ Notify about the end of stream. \mbox{\Hypertarget{classv8_1_1OutputStream_a93bd
 \index{v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}!Get\+Chunk\+Size@{Get\+Chunk\+Size}}
 \index{Get\+Chunk\+Size@{Get\+Chunk\+Size}!v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}}
 \subsubsection{\texorpdfstring{Get\+Chunk\+Size()}{GetChunkSize()}}
-{\footnotesize\ttfamily virtual int v8\+::\+Output\+Stream\+::\+Get\+Chunk\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classint}{int}} v8\+::\+Output\+Stream\+::\+Get\+Chunk\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 Get preferred output chunk size. Called only once. 
 
@@ -53,13 +53,13 @@ Definition at line 458 of file v8-\/profiler.\+h.
 \index{v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}!Write\+Ascii\+Chunk@{Write\+Ascii\+Chunk}}
 \index{Write\+Ascii\+Chunk@{Write\+Ascii\+Chunk}!v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}}
 \subsubsection{\texorpdfstring{Write\+Ascii\+Chunk()}{WriteAsciiChunk()}}
-{\footnotesize\ttfamily virtual Write\+Result v8\+::\+Output\+Stream\+::\+Write\+Ascii\+Chunk (\begin{DoxyParamCaption}\item[{char $\ast$}]{data,  }\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual Write\+Result v8\+::\+Output\+Stream\+::\+Write\+Ascii\+Chunk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classchar}{char}} $\ast$}]{data,  }\item[{\mbox{\hyperlink{classint}{int}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 Writes the next chunk of snapshot data into the stream. Writing can be stopped by returning k\+Abort as function result. End\+Of\+Stream will not be called in case writing was aborted. \mbox{\Hypertarget{classv8_1_1OutputStream_a104fd1a0b5ef685e1d4967aaacbb9e9d}\label{classv8_1_1OutputStream_a104fd1a0b5ef685e1d4967aaacbb9e9d}} 
 \index{v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}!Write\+Heap\+Stats\+Chunk@{Write\+Heap\+Stats\+Chunk}}
 \index{Write\+Heap\+Stats\+Chunk@{Write\+Heap\+Stats\+Chunk}!v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}}
 \subsubsection{\texorpdfstring{Write\+Heap\+Stats\+Chunk()}{WriteHeapStatsChunk()}}
-{\footnotesize\ttfamily virtual Write\+Result v8\+::\+Output\+Stream\+::\+Write\+Heap\+Stats\+Chunk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structv8_1_1HeapStatsUpdate}{Heap\+Stats\+Update}} $\ast$}]{data,  }\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual Write\+Result v8\+::\+Output\+Stream\+::\+Write\+Heap\+Stats\+Chunk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structv8_1_1HeapStatsUpdate}{Heap\+Stats\+Update}} $\ast$}]{data,  }\item[{\mbox{\hyperlink{classint}{int}}}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 Writes the next chunk of heap stats data into the stream. Writing can be stopped by returning k\+Abort as function result. End\+Of\+Stream will not be called in case writing was aborted. 
 

@@ -1,0 +1,54 @@
+\hypertarget{classv8__inspector_1_1AsyncStackTrace}{}\section{v8\+\_\+inspector\+:\+:Async\+Stack\+Trace Class Reference}
+\label{classv8__inspector_1_1AsyncStackTrace}\index{v8\+\_\+inspector\+::\+Async\+Stack\+Trace@{v8\+\_\+inspector\+::\+Async\+Stack\+Trace}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1AsyncStackTrace_a894b6f421aa55c9b2b78f82c171e3d57}\label{classv8__inspector_1_1AsyncStackTrace_a894b6f421aa55c9b2b78f82c171e3d57}} 
+std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+Stack\+Trace $>$ {\bfseries build\+Inspector\+Object} (\mbox{\hyperlink{classv8__inspector_1_1V8Debugger}{V8\+Debugger}} $\ast$debugger, \mbox{\hyperlink{classint}{int}} max\+Async\+Depth) const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1AsyncStackTrace_ab975817a6336693bd1dadba84b96e74e}\label{classv8__inspector_1_1AsyncStackTrace_ab975817a6336693bd1dadba84b96e74e}} 
+void {\bfseries set\+Suspended\+Task\+Id} (void $\ast$task)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1AsyncStackTrace_a6697dcaaf5ff16933fea24b10be5617a}\label{classv8__inspector_1_1AsyncStackTrace_a6697dcaaf5ff16933fea24b10be5617a}} 
+void $\ast$ {\bfseries suspended\+Task\+Id} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1AsyncStackTrace_acd8dfa65bd5caf45dbad8dae4f006eec}\label{classv8__inspector_1_1AsyncStackTrace_acd8dfa65bd5caf45dbad8dae4f006eec}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries context\+Group\+Id} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1AsyncStackTrace_a2e204311ca4633cdb0bca77e19219c06}\label{classv8__inspector_1_1AsyncStackTrace_a2e204311ca4633cdb0bca77e19219c06}} 
+const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \& {\bfseries description} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1AsyncStackTrace_a252df85108a9dca099b71ae173e49a6a}\label{classv8__inspector_1_1AsyncStackTrace_a252df85108a9dca099b71ae173e49a6a}} 
+std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1AsyncStackTrace}{Async\+Stack\+Trace}} $>$ {\bfseries parent} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1AsyncStackTrace_a57865357a608280af8217b5add3fdee3}\label{classv8__inspector_1_1AsyncStackTrace_a57865357a608280af8217b5add3fdee3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+Empty} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1AsyncStackTrace_ab57227517e2972b208685ed1da41907c}\label{classv8__inspector_1_1AsyncStackTrace_ab57227517e2972b208685ed1da41907c}} 
+const \mbox{\hyperlink{structv8__inspector_1_1V8StackTraceId}{V8\+Stack\+Trace\+Id}} \& {\bfseries external\+Parent} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1AsyncStackTrace_aede3cb9966b7440c9f929bc32a41bdca}\label{classv8__inspector_1_1AsyncStackTrace_aede3cb9966b7440c9f929bc32a41bdca}} 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1StackFrame}{Stack\+Frame}} $>$ $>$ \& {\bfseries frames} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1AsyncStackTrace_a3ea40c48caf9c6c1978fa7d023dc299f}\label{classv8__inspector_1_1AsyncStackTrace_a3ea40c48caf9c6c1978fa7d023dc299f}} 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1AsyncStackTrace}{Async\+Stack\+Trace}} $>$ {\bfseries capture} (\mbox{\hyperlink{classv8__inspector_1_1V8Debugger}{V8\+Debugger}} $\ast$, \mbox{\hyperlink{classint}{int}} context\+Group\+Id, const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&description, \mbox{\hyperlink{classint}{int}} max\+Stack\+Size)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1AsyncStackTrace_a63c53c4a60fa57330bf3849adfd4791f}\label{classv8__inspector_1_1AsyncStackTrace_a63c53c4a60fa57330bf3849adfd4791f}} 
+static \mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} {\bfseries store} (\mbox{\hyperlink{classv8__inspector_1_1V8Debugger}{V8\+Debugger}} $\ast$debugger, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1AsyncStackTrace}{Async\+Stack\+Trace}} $>$ stack)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 113 of file v8-\/stack-\/trace-\/impl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/inspector/v8-\/stack-\/trace-\/impl.\+h\item 
+v8/src/inspector/v8-\/stack-\/trace-\/impl.\+cc\end{DoxyCompactItemize}

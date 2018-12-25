@@ -1,0 +1,47 @@
+\hypertarget{classv8_1_1internal_1_1ExitPoint}{}\section{v8\+:\+:internal\+:\+:Exit\+Point Class Reference}
+\label{classv8_1_1internal_1_1ExitPoint}\index{v8\+::internal\+::\+Exit\+Point@{v8\+::internal\+::\+Exit\+Point}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitPoint_a91c0721fb5cf5df992262a745fab0034}\label{classv8_1_1internal_1_1ExitPoint_a91c0721fb5cf5df992262a745fab0034}} 
+typedef std\+::function$<$ void(\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$result)$>$ {\bfseries Indirect\+Return\+Handler}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitPoint_a6196665cbcc38c25cd1ebd80793a24da}\label{classv8_1_1internal_1_1ExitPoint_a6196665cbcc38c25cd1ebd80793a24da}} 
+{\bfseries Exit\+Point} (\mbox{\hyperlink{classv8_1_1internal_1_1CodeStubAssembler}{Code\+Stub\+Assembler}} $\ast$assembler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitPoint_ade8da7ad2e1d4e65186eb866d5cd3576}\label{classv8_1_1internal_1_1ExitPoint_ade8da7ad2e1d4e65186eb866d5cd3576}} 
+{\bfseries Exit\+Point} (\mbox{\hyperlink{classv8_1_1internal_1_1CodeStubAssembler}{Code\+Stub\+Assembler}} $\ast$assembler, const Indirect\+Return\+Handler \&indirect\+\_\+return\+\_\+handler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitPoint_af0e227b1af8ae02ef374a07ac7fac04c}\label{classv8_1_1internal_1_1ExitPoint_af0e227b1af8ae02ef374a07ac7fac04c}} 
+{\bfseries Exit\+Point} (\mbox{\hyperlink{classv8_1_1internal_1_1CodeStubAssembler}{Code\+Stub\+Assembler}} $\ast$assembler, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Code\+Assembler\+Label}} $\ast$out, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerVariable}{Code\+Assembler\+Variable}} $\ast$var\+\_\+result)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitPoint_afe3517dd4ad919834ba075d50b56d07b}\label{classv8_1_1internal_1_1ExitPoint_afe3517dd4ad919834ba075d50b56d07b}} 
+{\footnotesize template$<$class... T\+Args$>$ }\\void {\bfseries Return\+Call\+Runtime} (Runtime\+::\+Function\+Id function, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, T\+Args... args)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitPoint_a2e0fe1df3209eae714cee92cc672d85e}\label{classv8_1_1internal_1_1ExitPoint_a2e0fe1df3209eae714cee92cc672d85e}} 
+{\footnotesize template$<$class... T\+Args$>$ }\\void {\bfseries Return\+Call\+Stub} (\mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} const \&callable, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, T\+Args... args)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitPoint_a3b2933f1625c226cd1252370360b5a02}\label{classv8_1_1internal_1_1ExitPoint_a3b2933f1625c226cd1252370360b5a02}} 
+{\footnotesize template$<$class... T\+Args$>$ }\\void {\bfseries Return\+Call\+Stub} (const \mbox{\hyperlink{classv8_1_1internal_1_1CallInterfaceDescriptor}{Call\+Interface\+Descriptor}} \&descriptor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$target, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, T\+Args... args)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitPoint_ae57cf5131769ec4cc18015b863b92fe9}\label{classv8_1_1internal_1_1ExitPoint_ae57cf5131769ec4cc18015b863b92fe9}} 
+void {\bfseries Return} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const result)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExitPoint_a1240665126dda24308be1e9c14c760fb}\label{classv8_1_1internal_1_1ExitPoint_a1240665126dda24308be1e9c14c760fb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Direct} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 322 of file accessor-\/assembler.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ic/accessor-\/assembler.\+h\end{DoxyCompactItemize}

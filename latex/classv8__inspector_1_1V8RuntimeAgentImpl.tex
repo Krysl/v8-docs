@@ -1,0 +1,114 @@
+\hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl}{}\section{v8\+\_\+inspector\+:\+:V8\+Runtime\+Agent\+Impl Class Reference}
+\label{classv8__inspector_1_1V8RuntimeAgentImpl}\index{v8\+\_\+inspector\+::\+V8\+Runtime\+Agent\+Impl@{v8\+\_\+inspector\+::\+V8\+Runtime\+Agent\+Impl}}
+Inheritance diagram for v8\+\_\+inspector\+:\+:V8\+Runtime\+Agent\+Impl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8__inspector_1_1V8RuntimeAgentImpl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_a3c8b6ba7059581f0dd71b75b1cc99806}\label{classv8__inspector_1_1V8RuntimeAgentImpl_a3c8b6ba7059581f0dd71b75b1cc99806}} 
+{\bfseries V8\+Runtime\+Agent\+Impl} (\mbox{\hyperlink{classv8__inspector_1_1V8InspectorSessionImpl}{V8\+Inspector\+Session\+Impl}} $\ast$, protocol\+::\+Frontend\+Channel $\ast$, protocol\+::\+Dictionary\+Value $\ast$state)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_a2fbc238e620779f822973a56cd8ea233}\label{classv8__inspector_1_1V8RuntimeAgentImpl_a2fbc238e620779f822973a56cd8ea233}} 
+void {\bfseries restore} ()
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_aa4bb142d23b0e3b3d18fa3b18edf6243}\label{classv8__inspector_1_1V8RuntimeAgentImpl_aa4bb142d23b0e3b3d18fa3b18edf6243}} 
+Response {\bfseries enable} () override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_a02457be2c1c60c0a451a372fbdc084a0}\label{classv8__inspector_1_1V8RuntimeAgentImpl_a02457be2c1c60c0a451a372fbdc084a0}} 
+Response {\bfseries disable} () override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_afbafae02e9b326438d6896c5bbfb1ee8}\label{classv8__inspector_1_1V8RuntimeAgentImpl_afbafae02e9b326438d6896c5bbfb1ee8}} 
+void {\bfseries evaluate} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&expression, Maybe$<$ \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $>$ object\+Group, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ include\+Command\+Line\+A\+PI, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ silent, Maybe$<$ \mbox{\hyperlink{classint}{int}} $>$ execution\+Context\+Id, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ return\+By\+Value, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ generate\+Preview, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ user\+Gesture, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ await\+Promise, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ throw\+On\+Side\+Effect, Maybe$<$ double $>$ timeout, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1EvaluateCallback}{Evaluate\+Callback}} $>$) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_a24c0aeabcb347163fb4fe8b10d3914bd}\label{classv8__inspector_1_1V8RuntimeAgentImpl_a24c0aeabcb347163fb4fe8b10d3914bd}} 
+void {\bfseries await\+Promise} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&promise\+Object\+Id, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ return\+By\+Value, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ generate\+Preview, std\+::unique\+\_\+ptr$<$ Await\+Promise\+Callback $>$) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_a2301446071f715114b052cc8d65b7a3b}\label{classv8__inspector_1_1V8RuntimeAgentImpl_a2301446071f715114b052cc8d65b7a3b}} 
+void {\bfseries call\+Function\+On} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&expression, Maybe$<$ \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $>$ object\+Id, Maybe$<$ protocol\+::\+Array$<$ protocol\+::\+Runtime\+::\+Call\+Argument $>$$>$ optional\+Arguments, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ silent, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ return\+By\+Value, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ generate\+Preview, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ user\+Gesture, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ await\+Promise, Maybe$<$ \mbox{\hyperlink{classint}{int}} $>$ execution\+Context\+Id, Maybe$<$ \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $>$ object\+Group, std\+::unique\+\_\+ptr$<$ Call\+Function\+On\+Callback $>$) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_af3fcaf65d01af618fb50c9deb5258495}\label{classv8__inspector_1_1V8RuntimeAgentImpl_af3fcaf65d01af618fb50c9deb5258495}} 
+Response {\bfseries release\+Object} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&object\+Id) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_a1263c6b9e70926a218cf2521cd8f0446}\label{classv8__inspector_1_1V8RuntimeAgentImpl_a1263c6b9e70926a218cf2521cd8f0446}} 
+Response {\bfseries get\+Properties} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&object\+Id, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ own\+Properties, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ accessor\+Properties\+Only, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ generate\+Preview, std\+::unique\+\_\+ptr$<$ protocol\+::\+Array$<$ protocol\+::\+Runtime\+::\+Property\+Descriptor $>$$>$ $\ast$result, Maybe$<$ protocol\+::\+Array$<$ protocol\+::\+Runtime\+::\+Internal\+Property\+Descriptor $>$$>$ $\ast$internal\+Properties, Maybe$<$ protocol\+::\+Runtime\+::\+Exception\+Details $>$ $\ast$) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_ab4905f5f707b9060b3df0f2c6b813c9c}\label{classv8__inspector_1_1V8RuntimeAgentImpl_ab4905f5f707b9060b3df0f2c6b813c9c}} 
+Response {\bfseries release\+Object\+Group} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&object\+Group) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_a9785121c1bcc5ab0d33f93bf4591da1d}\label{classv8__inspector_1_1V8RuntimeAgentImpl_a9785121c1bcc5ab0d33f93bf4591da1d}} 
+Response {\bfseries run\+If\+Waiting\+For\+Debugger} () override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_ab4b876f7b7fc7548b25a4e12102ca24c}\label{classv8__inspector_1_1V8RuntimeAgentImpl_ab4b876f7b7fc7548b25a4e12102ca24c}} 
+Response {\bfseries set\+Custom\+Object\+Formatter\+Enabled} (\mbox{\hyperlink{classbool}{bool}}) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_a6bf7580c2f7d3b0121cd0e1ca4fb1612}\label{classv8__inspector_1_1V8RuntimeAgentImpl_a6bf7580c2f7d3b0121cd0e1ca4fb1612}} 
+Response {\bfseries set\+Max\+Call\+Stack\+Size\+To\+Capture} (\mbox{\hyperlink{classint}{int}}) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_a4c17d129ba5f4a46a4077d2d2665dd0e}\label{classv8__inspector_1_1V8RuntimeAgentImpl_a4c17d129ba5f4a46a4077d2d2665dd0e}} 
+Response {\bfseries discard\+Console\+Entries} () override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_add17f0bd849690feda6c0ae8542f306d}\label{classv8__inspector_1_1V8RuntimeAgentImpl_add17f0bd849690feda6c0ae8542f306d}} 
+Response {\bfseries compile\+Script} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&expression, const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&source\+U\+RL, \mbox{\hyperlink{classbool}{bool}} persist\+Script, Maybe$<$ \mbox{\hyperlink{classint}{int}} $>$ execution\+Context\+Id, Maybe$<$ \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $>$ $\ast$, Maybe$<$ protocol\+::\+Runtime\+::\+Exception\+Details $>$ $\ast$) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_a29fa0350a3790f4c3b3a5aaa57a3c7b4}\label{classv8__inspector_1_1V8RuntimeAgentImpl_a29fa0350a3790f4c3b3a5aaa57a3c7b4}} 
+void {\bfseries run\+Script} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&, Maybe$<$ \mbox{\hyperlink{classint}{int}} $>$ execution\+Context\+Id, Maybe$<$ \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $>$ object\+Group, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ silent, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ include\+Command\+Line\+A\+PI, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ return\+By\+Value, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ generate\+Preview, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ await\+Promise, std\+::unique\+\_\+ptr$<$ Run\+Script\+Callback $>$) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_a18f6b076298d932d3cf209cb77973713}\label{classv8__inspector_1_1V8RuntimeAgentImpl_a18f6b076298d932d3cf209cb77973713}} 
+Response {\bfseries query\+Objects} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&prototype\+Object\+Id, Maybe$<$ \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $>$ object\+Group, std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+Remote\+Object $>$ $\ast$objects) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_a16eebe343d1179339e91d45265379139}\label{classv8__inspector_1_1V8RuntimeAgentImpl_a16eebe343d1179339e91d45265379139}} 
+Response {\bfseries global\+Lexical\+Scope\+Names} (Maybe$<$ \mbox{\hyperlink{classint}{int}} $>$ execution\+Context\+Id, std\+::unique\+\_\+ptr$<$ protocol\+::\+Array$<$ \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $>$$>$ $\ast$out\+Names) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_ae1e1452ce3d32a7d585ee535928a17d9}\label{classv8__inspector_1_1V8RuntimeAgentImpl_ae1e1452ce3d32a7d585ee535928a17d9}} 
+Response {\bfseries get\+Isolate\+Id} (\mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $\ast$out\+Isolate\+Id) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_adaa610487edc5b74aab03196737676b6}\label{classv8__inspector_1_1V8RuntimeAgentImpl_adaa610487edc5b74aab03196737676b6}} 
+Response {\bfseries get\+Heap\+Usage} (double $\ast$out\+\_\+used\+Size, double $\ast$out\+\_\+total\+Size) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_ac0a49cfef9de1a045c767861253af3df}\label{classv8__inspector_1_1V8RuntimeAgentImpl_ac0a49cfef9de1a045c767861253af3df}} 
+void {\bfseries terminate\+Execution} (std\+::unique\+\_\+ptr$<$ Terminate\+Execution\+Callback $>$ callback) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_adcbf8d22748c4ebc0f831672023b21b3}\label{classv8__inspector_1_1V8RuntimeAgentImpl_adcbf8d22748c4ebc0f831672023b21b3}} 
+Response {\bfseries add\+Binding} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&name, Maybe$<$ \mbox{\hyperlink{classint}{int}} $>$ execution\+Context\+Id) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_af479188ff4d1686cdb544c086a8dcb58}\label{classv8__inspector_1_1V8RuntimeAgentImpl_af479188ff4d1686cdb544c086a8dcb58}} 
+Response {\bfseries remove\+Binding} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&name) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_a62b07b511ea8bd42fbcb22a75c964a5a}\label{classv8__inspector_1_1V8RuntimeAgentImpl_a62b07b511ea8bd42fbcb22a75c964a5a}} 
+void {\bfseries add\+Bindings} (\mbox{\hyperlink{classv8__inspector_1_1InspectedContext}{Inspected\+Context}} $\ast$context)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_ae4867e1e4cd63621c811a9b417d8c89d}\label{classv8__inspector_1_1V8RuntimeAgentImpl_ae4867e1e4cd63621c811a9b417d8c89d}} 
+void {\bfseries reset} ()
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_aace31c26bd280cc8cb4bbe8c3dd10673}\label{classv8__inspector_1_1V8RuntimeAgentImpl_aace31c26bd280cc8cb4bbe8c3dd10673}} 
+void {\bfseries report\+Execution\+Context\+Created} (\mbox{\hyperlink{classv8__inspector_1_1InspectedContext}{Inspected\+Context}} $\ast$)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_a2655deb993c74d4b92c99717f02f3132}\label{classv8__inspector_1_1V8RuntimeAgentImpl_a2655deb993c74d4b92c99717f02f3132}} 
+void {\bfseries report\+Execution\+Context\+Destroyed} (\mbox{\hyperlink{classv8__inspector_1_1InspectedContext}{Inspected\+Context}} $\ast$)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_a056c2133994d480e6e523dcdca23855e}\label{classv8__inspector_1_1V8RuntimeAgentImpl_a056c2133994d480e6e523dcdca23855e}} 
+void {\bfseries inspect} (std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+Remote\+Object $>$ object\+To\+Inspect, std\+::unique\+\_\+ptr$<$ protocol\+::\+Dictionary\+Value $>$ hints)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_a360f46c160f4dd43af0910cc22bb0d3d}\label{classv8__inspector_1_1V8RuntimeAgentImpl_a360f46c160f4dd43af0910cc22bb0d3d}} 
+void {\bfseries message\+Added} (\mbox{\hyperlink{classv8__inspector_1_1V8ConsoleMessage}{V8\+Console\+Message}} $\ast$)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8RuntimeAgentImpl_a2dc113d53d050a1656c12b74b883387b}\label{classv8__inspector_1_1V8RuntimeAgentImpl_a2dc113d53d050a1656c12b74b883387b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries enabled} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 54 of file v8-\/runtime-\/agent-\/impl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/inspector/v8-\/runtime-\/agent-\/impl.\+h\item 
+v8/src/inspector/v8-\/runtime-\/agent-\/impl.\+cc\end{DoxyCompactItemize}

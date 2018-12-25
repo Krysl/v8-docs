@@ -1,0 +1,117 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Schedule Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1Schedule}\index{v8\+::internal\+::compiler\+::\+Schedule@{v8\+::internal\+::compiler\+::\+Schedule}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Schedule\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1Schedule}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_af266775214e6b78d830b2630b0a3027e}\label{classv8_1_1internal_1_1compiler_1_1Schedule_af266775214e6b78d830b2630b0a3027e}} 
+{\bfseries Schedule} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} node\+\_\+count\+\_\+hint=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_adba2b547f951366974d25caad19e575e}\label{classv8_1_1internal_1_1compiler_1_1Schedule_adba2b547f951366974d25caad19e575e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$ {\bfseries block} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_ad5c2ba6d7db8f2ffe09949ed6e4d1f58}\label{classv8_1_1internal_1_1compiler_1_1Schedule_ad5c2ba6d7db8f2ffe09949ed6e4d1f58}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Scheduled} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_a92485ac465e4e05ad2838648a653fcaf}\label{classv8_1_1internal_1_1compiler_1_1Schedule_a92485ac465e4e05ad2838648a653fcaf}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$ {\bfseries Get\+Block\+By\+Id} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock_1_1Id}{Basic\+Block\+::\+Id}} block\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_a2815dd992b00ca23f0451501b11c98fb}\label{classv8_1_1internal_1_1compiler_1_1Schedule_a2815dd992b00ca23f0451501b11c98fb}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Basic\+Block\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_aaf976adf713c3197ab97b35673416c8c}\label{classv8_1_1internal_1_1compiler_1_1Schedule_aaf976adf713c3197ab97b35673416c8c}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Rpo\+Block\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_ac74d33100ed3a5424721d18f4f5c0a61}\label{classv8_1_1internal_1_1compiler_1_1Schedule_ac74d33100ed3a5424721d18f4f5c0a61}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Same\+Basic\+Block} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$a, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$b) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_ab772613e99ac20e323622c92aee85ec7}\label{classv8_1_1internal_1_1compiler_1_1Schedule_ab772613e99ac20e323622c92aee85ec7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$ {\bfseries New\+Basic\+Block} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_a2693ea181c484d0ceea2b5bd4fc8f489}\label{classv8_1_1internal_1_1compiler_1_1Schedule_a2693ea181c484d0ceea2b5bd4fc8f489}} 
+void {\bfseries Plan\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$block, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_ad176b265b8dc57aa0fd31217e9307e97}\label{classv8_1_1internal_1_1compiler_1_1Schedule_ad176b265b8dc57aa0fd31217e9307e97}} 
+void {\bfseries Add\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$block, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_a32892de9edd37577947c712aab68af48}\label{classv8_1_1internal_1_1compiler_1_1Schedule_a32892de9edd37577947c712aab68af48}} 
+void {\bfseries Add\+Goto} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$block, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$succ)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_a7035b71bfb08756069bce642cee4d927}\label{classv8_1_1internal_1_1compiler_1_1Schedule_a7035b71bfb08756069bce642cee4d927}} 
+void {\bfseries Add\+Call} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$block, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$call, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$success\+\_\+block, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$exception\+\_\+block)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_ac97f4df78df55705c4e19594b0794ba0}\label{classv8_1_1internal_1_1compiler_1_1Schedule_ac97f4df78df55705c4e19594b0794ba0}} 
+void {\bfseries Add\+Branch} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$block, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$branch, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$tblock, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$fblock)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_aee524a97aa10d9876d50eea4f0596218}\label{classv8_1_1internal_1_1compiler_1_1Schedule_aee524a97aa10d9876d50eea4f0596218}} 
+void {\bfseries Add\+Switch} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$block, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$sw, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$$\ast$succ\+\_\+blocks, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} succ\+\_\+count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_a0fd98f3698d699f224d8ca2461207055}\label{classv8_1_1internal_1_1compiler_1_1Schedule_a0fd98f3698d699f224d8ca2461207055}} 
+void {\bfseries Add\+Deoptimize} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$block, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$input)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_a346bacf34d9e860152b2371c4a17bef5}\label{classv8_1_1internal_1_1compiler_1_1Schedule_a346bacf34d9e860152b2371c4a17bef5}} 
+void {\bfseries Add\+Tail\+Call} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$block, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$input)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_a48dec026f9f2221c436b723ae2b7790e}\label{classv8_1_1internal_1_1compiler_1_1Schedule_a48dec026f9f2221c436b723ae2b7790e}} 
+void {\bfseries Add\+Return} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$block, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$input)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_a12e42ef60c6c533e33d68e6438f95151}\label{classv8_1_1internal_1_1compiler_1_1Schedule_a12e42ef60c6c533e33d68e6438f95151}} 
+void {\bfseries Add\+Throw} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$block, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$input)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_ac83a00d6181185e4959fd979a6b6cc41}\label{classv8_1_1internal_1_1compiler_1_1Schedule_ac83a00d6181185e4959fd979a6b6cc41}} 
+void {\bfseries Insert\+Branch} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$block, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$end, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$branch, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$tblock, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$fblock)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_a33f5241789c541d2973ed9672010d6d3}\label{classv8_1_1internal_1_1compiler_1_1Schedule_a33f5241789c541d2973ed9672010d6d3}} 
+void {\bfseries Insert\+Switch} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$block, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$end, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$sw, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$$\ast$succ\+\_\+blocks, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} succ\+\_\+count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_a37aed87f4e78d532fb64134f432d072d}\label{classv8_1_1internal_1_1compiler_1_1Schedule_a37aed87f4e78d532fb64134f432d072d}} 
+void {\bfseries Add\+Successor\+For\+Testing} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$block, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$succ)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_a2d780c7f91e249fb9ab9e7d505da848f}\label{classv8_1_1internal_1_1compiler_1_1Schedule_a2d780c7f91e249fb9ab9e7d505da848f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Basic\+Block\+Vector}} $\ast$ {\bfseries all\+\_\+blocks} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_ae0435eea7343bd7bd3baa1ac497a2524}\label{classv8_1_1internal_1_1compiler_1_1Schedule_ae0435eea7343bd7bd3baa1ac497a2524}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Basic\+Block\+Vector}} $\ast$ {\bfseries rpo\+\_\+order} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_a739858a02ad92eafc2d2d537ecbdba2e}\label{classv8_1_1internal_1_1compiler_1_1Schedule_a739858a02ad92eafc2d2d537ecbdba2e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Basic\+Block\+Vector}} $\ast$ {\bfseries rpo\+\_\+order} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_adddc0d247b7f03ccf5796854cf34b4bc}\label{classv8_1_1internal_1_1compiler_1_1Schedule_adddc0d247b7f03ccf5796854cf34b4bc}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$ {\bfseries start} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_a3c3967add3df64ec380f3e06644e1b2c}\label{classv8_1_1internal_1_1compiler_1_1Schedule_a3c3967add3df64ec380f3e06644e1b2c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BasicBlock}{Basic\+Block}} $\ast$ {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_af5c106558a8a6b32ce014579a173b135}\label{classv8_1_1internal_1_1compiler_1_1Schedule_af5c106558a8a6b32ce014579a173b135}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$ {\bfseries zone} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_afb88c77ea5daaefa6c8fa6bc5b9aa5c1}\label{classv8_1_1internal_1_1compiler_1_1Schedule_afb88c77ea5daaefa6c8fa6bc5b9aa5c1}} 
+class {\bfseries Scheduler}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_a5c39b0bbc0c1cfdda659556340bdcea9}\label{classv8_1_1internal_1_1compiler_1_1Schedule_a5c39b0bbc0c1cfdda659556340bdcea9}} 
+class {\bfseries Basic\+Block\+Instrumentor}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Schedule_a14407edaf8af33febf237ed95c292a7a}\label{classv8_1_1internal_1_1compiler_1_1Schedule_a14407edaf8af33febf237ed95c292a7a}} 
+class {\bfseries Raw\+Machine\+Assembler}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 194 of file schedule.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/schedule.\+h\item 
+v8/src/compiler/schedule.\+cc\end{DoxyCompactItemize}

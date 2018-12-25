@@ -1,0 +1,74 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1CompilationDependencies}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Compilation\+Dependencies Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1CompilationDependencies}\index{v8\+::internal\+::compiler\+::\+Compilation\+Dependencies@{v8\+::internal\+::compiler\+::\+Compilation\+Dependencies}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Compilation\+Dependencies\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1CompilationDependencies}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_1_1Dependency}{Dependency}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_aeddf69b9da61e49ffe723cfeb148d78e}\label{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_aeddf69b9da61e49ffe723cfeb148d78e}} 
+{\bfseries Compilation\+Dependencies} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_aa05c440f3d85dbeb3920db26145836f1}\label{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_aa05c440f3d85dbeb3920db26145836f1}} 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classbool}{bool}} {\bfseries Commit} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_afe0457da48867d43db40354bf651f766}\label{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_afe0457da48867d43db40354bf651f766}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1MapRef}{Map\+Ref}} {\bfseries Depend\+On\+Initial\+Map} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSFunctionRef}{J\+S\+Function\+Ref}} \&function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_a74c30d91c034c966330cbb82963f4366}\label{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_a74c30d91c034c966330cbb82963f4366}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1ObjectRef}{Object\+Ref}} {\bfseries Depend\+On\+Prototype\+Property} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSFunctionRef}{J\+S\+Function\+Ref}} \&function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_a5bd9f84fd852ea7d54a986f1d66b0ec2}\label{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_a5bd9f84fd852ea7d54a986f1d66b0ec2}} 
+void {\bfseries Depend\+On\+Stable\+Map} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1MapRef}{Map\+Ref}} \&map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_a542a89448b2a05e46ad8e0ce106ea05d}\label{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_a542a89448b2a05e46ad8e0ce106ea05d}} 
+void {\bfseries Depend\+On\+Transition} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1MapRef}{Map\+Ref}} \&target\+\_\+map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_a530df8b950192b1a3afad021ac751fba}\label{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_a530df8b950192b1a3afad021ac751fba}} 
+Pretenure\+Flag {\bfseries Depend\+On\+Pretenure\+Mode} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1AllocationSiteRef}{Allocation\+Site\+Ref}} \&site)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_a9b4bd5701736292ef87e0486ddd8534f}\label{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_a9b4bd5701736292ef87e0486ddd8534f}} 
+void {\bfseries Depend\+On\+Field\+Type} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1MapRef}{Map\+Ref}} \&map, \mbox{\hyperlink{classint}{int}} descriptor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_a87f7ab86f595f2f8503ce8a3bef7fa3e}\label{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_a87f7ab86f595f2f8503ce8a3bef7fa3e}} 
+void {\bfseries Depend\+On\+Global\+Property} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1PropertyCellRef}{Property\+Cell\+Ref}} \&cell)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_a21189d275ba71285094b590fc6c14360}\label{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_a21189d275ba71285094b590fc6c14360}} 
+void {\bfseries Depend\+On\+Protector} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1PropertyCellRef}{Property\+Cell\+Ref}} \&cell)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_aa539796589a7024de629da375094827f}\label{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_aa539796589a7024de629da375094827f}} 
+void {\bfseries Depend\+On\+Elements\+Kind} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1AllocationSiteRef}{Allocation\+Site\+Ref}} \&site)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_ae0bf2d29d8798a09ca35d2140bd6ecb5}\label{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_ae0bf2d29d8798a09ca35d2140bd6ecb5}} 
+void {\bfseries Depend\+On\+Stable\+Prototype\+Chains} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSHeapBroker}{J\+S\+Heap\+Broker}} $\ast$broker, std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$$>$ const \&receiver\+\_\+maps, const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSObjectRef}{J\+S\+Object\+Ref}} \&holder)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_a286b6c4b45386314e604356997511d28}\label{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_a286b6c4b45386314e604356997511d28}} 
+void {\bfseries Depend\+On\+Elements\+Kinds} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1AllocationSiteRef}{Allocation\+Site\+Ref}} \&site)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_aed821e982346989c9ef9e049bdc9fc4a}\label{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_aed821e982346989c9ef9e049bdc9fc4a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SlackTrackingPrediction}{Slack\+Tracking\+Prediction}} {\bfseries Depend\+On\+Initial\+Map\+Instance\+Size\+Prediction} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSFunctionRef}{J\+S\+Function\+Ref}} \&function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_ad185f184c34a2d960b13cf4f066f35b8}\label{classv8_1_1internal_1_1compiler_1_1CompilationDependencies_ad185f184c34a2d960b13cf4f066f35b8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Are\+Valid} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 29 of file compilation-\/dependencies.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/compilation-\/dependencies.\+h\item 
+v8/src/compiler/compilation-\/dependencies.\+cc\end{DoxyCompactItemize}

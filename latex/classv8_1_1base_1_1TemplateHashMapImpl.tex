@@ -1,0 +1,80 @@
+\hypertarget{classv8_1_1base_1_1TemplateHashMapImpl}{}\section{v8\+:\+:base\+:\+:Template\+Hash\+Map\+Impl$<$ Key, Value, Match\+Fun, Allocation\+Policy $>$ Class Template Reference}
+\label{classv8_1_1base_1_1TemplateHashMapImpl}\index{v8\+::base\+::\+Template\+Hash\+Map\+Impl$<$ Key, Value, Match\+Fun, Allocation\+Policy $>$@{v8\+::base\+::\+Template\+Hash\+Map\+Impl$<$ Key, Value, Match\+Fun, Allocation\+Policy $>$}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1TemplateHashMapImpl_a918d7d0f02ebe6f556a037c5a688a34f}\label{classv8_1_1base_1_1TemplateHashMapImpl_a918d7d0f02ebe6f556a037c5a688a34f}} 
+typedef \mbox{\hyperlink{structv8_1_1base_1_1TemplateHashMapEntry}{Template\+Hash\+Map\+Entry}}$<$ Key, \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ {\bfseries Entry}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1TemplateHashMapImpl_a450e2701b83dfac99facefc875ce59bd}\label{classv8_1_1base_1_1TemplateHashMapImpl_a450e2701b83dfac99facefc875ce59bd}} 
+{\bfseries Template\+Hash\+Map\+Impl} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} capacity=k\+Default\+Hash\+Map\+Capacity, Match\+Fun match=Match\+Fun(), Allocation\+Policy allocator=Allocation\+Policy())
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1TemplateHashMapImpl_aebdd53ff8135ef45b32c1b743ce09c35}\label{classv8_1_1base_1_1TemplateHashMapImpl_aebdd53ff8135ef45b32c1b743ce09c35}} 
+{\bfseries Template\+Hash\+Map\+Impl} (const \mbox{\hyperlink{classv8_1_1base_1_1TemplateHashMapImpl}{Template\+Hash\+Map\+Impl}}$<$ Key, \mbox{\hyperlink{classv8_1_1Value}{Value}}, Match\+Fun, Allocation\+Policy $>$ $\ast$original, Allocation\+Policy allocator=Allocation\+Policy())
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1TemplateHashMapImpl_aa951049632c635dc901bee3a69f074e6}\label{classv8_1_1base_1_1TemplateHashMapImpl_aa951049632c635dc901bee3a69f074e6}} 
+\mbox{\hyperlink{structv8_1_1base_1_1TemplateHashMapEntry}{Entry}} $\ast$ {\bfseries Lookup} (const Key \&key, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} \mbox{\hyperlink{structv8_1_1base_1_1hash}{hash}}) const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1TemplateHashMapImpl_a3e1f2854d9a3bf140aef707f8f124d04}\label{classv8_1_1base_1_1TemplateHashMapImpl_a3e1f2854d9a3bf140aef707f8f124d04}} 
+\mbox{\hyperlink{structv8_1_1base_1_1TemplateHashMapEntry}{Entry}} $\ast$ {\bfseries Lookup\+Or\+Insert} (const Key \&key, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} \mbox{\hyperlink{structv8_1_1base_1_1hash}{hash}}, Allocation\+Policy allocator=Allocation\+Policy())
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1TemplateHashMapImpl_a5569d3a9e1f4b0f40c544cc9fe18f5be}\label{classv8_1_1base_1_1TemplateHashMapImpl_a5569d3a9e1f4b0f40c544cc9fe18f5be}} 
+{\footnotesize template$<$typename Func $>$ }\\\mbox{\hyperlink{structv8_1_1base_1_1TemplateHashMapEntry}{Entry}} $\ast$ {\bfseries Lookup\+Or\+Insert} (const Key \&key, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} \mbox{\hyperlink{structv8_1_1base_1_1hash}{hash}}, const Func \&value\+\_\+func, Allocation\+Policy allocator=Allocation\+Policy())
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1TemplateHashMapImpl_a2dbaf51abc0af7c1e63d603df7ad25a9}\label{classv8_1_1base_1_1TemplateHashMapImpl_a2dbaf51abc0af7c1e63d603df7ad25a9}} 
+\mbox{\hyperlink{structv8_1_1base_1_1TemplateHashMapEntry}{Entry}} $\ast$ {\bfseries Insert\+New} (const Key \&key, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} \mbox{\hyperlink{structv8_1_1base_1_1hash}{hash}}, Allocation\+Policy allocator=Allocation\+Policy())
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1TemplateHashMapImpl_aa599c82bb4622c59e81cd5cf48e5617c}\label{classv8_1_1base_1_1TemplateHashMapImpl_aa599c82bb4622c59e81cd5cf48e5617c}} 
+\mbox{\hyperlink{classv8_1_1Value}{Value}} {\bfseries Remove} (const Key \&key, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} \mbox{\hyperlink{structv8_1_1base_1_1hash}{hash}})
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1TemplateHashMapImpl_ad3298b5c512442c1838ab3e3fc49276c}\label{classv8_1_1base_1_1TemplateHashMapImpl_ad3298b5c512442c1838ab3e3fc49276c}} 
+void {\bfseries Clear} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1TemplateHashMapImpl_a3abc22f8779c331a3300c6835a0a4707}\label{classv8_1_1base_1_1TemplateHashMapImpl_a3abc22f8779c331a3300c6835a0a4707}} 
+void {\bfseries Invalidate} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1TemplateHashMapImpl_a719951e26d7f992e9171b218bf224933}\label{classv8_1_1base_1_1TemplateHashMapImpl_a719951e26d7f992e9171b218bf224933}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries occupancy} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1TemplateHashMapImpl_aa87d244a2658318fb7e5be58d7d8284f}\label{classv8_1_1base_1_1TemplateHashMapImpl_aa87d244a2658318fb7e5be58d7d8284f}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries capacity} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1TemplateHashMapImpl_a5206215bb871c383f69388c5c45785f7}\label{classv8_1_1base_1_1TemplateHashMapImpl_a5206215bb871c383f69388c5c45785f7}} 
+\mbox{\hyperlink{structv8_1_1base_1_1TemplateHashMapEntry}{Entry}} $\ast$ {\bfseries Start} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1TemplateHashMapImpl_a1ec40e5888a1f03df09e7cf63e3cd790}\label{classv8_1_1base_1_1TemplateHashMapImpl_a1ec40e5888a1f03df09e7cf63e3cd790}} 
+\mbox{\hyperlink{structv8_1_1base_1_1TemplateHashMapEntry}{Entry}} $\ast$ {\bfseries Next} (\mbox{\hyperlink{structv8_1_1base_1_1TemplateHashMapEntry}{Entry}} $\ast$entry) const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1TemplateHashMapImpl_a63f2837401c1c41a7db5b4078297e290}\label{classv8_1_1base_1_1TemplateHashMapImpl_a63f2837401c1c41a7db5b4078297e290}} 
+void {\bfseries Reset} (Allocation\+Policy allocator)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1TemplateHashMapImpl_a38c7073d5e1a1fd3ccb1b8c64f4dbcb6}\label{classv8_1_1base_1_1TemplateHashMapImpl_a38c7073d5e1a1fd3ccb1b8c64f4dbcb6}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Default\+Hash\+Map\+Capacity} = 8
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1TemplateHashMapImpl_aa317497d1344c4c3107761784c8bdd6d}\label{classv8_1_1base_1_1TemplateHashMapImpl_aa317497d1344c4c3107761784c8bdd6d}} 
+void {\bfseries Initialize} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} capacity, Allocation\+Policy allocator)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Key, typename Value, class Match\+Fun, class Allocation\+Policy$>$\newline
+class v8\+::base\+::\+Template\+Hash\+Map\+Impl$<$ Key, Value, Match\+Fun, Allocation\+Policy $>$}
+
+
+
+Definition at line 28 of file hashmap.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/base/hashmap.\+h\end{DoxyCompactItemize}

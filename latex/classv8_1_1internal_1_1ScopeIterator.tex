@@ -1,0 +1,131 @@
+\hypertarget{classv8_1_1internal_1_1ScopeIterator}{}\section{v8\+:\+:internal\+:\+:Scope\+Iterator Class Reference}
+\label{classv8_1_1internal_1_1ScopeIterator}\index{v8\+::internal\+::\+Scope\+Iterator@{v8\+::internal\+::\+Scope\+Iterator}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_aa4aa3e4d41cb6ce47ec9df9a056fc49b}\label{classv8_1_1internal_1_1ScopeIterator_aa4aa3e4d41cb6ce47ec9df9a056fc49b}} 
+enum {\bfseries Scope\+Type} \{ \newline
+{\bfseries Scope\+Type\+Global} = 0, 
+{\bfseries Scope\+Type\+Local}, 
+{\bfseries Scope\+Type\+With}, 
+{\bfseries Scope\+Type\+Closure}, 
+\newline
+{\bfseries Scope\+Type\+Catch}, 
+{\bfseries Scope\+Type\+Block}, 
+{\bfseries Scope\+Type\+Script}, 
+{\bfseries Scope\+Type\+Eval}, 
+\newline
+{\bfseries Scope\+Type\+Module}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a9127368b90641c8dea51ce83b2edf38d}\label{classv8_1_1internal_1_1ScopeIterator_a9127368b90641c8dea51ce83b2edf38d}} 
+enum {\bfseries Option} \{ {\bfseries D\+E\+F\+A\+U\+LT}, 
+{\bfseries I\+G\+N\+O\+R\+E\+\_\+\+N\+E\+S\+T\+E\+D\+\_\+\+S\+C\+O\+P\+ES}, 
+{\bfseries C\+O\+L\+L\+E\+C\+T\+\_\+\+N\+O\+N\+\_\+\+L\+O\+C\+A\+LS}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a7bb5a41d9fc691a5e09db08f7592d19b}\label{classv8_1_1internal_1_1ScopeIterator_a7bb5a41d9fc691a5e09db08f7592d19b}} 
+enum {\bfseries Mode} \{ {\bfseries S\+T\+A\+CK}, 
+{\bfseries A\+LL}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_aa5ceb578f6dda1f942249eba4365d0b7}\label{classv8_1_1internal_1_1ScopeIterator_aa5ceb578f6dda1f942249eba4365d0b7}} 
+{\bfseries Scope\+Iterator} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1FrameInspector}{Frame\+Inspector}} $\ast$frame\+\_\+inspector, Option options=D\+E\+F\+A\+U\+LT)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_ad8c8fb113efb2ce5476078627fea56d3}\label{classv8_1_1internal_1_1ScopeIterator_ad8c8fb113efb2ce5476078627fea56d3}} 
+{\bfseries Scope\+Iterator} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_aa907674d0b32aa78a7629387d252bd9d}\label{classv8_1_1internal_1_1ScopeIterator_aa907674d0b32aa78a7629387d252bd9d}} 
+{\bfseries Scope\+Iterator} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSGeneratorObject}{J\+S\+Generator\+Object}} $>$ generator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a0121c161a7e866f462cc8ca5e14acfdc}\label{classv8_1_1internal_1_1ScopeIterator_a0121c161a7e866f462cc8ca5e14acfdc}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ {\bfseries Materialize\+Scope\+Details} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a400c8837ccd01f4dd552e081e5050be7}\label{classv8_1_1internal_1_1ScopeIterator_a400c8837ccd01f4dd552e081e5050be7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Done} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a6f0a4ba9b811b41b1ced4133686a89b5}\label{classv8_1_1internal_1_1ScopeIterator_a6f0a4ba9b811b41b1ced4133686a89b5}} 
+void {\bfseries Next} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_af25c584be732d14796c40dbe1a85c171}\label{classv8_1_1internal_1_1ScopeIterator_af25c584be732d14796c40dbe1a85c171}} 
+void {\bfseries Restart} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a51e0c1201f011191ac3a5ad1ed2fd59b}\label{classv8_1_1internal_1_1ScopeIterator_a51e0c1201f011191ac3a5ad1ed2fd59b}} 
+Scope\+Type {\bfseries Type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a07d266a915b7450709f23c56c5e8a05b}\label{classv8_1_1internal_1_1ScopeIterator_a07d266a915b7450709f23c56c5e8a05b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ {\bfseries Scope\+Object} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a057a1669d94e05d85b396db58fac86d2}\label{classv8_1_1internal_1_1ScopeIterator_a057a1669d94e05d85b396db58fac86d2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Declares\+Locals} (Mode mode) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a75b041ba4a4d017daea66327308f52fb}\label{classv8_1_1internal_1_1ScopeIterator_a75b041ba4a4d017daea66327308f52fb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Set\+Variable\+Value} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ variable\+\_\+name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ new\+\_\+value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a21b06d8bae4b550e6ab8e40e8d4df03a}\label{classv8_1_1internal_1_1ScopeIterator_a21b06d8bae4b550e6ab8e40e8d4df03a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1StringSet}{String\+Set}} $>$ {\bfseries Get\+Non\+Locals} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a0834abbe5bc848c2a0471454fc933196}\label{classv8_1_1internal_1_1ScopeIterator_a0834abbe5bc848c2a0471454fc933196}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Get\+Function\+Debug\+Name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_ad6d8402d0de6e4249c6836d3ab3abbbc}\label{classv8_1_1internal_1_1ScopeIterator_ad6d8402d0de6e4249c6836d3ab3abbbc}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $>$ {\bfseries Get\+Script} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a3d866a445735e979e6afa50b35a17f40}\label{classv8_1_1internal_1_1ScopeIterator_a3d866a445735e979e6afa50b35a17f40}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Position\+Info} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a012a2c82fb92603af9193ac11c2e69bd}\label{classv8_1_1internal_1_1ScopeIterator_a012a2c82fb92603af9193ac11c2e69bd}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries start\+\_\+position} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a2f0266a6ecdc8d96ce680b01933e8c1c}\label{classv8_1_1internal_1_1ScopeIterator_a2f0266a6ecdc8d96ce680b01933e8c1c}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries end\+\_\+position} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a96b3385274365af379c2a1bdbc7fb443}\label{classv8_1_1internal_1_1ScopeIterator_a96b3385274365af379c2a1bdbc7fb443}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries In\+Inner\+Scope} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a6fd52d262ef52b8984eae35b865e825d}\label{classv8_1_1internal_1_1ScopeIterator_a6fd52d262ef52b8984eae35b865e825d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Context} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a04369881b3cd57a619d8ae968a2aa617}\label{classv8_1_1internal_1_1ScopeIterator_a04369881b3cd57a619d8ae968a2aa617}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ {\bfseries Current\+Context} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a3e667203bbc187b52d0661caa6339e40}\label{classv8_1_1internal_1_1ScopeIterator_a3e667203bbc187b52d0661caa6339e40}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Scope\+Details\+Type\+Index} = 0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_ae6a44f9c5bccc8c3b7723aff91799be1}\label{classv8_1_1internal_1_1ScopeIterator_ae6a44f9c5bccc8c3b7723aff91799be1}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Scope\+Details\+Object\+Index} = 1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a0fa8f4e43705cae688f30273ffed44a7}\label{classv8_1_1internal_1_1ScopeIterator_a0fa8f4e43705cae688f30273ffed44a7}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Scope\+Details\+Name\+Index} = 2
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_a55df03c1c266defde7f6865e9e77a2c6}\label{classv8_1_1internal_1_1ScopeIterator_a55df03c1c266defde7f6865e9e77a2c6}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Scope\+Details\+Start\+Position\+Index} = 3
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_aeffdea2c156b25a4b9f6eccd04fa2317}\label{classv8_1_1internal_1_1ScopeIterator_aeffdea2c156b25a4b9f6eccd04fa2317}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Scope\+Details\+End\+Position\+Index} = 4
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_adc82682c88345e47935566837511d14d}\label{classv8_1_1internal_1_1ScopeIterator_adc82682c88345e47935566837511d14d}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Scope\+Details\+Function\+Index} = 5
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScopeIterator_aaccef289782f1fd53edc2dd1d3989681}\label{classv8_1_1internal_1_1ScopeIterator_aaccef289782f1fd53edc2dd1d3989681}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Scope\+Details\+Size} = 6
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file debug-\/scopes.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/debug/debug-\/scopes.\+h\item 
+v8/src/debug/debug-\/scopes.\+cc\end{DoxyCompactItemize}

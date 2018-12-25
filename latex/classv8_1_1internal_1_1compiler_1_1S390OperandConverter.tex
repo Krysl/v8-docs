@@ -1,0 +1,60 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandConverter}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:S390\+Operand\+Converter Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1S390OperandConverter}\index{v8\+::internal\+::compiler\+::\+S390\+Operand\+Converter@{v8\+::internal\+::compiler\+::\+S390\+Operand\+Converter}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:S390\+Operand\+Converter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1S390OperandConverter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_a7065541bfdc39cc9edadecbdf8d19b7a}\label{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_a7065541bfdc39cc9edadecbdf8d19b7a}} 
+{\bfseries S390\+Operand\+Converter} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeGenerator}{Code\+Generator}} $\ast$gen, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Instruction}{Instruction}} $\ast$instr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_a668106c261477e4c00f0d71e12255f2d}\label{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_a668106c261477e4c00f0d71e12255f2d}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Output\+Count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_af6e1c9f34898c5c5f8697501ee45084c}\label{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_af6e1c9f34898c5c5f8697501ee45084c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is64\+Bit\+Operand} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_a0a0c9a947be44d625bbada8f53c71687}\label{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_a0a0c9a947be44d625bbada8f53c71687}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is32\+Bit\+Operand} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_a74e82f029df4ecf277bf9c347c2d4072}\label{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_a74e82f029df4ecf277bf9c347c2d4072}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Compare\+Logical} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_ac953dc032dff1eb74a43af55dd4482f9}\label{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_ac953dc032dff1eb74a43af55dd4482f9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Input\+Immediate} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_a1eae44a408fa041d998ce3a1c1521fe4}\label{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_a1eae44a408fa041d998ce3a1c1521fe4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MemOperand}{Mem\+Operand}} {\bfseries Memory\+Operand} (Addressing\+Mode $\ast$mode, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} $\ast$first\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_af0426131990efbe82155d38d19bcee54}\label{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_af0426131990efbe82155d38d19bcee54}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MemOperand}{Mem\+Operand}} {\bfseries Memory\+Operand} (Addressing\+Mode $\ast$mode=nullptr, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} first\+\_\+index=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_a9cab6e41a34bd39ad239f9eba487e5f2}\label{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_a9cab6e41a34bd39ad239f9eba487e5f2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MemOperand}{Mem\+Operand}} {\bfseries To\+Mem\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} $\ast$op) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_a709a38f316c6baf1e2916c6552941f45}\label{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_a709a38f316c6baf1e2916c6552941f45}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MemOperand}{Mem\+Operand}} {\bfseries Slot\+To\+Mem\+Operand} (\mbox{\hyperlink{classint}{int}} slot) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_a6146df71f6d40644ae4412e7e00e5694}\label{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_a6146df71f6d40644ae4412e7e00e5694}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MemOperand}{Mem\+Operand}} {\bfseries Input\+Stack\+Slot} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_a22bcf97b7a90751e2cedaf1e0907db4e}\label{classv8_1_1internal_1_1compiler_1_1S390OperandConverter_a22bcf97b7a90751e2cedaf1e0907db4e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MemOperand}{Mem\+Operand}} {\bfseries Input\+Stack\+Slot32} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} index)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 27 of file code-\/generator-\/s390.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/backend/s390/code-\/generator-\/s390.\+cc\end{DoxyCompactItemize}

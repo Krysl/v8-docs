@@ -1,0 +1,80 @@
+\hypertarget{classv8_1_1internal_1_1Collector}{}\section{v8\+:\+:internal\+:\+:Collector$<$ T, growth\+\_\+factor, max\+\_\+growth $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1Collector}\index{v8\+::internal\+::\+Collector$<$ T, growth\+\_\+factor, max\+\_\+growth $>$@{v8\+::internal\+::\+Collector$<$ T, growth\+\_\+factor, max\+\_\+growth $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Collector$<$ T, growth\+\_\+factor, max\+\_\+growth $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1Collector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Collector_a3838b4dcbb90f36d647f824ad5fa0eb1}\label{classv8_1_1internal_1_1Collector_a3838b4dcbb90f36d647f824ad5fa0eb1}} 
+{\bfseries Collector} (\mbox{\hyperlink{classint}{int}} initial\+\_\+capacity=k\+Min\+Capacity)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Collector_acaac9bfd2e8781d32027df2c9f93e1b5}\label{classv8_1_1internal_1_1Collector_acaac9bfd2e8781d32027df2c9f93e1b5}} 
+void {\bfseries Add} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Collector_a3470f0a3600e437fbdee51a73300b19d}\label{classv8_1_1internal_1_1Collector_a3470f0a3600e437fbdee51a73300b19d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries Add\+Block} (\mbox{\hyperlink{classint}{int}} size, \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} initial\+\_\+value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Collector_aa2745d1f45025ce3450802841ad7c353}\label{classv8_1_1internal_1_1Collector_aa2745d1f45025ce3450802841ad7c353}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries Add\+Block} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ source)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Collector_a2f49f357b0782e14e3e2435123768322}\label{classv8_1_1internal_1_1Collector_a2f49f357b0782e14e3e2435123768322}} 
+void {\bfseries Write\+To} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ destination)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Collector_ac5d8e65cff7970930aa9d0444057d31f}\label{classv8_1_1internal_1_1Collector_ac5d8e65cff7970930aa9d0444057d31f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries To\+Vector} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Collector_a9c9394c1dd8e9e139c5dc8a84008078c}\label{classv8_1_1internal_1_1Collector_a9c9394c1dd8e9e139c5dc8a84008078c}} 
+virtual void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Collector_a63d78fce1c0b6ee317f13bb07f8fdfcc}\label{classv8_1_1internal_1_1Collector_a63d78fce1c0b6ee317f13bb07f8fdfcc}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries size} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Collector_a64538c3871b9027c063536b7422e4934}\label{classv8_1_1internal_1_1Collector_a64538c3871b9027c063536b7422e4934}} 
+void {\bfseries Grow} (\mbox{\hyperlink{classint}{int}} min\+\_\+capacity)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Collector_ae5c13b4d64ac101f050251ce9b9f633e}\label{classv8_1_1internal_1_1Collector_ae5c13b4d64ac101f050251ce9b9f633e}} 
+virtual void {\bfseries New\+Chunk} (\mbox{\hyperlink{classint}{int}} new\+\_\+capacity)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Collector_a9107891b92ded5784e82b27d8af95498}\label{classv8_1_1internal_1_1Collector_a9107891b92ded5784e82b27d8af95498}} 
+std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ $>$ {\bfseries chunks\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Collector_ae18ddaaf7f76b38ad5fc776374f8e54b}\label{classv8_1_1internal_1_1Collector_ae18ddaaf7f76b38ad5fc776374f8e54b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries current\+\_\+chunk\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Collector_a450843df09b65a6b00a2dbd1df9f6dd1}\label{classv8_1_1internal_1_1Collector_a450843df09b65a6b00a2dbd1df9f6dd1}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries index\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Collector_a18fc8b51241e805a2980ba8aaacc1c5b}\label{classv8_1_1internal_1_1Collector_a18fc8b51241e805a2980ba8aaacc1c5b}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries size\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Collector_a559be84477f49672e512b636e6b6d8bb}\label{classv8_1_1internal_1_1Collector_a559be84477f49672e512b636e6b6d8bb}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Min\+Capacity} = 16
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T, int growth\+\_\+factor = 2, int max\+\_\+growth = 1 $\ast$ MB$>$\newline
+class v8\+::internal\+::\+Collector$<$ T, growth\+\_\+factor, max\+\_\+growth $>$}
+
+
+
+Definition at line 26 of file collector.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/collector.\+h\end{DoxyCompactItemize}

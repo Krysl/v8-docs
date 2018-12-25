@@ -1,0 +1,157 @@
+\hypertarget{classv8_1_1internal_1_1HashTable}{}\section{v8\+:\+:internal\+:\+:Hash\+Table$<$ Derived, Shape $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1HashTable}\index{v8\+::internal\+::\+Hash\+Table$<$ Derived, Shape $>$@{v8\+::internal\+::\+Hash\+Table$<$ Derived, Shape $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Hash\+Table$<$ Derived, Shape $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.281345cm]{classv8_1_1internal_1_1HashTable}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_a29342279fa3777537fc1a2f05a3d83cf}\label{classv8_1_1internal_1_1HashTable_a29342279fa3777537fc1a2f05a3d83cf}} 
+typedef Shape {\bfseries ShapeT}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_a1955f62c911bdf2f012678137956c803}\label{classv8_1_1internal_1_1HashTable_a1955f62c911bdf2f012678137956c803}} 
+typedef Shape\+::\+Key {\bfseries Key}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_aa0f47062c6737066039bf83a4527c1ca}\label{classv8_1_1internal_1_1HashTable_aa0f47062c6737066039bf83a4527c1ca}} 
+void {\bfseries Iterate\+Prefix} (\mbox{\hyperlink{classv8_1_1internal_1_1ObjectVisitor}{Object\+Visitor}} $\ast$visitor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_af168b0cc9b1eaa237a0e6c7ba36f5567}\label{classv8_1_1internal_1_1HashTable_af168b0cc9b1eaa237a0e6c7ba36f5567}} 
+void {\bfseries Iterate\+Elements} (\mbox{\hyperlink{classv8_1_1internal_1_1ObjectVisitor}{Object\+Visitor}} $\ast$visitor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_acd6f9d7e6d2773261849d3e3f25f22b8}\label{classv8_1_1internal_1_1HashTable_acd6f9d7e6d2773261849d3e3f25f22b8}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Find\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1ReadOnlyRoots}{Read\+Only\+Roots}} roots, Key key, int32\+\_\+t hash)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_a9db067942a5459e00f18ce04e6711407}\label{classv8_1_1internal_1_1HashTable_a9db067942a5459e00f18ce04e6711407}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Find\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Key key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_a39328011589a224b332695c114a65386}\label{classv8_1_1internal_1_1HashTable_a39328011589a224b332695c114a65386}} 
+void {\bfseries Rehash} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_ae394277b5e3cac1a362686ae3617bf6a}\label{classv8_1_1internal_1_1HashTable_ae394277b5e3cac1a362686ae3617bf6a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries To\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1ReadOnlyRoots}{Read\+Only\+Roots}} roots, \mbox{\hyperlink{classint}{int}} entry, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$$\ast$out\+\_\+k)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_a142660c441a714d9c77ff8d7126ac2d5}\label{classv8_1_1internal_1_1HashTable_a142660c441a714d9c77ff8d7126ac2d5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Key\+At} (\mbox{\hyperlink{classint}{int}} entry)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_a073dfca213ea094bfd643cd14e751fb6}\label{classv8_1_1internal_1_1HashTable_a073dfca213ea094bfd643cd14e751fb6}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Entry\+Size $>$ 0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_ab3f5e861aaaf0c6e6acf7e92e9cec3f5}\label{classv8_1_1internal_1_1HashTable_ab3f5e861aaaf0c6e6acf7e92e9cec3f5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Sufficient\+Capacity\+To\+Add} (\mbox{\hyperlink{classint}{int}} number\+\_\+of\+\_\+additional\+\_\+elements)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_af361b77cd2346c395816723dbbf2458e}\label{classv8_1_1internal_1_1HashTable_af361b77cd2346c395816723dbbf2458e}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} at\+\_\+least\+\_\+space\+\_\+for, Pretenure\+Flag pretenure=N\+O\+T\+\_\+\+T\+E\+N\+U\+R\+ED, Minimum\+Capacity capacity\+\_\+option=U\+S\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+I\+N\+I\+M\+U\+M\+\_\+\+C\+A\+P\+A\+C\+I\+TY)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_ad1be336f0276f57e93d860d11c05b0dc}\label{classv8_1_1internal_1_1HashTable_ad1be336f0276f57e93d860d11c05b0dc}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1ReadOnlyRoots}{Read\+Only\+Roots}} roots, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$k)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_a12fa8d07668bd5352676e9286591acbf}\label{classv8_1_1internal_1_1HashTable_a12fa8d07668bd5352676e9286591acbf}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries Entry\+To\+Index} (\mbox{\hyperlink{classint}{int}} entry)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_ab0fdda7b8b4f6debfecae7f33fffb980}\label{classv8_1_1internal_1_1HashTable_ab0fdda7b8b4f6debfecae7f33fffb980}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$ {\bfseries Ensure\+Capacity} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$ table, \mbox{\hyperlink{classint}{int}} n, Pretenure\+Flag pretenure=N\+O\+T\+\_\+\+T\+E\+N\+U\+R\+ED)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_a8aa6d7d9275d3593ea48c4c4e4f90b9d}\label{classv8_1_1internal_1_1HashTable_a8aa6d7d9275d3593ea48c4c4e4f90b9d}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Elements\+Start\+Index} = k\+Prefix\+Start\+Index + Shape\+::k\+Prefix\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_a084a957331c276380859e1489c618e37}\label{classv8_1_1internal_1_1HashTable_a084a957331c276380859e1489c618e37}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Entry\+Size} = Shape\+::k\+Entry\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_a7cfa76519d280b5ab11cca9a96ad8a72}\label{classv8_1_1internal_1_1HashTable_a7cfa76519d280b5ab11cca9a96ad8a72}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Entry\+Key\+Index} = 0
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Elements\+Start\+Offset}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Capacity}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_a29544e77304de983c24cf9498f4f0879}\label{classv8_1_1internal_1_1HashTable_a29544e77304de983c24cf9498f4f0879}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Min\+Shrink\+Capacity} = 16
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_a85642aaddc6eba9626b26d601ce85770}\label{classv8_1_1internal_1_1HashTable_a85642aaddc6eba9626b26d601ce85770}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Regular\+Capacity} = 16384
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_aef477d2f3eb85d49ed567615b253e385}\label{classv8_1_1internal_1_1HashTable_aef477d2f3eb85d49ed567615b253e385}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Find\+Insertion\+Entry} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} hash)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_a830dc3e6363f7aabf993ac665424e657}\label{classv8_1_1internal_1_1HashTable_a830dc3e6363f7aabf993ac665424e657}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$ {\bfseries New\+Internal} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} capacity, Pretenure\+Flag pretenure)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_a9e8fcea8c95e2c1d14451af6558c9da9}\label{classv8_1_1internal_1_1HashTable_a9e8fcea8c95e2c1d14451af6558c9da9}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$ {\bfseries Shrink} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ Derived $>$ table, \mbox{\hyperlink{classint}{int}} additional\+Capacity=0)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_ac26f85b18a3d4e9b953069cc69ab9a9f}\label{classv8_1_1internal_1_1HashTable_ac26f85b18a3d4e9b953069cc69ab9a9f}} 
+class {\bfseries Object\+Hash\+Table}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Derived, typename Shape$>$\newline
+class v8\+::internal\+::\+Hash\+Table$<$ Derived, Shape $>$}
+
+
+
+Definition at line 132 of file hash-\/table.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_ac934870af4768dd85fdf0f2acb43acdd}\label{classv8_1_1internal_1_1HashTable_ac934870af4768dd85fdf0f2acb43acdd}} 
+\index{v8\+::internal\+::\+Hash\+Table@{v8\+::internal\+::\+Hash\+Table}!k\+Elements\+Start\+Offset@{k\+Elements\+Start\+Offset}}
+\index{k\+Elements\+Start\+Offset@{k\+Elements\+Start\+Offset}!v8\+::internal\+::\+Hash\+Table@{v8\+::internal\+::\+Hash\+Table}}
+\subsubsection{\texorpdfstring{k\+Elements\+Start\+Offset}{kElementsStartOffset}}
+{\footnotesize\ttfamily template$<$typename Derived, typename Shape$>$ \\
+const \mbox{\hyperlink{classint}{int}} \mbox{\hyperlink{classv8_1_1internal_1_1HashTable}{v8\+::internal\+::\+Hash\+Table}}$<$ Derived, Shape $>$\+::k\+Elements\+Start\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kHeaderSize + kElementsStartIndex * kTaggedSize
+\end{DoxyCode}
+
+
+Definition at line 167 of file hash-\/table.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTable_a794ae82b53ca932ee7264963865631d8}\label{classv8_1_1internal_1_1HashTable_a794ae82b53ca932ee7264963865631d8}} 
+\index{v8\+::internal\+::\+Hash\+Table@{v8\+::internal\+::\+Hash\+Table}!k\+Max\+Capacity@{k\+Max\+Capacity}}
+\index{k\+Max\+Capacity@{k\+Max\+Capacity}!v8\+::internal\+::\+Hash\+Table@{v8\+::internal\+::\+Hash\+Table}}
+\subsubsection{\texorpdfstring{k\+Max\+Capacity}{kMaxCapacity}}
+{\footnotesize\ttfamily template$<$typename Derived, typename Shape$>$ \\
+const \mbox{\hyperlink{classint}{int}} \mbox{\hyperlink{classv8_1_1internal_1_1HashTable}{v8\+::internal\+::\+Hash\+Table}}$<$ Derived, Shape $>$\+::k\+Max\+Capacity\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      (FixedArray::kMaxLength - kElementsStartIndex) / kEntrySize
+\end{DoxyCode}
+
+
+Definition at line 172 of file hash-\/table.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/hash-\/table.\+h\item 
+v8/src/objects/hash-\/table-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

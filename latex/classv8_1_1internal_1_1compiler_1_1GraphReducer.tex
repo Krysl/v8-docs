@@ -1,0 +1,49 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1GraphReducer}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Graph\+Reducer Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1GraphReducer}\index{v8\+::internal\+::compiler\+::\+Graph\+Reducer@{v8\+::internal\+::compiler\+::\+Graph\+Reducer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Graph\+Reducer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1GraphReducer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1GraphReducer_a78f7183b04d38293dfde6d60ceaa3d3e}\label{classv8_1_1internal_1_1compiler_1_1GraphReducer_a78f7183b04d38293dfde6d60ceaa3d3e}} 
+enum {\bfseries State} \+: uint8\+\_\+t \{ {\bfseries k\+Unvisited}, 
+{\bfseries k\+Revisit}, 
+{\bfseries k\+On\+Stack}, 
+{\bfseries k\+Visited}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1GraphReducer_a234dce17c72dd0eef3e84754e0c78fbd}\label{classv8_1_1internal_1_1compiler_1_1GraphReducer_a234dce17c72dd0eef3e84754e0c78fbd}} 
+{\bfseries Graph\+Reducer} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Graph}{Graph}} $\ast$graph, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$dead=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1GraphReducer_a8e0487d58e8ec49ab07d140636a4fd90}\label{classv8_1_1internal_1_1compiler_1_1GraphReducer_a8e0487d58e8ec49ab07d140636a4fd90}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Graph}{Graph}} $\ast$ {\bfseries graph} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1GraphReducer_a329d6fb23dd54f07625fce43008c2241}\label{classv8_1_1internal_1_1compiler_1_1GraphReducer_a329d6fb23dd54f07625fce43008c2241}} 
+void {\bfseries Add\+Reducer} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Reducer}{Reducer}} $\ast$reducer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1GraphReducer_a29a312f60ff837b899dd53414bd69753}\label{classv8_1_1internal_1_1compiler_1_1GraphReducer_a29a312f60ff837b899dd53414bd69753}} 
+void {\bfseries Reduce\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1GraphReducer_a5bbd1eaf3d27ed84b49d1b43e3e31958}\label{classv8_1_1internal_1_1compiler_1_1GraphReducer_a5bbd1eaf3d27ed84b49d1b43e3e31958}} 
+void {\bfseries Reduce\+Graph} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 129 of file graph-\/reducer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/graph-\/reducer.\+h\item 
+v8/src/compiler/graph-\/reducer.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,109 @@
+\hypertarget{classv8_1_1internal_1_1Token}{}\section{v8\+:\+:internal\+:\+:Token Class Reference}
+\label{classv8_1_1internal_1_1Token}\index{v8\+::internal\+::\+Token@{v8\+::internal\+::\+Token}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a89b12809241952e0af6ed185dc815756}\label{classv8_1_1internal_1_1Token_a89b12809241952e0af6ed185dc815756}} 
+enum {\bfseries Value} \+: uint8\+\_\+t \{ {\bfseries T\+O\+K\+E\+N\+\_\+\+L\+I\+ST} =(T, T, T) N\+U\+M\+\_\+\+T\+O\+K\+E\+NS
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a84e4dfd6e827440e1f6fe907175f361b}\label{classv8_1_1internal_1_1Token_a84e4dfd6e827440e1f6fe907175f361b}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Name} (Value token)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a6f4448ee5f969fd907523cfeadc70964}\label{classv8_1_1internal_1_1Token_a6f4448ee5f969fd907523cfeadc70964}} 
+static \mbox{\hyperlink{classchar}{char}} {\bfseries Type\+For\+Testing} (Value token)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_aeb5150121546a6f85cf2691d6fcf6f2b}\label{classv8_1_1internal_1_1Token_aeb5150121546a6f85cf2691d6fcf6f2b}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Keyword} (Value token)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_ada63a32ddd08219cb0afcb850441dad3}\label{classv8_1_1internal_1_1Token_ada63a32ddd08219cb0afcb850441dad3}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Identifier} (Value token, Language\+Mode language\+\_\+mode, \mbox{\hyperlink{classbool}{bool}} is\+\_\+generator, \mbox{\hyperlink{classbool}{bool}} disallow\+\_\+await)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a9611f1c646c5ebb2691e2ae150b7c371}\label{classv8_1_1internal_1_1Token_a9611f1c646c5ebb2691e2ae150b7c371}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Callable} (Value token)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a2a3c31e12574a3d7fb44719250f46b48}\label{classv8_1_1internal_1_1Token_a2a3c31e12574a3d7fb44719250f46b48}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Auto\+Semicolon} (Value token)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a55c4e650fdce6b5c98fdfed13e174c0d}\label{classv8_1_1internal_1_1Token_a55c4e650fdce6b5c98fdfed13e174c0d}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Any\+Identifier} (Value token)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_ac93c7231b6162cedc2f7b432bcd71448}\label{classv8_1_1internal_1_1Token_ac93c7231b6162cedc2f7b432bcd71448}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Strict\+Reserved\+Word} (Value token)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_aaca0419c5de7408ade09b052c2fb7423}\label{classv8_1_1internal_1_1Token_aaca0419c5de7408ade09b052c2fb7423}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Literal} (Value token)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a412022e6e523cc651985baf7a338f201}\label{classv8_1_1internal_1_1Token_a412022e6e523cc651985baf7a338f201}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Template} (Value token)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a5c1a4fd8d214f82a919bb80509cd68e6}\label{classv8_1_1internal_1_1Token_a5c1a4fd8d214f82a919bb80509cd68e6}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Member} (Value token)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a7d9e322a877497bf245c13b9272f898a}\label{classv8_1_1internal_1_1Token_a7d9e322a877497bf245c13b9272f898a}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Property} (Value token)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_aaf55c655551e8c1a60837b15ffe84c58}\label{classv8_1_1internal_1_1Token_aaf55c655551e8c1a60837b15ffe84c58}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Property\+Or\+Call} (Value token)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a1187a2d7f18902e9a0ea0db39a7bfeab}\label{classv8_1_1internal_1_1Token_a1187a2d7f18902e9a0ea0db39a7bfeab}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Arrow\+Or\+Assignment\+Op} (Value token)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_adfd13e4d7b93739f2dc344e8942148c3}\label{classv8_1_1internal_1_1Token_adfd13e4d7b93739f2dc344e8942148c3}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Assignment\+Op} (Value token)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a6c86b8c0b5c1a31d853a2edad571fb74}\label{classv8_1_1internal_1_1Token_a6c86b8c0b5c1a31d853a2edad571fb74}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Binary\+Op} (Value op)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a62cc331f6e96e759020975c50a9aef72}\label{classv8_1_1internal_1_1Token_a62cc331f6e96e759020975c50a9aef72}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Compare\+Op} (Value op)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a5374bee5a77c04a854e00e97bd205aa3}\label{classv8_1_1internal_1_1Token_a5374bee5a77c04a854e00e97bd205aa3}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Ordered\+Relational\+Compare\+Op} (Value op)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_ad7ff5a7e1c7fcce3f0e0543699f4b516}\label{classv8_1_1internal_1_1Token_ad7ff5a7e1c7fcce3f0e0543699f4b516}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Equality\+Op} (Value op)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a921406413a0efcfc68d832146ea9d414}\label{classv8_1_1internal_1_1Token_a921406413a0efcfc68d832146ea9d414}} 
+static Value {\bfseries Binary\+Op\+For\+Assignment} (Value op)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a95c7a019410d240107ca5d5dfecb696d}\label{classv8_1_1internal_1_1Token_a95c7a019410d240107ca5d5dfecb696d}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Bit\+Op} (Value op)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a835fae2434bcf697c5100399ba6c662f}\label{classv8_1_1internal_1_1Token_a835fae2434bcf697c5100399ba6c662f}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Unary\+Op} (Value op)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_ab9a0e734a80e1d0101a0954891af333d}\label{classv8_1_1internal_1_1Token_ab9a0e734a80e1d0101a0954891af333d}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Count\+Op} (Value op)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a78c6ddf95cea5f7f40fcbfcf023ed1ae}\label{classv8_1_1internal_1_1Token_a78c6ddf95cea5f7f40fcbfcf023ed1ae}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Unary\+Or\+Count\+Op} (Value op)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_acecd1f2d38c6527d2a69cd000130c84c}\label{classv8_1_1internal_1_1Token_acecd1f2d38c6527d2a69cd000130c84c}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Shift\+Op} (Value op)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a1e4f4756fc0279653182eadc1380e458}\label{classv8_1_1internal_1_1Token_a1e4f4756fc0279653182eadc1380e458}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries String} (Value token)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_a7d8bd48a5f30ac59203d602b6a4a71e7}\label{classv8_1_1internal_1_1Token_a7d8bd48a5f30ac59203d602b6a4a71e7}} 
+static uint8\+\_\+t {\bfseries String\+Length} (Value token)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Token_adc5afeee112795bad9a6aa81ae9dadd4}\label{classv8_1_1internal_1_1Token_adc5afeee112795bad9a6aa81ae9dadd4}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Precedence} (Value token, \mbox{\hyperlink{classbool}{bool}} accept\+\_\+\+IN)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 202 of file token.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/parsing/token.\+h\item 
+v8/src/parsing/token.\+cc\end{DoxyCompactItemize}

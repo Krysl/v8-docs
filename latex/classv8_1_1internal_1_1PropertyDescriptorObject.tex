@@ -1,0 +1,163 @@
+\hypertarget{classv8_1_1internal_1_1PropertyDescriptorObject}{}\section{v8\+:\+:internal\+:\+:Property\+Descriptor\+Object Class Reference}
+\label{classv8_1_1internal_1_1PropertyDescriptorObject}\index{v8\+::internal\+::\+Property\+Descriptor\+Object@{v8\+::internal\+::\+Property\+Descriptor\+Object}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Property\+Descriptor\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1PropertyDescriptorObject}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDescriptorObject_a36c82e0f34c2275c13254b20005640a4}\label{classv8_1_1internal_1_1PropertyDescriptorObject_a36c82e0f34c2275c13254b20005640a4}} 
+enum \{ \newline
+{\bfseries k\+Flags\+Index}, 
+{\bfseries k\+Value\+Index}, 
+{\bfseries k\+Get\+Index}, 
+{\bfseries k\+Set\+Index}, 
+\newline
+{\bfseries k\+Length}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Regular\+Accessor\+Property\+Bits}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Regular\+Data\+Property\+Bits}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Has\+Mask}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Value\+Offset}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Flags\+Offset}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Get\+Offset}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Set\+Offset}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file property-\/descriptor-\/object.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDescriptorObject_a33d6bde19012842c3559d4506365f735}\label{classv8_1_1internal_1_1PropertyDescriptorObject_a33d6bde19012842c3559d4506365f735}} 
+\index{v8\+::internal\+::\+Property\+Descriptor\+Object@{v8\+::internal\+::\+Property\+Descriptor\+Object}!k\+Flags\+Offset@{k\+Flags\+Offset}}
+\index{k\+Flags\+Offset@{k\+Flags\+Offset}!v8\+::internal\+::\+Property\+Descriptor\+Object@{v8\+::internal\+::\+Property\+Descriptor\+Object}}
+\subsubsection{\texorpdfstring{k\+Flags\+Offset}{kFlagsOffset}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Property\+Descriptor\+Object\+::k\+Flags\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      FixedArray::OffsetOfElementAt(PropertyDescriptorObject::kFlagsIndex)
+\end{DoxyCode}
+
+
+Definition at line 52 of file property-\/descriptor-\/object.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDescriptorObject_ac9c116d76ca9d678858da6bf44ed717e}\label{classv8_1_1internal_1_1PropertyDescriptorObject_ac9c116d76ca9d678858da6bf44ed717e}} 
+\index{v8\+::internal\+::\+Property\+Descriptor\+Object@{v8\+::internal\+::\+Property\+Descriptor\+Object}!k\+Get\+Offset@{k\+Get\+Offset}}
+\index{k\+Get\+Offset@{k\+Get\+Offset}!v8\+::internal\+::\+Property\+Descriptor\+Object@{v8\+::internal\+::\+Property\+Descriptor\+Object}}
+\subsubsection{\texorpdfstring{k\+Get\+Offset}{kGetOffset}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Property\+Descriptor\+Object\+::k\+Get\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      FixedArray::OffsetOfElementAt(PropertyDescriptorObject::kGetIndex)
+\end{DoxyCode}
+
+
+Definition at line 54 of file property-\/descriptor-\/object.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDescriptorObject_a34702615e9a979d4d39e7c978b724ca7}\label{classv8_1_1internal_1_1PropertyDescriptorObject_a34702615e9a979d4d39e7c978b724ca7}} 
+\index{v8\+::internal\+::\+Property\+Descriptor\+Object@{v8\+::internal\+::\+Property\+Descriptor\+Object}!k\+Has\+Mask@{k\+Has\+Mask}}
+\index{k\+Has\+Mask@{k\+Has\+Mask}!v8\+::internal\+::\+Property\+Descriptor\+Object@{v8\+::internal\+::\+Property\+Descriptor\+Object}}
+\subsubsection{\texorpdfstring{k\+Has\+Mask}{kHasMask}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Property\+Descriptor\+Object\+::k\+Has\+Mask\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= HasEnumerableBit::kMask |
+                              HasConfigurableBit::kMask |
+                              HasWritableBit::kMask | HasValueBit::kMask |
+                              HasGetBit::kMask | HasSetBit::kMask
+\end{DoxyCode}
+
+
+Definition at line 45 of file property-\/descriptor-\/object.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDescriptorObject_a455b93ac0aecd8df0694693c66955aaa}\label{classv8_1_1internal_1_1PropertyDescriptorObject_a455b93ac0aecd8df0694693c66955aaa}} 
+\index{v8\+::internal\+::\+Property\+Descriptor\+Object@{v8\+::internal\+::\+Property\+Descriptor\+Object}!k\+Regular\+Accessor\+Property\+Bits@{k\+Regular\+Accessor\+Property\+Bits}}
+\index{k\+Regular\+Accessor\+Property\+Bits@{k\+Regular\+Accessor\+Property\+Bits}!v8\+::internal\+::\+Property\+Descriptor\+Object@{v8\+::internal\+::\+Property\+Descriptor\+Object}}
+\subsubsection{\texorpdfstring{k\+Regular\+Accessor\+Property\+Bits}{kRegularAccessorPropertyBits}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Property\+Descriptor\+Object\+::k\+Regular\+Accessor\+Property\+Bits\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      HasEnumerableBit::kMask | HasConfigurableBit::kMask | HasGetBit::kMask |
+      HasSetBit::kMask
+\end{DoxyCode}
+
+
+Definition at line 37 of file property-\/descriptor-\/object.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDescriptorObject_a4d5edcc482416aacbc39c5e0966cd409}\label{classv8_1_1internal_1_1PropertyDescriptorObject_a4d5edcc482416aacbc39c5e0966cd409}} 
+\index{v8\+::internal\+::\+Property\+Descriptor\+Object@{v8\+::internal\+::\+Property\+Descriptor\+Object}!k\+Regular\+Data\+Property\+Bits@{k\+Regular\+Data\+Property\+Bits}}
+\index{k\+Regular\+Data\+Property\+Bits@{k\+Regular\+Data\+Property\+Bits}!v8\+::internal\+::\+Property\+Descriptor\+Object@{v8\+::internal\+::\+Property\+Descriptor\+Object}}
+\subsubsection{\texorpdfstring{k\+Regular\+Data\+Property\+Bits}{kRegularDataPropertyBits}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Property\+Descriptor\+Object\+::k\+Regular\+Data\+Property\+Bits\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      HasEnumerableBit::kMask | HasConfigurableBit::kMask |
+      HasWritableBit::kMask | HasValueBit::kMask
+\end{DoxyCode}
+
+
+Definition at line 41 of file property-\/descriptor-\/object.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDescriptorObject_a5a2a2bd927cc1790346ca21bd6ef3159}\label{classv8_1_1internal_1_1PropertyDescriptorObject_a5a2a2bd927cc1790346ca21bd6ef3159}} 
+\index{v8\+::internal\+::\+Property\+Descriptor\+Object@{v8\+::internal\+::\+Property\+Descriptor\+Object}!k\+Set\+Offset@{k\+Set\+Offset}}
+\index{k\+Set\+Offset@{k\+Set\+Offset}!v8\+::internal\+::\+Property\+Descriptor\+Object@{v8\+::internal\+::\+Property\+Descriptor\+Object}}
+\subsubsection{\texorpdfstring{k\+Set\+Offset}{kSetOffset}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Property\+Descriptor\+Object\+::k\+Set\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      FixedArray::OffsetOfElementAt(PropertyDescriptorObject::kSetIndex)
+\end{DoxyCode}
+
+
+Definition at line 56 of file property-\/descriptor-\/object.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyDescriptorObject_a000222a0b8a34079592182b2a9aa5d46}\label{classv8_1_1internal_1_1PropertyDescriptorObject_a000222a0b8a34079592182b2a9aa5d46}} 
+\index{v8\+::internal\+::\+Property\+Descriptor\+Object@{v8\+::internal\+::\+Property\+Descriptor\+Object}!k\+Value\+Offset@{k\+Value\+Offset}}
+\index{k\+Value\+Offset@{k\+Value\+Offset}!v8\+::internal\+::\+Property\+Descriptor\+Object@{v8\+::internal\+::\+Property\+Descriptor\+Object}}
+\subsubsection{\texorpdfstring{k\+Value\+Offset}{kValueOffset}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Property\+Descriptor\+Object\+::k\+Value\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      FixedArray::OffsetOfElementAt(PropertyDescriptorObject::kValueIndex)
+\end{DoxyCode}
+
+
+Definition at line 50 of file property-\/descriptor-\/object.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/property-\/descriptor-\/object.\+h\end{DoxyCompactItemize}

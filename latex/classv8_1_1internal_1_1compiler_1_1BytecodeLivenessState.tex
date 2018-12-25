@@ -1,0 +1,65 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Bytecode\+Liveness\+State Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState}\index{v8\+::internal\+::compiler\+::\+Bytecode\+Liveness\+State@{v8\+::internal\+::compiler\+::\+Bytecode\+Liveness\+State}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Bytecode\+Liveness\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_a39f27fd5c02f4a9274f444a093fbbfd9}\label{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_a39f27fd5c02f4a9274f444a093fbbfd9}} 
+{\bfseries Bytecode\+Liveness\+State} (\mbox{\hyperlink{classint}{int}} register\+\_\+count, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_a0e9dbc6a2a7f97039b1cc777b7dc590f}\label{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_a0e9dbc6a2a7f97039b1cc777b7dc590f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1BitVector}{Bit\+Vector}} \& {\bfseries bit\+\_\+vector} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_a637cd1601c558128da03837793d35c78}\label{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_a637cd1601c558128da03837793d35c78}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1BitVector}{Bit\+Vector}} \& {\bfseries bit\+\_\+vector} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_ad6690d916f8386e37d529179baa973f2}\label{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_ad6690d916f8386e37d529179baa973f2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Register\+Is\+Live} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_afbad6a4bdf9f7b65e4d1b6e788938c88}\label{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_afbad6a4bdf9f7b65e4d1b6e788938c88}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Accumulator\+Is\+Live} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_a69341e73f93109d6faa6c10ca2dd4d32}\label{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_a69341e73f93109d6faa6c10ca2dd4d32}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Equals} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState}{Bytecode\+Liveness\+State}} \&other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_a8ccb01a2cda9a9e0e41fdda9c4bb8078}\label{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_a8ccb01a2cda9a9e0e41fdda9c4bb8078}} 
+void {\bfseries Mark\+Register\+Live} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_ad6f4861c71b19f5b4256d76ee7073142}\label{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_ad6f4861c71b19f5b4256d76ee7073142}} 
+void {\bfseries Mark\+Register\+Dead} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_a32f84d132bb100d0647533c4b5502a72}\label{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_a32f84d132bb100d0647533c4b5502a72}} 
+void {\bfseries Mark\+Accumulator\+Live} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_ae999aa0b447e1d7b95a362b79b080864}\label{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_ae999aa0b447e1d7b95a362b79b080864}} 
+void {\bfseries Mark\+Accumulator\+Dead} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_a09361674684a68430d15f8d8898c7d8a}\label{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_a09361674684a68430d15f8d8898c7d8a}} 
+void {\bfseries Mark\+All\+Live} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_a105809b878f191ad50aede7c368c71c9}\label{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_a105809b878f191ad50aede7c368c71c9}} 
+void {\bfseries Union} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState}{Bytecode\+Liveness\+State}} \&other)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_abea25c41c5a5695336ec07eb5ac0338a}\label{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_abea25c41c5a5695336ec07eb5ac0338a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Union\+Is\+Changed} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState}{Bytecode\+Liveness\+State}} \&other)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_a01bdc0996f3dc7eb19bac191f5c2bfc6}\label{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState_a01bdc0996f3dc7eb19bac191f5c2bfc6}} 
+void {\bfseries Copy\+From} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BytecodeLivenessState}{Bytecode\+Liveness\+State}} \&other)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file bytecode-\/liveness-\/map.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/bytecode-\/liveness-\/map.\+h\end{DoxyCompactItemize}

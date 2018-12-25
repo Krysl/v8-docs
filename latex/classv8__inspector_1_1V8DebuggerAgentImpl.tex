@@ -1,0 +1,165 @@
+\hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl}{}\section{v8\+\_\+inspector\+:\+:V8\+Debugger\+Agent\+Impl Class Reference}
+\label{classv8__inspector_1_1V8DebuggerAgentImpl}\index{v8\+\_\+inspector\+::\+V8\+Debugger\+Agent\+Impl@{v8\+\_\+inspector\+::\+V8\+Debugger\+Agent\+Impl}}
+Inheritance diagram for v8\+\_\+inspector\+:\+:V8\+Debugger\+Agent\+Impl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8__inspector_1_1V8DebuggerAgentImpl}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a6c9ddd65aab7f8ec1599ba87cb30a324}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a6c9ddd65aab7f8ec1599ba87cb30a324}} 
+enum {\bfseries Breakpoint\+Source} \{ {\bfseries User\+Breakpoint\+Source}, 
+{\bfseries Debug\+Command\+Breakpoint\+Source}, 
+{\bfseries Monitor\+Command\+Breakpoint\+Source}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_ab7a25af8d84d07de5e356947bf8e7f22}\label{classv8__inspector_1_1V8DebuggerAgentImpl_ab7a25af8d84d07de5e356947bf8e7f22}} 
+{\bfseries V8\+Debugger\+Agent\+Impl} (\mbox{\hyperlink{classv8__inspector_1_1V8InspectorSessionImpl}{V8\+Inspector\+Session\+Impl}} $\ast$, protocol\+::\+Frontend\+Channel $\ast$, protocol\+::\+Dictionary\+Value $\ast$state)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a246ec21354eb1ac1ba7e6ee09bea33df}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a246ec21354eb1ac1ba7e6ee09bea33df}} 
+void {\bfseries restore} ()
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_abe508cf5e7d74d7ed7cdca3352e7743c}\label{classv8__inspector_1_1V8DebuggerAgentImpl_abe508cf5e7d74d7ed7cdca3352e7743c}} 
+Response {\bfseries enable} (\mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $\ast$out\+Debugger\+Id) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a15268ed61262e630ad50630ad4df2fc3}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a15268ed61262e630ad50630ad4df2fc3}} 
+Response {\bfseries disable} () override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a5e5d082b165218019b16b35152acb758}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a5e5d082b165218019b16b35152acb758}} 
+Response {\bfseries set\+Breakpoints\+Active} (\mbox{\hyperlink{classbool}{bool}} active) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a0d160fef78890390eb7f663e030de0d8}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a0d160fef78890390eb7f663e030de0d8}} 
+Response {\bfseries set\+Skip\+All\+Pauses} (\mbox{\hyperlink{classbool}{bool}} skip) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a343b38d237399dc816cdbe2fd70ff925}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a343b38d237399dc816cdbe2fd70ff925}} 
+Response {\bfseries set\+Breakpoint\+By\+Url} (\mbox{\hyperlink{classint}{int}} line\+Number, Maybe$<$ \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $>$ optional\+U\+RL, Maybe$<$ \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $>$ optional\+U\+R\+L\+Regex, Maybe$<$ \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $>$ optional\+Script\+Hash, Maybe$<$ \mbox{\hyperlink{classint}{int}} $>$ optional\+Column\+Number, Maybe$<$ \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $>$ optional\+Condition, \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $\ast$, std\+::unique\+\_\+ptr$<$ protocol\+::\+Array$<$ protocol\+::\+Debugger\+::\+Location $>$$>$ $\ast$locations) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_aa98ded18c922ba2a298a90be3326a938}\label{classv8__inspector_1_1V8DebuggerAgentImpl_aa98ded18c922ba2a298a90be3326a938}} 
+Response {\bfseries set\+Breakpoint} (std\+::unique\+\_\+ptr$<$ protocol\+::\+Debugger\+::\+Location $>$, Maybe$<$ \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $>$ optional\+Condition, \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $\ast$, std\+::unique\+\_\+ptr$<$ protocol\+::\+Debugger\+::\+Location $>$ $\ast$actual\+Location) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_aff2bb44ef623317bf4d33cffb253971e}\label{classv8__inspector_1_1V8DebuggerAgentImpl_aff2bb44ef623317bf4d33cffb253971e}} 
+Response {\bfseries set\+Breakpoint\+On\+Function\+Call} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&function\+Object\+Id, Maybe$<$ \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $>$ optional\+Condition, \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $\ast$out\+Breakpoint\+Id) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a433b236c226977255fdaf8deab24cf9f}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a433b236c226977255fdaf8deab24cf9f}} 
+Response {\bfseries remove\+Breakpoint} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&breakpoint\+Id) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a31f19c64835298bd0f3adea222783198}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a31f19c64835298bd0f3adea222783198}} 
+Response {\bfseries continue\+To\+Location} (std\+::unique\+\_\+ptr$<$ protocol\+::\+Debugger\+::\+Location $>$, Maybe$<$ \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $>$ target\+Call\+Frames) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a70c924af3a207f3bbab059dcccdd8b44}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a70c924af3a207f3bbab059dcccdd8b44}} 
+Response {\bfseries get\+Stack\+Trace} (std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+Stack\+Trace\+Id $>$ in\+Stack\+Trace\+Id, std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+Stack\+Trace $>$ $\ast$out\+Stack\+Trace) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a7ef484c40a8150b2076bd8ddd5e2dc80}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a7ef484c40a8150b2076bd8ddd5e2dc80}} 
+Response {\bfseries search\+In\+Content} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&script\+Id, const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&query, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ optional\+Case\+Sensitive, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ optional\+Is\+Regex, std\+::unique\+\_\+ptr$<$ protocol\+::\+Array$<$ protocol\+::\+Debugger\+::\+Search\+Match $>$$>$ $\ast$) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_acb56b87619b981eeb414d281cce7fafb}\label{classv8__inspector_1_1V8DebuggerAgentImpl_acb56b87619b981eeb414d281cce7fafb}} 
+Response {\bfseries get\+Possible\+Breakpoints} (std\+::unique\+\_\+ptr$<$ protocol\+::\+Debugger\+::\+Location $>$ start, Maybe$<$ protocol\+::\+Debugger\+::\+Location $>$ end, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ restrict\+To\+Function, std\+::unique\+\_\+ptr$<$ protocol\+::\+Array$<$ protocol\+::\+Debugger\+::\+Break\+Location $>$$>$ $\ast$locations) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_addb694a8ac858f9f9c0863b85ff9fbe7}\label{classv8__inspector_1_1V8DebuggerAgentImpl_addb694a8ac858f9f9c0863b85ff9fbe7}} 
+Response {\bfseries set\+Script\+Source} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&in\+Script\+Id, const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&in\+Script\+Source, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ dry\+Run, Maybe$<$ protocol\+::\+Array$<$ protocol\+::\+Debugger\+::\+Call\+Frame $>$$>$ $\ast$opt\+Out\+Call\+Frames, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ $\ast$opt\+Out\+Stack\+Changed, Maybe$<$ protocol\+::\+Runtime\+::\+Stack\+Trace $>$ $\ast$opt\+Out\+Async\+Stack\+Trace, Maybe$<$ protocol\+::\+Runtime\+::\+Stack\+Trace\+Id $>$ $\ast$opt\+Out\+Async\+Stack\+Trace\+Id, Maybe$<$ protocol\+::\+Runtime\+::\+Exception\+Details $>$ $\ast$opt\+Out\+Compile\+Error) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a99cce962a5c33a7919aed049a12b2a17}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a99cce962a5c33a7919aed049a12b2a17}} 
+Response {\bfseries restart\+Frame} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&call\+Frame\+Id, std\+::unique\+\_\+ptr$<$ protocol\+::\+Array$<$ protocol\+::\+Debugger\+::\+Call\+Frame $>$$>$ $\ast$new\+Call\+Frames, Maybe$<$ protocol\+::\+Runtime\+::\+Stack\+Trace $>$ $\ast$async\+Stack\+Trace, Maybe$<$ protocol\+::\+Runtime\+::\+Stack\+Trace\+Id $>$ $\ast$async\+Stack\+Trace\+Id) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a2457433b0ef4b2a5810a5574ebb4114e}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a2457433b0ef4b2a5810a5574ebb4114e}} 
+Response {\bfseries get\+Script\+Source} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&script\+Id, \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $\ast$script\+Source) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_af8f02254e9c96f9bd9ca893572b089e9}\label{classv8__inspector_1_1V8DebuggerAgentImpl_af8f02254e9c96f9bd9ca893572b089e9}} 
+Response {\bfseries pause} () override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_aba741f1e13ba3c352f5edeb2ff9c7ea2}\label{classv8__inspector_1_1V8DebuggerAgentImpl_aba741f1e13ba3c352f5edeb2ff9c7ea2}} 
+Response {\bfseries resume} () override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a57116a7776532164419d2d0237aee5a3}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a57116a7776532164419d2d0237aee5a3}} 
+Response {\bfseries step\+Over} () override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_af3b98916e393c291ee66f314276c0970}\label{classv8__inspector_1_1V8DebuggerAgentImpl_af3b98916e393c291ee66f314276c0970}} 
+Response {\bfseries step\+Into} (Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ in\+Break\+On\+Async\+Call) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_af1e8d4eb551f077dbbd21fbe5384a98e}\label{classv8__inspector_1_1V8DebuggerAgentImpl_af1e8d4eb551f077dbbd21fbe5384a98e}} 
+Response {\bfseries step\+Out} () override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a83afa23e63dc78c9c0fea4ec24f96dc0}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a83afa23e63dc78c9c0fea4ec24f96dc0}} 
+void {\bfseries schedule\+Step\+Into\+Async} (std\+::unique\+\_\+ptr$<$ Schedule\+Step\+Into\+Async\+Callback $>$ callback) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a94f7be2be5d892d9778ef573c040c798}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a94f7be2be5d892d9778ef573c040c798}} 
+Response {\bfseries pause\+On\+Async\+Call} (std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+Stack\+Trace\+Id $>$ in\+Parent\+Stack\+Trace\+Id) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a3f4405307644e1fb2f16d362f86b0625}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a3f4405307644e1fb2f16d362f86b0625}} 
+Response {\bfseries set\+Pause\+On\+Exceptions} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&pause\+State) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a3910053417998615be9a1c5572a0088e}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a3910053417998615be9a1c5572a0088e}} 
+Response {\bfseries evaluate\+On\+Call\+Frame} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&call\+Frame\+Id, const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&expression, Maybe$<$ \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $>$ object\+Group, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ include\+Command\+Line\+A\+PI, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ silent, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ return\+By\+Value, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ generate\+Preview, Maybe$<$ \mbox{\hyperlink{classbool}{bool}} $>$ throw\+On\+Side\+Effect, Maybe$<$ double $>$ timeout, std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+Remote\+Object $>$ $\ast$result, Maybe$<$ protocol\+::\+Runtime\+::\+Exception\+Details $>$ $\ast$) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a0800cb29761e10a4908cee4c04ad2fdc}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a0800cb29761e10a4908cee4c04ad2fdc}} 
+Response {\bfseries set\+Variable\+Value} (\mbox{\hyperlink{classint}{int}} scope\+Number, const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&variable\+Name, std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+Call\+Argument $>$ new\+Value, const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&call\+Frame) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_aad8ff445abffb3cc78eafec0137f6e92}\label{classv8__inspector_1_1V8DebuggerAgentImpl_aad8ff445abffb3cc78eafec0137f6e92}} 
+Response {\bfseries set\+Return\+Value} (std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+Call\+Argument $>$ new\+Value) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_af0dc031391438f947a7d3a9389170560}\label{classv8__inspector_1_1V8DebuggerAgentImpl_af0dc031391438f947a7d3a9389170560}} 
+Response {\bfseries set\+Async\+Call\+Stack\+Depth} (\mbox{\hyperlink{classint}{int}} depth) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_ab9c98dbbb24af5bef65e7482a26c21ab}\label{classv8__inspector_1_1V8DebuggerAgentImpl_ab9c98dbbb24af5bef65e7482a26c21ab}} 
+Response {\bfseries set\+Blackbox\+Patterns} (std\+::unique\+\_\+ptr$<$ protocol\+::\+Array$<$ \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $>$$>$ patterns) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a6685e2d9b0d1317eff12004d61a457d4}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a6685e2d9b0d1317eff12004d61a457d4}} 
+Response {\bfseries set\+Blackboxed\+Ranges} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&script\+Id, std\+::unique\+\_\+ptr$<$ protocol\+::\+Array$<$ protocol\+::\+Debugger\+::\+Script\+Position $>$$>$ positions) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a905e7c6357e8d4f0c67dfa4a76a091ba}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a905e7c6357e8d4f0c67dfa4a76a091ba}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries enabled} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_ab48568fc048b12be57a34f7d49bb1ec3}\label{classv8__inspector_1_1V8DebuggerAgentImpl_ab48568fc048b12be57a34f7d49bb1ec3}} 
+void {\bfseries set\+Breakpoint\+For} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Function}{v8\+::\+Function}} $>$ function, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{v8\+::\+String}} $>$ condition, Breakpoint\+Source source)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a18624ae5567603ffef5cadd4df092c43}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a18624ae5567603ffef5cadd4df092c43}} 
+void {\bfseries remove\+Breakpoint\+For} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Function}{v8\+::\+Function}} $>$ function, Breakpoint\+Source source)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a323e23d63041dafdf54b09f74f7fab4e}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a323e23d63041dafdf54b09f74f7fab4e}} 
+void {\bfseries schedule\+Pause\+On\+Next\+Statement} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&break\+Reason, std\+::unique\+\_\+ptr$<$ protocol\+::\+Dictionary\+Value $>$ data)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a1d667a6ad3072c7cb935bd40dd11a038}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a1d667a6ad3072c7cb935bd40dd11a038}} 
+void {\bfseries cancel\+Pause\+On\+Next\+Statement} ()
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_accd1d2ae850872def928e59730baa33b}\label{classv8__inspector_1_1V8DebuggerAgentImpl_accd1d2ae850872def928e59730baa33b}} 
+void {\bfseries break\+Program} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&break\+Reason, std\+::unique\+\_\+ptr$<$ protocol\+::\+Dictionary\+Value $>$ data)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_ae8e0bf083f964da5016932a0caac54ce}\label{classv8__inspector_1_1V8DebuggerAgentImpl_ae8e0bf083f964da5016932a0caac54ce}} 
+void {\bfseries reset} ()
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a45fe3ff2da8aa4eaf5bf1d11fa2fda45}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a45fe3ff2da8aa4eaf5bf1d11fa2fda45}} 
+void {\bfseries did\+Pause} (\mbox{\hyperlink{classint}{int}} context\+Id, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ exception, const std\+::vector$<$ \mbox{\hyperlink{classint}{v8\+::debug\+::\+Breakpoint\+Id}} $>$ \&hit\+Breakpoints, v8\+::debug\+::\+Exception\+Type exception\+Type, \mbox{\hyperlink{classbool}{bool}} is\+Uncaught, \mbox{\hyperlink{classbool}{bool}} is\+O\+O\+M\+Break, \mbox{\hyperlink{classbool}{bool}} is\+Assert)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a3ea3184afbd254b96f6b91480f73e93b}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a3ea3184afbd254b96f6b91480f73e93b}} 
+void {\bfseries did\+Continue} ()
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_ae5ac3389032e6ffdb50fc88cfbd9d093}\label{classv8__inspector_1_1V8DebuggerAgentImpl_ae5ac3389032e6ffdb50fc88cfbd9d093}} 
+void {\bfseries did\+Parse\+Source} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8DebuggerScript}{V8\+Debugger\+Script}} $>$, \mbox{\hyperlink{classbool}{bool}} success)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_aa09bf9b9ff085fc7508fb9587df87b92}\label{classv8__inspector_1_1V8DebuggerAgentImpl_aa09bf9b9ff085fc7508fb9587df87b92}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+Function\+Blackboxed} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&script\+Id, const \mbox{\hyperlink{classv8_1_1debug_1_1Location}{v8\+::debug\+::\+Location}} \&start, const \mbox{\hyperlink{classv8_1_1debug_1_1Location}{v8\+::debug\+::\+Location}} \&end)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_ad2d9d1e98ba381c3c00af73268a68f84}\label{classv8__inspector_1_1V8DebuggerAgentImpl_ad2d9d1e98ba381c3c00af73268a68f84}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries accepts\+Pause} (\mbox{\hyperlink{classbool}{bool}} is\+O\+O\+M\+Break) const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8DebuggerAgentImpl_a4ac4583be32d2594f62e631c96b5bc94}\label{classv8__inspector_1_1V8DebuggerAgentImpl_a4ac4583be32d2594f62e631c96b5bc94}} 
+v8\+::\+Isolate $\ast$ {\bfseries isolate} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 30 of file v8-\/debugger-\/agent-\/impl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/inspector/v8-\/debugger-\/agent-\/impl.\+h\item 
+v8/src/inspector/v8-\/debugger-\/agent-\/impl.\+cc\end{DoxyCompactItemize}

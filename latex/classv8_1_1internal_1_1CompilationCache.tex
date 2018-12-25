@@ -1,0 +1,60 @@
+\hypertarget{classv8_1_1internal_1_1CompilationCache}{}\section{v8\+:\+:internal\+:\+:Compilation\+Cache Class Reference}
+\label{classv8_1_1internal_1_1CompilationCache}\index{v8\+::internal\+::\+Compilation\+Cache@{v8\+::internal\+::\+Compilation\+Cache}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationCache_a2cd1a6db18ad5685c30ba2ebb560bbe2}\label{classv8_1_1internal_1_1CompilationCache_a2cd1a6db18ad5685c30ba2ebb560bbe2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ {\bfseries Lookup\+Script} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ source, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ name, \mbox{\hyperlink{classint}{int}} line\+\_\+offset, \mbox{\hyperlink{classint}{int}} column\+\_\+offset, \mbox{\hyperlink{classv8_1_1ScriptOriginOptions}{Script\+Origin\+Options}} resource\+\_\+options, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ native\+\_\+context, Language\+Mode language\+\_\+mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationCache_a73a902ce12e3bc8e5ca5276127702478}\label{classv8_1_1internal_1_1CompilationCache_a73a902ce12e3bc8e5ca5276127702478}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1InfoCellPair}{Info\+Cell\+Pair}} {\bfseries Lookup\+Eval} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ source, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ outer\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, Language\+Mode language\+\_\+mode, \mbox{\hyperlink{classint}{int}} position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationCache_a3936c774ccd71fa0be44b4c01c234e9b}\label{classv8_1_1internal_1_1CompilationCache_a3936c774ccd71fa0be44b4c01c234e9b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ {\bfseries Lookup\+Reg\+Exp} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ source, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{J\+S\+Reg\+Exp\+::\+Flags}} flags)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationCache_a00be060e10409a467fedf71979f6e689}\label{classv8_1_1internal_1_1CompilationCache_a00be060e10409a467fedf71979f6e689}} 
+void {\bfseries Put\+Script} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ source, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ native\+\_\+context, Language\+Mode language\+\_\+mode, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ function\+\_\+info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationCache_a37b56a9f2b7d6146f0077fc996c2804a}\label{classv8_1_1internal_1_1CompilationCache_a37b56a9f2b7d6146f0077fc996c2804a}} 
+void {\bfseries Put\+Eval} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ source, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ outer\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ function\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackCell}{Feedback\+Cell}} $>$ feedback\+\_\+cell, \mbox{\hyperlink{classint}{int}} position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationCache_a9db56d1ad2334deec904f4e8617805d1}\label{classv8_1_1internal_1_1CompilationCache_a9db56d1ad2334deec904f4e8617805d1}} 
+void {\bfseries Put\+Reg\+Exp} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ source, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{J\+S\+Reg\+Exp\+::\+Flags}} flags, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ data)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationCache_acef1c5d4de3a72dff9ed45578087bec3}\label{classv8_1_1internal_1_1CompilationCache_acef1c5d4de3a72dff9ed45578087bec3}} 
+void {\bfseries Clear} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationCache_a870250701c54985a59a2fc6bed4a2323}\label{classv8_1_1internal_1_1CompilationCache_a870250701c54985a59a2fc6bed4a2323}} 
+void {\bfseries Remove} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ function\+\_\+info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationCache_a71ea83b1a9ea419ecc0d21a23e466663}\label{classv8_1_1internal_1_1CompilationCache_a71ea83b1a9ea419ecc0d21a23e466663}} 
+void {\bfseries Iterate} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationCache_a6c6f1bec5e0eeb46801ff0f051fd381a}\label{classv8_1_1internal_1_1CompilationCache_a6c6f1bec5e0eeb46801ff0f051fd381a}} 
+void {\bfseries Mark\+Compact\+Prologue} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationCache_a6d0cf1b1046d4d5cc267b0c5283f3184}\label{classv8_1_1internal_1_1CompilationCache_a6d0cf1b1046d4d5cc267b0c5283f3184}} 
+void {\bfseries Enable} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationCache_a819ae9c9a4c7d9761173b96bae5494e4}\label{classv8_1_1internal_1_1CompilationCache_a819ae9c9a4c7d9761173b96bae5494e4}} 
+void {\bfseries Disable} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CompilationCache_aba4f0964bdacf2bbf62cf876e5d28d0a}\label{classv8_1_1internal_1_1CompilationCache_aba4f0964bdacf2bbf62cf876e5d28d0a}} 
+class {\bfseries Isolate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 153 of file compilation-\/cache.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compilation-\/cache.\+h\item 
+v8/src/compilation-\/cache.\+cc\end{DoxyCompactItemize}

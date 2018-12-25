@@ -1,0 +1,162 @@
+\hypertarget{classv8_1_1internal_1_1AllocationSite}{}\section{v8\+:\+:internal\+:\+:Allocation\+Site Class Reference}
+\label{classv8_1_1internal_1_1AllocationSite}\index{v8\+::internal\+::\+Allocation\+Site@{v8\+::internal\+::\+Allocation\+Site}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Allocation\+Site\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1AllocationSite}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1AllocationSite_1_1BodyDescriptor}{Body\+Descriptor}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1AllocationSite_1_1DeoptDependentCodeBit}{Deopt\+Dependent\+Code\+Bit}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1AllocationSite_1_1DoNotInlineBit}{Do\+Not\+Inline\+Bit}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1AllocationSite_1_1ElementsKindBits}{Elements\+Kind\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1AllocationSite_1_1MementoFoundCountBits}{Memento\+Found\+Count\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1AllocationSite_1_1PretenureDecisionBits}{Pretenure\+Decision\+Bits}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a90e0736002b73f20d96abede63a5395b}\label{classv8_1_1internal_1_1AllocationSite_a90e0736002b73f20d96abede63a5395b}} 
+enum {\bfseries Pretenure\+Decision} \{ \newline
+{\bfseries k\+Undecided} = 0, 
+{\bfseries k\+Dont\+Tenure} = 1, 
+{\bfseries k\+Maybe\+Tenure} = 2, 
+{\bfseries k\+Tenure} = 3, 
+\newline
+{\bfseries k\+Zombie} = 4, 
+{\bfseries k\+Last\+Pretenure\+Decision\+Value} = k\+Zombie
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a015895d2a527877f98749eb13b16a38f}\label{classv8_1_1internal_1_1AllocationSite_a015895d2a527877f98749eb13b16a38f}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Pretenure\+Decision\+Name} (Pretenure\+Decision decision)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a81f61008e147366d1eea6cdbae9d5ded}\label{classv8_1_1internal_1_1AllocationSite_a81f61008e147366d1eea6cdbae9d5ded}} 
+void {\bfseries Initialize} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a06e769d7ad11dc8f553f8cc989525b9a}\label{classv8_1_1internal_1_1AllocationSite_a06e769d7ad11dc8f553f8cc989525b9a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Weak\+Next} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a46538baa1f709d8644d714e7f6bea60f}\label{classv8_1_1internal_1_1AllocationSite_a46538baa1f709d8644d714e7f6bea60f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Nested} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_ad1c0e4e32b7e2db1483fa7a518bec030}\label{classv8_1_1internal_1_1AllocationSite_ad1c0e4e32b7e2db1483fa7a518bec030}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Pretenure\+Decision\+Bits\+::k\+Max $>$=k\+Last\+Pretenure\+Decision\+Value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_ad402f0d78d12a670cf7eb371f65fc1c0}\label{classv8_1_1internal_1_1AllocationSite_ad402f0d78d12a670cf7eb371f65fc1c0}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Increment\+Memento\+Found\+Count} (\mbox{\hyperlink{classint}{int}} increment=1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_ac32fcfb926ce03239f5df6aca880f18c}\label{classv8_1_1internal_1_1AllocationSite_ac32fcfb926ce03239f5df6aca880f18c}} 
+void {\bfseries Increment\+Memento\+Create\+Count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a3e2f845f0caa8c7a41cd958ae5c34757}\label{classv8_1_1internal_1_1AllocationSite_a3e2f845f0caa8c7a41cd958ae5c34757}} 
+Pretenure\+Flag {\bfseries Get\+Pretenure\+Mode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_aa1b323951edb619dd9078164b9fabd5c}\label{classv8_1_1internal_1_1AllocationSite_aa1b323951edb619dd9078164b9fabd5c}} 
+void {\bfseries Reset\+Pretenure\+Decision} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a39fc1c0543c261ff4735a551113664d5}\label{classv8_1_1internal_1_1AllocationSite_a39fc1c0543c261ff4735a551113664d5}} 
+Pretenure\+Decision {\bfseries pretenure\+\_\+decision} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a3eb7bfb649894bc1ea0875152aff118e}\label{classv8_1_1internal_1_1AllocationSite_a3eb7bfb649894bc1ea0875152aff118e}} 
+void {\bfseries set\+\_\+pretenure\+\_\+decision} (Pretenure\+Decision decision)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a5d2bc5f9c30628481e1f179b18818690}\label{classv8_1_1internal_1_1AllocationSite_a5d2bc5f9c30628481e1f179b18818690}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries deopt\+\_\+dependent\+\_\+code} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a6b6321178dbb71e389194b39a6ee51ee}\label{classv8_1_1internal_1_1AllocationSite_a6b6321178dbb71e389194b39a6ee51ee}} 
+void {\bfseries set\+\_\+deopt\+\_\+dependent\+\_\+code} (\mbox{\hyperlink{classbool}{bool}} deopt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a7db228ca1d6bd89aa2af33005ca7a35e}\label{classv8_1_1internal_1_1AllocationSite_a7db228ca1d6bd89aa2af33005ca7a35e}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries memento\+\_\+found\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_ad74c42dccc41adcc6d7f2dd22fa56176}\label{classv8_1_1internal_1_1AllocationSite_ad74c42dccc41adcc6d7f2dd22fa56176}} 
+void {\bfseries set\+\_\+memento\+\_\+found\+\_\+count} (\mbox{\hyperlink{classint}{int}} count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_aa67ceb7ab03404c0e31fa529f08520c0}\label{classv8_1_1internal_1_1AllocationSite_aa67ceb7ab03404c0e31fa529f08520c0}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries memento\+\_\+create\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_ab95f8e888faad709405944f3f5223378}\label{classv8_1_1internal_1_1AllocationSite_ab95f8e888faad709405944f3f5223378}} 
+void {\bfseries set\+\_\+memento\+\_\+create\+\_\+count} (\mbox{\hyperlink{classint}{int}} count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_ab6c24df9ffa655f7797f28fc251099a6}\label{classv8_1_1internal_1_1AllocationSite_ab6c24df9ffa655f7797f28fc251099a6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Zombie} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a3ea3a12843ded3e0f95c7b1fc0e3d5bd}\label{classv8_1_1internal_1_1AllocationSite_a3ea3a12843ded3e0f95c7b1fc0e3d5bd}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Maybe\+Tenure} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_af432e0790ebdfc00d36c9a6234e98389}\label{classv8_1_1internal_1_1AllocationSite_af432e0790ebdfc00d36c9a6234e98389}} 
+void {\bfseries Mark\+Zombie} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_ac56e44521833202855156f6c8f06101f}\label{classv8_1_1internal_1_1AllocationSite_ac56e44521833202855156f6c8f06101f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Make\+Pretenure\+Decision} (Pretenure\+Decision current\+\_\+decision, double ratio, \mbox{\hyperlink{classbool}{bool}} maximum\+\_\+size\+\_\+scavenge)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_ab06a9db3e9fa8256f8cd97cc5cefeff5}\label{classv8_1_1internal_1_1AllocationSite_ab06a9db3e9fa8256f8cd97cc5cefeff5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Digest\+Pretenuring\+Feedback} (\mbox{\hyperlink{classbool}{bool}} maximum\+\_\+size\+\_\+scavenge)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a1add82cc1996137a15e395fbf2a2e09f}\label{classv8_1_1internal_1_1AllocationSite_a1add82cc1996137a15e395fbf2a2e09f}} 
+Elements\+Kind {\bfseries Get\+Elements\+Kind} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_adf1136948311998f7ead14bcf8f2cfd8}\label{classv8_1_1internal_1_1AllocationSite_adf1136948311998f7ead14bcf8f2cfd8}} 
+void {\bfseries Set\+Elements\+Kind} (Elements\+Kind kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_aab240b53ca5f3f2cd6fe7698e69bf082}\label{classv8_1_1internal_1_1AllocationSite_aab240b53ca5f3f2cd6fe7698e69bf082}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Inline\+Call} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a3e9fcf250995d87d2c31e05c6e4e6ce5}\label{classv8_1_1internal_1_1AllocationSite_a3e9fcf250995d87d2c31e05c6e4e6ce5}} 
+void {\bfseries Set\+Do\+Not\+Inline\+Call} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a1ada880cd600c59f8de3bfa32fdc956a}\label{classv8_1_1internal_1_1AllocationSite_a1ada880cd600c59f8de3bfa32fdc956a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Points\+To\+Literal} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_aa995dca4fbdcc35ed5818ad672508ee3}\label{classv8_1_1internal_1_1AllocationSite_aa995dca4fbdcc35ed5818ad672508ee3}} 
+{\footnotesize template$<$Allocation\+Site\+Update\+Mode update\+\_\+or\+\_\+check = Allocation\+Site\+Update\+Mode\+::k\+Update$>$ }\\static \mbox{\hyperlink{classbool}{bool}} {\bfseries Digest\+Transition\+Feedback} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1AllocationSite}{Allocation\+Site}} $>$ site, Elements\+Kind to\+\_\+kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a596f5281700441022ddf66ba8a1b2d03}\label{classv8_1_1internal_1_1AllocationSite_a596f5281700441022ddf66ba8a1b2d03}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Should\+Track} (Elements\+Kind boilerplate\+\_\+elements\+\_\+kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_af38a6648a1495ca603f8ee8f68c826a7}\label{classv8_1_1internal_1_1AllocationSite_af38a6648a1495ca603f8ee8f68c826a7}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Should\+Track} (Elements\+Kind from, Elements\+Kind to)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a5bce0a6a275e0f9a9c8a3e87babab0d9}\label{classv8_1_1internal_1_1AllocationSite_a5bce0a6a275e0f9a9c8a3e87babab0d9}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Track} (Instance\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_aeead57f97b16bf614a5631349d0bc7f1}\label{classv8_1_1internal_1_1AllocationSite_aeead57f97b16bf614a5631349d0bc7f1}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Maximum\+Array\+Bytes\+To\+Pretransition} = 8 $\ast$ 1024
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a45d58b4d64823e7d33eeb2291b26fb3a}\label{classv8_1_1internal_1_1AllocationSite_a45d58b4d64823e7d33eeb2291b26fb3a}} 
+static const double {\bfseries k\+Pretenure\+Ratio} = 0.\+85
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_a60cc20b9d1f816783e6c112029776861}\label{classv8_1_1internal_1_1AllocationSite_a60cc20b9d1f816783e6c112029776861}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Pretenure\+Minimum\+Created} = 100
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file allocation-\/site.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/allocation-\/site.\+h\item 
+v8/src/objects/allocation-\/site-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

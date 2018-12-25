@@ -1,5 +1,6 @@
 var classv8_1_1WasmStreaming =
 [
+    [ "WasmStreamingImpl", "classv8_1_1WasmStreaming_1_1WasmStreamingImpl.html", "classv8_1_1WasmStreaming_1_1WasmStreamingImpl" ],
     [ "ModuleCompiledCallback", "classv8_1_1WasmStreaming.html#a2e8af849348cbd9fe9c3940ab010917d", null ],
     [ "WasmStreaming", "classv8_1_1WasmStreaming.html#a40fe20bbbe84a244ebd306da4b8ce256", null ],
     [ "~WasmStreaming", "classv8_1_1WasmStreaming.html#a30946d0d7717c33736cedce87d81a178", null ],

@@ -1,0 +1,153 @@
+\hypertarget{classv8_1_1internal_1_1BytecodeArray}{}\section{v8\+:\+:internal\+:\+:Bytecode\+Array Class Reference}
+\label{classv8_1_1internal_1_1BytecodeArray}\index{v8\+::internal\+::\+Bytecode\+Array@{v8\+::internal\+::\+Bytecode\+Array}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Bytecode\+Array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1BytecodeArray}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray_1_1BodyDescriptor}{Body\+Descriptor}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_aad9666f0919bbeea3f4f8a065efa14d9}\label{classv8_1_1internal_1_1BytecodeArray_aad9666f0919bbeea3f4f8a065efa14d9}} 
+enum {\bfseries Age} \{ \newline
+{\bfseries k\+No\+Age\+Bytecode\+Age} = 0, 
+{\bfseries k\+Quadragenarian\+Bytecode\+Age}, 
+{\bfseries k\+Quinquagenarian\+Bytecode\+Age}, 
+{\bfseries k\+Sexagenarian\+Bytecode\+Age}, 
+\newline
+{\bfseries k\+Septuagenarian\+Bytecode\+Age}, 
+{\bfseries k\+Octogenarian\+Bytecode\+Age}, 
+{\bfseries k\+After\+Last\+Bytecode\+Age}, 
+{\bfseries k\+First\+Bytecode\+Age} = k\+No\+Age\+Bytecode\+Age, 
+\newline
+{\bfseries k\+Last\+Bytecode\+Age} = k\+After\+Last\+Bytecode\+Age -\/ 1, 
+{\bfseries k\+Bytecode\+Age\+Count} = k\+After\+Last\+Bytecode\+Age -\/ k\+First\+Bytecode\+Age -\/ 1, 
+{\bfseries k\+Is\+Old\+Bytecode\+Age} = k\+Sexagenarian\+Bytecode\+Age
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_a87384adc223d364eb30b477bc6ffcad2}\label{classv8_1_1internal_1_1BytecodeArray_a87384adc223d364eb30b477bc6ffcad2}} 
+byte {\bfseries get} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_a050bfac7ec5133ffc2648a16baf57207}\label{classv8_1_1internal_1_1BytecodeArray_a050bfac7ec5133ffc2648a16baf57207}} 
+void {\bfseries set} (\mbox{\hyperlink{classint}{int}} index, byte value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_a87e82c77346fa5b4697d440818e32257}\label{classv8_1_1internal_1_1BytecodeArray_a87e82c77346fa5b4697d440818e32257}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Get\+First\+Bytecode\+Address} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_a838793c9d4b515ff6ca9c2d558fca65f}\label{classv8_1_1internal_1_1BytecodeArray_a838793c9d4b515ff6ca9c2d558fca65f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries frame\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_a3e42fb5985e884a966420756db4bc961}\label{classv8_1_1internal_1_1BytecodeArray_a3e42fb5985e884a966420756db4bc961}} 
+void {\bfseries set\+\_\+frame\+\_\+size} (\mbox{\hyperlink{classint}{int}} frame\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_a9eb1b189e5d9b6975805c8fbc8abe176}\label{classv8_1_1internal_1_1BytecodeArray_a9eb1b189e5d9b6975805c8fbc8abe176}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries register\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_aaacef588cd4a17f01a04a0346352381f}\label{classv8_1_1internal_1_1BytecodeArray_aaacef588cd4a17f01a04a0346352381f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries parameter\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_a5e642ff36f731ddbd7516d4761236d5d}\label{classv8_1_1internal_1_1BytecodeArray_a5e642ff36f731ddbd7516d4761236d5d}} 
+void {\bfseries set\+\_\+parameter\+\_\+count} (\mbox{\hyperlink{classint}{int}} number\+\_\+of\+\_\+parameters)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_a1eaa08df37ce5c77f214636bd2e1f364}\label{classv8_1_1internal_1_1BytecodeArray_a1eaa08df37ce5c77f214636bd2e1f364}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1Register}{interpreter\+::\+Register}} {\bfseries incoming\+\_\+new\+\_\+target\+\_\+or\+\_\+generator\+\_\+register} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_a9b2c55eb24cfc3a4de2bcedd47c62662}\label{classv8_1_1internal_1_1BytecodeArray_a9b2c55eb24cfc3a4de2bcedd47c62662}} 
+void {\bfseries set\+\_\+incoming\+\_\+new\+\_\+target\+\_\+or\+\_\+generator\+\_\+register} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1Register}{interpreter\+::\+Register}} incoming\+\_\+new\+\_\+target\+\_\+or\+\_\+generator\+\_\+register)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_aca467ad8c3072179af60ad687c531108}\label{classv8_1_1internal_1_1BytecodeArray_aca467ad8c3072179af60ad687c531108}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries interrupt\+\_\+budget} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_a72a167803c49b95918248f228c95c56a}\label{classv8_1_1internal_1_1BytecodeArray_a72a167803c49b95918248f228c95c56a}} 
+void {\bfseries set\+\_\+interrupt\+\_\+budget} (\mbox{\hyperlink{classint}{int}} interrupt\+\_\+budget)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_ac001f09b7ce7ffdd6168bf2f0bf3ee4e}\label{classv8_1_1internal_1_1BytecodeArray_ac001f09b7ce7ffdd6168bf2f0bf3ee4e}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries osr\+\_\+loop\+\_\+nesting\+\_\+level} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_a4ea74cb001e79ab5566ee6c30f493d79}\label{classv8_1_1internal_1_1BytecodeArray_a4ea74cb001e79ab5566ee6c30f493d79}} 
+void {\bfseries set\+\_\+osr\+\_\+loop\+\_\+nesting\+\_\+level} (\mbox{\hyperlink{classint}{int}} depth)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_aada0f0f99ccdb3c2c6e0196c0d9d657e}\label{classv8_1_1internal_1_1BytecodeArray_aada0f0f99ccdb3c2c6e0196c0d9d657e}} 
+Age {\bfseries bytecode\+\_\+age} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_afe7bf17ab5466e841ce539b00b7fed2f}\label{classv8_1_1internal_1_1BytecodeArray_afe7bf17ab5466e841ce539b00b7fed2f}} 
+void {\bfseries set\+\_\+bytecode\+\_\+age} (Age age)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_afc26b789e9ff9c173f5083d14110348f}\label{classv8_1_1internal_1_1BytecodeArray_afc26b789e9ff9c173f5083d14110348f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ByteArray}{Byte\+Array}} {\bfseries Source\+Position\+Table} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_a7fb4362e2541634207a057d21bacbd2c}\label{classv8_1_1internal_1_1BytecodeArray_a7fb4362e2541634207a057d21bacbd2c}} 
+void {\bfseries Clear\+Frame\+Cache\+From\+Source\+Position\+Table} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_a7cf600be981c1a210f7cf1985fb0d157}\label{classv8_1_1internal_1_1BytecodeArray_a7cf600be981c1a210f7cf1985fb0d157}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Bytecode\+Array\+Size} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_a21b2c80bed74bc6d8119fa594f78c661}\label{classv8_1_1internal_1_1BytecodeArray_a21b2c80bed74bc6d8119fa594f78c661}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries raw\+\_\+instruction\+\_\+size} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_aec254601945e8d4de8948c2d20a87c0a}\label{classv8_1_1internal_1_1BytecodeArray_aec254601945e8d4de8948c2d20a87c0a}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Size\+Including\+Metadata} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_a895c353eea90d34b339599271f7f58dc}\label{classv8_1_1internal_1_1BytecodeArray_a895c353eea90d34b339599271f7f58dc}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Source\+Position} (\mbox{\hyperlink{classint}{int}} offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_aa23e01cf402a27f6c64175e5e67ea6e7}\label{classv8_1_1internal_1_1BytecodeArray_aa23e01cf402a27f6c64175e5e67ea6e7}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Source\+Statement\+Position} (\mbox{\hyperlink{classint}{int}} offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_aa697b1df23298f823e8d7665d6e059ec}\label{classv8_1_1internal_1_1BytecodeArray_aa697b1df23298f823e8d7665d6e059ec}} 
+void {\bfseries Disassemble} (std\+::ostream \&os)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_ab90e85bdaa25c06dd024d8fd10653379}\label{classv8_1_1internal_1_1BytecodeArray_ab90e85bdaa25c06dd024d8fd10653379}} 
+void {\bfseries Copy\+Bytecodes\+To} (\mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray}{Bytecode\+Array}} to)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_ae79138016438708e482161fa6fd86da7}\label{classv8_1_1internal_1_1BytecodeArray_ae79138016438708e482161fa6fd86da7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Old} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_ac95fd2413fa6e4cc9bb539178480a85f}\label{classv8_1_1internal_1_1BytecodeArray_ac95fd2413fa6e4cc9bb539178480a85f}} 
+void {\bfseries Make\+Older} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_a8aaca6fef1dbb7c590eef04265fdcd6d}\label{classv8_1_1internal_1_1BytecodeArray_a8aaca6fef1dbb7c590eef04265fdcd6d}} 
+void {\bfseries clear\+\_\+padding} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_a17bb7d251c65848703e0e9f2690863a5}\label{classv8_1_1internal_1_1BytecodeArray_a17bb7d251c65848703e0e9f2690863a5}} 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+F\+I\+E\+L\+D\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+C\+O\+N\+S\+T\+A\+N\+TS} (Fixed\+Array\+Base\+::k\+Header\+Size, B\+Y\+T\+E\+C\+O\+D\+E\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+F\+I\+E\+L\+DS) static const \mbox{\hyperlink{classint}{int}} k\+Max\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_afff237456da558b6bcfe25d2f038fe37}\label{classv8_1_1internal_1_1BytecodeArray_afff237456da558b6bcfe25d2f038fe37}} 
+{\bfseries O\+B\+J\+E\+C\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray}{Bytecode\+Array}}, \mbox{\hyperlink{classv8_1_1internal_1_1FixedArrayBase}{Fixed\+Array\+Base}})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_ac3a55b15152573add7b487ea3839b277}\label{classv8_1_1internal_1_1BytecodeArray_ac3a55b15152573add7b487ea3839b277}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Size\+For} (\mbox{\hyperlink{classint}{int}} length)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BytecodeArray_a9b306a4048c3a924e49ff1e4bb02bfe6}\label{classv8_1_1internal_1_1BytecodeArray_a9b306a4048c3a924e49ff1e4bb02bfe6}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Length} = k\+Max\+Size -\/ k\+Header\+Size
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 686 of file code.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/code.\+h\item 
+v8/src/objects/code-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

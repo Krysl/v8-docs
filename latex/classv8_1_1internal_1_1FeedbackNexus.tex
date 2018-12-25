@@ -1,0 +1,205 @@
+\hypertarget{classv8_1_1internal_1_1FeedbackNexus}{}\section{v8\+:\+:internal\+:\+:Feedback\+Nexus Class Reference}
+\label{classv8_1_1internal_1_1FeedbackNexus}\index{v8\+::internal\+::\+Feedback\+Nexus@{v8\+::internal\+::\+Feedback\+Nexus}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a691c59a60c2e5dfd819156c987736cb7}\label{classv8_1_1internal_1_1FeedbackNexus_a691c59a60c2e5dfd819156c987736cb7}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1BitField}{Bit\+Field}}$<$ Speculation\+Mode, 0, 1 $>$ {\bfseries Speculation\+Mode\+Field}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a9a255119582a0d71f400f9638e542c44}\label{classv8_1_1internal_1_1FeedbackNexus_a9a255119582a0d71f400f9638e542c44}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1BitField}{Bit\+Field}}$<$ \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}}, 1, 31 $>$ {\bfseries Call\+Count\+Field}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a804a3f263710315ed14a498fd93db438}\label{classv8_1_1internal_1_1FeedbackNexus_a804a3f263710315ed14a498fd93db438}} 
+{\bfseries Feedback\+Nexus} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackVector}{Feedback\+Vector}} $>$ vector, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_aa175a9246bd757f9f8d9ef633f3cc5eb}\label{classv8_1_1internal_1_1FeedbackNexus_aa175a9246bd757f9f8d9ef633f3cc5eb}} 
+{\bfseries Feedback\+Nexus} (\mbox{\hyperlink{classv8_1_1internal_1_1FeedbackVector}{Feedback\+Vector}} $\ast$vector, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a54a3b99af63380f05cfccb86bd2ff4f7}\label{classv8_1_1internal_1_1FeedbackNexus_a54a3b99af63380f05cfccb86bd2ff4f7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackVector}{Feedback\+Vector}} $>$ {\bfseries vector\+\_\+handle} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_aac2518489890b11a0cceede7139ed400}\label{classv8_1_1internal_1_1FeedbackNexus_aac2518489890b11a0cceede7139ed400}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1FeedbackVector}{Feedback\+Vector}} $\ast$ {\bfseries vector} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a76df847f2cfa089c9be1bc29841479d0}\label{classv8_1_1internal_1_1FeedbackNexus_a76df847f2cfa089c9be1bc29841479d0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} {\bfseries slot} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a2a797a98a612c3f58f072f24a64082a5}\label{classv8_1_1internal_1_1FeedbackNexus_a2a797a98a612c3f58f072f24a64082a5}} 
+Feedback\+Slot\+Kind {\bfseries kind} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a5dfcc44bbba6b3b231e088efbea2d475}\label{classv8_1_1internal_1_1FeedbackNexus_a5dfcc44bbba6b3b231e088efbea2d475}} 
+Language\+Mode {\bfseries Get\+Language\+Mode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_aef36f0ea22f01d7ef7e56e33966e9321}\label{classv8_1_1internal_1_1FeedbackNexus_aef36f0ea22f01d7ef7e56e33966e9321}} 
+Inline\+Cache\+State {\bfseries ic\+\_\+state} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a42ae369a4977d9e39bc131005d9b837a}\label{classv8_1_1internal_1_1FeedbackNexus_a42ae369a4977d9e39bc131005d9b837a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Uninitialized} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a3b92b8df5bc56872eedee13f505daa46}\label{classv8_1_1internal_1_1FeedbackNexus_a3b92b8df5bc56872eedee13f505daa46}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Megamorphic} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_ad660a83cea14be0a72ce0a040cf73d76}\label{classv8_1_1internal_1_1FeedbackNexus_ad660a83cea14be0a72ce0a040cf73d76}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Generic} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a728bb8853e48720608d866c7d1beef75}\label{classv8_1_1internal_1_1FeedbackNexus_a728bb8853e48720608d866c7d1beef75}} 
+void {\bfseries Print} (std\+::ostream \&os)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a42b0037afcbe7db6df8e9752b4ca30a8}\label{classv8_1_1internal_1_1FeedbackNexus_a42b0037afcbe7db6df8e9752b4ca30a8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} {\bfseries Find\+First\+Map} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_ae663a7bb3bc47a1bdd804897a9020d27}\label{classv8_1_1internal_1_1FeedbackNexus_ae663a7bb3bc47a1bdd804897a9020d27}} 
+Inline\+Cache\+State {\bfseries State\+From\+Feedback} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_ad731696ecd901648ddd233d339201c76}\label{classv8_1_1internal_1_1FeedbackNexus_ad731696ecd901648ddd233d339201c76}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Extract\+Maps} (Map\+Handles $\ast$maps) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_ad5ee29b73536bb5b4fb6d280a65a7738}\label{classv8_1_1internal_1_1FeedbackNexus_ad5ee29b73536bb5b4fb6d280a65a7738}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}} {\bfseries Find\+Handler\+For\+Map} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ map) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a64fd1c6e4be061fe012624476aafe393}\label{classv8_1_1internal_1_1FeedbackNexus_a64fd1c6e4be061fe012624476aafe393}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Find\+Handlers} (Maybe\+Object\+Handles $\ast$code\+\_\+list, \mbox{\hyperlink{classint}{int}} length=-\/1) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_aa8f37e73e404732659e971bc91aa99c4}\label{classv8_1_1internal_1_1FeedbackNexus_aa8f37e73e404732659e971bc91aa99c4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Cleared} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a0931bf2b1a78e472ee452a2d15add852}\label{classv8_1_1internal_1_1FeedbackNexus_a0931bf2b1a78e472ee452a2d15add852}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Clear} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a9112fa8fdd603518310d101a033b1e12}\label{classv8_1_1internal_1_1FeedbackNexus_a9112fa8fdd603518310d101a033b1e12}} 
+void {\bfseries Configure\+Uninitialized} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a1c7da8692fe3a69d287a2ee9cc2215e2}\label{classv8_1_1internal_1_1FeedbackNexus_a1c7da8692fe3a69d287a2ee9cc2215e2}} 
+void {\bfseries Configure\+Premonomorphic} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ receiver\+\_\+map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_ac31adff10a8eca557dddaf314ad8dd58}\label{classv8_1_1internal_1_1FeedbackNexus_ac31adff10a8eca557dddaf314ad8dd58}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Configure\+Megamorphic} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a65b88dcebf601c1af6ffcdda691f5a0d}\label{classv8_1_1internal_1_1FeedbackNexus_a65b88dcebf601c1af6ffcdda691f5a0d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Configure\+Megamorphic} (Ic\+Check\+Type property\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a42af3207cdcd7722ae7c7acc97b2d2ae}\label{classv8_1_1internal_1_1FeedbackNexus_a42af3207cdcd7722ae7c7acc97b2d2ae}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} {\bfseries Get\+Feedback} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_ac3cbe07dab984803e1f578ca7ac34525}\label{classv8_1_1internal_1_1FeedbackNexus_ac3cbe07dab984803e1f578ca7ac34525}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} {\bfseries Get\+Feedback\+Extra} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a6a00b7e3f054bc0994c43824398cf111}\label{classv8_1_1internal_1_1FeedbackNexus_a6a00b7e3f054bc0994c43824398cf111}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries Get\+Isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a0753b7abe31f8cc12200fa01818e25b5}\label{classv8_1_1internal_1_1FeedbackNexus_a0753b7abe31f8cc12200fa01818e25b5}} 
+void {\bfseries Configure\+Monomorphic} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ receiver\+\_\+map, const \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}} \&handler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_ac6658ad07274c84409ecd4d3aba4cba0}\label{classv8_1_1internal_1_1FeedbackNexus_ac6658ad07274c84409ecd4d3aba4cba0}} 
+void {\bfseries Configure\+Polymorphic} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, Map\+Handles const \&maps, Maybe\+Object\+Handles $\ast$handlers)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_af6e8d9169861aef5d9c19c041141c227}\label{classv8_1_1internal_1_1FeedbackNexus_af6e8d9169861aef5d9c19c041141c227}} 
+Binary\+Operation\+Hint {\bfseries Get\+Binary\+Operation\+Feedback} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a188cce364d6a6e6b0c7720421ed22a72}\label{classv8_1_1internal_1_1FeedbackNexus_a188cce364d6a6e6b0c7720421ed22a72}} 
+Compare\+Operation\+Hint {\bfseries Get\+Compare\+Operation\+Feedback} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a3d157c6c6b27e6bc8858aeaf432154c0}\label{classv8_1_1internal_1_1FeedbackNexus_a3d157c6c6b27e6bc8858aeaf432154c0}} 
+For\+In\+Hint {\bfseries Get\+For\+In\+Feedback} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_acb435d98c28ab4afabdd6b4670f5da50}\label{classv8_1_1internal_1_1FeedbackNexus_acb435d98c28ab4afabdd6b4670f5da50}} 
+Keyed\+Access\+Load\+Mode {\bfseries Get\+Keyed\+Access\+Load\+Mode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a396e49c2e3dfa573e148b526e95cae53}\label{classv8_1_1internal_1_1FeedbackNexus_a396e49c2e3dfa573e148b526e95cae53}} 
+Keyed\+Access\+Store\+Mode {\bfseries Get\+Keyed\+Access\+Store\+Mode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a3c56d24ba0fb698aec4354ba83b0609b}\label{classv8_1_1internal_1_1FeedbackNexus_a3c56d24ba0fb698aec4354ba83b0609b}} 
+Ic\+Check\+Type {\bfseries Get\+Key\+Type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a4cf67bba4f4958c7c7195ea3f76b0825}\label{classv8_1_1internal_1_1FeedbackNexus_a4cf67bba4f4958c7c7195ea3f76b0825}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} {\bfseries Find\+First\+Name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a5828e49301808b3e1b8e937ed680c058}\label{classv8_1_1internal_1_1FeedbackNexus_a5828e49301808b3e1b8e937ed680c058}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Call\+Count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_adda9d9e1d72ffb6a9653161c6ad384a7}\label{classv8_1_1internal_1_1FeedbackNexus_adda9d9e1d72ffb6a9653161c6ad384a7}} 
+void {\bfseries Set\+Speculation\+Mode} (Speculation\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_af2907bd899f17bd775afad6d02fbe3fc}\label{classv8_1_1internal_1_1FeedbackNexus_af2907bd899f17bd775afad6d02fbe3fc}} 
+Speculation\+Mode {\bfseries Get\+Speculation\+Mode} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a3c84f419de633fe653ba293f21952e69}\label{classv8_1_1internal_1_1FeedbackNexus_a3c84f419de633fe653ba293f21952e69}} 
+float {\bfseries Compute\+Call\+Frequency} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a0cb2201bfbe89ddeda0756602de7ea4e}\label{classv8_1_1internal_1_1FeedbackNexus_a0cb2201bfbe89ddeda0756602de7ea4e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackCell}{Feedback\+Cell}} $>$ {\bfseries Get\+Feedback\+Cell} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a80b4d54c77a613be450b8d716eb6658c}\label{classv8_1_1internal_1_1FeedbackNexus_a80b4d54c77a613be450b8d716eb6658c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ {\bfseries Get\+Constructor\+Feedback} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a12ec5f9e463cadd1d784a1129e290c53}\label{classv8_1_1internal_1_1FeedbackNexus_a12ec5f9e463cadd1d784a1129e290c53}} 
+void {\bfseries Configure\+Property\+Cell\+Mode} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1PropertyCell}{Property\+Cell}} $>$ cell)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_ad3892cf93a5983ed04fe69c315c8033d}\label{classv8_1_1internal_1_1FeedbackNexus_ad3892cf93a5983ed04fe69c315c8033d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Configure\+Lexical\+Var\+Mode} (\mbox{\hyperlink{classint}{int}} script\+\_\+context\+\_\+index, \mbox{\hyperlink{classint}{int}} context\+\_\+slot\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a4c90b0f5062649ac14a05dd1a49446e5}\label{classv8_1_1internal_1_1FeedbackNexus_a4c90b0f5062649ac14a05dd1a49446e5}} 
+void {\bfseries Configure\+Handler\+Mode} (const \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}} \&handler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a3ef4c29e93e677356ee6ad1512093a11}\label{classv8_1_1internal_1_1FeedbackNexus_a3ef4c29e93e677356ee6ad1512093a11}} 
+void {\bfseries Configure\+Clone\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ source\+\_\+map, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ result\+\_\+map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a2d1215e4f13e68e7ca38f82bb2d466c6}\label{classv8_1_1internal_1_1FeedbackNexus_a2d1215e4f13e68e7ca38f82bb2d466c6}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (L\+E\+X\+I\+C\+A\+L\+\_\+\+M\+O\+D\+E\+\_\+\+B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+S\+\_\+\+Ranges\+::k\+Bits\+Count$<$=k\+Smi\+Value\+Size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a61d276540452b69fe5e8e8642e867f58}\label{classv8_1_1internal_1_1FeedbackNexus_a61d276540452b69fe5e8e8642e867f58}} 
+void {\bfseries Reset\+Type\+Profile} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_acc4eaba00ac8fa405374a05fd2f8e1d6}\label{classv8_1_1internal_1_1FeedbackNexus_acc4eaba00ac8fa405374a05fd2f8e1d6}} 
+void {\bfseries Collect} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classint}{int}} position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a5b987d7fc9f47c744b8d5182b59dc47e}\label{classv8_1_1internal_1_1FeedbackNexus_a5b987d7fc9f47c744b8d5182b59dc47e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $\ast$ {\bfseries Get\+Type\+Profile} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a5abc627bd0fcaa8ace13a4e7b72f0e22}\label{classv8_1_1internal_1_1FeedbackNexus_a5abc627bd0fcaa8ace13a4e7b72f0e22}} 
+std\+::vector$<$ \mbox{\hyperlink{classint}{int}} $>$ {\bfseries Get\+Source\+Positions} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_ae26d5e942c63a10b6d8408623e5bd471}\label{classv8_1_1internal_1_1FeedbackNexus_ae26d5e942c63a10b6d8408623e5bd471}} 
+std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ $>$ {\bfseries Get\+Types\+For\+Source\+Positions} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} pos) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a05374b1926bb62b14dfa93770de242f8}\label{classv8_1_1internal_1_1FeedbackNexus_a05374b1926bb62b14dfa93770de242f8}} 
+void {\bfseries Set\+Feedback} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$feedback, Write\+Barrier\+Mode mode=U\+P\+D\+A\+T\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+A\+R\+R\+I\+ER)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_aea745c580da02102dd421487a2d20893}\label{classv8_1_1internal_1_1FeedbackNexus_aea745c580da02102dd421487a2d20893}} 
+void {\bfseries Set\+Feedback} (\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} feedback, Write\+Barrier\+Mode mode=U\+P\+D\+A\+T\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+A\+R\+R\+I\+ER)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_aede01d24ca8298dfc4b8b4aaafbef723}\label{classv8_1_1internal_1_1FeedbackNexus_aede01d24ca8298dfc4b8b4aaafbef723}} 
+void {\bfseries Set\+Feedback\+Extra} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$feedback\+\_\+extra, Write\+Barrier\+Mode mode=U\+P\+D\+A\+T\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+A\+R\+R\+I\+ER)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a527054e76ab463c2c9f42f0f086063cf}\label{classv8_1_1internal_1_1FeedbackNexus_a527054e76ab463c2c9f42f0f086063cf}} 
+void {\bfseries Set\+Feedback\+Extra} (\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} feedback\+\_\+extra, Write\+Barrier\+Mode mode=U\+P\+D\+A\+T\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+A\+R\+R\+I\+ER)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_af7617c7ae056742065e3c2a5d6159db2}\label{classv8_1_1internal_1_1FeedbackNexus_af7617c7ae056742065e3c2a5d6159db2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WeakFixedArray}{Weak\+Fixed\+Array}} $>$ {\bfseries Ensure\+Array\+Of\+Size} (\mbox{\hyperlink{classint}{int}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_a12da976c8bb809c3fa6b0e6dbcb33998}\label{classv8_1_1internal_1_1FeedbackNexus_a12da976c8bb809c3fa6b0e6dbcb33998}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WeakFixedArray}{Weak\+Fixed\+Array}} $>$ {\bfseries Ensure\+Extra\+Array\+Of\+Size} (\mbox{\hyperlink{classint}{int}} length)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackNexus_ad93e024d0b38e95e593b8db2256ad0db}\label{classv8_1_1internal_1_1FeedbackNexus_ad93e024d0b38e95e593b8db2256ad0db}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Clone\+Object\+Polymorphic\+Entry\+Size} = 2
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 570 of file feedback-\/vector.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/feedback-\/vector.\+h\item 
+v8/src/feedback-\/vector-\/inl.\+h\item 
+v8/src/feedback-\/vector.\+cc\end{DoxyCompactItemize}

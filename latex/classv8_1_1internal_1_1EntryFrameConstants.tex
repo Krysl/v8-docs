@@ -1,0 +1,68 @@
+\hypertarget{classv8_1_1internal_1_1EntryFrameConstants}{}\section{v8\+:\+:internal\+:\+:Entry\+Frame\+Constants Class Reference}
+\label{classv8_1_1internal_1_1EntryFrameConstants}\index{v8\+::internal\+::\+Entry\+Frame\+Constants@{v8\+::internal\+::\+Entry\+Frame\+Constants}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Entry\+Frame\+Constants\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classv8_1_1internal_1_1EntryFrameConstants}
+\end{center}
+\end{figure}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Caller\+F\+P\+Offset}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EntryFrameConstants_acc36ad80c4c0be431b9d4c6694bfee42}\label{classv8_1_1internal_1_1EntryFrameConstants_acc36ad80c4c0be431b9d4c6694bfee42}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Fixed\+Frame\+Size} = 6 $\ast$ k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EntryFrameConstants_ad8564c722ce742b1aa4181d67fc27511}\label{classv8_1_1internal_1_1EntryFrameConstants_ad8564c722ce742b1aa4181d67fc27511}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+New\+Target\+Arg\+Offset} = +2 $\ast$ k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EntryFrameConstants_a354b34fc5f871bfcd693e86ff1d3afa9}\label{classv8_1_1internal_1_1EntryFrameConstants_a354b34fc5f871bfcd693e86ff1d3afa9}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Function\+Arg\+Offset} = +3 $\ast$ k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EntryFrameConstants_a69b4e14b65751fa925285a2de9b182f9}\label{classv8_1_1internal_1_1EntryFrameConstants_a69b4e14b65751fa925285a2de9b182f9}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Receiver\+Arg\+Offset} = +4 $\ast$ k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EntryFrameConstants_aa2250875af7ff69776341399308d97cd}\label{classv8_1_1internal_1_1EntryFrameConstants_aa2250875af7ff69776341399308d97cd}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Argc\+Offset} = +5 $\ast$ k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EntryFrameConstants_a6823cb4412da04621643c86764079625}\label{classv8_1_1internal_1_1EntryFrameConstants_a6823cb4412da04621643c86764079625}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Argv\+Offset} = +6 $\ast$ k\+Pointer\+Size
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file frame-\/constants-\/arm.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1EntryFrameConstants_a68b7a7b14ac15e126981bb5f8cac2d74}\label{classv8_1_1internal_1_1EntryFrameConstants_a68b7a7b14ac15e126981bb5f8cac2d74}} 
+\index{v8\+::internal\+::\+Entry\+Frame\+Constants@{v8\+::internal\+::\+Entry\+Frame\+Constants}!k\+Caller\+F\+P\+Offset@{k\+Caller\+F\+P\+Offset}}
+\index{k\+Caller\+F\+P\+Offset@{k\+Caller\+F\+P\+Offset}!v8\+::internal\+::\+Entry\+Frame\+Constants@{v8\+::internal\+::\+Entry\+Frame\+Constants}}
+\subsubsection{\texorpdfstring{k\+Caller\+F\+P\+Offset}{kCallerFPOffset}}
+{\footnotesize\ttfamily static constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Entry\+Frame\+Constants\+::k\+Caller\+F\+P\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      -(StandardFrameConstants::kFixedFrameSizeFromFp + kPointerSize)
+\end{DoxyCode}
+
+
+Definition at line 16 of file frame-\/constants-\/arm.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/arm/frame-\/constants-\/arm.\+h\item 
+v8/src/arm64/frame-\/constants-\/arm64.\+h\item 
+v8/src/ia32/frame-\/constants-\/ia32.\+h\item 
+v8/src/mips/frame-\/constants-\/mips.\+h\item 
+v8/src/mips64/frame-\/constants-\/mips64.\+h\item 
+v8/src/ppc/frame-\/constants-\/ppc.\+h\item 
+v8/src/s390/frame-\/constants-\/s390.\+h\item 
+v8/src/x64/frame-\/constants-\/x64.\+h\end{DoxyCompactItemize}

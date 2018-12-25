@@ -1,0 +1,63 @@
+\hypertarget{structv8_1_1internal_1_1is__valid__type__tag}{}\section{v8\+:\+:internal\+:\+:is\+\_\+valid\+\_\+type\+\_\+tag$<$ T $>$ Struct Template Reference}
+\label{structv8_1_1internal_1_1is__valid__type__tag}\index{v8\+::internal\+::is\+\_\+valid\+\_\+type\+\_\+tag$<$ T $>$@{v8\+::internal\+::is\+\_\+valid\+\_\+type\+\_\+tag$<$ T $>$}}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{classbool}{bool}} {\bfseries value}
+\item 
+static const \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+tagged}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+struct v8\+::internal\+::is\+\_\+valid\+\_\+type\+\_\+tag$<$ T $>$}
+
+
+
+Definition at line 206 of file code-\/assembler.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structv8_1_1internal_1_1is__valid__type__tag_a4636b80d4366c6e1595c947d9d6b3466}\label{structv8_1_1internal_1_1is__valid__type__tag_a4636b80d4366c6e1595c947d9d6b3466}} 
+\index{v8\+::internal\+::is\+\_\+valid\+\_\+type\+\_\+tag@{v8\+::internal\+::is\+\_\+valid\+\_\+type\+\_\+tag}!is\+\_\+tagged@{is\+\_\+tagged}}
+\index{is\+\_\+tagged@{is\+\_\+tagged}!v8\+::internal\+::is\+\_\+valid\+\_\+type\+\_\+tag@{v8\+::internal\+::is\+\_\+valid\+\_\+type\+\_\+tag}}
+\subsubsection{\texorpdfstring{is\+\_\+tagged}{is\_tagged}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+const \mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{structv8_1_1internal_1_1is__valid__type__tag}{v8\+::internal\+::is\+\_\+valid\+\_\+type\+\_\+tag}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$\+::is\+\_\+tagged\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= std::is\_base\_of<Object, T>::value ||
+                                std::is\_base\_of<ObjectPtr, T>::value ||
+                                std::is\_base\_of<MaybeObject, T>::value
+\end{DoxyCode}
+
+
+Definition at line 212 of file code-\/assembler.\+h.
+
+\mbox{\Hypertarget{structv8_1_1internal_1_1is__valid__type__tag_a170297a66df8a84ee2828b7c2820bbb2}\label{structv8_1_1internal_1_1is__valid__type__tag_a170297a66df8a84ee2828b7c2820bbb2}} 
+\index{v8\+::internal\+::is\+\_\+valid\+\_\+type\+\_\+tag@{v8\+::internal\+::is\+\_\+valid\+\_\+type\+\_\+tag}!value@{value}}
+\index{value@{value}!v8\+::internal\+::is\+\_\+valid\+\_\+type\+\_\+tag@{v8\+::internal\+::is\+\_\+valid\+\_\+type\+\_\+tag}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+const \mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{structv8_1_1internal_1_1is__valid__type__tag}{v8\+::internal\+::is\+\_\+valid\+\_\+type\+\_\+tag}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$\+::value\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= std::is\_base\_of<Object, T>::value ||
+                            std::is\_base\_of<ObjectPtr, T>::value ||
+                            std::is\_base\_of<UntaggedT, T>::value ||
+                            std::is\_base\_of<MaybeObject, T>::value ||
+                            std::is\_same<ExternalReference, T>::value
+\end{DoxyCode}
+
+
+Definition at line 207 of file code-\/assembler.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/code-\/assembler.\+h\end{DoxyCompactItemize}

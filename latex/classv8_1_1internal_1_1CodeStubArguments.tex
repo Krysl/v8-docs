@@ -1,0 +1,86 @@
+\hypertarget{classv8_1_1internal_1_1CodeStubArguments}{}\section{v8\+:\+:internal\+:\+:Code\+Stub\+Arguments Class Reference}
+\label{classv8_1_1internal_1_1CodeStubArguments}\index{v8\+::internal\+::\+Code\+Stub\+Arguments@{v8\+::internal\+::\+Code\+Stub\+Arguments}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_ae6182ca99f50e847eb0fb5054f516dee}\label{classv8_1_1internal_1_1CodeStubArguments_ae6182ca99f50e847eb0fb5054f516dee}} 
+enum {\bfseries Receiver\+Mode} \{ {\bfseries k\+Has\+Receiver}, 
+{\bfseries k\+No\+Receiver}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_a8559465b9b93249043457a5c3fb2dcbf}\label{classv8_1_1internal_1_1CodeStubArguments_a8559465b9b93249043457a5c3fb2dcbf}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{compiler\+::\+Node}} {\bfseries Node}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_a4a51c49389691fa523d729b2dd4f1b58}\label{classv8_1_1internal_1_1CodeStubArguments_a4a51c49389691fa523d729b2dd4f1b58}} 
+{\footnotesize template$<$class T $>$ }\\using {\bfseries T\+Node} = \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{compiler\+::\+T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_a532c29eb47305751bfa81a99234b2d1c}\label{classv8_1_1internal_1_1CodeStubArguments_a532c29eb47305751bfa81a99234b2d1c}} 
+{\footnotesize template$<$class T $>$ }\\using {\bfseries Sloppy\+T\+Node} = \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SloppyTNode}{compiler\+::\+Sloppy\+T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_a8c8832ce275b604f18d664852f16f1dd}\label{classv8_1_1internal_1_1CodeStubArguments_a8c8832ce275b604f18d664852f16f1dd}} 
+typedef std\+::function$<$ void(\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$arg)$>$ {\bfseries For\+Each\+Body\+Function}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_a3f592c38e96f42523756887afd07c825}\label{classv8_1_1internal_1_1CodeStubArguments_a3f592c38e96f42523756887afd07c825}} 
+{\bfseries Code\+Stub\+Arguments} (\mbox{\hyperlink{classv8_1_1internal_1_1CodeStubAssembler}{Code\+Stub\+Assembler}} $\ast$assembler, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$argc, Receiver\+Mode receiver\+\_\+mode=Receiver\+Mode\+::k\+Has\+Receiver)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_a64c11d81a71cd72b49509d78cb3c3520}\label{classv8_1_1internal_1_1CodeStubArguments_a64c11d81a71cd72b49509d78cb3c3520}} 
+{\bfseries Code\+Stub\+Arguments} (\mbox{\hyperlink{classv8_1_1internal_1_1CodeStubAssembler}{Code\+Stub\+Assembler}} $\ast$assembler, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$argc, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$fp, Code\+Stub\+Assembler\+::\+Parameter\+Mode param\+\_\+mode, Receiver\+Mode receiver\+\_\+mode=Receiver\+Mode\+::k\+Has\+Receiver)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_a1a775fad42a64dfe7dc417a714b94c8c}\label{classv8_1_1internal_1_1CodeStubArguments_a1a775fad42a64dfe7dc417a714b94c8c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Get\+Receiver} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_ae4b6e7718cfad7ef1ef2ee0c6846a8d5}\label{classv8_1_1internal_1_1CodeStubArguments_ae4b6e7718cfad7ef1ef2ee0c6846a8d5}} 
+void {\bfseries Set\+Receiver} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ object) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_a99b9348876095453c434b84af714adaa}\label{classv8_1_1internal_1_1CodeStubArguments_a99b9348876095453c434b84af714adaa}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1RawPtr}{Raw\+Ptr}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ $>$ {\bfseries At\+Index\+Ptr} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$index, Code\+Stub\+Assembler\+::\+Parameter\+Mode mode=Code\+Stub\+Assembler\+::\+I\+N\+T\+P\+T\+R\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+RS) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_abdcb08255b714b635e4f6345e2ef9531}\label{classv8_1_1internal_1_1CodeStubArguments_abdcb08255b714b635e4f6345e2ef9531}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries At\+Index} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$index, Code\+Stub\+Assembler\+::\+Parameter\+Mode mode=Code\+Stub\+Assembler\+::\+I\+N\+T\+P\+T\+R\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+RS) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_ac935904db3c53f85bd9a8d33b8144207}\label{classv8_1_1internal_1_1CodeStubArguments_ac935904db3c53f85bd9a8d33b8144207}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries At\+Index} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_a20006ec4deaec1817ab356842a636b5e}\label{classv8_1_1internal_1_1CodeStubArguments_a20006ec4deaec1817ab356842a636b5e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Get\+Optional\+Argument\+Value} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_a7f7fba52c52d80a85d54e12994e1bb14}\label{classv8_1_1internal_1_1CodeStubArguments_a7f7fba52c52d80a85d54e12994e1bb14}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Get\+Optional\+Argument\+Value} (\mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ default\+\_\+value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_ad8891b0162465e7c380a6d6b5cb9fa0f}\label{classv8_1_1internal_1_1CodeStubArguments_ad8891b0162465e7c380a6d6b5cb9fa0f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Get\+Length} (Code\+Stub\+Assembler\+::\+Parameter\+Mode mode) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_a5093ed34dccc86f083215e598441bb65}\label{classv8_1_1internal_1_1CodeStubArguments_a5093ed34dccc86f083215e598441bb65}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Get\+Optional\+Argument\+Value} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_a71d89d3ce5b112e979ef926a7adc1c55}\label{classv8_1_1internal_1_1CodeStubArguments_a71d89d3ce5b112e979ef926a7adc1c55}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Get\+Optional\+Argument\+Value} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ default\+\_\+value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_a4930dd030222fce47fd0e02cea3b5a44}\label{classv8_1_1internal_1_1CodeStubArguments_a4930dd030222fce47fd0e02cea3b5a44}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ {\bfseries Get\+Length} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_a049e945530287312a08dfd2734d114c0}\label{classv8_1_1internal_1_1CodeStubArguments_a049e945530287312a08dfd2734d114c0}} 
+void {\bfseries For\+Each} (const For\+Each\+Body\+Function \&body, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$first=nullptr, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$last=nullptr, Code\+Stub\+Assembler\+::\+Parameter\+Mode mode=Code\+Stub\+Assembler\+::\+I\+N\+T\+P\+T\+R\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+RS)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_a705d62e34dba758fc73dc34e496a6a7b}\label{classv8_1_1internal_1_1CodeStubArguments_a705d62e34dba758fc73dc34e496a6a7b}} 
+void {\bfseries For\+Each} (const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Code\+Stub\+Assembler\+::\+Variable\+List}} \&vars, const For\+Each\+Body\+Function \&body, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$first=nullptr, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$last=nullptr, Code\+Stub\+Assembler\+::\+Parameter\+Mode mode=Code\+Stub\+Assembler\+::\+I\+N\+T\+P\+T\+R\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+RS)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeStubArguments_a20832421f90b0bd76f3c5dc1cb1145ce}\label{classv8_1_1internal_1_1CodeStubArguments_a20832421f90b0bd76f3c5dc1cb1145ce}} 
+void {\bfseries Pop\+And\+Return} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3271 of file code-\/stub-\/assembler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/code-\/stub-\/assembler.\+h\item 
+v8/src/code-\/stub-\/assembler.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,130 @@
+\hypertarget{classv8_1_1internal_1_1TurboAssemblerBase}{}\section{v8\+:\+:internal\+:\+:Turbo\+Assembler\+Base Class Reference}
+\label{classv8_1_1internal_1_1TurboAssemblerBase}\index{v8\+::internal\+::\+Turbo\+Assembler\+Base@{v8\+::internal\+::\+Turbo\+Assembler\+Base}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Turbo\+Assembler\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classv8_1_1internal_1_1TurboAssemblerBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_ad71174ee9e53406a277b9de908946ff3}\label{classv8_1_1internal_1_1TurboAssemblerBase_ad71174ee9e53406a277b9de908946ff3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a1045089720e3fdcd6f849d5487c8477e}\label{classv8_1_1internal_1_1TurboAssemblerBase_a1045089720e3fdcd6f849d5487c8477e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ {\bfseries Code\+Object} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_af05c8d6da27c634d9b93bc78aa2b94fa}\label{classv8_1_1internal_1_1TurboAssemblerBase_af05c8d6da27c634d9b93bc78aa2b94fa}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries root\+\_\+array\+\_\+available} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a15313e058ab0f1806dbf3a5d5562a849}\label{classv8_1_1internal_1_1TurboAssemblerBase_a15313e058ab0f1806dbf3a5d5562a849}} 
+void {\bfseries set\+\_\+root\+\_\+array\+\_\+available} (\mbox{\hyperlink{classbool}{bool}} v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a60d54e288abd9ad88d6d1ae52078b477}\label{classv8_1_1internal_1_1TurboAssemblerBase_a60d54e288abd9ad88d6d1ae52078b477}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries trap\+\_\+on\+\_\+abort} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a355ecd9748e09d3326a7e21de0981bb8}\label{classv8_1_1internal_1_1TurboAssemblerBase_a355ecd9748e09d3326a7e21de0981bb8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries should\+\_\+abort\+\_\+hard} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a4316d16f1bb2a63ad9ff2278f4482e64}\label{classv8_1_1internal_1_1TurboAssemblerBase_a4316d16f1bb2a63ad9ff2278f4482e64}} 
+void {\bfseries set\+\_\+abort\+\_\+hard} (\mbox{\hyperlink{classbool}{bool}} v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_ae9ebe50faaf3472732d6470ec2a35065}\label{classv8_1_1internal_1_1TurboAssemblerBase_ae9ebe50faaf3472732d6470ec2a35065}} 
+void {\bfseries set\+\_\+builtin\+\_\+index} (\mbox{\hyperlink{classint}{int}} i)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a8919061799aa8c75378144ada41caf25}\label{classv8_1_1internal_1_1TurboAssemblerBase_a8919061799aa8c75378144ada41caf25}} 
+void {\bfseries set\+\_\+has\+\_\+frame} (\mbox{\hyperlink{classbool}{bool}} v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a0e2fa1045487fb57adc8bd8f8e34679a}\label{classv8_1_1internal_1_1TurboAssemblerBase_a0e2fa1045487fb57adc8bd8f8e34679a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+frame} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_ae167b194ac5b1343ad9ea66f9c7cd070}\label{classv8_1_1internal_1_1TurboAssemblerBase_ae167b194ac5b1343ad9ea66f9c7cd070}} 
+void {\bfseries Indirect\+Load\+Constant} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} destination, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a4de4e81c941b7a7c699950f3941af1ba}\label{classv8_1_1internal_1_1TurboAssemblerBase_a4de4e81c941b7a7c699950f3941af1ba}} 
+void {\bfseries Indirect\+Load\+External\+Reference} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} destination, \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} reference)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a7dc4ee2f26c1512c546108c792125ac7}\label{classv8_1_1internal_1_1TurboAssemblerBase_a7dc4ee2f26c1512c546108c792125ac7}} 
+virtual void {\bfseries Load\+From\+Constants\+Table} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} destination, \mbox{\hyperlink{classint}{int}} constant\+\_\+index)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a6cb9080925cfa496e02e638b74ed7431}\label{classv8_1_1internal_1_1TurboAssemblerBase_a6cb9080925cfa496e02e638b74ed7431}} 
+virtual void {\bfseries Load\+Root\+Register\+Offset} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} destination, intptr\+\_\+t offset)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_adde5e72f473c50bd14429ded6cd07249}\label{classv8_1_1internal_1_1TurboAssemblerBase_adde5e72f473c50bd14429ded6cd07249}} 
+virtual void {\bfseries Load\+Root\+Relative} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} destination, int32\+\_\+t offset)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a86931008e540e31af7d212c72edd4bc7}\label{classv8_1_1internal_1_1TurboAssemblerBase_a86931008e540e31af7d212c72edd4bc7}} 
+virtual void {\bfseries Load\+Root} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} destination, Root\+Index index)=0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_ab6454d00ffd134804cc4ac57d9e49b97}\label{classv8_1_1internal_1_1TurboAssemblerBase_ab6454d00ffd134804cc4ac57d9e49b97}} 
+static int32\+\_\+t {\bfseries Root\+Register\+Offset\+For\+Root\+Index} (Root\+Index root\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a225bbd20dd637c4d4382dcdfcf4db7f0}\label{classv8_1_1internal_1_1TurboAssemblerBase_a225bbd20dd637c4d4382dcdfcf4db7f0}} 
+static int32\+\_\+t {\bfseries Root\+Register\+Offset\+For\+Builtin\+Index} (\mbox{\hyperlink{classint}{int}} builtin\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a103e2216246e4b062e777d02241ee3c4}\label{classv8_1_1internal_1_1TurboAssemblerBase_a103e2216246e4b062e777d02241ee3c4}} 
+static intptr\+\_\+t {\bfseries Root\+Register\+Offset\+For\+External\+Reference} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} \&reference)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a9593562ce88203612b3dfb28cebbb40b}\label{classv8_1_1internal_1_1TurboAssemblerBase_a9593562ce88203612b3dfb28cebbb40b}} 
+static int32\+\_\+t {\bfseries Root\+Register\+Offset\+For\+External\+Reference\+Table\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} \&reference)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a99dc72e035ec1b2d266473e0bb9c364d}\label{classv8_1_1internal_1_1TurboAssemblerBase_a99dc72e035ec1b2d266473e0bb9c364d}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Addressable\+Through\+Root\+Register} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const \mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} \&reference)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_ab904c4d201c353d07f3fc04a66015302}\label{classv8_1_1internal_1_1TurboAssemblerBase_ab904c4d201c353d07f3fc04a66015302}} 
+{\bfseries Turbo\+Assembler\+Base} (const \mbox{\hyperlink{structv8_1_1internal_1_1AssemblerOptions}{Assembler\+Options}} \&options, void $\ast$buffer, \mbox{\hyperlink{classint}{int}} buffer\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a80c6ca576cc822d38a5c1fdf34bb52c5}\label{classv8_1_1internal_1_1TurboAssemblerBase_a80c6ca576cc822d38a5c1fdf34bb52c5}} 
+{\bfseries Turbo\+Assembler\+Base} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const \mbox{\hyperlink{structv8_1_1internal_1_1AssemblerOptions}{Assembler\+Options}} \&options, void $\ast$buffer, \mbox{\hyperlink{classint}{int}} buffer\+\_\+size, Code\+Object\+Required create\+\_\+code\+\_\+object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a1ee06df1dbc8ce3885d7fc29b00f18f3}\label{classv8_1_1internal_1_1TurboAssemblerBase_a1ee06df1dbc8ce3885d7fc29b00f18f3}} 
+void {\bfseries Record\+Comment\+For\+Off\+Heap\+Trampoline} (\mbox{\hyperlink{classint}{int}} builtin\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_ac907c68724041a12b81045dba993dfa2}\label{classv8_1_1internal_1_1TurboAssemblerBase_ac907c68724041a12b81045dba993dfa2}} 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\mbox{\hyperlink{classv8_1_1internal_1_1TurboAssemblerBase}{Turbo\+Assembler\+Base}})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_adab0765166800d0c2505c8cc4f1e3158}\label{classv8_1_1internal_1_1TurboAssemblerBase_adab0765166800d0c2505c8cc4f1e3158}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$const {\bfseries isolate\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_ad4fc841724fe3a4750e022d99f14f671}\label{classv8_1_1internal_1_1TurboAssemblerBase_ad4fc841724fe3a4750e022d99f14f671}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ {\bfseries code\+\_\+object\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_abd07daf29d856b78b1960cce819a959c}\label{classv8_1_1internal_1_1TurboAssemblerBase_abd07daf29d856b78b1960cce819a959c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries root\+\_\+array\+\_\+available\+\_\+} = true
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_aa32720ebf21d2a6cbf63cc8066549ce3}\label{classv8_1_1internal_1_1TurboAssemblerBase_aa32720ebf21d2a6cbf63cc8066549ce3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries trap\+\_\+on\+\_\+abort\+\_\+} = F\+L\+A\+G\+\_\+trap\+\_\+on\+\_\+abort
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a4466fe2ea7268cd7f7fd774ec96ee0b2}\label{classv8_1_1internal_1_1TurboAssemblerBase_a4466fe2ea7268cd7f7fd774ec96ee0b2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries hard\+\_\+abort\+\_\+} = false
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_a537a0b0c5daea288bfd283264730b649}\label{classv8_1_1internal_1_1TurboAssemblerBase_a537a0b0c5daea288bfd283264730b649}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries maybe\+\_\+builtin\+\_\+index\+\_\+} = Builtins\+::k\+No\+Builtin\+Id
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TurboAssemblerBase_abbb8b46ea0733097681a34940c77add5}\label{classv8_1_1internal_1_1TurboAssemblerBase_abbb8b46ea0733097681a34940c77add5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+frame\+\_\+} = false
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file turbo-\/assembler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/turbo-\/assembler.\+h\item 
+v8/src/turbo-\/assembler.\+cc\end{DoxyCompactItemize}

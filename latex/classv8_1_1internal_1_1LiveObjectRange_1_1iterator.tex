@@ -1,0 +1,54 @@
+\hypertarget{classv8_1_1internal_1_1LiveObjectRange_1_1iterator}{}\section{v8\+:\+:internal\+:\+:Live\+Object\+Range$<$ mode $>$\+:\+:iterator Class Reference}
+\label{classv8_1_1internal_1_1LiveObjectRange_1_1iterator}\index{v8\+::internal\+::\+Live\+Object\+Range$<$ mode $>$\+::iterator@{v8\+::internal\+::\+Live\+Object\+Range$<$ mode $>$\+::iterator}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_ad1d52b96c91d26270ed89625ebb8877d}\label{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_ad1d52b96c91d26270ed89625ebb8877d}} 
+using {\bfseries value\+\_\+type} = std\+::pair$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$, \mbox{\hyperlink{classint}{int}} $>$
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_a38f77d369e1acfe1ed38622a4fac783b}\label{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_a38f77d369e1acfe1ed38622a4fac783b}} 
+using {\bfseries pointer} = const value\+\_\+type $\ast$
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_a4b5ded86241152b4309d359f4b989909}\label{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_a4b5ded86241152b4309d359f4b989909}} 
+using {\bfseries reference} = const value\+\_\+type \&
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_ae18367649df808097f50bb161c6496ff}\label{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_ae18367649df808097f50bb161c6496ff}} 
+using {\bfseries iterator\+\_\+category} = std\+::forward\+\_\+iterator\+\_\+tag
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_a02293954da53e80cdac15944657a9f02}\label{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_a02293954da53e80cdac15944657a9f02}} 
+{\bfseries iterator} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk, \mbox{\hyperlink{classv8_1_1internal_1_1Bitmap}{Bitmap}} $\ast$bitmap, \mbox{\hyperlink{classuintptr__t}{Address}} start)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_aebadab5b81cfd3ecd582e18df9e3b11d}\label{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_aebadab5b81cfd3ecd582e18df9e3b11d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1LiveObjectRange_1_1iterator}{iterator}} \& {\bfseries operator++} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_aace45038f5b560867b4419384825517a}\label{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_aace45038f5b560867b4419384825517a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1LiveObjectRange_1_1iterator}{iterator}} {\bfseries operator++} (\mbox{\hyperlink{classint}{int}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_a11d84d9019c9d4e731d43cbe45e44314}\label{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_a11d84d9019c9d4e731d43cbe45e44314}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries operator==} (\mbox{\hyperlink{classv8_1_1internal_1_1LiveObjectRange_1_1iterator}{iterator}} other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_a7dd69f4f43aeb2d93c20fbea9c596afe}\label{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_a7dd69f4f43aeb2d93c20fbea9c596afe}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries operator!=} (\mbox{\hyperlink{classv8_1_1internal_1_1LiveObjectRange_1_1iterator}{iterator}} other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_a8a679413bcad92cbc448edde7cb21d45}\label{classv8_1_1internal_1_1LiveObjectRange_1_1iterator_a8a679413bcad92cbc448edde7cb21d45}} 
+value\+\_\+type {\bfseries operator$\ast$} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$Live\+Object\+Iteration\+Mode mode$>$\newline
+class v8\+::internal\+::\+Live\+Object\+Range$<$ mode $>$\+::iterator}
+
+
+
+Definition at line 146 of file mark-\/compact.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/mark-\/compact.\+h\item 
+v8/src/heap/mark-\/compact-\/inl.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,87 @@
+\hypertarget{classv8_1_1internal_1_1IdentityMapBase}{}\section{v8\+:\+:internal\+:\+:Identity\+Map\+Base Class Reference}
+\label{classv8_1_1internal_1_1IdentityMapBase}\index{v8\+::internal\+::\+Identity\+Map\+Base@{v8\+::internal\+::\+Identity\+Map\+Base}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Identity\+Map\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.518519cm]{classv8_1_1internal_1_1IdentityMapBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IdentityMapBase_a2eaa862537aa44c144c268d827d90643}\label{classv8_1_1internal_1_1IdentityMapBase_a2eaa862537aa44c144c268d827d90643}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries empty} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IdentityMapBase_a29059d0d4ccbfb656a1ef6b224c30fcd}\label{classv8_1_1internal_1_1IdentityMapBase_a29059d0d4ccbfb656a1ef6b224c30fcd}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IdentityMapBase_aed43eb3a4b7648e4156341c6e4778bdb}\label{classv8_1_1internal_1_1IdentityMapBase_aed43eb3a4b7648e4156341c6e4778bdb}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries capacity} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IdentityMapBase_aed6111a54dd7433492c059a001293dfa}\label{classv8_1_1internal_1_1IdentityMapBase_aed6111a54dd7433492c059a001293dfa}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+iterable} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IdentityMapBase_a9b11c93a50924ab8628431ad57eeddbe}\label{classv8_1_1internal_1_1IdentityMapBase_a9b11c93a50924ab8628431ad57eeddbe}} 
+typedef void $\ast$$\ast$ {\bfseries Raw\+Entry}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IdentityMapBase_ab9f30167bbfc971aee8022a7d8297825}\label{classv8_1_1internal_1_1IdentityMapBase_ab9f30167bbfc971aee8022a7d8297825}} 
+{\bfseries Identity\+Map\+Base} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IdentityMapBase_a488fac529835d593d0e7fb8933c200de}\label{classv8_1_1internal_1_1IdentityMapBase_a488fac529835d593d0e7fb8933c200de}} 
+Raw\+Entry {\bfseries Get\+Entry} (\mbox{\hyperlink{classuintptr__t}{Address}} key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IdentityMapBase_a628560b49e6e0392e7f7788b0f84902f}\label{classv8_1_1internal_1_1IdentityMapBase_a628560b49e6e0392e7f7788b0f84902f}} 
+Raw\+Entry {\bfseries Find\+Entry} (\mbox{\hyperlink{classuintptr__t}{Address}} key) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IdentityMapBase_a4d2bfab2ce640719ef62830c5352a19c}\label{classv8_1_1internal_1_1IdentityMapBase_a4d2bfab2ce640719ef62830c5352a19c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Delete\+Entry} (\mbox{\hyperlink{classuintptr__t}{Address}} key, void $\ast$$\ast$deleted\+\_\+value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IdentityMapBase_abf639aef94ebb3c75d4dec921e0e81eb}\label{classv8_1_1internal_1_1IdentityMapBase_abf639aef94ebb3c75d4dec921e0e81eb}} 
+void {\bfseries Clear} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IdentityMapBase_a81f2963a8bfb6d1f874aca9db6095878}\label{classv8_1_1internal_1_1IdentityMapBase_a81f2963a8bfb6d1f874aca9db6095878}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Key\+At\+Index} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IdentityMapBase_a993371e3c52fecbad4306794d98a3b9e}\label{classv8_1_1internal_1_1IdentityMapBase_a993371e3c52fecbad4306794d98a3b9e}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE Raw\+Entry {\bfseries Entry\+At\+Index} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IdentityMapBase_a7b91ba7bb7774eea1cc5e7697159f21d}\label{classv8_1_1internal_1_1IdentityMapBase_a7b91ba7bb7774eea1cc5e7697159f21d}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classint}{int}} {\bfseries Next\+Index} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IdentityMapBase_a656a5acf871acfeaa046da32a9e42147}\label{classv8_1_1internal_1_1IdentityMapBase_a656a5acf871acfeaa046da32a9e42147}} 
+void {\bfseries Enable\+Iteration} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IdentityMapBase_ad54d966bb16e06c03152062f60a31915}\label{classv8_1_1internal_1_1IdentityMapBase_ad54d966bb16e06c03152062f60a31915}} 
+void {\bfseries Disable\+Iteration} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IdentityMapBase_a3b82f6fd6e80c17fb47e469cb0fe9a18}\label{classv8_1_1internal_1_1IdentityMapBase_a3b82f6fd6e80c17fb47e469cb0fe9a18}} 
+virtual void $\ast$$\ast$ {\bfseries New\+Pointer\+Array} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} length)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IdentityMapBase_a0609450bd55d65ec6f34cc28b8ad46bf}\label{classv8_1_1internal_1_1IdentityMapBase_a0609450bd55d65ec6f34cc28b8ad46bf}} 
+virtual void {\bfseries Delete\+Array} (void $\ast$array)=0
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IdentityMapBase_afddb20b5074fbbdae6a4a81ed82949f9}\label{classv8_1_1internal_1_1IdentityMapBase_afddb20b5074fbbdae6a4a81ed82949f9}} 
+class {\bfseries Identity\+Map\+Tester}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file identity-\/map.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/identity-\/map.\+h\item 
+v8/src/identity-\/map.\+cc\end{DoxyCompactItemize}

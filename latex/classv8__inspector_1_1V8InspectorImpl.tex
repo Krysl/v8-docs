@@ -1,0 +1,165 @@
+\hypertarget{classv8__inspector_1_1V8InspectorImpl}{}\section{v8\+\_\+inspector\+:\+:V8\+Inspector\+Impl Class Reference}
+\label{classv8__inspector_1_1V8InspectorImpl}\index{v8\+\_\+inspector\+::\+V8\+Inspector\+Impl@{v8\+\_\+inspector\+::\+V8\+Inspector\+Impl}}
+Inheritance diagram for v8\+\_\+inspector\+:\+:V8\+Inspector\+Impl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8__inspector_1_1V8InspectorImpl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8__inspector_1_1V8InspectorImpl_1_1EvaluateScope}{Evaluate\+Scope}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a0f76e9186b1713fbc78dacd4d204ee4a}\label{classv8__inspector_1_1V8InspectorImpl_a0f76e9186b1713fbc78dacd4d204ee4a}} 
+{\bfseries V8\+Inspector\+Impl} (v8\+::\+Isolate $\ast$, \mbox{\hyperlink{classv8__inspector_1_1V8InspectorClient}{V8\+Inspector\+Client}} $\ast$)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a76d62cba06864a3c0d57a2b1294080d7}\label{classv8__inspector_1_1V8InspectorImpl_a76d62cba06864a3c0d57a2b1294080d7}} 
+v8\+::\+Isolate $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_aa63c63e1425faa0ea7830af3bed5c7f1}\label{classv8__inspector_1_1V8InspectorImpl_aa63c63e1425faa0ea7830af3bed5c7f1}} 
+\mbox{\hyperlink{classv8__inspector_1_1V8InspectorClient}{V8\+Inspector\+Client}} $\ast$ {\bfseries client} ()
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a144e903f646f51e03d0ebf60a5bb0b79}\label{classv8__inspector_1_1V8InspectorImpl_a144e903f646f51e03d0ebf60a5bb0b79}} 
+\mbox{\hyperlink{classv8__inspector_1_1V8Debugger}{V8\+Debugger}} $\ast$ {\bfseries debugger} ()
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_ad040a6d4e7b2ee809fe7c1a2c1c6e0f9}\label{classv8__inspector_1_1V8InspectorImpl_ad040a6d4e7b2ee809fe7c1a2c1c6e0f9}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries context\+Group\+Id} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$) const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a4e0773d7987f81268563188b63eb0423}\label{classv8__inspector_1_1V8InspectorImpl_a4e0773d7987f81268563188b63eb0423}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries context\+Group\+Id} (\mbox{\hyperlink{classint}{int}} context\+Id) const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a7b5f288fa0f34e6230e7ec834734c1d9}\label{classv8__inspector_1_1V8InspectorImpl_a7b5f288fa0f34e6230e7ec834734c1d9}} 
+uint64\+\_\+t {\bfseries isolate\+Id} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a237abe0fca92bd8865372d7b305c6c56}\label{classv8__inspector_1_1V8InspectorImpl_a237abe0fca92bd8865372d7b305c6c56}} 
+\mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ {\bfseries compile\+And\+Run\+Internal\+Script} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{v8\+::\+String}} $>$)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a2b2a60ab13f7efb102dd97fed07cde75}\label{classv8__inspector_1_1V8InspectorImpl_a2b2a60ab13f7efb102dd97fed07cde75}} 
+\mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Script}{v8\+::\+Script}} $>$ {\bfseries compile\+Script} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$, const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&code, const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&file\+Name)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a2a17633c8ee0a0cfb147cb79637371cb}\label{classv8__inspector_1_1V8InspectorImpl_a2a17633c8ee0a0cfb147cb79637371cb}} 
+\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$ {\bfseries regex\+Context} ()
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a62ce55a8df4cbbffbe39c4500d462458}\label{classv8__inspector_1_1V8InspectorImpl_a62ce55a8df4cbbffbe39c4500d462458}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8InspectorSession}{V8\+Inspector\+Session}} $>$ {\bfseries connect} (\mbox{\hyperlink{classint}{int}} context\+Group\+Id, \mbox{\hyperlink{classv8__inspector_1_1V8Inspector_1_1Channel}{V8\+Inspector\+::\+Channel}} $\ast$, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&state) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a576ed397243cf8e0068db83260a05e3b}\label{classv8__inspector_1_1V8InspectorImpl_a576ed397243cf8e0068db83260a05e3b}} 
+void {\bfseries context\+Created} (const \mbox{\hyperlink{classv8__inspector_1_1V8ContextInfo}{V8\+Context\+Info}} \&) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_ad77604a25ad48215cc0a138a3ddd1f1a}\label{classv8__inspector_1_1V8InspectorImpl_ad77604a25ad48215cc0a138a3ddd1f1a}} 
+void {\bfseries context\+Destroyed} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_aacd823c55f1f229757d912271f15d717}\label{classv8__inspector_1_1V8InspectorImpl_aacd823c55f1f229757d912271f15d717}} 
+\mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ v8\+::\+Context $>$ {\bfseries context\+By\+Id} (\mbox{\hyperlink{classint}{int}} group\+Id, \mbox{\hyperlink{classv8_1_1Maybe}{v8\+::\+Maybe}}$<$ \mbox{\hyperlink{classint}{int}} $>$ context\+Id) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a402104427324ebe7f6a862d3a52ca0a2}\label{classv8__inspector_1_1V8InspectorImpl_a402104427324ebe7f6a862d3a52ca0a2}} 
+void {\bfseries context\+Collected} (\mbox{\hyperlink{classint}{int}} context\+Group\+Id, \mbox{\hyperlink{classint}{int}} context\+Id)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a91d12fa9b6bbda4582226f37f50b2491}\label{classv8__inspector_1_1V8InspectorImpl_a91d12fa9b6bbda4582226f37f50b2491}} 
+void {\bfseries reset\+Context\+Group} (\mbox{\hyperlink{classint}{int}} context\+Group\+Id) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_af166c90a23e9043005c39098371ba6ab}\label{classv8__inspector_1_1V8InspectorImpl_af166c90a23e9043005c39098371ba6ab}} 
+void {\bfseries idle\+Started} () override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a4745cfd410f837efc12ac478b0641c93}\label{classv8__inspector_1_1V8InspectorImpl_a4745cfd410f837efc12ac478b0641c93}} 
+void {\bfseries idle\+Finished} () override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a7e14d76b5b6a95f9a5b8d18911fb980e}\label{classv8__inspector_1_1V8InspectorImpl_a7e14d76b5b6a95f9a5b8d18911fb980e}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries exception\+Thrown} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&message, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ exception, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&detailed\+Message, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&url, \mbox{\hyperlink{classunsigned}{unsigned}} line\+Number, \mbox{\hyperlink{classunsigned}{unsigned}} column\+Number, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8StackTrace}{V8\+Stack\+Trace}} $>$, \mbox{\hyperlink{classint}{int}} script\+Id) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_aab18c1b80251669f43fc6f985227ecc2}\label{classv8__inspector_1_1V8InspectorImpl_aab18c1b80251669f43fc6f985227ecc2}} 
+void {\bfseries exception\+Revoked} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ v8\+::\+Context $>$, \mbox{\hyperlink{classunsigned}{unsigned}} exception\+Id, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&message) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a44cb685d7a98b5b11b761a3a79a1912c}\label{classv8__inspector_1_1V8InspectorImpl_a44cb685d7a98b5b11b761a3a79a1912c}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8StackTrace}{V8\+Stack\+Trace}} $>$ {\bfseries create\+Stack\+Trace} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1StackTrace}{v8\+::\+Stack\+Trace}} $>$) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_aada34a3dcd9d4b0e0c43158a69517c5c}\label{classv8__inspector_1_1V8InspectorImpl_aada34a3dcd9d4b0e0c43158a69517c5c}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8StackTrace}{V8\+Stack\+Trace}} $>$ {\bfseries capture\+Stack\+Trace} (\mbox{\hyperlink{classbool}{bool}} full\+Stack) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a2e860f46d7ee3a428044d2a84c42a443}\label{classv8__inspector_1_1V8InspectorImpl_a2e860f46d7ee3a428044d2a84c42a443}} 
+void {\bfseries async\+Task\+Scheduled} (const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&task\+Name, void $\ast$task, \mbox{\hyperlink{classbool}{bool}} recurring) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_aed9e8a650c4dec36c43586100e40fdbb}\label{classv8__inspector_1_1V8InspectorImpl_aed9e8a650c4dec36c43586100e40fdbb}} 
+void {\bfseries async\+Task\+Canceled} (void $\ast$task) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a11221ce1a97d26f7c061d7bbcdf819a1}\label{classv8__inspector_1_1V8InspectorImpl_a11221ce1a97d26f7c061d7bbcdf819a1}} 
+void {\bfseries async\+Task\+Started} (void $\ast$task) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_ac13a10459cb9c91ef4cb6e72d2acffd3}\label{classv8__inspector_1_1V8InspectorImpl_ac13a10459cb9c91ef4cb6e72d2acffd3}} 
+void {\bfseries async\+Task\+Finished} (void $\ast$task) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_aa875bed2aee38eb9b816fd837d5494c9}\label{classv8__inspector_1_1V8InspectorImpl_aa875bed2aee38eb9b816fd837d5494c9}} 
+void {\bfseries all\+Async\+Tasks\+Canceled} () override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_aa6a8e077522d48542d90d30faea5fa70}\label{classv8__inspector_1_1V8InspectorImpl_aa6a8e077522d48542d90d30faea5fa70}} 
+\mbox{\hyperlink{structv8__inspector_1_1V8StackTraceId}{V8\+Stack\+Trace\+Id}} {\bfseries store\+Current\+Stack\+Trace} (const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&description) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_ac595ac728083b84816f6db8d31e39ca9}\label{classv8__inspector_1_1V8InspectorImpl_ac595ac728083b84816f6db8d31e39ca9}} 
+void {\bfseries external\+Async\+Task\+Started} (const \mbox{\hyperlink{structv8__inspector_1_1V8StackTraceId}{V8\+Stack\+Trace\+Id}} \&parent) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a035a1d2fc2fe546013221a786f84b152}\label{classv8__inspector_1_1V8InspectorImpl_a035a1d2fc2fe546013221a786f84b152}} 
+void {\bfseries external\+Async\+Task\+Finished} (const \mbox{\hyperlink{structv8__inspector_1_1V8StackTraceId}{V8\+Stack\+Trace\+Id}} \&parent) override
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_abb07d0980fde769adcdd755f93cf34d2}\label{classv8__inspector_1_1V8InspectorImpl_abb07d0980fde769adcdd755f93cf34d2}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries next\+Exception\+Id} ()
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a1b74c8243c41c0e5d6288c5069a54e6f}\label{classv8__inspector_1_1V8InspectorImpl_a1b74c8243c41c0e5d6288c5069a54e6f}} 
+void {\bfseries enable\+Stack\+Capturing\+If\+Needed} ()
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a279aae16f5bd65893831a4d7fcadfa4e}\label{classv8__inspector_1_1V8InspectorImpl_a279aae16f5bd65893831a4d7fcadfa4e}} 
+void {\bfseries disable\+Stack\+Capturing\+If\+Needed} ()
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_ad986fef47ea436a17f5f4fb662995461}\label{classv8__inspector_1_1V8InspectorImpl_ad986fef47ea436a17f5f4fb662995461}} 
+void {\bfseries mute\+Exceptions} (\mbox{\hyperlink{classint}{int}} context\+Group\+Id)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a67a4c428c016b8c0e1f12f0995b73c41}\label{classv8__inspector_1_1V8InspectorImpl_a67a4c428c016b8c0e1f12f0995b73c41}} 
+void {\bfseries unmute\+Exceptions} (\mbox{\hyperlink{classint}{int}} context\+Group\+Id)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a1b0265f528b7a1b22f27ba25a774eab1}\label{classv8__inspector_1_1V8InspectorImpl_a1b0265f528b7a1b22f27ba25a774eab1}} 
+\mbox{\hyperlink{classv8__inspector_1_1V8ConsoleMessageStorage}{V8\+Console\+Message\+Storage}} $\ast$ {\bfseries ensure\+Console\+Message\+Storage} (\mbox{\hyperlink{classint}{int}} context\+Group\+Id)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a69b0acac7d0fca5c63c465c1d9bcbe28}\label{classv8__inspector_1_1V8InspectorImpl_a69b0acac7d0fca5c63c465c1d9bcbe28}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+Console\+Message\+Storage} (\mbox{\hyperlink{classint}{int}} context\+Group\+Id)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a62bdf84ccc5bed9c78b8b067289b396f}\label{classv8__inspector_1_1V8InspectorImpl_a62bdf84ccc5bed9c78b8b067289b396f}} 
+void {\bfseries discard\+Inspected\+Context} (\mbox{\hyperlink{classint}{int}} context\+Group\+Id, \mbox{\hyperlink{classint}{int}} context\+Id)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a1d2273c5b099a5984082d4712fcd095f}\label{classv8__inspector_1_1V8InspectorImpl_a1d2273c5b099a5984082d4712fcd095f}} 
+void {\bfseries disconnect} (\mbox{\hyperlink{classv8__inspector_1_1V8InspectorSessionImpl}{V8\+Inspector\+Session\+Impl}} $\ast$)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_ad3afc40c52bd16d5d29503d0a48b00c4}\label{classv8__inspector_1_1V8InspectorImpl_ad3afc40c52bd16d5d29503d0a48b00c4}} 
+\mbox{\hyperlink{classv8__inspector_1_1V8InspectorSessionImpl}{V8\+Inspector\+Session\+Impl}} $\ast$ {\bfseries session\+By\+Id} (\mbox{\hyperlink{classint}{int}} context\+Group\+Id, \mbox{\hyperlink{classint}{int}} session\+Id)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a550d24d7ca6eb1ab57669eab2efe3df2}\label{classv8__inspector_1_1V8InspectorImpl_a550d24d7ca6eb1ab57669eab2efe3df2}} 
+\mbox{\hyperlink{classv8__inspector_1_1InspectedContext}{Inspected\+Context}} $\ast$ {\bfseries get\+Context} (\mbox{\hyperlink{classint}{int}} group\+Id, \mbox{\hyperlink{classint}{int}} context\+Id) const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a0698e6622137613b3114b71d5825fbad}\label{classv8__inspector_1_1V8InspectorImpl_a0698e6622137613b3114b71d5825fbad}} 
+\mbox{\hyperlink{classv8__inspector_1_1InspectedContext}{Inspected\+Context}} $\ast$ {\bfseries get\+Context} (\mbox{\hyperlink{classint}{int}} context\+Id) const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_a6c32ba8a9e6693ace975bc476ada5275}\label{classv8__inspector_1_1V8InspectorImpl_a6c32ba8a9e6693ace975bc476ada5275}} 
+\mbox{\hyperlink{classv8__inspector_1_1V8Console}{V8\+Console}} $\ast$ {\bfseries console} ()
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_ad78622a7280dd98f630263a013c1a441}\label{classv8__inspector_1_1V8InspectorImpl_ad78622a7280dd98f630263a013c1a441}} 
+void {\bfseries for\+Each\+Context} (\mbox{\hyperlink{classint}{int}} context\+Group\+Id, const std\+::function$<$ void(\mbox{\hyperlink{classv8__inspector_1_1InspectedContext}{Inspected\+Context}} $\ast$)$>$ \&callback)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorImpl_ab1a6fbb376af67276b41d6b4fb9a88c5}\label{classv8__inspector_1_1V8InspectorImpl_ab1a6fbb376af67276b41d6b4fb9a88c5}} 
+void {\bfseries for\+Each\+Session} (\mbox{\hyperlink{classint}{int}} context\+Group\+Id, const std\+::function$<$ void(\mbox{\hyperlink{classv8__inspector_1_1V8InspectorSessionImpl}{V8\+Inspector\+Session\+Impl}} $\ast$)$>$ \&callback)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 56 of file v8-\/inspector-\/impl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/inspector/v8-\/inspector-\/impl.\+h\item 
+v8/src/inspector/v8-\/inspector-\/impl.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,221 @@
+\hypertarget{classv8_1_1internal_1_1SerializerDeserializer}{}\section{v8\+:\+:internal\+:\+:Serializer\+Deserializer Class Reference}
+\label{classv8_1_1internal_1_1SerializerDeserializer}\index{v8\+::internal\+::\+Serializer\+Deserializer@{v8\+::internal\+::\+Serializer\+Deserializer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Serializer\+Deserializer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.650943cm]{classv8_1_1internal_1_1SerializerDeserializer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a1dc8ac93022515634192f7d26aa9f6f3}\label{classv8_1_1internal_1_1SerializerDeserializer_a1dc8ac93022515634192f7d26aa9f6f3}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (M\+A\+P\+\_\+\+S\+P\+A\+CE==C\+O\+D\+E\+\_\+\+S\+P\+A\+CE+1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_ad2e858d06deb68c6b648b52a733fdb57}\label{classv8_1_1internal_1_1SerializerDeserializer_ad2e858d06deb68c6b648b52a733fdb57}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (L\+A\+S\+T\+\_\+\+S\+P\+A\+CE==N\+E\+W\+\_\+\+L\+O\+\_\+\+S\+P\+A\+CE)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a99c2a96627f579a1f4717464db2b7283}\label{classv8_1_1internal_1_1SerializerDeserializer_a99c2a96627f579a1f4717464db2b7283}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (L\+A\+S\+T\+\_\+\+S\+P\+A\+CE -\/ 2==L\+O\+\_\+\+S\+P\+A\+CE)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a3e8da34be2a643fb268c95a4db978070}\label{classv8_1_1internal_1_1SerializerDeserializer_a3e8da34be2a643fb268c95a4db978070}} 
+static void {\bfseries Iterate} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$visitor)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_aaed98bc38a78b739bf9bfefbf958d6c2}\label{classv8_1_1internal_1_1SerializerDeserializer_aaed98bc38a78b739bf9bfefbf958d6c2}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Number\+Of\+Preallocated\+Spaces} = C\+O\+D\+E\+\_\+\+S\+P\+A\+CE + 1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a6daa032c293e99bdf9f7d66d8365f556}\label{classv8_1_1internal_1_1SerializerDeserializer_a6daa032c293e99bdf9f7d66d8365f556}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Number\+Of\+Spaces} = L\+O\+\_\+\+S\+P\+A\+CE + 1
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a338d50f92903ec056650135e60139c8a}\label{classv8_1_1internal_1_1SerializerDeserializer_a338d50f92903ec056650135e60139c8a}} 
+enum {\bfseries Where} \{ \newline
+{\bfseries k\+New\+Object} = 0x00, 
+{\bfseries k\+Backref} = 0x08, 
+{\bfseries k\+Backref\+With\+Skip} = 0x10, 
+{\bfseries k\+Partial\+Snapshot\+Cache} = 0x06, 
+\newline
+{\bfseries k\+External\+Reference} = 0x07, 
+{\bfseries k\+Root\+Array} = 0x16, 
+{\bfseries k\+Attached\+Reference} = 0x17, 
+{\bfseries k\+Read\+Only\+Object\+Cache} = 0x18
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a3806541ecf89447911d72c6ccd7bb43e}\label{classv8_1_1internal_1_1SerializerDeserializer_a3806541ecf89447911d72c6ccd7bb43e}} 
+enum {\bfseries How\+To\+Code} \{ {\bfseries k\+Plain} = 0, 
+{\bfseries k\+From\+Code} = 0x20
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_ab62aa66a8d8e959c1d118dbec6d921b6}\label{classv8_1_1internal_1_1SerializerDeserializer_ab62aa66a8d8e959c1d118dbec6d921b6}} 
+enum {\bfseries Where\+To\+Point} \{ {\bfseries k\+Start\+Of\+Object} = 0, 
+{\bfseries k\+Inner\+Pointer} = 0x40
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a5c91b3e930035c91deef367d017e47cc}\label{classv8_1_1internal_1_1SerializerDeserializer_a5c91b3e930035c91deef367d017e47cc}} 
+void {\bfseries Restore\+External\+Reference\+Redirectors} (const std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1AccessorInfo}{Accessor\+Info}} $\ast$$>$ \&accessor\+\_\+infos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a0b43c343a30f7fe926083dbc61c45933}\label{classv8_1_1internal_1_1SerializerDeserializer_a0b43c343a30f7fe926083dbc61c45933}} 
+void {\bfseries Restore\+External\+Reference\+Redirectors} (const std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CallHandlerInfo}{Call\+Handler\+Info}} $\ast$$>$ \&call\+\_\+handler\+\_\+infos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_ab6ad0bdcbcb29295f395be5f50addcc7}\label{classv8_1_1internal_1_1SerializerDeserializer_ab6ad0bdcbcb29295f395be5f50addcc7}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (6==k\+Number\+Of\+Spaces)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a3efd56038139e6f57289165962d7c9d5}\label{classv8_1_1internal_1_1SerializerDeserializer_a3efd56038139e6f57289165962d7c9d5}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Number\+Of\+Spaces$<$=k\+Space\+Mask+1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_af8a2d59f3f3b5774a7f0d1fa25473586}\label{classv8_1_1internal_1_1SerializerDeserializer_af8a2d59f3f3b5774a7f0d1fa25473586}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Number\+Of\+Hot\+Objects==Hot\+Objects\+List\+::k\+Size)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a65ec23ada9d043a0063d40b1f9cd37e6}\label{classv8_1_1internal_1_1SerializerDeserializer_a65ec23ada9d043a0063d40b1f9cd37e6}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Be\+Deferred} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$o)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a0acf7d0187a681e8c2e552b70985537a}\label{classv8_1_1internal_1_1SerializerDeserializer_a0acf7d0187a681e8c2e552b70985537a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HotObjectsList}{Hot\+Objects\+List}} {\bfseries hot\+\_\+objects\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a146c73aee13a3a5f96ad2cbae1751c71}\label{classv8_1_1internal_1_1SerializerDeserializer_a146c73aee13a3a5f96ad2cbae1751c71}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Where\+Mask} = 0x1f
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a1bf1b8de7b9b3f35cc0ca1828853f516}\label{classv8_1_1internal_1_1SerializerDeserializer_a1bf1b8de7b9b3f35cc0ca1828853f516}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Space\+Mask} = 7
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_ab851c89661ac2089878b119a7ceabd30}\label{classv8_1_1internal_1_1SerializerDeserializer_ab851c89661ac2089878b119a7ceabd30}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+How\+To\+Code\+Mask} = 0x20
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_ab62dcee183deaa224de1dc5ec5c31889}\label{classv8_1_1internal_1_1SerializerDeserializer_ab62dcee183deaa224de1dc5ec5c31889}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Where\+To\+Point\+Mask} = 0x40
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a129fe9a08d43acb1f781ce637b015b13}\label{classv8_1_1internal_1_1SerializerDeserializer_a129fe9a08d43acb1f781ce637b015b13}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Skip} = 0x0f
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a9d864747570a2c08fbc0103cf231dd52}\label{classv8_1_1internal_1_1SerializerDeserializer_a9d864747570a2c08fbc0103cf231dd52}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Nop} = 0x2f
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a28ccc1df87e1b61320594e5eae17ecf9}\label{classv8_1_1internal_1_1SerializerDeserializer_a28ccc1df87e1b61320594e5eae17ecf9}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Next\+Chunk} = 0x4f
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_aa5bc297ca33dc707312520a3c991a61a}\label{classv8_1_1internal_1_1SerializerDeserializer_aa5bc297ca33dc707312520a3c991a61a}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Deferred} = 0x6f
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a37b42d4fbe64338bb8f71ee9609e4125}\label{classv8_1_1internal_1_1SerializerDeserializer_a37b42d4fbe64338bb8f71ee9609e4125}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Alignment\+Prefix} = 0x19
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_acf9a26e618353660c6a05a183702a986}\label{classv8_1_1internal_1_1SerializerDeserializer_acf9a26e618353660c6a05a183702a986}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Synchronize} = 0x1c
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_abbff9dceb5b91f22d85bfc2c47a07d16}\label{classv8_1_1internal_1_1SerializerDeserializer_abbff9dceb5b91f22d85bfc2c47a07d16}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Variable\+Repeat} = 0x1d
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a4d7bcfc7839ff7df64eaec4d26580805}\label{classv8_1_1internal_1_1SerializerDeserializer_a4d7bcfc7839ff7df64eaec4d26580805}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Off\+Heap\+Backing\+Store} = 0x1e
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a74819b3d9b2c72d83c459eb74917f087}\label{classv8_1_1internal_1_1SerializerDeserializer_a74819b3d9b2c72d83c459eb74917f087}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Embedder\+Fields\+Data} = 0x1f
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_ab76112c8c8711ca9c89f2b8cd5e10c32}\label{classv8_1_1internal_1_1SerializerDeserializer_ab76112c8c8711ca9c89f2b8cd5e10c32}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Variable\+Raw\+Code} = 0x39
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a5e6ef399f41765b6895880550634de36}\label{classv8_1_1internal_1_1SerializerDeserializer_a5e6ef399f41765b6895880550634de36}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Variable\+Raw\+Data} = 0x3a
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a0b33bef302fc9d7112b80f12f83368d6}\label{classv8_1_1internal_1_1SerializerDeserializer_a0b33bef302fc9d7112b80f12f83368d6}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Internal\+Reference} = 0x3b
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a5cd573c1059de94b2439642a8e9728d2}\label{classv8_1_1internal_1_1SerializerDeserializer_a5cd573c1059de94b2439642a8e9728d2}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Internal\+Reference\+Encoded} = 0x3c
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_ade67101a808f22312ae3ec7d538446d6}\label{classv8_1_1internal_1_1SerializerDeserializer_ade67101a808f22312ae3ec7d538446d6}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Api\+Reference} = 0x3d
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a6062eb31e9b3a05de194cc6e8269733d}\label{classv8_1_1internal_1_1SerializerDeserializer_a6062eb31e9b3a05de194cc6e8269733d}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Cleared\+Weak\+Reference} = 0x7d
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a01380bbbeec3275b3a21ffebbe24109c}\label{classv8_1_1internal_1_1SerializerDeserializer_a01380bbbeec3275b3a21ffebbe24109c}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Weak\+Prefix} = 0x7e
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a3a22449acfe2d58acc3516c019f06b20}\label{classv8_1_1internal_1_1SerializerDeserializer_a3a22449acfe2d58acc3516c019f06b20}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Off\+Heap\+Target} = 0x7f
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a4670b608b2dc2c576f69087e97148742}\label{classv8_1_1internal_1_1SerializerDeserializer_a4670b608b2dc2c576f69087e97148742}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Number\+Of\+Root\+Array\+Constants} = 0x20
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_aaaefa35d32258743ccdecf01cd4c80d3}\label{classv8_1_1internal_1_1SerializerDeserializer_aaaefa35d32258743ccdecf01cd4c80d3}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Root\+Array\+Constants} = 0x80
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_abfffe8e081b51bd59d2b2dca8b367b2d}\label{classv8_1_1internal_1_1SerializerDeserializer_abfffe8e081b51bd59d2b2dca8b367b2d}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Root\+Array\+Constants\+With\+Skip} = 0xa0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a06aaa9ba34539de02f857d4bf79c531f}\label{classv8_1_1internal_1_1SerializerDeserializer_a06aaa9ba34539de02f857d4bf79c531f}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Root\+Array\+Constants\+Mask} = 0x1f
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a45aec312bc098d155426845fc30ed4cc}\label{classv8_1_1internal_1_1SerializerDeserializer_a45aec312bc098d155426845fc30ed4cc}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Number\+Of\+Fixed\+Raw\+Data} = 0x20
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_aacf161812977cb1607b7c58e39c31af5}\label{classv8_1_1internal_1_1SerializerDeserializer_aacf161812977cb1607b7c58e39c31af5}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Fixed\+Raw\+Data} = 0xc0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_acb1c288cbb4f672bede8ba026172f097}\label{classv8_1_1internal_1_1SerializerDeserializer_acb1c288cbb4f672bede8ba026172f097}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+One\+Pointer\+Raw\+Data} = k\+Fixed\+Raw\+Data
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_ab5c59af3ec3d18d1b6b8c46807413656}\label{classv8_1_1internal_1_1SerializerDeserializer_ab5c59af3ec3d18d1b6b8c46807413656}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Fixed\+Raw\+Data\+Start} = k\+Fixed\+Raw\+Data -\/ 1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_ac721e8a48e3b467455e38a695264d667}\label{classv8_1_1internal_1_1SerializerDeserializer_ac721e8a48e3b467455e38a695264d667}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Number\+Of\+Fixed\+Repeat} = 0x10
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a8d0f2a5e6ea447445b4497f930994479}\label{classv8_1_1internal_1_1SerializerDeserializer_a8d0f2a5e6ea447445b4497f930994479}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Fixed\+Repeat} = 0xe0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a09a1c581a360bdcd3139eebf9cfb1ae2}\label{classv8_1_1internal_1_1SerializerDeserializer_a09a1c581a360bdcd3139eebf9cfb1ae2}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Fixed\+Repeat\+Start} = k\+Fixed\+Repeat -\/ 1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a49847108969985c3a45b6f7e4324c2fa}\label{classv8_1_1internal_1_1SerializerDeserializer_a49847108969985c3a45b6f7e4324c2fa}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Number\+Of\+Hot\+Objects} = 8
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_ac39e2a4eb9319cdb5a9ceb8cc9eedbb4}\label{classv8_1_1internal_1_1SerializerDeserializer_ac39e2a4eb9319cdb5a9ceb8cc9eedbb4}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Hot\+Object} = 0xf0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a028bc7093be724422c3a91f43129b53a}\label{classv8_1_1internal_1_1SerializerDeserializer_a028bc7093be724422c3a91f43129b53a}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Hot\+Object\+With\+Skip} = 0xf8
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_aa7b54ddfe772ad4706022ec661f05096}\label{classv8_1_1internal_1_1SerializerDeserializer_aa7b54ddfe772ad4706022ec661f05096}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Hot\+Object\+Mask} = 0x07
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_af329fb1f13991ff5d8f843cdd52b0736}\label{classv8_1_1internal_1_1SerializerDeserializer_af329fb1f13991ff5d8f843cdd52b0736}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Any\+Old\+Space} = -\/1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializerDeserializer_a71ed69f619892f6907c9367c41544300}\label{classv8_1_1internal_1_1SerializerDeserializer_a71ed69f619892f6907c9367c41544300}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Double\+Alignment\+Sentinel} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 103 of file serializer-\/common.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/snapshot/serializer-\/common.\+h\item 
+v8/src/snapshot/serializer-\/common.\+cc\end{DoxyCompactItemize}

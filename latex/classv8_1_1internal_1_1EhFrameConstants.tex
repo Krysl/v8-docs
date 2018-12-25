@@ -1,0 +1,112 @@
+\hypertarget{classv8_1_1internal_1_1EhFrameConstants}{}\section{v8\+:\+:internal\+:\+:Eh\+Frame\+Constants Class Reference}
+\label{classv8_1_1internal_1_1EhFrameConstants}\index{v8\+::internal\+::\+Eh\+Frame\+Constants@{v8\+::internal\+::\+Eh\+Frame\+Constants}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Eh\+Frame\+Constants\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1EhFrameConstants}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_ad159a4032d7187f97e4258f060dfaa1b}\label{classv8_1_1internal_1_1EhFrameConstants_ad159a4032d7187f97e4258f060dfaa1b}} 
+enum {\bfseries Dwarf\+Opcodes} \+: byte \{ \newline
+{\bfseries k\+Nop} = 0x00, 
+{\bfseries k\+Advance\+Loc1} = 0x02, 
+{\bfseries k\+Advance\+Loc2} = 0x03, 
+{\bfseries k\+Advance\+Loc4} = 0x04, 
+\newline
+{\bfseries k\+Same\+Value} = 0x08, 
+{\bfseries k\+Def\+Cfa} = 0x0c, 
+{\bfseries k\+Def\+Cfa\+Register} = 0x0d, 
+{\bfseries k\+Def\+Cfa\+Offset} = 0x0e, 
+\newline
+{\bfseries k\+Offset\+Extended\+Sf} = 0x11
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_a6d94888045a4a5a94f55edfbd2af2f1c}\label{classv8_1_1internal_1_1EhFrameConstants_a6d94888045a4a5a94f55edfbd2af2f1c}} 
+enum {\bfseries Dwarf\+Encoding\+Specifiers} \+: byte \{ \newline
+{\bfseries k\+U\+Data4} = 0x03, 
+{\bfseries k\+S\+Data4} = 0x0b, 
+{\bfseries k\+Pc\+Rel} = 0x10, 
+{\bfseries k\+Data\+Rel} = 0x30, 
+\newline
+{\bfseries k\+Omit} = 0xff
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_a80d328e1ad3eb16878c26269de82a75d}\label{classv8_1_1internal_1_1EhFrameConstants_a80d328e1ad3eb16878c26269de82a75d}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Location\+Tag} = 1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_a1bac87b72e92876d72c63afe451bb475}\label{classv8_1_1internal_1_1EhFrameConstants_a1bac87b72e92876d72c63afe451bb475}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Location\+Mask} = 0x3f
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_a76b5a18d41a7876ef24e39df3517546e}\label{classv8_1_1internal_1_1EhFrameConstants_a76b5a18d41a7876ef24e39df3517546e}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Location\+Mask\+Size} = 6
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_a65439a54c1c934d1455b68c3b9510d9e}\label{classv8_1_1internal_1_1EhFrameConstants_a65439a54c1c934d1455b68c3b9510d9e}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Saved\+Register\+Tag} = 2
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_a8a9739cc6270a66275cc5fd6d0a6fc44}\label{classv8_1_1internal_1_1EhFrameConstants_a8a9739cc6270a66275cc5fd6d0a6fc44}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Saved\+Register\+Mask} = 0x3f
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_a3254a55cb7bdc5a6d73fde9b6623b1ef}\label{classv8_1_1internal_1_1EhFrameConstants_a3254a55cb7bdc5a6d73fde9b6623b1ef}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Saved\+Register\+Mask\+Size} = 6
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_a2ce44f7129806de2d00c7d300118de63}\label{classv8_1_1internal_1_1EhFrameConstants_a2ce44f7129806de2d00c7d300118de63}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Follow\+Initial\+Rule\+Tag} = 3
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_acc50b761aa39fb1833bca69345f93be5}\label{classv8_1_1internal_1_1EhFrameConstants_acc50b761aa39fb1833bca69345f93be5}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Follow\+Initial\+Rule\+Mask} = 0x3f
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_a8f7f2943db881a8100802cfe6e693250}\label{classv8_1_1internal_1_1EhFrameConstants_a8f7f2943db881a8100802cfe6e693250}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Follow\+Initial\+Rule\+Mask\+Size} = 6
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_ab15d14301972098c38cdcb9b8c08f5ca}\label{classv8_1_1internal_1_1EhFrameConstants_ab15d14301972098c38cdcb9b8c08f5ca}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Procedure\+Address\+Offset\+In\+Fde} = 2 $\ast$ k\+Int32\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_a314eb7a3531a3540f5971546bb9a25c6}\label{classv8_1_1internal_1_1EhFrameConstants_a314eb7a3531a3540f5971546bb9a25c6}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Procedure\+Size\+Offset\+In\+Fde} = 3 $\ast$ k\+Int32\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_a576809d19283505cb31e52227ada2756}\label{classv8_1_1internal_1_1EhFrameConstants_a576809d19283505cb31e52227ada2756}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Initial\+State\+Offset\+In\+Cie} = 19
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_a35b3e087b0343eef8e87f4e879a80e86}\label{classv8_1_1internal_1_1EhFrameConstants_a35b3e087b0343eef8e87f4e879a80e86}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Eh\+Frame\+Terminator\+Size} = 4
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_ab783ff05c14fc226df9c169fb9259130}\label{classv8_1_1internal_1_1EhFrameConstants_ab783ff05c14fc226df9c169fb9259130}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Code\+Alignment\+Factor} = 4
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_a940209a30cdb93fd7162b5e515821496}\label{classv8_1_1internal_1_1EhFrameConstants_a940209a30cdb93fd7162b5e515821496}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Data\+Alignment\+Factor} = -\/4
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_a4a42dca62b54053c40bf77093afd68d4}\label{classv8_1_1internal_1_1EhFrameConstants_a4a42dca62b54053c40bf77093afd68d4}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Fde\+Version\+Size} = 1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_ac6c6e8afb00f2866bb50ff256ff3eee5}\label{classv8_1_1internal_1_1EhFrameConstants_ac6c6e8afb00f2866bb50ff256ff3eee5}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Fde\+Encoding\+Specifiers\+Size} = 3
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_ab9121c30bb0f47852d32f749b2c278c9}\label{classv8_1_1internal_1_1EhFrameConstants_ab9121c30bb0f47852d32f749b2c278c9}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Eh\+Frame\+Hdr\+Version} = 1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EhFrameConstants_aad7375f86fd4061ea38d398b580eb72b}\label{classv8_1_1internal_1_1EhFrameConstants_aad7375f86fd4061ea38d398b580eb72b}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Eh\+Frame\+Hdr\+Size} = 20
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file eh-\/frame.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/eh-\/frame.\+h\item 
+v8/src/arm/eh-\/frame-\/arm.\+cc\item 
+v8/src/arm64/eh-\/frame-\/arm64.\+cc\item 
+v8/src/eh-\/frame.\+cc\item 
+v8/src/x64/eh-\/frame-\/x64.\+cc\end{DoxyCompactItemize}

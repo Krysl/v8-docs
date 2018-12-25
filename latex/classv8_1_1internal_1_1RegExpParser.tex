@@ -1,0 +1,120 @@
+\hypertarget{classv8_1_1internal_1_1RegExpParser}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Parser Class Reference}
+\label{classv8_1_1internal_1_1RegExpParser}\index{v8\+::internal\+::\+Reg\+Exp\+Parser@{v8\+::internal\+::\+Reg\+Exp\+Parser}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_a3baf2110ea86744b051e8c1bf7e1f377}\label{classv8_1_1internal_1_1RegExpParser_a3baf2110ea86744b051e8c1bf7e1f377}} 
+{\bfseries Reg\+Exp\+Parser} (\mbox{\hyperlink{classv8_1_1internal_1_1FlatStringReader}{Flat\+String\+Reader}} $\ast$in, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ $\ast$error, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{J\+S\+Reg\+Exp\+::\+Flags}} flags, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_a9ea41c03d616e08f4ae58bc7b90c7a85}\label{classv8_1_1internal_1_1RegExpParser_a9ea41c03d616e08f4ae58bc7b90c7a85}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpTree}{Reg\+Exp\+Tree}} $\ast$ {\bfseries Parse\+Pattern} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_afcbf82d3e4312f5ee43810917474971c}\label{classv8_1_1internal_1_1RegExpParser_afcbf82d3e4312f5ee43810917474971c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpTree}{Reg\+Exp\+Tree}} $\ast$ {\bfseries Parse\+Disjunction} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_ac3a414944b23eb64fab9c8c6443f99fe}\label{classv8_1_1internal_1_1RegExpParser_ac3a414944b23eb64fab9c8c6443f99fe}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpTree}{Reg\+Exp\+Tree}} $\ast$ {\bfseries Parse\+Group} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_aa11f1c6809336353f4c83827c9d13bb6}\label{classv8_1_1internal_1_1RegExpParser_aa11f1c6809336353f4c83827c9d13bb6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Parse\+Interval\+Quantifier} (\mbox{\hyperlink{classint}{int}} $\ast$min\+\_\+out, \mbox{\hyperlink{classint}{int}} $\ast$max\+\_\+out)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_a0524e5a4774361f55698c3042474ef54}\label{classv8_1_1internal_1_1RegExpParser_a0524e5a4774361f55698c3042474ef54}} 
+uc32 {\bfseries Parse\+Class\+Character\+Escape} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_a323a54790c9e53ce4b76b77b95265718}\label{classv8_1_1internal_1_1RegExpParser_a323a54790c9e53ce4b76b77b95265718}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Parse\+Hex\+Escape} (\mbox{\hyperlink{classint}{int}} length, uc32 $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_ad5fffbd00cb457b1aa5ba19525757f05}\label{classv8_1_1internal_1_1RegExpParser_ad5fffbd00cb457b1aa5ba19525757f05}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Parse\+Unicode\+Escape} (uc32 $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_a4b4d8a1fa9a352c7a7d2864cdd996ce1}\label{classv8_1_1internal_1_1RegExpParser_a4b4d8a1fa9a352c7a7d2864cdd996ce1}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Parse\+Unlimited\+Length\+Hex\+Number} (\mbox{\hyperlink{classint}{int}} max\+\_\+value, uc32 $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_a5e2b7f9e077f4eae79a8650368f3caeb}\label{classv8_1_1internal_1_1RegExpParser_a5e2b7f9e077f4eae79a8650368f3caeb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Parse\+Property\+Class\+Name} (std\+::vector$<$ \mbox{\hyperlink{classchar}{char}} $>$ $\ast$name\+\_\+1, std\+::vector$<$ \mbox{\hyperlink{classchar}{char}} $>$ $\ast$name\+\_\+2)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_ab61fdcfbb90aed1dd15316a452a722da}\label{classv8_1_1internal_1_1RegExpParser_ab61fdcfbb90aed1dd15316a452a722da}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Add\+Property\+Class\+Range} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} $>$ $\ast$add\+\_\+to, \mbox{\hyperlink{classbool}{bool}} negate, const std\+::vector$<$ \mbox{\hyperlink{classchar}{char}} $>$ \&name\+\_\+1, const std\+::vector$<$ \mbox{\hyperlink{classchar}{char}} $>$ \&name\+\_\+2)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_a9047d3204ce125937b1430ef229242da}\label{classv8_1_1internal_1_1RegExpParser_a9047d3204ce125937b1430ef229242da}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpTree}{Reg\+Exp\+Tree}} $\ast$ {\bfseries Get\+Property\+Sequence} (const std\+::vector$<$ \mbox{\hyperlink{classchar}{char}} $>$ \&name\+\_\+1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_ab20888f703375f300fa31c29c7140e54}\label{classv8_1_1internal_1_1RegExpParser_ab20888f703375f300fa31c29c7140e54}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpTree}{Reg\+Exp\+Tree}} $\ast$ {\bfseries Parse\+Character\+Class} (const \mbox{\hyperlink{classv8_1_1internal_1_1RegExpBuilder}{Reg\+Exp\+Builder}} $\ast$state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_a46257241d0debe60a302c8e6adef4451}\label{classv8_1_1internal_1_1RegExpParser_a46257241d0debe60a302c8e6adef4451}} 
+uc32 {\bfseries Parse\+Octal\+Literal} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_acd679f7d4062d93ee52a6597755fbafe}\label{classv8_1_1internal_1_1RegExpParser_acd679f7d4062d93ee52a6597755fbafe}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Parse\+Back\+Reference\+Index} (\mbox{\hyperlink{classint}{int}} $\ast$index\+\_\+out)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_aebf783fd710a2fc5939ba82e96c1748e}\label{classv8_1_1internal_1_1RegExpParser_aebf783fd710a2fc5939ba82e96c1748e}} 
+void {\bfseries Parse\+Class\+Escape} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CharacterRange}{Character\+Range}} $>$ $\ast$ranges, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classbool}{bool}} add\+\_\+unicode\+\_\+case\+\_\+equivalents, uc32 $\ast$char\+\_\+out, \mbox{\hyperlink{classbool}{bool}} $\ast$is\+\_\+class\+\_\+escape)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_a1a2f0fd084013fcf31bf6808a428d321}\label{classv8_1_1internal_1_1RegExpParser_a1a2f0fd084013fcf31bf6808a428d321}} 
+\mbox{\hyperlink{classchar}{char}} {\bfseries Parse\+Class\+Escape} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_aed1a6dd79683375c986dc85c670483b8}\label{classv8_1_1internal_1_1RegExpParser_aed1a6dd79683375c986dc85c670483b8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpTree}{Reg\+Exp\+Tree}} $\ast$ {\bfseries Report\+Error} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const \mbox{\hyperlink{classchar}{char}} $>$ message)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_a0a04fbdd7baf5ebea50dcdeee53848ba}\label{classv8_1_1internal_1_1RegExpParser_a0a04fbdd7baf5ebea50dcdeee53848ba}} 
+void {\bfseries Advance} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_a5b14787648892073a0da1ad21325ca8f}\label{classv8_1_1internal_1_1RegExpParser_a5b14787648892073a0da1ad21325ca8f}} 
+void {\bfseries Advance} (\mbox{\hyperlink{classint}{int}} dist)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_a5fb7f5d7790ec19aee81039b5ad2aa41}\label{classv8_1_1internal_1_1RegExpParser_a5fb7f5d7790ec19aee81039b5ad2aa41}} 
+void {\bfseries Reset} (\mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_a20f2a1a5766cd5a833344370742d1235}\label{classv8_1_1internal_1_1RegExpParser_a20f2a1a5766cd5a833344370742d1235}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries simple} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_aac37badda199609c52df7598e514d1aa}\label{classv8_1_1internal_1_1RegExpParser_aac37badda199609c52df7598e514d1aa}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries contains\+\_\+anchor} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_a01ec16d4b5d06275f8d5ddaca7b6c214}\label{classv8_1_1internal_1_1RegExpParser_a01ec16d4b5d06275f8d5ddaca7b6c214}} 
+void {\bfseries set\+\_\+contains\+\_\+anchor} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_a8ff1332aa8a05daa06b876f7f6de1383}\label{classv8_1_1internal_1_1RegExpParser_a8ff1332aa8a05daa06b876f7f6de1383}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries captures\+\_\+started} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_aadd882a2a952b6355e0aa2d0bec86c1a}\label{classv8_1_1internal_1_1RegExpParser_aadd882a2a952b6355e0aa2d0bec86c1a}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries position} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_a0c00db3eb323d190fda32c71209fc859}\label{classv8_1_1internal_1_1RegExpParser_a0c00db3eb323d190fda32c71209fc859}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries failed} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_aab8ab736ef56871691810505ae50fb57}\label{classv8_1_1internal_1_1RegExpParser_aab8ab736ef56871691810505ae50fb57}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries unicode} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_affa89ce678925b57497daba0e75590bf}\label{classv8_1_1internal_1_1RegExpParser_affa89ce678925b57497daba0e75590bf}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Parse\+Reg\+Exp} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1FlatStringReader}{Flat\+String\+Reader}} $\ast$input, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{J\+S\+Reg\+Exp\+::\+Flags}} flags, \mbox{\hyperlink{structv8_1_1internal_1_1RegExpCompileData}{Reg\+Exp\+Compile\+Data}} $\ast$result)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_a71534091fe5b186fd623e457bbec8dcf}\label{classv8_1_1internal_1_1RegExpParser_a71534091fe5b186fd623e457bbec8dcf}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Syntax\+Character\+Or\+Slash} (uc32 c)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_ae9b789b08eda8b9075851319400fdcb3}\label{classv8_1_1internal_1_1RegExpParser_ae9b789b08eda8b9075851319400fdcb3}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Captures} = 1 $<$$<$ 16
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpParser_a0f116bd0e150ba709dd5877e6981ef09}\label{classv8_1_1internal_1_1RegExpParser_a0f116bd0e150ba709dd5877e6981ef09}} 
+static const uc32 {\bfseries k\+End\+Marker} = (1 $<$$<$ 21)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 154 of file regexp-\/parser.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/regexp-\/parser.\+h\item 
+v8/src/regexp/regexp-\/parser.\+cc\end{DoxyCompactItemize}

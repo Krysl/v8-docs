@@ -1,0 +1,57 @@
+\hypertarget{classv8_1_1internal_1_1PendingCompilationErrorHandler}{}\section{v8\+:\+:internal\+:\+:Pending\+Compilation\+Error\+Handler Class Reference}
+\label{classv8_1_1internal_1_1PendingCompilationErrorHandler}\index{v8\+::internal\+::\+Pending\+Compilation\+Error\+Handler@{v8\+::internal\+::\+Pending\+Compilation\+Error\+Handler}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PendingCompilationErrorHandler_a5b1ea504204fdc432e8d40ec86a947e1}\label{classv8_1_1internal_1_1PendingCompilationErrorHandler_a5b1ea504204fdc432e8d40ec86a947e1}} 
+void {\bfseries Report\+Message\+At} (\mbox{\hyperlink{classint}{int}} start\+\_\+position, \mbox{\hyperlink{classint}{int}} end\+\_\+position, Message\+Template message, const \mbox{\hyperlink{classchar}{char}} $\ast$arg=nullptr, Parse\+Error\+Type error\+\_\+type=k\+Syntax\+Error)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PendingCompilationErrorHandler_a42f2a234084f9990ce8a29498676bc3c}\label{classv8_1_1internal_1_1PendingCompilationErrorHandler_a42f2a234084f9990ce8a29498676bc3c}} 
+void {\bfseries Report\+Message\+At} (\mbox{\hyperlink{classint}{int}} start\+\_\+position, \mbox{\hyperlink{classint}{int}} end\+\_\+position, Message\+Template message, const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$arg, Parse\+Error\+Type error\+\_\+type=k\+Syntax\+Error)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PendingCompilationErrorHandler_a1f2426240db9aa431bde93f7f29d61bb}\label{classv8_1_1internal_1_1PendingCompilationErrorHandler_a1f2426240db9aa431bde93f7f29d61bb}} 
+void {\bfseries Report\+Warning\+At} (\mbox{\hyperlink{classint}{int}} start\+\_\+position, \mbox{\hyperlink{classint}{int}} end\+\_\+position, Message\+Template message, const \mbox{\hyperlink{classchar}{char}} $\ast$arg=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PendingCompilationErrorHandler_a693897b31a85741888860c77fc44e9ce}\label{classv8_1_1internal_1_1PendingCompilationErrorHandler_a693897b31a85741888860c77fc44e9ce}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries stack\+\_\+overflow} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PendingCompilationErrorHandler_ac9315a7267d1fb242221cbc82af24088}\label{classv8_1_1internal_1_1PendingCompilationErrorHandler_ac9315a7267d1fb242221cbc82af24088}} 
+void {\bfseries set\+\_\+stack\+\_\+overflow} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PendingCompilationErrorHandler_a2e1e503fce11daf86e4935f6d6920473}\label{classv8_1_1internal_1_1PendingCompilationErrorHandler_a2e1e503fce11daf86e4935f6d6920473}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+pending\+\_\+error} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PendingCompilationErrorHandler_a3c47c0707b252b2184845d99d08abdb4}\label{classv8_1_1internal_1_1PendingCompilationErrorHandler_a3c47c0707b252b2184845d99d08abdb4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+pending\+\_\+warnings} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PendingCompilationErrorHandler_a9c0a7fd186ba8c79987a6d1d5631b9c6}\label{classv8_1_1internal_1_1PendingCompilationErrorHandler_a9c0a7fd186ba8c79987a6d1d5631b9c6}} 
+void {\bfseries Report\+Errors} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $>$ script, \mbox{\hyperlink{classv8_1_1internal_1_1AstValueFactory}{Ast\+Value\+Factory}} $\ast$ast\+\_\+value\+\_\+factory)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PendingCompilationErrorHandler_ae7954e74c1384d6c5ba336074afdd5cd}\label{classv8_1_1internal_1_1PendingCompilationErrorHandler_ae7954e74c1384d6c5ba336074afdd5cd}} 
+void {\bfseries Report\+Warnings} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $>$ script)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PendingCompilationErrorHandler_ab86df2c56257fee6d8eb7a43348a5a75}\label{classv8_1_1internal_1_1PendingCompilationErrorHandler_ab86df2c56257fee6d8eb7a43348a5a75}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Format\+Error\+Message\+For\+Test} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PendingCompilationErrorHandler_a0d3e47c7fd10184238c6171a9ef807fd}\label{classv8_1_1internal_1_1PendingCompilationErrorHandler_a0d3e47c7fd10184238c6171a9ef807fd}} 
+void {\bfseries set\+\_\+unidentifiable\+\_\+error} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PendingCompilationErrorHandler_adc7fa9006b4bf4a970460907705f6141}\label{classv8_1_1internal_1_1PendingCompilationErrorHandler_adc7fa9006b4bf4a970460907705f6141}} 
+void {\bfseries clear\+\_\+unidentifiable\+\_\+error} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PendingCompilationErrorHandler_afee2bee02441f86d28c590e099c19978}\label{classv8_1_1internal_1_1PendingCompilationErrorHandler_afee2bee02441f86d28c590e099c19978}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+error\+\_\+unidentifiable\+\_\+by\+\_\+preparser} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 25 of file pending-\/compilation-\/error-\/handler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/pending-\/compilation-\/error-\/handler.\+h\item 
+v8/src/pending-\/compilation-\/error-\/handler.\+cc\end{DoxyCompactItemize}

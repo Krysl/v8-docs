@@ -1,0 +1,59 @@
+\hypertarget{classv8_1_1internal_1_1ToDirectStringAssembler}{}\section{v8\+:\+:internal\+:\+:To\+Direct\+String\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1ToDirectStringAssembler}\index{v8\+::internal\+::\+To\+Direct\+String\+Assembler@{v8\+::internal\+::\+To\+Direct\+String\+Assembler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:To\+Direct\+String\+Assembler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1ToDirectStringAssembler}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ToDirectStringAssembler_a79600ac382e10751e0f04ec585080405}\label{classv8_1_1internal_1_1ToDirectStringAssembler_a79600ac382e10751e0f04ec585080405}} 
+enum {\bfseries Flag} \{ {\bfseries k\+Dont\+Unpack\+Sliced\+Strings} = 1 $<$$<$ 0
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ToDirectStringAssembler_a115058277b54cf52d81bc630dc95c011}\label{classv8_1_1internal_1_1ToDirectStringAssembler_a115058277b54cf52d81bc630dc95c011}} 
+typedef \mbox{\hyperlink{classv8_1_1base_1_1Flags}{base\+::\+Flags}}$<$ Flag $>$ {\bfseries Flags}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ToDirectStringAssembler_a37a879480d5728a8a33bdf1b42ed2abe}\label{classv8_1_1internal_1_1ToDirectStringAssembler_a37a879480d5728a8a33bdf1b42ed2abe}} 
+{\bfseries To\+Direct\+String\+Assembler} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerState}{compiler\+::\+Code\+Assembler\+State}} $\ast$state, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$string, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{Flags}} flags=\mbox{\hyperlink{classv8_1_1base_1_1Flags}{Flags}}())
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ToDirectStringAssembler_a430dbc04b69e44a52e6efa63490a7788}\label{classv8_1_1internal_1_1ToDirectStringAssembler_a430dbc04b69e44a52e6efa63490a7788}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Try\+To\+Direct} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+bailout)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ToDirectStringAssembler_a181a7c6d5fc80a561885ce8945ccc53d}\label{classv8_1_1internal_1_1ToDirectStringAssembler_a181a7c6d5fc80a561885ce8945ccc53d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1RawPtrT}{Raw\+PtrT}} $>$ {\bfseries Pointer\+To\+Data} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+bailout)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ToDirectStringAssembler_a6ed0f44db4f60bb589e75c44ff7d5ab8}\label{classv8_1_1internal_1_1ToDirectStringAssembler_a6ed0f44db4f60bb589e75c44ff7d5ab8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1RawPtrT}{Raw\+PtrT}} $>$ {\bfseries Pointer\+To\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+bailout)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ToDirectStringAssembler_a2a1b3969e31933c4287cf894fc59fa86}\label{classv8_1_1internal_1_1ToDirectStringAssembler_a2a1b3969e31933c4287cf894fc59fa86}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries string} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ToDirectStringAssembler_a35014962ca3b3c6e32ff33347acae52e}\label{classv8_1_1internal_1_1ToDirectStringAssembler_a35014962ca3b3c6e32ff33347acae52e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries instance\+\_\+type} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ToDirectStringAssembler_adcd92f17fec933df137646600b9b7054}\label{classv8_1_1internal_1_1ToDirectStringAssembler_adcd92f17fec933df137646600b9b7054}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ {\bfseries offset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ToDirectStringAssembler_a53911d60069cd0e62fea6a6df198c8f4}\label{classv8_1_1internal_1_1ToDirectStringAssembler_a53911d60069cd0e62fea6a6df198c8f4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries is\+\_\+external} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3364 of file code-\/stub-\/assembler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/code-\/stub-\/assembler.\+h\item 
+v8/src/code-\/stub-\/assembler.\+cc\end{DoxyCompactItemize}

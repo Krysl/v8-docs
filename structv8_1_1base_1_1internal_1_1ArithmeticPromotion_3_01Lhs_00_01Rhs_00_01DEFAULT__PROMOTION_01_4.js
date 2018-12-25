@@ -1,0 +1,4 @@
+var structv8_1_1base_1_1internal_1_1ArithmeticPromotion_3_01Lhs_00_01Rhs_00_01DEFAULT__PROMOTION_01_4 =
+[
+    [ "type", "structv8_1_1base_1_1internal_1_1ArithmeticPromotion_3_01Lhs_00_01Rhs_00_01DEFAULT__PROMOTION_01_4.html#a3700971f01b0a6dc93a795502bb45cdd", null ]
+];

@@ -1,0 +1,98 @@
+\hypertarget{classv8_1_1internal_1_1ObjectLiteral}{}\section{v8\+:\+:internal\+:\+:Object\+Literal Class Reference}
+\label{classv8_1_1internal_1_1ObjectLiteral}\index{v8\+::internal\+::\+Object\+Literal@{v8\+::internal\+::\+Object\+Literal}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Object\+Literal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classv8_1_1internal_1_1ObjectLiteral}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1ObjectLiteral_1_1Accessors}{Accessors}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_a2d3487eb42d6a0174042c3656f6500b3}\label{classv8_1_1internal_1_1ObjectLiteral_a2d3487eb42d6a0174042c3656f6500b3}} 
+enum {\bfseries Flags} \{ {\bfseries k\+Fast\+Elements} = 1 $<$$<$ 3, 
+{\bfseries k\+Has\+Null\+Prototype} = 1 $<$$<$ 4
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_a0c439cc7369713975ac1ea37bf7b0502}\label{classv8_1_1internal_1_1ObjectLiteral_a0c439cc7369713975ac1ea37bf7b0502}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1ObjectLiteralProperty}{Object\+Literal\+Property}} {\bfseries Property}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_ac29475e44081a30fdb55d694b6a100f9}\label{classv8_1_1internal_1_1ObjectLiteral_ac29475e44081a30fdb55d694b6a100f9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ObjectBoilerplateDescription}{Object\+Boilerplate\+Description}} $>$ {\bfseries boilerplate\+\_\+description} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_a490b39124a3df09cb699e7a2acdf303d}\label{classv8_1_1internal_1_1ObjectLiteral_a490b39124a3df09cb699e7a2acdf303d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries properties\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_a89e07ef5999aab0dd41ea7600da6f51d}\label{classv8_1_1internal_1_1ObjectLiteral_a89e07ef5999aab0dd41ea7600da6f51d}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ObjectLiteralProperty}{Property}} $>$ $\ast$ {\bfseries properties} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_a676dee622bd63d9917acac67f7bd797a}\label{classv8_1_1internal_1_1ObjectLiteral_a676dee622bd63d9917acac67f7bd797a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+elements} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_a1b2a3e3049352c7321dfdd33f806e03b}\label{classv8_1_1internal_1_1ObjectLiteral_a1b2a3e3049352c7321dfdd33f806e03b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+rest\+\_\+property} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_a487c79d72d1aed1aa449bbb35a513312}\label{classv8_1_1internal_1_1ObjectLiteral_a487c79d72d1aed1aa449bbb35a513312}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries fast\+\_\+elements} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_a476706d4a36b527e0256ff76c290d48e}\label{classv8_1_1internal_1_1ObjectLiteral_a476706d4a36b527e0256ff76c290d48e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+null\+\_\+prototype} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_affb47202a067b9ed15304ef61549fca1}\label{classv8_1_1internal_1_1ObjectLiteral_affb47202a067b9ed15304ef61549fca1}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+empty} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_a4761c1b2efd186f9d39d2d81c356b029}\label{classv8_1_1internal_1_1ObjectLiteral_a4761c1b2efd186f9d39d2d81c356b029}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Empty\+Object\+Literal} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_a630f6c2f70343bd60fefc3e419bcfe68}\label{classv8_1_1internal_1_1ObjectLiteral_a630f6c2f70343bd60fefc3e419bcfe68}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Init\+Depth\+And\+Flags} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_a9738b7e0d4231e4a1c23c7f2731f4bab}\label{classv8_1_1internal_1_1ObjectLiteral_a9738b7e0d4231e4a1c23c7f2731f4bab}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ObjectBoilerplateDescription}{Object\+Boilerplate\+Description}} $>$ {\bfseries Get\+Or\+Build\+Boilerplate\+Description} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_adcc9783b9fb3808a3bd84377c96cac58}\label{classv8_1_1internal_1_1ObjectLiteral_adcc9783b9fb3808a3bd84377c96cac58}} 
+void {\bfseries Build\+Boilerplate\+Description} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_ac6e812cf743173ba0bb069b7adecacfb}\label{classv8_1_1internal_1_1ObjectLiteral_ac6e812cf743173ba0bb069b7adecacfb}} 
+void {\bfseries Calculate\+Emit\+Store} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_ac8fff3aa40930437f01e625f0cf94e33}\label{classv8_1_1internal_1_1ObjectLiteral_ac8fff3aa40930437f01e625f0cf94e33}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Fast\+Cloning\+Supported} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_aca52f488c26342b82dfddb98fef38b42}\label{classv8_1_1internal_1_1ObjectLiteral_aca52f488c26342b82dfddb98fef38b42}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Compute\+Flags} (\mbox{\hyperlink{classbool}{bool}} disable\+\_\+mementos=false) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_afe48adbabb5e26f5bec8a7c71f0052eb}\label{classv8_1_1internal_1_1ObjectLiteral_afe48adbabb5e26f5bec8a7c71f0052eb}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Encode\+Literal\+Type} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_a6a75aeb66845fd00ddab778b887d1422}\label{classv8_1_1internal_1_1ObjectLiteral_a6a75aeb66845fd00ddab778b887d1422}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (static\+\_\+cast$<$ \mbox{\hyperlink{classint}{int}} $>$(Aggregate\+Literal\+::k\+Needs\+Initial\+Allocation\+Site)$<$ static\+\_\+cast$<$ \mbox{\hyperlink{classint}{int}} $>$(k\+Fast\+Elements))
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectLiteral_a8d587c8ad3515ff6433eb83c578e795f}\label{classv8_1_1internal_1_1ObjectLiteral_a8d587c8ad3515ff6433eb83c578e795f}} 
+class {\bfseries Ast\+Node\+Factory}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1378 of file ast.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ast/ast.\+h\item 
+v8/src/ast/ast.\+cc\end{DoxyCompactItemize}

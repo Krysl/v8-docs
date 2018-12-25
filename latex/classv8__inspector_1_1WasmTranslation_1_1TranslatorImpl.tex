@@ -1,0 +1,49 @@
+\hypertarget{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl}{}\section{v8\+\_\+inspector\+:\+:Wasm\+Translation\+:\+:Translator\+Impl Class Reference}
+\label{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl}\index{v8\+\_\+inspector\+::\+Wasm\+Translation\+::\+Translator\+Impl@{v8\+\_\+inspector\+::\+Wasm\+Translation\+::\+Translator\+Impl}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_1_1TransLocation}{Trans\+Location}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_a868bb9b4aa42e63351ee59ffebe774d9}\label{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_a868bb9b4aa42e63351ee59ffebe774d9}} 
+{\bfseries Translator\+Impl} (v8\+::\+Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1debug_1_1WasmScript}{v8\+::debug\+::\+Wasm\+Script}} $>$ script)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_a85fe1d18dc679043b34339ebacb882ea}\label{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_a85fe1d18dc679043b34339ebacb882ea}} 
+void {\bfseries Init} (v8\+::\+Isolate $\ast$isolate, \mbox{\hyperlink{classv8__inspector_1_1WasmTranslation}{Wasm\+Translation}} $\ast$translation, \mbox{\hyperlink{classv8__inspector_1_1V8DebuggerAgentImpl}{V8\+Debugger\+Agent\+Impl}} $\ast$agent)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_aded67c83b0d61302391135dcc6fff40a}\label{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_aded67c83b0d61302391135dcc6fff40a}} 
+void {\bfseries Translate} (\mbox{\hyperlink{structv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_1_1TransLocation}{Trans\+Location}} $\ast$loc)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_a0b26c3c17ed4f279a6eecc7b5dee5bcb}\label{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_a0b26c3c17ed4f279a6eecc7b5dee5bcb}} 
+void {\bfseries Translate\+Back} (\mbox{\hyperlink{structv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_1_1TransLocation}{Trans\+Location}} $\ast$loc)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_a6eaf034aa5273d25dc586b955a882540}\label{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_a6eaf034aa5273d25dc586b955a882540}} 
+const \mbox{\hyperlink{structv8__inspector_1_1WasmSourceInformation}{Wasm\+Source\+Information}} \& {\bfseries Get\+Source\+Information} (v8\+::\+Isolate $\ast$isolate, \mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_a5cb1e0289c41c0d21c5a38f2013ff1e9}\label{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_a5cb1e0289c41c0d21c5a38f2013ff1e9}} 
+const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} {\bfseries Get\+Hash} (v8\+::\+Isolate $\ast$isolate, \mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_a27e174e12917438de7f4c81995f7b160}\label{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_a27e174e12917438de7f4c81995f7b160}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Context\+Id} (v8\+::\+Isolate $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_a5cf3a7136d378073a59cabaa8f593d75}\label{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_a5cf3a7136d378073a59cabaa8f593d75}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Less\+Than} (const \mbox{\hyperlink{structv8_1_1debug_1_1WasmDisassemblyOffsetTableEntry}{v8\+::debug\+::\+Wasm\+Disassembly\+Offset\+Table\+Entry}} \&entry, const \mbox{\hyperlink{structv8__inspector_1_1WasmTranslation_1_1TranslatorImpl_1_1TransLocation}{Trans\+Location}} \&loc)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 55 of file wasm-\/translation.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/inspector/wasm-\/translation.\+cc\end{DoxyCompactItemize}

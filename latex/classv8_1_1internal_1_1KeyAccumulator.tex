@@ -1,0 +1,81 @@
+\hypertarget{classv8_1_1internal_1_1KeyAccumulator}{}\section{v8\+:\+:internal\+:\+:Key\+Accumulator Class Reference}
+\label{classv8_1_1internal_1_1KeyAccumulator}\index{v8\+::internal\+::\+Key\+Accumulator@{v8\+::internal\+::\+Key\+Accumulator}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_ac61234ee22ea8ba2fb942e77bbd7f127}\label{classv8_1_1internal_1_1KeyAccumulator_ac61234ee22ea8ba2fb942e77bbd7f127}} 
+{\bfseries Key\+Accumulator} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{namespacev8_a0cee20f5c7f0d59d0835af8e537388dc}{Key\+Collection\+Mode}} mode, \mbox{\hyperlink{namespacev8_afbf02b6b1152a3e25d7bde90798209ac}{Property\+Filter}} filter)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_a743c884f8a9cee6d024cc6979c5859db}\label{classv8_1_1internal_1_1KeyAccumulator_a743c884f8a9cee6d024cc6979c5859db}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ {\bfseries Get\+Keys} (Get\+Keys\+Conversion convert=Get\+Keys\+Conversion\+::k\+Keep\+Numbers)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_acdcd386e9a17db7bfd964c5a944eb327}\label{classv8_1_1internal_1_1KeyAccumulator_acdcd386e9a17db7bfd964c5a944eb327}} 
+\mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ {\bfseries Collect\+Keys} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ receiver, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_a45add4e6e8d6edbc6dce9251696457a2}\label{classv8_1_1internal_1_1KeyAccumulator_a45add4e6e8d6edbc6dce9251696457a2}} 
+\mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ {\bfseries Collect\+Own\+Element\+Indices} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ receiver, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_aac0264f947ed1d3858e13a7ae73c5aa2}\label{classv8_1_1internal_1_1KeyAccumulator_aac0264f947ed1d3858e13a7ae73c5aa2}} 
+\mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ {\bfseries Collect\+Own\+Property\+Names} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ receiver, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_ad1ab7683e80e615eefb7c904143a0a77}\label{classv8_1_1internal_1_1KeyAccumulator_ad1ab7683e80e615eefb7c904143a0a77}} 
+\mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classbool}{bool}} $>$ {\bfseries Collect\+Access\+Check\+Interceptor\+Keys} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1AccessCheckInfo}{Access\+Check\+Info}} $>$ access\+\_\+check\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ receiver, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_a3dedef29f4df4bbd9f241c753eb5ccc5}\label{classv8_1_1internal_1_1KeyAccumulator_a3dedef29f4df4bbd9f241c753eb5ccc5}} 
+void {\bfseries Add\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$key, Add\+Key\+Conversion convert=D\+O\+\_\+\+N\+O\+T\+\_\+\+C\+O\+N\+V\+E\+RT)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_affd8ce083cbd0c6f65984c9ec05b3fd7}\label{classv8_1_1internal_1_1KeyAccumulator_affd8ce083cbd0c6f65984c9ec05b3fd7}} 
+void {\bfseries Add\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key, Add\+Key\+Conversion convert=D\+O\+\_\+\+N\+O\+T\+\_\+\+C\+O\+N\+V\+E\+RT)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_a179a9dcc82bff5b81a1dabdb3ac42d9f}\label{classv8_1_1internal_1_1KeyAccumulator_a179a9dcc82bff5b81a1dabdb3ac42d9f}} 
+void {\bfseries Add\+Keys} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ array, Add\+Key\+Conversion convert)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_a7aaa1a3f7b1ed05c0446b59cd75b03fb}\label{classv8_1_1internal_1_1KeyAccumulator_a7aaa1a3f7b1ed05c0446b59cd75b03fb}} 
+void {\bfseries Add\+Keys} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ array\+\_\+like, Add\+Key\+Conversion convert)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_ad558243b1dbdb5d9a8b417180714c66c}\label{classv8_1_1internal_1_1KeyAccumulator_ad558243b1dbdb5d9a8b417180714c66c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_a95a3059bd4c0370f6e9a8d1606041e66}\label{classv8_1_1internal_1_1KeyAccumulator_a95a3059bd4c0370f6e9a8d1606041e66}} 
+\mbox{\hyperlink{namespacev8_afbf02b6b1152a3e25d7bde90798209ac}{Property\+Filter}} {\bfseries filter} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_a4788fd0baf4548a50fdc9b3a7f3ea0c1}\label{classv8_1_1internal_1_1KeyAccumulator_a4788fd0baf4548a50fdc9b3a7f3ea0c1}} 
+\mbox{\hyperlink{namespacev8_a0cee20f5c7f0d59d0835af8e537388dc}{Key\+Collection\+Mode}} {\bfseries mode} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_a6b73fa1b431144ff8c188abd4a277f46}\label{classv8_1_1internal_1_1KeyAccumulator_a6b73fa1b431144ff8c188abd4a277f46}} 
+void {\bfseries set\+\_\+is\+\_\+for\+\_\+in} (\mbox{\hyperlink{classbool}{bool}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_a9fd532e8dac77f8b3fe42e4f85c94c35}\label{classv8_1_1internal_1_1KeyAccumulator_a9fd532e8dac77f8b3fe42e4f85c94c35}} 
+void {\bfseries set\+\_\+skip\+\_\+indices} (\mbox{\hyperlink{classbool}{bool}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_aaef19a38bc319d88e30eea0c7a252c70}\label{classv8_1_1internal_1_1KeyAccumulator_aaef19a38bc319d88e30eea0c7a252c70}} 
+void {\bfseries set\+\_\+last\+\_\+non\+\_\+empty\+\_\+prototype} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_ac30674b4d259b4690954d8bfe41e2805}\label{classv8_1_1internal_1_1KeyAccumulator_ac30674b4d259b4690954d8bfe41e2805}} 
+void {\bfseries Add\+Shadowing\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_aa5d85c7502facb3b96bc52bc938c48b9}\label{classv8_1_1internal_1_1KeyAccumulator_aa5d85c7502facb3b96bc52bc938c48b9}} 
+void {\bfseries Add\+Shadowing\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_a5e59f6d2faa1b3d5b87883f402a9c215}\label{classv8_1_1internal_1_1KeyAccumulator_a5e59f6d2faa1b3d5b87883f402a9c215}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ {\bfseries Get\+Keys} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ object, \mbox{\hyperlink{namespacev8_a0cee20f5c7f0d59d0835af8e537388dc}{Key\+Collection\+Mode}} mode, \mbox{\hyperlink{namespacev8_afbf02b6b1152a3e25d7bde90798209ac}{Property\+Filter}} filter, Get\+Keys\+Conversion keys\+\_\+conversion=Get\+Keys\+Conversion\+::k\+Keep\+Numbers, \mbox{\hyperlink{classbool}{bool}} is\+\_\+for\+\_\+in=false, \mbox{\hyperlink{classbool}{bool}} skip\+\_\+indices=false)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1KeyAccumulator_a4233f594a143b834c81161b2ad8553f6}\label{classv8_1_1internal_1_1KeyAccumulator_a4233f594a143b834c81161b2ad8553f6}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ {\bfseries Get\+Own\+Enum\+Property\+Keys} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ object)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 35 of file keys.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/keys.\+h\item 
+v8/src/keys.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,57 @@
+\hypertarget{classv8_1_1internal_1_1CpuProfilesCollection}{}\section{v8\+:\+:internal\+:\+:Cpu\+Profiles\+Collection Class Reference}
+\label{classv8_1_1internal_1_1CpuProfilesCollection}\index{v8\+::internal\+::\+Cpu\+Profiles\+Collection@{v8\+::internal\+::\+Cpu\+Profiles\+Collection}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfilesCollection_a2478357a99aa17b4e62ea4945c24a63d}\label{classv8_1_1internal_1_1CpuProfilesCollection_a2478357a99aa17b4e62ea4945c24a63d}} 
+typedef v8\+::\+Cpu\+Profiling\+Mode {\bfseries Profiling\+Mode}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfilesCollection_a8cf6fe6fa3baf83ea1c60683c1dc953a}\label{classv8_1_1internal_1_1CpuProfilesCollection_a8cf6fe6fa3baf83ea1c60683c1dc953a}} 
+{\bfseries Cpu\+Profiles\+Collection} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfilesCollection_aefc820f795001ef81f55d23614a41adb}\label{classv8_1_1internal_1_1CpuProfilesCollection_aefc820f795001ef81f55d23614a41adb}} 
+void {\bfseries set\+\_\+cpu\+\_\+profiler} (\mbox{\hyperlink{classv8_1_1internal_1_1CpuProfiler}{Cpu\+Profiler}} $\ast$profiler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfilesCollection_a9582003cf990014739a59f74d1036559}\label{classv8_1_1internal_1_1CpuProfilesCollection_a9582003cf990014739a59f74d1036559}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Start\+Profiling} (const \mbox{\hyperlink{classchar}{char}} $\ast$title, \mbox{\hyperlink{classbool}{bool}} record\+\_\+samples, Profiling\+Mode mode=Profiling\+Mode\+::k\+Leaf\+Node\+Line\+Numbers)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfilesCollection_ae11f54582389f8e972760151438df330}\label{classv8_1_1internal_1_1CpuProfilesCollection_ae11f54582389f8e972760151438df330}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CpuProfile}{Cpu\+Profile}} $\ast$ {\bfseries Stop\+Profiling} (const \mbox{\hyperlink{classchar}{char}} $\ast$title)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfilesCollection_af37ea3e696316793af8a80f377854a12}\label{classv8_1_1internal_1_1CpuProfilesCollection_af37ea3e696316793af8a80f377854a12}} 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CpuProfile}{Cpu\+Profile}} $>$ $>$ $\ast$ {\bfseries profiles} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfilesCollection_ab3cd9b41dec497a367826670f0a0b751}\label{classv8_1_1internal_1_1CpuProfilesCollection_ab3cd9b41dec497a367826670f0a0b751}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Get\+Name} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfilesCollection_ac5981b296e5fdb7fb06c22dab3548d64}\label{classv8_1_1internal_1_1CpuProfilesCollection_ac5981b296e5fdb7fb06c22dab3548d64}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Last\+Profile} (const \mbox{\hyperlink{classchar}{char}} $\ast$title)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfilesCollection_a4c4bf98364eb1a14e61667f1893faeb4}\label{classv8_1_1internal_1_1CpuProfilesCollection_a4c4bf98364eb1a14e61667f1893faeb4}} 
+void {\bfseries Remove\+Profile} (\mbox{\hyperlink{classv8_1_1internal_1_1CpuProfile}{Cpu\+Profile}} $\ast$profile)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfilesCollection_afb866b4d20bb483fc2e2658b412f1f02}\label{classv8_1_1internal_1_1CpuProfilesCollection_afb866b4d20bb483fc2e2658b412f1f02}} 
+void {\bfseries Add\+Path\+To\+Current\+Profiles} (\mbox{\hyperlink{classv8_1_1base_1_1TimeTicks}{base\+::\+Time\+Ticks}} timestamp, const Profile\+Stack\+Trace \&path, \mbox{\hyperlink{classint}{int}} src\+\_\+line, \mbox{\hyperlink{classbool}{bool}} update\+\_\+stats)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfilesCollection_a3c8efd32f53f7fa8fe100cc188d60be7}\label{classv8_1_1internal_1_1CpuProfilesCollection_a3c8efd32f53f7fa8fe100cc188d60be7}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Simultaneous\+Profiles} = 100
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 402 of file profile-\/generator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/profile-\/generator.\+h\item 
+v8/src/profiler/profile-\/generator.\+cc\end{DoxyCompactItemize}

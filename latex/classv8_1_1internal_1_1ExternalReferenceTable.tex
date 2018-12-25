@@ -1,0 +1,156 @@
+\hypertarget{classv8_1_1internal_1_1ExternalReferenceTable}{}\section{v8\+:\+:internal\+:\+:External\+Reference\+Table Class Reference}
+\label{classv8_1_1internal_1_1ExternalReferenceTable}\index{v8\+::internal\+::\+External\+Reference\+Table@{v8\+::internal\+::\+External\+Reference\+Table}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReferenceTable_a629e91d241dd2fa7a06701c3de1a3ca8}\label{classv8_1_1internal_1_1ExternalReferenceTable_a629e91d241dd2fa7a06701c3de1a3ca8}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries address} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} i)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReferenceTable_a0e6a1664fb4787375ab2aa7051dd47e8}\label{classv8_1_1internal_1_1ExternalReferenceTable_a0e6a1664fb4787375ab2aa7051dd47e8}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries name} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} i)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReferenceTable_a6775c26ee16efe78c7b9865d2be8e81f}\label{classv8_1_1internal_1_1ExternalReferenceTable_a6775c26ee16efe78c7b9865d2be8e81f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+initialized} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReferenceTable_adc6a6b69ce956c123dd8f267a98dc543}\label{classv8_1_1internal_1_1ExternalReferenceTable_adc6a6b69ce956c123dd8f267a98dc543}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Name\+From\+Offset} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReferenceTable_a3ae8697e6bfb31ea27d5245b5c13bb79}\label{classv8_1_1internal_1_1ExternalReferenceTable_a3ae8697e6bfb31ea27d5245b5c13bb79}} 
+void {\bfseries Init} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReferenceTable_a6b0a5ea1349f850721e56831b666d2b6}\label{classv8_1_1internal_1_1ExternalReferenceTable_a6b0a5ea1349f850721e56831b666d2b6}} 
+static constexpr \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries size} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReferenceTable_a8a4d64e8982d19c31f7eb713b0379b78}\label{classv8_1_1internal_1_1ExternalReferenceTable_a8a4d64e8982d19c31f7eb713b0379b78}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Resolve\+Symbol} (void $\ast$address)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReferenceTable_aca67af397d03e822ea31891289090182}\label{classv8_1_1internal_1_1ExternalReferenceTable_aca67af397d03e822ea31891289090182}} 
+static constexpr \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Entry\+Size} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReferenceTable_afae1f03b1f1b26a67b5d02176ff1ca43}\label{classv8_1_1internal_1_1ExternalReferenceTable_afae1f03b1f1b26a67b5d02176ff1ca43}} 
+static constexpr \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Offset\+Of\+Entry} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} i)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReferenceTable_a06ffd5f87c253f1f3236d1406fee3f61}\label{classv8_1_1internal_1_1ExternalReferenceTable_a06ffd5f87c253f1f3236d1406fee3f61}} 
+static constexpr \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Size\+In\+Bytes} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReferenceTable_a048a513a50cb09c02f67a6d4fe54486d}\label{classv8_1_1internal_1_1ExternalReferenceTable_a048a513a50cb09c02f67a6d4fe54486d}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Special\+Reference\+Count} = 1
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+External\+Reference\+Count}
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Builtins\+Reference\+Count}
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Runtime\+Reference\+Count}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReferenceTable_ae0b9630cf366d916c1693a0137d3062b}\label{classv8_1_1internal_1_1ExternalReferenceTable_ae0b9630cf366d916c1693a0137d3062b}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Isolate\+Address\+Reference\+Count} = k\+Isolate\+Address\+Count
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Accessor\+Reference\+Count}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReferenceTable_abc3b88cd5494bbf9e78277b80fb03dac}\label{classv8_1_1internal_1_1ExternalReferenceTable_abc3b88cd5494bbf9e78277b80fb03dac}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Stub\+Cache\+Reference\+Count} = 12
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file external-\/reference-\/table.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReferenceTable_ac68155f1156b2d0024e4738ae5f81a6a}\label{classv8_1_1internal_1_1ExternalReferenceTable_ac68155f1156b2d0024e4738ae5f81a6a}} 
+\index{v8\+::internal\+::\+External\+Reference\+Table@{v8\+::internal\+::\+External\+Reference\+Table}!k\+Accessor\+Reference\+Count@{k\+Accessor\+Reference\+Count}}
+\index{k\+Accessor\+Reference\+Count@{k\+Accessor\+Reference\+Count}!v8\+::internal\+::\+External\+Reference\+Table@{v8\+::internal\+::\+External\+Reference\+Table}}
+\subsubsection{\texorpdfstring{k\+Accessor\+Reference\+Count}{kAccessorReferenceCount}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+External\+Reference\+Table\+::k\+Accessor\+Reference\+Count\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      Accessors::kAccessorInfoCount + Accessors::kAccessorSetterCount
+\end{DoxyCode}
+
+
+Definition at line 36 of file external-\/reference-\/table.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReferenceTable_afaa254cba2565a19fc48a4648474e8a9}\label{classv8_1_1internal_1_1ExternalReferenceTable_afaa254cba2565a19fc48a4648474e8a9}} 
+\index{v8\+::internal\+::\+External\+Reference\+Table@{v8\+::internal\+::\+External\+Reference\+Table}!k\+Builtins\+Reference\+Count@{k\+Builtins\+Reference\+Count}}
+\index{k\+Builtins\+Reference\+Count@{k\+Builtins\+Reference\+Count}!v8\+::internal\+::\+External\+Reference\+Table@{v8\+::internal\+::\+External\+Reference\+Table}}
+\subsubsection{\texorpdfstring{k\+Builtins\+Reference\+Count}{kBuiltinsReferenceCount}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+External\+Reference\+Table\+::k\+Builtins\+Reference\+Count\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+\textcolor{preprocessor}{#define COUNT\_C\_BUILTIN(...) }
+\textcolor{preprocessor}{      BUILTIN\_LIST\_C(COUNT\_C\_BUILTIN)}
+\end{DoxyCode}
+
+
+Definition at line 28 of file external-\/reference-\/table.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReferenceTable_ac865cba7405fd7c475ee7e9826ba4365}\label{classv8_1_1internal_1_1ExternalReferenceTable_ac865cba7405fd7c475ee7e9826ba4365}} 
+\index{v8\+::internal\+::\+External\+Reference\+Table@{v8\+::internal\+::\+External\+Reference\+Table}!k\+External\+Reference\+Count@{k\+External\+Reference\+Count}}
+\index{k\+External\+Reference\+Count@{k\+External\+Reference\+Count}!v8\+::internal\+::\+External\+Reference\+Table@{v8\+::internal\+::\+External\+Reference\+Table}}
+\subsubsection{\texorpdfstring{k\+External\+Reference\+Count}{kExternalReferenceCount}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+External\+Reference\+Table\+::k\+External\+Reference\+Count\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      ExternalReference::kExternalReferenceCount
+\end{DoxyCode}
+
+
+Definition at line 26 of file external-\/reference-\/table.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReferenceTable_aa68d1a94201a9b4117d82da5f546246f}\label{classv8_1_1internal_1_1ExternalReferenceTable_aa68d1a94201a9b4117d82da5f546246f}} 
+\index{v8\+::internal\+::\+External\+Reference\+Table@{v8\+::internal\+::\+External\+Reference\+Table}!k\+Runtime\+Reference\+Count@{k\+Runtime\+Reference\+Count}}
+\index{k\+Runtime\+Reference\+Count@{k\+Runtime\+Reference\+Count}!v8\+::internal\+::\+External\+Reference\+Table@{v8\+::internal\+::\+External\+Reference\+Table}}
+\subsubsection{\texorpdfstring{k\+Runtime\+Reference\+Count}{kRuntimeReferenceCount}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+External\+Reference\+Table\+::k\+Runtime\+Reference\+Count\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      Runtime::kNumFunctions -
+      Runtime::kNumInlineFunctions
+\end{DoxyCode}
+
+
+Definition at line 32 of file external-\/reference-\/table.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExternalReferenceTable_a58e218e326f23cc501175f461edb9e6a}\label{classv8_1_1internal_1_1ExternalReferenceTable_a58e218e326f23cc501175f461edb9e6a}} 
+\index{v8\+::internal\+::\+External\+Reference\+Table@{v8\+::internal\+::\+External\+Reference\+Table}!k\+Size@{k\+Size}}
+\index{k\+Size@{k\+Size}!v8\+::internal\+::\+External\+Reference\+Table@{v8\+::internal\+::\+External\+Reference\+Table}}
+\subsubsection{\texorpdfstring{k\+Size}{kSize}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+External\+Reference\+Table\+::k\+Size\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kSpecialReferenceCount + kExternalReferenceCount +
+      kBuiltinsReferenceCount + kRuntimeReferenceCount +
+      kIsolateAddressReferenceCount + kAccessorReferenceCount +
+      kStubCacheReferenceCount
+\end{DoxyCode}
+
+
+Definition at line 40 of file external-\/reference-\/table.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/external-\/reference-\/table.\+h\item 
+v8/src/external-\/reference-\/table.\+cc\end{DoxyCompactItemize}

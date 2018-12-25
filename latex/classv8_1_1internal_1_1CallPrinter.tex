@@ -1,0 +1,61 @@
+\hypertarget{classv8_1_1internal_1_1CallPrinter}{}\section{v8\+:\+:internal\+:\+:Call\+Printer Class Reference}
+\label{classv8_1_1internal_1_1CallPrinter}\index{v8\+::internal\+::\+Call\+Printer@{v8\+::internal\+::\+Call\+Printer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Call\+Printer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1CallPrinter}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallPrinter_a65b31dd90a092fdf181cf514cb9e10d1}\label{classv8_1_1internal_1_1CallPrinter_a65b31dd90a092fdf181cf514cb9e10d1}} 
+enum {\bfseries Error\+Hint} \{ \newline
+{\bfseries k\+None}, 
+{\bfseries k\+Normal\+Iterator}, 
+{\bfseries k\+Async\+Iterator}, 
+{\bfseries k\+Call\+And\+Normal\+Iterator}, 
+\newline
+{\bfseries k\+Call\+And\+Async\+Iterator}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallPrinter_ae9c224e25ababe9dcd27683f13c2b9fc}\label{classv8_1_1internal_1_1CallPrinter_ae9c224e25ababe9dcd27683f13c2b9fc}} 
+{\bfseries Call\+Printer} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classbool}{bool}} is\+\_\+user\+\_\+js)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallPrinter_a33c0c22ca05b702626b7139f09e7f053}\label{classv8_1_1internal_1_1CallPrinter_a33c0c22ca05b702626b7139f09e7f053}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Print} (\mbox{\hyperlink{classv8_1_1internal_1_1FunctionLiteral}{Function\+Literal}} $\ast$program, \mbox{\hyperlink{classint}{int}} position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallPrinter_a4990f126a25afdcffc3922a7c2493588}\label{classv8_1_1internal_1_1CallPrinter_a4990f126a25afdcffc3922a7c2493588}} 
+Error\+Hint {\bfseries Get\+Error\+Hint} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallPrinter_a1ae571234fea3b29c0509a8c70298991}\label{classv8_1_1internal_1_1CallPrinter_a1ae571234fea3b29c0509a8c70298991}} 
+void {\bfseries Print\+Literal} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, \mbox{\hyperlink{classbool}{bool}} quote)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallPrinter_a05c24b0df6390ca4a79d0b639853a19c}\label{classv8_1_1internal_1_1CallPrinter_a05c24b0df6390ca4a79d0b639853a19c}} 
+void {\bfseries Print\+Literal} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$value, \mbox{\hyperlink{classbool}{bool}} quote)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallPrinter_aeb96c3bf6e5a4fdd3faf64a16dab998d}\label{classv8_1_1internal_1_1CallPrinter_aeb96c3bf6e5a4fdd3faf64a16dab998d}} 
+void {\bfseries Find\+Statements} (const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Statement}{Statement}} $>$ $\ast$statements)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallPrinter_a2b785d0cbc0c95bfeffab17d8f3d672a}\label{classv8_1_1internal_1_1CallPrinter_a2b785d0cbc0c95bfeffab17d8f3d672a}} 
+void {\bfseries Find\+Arguments} (const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $>$ $\ast$arguments)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file prettyprinter.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ast/prettyprinter.\+h\item 
+v8/src/ast/prettyprinter.\+cc\end{DoxyCompactItemize}

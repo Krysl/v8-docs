@@ -1,0 +1,47 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1CodeMap}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Code\+Map Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1CodeMap}\index{v8\+::internal\+::wasm\+::\+Code\+Map@{v8\+::internal\+::wasm\+::\+Code\+Map}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1CodeMap_a02c9d3c246af535d75e39206385ecd78}\label{classv8_1_1internal_1_1wasm_1_1CodeMap_a02c9d3c246af535d75e39206385ecd78}} 
+{\bfseries Code\+Map} (const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{Wasm\+Module}} $\ast$module, const uint8\+\_\+t $\ast$module\+\_\+start, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1CodeMap_a871e1b20f6655d0073ced2f2bb3c6279}\label{classv8_1_1internal_1_1wasm_1_1CodeMap_a871e1b20f6655d0073ced2f2bb3c6279}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries call\+\_\+indirect\+\_\+through\+\_\+module} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1CodeMap_af4dfda1a23b5e64c417fa371e5b71a26}\label{classv8_1_1internal_1_1wasm_1_1CodeMap_af4dfda1a23b5e64c417fa371e5b71a26}} 
+void {\bfseries set\+\_\+call\+\_\+indirect\+\_\+through\+\_\+module} (\mbox{\hyperlink{classbool}{bool}} val)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1CodeMap_adf0a65944909935b06e32ff755887cfe}\label{classv8_1_1internal_1_1wasm_1_1CodeMap_adf0a65944909935b06e32ff755887cfe}} 
+const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{Wasm\+Module}} $\ast$ {\bfseries module} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1CodeMap_a88f38c9975894bbdee0bbdf6815189f5}\label{classv8_1_1internal_1_1wasm_1_1CodeMap_a88f38c9975894bbdee0bbdf6815189f5}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1InterpreterCode}{Interpreter\+Code}} $\ast$ {\bfseries Get\+Code} (const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFunction}{Wasm\+Function}} $\ast$function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1CodeMap_ac61a19adb38fefa0310be7d8e04c5938}\label{classv8_1_1internal_1_1wasm_1_1CodeMap_ac61a19adb38fefa0310be7d8e04c5938}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1InterpreterCode}{Interpreter\+Code}} $\ast$ {\bfseries Get\+Code} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} function\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1CodeMap_aafd36ea799b794146f63f22d9e972201}\label{classv8_1_1internal_1_1wasm_1_1CodeMap_aafd36ea799b794146f63f22d9e972201}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1InterpreterCode}{Interpreter\+Code}} $\ast$ {\bfseries Get\+Indirect\+Code} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} table\+\_\+index, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} entry\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1CodeMap_abba549642462ee8e6e3e25f038288095}\label{classv8_1_1internal_1_1wasm_1_1CodeMap_abba549642462ee8e6e3e25f038288095}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1InterpreterCode}{Interpreter\+Code}} $\ast$ {\bfseries Preprocess} (\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1InterpreterCode}{Interpreter\+Code}} $\ast$code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1CodeMap_a9393fd273714d662aa16543666cc8deb}\label{classv8_1_1internal_1_1wasm_1_1CodeMap_a9393fd273714d662aa16543666cc8deb}} 
+void {\bfseries Add\+Function} (const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFunction}{Wasm\+Function}} $\ast$function, const byte $\ast$code\+\_\+start, const byte $\ast$code\+\_\+end)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1CodeMap_ae1d41f2ddfb05bb1af2670e25a62945b}\label{classv8_1_1internal_1_1wasm_1_1CodeMap_ae1d41f2ddfb05bb1af2670e25a62945b}} 
+void {\bfseries Set\+Function\+Code} (const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFunction}{Wasm\+Function}} $\ast$function, const byte $\ast$start, const byte $\ast$end)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 909 of file wasm-\/interpreter.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/wasm-\/interpreter.\+cc\end{DoxyCompactItemize}

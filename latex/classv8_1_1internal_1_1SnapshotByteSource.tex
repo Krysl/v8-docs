@@ -1,0 +1,54 @@
+\hypertarget{classv8_1_1internal_1_1SnapshotByteSource}{}\section{v8\+:\+:internal\+:\+:Snapshot\+Byte\+Source Class Reference}
+\label{classv8_1_1internal_1_1SnapshotByteSource}\index{v8\+::internal\+::\+Snapshot\+Byte\+Source@{v8\+::internal\+::\+Snapshot\+Byte\+Source}}
+
+
+{\ttfamily \#include $<$snapshot-\/source-\/sink.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SnapshotByteSource_aaec870afee9a0ee4db260e5d6d96871a}\label{classv8_1_1internal_1_1SnapshotByteSource_aaec870afee9a0ee4db260e5d6d96871a}} 
+{\bfseries Snapshot\+Byte\+Source} (const \mbox{\hyperlink{classchar}{char}} $\ast$data, \mbox{\hyperlink{classint}{int}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SnapshotByteSource_a3ca81e1446facca52cb592dbe5b13a05}\label{classv8_1_1internal_1_1SnapshotByteSource_a3ca81e1446facca52cb592dbe5b13a05}} 
+{\bfseries Snapshot\+Byte\+Source} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const byte $>$ payload)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SnapshotByteSource_a957126cd1402ae66976d00619fbff992}\label{classv8_1_1internal_1_1SnapshotByteSource_a957126cd1402ae66976d00619fbff992}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+More} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SnapshotByteSource_a02a021e250f8092eec60a678154941fa}\label{classv8_1_1internal_1_1SnapshotByteSource_a02a021e250f8092eec60a678154941fa}} 
+byte {\bfseries Get} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SnapshotByteSource_a0a711417dc223373cb5b3b6468ceb51a}\label{classv8_1_1internal_1_1SnapshotByteSource_a0a711417dc223373cb5b3b6468ceb51a}} 
+void {\bfseries Advance} (\mbox{\hyperlink{classint}{int}} by)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SnapshotByteSource_a562e8c45079d9b9f73e6e1f125414191}\label{classv8_1_1internal_1_1SnapshotByteSource_a562e8c45079d9b9f73e6e1f125414191}} 
+void {\bfseries Copy\+Raw} (byte $\ast$to, \mbox{\hyperlink{classint}{int}} number\+\_\+of\+\_\+bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SnapshotByteSource_ad5cb3ae81d5d7b7472275810f00b5909}\label{classv8_1_1internal_1_1SnapshotByteSource_ad5cb3ae81d5d7b7472275810f00b5909}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Int} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SnapshotByteSource_a0d703872a07e2b59582be56138c35728}\label{classv8_1_1internal_1_1SnapshotByteSource_a0d703872a07e2b59582be56138c35728}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Blob} (const byte $\ast$$\ast$data)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SnapshotByteSource_a6f196210f0bf57cae0c66ca659e7a130}\label{classv8_1_1internal_1_1SnapshotByteSource_a6f196210f0bf57cae0c66ca659e7a130}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries position} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SnapshotByteSource_afab8fb9010737708c59913c697bb324d}\label{classv8_1_1internal_1_1SnapshotByteSource_afab8fb9010737708c59913c697bb324d}} 
+void {\bfseries set\+\_\+position} (\mbox{\hyperlink{classint}{int}} position)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Source to read snapshot and builtins files from.
+
+Note\+: Memory ownership remains with callee. 
+
+Definition at line 20 of file snapshot-\/source-\/sink.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/snapshot/snapshot-\/source-\/sink.\+h\item 
+v8/src/snapshot/snapshot-\/source-\/sink.\+cc\end{DoxyCompactItemize}

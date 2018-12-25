@@ -1,0 +1,63 @@
+\hypertarget{classv8_1_1internal_1_1CpuProfile}{}\section{v8\+:\+:internal\+:\+:Cpu\+Profile Class Reference}
+\label{classv8_1_1internal_1_1CpuProfile}\index{v8\+::internal\+::\+Cpu\+Profile@{v8\+::internal\+::\+Cpu\+Profile}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfile_ada46f242e5f8da78ea0b939325c0c04b}\label{classv8_1_1internal_1_1CpuProfile_ada46f242e5f8da78ea0b939325c0c04b}} 
+typedef v8\+::\+Cpu\+Profiling\+Mode {\bfseries Profiling\+Mode}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfile_aa36c39e8123897635d64334c1edd6892}\label{classv8_1_1internal_1_1CpuProfile_aa36c39e8123897635d64334c1edd6892}} 
+{\bfseries Cpu\+Profile} (\mbox{\hyperlink{classv8_1_1internal_1_1CpuProfiler}{Cpu\+Profiler}} $\ast$profiler, const \mbox{\hyperlink{classchar}{char}} $\ast$title, \mbox{\hyperlink{classbool}{bool}} record\+\_\+samples, Profiling\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfile_ad82cd4539f695846d73e3c88e2b920b1}\label{classv8_1_1internal_1_1CpuProfile_ad82cd4539f695846d73e3c88e2b920b1}} 
+void {\bfseries Add\+Path} (\mbox{\hyperlink{classv8_1_1base_1_1TimeTicks}{base\+::\+Time\+Ticks}} timestamp, const Profile\+Stack\+Trace \&path, \mbox{\hyperlink{classint}{int}} src\+\_\+line, \mbox{\hyperlink{classbool}{bool}} update\+\_\+stats)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfile_aedabc5e7949b7fa3e6f536b203f9ac11}\label{classv8_1_1internal_1_1CpuProfile_aedabc5e7949b7fa3e6f536b203f9ac11}} 
+void {\bfseries Finish\+Profile} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfile_a2b3e8b23c478f528ca2f711f5a7cfc0d}\label{classv8_1_1internal_1_1CpuProfile_a2b3e8b23c478f528ca2f711f5a7cfc0d}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries title} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfile_a0365f5468b19ec86090e8038172498a0}\label{classv8_1_1internal_1_1CpuProfile_a0365f5468b19ec86090e8038172498a0}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ProfileTree}{Profile\+Tree}} $\ast$ {\bfseries top\+\_\+down} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfile_a9c97b8160475d22df0e26a6de1bf5f4b}\label{classv8_1_1internal_1_1CpuProfile_a9c97b8160475d22df0e26a6de1bf5f4b}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries samples\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfile_ac9be86383767ea832380c9a0435199bd}\label{classv8_1_1internal_1_1CpuProfile_ac9be86383767ea832380c9a0435199bd}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ProfileNode}{Profile\+Node}} $\ast$ {\bfseries sample} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfile_a102eed49ebe8a22025a3648178023d22}\label{classv8_1_1internal_1_1CpuProfile_a102eed49ebe8a22025a3648178023d22}} 
+\mbox{\hyperlink{classv8_1_1base_1_1TimeTicks}{base\+::\+Time\+Ticks}} {\bfseries sample\+\_\+timestamp} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfile_a2809207f0958ded5c674fd1b5488ed28}\label{classv8_1_1internal_1_1CpuProfile_a2809207f0958ded5c674fd1b5488ed28}} 
+\mbox{\hyperlink{classv8_1_1base_1_1TimeTicks}{base\+::\+Time\+Ticks}} {\bfseries start\+\_\+time} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfile_aa4a9adac1c65ebc26a08a65fcd2633db}\label{classv8_1_1internal_1_1CpuProfile_aa4a9adac1c65ebc26a08a65fcd2633db}} 
+\mbox{\hyperlink{classv8_1_1base_1_1TimeTicks}{base\+::\+Time\+Ticks}} {\bfseries end\+\_\+time} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfile_a7069d283f0aaff823f99cec0ff2bcfd3}\label{classv8_1_1internal_1_1CpuProfile_a7069d283f0aaff823f99cec0ff2bcfd3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CpuProfiler}{Cpu\+Profiler}} $\ast$ {\bfseries cpu\+\_\+profiler} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfile_a66f5b3ad5fe0fcf040e8274e5238441d}\label{classv8_1_1internal_1_1CpuProfile_a66f5b3ad5fe0fcf040e8274e5238441d}} 
+void {\bfseries Update\+Ticks\+Scale} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CpuProfile_a5dc2db626ffd25bf1db98cc0aa9ca906}\label{classv8_1_1internal_1_1CpuProfile_a5dc2db626ffd25bf1db98cc0aa9ca906}} 
+void {\bfseries Print} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 317 of file profile-\/generator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/profile-\/generator.\+h\item 
+v8/src/profiler/profile-\/generator.\+cc\end{DoxyCompactItemize}

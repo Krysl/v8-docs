@@ -1,0 +1,54 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoder}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Module\+Decoder Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoder}\index{v8\+::internal\+::wasm\+::\+Module\+Decoder@{v8\+::internal\+::wasm\+::\+Module\+Decoder}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a86619ce9a7e055eac7e264f235a88331}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a86619ce9a7e055eac7e264f235a88331}} 
+{\bfseries Module\+Decoder} (const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{Wasm\+Features}} \&enabled)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a4dbb956f6756d3f1283c9f1b344ad6f4}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a4dbb956f6756d3f1283c9f1b344ad6f4}} 
+void {\bfseries Start\+Decoding} (\mbox{\hyperlink{classv8_1_1internal_1_1Counters}{Counters}} $\ast$counters, \mbox{\hyperlink{classv8_1_1internal_1_1AccountingAllocator}{Accounting\+Allocator}} $\ast$allocator, Module\+Origin origin=Module\+Origin\+::k\+Wasm\+Origin)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a33d5a99c554875a3a9356bf5858c68e1}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a33d5a99c554875a3a9356bf5858c68e1}} 
+void {\bfseries Decode\+Module\+Header} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ bytes, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a70d614231ff5a6452c42544bc29bad50}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a70d614231ff5a6452c42544bc29bad50}} 
+void {\bfseries Decode\+Section} (Section\+Code section\+\_\+code, \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ bytes, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset, \mbox{\hyperlink{classbool}{bool}} verify\+\_\+functions=true)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_aebc5f747df388a7206ca345dfeee9ca0}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_aebc5f747df388a7206ca345dfeee9ca0}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Check\+Functions\+Count} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} functions\+\_\+count, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a49b39b2b2225fc6e5bc7f330b5ba741f}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a49b39b2b2225fc6e5bc7f330b5ba741f}} 
+void {\bfseries Decode\+Function\+Body} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} size, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset, \mbox{\hyperlink{classbool}{bool}} verify\+\_\+functions=true)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a979b96da61e0f7241bc4442cea32a1cf}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a979b96da61e0f7241bc4442cea32a1cf}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1Result}{Module\+Result}} {\bfseries Finish\+Decoding} (\mbox{\hyperlink{classbool}{bool}} verify\+\_\+functions=true)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a8acb438d35687ddde33f2711f57fc43e}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a8acb438d35687ddde33f2711f57fc43e}} 
+const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{Wasm\+Module}} $>$ \& {\bfseries shared\+\_\+module} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a8b70e09648e0eff724498aace4f9b98d}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a8b70e09648e0eff724498aace4f9b98d}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmModule}{Wasm\+Module}} $\ast$ {\bfseries module} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a9eec4b4068701e571bcba4f5588c3eb2}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a9eec4b4068701e571bcba4f5588c3eb2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries ok} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a370459597ebc3071d940fe26b29961f5}\label{classv8_1_1internal_1_1wasm_1_1ModuleDecoder_a370459597ebc3071d940fe26b29961f5}} 
+static Section\+Code {\bfseries Identify\+Unknown\+Section} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1Decoder}{Decoder}} \&decoder, const byte $\ast$end)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 115 of file module-\/decoder.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/module-\/decoder.\+h\item 
+v8/src/wasm/module-\/decoder.\+cc\end{DoxyCompactItemize}

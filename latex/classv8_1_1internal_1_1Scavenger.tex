@@ -1,0 +1,68 @@
+\hypertarget{classv8_1_1internal_1_1Scavenger}{}\section{v8\+:\+:internal\+:\+:Scavenger Class Reference}
+\label{classv8_1_1internal_1_1Scavenger}\index{v8\+::internal\+::\+Scavenger@{v8\+::internal\+::\+Scavenger}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1Scavenger_1_1PromotionList}{Promotion\+List}}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1Scavenger_1_1PromotionListEntry}{Promotion\+List\+Entry}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_a5977f775d239e658dcc55b63bdc18bb4}\label{classv8_1_1internal_1_1Scavenger_a5977f775d239e658dcc55b63bdc18bb4}} 
+using {\bfseries Copied\+List} = \mbox{\hyperlink{classv8_1_1internal_1_1Worklist}{Worklist}}$<$ Object\+And\+Size, k\+Copied\+List\+Segment\+Size $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_a6299ec93290b7d39714d6ae176cd4933}\label{classv8_1_1internal_1_1Scavenger_a6299ec93290b7d39714d6ae176cd4933}} 
+{\bfseries Scavenger} (\mbox{\hyperlink{classv8_1_1internal_1_1ScavengerCollector}{Scavenger\+Collector}} $\ast$collector, \mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, \mbox{\hyperlink{classbool}{bool}} is\+\_\+logging, \mbox{\hyperlink{classv8_1_1internal_1_1Worklist}{Copied\+List}} $\ast$copied\+\_\+list, \mbox{\hyperlink{classv8_1_1internal_1_1Scavenger_1_1PromotionList}{Promotion\+List}} $\ast$promotion\+\_\+list, \mbox{\hyperlink{classint}{int}} task\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_ad7fe349f227846d596ddaaed6ae276e5}\label{classv8_1_1internal_1_1Scavenger_ad7fe349f227846d596ddaaed6ae276e5}} 
+void {\bfseries Scavenge\+Page} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_a309c4023d0bc51d0daba413f726b9ade}\label{classv8_1_1internal_1_1Scavenger_a309c4023d0bc51d0daba413f726b9ade}} 
+void {\bfseries Process} (\mbox{\hyperlink{classv8_1_1internal_1_1OneshotBarrier}{Oneshot\+Barrier}} $\ast$barrier=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_adf02128e5bcdcd1cd1423e0c613d31eb}\label{classv8_1_1internal_1_1Scavenger_adf02128e5bcdcd1cd1423e0c613d31eb}} 
+void {\bfseries Finalize} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_a3badbc31071db1d1fe8f39fc68b4226c}\label{classv8_1_1internal_1_1Scavenger_a3badbc31071db1d1fe8f39fc68b4226c}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries bytes\+\_\+copied} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_ae9a9d7f253c3a4556506c4aeacb7242a}\label{classv8_1_1internal_1_1Scavenger_ae9a9d7f253c3a4556506c4aeacb7242a}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries bytes\+\_\+promoted} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_ad72b81efc6dcf76f0f4792ee32017915}\label{classv8_1_1internal_1_1Scavenger_ad72b81efc6dcf76f0f4792ee32017915}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Copied\+List\+Segment\+Size} = 256
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_ae47bddff04dfd2b51eee86db0aff6bf8}\label{classv8_1_1internal_1_1Scavenger_ae47bddff04dfd2b51eee86db0aff6bf8}} 
+class {\bfseries Iterate\+And\+Scavenge\+Promoted\+Objects\+Visitor}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_af72075cd340143a78e3ccec8f854c008}\label{classv8_1_1internal_1_1Scavenger_af72075cd340143a78e3ccec8f854c008}} 
+class {\bfseries Root\+Scavenge\+Visitor}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_af69f25a1d3f42cb9878ebd5cd25ff8bb}\label{classv8_1_1internal_1_1Scavenger_af69f25a1d3f42cb9878ebd5cd25ff8bb}} 
+class {\bfseries Scavenge\+Visitor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 54 of file scavenger.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/scavenger.\+h\item 
+v8/src/heap/scavenger-\/inl.\+h\item 
+v8/src/heap/scavenger.\+cc\end{DoxyCompactItemize}

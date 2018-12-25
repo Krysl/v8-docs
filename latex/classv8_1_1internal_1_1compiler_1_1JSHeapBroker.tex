@@ -1,0 +1,103 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Heap\+Broker Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker}\index{v8\+::internal\+::compiler\+::\+J\+S\+Heap\+Broker@{v8\+::internal\+::compiler\+::\+J\+S\+Heap\+Broker}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Heap\+Broker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1JSHeapBroker}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_ac57beac71a436b2c1f6e145fa32363e4}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_ac57beac71a436b2c1f6e145fa32363e4}} 
+enum {\bfseries Broker\+Mode} \{ {\bfseries k\+Disabled}, 
+{\bfseries k\+Serializing}, 
+{\bfseries k\+Serialized}, 
+{\bfseries k\+Retired}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_ae4273d0e7ad2d4e437e702704b007eb9}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_ae4273d0e7ad2d4e437e702704b007eb9}} 
+{\bfseries J\+S\+Heap\+Broker} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$broker\+\_\+zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a1e0100b409b37a75fceedfe9ac2568f9}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a1e0100b409b37a75fceedfe9ac2568f9}} 
+void {\bfseries Set\+Native\+Context\+Ref} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a16d42e39cfe89730b5a2156857342262}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a16d42e39cfe89730b5a2156857342262}} 
+void {\bfseries Serialize\+Standard\+Objects} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a5e0cdc4e2fb09a325e4da3afa2d59a3a}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a5e0cdc4e2fb09a325e4da3afa2d59a3a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_ac8ecc05eb4071d0af495fc567c004841}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_ac8ecc05eb4071d0af495fc567c004841}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$ {\bfseries zone} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_af2be3cdc41bf701d85e93515ce770d57}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_af2be3cdc41bf701d85e93515ce770d57}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1NativeContextRef}{Native\+Context\+Ref}} {\bfseries native\+\_\+context} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a40e1d93372362b59a6acc7991a709c2f}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a40e1d93372362b59a6acc7991a709c2f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1PerIsolateCompilerCache}{Per\+Isolate\+Compiler\+Cache}} $\ast$ {\bfseries compiler\+\_\+cache} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a2e9005268383532b37615970bf44412d}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a2e9005268383532b37615970bf44412d}} 
+Broker\+Mode {\bfseries mode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a12bd09561b658bb73f769dc466df8020}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a12bd09561b658bb73f769dc466df8020}} 
+void {\bfseries Start\+Serializing} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a10d2f949eeb8f68f93a4d18b531a1b9e}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a10d2f949eeb8f68f93a4d18b531a1b9e}} 
+void {\bfseries Stop\+Serializing} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a002299783f8599ded121a4f18fedaa29}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a002299783f8599ded121a4f18fedaa29}} 
+void {\bfseries Retire} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a3289958e753b9c6775d9d0d6f4915983}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a3289958e753b9c6775d9d0d6f4915983}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Serializing\+Allowed} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a40b74964580a59ce413b725d11ce907c}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a40b74964580a59ce413b725d11ce907c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1ObjectData}{Object\+Data}} $\ast$ {\bfseries Get\+Data} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_aba4e7d9c4744771f8a44bfaa8dda32e1}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_aba4e7d9c4744771f8a44bfaa8dda32e1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1ObjectData}{Object\+Data}} $\ast$ {\bfseries Get\+Or\+Create\+Data} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a7d2d0041c924c66086ba48b97024d301}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a7d2d0041c924c66086ba48b97024d301}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1ObjectData}{Object\+Data}} $\ast$ {\bfseries Get\+Or\+Create\+Data} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a7165f12789e415a5edfb7ea3f15c6bb4}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a7165f12789e415a5edfb7ea3f15c6bb4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Array\+Or\+Object\+Prototype} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSObjectRef}{J\+S\+Object\+Ref}} \&object) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_aedd03309992d341173065aa831bc8438}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_aedd03309992d341173065aa831bc8438}} 
+void {\bfseries Trace} (const \mbox{\hyperlink{classchar}{char}} $\ast$format,...) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a8da2efbe37d28dd007a5e6b747fd26eb}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a8da2efbe37d28dd007a5e6b747fd26eb}} 
+void {\bfseries Increment\+Tracing\+Indentation} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_ae165728e3b2bff19e302e7a8a9f48188}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_ae165728e3b2bff19e302e7a8a9f48188}} 
+void {\bfseries Decrement\+Tracing\+Indentation} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_afb019aaea10a033de304d8382e0db3b9}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_afb019aaea10a033de304d8382e0db3b9}} 
+class {\bfseries Heap\+Object\+Ref}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a5d7d1b555fd908e511caa42bd7ccfc71}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a5d7d1b555fd908e511caa42bd7ccfc71}} 
+class {\bfseries Object\+Ref}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a5e510a0f60c0bbbc00262d15d787892b}\label{classv8_1_1internal_1_1compiler_1_1JSHeapBroker_a5e510a0f60c0bbbc00262d15d787892b}} 
+class {\bfseries Object\+Data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 594 of file js-\/heap-\/broker.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/js-\/heap-\/broker.\+h\item 
+v8/src/compiler/js-\/heap-\/broker.\+cc\end{DoxyCompactItemize}

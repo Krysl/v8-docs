@@ -1,0 +1,91 @@
+\hypertarget{classunibrow_1_1Utf8}{}\section{unibrow\+:\+:Utf8 Class Reference}
+\label{classunibrow_1_1Utf8}\index{unibrow\+::\+Utf8@{unibrow\+::\+Utf8}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_aee11bc8d46b900656758d6c9f8ae5d53}\label{classunibrow_1_1Utf8_aee11bc8d46b900656758d6c9f8ae5d53}} 
+using {\bfseries State} = Utf8\+Dfa\+Decoder\+::\+State
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_a44ff7c56af391b27a57a6b5630d1c02d}\label{classunibrow_1_1Utf8_a44ff7c56af391b27a57a6b5630d1c02d}} 
+typedef \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Utf8\+Incremental\+Buffer}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_a5c6a30a8610649fee6dbb05057862113}\label{classunibrow_1_1Utf8_a5c6a30a8610649fee6dbb05057862113}} 
+static uchar {\bfseries Length} (uchar chr, \mbox{\hyperlink{classint}{int}} previous)
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_a944c72d1ddbcccc8f6386f1ff971404f}\label{classunibrow_1_1Utf8_a944c72d1ddbcccc8f6386f1ff971404f}} 
+static \mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries Encode\+One\+Byte} (\mbox{\hyperlink{classchar}{char}} $\ast$out, uint8\+\_\+t c)
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_acf0af099acd418650bf1a8080f14e926}\label{classunibrow_1_1Utf8_acf0af099acd418650bf1a8080f14e926}} 
+static \mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries Encode} (\mbox{\hyperlink{classchar}{char}} $\ast$out, uchar c, \mbox{\hyperlink{classint}{int}} previous, \mbox{\hyperlink{classbool}{bool}} replace\+\_\+invalid=false)
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_a7c355e692f5abdea8fcf4aff60adb728}\label{classunibrow_1_1Utf8_a7c355e692f5abdea8fcf4aff60adb728}} 
+static uchar {\bfseries Calculate\+Value} (const byte $\ast$str, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} length, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} $\ast$cursor)
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_a694bc73a14569ce19c6baa4b6caf1c99}\label{classunibrow_1_1Utf8_a694bc73a14569ce19c6baa4b6caf1c99}} 
+static uchar {\bfseries Value\+Of} (const byte $\ast$str, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} length, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} $\ast$cursor)
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_a12ac713077078c62e66045b12541db34}\label{classunibrow_1_1Utf8_a12ac713077078c62e66045b12541db34}} 
+static uchar {\bfseries Value\+Of\+Incremental} (byte next\+\_\+byte, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} $\ast$cursor, State $\ast$state, \mbox{\hyperlink{classuint32__t}{Utf8\+Incremental\+Buffer}} $\ast$buffer)
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_a9f49ab6b7b4901df03abeb74dd431434}\label{classunibrow_1_1Utf8_a9f49ab6b7b4901df03abeb74dd431434}} 
+static uchar {\bfseries Value\+Of\+Incremental\+Finish} (State $\ast$state)
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_a952ffb9c81612f5b5c22b11da54e058e}\label{classunibrow_1_1Utf8_a952ffb9c81612f5b5c22b11da54e058e}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Valid\+Character} (uchar c)
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_a643137ed153ce44d06fe365ce3075594}\label{classunibrow_1_1Utf8_a643137ed153ce44d06fe365ce3075594}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Validate\+Encoding} (const byte $\ast$str, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} length)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_a4e5ed3c61ce8976082104caf8f6e2ff8}\label{classunibrow_1_1Utf8_a4e5ed3c61ce8976082104caf8f6e2ff8}} 
+static const uchar {\bfseries k\+Bad\+Char} = 0x\+F\+F\+FD
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_a204448d9cff6e274e75a5bdd9c1854a2}\label{classunibrow_1_1Utf8_a204448d9cff6e274e75a5bdd9c1854a2}} 
+static const uchar {\bfseries k\+Buffer\+Empty} = 0x0
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_a8aff6f98d4c7f8882b407e981737a123}\label{classunibrow_1_1Utf8_a8aff6f98d4c7f8882b407e981737a123}} 
+static const uchar {\bfseries k\+Incomplete} = 0x\+F\+F\+F\+F\+F\+F\+FC
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_a863e13744b7f1bafb2e7cefa88db22e8}\label{classunibrow_1_1Utf8_a863e13744b7f1bafb2e7cefa88db22e8}} 
+static const \mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries k\+Max\+Encoded\+Size} = 4
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_a133ef06049e8474299fe9a84de6f2de0}\label{classunibrow_1_1Utf8_a133ef06049e8474299fe9a84de6f2de0}} 
+static const \mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries k\+Max\+One\+Byte\+Char} = 0x7f
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_ab9ef696115d867a8a3d8e66db07d8211}\label{classunibrow_1_1Utf8_ab9ef696115d867a8a3d8e66db07d8211}} 
+static const \mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries k\+Max\+Two\+Byte\+Char} = 0x7ff
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_a0c0efe6dd154eaddb19bfbc7001307aa}\label{classunibrow_1_1Utf8_a0c0efe6dd154eaddb19bfbc7001307aa}} 
+static const \mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries k\+Max\+Three\+Byte\+Char} = 0xffff
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_a7d30c60658c9742cfe77512de617a4b6}\label{classunibrow_1_1Utf8_a7d30c60658c9742cfe77512de617a4b6}} 
+static const \mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries k\+Max\+Four\+Byte\+Char} = 0x1fffff
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_ad8db1cc81f7247e91d356a28392c79f9}\label{classunibrow_1_1Utf8_ad8db1cc81f7247e91d356a28392c79f9}} 
+static const \mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries k\+Bytes\+Saved\+By\+Combining\+Surrogates} = 2
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_ae299e468227458f62545d61201a256eb}\label{classunibrow_1_1Utf8_ae299e468227458f62545d61201a256eb}} 
+static const \mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries k\+Size\+Of\+Unmatched\+Surrogate} = 3
+\item 
+\mbox{\Hypertarget{classunibrow_1_1Utf8_ac950664b85f1ad13505134334f32d0c5}\label{classunibrow_1_1Utf8_ac950664b85f1ad13505134334f32d0c5}} 
+static const \mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries k\+Max16\+Bit\+Code\+Unit\+Size} = 3
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 133 of file unicode.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/\mbox{\hyperlink{unicode_8h}{unicode.\+h}}\item 
+v8/src/unicode-\/inl.\+h\item 
+v8/src/\mbox{\hyperlink{unicode_8cc}{unicode.\+cc}}\end{DoxyCompactItemize}

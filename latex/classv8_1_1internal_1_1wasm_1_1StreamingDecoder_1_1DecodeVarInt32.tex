@@ -1,0 +1,56 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Streaming\+Decoder\+:\+:Decode\+Var\+Int32 Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32}\index{v8\+::internal\+::wasm\+::\+Streaming\+Decoder\+::\+Decode\+Var\+Int32@{v8\+::internal\+::wasm\+::\+Streaming\+Decoder\+::\+Decode\+Var\+Int32}}
+Inheritance diagram for v8\+:\+:internal\+:\+:wasm\+:\+:Streaming\+Decoder\+:\+:Decode\+Var\+Int32\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.949958cm]{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_a47900a58835b11f700629a9460c64f0a}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_a47900a58835b11f700629a9460c64f0a}} 
+{\bfseries Decode\+Var\+Int32} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} max\+\_\+value, const \mbox{\hyperlink{classchar}{char}} $\ast$field\+\_\+name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_ae0db38c0f8f057492fd50bd86f908d65}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_ae0db38c0f8f057492fd50bd86f908d65}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ uint8\+\_\+t $>$ {\bfseries buffer} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_a6106bbb967e813f512712b0e235aa747}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_a6106bbb967e813f512712b0e235aa747}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Read\+Bytes} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1StreamingDecoder}{Streaming\+Decoder}} $\ast$streaming, \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ bytes) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_afc4b6f17fdf737c0fb2e6b02cb522960}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_afc4b6f17fdf737c0fb2e6b02cb522960}} 
+std\+::unique\+\_\+ptr$<$ Decoding\+State $>$ {\bfseries Next} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1StreamingDecoder}{Streaming\+Decoder}} $\ast$streaming) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_ac499e45dc3c025aabd2b7f7c574bbf94}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_ac499e45dc3c025aabd2b7f7c574bbf94}} 
+virtual std\+::unique\+\_\+ptr$<$ Decoding\+State $>$ {\bfseries Next\+With\+Value} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1StreamingDecoder}{Streaming\+Decoder}} $\ast$streaming)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_aa45d219a0c47667ac7c321355817a241}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_aa45d219a0c47667ac7c321355817a241}} 
+uint8\+\_\+t {\bfseries byte\+\_\+buffer\+\_\+} \mbox{[}k\+Max\+Var\+Int32\+Size\mbox{]}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_ae3b50230bed6fdb089ee7e17c24c8d45}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_ae3b50230bed6fdb089ee7e17c24c8d45}} 
+const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries max\+\_\+value\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_aa9667edfbff8069403843c8c56c11882}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_aa9667edfbff8069403843c8c56c11882}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$const {\bfseries field\+\_\+name\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_a8dc15f05508652c5e4049dee2375daec}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_a8dc15f05508652c5e4049dee2375daec}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries value\+\_\+} = 0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_a111e588abca7e05bb51e3faea7daf3a4}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32_a111e588abca7e05bb51e3faea7daf3a4}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries bytes\+\_\+consumed\+\_\+} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 125 of file streaming-\/decoder.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/streaming-\/decoder.\+cc\end{DoxyCompactItemize}

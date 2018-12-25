@@ -7,23 +7,23 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{classv8_1_1StackFrame_a34ab9f48a06525cd9f93e01a70427ca2}{Get\+Line\+Number}} () const
+\mbox{\hyperlink{classint}{int}} \mbox{\hyperlink{classv8_1_1StackFrame_a34ab9f48a06525cd9f93e01a70427ca2}{Get\+Line\+Number}} () const
 \item 
-int \mbox{\hyperlink{classv8_1_1StackFrame_a3b4d7d29ae82b88304d09ea5c5e43db1}{Get\+Column}} () const
+\mbox{\hyperlink{classint}{int}} \mbox{\hyperlink{classv8_1_1StackFrame_a3b4d7d29ae82b88304d09ea5c5e43db1}{Get\+Column}} () const
 \item 
-int \mbox{\hyperlink{classv8_1_1StackFrame_ac2f0f26b9c7aee860cdd613c0d83ae35}{Get\+Script\+Id}} () const
+\mbox{\hyperlink{classint}{int}} \mbox{\hyperlink{classv8_1_1StackFrame_ac2f0f26b9c7aee860cdd613c0d83ae35}{Get\+Script\+Id}} () const
 \item 
-\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1StackFrame_a2885f14557e14c64396206b0f79daa3e}{Get\+Script\+Name}} () const
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1StackFrame_a50ef64008d600ab075e048debbca9214}{Get\+Script\+Name}} () const
 \item 
-\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1StackFrame_a4fbd286090b13661b3db148e0a3779b5}{Get\+Script\+Name\+Or\+Source\+U\+RL}} () const
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1StackFrame_a57754ab8d2eb6d899289d5dfe1c9d4a3}{Get\+Script\+Name\+Or\+Source\+U\+RL}} () const
 \item 
-\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1StackFrame_a9cd783598db74ab35bd4ae7c8cbc374f}{Get\+Function\+Name}} () const
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1StackFrame_ab382d964b5c4b55c5886c7d86398556f}{Get\+Function\+Name}} () const
 \item 
-bool \mbox{\hyperlink{classv8_1_1StackFrame_aa07e67a6a00adcd0f5c8c4ba7a82e54a}{Is\+Eval}} () const
+\mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{classv8_1_1StackFrame_aa07e67a6a00adcd0f5c8c4ba7a82e54a}{Is\+Eval}} () const
 \item 
-bool \mbox{\hyperlink{classv8_1_1StackFrame_a8f37df38214b6dc10655fc50f0341eb8}{Is\+Constructor}} () const
+\mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{classv8_1_1StackFrame_a8f37df38214b6dc10655fc50f0341eb8}{Is\+Constructor}} () const
 \item 
-bool \mbox{\hyperlink{classv8_1_1StackFrame_aec6d28360828b8cadc3da6a5dbd83d89}{Is\+Wasm}} () const
+\mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{classv8_1_1StackFrame_aec6d28360828b8cadc3da6a5dbd83d89}{Is\+Wasm}} () const
 \end{DoxyCompactItemize}
 
 
@@ -39,58 +39,95 @@ Definition at line 1730 of file v8.\+h.
 \index{v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}!Get\+Column@{Get\+Column}}
 \index{Get\+Column@{Get\+Column}!v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}}
 \subsubsection{\texorpdfstring{Get\+Column()}{GetColumn()}}
-{\footnotesize\ttfamily int v8\+::\+Stack\+Frame\+::\+Get\+Column (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classint}{int}} v8\+::\+Stack\+Frame\+::\+Get\+Column (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns the 1-\/based column offset on the line for the associated function call. This method will return Message\+::k\+No\+Column\+Info if it is unable to retrieve the column number, or if k\+Column\+Offset was not passed as an option when capturing the \mbox{\hyperlink{classv8_1_1StackTrace}{Stack\+Trace}}. \mbox{\Hypertarget{classv8_1_1StackFrame_a9cd783598db74ab35bd4ae7c8cbc374f}\label{classv8_1_1StackFrame_a9cd783598db74ab35bd4ae7c8cbc374f}} 
+Returns the 1-\/based column offset on the line for the associated function call. This method will return Message\+::k\+No\+Column\+Info if it is unable to retrieve the column number, or if k\+Column\+Offset was not passed as an option when capturing the \mbox{\hyperlink{classv8_1_1StackTrace}{Stack\+Trace}}. 
+
+Definition at line 2935 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1StackFrame_ab382d964b5c4b55c5886c7d86398556f}\label{classv8_1_1StackFrame_ab382d964b5c4b55c5886c7d86398556f}} 
 \index{v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}!Get\+Function\+Name@{Get\+Function\+Name}}
 \index{Get\+Function\+Name@{Get\+Function\+Name}!v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}}
 \subsubsection{\texorpdfstring{Get\+Function\+Name()}{GetFunctionName()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1String}{String}}$>$ v8\+::\+Stack\+Frame\+::\+Get\+Function\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ v8\+::\+Stack\+Frame\+::\+Get\+Function\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns the name of the function associated with this stack frame. \mbox{\Hypertarget{classv8_1_1StackFrame_a34ab9f48a06525cd9f93e01a70427ca2}\label{classv8_1_1StackFrame_a34ab9f48a06525cd9f93e01a70427ca2}} 
+Returns the name of the function associated with this stack frame. 
+
+Definition at line 2968 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1StackFrame_a34ab9f48a06525cd9f93e01a70427ca2}\label{classv8_1_1StackFrame_a34ab9f48a06525cd9f93e01a70427ca2}} 
 \index{v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}!Get\+Line\+Number@{Get\+Line\+Number}}
 \index{Get\+Line\+Number@{Get\+Line\+Number}!v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}}
 \subsubsection{\texorpdfstring{Get\+Line\+Number()}{GetLineNumber()}}
-{\footnotesize\ttfamily int v8\+::\+Stack\+Frame\+::\+Get\+Line\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classint}{int}} v8\+::\+Stack\+Frame\+::\+Get\+Line\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns the number, 1-\/based, of the line for the associate function call. This method will return Message\+::k\+No\+Line\+Number\+Info if it is unable to retrieve the line number, or if k\+Line\+Number was not passed as an option when capturing the \mbox{\hyperlink{classv8_1_1StackTrace}{Stack\+Trace}}. \mbox{\Hypertarget{classv8_1_1StackFrame_ac2f0f26b9c7aee860cdd613c0d83ae35}\label{classv8_1_1StackFrame_ac2f0f26b9c7aee860cdd613c0d83ae35}} 
+Returns the number, 1-\/based, of the line for the associate function call. This method will return Message\+::k\+No\+Line\+Number\+Info if it is unable to retrieve the line number, or if k\+Line\+Number was not passed as an option when capturing the \mbox{\hyperlink{classv8_1_1StackTrace}{Stack\+Trace}}. 
+
+Definition at line 2929 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1StackFrame_ac2f0f26b9c7aee860cdd613c0d83ae35}\label{classv8_1_1StackFrame_ac2f0f26b9c7aee860cdd613c0d83ae35}} 
 \index{v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}!Get\+Script\+Id@{Get\+Script\+Id}}
 \index{Get\+Script\+Id@{Get\+Script\+Id}!v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}}
 \subsubsection{\texorpdfstring{Get\+Script\+Id()}{GetScriptId()}}
-{\footnotesize\ttfamily int v8\+::\+Stack\+Frame\+::\+Get\+Script\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classint}{int}} v8\+::\+Stack\+Frame\+::\+Get\+Script\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns the id of the script for the function for this \mbox{\hyperlink{classv8_1_1StackFrame}{Stack\+Frame}}. This method will return Message\+::k\+No\+Script\+Id\+Info if it is unable to retrieve the script id, or if k\+Script\+Id was not passed as an option when capturing the \mbox{\hyperlink{classv8_1_1StackTrace}{Stack\+Trace}}. \mbox{\Hypertarget{classv8_1_1StackFrame_a2885f14557e14c64396206b0f79daa3e}\label{classv8_1_1StackFrame_a2885f14557e14c64396206b0f79daa3e}} 
+Returns the id of the script for the function for this \mbox{\hyperlink{classv8_1_1StackFrame}{Stack\+Frame}}. This method will return Message\+::k\+No\+Script\+Id\+Info if it is unable to retrieve the script id, or if k\+Script\+Id was not passed as an option when capturing the \mbox{\hyperlink{classv8_1_1StackTrace}{Stack\+Trace}}. 
+
+Definition at line 2941 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1StackFrame_a50ef64008d600ab075e048debbca9214}\label{classv8_1_1StackFrame_a50ef64008d600ab075e048debbca9214}} 
 \index{v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}!Get\+Script\+Name@{Get\+Script\+Name}}
 \index{Get\+Script\+Name@{Get\+Script\+Name}!v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}}
 \subsubsection{\texorpdfstring{Get\+Script\+Name()}{GetScriptName()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1String}{String}}$>$ v8\+::\+Stack\+Frame\+::\+Get\+Script\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ v8\+::\+Stack\+Frame\+::\+Get\+Script\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns the name of the resource that contains the script for the function for this \mbox{\hyperlink{classv8_1_1StackFrame}{Stack\+Frame}}. \mbox{\Hypertarget{classv8_1_1StackFrame_a4fbd286090b13661b3db148e0a3779b5}\label{classv8_1_1StackFrame_a4fbd286090b13661b3db148e0a3779b5}} 
+Returns the name of the resource that contains the script for the function for this \mbox{\hyperlink{classv8_1_1StackFrame}{Stack\+Frame}}. 
+
+Definition at line 2946 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1StackFrame_a57754ab8d2eb6d899289d5dfe1c9d4a3}\label{classv8_1_1StackFrame_a57754ab8d2eb6d899289d5dfe1c9d4a3}} 
 \index{v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}!Get\+Script\+Name\+Or\+Source\+U\+RL@{Get\+Script\+Name\+Or\+Source\+U\+RL}}
 \index{Get\+Script\+Name\+Or\+Source\+U\+RL@{Get\+Script\+Name\+Or\+Source\+U\+RL}!v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}}
 \subsubsection{\texorpdfstring{Get\+Script\+Name\+Or\+Source\+U\+R\+L()}{GetScriptNameOrSourceURL()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1String}{String}}$>$ v8\+::\+Stack\+Frame\+::\+Get\+Script\+Name\+Or\+Source\+U\+RL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ v8\+::\+Stack\+Frame\+::\+Get\+Script\+Name\+Or\+Source\+U\+RL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns the name of the resource that contains the script for the function for this \mbox{\hyperlink{classv8_1_1StackFrame}{Stack\+Frame}} or source\+U\+RL value if the script name is undefined and its source ends with //\# source\+U\+RL=... string or deprecated //@ source\+U\+RL=... string. \mbox{\Hypertarget{classv8_1_1StackFrame_a8f37df38214b6dc10655fc50f0341eb8}\label{classv8_1_1StackFrame_a8f37df38214b6dc10655fc50f0341eb8}} 
+Returns the name of the resource that contains the script for the function for this \mbox{\hyperlink{classv8_1_1StackFrame}{Stack\+Frame}} or source\+U\+RL value if the script name is undefined and its source ends with //\# source\+U\+RL=... string or deprecated //@ source\+U\+RL=... string. 
+
+Definition at line 2957 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1StackFrame_a8f37df38214b6dc10655fc50f0341eb8}\label{classv8_1_1StackFrame_a8f37df38214b6dc10655fc50f0341eb8}} 
 \index{v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}!Is\+Constructor@{Is\+Constructor}}
 \index{Is\+Constructor@{Is\+Constructor}!v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}}
 \subsubsection{\texorpdfstring{Is\+Constructor()}{IsConstructor()}}
-{\footnotesize\ttfamily bool v8\+::\+Stack\+Frame\+::\+Is\+Constructor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbool}{bool}} v8\+::\+Stack\+Frame\+::\+Is\+Constructor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns whether or not the associated function is called as a constructor via \char`\"{}new\char`\"{}. \mbox{\Hypertarget{classv8_1_1StackFrame_aa07e67a6a00adcd0f5c8c4ba7a82e54a}\label{classv8_1_1StackFrame_aa07e67a6a00adcd0f5c8c4ba7a82e54a}} 
+Returns whether or not the associated function is called as a constructor via \char`\"{}new\char`\"{}. 
+
+Definition at line 2980 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1StackFrame_aa07e67a6a00adcd0f5c8c4ba7a82e54a}\label{classv8_1_1StackFrame_aa07e67a6a00adcd0f5c8c4ba7a82e54a}} 
 \index{v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}!Is\+Eval@{Is\+Eval}}
 \index{Is\+Eval@{Is\+Eval}!v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}}
 \subsubsection{\texorpdfstring{Is\+Eval()}{IsEval()}}
-{\footnotesize\ttfamily bool v8\+::\+Stack\+Frame\+::\+Is\+Eval (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbool}{bool}} v8\+::\+Stack\+Frame\+::\+Is\+Eval (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns whether or not the associated function is compiled via a call to eval(). \mbox{\Hypertarget{classv8_1_1StackFrame_aec6d28360828b8cadc3da6a5dbd83d89}\label{classv8_1_1StackFrame_aec6d28360828b8cadc3da6a5dbd83d89}} 
+Returns whether or not the associated function is compiled via a call to eval(). 
+
+Definition at line 2978 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1StackFrame_aec6d28360828b8cadc3da6a5dbd83d89}\label{classv8_1_1StackFrame_aec6d28360828b8cadc3da6a5dbd83d89}} 
 \index{v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}!Is\+Wasm@{Is\+Wasm}}
 \index{Is\+Wasm@{Is\+Wasm}!v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}}
 \subsubsection{\texorpdfstring{Is\+Wasm()}{IsWasm()}}
-{\footnotesize\ttfamily bool v8\+::\+Stack\+Frame\+::\+Is\+Wasm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbool}{bool}} v8\+::\+Stack\+Frame\+::\+Is\+Wasm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 Returns whether or not the associated functions is defined in wasm. 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Definition at line 2984 of file api.\+cc.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8.\+h\end{DoxyCompactItemize}
+v8/include/v8.\+h\item 
+v8/src/api.\+cc\end{DoxyCompactItemize}

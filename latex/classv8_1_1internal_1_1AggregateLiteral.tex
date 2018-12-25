@@ -1,0 +1,79 @@
+\hypertarget{classv8_1_1internal_1_1AggregateLiteral}{}\section{v8\+:\+:internal\+:\+:Aggregate\+Literal Class Reference}
+\label{classv8_1_1internal_1_1AggregateLiteral}\index{v8\+::internal\+::\+Aggregate\+Literal@{v8\+::internal\+::\+Aggregate\+Literal}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Aggregate\+Literal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classv8_1_1internal_1_1AggregateLiteral}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AggregateLiteral_a277407153d07ee6a88adf650b71248ad}\label{classv8_1_1internal_1_1AggregateLiteral_a277407153d07ee6a88adf650b71248ad}} 
+enum {\bfseries Flags} \{ {\bfseries k\+No\+Flags} = 0, 
+{\bfseries k\+Is\+Shallow} = 1, 
+{\bfseries k\+Disable\+Mementos} = 1 $<$$<$ 1, 
+{\bfseries k\+Needs\+Initial\+Allocation\+Site} = 1 $<$$<$ 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AggregateLiteral_af89e700cae2a8af5a8408048a5e97d07}\label{classv8_1_1internal_1_1AggregateLiteral_af89e700cae2a8af5a8408048a5e97d07}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+initialized} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AggregateLiteral_a9ca53fd750ca800268a4ea92a6ca3287}\label{classv8_1_1internal_1_1AggregateLiteral_a9ca53fd750ca800268a4ea92a6ca3287}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries depth} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AggregateLiteral_a6ccaff2cb289811cc47eb6fe188728de}\label{classv8_1_1internal_1_1AggregateLiteral_a6ccaff2cb289811cc47eb6fe188728de}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+shallow} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AggregateLiteral_ae6f6fa2d0bab943685ac44d9b98b3f0d}\label{classv8_1_1internal_1_1AggregateLiteral_ae6f6fa2d0bab943685ac44d9b98b3f0d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries needs\+\_\+initial\+\_\+allocation\+\_\+site} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AggregateLiteral_aab431fb4280c3c3e07251be93650e8c4}\label{classv8_1_1internal_1_1AggregateLiteral_aab431fb4280c3c3e07251be93650e8c4}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Compute\+Flags} (\mbox{\hyperlink{classbool}{bool}} disable\+\_\+mementos=false) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AggregateLiteral_ae91f5d0a9a11196b255de90aab34ae9d}\label{classv8_1_1internal_1_1AggregateLiteral_ae91f5d0a9a11196b255de90aab34ae9d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+simple} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AggregateLiteral_a0da2aa8d2d4d2a529faaeaaea8ff133f}\label{classv8_1_1internal_1_1AggregateLiteral_a0da2aa8d2d4d2a529faaeaaea8ff133f}} 
+{\bfseries Aggregate\+Literal} (\mbox{\hyperlink{classint}{int}} pos, Node\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AggregateLiteral_a66bba6b8a0d7de7daf638bff629e044e}\label{classv8_1_1internal_1_1AggregateLiteral_a66bba6b8a0d7de7daf638bff629e044e}} 
+void {\bfseries set\+\_\+is\+\_\+simple} (\mbox{\hyperlink{classbool}{bool}} is\+\_\+simple)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AggregateLiteral_a6afd47480bd72e259c1202f996a6a40b}\label{classv8_1_1internal_1_1AggregateLiteral_a6afd47480bd72e259c1202f996a6a40b}} 
+void {\bfseries set\+\_\+depth} (\mbox{\hyperlink{classint}{int}} depth)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AggregateLiteral_a4940d433db71d83c337591d2ca9b92b8}\label{classv8_1_1internal_1_1AggregateLiteral_a4940d433db71d83c337591d2ca9b92b8}} 
+void {\bfseries set\+\_\+needs\+\_\+initial\+\_\+allocation\+\_\+site} (\mbox{\hyperlink{classbool}{bool}} required)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AggregateLiteral_a986b62c8d0ff893b7522e8c29f436226}\label{classv8_1_1internal_1_1AggregateLiteral_a986b62c8d0ff893b7522e8c29f436226}} 
+static const uint8\+\_\+t {\bfseries k\+Next\+Bit\+Field\+Index} = Is\+Simple\+Field\+::k\+Next
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AggregateLiteral_a8d587c8ad3515ff6433eb83c578e795f}\label{classv8_1_1internal_1_1AggregateLiteral_a8d587c8ad3515ff6433eb83c578e795f}} 
+class {\bfseries Ast\+Node\+Factory}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1254 of file ast.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ast/ast.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,35 @@
+\hypertarget{structv8_1_1base_1_1detail_1_1fold__helper_3_01Func_00_01T1_00_01T2_00_01Ts_8_8_8_01_4}{}\section{v8\+:\+:base\+:\+:detail\+:\+:fold\+\_\+helper$<$ Func, T1, T2, Ts... $>$ Struct Template Reference}
+\label{structv8_1_1base_1_1detail_1_1fold__helper_3_01Func_00_01T1_00_01T2_00_01Ts_8_8_8_01_4}\index{v8\+::base\+::detail\+::fold\+\_\+helper$<$ Func, T1, T2, Ts... $>$@{v8\+::base\+::detail\+::fold\+\_\+helper$<$ Func, T1, T2, Ts... $>$}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1base_1_1detail_1_1fold__helper_3_01Func_00_01T1_00_01T2_00_01Ts_8_8_8_01_4_aca9659e632ee354315e602739c4b3b17}\label{structv8_1_1base_1_1detail_1_1fold__helper_3_01Func_00_01T1_00_01T2_00_01Ts_8_8_8_01_4_aca9659e632ee354315e602739c4b3b17}} 
+using {\bfseries folded\+\_\+t} = typename std\+::result\+\_\+of$<$ Func(T1, T2)$>$\+::\mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}
+\item 
+\mbox{\Hypertarget{structv8_1_1base_1_1detail_1_1fold__helper_3_01Func_00_01T1_00_01T2_00_01Ts_8_8_8_01_4_a92c0450cb166ab3a1f85ac339ebaeb11}\label{structv8_1_1base_1_1detail_1_1fold__helper_3_01Func_00_01T1_00_01T2_00_01Ts_8_8_8_01_4_a92c0450cb166ab3a1f85ac339ebaeb11}} 
+using {\bfseries next\+\_\+fold\+\_\+helper} = \mbox{\hyperlink{structv8_1_1base_1_1detail_1_1fold__helper}{fold\+\_\+helper}}$<$ Func, folded\+\_\+t \&\&, Ts... $>$
+\item 
+\mbox{\Hypertarget{structv8_1_1base_1_1detail_1_1fold__helper_3_01Func_00_01T1_00_01T2_00_01Ts_8_8_8_01_4_afd7a81275cd337357f9f3e7124473fe3}\label{structv8_1_1base_1_1detail_1_1fold__helper_3_01Func_00_01T1_00_01T2_00_01Ts_8_8_8_01_4_afd7a81275cd337357f9f3e7124473fe3}} 
+using {\bfseries result\+\_\+t} = typename next\+\_\+fold\+\_\+helper\+::result\+\_\+t
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1base_1_1detail_1_1fold__helper_3_01Func_00_01T1_00_01T2_00_01Ts_8_8_8_01_4_a6c8bbf63c2297c491dc1aa3a3b510643}\label{structv8_1_1base_1_1detail_1_1fold__helper_3_01Func_00_01T1_00_01T2_00_01Ts_8_8_8_01_4_a6c8bbf63c2297c491dc1aa3a3b510643}} 
+static constexpr result\+\_\+t {\bfseries fold} (Func func, T1 \&\&first, T2 \&\&second, Ts \&\&... more)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Func, typename T1, typename T2, typename... Ts$>$\newline
+struct v8\+::base\+::detail\+::fold\+\_\+helper$<$ Func, T1, T2, Ts... $>$}
+
+
+
+Definition at line 95 of file template-\/utils.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/base/template-\/utils.\+h\end{DoxyCompactItemize}

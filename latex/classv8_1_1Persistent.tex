@@ -39,7 +39,7 @@ V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Persistent_a7d4d2bebfe3919e
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classv8_1_1Persistent_aefcf5962630a14c198f466f64a685946}\label{classv8_1_1Persistent_aefcf5962630a14c198f466f64a685946}} 
-{\footnotesize template$<$class S $>$ }\\static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Persistent}{Persistent}}$<$ T $>$ \& {\bfseries Cast} (const \mbox{\hyperlink{classv8_1_1Persistent}{Persistent}}$<$ S $>$ \&that)
+{\footnotesize template$<$class S $>$ }\\static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Persistent}{Persistent}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ \& {\bfseries Cast} (const \mbox{\hyperlink{classv8_1_1Persistent}{Persistent}}$<$ S $>$ \&that)
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -81,7 +81,7 @@ Definition at line 92 of file v8.\+h.
 \index{Persistent@{Persistent}!v8\+::\+Persistent@{v8\+::\+Persistent}}
 \subsubsection{\texorpdfstring{Persistent()}{Persistent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily template$<$class T, class M$>$ \\
-V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Persistent}{v8\+::\+Persistent}}$<$ T, M $>$\+::\mbox{\hyperlink{classv8_1_1Persistent}{Persistent}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Persistent}{v8\+::\+Persistent}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, M $>$\+::\mbox{\hyperlink{classv8_1_1Persistent}{Persistent}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 A \mbox{\hyperlink{classv8_1_1Persistent}{Persistent}} with no storage cell. 
 
@@ -93,7 +93,7 @@ Definition at line 664 of file v8.\+h.
 \subsubsection{\texorpdfstring{Persistent()}{Persistent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily template$<$class T, class M$>$ \\
 template$<$class S $>$ \\
-V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Persistent}{v8\+::\+Persistent}}$<$ T, M $>$\+::\mbox{\hyperlink{classv8_1_1Persistent}{Persistent}} (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ S $>$}]{that }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Persistent}{v8\+::\+Persistent}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, M $>$\+::\mbox{\hyperlink{classv8_1_1Persistent}{Persistent}} (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ S $>$}]{that }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Construct a \mbox{\hyperlink{classv8_1_1Persistent}{Persistent}} from a \mbox{\hyperlink{classv8_1_1Local}{Local}}. When the \mbox{\hyperlink{classv8_1_1Local}{Local}} is non-\/empty, a new storage cell is created pointing to the same object, and no flags are set. 
 
@@ -105,7 +105,7 @@ Definition at line 671 of file v8.\+h.
 \subsubsection{\texorpdfstring{Persistent()}{Persistent()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily template$<$class T, class M$>$ \\
 template$<$class S , class M2 $>$ \\
-V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Persistent}{v8\+::\+Persistent}}$<$ T, M $>$\+::\mbox{\hyperlink{classv8_1_1Persistent}{Persistent}} (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{const \mbox{\hyperlink{classv8_1_1Persistent}{Persistent}}$<$ S, M2 $>$ \&}]{that }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Persistent}{v8\+::\+Persistent}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, M $>$\+::\mbox{\hyperlink{classv8_1_1Persistent}{Persistent}} (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{const \mbox{\hyperlink{classv8_1_1Persistent}{Persistent}}$<$ S, M2 $>$ \&}]{that }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Construct a \mbox{\hyperlink{classv8_1_1Persistent}{Persistent}} from a \mbox{\hyperlink{classv8_1_1Persistent}{Persistent}}. When the \mbox{\hyperlink{classv8_1_1Persistent}{Persistent}} is non-\/empty, a new storage cell is created pointing to the same object, and no flags are set. 
 
@@ -116,7 +116,7 @@ Definition at line 681 of file v8.\+h.
 \index{Persistent@{Persistent}!v8\+::\+Persistent@{v8\+::\+Persistent}}
 \subsubsection{\texorpdfstring{Persistent()}{Persistent()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily template$<$class T, class M$>$ \\
-V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Persistent}{v8\+::\+Persistent}}$<$ T, M $>$\+::\mbox{\hyperlink{classv8_1_1Persistent}{Persistent}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classv8_1_1Persistent}{Persistent}}$<$ T, M $>$ \&}]{that }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Persistent}{v8\+::\+Persistent}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, M $>$\+::\mbox{\hyperlink{classv8_1_1Persistent}{Persistent}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classv8_1_1Persistent}{Persistent}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, M $>$ \&}]{that }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 The copy constructors and assignment operator create a \mbox{\hyperlink{classv8_1_1Persistent}{Persistent}} exactly as the \mbox{\hyperlink{classv8_1_1Persistent}{Persistent}} constructor, but the Copy function from the traits class is called, allowing the setting of flags based on the copied \mbox{\hyperlink{classv8_1_1Persistent}{Persistent}}. 
 
@@ -127,7 +127,7 @@ Definition at line 691 of file v8.\+h.
 \index{````~Persistent@{$\sim$\+Persistent}!v8\+::\+Persistent@{v8\+::\+Persistent}}
 \subsubsection{\texorpdfstring{$\sim$\+Persistent()}{~Persistent()}}
 {\footnotesize\ttfamily template$<$class T, class M$>$ \\
-V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Persistent}{v8\+::\+Persistent}}$<$ T, M $>$\+::$\sim$\mbox{\hyperlink{classv8_1_1Persistent}{Persistent}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Persistent}{v8\+::\+Persistent}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, M $>$\+::$\sim$\mbox{\hyperlink{classv8_1_1Persistent}{Persistent}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 The destructor will dispose the \mbox{\hyperlink{classv8_1_1Persistent}{Persistent}} based on the k\+Reset\+In\+Destructor flags in the traits class. Since not calling dispose can result in a memory leak, it is recommended to always set this flag. 
 

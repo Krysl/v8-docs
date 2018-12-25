@@ -1,0 +1,75 @@
+\hypertarget{classv8_1_1internal_1_1torque_1_1TypeOracle}{}\section{v8\+:\+:internal\+:\+:torque\+:\+:Type\+Oracle Class Reference}
+\label{classv8_1_1internal_1_1torque_1_1TypeOracle}\index{v8\+::internal\+::torque\+::\+Type\+Oracle@{v8\+::internal\+::torque\+::\+Type\+Oracle}}
+Inheritance diagram for v8\+:\+:internal\+:\+:torque\+:\+:Type\+Oracle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1torque_1_1TypeOracle}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1TypeOracle_a67e793d4751b2f24363a86c0402226b9}\label{classv8_1_1internal_1_1torque_1_1TypeOracle_a67e793d4751b2f24363a86c0402226b9}} 
+static const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1AbstractType}{Abstract\+Type}} $\ast$ {\bfseries Get\+Abstract\+Type} (const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$parent, std\+::string name, \mbox{\hyperlink{classbool}{bool}} transient, std\+::string generated, \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1AbstractType}{Abstract\+Type}} $\ast$$>$ non\+\_\+constexpr\+\_\+version)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1TypeOracle_a32b1496f6acbf082570e66ec57a64a6d}\label{classv8_1_1internal_1_1torque_1_1TypeOracle_a32b1496f6acbf082570e66ec57a64a6d}} 
+static const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1StructType}{Struct\+Type}} $\ast$ {\bfseries Get\+Struct\+Type} (const std\+::string \&name, const std\+::vector$<$ \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1NameAndType}{Name\+And\+Type}} $>$ \&fields)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1TypeOracle_af4ee9f9a0ea059d8b9675d0c799736a4}\label{classv8_1_1internal_1_1torque_1_1TypeOracle_af4ee9f9a0ea059d8b9675d0c799736a4}} 
+static const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1FunctionPointerType}{Function\+Pointer\+Type}} $\ast$ {\bfseries Get\+Function\+Pointer\+Type} (Type\+Vector argument\+\_\+types, const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$return\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1TypeOracle_a1bf4023e3b9d442164949cc0c21a7511}\label{classv8_1_1internal_1_1torque_1_1TypeOracle_a1bf4023e3b9d442164949cc0c21a7511}} 
+static const std\+::vector$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1FunctionPointerType}{Function\+Pointer\+Type}} $\ast$ $>$ \& {\bfseries All\+Function\+Pointer\+Types} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1TypeOracle_a70379506698a6c7075e10e7f7bd2c8e2}\label{classv8_1_1internal_1_1torque_1_1TypeOracle_a70379506698a6c7075e10e7f7bd2c8e2}} 
+static const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Get\+Union\+Type} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1UnionType}{Union\+Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1TypeOracle_a7ffdffac336baf8ba5e11b302ec15a12}\label{classv8_1_1internal_1_1torque_1_1TypeOracle_a7ffdffac336baf8ba5e11b302ec15a12}} 
+static const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Get\+Union\+Type} (const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$a, const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$b)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1TypeOracle_ac50b9fdf470481ef38c191f6b985f046}\label{classv8_1_1internal_1_1torque_1_1TypeOracle_ac50b9fdf470481ef38c191f6b985f046}} 
+static const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1TopType}{Top\+Type}} $\ast$ {\bfseries Get\+Top\+Type} (std\+::string reason, const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$source\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1TypeOracle_aa692bedf6086bf448d8d9d0f52b95bdf}\label{classv8_1_1internal_1_1torque_1_1TypeOracle_aa692bedf6086bf448d8d9d0f52b95bdf}} 
+static const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Get\+Arguments\+Type} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1TypeOracle_aa4e0527fe09c95a12092743099d91f5e}\label{classv8_1_1internal_1_1torque_1_1TypeOracle_aa4e0527fe09c95a12092743099d91f5e}} 
+static const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Get\+Bool\+Type} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1TypeOracle_ad4200ddb6f79214106ba9ead44510a80}\label{classv8_1_1internal_1_1torque_1_1TypeOracle_ad4200ddb6f79214106ba9ead44510a80}} 
+static const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Get\+Constexpr\+Bool\+Type} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1TypeOracle_a5bb87e62002ead7be1c1f72476904d36}\label{classv8_1_1internal_1_1torque_1_1TypeOracle_a5bb87e62002ead7be1c1f72476904d36}} 
+static const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Get\+Void\+Type} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1TypeOracle_a5b4ed34750a5f96ef45d5a33fbeb0639}\label{classv8_1_1internal_1_1torque_1_1TypeOracle_a5b4ed34750a5f96ef45d5a33fbeb0639}} 
+static const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Get\+Object\+Type} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1TypeOracle_ac934d7ddde07c6f657f8691417743a3b}\label{classv8_1_1internal_1_1torque_1_1TypeOracle_ac934d7ddde07c6f657f8691417743a3b}} 
+static const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Get\+Const\+String\+Type} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1TypeOracle_a57e50df22efd7d4f87bf06521315c5b8}\label{classv8_1_1internal_1_1torque_1_1TypeOracle_a57e50df22efd7d4f87bf06521315c5b8}} 
+static const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Get\+Int\+Ptr\+Type} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1TypeOracle_aa56ae734cd33d4a5c4906871ec1e14ab}\label{classv8_1_1internal_1_1torque_1_1TypeOracle_aa56ae734cd33d4a5c4906871ec1e14ab}} 
+static const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Get\+Never\+Type} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1TypeOracle_a00b69a2c477561843515198729b7f7eb}\label{classv8_1_1internal_1_1torque_1_1TypeOracle_a00b69a2c477561843515198729b7f7eb}} 
+static const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ {\bfseries Get\+Const\+Int31\+Type} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1TypeOracle_a8363c8d7255752c84c26c86284a5f47e}\label{classv8_1_1internal_1_1torque_1_1TypeOracle_a8363c8d7255752c84c26c86284a5f47e}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Implicitly\+Convertable\+From} (const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$to, const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$from)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file type-\/oracle.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/torque/type-\/oracle.\+h\end{DoxyCompactItemize}

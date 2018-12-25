@@ -1,0 +1,65 @@
+\hypertarget{classv8_1_1internal_1_1HandleBase}{}\section{v8\+:\+:internal\+:\+:Handle\+Base Class Reference}
+\label{classv8_1_1internal_1_1HandleBase}\index{v8\+::internal\+::\+Handle\+Base@{v8\+::internal\+::\+Handle\+Base}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Handle\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classv8_1_1internal_1_1HandleBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleBase_a2f4b4f5eec7fab5987e24f2adab385cb}\label{classv8_1_1internal_1_1HandleBase_a2f4b4f5eec7fab5987e24f2adab385cb}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Handle\+Base} (\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$location)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleBase_a6ba15aea5ab1331eb27a03d1bb17d33f}\label{classv8_1_1internal_1_1HandleBase_a6ba15aea5ab1331eb27a03d1bb17d33f}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Handle\+Base} (\mbox{\hyperlink{classuintptr__t}{Address}} object, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleBase_ab08834872d558cd59de22d21edd72c48}\label{classv8_1_1internal_1_1HandleBase_ab08834872d558cd59de22d21edd72c48}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+identical\+\_\+to} (const \mbox{\hyperlink{classv8_1_1internal_1_1HandleBase}{Handle\+Base}} that) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleBase_a34e71ca5684e08cca0c00c22edc78334}\label{classv8_1_1internal_1_1HandleBase_a34e71ca5684e08cca0c00c22edc78334}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+null} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleBase_a4c9d35ec2677062d4a735144396f0304}\label{classv8_1_1internal_1_1HandleBase_a4c9d35ec2677062d4a735144396f0304}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries address} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleBase_ab0cd4ff6a70655c61c64853353d14121}\label{classv8_1_1internal_1_1HandleBase_ab0cd4ff6a70655c61c64853353d14121}} 
+enum {\bfseries Dereference\+Check\+Mode} \{ {\bfseries I\+N\+C\+L\+U\+D\+E\+\_\+\+D\+E\+F\+E\+R\+R\+E\+D\+\_\+\+C\+H\+E\+CK}, 
+{\bfseries N\+O\+\_\+\+D\+E\+F\+E\+R\+R\+E\+D\+\_\+\+C\+H\+E\+CK}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleBase_a83fc51e84d42f98b74ae0b0dba7efce9}\label{classv8_1_1internal_1_1HandleBase_a83fc51e84d42f98b74ae0b0dba7efce9}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries operator$\ast$} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleBase_a756d12b91b5963a7627e95883cd18d2e}\label{classv8_1_1internal_1_1HandleBase_a756d12b91b5963a7627e95883cd18d2e}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{Address}} $\ast$ {\bfseries location} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleBase_a999895c78d7deda166bcb60cbba70ccf}\label{classv8_1_1internal_1_1HandleBase_a999895c78d7deda166bcb60cbba70ccf}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE {\bfseries Is\+Dereference\+Allowed} (Dereference\+Check\+Mode mode) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleBase_ad89a15681c5f6f8c297018053ea7d8a7}\label{classv8_1_1internal_1_1HandleBase_ad89a15681c5f6f8c297018053ea7d8a7}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$ {\bfseries location\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 42 of file handles.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/handles.\+h\item 
+v8/src/handles-\/inl.\+h\end{DoxyCompactItemize}

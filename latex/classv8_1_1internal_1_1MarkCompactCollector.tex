@@ -1,0 +1,175 @@
+\hypertarget{classv8_1_1internal_1_1MarkCompactCollector}{}\section{v8\+:\+:internal\+:\+:Mark\+Compact\+Collector Class Reference}
+\label{classv8_1_1internal_1_1MarkCompactCollector}\index{v8\+::internal\+::\+Mark\+Compact\+Collector@{v8\+::internal\+::\+Mark\+Compact\+Collector}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Mark\+Compact\+Collector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1MarkCompactCollector}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1MarkCompactCollector_1_1CustomRootBodyMarkingVisitor}{Custom\+Root\+Body\+Marking\+Visitor}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1MarkCompactCollector_1_1MarkingWorklist}{Marking\+Worklist}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1MarkCompactCollector_1_1RootMarkingVisitor}{Root\+Marking\+Visitor}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a73ad07045ed00233f92402a577f5361e}\label{classv8_1_1internal_1_1MarkCompactCollector_a73ad07045ed00233f92402a577f5361e}} 
+enum {\bfseries Iteration\+Mode} \{ {\bfseries k\+Keep\+Marking}, 
+{\bfseries k\+Clear\+Markbits}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a45940352bf1cd815674d043829a82846}\label{classv8_1_1internal_1_1MarkCompactCollector_a45940352bf1cd815674d043829a82846}} 
+using {\bfseries Marking\+State} = \mbox{\hyperlink{classv8_1_1internal_1_1MajorNonAtomicMarkingState}{Major\+Non\+Atomic\+Marking\+State}}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a3006ec52836c22d76d860e1dd17fdf78}\label{classv8_1_1internal_1_1MarkCompactCollector_a3006ec52836c22d76d860e1dd17fdf78}} 
+using {\bfseries Non\+Atomic\+Marking\+State} = \mbox{\hyperlink{classv8_1_1internal_1_1MajorNonAtomicMarkingState}{Major\+Non\+Atomic\+Marking\+State}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a08b1b1f69a60b3f15071682e8868c4ba}\label{classv8_1_1internal_1_1MarkCompactCollector_a08b1b1f69a60b3f15071682e8868c4ba}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MajorNonAtomicMarkingState}{Marking\+State}} $\ast$ {\bfseries marking\+\_\+state} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_ab57a6b228d92770d1b53dabadb26319d}\label{classv8_1_1internal_1_1MarkCompactCollector_ab57a6b228d92770d1b53dabadb26319d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MajorNonAtomicMarkingState}{Non\+Atomic\+Marking\+State}} $\ast$ {\bfseries non\+\_\+atomic\+\_\+marking\+\_\+state} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_aacba92db84f5cabd530adb78d58c25b7}\label{classv8_1_1internal_1_1MarkCompactCollector_aacba92db84f5cabd530adb78d58c25b7}} 
+void {\bfseries Set\+Up} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a04c51f35ac0a121836af9a83cae831aa}\label{classv8_1_1internal_1_1MarkCompactCollector_a04c51f35ac0a121836af9a83cae831aa}} 
+void {\bfseries Tear\+Down} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a74aa9ec04438f5c39e11c1414435ab6d}\label{classv8_1_1internal_1_1MarkCompactCollector_a74aa9ec04438f5c39e11c1414435ab6d}} 
+void {\bfseries Collect\+Garbage} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a3cf7f62c683dbc4b89a6f71b7d60cc37}\label{classv8_1_1internal_1_1MarkCompactCollector_a3cf7f62c683dbc4b89a6f71b7d60cc37}} 
+void {\bfseries Collect\+Evacuation\+Candidates} (\mbox{\hyperlink{classv8_1_1internal_1_1PagedSpace}{Paged\+Space}} $\ast$space)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a0859ca3d00c450bb2c5a354add25fff4}\label{classv8_1_1internal_1_1MarkCompactCollector_a0859ca3d00c450bb2c5a354add25fff4}} 
+void {\bfseries Add\+Evacuation\+Candidate} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$p)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a88bb504c9d7b76a16ab2f067e907574c}\label{classv8_1_1internal_1_1MarkCompactCollector_a88bb504c9d7b76a16ab2f067e907574c}} 
+void {\bfseries Prepare} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_ab298a4186180480a32cdc871b0471aec}\label{classv8_1_1internal_1_1MarkCompactCollector_ab298a4186180480a32cdc871b0471aec}} 
+void {\bfseries Finish\+Concurrent\+Marking} (Concurrent\+Marking\+::\+Stop\+Request stop\+\_\+request)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a43093f29487f7a532733fe34457e1d85}\label{classv8_1_1internal_1_1MarkCompactCollector_a43093f29487f7a532733fe34457e1d85}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Start\+Compaction} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a4fdf8ab05e0f2a84df042b4197fcda89}\label{classv8_1_1internal_1_1MarkCompactCollector_a4fdf8ab05e0f2a84df042b4197fcda89}} 
+void {\bfseries Abort\+Compaction} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a358a625342196fb58080e1709a136265}\label{classv8_1_1internal_1_1MarkCompactCollector_a358a625342196fb58080e1709a136265}} 
+void {\bfseries Record\+Reloc\+Slot} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$rinfo, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$target)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a54ccab1f7e9bad6738abdaef64d13eec}\label{classv8_1_1internal_1_1MarkCompactCollector_a54ccab1f7e9bad6738abdaef64d13eec}} 
+void {\bfseries Record\+Live\+Slots\+On\+Page} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a702de8dcf3805cb26737fd8c49ee418f}\label{classv8_1_1internal_1_1MarkCompactCollector_a702de8dcf3805cb26737fd8c49ee418f}} 
+void {\bfseries Update\+Slots} (Slots\+Buffer $\ast$buffer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_aa457d18f672391249f62c8f3da4a2bd2}\label{classv8_1_1internal_1_1MarkCompactCollector_aa457d18f672391249f62c8f3da4a2bd2}} 
+void {\bfseries Update\+Slots\+Recorded\+In} (Slots\+Buffer $\ast$buffer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a0aefdd8b8b50a471f4ab14827b26c4ad}\label{classv8_1_1internal_1_1MarkCompactCollector_a0aefdd8b8b50a471f4ab14827b26c4ad}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+compacting} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a9c2131e6019f6fbd4c7a20422bb6a01c}\label{classv8_1_1internal_1_1MarkCompactCollector_a9c2131e6019f6fbd4c7a20422bb6a01c}} 
+void {\bfseries Ensure\+Sweeping\+Completed} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_ab06ec106c9f085f401ed1c27a514eca4}\label{classv8_1_1internal_1_1MarkCompactCollector_ab06ec106c9f085f401ed1c27a514eca4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries sweeping\+\_\+in\+\_\+progress} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_abc978341e6dba72fc172ea9b1b40b4a4}\label{classv8_1_1internal_1_1MarkCompactCollector_abc978341e6dba72fc172ea9b1b40b4a4}} 
+void {\bfseries set\+\_\+evacuation} (\mbox{\hyperlink{classbool}{bool}} evacuation)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_aa483c859303e6eca4f07a496dab237d1}\label{classv8_1_1internal_1_1MarkCompactCollector_aa483c859303e6eca4f07a496dab237d1}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries evacuation} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a83131cc57a0b02fe0f5eb3df05cb3f2f}\label{classv8_1_1internal_1_1MarkCompactCollector_a83131cc57a0b02fe0f5eb3df05cb3f2f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MarkCompactCollector_1_1MarkingWorklist}{Marking\+Worklist}} $\ast$ {\bfseries marking\+\_\+worklist} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a13bc63346bb82388df996ca28b39f6d3}\label{classv8_1_1internal_1_1MarkCompactCollector_a13bc63346bb82388df996ca28b39f6d3}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1WeakObjects}{Weak\+Objects}} $\ast$ {\bfseries weak\+\_\+objects} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_af303e1d12f3003c7ed836feffface72f}\label{classv8_1_1internal_1_1MarkCompactCollector_af303e1d12f3003c7ed836feffface72f}} 
+void {\bfseries Add\+Transition\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1TransitionArray}{Transition\+Array}} $\ast$array)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a9f99611314644c7ce3b300ecec612288}\label{classv8_1_1internal_1_1MarkCompactCollector_a9f99611314644c7ce3b300ecec612288}} 
+void {\bfseries Add\+Ephemeron\+Hash\+Table} (\mbox{\hyperlink{classv8_1_1internal_1_1EphemeronHashTable}{Ephemeron\+Hash\+Table}} table)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a403995d1d708945f5fdf6e2fe3eb8aa0}\label{classv8_1_1internal_1_1MarkCompactCollector_a403995d1d708945f5fdf6e2fe3eb8aa0}} 
+void {\bfseries Add\+Ephemeron} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$key, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_ac28189584a3b370ad0a90ab1b5073b73}\label{classv8_1_1internal_1_1MarkCompactCollector_ac28189584a3b370ad0a90ab1b5073b73}} 
+void {\bfseries Add\+Weak\+Reference} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObjectSlot}{Heap\+Object\+Slot}} slot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a349d41855c969eed2ce34ae7fd9c5c24}\label{classv8_1_1internal_1_1MarkCompactCollector_a349d41855c969eed2ce34ae7fd9c5c24}} 
+void {\bfseries Add\+Weak\+Object\+In\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object, \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a5616373b22ad0f4fd144967db204f5e2}\label{classv8_1_1internal_1_1MarkCompactCollector_a5616373b22ad0f4fd144967db204f5e2}} 
+void {\bfseries Add\+Weak\+Cell} (\mbox{\hyperlink{classv8_1_1internal_1_1JSWeakCell}{J\+S\+Weak\+Cell}} $\ast$weak\+\_\+cell)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_ad79f7fc4a655bc205c8c13fc11d37974}\label{classv8_1_1internal_1_1MarkCompactCollector_ad79f7fc4a655bc205c8c13fc11d37974}} 
+void {\bfseries Add\+Newly\+Discovered} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a235e4fc226f4d1987e55574f537c628a}\label{classv8_1_1internal_1_1MarkCompactCollector_a235e4fc226f4d1987e55574f537c628a}} 
+void {\bfseries Reset\+Newly\+Discovered} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_aa1f597b1333322f08579ed868243ab80}\label{classv8_1_1internal_1_1MarkCompactCollector_aa1f597b1333322f08579ed868243ab80}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Sweeper}{Sweeper}} $\ast$ {\bfseries sweeper} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a17e6e45984b6757652c6611c22c17cff}\label{classv8_1_1internal_1_1MarkCompactCollector_a17e6e45984b6757652c6611c22c17cff}} 
+void {\bfseries Verify\+Marking} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a0abc63f47175706d281816006d022508}\label{classv8_1_1internal_1_1MarkCompactCollector_a0abc63f47175706d281816006d022508}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+On\+Evacuation\+Candidate} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$obj)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a35752614f65ab902faa4ea9196dd369a}\label{classv8_1_1internal_1_1MarkCompactCollector_a35752614f65ab902faa4ea9196dd369a}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+On\+Evacuation\+Candidate} (\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} obj)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a92822094ae0d190711b58298e9b9bc30}\label{classv8_1_1internal_1_1MarkCompactCollector_a92822094ae0d190711b58298e9b9bc30}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Record\+Slot} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} slot, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$target)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a4c6bc8969bd3cfacd70160782de86add}\label{classv8_1_1internal_1_1MarkCompactCollector_a4c6bc8969bd3cfacd70160782de86add}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Record\+Slot} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObjectSlot}{Heap\+Object\+Slot}} slot, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$target)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_adae8a006dc91c15419cee45dd7813631}\label{classv8_1_1internal_1_1MarkCompactCollector_adae8a006dc91c15419cee45dd7813631}} 
+class {\bfseries Ephemeron\+Hash\+Table\+Marking\+Task}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a5994699cb3b3b999d9252e2b46375b72}\label{classv8_1_1internal_1_1MarkCompactCollector_a5994699cb3b3b999d9252e2b46375b72}} 
+class {\bfseries Full\+Evacuator}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a3d69975be2e998e7bf2dcd1b1c8b4577}\label{classv8_1_1internal_1_1MarkCompactCollector_a3d69975be2e998e7bf2dcd1b1c8b4577}} 
+class {\bfseries Heap}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkCompactCollector_a9aac51e6e68df5e4add0792032864173}\label{classv8_1_1internal_1_1MarkCompactCollector_a9aac51e6e68df5e4add0792032864173}} 
+class {\bfseries Record\+Migrated\+Slot\+Visitor}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 457 of file mark-\/compact.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/mark-\/compact.\+h\item 
+v8/src/heap/mark-\/compact-\/inl.\+h\item 
+v8/src/heap/mark-\/compact.\+cc\end{DoxyCompactItemize}

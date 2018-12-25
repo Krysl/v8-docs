@@ -1,0 +1,67 @@
+\hypertarget{classv8_1_1internal_1_1PreParsedScopeDataBuilder}{}\section{v8\+:\+:internal\+:\+:Pre\+Parsed\+Scope\+Data\+Builder Class Reference}
+\label{classv8_1_1internal_1_1PreParsedScopeDataBuilder}\index{v8\+::internal\+::\+Pre\+Parsed\+Scope\+Data\+Builder@{v8\+::internal\+::\+Pre\+Parsed\+Scope\+Data\+Builder}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Pre\+Parsed\+Scope\+Data\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1PreParsedScopeDataBuilder}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1PreParsedScopeDataBuilder_1_1ByteData}{Byte\+Data}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1PreParsedScopeDataBuilder_1_1DataGatheringScope}{Data\+Gathering\+Scope}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParsedScopeDataBuilder_a657a3dd84dced821700ec3d18e370b1b}\label{classv8_1_1internal_1_1PreParsedScopeDataBuilder_a657a3dd84dced821700ec3d18e370b1b}} 
+{\bfseries Pre\+Parsed\+Scope\+Data\+Builder} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1PreParsedScopeDataBuilder}{Pre\+Parsed\+Scope\+Data\+Builder}} $\ast$parent)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParsedScopeDataBuilder_ab621c81c46991598f08ba680b6d26e94}\label{classv8_1_1internal_1_1PreParsedScopeDataBuilder_ab621c81c46991598f08ba680b6d26e94}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParsedScopeDataBuilder}{Pre\+Parsed\+Scope\+Data\+Builder}} $\ast$ {\bfseries parent} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParsedScopeDataBuilder_ae38622f4dc10a3d9fa7390fd67cc272a}\label{classv8_1_1internal_1_1PreParsedScopeDataBuilder_ae38622f4dc10a3d9fa7390fd67cc272a}} 
+void {\bfseries Save\+Scope\+Allocation\+Data} (\mbox{\hyperlink{classv8_1_1internal_1_1DeclarationScope}{Declaration\+Scope}} $\ast$scope)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParsedScopeDataBuilder_aad2ea67d9bd4b053d7b1efe02d736ef1}\label{classv8_1_1internal_1_1PreParsedScopeDataBuilder_aad2ea67d9bd4b053d7b1efe02d736ef1}} 
+void {\bfseries Bailout} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParsedScopeDataBuilder_a2256f65f82525ee9a6273aa2d5455827}\label{classv8_1_1internal_1_1PreParsedScopeDataBuilder_a2256f65f82525ee9a6273aa2d5455827}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries bailed\+\_\+out} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParsedScopeDataBuilder_a6f8ac669e0348ddd76f192a3b6ff9444}\label{classv8_1_1internal_1_1PreParsedScopeDataBuilder_a6f8ac669e0348ddd76f192a3b6ff9444}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Contains\+Inner\+Functions} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParsedScopeDataBuilder_a478c8a68576ea59f647860f5c24b7833}\label{classv8_1_1internal_1_1PreParsedScopeDataBuilder_a478c8a68576ea59f647860f5c24b7833}} 
+void {\bfseries Add\+Skippable\+Function} (\mbox{\hyperlink{classint}{int}} start\+\_\+position, \mbox{\hyperlink{classint}{int}} end\+\_\+position, \mbox{\hyperlink{classint}{int}} num\+\_\+parameters, \mbox{\hyperlink{classint}{int}} num\+\_\+inner\+\_\+functions, Language\+Mode language\+\_\+mode, \mbox{\hyperlink{classbool}{bool}} uses\+\_\+super\+\_\+property)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParsedScopeDataBuilder_a4bf08752b201fcc441a61de5c97a8363}\label{classv8_1_1internal_1_1PreParsedScopeDataBuilder_a4bf08752b201fcc441a61de5c97a8363}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Scope\+Needs\+Data} (\mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$scope)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParsedScopeDataBuilder_a034e4e4f8114848893b0c23704a4faec}\label{classv8_1_1internal_1_1PreParsedScopeDataBuilder_a034e4e4f8114848893b0c23704a4faec}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Scope\+Is\+Skippable\+Function\+Scope} (\mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$scope)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PreParsedScopeDataBuilder_a08f2c2f9df8cc610c7632defaec2380e}\label{classv8_1_1internal_1_1PreParsedScopeDataBuilder_a08f2c2f9df8cc610c7632defaec2380e}} 
+class {\bfseries Builder\+Produced\+Pre\+Parsed\+Scope\+Data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 65 of file preparsed-\/scope-\/data.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/parsing/preparsed-\/scope-\/data.\+h\item 
+v8/src/parsing/preparsed-\/scope-\/data.\+cc\end{DoxyCompactItemize}

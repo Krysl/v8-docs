@@ -1,0 +1,116 @@
+\hypertarget{classv8_1_1internal_1_1Bitmap}{}\section{v8\+:\+:internal\+:\+:Bitmap Class Reference}
+\label{classv8_1_1internal_1_1Bitmap}\index{v8\+::internal\+::\+Bitmap@{v8\+::internal\+::\+Bitmap}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_af6f993e843f40bdb1cc71e3243ee0fc4}\label{classv8_1_1internal_1_1Bitmap_af6f993e843f40bdb1cc71e3243ee0fc4}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Cells\+Count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_ad2b7374cc1eb4e243877d6e5315a7237}\label{classv8_1_1internal_1_1Bitmap_ad2b7374cc1eb4e243877d6e5315a7237}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuint32__t}{Mark\+Bit\+::\+Cell\+Type}} $\ast$ {\bfseries cells} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_a9a314b5d6a0ae6ca7acd98c42f34145d}\label{classv8_1_1internal_1_1Bitmap_a9a314b5d6a0ae6ca7acd98c42f34145d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MarkBit}{Mark\+Bit}} {\bfseries Mark\+Bit\+From\+Index} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_ad0b68d9f8390826c5ff192714d21af11}\label{classv8_1_1internal_1_1Bitmap_ad0b68d9f8390826c5ff192714d21af11}} 
+void {\bfseries Clear} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_a2db95efa426218c20c260ab060bf9460}\label{classv8_1_1internal_1_1Bitmap_a2db95efa426218c20c260ab060bf9460}} 
+void {\bfseries Mark\+All\+Bits} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_a5115383763ec243c135098f54f5398b0}\label{classv8_1_1internal_1_1Bitmap_a5115383763ec243c135098f54f5398b0}} 
+{\footnotesize template$<$Access\+Mode mode = Access\+Mode\+::\+N\+O\+N\+\_\+\+A\+T\+O\+M\+IC$>$ }\\void {\bfseries Clear\+Bits\+In\+Cell} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} cell\+\_\+index, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} mask)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_a26189e45d43cead44f23a0349d5933f9}\label{classv8_1_1internal_1_1Bitmap_a26189e45d43cead44f23a0349d5933f9}} 
+{\footnotesize template$<$Access\+Mode mode = Access\+Mode\+::\+N\+O\+N\+\_\+\+A\+T\+O\+M\+IC$>$ }\\void {\bfseries Set\+Bits\+In\+Cell} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} cell\+\_\+index, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} mask)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_a0547611bc9e8d67730df865662dc83f3}\label{classv8_1_1internal_1_1Bitmap_a0547611bc9e8d67730df865662dc83f3}} 
+void {\bfseries Set\+Range} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} start\+\_\+index, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} end\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_ad6f35f42ead710e4f88a111bd0598835}\label{classv8_1_1internal_1_1Bitmap_ad6f35f42ead710e4f88a111bd0598835}} 
+void {\bfseries Clear\+Range} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} start\+\_\+index, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} end\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_a04d486561862dd798649f3e1d2d4408e}\label{classv8_1_1internal_1_1Bitmap_a04d486561862dd798649f3e1d2d4408e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries All\+Bits\+Set\+In\+Range} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} start\+\_\+index, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} end\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_aca673da38ce20057742c26c322cbdd5a}\label{classv8_1_1internal_1_1Bitmap_aca673da38ce20057742c26c322cbdd5a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries All\+Bits\+Clear\+In\+Range} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} start\+\_\+index, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} end\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_a62cecf8d8ab89f87fc4db5555b10b6b0}\label{classv8_1_1internal_1_1Bitmap_a62cecf8d8ab89f87fc4db5555b10b6b0}} 
+void {\bfseries Print} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_adcc903a3d3788b077a87977dc06122ff}\label{classv8_1_1internal_1_1Bitmap_adcc903a3d3788b077a87977dc06122ff}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Clean} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_ad66f6785ba1628091c2b57b00b039d28}\label{classv8_1_1internal_1_1Bitmap_ad66f6785ba1628091c2b57b00b039d28}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Cells\+For\+Length} (\mbox{\hyperlink{classint}{int}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_ad30238eed8d255dfa43bbb26ae82c5c3}\label{classv8_1_1internal_1_1Bitmap_ad30238eed8d255dfa43bbb26ae82c5c3}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Index\+To\+Cell} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_aa252ce8d3b20887e35681a1b299d58db}\label{classv8_1_1internal_1_1Bitmap_aa252ce8d3b20887e35681a1b299d58db}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Index\+In\+Cell} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_a69757951247cf9915bcad089df14c0a0}\label{classv8_1_1internal_1_1Bitmap_a69757951247cf9915bcad089df14c0a0}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Cell\+Align\+Index} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_a82bf7909d4127553799315e190756a85}\label{classv8_1_1internal_1_1Bitmap_a82bf7909d4127553799315e190756a85}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Bitmap}{Bitmap}} $\ast$ {\bfseries From\+Address} (\mbox{\hyperlink{classuintptr__t}{Address}} addr)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_ae863e06b48d36390b61adb7a17cf3b8a}\label{classv8_1_1internal_1_1Bitmap_ae863e06b48d36390b61adb7a17cf3b8a}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Bits\+Per\+Cell} = 32
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_ac36de25dc5fe77ac7d032806046f8b7a}\label{classv8_1_1internal_1_1Bitmap_ac36de25dc5fe77ac7d032806046f8b7a}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Bits\+Per\+Cell\+Log2} = 5
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_ab1aa75c88deb4ec9719b36f43b72ddff}\label{classv8_1_1internal_1_1Bitmap_ab1aa75c88deb4ec9719b36f43b72ddff}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Bit\+Index\+Mask} = k\+Bits\+Per\+Cell -\/ 1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_a080e9299f086ebfb682fbc658845faf9}\label{classv8_1_1internal_1_1Bitmap_a080e9299f086ebfb682fbc658845faf9}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Bytes\+Per\+Cell} = k\+Bits\+Per\+Cell / k\+Bits\+Per\+Byte
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_a3c76e7d38fe4a2c25b7f973ebdd9ae64}\label{classv8_1_1internal_1_1Bitmap_a3c76e7d38fe4a2c25b7f973ebdd9ae64}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Bytes\+Per\+Cell\+Log2} = k\+Bits\+Per\+Cell\+Log2 -\/ k\+Bits\+Per\+Byte\+Log2
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_a7767d3d50dcd1efdc3c5427dcb62168e}\label{classv8_1_1internal_1_1Bitmap_a7767d3d50dcd1efdc3c5427dcb62168e}} 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Length} = (1 $<$$<$ k\+Page\+Size\+Bits) $>$$>$ (k\+Pointer\+Size\+Log2)
+\item 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 93 of file marking.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1Bitmap_aace66f0559638e54076e0d27b8d9ecc3}\label{classv8_1_1internal_1_1Bitmap_aace66f0559638e54076e0d27b8d9ecc3}} 
+\index{v8\+::internal\+::\+Bitmap@{v8\+::internal\+::\+Bitmap}!k\+Size@{k\+Size}}
+\index{k\+Size@{k\+Size}!v8\+::internal\+::\+Bitmap@{v8\+::internal\+::\+Bitmap}}
+\subsubsection{\texorpdfstring{k\+Size}{kSize}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} v8\+::internal\+::\+Bitmap\+::k\+Size\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= (1 << kPageSizeBits) >>
+                              (kPointerSizeLog2 + kBitsPerByteLog2)
+\end{DoxyCode}
+
+
+Definition at line 103 of file marking.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/marking.\+h\item 
+v8/src/heap/marking.\+cc\end{DoxyCompactItemize}

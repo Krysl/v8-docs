@@ -1,0 +1,64 @@
+\hypertarget{classv8_1_1Deserializer}{}\section{v8\+:\+:Deserializer Class Reference}
+\label{classv8_1_1Deserializer}\index{v8\+::\+Deserializer@{v8\+::\+Deserializer}}
+Inheritance diagram for v8\+:\+:Deserializer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1Deserializer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1Deserializer_a4f08262812387a2eec174b211a9a391f}\label{classv8_1_1Deserializer_a4f08262812387a2eec174b211a9a391f}} 
+{\bfseries Deserializer} (Isolate $\ast$isolate, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1SerializationData}{Serialization\+Data}} $>$ data)
+\item 
+\mbox{\Hypertarget{classv8_1_1Deserializer_aa42930b466c15faee0993f586eaa59ec}\label{classv8_1_1Deserializer_aa42930b466c15faee0993f586eaa59ec}} 
+\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ {\bfseries Read\+Value} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ Context $>$ context)
+\item 
+\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}} $>$ \mbox{\hyperlink{classv8_1_1Deserializer_a2a0c866dd14f5482bf5e131dcd181bd5}{Get\+Shared\+Array\+Buffer\+From\+Id}} (Isolate $\ast$isolate, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} clone\+\_\+id) override
+\item 
+\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1WasmCompiledModule}{Wasm\+Compiled\+Module}} $>$ \mbox{\hyperlink{classv8_1_1Deserializer_ad120ac7532b6965d9cefdef29f971661}{Get\+Wasm\+Module\+From\+Id}} (Isolate $\ast$isolate, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} transfer\+\_\+id) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3230 of file d8.\+cc.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1Deserializer_a2a0c866dd14f5482bf5e131dcd181bd5}\label{classv8_1_1Deserializer_a2a0c866dd14f5482bf5e131dcd181bd5}} 
+\index{v8\+::\+Deserializer@{v8\+::\+Deserializer}!Get\+Shared\+Array\+Buffer\+From\+Id@{Get\+Shared\+Array\+Buffer\+From\+Id}}
+\index{Get\+Shared\+Array\+Buffer\+From\+Id@{Get\+Shared\+Array\+Buffer\+From\+Id}!v8\+::\+Deserializer@{v8\+::\+Deserializer}}
+\subsubsection{\texorpdfstring{Get\+Shared\+Array\+Buffer\+From\+Id()}{GetSharedArrayBufferFromId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}}$>$ v8\+::\+Deserializer\+::\+Get\+Shared\+Array\+Buffer\+From\+Id (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}}}]{clone\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get a \mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}} given a clone\+\_\+id previously provided by Value\+Serializer\+::\+Get\+Shared\+Array\+Buffer\+Id 
+
+Reimplemented from \mbox{\hyperlink{classv8_1_1ValueDeserializer_1_1Delegate_afaffdb0ab5dd659ae89377d5e9b6cbf7}{v8\+::\+Value\+Deserializer\+::\+Delegate}}.
+
+
+
+Definition at line 3255 of file d8.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1Deserializer_ad120ac7532b6965d9cefdef29f971661}\label{classv8_1_1Deserializer_ad120ac7532b6965d9cefdef29f971661}} 
+\index{v8\+::\+Deserializer@{v8\+::\+Deserializer}!Get\+Wasm\+Module\+From\+Id@{Get\+Wasm\+Module\+From\+Id}}
+\index{Get\+Wasm\+Module\+From\+Id@{Get\+Wasm\+Module\+From\+Id}!v8\+::\+Deserializer@{v8\+::\+Deserializer}}
+\subsubsection{\texorpdfstring{Get\+Wasm\+Module\+From\+Id()}{GetWasmModuleFromId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1WasmCompiledModule}{Wasm\+Compiled\+Module}}$>$ v8\+::\+Deserializer\+::\+Get\+Wasm\+Module\+From\+Id (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}}}]{transfer\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get a \mbox{\hyperlink{classv8_1_1WasmCompiledModule}{Wasm\+Compiled\+Module}} given a transfer\+\_\+id previously provided by Value\+Serializer\+::\+Get\+Wasm\+Module\+Transfer\+Id 
+
+Reimplemented from \mbox{\hyperlink{classv8_1_1ValueDeserializer_1_1Delegate_a23fc01bc6da1da36bf1d555edd493d83}{v8\+::\+Value\+Deserializer\+::\+Delegate}}.
+
+
+
+Definition at line 3267 of file d8.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/d8.\+cc\end{DoxyCompactItemize}

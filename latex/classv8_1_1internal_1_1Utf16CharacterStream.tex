@@ -1,0 +1,110 @@
+\hypertarget{classv8_1_1internal_1_1Utf16CharacterStream}{}\section{v8\+:\+:internal\+:\+:Utf16\+Character\+Stream Class Reference}
+\label{classv8_1_1internal_1_1Utf16CharacterStream}\index{v8\+::internal\+::\+Utf16\+Character\+Stream@{v8\+::internal\+::\+Utf16\+Character\+Stream}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Utf16\+Character\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.176471cm]{classv8_1_1internal_1_1Utf16CharacterStream}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_a3bd84c7da052db51a5cf26e6356a6e11}\label{classv8_1_1internal_1_1Utf16CharacterStream_a3bd84c7da052db51a5cf26e6356a6e11}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries set\+\_\+parser\+\_\+error} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_a5301fbc1f6cbd82c6fbb9dc91b3fd5c2}\label{classv8_1_1internal_1_1Utf16CharacterStream_a5301fbc1f6cbd82c6fbb9dc91b3fd5c2}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries reset\+\_\+parser\+\_\+error\+\_\+flag} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_a3a226b0b173c5ee046ea8f2f12184b3c}\label{classv8_1_1internal_1_1Utf16CharacterStream_a3a226b0b173c5ee046ea8f2f12184b3c}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+parser\+\_\+error} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_ad5e7aea844336ef2d23fec2f73bfee3c}\label{classv8_1_1internal_1_1Utf16CharacterStream_ad5e7aea844336ef2d23fec2f73bfee3c}} 
+uc32 {\bfseries Peek} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_a411192b2cf2212fcc3a1167a46906b79}\label{classv8_1_1internal_1_1Utf16CharacterStream_a411192b2cf2212fcc3a1167a46906b79}} 
+uc32 {\bfseries Advance} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_aff3c06034d6a83d9584cde81ab6a7ce8}\label{classv8_1_1internal_1_1Utf16CharacterStream_aff3c06034d6a83d9584cde81ab6a7ce8}} 
+{\footnotesize template$<$typename Function\+Type $>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE uc32 {\bfseries Advance\+Until} (Function\+Type check)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_a219b5bfb5eb991c21874ff4efcdd34f3}\label{classv8_1_1internal_1_1Utf16CharacterStream_a219b5bfb5eb991c21874ff4efcdd34f3}} 
+void {\bfseries Back} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_a05e023ae96736d07fd7f89305a0213c6}\label{classv8_1_1internal_1_1Utf16CharacterStream_a05e023ae96736d07fd7f89305a0213c6}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries pos} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_a7a5e01f4d7c6b861c0d35f2bf825f805}\label{classv8_1_1internal_1_1Utf16CharacterStream_a7a5e01f4d7c6b861c0d35f2bf825f805}} 
+void {\bfseries Seek} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_a07efbd9ed6810be10b259a1c9a07ba14}\label{classv8_1_1internal_1_1Utf16CharacterStream_a07efbd9ed6810be10b259a1c9a07ba14}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries can\+\_\+be\+\_\+cloned\+\_\+for\+\_\+parallel\+\_\+access} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_aabcaf289ce352d1af55c0204647b7dd9}\label{classv8_1_1internal_1_1Utf16CharacterStream_aabcaf289ce352d1af55c0204647b7dd9}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries can\+\_\+be\+\_\+cloned} () const =0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_aa1b52c43e22f2f2ff1923169a780850b}\label{classv8_1_1internal_1_1Utf16CharacterStream_aa1b52c43e22f2f2ff1923169a780850b}} 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Utf16CharacterStream}{Utf16\+Character\+Stream}} $>$ {\bfseries Clone} () const =0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_ad117217db7d8df9719d79b3cc5aa4aa8}\label{classv8_1_1internal_1_1Utf16CharacterStream_ad117217db7d8df9719d79b3cc5aa4aa8}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries can\+\_\+access\+\_\+heap} () const =0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_a62781098d4df487da7dd94582f5617d1}\label{classv8_1_1internal_1_1Utf16CharacterStream_a62781098d4df487da7dd94582f5617d1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RuntimeCallStats}{Runtime\+Call\+Stats}} $\ast$ {\bfseries runtime\+\_\+call\+\_\+stats} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_a9e91463788ada53b2de96ec6f3a7e358}\label{classv8_1_1internal_1_1Utf16CharacterStream_a9e91463788ada53b2de96ec6f3a7e358}} 
+void {\bfseries set\+\_\+runtime\+\_\+call\+\_\+stats} (\mbox{\hyperlink{classv8_1_1internal_1_1RuntimeCallStats}{Runtime\+Call\+Stats}} $\ast$runtime\+\_\+call\+\_\+stats)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_ab9485ef6f823b9629ad87a3070f9448a}\label{classv8_1_1internal_1_1Utf16CharacterStream_ab9485ef6f823b9629ad87a3070f9448a}} 
+static const uc32 {\bfseries k\+End\+Of\+Input} = -\/1
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_a860aafa22a7858f33c04b96c1041ee76}\label{classv8_1_1internal_1_1Utf16CharacterStream_a860aafa22a7858f33c04b96c1041ee76}} 
+{\bfseries Utf16\+Character\+Stream} (const uint16\+\_\+t $\ast$buffer\+\_\+start, const uint16\+\_\+t $\ast$buffer\+\_\+cursor, const uint16\+\_\+t $\ast$buffer\+\_\+end, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} buffer\+\_\+pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_aa06a0877cfd090955722e22fc1d08c5f}\label{classv8_1_1internal_1_1Utf16CharacterStream_aa06a0877cfd090955722e22fc1d08c5f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Read\+Block\+Checked} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_ab8cd17e3a68071c51810852e2267a2f2}\label{classv8_1_1internal_1_1Utf16CharacterStream_ab8cd17e3a68071c51810852e2267a2f2}} 
+void {\bfseries Read\+Block\+At} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} new\+\_\+pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_a1b78e988d057208df027c0c83431d590}\label{classv8_1_1internal_1_1Utf16CharacterStream_a1b78e988d057208df027c0c83431d590}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Read\+Block} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_a280cbd9f8fde89ecdf69a753e49e6cb7}\label{classv8_1_1internal_1_1Utf16CharacterStream_a280cbd9f8fde89ecdf69a753e49e6cb7}} 
+const uint16\+\_\+t $\ast$ {\bfseries buffer\+\_\+start\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_ac90ab8606aa8b34c62cb4d0005fe64a6}\label{classv8_1_1internal_1_1Utf16CharacterStream_ac90ab8606aa8b34c62cb4d0005fe64a6}} 
+const uint16\+\_\+t $\ast$ {\bfseries buffer\+\_\+cursor\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_a13a08f07ebe18c4632db92a4e9f19e7c}\label{classv8_1_1internal_1_1Utf16CharacterStream_a13a08f07ebe18c4632db92a4e9f19e7c}} 
+const uint16\+\_\+t $\ast$ {\bfseries buffer\+\_\+end\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_a058db637f2822a7f2a01ddf62ae2d039}\label{classv8_1_1internal_1_1Utf16CharacterStream_a058db637f2822a7f2a01ddf62ae2d039}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries buffer\+\_\+pos\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_a1caf68cd2f6f0ae2b646d9f773b04c6f}\label{classv8_1_1internal_1_1Utf16CharacterStream_a1caf68cd2f6f0ae2b646d9f773b04c6f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RuntimeCallStats}{Runtime\+Call\+Stats}} $\ast$ {\bfseries runtime\+\_\+call\+\_\+stats\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Utf16CharacterStream_a07c9c6b4a20e8005919b7a81a656f7b9}\label{classv8_1_1internal_1_1Utf16CharacterStream_a07c9c6b4a20e8005919b7a81a656f7b9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+parser\+\_\+error\+\_\+} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 37 of file scanner.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/parsing/scanner.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\hypertarget{classv8_1_1internal_1_1FeedbackMetadata}{}\section{v8\+:\+:internal\+:\+:Feedback\+Metadata Class Reference}
+\label{classv8_1_1internal_1_1FeedbackMetadata}\index{v8\+::internal\+::\+Feedback\+Metadata@{v8\+::internal\+::\+Feedback\+Metadata}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Feedback\+Metadata\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1FeedbackMetadata}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackMetadata_1_1BodyDescriptor}{Body\+Descriptor}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackMetadata_a190337368577bb8109fb517bddb96be3}\label{classv8_1_1internal_1_1FeedbackMetadata_a190337368577bb8109fb517bddb96be3}} 
+int32\+\_\+t {\bfseries synchronized\+\_\+slot\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackMetadata_ae1c4f3bba6268d7b9939ae62d11bc45b}\label{classv8_1_1internal_1_1FeedbackMetadata_ae1c4f3bba6268d7b9939ae62d11bc45b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Spec\+Differs\+From} (const \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackVectorSpec}{Feedback\+Vector\+Spec}} $\ast$other\+\_\+spec) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackMetadata_af643b4f55ecf4fc95d488375dc679b2e}\label{classv8_1_1internal_1_1FeedbackMetadata_af643b4f55ecf4fc95d488375dc679b2e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+empty} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackMetadata_a346ef6fc6f88122ec0bd64e9e653bd26}\label{classv8_1_1internal_1_1FeedbackMetadata_a346ef6fc6f88122ec0bd64e9e653bd26}} 
+Feedback\+Slot\+Kind {\bfseries Get\+Kind} (\mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackMetadata_a7ce2ca4d950347019664ce7f93a4cac8}\label{classv8_1_1internal_1_1FeedbackMetadata_a7ce2ca4d950347019664ce7f93a4cac8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Type\+Profile\+Slot} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackMetadata_ac1ade60565378c8ee0187e4a3686ff2e}\label{classv8_1_1internal_1_1FeedbackMetadata_ac1ade60565378c8ee0187e4a3686ff2e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackMetadata}{Feedback\+Metadata}} $\ast$ {\bfseries cast} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$obj)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackMetadata_ac884f26649c8516954934714ca1b6d14}\label{classv8_1_1internal_1_1FeedbackMetadata_ac884f26649c8516954934714ca1b6d14}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Slot\+Size} (Feedback\+Slot\+Kind kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackMetadata_ae1941d548b4c25ca2ebb9d2e5777658c}\label{classv8_1_1internal_1_1FeedbackMetadata_ae1941d548b4c25ca2ebb9d2e5777658c}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackMetadata}{Feedback\+Metadata}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackVectorSpec}{Feedback\+Vector\+Spec}} $\ast$spec=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackMetadata_ab99ea48d786b662c532e699cbd39cd9b}\label{classv8_1_1internal_1_1FeedbackMetadata_ab99ea48d786b662c532e699cbd39cd9b}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Kind2\+String} (Feedback\+Slot\+Kind kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackMetadata_a5e26842dac44d569ba7d51ab7b872e59}\label{classv8_1_1internal_1_1FeedbackMetadata_a5e26842dac44d569ba7d51ab7b872e59}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Size\+For} (\mbox{\hyperlink{classint}{int}} slot\+\_\+count)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackMetadata_a6eb044eb60e71f5c76fef5b650053814}\label{classv8_1_1internal_1_1FeedbackMetadata_a6eb044eb60e71f5c76fef5b650053814}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Slot\+Count\+Offset} = Heap\+Object\+::k\+Header\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackMetadata_ac950e82e580aaa25ca3f24bb00a91b2e}\label{classv8_1_1internal_1_1FeedbackMetadata_ac950e82e580aaa25ca3f24bb00a91b2e}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Header\+Size} = k\+Slot\+Count\+Offset + k\+Int32\+Size
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackMetadata_a93a0224847297a8eb55ad69a914805a0}\label{classv8_1_1internal_1_1FeedbackMetadata_a93a0224847297a8eb55ad69a914805a0}} 
+class {\bfseries Accessor\+Assembler}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 451 of file feedback-\/vector.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/feedback-\/vector.\+h\item 
+v8/src/feedback-\/vector-\/inl.\+h\item 
+v8/src/feedback-\/vector.\+cc\end{DoxyCompactItemize}

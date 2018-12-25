@@ -1,0 +1,74 @@
+\hypertarget{classv8_1_1internal_1_1AssertionNode}{}\section{v8\+:\+:internal\+:\+:Assertion\+Node Class Reference}
+\label{classv8_1_1internal_1_1AssertionNode}\index{v8\+::internal\+::\+Assertion\+Node@{v8\+::internal\+::\+Assertion\+Node}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Assertion\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1AssertionNode}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AssertionNode_aa677ff26097f7ecb13c9283478981035}\label{classv8_1_1internal_1_1AssertionNode_aa677ff26097f7ecb13c9283478981035}} 
+enum {\bfseries Assertion\+Type} \{ \newline
+{\bfseries A\+T\+\_\+\+E\+ND}, 
+{\bfseries A\+T\+\_\+\+S\+T\+A\+RT}, 
+{\bfseries A\+T\+\_\+\+B\+O\+U\+N\+D\+A\+RY}, 
+{\bfseries A\+T\+\_\+\+N\+O\+N\+\_\+\+B\+O\+U\+N\+D\+A\+RY}, 
+\newline
+{\bfseries A\+F\+T\+E\+R\+\_\+\+N\+E\+W\+L\+I\+NE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AssertionNode_aa0c9a8889fabcb37885a3f8961149a78}\label{classv8_1_1internal_1_1AssertionNode_aa0c9a8889fabcb37885a3f8961149a78}} 
+void {\bfseries Accept} (\mbox{\hyperlink{classv8_1_1internal_1_1NodeVisitor}{Node\+Visitor}} $\ast$visitor) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AssertionNode_ad0efebb4d755192c507e3d06b3ebe17c}\label{classv8_1_1internal_1_1AssertionNode_ad0efebb4d755192c507e3d06b3ebe17c}} 
+void {\bfseries Emit} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classv8_1_1internal_1_1Trace}{Trace}} $\ast$trace) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AssertionNode_a9a46699943b5a94dd267aa999868050a}\label{classv8_1_1internal_1_1AssertionNode_a9a46699943b5a94dd267aa999868050a}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Eats\+At\+Least} (\mbox{\hyperlink{classint}{int}} still\+\_\+to\+\_\+find, \mbox{\hyperlink{classint}{int}} budget, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AssertionNode_ade004f77f287eee56fbc6ad5661871ed}\label{classv8_1_1internal_1_1AssertionNode_ade004f77f287eee56fbc6ad5661871ed}} 
+void {\bfseries Get\+Quick\+Check\+Details} (\mbox{\hyperlink{classv8_1_1internal_1_1QuickCheckDetails}{Quick\+Check\+Details}} $\ast$details, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classint}{int}} filled\+\_\+in, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AssertionNode_ac2c45a469759cd6ee4beabafc195aad5}\label{classv8_1_1internal_1_1AssertionNode_ac2c45a469759cd6ee4beabafc195aad5}} 
+void {\bfseries Fill\+In\+B\+M\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} offset, \mbox{\hyperlink{classint}{int}} budget, \mbox{\hyperlink{classv8_1_1internal_1_1BoyerMooreLookahead}{Boyer\+Moore\+Lookahead}} $\ast$bm, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AssertionNode_a1c1279600bc32129daf91cb75c982e09}\label{classv8_1_1internal_1_1AssertionNode_a1c1279600bc32129daf91cb75c982e09}} 
+Assertion\+Type {\bfseries assertion\+\_\+type} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AssertionNode_a7663a6a9a51975492c0bfe7b5a61a832}\label{classv8_1_1internal_1_1AssertionNode_a7663a6a9a51975492c0bfe7b5a61a832}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1AssertionNode}{Assertion\+Node}} $\ast$ {\bfseries At\+End} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AssertionNode_ac3c21366bba17cf86759c0cdea7ae035}\label{classv8_1_1internal_1_1AssertionNode_ac3c21366bba17cf86759c0cdea7ae035}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1AssertionNode}{Assertion\+Node}} $\ast$ {\bfseries At\+Start} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AssertionNode_ac281096ab369662a023267aac4117bfd}\label{classv8_1_1internal_1_1AssertionNode_ac281096ab369662a023267aac4117bfd}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1AssertionNode}{Assertion\+Node}} $\ast$ {\bfseries At\+Boundary} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AssertionNode_ad6d20cd648da9b791ca9f35367f2470e}\label{classv8_1_1internal_1_1AssertionNode_ad6d20cd648da9b791ca9f35367f2470e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1AssertionNode}{Assertion\+Node}} $\ast$ {\bfseries At\+Non\+Boundary} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AssertionNode_aa84ccd02ac323be278e3cb07633793b0}\label{classv8_1_1internal_1_1AssertionNode_aa84ccd02ac323be278e3cb07633793b0}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1AssertionNode}{Assertion\+Node}} $\ast$ {\bfseries After\+Newline} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 757 of file jsregexp.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/jsregexp.\+h\item 
+v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

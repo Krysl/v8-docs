@@ -1,0 +1,4 @@
+var structv8_1_1internal_1_1compiler_1_1SimplifiedOperatorGlobalCache_1_1ArgumentsFrameOperator =
+[
+    [ "ArgumentsFrameOperator", "structv8_1_1internal_1_1compiler_1_1SimplifiedOperatorGlobalCache_1_1ArgumentsFrameOperator.html#a5ec7c655b0e31a6936e34c715132c43e", null ]
+];

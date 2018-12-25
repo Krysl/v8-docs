@@ -1,0 +1,54 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1Scheduler}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Scheduler Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1Scheduler}\index{v8\+::internal\+::compiler\+::\+Scheduler@{v8\+::internal\+::compiler\+::\+Scheduler}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Scheduler_a7b78d98e449aadb3548a311754b624d5}\label{classv8_1_1internal_1_1compiler_1_1Scheduler_a7b78d98e449aadb3548a311754b624d5}} 
+enum {\bfseries Flag} \{ {\bfseries k\+No\+Flags} = 0u, 
+{\bfseries k\+Split\+Nodes} = 1u $<$$<$ 1, 
+{\bfseries k\+Temp\+Schedule} = 1u $<$$<$ 2
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Scheduler_a11c3273ecfdea86e069c3de0021859b5}\label{classv8_1_1internal_1_1compiler_1_1Scheduler_a11c3273ecfdea86e069c3de0021859b5}} 
+typedef \mbox{\hyperlink{classv8_1_1base_1_1Flags}{base\+::\+Flags}}$<$ Flag $>$ {\bfseries Flags}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Scheduler_ac76876be9571fecad702717c05d7f63d}\label{classv8_1_1internal_1_1compiler_1_1Scheduler_ac76876be9571fecad702717c05d7f63d}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Schedule}{Schedule}} $\ast$ {\bfseries Compute\+Schedule} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$temp\+\_\+zone, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Graph}{Graph}} $\ast$graph, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{Flags}} flags)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Scheduler_ab81197c5c4cb6682f54f8b983af0a7df}\label{classv8_1_1internal_1_1compiler_1_1Scheduler_ab81197c5c4cb6682f54f8b983af0a7df}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Basic\+Block\+Vector}} $\ast$ {\bfseries Compute\+Special\+R\+PO} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Schedule}{Schedule}} $\ast$schedule)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Scheduler_a651ba68d55963fc2c72f63d3d9dc8d35}\label{classv8_1_1internal_1_1compiler_1_1Scheduler_a651ba68d55963fc2c72f63d3d9dc8d35}} 
+class {\bfseries C\+F\+G\+Builder}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Scheduler_a70b85df8387fa930fde2fb246ee98b9c}\label{classv8_1_1internal_1_1compiler_1_1Scheduler_a70b85df8387fa930fde2fb246ee98b9c}} 
+class {\bfseries Special\+R\+P\+O\+Numberer}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Scheduler_ac92a424aa5c252752d4dc917d9d2047b}\label{classv8_1_1internal_1_1compiler_1_1Scheduler_ac92a424aa5c252752d4dc917d9d2047b}} 
+class {\bfseries Prepare\+Uses\+Visitor}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Scheduler_a95c07d0ec2448034d53b1b8746fd092c}\label{classv8_1_1internal_1_1compiler_1_1Scheduler_a95c07d0ec2448034d53b1b8746fd092c}} 
+class {\bfseries Schedule\+Early\+Node\+Visitor}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Scheduler_a1323738e293e91819df22cb24f986016}\label{classv8_1_1internal_1_1compiler_1_1Scheduler_a1323738e293e91819df22cb24f986016}} 
+class {\bfseries Schedule\+Late\+Node\+Visitor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 29 of file scheduler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/scheduler.\+h\item 
+v8/src/compiler/scheduler.\+cc\end{DoxyCompactItemize}

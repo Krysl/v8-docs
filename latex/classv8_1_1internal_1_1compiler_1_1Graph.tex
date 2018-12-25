@@ -1,0 +1,80 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1Graph}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Graph Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1Graph}\index{v8\+::internal\+::compiler\+::\+Graph@{v8\+::internal\+::compiler\+::\+Graph}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Graph\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1Graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Graph_1_1SubgraphScope}{Subgraph\+Scope}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Graph_ad50e52f7e457ee8d9ee48822e54dcff7}\label{classv8_1_1internal_1_1compiler_1_1Graph_ad50e52f7e457ee8d9ee48822e54dcff7}} 
+{\bfseries Graph} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Graph_ac96b63d8f7e19cce02ab93f534e0ce27}\label{classv8_1_1internal_1_1compiler_1_1Graph_ac96b63d8f7e19cce02ab93f534e0ce27}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries New\+Node\+Unchecked} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$op, \mbox{\hyperlink{classint}{int}} input\+\_\+count, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const $\ast$inputs, \mbox{\hyperlink{classbool}{bool}} incomplete=false)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Graph_ad2588802d0525353a979dc8679f2a84e}\label{classv8_1_1internal_1_1compiler_1_1Graph_ad2588802d0525353a979dc8679f2a84e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries New\+Node} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$op, \mbox{\hyperlink{classint}{int}} input\+\_\+count, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const $\ast$inputs, \mbox{\hyperlink{classbool}{bool}} incomplete=false)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Graph_a06799ffbfc6abc71418468112e622d3d}\label{classv8_1_1internal_1_1compiler_1_1Graph_a06799ffbfc6abc71418468112e622d3d}} 
+{\footnotesize template$<$typename... Nodes$>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries New\+Node} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$op, Nodes $\ast$... nodes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Graph_a88ce3760d278b92aa6ce3e356af380f3}\label{classv8_1_1internal_1_1compiler_1_1Graph_a88ce3760d278b92aa6ce3e356af380f3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Clone\+Node} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Graph_a22bc34312fb819405765780c65350aa3}\label{classv8_1_1internal_1_1compiler_1_1Graph_a22bc34312fb819405765780c65350aa3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$ {\bfseries zone} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Graph_af5e5db54c03a10d8b039a096107b347e}\label{classv8_1_1internal_1_1compiler_1_1Graph_af5e5db54c03a10d8b039a096107b347e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries start} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Graph_a4df0f12f74814c26e51e21fb1e59da0a}\label{classv8_1_1internal_1_1compiler_1_1Graph_a4df0f12f74814c26e51e21fb1e59da0a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Graph_abc339cd062989332e6b478e5dd44115e}\label{classv8_1_1internal_1_1compiler_1_1Graph_abc339cd062989332e6b478e5dd44115e}} 
+void {\bfseries Set\+Start} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$start)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Graph_abf4f6bd1ac98bfc7b4c990e447dd7c0e}\label{classv8_1_1internal_1_1compiler_1_1Graph_abf4f6bd1ac98bfc7b4c990e447dd7c0e}} 
+void {\bfseries Set\+End} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$end)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Graph_ad7fa20abddfe70faa0962f83a36bdbdd}\label{classv8_1_1internal_1_1compiler_1_1Graph_ad7fa20abddfe70faa0962f83a36bdbdd}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Node\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Graph_adf3e16c3995f7c84eea268fc57600728}\label{classv8_1_1internal_1_1compiler_1_1Graph_adf3e16c3995f7c84eea268fc57600728}} 
+void {\bfseries Decorate} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Graph_a13ed3a399ca31c0f237c803641a7bd19}\label{classv8_1_1internal_1_1compiler_1_1Graph_a13ed3a399ca31c0f237c803641a7bd19}} 
+void {\bfseries Add\+Decorator} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1GraphDecorator}{Graph\+Decorator}} $\ast$decorator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Graph_a11044dc7e34340de4b83105a47817e7b}\label{classv8_1_1internal_1_1compiler_1_1Graph_a11044dc7e34340de4b83105a47817e7b}} 
+void {\bfseries Remove\+Decorator} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1GraphDecorator}{Graph\+Decorator}} $\ast$decorator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Graph_afcf4e02c85aee8d098b5c861f4769a0a}\label{classv8_1_1internal_1_1compiler_1_1Graph_afcf4e02c85aee8d098b5c861f4769a0a}} 
+void {\bfseries Print} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Graph_a300aff091dd808ac2a77b73336b03672}\label{classv8_1_1internal_1_1compiler_1_1Graph_a300aff091dd808ac2a77b73336b03672}} 
+class {\bfseries Node\+Marker\+Base}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 35 of file graph.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/graph.\+h\item 
+v8/src/compiler/graph.\+cc\end{DoxyCompactItemize}

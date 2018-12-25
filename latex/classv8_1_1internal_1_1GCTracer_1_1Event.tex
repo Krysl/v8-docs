@@ -1,0 +1,94 @@
+\hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event}{}\section{v8\+:\+:internal\+:\+:G\+C\+Tracer\+:\+:Event Class Reference}
+\label{classv8_1_1internal_1_1GCTracer_1_1Event}\index{v8\+::internal\+::\+G\+C\+Tracer\+::\+Event@{v8\+::internal\+::\+G\+C\+Tracer\+::\+Event}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_a0f3b1f2a3d83c7041662d371f94ac3f4}\label{classv8_1_1internal_1_1GCTracer_1_1Event_a0f3b1f2a3d83c7041662d371f94ac3f4}} 
+enum {\bfseries Type} \{ \newline
+{\bfseries S\+C\+A\+V\+E\+N\+G\+ER} = 0, 
+{\bfseries M\+A\+R\+K\+\_\+\+C\+O\+M\+P\+A\+C\+T\+OR} = 1, 
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+M\+A\+R\+K\+\_\+\+C\+O\+M\+P\+A\+C\+T\+OR} = 2, 
+{\bfseries M\+I\+N\+O\+R\+\_\+\+M\+A\+R\+K\+\_\+\+C\+O\+M\+P\+A\+C\+T\+OR} = 3, 
+\newline
+{\bfseries S\+T\+A\+RT} = 4
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_a0786cd925c252654e420e5d8427624b4}\label{classv8_1_1internal_1_1GCTracer_1_1Event_a0786cd925c252654e420e5d8427624b4}} 
+{\bfseries Event} (Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, Garbage\+Collection\+Reason gc\+\_\+reason, const \mbox{\hyperlink{classchar}{char}} $\ast$collector\+\_\+reason)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_a8eeaac81a52ff809e520a1f8441b8041}\label{classv8_1_1internal_1_1GCTracer_1_1Event_a8eeaac81a52ff809e520a1f8441b8041}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Type\+Name} (\mbox{\hyperlink{classbool}{bool}} short\+\_\+name) const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_aa4e8172e84b3b2f7c1465827d8f8706e}\label{classv8_1_1internal_1_1GCTracer_1_1Event_aa4e8172e84b3b2f7c1465827d8f8706e}} 
+Type {\bfseries type}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_acf7957ef380b01ed964278a35e56e7d2}\label{classv8_1_1internal_1_1GCTracer_1_1Event_acf7957ef380b01ed964278a35e56e7d2}} 
+Garbage\+Collection\+Reason {\bfseries gc\+\_\+reason}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_a38a7a934142f05bcd46bdf099bd7bd0d}\label{classv8_1_1internal_1_1GCTracer_1_1Event_a38a7a934142f05bcd46bdf099bd7bd0d}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries collector\+\_\+reason}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_a76bac34aff2cc172fb923ecbf0527bf3}\label{classv8_1_1internal_1_1GCTracer_1_1Event_a76bac34aff2cc172fb923ecbf0527bf3}} 
+double {\bfseries start\+\_\+time}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_a2b236e7c2f31751fd4c8f98f54c6f99d}\label{classv8_1_1internal_1_1GCTracer_1_1Event_a2b236e7c2f31751fd4c8f98f54c6f99d}} 
+double {\bfseries end\+\_\+time}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_a8f6bcceda319cf086a219b2e2b0a3a44}\label{classv8_1_1internal_1_1GCTracer_1_1Event_a8f6bcceda319cf086a219b2e2b0a3a44}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries reduce\+\_\+memory}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_acef0d99e2ad7d582b7e8085b0010df8a}\label{classv8_1_1internal_1_1GCTracer_1_1Event_acef0d99e2ad7d582b7e8085b0010df8a}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries start\+\_\+object\+\_\+size}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_a9fe4259f381019a0650d1c1369bd728d}\label{classv8_1_1internal_1_1GCTracer_1_1Event_a9fe4259f381019a0650d1c1369bd728d}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries end\+\_\+object\+\_\+size}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_aa7ad886865b961eed5266ef0b06da274}\label{classv8_1_1internal_1_1GCTracer_1_1Event_aa7ad886865b961eed5266ef0b06da274}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries start\+\_\+memory\+\_\+size}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_acf6257527af8d437023753dee90eded7}\label{classv8_1_1internal_1_1GCTracer_1_1Event_acf6257527af8d437023753dee90eded7}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries end\+\_\+memory\+\_\+size}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_a8b97ebad4715cd14fc6fc07a352192e0}\label{classv8_1_1internal_1_1GCTracer_1_1Event_a8b97ebad4715cd14fc6fc07a352192e0}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries start\+\_\+holes\+\_\+size}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_aa2c58c0b4b28f1a27955ceebf3cd92c4}\label{classv8_1_1internal_1_1GCTracer_1_1Event_aa2c58c0b4b28f1a27955ceebf3cd92c4}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries end\+\_\+holes\+\_\+size}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_a97d12b9c7fbe73ff6fb7dc613c73f51c}\label{classv8_1_1internal_1_1GCTracer_1_1Event_a97d12b9c7fbe73ff6fb7dc613c73f51c}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries new\+\_\+space\+\_\+object\+\_\+size}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_aeaa383d7d325d9a86b037465dd03a201}\label{classv8_1_1internal_1_1GCTracer_1_1Event_aeaa383d7d325d9a86b037465dd03a201}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries survived\+\_\+new\+\_\+space\+\_\+object\+\_\+size}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_a6a3dfe7d606d51e38d907c8a0f4abf5b}\label{classv8_1_1internal_1_1GCTracer_1_1Event_a6a3dfe7d606d51e38d907c8a0f4abf5b}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries incremental\+\_\+marking\+\_\+bytes}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_abb2c3827a1615b7e15d0530a7b598679}\label{classv8_1_1internal_1_1GCTracer_1_1Event_abb2c3827a1615b7e15d0530a7b598679}} 
+double {\bfseries incremental\+\_\+marking\+\_\+duration}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_add05c317c9067e4b3d6fce6ce114a802}\label{classv8_1_1internal_1_1GCTracer_1_1Event_add05c317c9067e4b3d6fce6ce114a802}} 
+double {\bfseries scopes} \mbox{[}Scope\+::\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+S\+C\+O\+P\+ES\mbox{]}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Event_ab0685b8ba3ba0372bdac38ba2398c27a}\label{classv8_1_1internal_1_1GCTracer_1_1Event_ab0685b8ba3ba0372bdac38ba2398c27a}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1GCTracer_1_1IncrementalMarkingInfos}{Incremental\+Marking\+Infos}} {\bfseries incremental\+\_\+marking\+\_\+scopes} \mbox{[}Scope\+::\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+S\+C\+O\+P\+ES\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 131 of file gc-\/tracer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/gc-\/tracer.\+h\item 
+v8/src/heap/gc-\/tracer.\+cc\end{DoxyCompactItemize}

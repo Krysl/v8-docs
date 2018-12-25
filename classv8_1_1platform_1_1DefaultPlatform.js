@@ -1,0 +1,25 @@
+var classv8_1_1platform_1_1DefaultPlatform =
+[
+    [ "TimeFunction", "classv8_1_1platform_1_1DefaultPlatform.html#aa0e1584be0968a748319f759a91189f6", null ],
+    [ "DefaultPlatform", "classv8_1_1platform_1_1DefaultPlatform.html#a22897d0a7df7a614975d59909a7e2940", null ],
+    [ "~DefaultPlatform", "classv8_1_1platform_1_1DefaultPlatform.html#a47cef36d9f15a2f1eec56f1742ac41b3", null ],
+    [ "CallDelayedOnForegroundThread", "classv8_1_1platform_1_1DefaultPlatform.html#a3dbdde1854d4b58c923359ca44de4ddc", null ],
+    [ "CallDelayedOnWorkerThread", "classv8_1_1platform_1_1DefaultPlatform.html#a54d7b07473d95a4dcec17068f25094e6", null ],
+    [ "CallIdleOnForegroundThread", "classv8_1_1platform_1_1DefaultPlatform.html#a7863da2c41903c325e4f33fa832e76fd", null ],
+    [ "CallOnForegroundThread", "classv8_1_1platform_1_1DefaultPlatform.html#ac7d7fb6996ce70dced9b3ad0848c267f", null ],
+    [ "CallOnWorkerThread", "classv8_1_1platform_1_1DefaultPlatform.html#a7def01f08f58adaa4f1fda77a93988dc", null ],
+    [ "CurrentClockTimeMillis", "classv8_1_1platform_1_1DefaultPlatform.html#ac4ebe4d87a83e71845b2a708d73ef195", null ],
+    [ "EnsureBackgroundTaskRunnerInitialized", "classv8_1_1platform_1_1DefaultPlatform.html#a7ad121414a3d4e5779fae9d4afd751ba", null ],
+    [ "GetForegroundTaskRunner", "classv8_1_1platform_1_1DefaultPlatform.html#a9c8020287295fb8cdd673e09ea286c61", null ],
+    [ "GetPageAllocator", "classv8_1_1platform_1_1DefaultPlatform.html#a992060971393638e46e628c89858be6b", null ],
+    [ "GetStackTracePrinter", "classv8_1_1platform_1_1DefaultPlatform.html#aeea6aef7dc875ccb7113cc014c91517e", null ],
+    [ "GetTracingController", "classv8_1_1platform_1_1DefaultPlatform.html#a397fb3678955433ef1ba947c8d6f7b47", null ],
+    [ "IdleTasksEnabled", "classv8_1_1platform_1_1DefaultPlatform.html#a002ce8f7666b3eece368b39c67d69f07", null ],
+    [ "MonotonicallyIncreasingTime", "classv8_1_1platform_1_1DefaultPlatform.html#a18e7c05daaf277740e84db0e6712fc46", null ],
+    [ "NumberOfWorkerThreads", "classv8_1_1platform_1_1DefaultPlatform.html#a31b2dbb9643a97ab89d763e1dfc90a9f", null ],
+    [ "PumpMessageLoop", "classv8_1_1platform_1_1DefaultPlatform.html#ac7d53e62683ecf2098da089b60aafda2", null ],
+    [ "RunIdleTasks", "classv8_1_1platform_1_1DefaultPlatform.html#a358a8f892ad44ed1d97b13f44be0bcf0", null ],
+    [ "SetThreadPoolSize", "classv8_1_1platform_1_1DefaultPlatform.html#a7dcc9c2ff945dfa873df908419b52599", null ],
+    [ "SetTimeFunctionForTesting", "classv8_1_1platform_1_1DefaultPlatform.html#a81b61879b99c4ef7e5562aa548045f42", null ],
+    [ "SetTracingController", "classv8_1_1platform_1_1DefaultPlatform.html#aa7d95aad0db131e1709fd44b6dd65a1e", null ]
+];

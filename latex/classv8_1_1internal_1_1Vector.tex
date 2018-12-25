@@ -1,0 +1,123 @@
+\hypertarget{classv8_1_1internal_1_1Vector}{}\section{v8\+:\+:internal\+:\+:Vector$<$ T $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1Vector}\index{v8\+::internal\+::\+Vector$<$ T $>$@{v8\+::internal\+::\+Vector$<$ T $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Vector$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1Vector}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a4eb1bff96066fd7324ceb3a5c78a58de}\label{classv8_1_1internal_1_1Vector_a4eb1bff96066fd7324ceb3a5c78a58de}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$ {\bfseries iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_ac1130aaf93d4dafd2b3ab4fa5f682dc6}\label{classv8_1_1internal_1_1Vector_ac1130aaf93d4dafd2b3ab4fa5f682dc6}} 
+{\bfseries Vector} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$data, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a5dc26cc5eda4888889be2681cc2c2943}\label{classv8_1_1internal_1_1Vector_a5dc26cc5eda4888889be2681cc2c2943}} 
+{\footnotesize template$<$int N$>$ }\\constexpr {\bfseries Vector} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}(\&arr)\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a88abd2e2c1145d4f7d30f7f295fbc202}\label{classv8_1_1internal_1_1Vector_a88abd2e2c1145d4f7d30f7f295fbc202}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries Sub\+Vector} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} from, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} to) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a7f4f3f63b2fa04ea5909215e68de63c4}\label{classv8_1_1internal_1_1Vector_a7f4f3f63b2fa04ea5909215e68de63c4}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries length} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a68ff19ddd52e309ce207e6382f5d8d91}\label{classv8_1_1internal_1_1Vector_a68ff19ddd52e309ce207e6382f5d8d91}} 
+constexpr \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a0fa956176baa51b8fbd3dd5c115aefcf}\label{classv8_1_1internal_1_1Vector_a0fa956176baa51b8fbd3dd5c115aefcf}} 
+constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+empty} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_aca4f1e5182c6822c6a103030d56a437a}\label{classv8_1_1internal_1_1Vector_aca4f1e5182c6822c6a103030d56a437a}} 
+constexpr \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$ {\bfseries start} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_ae220b8bac8eafa8ba3c864999e6ffd0e}\label{classv8_1_1internal_1_1Vector_ae220b8bac8eafa8ba3c864999e6ffd0e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_ad022076a3e6c83cb6c407c82516d7537}\label{classv8_1_1internal_1_1Vector_ad022076a3e6c83cb6c407c82516d7537}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \& {\bfseries at} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a13e9fef6a9a3f72da9b4c93d21e089ab}\label{classv8_1_1internal_1_1Vector_a13e9fef6a9a3f72da9b4c93d21e089ab}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \& {\bfseries first} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a5e900c0bafc9fe198955b4013cbf90dc}\label{classv8_1_1internal_1_1Vector_a5e900c0bafc9fe198955b4013cbf90dc}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \& {\bfseries last} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a480f1580ef1a3d63d58f6e91efed82ea}\label{classv8_1_1internal_1_1Vector_a480f1580ef1a3d63d58f6e91efed82ea}} 
+constexpr \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{iterator}} {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_aed3471b749d8e0ab6fcd27439db831af}\label{classv8_1_1internal_1_1Vector_aed3471b749d8e0ab6fcd27439db831af}} 
+constexpr \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{iterator}} {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a3f4e5ead10162013ec61963cd5ad7e2f}\label{classv8_1_1internal_1_1Vector_a3f4e5ead10162013ec61963cd5ad7e2f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries Clone} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a4cb320f5a69e71d66431a5406cbdf2b0}\label{classv8_1_1internal_1_1Vector_a4cb320f5a69e71d66431a5406cbdf2b0}} 
+{\footnotesize template$<$typename Compare\+Function $>$ }\\void {\bfseries Sort} (Compare\+Function cmp, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} s, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} l)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_aa287135a0f6de0235a1bf8f3d425220f}\label{classv8_1_1internal_1_1Vector_aa287135a0f6de0235a1bf8f3d425220f}} 
+{\footnotesize template$<$typename Compare\+Function $>$ }\\void {\bfseries Sort} (Compare\+Function cmp)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a1914139a503a171e777f3d0b951069aa}\label{classv8_1_1internal_1_1Vector_a1914139a503a171e777f3d0b951069aa}} 
+void {\bfseries Sort} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a331d883c24f767fbfb6fb9dcbf0e6942}\label{classv8_1_1internal_1_1Vector_a331d883c24f767fbfb6fb9dcbf0e6942}} 
+{\footnotesize template$<$typename Compare\+Function $>$ }\\void {\bfseries Stable\+Sort} (Compare\+Function cmp, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} s, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} l)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_aa1179492b191705790d1db684c05430f}\label{classv8_1_1internal_1_1Vector_aa1179492b191705790d1db684c05430f}} 
+{\footnotesize template$<$typename Compare\+Function $>$ }\\void {\bfseries Stable\+Sort} (Compare\+Function cmp)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a5fc19021882c987a5105126b094f28a4}\label{classv8_1_1internal_1_1Vector_a5fc19021882c987a5105126b094f28a4}} 
+void {\bfseries Stable\+Sort} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_ac9d39ea562952de1e56a4900b5604051}\label{classv8_1_1internal_1_1Vector_ac9d39ea562952de1e56a4900b5604051}} 
+void {\bfseries Truncate} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a29bc665bb5c8a27e328107fcd414eef2}\label{classv8_1_1internal_1_1Vector_a29bc665bb5c8a27e328107fcd414eef2}} 
+void {\bfseries Dispose} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_ad3aecc32d12e1dcf5b523f25ed43f959}\label{classv8_1_1internal_1_1Vector_ad3aecc32d12e1dcf5b523f25ed43f959}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries operator+} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a3456df9fc9d1cd2a46bed76414f94979}\label{classv8_1_1internal_1_1Vector_a3456df9fc9d1cd2a46bed76414f94979}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries operator+=} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a0a4e6fb6f9bc52b8afb0ceffbc5b7d84}\label{classv8_1_1internal_1_1Vector_a0a4e6fb6f9bc52b8afb0ceffbc5b7d84}} 
+{\bfseries operator Vector$<$ const T $>$} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a356adac3ad59542876dd38b8cc539cdf}\label{classv8_1_1internal_1_1Vector_a356adac3ad59542876dd38b8cc539cdf}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries operator==} (const \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ other) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_adb4189b3dc89e2c2dfd532c5615ead33}\label{classv8_1_1internal_1_1Vector_adb4189b3dc89e2c2dfd532c5615ead33}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries New} (\mbox{\hyperlink{classint}{int}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_a5a178ac96e3a64e7f2addc3b201285fd}\label{classv8_1_1internal_1_1Vector_a5a178ac96e3a64e7f2addc3b201285fd}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries empty} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Vector_ad3b26a766b09ae0a07049b9262c6dc75}\label{classv8_1_1internal_1_1Vector_ad3b26a766b09ae0a07049b9262c6dc75}} 
+{\footnotesize template$<$typename S $>$ }\\static constexpr \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries cast} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ S $>$ input)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class v8\+::internal\+::\+Vector$<$ T $>$}
+
+
+
+Definition at line 24 of file log-\/utils.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/log-\/utils.\+h\item 
+v8/src/vector.\+h\end{DoxyCompactItemize}

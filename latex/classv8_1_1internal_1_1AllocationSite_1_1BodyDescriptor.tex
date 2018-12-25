@@ -1,0 +1,45 @@
+\hypertarget{classv8_1_1internal_1_1AllocationSite_1_1BodyDescriptor}{}\section{v8\+:\+:internal\+:\+:Allocation\+Site\+:\+:Body\+Descriptor Class Reference}
+\label{classv8_1_1internal_1_1AllocationSite_1_1BodyDescriptor}\index{v8\+::internal\+::\+Allocation\+Site\+::\+Body\+Descriptor@{v8\+::internal\+::\+Allocation\+Site\+::\+Body\+Descriptor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Allocation\+Site\+:\+:Body\+Descriptor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1AllocationSite_1_1BodyDescriptor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_1_1BodyDescriptor_a9d34e8bb8ecfa4f961d2a38fcd28983d}\label{classv8_1_1internal_1_1AllocationSite_1_1BodyDescriptor_a9d34e8bb8ecfa4f961d2a38fcd28983d}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Allocation\+Site\+::k\+Common\+Pointer\+Field\+End\+Offset==Allocation\+Site\+::k\+Pretenure\+Data\+Offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_1_1BodyDescriptor_ac279fc126224d3a3a2515d7b80db1446}\label{classv8_1_1internal_1_1AllocationSite_1_1BodyDescriptor_ac279fc126224d3a3a2515d7b80db1446}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Allocation\+Site\+::k\+Pretenure\+Data\+Offset+k\+Int32\+Size==Allocation\+Site\+::k\+Pretenure\+Create\+Count\+Offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_1_1BodyDescriptor_ab4ce54abcc8531e19e908640dade56b1}\label{classv8_1_1internal_1_1AllocationSite_1_1BodyDescriptor_ab4ce54abcc8531e19e908640dade56b1}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Allocation\+Site\+::k\+Pretenure\+Create\+Count\+Offset+k\+Int32\+Size==Allocation\+Site\+::k\+Weak\+Next\+Offset)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_1_1BodyDescriptor_aed984ad51fc09b1478c2c3d6a6cd57a7}\label{classv8_1_1internal_1_1AllocationSite_1_1BodyDescriptor_aed984ad51fc09b1478c2c3d6a6cd57a7}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Valid\+Slot} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$obj, \mbox{\hyperlink{classint}{int}} offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_1_1BodyDescriptor_a3dfbfc62da64206a9b6be1117dacdffb}\label{classv8_1_1internal_1_1AllocationSite_1_1BodyDescriptor_a3dfbfc62da64206a9b6be1117dacdffb}} 
+{\footnotesize template$<$typename Object\+Visitor $>$ }\\static void {\bfseries Iterate\+Body} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$obj, \mbox{\hyperlink{classint}{int}} object\+\_\+size, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectVisitor}{Object\+Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationSite_1_1BodyDescriptor_af6b5882dc09e1e886838c0b63c7b1963}\label{classv8_1_1internal_1_1AllocationSite_1_1BodyDescriptor_af6b5882dc09e1e886838c0b63c7b1963}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Size\+Of} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 191 of file objects-\/body-\/descriptors-\/inl.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects-\/body-\/descriptors-\/inl.\+h\end{DoxyCompactItemize}

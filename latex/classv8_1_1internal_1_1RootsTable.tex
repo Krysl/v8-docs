@@ -1,0 +1,90 @@
+\hypertarget{classv8_1_1internal_1_1RootsTable}{}\section{v8\+:\+:internal\+:\+:Roots\+Table Class Reference}
+\label{classv8_1_1internal_1_1RootsTable}\index{v8\+::internal\+::\+Roots\+Table@{v8\+::internal\+::\+Roots\+Table}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RootsTable_a55978a96c28ab4bcff3923e192a2ae30}\label{classv8_1_1internal_1_1RootsTable_a55978a96c28ab4bcff3923e192a2ae30}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Root\+Handle\+Location} (\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$handle\+\_\+location, Root\+Index $\ast$index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RootsTable_a2ab3af6b088413dc185c13c496cd7282}\label{classv8_1_1internal_1_1RootsTable_a2ab3af6b088413dc185c13c496cd7282}} 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Root\+Handle} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ handle, Root\+Index $\ast$index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RootsTable_a522b2e52478b6078cf14ce218f61e751}\label{classv8_1_1internal_1_1RootsTable_a522b2e52478b6078cf14ce218f61e751}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$const  \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (Root\+Index root\+\_\+index) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RootsTable_a945eaf0ea345cd607471f086c43e800b}\label{classv8_1_1internal_1_1RootsTable_a945eaf0ea345cd607471f086c43e800b}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries name} (Root\+Index root\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RootsTable_a6c13d48fef78917e42206eea04eb06b6}\label{classv8_1_1internal_1_1RootsTable_a6c13d48fef78917e42206eea04eb06b6}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries offset\+\_\+of} (Root\+Index root\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RootsTable_a71305e9bda1588afa66ce636cceb607c}\label{classv8_1_1internal_1_1RootsTable_a71305e9bda1588afa66ce636cceb607c}} 
+static Root\+Index {\bfseries Root\+Index\+For\+Fixed\+Typed\+Array} (External\+Array\+Type array\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RootsTable_a84cfccd5cad4f51e8c04fc7b00248aef}\label{classv8_1_1internal_1_1RootsTable_a84cfccd5cad4f51e8c04fc7b00248aef}} 
+static Root\+Index {\bfseries Root\+Index\+For\+Fixed\+Typed\+Array} (Elements\+Kind elements\+\_\+kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RootsTable_a9578e4cbdcd73af0e6ffc151bf5714a9}\label{classv8_1_1internal_1_1RootsTable_a9578e4cbdcd73af0e6ffc151bf5714a9}} 
+static Root\+Index {\bfseries Root\+Index\+For\+Empty\+Fixed\+Typed\+Array} (Elements\+Kind elements\+\_\+kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RootsTable_ae3e6a29a5337c7e29ef16cf6ead8ba75}\label{classv8_1_1internal_1_1RootsTable_ae3e6a29a5337c7e29ef16cf6ead8ba75}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Immortal\+Immovable} (Root\+Index root\+\_\+index)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Entries\+Count}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RootsTable_aba4f0964bdacf2bbf62cf876e5d28d0a}\label{classv8_1_1internal_1_1RootsTable_aba4f0964bdacf2bbf62cf876e5d28d0a}} 
+class {\bfseries Isolate}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RootsTable_a3d69975be2e998e7bf2dcd1b1c8b4577}\label{classv8_1_1internal_1_1RootsTable_a3d69975be2e998e7bf2dcd1b1c8b4577}} 
+class {\bfseries Heap}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RootsTable_a328c093d609680cca505905c6d49901a}\label{classv8_1_1internal_1_1RootsTable_a328c093d609680cca505905c6d49901a}} 
+class {\bfseries Factory}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RootsTable_a723b2cfa707c63382946bbf0be13d9ec}\label{classv8_1_1internal_1_1RootsTable_a723b2cfa707c63382946bbf0be13d9ec}} 
+class {\bfseries Read\+Only\+Roots}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RootsTable_a8d9995d9772cd856872506697a71691d}\label{classv8_1_1internal_1_1RootsTable_a8d9995d9772cd856872506697a71691d}} 
+class {\bfseries Roots\+Serializer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 403 of file roots.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1RootsTable_a441891bb0367b9c60179d1b0ebb48354}\label{classv8_1_1internal_1_1RootsTable_a441891bb0367b9c60179d1b0ebb48354}} 
+\index{v8\+::internal\+::\+Roots\+Table@{v8\+::internal\+::\+Roots\+Table}!k\+Entries\+Count@{k\+Entries\+Count}}
+\index{k\+Entries\+Count@{k\+Entries\+Count}!v8\+::internal\+::\+Roots\+Table@{v8\+::internal\+::\+Roots\+Table}}
+\subsubsection{\texorpdfstring{k\+Entries\+Count}{kEntriesCount}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classsize__t}{size\+\_\+t}} v8\+::internal\+::\+Roots\+Table\+::k\+Entries\+Count\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{size\_t}\textcolor{keyword}{>}(RootIndex::kRootListLength)
+\end{DoxyCode}
+
+
+Definition at line 405 of file roots.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/roots.\+h\item 
+v8/src/roots-\/inl.\+h\item 
+v8/src/roots.\+cc\end{DoxyCompactItemize}

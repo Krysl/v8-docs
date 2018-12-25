@@ -1,0 +1,78 @@
+\hypertarget{classv8_1_1internal_1_1LiveEdit}{}\section{v8\+:\+:internal\+:\+:Live\+Edit Class Reference}
+\label{classv8_1_1internal_1_1LiveEdit}\index{v8\+::internal\+::\+Live\+Edit@{v8\+::internal\+::\+Live\+Edit}}
+
+
+{\ttfamily \#include $<$liveedit.\+h$>$}
+
+Inheritance diagram for v8\+:\+:internal\+:\+:Live\+Edit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1LiveEdit}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveEdit_a9b5ea06802163d74690511e89f07cffd}\label{classv8_1_1internal_1_1LiveEdit_a9b5ea06802163d74690511e89f07cffd}} 
+static void {\bfseries Initialize\+Thread\+Local} (\mbox{\hyperlink{classv8_1_1internal_1_1Debug}{Debug}} $\ast$debug)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveEdit_a5087a6755bfe52168a7aae5abdf8a2a1}\label{classv8_1_1internal_1_1LiveEdit_a5087a6755bfe52168a7aae5abdf8a2a1}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Restart\+Frame} (\mbox{\hyperlink{classv8_1_1internal_1_1JavaScriptFrame}{Java\+Script\+Frame}} $\ast$frame)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveEdit_ae137d77566f827ef36c1a756565c26c5}\label{classv8_1_1internal_1_1LiveEdit_ae137d77566f827ef36c1a756565c26c5}} 
+static void {\bfseries Compare\+Strings} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ a, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ b, std\+::vector$<$ \mbox{\hyperlink{structv8_1_1internal_1_1SourceChangeRange}{Source\+Change\+Range}} $>$ $\ast$diffs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveEdit_ac8240273701e02c17dac0152d6f327d9}\label{classv8_1_1internal_1_1LiveEdit_ac8240273701e02c17dac0152d6f327d9}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Translate\+Position} (const std\+::vector$<$ \mbox{\hyperlink{structv8_1_1internal_1_1SourceChangeRange}{Source\+Change\+Range}} $>$ \&changed, \mbox{\hyperlink{classint}{int}} position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveEdit_afebb3ab02d37f2c0cbd132bed0b4a089}\label{classv8_1_1internal_1_1LiveEdit_afebb3ab02d37f2c0cbd132bed0b4a089}} 
+static void {\bfseries Patch\+Script} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $>$ script, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ source, \mbox{\hyperlink{classbool}{bool}} preview, \mbox{\hyperlink{structv8_1_1debug_1_1LiveEditResult}{debug\+::\+Live\+Edit\+Result}} $\ast$result)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LiveEdit_a065987e52e8dd61f79875776a2ffe141}\label{classv8_1_1internal_1_1LiveEdit_a065987e52e8dd61f79875776a2ffe141}} 
+static const \mbox{\hyperlink{classbool}{bool}} {\bfseries k\+Frame\+Dropper\+Supported}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Liveedit step-\/by-\/step\+:
+\begin{DoxyEnumerate}
+\item calculate diff between old source and new source,
+\item map function literals from old source to new source,
+\item create new script for new\+\_\+source,
+\item mark literals with changed code as changed, all others as unchanged,
+\item check that for changed literals there are no\+:
+\begin{DoxyItemize}
+\item running generators in the heap,
+\item non droppable frames (e.\+g. running generator) above them on stack.
+\end{DoxyItemize}
+\item mark the bottom most frame with changed function as scheduled for restart if any,
+\item for unchanged functions\+:
+\begin{DoxyItemize}
+\item deoptimize,
+\item remove from cache,
+\item update source positions,
+\item move to new script,
+\item reset feedback information and preparsed scope information if any,
+\item replace any sfi in constant pool with changed one if any.
+\end{DoxyItemize}
+\item for changed functions\+:
+\begin{DoxyItemize}
+\item deoptimize
+\item remove from cache,
+\item reset feedback information,
+\item update all links from js functions to old shared with new one.
+\end{DoxyItemize}
+\item swap scripts. 
+\end{DoxyEnumerate}
+
+Definition at line 57 of file liveedit.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/debug/liveedit.\+h\item 
+v8/src/debug/liveedit.\+cc\end{DoxyCompactItemize}

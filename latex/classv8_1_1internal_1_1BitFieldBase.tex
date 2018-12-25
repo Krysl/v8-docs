@@ -1,0 +1,68 @@
+\hypertarget{classv8_1_1internal_1_1BitFieldBase}{}\section{v8\+:\+:internal\+:\+:Bit\+Field\+Base$<$ T, shift, size, U $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1BitFieldBase}\index{v8\+::internal\+::\+Bit\+Field\+Base$<$ T, shift, size, U $>$@{v8\+::internal\+::\+Bit\+Field\+Base$<$ T, shift, size, U $>$}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitFieldBase_a06a0c16b444a78eb7f09e1e781c73558}\label{classv8_1_1internal_1_1BitFieldBase_a06a0c16b444a78eb7f09e1e781c73558}} 
+typedef T {\bfseries Field\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitFieldBase_aeee6b2945715e8ed16409869410cbb57}\label{classv8_1_1internal_1_1BitFieldBase_aeee6b2945715e8ed16409869410cbb57}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} ((k\+Next -\/ 1)/8$<$ sizeof(U))
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitFieldBase_a2b3c045a3f940e2a1db21c1db2719b07}\label{classv8_1_1internal_1_1BitFieldBase_a2b3c045a3f940e2a1db21c1db2719b07}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+valid} (T value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitFieldBase_aa162659173f7f724b50e31d89c0f3fa8}\label{classv8_1_1internal_1_1BitFieldBase_aa162659173f7f724b50e31d89c0f3fa8}} 
+static U {\bfseries encode} (T value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitFieldBase_a0ce53f2db72ce51d96606fc0c9f353db}\label{classv8_1_1internal_1_1BitFieldBase_a0ce53f2db72ce51d96606fc0c9f353db}} 
+static U {\bfseries update} (U previous, T value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitFieldBase_aa251f75c99718dea15a4f90ad42db161}\label{classv8_1_1internal_1_1BitFieldBase_aa251f75c99718dea15a4f90ad42db161}} 
+static T {\bfseries decode} (U value)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitFieldBase_af2b0229ffee57c76f39b6a3aad6d22bb}\label{classv8_1_1internal_1_1BitFieldBase_af2b0229ffee57c76f39b6a3aad6d22bb}} 
+static const U {\bfseries k\+One} = static\+\_\+cast$<$U$>$(1\+U)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitFieldBase_a26880a1aa7d61fe08bcf77de9ca46b6f}\label{classv8_1_1internal_1_1BitFieldBase_a26880a1aa7d61fe08bcf77de9ca46b6f}} 
+static const U {\bfseries k\+Mask} = ((k\+One $<$$<$ shift) $<$$<$ size) -\/ (k\+One $<$$<$ shift)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitFieldBase_a0b0c87744aa976ba62aadb4552e633ef}\label{classv8_1_1internal_1_1BitFieldBase_a0b0c87744aa976ba62aadb4552e633ef}} 
+static const U {\bfseries k\+Shift} = shift
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitFieldBase_a73ac861af5e2f043ea3ef16bc102571b}\label{classv8_1_1internal_1_1BitFieldBase_a73ac861af5e2f043ea3ef16bc102571b}} 
+static const U {\bfseries k\+Size} = size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitFieldBase_ac924450272ea6ed882a43eba783d3488}\label{classv8_1_1internal_1_1BitFieldBase_ac924450272ea6ed882a43eba783d3488}} 
+static const U {\bfseries k\+Next} = k\+Shift + k\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitFieldBase_a2ee0d066ba3e49f43b4026993e5d0ce0}\label{classv8_1_1internal_1_1BitFieldBase_a2ee0d066ba3e49f43b4026993e5d0ce0}} 
+static const U {\bfseries k\+Num\+Values} = k\+One $<$$<$ size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BitFieldBase_a82aada63ffb94bf07ba4702ec9fc1525}\label{classv8_1_1internal_1_1BitFieldBase_a82aada63ffb94bf07ba4702ec9fc1525}} 
+static const T {\bfseries k\+Max} = static\+\_\+cast$<$T$>$(k\+Num\+Values -\/ 1)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T, int shift, int size, class U$>$\newline
+class v8\+::internal\+::\+Bit\+Field\+Base$<$ T, shift, size, U $>$}
+
+
+
+Definition at line 323 of file utils.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/utils.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,216 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecodes Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes}\index{v8\+::internal\+::interpreter\+::\+Bytecodes@{v8\+::internal\+::interpreter\+::\+Bytecodes}}
+Inheritance diagram for v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecodes\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1interpreter_1_1Bytecodes}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ae3e76b6c1aba4e2cfafd4c53594607ba}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ae3e76b6c1aba4e2cfafd4c53594607ba}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries To\+String} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_aa843e0823e9233b3061cac0b96e15a21}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_aa843e0823e9233b3061cac0b96e15a21}} 
+static std\+::string {\bfseries To\+String} (Bytecode bytecode, Operand\+Scale operand\+\_\+scale, const \mbox{\hyperlink{classchar}{char}} $\ast$separator=\char`\"{}.\char`\"{})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a8aaeb7fc182c7d6411c78e3d410c1e2d}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a8aaeb7fc182c7d6411c78e3d410c1e2d}} 
+static uint8\+\_\+t {\bfseries To\+Byte} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a22d68671271e53b89b5fcba4b9e3ac4a}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a22d68671271e53b89b5fcba4b9e3ac4a}} 
+static Bytecode {\bfseries From\+Byte} (uint8\+\_\+t value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a6150d0c67dad07020c2a5f44f5a80adb}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a6150d0c67dad07020c2a5f44f5a80adb}} 
+static Bytecode {\bfseries Operand\+Scale\+To\+Prefix\+Bytecode} (Operand\+Scale operand\+\_\+scale)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ac6c2453c929fa7792f2ba781ec93b306}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ac6c2453c929fa7792f2ba781ec93b306}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Operand\+Scale\+Requires\+Prefix\+Bytecode} (Operand\+Scale operand\+\_\+scale)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a29cdb52cd593cad434aafc4fbeba57c9}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a29cdb52cd593cad434aafc4fbeba57c9}} 
+static Operand\+Scale {\bfseries Prefix\+Bytecode\+To\+Operand\+Scale} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a42e2c9524fbfafad0717db5311315953}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a42e2c9524fbfafad0717db5311315953}} 
+static Accumulator\+Use {\bfseries Get\+Accumulator\+Use} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a710da4b4ced2ade57bcdf73a75a54ad6}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a710da4b4ced2ade57bcdf73a75a54ad6}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Reads\+Accumulator} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a2b02417dc06cb85a2249d960cea98f37}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a2b02417dc06cb85a2249d960cea98f37}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Writes\+Accumulator} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a64a7aefe92e10acec6a40d8d45b81c3f}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a64a7aefe92e10acec6a40d8d45b81c3f}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Accumulator\+Load\+Without\+Effects} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a0c5806f08544b46bb66dafbc6eeacde7}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a0c5806f08544b46bb66dafbc6eeacde7}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Compare\+Without\+Effects} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ac665bb9f30116375c03b76fd79cd5724}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ac665bb9f30116375c03b76fd79cd5724}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Register\+Load\+Without\+Effects} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a436ef582bc1a7d73b7bdb9235afa85be}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a436ef582bc1a7d73b7bdb9235afa85be}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Conditional\+Jump\+Immediate} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a2014a0fcd64dbba4cf662c02b439617c}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a2014a0fcd64dbba4cf662c02b439617c}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Conditional\+Jump\+Constant} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ad5514e1b9c1ed400253bb40f399724b4}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ad5514e1b9c1ed400253bb40f399724b4}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Conditional\+Jump} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ae5d21d9c530e0ee3d47f84c5e66f7f92}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ae5d21d9c530e0ee3d47f84c5e66f7f92}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Unconditional\+Jump} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a4556a6d25e2b7983aecd25a9c1811fd5}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a4556a6d25e2b7983aecd25a9c1811fd5}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Jump\+Immediate} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a94b809f103ac8edd25d211e04890698d}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a94b809f103ac8edd25d211e04890698d}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Jump\+Constant} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a0c07c9cd79d0e3974a20a2d988c433ff}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a0c07c9cd79d0e3974a20a2d988c433ff}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Jump\+If\+To\+Boolean} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ae2fd637be535114fb1c4bc42189fbefd}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ae2fd637be535114fb1c4bc42189fbefd}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Jump} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a4bdb6ed2795a9aaceb5ae28b8bc58f45}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a4bdb6ed2795a9aaceb5ae28b8bc58f45}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Forward\+Jump} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a60e1beb57e3eaf2f36ce6d1eee4fb87e}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a60e1beb57e3eaf2f36ce6d1eee4fb87e}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Jump\+Without\+Effects} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a5e7eef11a24a83e0cce90e81aaa96ba9}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a5e7eef11a24a83e0cce90e81aaa96ba9}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Switch} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a49d4a6cc7eb7397bc1d4e8934ead0234}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a49d4a6cc7eb7397bc1d4e8934ead0234}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Without\+External\+Side\+Effects} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ad7312c2c0d5396f6c127b34cad91c58c}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ad7312c2c0d5396f6c127b34cad91c58c}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Ldar\+Or\+Star} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a85747c14f501885a7197088c3d47b5b3}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a85747c14f501885a7197088c3d47b5b3}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Call\+Or\+Construct} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a4c33673d5481f183117c0967a5a8f6f1}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a4c33673d5481f183117c0967a5a8f6f1}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Call\+Runtime} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a86cd48ece189d592b2849eba1aebd30b}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a86cd48ece189d592b2849eba1aebd30b}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+One\+Shot\+Bytecode} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_aafd1e97e4412cf5567331551953ee196}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_aafd1e97e4412cf5567331551953ee196}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Prefix\+Scaling\+Bytecode} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a0e86aaf1121b3e1f75f601c112c484c3}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a0e86aaf1121b3e1f75f601c112c484c3}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Returns} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ac87569cd15f31410ddc6ab15978910f3}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ac87569cd15f31410ddc6ab15978910f3}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Operands} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a93d0bcb86bef7a9650723f904cfe027a}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a93d0bcb86bef7a9650723f904cfe027a}} 
+static Operand\+Type {\bfseries Get\+Operand\+Type} (Bytecode bytecode, \mbox{\hyperlink{classint}{int}} i)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a78416395e9ff08a5c17457d6b4de9da4}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a78416395e9ff08a5c17457d6b4de9da4}} 
+static const Operand\+Type $\ast$ {\bfseries Get\+Operand\+Types} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a9ed091523f4cfb266c919b34cb585897}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a9ed091523f4cfb266c919b34cb585897}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Operand\+Is\+Scalable\+Signed\+Byte} (Bytecode bytecode, \mbox{\hyperlink{classint}{int}} operand\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a524a57f2fd0e3f7029a2d48f7b1cdc68}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a524a57f2fd0e3f7029a2d48f7b1cdc68}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Operand\+Is\+Scalable\+Unsigned\+Byte} (Bytecode bytecode, \mbox{\hyperlink{classint}{int}} operand\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a7274e07fabb5e66eb74806687c52cc94}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a7274e07fabb5e66eb74806687c52cc94}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Operand\+Is\+Scalable} (Bytecode bytecode, \mbox{\hyperlink{classint}{int}} operand\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_af0cf9ed0b1fa6d5cd1f258194cfaadc4}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_af0cf9ed0b1fa6d5cd1f258194cfaadc4}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Bytecode\+With\+Scalable\+Operands} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a181117fa745d9bb3d84ee585c778ed94}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a181117fa745d9bb3d84ee585c778ed94}} 
+static Operand\+Size {\bfseries Get\+Operand\+Size} (Bytecode bytecode, \mbox{\hyperlink{classint}{int}} i, Operand\+Scale operand\+\_\+scale)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a83ff97f25c969cf0781233dde8d21572}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a83ff97f25c969cf0781233dde8d21572}} 
+static const Operand\+Size $\ast$ {\bfseries Get\+Operand\+Sizes} (Bytecode bytecode, Operand\+Scale operand\+\_\+scale)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a28b2da32169415a2c614004ab991d696}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a28b2da32169415a2c614004ab991d696}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Operand\+Offset} (Bytecode bytecode, \mbox{\hyperlink{classint}{int}} i, Operand\+Scale operand\+\_\+scale)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_aa36d92e9553de50e7137dcea9afaa212}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_aa36d92e9553de50e7137dcea9afaa212}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Size} (Bytecode bytecode, Operand\+Scale operand\+\_\+scale)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a73c15d2ef6e681eb36695d40f787f521}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a73c15d2ef6e681eb36695d40f787f521}} 
+static Bytecode {\bfseries Get\+Debug\+Break} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a3c26a67c2ae1b3a3c13ba669cc387154}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a3c26a67c2ae1b3a3c13ba669cc387154}} 
+static Bytecode {\bfseries Get\+Jump\+Without\+To\+Boolean} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a3adceda5bd96e2e34b5a3b1f63d2aa2a}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a3adceda5bd96e2e34b5a3b1f63d2aa2a}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Makes\+Call\+Along\+Critical\+Path} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ae2a793a337111484af7c2915f094b7d0}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ae2a793a337111484af7c2915f094b7d0}} 
+static Convert\+Receiver\+Mode {\bfseries Get\+Receiver\+Mode} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a7c63b8f1b462a5bf34d4a542403d78c8}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a7c63b8f1b462a5bf34d4a542403d78c8}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Debug\+Break} (Bytecode bytecode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a7d3c91ed23038a19976d8af9da043f51}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a7d3c91ed23038a19976d8af9da043f51}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Register\+Operand\+Type} (Operand\+Type operand\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_abc577a8cd4f913460335fc176437ad5e}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_abc577a8cd4f913460335fc176437ad5e}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Register\+Input\+Operand\+Type} (Operand\+Type operand\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a626ffd237701bcfeea88cbe36c9e2e3b}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a626ffd237701bcfeea88cbe36c9e2e3b}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Register\+Output\+Operand\+Type} (Operand\+Type operand\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_abb0613f9f91ebca474ab9aa88eb72d73}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_abb0613f9f91ebca474ab9aa88eb72d73}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Register\+List\+Operand\+Type} (Operand\+Type operand\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ae93f888d61e3d512171c79f34438a681}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ae93f888d61e3d512171c79f34438a681}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Star\+Lookahead} (Bytecode bytecode, Operand\+Scale operand\+\_\+scale)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a43e412644dbfb1e78b4db37b1d50b704}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a43e412644dbfb1e78b4db37b1d50b704}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Number\+Of\+Registers\+Represented\+By} (Operand\+Type operand\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a7dcf04a33b5acb8f1ee4b176286ea7a5}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a7dcf04a33b5acb8f1ee4b176286ea7a5}} 
+static Operand\+Size {\bfseries Size\+Of\+Operand} (Operand\+Type operand\+\_\+type, Operand\+Scale operand\+\_\+scale)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ad26c48912c5c3cd9564a524995120c72}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ad26c48912c5c3cd9564a524995120c72}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Runtime\+Id\+Operand\+Type} (Operand\+Type operand\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ad2a4f8ecd3f16eec011b54b97551c801}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ad2a4f8ecd3f16eec011b54b97551c801}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Unsigned\+Operand\+Type} (Operand\+Type operand\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_aec091240b4ac4697d9086609eaeb6b1c}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_aec091240b4ac4697d9086609eaeb6b1c}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Bytecode\+Has\+Handler} (Bytecode bytecode, Operand\+Scale operand\+\_\+scale)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ac3db135672566de2efc891ebe621d9fc}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ac3db135672566de2efc891ebe621d9fc}} 
+static Operand\+Scale {\bfseries Scale\+For\+Signed\+Operand} (int32\+\_\+t value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a1632f61e415c9358278cfa12c9bfd0cc}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a1632f61e415c9358278cfa12c9bfd0cc}} 
+static Operand\+Scale {\bfseries Scale\+For\+Unsigned\+Operand} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ab0eb14aa42d3ed483825ed6b97970af2}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_ab0eb14aa42d3ed483825ed6b97970af2}} 
+static Operand\+Size {\bfseries Size\+For\+Unsigned\+Operand} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a66d2f9ffbfb241a7637b906b584b0fa9}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a66d2f9ffbfb241a7637b906b584b0fa9}} 
+static \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries bytecode\+\_\+size\+\_\+table\+\_\+address} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a59a25d6f1d42143d77de614ce2415491}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a59a25d6f1d42143d77de614ce2415491}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Operands} = 5
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a2f936ba0527c716efea335cbeddc2594}\label{classv8_1_1internal_1_1interpreter_1_1Bytecodes_a2f936ba0527c716efea335cbeddc2594}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Bytecode\+Count} = static\+\_\+cast$<$\mbox{\hyperlink{classint}{int}}$>$(Bytecode\+::k\+Last) + 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 467 of file bytecodes.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/interpreter/bytecodes.\+h\item 
+v8/src/interpreter/bytecodes.\+cc\end{DoxyCompactItemize}

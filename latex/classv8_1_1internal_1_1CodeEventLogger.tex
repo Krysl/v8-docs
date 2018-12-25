@@ -1,0 +1,75 @@
+\hypertarget{classv8_1_1internal_1_1CodeEventLogger}{}\section{v8\+:\+:internal\+:\+:Code\+Event\+Logger Class Reference}
+\label{classv8_1_1internal_1_1CodeEventLogger}\index{v8\+::internal\+::\+Code\+Event\+Logger@{v8\+::internal\+::\+Code\+Event\+Logger}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Code\+Event\+Logger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.723077cm]{classv8_1_1internal_1_1CodeEventLogger}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1CodeEventLogger_1_1NameBuffer}{Name\+Buffer}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEventLogger_a8553671ae8351a988223bfa9bcbed078}\label{classv8_1_1internal_1_1CodeEventLogger_a8553671ae8351a988223bfa9bcbed078}} 
+{\bfseries Code\+Event\+Logger} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEventLogger_abcac8fc9021e57ad92afdc91f3b88ce6}\label{classv8_1_1internal_1_1CodeEventLogger_abcac8fc9021e57ad92afdc91f3b88ce6}} 
+void {\bfseries Code\+Create\+Event} (Log\+Events\+And\+Tags tag, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, const \mbox{\hyperlink{classchar}{char}} $\ast$comment) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEventLogger_a10c9c74520b851ac08d1bbf8b392c08c}\label{classv8_1_1internal_1_1CodeEventLogger_a10c9c74520b851ac08d1bbf8b392c08c}} 
+void {\bfseries Code\+Create\+Event} (Log\+Events\+And\+Tags tag, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEventLogger_a719946d120f43e92c8aa849e971968fc}\label{classv8_1_1internal_1_1CodeEventLogger_a719946d120f43e92c8aa849e971968fc}} 
+void {\bfseries Code\+Create\+Event} (Log\+Events\+And\+Tags tag, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$shared, \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEventLogger_afc418ca1522b16d631f4ecdc28e84205}\label{classv8_1_1internal_1_1CodeEventLogger_afc418ca1522b16d631f4ecdc28e84205}} 
+void {\bfseries Code\+Create\+Event} (Log\+Events\+And\+Tags tag, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$shared, \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} source, \mbox{\hyperlink{classint}{int}} line, \mbox{\hyperlink{classint}{int}} column) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEventLogger_a2f215ba458139625c638ee81cc61f538}\label{classv8_1_1internal_1_1CodeEventLogger_a2f215ba458139625c638ee81cc61f538}} 
+void {\bfseries Code\+Create\+Event} (Log\+Events\+And\+Tags tag, const \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCode}{wasm\+::\+Wasm\+Code}} $\ast$code, \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{wasm\+::\+Wasm\+Name}} name) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEventLogger_a21cc89e16e4bf4ce986603f89f4f91a3}\label{classv8_1_1internal_1_1CodeEventLogger_a21cc89e16e4bf4ce986603f89f4f91a3}} 
+void {\bfseries Reg\+Exp\+Code\+Create\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} source) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEventLogger_a3d68b2bb85a4d36880f35cb7ecfc3b03}\label{classv8_1_1internal_1_1CodeEventLogger_a3d68b2bb85a4d36880f35cb7ecfc3b03}} 
+void {\bfseries Callback\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, \mbox{\hyperlink{classuintptr__t}{Address}} entry\+\_\+point) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEventLogger_aaed146e3101ec9da0f40d9b8041f4f13}\label{classv8_1_1internal_1_1CodeEventLogger_aaed146e3101ec9da0f40d9b8041f4f13}} 
+void {\bfseries Getter\+Callback\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, \mbox{\hyperlink{classuintptr__t}{Address}} entry\+\_\+point) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEventLogger_af892b6e6d4c9f669c6a40ea0d40ea13f}\label{classv8_1_1internal_1_1CodeEventLogger_af892b6e6d4c9f669c6a40ea0d40ea13f}} 
+void {\bfseries Setter\+Callback\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, \mbox{\hyperlink{classuintptr__t}{Address}} entry\+\_\+point) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEventLogger_aba57706aa2d5625494d9cf6182a0bf07}\label{classv8_1_1internal_1_1CodeEventLogger_aba57706aa2d5625494d9cf6182a0bf07}} 
+void {\bfseries Shared\+Function\+Info\+Move\+Event} (\mbox{\hyperlink{classuintptr__t}{Address}} from, \mbox{\hyperlink{classuintptr__t}{Address}} to) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEventLogger_a1e7773a2cbfc92976ed978cd58aacce3}\label{classv8_1_1internal_1_1CodeEventLogger_a1e7773a2cbfc92976ed978cd58aacce3}} 
+void {\bfseries Code\+Moving\+G\+C\+Event} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEventLogger_ab269993de8e58fbb49b8b900151643c8}\label{classv8_1_1internal_1_1CodeEventLogger_ab269993de8e58fbb49b8b900151643c8}} 
+void {\bfseries Code\+Deopt\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} code, Deoptimize\+Kind kind, \mbox{\hyperlink{classuintptr__t}{Address}} pc, \mbox{\hyperlink{classint}{int}} fp\+\_\+to\+\_\+sp\+\_\+delta) override
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEventLogger_a2934bdcd8baa3f759b111ea3235ef170}\label{classv8_1_1internal_1_1CodeEventLogger_a2934bdcd8baa3f759b111ea3235ef170}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 402 of file log.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/log.\+h\item 
+v8/src/log.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\hypertarget{classv8_1_1internal_1_1ClassBoilerplate}{}\section{v8\+:\+:internal\+:\+:Class\+Boilerplate Class Reference}
+\label{classv8_1_1internal_1_1ClassBoilerplate}\index{v8\+::internal\+::\+Class\+Boilerplate@{v8\+::internal\+::\+Class\+Boilerplate}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Class\+Boilerplate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1ClassBoilerplate}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1ClassBoilerplate_1_1ComputedEntryFlags}{Computed\+Entry\+Flags}}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1ClassBoilerplate_1_1Flags}{Flags}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ClassBoilerplate_a5474505e0ac613ae3c7201eca67ccbc7}\label{classv8_1_1internal_1_1ClassBoilerplate_a5474505e0ac613ae3c7201eca67ccbc7}} 
+enum {\bfseries Value\+Kind} \{ {\bfseries k\+Data}, 
+{\bfseries k\+Getter}, 
+{\bfseries k\+Setter}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ClassBoilerplate_ac7400fa5900a212fcaecd80b4aa6f986}\label{classv8_1_1internal_1_1ClassBoilerplate_ac7400fa5900a212fcaecd80b4aa6f986}} 
+enum {\bfseries Define\+Class\+Arguments\+Indices} \{ {\bfseries k\+Constructor\+Argument\+Index} = 1, 
+{\bfseries k\+Prototype\+Argument\+Index} = 2, 
+{\bfseries k\+First\+Dynamic\+Argument\+Index} = 3
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ClassBoilerplate_a551033e987cdcfeb71ef14dcf06ac130}\label{classv8_1_1internal_1_1ClassBoilerplate_a551033e987cdcfeb71ef14dcf06ac130}} 
+enum \{ \newline
+{\bfseries k\+Flags\+Index}, 
+{\bfseries k\+Class\+Properties\+Template\+Index}, 
+{\bfseries k\+Class\+Elements\+Template\+Index}, 
+{\bfseries k\+Class\+Computed\+Properties\+Index}, 
+\newline
+{\bfseries k\+Prototype\+Properties\+Template\+Index}, 
+{\bfseries k\+Prototype\+Elements\+Template\+Index}, 
+{\bfseries k\+Prototype\+Computed\+Properties\+Index}, 
+{\bfseries k\+Boileplate\+Length}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ClassBoilerplate_a18ddc4d07c601e3cd0b74baf4686bd29}\label{classv8_1_1internal_1_1ClassBoilerplate_a18ddc4d07c601e3cd0b74baf4686bd29}} 
+static void {\bfseries Add\+To\+Properties\+Template} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1NameDictionary}{Name\+Dictionary}} $>$ dictionary, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classint}{int}} key\+\_\+index, Value\+Kind value\+\_\+kind, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ClassBoilerplate_a0f8f41d95056b0bca061f0e61a060d6c}\label{classv8_1_1internal_1_1ClassBoilerplate_a0f8f41d95056b0bca061f0e61a060d6c}} 
+static void {\bfseries Add\+To\+Elements\+Template} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1NumberDictionary}{Number\+Dictionary}} $>$ dictionary, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} key, \mbox{\hyperlink{classint}{int}} key\+\_\+index, Value\+Kind value\+\_\+kind, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ClassBoilerplate_a0b1c217c1864f4b9e76206cded31250e}\label{classv8_1_1internal_1_1ClassBoilerplate_a0b1c217c1864f4b9e76206cded31250e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ClassBoilerplate}{Class\+Boilerplate}} $>$ {\bfseries Build\+Class\+Boilerplate} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1ClassLiteral}{Class\+Literal}} $\ast$expr)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ClassBoilerplate_a3cb247fe842669c83c2b3f587497bbc8}\label{classv8_1_1internal_1_1ClassBoilerplate_a3cb247fe842669c83c2b3f587497bbc8}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Minimum\+Class\+Properties\+Count} = 6
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ClassBoilerplate_a2601877e0de901316eac55dbbaf37212}\label{classv8_1_1internal_1_1ClassBoilerplate_a2601877e0de901316eac55dbbaf37212}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Minimum\+Prototype\+Properties\+Count} = 1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ClassBoilerplate_a63bd245f558c454fdc595643c6f5b79e}\label{classv8_1_1internal_1_1ClassBoilerplate_a63bd245f558c454fdc595643c6f5b79e}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Full\+Computed\+Entry\+Size} = 2
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 86 of file literal-\/objects.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/literal-\/objects.\+h\item 
+v8/src/objects/literal-\/objects.\+cc\end{DoxyCompactItemize}

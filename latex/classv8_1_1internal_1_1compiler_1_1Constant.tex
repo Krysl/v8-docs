@@ -1,0 +1,97 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1Constant}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Constant Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1Constant}\index{v8\+::internal\+::compiler\+::\+Constant@{v8\+::internal\+::compiler\+::\+Constant}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_a77b19008bb8c006158bcca90c4b45fb5}\label{classv8_1_1internal_1_1compiler_1_1Constant_a77b19008bb8c006158bcca90c4b45fb5}} 
+enum {\bfseries Type} \{ \newline
+{\bfseries k\+Int32}, 
+{\bfseries k\+Int64}, 
+{\bfseries k\+Float32}, 
+{\bfseries k\+Float64}, 
+\newline
+{\bfseries k\+External\+Reference}, 
+{\bfseries k\+Heap\+Object}, 
+{\bfseries k\+Rpo\+Number}, 
+{\bfseries k\+Delayed\+String\+Constant}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_a6f3041c880e083150c24aa037dc0af2f}\label{classv8_1_1internal_1_1compiler_1_1Constant_a6f3041c880e083150c24aa037dc0af2f}} 
+{\bfseries Constant} (int32\+\_\+t v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_a17b8e2c5d10f5c02876e0d66c45fabcd}\label{classv8_1_1internal_1_1compiler_1_1Constant_a17b8e2c5d10f5c02876e0d66c45fabcd}} 
+{\bfseries Constant} (\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_ae528790e57e8076a51649e4107847ddb}\label{classv8_1_1internal_1_1compiler_1_1Constant_ae528790e57e8076a51649e4107847ddb}} 
+{\bfseries Constant} (float v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_acc91c2e015cc92ede4a78c3aa976475a}\label{classv8_1_1internal_1_1compiler_1_1Constant_acc91c2e015cc92ede4a78c3aa976475a}} 
+{\bfseries Constant} (double v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_ae6dc6f3aa32006205f30c64204ed6af5}\label{classv8_1_1internal_1_1compiler_1_1Constant_ae6dc6f3aa32006205f30c64204ed6af5}} 
+{\bfseries Constant} (\mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} ref)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_ae14a2d998bbce2eeb0bbb444c68171b4}\label{classv8_1_1internal_1_1compiler_1_1Constant_ae14a2d998bbce2eeb0bbb444c68171b4}} 
+{\bfseries Constant} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ obj)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_aaf24e3729247acc661bfa72a3c4e4e71}\label{classv8_1_1internal_1_1compiler_1_1Constant_aaf24e3729247acc661bfa72a3c4e4e71}} 
+{\bfseries Constant} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RpoNumber}{Rpo\+Number}} rpo)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_ac1d95a7f549872711321f735004a299f}\label{classv8_1_1internal_1_1compiler_1_1Constant_ac1d95a7f549872711321f735004a299f}} 
+{\bfseries Constant} (const \mbox{\hyperlink{classv8_1_1internal_1_1StringConstantBase}{String\+Constant\+Base}} $\ast$str)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_a8609fc7ec0684b2ce6b952f0300a285e}\label{classv8_1_1internal_1_1compiler_1_1Constant_a8609fc7ec0684b2ce6b952f0300a285e}} 
+{\bfseries Constant} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RelocatablePtrConstantInfo}{Relocatable\+Ptr\+Constant\+Info}} info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_a885b3a552a157c3262ff2bc92deadc72}\label{classv8_1_1internal_1_1compiler_1_1Constant_a885b3a552a157c3262ff2bc92deadc72}} 
+Type {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_a499399ed1140f60bd7cbf8067ec2addc}\label{classv8_1_1internal_1_1compiler_1_1Constant_a499399ed1140f60bd7cbf8067ec2addc}} 
+Reloc\+Info\+::\+Mode {\bfseries rmode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_a38969f82d0fa6b301c93c927eb9a8daf}\label{classv8_1_1internal_1_1compiler_1_1Constant_a38969f82d0fa6b301c93c927eb9a8daf}} 
+int32\+\_\+t {\bfseries To\+Int32} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_a998ee14d6b667a4eb4f515e13d50fd8c}\label{classv8_1_1internal_1_1compiler_1_1Constant_a998ee14d6b667a4eb4f515e13d50fd8c}} 
+\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} {\bfseries To\+Int64} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_a67413e987c16400bfe6a4b7b79d5455b}\label{classv8_1_1internal_1_1compiler_1_1Constant_a67413e987c16400bfe6a4b7b79d5455b}} 
+float {\bfseries To\+Float32} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_afc2ad1ae4b2cb72264de5d7315e5d2f3}\label{classv8_1_1internal_1_1compiler_1_1Constant_afc2ad1ae4b2cb72264de5d7315e5d2f3}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries To\+Float32\+As\+Int} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_ab4ca72a733a14855f004bdc7a7a90b4c}\label{classv8_1_1internal_1_1compiler_1_1Constant_ab4ca72a733a14855f004bdc7a7a90b4c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Double}{Double}} {\bfseries To\+Float64} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_ace3d3e96f170984e350b407285e55001}\label{classv8_1_1internal_1_1compiler_1_1Constant_ace3d3e96f170984e350b407285e55001}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ExternalReference}{External\+Reference}} {\bfseries To\+External\+Reference} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_a74197737974d0c570df306015b869d2b}\label{classv8_1_1internal_1_1compiler_1_1Constant_a74197737974d0c570df306015b869d2b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RpoNumber}{Rpo\+Number}} {\bfseries To\+Rpo\+Number} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_a1b87da8d01191c5084bcab4677edac18}\label{classv8_1_1internal_1_1compiler_1_1Constant_a1b87da8d01191c5084bcab4677edac18}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ {\bfseries To\+Heap\+Object} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_a6d69b8ea3a82838ee0faf17e6bd914c6}\label{classv8_1_1internal_1_1compiler_1_1Constant_a6d69b8ea3a82838ee0faf17e6bd914c6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries To\+Code} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Constant_a9aab21c0f1b9e046584b89692d5e9763}\label{classv8_1_1internal_1_1compiler_1_1Constant_a9aab21c0f1b9e046584b89692d5e9763}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1StringConstantBase}{String\+Constant\+Base}} $\ast$ {\bfseries To\+Delayed\+String\+Constant} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 990 of file instruction.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/backend/instruction.\+h\item 
+v8/src/compiler/backend/instruction.\+cc\end{DoxyCompactItemize}

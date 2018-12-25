@@ -1,0 +1,121 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Liftoff\+Reg\+List Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}\index{v8\+::internal\+::wasm\+::\+Liftoff\+Reg\+List@{v8\+::internal\+::wasm\+::\+Liftoff\+Reg\+List}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a2ac7b1a74881e7caa8bf9497129718f4}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a2ac7b1a74881e7caa8bf9497129718f4}} 
+using {\bfseries storage\+\_\+t} = std\+::conditional$<$ use\+\_\+u16, uint16\+\_\+t, std\+::conditional$<$ use\+\_\+u32, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}}, uint64\+\_\+t $>$\+::type $>$\+::type
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_ad903d0cebc83812d78692099faa1427a}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_ad903d0cebc83812d78692099faa1427a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries set} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a431ad1369c7e4a6bb760f1bd4d15df6a}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a431ad1369c7e4a6bb760f1bd4d15df6a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} {\bfseries set} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a9fcb1e5f1e8253219fa73f2aa0cd847f}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a9fcb1e5f1e8253219fa73f2aa0cd847f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} {\bfseries set} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a67c572a41e50262c1f7b25418c967894}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a67c572a41e50262c1f7b25418c967894}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} {\bfseries clear} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a89f2b4a24a4c0e17e17881efb1592561}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a89f2b4a24a4c0e17e17881efb1592561}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} reg) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a22d1f94d3a578cc5465aa764e13b164f}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a22d1f94d3a578cc5465aa764e13b164f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} reg) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a7aa9d9908fdebc582ddda0b10656bd69}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a7aa9d9908fdebc582ddda0b10656bd69}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} reg) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_aadd83fbfe04a5848892c2ea8629644f7}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_aadd83fbfe04a5848892c2ea8629644f7}} 
+constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+empty} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_ac5a153a3e0a07536cbe834a799da3009}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_ac5a153a3e0a07536cbe834a799da3009}} 
+constexpr \mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries Get\+Num\+Regs\+Set} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_ae68b9adc15be2f435e9f77dfed26f263}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_ae68b9adc15be2f435e9f77dfed26f263}} 
+constexpr \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} {\bfseries operator \&} (const \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_af4dd676f1e946db02c8747270d009354}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_af4dd676f1e946db02c8747270d009354}} 
+constexpr \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} {\bfseries operator$\vert$} (const \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_aee92e1054193b738fc978189a9f87dfc}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_aee92e1054193b738fc978189a9f87dfc}} 
+constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries operator==} (const \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_ab89a78b4cbd1f6063a83d1350e69cb23}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_ab89a78b4cbd1f6063a83d1350e69cb23}} 
+constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries operator!=} (const \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_adbcf50afc84394ee021352925d364b77}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_adbcf50afc84394ee021352925d364b77}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} {\bfseries Get\+First\+Reg\+Set} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a18790f9ce04ba713c2971938702bde0f}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a18790f9ce04ba713c2971938702bde0f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegister}{Liftoff\+Register}} {\bfseries Get\+Last\+Reg\+Set} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a4120687b33a02815a9424de38fd12aeb}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a4120687b33a02815a9424de38fd12aeb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} {\bfseries Mask\+Out} (const \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} mask) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a16af20fd4ca997951af166a5aede070a}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a16af20fd4ca997951af166a5aede070a}} 
+\mbox{\hyperlink{classuint32__t}{Reg\+List}} {\bfseries Get\+Gp\+List} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a6a75a884e24629bbe44d3a649856802a}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a6a75a884e24629bbe44d3a649856802a}} 
+\mbox{\hyperlink{classuint32__t}{Reg\+List}} {\bfseries Get\+Fp\+List} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a83e46cb768d7bd3b64e2b66e0f15483a}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a83e46cb768d7bd3b64e2b66e0f15483a}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} {\bfseries From\+Bits} (storage\+\_\+t bits)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_ae1def16345ea2ee88959cd9e5c99d4a1}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_ae1def16345ea2ee88959cd9e5c99d4a1}} 
+{\footnotesize template$<$storage\+\_\+t bits$>$ }\\static constexpr \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} {\bfseries From\+Bits} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_aa9bc0917056708fc68c50fc803aa722d}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_aa9bc0917056708fc68c50fc803aa722d}} 
+{\footnotesize template$<$typename... Regs$>$ }\\static \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1LiftoffRegList}{Liftoff\+Reg\+List}} {\bfseries For\+Regs} (Regs... regs)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_af3ea94fccb0087ad31e82baa6248c6e6}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_af3ea94fccb0087ad31e82baa6248c6e6}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries use\+\_\+u16} = k\+After\+Max\+Liftoff\+Reg\+Code $<$= 16
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a795e8f3abdef39b745f3586c4fca6e7a}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a795e8f3abdef39b745f3586c4fca6e7a}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries use\+\_\+u32} = !use\+\_\+u16 \&\& k\+After\+Max\+Liftoff\+Reg\+Code $<$= 32
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_ae0d3c068d2800d4b334cd25e917ec3f8}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_ae0d3c068d2800d4b334cd25e917ec3f8}} 
+static constexpr storage\+\_\+t {\bfseries k\+Gp\+Mask} = storage\+\_\+t\{k\+Liftoff\+Assembler\+Gp\+Cache\+Regs\}
+\item 
+static constexpr storage\+\_\+t {\bfseries k\+Fp\+Mask}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 196 of file liftoff-\/register.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a27209310c19f408fe933ab1fe99edc1a}\label{classv8_1_1internal_1_1wasm_1_1LiftoffRegList_a27209310c19f408fe933ab1fe99edc1a}} 
+\index{v8\+::internal\+::wasm\+::\+Liftoff\+Reg\+List@{v8\+::internal\+::wasm\+::\+Liftoff\+Reg\+List}!k\+Fp\+Mask@{k\+Fp\+Mask}}
+\index{k\+Fp\+Mask@{k\+Fp\+Mask}!v8\+::internal\+::wasm\+::\+Liftoff\+Reg\+List@{v8\+::internal\+::wasm\+::\+Liftoff\+Reg\+List}}
+\subsubsection{\texorpdfstring{k\+Fp\+Mask}{kFpMask}}
+{\footnotesize\ttfamily constexpr storage\+\_\+t v8\+::internal\+::wasm\+::\+Liftoff\+Reg\+List\+::k\+Fp\+Mask\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= storage\_t\{kLiftoffAssemblerFpCacheRegs\}
+                                       << kAfterMaxLiftoffGpRegCode
+\end{DoxyCode}
+
+
+Definition at line 205 of file liftoff-\/register.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/baseline/liftoff-\/register.\+h\end{DoxyCompactItemize}

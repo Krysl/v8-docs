@@ -1,0 +1,47 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Block\+Coverage\+Builder Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder}\index{v8\+::internal\+::interpreter\+::\+Block\+Coverage\+Builder@{v8\+::internal\+::interpreter\+::\+Block\+Coverage\+Builder}}
+Inheritance diagram for v8\+:\+:internal\+:\+:interpreter\+:\+:Block\+Coverage\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder_ae9671572a17615f32daf9b84beb40bc9}\label{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder_ae9671572a17615f32daf9b84beb40bc9}} 
+{\bfseries Block\+Coverage\+Builder} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeArrayBuilder}{Bytecode\+Array\+Builder}} $\ast$builder, \mbox{\hyperlink{classv8_1_1internal_1_1SourceRangeMap}{Source\+Range\+Map}} $\ast$source\+\_\+range\+\_\+map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder_abfad34b8d3e486dfb32356995fa5ddc1}\label{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder_abfad34b8d3e486dfb32356995fa5ddc1}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Allocate\+Block\+Coverage\+Slot} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneObject}{Zone\+Object}} $\ast$node, Source\+Range\+Kind kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder_a693c9c36aec5d9bfd32d985f4cb34a29}\label{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder_a693c9c36aec5d9bfd32d985f4cb34a29}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Allocate\+Nary\+Block\+Coverage\+Slot} (\mbox{\hyperlink{classv8_1_1internal_1_1NaryOperation}{Nary\+Operation}} $\ast$node, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder_a1eaf1074a7ed1354ad4a420882c4adbb}\label{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder_a1eaf1074a7ed1354ad4a420882c4adbb}} 
+void {\bfseries Increment\+Block\+Counter} (\mbox{\hyperlink{classint}{int}} coverage\+\_\+array\+\_\+slot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder_ab0b169aba46421cc6e15ccba40fcf836}\label{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder_ab0b169aba46421cc6e15ccba40fcf836}} 
+void {\bfseries Increment\+Block\+Counter} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneObject}{Zone\+Object}} $\ast$node, Source\+Range\+Kind kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder_a66780344c199fa8221b300713453b06a}\label{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder_a66780344c199fa8221b300713453b06a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1SourceRange}{Source\+Range}} $>$ \& {\bfseries slots} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder_a5962c6e21a057475f2257131fc9efea4}\label{classv8_1_1internal_1_1interpreter_1_1BlockCoverageBuilder_a5962c6e21a057475f2257131fc9efea4}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+No\+Coverage\+Array\+Slot} = -\/1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file block-\/coverage-\/builder.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/interpreter/block-\/coverage-\/builder.\+h\end{DoxyCompactItemize}

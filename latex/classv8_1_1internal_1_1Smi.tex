@@ -1,0 +1,86 @@
+\hypertarget{classv8_1_1internal_1_1Smi}{}\section{v8\+:\+:internal\+:\+:Smi Class Reference}
+\label{classv8_1_1internal_1_1Smi}\index{v8\+::internal\+::\+Smi@{v8\+::internal\+::\+Smi}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Smi\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1Smi}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Smi_a8ae203265680600af65a6819e29ce5c3}\label{classv8_1_1internal_1_1Smi_a8ae203265680600af65a6819e29ce5c3}} 
+constexpr {\bfseries Smi} (\mbox{\hyperlink{classuintptr__t}{Address}} ptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Smi_aead0552da30752c55acd0dd12514ce98}\label{classv8_1_1internal_1_1Smi_aead0552da30752c55acd0dd12514ce98}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $\ast$ {\bfseries operator-\/$>$} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Smi_a97e38815ba2cd6c0d4b3e91c4af99af7}\label{classv8_1_1internal_1_1Smi_a97e38815ba2cd6c0d4b3e91c4af99af7}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $\ast$ {\bfseries operator-\/$>$} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Smi_a8592eb7ac53938b4cb84ac7a89271e22}\label{classv8_1_1internal_1_1Smi_a8592eb7ac53938b4cb84ac7a89271e22}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Smi_a1c2740da44a66fa1cb2a01291e4be366}\label{classv8_1_1internal_1_1Smi_a1c2740da44a66fa1cb2a01291e4be366}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} {\bfseries To\+Uint32\+Smi} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Smi_ae1a3bb7a4a794f10b72e42458d675bd7}\label{classv8_1_1internal_1_1Smi_ae1a3bb7a4a794f10b72e42458d675bd7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries To\+Int32} (int32\+\_\+t $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Smi_a499119e41054bc5bb2ed8b06a5c61dfa}\label{classv8_1_1internal_1_1Smi_a499119e41054bc5bb2ed8b06a5c61dfa}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Smi\+Print} (std\+::ostream \&os) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Smi_a9db00eeafea7bb0333ac1f3237c53e16}\label{classv8_1_1internal_1_1Smi_a9db00eeafea7bb0333ac1f3237c53e16}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries To\+Int} (const \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Smi_af3fd33049afe50ac28b0693a3a6095b2}\label{classv8_1_1internal_1_1Smi_af3fd33049afe50ac28b0693a3a6095b2}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries To\+Int} (\mbox{\hyperlink{classv8_1_1internal_1_1ObjectPtr}{Object\+Ptr}} object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Smi_a4d9aeb9edce6888fc9f89aa872f05f73}\label{classv8_1_1internal_1_1Smi_a4d9aeb9edce6888fc9f89aa872f05f73}} 
+static constexpr \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} {\bfseries From\+Int} (\mbox{\hyperlink{classint}{int}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Smi_a09c407bf3901cc12dc1f691bf532c4cc}\label{classv8_1_1internal_1_1Smi_a09c407bf3901cc12dc1f691bf532c4cc}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} {\bfseries From\+Intptr} (intptr\+\_\+t value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Smi_a26c941b45038c34db30f0330f2262d7a}\label{classv8_1_1internal_1_1Smi_a26c941b45038c34db30f0330f2262d7a}} 
+{\footnotesize template$<$typename E , typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+enum$<$\+E$>$\+::value$>$\+::type$>$ }\\static \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} {\bfseries From\+Enum} (E value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Smi_aff6f15a66413367d4b83ff12738a272f}\label{classv8_1_1internal_1_1Smi_aff6f15a66413367d4b83ff12738a272f}} 
+static \mbox{\hyperlink{classbool}{bool}} constexpr {\bfseries Is\+Valid} (intptr\+\_\+t value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Smi_ab565515e642aed20577d54e58012b70c}\label{classv8_1_1internal_1_1Smi_ab565515e642aed20577d54e58012b70c}} 
+static \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Lexicographic\+Compare} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} x, \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} y)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Smi_a66726cd97dc8e5f0c3e1282b681a559b}\label{classv8_1_1internal_1_1Smi_a66726cd97dc8e5f0c3e1282b681a559b}} 
+static constexpr \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} {\bfseries zero} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Smi_a17db2f1c78a2fd71092b4a8a2095fcae}\label{classv8_1_1internal_1_1Smi_a17db2f1c78a2fd71092b4a8a2095fcae}} 
+static constexpr \mbox{\hyperlink{classv8_1_1internal_1_1ObjectPtr}{Object\+Ptr}} {\bfseries k\+Zero} = \mbox{\hyperlink{classv8_1_1internal_1_1ObjectPtr}{Object\+Ptr}}(0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Smi_ad72b2b9d2e785017f29dfbcf54475491}\label{classv8_1_1internal_1_1Smi_ad72b2b9d2e785017f29dfbcf54475491}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Min\+Value} = k\+Smi\+Min\+Value
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Smi_af3d26aa8c5407775428f36ef82bfaf3c}\label{classv8_1_1internal_1_1Smi_af3d26aa8c5407775428f36ef82bfaf3c}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Value} = k\+Smi\+Max\+Value
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 23 of file smi.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/smi.\+h\item 
+v8/src/external-\/reference.\+cc\item 
+v8/src/objects/smi-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

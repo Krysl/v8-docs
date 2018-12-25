@@ -1,0 +1,61 @@
+\hypertarget{classv8_1_1internal_1_1WasmCompileLazyFrameConstants}{}\section{v8\+:\+:internal\+:\+:Wasm\+Compile\+Lazy\+Frame\+Constants Class Reference}
+\label{classv8_1_1internal_1_1WasmCompileLazyFrameConstants}\index{v8\+::internal\+::\+Wasm\+Compile\+Lazy\+Frame\+Constants@{v8\+::internal\+::\+Wasm\+Compile\+Lazy\+Frame\+Constants}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Wasm\+Compile\+Lazy\+Frame\+Constants\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.873240cm]{classv8_1_1internal_1_1WasmCompileLazyFrameConstants}
+\end{center}
+\end{figure}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmCompileLazyFrameConstants_a7abbcdd6152875a0cda8f23299ac94e9}\label{classv8_1_1internal_1_1WasmCompileLazyFrameConstants_a7abbcdd6152875a0cda8f23299ac94e9}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Number\+Of\+Saved\+Gp\+Param\+Regs} = 4
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmCompileLazyFrameConstants_a98e9416eb68e83ee6a9dec942b31cbf1}\label{classv8_1_1internal_1_1WasmCompileLazyFrameConstants_a98e9416eb68e83ee6a9dec942b31cbf1}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Number\+Of\+Saved\+Fp\+Param\+Regs} = 8
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmCompileLazyFrameConstants_ac37d957a95588310eb5db739bbbe1318}\label{classv8_1_1internal_1_1WasmCompileLazyFrameConstants_ac37d957a95588310eb5db739bbbe1318}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Wasm\+Instance\+Offset} = T\+Y\+P\+E\+D\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+U\+S\+H\+E\+D\+\_\+\+V\+A\+L\+U\+E\+\_\+\+O\+F\+F\+S\+ET(0)
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Fixed\+Frame\+Size\+From\+Fp}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 36 of file frame-\/constants-\/arm.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmCompileLazyFrameConstants_afc76e7a16abf94f5a338e41a1abf1ad9}\label{classv8_1_1internal_1_1WasmCompileLazyFrameConstants_afc76e7a16abf94f5a338e41a1abf1ad9}} 
+\index{v8\+::internal\+::\+Wasm\+Compile\+Lazy\+Frame\+Constants@{v8\+::internal\+::\+Wasm\+Compile\+Lazy\+Frame\+Constants}!k\+Fixed\+Frame\+Size\+From\+Fp@{k\+Fixed\+Frame\+Size\+From\+Fp}}
+\index{k\+Fixed\+Frame\+Size\+From\+Fp@{k\+Fixed\+Frame\+Size\+From\+Fp}!v8\+::internal\+::\+Wasm\+Compile\+Lazy\+Frame\+Constants@{v8\+::internal\+::\+Wasm\+Compile\+Lazy\+Frame\+Constants}}
+\subsubsection{\texorpdfstring{k\+Fixed\+Frame\+Size\+From\+Fp}{kFixedFrameSizeFromFp}}
+{\footnotesize\ttfamily static constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Wasm\+Compile\+Lazy\+Frame\+Constants\+::k\+Fixed\+Frame\+Size\+From\+Fp\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      TypedFrameConstants::kFixedFrameSizeFromFp +
+      kNumberOfSavedGpParamRegs * kPointerSize +
+      kNumberOfSavedFpParamRegs * kDoubleSize
+\end{DoxyCode}
+
+
+Definition at line 43 of file frame-\/constants-\/arm.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/arm/frame-\/constants-\/arm.\+h\item 
+v8/src/arm64/frame-\/constants-\/arm64.\+h\item 
+v8/src/ia32/frame-\/constants-\/ia32.\+h\item 
+v8/src/mips/frame-\/constants-\/mips.\+h\item 
+v8/src/mips64/frame-\/constants-\/mips64.\+h\item 
+v8/src/ppc/frame-\/constants-\/ppc.\+h\item 
+v8/src/s390/frame-\/constants-\/s390.\+h\item 
+v8/src/x64/frame-\/constants-\/x64.\+h\end{DoxyCompactItemize}

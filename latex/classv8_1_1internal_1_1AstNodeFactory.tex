@@ -1,0 +1,276 @@
+\hypertarget{classv8_1_1internal_1_1AstNodeFactory}{}\section{v8\+:\+:internal\+:\+:Ast\+Node\+Factory Class Reference}
+\label{classv8_1_1internal_1_1AstNodeFactory}\index{v8\+::internal\+::\+Ast\+Node\+Factory@{v8\+::internal\+::\+Ast\+Node\+Factory}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a9f6977f7d61cf9766358bd641dd48609}\label{classv8_1_1internal_1_1AstNodeFactory_a9f6977f7d61cf9766358bd641dd48609}} 
+{\bfseries Ast\+Node\+Factory} (\mbox{\hyperlink{classv8_1_1internal_1_1AstValueFactory}{Ast\+Value\+Factory}} $\ast$ast\+\_\+value\+\_\+factory, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a21e868ada47daf39aa1b8dd836923899}\label{classv8_1_1internal_1_1AstNodeFactory_a21e868ada47daf39aa1b8dd836923899}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1AstValueFactory}{Ast\+Value\+Factory}} $\ast$ {\bfseries ast\+\_\+value\+\_\+factory} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a6d18f7e952e26f1da5c19758e94a1542}\label{classv8_1_1internal_1_1AstNodeFactory_a6d18f7e952e26f1da5c19758e94a1542}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1VariableDeclaration}{Variable\+Declaration}} $\ast$ {\bfseries New\+Variable\+Declaration} (\mbox{\hyperlink{classv8_1_1internal_1_1VariableProxy}{Variable\+Proxy}} $\ast$proxy, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a11eece47a29b9f61f0e724cd60cadc27}\label{classv8_1_1internal_1_1AstNodeFactory_a11eece47a29b9f61f0e724cd60cadc27}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1NestedVariableDeclaration}{Nested\+Variable\+Declaration}} $\ast$ {\bfseries New\+Nested\+Variable\+Declaration} (\mbox{\hyperlink{classv8_1_1internal_1_1VariableProxy}{Variable\+Proxy}} $\ast$proxy, \mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$scope, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a8fa297419e2546325d4ba2503ba38ab0}\label{classv8_1_1internal_1_1AstNodeFactory_a8fa297419e2546325d4ba2503ba38ab0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1FunctionDeclaration}{Function\+Declaration}} $\ast$ {\bfseries New\+Function\+Declaration} (\mbox{\hyperlink{classv8_1_1internal_1_1VariableProxy}{Variable\+Proxy}} $\ast$proxy, \mbox{\hyperlink{classv8_1_1internal_1_1FunctionLiteral}{Function\+Literal}} $\ast$fun, \mbox{\hyperlink{classbool}{bool}} is\+\_\+sloppy\+\_\+block\+\_\+function, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_aef7d4a1b58b4d25b35d6206045f8e2be}\label{classv8_1_1internal_1_1AstNodeFactory_aef7d4a1b58b4d25b35d6206045f8e2be}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Block}{Block}} $\ast$ {\bfseries New\+Block} (\mbox{\hyperlink{classint}{int}} capacity, \mbox{\hyperlink{classbool}{bool}} ignore\+\_\+completion\+\_\+value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a125b1a55279079c18ab638fc47f4d711}\label{classv8_1_1internal_1_1AstNodeFactory_a125b1a55279079c18ab638fc47f4d711}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Block}{Block}} $\ast$ {\bfseries New\+Block} (\mbox{\hyperlink{classbool}{bool}} ignore\+\_\+completion\+\_\+value, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$labels)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_ae8b4a6279d601c0329002e0bb2f3cd0d}\label{classv8_1_1internal_1_1AstNodeFactory_ae8b4a6279d601c0329002e0bb2f3cd0d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Block}{Block}} $\ast$ {\bfseries New\+Block} (\mbox{\hyperlink{classbool}{bool}} ignore\+\_\+completion\+\_\+value, const \mbox{\hyperlink{classv8_1_1internal_1_1ScopedPtrList}{Scoped\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Statement}{Statement}} $>$ \&statements)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a200cf4175841fdf80735b96235a1a208}\label{classv8_1_1internal_1_1AstNodeFactory_a200cf4175841fdf80735b96235a1a208}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1SwitchStatement}{Switch\+Statement}} $\ast$ {\bfseries New\+Switch\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$labels, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$tag, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a8bbfaba6e0f3a6ffd38784a5fb19b76b}\label{classv8_1_1internal_1_1AstNodeFactory_a8bbfaba6e0f3a6ffd38784a5fb19b76b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ForEachStatement}{For\+Each\+Statement}} $\ast$ {\bfseries New\+For\+Each\+Statement} (For\+Each\+Statement\+::\+Visit\+Mode visit\+\_\+mode, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$labels, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$own\+\_\+labels, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_ae8f7bd61c0fc39f7c8883f985f785cd2}\label{classv8_1_1internal_1_1AstNodeFactory_ae8f7bd61c0fc39f7c8883f985f785cd2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ForOfStatement}{For\+Of\+Statement}} $\ast$ {\bfseries New\+For\+Of\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$labels, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$own\+\_\+labels, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a0193a0eb8d7135dd712c7b709c224ee7}\label{classv8_1_1internal_1_1AstNodeFactory_a0193a0eb8d7135dd712c7b709c224ee7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ExpressionStatement}{Expression\+Statement}} $\ast$ {\bfseries New\+Expression\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$expression, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a90ed10dc732e8ef7441708882769fd06}\label{classv8_1_1internal_1_1AstNodeFactory_a90ed10dc732e8ef7441708882769fd06}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ContinueStatement}{Continue\+Statement}} $\ast$ {\bfseries New\+Continue\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1IterationStatement}{Iteration\+Statement}} $\ast$target, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_adec15f39a4f875929e109ce3aebd0803}\label{classv8_1_1internal_1_1AstNodeFactory_adec15f39a4f875929e109ce3aebd0803}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1BreakStatement}{Break\+Statement}} $\ast$ {\bfseries New\+Break\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1BreakableStatement}{Breakable\+Statement}} $\ast$target, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a81e9af35a1704e77051386f685acd526}\label{classv8_1_1internal_1_1AstNodeFactory_a81e9af35a1704e77051386f685acd526}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ReturnStatement}{Return\+Statement}} $\ast$ {\bfseries New\+Return\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$expression, \mbox{\hyperlink{classint}{int}} pos, \mbox{\hyperlink{classint}{int}} end\+\_\+position=k\+No\+Source\+Position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a14c8e0e6031bcc508bfaab0991dc5d43}\label{classv8_1_1internal_1_1AstNodeFactory_a14c8e0e6031bcc508bfaab0991dc5d43}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ReturnStatement}{Return\+Statement}} $\ast$ {\bfseries New\+Async\+Return\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$expression, \mbox{\hyperlink{classint}{int}} pos, \mbox{\hyperlink{classint}{int}} end\+\_\+position=k\+No\+Source\+Position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_aa541d282f467b721c331945d96f30fbc}\label{classv8_1_1internal_1_1AstNodeFactory_aa541d282f467b721c331945d96f30fbc}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1WithStatement}{With\+Statement}} $\ast$ {\bfseries New\+With\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$scope, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$expression, \mbox{\hyperlink{classv8_1_1internal_1_1Statement}{Statement}} $\ast$statement, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_af0f8c36bc5998de155ba435e2748c2c8}\label{classv8_1_1internal_1_1AstNodeFactory_af0f8c36bc5998de155ba435e2748c2c8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1IfStatement}{If\+Statement}} $\ast$ {\bfseries New\+If\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$condition, \mbox{\hyperlink{classv8_1_1internal_1_1Statement}{Statement}} $\ast$then\+\_\+statement, \mbox{\hyperlink{classv8_1_1internal_1_1Statement}{Statement}} $\ast$else\+\_\+statement, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a5b40d75f254c6959adbe1b0a033c6b6c}\label{classv8_1_1internal_1_1AstNodeFactory_a5b40d75f254c6959adbe1b0a033c6b6c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1TryCatchStatement}{Try\+Catch\+Statement}} $\ast$ {\bfseries New\+Try\+Catch\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1Block}{Block}} $\ast$try\+\_\+block, \mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$scope, \mbox{\hyperlink{classv8_1_1internal_1_1Block}{Block}} $\ast$catch\+\_\+block, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a5783e65cf808be1000c642969b10e0f6}\label{classv8_1_1internal_1_1AstNodeFactory_a5783e65cf808be1000c642969b10e0f6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1TryCatchStatement}{Try\+Catch\+Statement}} $\ast$ {\bfseries New\+Try\+Catch\+Statement\+For\+Re\+Throw} (\mbox{\hyperlink{classv8_1_1internal_1_1Block}{Block}} $\ast$try\+\_\+block, \mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$scope, \mbox{\hyperlink{classv8_1_1internal_1_1Block}{Block}} $\ast$catch\+\_\+block, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a5742f0aff0333a13ac7155b36bff320f}\label{classv8_1_1internal_1_1AstNodeFactory_a5742f0aff0333a13ac7155b36bff320f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1TryCatchStatement}{Try\+Catch\+Statement}} $\ast$ {\bfseries New\+Try\+Catch\+Statement\+For\+Desugaring} (\mbox{\hyperlink{classv8_1_1internal_1_1Block}{Block}} $\ast$try\+\_\+block, \mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$scope, \mbox{\hyperlink{classv8_1_1internal_1_1Block}{Block}} $\ast$catch\+\_\+block, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a8cf61fda52252de31811a65f3dafb6fb}\label{classv8_1_1internal_1_1AstNodeFactory_a8cf61fda52252de31811a65f3dafb6fb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1TryCatchStatement}{Try\+Catch\+Statement}} $\ast$ {\bfseries New\+Try\+Catch\+Statement\+For\+Async\+Await} (\mbox{\hyperlink{classv8_1_1internal_1_1Block}{Block}} $\ast$try\+\_\+block, \mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$scope, \mbox{\hyperlink{classv8_1_1internal_1_1Block}{Block}} $\ast$catch\+\_\+block, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a651c871bc62744f84a7a24854529e363}\label{classv8_1_1internal_1_1AstNodeFactory_a651c871bc62744f84a7a24854529e363}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1TryFinallyStatement}{Try\+Finally\+Statement}} $\ast$ {\bfseries New\+Try\+Finally\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1Block}{Block}} $\ast$try\+\_\+block, \mbox{\hyperlink{classv8_1_1internal_1_1Block}{Block}} $\ast$finally\+\_\+block, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a7f6f0648b061e3c40671ca766d3e8683}\label{classv8_1_1internal_1_1AstNodeFactory_a7f6f0648b061e3c40671ca766d3e8683}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1DebuggerStatement}{Debugger\+Statement}} $\ast$ {\bfseries New\+Debugger\+Statement} (\mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_af6dcab3fdfef4d840eb37c192730b9bb}\label{classv8_1_1internal_1_1AstNodeFactory_af6dcab3fdfef4d840eb37c192730b9bb}} 
+class \mbox{\hyperlink{classv8_1_1internal_1_1EmptyStatement}{Empty\+Statement}} $\ast$ {\bfseries Empty\+Statement} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a64fde75c23f11cf30c39d3d2b7912b94}\label{classv8_1_1internal_1_1AstNodeFactory_a64fde75c23f11cf30c39d3d2b7912b94}} 
+class \mbox{\hyperlink{classv8_1_1internal_1_1FailureExpression}{Failure\+Expression}} $\ast$ {\bfseries Failure\+Expression} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a532641d46057c3e30ceff5d67702e520}\label{classv8_1_1internal_1_1AstNodeFactory_a532641d46057c3e30ceff5d67702e520}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1SloppyBlockFunctionStatement}{Sloppy\+Block\+Function\+Statement}} $\ast$ {\bfseries New\+Sloppy\+Block\+Function\+Statement} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_aadda9d5d8ceecd33a729305711a408a5}\label{classv8_1_1internal_1_1AstNodeFactory_aadda9d5d8ceecd33a729305711a408a5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CaseClause}{Case\+Clause}} $\ast$ {\bfseries New\+Case\+Clause} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$label, const \mbox{\hyperlink{classv8_1_1internal_1_1ScopedPtrList}{Scoped\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Statement}{Statement}} $>$ \&statements)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a26846ca98d4db7ec0aeb2eb2bc46cb8e}\label{classv8_1_1internal_1_1AstNodeFactory_a26846ca98d4db7ec0aeb2eb2bc46cb8e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Literal}{Literal}} $\ast$ {\bfseries New\+String\+Literal} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$string, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a488395e83125db6e7df017a30bd3add4}\label{classv8_1_1internal_1_1AstNodeFactory_a488395e83125db6e7df017a30bd3add4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Literal}{Literal}} $\ast$ {\bfseries New\+Symbol\+Literal} (Ast\+Symbol symbol, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_ab9820d96b99e1d95667a11c42e8ff01b}\label{classv8_1_1internal_1_1AstNodeFactory_ab9820d96b99e1d95667a11c42e8ff01b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Literal}{Literal}} $\ast$ {\bfseries New\+Number\+Literal} (double number, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_afdf1fca83d5d936a7979299fe1537628}\label{classv8_1_1internal_1_1AstNodeFactory_afdf1fca83d5d936a7979299fe1537628}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Literal}{Literal}} $\ast$ {\bfseries New\+Smi\+Literal} (\mbox{\hyperlink{classint}{int}} number, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a2aba578fb9fabd97961626f3c96e2d8c}\label{classv8_1_1internal_1_1AstNodeFactory_a2aba578fb9fabd97961626f3c96e2d8c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Literal}{Literal}} $\ast$ {\bfseries New\+Big\+Int\+Literal} (\mbox{\hyperlink{classv8_1_1internal_1_1AstBigInt}{Ast\+Big\+Int}} bigint, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_ab4236f7157df5fc6a1389eef30e364d1}\label{classv8_1_1internal_1_1AstNodeFactory_ab4236f7157df5fc6a1389eef30e364d1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Literal}{Literal}} $\ast$ {\bfseries New\+Boolean\+Literal} (\mbox{\hyperlink{classbool}{bool}} b, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a70dd079c4492288f15000decda6a1da1}\label{classv8_1_1internal_1_1AstNodeFactory_a70dd079c4492288f15000decda6a1da1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Literal}{Literal}} $\ast$ {\bfseries New\+Null\+Literal} (\mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a2b681406f5eb62f7b2a03310cdc9cf46}\label{classv8_1_1internal_1_1AstNodeFactory_a2b681406f5eb62f7b2a03310cdc9cf46}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Literal}{Literal}} $\ast$ {\bfseries New\+Undefined\+Literal} (\mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a4dc0f29feaa147abecd003ce6e1dae19}\label{classv8_1_1internal_1_1AstNodeFactory_a4dc0f29feaa147abecd003ce6e1dae19}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Literal}{Literal}} $\ast$ {\bfseries New\+The\+Hole\+Literal} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a4f2eedb70930a54fc62453b1c5e85f3d}\label{classv8_1_1internal_1_1AstNodeFactory_a4f2eedb70930a54fc62453b1c5e85f3d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ObjectLiteral}{Object\+Literal}} $\ast$ {\bfseries New\+Object\+Literal} (const \mbox{\hyperlink{classv8_1_1internal_1_1ScopedPtrList}{Scoped\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ObjectLiteralProperty}{Object\+Literal\+::\+Property}} $>$ \&properties, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} boilerplate\+\_\+properties, \mbox{\hyperlink{classint}{int}} pos, \mbox{\hyperlink{classbool}{bool}} has\+\_\+rest\+\_\+property)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_ae586017ae5548ccd3c43cc59e75c4a2f}\label{classv8_1_1internal_1_1AstNodeFactory_ae586017ae5548ccd3c43cc59e75c4a2f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ObjectLiteralProperty}{Object\+Literal\+::\+Property}} $\ast$ {\bfseries New\+Object\+Literal\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$key, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$value, Object\+Literal\+Property\+::\+Kind kind, \mbox{\hyperlink{classbool}{bool}} is\+\_\+computed\+\_\+name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a61d7182b4dd2fb50c431120706bc1596}\label{classv8_1_1internal_1_1AstNodeFactory_a61d7182b4dd2fb50c431120706bc1596}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ObjectLiteralProperty}{Object\+Literal\+::\+Property}} $\ast$ {\bfseries New\+Object\+Literal\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$key, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$value, \mbox{\hyperlink{classbool}{bool}} is\+\_\+computed\+\_\+name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_adb19d770190f8d367905cf88e4523bcc}\label{classv8_1_1internal_1_1AstNodeFactory_adb19d770190f8d367905cf88e4523bcc}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpLiteral}{Reg\+Exp\+Literal}} $\ast$ {\bfseries New\+Reg\+Exp\+Literal} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$pattern, \mbox{\hyperlink{classint}{int}} flags, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a76104421e851259e72b4dc037831ff78}\label{classv8_1_1internal_1_1AstNodeFactory_a76104421e851259e72b4dc037831ff78}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ArrayLiteral}{Array\+Literal}} $\ast$ {\bfseries New\+Array\+Literal} (const \mbox{\hyperlink{classv8_1_1internal_1_1ScopedPtrList}{Scoped\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $>$ \&values, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a78bdd8af6714df1ed726a3b8f119ba3c}\label{classv8_1_1internal_1_1AstNodeFactory_a78bdd8af6714df1ed726a3b8f119ba3c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ArrayLiteral}{Array\+Literal}} $\ast$ {\bfseries New\+Array\+Literal} (const \mbox{\hyperlink{classv8_1_1internal_1_1ScopedPtrList}{Scoped\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $>$ \&values, \mbox{\hyperlink{classint}{int}} first\+\_\+spread\+\_\+index, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a6e25cceb0ac6f7c71a93f08e74eb0ff5}\label{classv8_1_1internal_1_1AstNodeFactory_a6e25cceb0ac6f7c71a93f08e74eb0ff5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1VariableProxy}{Variable\+Proxy}} $\ast$ {\bfseries New\+Variable\+Proxy} (\mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$var, \mbox{\hyperlink{classint}{int}} start\+\_\+position=k\+No\+Source\+Position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a9d23de12a7d834ae32cf2849d8525fa2}\label{classv8_1_1internal_1_1AstNodeFactory_a9d23de12a7d834ae32cf2849d8525fa2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1VariableProxy}{Variable\+Proxy}} $\ast$ {\bfseries New\+Variable\+Proxy} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$name, Variable\+Kind variable\+\_\+kind, \mbox{\hyperlink{classint}{int}} start\+\_\+position=k\+No\+Source\+Position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a2ca4d362b560c7cfeecef80bf5ef84b9}\label{classv8_1_1internal_1_1AstNodeFactory_a2ca4d362b560c7cfeecef80bf5ef84b9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1VariableProxy}{Variable\+Proxy}} $\ast$ {\bfseries Copy\+Variable\+Proxy} (\mbox{\hyperlink{classv8_1_1internal_1_1VariableProxy}{Variable\+Proxy}} $\ast$proxy)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a7ce8d9ced2df56e719f1e43bbe8a73fc}\label{classv8_1_1internal_1_1AstNodeFactory_a7ce8d9ced2df56e719f1e43bbe8a73fc}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$ {\bfseries Copy\+Variable} (\mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$variable)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a7fbd2ded9b76a5aa4b4f1a5421036a04}\label{classv8_1_1internal_1_1AstNodeFactory_a7fbd2ded9b76a5aa4b4f1a5421036a04}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Property}{Property}} $\ast$ {\bfseries New\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$obj, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$key, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a03ec772c7206b04c687e6e6ee8f8722a}\label{classv8_1_1internal_1_1AstNodeFactory_a03ec772c7206b04c687e6e6ee8f8722a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ResolvedProperty}{Resolved\+Property}} $\ast$ {\bfseries New\+Resolved\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1VariableProxy}{Variable\+Proxy}} $\ast$obj, \mbox{\hyperlink{classv8_1_1internal_1_1VariableProxy}{Variable\+Proxy}} $\ast$property, \mbox{\hyperlink{classint}{int}} pos=k\+No\+Source\+Position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a5ca57e21d3d6227b07d2bdd58dd2505c}\label{classv8_1_1internal_1_1AstNodeFactory_a5ca57e21d3d6227b07d2bdd58dd2505c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Call}{Call}} $\ast$ {\bfseries New\+Call} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$expression, const \mbox{\hyperlink{classv8_1_1internal_1_1ScopedPtrList}{Scoped\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $>$ \&arguments, \mbox{\hyperlink{classint}{int}} pos, Call\+::\+Possibly\+Eval possibly\+\_\+eval=Call\+::\+N\+O\+T\+\_\+\+E\+V\+AL)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_af4b5d659386573866d17e5ffd5b668e5}\label{classv8_1_1internal_1_1AstNodeFactory_af4b5d659386573866d17e5ffd5b668e5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Call}{Call}} $\ast$ {\bfseries New\+Tagged\+Template} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$expression, const \mbox{\hyperlink{classv8_1_1internal_1_1ScopedPtrList}{Scoped\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $>$ \&arguments, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a95a4d5958f3a86c67e19f8509c5de5ba}\label{classv8_1_1internal_1_1AstNodeFactory_a95a4d5958f3a86c67e19f8509c5de5ba}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CallNew}{Call\+New}} $\ast$ {\bfseries New\+Call\+New} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$expression, const \mbox{\hyperlink{classv8_1_1internal_1_1ScopedPtrList}{Scoped\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $>$ \&arguments, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a066b80d644032136a7c9421f2c2323ab}\label{classv8_1_1internal_1_1AstNodeFactory_a066b80d644032136a7c9421f2c2323ab}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CallRuntime}{Call\+Runtime}} $\ast$ {\bfseries New\+Call\+Runtime} (Runtime\+::\+Function\+Id id, const \mbox{\hyperlink{classv8_1_1internal_1_1ScopedPtrList}{Scoped\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $>$ \&arguments, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a761b00ddac6e958051035ab9882d7ff4}\label{classv8_1_1internal_1_1AstNodeFactory_a761b00ddac6e958051035ab9882d7ff4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CallRuntime}{Call\+Runtime}} $\ast$ {\bfseries New\+Call\+Runtime} (const \mbox{\hyperlink{structv8_1_1internal_1_1Runtime_1_1Function}{Runtime\+::\+Function}} $\ast$function, const \mbox{\hyperlink{classv8_1_1internal_1_1ScopedPtrList}{Scoped\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $>$ \&arguments, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a2deaaa62c2eaa9257ae9186ac8e0f884}\label{classv8_1_1internal_1_1AstNodeFactory_a2deaaa62c2eaa9257ae9186ac8e0f884}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CallRuntime}{Call\+Runtime}} $\ast$ {\bfseries New\+Call\+Runtime} (\mbox{\hyperlink{classint}{int}} context\+\_\+index, const \mbox{\hyperlink{classv8_1_1internal_1_1ScopedPtrList}{Scoped\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $>$ \&arguments, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a815fc84858da31d6792eee36cf181ab1}\label{classv8_1_1internal_1_1AstNodeFactory_a815fc84858da31d6792eee36cf181ab1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1UnaryOperation}{Unary\+Operation}} $\ast$ {\bfseries New\+Unary\+Operation} (Token\+::\+Value op, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$expression, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a903956df348d87ab2d793112e71b1c7e}\label{classv8_1_1internal_1_1AstNodeFactory_a903956df348d87ab2d793112e71b1c7e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1BinaryOperation}{Binary\+Operation}} $\ast$ {\bfseries New\+Binary\+Operation} (Token\+::\+Value op, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$left, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$right, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_aa29e1131ed37b95ac9e89cef5c3a9658}\label{classv8_1_1internal_1_1AstNodeFactory_aa29e1131ed37b95ac9e89cef5c3a9658}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1NaryOperation}{Nary\+Operation}} $\ast$ {\bfseries New\+Nary\+Operation} (Token\+::\+Value op, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$first, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} initial\+\_\+subsequent\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a98d5cc982cbbf73b0d0bc47bb58b6266}\label{classv8_1_1internal_1_1AstNodeFactory_a98d5cc982cbbf73b0d0bc47bb58b6266}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CountOperation}{Count\+Operation}} $\ast$ {\bfseries New\+Count\+Operation} (Token\+::\+Value op, \mbox{\hyperlink{classbool}{bool}} is\+\_\+prefix, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$expr, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a6fb78b60249110fd7d2576a94b8af0ca}\label{classv8_1_1internal_1_1AstNodeFactory_a6fb78b60249110fd7d2576a94b8af0ca}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CompareOperation}{Compare\+Operation}} $\ast$ {\bfseries New\+Compare\+Operation} (Token\+::\+Value op, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$left, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$right, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_aa93ff631f69ce73eb0688bc4451750ff}\label{classv8_1_1internal_1_1AstNodeFactory_aa93ff631f69ce73eb0688bc4451750ff}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Spread}{Spread}} $\ast$ {\bfseries New\+Spread} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$expression, \mbox{\hyperlink{classint}{int}} pos, \mbox{\hyperlink{classint}{int}} expr\+\_\+pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a37290a522114df9d810d5972493b4a1f}\label{classv8_1_1internal_1_1AstNodeFactory_a37290a522114df9d810d5972493b4a1f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1StoreInArrayLiteral}{Store\+In\+Array\+Literal}} $\ast$ {\bfseries New\+Store\+In\+Array\+Literal} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$array, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$index, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$value, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_aa6271ed2037e588add836e842383323f}\label{classv8_1_1internal_1_1AstNodeFactory_aa6271ed2037e588add836e842383323f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Conditional}{Conditional}} $\ast$ {\bfseries New\+Conditional} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$condition, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$then\+\_\+expression, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$else\+\_\+expression, \mbox{\hyperlink{classint}{int}} position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_ae08c852a9975fb3705fa975183741558}\label{classv8_1_1internal_1_1AstNodeFactory_ae08c852a9975fb3705fa975183741558}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RewritableExpression}{Rewritable\+Expression}} $\ast$ {\bfseries New\+Rewritable\+Expression} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$expression, \mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$scope)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a0cdc5091e274fe4ad283258d882eee57}\label{classv8_1_1internal_1_1AstNodeFactory_a0cdc5091e274fe4ad283258d882eee57}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Assignment}{Assignment}} $\ast$ {\bfseries New\+Assignment} (Token\+::\+Value op, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$target, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$value, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_ae41dbb67cf0ff40100ea812a6d327e64}\label{classv8_1_1internal_1_1AstNodeFactory_ae41dbb67cf0ff40100ea812a6d327e64}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Suspend}{Suspend}} $\ast$ {\bfseries New\+Yield} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$expression, \mbox{\hyperlink{classint}{int}} pos, Suspend\+::\+On\+Abrupt\+Resume on\+\_\+abrupt\+\_\+resume)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a10a76523bd5732b4b143fc58220b5034}\label{classv8_1_1internal_1_1AstNodeFactory_a10a76523bd5732b4b143fc58220b5034}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1YieldStar}{Yield\+Star}} $\ast$ {\bfseries New\+Yield\+Star} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$expression, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_abbd2b63d8ad08a73e63a917e9ab60847}\label{classv8_1_1internal_1_1AstNodeFactory_abbd2b63d8ad08a73e63a917e9ab60847}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Await}{Await}} $\ast$ {\bfseries New\+Await} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$expression, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a1fdf2695d0243e1656cae73a01450f29}\label{classv8_1_1internal_1_1AstNodeFactory_a1fdf2695d0243e1656cae73a01450f29}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Throw}{Throw}} $\ast$ {\bfseries New\+Throw} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$exception, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_ad8aa2939934a2450217b7fa5eeca9d72}\label{classv8_1_1internal_1_1AstNodeFactory_ad8aa2939934a2450217b7fa5eeca9d72}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1FunctionLiteral}{Function\+Literal}} $\ast$ {\bfseries New\+Function\+Literal} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$name, \mbox{\hyperlink{classv8_1_1internal_1_1DeclarationScope}{Declaration\+Scope}} $\ast$scope, const \mbox{\hyperlink{classv8_1_1internal_1_1ScopedPtrList}{Scoped\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Statement}{Statement}} $>$ \&body, \mbox{\hyperlink{classint}{int}} expected\+\_\+property\+\_\+count, \mbox{\hyperlink{classint}{int}} parameter\+\_\+count, \mbox{\hyperlink{classint}{int}} function\+\_\+length, Function\+Literal\+::\+Parameter\+Flag has\+\_\+duplicate\+\_\+parameters, Function\+Literal\+::\+Function\+Type function\+\_\+type, Function\+Literal\+::\+Eager\+Compile\+Hint eager\+\_\+compile\+\_\+hint, \mbox{\hyperlink{classint}{int}} position, \mbox{\hyperlink{classbool}{bool}} has\+\_\+braces, \mbox{\hyperlink{classint}{int}} function\+\_\+literal\+\_\+id, \mbox{\hyperlink{classv8_1_1internal_1_1ProducedPreParsedScopeData}{Produced\+Pre\+Parsed\+Scope\+Data}} $\ast$produced\+\_\+preparsed\+\_\+scope\+\_\+data=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_aa708ce9a873dde8c1338cd5109aecdf0}\label{classv8_1_1internal_1_1AstNodeFactory_aa708ce9a873dde8c1338cd5109aecdf0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1FunctionLiteral}{Function\+Literal}} $\ast$ {\bfseries New\+Script\+Or\+Eval\+Function\+Literal} (\mbox{\hyperlink{classv8_1_1internal_1_1DeclarationScope}{Declaration\+Scope}} $\ast$scope, const \mbox{\hyperlink{classv8_1_1internal_1_1ScopedPtrList}{Scoped\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Statement}{Statement}} $>$ \&body, \mbox{\hyperlink{classint}{int}} expected\+\_\+property\+\_\+count, \mbox{\hyperlink{classint}{int}} parameter\+\_\+count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a4f2ca6d2c383b652b60f153588b25691}\label{classv8_1_1internal_1_1AstNodeFactory_a4f2ca6d2c383b652b60f153588b25691}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ClassLiteralProperty}{Class\+Literal\+::\+Property}} $\ast$ {\bfseries New\+Class\+Literal\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$key, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$value, Class\+Literal\+Property\+::\+Kind kind, \mbox{\hyperlink{classbool}{bool}} is\+\_\+static, \mbox{\hyperlink{classbool}{bool}} is\+\_\+computed\+\_\+name, \mbox{\hyperlink{classbool}{bool}} is\+\_\+private)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_adfc736d36beda75dc7f71d96cc563414}\label{classv8_1_1internal_1_1AstNodeFactory_adfc736d36beda75dc7f71d96cc563414}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ClassLiteral}{Class\+Literal}} $\ast$ {\bfseries New\+Class\+Literal} (\mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$scope, \mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$variable, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$extends, \mbox{\hyperlink{classv8_1_1internal_1_1FunctionLiteral}{Function\+Literal}} $\ast$constructor, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ClassLiteralProperty}{Class\+Literal\+::\+Property}} $>$ $\ast$properties, \mbox{\hyperlink{classv8_1_1internal_1_1FunctionLiteral}{Function\+Literal}} $\ast$static\+\_\+fields\+\_\+initializer, \mbox{\hyperlink{classv8_1_1internal_1_1FunctionLiteral}{Function\+Literal}} $\ast$instance\+\_\+members\+\_\+initializer\+\_\+function, \mbox{\hyperlink{classint}{int}} start\+\_\+position, \mbox{\hyperlink{classint}{int}} end\+\_\+position, \mbox{\hyperlink{classbool}{bool}} has\+\_\+name\+\_\+static\+\_\+property, \mbox{\hyperlink{classbool}{bool}} has\+\_\+static\+\_\+computed\+\_\+names, \mbox{\hyperlink{classbool}{bool}} is\+\_\+anonymous)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_af90ceb5f7fb5259adc5d97273ba02cc8}\label{classv8_1_1internal_1_1AstNodeFactory_af90ceb5f7fb5259adc5d97273ba02cc8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1NativeFunctionLiteral}{Native\+Function\+Literal}} $\ast$ {\bfseries New\+Native\+Function\+Literal} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$name, v8\+::\+Extension $\ast$extension, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a506660af44e00f20507ca20a7a338ee3}\label{classv8_1_1internal_1_1AstNodeFactory_a506660af44e00f20507ca20a7a338ee3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1DoExpression}{Do\+Expression}} $\ast$ {\bfseries New\+Do\+Expression} (\mbox{\hyperlink{classv8_1_1internal_1_1Block}{Block}} $\ast$block, \mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$result\+\_\+var, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a0455b1e946248fcc3a7f3abb590e66d9}\label{classv8_1_1internal_1_1AstNodeFactory_a0455b1e946248fcc3a7f3abb590e66d9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ThisFunction}{This\+Function}} $\ast$ {\bfseries New\+This\+Function} (\mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a6ee3d5f116c30e54e50bc3fb9033b9aa}\label{classv8_1_1internal_1_1AstNodeFactory_a6ee3d5f116c30e54e50bc3fb9033b9aa}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1SuperPropertyReference}{Super\+Property\+Reference}} $\ast$ {\bfseries New\+Super\+Property\+Reference} (\mbox{\hyperlink{classv8_1_1internal_1_1VariableProxy}{Variable\+Proxy}} $\ast$this\+\_\+var, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$home\+\_\+object, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a2911dbdb3b0091f493568c8445f3a457}\label{classv8_1_1internal_1_1AstNodeFactory_a2911dbdb3b0091f493568c8445f3a457}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1SuperCallReference}{Super\+Call\+Reference}} $\ast$ {\bfseries New\+Super\+Call\+Reference} (\mbox{\hyperlink{classv8_1_1internal_1_1VariableProxy}{Variable\+Proxy}} $\ast$this\+\_\+var, \mbox{\hyperlink{classv8_1_1internal_1_1VariableProxy}{Variable\+Proxy}} $\ast$new\+\_\+target\+\_\+var, \mbox{\hyperlink{classv8_1_1internal_1_1VariableProxy}{Variable\+Proxy}} $\ast$this\+\_\+function\+\_\+var, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a06c3b38be3cb9a03de50ea7f36e47fa8}\label{classv8_1_1internal_1_1AstNodeFactory_a06c3b38be3cb9a03de50ea7f36e47fa8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1EmptyParentheses}{Empty\+Parentheses}} $\ast$ {\bfseries New\+Empty\+Parentheses} (\mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a8ebc65a990a5660ab5202835d0e8b370}\label{classv8_1_1internal_1_1AstNodeFactory_a8ebc65a990a5660ab5202835d0e8b370}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1GetIterator}{Get\+Iterator}} $\ast$ {\bfseries New\+Get\+Iterator} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$iterable, \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$destructured\+\_\+iterable, Iterator\+Type hint, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a0b9d17a585382c68edc4137d5630414a}\label{classv8_1_1internal_1_1AstNodeFactory_a0b9d17a585382c68edc4137d5630414a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1GetIterator}{Get\+Iterator}} $\ast$ {\bfseries New\+Get\+Iterator} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$iterable, Iterator\+Type hint, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_ac19f8d1b3431706f9ab54105b9a4cb6a}\label{classv8_1_1internal_1_1AstNodeFactory_ac19f8d1b3431706f9ab54105b9a4cb6a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1GetTemplateObject}{Get\+Template\+Object}} $\ast$ {\bfseries New\+Get\+Template\+Object} (const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$cooked\+\_\+strings, const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$raw\+\_\+strings, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a7219a4ba241861730ab8ac416df91fff}\label{classv8_1_1internal_1_1AstNodeFactory_a7219a4ba241861730ab8ac416df91fff}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1TemplateLiteral}{Template\+Literal}} $\ast$ {\bfseries New\+Template\+Literal} (const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $>$ $\ast$string\+\_\+parts, const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $>$ $\ast$substitutions, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a9bd81c94cea81e688718ab9e049861bf}\label{classv8_1_1internal_1_1AstNodeFactory_a9bd81c94cea81e688718ab9e049861bf}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ImportCallExpression}{Import\+Call\+Expression}} $\ast$ {\bfseries New\+Import\+Call\+Expression} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$args, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a0af64794836cee830dfe2a7cc963fb31}\label{classv8_1_1internal_1_1AstNodeFactory_a0af64794836cee830dfe2a7cc963fb31}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1InitializeClassMembersStatement}{Initialize\+Class\+Members\+Statement}} $\ast$ {\bfseries New\+Initialize\+Class\+Members\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ClassLiteralProperty}{Class\+Literal\+::\+Property}} $>$ $\ast$args, \mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AstNodeFactory_a04c403103080f2aa3cf0da4049c7c877}\label{classv8_1_1internal_1_1AstNodeFactory_a04c403103080f2aa3cf0da4049c7c877}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$ {\bfseries zone} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 2963 of file ast.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ast/ast.\+h\item 
+v8/src/ast/ast.\+cc\end{DoxyCompactItemize}

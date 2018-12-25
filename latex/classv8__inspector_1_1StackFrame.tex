@@ -1,0 +1,45 @@
+\hypertarget{classv8__inspector_1_1StackFrame}{}\section{v8\+\_\+inspector\+:\+:Stack\+Frame Class Reference}
+\label{classv8__inspector_1_1StackFrame}\index{v8\+\_\+inspector\+::\+Stack\+Frame@{v8\+\_\+inspector\+::\+Stack\+Frame}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1StackFrame_ac45a091ad103345e42dc3f90bb7064b2}\label{classv8__inspector_1_1StackFrame_ac45a091ad103345e42dc3f90bb7064b2}} 
+{\bfseries Stack\+Frame} (v8\+::\+Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1StackFrame}{v8\+::\+Stack\+Frame}} $>$ frame)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1StackFrame_aecd12add263745a73b45d1afb0bc8535}\label{classv8__inspector_1_1StackFrame_aecd12add263745a73b45d1afb0bc8535}} 
+void {\bfseries translate} (\mbox{\hyperlink{classv8__inspector_1_1WasmTranslation}{Wasm\+Translation}} $\ast$wasm\+Translation)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1StackFrame_ac963580a1cc89c1415b2d54c0c636da0}\label{classv8__inspector_1_1StackFrame_ac963580a1cc89c1415b2d54c0c636da0}} 
+const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \& {\bfseries function\+Name} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1StackFrame_a5e4a58f463991d46622456d1254c1ade}\label{classv8__inspector_1_1StackFrame_a5e4a58f463991d46622456d1254c1ade}} 
+const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \& {\bfseries script\+Id} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1StackFrame_af0935693c9984ff2d8098c0096d0fb5c}\label{classv8__inspector_1_1StackFrame_af0935693c9984ff2d8098c0096d0fb5c}} 
+const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \& {\bfseries source\+U\+RL} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1StackFrame_a27eb1b6bee71f5d1452213365be06282}\label{classv8__inspector_1_1StackFrame_a27eb1b6bee71f5d1452213365be06282}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries line\+Number} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1StackFrame_afad6c23200e105523e5ab9c178262e93}\label{classv8__inspector_1_1StackFrame_afad6c23200e105523e5ab9c178262e93}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries column\+Number} () const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1StackFrame_a5ff8a8cb45e094492f5e0e0eb7fb51b7}\label{classv8__inspector_1_1StackFrame_a5ff8a8cb45e094492f5e0e0eb7fb51b7}} 
+std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+Call\+Frame $>$ {\bfseries build\+Inspector\+Object} (\mbox{\hyperlink{classv8__inspector_1_1V8InspectorClient}{V8\+Inspector\+Client}} $\ast$client) const
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1StackFrame_a3ca51e48027ea3bde7320ecc293fcb89}\label{classv8__inspector_1_1StackFrame_a3ca51e48027ea3bde7320ecc293fcb89}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+Equal} (\mbox{\hyperlink{classv8__inspector_1_1StackFrame}{Stack\+Frame}} $\ast$frame) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file v8-\/stack-\/trace-\/impl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/inspector/v8-\/stack-\/trace-\/impl.\+h\item 
+v8/src/inspector/v8-\/stack-\/trace-\/impl.\+cc\end{DoxyCompactItemize}

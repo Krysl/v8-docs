@@ -1,0 +1,54 @@
+\hypertarget{classv8_1_1internal_1_1HeapObjectRequest}{}\section{v8\+:\+:internal\+:\+:Heap\+Object\+Request Class Reference}
+\label{classv8_1_1internal_1_1HeapObjectRequest}\index{v8\+::internal\+::\+Heap\+Object\+Request@{v8\+::internal\+::\+Heap\+Object\+Request}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectRequest_a6fbca91038309795da3136a4a997f5e5}\label{classv8_1_1internal_1_1HeapObjectRequest_a6fbca91038309795da3136a4a997f5e5}} 
+enum {\bfseries Kind} \{ {\bfseries k\+Heap\+Number}, 
+{\bfseries k\+Code\+Stub}, 
+{\bfseries k\+String\+Constant}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectRequest_ace092b4cd0caa9792feb64ae2924c3bd}\label{classv8_1_1internal_1_1HeapObjectRequest_ace092b4cd0caa9792feb64ae2924c3bd}} 
+{\bfseries Heap\+Object\+Request} (double heap\+\_\+number, \mbox{\hyperlink{classint}{int}} offset=-\/1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectRequest_a2011e8f1e651eedc1a57c0babbcf566c}\label{classv8_1_1internal_1_1HeapObjectRequest_a2011e8f1e651eedc1a57c0babbcf566c}} 
+{\bfseries Heap\+Object\+Request} (\mbox{\hyperlink{classv8_1_1internal_1_1CodeStub}{Code\+Stub}} $\ast$code\+\_\+stub, \mbox{\hyperlink{classint}{int}} offset=-\/1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectRequest_a926a2d70da5522ce8dc0ca0f17d005e6}\label{classv8_1_1internal_1_1HeapObjectRequest_a926a2d70da5522ce8dc0ca0f17d005e6}} 
+{\bfseries Heap\+Object\+Request} (const \mbox{\hyperlink{classv8_1_1internal_1_1StringConstantBase}{String\+Constant\+Base}} $\ast$string, \mbox{\hyperlink{classint}{int}} offset=-\/1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectRequest_a9b24f9541dde0fbb3f796152f462bac5}\label{classv8_1_1internal_1_1HeapObjectRequest_a9b24f9541dde0fbb3f796152f462bac5}} 
+Kind {\bfseries kind} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectRequest_af0c0c84d24b5277381fe3118f557ad6a}\label{classv8_1_1internal_1_1HeapObjectRequest_af0c0c84d24b5277381fe3118f557ad6a}} 
+double {\bfseries heap\+\_\+number} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectRequest_a0760ffe666eda97402127fbbb261d80b}\label{classv8_1_1internal_1_1HeapObjectRequest_a0760ffe666eda97402127fbbb261d80b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CodeStub}{Code\+Stub}} $\ast$ {\bfseries code\+\_\+stub} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectRequest_af80e4ade6600f1552004ea4519897238}\label{classv8_1_1internal_1_1HeapObjectRequest_af80e4ade6600f1552004ea4519897238}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1StringConstantBase}{String\+Constant\+Base}} $\ast$ {\bfseries string} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectRequest_a957659764bca4c25c2091c4d6aeaae46}\label{classv8_1_1internal_1_1HeapObjectRequest_a957659764bca4c25c2091c4d6aeaae46}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectRequest_a7dcfff02d1478e47bc3582f8963fe869}\label{classv8_1_1internal_1_1HeapObjectRequest_a7dcfff02d1478e47bc3582f8963fe869}} 
+void {\bfseries set\+\_\+offset} (\mbox{\hyperlink{classint}{int}} offset)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 90 of file assembler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/assembler.\+h\item 
+v8/src/assembler.\+cc\end{DoxyCompactItemize}

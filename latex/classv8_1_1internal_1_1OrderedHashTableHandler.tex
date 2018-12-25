@@ -1,0 +1,60 @@
+\hypertarget{classv8_1_1internal_1_1OrderedHashTableHandler}{}\section{v8\+:\+:internal\+:\+:Ordered\+Hash\+Table\+Handler$<$ Small\+Table, Large\+Table $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1OrderedHashTableHandler}\index{v8\+::internal\+::\+Ordered\+Hash\+Table\+Handler$<$ Small\+Table, Large\+Table $>$@{v8\+::internal\+::\+Ordered\+Hash\+Table\+Handler$<$ Small\+Table, Large\+Table $>$}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OrderedHashTableHandler_aa622323df83f436d1df2ecc355361c46}\label{classv8_1_1internal_1_1OrderedHashTableHandler_aa622323df83f436d1df2ecc355361c46}} 
+typedef \mbox{\hyperlink{classint}{int}} {\bfseries Entry}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OrderedHashTableHandler_a2871093d4a8e114846e6b0852aef5ef2}\label{classv8_1_1internal_1_1OrderedHashTableHandler_a2871093d4a8e114846e6b0852aef5ef2}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ {\bfseries Allocate} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} capacity)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OrderedHashTableHandler_a9e39d9e053beaf02cff3d2425b2fd2c8}\label{classv8_1_1internal_1_1OrderedHashTableHandler_a9e39d9e053beaf02cff3d2425b2fd2c8}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Delete} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ table, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OrderedHashTableHandler_aa37a4a8367483c48a1b17e42dc1a5d4e}\label{classv8_1_1internal_1_1OrderedHashTableHandler_aa37a4a8367483c48a1b17e42dc1a5d4e}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ table, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries Ordered\+Hash\+Table\+Min\+Size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Small\+Table, class Large\+Table$>$\newline
+class v8\+::internal\+::\+Ordered\+Hash\+Table\+Handler$<$ Small\+Table, Large\+Table $>$}
+
+
+
+Definition at line 555 of file ordered-\/hash-\/table.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1OrderedHashTableHandler_a2d8edaa2c12e9c28806557653ce1562e}\label{classv8_1_1internal_1_1OrderedHashTableHandler_a2d8edaa2c12e9c28806557653ce1562e}} 
+\index{v8\+::internal\+::\+Ordered\+Hash\+Table\+Handler@{v8\+::internal\+::\+Ordered\+Hash\+Table\+Handler}!Ordered\+Hash\+Table\+Min\+Size@{Ordered\+Hash\+Table\+Min\+Size}}
+\index{Ordered\+Hash\+Table\+Min\+Size@{Ordered\+Hash\+Table\+Min\+Size}!v8\+::internal\+::\+Ordered\+Hash\+Table\+Handler@{v8\+::internal\+::\+Ordered\+Hash\+Table\+Handler}}
+\subsubsection{\texorpdfstring{Ordered\+Hash\+Table\+Min\+Size}{OrderedHashTableMinSize}}
+{\footnotesize\ttfamily template$<$class Small\+Table, class Large\+Table$>$ \\
+const \mbox{\hyperlink{classint}{int}} \mbox{\hyperlink{classv8_1_1internal_1_1OrderedHashTableHandler}{v8\+::internal\+::\+Ordered\+Hash\+Table\+Handler}}$<$ Small\+Table, Large\+Table $>$\+::Ordered\+Hash\+Table\+Min\+Size\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      SmallOrderedHashTable<SmallTable>::kGrowthHack << 1
+\end{DoxyCode}
+
+
+Definition at line 565 of file ordered-\/hash-\/table.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/ordered-\/hash-\/table.\+h\item 
+v8/src/objects/ordered-\/hash-\/table.\+cc\end{DoxyCompactItemize}

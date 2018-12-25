@@ -94,6 +94,15 @@ $(document).ready(function(){initNavTree('classv8_1_1platform_1_1tracing_1_1Trac
 <div class="title">v8::platform::tracing::TraceBuffer Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for v8::platform::tracing::TraceBuffer:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classv8_1_1platform_1_1tracing_1_1TraceBuffer.png" usemap="#v8::platform::tracing::TraceBuffer_map" alt=""/>
+  <map id="v8::platform::tracing::TraceBuffer_map" name="v8::platform::tracing::TraceBuffer_map">
+<area href="classv8_1_1platform_1_1tracing_1_1TraceBufferRingBuffer.html" alt="v8::platform::tracing::TraceBufferRingBuffer" shape="rect" coords="0,56,256,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -104,26 +113,27 @@ virtual <a class="el" href="classv8_1_1platform_1_1tracing_1_1TraceObject.html">
 virtual <a class="el" href="classv8_1_1platform_1_1tracing_1_1TraceObject.html">TraceObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetEventByHandle</b> (uint64_t handle)=0</td></tr>
 <tr class="separator:a9749c2155f2c483625d0242d9a7eb0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad16dbfbda98253565b3af122e60aa636"><td class="memItemLeft" align="right" valign="top"><a id="ad16dbfbda98253565b3af122e60aa636"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Flush</b> ()=0</td></tr>
+virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Flush</b> ()=0</td></tr>
 <tr class="separator:ad16dbfbda98253565b3af122e60aa636"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa5389ad37c2d2c12cdbefba2a45731f1"><td class="memItemLeft" align="right" valign="top"><a id="aa5389ad37c2d2c12cdbefba2a45731f1"></a>
-static <a class="el" href="classv8_1_1platform_1_1tracing_1_1TraceBuffer.html">TraceBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateTraceBufferRingBuffer</b> (size_t max_chunks, <a class="el" href="classv8_1_1platform_1_1tracing_1_1TraceWriter.html">TraceWriter</a> *trace_writer)</td></tr>
-<tr class="separator:aa5389ad37c2d2c12cdbefba2a45731f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a470a0bf66ee97337ac700de9e39c8942"><td class="memItemLeft" align="right" valign="top"><a id="a470a0bf66ee97337ac700de9e39c8942"></a>
+static <a class="el" href="classv8_1_1platform_1_1tracing_1_1TraceBuffer.html">TraceBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateTraceBufferRingBuffer</b> (<a class="el" href="classsize__t.html">size_t</a> max_chunks, <a class="el" href="classv8_1_1platform_1_1tracing_1_1TraceWriter.html">TraceWriter</a> *trace_writer)</td></tr>
+<tr class="separator:a470a0bf66ee97337ac700de9e39c8942"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a4957aae5f855daac2d581de0734f0d49"><td class="memItemLeft" align="right" valign="top"><a id="a4957aae5f855daac2d581de0734f0d49"></a>
-static const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>kRingBufferChunks</b> = 1024</td></tr>
+static const <a class="el" href="classsize__t.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>kRingBufferChunks</b> = 1024</td></tr>
 <tr class="separator:a4957aae5f855daac2d581de0734f0d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="v8-tracing_8h_source.html#l00148">148</a> of file <a class="el" href="v8-tracing_8h_source.html">v8-tracing.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>v8/include/libplatform/<a class="el" href="v8-tracing_8h_source.html">v8-tracing.h</a></li>
+<li>v8/src/libplatform/tracing/<a class="el" href="trace-buffer_8cc_source.html">trace-buffer.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -131,7 +141,7 @@ static const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>kRingB
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><b>platform</b></li><li class="navelem"><b>tracing</b></li><li class="navelem"><a class="el" href="classv8_1_1platform_1_1tracing_1_1TraceBuffer.html">TraceBuffer</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 14:33:15 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:47:35 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

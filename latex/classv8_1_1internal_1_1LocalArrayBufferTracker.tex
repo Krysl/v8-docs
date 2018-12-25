@@ -1,0 +1,54 @@
+\hypertarget{classv8_1_1internal_1_1LocalArrayBufferTracker}{}\section{v8\+:\+:internal\+:\+:Local\+Array\+Buffer\+Tracker Class Reference}
+\label{classv8_1_1internal_1_1LocalArrayBufferTracker}\index{v8\+::internal\+::\+Local\+Array\+Buffer\+Tracker@{v8\+::internal\+::\+Local\+Array\+Buffer\+Tracker}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalArrayBufferTracker_a421d335bef4740e36057ef54fd0b8c78}\label{classv8_1_1internal_1_1LocalArrayBufferTracker_a421d335bef4740e36057ef54fd0b8c78}} 
+enum {\bfseries Callback\+Result} \{ {\bfseries k\+Keep\+Entry}, 
+{\bfseries k\+Update\+Entry}, 
+{\bfseries k\+Remove\+Entry}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalArrayBufferTracker_a10e149f4ff2ab00a0024ab4e63d218bb}\label{classv8_1_1internal_1_1LocalArrayBufferTracker_a10e149f4ff2ab00a0024ab4e63d218bb}} 
+enum {\bfseries Free\+Mode} \{ {\bfseries k\+Free\+Dead}, 
+{\bfseries k\+Free\+All}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalArrayBufferTracker_a1fe7daa049fd495b2e0ae99f749b4b8d}\label{classv8_1_1internal_1_1LocalArrayBufferTracker_a1fe7daa049fd495b2e0ae99f749b4b8d}} 
+{\bfseries Local\+Array\+Buffer\+Tracker} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalArrayBufferTracker_a37c88909819092a3eaaabe7924c3ab5f}\label{classv8_1_1internal_1_1LocalArrayBufferTracker_a37c88909819092a3eaaabe7924c3ab5f}} 
+void {\bfseries Add} (\mbox{\hyperlink{classv8_1_1internal_1_1JSArrayBuffer}{J\+S\+Array\+Buffer}} $\ast$buffer, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalArrayBufferTracker_a5ca9275e268ceaaf5b6fffc7bb82af2e}\label{classv8_1_1internal_1_1LocalArrayBufferTracker_a5ca9275e268ceaaf5b6fffc7bb82af2e}} 
+void {\bfseries Remove} (\mbox{\hyperlink{classv8_1_1internal_1_1JSArrayBuffer}{J\+S\+Array\+Buffer}} $\ast$buffer, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalArrayBufferTracker_a20d8bb9859f6ae959e990c44826d746d}\label{classv8_1_1internal_1_1LocalArrayBufferTracker_a20d8bb9859f6ae959e990c44826d746d}} 
+{\footnotesize template$<$typename Callback $>$ }\\void {\bfseries Free} (Callback should\+\_\+free)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalArrayBufferTracker_a6f05a151b481ec5d440ef0ef75513c88}\label{classv8_1_1internal_1_1LocalArrayBufferTracker_a6f05a151b481ec5d440ef0ef75513c88}} 
+{\footnotesize template$<$typename Callback $>$ }\\void {\bfseries Process} (Callback callback)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalArrayBufferTracker_a8bbb0e11ceff92c3b067bf3289540ab8}\label{classv8_1_1internal_1_1LocalArrayBufferTracker_a8bbb0e11ceff92c3b067bf3289540ab8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Empty} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalArrayBufferTracker_a526ac681a6d2b85f35545f9ba17b67f7}\label{classv8_1_1internal_1_1LocalArrayBufferTracker_a526ac681a6d2b85f35545f9ba17b67f7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Tracked} (\mbox{\hyperlink{classv8_1_1internal_1_1JSArrayBuffer}{J\+S\+Array\+Buffer}} $\ast$buffer) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 65 of file array-\/buffer-\/tracker.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/array-\/buffer-\/tracker.\+h\item 
+v8/src/heap/array-\/buffer-\/tracker-\/inl.\+h\item 
+v8/src/heap/array-\/buffer-\/tracker.\+cc\end{DoxyCompactItemize}

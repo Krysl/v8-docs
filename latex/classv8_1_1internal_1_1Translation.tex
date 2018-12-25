@@ -1,0 +1,121 @@
+\hypertarget{classv8_1_1internal_1_1Translation}{}\section{v8\+:\+:internal\+:\+:Translation Class Reference}
+\label{classv8_1_1internal_1_1Translation}\index{v8\+::internal\+::\+Translation@{v8\+::internal\+::\+Translation}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a130e9d6fcd45b2819bbe3378feaa27e8}\label{classv8_1_1internal_1_1Translation_a130e9d6fcd45b2819bbe3378feaa27e8}} 
+enum {\bfseries Opcode} \{ {\bfseries L\+A\+ST} = L\+I\+T\+E\+R\+AL
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_ab218d753addf64427d5e6c8869a05e63}\label{classv8_1_1internal_1_1Translation_ab218d753addf64427d5e6c8869a05e63}} 
+{\bfseries Translation} (\mbox{\hyperlink{classv8_1_1internal_1_1TranslationBuffer}{Translation\+Buffer}} $\ast$buffer, \mbox{\hyperlink{classint}{int}} frame\+\_\+count, \mbox{\hyperlink{classint}{int}} jsframe\+\_\+count, \mbox{\hyperlink{classint}{int}} update\+\_\+feedback\+\_\+count, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a2791ed21a07f2527fdfb509e19dab71a}\label{classv8_1_1internal_1_1Translation_a2791ed21a07f2527fdfb509e19dab71a}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a3936c9a348ec62f049ae5ae6d9a9c595}\label{classv8_1_1internal_1_1Translation_a3936c9a348ec62f049ae5ae6d9a9c595}} 
+void {\bfseries Begin\+Interpreted\+Frame} (\mbox{\hyperlink{classv8_1_1internal_1_1BailoutId}{Bailout\+Id}} bytecode\+\_\+offset, \mbox{\hyperlink{classint}{int}} literal\+\_\+id, \mbox{\hyperlink{classunsigned}{unsigned}} height, \mbox{\hyperlink{classint}{int}} return\+\_\+value\+\_\+offset, \mbox{\hyperlink{classint}{int}} return\+\_\+value\+\_\+count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a77d66fbf76b5a76bf843b2d0dbd52e1e}\label{classv8_1_1internal_1_1Translation_a77d66fbf76b5a76bf843b2d0dbd52e1e}} 
+void {\bfseries Begin\+Arguments\+Adaptor\+Frame} (\mbox{\hyperlink{classint}{int}} literal\+\_\+id, \mbox{\hyperlink{classunsigned}{unsigned}} height)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a8b81ca40dbaee8fb6d4ee10aa72d0bbe}\label{classv8_1_1internal_1_1Translation_a8b81ca40dbaee8fb6d4ee10aa72d0bbe}} 
+void {\bfseries Begin\+Construct\+Stub\+Frame} (\mbox{\hyperlink{classv8_1_1internal_1_1BailoutId}{Bailout\+Id}} bailout\+\_\+id, \mbox{\hyperlink{classint}{int}} literal\+\_\+id, \mbox{\hyperlink{classunsigned}{unsigned}} height)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a1e24e08c8588c2157957832b094edcc2}\label{classv8_1_1internal_1_1Translation_a1e24e08c8588c2157957832b094edcc2}} 
+void {\bfseries Begin\+Builtin\+Continuation\+Frame} (\mbox{\hyperlink{classv8_1_1internal_1_1BailoutId}{Bailout\+Id}} bailout\+\_\+id, \mbox{\hyperlink{classint}{int}} literal\+\_\+id, \mbox{\hyperlink{classunsigned}{unsigned}} height)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a40bac84fe95c9ca4f53f116457a1548c}\label{classv8_1_1internal_1_1Translation_a40bac84fe95c9ca4f53f116457a1548c}} 
+void {\bfseries Begin\+Java\+Script\+Builtin\+Continuation\+Frame} (\mbox{\hyperlink{classv8_1_1internal_1_1BailoutId}{Bailout\+Id}} bailout\+\_\+id, \mbox{\hyperlink{classint}{int}} literal\+\_\+id, \mbox{\hyperlink{classunsigned}{unsigned}} height)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_aa2e7d9f98062fb43a5ac37419a84948e}\label{classv8_1_1internal_1_1Translation_aa2e7d9f98062fb43a5ac37419a84948e}} 
+void {\bfseries Begin\+Java\+Script\+Builtin\+Continuation\+With\+Catch\+Frame} (\mbox{\hyperlink{classv8_1_1internal_1_1BailoutId}{Bailout\+Id}} bailout\+\_\+id, \mbox{\hyperlink{classint}{int}} literal\+\_\+id, \mbox{\hyperlink{classunsigned}{unsigned}} height)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_afeab692c60395febbaaea03dd7fb19e9}\label{classv8_1_1internal_1_1Translation_afeab692c60395febbaaea03dd7fb19e9}} 
+void {\bfseries Arguments\+Elements} (Create\+Arguments\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a98065c091ebc1ebf2476d72db1fdad7c}\label{classv8_1_1internal_1_1Translation_a98065c091ebc1ebf2476d72db1fdad7c}} 
+void {\bfseries Arguments\+Length} (Create\+Arguments\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a569a5a7758c2a91f71bc5dca5fb82a37}\label{classv8_1_1internal_1_1Translation_a569a5a7758c2a91f71bc5dca5fb82a37}} 
+void {\bfseries Begin\+Captured\+Object} (\mbox{\hyperlink{classint}{int}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_afa2a2bc74c93f88695fafd222287630f}\label{classv8_1_1internal_1_1Translation_afa2a2bc74c93f88695fafd222287630f}} 
+void {\bfseries Add\+Update\+Feedback} (\mbox{\hyperlink{classint}{int}} vector\+\_\+literal, \mbox{\hyperlink{classint}{int}} slot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a182d5da607bff8f6efb68351277585e8}\label{classv8_1_1internal_1_1Translation_a182d5da607bff8f6efb68351277585e8}} 
+void {\bfseries Duplicate\+Object} (\mbox{\hyperlink{classint}{int}} object\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a096c2857a2fb8eb6b5b8f8e22e2400b3}\label{classv8_1_1internal_1_1Translation_a096c2857a2fb8eb6b5b8f8e22e2400b3}} 
+void {\bfseries Store\+Register} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a33ec5872f55cda8ab9c8e1042cc183ee}\label{classv8_1_1internal_1_1Translation_a33ec5872f55cda8ab9c8e1042cc183ee}} 
+void {\bfseries Store\+Int32\+Register} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_aea3badeffa8b8da51e9e5a6d85da01fc}\label{classv8_1_1internal_1_1Translation_aea3badeffa8b8da51e9e5a6d85da01fc}} 
+void {\bfseries Store\+Int64\+Register} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a51fc7040da1f2e93d2b1e223231a56c8}\label{classv8_1_1internal_1_1Translation_a51fc7040da1f2e93d2b1e223231a56c8}} 
+void {\bfseries Store\+Uint32\+Register} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_ac164b55420857e73480e32017ad3b177}\label{classv8_1_1internal_1_1Translation_ac164b55420857e73480e32017ad3b177}} 
+void {\bfseries Store\+Bool\+Register} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a5068ec895b6a34a5eb2f7fdf7c013a24}\label{classv8_1_1internal_1_1Translation_a5068ec895b6a34a5eb2f7fdf7c013a24}} 
+void {\bfseries Store\+Float\+Register} (\mbox{\hyperlink{classv8_1_1internal_1_1SwVfpRegister}{Float\+Register}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a47d2e6237511df59f59c4de3d67017a3}\label{classv8_1_1internal_1_1Translation_a47d2e6237511df59f59c4de3d67017a3}} 
+void {\bfseries Store\+Double\+Register} (\mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_aad73d53e5e82bb0f252384dbb100df74}\label{classv8_1_1internal_1_1Translation_aad73d53e5e82bb0f252384dbb100df74}} 
+void {\bfseries Store\+Stack\+Slot} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a1f78159d4e4db2374d1b337dbcac056d}\label{classv8_1_1internal_1_1Translation_a1f78159d4e4db2374d1b337dbcac056d}} 
+void {\bfseries Store\+Int32\+Stack\+Slot} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_af8b7c150ef7deea33eab0ea646021c94}\label{classv8_1_1internal_1_1Translation_af8b7c150ef7deea33eab0ea646021c94}} 
+void {\bfseries Store\+Int64\+Stack\+Slot} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a6026c0fa04cac723aff6aff0307369bc}\label{classv8_1_1internal_1_1Translation_a6026c0fa04cac723aff6aff0307369bc}} 
+void {\bfseries Store\+Uint32\+Stack\+Slot} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a77990552cf090e2c0f9e27e76d152603}\label{classv8_1_1internal_1_1Translation_a77990552cf090e2c0f9e27e76d152603}} 
+void {\bfseries Store\+Bool\+Stack\+Slot} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a94aca4b0728e6aaa87b56f810422c733}\label{classv8_1_1internal_1_1Translation_a94aca4b0728e6aaa87b56f810422c733}} 
+void {\bfseries Store\+Float\+Stack\+Slot} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a3812755cfbd84551fd17cd16eb67b78b}\label{classv8_1_1internal_1_1Translation_a3812755cfbd84551fd17cd16eb67b78b}} 
+void {\bfseries Store\+Double\+Stack\+Slot} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_ac02fa53a5c31a53fd1539746932c9dc3}\label{classv8_1_1internal_1_1Translation_ac02fa53a5c31a53fd1539746932c9dc3}} 
+void {\bfseries Store\+Literal} (\mbox{\hyperlink{classint}{int}} literal\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_ac3534c9461fc9adb357152aa3e22b6f3}\label{classv8_1_1internal_1_1Translation_ac3534c9461fc9adb357152aa3e22b6f3}} 
+void {\bfseries Store\+J\+S\+Frame\+Function} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_a92d07bd73b1e478fb9961aadce664beb}\label{classv8_1_1internal_1_1Translation_a92d07bd73b1e478fb9961aadce664beb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$ {\bfseries zone} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Translation_aae5854481a40d485036ddae10a96d635}\label{classv8_1_1internal_1_1Translation_aae5854481a40d485036ddae10a96d635}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Operands\+For} (Opcode opcode)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 939 of file deoptimizer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/deoptimizer.\+h\item 
+v8/src/deoptimizer.\+cc\end{DoxyCompactItemize}

@@ -4,6 +4,11 @@
 
 {\ttfamily \#include $<$v8.\+h$>$}
 
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1WasmStreaming_1_1WasmStreamingImpl}{Wasm\+Streaming\+Impl}}
+\end{DoxyCompactItemize}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -13,9 +18,9 @@ typedef void($\ast$ \mbox{\hyperlink{classv8_1_1WasmStreaming_a2e8af849348cbd9fe
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classv8_1_1WasmStreaming_a40fe20bbbe84a244ebd306da4b8ce256}\label{classv8_1_1WasmStreaming_a40fe20bbbe84a244ebd306da4b8ce256}} 
-{\bfseries Wasm\+Streaming} (std\+::unique\+\_\+ptr$<$ Wasm\+Streaming\+Impl $>$ impl)
+{\bfseries Wasm\+Streaming} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1WasmStreaming_1_1WasmStreamingImpl}{Wasm\+Streaming\+Impl}} $>$ impl)
 \item 
-void \mbox{\hyperlink{classv8_1_1WasmStreaming_ada886a06f191ac65897763bda60c2f54}{On\+Bytes\+Received}} (const uint8\+\_\+t $\ast$bytes, size\+\_\+t size)
+void \mbox{\hyperlink{classv8_1_1WasmStreaming_ada886a06f191ac65897763bda60c2f54}{On\+Bytes\+Received}} (const uint8\+\_\+t $\ast$bytes, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
 \item 
 void \mbox{\hyperlink{classv8_1_1WasmStreaming_a2c40c85c34643af871577ea98d792de6}{Finish}} ()
 \item 
@@ -23,12 +28,12 @@ void \mbox{\hyperlink{classv8_1_1WasmStreaming_aca7399d97368360079e3030b2fb4fc94
 \item 
 void \mbox{\hyperlink{classv8_1_1WasmStreaming_a3ab2155ed7ae2cce343e634aa46e906b}{Set\+Module\+Compiled\+Callback}} (\mbox{\hyperlink{classv8_1_1WasmStreaming_a2e8af849348cbd9fe9c3940ab010917d}{Module\+Compiled\+Callback}} callback, intptr\+\_\+t data)
 \item 
-bool \mbox{\hyperlink{classv8_1_1WasmStreaming_a73a233057ae54177e84d259f43a1781e}{Set\+Compiled\+Module\+Bytes}} (const uint8\+\_\+t $\ast$bytes, size\+\_\+t size)
+\mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{classv8_1_1WasmStreaming_a73a233057ae54177e84d259f43a1781e}{Set\+Compiled\+Module\+Bytes}} (const uint8\+\_\+t $\ast$bytes, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1WasmStreaming}{Wasm\+Streaming}} $>$ \mbox{\hyperlink{classv8_1_1WasmStreaming_a343acdb301ae8c21b49c177ac28f2b07}{Unpack}} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ value)
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1WasmStreaming}{Wasm\+Streaming}} $>$ \mbox{\hyperlink{classv8_1_1WasmStreaming_af90e13f9116c9c4184b6e621c87671c6}{Unpack}} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ value)
 \end{DoxyCompactItemize}
 
 
@@ -59,38 +64,63 @@ Definition at line 4407 of file v8.\+h.
 \subsubsection{\texorpdfstring{Abort()}{Abort()}}
 {\footnotesize\ttfamily void v8\+::\+Wasm\+Streaming\+::\+Abort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$}]{exception }\end{DoxyParamCaption})}
 
-Abort streaming compilation. If \{exception\} has a value, then the promise associated with streaming compilation is rejected with that value. If \{exception\} does not have value, the promise does not get rejected. \mbox{\Hypertarget{classv8_1_1WasmStreaming_a2c40c85c34643af871577ea98d792de6}\label{classv8_1_1WasmStreaming_a2c40c85c34643af871577ea98d792de6}} 
+Abort streaming compilation. If \{exception\} has a value, then the promise associated with streaming compilation is rejected with that value. If \{exception\} does not have value, the promise does not get rejected. 
+
+Definition at line 99 of file wasm-\/js.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1WasmStreaming_a2c40c85c34643af871577ea98d792de6}\label{classv8_1_1WasmStreaming_a2c40c85c34643af871577ea98d792de6}} 
 \index{v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}!Finish@{Finish}}
 \index{Finish@{Finish}!v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}}
 \subsubsection{\texorpdfstring{Finish()}{Finish()}}
 {\footnotesize\ttfamily void v8\+::\+Wasm\+Streaming\+::\+Finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\{Finish\} should be called after all received bytes where passed to \{On\+Bytes\+Received\} to tell V8 that there will be no more bytes. \{Finish\} does not have to be called after \{Abort\} has been called already. \mbox{\Hypertarget{classv8_1_1WasmStreaming_ada886a06f191ac65897763bda60c2f54}\label{classv8_1_1WasmStreaming_ada886a06f191ac65897763bda60c2f54}} 
+\{Finish\} should be called after all received bytes where passed to \{On\+Bytes\+Received\} to tell V8 that there will be no more bytes. \{Finish\} does not have to be called after \{Abort\} has been called already. 
+
+Definition at line 97 of file wasm-\/js.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1WasmStreaming_ada886a06f191ac65897763bda60c2f54}\label{classv8_1_1WasmStreaming_ada886a06f191ac65897763bda60c2f54}} 
 \index{v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}!On\+Bytes\+Received@{On\+Bytes\+Received}}
 \index{On\+Bytes\+Received@{On\+Bytes\+Received}!v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}}
 \subsubsection{\texorpdfstring{On\+Bytes\+Received()}{OnBytesReceived()}}
-{\footnotesize\ttfamily void v8\+::\+Wasm\+Streaming\+::\+On\+Bytes\+Received (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void v8\+::\+Wasm\+Streaming\+::\+On\+Bytes\+Received (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes,  }\item[{\mbox{\hyperlink{classsize__t}{size\+\_\+t}}}]{size }\end{DoxyParamCaption})}
 
-Pass a new chunk of bytes to Web\+Assembly streaming compilation. The buffer passed into \{On\+Bytes\+Received\} is owned by the caller. \mbox{\Hypertarget{classv8_1_1WasmStreaming_a73a233057ae54177e84d259f43a1781e}\label{classv8_1_1WasmStreaming_a73a233057ae54177e84d259f43a1781e}} 
+Pass a new chunk of bytes to Web\+Assembly streaming compilation. The buffer passed into \{On\+Bytes\+Received\} is owned by the caller. 
+
+Definition at line 93 of file wasm-\/js.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1WasmStreaming_a73a233057ae54177e84d259f43a1781e}\label{classv8_1_1WasmStreaming_a73a233057ae54177e84d259f43a1781e}} 
 \index{v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}!Set\+Compiled\+Module\+Bytes@{Set\+Compiled\+Module\+Bytes}}
 \index{Set\+Compiled\+Module\+Bytes@{Set\+Compiled\+Module\+Bytes}!v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}}
 \subsubsection{\texorpdfstring{Set\+Compiled\+Module\+Bytes()}{SetCompiledModuleBytes()}}
-{\footnotesize\ttfamily bool v8\+::\+Wasm\+Streaming\+::\+Set\+Compiled\+Module\+Bytes (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbool}{bool}} v8\+::\+Wasm\+Streaming\+::\+Set\+Compiled\+Module\+Bytes (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes,  }\item[{\mbox{\hyperlink{classsize__t}{size\+\_\+t}}}]{size }\end{DoxyParamCaption})}
 
-Passes previously compiled module bytes. This must be called before calling any non-\/static methods of this class. Returns true if the module bytes can be used, false otherwise. The buffer passed into \{Set\+Compiled\+Module\+Bytes\} is owned by the caller. If \{Set\+Compiled\+Module\+Bytes\} returns true, the buffer must remain valid until either \{Finish\} or \{Abort\} completes. \mbox{\Hypertarget{classv8_1_1WasmStreaming_a3ab2155ed7ae2cce343e634aa46e906b}\label{classv8_1_1WasmStreaming_a3ab2155ed7ae2cce343e634aa46e906b}} 
+Passes previously compiled module bytes. This must be called before calling any non-\/static methods of this class. Returns true if the module bytes can be used, false otherwise. The buffer passed into \{Set\+Compiled\+Module\+Bytes\} is owned by the caller. If \{Set\+Compiled\+Module\+Bytes\} returns true, the buffer must remain valid until either \{Finish\} or \{Abort\} completes. 
+
+Definition at line 108 of file wasm-\/js.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1WasmStreaming_a3ab2155ed7ae2cce343e634aa46e906b}\label{classv8_1_1WasmStreaming_a3ab2155ed7ae2cce343e634aa46e906b}} 
 \index{v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}!Set\+Module\+Compiled\+Callback@{Set\+Module\+Compiled\+Callback}}
 \index{Set\+Module\+Compiled\+Callback@{Set\+Module\+Compiled\+Callback}!v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}}
 \subsubsection{\texorpdfstring{Set\+Module\+Compiled\+Callback()}{SetModuleCompiledCallback()}}
 {\footnotesize\ttfamily void v8\+::\+Wasm\+Streaming\+::\+Set\+Module\+Compiled\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1WasmStreaming_a2e8af849348cbd9fe9c3940ab010917d}{Module\+Compiled\+Callback}}}]{callback,  }\item[{intptr\+\_\+t}]{data }\end{DoxyParamCaption})}
 
-Sets a callback for when compilation of the Wasm module has been completed to the highest tier. $\vert$data$\vert$ will be passed as the first callback parameter. \mbox{\Hypertarget{classv8_1_1WasmStreaming_a343acdb301ae8c21b49c177ac28f2b07}\label{classv8_1_1WasmStreaming_a343acdb301ae8c21b49c177ac28f2b07}} 
+Sets a callback for when compilation of the Wasm module has been completed to the highest tier. $\vert$data$\vert$ will be passed as the first callback parameter. 
+
+Definition at line 103 of file wasm-\/js.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1WasmStreaming_af90e13f9116c9c4184b6e621c87671c6}\label{classv8_1_1WasmStreaming_af90e13f9116c9c4184b6e621c87671c6}} 
 \index{v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}!Unpack@{Unpack}}
 \index{Unpack@{Unpack}!v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}}
 \subsubsection{\texorpdfstring{Unpack()}{Unpack()}}
-{\footnotesize\ttfamily static std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classv8_1_1WasmStreaming}{Wasm\+Streaming}}$>$ v8\+::\+Wasm\+Streaming\+::\+Unpack (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1WasmStreaming}{Wasm\+Streaming}} $>$ v8\+::\+Wasm\+Streaming\+::\+Unpack (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Unpacks a \{\mbox{\hyperlink{classv8_1_1WasmStreaming}{Wasm\+Streaming}}\} object wrapped in a \{Managed\} for the embedder. Since the embedder is on the other side of the A\+PI, it cannot unpack the \{Managed\} itself. 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Definition at line 113 of file wasm-\/js.\+cc.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8.\+h\end{DoxyCompactItemize}
+v8/include/v8.\+h\item 
+v8/src/wasm/wasm-\/js.\+cc\end{DoxyCompactItemize}

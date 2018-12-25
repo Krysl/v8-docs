@@ -1,0 +1,177 @@
+\hypertarget{classv8_1_1internal_1_1AccessorAssembler}{}\section{v8\+:\+:internal\+:\+:Accessor\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1AccessorAssembler}\index{v8\+::internal\+::\+Accessor\+Assembler@{v8\+::internal\+::\+Accessor\+Assembler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Accessor\+Assembler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1AccessorAssembler}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1AccessorAssembler_1_1LoadICParameters}{Load\+I\+C\+Parameters}}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1AccessorAssembler_1_1StoreICParameters}{Store\+I\+C\+Parameters}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_ac424f579d5482775e34a7ddb7c50641f}\label{classv8_1_1internal_1_1AccessorAssembler_ac424f579d5482775e34a7ddb7c50641f}} 
+enum {\bfseries Stub\+Cache\+Table} \+: int 
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_ad3fc3d320cbbc52ce39d758183838b26}\label{classv8_1_1internal_1_1AccessorAssembler_ad3fc3d320cbbc52ce39d758183838b26}} 
+using {\bfseries Node} = \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{compiler\+::\+Node}}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_aac23b1df29152a80a7e6b838febf443e}\label{classv8_1_1internal_1_1AccessorAssembler_aac23b1df29152a80a7e6b838febf443e}} 
+{\footnotesize template$<$class T $>$ }\\using {\bfseries T\+Node} = \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{compiler\+::\+T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_aad36dbab416fd1efaee088043f54fef7}\label{classv8_1_1internal_1_1AccessorAssembler_aad36dbab416fd1efaee088043f54fef7}} 
+{\footnotesize template$<$class T $>$ }\\using {\bfseries Sloppy\+T\+Node} = \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SloppyTNode}{compiler\+::\+Sloppy\+T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_ac5f87c461fb7a2a131e4eea46bbb913f}\label{classv8_1_1internal_1_1AccessorAssembler_ac5f87c461fb7a2a131e4eea46bbb913f}} 
+{\bfseries Accessor\+Assembler} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerState}{compiler\+::\+Code\+Assembler\+State}} $\ast$state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a9f57214585c6548e02ee354aa845f5f2}\label{classv8_1_1internal_1_1AccessorAssembler_a9f57214585c6548e02ee354aa845f5f2}} 
+void {\bfseries Generate\+Load\+IC} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a302bbfdb79be8ed012923ebef0e4b61e}\label{classv8_1_1internal_1_1AccessorAssembler_a302bbfdb79be8ed012923ebef0e4b61e}} 
+void {\bfseries Generate\+Load\+I\+C\+\_\+\+Megamorphic} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_afb357a8e65b30c4cba775e1a4555722f}\label{classv8_1_1internal_1_1AccessorAssembler_afb357a8e65b30c4cba775e1a4555722f}} 
+void {\bfseries Generate\+Load\+I\+C\+\_\+\+Noninlined} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a42b6ed81459a839a6c1502b2c97cf635}\label{classv8_1_1internal_1_1AccessorAssembler_a42b6ed81459a839a6c1502b2c97cf635}} 
+void {\bfseries Generate\+Load\+I\+C\+\_\+\+Uninitialized} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a973dad3b80ababea0ab25819c421c592}\label{classv8_1_1internal_1_1AccessorAssembler_a973dad3b80ababea0ab25819c421c592}} 
+void {\bfseries Generate\+Load\+I\+C\+Trampoline} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a18b651d5375723f1806bfe3e14960d83}\label{classv8_1_1internal_1_1AccessorAssembler_a18b651d5375723f1806bfe3e14960d83}} 
+void {\bfseries Generate\+Load\+I\+C\+Trampoline\+\_\+\+Megamorphic} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_affcf7f5904348ad829ecd19dd3e8ccbc}\label{classv8_1_1internal_1_1AccessorAssembler_affcf7f5904348ad829ecd19dd3e8ccbc}} 
+void {\bfseries Generate\+Keyed\+Load\+IC} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a65c4c9af1e98fb608248c78f20ab6eee}\label{classv8_1_1internal_1_1AccessorAssembler_a65c4c9af1e98fb608248c78f20ab6eee}} 
+void {\bfseries Generate\+Keyed\+Load\+I\+C\+\_\+\+Megamorphic} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a1fccdac58c30307146808c54e7968258}\label{classv8_1_1internal_1_1AccessorAssembler_a1fccdac58c30307146808c54e7968258}} 
+void {\bfseries Generate\+Keyed\+Load\+I\+C\+\_\+\+Polymorphic\+Name} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_ae9dbf9db99c0487e5592b15358499bd3}\label{classv8_1_1internal_1_1AccessorAssembler_ae9dbf9db99c0487e5592b15358499bd3}} 
+void {\bfseries Generate\+Keyed\+Load\+I\+C\+Trampoline} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a0733221e4e8a9585f5fd933d86d5094a}\label{classv8_1_1internal_1_1AccessorAssembler_a0733221e4e8a9585f5fd933d86d5094a}} 
+void {\bfseries Generate\+Keyed\+Load\+I\+C\+Trampoline\+\_\+\+Megamorphic} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a34dd95f53f34456097f77bdad385dafe}\label{classv8_1_1internal_1_1AccessorAssembler_a34dd95f53f34456097f77bdad385dafe}} 
+void {\bfseries Generate\+Store\+IC} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_ab18160d8870126c01fe14a0b2b08c021}\label{classv8_1_1internal_1_1AccessorAssembler_ab18160d8870126c01fe14a0b2b08c021}} 
+void {\bfseries Generate\+Store\+I\+C\+Trampoline} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a95eab448aed0c8a803399d9b5ffe1979}\label{classv8_1_1internal_1_1AccessorAssembler_a95eab448aed0c8a803399d9b5ffe1979}} 
+void {\bfseries Generate\+Store\+Global\+IC} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a9c52911d81ba441ca1c0d10eda114d79}\label{classv8_1_1internal_1_1AccessorAssembler_a9c52911d81ba441ca1c0d10eda114d79}} 
+void {\bfseries Generate\+Store\+Global\+I\+C\+Trampoline} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a886d4a0bbe21ac64fac3bcf4372333d7}\label{classv8_1_1internal_1_1AccessorAssembler_a886d4a0bbe21ac64fac3bcf4372333d7}} 
+void {\bfseries Generate\+Clone\+Object\+IC} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a6ec83695032cac953966bf680fed5d70}\label{classv8_1_1internal_1_1AccessorAssembler_a6ec83695032cac953966bf680fed5d70}} 
+void {\bfseries Generate\+Clone\+Object\+I\+C\+\_\+\+Slow} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_afbc89049e6575b3b24a150fd1c4f8363}\label{classv8_1_1internal_1_1AccessorAssembler_afbc89049e6575b3b24a150fd1c4f8363}} 
+void {\bfseries Generate\+Load\+Global\+IC} (Typeof\+Mode typeof\+\_\+mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a3836b2d01020ddcf406b92a2b7f74f6c}\label{classv8_1_1internal_1_1AccessorAssembler_a3836b2d01020ddcf406b92a2b7f74f6c}} 
+void {\bfseries Generate\+Load\+Global\+I\+C\+Trampoline} (Typeof\+Mode typeof\+\_\+mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a39fd539fa6323ddd8ce611d67113e241}\label{classv8_1_1internal_1_1AccessorAssembler_a39fd539fa6323ddd8ce611d67113e241}} 
+void {\bfseries Generate\+Keyed\+Store\+IC} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a90ee1401264405f6e5f341aa7c6562bc}\label{classv8_1_1internal_1_1AccessorAssembler_a90ee1401264405f6e5f341aa7c6562bc}} 
+void {\bfseries Generate\+Keyed\+Store\+I\+C\+Trampoline} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a58b259d4bf86ef2e4fa32465a37a14a4}\label{classv8_1_1internal_1_1AccessorAssembler_a58b259d4bf86ef2e4fa32465a37a14a4}} 
+void {\bfseries Generate\+Store\+In\+Array\+Literal\+IC} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a2660145f33a4d35f58611986ada0310c}\label{classv8_1_1internal_1_1AccessorAssembler_a2660145f33a4d35f58611986ada0310c}} 
+void {\bfseries Try\+Probe\+Stub\+Cache} (\mbox{\hyperlink{classv8_1_1internal_1_1StubCache}{Stub\+Cache}} $\ast$stub\+\_\+cache, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$receiver, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$name, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+handler, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TypedCodeAssemblerVariable}{T\+Variable}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} $>$ $\ast$var\+\_\+handler, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+miss)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a5c64f57e40af257c1892f3c59ff2e403}\label{classv8_1_1internal_1_1AccessorAssembler_a5c64f57e40af257c1892f3c59ff2e403}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Stub\+Cache\+Primary\+Offset\+For\+Testing} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$name, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a46a3bc8482b1bb197725fbdc05184151}\label{classv8_1_1internal_1_1AccessorAssembler_a46a3bc8482b1bb197725fbdc05184151}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Stub\+Cache\+Secondary\+Offset\+For\+Testing} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$name, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_ab34e9435b84e52bb6b45cbbe9306e48c}\label{classv8_1_1internal_1_1AccessorAssembler_ab34e9435b84e52bb6b45cbbe9306e48c}} 
+void {\bfseries Load\+Global\+IC} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackVector}{Feedback\+Vector}} $>$ vector, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$slot, const Lazy\+Node$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ \&lazy\+\_\+context, const Lazy\+Node$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ \&lazy\+\_\+name, Typeof\+Mode typeof\+\_\+mode, \mbox{\hyperlink{classv8_1_1internal_1_1ExitPoint}{Exit\+Point}} $\ast$exit\+\_\+point, Parameter\+Mode slot\+\_\+mode=S\+M\+I\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+RS)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a85d65e97ff44089ace23b4a5473328f6}\label{classv8_1_1internal_1_1AccessorAssembler_a85d65e97ff44089ace23b4a5473328f6}} 
+void {\bfseries Load\+I\+C\+\_\+\+Bytecode\+Handler} (const \mbox{\hyperlink{structv8_1_1internal_1_1AccessorAssembler_1_1LoadICParameters}{Load\+I\+C\+Parameters}} $\ast$p, \mbox{\hyperlink{classv8_1_1internal_1_1ExitPoint}{Exit\+Point}} $\ast$exit\+\_\+point)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a1d6263170cec57726ff3a77349c5aa1e}\label{classv8_1_1internal_1_1AccessorAssembler_a1d6263170cec57726ff3a77349c5aa1e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} $>$ {\bfseries Load\+Handler\+Data\+Field} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SloppyTNode}{Sloppy\+T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1DataHandler}{Data\+Handler}} $>$ handler, \mbox{\hyperlink{classint}{int}} data\+\_\+index)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_ab680069b3f903c5909b50e8f70826da1}\label{classv8_1_1internal_1_1AccessorAssembler_ab680069b3f903c5909b50e8f70826da1}} 
+enum {\bfseries I\+C\+Mode} \{ {\bfseries k\+Non\+Global\+IC}, 
+{\bfseries k\+Global\+IC}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a59966ccd362f71285c76c4d7a981921c}\label{classv8_1_1internal_1_1AccessorAssembler_a59966ccd362f71285c76c4d7a981921c}} 
+enum {\bfseries Element\+Support} \{ {\bfseries k\+Only\+Properties}, 
+{\bfseries k\+Support\+Elements}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a5b45e778221700bc7a06663e55c48912}\label{classv8_1_1internal_1_1AccessorAssembler_a5b45e778221700bc7a06663e55c48912}} 
+enum {\bfseries Store\+Transition\+Map\+Flags} \{ {\bfseries k\+Check\+Prototype\+Validity} = 1 $<$$<$ 0, 
+{\bfseries k\+Validate\+Transition\+Handler} = 1 $<$$<$ 1, 
+{\bfseries k\+Store\+Transition\+Map\+Flags\+Mask}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a6943af3ec771ef419897e88e2a9854e5}\label{classv8_1_1internal_1_1AccessorAssembler_a6943af3ec771ef419897e88e2a9854e5}} 
+void {\bfseries Handle\+Store\+I\+C\+Handler\+Case} (const \mbox{\hyperlink{structv8_1_1internal_1_1AccessorAssembler_1_1StoreICParameters}{Store\+I\+C\+Parameters}} $\ast$p, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} $>$ handler, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$miss, I\+C\+Mode ic\+\_\+mode, Element\+Support support\+\_\+elements=k\+Only\+Properties)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a4b8655f3c396b72381847f3a120f0c0f}\label{classv8_1_1internal_1_1AccessorAssembler_a4b8655f3c396b72381847f3a120f0c0f}} 
+void {\bfseries Handle\+Store\+I\+C\+Transition\+Map\+Handler\+Case} (const \mbox{\hyperlink{structv8_1_1internal_1_1AccessorAssembler_1_1StoreICParameters}{Store\+I\+C\+Parameters}} $\ast$p, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ transition\+\_\+map, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$miss, Store\+Transition\+Map\+Flags flags)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a543857db01e790acf2d7a134d7302565}\label{classv8_1_1internal_1_1AccessorAssembler_a543857db01e790acf2d7a134d7302565}} 
+void {\bfseries Jump\+If\+Data\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$details, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$writable, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$readonly)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a63c8a898b155643eb1ea765dc539dffb}\label{classv8_1_1internal_1_1AccessorAssembler_a63c8a898b155643eb1ea765dc539dffb}} 
+void {\bfseries Branch\+If\+Strict\+Mode} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$vector, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$slot, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+strict)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a5d7fc228f04a83d2c5446f49ee6003c7}\label{classv8_1_1internal_1_1AccessorAssembler_a5d7fc228f04a83d2c5446f49ee6003c7}} 
+void {\bfseries Invalidate\+Validity\+Cell\+If\+Prototype} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$map, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$bitfield2=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a0e78b9a81ba4a3b986f11dbcb2dde5b5}\label{classv8_1_1internal_1_1AccessorAssembler_a0e78b9a81ba4a3b986f11dbcb2dde5b5}} 
+void {\bfseries Overwrite\+Existing\+Fast\+Data\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$object, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$object\+\_\+map, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$descriptors, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$descriptor\+\_\+name\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$details, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$value, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$slow, \mbox{\hyperlink{classbool}{bool}} do\+\_\+transitioning\+\_\+store)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AccessorAssembler_a6be694fde5be8530afc07da11dbcc742}\label{classv8_1_1internal_1_1AccessorAssembler_a6be694fde5be8530afc07da11dbcc742}} 
+void {\bfseries Check\+Field\+Type} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1DescriptorArray}{Descriptor\+Array}} $>$ descriptors, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$name\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$representation, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$value, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$bailout)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file accessor-\/assembler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ic/accessor-\/assembler.\+h\item 
+v8/src/ic/accessor-\/assembler.\+cc\end{DoxyCompactItemize}

@@ -95,12 +95,12 @@ $(document).ready(function(){initNavTree('classv8_1_1ArrayBuffer_1_1Contents.htm
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="v8_8h_source.html">v8.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="include_2v8_8h_source.html">v8.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aee13ae166dcf8e210c499a81720b436d"><td class="memItemLeft" align="right" valign="top"><a id="aee13ae166dcf8e210c499a81720b436d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>DeleterCallback</b> = void(*)(void *buffer, size_t length, void *info)</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>DeleterCallback</b> = void(*)(void *buffer, <a class="el" href="classsize__t.html">size_t</a> length, void *info)</td></tr>
 <tr class="separator:aee13ae166dcf8e210c499a81720b436d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -109,7 +109,7 @@ Public Member Functions</h2></td></tr>
 void *&#160;</td><td class="memItemRight" valign="bottom"><b>AllocationBase</b> () const</td></tr>
 <tr class="separator:a6982d157697f42fde9007989c0150d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf5ffac83be8c88a602cce7b852f4a62"><td class="memItemLeft" align="right" valign="top"><a id="abf5ffac83be8c88a602cce7b852f4a62"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>AllocationLength</b> () const</td></tr>
+<a class="el" href="classsize__t.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AllocationLength</b> () const</td></tr>
 <tr class="separator:abf5ffac83be8c88a602cce7b852f4a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82b2bbacac1a218439f80063af457287"><td class="memItemLeft" align="right" valign="top"><a id="a82b2bbacac1a218439f80063af457287"></a>
 <a class="el" href="classv8_1_1ArrayBuffer_1_1Allocator.html#ab106d1fbad7be9f6fd8b0f5c550ac59e">Allocator::AllocationMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AllocationMode</b> () const</td></tr>
@@ -118,7 +118,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>AllocationLength</b
 void *&#160;</td><td class="memItemRight" valign="bottom"><b>Data</b> () const</td></tr>
 <tr class="separator:a4eaa3609be49d6fd2055971242c5a6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4ca77bb59e6cbb004d9edaa79d30ad6"><td class="memItemLeft" align="right" valign="top"><a id="ac4ca77bb59e6cbb004d9edaa79d30ad6"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>ByteLength</b> () const</td></tr>
+<a class="el" href="classsize__t.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ByteLength</b> () const</td></tr>
 <tr class="separator:ac4ca77bb59e6cbb004d9edaa79d30ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaa11444494fd9ea3c4444a86c4575ff"><td class="memItemLeft" align="right" valign="top"><a id="adaa11444494fd9ea3c4444a86c4575ff"></a>
 DeleterCallback&#160;</td><td class="memItemRight" valign="bottom"><b>Deleter</b> () const</td></tr>
@@ -137,9 +137,10 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ArrayBuffer</b></td>
 <div class="textblock"><p>The contents of an |ArrayBuffer|. Externalization of |ArrayBuffer| returns an instance of this class, populated, with a pointer to data and byte length.</p>
 <p>The <a class="el" href="classv8_1_1Data.html">Data</a> pointer of <a class="el" href="classv8_1_1ArrayBuffer_1_1Contents.html">ArrayBuffer::Contents</a> must be freed using the provided deleter, which will call <a class="el" href="classv8_1_1ArrayBuffer_1_1Allocator.html#a419f59d2a103a5a8863809d7977c9cd8">ArrayBuffer::Allocator::Free</a> if the buffer was allocated with ArraryBuffer::Allocator::Allocate. </p>
 
-<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l04560">4560</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>v8/include/<a class="el" href="v8_8h_source.html">v8.h</a></li>
+<p class="definition">Definition at line <a class="el" href="include_2v8_8h_source.html#l04560">4560</a> of file <a class="el" href="include_2v8_8h_source.html">v8.h</a>.</p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>v8/include/<a class="el" href="include_2v8_8h_source.html">v8.h</a></li>
+<li>v8/src/<a class="el" href="api_8cc_source.html">api.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -147,7 +148,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ArrayBuffer</b></td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1ArrayBuffer.html">ArrayBuffer</a></li><li class="navelem"><a class="el" href="classv8_1_1ArrayBuffer_1_1Contents.html">Contents</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 14:32:56 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:40:15 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

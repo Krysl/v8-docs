@@ -1,0 +1,54 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Compilation\+Unit Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit}\index{v8\+::internal\+::wasm\+::\+Wasm\+Compilation\+Unit@{v8\+::internal\+::wasm\+::\+Wasm\+Compilation\+Unit}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_a041e0902a178e274e570f73b2b4914f1}\label{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_a041e0902a178e274e570f73b2b4914f1}} 
+{\bfseries Wasm\+Compilation\+Unit} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmEngine}{Wasm\+Engine}} $\ast$, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1NativeModule}{Native\+Module}} $\ast$, \mbox{\hyperlink{classint}{int}} index, Execution\+Tier=Get\+Default\+Execution\+Tier())
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_a5829db8a8b34972574e7c4469a7587c3}\label{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_a5829db8a8b34972574e7c4469a7587c3}} 
+void {\bfseries Execute\+Compilation} (\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1CompilationEnv}{Compilation\+Env}} $\ast$, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WireBytesStorage}{Wire\+Bytes\+Storage}} $>$, \mbox{\hyperlink{classv8_1_1internal_1_1Counters}{Counters}} $\ast$, \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{Wasm\+Features}} $\ast$detected)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_aba561486c0b608d9f9c0892e0cb56bc7}\label{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_aba561486c0b608d9f9c0892e0cb56bc7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1NativeModule}{Native\+Module}} $\ast$ {\bfseries native\+\_\+module} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_a612577dea57ec12822ce26597949be5e}\label{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_a612577dea57ec12822ce26597949be5e}} 
+Execution\+Tier {\bfseries tier} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_ab217faf8f5d20d8027f5d596d2c287cb}\label{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_ab217faf8f5d20d8027f5d596d2c287cb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries failed} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_a23519855746ba9a1c7bb3bddc0007b9e}\label{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_a23519855746ba9a1c7bb3bddc0007b9e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCode}{Wasm\+Code}} $\ast$ {\bfseries result} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_a73df40a7f67b4bcf5ac9aa06eacf7c12}\label{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_a73df40a7f67b4bcf5ac9aa06eacf7c12}} 
+static Execution\+Tier {\bfseries Get\+Default\+Execution\+Tier} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_adac01a6f097dced097e0bdabc48e53e6}\label{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_adac01a6f097dced097e0bdabc48e53e6}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Compile\+Wasm\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1NativeModule}{Native\+Module}} $\ast$native\+\_\+module, \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFeatures}{Wasm\+Features}} $\ast$detected, const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmFunction}{Wasm\+Function}} $\ast$function, Execution\+Tier=Get\+Default\+Execution\+Tier())
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_ae5eb9c7f366f4e2b744988d8f56fe4ad}\label{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_ae5eb9c7f366f4e2b744988d8f56fe4ad}} 
+class {\bfseries Liftoff\+Compilation\+Unit}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_a9d1b879cb4570290cd6863d376c93703}\label{classv8_1_1internal_1_1wasm_1_1WasmCompilationUnit_a9d1b879cb4570290cd6863d376c93703}} 
+class {\bfseries compiler\+::\+Turbofan\+Wasm\+Compilation\+Unit}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 31 of file function-\/compiler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/function-\/compiler.\+h\item 
+v8/src/wasm/function-\/compiler.\+cc\end{DoxyCompactItemize}

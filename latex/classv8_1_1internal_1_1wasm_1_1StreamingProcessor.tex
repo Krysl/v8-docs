@@ -1,0 +1,50 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingProcessor}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Streaming\+Processor Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1StreamingProcessor}\index{v8\+::internal\+::wasm\+::\+Streaming\+Processor@{v8\+::internal\+::wasm\+::\+Streaming\+Processor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:wasm\+:\+:Streaming\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1wasm_1_1StreamingProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingProcessor_aaf544703fc073ef1d66d102c98584420}\label{classv8_1_1internal_1_1wasm_1_1StreamingProcessor_aaf544703fc073ef1d66d102c98584420}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Process\+Module\+Header} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ bytes, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingProcessor_aed9de7605b356600fcbcc6b2a2ef5442}\label{classv8_1_1internal_1_1wasm_1_1StreamingProcessor_aed9de7605b356600fcbcc6b2a2ef5442}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Process\+Section} (Section\+Code section\+\_\+code, \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ bytes, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingProcessor_a51a039a20e2cd88d5f5cd9dd369b92af}\label{classv8_1_1internal_1_1wasm_1_1StreamingProcessor_a51a039a20e2cd88d5f5cd9dd369b92af}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Process\+Code\+Section\+Header} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} num\+\_\+functions, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WireBytesStorage}{Wire\+Bytes\+Storage}} $>$)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingProcessor_a1eb013f15afc707075217d4568155c7f}\label{classv8_1_1internal_1_1wasm_1_1StreamingProcessor_a1eb013f15afc707075217d4568155c7f}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Process\+Function\+Body} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ bytes, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingProcessor_a63c3c428516c2fd39f1f8ca7f3048868}\label{classv8_1_1internal_1_1wasm_1_1StreamingProcessor_a63c3c428516c2fd39f1f8ca7f3048868}} 
+virtual void {\bfseries On\+Finished\+Chunk} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingProcessor_a570044ec5da9364829684e438e3ea7be}\label{classv8_1_1internal_1_1wasm_1_1StreamingProcessor_a570044ec5da9364829684e438e3ea7be}} 
+virtual void {\bfseries On\+Finished\+Stream} (\mbox{\hyperlink{classv8_1_1internal_1_1OwnedVector}{Owned\+Vector}}$<$ uint8\+\_\+t $>$ bytes)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingProcessor_ac94a2f0d5477a90e259ff0693cbc894a}\label{classv8_1_1internal_1_1wasm_1_1StreamingProcessor_ac94a2f0d5477a90e259ff0693cbc894a}} 
+virtual void {\bfseries On\+Error} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1Result}{Void\+Result}} result)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingProcessor_af11adece44483b8191cd1c8feb616224}\label{classv8_1_1internal_1_1wasm_1_1StreamingProcessor_af11adece44483b8191cd1c8feb616224}} 
+virtual void {\bfseries On\+Abort} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingProcessor_addea0a6c3f20b121137f0acca0a3bc24}\label{classv8_1_1internal_1_1wasm_1_1StreamingProcessor_addea0a6c3f20b121137f0acca0a3bc24}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Deserialize} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ module\+\_\+bytes, \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ wire\+\_\+bytes)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 28 of file streaming-\/decoder.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/streaming-\/decoder.\+h\end{DoxyCompactItemize}

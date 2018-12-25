@@ -1,0 +1,66 @@
+\hypertarget{classv8_1_1internal_1_1ObjectVisitor}{}\section{v8\+:\+:internal\+:\+:Object\+Visitor Class Reference}
+\label{classv8_1_1internal_1_1ObjectVisitor}\index{v8\+::internal\+::\+Object\+Visitor@{v8\+::internal\+::\+Object\+Visitor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Object\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.807131cm]{classv8_1_1internal_1_1ObjectVisitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectVisitor_ac9b1e64a843301d26f77ed79e1cda125}\label{classv8_1_1internal_1_1ObjectVisitor_ac9b1e64a843301d26f77ed79e1cda125}} 
+virtual void {\bfseries Visit\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} end)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectVisitor_ab97e896c265f9c1a40252db17b96b234}\label{classv8_1_1internal_1_1ObjectVisitor_ab97e896c265f9c1a40252db17b96b234}} 
+virtual void {\bfseries Visit\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} end)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectVisitor_a0cb19d6850905f138e2592528f1364ed}\label{classv8_1_1internal_1_1ObjectVisitor_a0cb19d6850905f138e2592528f1364ed}} 
+virtual void {\bfseries Visit\+Custom\+Weak\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} end)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectVisitor_ad99dabe9a965de13b345446b03944484}\label{classv8_1_1internal_1_1ObjectVisitor_ad99dabe9a965de13b345446b03944484}} 
+virtual void {\bfseries Visit\+Pointer} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} p)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectVisitor_ab14aece15e03d6e07869c85965c99491}\label{classv8_1_1internal_1_1ObjectVisitor_ab14aece15e03d6e07869c85965c99491}} 
+virtual void {\bfseries Visit\+Pointer} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} p)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectVisitor_a969ef2c58fdbbe70538878d20c24af4c}\label{classv8_1_1internal_1_1ObjectVisitor_a969ef2c58fdbbe70538878d20c24af4c}} 
+virtual void {\bfseries Visit\+Custom\+Weak\+Pointer} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} p)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectVisitor_a910e33f97b0d9e1bfa110f25c7486867}\label{classv8_1_1internal_1_1ObjectVisitor_a910e33f97b0d9e1bfa110f25c7486867}} 
+virtual void {\bfseries Visit\+Code\+Target} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$rinfo)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectVisitor_a77eb0062311d7b796c7c6c167f6a2e52}\label{classv8_1_1internal_1_1ObjectVisitor_a77eb0062311d7b796c7c6c167f6a2e52}} 
+virtual void {\bfseries Visit\+Runtime\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$rinfo)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectVisitor_aaf9838083c5a796e05a4d0a565601072}\label{classv8_1_1internal_1_1ObjectVisitor_aaf9838083c5a796e05a4d0a565601072}} 
+virtual void {\bfseries Visit\+Embedded\+Pointer} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$rinfo)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectVisitor_a8c8f4799ea85f0abf4d40143e82209cf}\label{classv8_1_1internal_1_1ObjectVisitor_a8c8f4799ea85f0abf4d40143e82209cf}} 
+virtual void {\bfseries Visit\+External\+Reference} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$rinfo)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectVisitor_a84dbb9648df7a89cd6c4c165c1097d55}\label{classv8_1_1internal_1_1ObjectVisitor_a84dbb9648df7a89cd6c4c165c1097d55}} 
+virtual void {\bfseries Visit\+External\+Reference} (\mbox{\hyperlink{classv8_1_1internal_1_1Foreign}{Foreign}} $\ast$host, \mbox{\hyperlink{classuintptr__t}{Address}} $\ast$p)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectVisitor_a0e7f25ab19d9d4da5423f7c5496fef6c}\label{classv8_1_1internal_1_1ObjectVisitor_a0e7f25ab19d9d4da5423f7c5496fef6c}} 
+virtual void {\bfseries Visit\+Internal\+Reference} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$rinfo)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectVisitor_a8c03a16026c3194c2916d61d8fee2d91}\label{classv8_1_1internal_1_1ObjectVisitor_a8c03a16026c3194c2916d61d8fee2d91}} 
+virtual void {\bfseries Visit\+Off\+Heap\+Target} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$rinfo)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectVisitor_a72942d13ffd736c15ad241b7851f59c2}\label{classv8_1_1internal_1_1ObjectVisitor_a72942d13ffd736c15ad241b7851f59c2}} 
+virtual void {\bfseries Visit\+Reloc\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1RelocIterator}{Reloc\+Iterator}} $\ast$it)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 89 of file visitors.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/visitors.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

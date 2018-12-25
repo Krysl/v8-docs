@@ -1,0 +1,211 @@
+\hypertarget{classv8_1_1internal_1_1DeclarationScope}{}\section{v8\+:\+:internal\+:\+:Declaration\+Scope Class Reference}
+\label{classv8_1_1internal_1_1DeclarationScope}\index{v8\+::internal\+::\+Declaration\+Scope@{v8\+::internal\+::\+Declaration\+Scope}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Declaration\+Scope\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1DeclarationScope}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a75d0883e73f5c6bec8739ca19659b879}\label{classv8_1_1internal_1_1DeclarationScope_a75d0883e73f5c6bec8739ca19659b879}} 
+{\bfseries Declaration\+Scope} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$outer\+\_\+scope, Scope\+Type scope\+\_\+type, Function\+Kind function\+\_\+kind=k\+Normal\+Function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_ab3866234b88db49c5426ea4249f39bf2}\label{classv8_1_1internal_1_1DeclarationScope_ab3866234b88db49c5426ea4249f39bf2}} 
+{\bfseries Declaration\+Scope} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, Scope\+Type scope\+\_\+type, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ScopeInfo}{Scope\+Info}} $>$ scope\+\_\+info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a95aee2b9f8162baa385511ed2a488db0}\label{classv8_1_1internal_1_1DeclarationScope_a95aee2b9f8162baa385511ed2a488db0}} 
+{\bfseries Declaration\+Scope} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1AstValueFactory}{Ast\+Value\+Factory}} $\ast$ast\+\_\+value\+\_\+factory)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a81516fdc6c8ae2ce0a2dbc96a0b3ced0}\label{classv8_1_1internal_1_1DeclarationScope_a81516fdc6c8ae2ce0a2dbc96a0b3ced0}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Declared\+Parameter} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a1777f2e2db49897ec7b111a6d3f71b40}\label{classv8_1_1internal_1_1DeclarationScope_a1777f2e2db49897ec7b111a6d3f71b40}} 
+Function\+Kind {\bfseries function\+\_\+kind} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a0016b9909c3db2e0eab227ef550072f2}\label{classv8_1_1internal_1_1DeclarationScope_a0016b9909c3db2e0eab227ef550072f2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+arrow\+\_\+scope} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a5dcf123ac06ee36cfe74a2434eaa74cf}\label{classv8_1_1internal_1_1DeclarationScope_a5dcf123ac06ee36cfe74a2434eaa74cf}} 
+void {\bfseries Record\+Super\+Property\+Usage} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a9e200bf09f8aafd6b494785fabb5f316}\label{classv8_1_1internal_1_1DeclarationScope_a9e200bf09f8aafd6b494785fabb5f316}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Needs\+Home\+Object} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a91809541d924aef216cc9bf2a57be7e9}\label{classv8_1_1internal_1_1DeclarationScope_a91809541d924aef216cc9bf2a57be7e9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries calls\+\_\+sloppy\+\_\+eval} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_acf3abbb8f09accdade22175243492f10}\label{classv8_1_1internal_1_1DeclarationScope_acf3abbb8f09accdade22175243492f10}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries was\+\_\+lazily\+\_\+parsed} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a0074b29a79522651f5c660249cefe972}\label{classv8_1_1internal_1_1DeclarationScope_a0074b29a79522651f5c660249cefe972}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$ {\bfseries Lookup\+In\+Module} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a64069c989583df8fcab5da35c3492f3d}\label{classv8_1_1internal_1_1DeclarationScope_a64069c989583df8fcab5da35c3492f3d}} 
+void {\bfseries set\+\_\+zone} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a409a1f869ba735a4d1d95eab72718c3a}\label{classv8_1_1internal_1_1DeclarationScope_a409a1f869ba735a4d1d95eab72718c3a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Should\+Eager\+Compile} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a727c22ab680d28ffb2f2ea583480f71b}\label{classv8_1_1internal_1_1DeclarationScope_a727c22ab680d28ffb2f2ea583480f71b}} 
+void {\bfseries set\+\_\+should\+\_\+eager\+\_\+compile} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a03e48cfc40151974663776b87ff31604}\label{classv8_1_1internal_1_1DeclarationScope_a03e48cfc40151974663776b87ff31604}} 
+void {\bfseries Set\+Script\+Scope\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ScopeInfo}{Scope\+Info}} $>$ scope\+\_\+info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a96c302a0df5f661b923bb211bc0df35c}\label{classv8_1_1internal_1_1DeclarationScope_a96c302a0df5f661b923bb211bc0df35c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries asm\+\_\+module} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a555ef97d772118d0b97be53ad570f133}\label{classv8_1_1internal_1_1DeclarationScope_a555ef97d772118d0b97be53ad570f133}} 
+void {\bfseries set\+\_\+asm\+\_\+module} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a20fa0e6d47c54186608a7e344e0dc67d}\label{classv8_1_1internal_1_1DeclarationScope_a20fa0e6d47c54186608a7e344e0dc67d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries should\+\_\+ban\+\_\+arguments} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a9bda01b7cdf0136438bbe3c9e8ac8eac}\label{classv8_1_1internal_1_1DeclarationScope_a9bda01b7cdf0136438bbe3c9e8ac8eac}} 
+void {\bfseries Declare\+This} (\mbox{\hyperlink{classv8_1_1internal_1_1AstValueFactory}{Ast\+Value\+Factory}} $\ast$ast\+\_\+value\+\_\+factory)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_ae2896afd67fbcafb9559bc09b37410d1}\label{classv8_1_1internal_1_1DeclarationScope_ae2896afd67fbcafb9559bc09b37410d1}} 
+void {\bfseries Declare\+Arguments} (\mbox{\hyperlink{classv8_1_1internal_1_1AstValueFactory}{Ast\+Value\+Factory}} $\ast$ast\+\_\+value\+\_\+factory)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_af93b0d8cc5508b2825afa6f317b8f7bc}\label{classv8_1_1internal_1_1DeclarationScope_af93b0d8cc5508b2825afa6f317b8f7bc}} 
+void {\bfseries Declare\+Default\+Function\+Variables} (\mbox{\hyperlink{classv8_1_1internal_1_1AstValueFactory}{Ast\+Value\+Factory}} $\ast$ast\+\_\+value\+\_\+factory)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_aebff7e2dca5bc0fcddd25ceb5dfa01f6}\label{classv8_1_1internal_1_1DeclarationScope_aebff7e2dca5bc0fcddd25ceb5dfa01f6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$ {\bfseries Declare\+Function\+Var} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$name, \mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$cache=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a5540fce2f69add914731ee02d316bb0c}\label{classv8_1_1internal_1_1DeclarationScope_a5540fce2f69add914731ee02d316bb0c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$ {\bfseries Declare\+Generator\+Object\+Var} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_adeb49d2ec5cd6b3f3909d5f4c0481d4c}\label{classv8_1_1internal_1_1DeclarationScope_adeb49d2ec5cd6b3f3909d5f4c0481d4c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$ {\bfseries Declare\+Parameter} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$name, Variable\+Mode mode, \mbox{\hyperlink{classbool}{bool}} is\+\_\+optional, \mbox{\hyperlink{classbool}{bool}} is\+\_\+rest, \mbox{\hyperlink{classv8_1_1internal_1_1AstValueFactory}{Ast\+Value\+Factory}} $\ast$ast\+\_\+value\+\_\+factory, \mbox{\hyperlink{classint}{int}} position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a72e4f490e86b31d77f26ac6ad8ca6937}\label{classv8_1_1internal_1_1DeclarationScope_a72e4f490e86b31d77f26ac6ad8ca6937}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$ {\bfseries Declare\+Parameter\+Name} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$name, \mbox{\hyperlink{classbool}{bool}} is\+\_\+rest, \mbox{\hyperlink{classv8_1_1internal_1_1AstValueFactory}{Ast\+Value\+Factory}} $\ast$ast\+\_\+value\+\_\+factory, \mbox{\hyperlink{classbool}{bool}} declare\+\_\+local, \mbox{\hyperlink{classbool}{bool}} add\+\_\+parameter)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_afe690120167bcf70a2dc9878b75b024c}\label{classv8_1_1internal_1_1DeclarationScope_afe690120167bcf70a2dc9878b75b024c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$ {\bfseries Declare\+Dynamic\+Global} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$name, Variable\+Kind variable\+\_\+kind, \mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$cache)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a0bfa2719c702356a09d0a76312b5c772}\label{classv8_1_1internal_1_1DeclarationScope_a0bfa2719c702356a09d0a76312b5c772}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$ {\bfseries receiver} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_ada79873c06ffd74a87bd9b29f165bd95}\label{classv8_1_1internal_1_1DeclarationScope_ada79873c06ffd74a87bd9b29f165bd95}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+this\+\_\+declaration} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a2d437c640b73380052d3e986401b26c0}\label{classv8_1_1internal_1_1DeclarationScope_a2d437c640b73380052d3e986401b26c0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$ {\bfseries new\+\_\+target\+\_\+var} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_af8f4288c4eb4fe9db3f2857abe3670c4}\label{classv8_1_1internal_1_1DeclarationScope_af8f4288c4eb4fe9db3f2857abe3670c4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$ {\bfseries function\+\_\+var} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_aeb71728feaa8dcf56892d5b263f1fedb}\label{classv8_1_1internal_1_1DeclarationScope_aeb71728feaa8dcf56892d5b263f1fedb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$ {\bfseries generator\+\_\+object\+\_\+var} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_afe202008df1447e9245d1f116937346d}\label{classv8_1_1internal_1_1DeclarationScope_afe202008df1447e9245d1f116937346d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$ {\bfseries parameter} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_ab951f4e82b7b25595defae90013ee961}\label{classv8_1_1internal_1_1DeclarationScope_ab951f4e82b7b25595defae90013ee961}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries num\+\_\+parameters} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_aa19f73949d7871d09b54ed4c7b1f837f}\label{classv8_1_1internal_1_1DeclarationScope_aa19f73949d7871d09b54ed4c7b1f837f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$ {\bfseries rest\+\_\+parameter} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_af6c26767ed791ed6ef19e28359ebb2f8}\label{classv8_1_1internal_1_1DeclarationScope_af6c26767ed791ed6ef19e28359ebb2f8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+simple\+\_\+parameters} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a0536e7df2af2577cfb21ab7560aeb541}\label{classv8_1_1internal_1_1DeclarationScope_a0536e7df2af2577cfb21ab7560aeb541}} 
+void {\bfseries Set\+Has\+Non\+Simple\+Parameters} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a3d12d28275447f9c3248dd18d05a3f9d}\label{classv8_1_1internal_1_1DeclarationScope_a3d12d28275447f9c3248dd18d05a3f9d}} 
+Create\+Arguments\+Type {\bfseries Get\+Arguments\+Type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a37880e00b958800bd698fa3326c646fa}\label{classv8_1_1internal_1_1DeclarationScope_a37880e00b958800bd698fa3326c646fa}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$ {\bfseries arguments} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a7eb295a0894ca1055464dfc4e13184b1}\label{classv8_1_1internal_1_1DeclarationScope_a7eb295a0894ca1055464dfc4e13184b1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$ {\bfseries this\+\_\+function\+\_\+var} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a4790aac80bb2e0d5abcc525f1e931037}\label{classv8_1_1internal_1_1DeclarationScope_a4790aac80bb2e0d5abcc525f1e931037}} 
+void {\bfseries Add\+Local} (\mbox{\hyperlink{classv8_1_1internal_1_1Variable}{Variable}} $\ast$var)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_ac6a318da84eb86b9cb45d6f77b2dc851}\label{classv8_1_1internal_1_1DeclarationScope_ac6a318da84eb86b9cb45d6f77b2dc851}} 
+void {\bfseries Declare\+Sloppy\+Block\+Function} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$name, \mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$scope, \mbox{\hyperlink{classv8_1_1internal_1_1SloppyBlockFunctionStatement}{Sloppy\+Block\+Function\+Statement}} $\ast$statement=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a56f7fd704501c58f743d8e8c573a8fde}\label{classv8_1_1internal_1_1DeclarationScope_a56f7fd704501c58f743d8e8c573a8fde}} 
+void {\bfseries Hoist\+Sloppy\+Block\+Functions} (\mbox{\hyperlink{classv8_1_1internal_1_1AstNodeFactory}{Ast\+Node\+Factory}} $\ast$factory)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a6cef5ad45c17995011f06341e44f6d09}\label{classv8_1_1internal_1_1DeclarationScope_a6cef5ad45c17995011f06341e44f6d09}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1SloppyBlockFunctionMap}{Sloppy\+Block\+Function\+Map}} $\ast$ {\bfseries sloppy\+\_\+block\+\_\+function\+\_\+map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a13a38c0360828de7b6c6f22bfb8bd2bb}\label{classv8_1_1internal_1_1DeclarationScope_a13a38c0360828de7b6c6f22bfb8bd2bb}} 
+void {\bfseries Attach\+Outer\+Scope\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1ParseInfo}{Parse\+Info}} $\ast$info, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_ac7eb65e6dce1066d664dfadd075fdf5e}\label{classv8_1_1internal_1_1DeclarationScope_ac7eb65e6dce1066d664dfadd075fdf5e}} 
+void {\bfseries Analyze\+Partially} (\mbox{\hyperlink{classv8_1_1internal_1_1AstNodeFactory}{Ast\+Node\+Factory}} $\ast$ast\+\_\+node\+\_\+factory)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a1691f5cd447508479d16887350f0e4e8}\label{classv8_1_1internal_1_1DeclarationScope_a1691f5cd447508479d16887350f0e4e8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1StringSet}{String\+Set}} $>$ {\bfseries Collect\+Non\+Locals} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1ParseInfo}{Parse\+Info}} $\ast$info, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1StringSet}{String\+Set}} $>$ non\+\_\+locals)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a8bf6438af3804515bfd904abe62025c2}\label{classv8_1_1internal_1_1DeclarationScope_a8bf6438af3804515bfd904abe62025c2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Allows\+Lazy\+Compilation} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a42be34b07e434212db049bda71ac25fa}\label{classv8_1_1internal_1_1DeclarationScope_a42be34b07e434212db049bda71ac25fa}} 
+void {\bfseries Force\+Eager\+Compilation} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_af02fbaddc85d4e57a5bcb1fa1ac4a8fe}\label{classv8_1_1internal_1_1DeclarationScope_af02fbaddc85d4e57a5bcb1fa1ac4a8fe}} 
+void {\bfseries Allocate\+Locals} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a3275a5754106bf9c27c7c6656b5315ab}\label{classv8_1_1internal_1_1DeclarationScope_a3275a5754106bf9c27c7c6656b5315ab}} 
+void {\bfseries Allocate\+Parameter\+Locals} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_afe99b27f611544354653c5275d39ed03}\label{classv8_1_1internal_1_1DeclarationScope_afe99b27f611544354653c5275d39ed03}} 
+void {\bfseries Allocate\+Receiver} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a00cec2e44e66ea9705e56ba435012943}\label{classv8_1_1internal_1_1DeclarationScope_a00cec2e44e66ea9705e56ba435012943}} 
+void {\bfseries Reset\+After\+Preparsing} (\mbox{\hyperlink{classv8_1_1internal_1_1AstValueFactory}{Ast\+Value\+Factory}} $\ast$ast\+\_\+value\+\_\+factory, \mbox{\hyperlink{classbool}{bool}} aborted)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a82eba118c44639a28e9191483f0071dd}\label{classv8_1_1internal_1_1DeclarationScope_a82eba118c44639a28e9191483f0071dd}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+skipped\+\_\+function} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a16f96bb54cb9f5f72100f601dcdd080c}\label{classv8_1_1internal_1_1DeclarationScope_a16f96bb54cb9f5f72100f601dcdd080c}} 
+void {\bfseries set\+\_\+is\+\_\+skipped\+\_\+function} (\mbox{\hyperlink{classbool}{bool}} is\+\_\+skipped\+\_\+function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_ac91a3aa6a378fad162d4e095c2bd3f1a}\label{classv8_1_1internal_1_1DeclarationScope_ac91a3aa6a378fad162d4e095c2bd3f1a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+inferred\+\_\+function\+\_\+name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a79c21bcf9fdc2e24dd41c5f64c7c4274}\label{classv8_1_1internal_1_1DeclarationScope_a79c21bcf9fdc2e24dd41c5f64c7c4274}} 
+void {\bfseries set\+\_\+has\+\_\+inferred\+\_\+function\+\_\+name} (\mbox{\hyperlink{classbool}{bool}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_aae28ce1bc9c33598ebed34f2f2c4ec4e}\label{classv8_1_1internal_1_1DeclarationScope_aae28ce1bc9c33598ebed34f2f2c4ec4e}} 
+void {\bfseries Save\+Pre\+Parsed\+Scope\+Data\+For\+Declaration\+Scope} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a3951619cbfaa3da64aafb7964705779f}\label{classv8_1_1internal_1_1DeclarationScope_a3951619cbfaa3da64aafb7964705779f}} 
+void {\bfseries set\+\_\+preparsed\+\_\+scope\+\_\+data\+\_\+builder} (\mbox{\hyperlink{classv8_1_1internal_1_1PreParsedScopeDataBuilder}{Pre\+Parsed\+Scope\+Data\+Builder}} $\ast$preparsed\+\_\+scope\+\_\+data\+\_\+builder)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_aa5ebace3d5f8c4a095ec668290c494f2}\label{classv8_1_1internal_1_1DeclarationScope_aa5ebace3d5f8c4a095ec668290c494f2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PreParsedScopeDataBuilder}{Pre\+Parsed\+Scope\+Data\+Builder}} $\ast$ {\bfseries preparsed\+\_\+scope\+\_\+data\+\_\+builder} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a090845694a80550e3fc356b8568989b3}\label{classv8_1_1internal_1_1DeclarationScope_a090845694a80550e3fc356b8568989b3}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classbool}{bool}} {\bfseries Analyze} (\mbox{\hyperlink{classv8_1_1internal_1_1ParseInfo}{Parse\+Info}} $\ast$info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeclarationScope_a5d57217b380c06e14e1fd591e4dd23ea}\label{classv8_1_1internal_1_1DeclarationScope_a5d57217b380c06e14e1fd591e4dd23ea}} 
+static void {\bfseries Allocate\+Scope\+Infos} (\mbox{\hyperlink{classv8_1_1internal_1_1ParseInfo}{Parse\+Info}} $\ast$info, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 735 of file scopes.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ast/scopes.\+h\item 
+v8/src/ast/scopes.\+cc\end{DoxyCompactItemize}

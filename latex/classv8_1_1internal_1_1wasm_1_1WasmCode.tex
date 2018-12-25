@@ -1,0 +1,134 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Code Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1WasmCode}\index{v8\+::internal\+::wasm\+::\+Wasm\+Code@{v8\+::internal\+::wasm\+::\+Wasm\+Code}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_a236d413616e672cc2cda31bb7a4fc04d}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_a236d413616e672cc2cda31bb7a4fc04d}} 
+enum {\bfseries Kind} \{ \newline
+{\bfseries k\+Function}, 
+{\bfseries k\+Wasm\+To\+Js\+Wrapper}, 
+{\bfseries k\+Lazy\+Stub}, 
+{\bfseries k\+Runtime\+Stub}, 
+\newline
+{\bfseries k\+Interpreter\+Entry}, 
+{\bfseries k\+Jump\+Table}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_a0b7d01506a679afa700cb2e77d2d8ff2}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_a0b7d01506a679afa700cb2e77d2d8ff2}} 
+enum {\bfseries Runtime\+Stub\+Id} \{ {\bfseries k\+Runtime\+Stub\+Count}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_abec8b495a97ae37968abd000fff00952}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_abec8b495a97ae37968abd000fff00952}} 
+enum {\bfseries Tier} \+: int8\+\_\+t \{ {\bfseries k\+Liftoff}, 
+{\bfseries k\+Turbofan}, 
+{\bfseries k\+Other}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_a467f7a5c62763b48caba978827a4c65a}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_a467f7a5c62763b48caba978827a4c65a}} 
+enum {\bfseries Flush\+I\+Cache} \+: bool \{ {\bfseries k\+Flush\+I\+Cache} = true, 
+{\bfseries k\+No\+Flush\+I\+Cache} = false
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_aeb9bd5bf6d020d21d676e94ca13694d2}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_aeb9bd5bf6d020d21d676e94ca13694d2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ byte $>$ {\bfseries instructions} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_a0d55fcf378e16413e74e88d7d102ee15}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_a0d55fcf378e16413e74e88d7d102ee15}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries instruction\+\_\+start} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_a0257295d410926e7a9acbbe92ed8bb16}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_a0257295d410926e7a9acbbe92ed8bb16}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const byte $>$ {\bfseries reloc\+\_\+info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_aec2a95dbf139712ecc79dd6b2905cda4}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_aec2a95dbf139712ecc79dd6b2905cda4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const byte $>$ {\bfseries source\+\_\+positions} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_ac6a8d1f06cfeefad84f9545fedfba5fc}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_ac6a8d1f06cfeefad84f9545fedfba5fc}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_a9e613d2e2b4efb89259f7e209d0911c2}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_a9e613d2e2b4efb89259f7e209d0911c2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Anonymous} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_ad8a26bf968040e704a34b3d572ba7d3f}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_ad8a26bf968040e704a34b3d572ba7d3f}} 
+Kind {\bfseries kind} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_a7cc22a87e48816ef3eae72130ffac2cb}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_a7cc22a87e48816ef3eae72130ffac2cb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1NativeModule}{Native\+Module}} $\ast$ {\bfseries native\+\_\+module} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_a7ea1e6cb6ad77b7b26e871c535148fe4}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_a7ea1e6cb6ad77b7b26e871c535148fe4}} 
+Tier {\bfseries tier} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_aec3d947bda334f5e27cf71c49674b10d}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_aec3d947bda334f5e27cf71c49674b10d}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries constant\+\_\+pool} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_acc21d0666934e70f714e658be6859f6d}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_acc21d0666934e70f714e658be6859f6d}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries constant\+\_\+pool\+\_\+offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_a54921b3794f417767a7130b36e700edc}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_a54921b3794f417767a7130b36e700edc}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries safepoint\+\_\+table\+\_\+offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_aedef0a2a5c4764ec8a537754d263eb06}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_aedef0a2a5c4764ec8a537754d263eb06}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries handler\+\_\+table\+\_\+offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_a0de2a086830a105787f19b28c3ddc014}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_a0de2a086830a105787f19b28c3ddc014}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries stack\+\_\+slots} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_a8bd3de600f8533f15759f5770993cb34}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_a8bd3de600f8533f15759f5770993cb34}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+liftoff} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_a86612599c4a49e5ff328d3fd108ed267}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_a86612599c4a49e5ff328d3fd108ed267}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries contains} (\mbox{\hyperlink{classuintptr__t}{Address}} pc) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_aae6ab4b14d5c9a3ad7c31c080117180c}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_aae6ab4b14d5c9a3ad7c31c080117180c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1trap__handler_1_1ProtectedInstructionData}{trap\+\_\+handler\+::\+Protected\+Instruction\+Data}} $>$ {\bfseries protected\+\_\+instructions} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_abb5b483b7f4dd950b9bde4e6e0d0267f}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_abb5b483b7f4dd950b9bde4e6e0d0267f}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Get\+Runtime\+Stub\+Name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_a8457a62709deef003163c655a448f756}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_a8457a62709deef003163c655a448f756}} 
+void {\bfseries Validate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_a0fd2c078c0b8a5e5d2dfa2c253c58676}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_a0fd2c078c0b8a5e5d2dfa2c253c58676}} 
+void {\bfseries Print} (const \mbox{\hyperlink{classchar}{char}} $\ast$name=nullptr) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_a67fc73055bd53a21c7fd76f8c9bb93c3}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_a67fc73055bd53a21c7fd76f8c9bb93c3}} 
+void {\bfseries Disassemble} (const \mbox{\hyperlink{classchar}{char}} $\ast$name, std\+::ostream \&os, \mbox{\hyperlink{classuintptr__t}{Address}} current\+\_\+pc=k\+Null\+Address) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_a1b6185bcfacdf422b52d5e41f329bd5d}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_a1b6185bcfacdf422b52d5e41f329bd5d}} 
+void {\bfseries Log\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_a712eaa664f0d91b180c527a37b78c6c8}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_a712eaa664f0d91b180c527a37b78c6c8}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Anonymous\+Func\+Index $>$ k\+V8\+Max\+Wasm\+Functions)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_acb261693fa04ffc206a9289658201454}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_acb261693fa04ffc206a9289658201454}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Should\+Be\+Logged} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_a66f95d8cc4d0dc5bba00cf66586e6dbf}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_a66f95d8cc4d0dc5bba00cf66586e6dbf}} 
+static constexpr \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Anonymous\+Func\+Index} = 0xffffffff
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmCode_ab2eba8bcd9cf5215e8ce842fad93a987}\label{classv8_1_1internal_1_1wasm_1_1WasmCode_ab2eba8bcd9cf5215e8ce842fad93a987}} 
+class {\bfseries Native\+Module}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 70 of file wasm-\/code-\/manager.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/wasm-\/code-\/manager.\+h\item 
+v8/src/wasm/wasm-\/code-\/manager.\+cc\end{DoxyCompactItemize}

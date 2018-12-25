@@ -1,0 +1,86 @@
+\hypertarget{classv8_1_1internal_1_1FrameSummary}{}\section{v8\+:\+:internal\+:\+:Frame\+Summary Class Reference}
+\label{classv8_1_1internal_1_1FrameSummary}\index{v8\+::internal\+::\+Frame\+Summary@{v8\+::internal\+::\+Frame\+Summary}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1FrameSummary_1_1FrameSummaryBase}{Frame\+Summary\+Base}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1FrameSummary_1_1JavaScriptFrameSummary}{Java\+Script\+Frame\+Summary}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1FrameSummary_1_1WasmCompiledFrameSummary}{Wasm\+Compiled\+Frame\+Summary}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1FrameSummary_1_1WasmFrameSummary}{Wasm\+Frame\+Summary}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1FrameSummary_1_1WasmInterpretedFrameSummary}{Wasm\+Interpreted\+Frame\+Summary}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameSummary_a354dee820f94c70a2b2534b02ae72559}\label{classv8_1_1internal_1_1FrameSummary_a354dee820f94c70a2b2534b02ae72559}} 
+enum {\bfseries Kind} \{ {\bfseries F\+R\+A\+M\+E\+\_\+\+S\+U\+M\+M\+A\+R\+Y\+\_\+\+V\+A\+R\+I\+A\+N\+TS} =(F\+R\+A\+M\+E\+\_\+\+S\+U\+M\+M\+A\+R\+Y\+\_\+\+K\+I\+ND)
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameSummary_a2387d92db713ccc77e6e92d884ed301d}\label{classv8_1_1internal_1_1FrameSummary_a2387d92db713ccc77e6e92d884ed301d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries receiver} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameSummary_a6c1c0d16121d81d80d0e039992839056}\label{classv8_1_1internal_1_1FrameSummary_a6c1c0d16121d81d80d0e039992839056}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries code\+\_\+offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameSummary_a85b1faf0ec29f64c98781f77abf6744e}\label{classv8_1_1internal_1_1FrameSummary_a85b1faf0ec29f64c98781f77abf6744e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+constructor} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameSummary_a195df5fd7f7a591033b3fdf7562043d8}\label{classv8_1_1internal_1_1FrameSummary_a195df5fd7f7a591033b3fdf7562043d8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+subject\+\_\+to\+\_\+debugging} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameSummary_abe1cfde63a40738fbe072f56817de6dc}\label{classv8_1_1internal_1_1FrameSummary_abe1cfde63a40738fbe072f56817de6dc}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries script} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameSummary_ad3fb292ca69f85ed79020b7fac0772c2}\label{classv8_1_1internal_1_1FrameSummary_ad3fb292ca69f85ed79020b7fac0772c2}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Source\+Position} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameSummary_a5078b3d94af0c0e5310e20dd18dcf06e}\label{classv8_1_1internal_1_1FrameSummary_a5078b3d94af0c0e5310e20dd18dcf06e}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Source\+Statement\+Position} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameSummary_ab8cb25c7d7eff5a9ec4121698355437d}\label{classv8_1_1internal_1_1FrameSummary_ab8cb25c7d7eff5a9ec4121698355437d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Function\+Name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameSummary_a05002e76e88acbc4cb73d6d5ec8f6b71}\label{classv8_1_1internal_1_1FrameSummary_a05002e76e88acbc4cb73d6d5ec8f6b71}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ {\bfseries native\+\_\+context} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameSummary_a4e366c085ed7c085679b22b97dbfa6ae}\label{classv8_1_1internal_1_1FrameSummary_a4e366c085ed7c085679b22b97dbfa6ae}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Wasm} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameSummary_afeefc40a98ccb9b6235a4df325e01d5f}\label{classv8_1_1internal_1_1FrameSummary_afeefc40a98ccb9b6235a4df325e01d5f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1FrameSummary_1_1WasmFrameSummary}{Wasm\+Frame\+Summary}} \& {\bfseries As\+Wasm} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameSummary_a526aeb777f3f47aa6e23233aeb12346c}\label{classv8_1_1internal_1_1FrameSummary_a526aeb777f3f47aa6e23233aeb12346c}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1FrameSummary}{Frame\+Summary}} {\bfseries Get\+Top} (const \mbox{\hyperlink{classv8_1_1internal_1_1StandardFrame}{Standard\+Frame}} $\ast$frame)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameSummary_afc971d38135f2ca24cf432bc14b85c9e}\label{classv8_1_1internal_1_1FrameSummary_afc971d38135f2ca24cf432bc14b85c9e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1FrameSummary}{Frame\+Summary}} {\bfseries Get\+Bottom} (const \mbox{\hyperlink{classv8_1_1internal_1_1StandardFrame}{Standard\+Frame}} $\ast$frame)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameSummary_a12a811d6618af10b56219e8f5aae6329}\label{classv8_1_1internal_1_1FrameSummary_a12a811d6618af10b56219e8f5aae6329}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1FrameSummary}{Frame\+Summary}} {\bfseries Get\+Single} (const \mbox{\hyperlink{classv8_1_1internal_1_1StandardFrame}{Standard\+Frame}} $\ast$frame)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameSummary_a9b736398a9ab613a0070959053b886cd}\label{classv8_1_1internal_1_1FrameSummary_a9b736398a9ab613a0070959053b886cd}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1FrameSummary}{Frame\+Summary}} {\bfseries Get} (const \mbox{\hyperlink{classv8_1_1internal_1_1StandardFrame}{Standard\+Frame}} $\ast$frame, \mbox{\hyperlink{classint}{int}} index)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 449 of file frames.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/frames.\+h\item 
+v8/src/frames.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\hypertarget{classv8_1_1internal_1_1RegExpBuilder}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Builder Class Reference}
+\label{classv8_1_1internal_1_1RegExpBuilder}\index{v8\+::internal\+::\+Reg\+Exp\+Builder@{v8\+::internal\+::\+Reg\+Exp\+Builder}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Reg\+Exp\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1RegExpBuilder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_a48cf63c79f8bd7d93c12bdf2e2d2f6cd}\label{classv8_1_1internal_1_1RegExpBuilder_a48cf63c79f8bd7d93c12bdf2e2d2f6cd}} 
+{\bfseries Reg\+Exp\+Builder} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{J\+S\+Reg\+Exp\+::\+Flags}} flags)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_a32147135c6698790960b719446a1fe28}\label{classv8_1_1internal_1_1RegExpBuilder_a32147135c6698790960b719446a1fe28}} 
+void {\bfseries Add\+Character} (uc16 character)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_a8491eb3bdec11ed728ed6f75d111c161}\label{classv8_1_1internal_1_1RegExpBuilder_a8491eb3bdec11ed728ed6f75d111c161}} 
+void {\bfseries Add\+Unicode\+Character} (uc32 character)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_aa3ab437321a59b2b20165331aa19ac0b}\label{classv8_1_1internal_1_1RegExpBuilder_aa3ab437321a59b2b20165331aa19ac0b}} 
+void {\bfseries Add\+Escaped\+Unicode\+Character} (uc32 character)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_aa1d8f7f7665968635496315908e83400}\label{classv8_1_1internal_1_1RegExpBuilder_aa1d8f7f7665968635496315908e83400}} 
+void {\bfseries Add\+Empty} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_a56716958758a46118b99c0afd32307a4}\label{classv8_1_1internal_1_1RegExpBuilder_a56716958758a46118b99c0afd32307a4}} 
+void {\bfseries Add\+Character\+Class} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCharacterClass}{Reg\+Exp\+Character\+Class}} $\ast$cc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_a6b1b6671b0ee0266e618cf980f633855}\label{classv8_1_1internal_1_1RegExpBuilder_a6b1b6671b0ee0266e618cf980f633855}} 
+void {\bfseries Add\+Character\+Class\+For\+Desugaring} (uc32 c)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_a48849cf1f137252fa4d49cf682f924c6}\label{classv8_1_1internal_1_1RegExpBuilder_a48849cf1f137252fa4d49cf682f924c6}} 
+void {\bfseries Add\+Atom} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpTree}{Reg\+Exp\+Tree}} $\ast$tree)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_a0c8aeb19f885562374df65e58c9f38d5}\label{classv8_1_1internal_1_1RegExpBuilder_a0c8aeb19f885562374df65e58c9f38d5}} 
+void {\bfseries Add\+Term} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpTree}{Reg\+Exp\+Tree}} $\ast$tree)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_a8c326ad0b05ad72a403a1b7cae303e61}\label{classv8_1_1internal_1_1RegExpBuilder_a8c326ad0b05ad72a403a1b7cae303e61}} 
+void {\bfseries Add\+Assertion} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpTree}{Reg\+Exp\+Tree}} $\ast$tree)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_a36e10f97ed7bf3e79b176374daa6ca61}\label{classv8_1_1internal_1_1RegExpBuilder_a36e10f97ed7bf3e79b176374daa6ca61}} 
+void {\bfseries New\+Alternative} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_aea41ea13a4970cea82cdc6a236501e64}\label{classv8_1_1internal_1_1RegExpBuilder_aea41ea13a4970cea82cdc6a236501e64}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Add\+Quantifier\+To\+Atom} (\mbox{\hyperlink{classint}{int}} min, \mbox{\hyperlink{classint}{int}} max, Reg\+Exp\+Quantifier\+::\+Quantifier\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_adb8a841090c3afaedea2c8179d29af99}\label{classv8_1_1internal_1_1RegExpBuilder_adb8a841090c3afaedea2c8179d29af99}} 
+void {\bfseries Flush\+Text} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_aeba1037a385f30fdb37eac9f89b2671e}\label{classv8_1_1internal_1_1RegExpBuilder_aeba1037a385f30fdb37eac9f89b2671e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpTree}{Reg\+Exp\+Tree}} $\ast$ {\bfseries To\+Reg\+Exp} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_a94870e692d6502336365a05f876fd9c2}\label{classv8_1_1internal_1_1RegExpBuilder_a94870e692d6502336365a05f876fd9c2}} 
+\mbox{\hyperlink{classv8_1_1base_1_1Flags}{J\+S\+Reg\+Exp\+::\+Flags}} {\bfseries flags} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_a69475ac126fcca98d8e499ec303e174e}\label{classv8_1_1internal_1_1RegExpBuilder_a69475ac126fcca98d8e499ec303e174e}} 
+void {\bfseries set\+\_\+flags} (\mbox{\hyperlink{classv8_1_1base_1_1Flags}{J\+S\+Reg\+Exp\+::\+Flags}} flags)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_a3f803f9e2bb007b105f92c3ca28c957f}\label{classv8_1_1internal_1_1RegExpBuilder_a3f803f9e2bb007b105f92c3ca28c957f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries ignore\+\_\+case} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_a14ad08ed9556e0a1171b9b4ea7deb2f2}\label{classv8_1_1internal_1_1RegExpBuilder_a14ad08ed9556e0a1171b9b4ea7deb2f2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries multiline} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpBuilder_a84b5f1b1efcafe29f00eb160d0c6e6fb}\label{classv8_1_1internal_1_1RegExpBuilder_a84b5f1b1efcafe29f00eb160d0c6e6fb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries dotall} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 100 of file regexp-\/parser.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/regexp-\/parser.\+h\item 
+v8/src/regexp/regexp-\/parser.\+cc\end{DoxyCompactItemize}

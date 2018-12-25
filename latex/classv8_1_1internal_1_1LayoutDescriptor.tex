@@ -1,0 +1,74 @@
+\hypertarget{classv8_1_1internal_1_1LayoutDescriptor}{}\section{v8\+:\+:internal\+:\+:Layout\+Descriptor Class Reference}
+\label{classv8_1_1internal_1_1LayoutDescriptor}\index{v8\+::internal\+::\+Layout\+Descriptor@{v8\+::internal\+::\+Layout\+Descriptor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Layout\+Descriptor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1LayoutDescriptor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LayoutDescriptor_aa4c100cd64137fcdecb7ad467f20a670}\label{classv8_1_1internal_1_1LayoutDescriptor_aa4c100cd64137fcdecb7ad467f20a670}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Tagged} (\mbox{\hyperlink{classint}{int}} field\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LayoutDescriptor_a78d2cef08a6eac4780de265b824713de}\label{classv8_1_1internal_1_1LayoutDescriptor_a78d2cef08a6eac4780de265b824713de}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Tagged} (\mbox{\hyperlink{classint}{int}} field\+\_\+index, \mbox{\hyperlink{classint}{int}} max\+\_\+sequence\+\_\+length, \mbox{\hyperlink{classint}{int}} $\ast$out\+\_\+sequence\+\_\+length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LayoutDescriptor_afa7a6eea54f84f69478020f2b9fd0bac}\label{classv8_1_1internal_1_1LayoutDescriptor_afa7a6eea54f84f69478020f2b9fd0bac}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Fast\+Pointer\+Layout} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LayoutDescriptor_ac09fdea7453451733f05cd8ee194faf7}\label{classv8_1_1internal_1_1LayoutDescriptor_ac09fdea7453451733f05cd8ee194faf7}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Slow\+Layout} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LayoutDescriptor_a1e84fd88045c5aaed66f82d1579674b3}\label{classv8_1_1internal_1_1LayoutDescriptor_a1e84fd88045c5aaed66f82d1579674b3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Consistent\+With\+Map} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classbool}{bool}} check\+\_\+tail=false)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LayoutDescriptor_abc642e1a3646fc1f4d881bffd6c4013e}\label{classv8_1_1internal_1_1LayoutDescriptor_abc642e1a3646fc1f4d881bffd6c4013e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1LayoutDescriptor}{Layout\+Descriptor}} {\bfseries Trim} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1DescriptorArray}{Descriptor\+Array}} $\ast$descriptors, \mbox{\hyperlink{classint}{int}} num\+\_\+descriptors)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LayoutDescriptor_a3748b4375e526aee46428dfaa1dd3120}\label{classv8_1_1internal_1_1LayoutDescriptor_a3748b4375e526aee46428dfaa1dd3120}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries capacity} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LayoutDescriptor_ab53ed9be70345d2a040f69ec17d8ce38}\label{classv8_1_1internal_1_1LayoutDescriptor_ab53ed9be70345d2a040f69ec17d8ce38}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1LayoutDescriptor}{Layout\+Descriptor}} {\bfseries Set\+Tagged\+For\+Testing} (\mbox{\hyperlink{classint}{int}} field\+\_\+index, \mbox{\hyperlink{classbool}{bool}} tagged)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LayoutDescriptor_a3287e949f0e6ede19c334ddf3f00819f}\label{classv8_1_1internal_1_1LayoutDescriptor_a3287e949f0e6ede19c334ddf3f00819f}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Fast\+Pointer\+Layout} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$layout\+\_\+descriptor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LayoutDescriptor_a5b6a89be2031143049054f407f5a4ec9}\label{classv8_1_1internal_1_1LayoutDescriptor_a5b6a89be2031143049054f407f5a4ec9}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1LayoutDescriptor}{Layout\+Descriptor}} {\bfseries cast\+\_\+gc\+\_\+safe} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LayoutDescriptor_ae41c26d3c65de6d4611aad641901d51c}\label{classv8_1_1internal_1_1LayoutDescriptor_ae41c26d3c65de6d4611aad641901d51c}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1LayoutDescriptor}{Layout\+Descriptor}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ map, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1DescriptorArray}{Descriptor\+Array}} $>$ descriptors, \mbox{\hyperlink{classint}{int}} num\+\_\+descriptors)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LayoutDescriptor_ab83eb4ea7b852a6ed1dfd2770ce4003b}\label{classv8_1_1internal_1_1LayoutDescriptor_ab83eb4ea7b852a6ed1dfd2770ce4003b}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1LayoutDescriptor}{Layout\+Descriptor}} $>$ {\bfseries Share\+Append} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ map, \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails}{Property\+Details}} details)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LayoutDescriptor_a6d5194e4fa6205f2b4de044214c0e212}\label{classv8_1_1internal_1_1LayoutDescriptor_a6d5194e4fa6205f2b4de044214c0e212}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1LayoutDescriptor}{Layout\+Descriptor}} $>$ {\bfseries Append\+If\+Fast\+Or\+Use\+Full} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ map, \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails}{Property\+Details}} details, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1LayoutDescriptor}{Layout\+Descriptor}} $>$ full\+\_\+layout\+\_\+descriptor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LayoutDescriptor_a293edc8bb2c5cda6adbb77307cf13d7d}\label{classv8_1_1internal_1_1LayoutDescriptor_a293edc8bb2c5cda6adbb77307cf13d7d}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1LayoutDescriptor}{Layout\+Descriptor}} {\bfseries Fast\+Pointer\+Layout} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LayoutDescriptor_af10658d304188d0f37b679f2a4596c2e}\label{classv8_1_1internal_1_1LayoutDescriptor_af10658d304188d0f37b679f2a4596c2e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1LayoutDescriptor}{Layout\+Descriptor}} $>$ {\bfseries New\+For\+Testing} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} length)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 30 of file layout-\/descriptor.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/layout-\/descriptor.\+h\item 
+v8/src/layout-\/descriptor-\/inl.\+h\item 
+v8/src/layout-\/descriptor.\+cc\end{DoxyCompactItemize}

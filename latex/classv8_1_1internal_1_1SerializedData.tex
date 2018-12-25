@@ -1,0 +1,87 @@
+\hypertarget{classv8_1_1internal_1_1SerializedData}{}\section{v8\+:\+:internal\+:\+:Serialized\+Data Class Reference}
+\label{classv8_1_1internal_1_1SerializedData}\index{v8\+::internal\+::\+Serialized\+Data@{v8\+::internal\+::\+Serialized\+Data}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Serialized\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1SerializedData}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1SerializedData_1_1ChunkSizeBits}{Chunk\+Size\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1SerializedData_1_1IsLastChunkBits}{Is\+Last\+Chunk\+Bits}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1SerializedData_1_1Reservation}{Reservation}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedData_a742e9fe1c13ef44ebe723558a9b33326}\label{classv8_1_1internal_1_1SerializedData_a742e9fe1c13ef44ebe723558a9b33326}} 
+{\bfseries Serialized\+Data} (byte $\ast$data, \mbox{\hyperlink{classint}{int}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedData_ac323e284ade2900d78063b7b3376af11}\label{classv8_1_1internal_1_1SerializedData_ac323e284ade2900d78063b7b3376af11}} 
+{\bfseries Serialized\+Data} (\mbox{\hyperlink{classv8_1_1internal_1_1SerializedData}{Serialized\+Data}} \&\&other) V8\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedData_af56746b809447cca365e385c42388b49}\label{classv8_1_1internal_1_1SerializedData_af56746b809447cca365e385c42388b49}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Get\+Magic\+Number} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedData_a86390ee13da8e398dc0bbcccd86b9a47}\label{classv8_1_1internal_1_1SerializedData_a86390ee13da8e398dc0bbcccd86b9a47}} 
+static \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Compute\+Magic\+Number} (\mbox{\hyperlink{classv8_1_1internal_1_1ExternalReferenceTable}{External\+Reference\+Table}} $\ast$table)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedData_aad3e6b7fc3e0c5364198c22d08c3e30b}\label{classv8_1_1internal_1_1SerializedData_aad3e6b7fc3e0c5364198c22d08c3e30b}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Magic\+Number\+Offset} = 0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedData_a617333e419eb38d576477bee55228b1c}\label{classv8_1_1internal_1_1SerializedData_a617333e419eb38d576477bee55228b1c}} 
+void {\bfseries Set\+Header\+Value} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedData_afc826b682f302d60470d162db461d7cc}\label{classv8_1_1internal_1_1SerializedData_afc826b682f302d60470d162db461d7cc}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Get\+Header\+Value} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} offset) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedData_afbfbeb68613a42f9076c7568f8e0afb0}\label{classv8_1_1internal_1_1SerializedData_afbfbeb68613a42f9076c7568f8e0afb0}} 
+void {\bfseries Allocate\+Data} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedData_a308da3a8f7ace2ead9fc60a0a12f1716}\label{classv8_1_1internal_1_1SerializedData_a308da3a8f7ace2ead9fc60a0a12f1716}} 
+void {\bfseries Set\+Magic\+Number} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedData_a894b54bbd520853738b90f5693f92511}\label{classv8_1_1internal_1_1SerializedData_a894b54bbd520853738b90f5693f92511}} 
+static \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Compute\+Magic\+Number} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedData_a64749942df326ecb95dde8af526157ee}\label{classv8_1_1internal_1_1SerializedData_a64749942df326ecb95dde8af526157ee}} 
+byte $\ast$ {\bfseries data\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedData_ad4e6f69ddd63b35ed0efed21d0f0fb02}\label{classv8_1_1internal_1_1SerializedData_ad4e6f69ddd63b35ed0efed21d0f0fb02}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries size\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedData_a755ae910320bb00afc3721c8e270560f}\label{classv8_1_1internal_1_1SerializedData_a755ae910320bb00afc3721c8e270560f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries owns\+\_\+data\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 288 of file serializer-\/common.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/snapshot/serializer-\/common.\+h\item 
+v8/src/snapshot/serializer-\/common.\+cc\end{DoxyCompactItemize}

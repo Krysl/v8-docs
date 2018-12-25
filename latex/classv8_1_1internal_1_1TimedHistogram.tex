@@ -1,0 +1,54 @@
+\hypertarget{classv8_1_1internal_1_1TimedHistogram}{}\section{v8\+:\+:internal\+:\+:Timed\+Histogram Class Reference}
+\label{classv8_1_1internal_1_1TimedHistogram}\index{v8\+::internal\+::\+Timed\+Histogram@{v8\+::internal\+::\+Timed\+Histogram}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Timed\+Histogram\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1TimedHistogram}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TimedHistogram_a9b083e293d632012ec70f99ce3c39acd}\label{classv8_1_1internal_1_1TimedHistogram_a9b083e293d632012ec70f99ce3c39acd}} 
+void {\bfseries Start} (\mbox{\hyperlink{classv8_1_1base_1_1ElapsedTimer}{base\+::\+Elapsed\+Timer}} $\ast$timer, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TimedHistogram_acdb2dc2ba00f763de37cf6a13637a88e}\label{classv8_1_1internal_1_1TimedHistogram_acdb2dc2ba00f763de37cf6a13637a88e}} 
+void {\bfseries Stop} (\mbox{\hyperlink{classv8_1_1base_1_1ElapsedTimer}{base\+::\+Elapsed\+Timer}} $\ast$timer, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TimedHistogram_ad5fb3cb753207170835eb57943a8572a}\label{classv8_1_1internal_1_1TimedHistogram_ad5fb3cb753207170835eb57943a8572a}} 
+void {\bfseries Record\+Abandon} (\mbox{\hyperlink{classv8_1_1base_1_1ElapsedTimer}{base\+::\+Elapsed\+Timer}} $\ast$timer, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TimedHistogram_ac4b26a90c87f3f8e4c67c5ceed7690a0}\label{classv8_1_1internal_1_1TimedHistogram_ac4b26a90c87f3f8e4c67c5ceed7690a0}} 
+{\bfseries Timed\+Histogram} (const \mbox{\hyperlink{classchar}{char}} $\ast$name, \mbox{\hyperlink{classint}{int}} min, \mbox{\hyperlink{classint}{int}} max, Histogram\+Timer\+Resolution resolution, \mbox{\hyperlink{classint}{int}} num\+\_\+buckets, \mbox{\hyperlink{classv8_1_1internal_1_1Counters}{Counters}} $\ast$counters)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TimedHistogram_a4e1b8bee06b67537e579fe839e309445}\label{classv8_1_1internal_1_1TimedHistogram_a4e1b8bee06b67537e579fe839e309445}} 
+void {\bfseries Add\+Time\+Sample} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TimedHistogram_a95a77eee708e2b6526229fe3bcf82076}\label{classv8_1_1internal_1_1TimedHistogram_a95a77eee708e2b6526229fe3bcf82076}} 
+Histogram\+Timer\+Resolution {\bfseries resolution\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TimedHistogram_a5545327f141103b96b160ddc48274bc0}\label{classv8_1_1internal_1_1TimedHistogram_a5545327f141103b96b160ddc48274bc0}} 
+class {\bfseries Counters}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 264 of file counters.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/counters.\+h\item 
+v8/src/counters.\+cc\end{DoxyCompactItemize}

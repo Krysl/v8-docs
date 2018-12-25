@@ -1,0 +1,83 @@
+\hypertarget{classv8_1_1internal_1_1RegExpQuantifier}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Quantifier Class Reference}
+\label{classv8_1_1internal_1_1RegExpQuantifier}\index{v8\+::internal\+::\+Reg\+Exp\+Quantifier@{v8\+::internal\+::\+Reg\+Exp\+Quantifier}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Reg\+Exp\+Quantifier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1RegExpQuantifier}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpQuantifier_aa9c83c35aa00f3975ba0c62f7877142e}\label{classv8_1_1internal_1_1RegExpQuantifier_aa9c83c35aa00f3975ba0c62f7877142e}} 
+enum {\bfseries Quantifier\+Type} \{ {\bfseries G\+R\+E\+E\+DY}, 
+{\bfseries N\+O\+N\+\_\+\+G\+R\+E\+E\+DY}, 
+{\bfseries P\+O\+S\+S\+E\+S\+S\+I\+VE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpQuantifier_affd7c7fc8db27132916ef632a5434edb}\label{classv8_1_1internal_1_1RegExpQuantifier_affd7c7fc8db27132916ef632a5434edb}} 
+{\bfseries Reg\+Exp\+Quantifier} (\mbox{\hyperlink{classint}{int}} min, \mbox{\hyperlink{classint}{int}} max, Quantifier\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpTree}{Reg\+Exp\+Tree}} $\ast$body)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpQuantifier_adcadbe6e79cf873328c8af711790dcdb}\label{classv8_1_1internal_1_1RegExpQuantifier_adcadbe6e79cf873328c8af711790dcdb}} 
+void $\ast$ {\bfseries Accept} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpVisitor}{Reg\+Exp\+Visitor}} $\ast$visitor, void $\ast$data) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpQuantifier_ae479289e3ca0572b349524c8d46737c7}\label{classv8_1_1internal_1_1RegExpQuantifier_ae479289e3ca0572b349524c8d46737c7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ {\bfseries To\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpQuantifier_a336b7463706ccaecfbe04a7e35d232c0}\label{classv8_1_1internal_1_1RegExpQuantifier_a336b7463706ccaecfbe04a7e35d232c0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpQuantifier}{Reg\+Exp\+Quantifier}} $\ast$ {\bfseries As\+Quantifier} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpQuantifier_a8574412e3ee34483fba8bdb5d5bd9a82}\label{classv8_1_1internal_1_1RegExpQuantifier_a8574412e3ee34483fba8bdb5d5bd9a82}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Interval}{Interval}} {\bfseries Capture\+Registers} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpQuantifier_aa146f28c345cf3b47ddc67bf5f6b86be}\label{classv8_1_1internal_1_1RegExpQuantifier_aa146f28c345cf3b47ddc67bf5f6b86be}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Quantifier} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpQuantifier_a74589c62f5e4b5d3050d5de67181f933}\label{classv8_1_1internal_1_1RegExpQuantifier_a74589c62f5e4b5d3050d5de67181f933}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries min\+\_\+match} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpQuantifier_ade99e5073f82e2d5007c7305b87a46b4}\label{classv8_1_1internal_1_1RegExpQuantifier_ade99e5073f82e2d5007c7305b87a46b4}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries max\+\_\+match} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpQuantifier_a00888c9446e2d85230f1b51e129e0137}\label{classv8_1_1internal_1_1RegExpQuantifier_a00888c9446e2d85230f1b51e129e0137}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries min} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpQuantifier_ae763df22442151a15dc196209dfff4ec}\label{classv8_1_1internal_1_1RegExpQuantifier_ae763df22442151a15dc196209dfff4ec}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries max} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpQuantifier_a862d283467426f4047000d1cece8aba4}\label{classv8_1_1internal_1_1RegExpQuantifier_a862d283467426f4047000d1cece8aba4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+possessive} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpQuantifier_af63cffed6c12c19586c9f678c364cd8e}\label{classv8_1_1internal_1_1RegExpQuantifier_af63cffed6c12c19586c9f678c364cd8e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+non\+\_\+greedy} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpQuantifier_afc3ebb95b1601b412b95341e49319840}\label{classv8_1_1internal_1_1RegExpQuantifier_afc3ebb95b1601b412b95341e49319840}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+greedy} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpQuantifier_af214292bca72c9090293f34d7340944a}\label{classv8_1_1internal_1_1RegExpQuantifier_af214292bca72c9090293f34d7340944a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpTree}{Reg\+Exp\+Tree}} $\ast$ {\bfseries body} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpQuantifier_af74888630424746f820660fbfc63e0fe}\label{classv8_1_1internal_1_1RegExpQuantifier_af74888630424746f820660fbfc63e0fe}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ {\bfseries To\+Node} (\mbox{\hyperlink{classint}{int}} min, \mbox{\hyperlink{classint}{int}} max, \mbox{\hyperlink{classbool}{bool}} is\+\_\+greedy, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpTree}{Reg\+Exp\+Tree}} $\ast$body, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start=false)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 408 of file regexp-\/ast.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/regexp-\/ast.\+h\item 
+v8/src/regexp/jsregexp.\+cc\item 
+v8/src/regexp/regexp-\/ast.\+cc\end{DoxyCompactItemize}

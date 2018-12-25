@@ -1,0 +1,129 @@
+\hypertarget{classv8_1_1internal_1_1StoreBuffer}{}\section{v8\+:\+:internal\+:\+:Store\+Buffer Class Reference}
+\label{classv8_1_1internal_1_1StoreBuffer}\index{v8\+::internal\+::\+Store\+Buffer@{v8\+::internal\+::\+Store\+Buffer}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_a4acfb4f1244d8ee720992b6a815cbdb3}\label{classv8_1_1internal_1_1StoreBuffer_a4acfb4f1244d8ee720992b6a815cbdb3}} 
+enum {\bfseries Store\+Buffer\+Mode} \{ {\bfseries I\+N\+\_\+\+GC}, 
+{\bfseries N\+O\+T\+\_\+\+I\+N\+\_\+\+GC}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_afeb036a2c6157abd9b20c2b8ffa28052}\label{classv8_1_1internal_1_1StoreBuffer_afeb036a2c6157abd9b20c2b8ffa28052}} 
+{\bfseries Store\+Buffer} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_a031dcd4df4a4c83bcb856c70ec4e4fbc}\label{classv8_1_1internal_1_1StoreBuffer_a031dcd4df4a4c83bcb856c70ec4e4fbc}} 
+void {\bfseries Set\+Up} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_ad05bd8e03f20976385f7308304792398}\label{classv8_1_1internal_1_1StoreBuffer_ad05bd8e03f20976385f7308304792398}} 
+void {\bfseries Tear\+Down} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_ab4b8b19cb1c629044f1c17e028b4f1ab}\label{classv8_1_1internal_1_1StoreBuffer_ab4b8b19cb1c629044f1c17e028b4f1ab}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$ {\bfseries top\+\_\+address} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_a7ae6b3df7f8a32d16612cee4753194d9}\label{classv8_1_1internal_1_1StoreBuffer_a7ae6b3df7f8a32d16612cee4753194d9}} 
+void {\bfseries Move\+Entries\+To\+Remembered\+Set} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_a7b18f45d6fd75adb721102db5393a7e0}\label{classv8_1_1internal_1_1StoreBuffer_a7b18f45d6fd75adb721102db5393a7e0}} 
+void {\bfseries Move\+All\+Entries\+To\+Remembered\+Set} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_a5b5ee52821ddc25539c09b500134d989}\label{classv8_1_1internal_1_1StoreBuffer_a5b5ee52821ddc25539c09b500134d989}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Deletion\+Address} (\mbox{\hyperlink{classuintptr__t}{Address}} address) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_ae03b9d127f03c9dc9dffaa1780cf31ba}\label{classv8_1_1internal_1_1StoreBuffer_ae03b9d127f03c9dc9dffaa1780cf31ba}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Mark\+Deletion\+Address} (\mbox{\hyperlink{classuintptr__t}{Address}} address)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_a3db69117be0eb51cde0ee86499802973}\label{classv8_1_1internal_1_1StoreBuffer_a3db69117be0eb51cde0ee86499802973}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Unmark\+Deletion\+Address} (\mbox{\hyperlink{classuintptr__t}{Address}} address)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_ae5a4d25c5344bf220c843b81ed61800a}\label{classv8_1_1internal_1_1StoreBuffer_ae5a4d25c5344bf220c843b81ed61800a}} 
+void {\bfseries Insert\+Deletion\+Into\+Store\+Buffer} (\mbox{\hyperlink{classuintptr__t}{Address}} start, \mbox{\hyperlink{classuintptr__t}{Address}} end)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_a2a8b3c02571c7daa0585d172dc40e4df}\label{classv8_1_1internal_1_1StoreBuffer_a2a8b3c02571c7daa0585d172dc40e4df}} 
+void {\bfseries Insert\+Into\+Store\+Buffer} (\mbox{\hyperlink{classuintptr__t}{Address}} slot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_a12db6952201340f09180002753aa0fa7}\label{classv8_1_1internal_1_1StoreBuffer_a12db6952201340f09180002753aa0fa7}} 
+void {\bfseries Insert\+Entry} (\mbox{\hyperlink{classuintptr__t}{Address}} slot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_a207d54b32397166e1b9dec9cb4f5749d}\label{classv8_1_1internal_1_1StoreBuffer_a207d54b32397166e1b9dec9cb4f5749d}} 
+void {\bfseries Delete\+Entry} (\mbox{\hyperlink{classuintptr__t}{Address}} start, \mbox{\hyperlink{classuintptr__t}{Address}} end=k\+Null\+Address)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_ac94dda4bf36c03e4016707b93f3a7ef9}\label{classv8_1_1internal_1_1StoreBuffer_ac94dda4bf36c03e4016707b93f3a7ef9}} 
+void {\bfseries Set\+Mode} (Store\+Buffer\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_a5d468a72b32d9c9c4af95a106cdfc63e}\label{classv8_1_1internal_1_1StoreBuffer_a5d468a72b32d9c9c4af95a106cdfc63e}} 
+void {\bfseries Concurrently\+Process\+Store\+Buffer} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_a7d0196226a9e2946942b936f46224807}\label{classv8_1_1internal_1_1StoreBuffer_a7d0196226a9e2946942b936f46224807}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Empty} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_aa8a9ec53d70b867fe576e3bbc4367ae4}\label{classv8_1_1internal_1_1StoreBuffer_aa8a9ec53d70b867fe576e3bbc4367ae4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$ {\bfseries heap} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_aef14ad54676b25cc0d743e6fd7b14017}\label{classv8_1_1internal_1_1StoreBuffer_aef14ad54676b25cc0d743e6fd7b14017}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classint}{int}} {\bfseries Store\+Buffer\+Overflow} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_ac5fe022f2259ecb93e4d7816f922c571}\label{classv8_1_1internal_1_1StoreBuffer_ac5fe022f2259ecb93e4d7816f922c571}} 
+static void {\bfseries Delete\+During\+Garbage\+Collection} (\mbox{\hyperlink{classv8_1_1internal_1_1StoreBuffer}{Store\+Buffer}} $\ast$store\+\_\+buffer, \mbox{\hyperlink{classuintptr__t}{Address}} start, \mbox{\hyperlink{classuintptr__t}{Address}} end)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_ac44105d8c4ea7e0d356e482c68e382a4}\label{classv8_1_1internal_1_1StoreBuffer_ac44105d8c4ea7e0d356e482c68e382a4}} 
+static void {\bfseries Insert\+During\+Garbage\+Collection} (\mbox{\hyperlink{classv8_1_1internal_1_1StoreBuffer}{Store\+Buffer}} $\ast$store\+\_\+buffer, \mbox{\hyperlink{classuintptr__t}{Address}} slot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_aa82c235a1b75462848e4595b79e95d5c}\label{classv8_1_1internal_1_1StoreBuffer_aa82c235a1b75462848e4595b79e95d5c}} 
+static void {\bfseries Delete\+During\+Runtime} (\mbox{\hyperlink{classv8_1_1internal_1_1StoreBuffer}{Store\+Buffer}} $\ast$store\+\_\+buffer, \mbox{\hyperlink{classuintptr__t}{Address}} start, \mbox{\hyperlink{classuintptr__t}{Address}} end)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_af3c9e3aba67dd67ee0d1ddaf74fe4234}\label{classv8_1_1internal_1_1StoreBuffer_af3c9e3aba67dd67ee0d1ddaf74fe4234}} 
+static void {\bfseries Insert\+During\+Runtime} (\mbox{\hyperlink{classv8_1_1internal_1_1StoreBuffer}{Store\+Buffer}} $\ast$store\+\_\+buffer, \mbox{\hyperlink{classuintptr__t}{Address}} slot)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_a0b3fa42e0a43ad96585345a1aab4b751}\label{classv8_1_1internal_1_1StoreBuffer_a0b3fa42e0a43ad96585345a1aab4b751}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Store\+Buffers} = 2
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Store\+Buffer\+Size}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_aba773520960e5bb924b2da224136f597}\label{classv8_1_1internal_1_1StoreBuffer_aba773520960e5bb924b2da224136f597}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Store\+Buffer\+Mask} = k\+Store\+Buffer\+Size -\/ 1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_a9fc0b0ab94a4aa1089bda69810937045}\label{classv8_1_1internal_1_1StoreBuffer_a9fc0b0ab94a4aa1089bda69810937045}} 
+static const intptr\+\_\+t {\bfseries k\+Deletion\+Tag} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file store-\/buffer.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1StoreBuffer_ad1e8d91749d99db471ce7f75ddc6dbfc}\label{classv8_1_1internal_1_1StoreBuffer_ad1e8d91749d99db471ce7f75ddc6dbfc}} 
+\index{v8\+::internal\+::\+Store\+Buffer@{v8\+::internal\+::\+Store\+Buffer}!k\+Store\+Buffer\+Size@{k\+Store\+Buffer\+Size}}
+\index{k\+Store\+Buffer\+Size@{k\+Store\+Buffer\+Size}!v8\+::internal\+::\+Store\+Buffer@{v8\+::internal\+::\+Store\+Buffer}}
+\subsubsection{\texorpdfstring{k\+Store\+Buffer\+Size}{kStoreBufferSize}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Store\+Buffer\+::k\+Store\+Buffer\+Size\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      Max(static\_cast<int>(kMinExpectedOSPageSize / kStoreBuffers),
+          1 << (11 + kPointerSizeLog2))
+\end{DoxyCode}
+
+
+Definition at line 31 of file store-\/buffer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/store-\/buffer.\+h\item 
+v8/src/heap/store-\/buffer-\/inl.\+h\item 
+v8/src/heap/store-\/buffer.\+cc\end{DoxyCompactItemize}

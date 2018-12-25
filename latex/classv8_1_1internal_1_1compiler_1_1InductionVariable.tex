@@ -1,0 +1,72 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1InductionVariable}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Induction\+Variable Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1InductionVariable}\index{v8\+::internal\+::compiler\+::\+Induction\+Variable@{v8\+::internal\+::compiler\+::\+Induction\+Variable}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Induction\+Variable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1InductionVariable}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1compiler_1_1InductionVariable_1_1Bound}{Bound}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InductionVariable_ace8e308e0bb466d5617de33de219ed24}\label{classv8_1_1internal_1_1compiler_1_1InductionVariable_ace8e308e0bb466d5617de33de219ed24}} 
+enum {\bfseries Constraint\+Kind} \{ {\bfseries k\+Strict}, 
+{\bfseries k\+Non\+Strict}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InductionVariable_a135b4ec804ac8cf31fdd04ce6393d73a}\label{classv8_1_1internal_1_1compiler_1_1InductionVariable_a135b4ec804ac8cf31fdd04ce6393d73a}} 
+enum {\bfseries Arithmetic\+Type} \{ {\bfseries k\+Addition}, 
+{\bfseries k\+Subtraction}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InductionVariable_a10dc591e497b0f917fc8a7a4ea8b2b45}\label{classv8_1_1internal_1_1compiler_1_1InductionVariable_a10dc591e497b0f917fc8a7a4ea8b2b45}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries phi} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InductionVariable_a4ad82216a230400940bd9d63007f4878}\label{classv8_1_1internal_1_1compiler_1_1InductionVariable_a4ad82216a230400940bd9d63007f4878}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries effect\+\_\+phi} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InductionVariable_ad3d7f2a4752ab5567385b7e3d3b7d0cc}\label{classv8_1_1internal_1_1compiler_1_1InductionVariable_ad3d7f2a4752ab5567385b7e3d3b7d0cc}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries arith} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InductionVariable_a8ec4babe1350aad0d6d0462bb193309a}\label{classv8_1_1internal_1_1compiler_1_1InductionVariable_a8ec4babe1350aad0d6d0462bb193309a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries increment} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InductionVariable_a708216aa346daf213b951825e5480db7}\label{classv8_1_1internal_1_1compiler_1_1InductionVariable_a708216aa346daf213b951825e5480db7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries init\+\_\+value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InductionVariable_aad3079d8b2cf171f683684a6d68c55ab}\label{classv8_1_1internal_1_1compiler_1_1InductionVariable_aad3079d8b2cf171f683684a6d68c55ab}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1compiler_1_1InductionVariable_1_1Bound}{Bound}} $>$ \& {\bfseries lower\+\_\+bounds} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InductionVariable_a952b77a2726db0a93e166bd5f8b19fe2}\label{classv8_1_1internal_1_1compiler_1_1InductionVariable_a952b77a2726db0a93e166bd5f8b19fe2}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1compiler_1_1InductionVariable_1_1Bound}{Bound}} $>$ \& {\bfseries upper\+\_\+bounds} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InductionVariable_a7a0cb0701934034e6d87e195ff35dd59}\label{classv8_1_1internal_1_1compiler_1_1InductionVariable_a7a0cb0701934034e6d87e195ff35dd59}} 
+Arithmetic\+Type {\bfseries Type} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InductionVariable_adc47d99195b53f16f74e35f38d1b0981}\label{classv8_1_1internal_1_1compiler_1_1InductionVariable_adc47d99195b53f16f74e35f38d1b0981}} 
+class {\bfseries Loop\+Variable\+Optimizer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file loop-\/variable-\/optimizer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/loop-\/variable-\/optimizer.\+h\item 
+v8/src/compiler/loop-\/variable-\/optimizer.\+cc\end{DoxyCompactItemize}

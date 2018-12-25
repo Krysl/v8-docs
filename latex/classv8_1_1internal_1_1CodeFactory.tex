@@ -1,0 +1,147 @@
+\hypertarget{classv8_1_1internal_1_1CodeFactory}{}\section{v8\+:\+:internal\+:\+:Code\+Factory Class Reference}
+\label{classv8_1_1internal_1_1CodeFactory}\index{v8\+::internal\+::\+Code\+Factory@{v8\+::internal\+::\+Code\+Factory}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a1189a094d414acd8324f19f547f9ffa0}\label{classv8_1_1internal_1_1CodeFactory_a1189a094d414acd8324f19f547f9ffa0}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Runtime\+C\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} result\+\_\+size=1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_ab34206ea8fe36670cd4d4539479ac576}\label{classv8_1_1internal_1_1CodeFactory_ab34206ea8fe36670cd4d4539479ac576}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries C\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} result\+\_\+size=1, Save\+F\+P\+Regs\+Mode save\+\_\+doubles=k\+Dont\+Save\+F\+P\+Regs, Argv\+Mode argv\+\_\+mode=k\+Argv\+On\+Stack, \mbox{\hyperlink{classbool}{bool}} builtin\+\_\+exit\+\_\+frame=false)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a6154eb7d584d0fdcf454b8d31fad4c3a}\label{classv8_1_1internal_1_1CodeFactory_a6154eb7d584d0fdcf454b8d31fad4c3a}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Load\+Global\+IC} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Typeof\+Mode typeof\+\_\+mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a5ef11528c6c1e3e09577ea5fa3fcebb4}\label{classv8_1_1internal_1_1CodeFactory_a5ef11528c6c1e3e09577ea5fa3fcebb4}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Load\+Global\+I\+C\+In\+Optimized\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Typeof\+Mode typeof\+\_\+mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_ac51b64fc7fa667339b61fb7647023a79}\label{classv8_1_1internal_1_1CodeFactory_ac51b64fc7fa667339b61fb7647023a79}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Store\+Own\+IC} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a5f96f63f71df17acee8b92de0b5b7ef6}\label{classv8_1_1internal_1_1CodeFactory_a5f96f63f71df17acee8b92de0b5b7ef6}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Store\+Own\+I\+C\+In\+Optimized\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a77285fcd93f71504d0493fc69f92ec25}\label{classv8_1_1internal_1_1CodeFactory_a77285fcd93f71504d0493fc69f92ec25}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Keyed\+Store\+I\+C\+\_\+\+Sloppy\+Arguments} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Keyed\+Access\+Store\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a15a76e434ac11f43c78d81a28f9d11a0}\label{classv8_1_1internal_1_1CodeFactory_a15a76e434ac11f43c78d81a28f9d11a0}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Keyed\+Store\+I\+C\+\_\+\+Slow} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Keyed\+Access\+Store\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a52a0b99e8bb686d2c84fd8631aa8d5d5}\label{classv8_1_1internal_1_1CodeFactory_a52a0b99e8bb686d2c84fd8631aa8d5d5}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Store\+In\+Array\+Literal\+I\+C\+\_\+\+Slow} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Keyed\+Access\+Store\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_ab3f8c7c2cd073f026189d0edd729fecd}\label{classv8_1_1internal_1_1CodeFactory_ab3f8c7c2cd073f026189d0edd729fecd}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Elements\+Transition\+And\+Store} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Keyed\+Access\+Store\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_aa89f0da66c0bb4c048e74f03ccd89177}\label{classv8_1_1internal_1_1CodeFactory_aa89f0da66c0bb4c048e74f03ccd89177}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Store\+Fast\+Element\+IC} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Keyed\+Access\+Store\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a8cfadda62cfb82e66cc05c462a2d73e8}\label{classv8_1_1internal_1_1CodeFactory_a8cfadda62cfb82e66cc05c462a2d73e8}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Resume\+Generator} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a08e741cdb1df3d8dd2cd301cf04b161a}\label{classv8_1_1internal_1_1CodeFactory_a08e741cdb1df3d8dd2cd301cf04b161a}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Frame\+Dropper\+Trampoline} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a3729ad2ca3a9e5de223999669dd7a1af}\label{classv8_1_1internal_1_1CodeFactory_a3729ad2ca3a9e5de223999669dd7a1af}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Handle\+Debugger\+Statement} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a4d89558071f972949ded7bef36e9bcab}\label{classv8_1_1internal_1_1CodeFactory_a4d89558071f972949ded7bef36e9bcab}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Binary\+Operation} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Operation op)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a47b9d57a1647b6c92f15639ca6ba4223}\label{classv8_1_1internal_1_1CodeFactory_a47b9d57a1647b6c92f15639ca6ba4223}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Api\+Getter} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a42f007055544c0df60efde843fa7580a}\label{classv8_1_1internal_1_1CodeFactory_a42f007055544c0df60efde843fa7580a}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Call\+Api\+Callback} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} argc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_ad6679f69a09cd1f80186edb6163e7657}\label{classv8_1_1internal_1_1CodeFactory_ad6679f69a09cd1f80186edb6163e7657}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Non\+Primitive\+To\+Primitive} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, To\+Primitive\+Hint hint=To\+Primitive\+Hint\+::k\+Default)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a9f598848b892dc3efe3745a2a1d23618}\label{classv8_1_1internal_1_1CodeFactory_a9f598848b892dc3efe3745a2a1d23618}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Ordinary\+To\+Primitive} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Ordinary\+To\+Primitive\+Hint hint)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a297269d63d28be5ebe680efcac8effa8}\label{classv8_1_1internal_1_1CodeFactory_a297269d63d28be5ebe680efcac8effa8}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries String\+Add} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, String\+Add\+Flags flags=S\+T\+R\+I\+N\+G\+\_\+\+A\+D\+D\+\_\+\+C\+H\+E\+C\+K\+\_\+\+N\+O\+NE)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_ad767e4c0d599a1fcfb281ae51fb11c75}\label{classv8_1_1internal_1_1CodeFactory_ad767e4c0d599a1fcfb281ae51fb11c75}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Fast\+New\+Function\+Context} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Scope\+Type scope\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_ab4b1f2ca90d6b333e42fc0a9bb1755df}\label{classv8_1_1internal_1_1CodeFactory_ab4b1f2ca90d6b333e42fc0a9bb1755df}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Argument\+Adaptor} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_ab4d1b10fd3f17e7f8fd0bfa38c1312a0}\label{classv8_1_1internal_1_1CodeFactory_ab4d1b10fd3f17e7f8fd0bfa38c1312a0}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Call} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Convert\+Receiver\+Mode mode=Convert\+Receiver\+Mode\+::k\+Any)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a64c315ed47453cd402320e4919c56922}\label{classv8_1_1internal_1_1CodeFactory_a64c315ed47453cd402320e4919c56922}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Call\+With\+Array\+Like} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a7f8d3f1d24cda215ff9eae7c53b8c1eb}\label{classv8_1_1internal_1_1CodeFactory_a7f8d3f1d24cda215ff9eae7c53b8c1eb}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Call\+With\+Spread} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_acbf0b2d4f5722612dc2be19385d2e619}\label{classv8_1_1internal_1_1CodeFactory_acbf0b2d4f5722612dc2be19385d2e619}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Call\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Convert\+Receiver\+Mode mode=Convert\+Receiver\+Mode\+::k\+Any)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_ae384e8b59a9ef4f354e61623d27979a6}\label{classv8_1_1internal_1_1CodeFactory_ae384e8b59a9ef4f354e61623d27979a6}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Call\+Varargs} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_acebaabe89f33ae1addfc5f1be124e052}\label{classv8_1_1internal_1_1CodeFactory_acebaabe89f33ae1addfc5f1be124e052}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Call\+Forward\+Varargs} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_ac2f37ac132a251d1c8ad9c0e3c4ce047}\label{classv8_1_1internal_1_1CodeFactory_ac2f37ac132a251d1c8ad9c0e3c4ce047}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Call\+Function\+Forward\+Varargs} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a352f558b2a2d180ca388632d97229784}\label{classv8_1_1internal_1_1CodeFactory_a352f558b2a2d180ca388632d97229784}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Construct} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a19a13b6ef1c39d2cf1e6cf87f3de4d65}\label{classv8_1_1internal_1_1CodeFactory_a19a13b6ef1c39d2cf1e6cf87f3de4d65}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Construct\+With\+Spread} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_ae6f1885eebafba5f9756e42c5cbaec09}\label{classv8_1_1internal_1_1CodeFactory_ae6f1885eebafba5f9756e42c5cbaec09}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Construct\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a116caeddb685f597d819679d03622123}\label{classv8_1_1internal_1_1CodeFactory_a116caeddb685f597d819679d03622123}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Construct\+Varargs} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_aefecb4f2eebfb835f155691a7f3e8c6f}\label{classv8_1_1internal_1_1CodeFactory_aefecb4f2eebfb835f155691a7f3e8c6f}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Construct\+Forward\+Varargs} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a11090233413209fb2cda77d14a6a844d}\label{classv8_1_1internal_1_1CodeFactory_a11090233413209fb2cda77d14a6a844d}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Construct\+Function\+Forward\+Varargs} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_aa976564cd9ba4fd5d97bc95d8080a155}\label{classv8_1_1internal_1_1CodeFactory_aa976564cd9ba4fd5d97bc95d8080a155}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Interpreter\+Push\+Args\+Then\+Call} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Convert\+Receiver\+Mode receiver\+\_\+mode, Interpreter\+Push\+Args\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_aebffe85b2a85677a701e37a9d31ece79}\label{classv8_1_1internal_1_1CodeFactory_aebffe85b2a85677a701e37a9d31ece79}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Interpreter\+Push\+Args\+Then\+Construct} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Interpreter\+Push\+Args\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a9d19422679fa2875fa82f2c8725beefe}\label{classv8_1_1internal_1_1CodeFactory_a9d19422679fa2875fa82f2c8725beefe}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Interpreter\+C\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} result\+\_\+size=1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a1037e2c269198f11b58d58f17bf3d938}\label{classv8_1_1internal_1_1CodeFactory_a1037e2c269198f11b58d58f17bf3d938}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Interpreter\+On\+Stack\+Replacement} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a1f3591f5d360372cb2d675acbc1d5d57}\label{classv8_1_1internal_1_1CodeFactory_a1f3591f5d360372cb2d675acbc1d5d57}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Array\+No\+Argument\+Constructor} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Elements\+Kind kind, Allocation\+Site\+Override\+Mode override\+\_\+mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_af69d6c4eb143985e21ff096fbb33dc8b}\label{classv8_1_1internal_1_1CodeFactory_af69d6c4eb143985e21ff096fbb33dc8b}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Array\+Single\+Argument\+Constructor} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Elements\+Kind kind, Allocation\+Site\+Override\+Mode override\+\_\+mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a88f1bfc680b78d02d50deae542eb8e9c}\label{classv8_1_1internal_1_1CodeFactory_a88f1bfc680b78d02d50deae542eb8e9c}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Internal\+Array\+No\+Argument\+Constructor} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Elements\+Kind kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeFactory_a49d6a9169689e1e99e0a263d662ddef2}\label{classv8_1_1internal_1_1CodeFactory_a49d6a9169689e1e99e0a263d662ddef2}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} {\bfseries Internal\+Array\+Single\+Argument\+Constructor} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Elements\+Kind kind)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 23 of file code-\/factory.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/code-\/factory.\+h\item 
+v8/src/code-\/factory.\+cc\end{DoxyCompactItemize}

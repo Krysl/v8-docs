@@ -1,0 +1,48 @@
+\hypertarget{classv8_1_1internal_1_1AllocationTraceNode}{}\section{v8\+:\+:internal\+:\+:Allocation\+Trace\+Node Class Reference}
+\label{classv8_1_1internal_1_1AllocationTraceNode}\index{v8\+::internal\+::\+Allocation\+Trace\+Node@{v8\+::internal\+::\+Allocation\+Trace\+Node}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationTraceNode_aca8caa93d6a5309e2fc2529b71a5a70a}\label{classv8_1_1internal_1_1AllocationTraceNode_aca8caa93d6a5309e2fc2529b71a5a70a}} 
+{\bfseries Allocation\+Trace\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1AllocationTraceTree}{Allocation\+Trace\+Tree}} $\ast$tree, \mbox{\hyperlink{classunsigned}{unsigned}} function\+\_\+info\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationTraceNode_afbb942277677c19a257ff8781f034c1d}\label{classv8_1_1internal_1_1AllocationTraceNode_afbb942277677c19a257ff8781f034c1d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1AllocationTraceNode}{Allocation\+Trace\+Node}} $\ast$ {\bfseries Find\+Child} (\mbox{\hyperlink{classunsigned}{unsigned}} function\+\_\+info\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationTraceNode_a780262d490b639c1782e3a7212297709}\label{classv8_1_1internal_1_1AllocationTraceNode_a780262d490b639c1782e3a7212297709}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1AllocationTraceNode}{Allocation\+Trace\+Node}} $\ast$ {\bfseries Find\+Or\+Add\+Child} (\mbox{\hyperlink{classunsigned}{unsigned}} function\+\_\+info\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationTraceNode_ab3952f0610968cabfdb6a6134395f4a8}\label{classv8_1_1internal_1_1AllocationTraceNode_ab3952f0610968cabfdb6a6134395f4a8}} 
+void {\bfseries Add\+Allocation} (\mbox{\hyperlink{classunsigned}{unsigned}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationTraceNode_ae7d97ae5462f51e29627cd0b122951f1}\label{classv8_1_1internal_1_1AllocationTraceNode_ae7d97ae5462f51e29627cd0b122951f1}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries function\+\_\+info\+\_\+index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationTraceNode_a9120f1f0161b27240167a9a3cef8314d}\label{classv8_1_1internal_1_1AllocationTraceNode_a9120f1f0161b27240167a9a3cef8314d}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries allocation\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationTraceNode_a99d79d8ca6c91aaa4257b37b26446203}\label{classv8_1_1internal_1_1AllocationTraceNode_a99d79d8ca6c91aaa4257b37b26446203}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries allocation\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationTraceNode_a722786c8db6de58c024a7f258eea9e64}\label{classv8_1_1internal_1_1AllocationTraceNode_a722786c8db6de58c024a7f258eea9e64}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationTraceNode_a31a1dc2ffbcc2913ad3aa5259d017ee7}\label{classv8_1_1internal_1_1AllocationTraceNode_a31a1dc2ffbcc2913ad3aa5259d017ee7}} 
+const std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1AllocationTraceNode}{Allocation\+Trace\+Node}} $\ast$ $>$ \& {\bfseries children} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationTraceNode_acfba1229f80910c5746758f8afdff7af}\label{classv8_1_1internal_1_1AllocationTraceNode_acfba1229f80910c5746758f8afdff7af}} 
+void {\bfseries Print} (\mbox{\hyperlink{classint}{int}} indent, \mbox{\hyperlink{classv8_1_1internal_1_1AllocationTracker}{Allocation\+Tracker}} $\ast$tracker)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file allocation-\/tracker.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/allocation-\/tracker.\+h\item 
+v8/src/profiler/allocation-\/tracker.\+cc\end{DoxyCompactItemize}

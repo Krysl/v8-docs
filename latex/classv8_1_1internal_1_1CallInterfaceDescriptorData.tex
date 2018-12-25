@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1internal_1_1CallInterfaceDescriptorData}{}\section{v8\+:\+:internal\+:\+:Call\+Interface\+Descriptor\+Data Class Reference}
+\label{classv8_1_1internal_1_1CallInterfaceDescriptorData}\index{v8\+::internal\+::\+Call\+Interface\+Descriptor\+Data@{v8\+::internal\+::\+Call\+Interface\+Descriptor\+Data}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallInterfaceDescriptorData_a089ef50da245332139a2208278ad69d9}\label{classv8_1_1internal_1_1CallInterfaceDescriptorData_a089ef50da245332139a2208278ad69d9}} 
+enum {\bfseries Flag} \{ {\bfseries k\+No\+Flags} = 0u, 
+{\bfseries k\+No\+Context} = 1u $<$$<$ 0
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallInterfaceDescriptorData_acc2c3cb157f6aa28e0971cdbfacff2d8}\label{classv8_1_1internal_1_1CallInterfaceDescriptorData_acc2c3cb157f6aa28e0971cdbfacff2d8}} 
+typedef \mbox{\hyperlink{classv8_1_1base_1_1Flags}{base\+::\+Flags}}$<$ Flag $>$ {\bfseries Flags}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallInterfaceDescriptorData_aad2f5b2d12f64ad4ab18eb559406b142}\label{classv8_1_1internal_1_1CallInterfaceDescriptorData_aad2f5b2d12f64ad4ab18eb559406b142}} 
+void {\bfseries Initialize\+Platform\+Specific} (\mbox{\hyperlink{classint}{int}} register\+\_\+parameter\+\_\+count, const \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} $\ast$registers)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallInterfaceDescriptorData_a83c8a2ff13a423c2808b02c933bcacdb}\label{classv8_1_1internal_1_1CallInterfaceDescriptorData_a83c8a2ff13a423c2808b02c933bcacdb}} 
+void {\bfseries Initialize\+Platform\+Independent} (\mbox{\hyperlink{classv8_1_1base_1_1Flags}{Flags}} flags, \mbox{\hyperlink{classint}{int}} return\+\_\+count, \mbox{\hyperlink{classint}{int}} parameter\+\_\+count, const \mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} $\ast$machine\+\_\+types, \mbox{\hyperlink{classint}{int}} machine\+\_\+types\+\_\+length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallInterfaceDescriptorData_ad26cc53293db18880e956eccbb6fa00e}\label{classv8_1_1internal_1_1CallInterfaceDescriptorData_ad26cc53293db18880e956eccbb6fa00e}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallInterfaceDescriptorData_ad64c17585b21c990357a8c9bd683509c}\label{classv8_1_1internal_1_1CallInterfaceDescriptorData_ad64c17585b21c990357a8c9bd683509c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Initialized} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallInterfaceDescriptorData_ac56d142cde4db9306f0ebab6ae01c148}\label{classv8_1_1internal_1_1CallInterfaceDescriptorData_ac56d142cde4db9306f0ebab6ae01c148}} 
+\mbox{\hyperlink{classv8_1_1base_1_1Flags}{Flags}} {\bfseries flags} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallInterfaceDescriptorData_a3b7f4dec26414fd42459ba66d28dd975}\label{classv8_1_1internal_1_1CallInterfaceDescriptorData_a3b7f4dec26414fd42459ba66d28dd975}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries return\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallInterfaceDescriptorData_afc9672e6a8d836a4a2dab38d93643dff}\label{classv8_1_1internal_1_1CallInterfaceDescriptorData_afc9672e6a8d836a4a2dab38d93643dff}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries param\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallInterfaceDescriptorData_a7357e36836ab17b7dd33dbcdeb466380}\label{classv8_1_1internal_1_1CallInterfaceDescriptorData_a7357e36836ab17b7dd33dbcdeb466380}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries register\+\_\+param\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallInterfaceDescriptorData_a24d4e7f1944869e7995e798f558ad96d}\label{classv8_1_1internal_1_1CallInterfaceDescriptorData_a24d4e7f1944869e7995e798f558ad96d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries register\+\_\+param} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallInterfaceDescriptorData_a6278b7bb9111d98867e349c0c9b05e09}\label{classv8_1_1internal_1_1CallInterfaceDescriptorData_a6278b7bb9111d98867e349c0c9b05e09}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} $\ast$ {\bfseries register\+\_\+params} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallInterfaceDescriptorData_a976287ee1e8aff980ce2ea03b79d5b36}\label{classv8_1_1internal_1_1CallInterfaceDescriptorData_a976287ee1e8aff980ce2ea03b79d5b36}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} {\bfseries return\+\_\+type} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallInterfaceDescriptorData_aedc35cea5265a0216ae368e22a3773b4}\label{classv8_1_1internal_1_1CallInterfaceDescriptorData_aedc35cea5265a0216ae368e22a3773b4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} {\bfseries param\+\_\+type} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallInterfaceDescriptorData_afb543925df1c8a957e3f5d228d5b4506}\label{classv8_1_1internal_1_1CallInterfaceDescriptorData_afb543925df1c8a957e3f5d228d5b4506}} 
+void {\bfseries Restrict\+Allocatable\+Registers} (const \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} $\ast$registers, \mbox{\hyperlink{classint}{int}} num)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CallInterfaceDescriptorData_a6a0d4813e9fc8ae852c5fa5578a3b4cc}\label{classv8_1_1internal_1_1CallInterfaceDescriptorData_a6a0d4813e9fc8ae852c5fa5578a3b4cc}} 
+\mbox{\hyperlink{classuint32__t}{Reg\+List}} {\bfseries allocatable\+\_\+registers} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 84 of file interface-\/descriptors.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/interface-\/descriptors.\+h\item 
+v8/src/interface-\/descriptors.\+cc\end{DoxyCompactItemize}

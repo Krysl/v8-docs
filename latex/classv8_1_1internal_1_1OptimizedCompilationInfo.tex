@@ -1,0 +1,271 @@
+\hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo}{}\section{v8\+:\+:internal\+:\+:Optimized\+Compilation\+Info Class Reference}
+\label{classv8_1_1internal_1_1OptimizedCompilationInfo}\index{v8\+::internal\+::\+Optimized\+Compilation\+Info@{v8\+::internal\+::\+Optimized\+Compilation\+Info}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1OptimizedCompilationInfo_1_1InlinedFunctionHolder}{Inlined\+Function\+Holder}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_af9ead7f67938795b11c2dea0e2e175a6}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_af9ead7f67938795b11c2dea0e2e175a6}} 
+enum {\bfseries Flag} \{ \newline
+{\bfseries k\+Accessor\+Inlining\+Enabled} = 1 $<$$<$ 0, 
+{\bfseries k\+Function\+Context\+Specializing} = 1 $<$$<$ 1, 
+{\bfseries k\+Inlining\+Enabled} = 1 $<$$<$ 2, 
+{\bfseries k\+Disable\+Future\+Optimization} = 1 $<$$<$ 3, 
+\newline
+{\bfseries k\+Splitting\+Enabled} = 1 $<$$<$ 4, 
+{\bfseries k\+Source\+Positions\+Enabled} = 1 $<$$<$ 5, 
+{\bfseries k\+Bailout\+On\+Uninitialized} = 1 $<$$<$ 6, 
+{\bfseries k\+Loop\+Peeling\+Enabled} = 1 $<$$<$ 7, 
+\newline
+{\bfseries k\+Untrusted\+Code\+Mitigations} = 1 $<$$<$ 8, 
+{\bfseries k\+Switch\+Jump\+Table\+Enabled} = 1 $<$$<$ 9, 
+{\bfseries k\+Called\+With\+Code\+Start\+Register} = 1 $<$$<$ 10, 
+{\bfseries k\+Poison\+Register\+Arguments} = 1 $<$$<$ 11, 
+\newline
+{\bfseries k\+Allocation\+Folding\+Enabled} = 1 $<$$<$ 12, 
+{\bfseries k\+Analyze\+Environment\+Liveness} = 1 $<$$<$ 13, 
+{\bfseries k\+Trace\+Turbo\+Json} = 1 $<$$<$ 14, 
+{\bfseries k\+Trace\+Turbo\+Graph} = 1 $<$$<$ 15, 
+\newline
+{\bfseries k\+Trace\+Turbo\+Scheduled} = 1 $<$$<$ 16, 
+{\bfseries k\+Wasm\+Runtime\+Exception\+Support} = 1 $<$$<$ 17
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a4d89cf87592c78b349c989f13222f3f0}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a4d89cf87592c78b349c989f13222f3f0}} 
+typedef std\+::vector$<$ \mbox{\hyperlink{structv8_1_1internal_1_1OptimizedCompilationInfo_1_1InlinedFunctionHolder}{Inlined\+Function\+Holder}} $>$ {\bfseries Inlined\+Function\+List}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_ac8d544249d80728a235bb4855cbe84af}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_ac8d544249d80728a235bb4855cbe84af}} 
+{\bfseries Optimized\+Compilation\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ shared, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ closure)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_afaa68eb89ea5cb55f060c3364b833d11}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_afaa68eb89ea5cb55f060c3364b833d11}} 
+{\bfseries Optimized\+Compilation\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const \mbox{\hyperlink{classchar}{char}} $>$ debug\+\_\+name, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, Code\+::\+Kind code\+\_\+kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_ae659cb6c5080d4ada23f651840f99d55}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_ae659cb6c5080d4ada23f651840f99d55}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$ {\bfseries zone} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_ae71e956dce73532f25963eda69bdeb7b}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_ae71e956dce73532f25963eda69bdeb7b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+osr} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_ac06987fbc386e572cccd6217531a56c1}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_ac06987fbc386e572cccd6217531a56c1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ {\bfseries shared\+\_\+info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a9b3bc1305bd331dd34da03c27086bfeb}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a9b3bc1305bd331dd34da03c27086bfeb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+shared\+\_\+info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a274ee620907248809cbc5ef6e051d76e}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a274ee620907248809cbc5ef6e051d76e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray}{Bytecode\+Array}} $>$ {\bfseries bytecode\+\_\+array} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a01f8a71c384619f93271ea13bb4052ea}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a01f8a71c384619f93271ea13bb4052ea}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+bytecode\+\_\+array} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a77ddef42d3604e2e27dba12aab1f2ff9}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a77ddef42d3604e2e27dba12aab1f2ff9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ {\bfseries closure} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a01ffe9186109ea1aa3aca411b19bea5b}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a01ffe9186109ea1aa3aca411b19bea5b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries code} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_ab0e191152820d4dea7ca97bdb41f0ffb}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_ab0e191152820d4dea7ca97bdb41f0ffb}} 
+Code\+::\+Kind {\bfseries code\+\_\+kind} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a7459042abb8425ebf4d2c234cad27071}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a7459042abb8425ebf4d2c234cad27071}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries stub\+\_\+key} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a767c8b390990d352b387c1c144c6779b}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a767c8b390990d352b387c1c144c6779b}} 
+void {\bfseries set\+\_\+stub\+\_\+key} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} stub\+\_\+key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_ae3041c31f09a88d69ccdda6594674b97}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_ae3041c31f09a88d69ccdda6594674b97}} 
+int32\+\_\+t {\bfseries builtin\+\_\+index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a203f9795e90bd6dd30ebaafa36908cea}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a203f9795e90bd6dd30ebaafa36908cea}} 
+void {\bfseries set\+\_\+builtin\+\_\+index} (int32\+\_\+t index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_acafe314a5431fe59c699ee3fb85f0012}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_acafe314a5431fe59c699ee3fb85f0012}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1BailoutId}{Bailout\+Id}} {\bfseries osr\+\_\+offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a0ede668189570acb0b9dbccae400261f}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a0ede668189570acb0b9dbccae400261f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1JavaScriptFrame}{Java\+Script\+Frame}} $\ast$ {\bfseries osr\+\_\+frame} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_aae3e1ed08b9a30266495069cf56a97b7}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_aae3e1ed08b9a30266495069cf56a97b7}} 
+void {\bfseries Mark\+As\+Function\+Context\+Specializing} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_af897d6e5049a98cac3f1cc7607aa4d6f}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_af897d6e5049a98cac3f1cc7607aa4d6f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+function\+\_\+context\+\_\+specializing} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a36a5465d7472b6caffb2425d6bc40b66}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a36a5465d7472b6caffb2425d6bc40b66}} 
+void {\bfseries Mark\+As\+Accessor\+Inlining\+Enabled} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a9691f0d22e0e4956f03b80a69448f888}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a9691f0d22e0e4956f03b80a69448f888}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+accessor\+\_\+inlining\+\_\+enabled} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_af2b7e201234b77c5cbd86c2ea934db3e}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_af2b7e201234b77c5cbd86c2ea934db3e}} 
+void {\bfseries Mark\+As\+Source\+Positions\+Enabled} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_aa2678065d4449bdbdda8e6f4bbad6d94}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_aa2678065d4449bdbdda8e6f4bbad6d94}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+source\+\_\+positions\+\_\+enabled} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a808c670437cd45d6b513de0625e955f2}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a808c670437cd45d6b513de0625e955f2}} 
+void {\bfseries Mark\+As\+Inlining\+Enabled} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_af335802333f0660d4f3dd33f4a8811bb}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_af335802333f0660d4f3dd33f4a8811bb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+inlining\+\_\+enabled} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a2cccd688d4143e0a94428422c4895716}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a2cccd688d4143e0a94428422c4895716}} 
+void {\bfseries Set\+Poisoning\+Mitigation\+Level} (Poisoning\+Mitigation\+Level poisoning\+\_\+level)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_ab9c47c4b7a997f6453f1d2ea5dfb75b9}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_ab9c47c4b7a997f6453f1d2ea5dfb75b9}} 
+Poisoning\+Mitigation\+Level {\bfseries Get\+Poisoning\+Mitigation\+Level} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a37103012812652d843573c5f4e817392}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a37103012812652d843573c5f4e817392}} 
+void {\bfseries Mark\+As\+Splitting\+Enabled} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_af8407ff132336a69bdc547c716090c16}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_af8407ff132336a69bdc547c716090c16}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+splitting\+\_\+enabled} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a6077cfa94d2bc629395eaa42ad98d81f}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a6077cfa94d2bc629395eaa42ad98d81f}} 
+void {\bfseries Mark\+As\+Bailout\+On\+Uninitialized} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a375abee58958865494d2a730f383c9d0}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a375abee58958865494d2a730f383c9d0}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+bailout\+\_\+on\+\_\+uninitialized} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_abf9fab6d222e78bda4e15616d3adb885}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_abf9fab6d222e78bda4e15616d3adb885}} 
+void {\bfseries Mark\+As\+Loop\+Peeling\+Enabled} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a105b25dd8aea4d18013a1ebdb8b5c72b}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a105b25dd8aea4d18013a1ebdb8b5c72b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+loop\+\_\+peeling\+\_\+enabled} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a910378e74957ab1f4b3366ad6a38e8fa}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a910378e74957ab1f4b3366ad6a38e8fa}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+untrusted\+\_\+code\+\_\+mitigations} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a0fb4bab30c0b6a2b6874627cdef1bd69}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a0fb4bab30c0b6a2b6874627cdef1bd69}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries switch\+\_\+jump\+\_\+table\+\_\+enabled} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_adda17f3ed82ec7e3cddb005d5f040060}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_adda17f3ed82ec7e3cddb005d5f040060}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries called\+\_\+with\+\_\+code\+\_\+start\+\_\+register} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_af46bfaba70e793418937b5f518ba72cf}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_af46bfaba70e793418937b5f518ba72cf}} 
+void {\bfseries Mark\+As\+Poisoning\+Register\+Arguments} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_aa2a9f37e855510bfa6ab9a8602d52d32}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_aa2a9f37e855510bfa6ab9a8602d52d32}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+poisoning\+\_\+register\+\_\+arguments} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_ad87e71e6cbfe7e89b97c87cb91909397}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_ad87e71e6cbfe7e89b97c87cb91909397}} 
+void {\bfseries Mark\+As\+Allocation\+Folding\+Enabled} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_aaa6eebaa55baaa61c363755e534402e5}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_aaa6eebaa55baaa61c363755e534402e5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+allocation\+\_\+folding\+\_\+enabled} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_ad2e0535291470cb8a220563b238eacdc}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_ad2e0535291470cb8a220563b238eacdc}} 
+void {\bfseries Mark\+As\+Analyze\+Environment\+Liveness} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a83be6955234caa97ec885c90eca562aa}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a83be6955234caa97ec885c90eca562aa}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+analyze\+\_\+environment\+\_\+liveness} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_ab444e7b53bd337b787a4ff14abd409f0}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_ab444e7b53bd337b787a4ff14abd409f0}} 
+void {\bfseries Set\+Wasm\+Runtime\+Exception\+Support} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_adc6db15b625d77b19fd7dccda4e58617}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_adc6db15b625d77b19fd7dccda4e58617}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries wasm\+\_\+runtime\+\_\+exception\+\_\+support} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_aee1a788768637bfe7de79b14f0303ef5}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_aee1a788768637bfe7de79b14f0303ef5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries trace\+\_\+turbo\+\_\+json\+\_\+enabled} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_acb3b06a446e65e2e79ce8fd21ae4105f}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_acb3b06a446e65e2e79ce8fd21ae4105f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries trace\+\_\+turbo\+\_\+graph\+\_\+enabled} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a66181662869c230d5eba1a6d67aa5a8d}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a66181662869c230d5eba1a6d67aa5a8d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries trace\+\_\+turbo\+\_\+scheduled\+\_\+enabled} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a44cc01ee5e14c13253c7db2f3581d298}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a44cc01ee5e14c13253c7db2f3581d298}} 
+void {\bfseries Set\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_aedb879128bc1f998ddfd720986d6f09e}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_aedb879128bc1f998ddfd720986d6f09e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+context} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a9294f4fe035e5b5a8fa0b7a13ad43cd9}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a9294f4fe035e5b5a8fa0b7a13ad43cd9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} {\bfseries context} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a2e641eecaba53d6b96943453eb1f438c}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a2e641eecaba53d6b96943453eb1f438c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+native\+\_\+context} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_ad1800acb78368f2a2b99a07c2d655bfb}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_ad1800acb78368f2a2b99a07c2d655bfb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} {\bfseries native\+\_\+context} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a08099decdd5d629ce5dae20aee75c028}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a08099decdd5d629ce5dae20aee75c028}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+global\+\_\+object} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a5eac325e2bcdc3c5ed85332d54b88bbc}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a5eac325e2bcdc3c5ed85332d54b88bbc}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1JSGlobalObject}{J\+S\+Global\+Object}} $\ast$ {\bfseries global\+\_\+object} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a08bc9f137270d483df1e2f7e156d1f34}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a08bc9f137270d483df1e2f7e156d1f34}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Optimizing} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a21fecfffa0466dabd03d835bf219f238}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a21fecfffa0466dabd03d835bf219f238}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Wasm} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a250c5355b458ee58d6182e5619d02a50}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a250c5355b458ee58d6182e5619d02a50}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Stub} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a43ab769c79ff5e11e9b404c116b5efbe}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a43ab769c79ff5e11e9b404c116b5efbe}} 
+void {\bfseries Set\+Optimizing\+For\+Osr} (\mbox{\hyperlink{classv8_1_1internal_1_1BailoutId}{Bailout\+Id}} osr\+\_\+offset, \mbox{\hyperlink{classv8_1_1internal_1_1JavaScriptFrame}{Java\+Script\+Frame}} $\ast$osr\+\_\+frame)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a7e09f64f168dfbba7ea9e8bd516475d0}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a7e09f64f168dfbba7ea9e8bd516475d0}} 
+void {\bfseries set\+\_\+deferred\+\_\+handles} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1DeferredHandles}{Deferred\+Handles}} $>$ deferred\+\_\+handles)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a8fb052515b44033bb8c056338e81fd82}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a8fb052515b44033bb8c056338e81fd82}} 
+void {\bfseries set\+\_\+deferred\+\_\+handles} (\mbox{\hyperlink{classv8_1_1internal_1_1DeferredHandles}{Deferred\+Handles}} $\ast$deferred\+\_\+handles)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_ae3b753791647e59009e21262973cc856}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_ae3b753791647e59009e21262973cc856}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1DeferredHandles}{Deferred\+Handles}} $>$ {\bfseries deferred\+\_\+handles} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a03681ab0b5724e1a8926ff8e3fbbb7b0}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a03681ab0b5724e1a8926ff8e3fbbb7b0}} 
+void {\bfseries Reopen\+Handles\+In\+New\+Handle\+Scope} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a4703e91dd1e3a5b5662e1f0fdbdb6664}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a4703e91dd1e3a5b5662e1f0fdbdb6664}} 
+void {\bfseries Abort\+Optimization} (Bailout\+Reason reason)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_ac833ab5490860d2940df5859ddb04d10}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_ac833ab5490860d2940df5859ddb04d10}} 
+void {\bfseries Retry\+Optimization} (Bailout\+Reason reason)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_afdf2578b0ab6015db1d129272d54b4b2}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_afdf2578b0ab6015db1d129272d54b4b2}} 
+Bailout\+Reason {\bfseries bailout\+\_\+reason} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a129d3fe3605701e1488ebf0910ca11a4}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a129d3fe3605701e1488ebf0910ca11a4}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries optimization\+\_\+id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_aba4a8246a3d36f51009cd815735df084}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_aba4a8246a3d36f51009cd815735df084}} 
+Inlined\+Function\+List \& {\bfseries inlined\+\_\+functions} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a8b63dee0998a00985989a9d0fa39f5e5}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a8b63dee0998a00985989a9d0fa39f5e5}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Add\+Inlined\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ inlined\+\_\+function, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray}{Bytecode\+Array}} $>$ inlined\+\_\+bytecode, \mbox{\hyperlink{classv8_1_1internal_1_1SourcePosition}{Source\+Position}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a80298884d7d07af6130b3d794e88208f}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a80298884d7d07af6130b3d794e88208f}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classchar}{char}}\mbox{[}$\,$\mbox{]}$>$ {\bfseries Get\+Debug\+Name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a2482536709d37877bd079e28a72aab35}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a2482536709d37877bd079e28a72aab35}} 
+Stack\+Frame\+::\+Type {\bfseries Get\+Output\+Stack\+Frame\+Type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_aa57d8b59188739fe17aadfea43fd4052}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_aa57d8b59188739fe17aadfea43fd4052}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries trace\+\_\+turbo\+\_\+filename} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1OptimizedCompilationInfo_a05c578eb87f54190316565c17dc54b27}\label{classv8_1_1internal_1_1OptimizedCompilationInfo_a05c578eb87f54190316565c17dc54b27}} 
+void {\bfseries set\+\_\+trace\+\_\+turbo\+\_\+filename} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classchar}{char}}\mbox{[}$\,$\mbox{]}$>$ filename)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 32 of file optimized-\/compilation-\/info.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/optimized-\/compilation-\/info.\+h\item 
+v8/src/optimized-\/compilation-\/info.\+cc\end{DoxyCompactItemize}

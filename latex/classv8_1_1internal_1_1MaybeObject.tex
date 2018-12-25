@@ -1,0 +1,130 @@
+\hypertarget{classv8_1_1internal_1_1MaybeObject}{}\section{v8\+:\+:internal\+:\+:Maybe\+Object Class Reference}
+\label{classv8_1_1internal_1_1MaybeObject}\index{v8\+::internal\+::\+Maybe\+Object@{v8\+::internal\+::\+Maybe\+Object}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Maybe\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1MaybeObject}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a662fcc7da303ba3533edcbec583d112e}\label{classv8_1_1internal_1_1MaybeObject_a662fcc7da303ba3533edcbec583d112e}} 
+{\bfseries Maybe\+Object} (\mbox{\hyperlink{classuintptr__t}{Address}} ptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a0f31d73aa3065b711fbe304fb89ea94b}\label{classv8_1_1internal_1_1MaybeObject_a0f31d73aa3065b711fbe304fb89ea94b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries operator==} (const \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} \&other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a5f84cb0622ee687dcddda16cfbce3430}\label{classv8_1_1internal_1_1MaybeObject_a5f84cb0622ee687dcddda16cfbce3430}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries operator!=} (const \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} \&other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a675489eb8309303f95db1916a2e78fd1}\label{classv8_1_1internal_1_1MaybeObject_a675489eb8309303f95db1916a2e78fd1}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries ptr} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a0b505f91f9db5a089397c6638bbefd6b}\label{classv8_1_1internal_1_1MaybeObject_a0b505f91f9db5a089397c6638bbefd6b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} $\ast$ {\bfseries operator-\/$>$} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_af8ecf764a92c5ddb25e73aea8cc8734e}\label{classv8_1_1internal_1_1MaybeObject_af8ecf764a92c5ddb25e73aea8cc8734e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} $\ast$ {\bfseries operator-\/$>$} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a02ddb02560881f9405dd4fb6aacdb489}\label{classv8_1_1internal_1_1MaybeObject_a02ddb02560881f9405dd4fb6aacdb489}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Smi} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_ad94fd2b19c6c8bca2da37fa78f49764e}\label{classv8_1_1internal_1_1MaybeObject_ad94fd2b19c6c8bca2da37fa78f49764e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries To\+Smi} (\mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_af9552afba9877121ad24bb32b51add40}\label{classv8_1_1internal_1_1MaybeObject_af9552afba9877121ad24bb32b51add40}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} {\bfseries To\+Smi} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_ae3f9618ed36b18ccfd283915a826c9f9}\label{classv8_1_1internal_1_1MaybeObject_ae3f9618ed36b18ccfd283915a826c9f9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Cleared} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a96a61e361aa6e993a279302b80a29179}\label{classv8_1_1internal_1_1MaybeObject_a96a61e361aa6e993a279302b80a29179}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Strong\+Or\+Weak} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_addc6852ba90b1e9dd5e1e946bf6c3813}\label{classv8_1_1internal_1_1MaybeObject_addc6852ba90b1e9dd5e1e946bf6c3813}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Strong} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_aae71902afa65a637d7d57cb1686920d6}\label{classv8_1_1internal_1_1MaybeObject_aae71902afa65a637d7d57cb1686920d6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Get\+Heap\+Object\+If\+Strong} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$$\ast$result) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a527403b54444cc003158114f2ae76031}\label{classv8_1_1internal_1_1MaybeObject_a527403b54444cc003158114f2ae76031}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$ {\bfseries Get\+Heap\+Object\+Assume\+Strong} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a5abaa8469b787aae67e50b342433b65a}\label{classv8_1_1internal_1_1MaybeObject_a5abaa8469b787aae67e50b342433b65a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Weak} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_ad04169bb8afa669b4f39b6499670cc29}\label{classv8_1_1internal_1_1MaybeObject_ad04169bb8afa669b4f39b6499670cc29}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Weak\+Or\+Cleared} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_ae92cdf8a0bcadf901457785707139fdd}\label{classv8_1_1internal_1_1MaybeObject_ae92cdf8a0bcadf901457785707139fdd}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Get\+Heap\+Object\+If\+Weak} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$$\ast$result) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a61f1cccefc3f059f1735bc48c2026d67}\label{classv8_1_1internal_1_1MaybeObject_a61f1cccefc3f059f1735bc48c2026d67}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$ {\bfseries Get\+Heap\+Object\+Assume\+Weak} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a2bc089c50e175930d6d4ad9b9f4fefe7}\label{classv8_1_1internal_1_1MaybeObject_a2bc089c50e175930d6d4ad9b9f4fefe7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Get\+Heap\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$$\ast$result) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_ada89b014ad2b479a3f609f74ba5b7897}\label{classv8_1_1internal_1_1MaybeObject_ada89b014ad2b479a3f609f74ba5b7897}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Get\+Heap\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$$\ast$result, Heap\+Object\+Reference\+Type $\ast$reference\+\_\+type) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a21dd1df1e93ae387955091e131302cdd}\label{classv8_1_1internal_1_1MaybeObject_a21dd1df1e93ae387955091e131302cdd}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$ {\bfseries Get\+Heap\+Object} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_ae8e3303cf53787edbe58c40c76201226}\label{classv8_1_1internal_1_1MaybeObject_ae8e3303cf53787edbe58c40c76201226}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Get\+Heap\+Object\+Or\+Smi} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a01b428a3e7af4a4fb4251ca22b1f2d52}\label{classv8_1_1internal_1_1MaybeObject_a01b428a3e7af4a4fb4251ca22b1f2d52}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Object} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a0fbbf8676aa03d4e354cad065ceb276d}\label{classv8_1_1internal_1_1MaybeObject_a0fbbf8676aa03d4e354cad065ceb276d}} 
+{\footnotesize template$<$typename T , typename  = typename std\+::enable\+\_\+if$<$                            std\+::is\+\_\+base\+\_\+of$<$\+Object, T$>$\+::value$>$\+::type$>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$ {\bfseries cast} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a68ac195cef3dbaf136544216650b95b7}\label{classv8_1_1internal_1_1MaybeObject_a68ac195cef3dbaf136544216650b95b7}} 
+{\footnotesize template$<$typename T , typename  = typename std\+::enable\+\_\+if$<$                            std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ptr, T$>$\+::value$>$\+::type$>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} {\bfseries cast} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a34a1313e4a2edc54b6e54184fe5fcf1f}\label{classv8_1_1internal_1_1MaybeObject_a34a1313e4a2edc54b6e54184fe5fcf1f}} 
+void {\bfseries Short\+Print} (F\+I\+LE $\ast$out=stdout)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_aefb51e2f8a90fe6096dcd7b0d14e4a65}\label{classv8_1_1internal_1_1MaybeObject_aefb51e2f8a90fe6096dcd7b0d14e4a65}} 
+void {\bfseries Short\+Print} (\mbox{\hyperlink{classv8_1_1internal_1_1StringStream}{String\+Stream}} $\ast$accumulator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a929bb4b9b5520e01bc4fc5d10c0f7323}\label{classv8_1_1internal_1_1MaybeObject_a929bb4b9b5520e01bc4fc5d10c0f7323}} 
+void {\bfseries Short\+Print} (std\+::ostream \&os)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_aa87637eaa8227fa8c041e989eda0a73f}\label{classv8_1_1internal_1_1MaybeObject_aa87637eaa8227fa8c041e989eda0a73f}} 
+void {\bfseries Print} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a29057bb104b7be01234470e7e23e393f}\label{classv8_1_1internal_1_1MaybeObject_a29057bb104b7be01234470e7e23e393f}} 
+void {\bfseries Print} (std\+::ostream \&os)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a8c80a3c3221cb2966e1981f751eda3a8}\label{classv8_1_1internal_1_1MaybeObject_a8c80a3c3221cb2966e1981f751eda3a8}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} {\bfseries From\+Smi} (\mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} smi)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_aebc9106731bc9361a422bcfbb3d0a5dc}\label{classv8_1_1internal_1_1MaybeObject_aebc9106731bc9361a422bcfbb3d0a5dc}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} {\bfseries From\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a3a685658cfa661155d00e1d7857cf3bd}\label{classv8_1_1internal_1_1MaybeObject_a3a685658cfa661155d00e1d7857cf3bd}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} {\bfseries From\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1ObjectPtr}{Object\+Ptr}} object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MaybeObject_a0699febacdc0ac18540874ccc8927151}\label{classv8_1_1internal_1_1MaybeObject_a0699febacdc0ac18540874ccc8927151}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} {\bfseries Make\+Weak} (\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} object)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 25 of file maybe-\/object.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/maybe-\/object.\+h\item 
+v8/src/objects/maybe-\/object-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

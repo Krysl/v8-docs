@@ -1,0 +1,39 @@
+\hypertarget{classv8_1_1internal_1_1LocalAllocator}{}\section{v8\+:\+:internal\+:\+:Local\+Allocator Class Reference}
+\label{classv8_1_1internal_1_1LocalAllocator}\index{v8\+::internal\+::\+Local\+Allocator@{v8\+::internal\+::\+Local\+Allocator}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalAllocator_ac4b037faf26f3a6766c9ecec9a800eb3}\label{classv8_1_1internal_1_1LocalAllocator_ac4b037faf26f3a6766c9ecec9a800eb3}} 
+{\bfseries Local\+Allocator} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalAllocator_a2bb8cfc4fb5f8b3c4a0a998ffa41172e}\label{classv8_1_1internal_1_1LocalAllocator_a2bb8cfc4fb5f8b3c4a0a998ffa41172e}} 
+void {\bfseries Finalize} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalAllocator_a08a8bb708310a4c85cf282b3a0d3707a}\label{classv8_1_1internal_1_1LocalAllocator_a08a8bb708310a4c85cf282b3a0d3707a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1AllocationResult}{Allocation\+Result}} {\bfseries Allocate} (Allocation\+Space space, \mbox{\hyperlink{classint}{int}} object\+\_\+size, Allocation\+Alignment alignment)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalAllocator_a63defcdc91f141e9569a511e0e3b0d00}\label{classv8_1_1internal_1_1LocalAllocator_a63defcdc91f141e9569a511e0e3b0d00}} 
+void {\bfseries Free\+Last} (Allocation\+Space space, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object, \mbox{\hyperlink{classint}{int}} object\+\_\+size)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalAllocator_af8ae02713fe6db3419e9fa8f4d9ae698}\label{classv8_1_1internal_1_1LocalAllocator_af8ae02713fe6db3419e9fa8f4d9ae698}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Lab\+Size} = 32 $\ast$ KB
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LocalAllocator_a8e67d3a8adc2ac69f21bb00559aa20cc}\label{classv8_1_1internal_1_1LocalAllocator_a8e67d3a8adc2ac69f21bb00559aa20cc}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Lab\+Object\+Size} = 8 $\ast$ KB
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file local-\/allocator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/local-\/allocator.\+h\item 
+v8/src/heap/local-\/allocator-\/inl.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1JSGenericLowering}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Generic\+Lowering Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1JSGenericLowering}\index{v8\+::internal\+::compiler\+::\+J\+S\+Generic\+Lowering@{v8\+::internal\+::compiler\+::\+J\+S\+Generic\+Lowering}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Generic\+Lowering\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1JSGenericLowering}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_a552d4825556008510a077e0bae7ddc42}\label{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_a552d4825556008510a077e0bae7ddc42}} 
+{\bfseries J\+S\+Generic\+Lowering} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSGraph}{J\+S\+Graph}} $\ast$jsgraph)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_a5d144492fb1855ec9e23b13cc378c5ee}\label{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_a5d144492fb1855ec9e23b13cc378c5ee}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries reducer\+\_\+name} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_a38f11f925a0f2e2bcea3fb61c6e6514b}\label{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_a38f11f925a0f2e2bcea3fb61c6e6514b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Reduction}{Reduction}} {\bfseries Reduce} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node) final
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_acb812a927897d9aee2d5fa42ad8425ad}\label{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_acb812a927897d9aee2d5fa42ad8425ad}} 
+void {\bfseries Replace\+With\+Stub\+Call} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} c, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{Call\+Descriptor\+::\+Flags}} flags)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_ab20b9e1e963628ad051e12300d278f98}\label{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_ab20b9e1e963628ad051e12300d278f98}} 
+void {\bfseries Replace\+With\+Stub\+Call} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1Callable}{Callable}} c, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{Call\+Descriptor\+::\+Flags}} flags, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{Operator\+::\+Properties}} properties)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_a39abc5ee3c04bde1be94d223e467aa2e}\label{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_a39abc5ee3c04bde1be94d223e467aa2e}} 
+void {\bfseries Replace\+With\+Runtime\+Call} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, Runtime\+::\+Function\+Id f, \mbox{\hyperlink{classint}{int}} args=-\/1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_a48291ee4f32fc4bbc63c640021721e0e}\label{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_a48291ee4f32fc4bbc63c640021721e0e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$ {\bfseries zone} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_a328a62b8c396387133f32721c2eb3c38}\label{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_a328a62b8c396387133f32721c2eb3c38}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_ad389c0dc887810fa23984f8c684fe926}\label{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_ad389c0dc887810fa23984f8c684fe926}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSGraph}{J\+S\+Graph}} $\ast$ {\bfseries jsgraph} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_a8fdf8ef67c34f7173e21a9e3af7ae690}\label{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_a8fdf8ef67c34f7173e21a9e3af7ae690}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Graph}{Graph}} $\ast$ {\bfseries graph} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_a6e858f00d15393f90478cf00da749950}\label{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_a6e858f00d15393f90478cf00da749950}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CommonOperatorBuilder}{Common\+Operator\+Builder}} $\ast$ {\bfseries common} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_a759e46b0c04c91f9b9cd47c54d3c961a}\label{classv8_1_1internal_1_1compiler_1_1JSGenericLowering_a759e46b0c04c91f9b9cd47c54d3c961a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder}{Machine\+Operator\+Builder}} $\ast$ {\bfseries machine} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file js-\/generic-\/lowering.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/js-\/generic-\/lowering.\+h\item 
+v8/src/compiler/js-\/generic-\/lowering.\+cc\end{DoxyCompactItemize}

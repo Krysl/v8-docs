@@ -1,0 +1,86 @@
+\hypertarget{classv8_1_1internal_1_1TranslatedFrame}{}\section{v8\+:\+:internal\+:\+:Translated\+Frame Class Reference}
+\label{classv8_1_1internal_1_1TranslatedFrame}\index{v8\+::internal\+::\+Translated\+Frame@{v8\+::internal\+::\+Translated\+Frame}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1TranslatedFrame_1_1iterator}{iterator}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedFrame_aa6931f8e7c4e1e1bf42252d1d8e1bf9d}\label{classv8_1_1internal_1_1TranslatedFrame_aa6931f8e7c4e1e1bf42252d1d8e1bf9d}} 
+enum {\bfseries Kind} \{ \newline
+{\bfseries k\+Interpreted\+Function}, 
+{\bfseries k\+Arguments\+Adaptor}, 
+{\bfseries k\+Construct\+Stub}, 
+{\bfseries k\+Builtin\+Continuation}, 
+\newline
+{\bfseries k\+Java\+Script\+Builtin\+Continuation}, 
+{\bfseries k\+Java\+Script\+Builtin\+Continuation\+With\+Catch}, 
+{\bfseries k\+Invalid}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedFrame_a729f1e8f225634f1ecf4e88e93ed70ae}\label{classv8_1_1internal_1_1TranslatedFrame_a729f1e8f225634f1ecf4e88e93ed70ae}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1TranslatedValue}{Translated\+Value}} \& {\bfseries reference}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedFrame_a598659983fe92a1b0f6853c97582c5cc}\label{classv8_1_1internal_1_1TranslatedFrame_a598659983fe92a1b0f6853c97582c5cc}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1TranslatedValue}{Translated\+Value}} const  \& {\bfseries const\+\_\+reference}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedFrame_a689c1d2b07853f5e222509f8b0c7cd5f}\label{classv8_1_1internal_1_1TranslatedFrame_a689c1d2b07853f5e222509f8b0c7cd5f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Value\+Count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedFrame_af9c28d9058f76e6b6abbd26e8afac3e4}\label{classv8_1_1internal_1_1TranslatedFrame_af9c28d9058f76e6b6abbd26e8afac3e4}} 
+Kind {\bfseries kind} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedFrame_abd5e67086b25c91423333c411bc309ce}\label{classv8_1_1internal_1_1TranslatedFrame_abd5e67086b25c91423333c411bc309ce}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1BailoutId}{Bailout\+Id}} {\bfseries node\+\_\+id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedFrame_af0a8a2e7065f8cfca3df8be33a47d9d0}\label{classv8_1_1internal_1_1TranslatedFrame_af0a8a2e7065f8cfca3df8be33a47d9d0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ {\bfseries shared\+\_\+info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedFrame_a6dc344eba8448898fe63c2deeb8554ff}\label{classv8_1_1internal_1_1TranslatedFrame_a6dc344eba8448898fe63c2deeb8554ff}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries height} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedFrame_a01c107381c76b3aef2938c15e1b85715}\label{classv8_1_1internal_1_1TranslatedFrame_a01c107381c76b3aef2938c15e1b85715}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries return\+\_\+value\+\_\+offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedFrame_ac8e4f261cbc34bd38286acd3808d373d}\label{classv8_1_1internal_1_1TranslatedFrame_ac8e4f261cbc34bd38286acd3808d373d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries return\+\_\+value\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedFrame_a0aaab13aa56c977a7d9244351089ef59}\label{classv8_1_1internal_1_1TranslatedFrame_a0aaab13aa56c977a7d9244351089ef59}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$ {\bfseries raw\+\_\+shared\+\_\+info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedFrame_ab8fe3880b57f7f14f4ebfd907dfeb723}\label{classv8_1_1internal_1_1TranslatedFrame_ab8fe3880b57f7f14f4ebfd907dfeb723}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1TranslatedFrame_1_1iterator}{iterator}} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedFrame_a045d000f672509ec860ed19e309ec800}\label{classv8_1_1internal_1_1TranslatedFrame_a045d000f672509ec860ed19e309ec800}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1TranslatedFrame_1_1iterator}{iterator}} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedFrame_a10dbd5e39f866cfebdd40ec9afd15ec6}\label{classv8_1_1internal_1_1TranslatedFrame_a10dbd5e39f866cfebdd40ec9afd15ec6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1TranslatedValue}{reference}} {\bfseries front} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedFrame_a138abdc5b6e20dcce454438c7b05e076}\label{classv8_1_1internal_1_1TranslatedFrame_a138abdc5b6e20dcce454438c7b05e076}} 
+const\+\_\+reference {\bfseries front} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1TranslatedFrame_a93214c289745cbbfea7af56c3a474a3b}\label{classv8_1_1internal_1_1TranslatedFrame_a93214c289745cbbfea7af56c3a474a3b}} 
+class {\bfseries Translated\+State}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 155 of file deoptimizer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/deoptimizer.\+h\item 
+v8/src/deoptimizer.\+cc\end{DoxyCompactItemize}

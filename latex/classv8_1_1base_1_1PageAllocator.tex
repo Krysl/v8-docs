@@ -1,0 +1,51 @@
+\hypertarget{classv8_1_1base_1_1PageAllocator}{}\section{v8\+:\+:base\+:\+:Page\+Allocator Class Reference}
+\label{classv8_1_1base_1_1PageAllocator}\index{v8\+::base\+::\+Page\+Allocator@{v8\+::base\+::\+Page\+Allocator}}
+Inheritance diagram for v8\+:\+:base\+:\+:Page\+Allocator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1base_1_1PageAllocator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1PageAllocator_a5a7cbf435795503784e9e08c2a6c6327}\label{classv8_1_1base_1_1PageAllocator_a5a7cbf435795503784e9e08c2a6c6327}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Allocate\+Page\+Size} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1PageAllocator_a76b58541f0310ba89be271d4ec217e67}\label{classv8_1_1base_1_1PageAllocator_a76b58541f0310ba89be271d4ec217e67}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Commit\+Page\+Size} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1PageAllocator_a2eb228e04b3015c0d32f2a2dafd9b16a}\label{classv8_1_1base_1_1PageAllocator_a2eb228e04b3015c0d32f2a2dafd9b16a}} 
+void {\bfseries Set\+Random\+Mmap\+Seed} (\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} seed) override
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1PageAllocator_a3291aa6434bac10f98fd4a4e26d39f04}\label{classv8_1_1base_1_1PageAllocator_a3291aa6434bac10f98fd4a4e26d39f04}} 
+void $\ast$ {\bfseries Get\+Random\+Mmap\+Addr} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1PageAllocator_af147914bd8d4f8ecc90a8b9f6c4bfa89}\label{classv8_1_1base_1_1PageAllocator_af147914bd8d4f8ecc90a8b9f6c4bfa89}} 
+void $\ast$ {\bfseries Allocate\+Pages} (void $\ast$address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} alignment, \mbox{\hyperlink{classv8_1_1PageAllocator_a88f74b164fe97e053259f67a95758415}{Page\+Allocator\+::\+Permission}} access) override
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1PageAllocator_a8f83383c240965ca43dedf7e5f9064af}\label{classv8_1_1base_1_1PageAllocator_a8f83383c240965ca43dedf7e5f9064af}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Free\+Pages} (void $\ast$address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size) override
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1PageAllocator_abaadd3d1e886df5b18caac3cad323077}\label{classv8_1_1base_1_1PageAllocator_abaadd3d1e886df5b18caac3cad323077}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Release\+Pages} (void $\ast$address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} new\+\_\+size) override
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1PageAllocator_acf603de554e14db00ba33c9b02f36418}\label{classv8_1_1base_1_1PageAllocator_acf603de554e14db00ba33c9b02f36418}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Set\+Permissions} (void $\ast$address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classv8_1_1PageAllocator_a88f74b164fe97e053259f67a95758415}{Page\+Allocator\+::\+Permission}} access) override
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1PageAllocator_a1b645a1ba34f342365b9ec613134da56}\label{classv8_1_1base_1_1PageAllocator_a1b645a1ba34f342365b9ec613134da56}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Discard\+System\+Pages} (void $\ast$address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file page-\/allocator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/base/page-\/allocator.\+h\item 
+v8/src/base/page-\/allocator.\+cc\end{DoxyCompactItemize}

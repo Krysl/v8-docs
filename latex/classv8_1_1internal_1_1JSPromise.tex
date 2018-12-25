@@ -1,0 +1,111 @@
+\hypertarget{classv8_1_1internal_1_1JSPromise}{}\section{v8\+:\+:internal\+:\+:J\+S\+Promise Class Reference}
+\label{classv8_1_1internal_1_1JSPromise}\index{v8\+::internal\+::\+J\+S\+Promise@{v8\+::internal\+::\+J\+S\+Promise}}
+Inheritance diagram for v8\+:\+:internal\+:\+:J\+S\+Promise\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1JSPromise}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1JSPromise_1_1AsyncTaskIdField}{Async\+Task\+Id\+Field}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_a252ec1019d261fcfa2a40bca1be4327e}\label{classv8_1_1internal_1_1JSPromise_a252ec1019d261fcfa2a40bca1be4327e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries result} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_a2531eb5ce21f88b91a9c88bd6c367db4}\label{classv8_1_1internal_1_1JSPromise_a2531eb5ce21f88b91a9c88bd6c367db4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries reactions} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_a877543d075b9d57359ee55f93ed23a2a}\label{classv8_1_1internal_1_1JSPromise_a877543d075b9d57359ee55f93ed23a2a}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries async\+\_\+task\+\_\+id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_a3e63b1259fd8220468e532c42a9c71f0}\label{classv8_1_1internal_1_1JSPromise_a3e63b1259fd8220468e532c42a9c71f0}} 
+void {\bfseries set\+\_\+async\+\_\+task\+\_\+id} (\mbox{\hyperlink{classint}{int}} id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_af302d8a003b596dcd4c49eded9db17a0}\label{classv8_1_1internal_1_1JSPromise_af302d8a003b596dcd4c49eded9db17a0}} 
+\mbox{\hyperlink{classv8_1_1Promise_a0c357b9d99a634f98a5a203b0a322544}{Promise\+::\+Promise\+State}} {\bfseries status} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_aa8cf1466c4c37c6e6f1a5cc5019e34bf}\label{classv8_1_1internal_1_1JSPromise_aa8cf1466c4c37c6e6f1a5cc5019e34bf}} 
+void {\bfseries set\+\_\+status} (\mbox{\hyperlink{classv8_1_1Promise_a0c357b9d99a634f98a5a203b0a322544}{Promise\+::\+Promise\+State}} status)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_a1a8b13a132f0e5c31209c03453e4d5e0}\label{classv8_1_1internal_1_1JSPromise_a1a8b13a132f0e5c31209c03453e4d5e0}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (v8\+::\+Promise\+::k\+Pending==0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_aa20afe1b826445ca111f8729b7ce7a36}\label{classv8_1_1internal_1_1JSPromise_aa20afe1b826445ca111f8729b7ce7a36}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (v8\+::\+Promise\+::k\+Fulfilled==1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_a9a78588bad84e6392974e769e00115c0}\label{classv8_1_1internal_1_1JSPromise_a9a78588bad84e6392974e769e00115c0}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (v8\+::\+Promise\+::k\+Rejected==2)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_a06fe1942f92d4b54d2e3625027102922}\label{classv8_1_1internal_1_1JSPromise_a06fe1942f92d4b54d2e3625027102922}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Status} (\mbox{\hyperlink{classv8_1_1Promise_a0c357b9d99a634f98a5a203b0a322544}{Promise\+::\+Promise\+State}} status)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_ae661a5f908aca0c05a78af29f0a615e0}\label{classv8_1_1internal_1_1JSPromise_ae661a5f908aca0c05a78af29f0a615e0}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Fulfill} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSPromise}{J\+S\+Promise}} $>$ promise, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_afeb5e08b50e9b3d85ec5ae121b7fcd6e}\label{classv8_1_1internal_1_1JSPromise_afeb5e08b50e9b3d85ec5ae121b7fcd6e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Reject} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSPromise}{J\+S\+Promise}} $>$ promise, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ reason, \mbox{\hyperlink{classbool}{bool}} debug\+\_\+event=true)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_a3058539c56a4f4709b81604fafc03705}\label{classv8_1_1internal_1_1JSPromise_a3058539c56a4f4709b81604fafc03705}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Resolve} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSPromise}{J\+S\+Promise}} $>$ promise, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ resolution)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Size\+With\+Embedder\+Fields}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_a70025991b9592c159fc68e97c05bd493}\label{classv8_1_1internal_1_1JSPromise_a70025991b9592c159fc68e97c05bd493}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Status\+Bits} = 2
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_a85e2fd7165b96ee141a125640bc425c6}\label{classv8_1_1internal_1_1JSPromise_a85e2fd7165b96ee141a125640bc425c6}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Has\+Handler\+Bit} = 2
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_a191992ce7b6bbde36b84a0b5434f0d98}\label{classv8_1_1internal_1_1JSPromise_a191992ce7b6bbde36b84a0b5434f0d98}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Handled\+Hint\+Bit} = 3
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_a03aa05e6d33d8668bddb15fdd425dcc5}\label{classv8_1_1internal_1_1JSPromise_a03aa05e6d33d8668bddb15fdd425dcc5}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Status\+Shift} = 0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_a42fca66a242ec67c5f5e637ac0a605c1}\label{classv8_1_1internal_1_1JSPromise_a42fca66a242ec67c5f5e637ac0a605c1}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Status\+Mask} = 0x3
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 27 of file js-\/promise.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSPromise_a3305b4a032ec33a44eb077d288c067c9}\label{classv8_1_1internal_1_1JSPromise_a3305b4a032ec33a44eb077d288c067c9}} 
+\index{v8\+::internal\+::\+J\+S\+Promise@{v8\+::internal\+::\+J\+S\+Promise}!k\+Size\+With\+Embedder\+Fields@{k\+Size\+With\+Embedder\+Fields}}
+\index{k\+Size\+With\+Embedder\+Fields@{k\+Size\+With\+Embedder\+Fields}!v8\+::internal\+::\+J\+S\+Promise@{v8\+::internal\+::\+J\+S\+Promise}}
+\subsubsection{\texorpdfstring{k\+Size\+With\+Embedder\+Fields}{kSizeWithEmbedderFields}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+J\+S\+Promise\+::k\+Size\+With\+Embedder\+Fields\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kSize + v8::Promise::kEmbedderFieldCount * kEmbedderDataSlotSize
+\end{DoxyCode}
+
+
+Definition at line 80 of file js-\/promise.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/js-\/promise.\+h\item 
+v8/src/objects/js-\/promise-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

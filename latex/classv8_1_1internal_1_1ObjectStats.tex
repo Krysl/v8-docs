@@ -1,0 +1,75 @@
+\hypertarget{classv8_1_1internal_1_1ObjectStats}{}\section{v8\+:\+:internal\+:\+:Object\+Stats Class Reference}
+\label{classv8_1_1internal_1_1ObjectStats}\index{v8\+::internal\+::\+Object\+Stats@{v8\+::internal\+::\+Object\+Stats}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStats_af126327fac2128439af512ada2dca996}\label{classv8_1_1internal_1_1ObjectStats_af126327fac2128439af512ada2dca996}} 
+enum {\bfseries Virtual\+Instance\+Type} \{ {\bfseries L\+A\+S\+T\+\_\+\+V\+I\+R\+T\+U\+A\+L\+\_\+\+T\+Y\+PE} = W\+E\+A\+K\+\_\+\+N\+E\+W\+\_\+\+S\+P\+A\+C\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+T\+O\+\_\+\+C\+O\+D\+E\+\_\+\+T\+Y\+PE
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStats_a4abd736f2e6be7d5ecf917baf890774d}\label{classv8_1_1internal_1_1ObjectStats_a4abd736f2e6be7d5ecf917baf890774d}} 
+enum \{ {\bfseries F\+I\+R\+S\+T\+\_\+\+V\+I\+R\+T\+U\+A\+L\+\_\+\+T\+Y\+PE} = L\+A\+S\+T\+\_\+\+T\+Y\+PE + 1, 
+{\bfseries O\+B\+J\+E\+C\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+C\+O\+U\+NT} = F\+I\+R\+S\+T\+\_\+\+V\+I\+R\+T\+U\+A\+L\+\_\+\+T\+Y\+PE + L\+A\+S\+T\+\_\+\+V\+I\+R\+T\+U\+A\+L\+\_\+\+T\+Y\+PE + 1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStats_a78adee874f8f1284f4caa2ac11aefb60}\label{classv8_1_1internal_1_1ObjectStats_a78adee874f8f1284f4caa2ac11aefb60}} 
+{\bfseries Object\+Stats} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStats_ab745f971849d58bd37b0a0d956e5564e}\label{classv8_1_1internal_1_1ObjectStats_ab745f971849d58bd37b0a0d956e5564e}} 
+void {\bfseries Clear\+Object\+Stats} (\mbox{\hyperlink{classbool}{bool}} clear\+\_\+last\+\_\+time\+\_\+stats=false)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStats_a3974c7f19a91772161542fe0466ecaca}\label{classv8_1_1internal_1_1ObjectStats_a3974c7f19a91772161542fe0466ecaca}} 
+void {\bfseries Print\+J\+S\+ON} (const \mbox{\hyperlink{classchar}{char}} $\ast$key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStats_a5a31a1d5a9c88c1a26071ab8b65d47c1}\label{classv8_1_1internal_1_1ObjectStats_a5a31a1d5a9c88c1a26071ab8b65d47c1}} 
+void {\bfseries Dump} (std\+::stringstream \&stream)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStats_a14203f3ab5defd5efc18d334430cdc66}\label{classv8_1_1internal_1_1ObjectStats_a14203f3ab5defd5efc18d334430cdc66}} 
+void {\bfseries Checkpoint\+Object\+Stats} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStats_a230437ed3e9bf4a15dc6c42f96386f33}\label{classv8_1_1internal_1_1ObjectStats_a230437ed3e9bf4a15dc6c42f96386f33}} 
+void {\bfseries Record\+Object\+Stats} (Instance\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStats_a254f99b96e017b8e3f394cdee70bd9e9}\label{classv8_1_1internal_1_1ObjectStats_a254f99b96e017b8e3f394cdee70bd9e9}} 
+void {\bfseries Record\+Virtual\+Object\+Stats} (Virtual\+Instance\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} over\+\_\+allocated)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStats_a5ec04aaae37dc25b78fb2d31c304a6f4}\label{classv8_1_1internal_1_1ObjectStats_a5ec04aaae37dc25b78fb2d31c304a6f4}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries object\+\_\+count\+\_\+last\+\_\+gc} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStats_a6deab872b4cb2141896cf6aa7bd534ed}\label{classv8_1_1internal_1_1ObjectStats_a6deab872b4cb2141896cf6aa7bd534ed}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries object\+\_\+size\+\_\+last\+\_\+gc} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStats_a0247bdf90938829a43fe8651d6728b8b}\label{classv8_1_1internal_1_1ObjectStats_a0247bdf90938829a43fe8651d6728b8b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStats_a1f41356a8c70a8d667afece96c3dc6e4}\label{classv8_1_1internal_1_1ObjectStats_a1f41356a8c70a8d667afece96c3dc6e4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$ {\bfseries heap} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStats_aba9b0289a5eb470a08ef7d9d1270941a}\label{classv8_1_1internal_1_1ObjectStats_aba9b0289a5eb470a08ef7d9d1270941a}} 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+No\+Over\+Allocation} = 0
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectStats_adf0f463317c85def21589c13485e0170}\label{classv8_1_1internal_1_1ObjectStats_adf0f463317c85def21589c13485e0170}} 
+class {\bfseries Object\+Stats\+Collector\+Impl}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 81 of file object-\/stats.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/object-\/stats.\+h\item 
+v8/src/heap/object-\/stats.\+cc\end{DoxyCompactItemize}

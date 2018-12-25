@@ -1,0 +1,50 @@
+\hypertarget{classv8_1_1internal_1_1StringToBigIntHelper}{}\section{v8\+:\+:internal\+:\+:String\+To\+Big\+Int\+Helper Class Reference}
+\label{classv8_1_1internal_1_1StringToBigIntHelper}\index{v8\+::internal\+::\+String\+To\+Big\+Int\+Helper@{v8\+::internal\+::\+String\+To\+Big\+Int\+Helper}}
+Inheritance diagram for v8\+:\+:internal\+:\+:String\+To\+Big\+Int\+Helper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1StringToBigIntHelper}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToBigIntHelper_ac785084588fb52aeae2846fcd1246ddc}\label{classv8_1_1internal_1_1StringToBigIntHelper_ac785084588fb52aeae2846fcd1246ddc}} 
+enum {\bfseries Behavior} \{ {\bfseries k\+String\+To\+Big\+Int}, 
+{\bfseries k\+Literal}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToBigIntHelper_aaba39837b65cb47512ebf998bb5fc500}\label{classv8_1_1internal_1_1StringToBigIntHelper_aaba39837b65cb47512ebf998bb5fc500}} 
+{\bfseries String\+To\+Big\+Int\+Helper} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ string)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToBigIntHelper_a756e626e313da159705fd88b967b633c}\label{classv8_1_1internal_1_1StringToBigIntHelper_a756e626e313da159705fd88b967b633c}} 
+{\bfseries String\+To\+Big\+Int\+Helper} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const uint8\+\_\+t $\ast$string, \mbox{\hyperlink{classint}{int}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToBigIntHelper_a9645b45e828e3d3e22cb8daef396733e}\label{classv8_1_1internal_1_1StringToBigIntHelper_a9645b45e828e3d3e22cb8daef396733e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BigInt}{Big\+Int}} $>$ {\bfseries Get\+Result} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToBigIntHelper_a97c283cb9d5cbc74817aae54afc445cd}\label{classv8_1_1internal_1_1StringToBigIntHelper_a97c283cb9d5cbc74817aae54afc445cd}} 
+void {\bfseries Allocate\+Result} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringToBigIntHelper_ab1e3298399adbc88cc9a16f016134d99}\label{classv8_1_1internal_1_1StringToBigIntHelper_ab1e3298399adbc88cc9a16f016134d99}} 
+void {\bfseries Result\+Multiply\+Add} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} multiplier, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} part) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 831 of file conversions.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/conversions.\+cc\end{DoxyCompactItemize}

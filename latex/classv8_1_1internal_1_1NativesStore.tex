@@ -1,0 +1,43 @@
+\hypertarget{classv8_1_1internal_1_1NativesStore}{}\section{v8\+:\+:internal\+:\+:Natives\+Store Class Reference}
+\label{classv8_1_1internal_1_1NativesStore}\index{v8\+::internal\+::\+Natives\+Store@{v8\+::internal\+::\+Natives\+Store}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativesStore_aa83dd7318798926fe7e06e933e9d10a3}\label{classv8_1_1internal_1_1NativesStore_aa83dd7318798926fe7e06e933e9d10a3}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Builtins\+Count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativesStore_ac287c2edbd1fe89ef5754426c159bbfa}\label{classv8_1_1internal_1_1NativesStore_ac287c2edbd1fe89ef5754426c159bbfa}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Debugger\+Count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativesStore_a091b840bae3d0c80b95d05d3db7acd82}\label{classv8_1_1internal_1_1NativesStore_a091b840bae3d0c80b95d05d3db7acd82}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const \mbox{\hyperlink{classchar}{char}} $>$ {\bfseries Get\+Script\+Source} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativesStore_a1bf5870025d691e06e95e87b0df35277}\label{classv8_1_1internal_1_1NativesStore_a1bf5870025d691e06e95e87b0df35277}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const \mbox{\hyperlink{classchar}{char}} $>$ {\bfseries Get\+Script\+Name} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativesStore_a8c17f3c2d1ff5028c4387cf91c4cad75}\label{classv8_1_1internal_1_1NativesStore_a8c17f3c2d1ff5028c4387cf91c4cad75}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Index} (const \mbox{\hyperlink{classchar}{char}} $\ast$id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativesStore_a2dd14f8739e2eed27dde73c7a792c4bb}\label{classv8_1_1internal_1_1NativesStore_a2dd14f8739e2eed27dde73c7a792c4bb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const \mbox{\hyperlink{classchar}{char}} $>$ {\bfseries Get\+Scripts\+Source} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativesStore_a66dd253bb883f30455bf975b88f5b961}\label{classv8_1_1internal_1_1NativesStore_a66dd253bb883f30455bf975b88f5b961}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1NativesStore}{Natives\+Store}} $\ast$ {\bfseries Make\+From\+Scripts\+Source} (\mbox{\hyperlink{classv8_1_1internal_1_1SnapshotByteSource}{Snapshot\+Byte\+Source}} $\ast$source)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classv8_1_1internal_1_1NativesStore}{Natives\+Store}} stores the \textquotesingle{}native\textquotesingle{} (builtin) JS libraries.
+
+\mbox{\hyperlink{classv8_1_1internal_1_1NativesStore}{Natives\+Store}} needs to be initialized before using \mbox{\hyperlink{classv8_1_1internal_1_1V8}{V8}}, usually by the embedder calling v8\+::\+Set\+Natives\+Data\+Blob, which calls Set\+Natives\+From\+File below. 
+
+Definition at line 27 of file natives-\/external.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/snapshot/natives-\/external.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,57 @@
+\hypertarget{classv8_1_1internal_1_1DeserializerAllocator}{}\section{v8\+:\+:internal\+:\+:Deserializer\+Allocator Class Reference}
+\label{classv8_1_1internal_1_1DeserializerAllocator}\index{v8\+::internal\+::\+Deserializer\+Allocator@{v8\+::internal\+::\+Deserializer\+Allocator}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeserializerAllocator_a7739e3512ef1060784744cb370541c97}\label{classv8_1_1internal_1_1DeserializerAllocator_a7739e3512ef1060784744cb370541c97}} 
+{\bfseries Deserializer\+Allocator} (\mbox{\hyperlink{classv8_1_1internal_1_1Deserializer}{Deserializer}} $\ast$deserializer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeserializerAllocator_a8fa8008c114bb60bacd00494fd6adf48}\label{classv8_1_1internal_1_1DeserializerAllocator_a8fa8008c114bb60bacd00494fd6adf48}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Allocate} (Allocation\+Space space, \mbox{\hyperlink{classint}{int}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeserializerAllocator_aa29c087b152769ff5ac2e2409ecb9a81}\label{classv8_1_1internal_1_1DeserializerAllocator_aa29c087b152769ff5ac2e2409ecb9a81}} 
+void {\bfseries Move\+To\+Next\+Chunk} (Allocation\+Space space)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeserializerAllocator_aace229d5af1ed5da5b7383be44b30af1}\label{classv8_1_1internal_1_1DeserializerAllocator_aace229d5af1ed5da5b7383be44b30af1}} 
+void {\bfseries Set\+Alignment} (Allocation\+Alignment alignment)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeserializerAllocator_a98463d751fd92fce440ef84b2427176c}\label{classv8_1_1internal_1_1DeserializerAllocator_a98463d751fd92fce440ef84b2427176c}} 
+void {\bfseries set\+\_\+next\+\_\+reference\+\_\+is\+\_\+weak} (\mbox{\hyperlink{classbool}{bool}} next\+\_\+reference\+\_\+is\+\_\+weak)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeserializerAllocator_a2b30ddcad0e99bfe02aee613629154fd}\label{classv8_1_1internal_1_1DeserializerAllocator_a2b30ddcad0e99bfe02aee613629154fd}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Get\+And\+Clear\+Next\+Reference\+Is\+Weak} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeserializerAllocator_ac3f1da3872bc524c054867759d3d6f63}\label{classv8_1_1internal_1_1DeserializerAllocator_ac3f1da3872bc524c054867759d3d6f63}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$ {\bfseries Get\+Map} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeserializerAllocator_a959047e965b35324b8071eb4d9e7dd94}\label{classv8_1_1internal_1_1DeserializerAllocator_a959047e965b35324b8071eb4d9e7dd94}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$ {\bfseries Get\+Large\+Object} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeserializerAllocator_a3b8d1ff711d660b380f666c85ae9684f}\label{classv8_1_1internal_1_1DeserializerAllocator_a3b8d1ff711d660b380f666c85ae9684f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$ {\bfseries Get\+Object} (Allocation\+Space space, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} chunk\+\_\+index, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} chunk\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeserializerAllocator_af321b71722edaf0dedc109c67b41e383}\label{classv8_1_1internal_1_1DeserializerAllocator_af321b71722edaf0dedc109c67b41e383}} 
+void {\bfseries Decode\+Reservation} (const std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SerializedData_1_1Reservation}{Serialized\+Data\+::\+Reservation}} $>$ \&res)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeserializerAllocator_ab810742fd6d1907dc16216ba2c8fbb03}\label{classv8_1_1internal_1_1DeserializerAllocator_ab810742fd6d1907dc16216ba2c8fbb03}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Reserve\+Space} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeserializerAllocator_a89e39cc9bcf64ad9bdf7bffef1eb833b}\label{classv8_1_1internal_1_1DeserializerAllocator_a89e39cc9bcf64ad9bdf7bffef1eb833b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Reservations\+Are\+Fully\+Used} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DeserializerAllocator_ab40a6a9e188312eae38f387a8ad2f674}\label{classv8_1_1internal_1_1DeserializerAllocator_ab40a6a9e188312eae38f387a8ad2f674}} 
+void {\bfseries Register\+Deserialized\+Objects\+For\+Black\+Allocation} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file deserializer-\/allocator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/snapshot/deserializer-\/allocator.\+h\item 
+v8/src/snapshot/deserializer-\/allocator.\+cc\end{DoxyCompactItemize}

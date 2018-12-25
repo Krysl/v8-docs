@@ -1,0 +1,63 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:S390\+Operand\+Generator Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator}\index{v8\+::internal\+::compiler\+::\+S390\+Operand\+Generator@{v8\+::internal\+::compiler\+::\+S390\+Operand\+Generator}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:S390\+Operand\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_ab81fc70b6c4c9a20c26349ba3c5642c6}\label{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_ab81fc70b6c4c9a20c26349ba3c5642c6}} 
+{\bfseries S390\+Operand\+Generator} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionSelector}{Instruction\+Selector}} $\ast$selector)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_afe5d99ec35d1c8501f399aab12962831}\label{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_afe5d99ec35d1c8501f399aab12962831}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} {\bfseries Use\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{Operand\+Modes}} mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_a03342a704815d678248fd8e0d6f0ecd9}\label{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_a03342a704815d678248fd8e0d6f0ecd9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} {\bfseries Use\+Any\+Except\+Immediate} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_a1158c5914b80770382a2cfda45b02d12}\label{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_a1158c5914b80770382a2cfda45b02d12}} 
+\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} {\bfseries Get\+Immediate} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_ab37a116a21759010c0efca98dda98555}\label{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_ab37a116a21759010c0efca98dda98555}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Be\+Immediate} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{Operand\+Modes}} mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_ad62802dddf43a2a3f7748280278af891}\label{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_ad62802dddf43a2a3f7748280278af891}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Be\+Immediate} (\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} value, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{Operand\+Modes}} mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_a7006d7da579bb9502373a61182aebdde}\label{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_a7006d7da579bb9502373a61182aebdde}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Be\+Memory\+Operand} (Instruction\+Code opcode, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$user, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$input, \mbox{\hyperlink{classint}{int}} effect\+\_\+level)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_ae711bccfcf88030cef2d2a2c52739f5f}\label{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_ae711bccfcf88030cef2d2a2c52739f5f}} 
+Addressing\+Mode {\bfseries Generate\+Memory\+Operand\+Inputs} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$base, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$displacement, Displacement\+Mode displacement\+\_\+mode, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} inputs\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} $\ast$input\+\_\+count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_a64e89d20804e77198d2ff1d47100337e}\label{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_a64e89d20804e77198d2ff1d47100337e}} 
+Addressing\+Mode {\bfseries Get\+Effective\+Address\+Memory\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$operand, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} inputs\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} $\ast$input\+\_\+count, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{Operand\+Modes}} immediate\+\_\+mode=Operand\+Mode\+::k\+Int20\+Imm)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_a50b866061ae7298013c3709d8f178f47}\label{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_a50b866061ae7298013c3709d8f178f47}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Be\+Better\+Left\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_ac50cd4e0133d3cc15d9efa59ac321abc}\label{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_ac50cd4e0133d3cc15d9efa59ac321abc}} 
+Machine\+Representation {\bfseries Get\+Representation} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_a5c33aa9ec4904881b053410cbfe436a8}\label{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_a5c33aa9ec4904881b053410cbfe436a8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is64\+Bit\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_a99d5c4373946b831df6acbe1e676a17e}\label{classv8_1_1internal_1_1compiler_1_1S390OperandGenerator_a99d5c4373946b831df6acbe1e676a17e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} {\bfseries Use\+Register\+Or\+Stack\+Pointer} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 83 of file instruction-\/selector-\/s390.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/backend/s390/instruction-\/selector-\/s390.\+cc\end{DoxyCompactItemize}

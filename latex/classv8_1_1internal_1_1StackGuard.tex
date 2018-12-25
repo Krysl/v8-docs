@@ -1,0 +1,88 @@
+\hypertarget{classv8_1_1internal_1_1StackGuard}{}\section{v8\+:\+:internal\+:\+:Stack\+Guard Class Reference}
+\label{classv8_1_1internal_1_1StackGuard}\index{v8\+::internal\+::\+Stack\+Guard@{v8\+::internal\+::\+Stack\+Guard}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_ac114a7605ed03e1dccfa3b58ab575a37}\label{classv8_1_1internal_1_1StackGuard_ac114a7605ed03e1dccfa3b58ab575a37}} 
+enum {\bfseries Interrupt\+Flag} \{ {\bfseries A\+L\+L\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+TS} = I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+L\+I\+ST(V) 0
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_ada03d947a92a15e23315f1f3f15e3e9d}\label{classv8_1_1internal_1_1StackGuard_ada03d947a92a15e23315f1f3f15e3e9d}} 
+{\bfseries Stack\+Guard} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_add078da8ff9bcd4399cab789d7695c1e}\label{classv8_1_1internal_1_1StackGuard_add078da8ff9bcd4399cab789d7695c1e}} 
+void {\bfseries Set\+Stack\+Limit} (\mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} limit)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_a53aa0f69625811650130f267817608d1}\label{classv8_1_1internal_1_1StackGuard_a53aa0f69625811650130f267817608d1}} 
+void {\bfseries Adjust\+Stack\+Limit\+For\+Simulator} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_acb831b60589eedfbe0087a9cb4260efe}\label{classv8_1_1internal_1_1StackGuard_acb831b60589eedfbe0087a9cb4260efe}} 
+\mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Archive\+Stack\+Guard} (\mbox{\hyperlink{classchar}{char}} $\ast$to)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_ae5e81ec252c44746fe9049c6c76afcbb}\label{classv8_1_1internal_1_1StackGuard_ae5e81ec252c44746fe9049c6c76afcbb}} 
+\mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Restore\+Stack\+Guard} (\mbox{\hyperlink{classchar}{char}} $\ast$from)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_af3c0e7861b527d914570aacda023acff}\label{classv8_1_1internal_1_1StackGuard_af3c0e7861b527d914570aacda023acff}} 
+void {\bfseries Free\+Thread\+Resources} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_a3738bc365765124e5a3ee6e7fe52be7b}\label{classv8_1_1internal_1_1StackGuard_a3738bc365765124e5a3ee6e7fe52be7b}} 
+void {\bfseries Init\+Thread} (const \mbox{\hyperlink{classv8_1_1internal_1_1ExecutionAccess}{Execution\+Access}} \&lock)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_aaaed1b1e86d64b224773098285b65535}\label{classv8_1_1internal_1_1StackGuard_aaaed1b1e86d64b224773098285b65535}} 
+void {\bfseries Clear\+Thread} (const \mbox{\hyperlink{classv8_1_1internal_1_1ExecutionAccess}{Execution\+Access}} \&lock)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_a3fc7c4f7b03f04254e545670a0708e9b}\label{classv8_1_1internal_1_1StackGuard_a3fc7c4f7b03f04254e545670a0708e9b}} 
+\mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} {\bfseries climit} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_a4bea1f2e4968f6610c790bb459caa506}\label{classv8_1_1internal_1_1StackGuard_a4bea1f2e4968f6610c790bb459caa506}} 
+\mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} {\bfseries jslimit} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_a42e4c0136070320961e60b3e648b1776}\label{classv8_1_1internal_1_1StackGuard_a42e4c0136070320961e60b3e648b1776}} 
+\mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} {\bfseries real\+\_\+climit} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_a8e958b6a54c5b3544f348b1b0ce15a89}\label{classv8_1_1internal_1_1StackGuard_a8e958b6a54c5b3544f348b1b0ce15a89}} 
+\mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} {\bfseries real\+\_\+jslimit} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_a64bf18f10b1fef7d8191e4f8a2ab2bc1}\label{classv8_1_1internal_1_1StackGuard_a64bf18f10b1fef7d8191e4f8a2ab2bc1}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries address\+\_\+of\+\_\+jslimit} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_ac386b01202223f24137fb4787ac46e69}\label{classv8_1_1internal_1_1StackGuard_ac386b01202223f24137fb4787ac46e69}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries address\+\_\+of\+\_\+real\+\_\+jslimit} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_a7b36217b84abfba7245753fdc1770fdd}\label{classv8_1_1internal_1_1StackGuard_a7b36217b84abfba7245753fdc1770fdd}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Handle\+Interrupts} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_aca52d15703dd748210cc05932ad6ab8f}\label{classv8_1_1internal_1_1StackGuard_aca52d15703dd748210cc05932ad6ab8f}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Archive\+Space\+Per\+Thread} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_aba4f0964bdacf2bbf62cf876e5d28d0a}\label{classv8_1_1internal_1_1StackGuard_aba4f0964bdacf2bbf62cf876e5d28d0a}} 
+class {\bfseries Isolate}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_ad886bb634836d54ec18f36a04e2a4a3c}\label{classv8_1_1internal_1_1StackGuard_ad886bb634836d54ec18f36a04e2a4a3c}} 
+class {\bfseries Stack\+Limit\+Check}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackGuard_ab6a9f22bbd76a6d0783be0f113b96afc}\label{classv8_1_1internal_1_1StackGuard_ab6a9f22bbd76a6d0783be0f113b96afc}} 
+class {\bfseries Interrupts\+Scope}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 68 of file execution.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/execution.\+h\item 
+v8/src/execution.\+cc\end{DoxyCompactItemize}

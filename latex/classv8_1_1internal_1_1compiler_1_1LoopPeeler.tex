@@ -1,0 +1,42 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1LoopPeeler}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Loop\+Peeler Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1LoopPeeler}\index{v8\+::internal\+::compiler\+::\+Loop\+Peeler@{v8\+::internal\+::compiler\+::\+Loop\+Peeler}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopPeeler_a8d0824afe14581c9c937fc3eb34413dd}\label{classv8_1_1internal_1_1compiler_1_1LoopPeeler_a8d0824afe14581c9c937fc3eb34413dd}} 
+{\bfseries Loop\+Peeler} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Graph}{Graph}} $\ast$graph, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CommonOperatorBuilder}{Common\+Operator\+Builder}} $\ast$common, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LoopTree}{Loop\+Tree}} $\ast$loop\+\_\+tree, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$tmp\+\_\+zone, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SourcePositionTable}{Source\+Position\+Table}} $\ast$source\+\_\+positions, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1NodeOriginTable}{Node\+Origin\+Table}} $\ast$node\+\_\+origins)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopPeeler_ac74075b03e5550934fda63e39d5ecb81}\label{classv8_1_1internal_1_1compiler_1_1LoopPeeler_ac74075b03e5550934fda63e39d5ecb81}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Peel} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LoopTree_1_1Loop}{Loop\+Tree\+::\+Loop}} $\ast$loop)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopPeeler_a58c298f7d181a6788674cf552cf5b08d}\label{classv8_1_1internal_1_1compiler_1_1LoopPeeler_a58c298f7d181a6788674cf552cf5b08d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1PeeledIteration}{Peeled\+Iteration}} $\ast$ {\bfseries Peel} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LoopTree_1_1Loop}{Loop\+Tree\+::\+Loop}} $\ast$loop)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopPeeler_acd13fd3091b653aee81ee95f160b5e24}\label{classv8_1_1internal_1_1compiler_1_1LoopPeeler_acd13fd3091b653aee81ee95f160b5e24}} 
+void {\bfseries Peel\+Inner\+Loops\+Of\+Tree} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopPeeler_a18a65d8c106e257295a0025f9746888e}\label{classv8_1_1internal_1_1compiler_1_1LoopPeeler_a18a65d8c106e257295a0025f9746888e}} 
+static void {\bfseries Eliminate\+Loop\+Exits} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Graph}{Graph}} $\ast$graph, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$tmp\+\_\+zone)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopPeeler_ab61bb8dce48cdd81ffcf24a008a0cb6c}\label{classv8_1_1internal_1_1compiler_1_1LoopPeeler_ab61bb8dce48cdd81ffcf24a008a0cb6c}} 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Max\+Peeled\+Nodes} = 1000
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 35 of file loop-\/peeling.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/loop-\/peeling.\+h\item 
+v8/src/compiler/loop-\/peeling.\+cc\end{DoxyCompactItemize}

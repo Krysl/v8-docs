@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['takeheapsnapshot',['TakeHeapSnapshot',['../classv8_1_1HeapProfiler.html#a9df0b9a5dedcfc0ac796724cca36e7d7',1,'v8::HeapProfiler']]],
+  ['takeheapsnapshot',['TakeHeapSnapshot',['../classv8_1_1HeapProfiler.html#a0e6e52dd0a3dd4f5702294b87a30de3d',1,'v8::HeapProfiler']]],
   ['this',['This',['../classv8_1_1FunctionCallbackInfo.html#a4ddfd6d21732dff1c4c55d5441a8a5ca',1,'v8::FunctionCallbackInfo::This()'],['../classv8_1_1PropertyCallbackInfo.html#af46300339d2f31d8dc84a06d74ed6c3c',1,'v8::PropertyCallbackInfo::This()']]],
-  ['throwdatacloneerror',['ThrowDataCloneError',['../classv8_1_1ValueSerializer_1_1Delegate.html#a3681bfcd9a6c45f0b12bd7a8bdf34d85',1,'v8::ValueSerializer::Delegate']]],
+  ['throwdatacloneerror',['ThrowDataCloneError',['../classv8_1_1ValueSerializer_1_1Delegate.html#a3681bfcd9a6c45f0b12bd7a8bdf34d85',1,'v8::ValueSerializer::Delegate::ThrowDataCloneError()'],['../classv8_1_1Serializer.html#a97707713e9bfe28e117bd15d40e3afc6',1,'v8::Serializer::ThrowDataCloneError()']]],
   ['to',['To',['../classv8_1_1Maybe.html#a7d1d77e5fd55f125fb4c41db1335bd09',1,'v8::Maybe']]],
-  ['toarrayindex',['ToArrayIndex',['../classv8_1_1Value.html#a3d7597e5cf475e73f127e2591d46bdf4',1,'v8::Value']]],
+  ['toarrayindex',['ToArrayIndex',['../classv8_1_1Value.html#a75222c1f1452036a5aab9faadbbc9136',1,'v8::Value']]],
   ['tochecked',['ToChecked',['../classv8_1_1Maybe.html#abf2c0453c947f8c03f8e24b94887d33b',1,'v8::Maybe']]],
   ['tolocal',['ToLocal',['../classv8_1_1MaybeLocal.html#aa12fc83adccbf02f502a2aaeed9c32ab',1,'v8::MaybeLocal']]],
   ['tolocalchecked',['ToLocalChecked',['../classv8_1_1MaybeLocal.html#a9b2c9d50fca5897e3a03fd4c25d12415',1,'v8::MaybeLocal']]],

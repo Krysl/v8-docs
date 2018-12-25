@@ -1,0 +1,42 @@
+\hypertarget{structv8_1_1internal_1_1compiler_1_1is__subtype_3_01UnionT_3_01T1_00_01T2_01_4_00_01UnionT_3_01U1_00_01U2_01_4_01_4}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:is\+\_\+subtype$<$ UnionT$<$ T1, T2 $>$, UnionT$<$ U1, U2 $>$ $>$ Struct Template Reference}
+\label{structv8_1_1internal_1_1compiler_1_1is__subtype_3_01UnionT_3_01T1_00_01T2_01_4_00_01UnionT_3_01U1_00_01U2_01_4_01_4}\index{v8\+::internal\+::compiler\+::is\+\_\+subtype$<$ Union\+T$<$ T1, T2 $>$, Union\+T$<$ U1, U2 $>$ $>$@{v8\+::internal\+::compiler\+::is\+\_\+subtype$<$ Union\+T$<$ T1, T2 $>$, Union\+T$<$ U1, U2 $>$ $>$}}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{classbool}{bool}} {\bfseries value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T1, class T2, class U1, class U2$>$\newline
+struct v8\+::internal\+::compiler\+::is\+\_\+subtype$<$ Union\+T$<$ T1, T2 $>$, Union\+T$<$ U1, U2 $>$ $>$}
+
+
+
+Definition at line 382 of file code-\/assembler.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structv8_1_1internal_1_1compiler_1_1is__subtype_3_01UnionT_3_01T1_00_01T2_01_4_00_01UnionT_3_01U1_00_01U2_01_4_01_4_aeda63a84892626c5ad6f532b452f0ad5}\label{structv8_1_1internal_1_1compiler_1_1is__subtype_3_01UnionT_3_01T1_00_01T2_01_4_00_01UnionT_3_01U1_00_01U2_01_4_01_4_aeda63a84892626c5ad6f532b452f0ad5}} 
+\index{v8\+::internal\+::compiler\+::is\+\_\+subtype$<$ Union\+T$<$ T1, T2 $>$, Union\+T$<$ U1, U2 $>$ $>$@{v8\+::internal\+::compiler\+::is\+\_\+subtype$<$ Union\+T$<$ T1, T2 $>$, Union\+T$<$ U1, U2 $>$ $>$}!value@{value}}
+\index{value@{value}!v8\+::internal\+::compiler\+::is\+\_\+subtype$<$ Union\+T$<$ T1, T2 $>$, Union\+T$<$ U1, U2 $>$ $>$@{v8\+::internal\+::compiler\+::is\+\_\+subtype$<$ Union\+T$<$ T1, T2 $>$, Union\+T$<$ U1, U2 $>$ $>$}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily template$<$class T1 , class T2 , class U1 , class U2 $>$ \\
+const \mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{structv8_1_1internal_1_1compiler_1_1is__subtype}{v8\+::internal\+::compiler\+::is\+\_\+subtype}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1UnionT}{UnionT}}$<$ T1, T2 $>$, \mbox{\hyperlink{structv8_1_1internal_1_1UnionT}{UnionT}}$<$ U1, U2 $>$ $>$\+::value\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      (is\_subtype<T1, U1>::value || is\_subtype<T1, U2>::value) &&
+      (is\_subtype<T2, U1>::value || is\_subtype<T2, U2>::value)
+\end{DoxyCode}
+
+
+Definition at line 383 of file code-\/assembler.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/code-\/assembler.\+h\end{DoxyCompactItemize}

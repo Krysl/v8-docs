@@ -1,0 +1,105 @@
+\hypertarget{classv8_1_1sampler_1_1Sampler}{}\section{v8\+:\+:sampler\+:\+:Sampler Class Reference}
+\label{classv8_1_1sampler_1_1Sampler}\index{v8\+::sampler\+::\+Sampler@{v8\+::sampler\+::\+Sampler}}
+Inheritance diagram for v8\+:\+:sampler\+:\+:Sampler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1sampler_1_1Sampler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_a5b5eec9d67a2d670bd5b153100f18b80}\label{classv8_1_1sampler_1_1Sampler_a5b5eec9d67a2d670bd5b153100f18b80}} 
+{\bfseries Sampler} (Isolate $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_a6c4f2fb7b802fbc72e147e8fe9993dd1}\label{classv8_1_1sampler_1_1Sampler_a6c4f2fb7b802fbc72e147e8fe9993dd1}} 
+Isolate $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_a8956c1936909b7e4ffffd02834185b44}\label{classv8_1_1sampler_1_1Sampler_a8956c1936909b7e4ffffd02834185b44}} 
+virtual void {\bfseries Sample\+Stack} (const \mbox{\hyperlink{structv8_1_1RegisterState}{v8\+::\+Register\+State}} \&regs)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_aae6b602b48bcc6ee5bae419c4294f277}\label{classv8_1_1sampler_1_1Sampler_aae6b602b48bcc6ee5bae419c4294f277}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_ae1993183cd62ec3b809a818096a3a2c0}\label{classv8_1_1sampler_1_1Sampler_ae1993183cd62ec3b809a818096a3a2c0}} 
+void {\bfseries Stop} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_a810bb5518d9287a3f9a07de7a9011a5c}\label{classv8_1_1sampler_1_1Sampler_a810bb5518d9287a3f9a07de7a9011a5c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Profiling} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_a635aeffd4484d8f939d24aba13d2f556}\label{classv8_1_1sampler_1_1Sampler_a635aeffd4484d8f939d24aba13d2f556}} 
+void {\bfseries Increase\+Profiling\+Depth} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_a55392c6d365c3340eba4c42b39889d20}\label{classv8_1_1sampler_1_1Sampler_a55392c6d365c3340eba4c42b39889d20}} 
+void {\bfseries Decrease\+Profiling\+Depth} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_a1a60129bc323a452d01150e62e6d50a9}\label{classv8_1_1sampler_1_1Sampler_a1a60129bc323a452d01150e62e6d50a9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Active} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_a890c41fccfd611ba3c165b3e49b80328}\label{classv8_1_1sampler_1_1Sampler_a890c41fccfd611ba3c165b3e49b80328}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Registered} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_a4cf44fdeafb9c58d73974fcabdac3925}\label{classv8_1_1sampler_1_1Sampler_a4cf44fdeafb9c58d73974fcabdac3925}} 
+void {\bfseries Unregister\+If\+Registered} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_af3006f5fb21631a2c5981df714c59c4c}\label{classv8_1_1sampler_1_1Sampler_af3006f5fb21631a2c5981df714c59c4c}} 
+void {\bfseries Do\+Sample} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_aaa36416849ee6f752b102f1d1ef8506b}\label{classv8_1_1sampler_1_1Sampler_aaa36416849ee6f752b102f1d1ef8506b}} 
+void {\bfseries Set\+Has\+Processing\+Thread} (\mbox{\hyperlink{classbool}{bool}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_a3df03ac293344f3f698e7e581523d49d}\label{classv8_1_1sampler_1_1Sampler_a3df03ac293344f3f698e7e581523d49d}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries js\+\_\+sample\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_ac8e4a7e1e2d7f2052cda548899033d54}\label{classv8_1_1sampler_1_1Sampler_ac8e4a7e1e2d7f2052cda548899033d54}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries external\+\_\+sample\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_ae27a5dd0e2a6dee2a1af0d7e4c4bc7c6}\label{classv8_1_1sampler_1_1Sampler_ae27a5dd0e2a6dee2a1af0d7e4c4bc7c6}} 
+void {\bfseries Start\+Counting\+Samples} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_aba05ce70057bd18c47784f42eb311058}\label{classv8_1_1sampler_1_1Sampler_aba05ce70057bd18c47784f42eb311058}} 
+Platform\+Data $\ast$ {\bfseries platform\+\_\+data} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_a3d9a03d2b67ddadbfdc7e7210cd1d7c8}\label{classv8_1_1sampler_1_1Sampler_a3d9a03d2b67ddadbfdc7e7210cd1d7c8}} 
+static void {\bfseries Set\+Up} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_a1c17186db2e48cd62c0824aa2c87b551}\label{classv8_1_1sampler_1_1Sampler_a1c17186db2e48cd62c0824aa2c87b551}} 
+static void {\bfseries Tear\+Down} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_ad2852f03473f07a6d90a189aef0a96e9}\label{classv8_1_1sampler_1_1Sampler_ad2852f03473f07a6d90a189aef0a96e9}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Frames\+Count\+Log2} = 8
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_a160867f43b86d3029b231734cd432f99}\label{classv8_1_1sampler_1_1Sampler_a160867f43b86d3029b231734cd432f99}} 
+static const \mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries k\+Max\+Frames\+Count} = (1u $<$$<$ k\+Max\+Frames\+Count\+Log2) -\/ 1
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_a9c32fc8d9c423d4f2d4232de0378cd6e}\label{classv8_1_1sampler_1_1Sampler_a9c32fc8d9c423d4f2d4232de0378cd6e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+counting\+\_\+samples\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_ac9ce4fdf7ce265479fdefa9dad30593c}\label{classv8_1_1sampler_1_1Sampler_ac9ce4fdf7ce265479fdefa9dad30593c}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries js\+\_\+sample\+\_\+count\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1sampler_1_1Sampler_adc4f82663ce04a5c29b8510db93b7198}\label{classv8_1_1sampler_1_1Sampler_adc4f82663ce04a5c29b8510db93b7198}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries external\+\_\+sample\+\_\+count\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 23 of file sampler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/libsampler/sampler.\+h\item 
+v8/src/libsampler/sampler.\+cc\end{DoxyCompactItemize}

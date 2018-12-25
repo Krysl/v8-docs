@@ -1,0 +1,120 @@
+\hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler}{}\section{v8\+:\+:internal\+:\+:Collections\+Builtins\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler}\index{v8\+::internal\+::\+Collections\+Builtins\+Assembler@{v8\+::internal\+::\+Collections\+Builtins\+Assembler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Collections\+Builtins\+Assembler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.998662cm]{classv8_1_1internal_1_1CollectionsBuiltinsAssembler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_acba39aadcba8c5e47b38e9c195b07459}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_acba39aadcba8c5e47b38e9c195b07459}} 
+{\bfseries Collections\+Builtins\+Assembler} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerState}{compiler\+::\+Code\+Assembler\+State}} $\ast$state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a6f40e33f8087a63a870bc88dc6dde917}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a6f40e33f8087a63a870bc88dc6dde917}} 
+void {\bfseries Branch\+If\+Iterable\+With\+Original\+Key\+Or\+Value\+Map\+Iterator} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ iterable, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+true, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+false)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a1194078f3f922c5f46685883889187a3}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a1194078f3f922c5f46685883889187a3}} 
+void {\bfseries Branch\+If\+Iterable\+With\+Original\+Value\+Set\+Iterator} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ iterable, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+true, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+false)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a7ede9835dd82012bb0c27649bd1e9b64}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a7ede9835dd82012bb0c27649bd1e9b64}} 
+typedef std\+::function$<$ void(\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const table, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const index)$>$ {\bfseries Update\+In\+Transition}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a141a25f2633b328c374b7cb65124b76a}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a141a25f2633b328c374b7cb65124b76a}} 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Allocate\+J\+S\+Collection\+Iterator} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classint}{int}} map\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$collection)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a516531b36ef52ebaf7a082f7f249ef8a}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a516531b36ef52ebaf7a082f7f249ef8a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Allocate\+Table} (Variant variant, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ at\+\_\+least\+\_\+space\+\_\+for) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a55029fbec0a6161bd5900b8978b5b662}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a55029fbec0a6161bd5900b8978b5b662}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Get\+Hash} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a0e6746aa87b40557289e8873703659b9}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a0e6746aa87b40557289e8873703659b9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Call\+Get\+Hash\+Raw} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_adaf645c5642b81c2d503153cfd858e5d}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_adaf645c5642b81c2d503153cfd858e5d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Call\+Get\+Or\+Create\+Hash\+Raw} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_aab0b8f3ac438737e5ea1ba60dcc571ee}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_aab0b8f3ac438737e5ea1ba60dcc571ee}} 
+{\footnotesize template$<$typename Table\+Type $>$ }\\std\+::pair$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ Table\+Type $>$, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ $>$ {\bfseries Transition} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ Table\+Type $>$ const table, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ const index, Update\+In\+Transition const \&update\+\_\+in\+\_\+transition)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a54f211a28df63475a3f809529b79af9e}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a54f211a28df63475a3f809529b79af9e}} 
+{\footnotesize template$<$typename Iterator\+Type , typename Table\+Type $>$ }\\std\+::pair$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ Table\+Type $>$, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ $>$ {\bfseries Transition\+And\+Update} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ Iterator\+Type $>$ const iterator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a9a00ababf48e6cf754983c4d4003f61e}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a9a00ababf48e6cf754983c4d4003f61e}} 
+{\footnotesize template$<$typename Table\+Type $>$ }\\std\+::tuple$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ $>$ {\bfseries Next\+Skip\+Holes} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ Table\+Type $>$ table, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+end)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_ae12fb2465d1a8689d8f6f10c71a77f4c}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_ae12fb2465d1a8689d8f6f10c71a77f4c}} 
+{\footnotesize template$<$typename Collection\+Type $>$ }\\void {\bfseries Find\+Ordered\+Hash\+Table\+Entry\+For\+Smi\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$table, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$key\+\_\+tagged, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerVariable}{Variable}} $\ast$result, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$entry\+\_\+found, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$not\+\_\+found)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a914239a3b1e080bf2f70c739e16a169f}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a914239a3b1e080bf2f70c739e16a169f}} 
+void {\bfseries Same\+Value\+Zero\+Smi} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$key\+\_\+smi, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$candidate\+\_\+key, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+same, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+not\+\_\+same)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a93953c73aaa7be1d2adb4f6cd4513d29}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a93953c73aaa7be1d2adb4f6cd4513d29}} 
+void {\bfseries Same\+Value\+Zero\+Heap\+Number} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$key\+\_\+string, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$candidate\+\_\+key, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+same, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+not\+\_\+same)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a269b3c85ec94b61d0fde913d6cd106d5}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a269b3c85ec94b61d0fde913d6cd106d5}} 
+{\footnotesize template$<$typename Collection\+Type $>$ }\\void {\bfseries Find\+Ordered\+Hash\+Table\+Entry\+For\+Heap\+Number\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$table, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$key\+\_\+heap\+\_\+number, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerVariable}{Variable}} $\ast$result, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$entry\+\_\+found, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$not\+\_\+found)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a4b7c44471bb4ca44321e424ff45c92a3}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a4b7c44471bb4ca44321e424ff45c92a3}} 
+void {\bfseries Same\+Value\+Zero\+Big\+Int} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$key, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$candidate\+\_\+key, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+same, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+not\+\_\+same)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a59864e19eafb819bf10c27eb54d02b80}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a59864e19eafb819bf10c27eb54d02b80}} 
+{\footnotesize template$<$typename Collection\+Type $>$ }\\void {\bfseries Find\+Ordered\+Hash\+Table\+Entry\+For\+Big\+Int\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$table, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$key, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerVariable}{Variable}} $\ast$result, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$entry\+\_\+found, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$not\+\_\+found)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a91b51889cb0f200eb95d7d7a88b70f04}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a91b51889cb0f200eb95d7d7a88b70f04}} 
+{\footnotesize template$<$typename Collection\+Type $>$ }\\void {\bfseries Find\+Ordered\+Hash\+Table\+Entry\+For\+String\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$table, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$key\+\_\+tagged, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerVariable}{Variable}} $\ast$result, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$entry\+\_\+found, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$not\+\_\+found)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_aa03e84e39cd3ba432ffa9461eb8be720}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_aa03e84e39cd3ba432ffa9461eb8be720}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Compute\+String\+Hash} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$string\+\_\+key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a6869274e999756b00fcdeb8abd3f03b5}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a6869274e999756b00fcdeb8abd3f03b5}} 
+void {\bfseries Same\+Value\+Zero\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$key\+\_\+string, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$candidate\+\_\+key, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+same, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+not\+\_\+same)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a90105a9f7c6687d2fd9174aad6bddf65}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a90105a9f7c6687d2fd9174aad6bddf65}} 
+{\footnotesize template$<$typename Collection\+Type $>$ }\\void {\bfseries Find\+Ordered\+Hash\+Table\+Entry\+For\+Other\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$table, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$key, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerVariable}{Variable}} $\ast$result, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$entry\+\_\+found, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$not\+\_\+found)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a34083892693b134c914630b006656595}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a34083892693b134c914630b006656595}} 
+{\footnotesize template$<$typename Collection\+Type $>$ }\\void {\bfseries Try\+Lookup\+Ordered\+Hash\+Table\+Index} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const table, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const key, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerVariable}{Variable}} $\ast$result, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+entry\+\_\+found, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+not\+\_\+found)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a6b71ec7d6f72917783c2df449db66942}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a6b71ec7d6f72917783c2df449db66942}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Normalize\+Number\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_ade7e684f0b759ca56c06f15d17c9563a}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_ade7e684f0b759ca56c06f15d17c9563a}} 
+void {\bfseries Store\+Ordered\+Hash\+Map\+New\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1OrderedHashMap}{Ordered\+Hash\+Map}} $>$ const table, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const key, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const value, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const hash, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const number\+\_\+of\+\_\+buckets, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const occupancy)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a40cd5b33b6d75d14ccdfe5ad1cb786dc}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a40cd5b33b6d75d14ccdfe5ad1cb786dc}} 
+void {\bfseries Store\+Ordered\+Hash\+Set\+New\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1OrderedHashSet}{Ordered\+Hash\+Set}} $>$ const table, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const key, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const hash, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const number\+\_\+of\+\_\+buckets, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const occupancy)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a2dd2341b66386096dc13c83b327f88cf}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a2dd2341b66386096dc13c83b327f88cf}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArray}{J\+S\+Array}} $>$ {\bfseries Map\+Iterator\+To\+List} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSMapIterator}{J\+S\+Map\+Iterator}} $>$ iterator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a0fa6b21b13d8e99e0feb880b5d8b6481}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a0fa6b21b13d8e99e0feb880b5d8b6481}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArray}{J\+S\+Array}} $>$ {\bfseries Set\+Or\+Set\+Iterator\+To\+List} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ iterable)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a80c7c811c602ddc46fc3d74c1499df17}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a80c7c811c602ddc46fc3d74c1499df17}} 
+void {\bfseries Branch\+If\+Map\+Iterator\+Protector\+Valid} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+true, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+false)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a02e4849cba10a9551c915cd69cb4aeaf}\label{classv8_1_1internal_1_1CollectionsBuiltinsAssembler_a02e4849cba10a9551c915cd69cb4aeaf}} 
+void {\bfseries Branch\+If\+Set\+Iterator\+Protector\+Valid} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+true, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+false)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 563 of file builtins-\/collections-\/gen.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/builtins/builtins-\/collections-\/gen.\+cc\end{DoxyCompactItemize}

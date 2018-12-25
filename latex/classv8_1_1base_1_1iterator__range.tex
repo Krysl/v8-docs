@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1base_1_1iterator__range}{}\section{v8\+:\+:base\+:\+:iterator\+\_\+range$<$ Forward\+Iterator $>$ Class Template Reference}
+\label{classv8_1_1base_1_1iterator__range}\index{v8\+::base\+::iterator\+\_\+range$<$ Forward\+Iterator $>$@{v8\+::base\+::iterator\+\_\+range$<$ Forward\+Iterator $>$}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1iterator__range_a61cc56d8d64ba12fd0817aa7cd3f8347}\label{classv8_1_1base_1_1iterator__range_a61cc56d8d64ba12fd0817aa7cd3f8347}} 
+typedef Forward\+Iterator {\bfseries iterator}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1iterator__range_a5ac9de16cf9b52d1d6f98ef3fc82541b}\label{classv8_1_1base_1_1iterator__range_a5ac9de16cf9b52d1d6f98ef3fc82541b}} 
+typedef Forward\+Iterator {\bfseries const\+\_\+iterator}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1iterator__range_aacad6428c687d06eab71bc6b50387f3b}\label{classv8_1_1base_1_1iterator__range_aacad6428c687d06eab71bc6b50387f3b}} 
+typedef std\+::iterator\+\_\+traits$<$ iterator $>$\+::pointer {\bfseries pointer}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1iterator__range_abc1cf03db6e2b6e2c0ea5231056e65cf}\label{classv8_1_1base_1_1iterator__range_abc1cf03db6e2b6e2c0ea5231056e65cf}} 
+typedef std\+::iterator\+\_\+traits$<$ iterator $>$\+::reference {\bfseries reference}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1iterator__range_a29bd93eb88f1c07be24d6bad30dfb2f0}\label{classv8_1_1base_1_1iterator__range_a29bd93eb88f1c07be24d6bad30dfb2f0}} 
+typedef std\+::iterator\+\_\+traits$<$ iterator $>$\+::value\+\_\+type {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1iterator__range_aa36c681ac7921849ea7b71f3668f4234}\label{classv8_1_1base_1_1iterator__range_aa36c681ac7921849ea7b71f3668f4234}} 
+typedef std\+::iterator\+\_\+traits$<$ iterator $>$\+::difference\+\_\+type {\bfseries difference\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1iterator__range_af984de82dcf5c21f2b24d127d3a64d2d}\label{classv8_1_1base_1_1iterator__range_af984de82dcf5c21f2b24d127d3a64d2d}} 
+{\footnotesize template$<$typename Forward\+Iterator1 , typename Forward\+Iterator2 $>$ }\\{\bfseries iterator\+\_\+range} (Forward\+Iterator1 \&\&begin, Forward\+Iterator2 \&\&end)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1iterator__range_a02f806b0035404d5b93bcb9e8332a45e}\label{classv8_1_1base_1_1iterator__range_a02f806b0035404d5b93bcb9e8332a45e}} 
+iterator {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1iterator__range_a60af7d9ea3bd27d3051ba92215a75e1b}\label{classv8_1_1base_1_1iterator__range_a60af7d9ea3bd27d3051ba92215a75e1b}} 
+iterator {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1iterator__range_a378eb740352dad924cfb58605a2478d2}\label{classv8_1_1base_1_1iterator__range_a378eb740352dad924cfb58605a2478d2}} 
+const\+\_\+iterator {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1iterator__range_a2059bd7cf27a84cacae4d7887b71744e}\label{classv8_1_1base_1_1iterator__range_a2059bd7cf27a84cacae4d7887b71744e}} 
+const\+\_\+iterator {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1iterator__range_aee3a8310f90ef4a2e96c2c893c3c1115}\label{classv8_1_1base_1_1iterator__range_aee3a8310f90ef4a2e96c2c893c3c1115}} 
+const\+\_\+iterator {\bfseries cbegin} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1iterator__range_aa638ba8ecc3f40c966bfaa5eca87bce1}\label{classv8_1_1base_1_1iterator__range_aa638ba8ecc3f40c966bfaa5eca87bce1}} 
+const\+\_\+iterator {\bfseries cend} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1iterator__range_a0124cbabbc23228927b747480e052c63}\label{classv8_1_1base_1_1iterator__range_a0124cbabbc23228927b747480e052c63}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries empty} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1iterator__range_a0c369ce5a2faf3b78836aeb931a01db3}\label{classv8_1_1base_1_1iterator__range_a0c369ce5a2faf3b78836aeb931a01db3}} 
+reference {\bfseries operator\mbox{[}$\,$\mbox{]}} (difference\+\_\+type n)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1iterator__range_a0c49f9dfaaddb7a986f0b8779400f4c9}\label{classv8_1_1base_1_1iterator__range_a0c49f9dfaaddb7a986f0b8779400f4c9}} 
+difference\+\_\+type {\bfseries size} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Forward\+Iterator$>$\newline
+class v8\+::base\+::iterator\+\_\+range$<$ Forward\+Iterator $>$}
+
+
+
+Definition at line 28 of file iterator.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/base/iterator.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\hypertarget{classv8_1_1internal_1_1LoopChoiceNode}{}\section{v8\+:\+:internal\+:\+:Loop\+Choice\+Node Class Reference}
+\label{classv8_1_1internal_1_1LoopChoiceNode}\index{v8\+::internal\+::\+Loop\+Choice\+Node@{v8\+::internal\+::\+Loop\+Choice\+Node}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Loop\+Choice\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1LoopChoiceNode}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoopChoiceNode_a6145f60393ade0f9ff2d1a674f8e7822}\label{classv8_1_1internal_1_1LoopChoiceNode_a6145f60393ade0f9ff2d1a674f8e7822}} 
+{\bfseries Loop\+Choice\+Node} (\mbox{\hyperlink{classbool}{bool}} body\+\_\+can\+\_\+be\+\_\+zero\+\_\+length, \mbox{\hyperlink{classbool}{bool}} read\+\_\+backward, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoopChoiceNode_a815bc1ebd29be2a63d8d69991c3a44c1}\label{classv8_1_1internal_1_1LoopChoiceNode_a815bc1ebd29be2a63d8d69991c3a44c1}} 
+void {\bfseries Add\+Loop\+Alternative} (\mbox{\hyperlink{classv8_1_1internal_1_1GuardedAlternative}{Guarded\+Alternative}} alt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoopChoiceNode_a30882e49330a344892de6024e1a9138c}\label{classv8_1_1internal_1_1LoopChoiceNode_a30882e49330a344892de6024e1a9138c}} 
+void {\bfseries Add\+Continue\+Alternative} (\mbox{\hyperlink{classv8_1_1internal_1_1GuardedAlternative}{Guarded\+Alternative}} alt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoopChoiceNode_ab0ad73ab250cdfc4ef4ae46df8c752ba}\label{classv8_1_1internal_1_1LoopChoiceNode_ab0ad73ab250cdfc4ef4ae46df8c752ba}} 
+void {\bfseries Emit} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classv8_1_1internal_1_1Trace}{Trace}} $\ast$trace) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoopChoiceNode_ac27107bc53da010625bc70c31afea7fa}\label{classv8_1_1internal_1_1LoopChoiceNode_ac27107bc53da010625bc70c31afea7fa}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Eats\+At\+Least} (\mbox{\hyperlink{classint}{int}} still\+\_\+to\+\_\+find, \mbox{\hyperlink{classint}{int}} budget, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoopChoiceNode_a86d33da8647bdd21b010ca5a8af238fb}\label{classv8_1_1internal_1_1LoopChoiceNode_a86d33da8647bdd21b010ca5a8af238fb}} 
+void {\bfseries Get\+Quick\+Check\+Details} (\mbox{\hyperlink{classv8_1_1internal_1_1QuickCheckDetails}{Quick\+Check\+Details}} $\ast$details, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classint}{int}} characters\+\_\+filled\+\_\+in, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoopChoiceNode_ab0cf17927a9b51c17c9b11b8dac95f6c}\label{classv8_1_1internal_1_1LoopChoiceNode_ab0cf17927a9b51c17c9b11b8dac95f6c}} 
+void {\bfseries Fill\+In\+B\+M\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} offset, \mbox{\hyperlink{classint}{int}} budget, \mbox{\hyperlink{classv8_1_1internal_1_1BoyerMooreLookahead}{Boyer\+Moore\+Lookahead}} $\ast$bm, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoopChoiceNode_ab7302af501d9e4fc180be3c3531c308a}\label{classv8_1_1internal_1_1LoopChoiceNode_ab7302af501d9e4fc180be3c3531c308a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ {\bfseries loop\+\_\+node} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoopChoiceNode_a16806e7a3a040882b1d268c01127e96c}\label{classv8_1_1internal_1_1LoopChoiceNode_a16806e7a3a040882b1d268c01127e96c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ {\bfseries continue\+\_\+node} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoopChoiceNode_a2f44790afa263a24910170fdf12e6076}\label{classv8_1_1internal_1_1LoopChoiceNode_a2f44790afa263a24910170fdf12e6076}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries body\+\_\+can\+\_\+be\+\_\+zero\+\_\+length} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoopChoiceNode_a4dcd91110f4796314983ddb9cd3476ed}\label{classv8_1_1internal_1_1LoopChoiceNode_a4dcd91110f4796314983ddb9cd3476ed}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries read\+\_\+backward} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoopChoiceNode_add352e67beda72f3782565250b40745e}\label{classv8_1_1internal_1_1LoopChoiceNode_add352e67beda72f3782565250b40745e}} 
+void {\bfseries Accept} (\mbox{\hyperlink{classv8_1_1internal_1_1NodeVisitor}{Node\+Visitor}} $\ast$visitor) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LoopChoiceNode_ad3a42d5bdf1a7c6ca545ed119364e540}\label{classv8_1_1internal_1_1LoopChoiceNode_ad3a42d5bdf1a7c6ca545ed119364e540}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ {\bfseries Filter\+One\+Byte} (\mbox{\hyperlink{classint}{int}} depth) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1029 of file jsregexp.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/jsregexp.\+h\item 
+v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

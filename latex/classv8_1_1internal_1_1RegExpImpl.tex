@@ -1,0 +1,101 @@
+\hypertarget{classv8_1_1internal_1_1RegExpImpl}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Impl Class Reference}
+\label{classv8_1_1internal_1_1RegExpImpl}\index{v8\+::internal\+::\+Reg\+Exp\+Impl@{v8\+::internal\+::\+Reg\+Exp\+Impl}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1RegExpImpl_1_1GlobalCache}{Global\+Cache}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_a67a89cafc8ce13f1efbdc9147ce2542e}\label{classv8_1_1internal_1_1RegExpImpl_a67a89cafc8ce13f1efbdc9147ce2542e}} 
+enum {\bfseries Irregexp\+Result} \{ {\bfseries R\+E\+\_\+\+F\+A\+I\+L\+U\+RE} = 0, 
+{\bfseries R\+E\+\_\+\+S\+U\+C\+C\+E\+SS} = 1, 
+{\bfseries R\+E\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON} = -\/1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_a1f036a7e906cecf51692e724a54cbcec}\label{classv8_1_1internal_1_1RegExpImpl_a1f036a7e906cecf51692e724a54cbcec}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Uses\+Native\+Reg\+Exp} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_a86680c63f2568adcd0c136024d05ea85}\label{classv8_1_1internal_1_1RegExpImpl_a86680c63f2568adcd0c136024d05ea85}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries To\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_a757e474c6d2ebdcbb6d05d5d2bd566ed}\label{classv8_1_1internal_1_1RegExpImpl_a757e474c6d2ebdcbb6d05d5d2bd566ed}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Compile} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSRegExp}{J\+S\+Reg\+Exp}} $>$ re, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ pattern, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{J\+S\+Reg\+Exp\+::\+Flags}} flags)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_afbb56e08c07dd09d77efa1e2dfc35ae7}\label{classv8_1_1internal_1_1RegExpImpl_afbb56e08c07dd09d77efa1e2dfc35ae7}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Exec} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSRegExp}{J\+S\+Reg\+Exp}} $>$ regexp, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ subject, \mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1RegExpMatchInfo}{Reg\+Exp\+Match\+Info}} $>$ last\+\_\+match\+\_\+info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_abf7d1ac24d8306aca55466322c3faf6c}\label{classv8_1_1internal_1_1RegExpImpl_abf7d1ac24d8306aca55466322c3faf6c}} 
+static void {\bfseries Irregexp\+Initialize} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSRegExp}{J\+S\+Reg\+Exp}} $>$ re, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ pattern, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{J\+S\+Reg\+Exp\+::\+Flags}} flags, \mbox{\hyperlink{classint}{int}} capture\+\_\+register\+\_\+count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_a87bd54d7066970f390b48be0bdb9361c}\label{classv8_1_1internal_1_1RegExpImpl_a87bd54d7066970f390b48be0bdb9361c}} 
+static void {\bfseries Atom\+Compile} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSRegExp}{J\+S\+Reg\+Exp}} $>$ re, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ pattern, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{J\+S\+Reg\+Exp\+::\+Flags}} flags, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ match\+\_\+pattern)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_a0e6c7d49ed51ffc1f23d6e17fdcfa502}\label{classv8_1_1internal_1_1RegExpImpl_a0e6c7d49ed51ffc1f23d6e17fdcfa502}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Atom\+Exec\+Raw} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSRegExp}{J\+S\+Reg\+Exp}} $>$ regexp, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ subject, \mbox{\hyperlink{classint}{int}} index, int32\+\_\+t $\ast$output, \mbox{\hyperlink{classint}{int}} output\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_a368fa52f6bbc3727df75dbbd43f241b2}\label{classv8_1_1internal_1_1RegExpImpl_a368fa52f6bbc3727df75dbbd43f241b2}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Atom\+Exec} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSRegExp}{J\+S\+Reg\+Exp}} $>$ regexp, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ subject, \mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1RegExpMatchInfo}{Reg\+Exp\+Match\+Info}} $>$ last\+\_\+match\+\_\+info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_a0811e0f9a06f67d7933f8aad39dcb87f}\label{classv8_1_1internal_1_1RegExpImpl_a0811e0f9a06f67d7933f8aad39dcb87f}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Irregexp\+Prepare} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSRegExp}{J\+S\+Reg\+Exp}} $>$ regexp, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ subject)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_a7271ff616ce21b45efa165e0cefcc383}\label{classv8_1_1internal_1_1RegExpImpl_a7271ff616ce21b45efa165e0cefcc383}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Irregexp\+Exec\+Raw} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSRegExp}{J\+S\+Reg\+Exp}} $>$ regexp, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ subject, \mbox{\hyperlink{classint}{int}} index, int32\+\_\+t $\ast$output, \mbox{\hyperlink{classint}{int}} output\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_a2486b491f4d1af7cbd0a6dfec81d53d7}\label{classv8_1_1internal_1_1RegExpImpl_a2486b491f4d1af7cbd0a6dfec81d53d7}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Irregexp\+Exec} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSRegExp}{J\+S\+Reg\+Exp}} $>$ regexp, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ subject, \mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1RegExpMatchInfo}{Reg\+Exp\+Match\+Info}} $>$ last\+\_\+match\+\_\+info)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_a1790b5d59e3ffaff7795fb749ed3f318}\label{classv8_1_1internal_1_1RegExpImpl_a1790b5d59e3ffaff7795fb749ed3f318}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1RegExpMatchInfo}{Reg\+Exp\+Match\+Info}} $>$ {\bfseries Set\+Last\+Match\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1RegExpMatchInfo}{Reg\+Exp\+Match\+Info}} $>$ last\+\_\+match\+\_\+info, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ subject, \mbox{\hyperlink{classint}{int}} capture\+\_\+count, int32\+\_\+t $\ast$match)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_ae95a39ec9a2fef2c517ab30806409520}\label{classv8_1_1internal_1_1RegExpImpl_ae95a39ec9a2fef2c517ab30806409520}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Irregexp\+Max\+Register\+Count} (\mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} re)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_a8de864833a7350a468d3ae81f5ae2973}\label{classv8_1_1internal_1_1RegExpImpl_a8de864833a7350a468d3ae81f5ae2973}} 
+static void {\bfseries Set\+Irregexp\+Max\+Register\+Count} (\mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} re, \mbox{\hyperlink{classint}{int}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_aaaa192896a25d4344a7f12d3e70ddaf8}\label{classv8_1_1internal_1_1RegExpImpl_aaaa192896a25d4344a7f12d3e70ddaf8}} 
+static void {\bfseries Set\+Irregexp\+Capture\+Name\+Map} (\mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} re, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_a2f53a750befa2d74018abdd591f8561e}\label{classv8_1_1internal_1_1RegExpImpl_a2f53a750befa2d74018abdd591f8561e}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Irregexp\+Number\+Of\+Captures} (\mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} re)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_acc5fdbee28543cf341bf8e00c4e2548c}\label{classv8_1_1internal_1_1RegExpImpl_acc5fdbee28543cf341bf8e00c4e2548c}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Irregexp\+Number\+Of\+Registers} (\mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} re)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_a24bdc147bb7863560ef9ade0d2a85c80}\label{classv8_1_1internal_1_1RegExpImpl_a24bdc147bb7863560ef9ade0d2a85c80}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ByteArray}{Byte\+Array}} {\bfseries Irregexp\+Byte\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} re, \mbox{\hyperlink{classbool}{bool}} is\+\_\+one\+\_\+byte)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_afdcdad3f6afbd2d7ed4124e1de587f0d}\label{classv8_1_1internal_1_1RegExpImpl_afdcdad3f6afbd2d7ed4124e1de587f0d}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} {\bfseries Irregexp\+Native\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} re, \mbox{\hyperlink{classbool}{bool}} is\+\_\+one\+\_\+byte)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_ad47c3205517caf6da0aa39f7f542d5cf}\label{classv8_1_1internal_1_1RegExpImpl_ad47c3205517caf6da0aa39f7f542d5cf}} 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Reg\+Exp\+Executable\+Memory\+Limit} = 16 $\ast$ MB
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_a94cd6bcbdeee12c03c0e753c681c9fe0}\label{classv8_1_1internal_1_1RegExpImpl_a94cd6bcbdeee12c03c0e753c681c9fe0}} 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Reg\+Exp\+Compiled\+Limit} = 1 $\ast$ MB
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpImpl_af0ef2050306fce6dc564448ac4bd5124}\label{classv8_1_1internal_1_1RegExpImpl_af0ef2050306fce6dc564448ac4bd5124}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Reg\+Exp\+Too\+Large\+To\+Optimize} = 20 $\ast$ KB
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 54 of file jsregexp.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/jsregexp.\+h\item 
+v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

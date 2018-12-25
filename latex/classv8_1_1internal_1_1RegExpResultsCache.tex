@@ -1,0 +1,47 @@
+\hypertarget{classv8_1_1internal_1_1RegExpResultsCache}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Results\+Cache Class Reference}
+\label{classv8_1_1internal_1_1RegExpResultsCache}\index{v8\+::internal\+::\+Reg\+Exp\+Results\+Cache@{v8\+::internal\+::\+Reg\+Exp\+Results\+Cache}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Reg\+Exp\+Results\+Cache\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1RegExpResultsCache}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpResultsCache_a3899f4b7c08be12c8deb57d5fa9dcd01}\label{classv8_1_1internal_1_1RegExpResultsCache_a3899f4b7c08be12c8deb57d5fa9dcd01}} 
+enum {\bfseries Results\+Cache\+Type} \{ {\bfseries R\+E\+G\+E\+X\+P\+\_\+\+M\+U\+L\+T\+I\+P\+L\+E\+\_\+\+I\+N\+D\+I\+C\+ES}, 
+{\bfseries S\+T\+R\+I\+N\+G\+\_\+\+S\+P\+L\+I\+T\+\_\+\+S\+U\+B\+S\+T\+R\+I\+N\+GS}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpResultsCache_a48098c516568b8283c25ec89f10bf2e1}\label{classv8_1_1internal_1_1RegExpResultsCache_a48098c516568b8283c25ec89f10bf2e1}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Lookup} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} key\+\_\+string, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$key\+\_\+pattern, \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $\ast$last\+\_\+match\+\_\+out, Results\+Cache\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpResultsCache_aeafd2342977a43afc254772a8bf8680a}\label{classv8_1_1internal_1_1RegExpResultsCache_aeafd2342977a43afc254772a8bf8680a}} 
+static void {\bfseries Enter} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ key\+\_\+string, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key\+\_\+pattern, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ value\+\_\+array, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ last\+\_\+match\+\_\+cache, Results\+Cache\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpResultsCache_a188c3b3ad9c3c90c2820d7efe524083f}\label{classv8_1_1internal_1_1RegExpResultsCache_a188c3b3ad9c3c90c2820d7efe524083f}} 
+static void {\bfseries Clear} (\mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} cache)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpResultsCache_ad37862e92f47683bd89088d629b569c8}\label{classv8_1_1internal_1_1RegExpResultsCache_ad37862e92f47683bd89088d629b569c8}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Reg\+Exp\+Results\+Cache\+Size} = 0x100
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1528 of file jsregexp.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/jsregexp.\+h\item 
+v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,91 @@
+\hypertarget{classv8_1_1internal_1_1MarkingVisitor}{}\section{v8\+:\+:internal\+:\+:Marking\+Visitor$<$ fixed\+\_\+array\+\_\+mode, retaining\+\_\+path\+\_\+mode, Marking\+State $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1MarkingVisitor}\index{v8\+::internal\+::\+Marking\+Visitor$<$ fixed\+\_\+array\+\_\+mode, retaining\+\_\+path\+\_\+mode, Marking\+State $>$@{v8\+::internal\+::\+Marking\+Visitor$<$ fixed\+\_\+array\+\_\+mode, retaining\+\_\+path\+\_\+mode, Marking\+State $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Marking\+Visitor$<$ fixed\+\_\+array\+\_\+mode, retaining\+\_\+path\+\_\+mode, Marking\+State $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.722852cm]{classv8_1_1internal_1_1MarkingVisitor}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_abf50522a455b040a4d68c80d54635667}\label{classv8_1_1internal_1_1MarkingVisitor_abf50522a455b040a4d68c80d54635667}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1HeapVisitor}{Heap\+Visitor}}$<$ \mbox{\hyperlink{classint}{int}}, \mbox{\hyperlink{classv8_1_1internal_1_1MarkingVisitor}{Marking\+Visitor}}$<$ fixed\+\_\+array\+\_\+mode, retaining\+\_\+path\+\_\+mode, Marking\+State $>$ $>$ {\bfseries Parent}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_a5e8fa1b9cd86dc45eae24a3be21f3edd}\label{classv8_1_1internal_1_1MarkingVisitor_a5e8fa1b9cd86dc45eae24a3be21f3edd}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Marking\+Visitor} (\mbox{\hyperlink{classv8_1_1internal_1_1MarkCompactCollector}{Mark\+Compact\+Collector}} $\ast$collector, Marking\+State $\ast$marking\+\_\+state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_a893a7477e401156509fef81ecdfb8abc}\label{classv8_1_1internal_1_1MarkingVisitor_a893a7477e401156509fef81ecdfb8abc}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries Should\+Visit\+Map\+Pointer} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_adfdf7a62d5b64a0c8903b8e63e06c41e}\label{classv8_1_1internal_1_1MarkingVisitor_adfdf7a62d5b64a0c8903b8e63e06c41e}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries Visit\+Bytecode\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray}{Bytecode\+Array}} object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_ac050d7ff7e529391387c0c0e9586640d}\label{classv8_1_1internal_1_1MarkingVisitor_ac050d7ff7e529391387c0c0e9586640d}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries Visit\+Ephemeron\+Hash\+Table} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1EphemeronHashTable}{Ephemeron\+Hash\+Table}} object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_a8cc5cb13ed23cf1cfb611843409273af}\label{classv8_1_1internal_1_1MarkingVisitor_a8cc5cb13ed23cf1cfb611843409273af}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries Visit\+Fixed\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_a6604d3c6f113bab5e949046ebf8f0915}\label{classv8_1_1internal_1_1MarkingVisitor_a6604d3c6f113bab5e949046ebf8f0915}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries Visit\+J\+S\+Api\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_ae6f8870e31df76b77e5f75e210935fc3}\label{classv8_1_1internal_1_1MarkingVisitor_ae6f8870e31df76b77e5f75e210935fc3}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries Visit\+J\+S\+Array\+Buffer} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1JSArrayBuffer}{J\+S\+Array\+Buffer}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_a9c26aa46b61aec9c2f64e4c0cb926a6d}\label{classv8_1_1internal_1_1MarkingVisitor_a9c26aa46b61aec9c2f64e4c0cb926a6d}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries Visit\+J\+S\+Data\+View} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1JSDataView}{J\+S\+Data\+View}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_aed81e1e7f28644ea6b7535c8468197d3}\label{classv8_1_1internal_1_1MarkingVisitor_aed81e1e7f28644ea6b7535c8468197d3}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries Visit\+J\+S\+Typed\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1JSTypedArray}{J\+S\+Typed\+Array}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_ae6478344297ac9b9adc178f352d4dc7d}\label{classv8_1_1internal_1_1MarkingVisitor_ae6478344297ac9b9adc178f352d4dc7d}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries Visit\+Map} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_a39707314f365381de25d5a0d56d19200}\label{classv8_1_1internal_1_1MarkingVisitor_a39707314f365381de25d5a0d56d19200}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries Visit\+Transition\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1TransitionArray}{Transition\+Array}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_a102589fe251fbba310a57a998ba8f575}\label{classv8_1_1internal_1_1MarkingVisitor_a102589fe251fbba310a57a998ba8f575}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries Visit\+J\+S\+Weak\+Cell} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1JSWeakCell}{J\+S\+Weak\+Cell}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_a03e4ae5e1ef868936bac07e230ef7201}\label{classv8_1_1internal_1_1MarkingVisitor_a03e4ae5e1ef868936bac07e230ef7201}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Visit\+Pointer} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} p) final
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_a3a3c3cf81da7404e8ebcf2f2651138e2}\label{classv8_1_1internal_1_1MarkingVisitor_a3a3c3cf81da7404e8ebcf2f2651138e2}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Visit\+Pointer} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} p) final
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_a67bf50dcd7fffe5ce8c1135dbd596276}\label{classv8_1_1internal_1_1MarkingVisitor_a67bf50dcd7fffe5ce8c1135dbd596276}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Visit\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} end) final
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_abe2f4d9f65deb8a7d5ac9e0e5853665a}\label{classv8_1_1internal_1_1MarkingVisitor_abe2f4d9f65deb8a7d5ac9e0e5853665a}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Visit\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} end) final
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_a84cd2423c9fa8b0c6928e6b8019ecfcc}\label{classv8_1_1internal_1_1MarkingVisitor_a84cd2423c9fa8b0c6928e6b8019ecfcc}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Visit\+Embedded\+Pointer} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$rinfo) final
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_ad20938e8520fd93c07883c3a9d90d23c}\label{classv8_1_1internal_1_1MarkingVisitor_ad20938e8520fd93c07883c3a9d90d23c}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Visit\+Code\+Target} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$rinfo) final
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MarkingVisitor_af6a31eb071ab02ecb1208aafa4bb4b18}\label{classv8_1_1internal_1_1MarkingVisitor_af6a31eb071ab02ecb1208aafa4bb4b18}} 
+void {\bfseries Visit\+Custom\+Weak\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} end) final
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$Fixed\+Array\+Visitation\+Mode fixed\+\_\+array\+\_\+mode, Trace\+Retaining\+Path\+Mode retaining\+\_\+path\+\_\+mode, typename Marking\+State$>$\newline
+class v8\+::internal\+::\+Marking\+Visitor$<$ fixed\+\_\+array\+\_\+mode, retaining\+\_\+path\+\_\+mode, Marking\+State $>$}
+
+
+
+Definition at line 915 of file mark-\/compact.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/mark-\/compact.\+h\item 
+v8/src/heap/mark-\/compact-\/inl.\+h\end{DoxyCompactItemize}

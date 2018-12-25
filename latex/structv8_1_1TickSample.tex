@@ -1,5 +1,11 @@
 \hypertarget{structv8_1_1TickSample}{}\section{v8\+:\+:Tick\+Sample Struct Reference}
 \label{structv8_1_1TickSample}\index{v8\+::\+Tick\+Sample@{v8\+::\+Tick\+Sample}}
+Inheritance diagram for v8\+:\+:Tick\+Sample\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structv8_1_1TickSample}
+\end{center}
+\end{figure}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -11,12 +17,12 @@ enum {\bfseries Record\+C\+Entry\+Frame} \{ {\bfseries k\+Include\+C\+Entry\+Fra
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{structv8_1_1TickSample_a5e763b4b249b3fba53241b82d4ef6eeb}{Init}} (Isolate $\ast$isolate, const \mbox{\hyperlink{structv8_1_1RegisterState}{v8\+::\+Register\+State}} \&state, Record\+C\+Entry\+Frame record\+\_\+c\+\_\+entry\+\_\+frame, bool update\+\_\+stats, bool use\+\_\+simulator\+\_\+reg\+\_\+state=true)
+void \mbox{\hyperlink{structv8_1_1TickSample_a71cbf35dee4a229fdcd3c1a4c1bbd87d}{Init}} (Isolate $\ast$isolate, const \mbox{\hyperlink{structv8_1_1RegisterState}{v8\+::\+Register\+State}} \&state, Record\+C\+Entry\+Frame record\+\_\+c\+\_\+entry\+\_\+frame, \mbox{\hyperlink{classbool}{bool}} update\+\_\+stats, \mbox{\hyperlink{classbool}{bool}} use\+\_\+simulator\+\_\+reg\+\_\+state=true)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static bool \mbox{\hyperlink{structv8_1_1TickSample_a297e05d112f3c749bfead215393646c1}{Get\+Stack\+Sample}} (Isolate $\ast$isolate, \mbox{\hyperlink{structv8_1_1RegisterState}{v8\+::\+Register\+State}} $\ast$state, Record\+C\+Entry\+Frame record\+\_\+c\+\_\+entry\+\_\+frame, void $\ast$$\ast$frames, size\+\_\+t frames\+\_\+limit, \mbox{\hyperlink{structv8_1_1SampleInfo}{v8\+::\+Sample\+Info}} $\ast$sample\+\_\+info, bool use\+\_\+simulator\+\_\+reg\+\_\+state=true)
+static \mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{structv8_1_1TickSample_a4cf2b58bf6ef55494723cceb35f8cc9b}{Get\+Stack\+Sample}} (Isolate $\ast$isolate, \mbox{\hyperlink{structv8_1_1RegisterState}{v8\+::\+Register\+State}} $\ast$state, Record\+C\+Entry\+Frame record\+\_\+c\+\_\+entry\+\_\+frame, void $\ast$$\ast$frames, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} frames\+\_\+limit, \mbox{\hyperlink{structv8_1_1SampleInfo}{v8\+::\+Sample\+Info}} $\ast$sample\+\_\+info, \mbox{\hyperlink{classbool}{bool}} use\+\_\+simulator\+\_\+reg\+\_\+state=true)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -40,22 +46,22 @@ union \{\\
 void $\ast$ {\bfseries stack} \mbox{[}k\+Max\+Frames\+Count\mbox{]}
 \item 
 \mbox{\Hypertarget{structv8_1_1TickSample_a00bfe6e03f75c291e220777fe74272d5}\label{structv8_1_1TickSample_a00bfe6e03f75c291e220777fe74272d5}} 
-unsigned {\bfseries frames\+\_\+count}\+: k\+Max\+Frames\+Count\+Log2
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries frames\+\_\+count}\+: k\+Max\+Frames\+Count\+Log2
 \item 
 \mbox{\Hypertarget{structv8_1_1TickSample_aa7c90f53d4ac6ab23727e21369f70b6e}\label{structv8_1_1TickSample_aa7c90f53d4ac6ab23727e21369f70b6e}} 
-bool {\bfseries has\+\_\+external\+\_\+callback}\+: 1
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+external\+\_\+callback}\+: 1
 \item 
 \mbox{\Hypertarget{structv8_1_1TickSample_aece17f054264917dcf20fd9ef0616930}\label{structv8_1_1TickSample_aece17f054264917dcf20fd9ef0616930}} 
-bool {\bfseries update\+\_\+stats}\+: 1
+\mbox{\hyperlink{classbool}{bool}} {\bfseries update\+\_\+stats}\+: 1
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{structv8_1_1TickSample_a74b64cf598134b781b4ae1c65c31a70a}\label{structv8_1_1TickSample_a74b64cf598134b781b4ae1c65c31a70a}} 
-static const unsigned {\bfseries k\+Max\+Frames\+Count\+Log2} = 8
+static const \mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries k\+Max\+Frames\+Count\+Log2} = 8
 \item 
 \mbox{\Hypertarget{structv8_1_1TickSample_a7f1b6ed32cd88d137e70d99adaa37d64}\label{structv8_1_1TickSample_a7f1b6ed32cd88d137e70d99adaa37d64}} 
-static const unsigned {\bfseries k\+Max\+Frames\+Count} = (1 $<$$<$ k\+Max\+Frames\+Count\+Log2) -\/ 1
+static const \mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries k\+Max\+Frames\+Count} = (1 $<$$<$ k\+Max\+Frames\+Count\+Log2) -\/ 1
 \end{DoxyCompactItemize}
 
 
@@ -67,11 +73,11 @@ Definition at line 51 of file v8-\/profiler.\+h.
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{structv8_1_1TickSample_a297e05d112f3c749bfead215393646c1}\label{structv8_1_1TickSample_a297e05d112f3c749bfead215393646c1}} 
+\mbox{\Hypertarget{structv8_1_1TickSample_a4cf2b58bf6ef55494723cceb35f8cc9b}\label{structv8_1_1TickSample_a4cf2b58bf6ef55494723cceb35f8cc9b}} 
 \index{v8\+::\+Tick\+Sample@{v8\+::\+Tick\+Sample}!Get\+Stack\+Sample@{Get\+Stack\+Sample}}
 \index{Get\+Stack\+Sample@{Get\+Stack\+Sample}!v8\+::\+Tick\+Sample@{v8\+::\+Tick\+Sample}}
 \subsubsection{\texorpdfstring{Get\+Stack\+Sample()}{GetStackSample()}}
-{\footnotesize\ttfamily static bool v8\+::\+Tick\+Sample\+::\+Get\+Stack\+Sample (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{structv8_1_1RegisterState}{v8\+::\+Register\+State}} $\ast$}]{state,  }\item[{Record\+C\+Entry\+Frame}]{record\+\_\+c\+\_\+entry\+\_\+frame,  }\item[{void $\ast$$\ast$}]{frames,  }\item[{size\+\_\+t}]{frames\+\_\+limit,  }\item[{\mbox{\hyperlink{structv8_1_1SampleInfo}{v8\+::\+Sample\+Info}} $\ast$}]{sample\+\_\+info,  }\item[{bool}]{use\+\_\+simulator\+\_\+reg\+\_\+state = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbool}{bool}} v8\+::\+Tick\+Sample\+::\+Get\+Stack\+Sample (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{structv8_1_1RegisterState}{v8\+::\+Register\+State}} $\ast$}]{state,  }\item[{Record\+C\+Entry\+Frame}]{record\+\_\+c\+\_\+entry\+\_\+frame,  }\item[{void $\ast$$\ast$}]{frames,  }\item[{\mbox{\hyperlink{classsize__t}{size\+\_\+t}}}]{frames\+\_\+limit,  }\item[{\mbox{\hyperlink{structv8_1_1SampleInfo}{v8\+::\+Sample\+Info}} $\ast$}]{sample\+\_\+info,  }\item[{\mbox{\hyperlink{classbool}{bool}}}]{use\+\_\+simulator\+\_\+reg\+\_\+state = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Get a call stack sample from the isolate. 
 \begin{DoxyParams}{Parameters}
@@ -93,11 +99,15 @@ Get a call stack sample from the isolate.
 \begin{DoxyNote}{Note}
 Get\+Stack\+Sample is thread and signal safe and should only be called when the JS thread is paused or interrupted. Otherwise the behavior is undefined. 
 \end{DoxyNote}
-\mbox{\Hypertarget{structv8_1_1TickSample_a5e763b4b249b3fba53241b82d4ef6eeb}\label{structv8_1_1TickSample_a5e763b4b249b3fba53241b82d4ef6eeb}} 
+
+
+Definition at line 183 of file tick-\/sample.\+cc.
+
+\mbox{\Hypertarget{structv8_1_1TickSample_a71cbf35dee4a229fdcd3c1a4c1bbd87d}\label{structv8_1_1TickSample_a71cbf35dee4a229fdcd3c1a4c1bbd87d}} 
 \index{v8\+::\+Tick\+Sample@{v8\+::\+Tick\+Sample}!Init@{Init}}
 \index{Init@{Init}!v8\+::\+Tick\+Sample@{v8\+::\+Tick\+Sample}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily void v8\+::\+Tick\+Sample\+::\+Init (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{const \mbox{\hyperlink{structv8_1_1RegisterState}{v8\+::\+Register\+State}} \&}]{state,  }\item[{Record\+C\+Entry\+Frame}]{record\+\_\+c\+\_\+entry\+\_\+frame,  }\item[{bool}]{update\+\_\+stats,  }\item[{bool}]{use\+\_\+simulator\+\_\+reg\+\_\+state = {\ttfamily true} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily D\+I\+S\+A\+B\+L\+E\+\_\+\+A\+S\+AN void v8\+::\+Tick\+Sample\+::\+Init (\begin{DoxyParamCaption}\item[{Isolate $\ast$}]{isolate,  }\item[{const \mbox{\hyperlink{structv8_1_1RegisterState}{v8\+::\+Register\+State}} \&}]{state,  }\item[{Record\+C\+Entry\+Frame}]{record\+\_\+c\+\_\+entry\+\_\+frame,  }\item[{\mbox{\hyperlink{classbool}{bool}}}]{update\+\_\+stats,  }\item[{\mbox{\hyperlink{classbool}{bool}}}]{use\+\_\+simulator\+\_\+reg\+\_\+state = {\ttfamily true} }\end{DoxyParamCaption})}
 
 Initialize a tick sample from the isolate. 
 \begin{DoxyParams}{Parameters}
@@ -114,6 +124,11 @@ Initialize a tick sample from the isolate.
 \end{DoxyParams}
 
 
-The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+Definition at line 148 of file tick-\/sample.\+cc.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8-\/profiler.\+h\end{DoxyCompactItemize}
+v8/include/v8-\/profiler.\+h\item 
+v8/src/profiler/tick-\/sample.\+cc\end{DoxyCompactItemize}

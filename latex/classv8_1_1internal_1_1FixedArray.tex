@@ -1,0 +1,151 @@
+\hypertarget{classv8_1_1internal_1_1FixedArray}{}\section{v8\+:\+:internal\+:\+:Fixed\+Array Class Reference}
+\label{classv8_1_1internal_1_1FixedArray}\index{v8\+::internal\+::\+Fixed\+Array@{v8\+::internal\+::\+Fixed\+Array}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Fixed\+Array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classv8_1_1internal_1_1FixedArray}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a7e3d1190aa4d17df2ee5508b19319050}\label{classv8_1_1internal_1_1FixedArray_a7e3d1190aa4d17df2ee5508b19319050}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1FlexibleBodyDescriptor}{Flexible\+Body\+Descriptor}}$<$ k\+Header\+Size $>$ {\bfseries Body\+Descriptor}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a9d4bb1311e3a770fb9183a2fdd276202}\label{classv8_1_1internal_1_1FixedArray_a9d4bb1311e3a770fb9183a2fdd276202}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries get} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a48a47ad399fbac3c50390276f6d0d821}\label{classv8_1_1internal_1_1FixedArray_a48a47ad399fbac3c50390276f6d0d821}} 
+{\footnotesize template$<$class T $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries Get\+Value} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_aafd41d99e13a482379d3359d6b9f106d}\label{classv8_1_1internal_1_1FixedArray_aafd41d99e13a482379d3359d6b9f106d}} 
+{\footnotesize template$<$class T $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries Get\+Value\+Checked} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_aafab6314d4f31024b9251909d1d88291}\label{classv8_1_1internal_1_1FixedArray_aafab6314d4f31024b9251909d1d88291}} 
+void {\bfseries set} (\mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_af53a24f01b828f3f7cf0b8e25fef91a0}\label{classv8_1_1internal_1_1FixedArray_af53a24f01b828f3f7cf0b8e25fef91a0}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+the\+\_\+hole} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a1f4a2f6b84a9bf25b46f7a9239e5442b}\label{classv8_1_1internal_1_1FixedArray_a1f4a2f6b84a9bf25b46f7a9239e5442b}} 
+void {\bfseries set} (\mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a4fbeb8596dd1226bd16018707e3989b4}\label{classv8_1_1internal_1_1FixedArray_a4fbeb8596dd1226bd16018707e3989b4}} 
+void {\bfseries set} (\mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value, Write\+Barrier\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_ace6f77f62936b9d34d3e6ea66d2a0c28}\label{classv8_1_1internal_1_1FixedArray_ace6f77f62936b9d34d3e6ea66d2a0c28}} 
+void {\bfseries set\+\_\+undefined} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_af52e0dcbdd942365fe08e0222cc52077}\label{classv8_1_1internal_1_1FixedArray_af52e0dcbdd942365fe08e0222cc52077}} 
+void {\bfseries set\+\_\+undefined} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a22a91c71f2f6ccbe56a7bf2aad86c64d}\label{classv8_1_1internal_1_1FixedArray_a22a91c71f2f6ccbe56a7bf2aad86c64d}} 
+void {\bfseries set\+\_\+null} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a4dccee23e6273561949a3af022a109bb}\label{classv8_1_1internal_1_1FixedArray_a4dccee23e6273561949a3af022a109bb}} 
+void {\bfseries set\+\_\+null} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_af5387df4a82963ca41ebc6bb6890368a}\label{classv8_1_1internal_1_1FixedArray_af5387df4a82963ca41ebc6bb6890368a}} 
+void {\bfseries set\+\_\+the\+\_\+hole} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_ad4f3498a4fff6b2a3e599ab4874a44c1}\label{classv8_1_1internal_1_1FixedArray_ad4f3498a4fff6b2a3e599ab4874a44c1}} 
+void {\bfseries set\+\_\+the\+\_\+hole} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a7f06a361c60709fe358b4ae2df6299c6}\label{classv8_1_1internal_1_1FixedArray_a7f06a361c60709fe358b4ae2df6299c6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} {\bfseries Get\+First\+Element\+Address} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a22676358d865881a11d55fdcc2cb8a8d}\label{classv8_1_1internal_1_1FixedArray_a22676358d865881a11d55fdcc2cb8a8d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Contains\+Only\+Smis\+Or\+Holes} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a91483d680b5d2d6f5d64a8d867a36c8a}\label{classv8_1_1internal_1_1FixedArray_a91483d680b5d2d6f5d64a8d867a36c8a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Contains\+Sorted\+Numbers} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_aeb44255a89d66e37554e6526ff1242ee}\label{classv8_1_1internal_1_1FixedArray_aeb44255a89d66e37554e6526ff1242ee}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} {\bfseries data\+\_\+start} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a9756aeadb57e7c233e3e2f18ee8606f1}\label{classv8_1_1internal_1_1FixedArray_a9756aeadb57e7c233e3e2f18ee8606f1}} 
+void {\bfseries Move\+Elements} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, \mbox{\hyperlink{classint}{int}} dst\+\_\+index, \mbox{\hyperlink{classint}{int}} src\+\_\+index, \mbox{\hyperlink{classint}{int}} len, Write\+Barrier\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_aad3f35474e49dd5143b5f2334926ce33}\label{classv8_1_1internal_1_1FixedArray_aad3f35474e49dd5143b5f2334926ce33}} 
+void {\bfseries Fill\+With\+Holes} (\mbox{\hyperlink{classint}{int}} from, \mbox{\hyperlink{classint}{int}} to)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_ada91713c9bb43b9c81493b3d447053e2}\label{classv8_1_1internal_1_1FixedArray_ada91713c9bb43b9c81493b3d447053e2}} 
+void {\bfseries Shrink} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} new\+\_\+length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a9b5897e8b0fd24f9f04b51be3e2ba4f8}\label{classv8_1_1internal_1_1FixedArray_a9b5897e8b0fd24f9f04b51be3e2ba4f8}} 
+void {\bfseries Copy\+To} (\mbox{\hyperlink{classint}{int}} pos, \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} dest, \mbox{\hyperlink{classint}{int}} dest\+\_\+pos, \mbox{\hyperlink{classint}{int}} len) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a8655489c7e6898fc7339578c3d032b53}\label{classv8_1_1internal_1_1FixedArray_a8655489c7e6898fc7339578c3d032b53}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} {\bfseries Raw\+Field\+Of\+Element\+At} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a69a1a4c50ca27536d7c11d88f5fa4d28}\label{classv8_1_1internal_1_1FixedArray_a69a1a4c50ca27536d7c11d88f5fa4d28}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Max\+Regular\+Heap\+Object\+Size$<$ k\+Max\+Size)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a27192a0f72c7e134bbc173d14f9780d0}\label{classv8_1_1internal_1_1FixedArray_a27192a0f72c7e134bbc173d14f9780d0}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries get} (\mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} array, \mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a43874f8238723bf8cd4a1ef8a71425fb}\label{classv8_1_1internal_1_1FixedArray_a43874f8238723bf8cd4a1ef8a71425fb}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ {\bfseries Set\+And\+Grow} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ array, \mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, Pretenure\+Flag pretenure=N\+O\+T\+\_\+\+T\+E\+N\+U\+R\+ED)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a7bb28a3dc6e19a72d6f971d8ffadcc52}\label{classv8_1_1internal_1_1FixedArray_a7bb28a3dc6e19a72d6f971d8ffadcc52}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ {\bfseries Shrink\+Or\+Empty} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ array, \mbox{\hyperlink{classint}{int}} new\+\_\+length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a83ccb579a69646f8fa7f3ef7417db455}\label{classv8_1_1internal_1_1FixedArray_a83ccb579a69646f8fa7f3ef7417db455}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries Size\+For} (\mbox{\hyperlink{classint}{int}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a3a6001809d6b77cbe399a9ed363ab210}\label{classv8_1_1internal_1_1FixedArray_a3a6001809d6b77cbe399a9ed363ab210}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries Offset\+Of\+Element\+At} (\mbox{\hyperlink{classint}{int}} index)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_affb031e7f10c06f0dd174029fc56efe2}\label{classv8_1_1internal_1_1FixedArray_affb031e7f10c06f0dd174029fc56efe2}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Length} = (k\+Max\+Size -\/ k\+Header\+Size) / k\+Tagged\+Size
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Regular\+Length}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a4bef286781130464d5ffd8abec707714}\label{classv8_1_1internal_1_1FixedArray_a4bef286781130464d5ffd8abec707714}} 
+static void {\bfseries No\+Write\+Barrier\+Set} (\mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} array, \mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 118 of file fixed-\/array.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1FixedArray_a303fea62618aa216ba3704cd7c417f63}\label{classv8_1_1internal_1_1FixedArray_a303fea62618aa216ba3704cd7c417f63}} 
+\index{v8\+::internal\+::\+Fixed\+Array@{v8\+::internal\+::\+Fixed\+Array}!k\+Max\+Regular\+Length@{k\+Max\+Regular\+Length}}
+\index{k\+Max\+Regular\+Length@{k\+Max\+Regular\+Length}!v8\+::internal\+::\+Fixed\+Array@{v8\+::internal\+::\+Fixed\+Array}}
+\subsubsection{\texorpdfstring{k\+Max\+Regular\+Length}{kMaxRegularLength}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Fixed\+Array\+::k\+Max\+Regular\+Length\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      (kMaxRegularHeapObjectSize - kHeaderSize) / kTaggedSize
+\end{DoxyCode}
+
+
+Definition at line 196 of file fixed-\/array.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/fixed-\/array.\+h\item 
+v8/src/objects/fixed-\/array-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

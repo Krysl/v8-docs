@@ -1,0 +1,91 @@
+\hypertarget{classv8_1_1internal_1_1HandlerTable}{}\section{v8\+:\+:internal\+:\+:Handler\+Table Class Reference}
+\label{classv8_1_1internal_1_1HandlerTable}\index{v8\+::internal\+::\+Handler\+Table@{v8\+::internal\+::\+Handler\+Table}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_a1d4e928c63ab7c79779838058fdf8435}\label{classv8_1_1internal_1_1HandlerTable_a1d4e928c63ab7c79779838058fdf8435}} 
+enum {\bfseries Catch\+Prediction} \{ \newline
+{\bfseries U\+N\+C\+A\+U\+G\+HT}, 
+{\bfseries C\+A\+U\+G\+HT}, 
+{\bfseries P\+R\+O\+M\+I\+SE}, 
+{\bfseries D\+E\+S\+U\+G\+A\+R\+I\+NG}, 
+\newline
+{\bfseries A\+S\+Y\+N\+C\+\_\+\+A\+W\+A\+IT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_a6ad1bfe95887812c0d15581c5ef879e3}\label{classv8_1_1internal_1_1HandlerTable_a6ad1bfe95887812c0d15581c5ef879e3}} 
+{\bfseries Handler\+Table} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_ae5e000c6fddabb6f01d198649d6f1ca2}\label{classv8_1_1internal_1_1HandlerTable_ae5e000c6fddabb6f01d198649d6f1ca2}} 
+{\bfseries Handler\+Table} (\mbox{\hyperlink{classv8_1_1internal_1_1ByteArray}{Byte\+Array}} byte\+\_\+array)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_a0590dd422cffa3762881f1e7cf500aad}\label{classv8_1_1internal_1_1HandlerTable_a0590dd422cffa3762881f1e7cf500aad}} 
+{\bfseries Handler\+Table} (\mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray}{Bytecode\+Array}} bytecode\+\_\+array)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_acb3d169c3e9ff1311064b5f9b54071ce}\label{classv8_1_1internal_1_1HandlerTable_acb3d169c3e9ff1311064b5f9b54071ce}} 
+{\bfseries Handler\+Table} (\mbox{\hyperlink{classuintptr__t}{Address}} instruction\+\_\+start, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} handler\+\_\+table\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_a05744150128a020122d6d23805c1a789}\label{classv8_1_1internal_1_1HandlerTable_a05744150128a020122d6d23805c1a789}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Range\+Start} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_abf3582125d7138dc1c00c393a7cb9522}\label{classv8_1_1internal_1_1HandlerTable_abf3582125d7138dc1c00c393a7cb9522}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Range\+End} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_a51070059fac161f9b25200f5839b6ec5}\label{classv8_1_1internal_1_1HandlerTable_a51070059fac161f9b25200f5839b6ec5}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Range\+Handler} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_a13d4091bae68fb254e099bf0810921de}\label{classv8_1_1internal_1_1HandlerTable_a13d4091bae68fb254e099bf0810921de}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Range\+Data} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_af003cc15ae2f99122d0dca3f8777b18c}\label{classv8_1_1internal_1_1HandlerTable_af003cc15ae2f99122d0dca3f8777b18c}} 
+void {\bfseries Set\+Range\+Start} (\mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classint}{int}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_aa42488039d1e1fea69fda47b7f2f045f}\label{classv8_1_1internal_1_1HandlerTable_aa42488039d1e1fea69fda47b7f2f045f}} 
+void {\bfseries Set\+Range\+End} (\mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classint}{int}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_a683448668d43ac5c6352c6d2c66fa2d7}\label{classv8_1_1internal_1_1HandlerTable_a683448668d43ac5c6352c6d2c66fa2d7}} 
+void {\bfseries Set\+Range\+Handler} (\mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classint}{int}} offset, Catch\+Prediction pred)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_aa2afe5c8c465265e1150587dc5134b66}\label{classv8_1_1internal_1_1HandlerTable_aa2afe5c8c465265e1150587dc5134b66}} 
+void {\bfseries Set\+Range\+Data} (\mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classint}{int}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_afbfa1c81a6e8f7322bcf40bd16f71cf9}\label{classv8_1_1internal_1_1HandlerTable_afbfa1c81a6e8f7322bcf40bd16f71cf9}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Lookup\+Range} (\mbox{\hyperlink{classint}{int}} pc\+\_\+offset, \mbox{\hyperlink{classint}{int}} $\ast$data, Catch\+Prediction $\ast$prediction)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_af62d31c389403c24a2c8adccfd650413}\label{classv8_1_1internal_1_1HandlerTable_af62d31c389403c24a2c8adccfd650413}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Lookup\+Return} (\mbox{\hyperlink{classint}{int}} pc\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_abd55a5ceb87387ad45d296c16741eb9f}\label{classv8_1_1internal_1_1HandlerTable_abd55a5ceb87387ad45d296c16741eb9f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Range\+Entries} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_a2deadbbd6405c66f9d5739c89f5f4873}\label{classv8_1_1internal_1_1HandlerTable_a2deadbbd6405c66f9d5739c89f5f4873}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Return\+Entries} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_a3e307a83cb3a18ffc159bc12de0533fa}\label{classv8_1_1internal_1_1HandlerTable_a3e307a83cb3a18ffc159bc12de0533fa}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Length\+For\+Range} (\mbox{\hyperlink{classint}{int}} entries)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_a5a12039b34e165289c99eae77cb39ed7}\label{classv8_1_1internal_1_1HandlerTable_a5a12039b34e165289c99eae77cb39ed7}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Emit\+Return\+Table\+Start} (\mbox{\hyperlink{classv8_1_1internal_1_1Assembler}{Assembler}} $\ast$masm, \mbox{\hyperlink{classint}{int}} entries)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandlerTable_a49c7ed76a08c7e7133ef5f6137b91793}\label{classv8_1_1internal_1_1HandlerTable_a49c7ed76a08c7e7133ef5f6137b91793}} 
+static void {\bfseries Emit\+Return\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1Assembler}{Assembler}} $\ast$masm, \mbox{\hyperlink{classint}{int}} offset, \mbox{\hyperlink{classint}{int}} handler)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 30 of file handler-\/table.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/handler-\/table.\+h\item 
+v8/src/handler-\/table.\+cc\end{DoxyCompactItemize}

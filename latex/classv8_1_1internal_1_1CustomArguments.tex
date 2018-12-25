@@ -1,5 +1,45 @@
 \hypertarget{classv8_1_1internal_1_1CustomArguments}{}\section{v8\+:\+:internal\+:\+:Custom\+Arguments$<$ T $>$ Class Template Reference}
 \label{classv8_1_1internal_1_1CustomArguments}\index{v8\+::internal\+::\+Custom\+Arguments$<$ T $>$@{v8\+::internal\+::\+Custom\+Arguments$<$ T $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Custom\+Arguments$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1CustomArguments}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CustomArguments_ad144a48c919d63a46566a9d91743787f}\label{classv8_1_1internal_1_1CustomArguments_ad144a48c919d63a46566a9d91743787f}} 
+void {\bfseries Iterate\+Instance} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v) override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CustomArguments_a4665e0b15cda8ed07911cbb4a000f5cc}\label{classv8_1_1internal_1_1CustomArguments_a4665e0b15cda8ed07911cbb4a000f5cc}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Return\+Value\+Offset} = T\+::k\+Return\+Value\+Index
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CustomArguments_a4269b099942f91e5ce1deaff371e1330}\label{classv8_1_1internal_1_1CustomArguments_a4269b099942f91e5ce1deaff371e1330}} 
+{\bfseries Custom\+Arguments} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CustomArguments_ac12aff15a5c0df261941c81c22ce7a54}\label{classv8_1_1internal_1_1CustomArguments_ac12aff15a5c0df261941c81c22ce7a54}} 
+{\footnotesize template$<$typename V $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classV}{V}} $>$ {\bfseries Get\+Return\+Value} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CustomArguments_a144347b17b87f729468c79c88a0b7686}\label{classv8_1_1internal_1_1CustomArguments_a144347b17b87f729468c79c88a0b7686}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CustomArguments_aae680f9b27fb204562bdc27a66becf09}\label{classv8_1_1internal_1_1CustomArguments_aae680f9b27fb204562bdc27a66becf09}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} {\bfseries slot\+\_\+at} (\mbox{\hyperlink{classint}{int}} index)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CustomArguments_a21c3b0712977c6170d82e912ddaf5bdc}\label{classv8_1_1internal_1_1CustomArguments_a21c3b0712977c6170d82e912ddaf5bdc}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries values\+\_\+} \mbox{[}T\+::k\+Args\+Length\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -12,6 +52,8 @@ Definition at line 122 of file v8.\+h.
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8.\+h\end{DoxyCompactItemize}
+v8/include/v8.\+h\item 
+v8/src/api-\/arguments.\+h\item 
+v8/src/api-\/arguments-\/inl.\+h\end{DoxyCompactItemize}

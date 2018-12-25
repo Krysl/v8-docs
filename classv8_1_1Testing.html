@@ -103,21 +103,21 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aafa5a4917998aa64134aa750ce5c4b2e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Testing.html#aafa5a4917998aa64134aa750ce5c4b2e">SetStressRunType</a> (StressType type)</td></tr>
-<tr class="separator:aafa5a4917998aa64134aa750ce5c4b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc876063b1e07462b8d9544dd8efab36"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Testing.html#adc876063b1e07462b8d9544dd8efab36">GetStressRuns</a> ()</td></tr>
-<tr class="separator:adc876063b1e07462b8d9544dd8efab36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9da044b18b9d05770b655bed27ed7f4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Testing.html#ab9da044b18b9d05770b655bed27ed7f4">PrepareStressRun</a> (int run)</td></tr>
-<tr class="separator:ab9da044b18b9d05770b655bed27ed7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0881a3cee2f8f91039d3ecdb15dbf27"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Testing.html#ac0881a3cee2f8f91039d3ecdb15dbf27">DeoptimizeAll</a> (Isolate *isolate)</td></tr>
-<tr class="separator:ac0881a3cee2f8f91039d3ecdb15dbf27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77a4350f86d915ffa3dacc30f07d74b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Testing.html#ae77a4350f86d915ffa3dacc30f07d74b">SetStressRunType</a> (StressType <a class="el" href="classstd_1_1conditional_1_1type.html">type</a>)</td></tr>
+<tr class="separator:ae77a4350f86d915ffa3dacc30f07d74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ab1c8e52fa31fabbf7c44096cdd070"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Testing.html#a85ab1c8e52fa31fabbf7c44096cdd070">GetStressRuns</a> ()</td></tr>
+<tr class="separator:a85ab1c8e52fa31fabbf7c44096cdd070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae3f1fc97dc6e4e52a9f4cfef55f8672"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Testing.html#aae3f1fc97dc6e4e52a9f4cfef55f8672">PrepareStressRun</a> (<a class="el" href="classint.html">int</a> run)</td></tr>
+<tr class="separator:aae3f1fc97dc6e4e52a9f4cfef55f8672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e371c433b21a61d1b857db753d6a9b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Testing.html#a10e371c433b21a61d1b857db753d6a9b">DeoptimizeAll</a> (Isolate *isolate)</td></tr>
+<tr class="separator:a10e371c433b21a61d1b857db753d6a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="v8-testing_8h_source.html#l00015">15</a> of file <a class="el" href="v8-testing_8h_source.html">v8-testing.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac0881a3cee2f8f91039d3ecdb15dbf27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0881a3cee2f8f91039d3ecdb15dbf27">&#9670;&nbsp;</a></span>DeoptimizeAll()</h2>
+<a id="a10e371c433b21a61d1b857db753d6a9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10e371c433b21a61d1b857db753d6a9b">&#9670;&nbsp;</a></span>DeoptimizeAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,7 +126,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void v8::Testing::DeoptimizeAll </td>
+          <td class="memname">void v8::Testing::DeoptimizeAll </td>
           <td>(</td>
           <td class="paramtype">Isolate *&#160;</td>
           <td class="paramname"><em>isolate</em></td><td>)</td>
@@ -141,10 +141,12 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Force deoptimization of all functions. </p>
 
+<p class="definition">Definition at line <a class="el" href="api_8cc_source.html#l10553">10553</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
-<a id="adc876063b1e07462b8d9544dd8efab36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc876063b1e07462b8d9544dd8efab36">&#9670;&nbsp;</a></span>GetStressRuns()</h2>
+<a id="a85ab1c8e52fa31fabbf7c44096cdd070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85ab1c8e52fa31fabbf7c44096cdd070">&#9670;&nbsp;</a></span>GetStressRuns()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,7 +155,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static int v8::Testing::GetStressRuns </td>
+          <td class="memname"><a class="el" href="classint.html">int</a> v8::Testing::GetStressRuns </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -167,10 +169,12 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the number of runs of a given test that is required to get the full stress coverage. </p>
 
+<p class="definition">Definition at line <a class="el" href="api_8cc_source.html#l10502">10502</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
-<a id="ab9da044b18b9d05770b655bed27ed7f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9da044b18b9d05770b655bed27ed7f4">&#9670;&nbsp;</a></span>PrepareStressRun()</h2>
+<a id="aae3f1fc97dc6e4e52a9f4cfef55f8672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae3f1fc97dc6e4e52a9f4cfef55f8672">&#9670;&nbsp;</a></span>PrepareStressRun()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,9 +183,9 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void v8::Testing::PrepareStressRun </td>
+          <td class="memname">void v8::Testing::PrepareStressRun </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="classint.html">int</a>&#160;</td>
           <td class="paramname"><em>run</em></td><td>)</td>
           <td></td>
         </tr>
@@ -192,12 +196,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Indicate the number of the run which is about to start. The value of run should be between 0 and one less than the result from <a class="el" href="classv8_1_1Testing.html#adc876063b1e07462b8d9544dd8efab36">GetStressRuns()</a> </p>
+<p>Indicate the number of the run which is about to start. The value of run should be between 0 and one less than the result from <a class="el" href="classv8_1_1Testing.html#a85ab1c8e52fa31fabbf7c44096cdd070">GetStressRuns()</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="api_8cc_source.html#l10519">10519</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
-<a id="aafa5a4917998aa64134aa750ce5c4b2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafa5a4917998aa64134aa750ce5c4b2e">&#9670;&nbsp;</a></span>SetStressRunType()</h2>
+<a id="ae77a4350f86d915ffa3dacc30f07d74b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae77a4350f86d915ffa3dacc30f07d74b">&#9670;&nbsp;</a></span>SetStressRunType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,9 +212,9 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void v8::Testing::SetStressRunType </td>
+          <td class="memname">void v8::Testing::SetStressRunType </td>
           <td>(</td>
-          <td class="paramtype">StressType&#160;</td>
+          <td class="paramtype">Testing::StressType&#160;</td>
           <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
@@ -221,10 +227,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p><a class="el" href="classv8_1_1Set.html">Set</a> the type of stressing to do. The default if not set is kStressTypeOpt. </p>
 
+<p class="definition">Definition at line <a class="el" href="api_8cc_source.html#l10497">10497</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>v8/include/<a class="el" href="v8-testing_8h_source.html">v8-testing.h</a></li>
+<li>v8/src/<a class="el" href="api_8cc_source.html">api.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -232,7 +241,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1Testing.html">Testing</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 14:33:12 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:40:39 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

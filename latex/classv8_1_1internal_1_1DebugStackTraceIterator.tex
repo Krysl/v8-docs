@@ -1,0 +1,64 @@
+\hypertarget{classv8_1_1internal_1_1DebugStackTraceIterator}{}\section{v8\+:\+:internal\+:\+:Debug\+Stack\+Trace\+Iterator Class Reference}
+\label{classv8_1_1internal_1_1DebugStackTraceIterator}\index{v8\+::internal\+::\+Debug\+Stack\+Trace\+Iterator@{v8\+::internal\+::\+Debug\+Stack\+Trace\+Iterator}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Debug\+Stack\+Trace\+Iterator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1DebugStackTraceIterator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugStackTraceIterator_aa2dc40140d458c2797fc9307ed5fde4c}\label{classv8_1_1internal_1_1DebugStackTraceIterator_aa2dc40140d458c2797fc9307ed5fde4c}} 
+{\bfseries Debug\+Stack\+Trace\+Iterator} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugStackTraceIterator_a74130e4c88da07cd0d52fe4a33387c69}\label{classv8_1_1internal_1_1DebugStackTraceIterator_a74130e4c88da07cd0d52fe4a33387c69}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Done} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugStackTraceIterator_aa32813e6280c059b2a0e1fc98c61c938}\label{classv8_1_1internal_1_1DebugStackTraceIterator_aa32813e6280c059b2a0e1fc98c61c938}} 
+void {\bfseries Advance} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugStackTraceIterator_aa13295a74d8372446d0853ae22e5f30c}\label{classv8_1_1internal_1_1DebugStackTraceIterator_aa13295a74d8372446d0853ae22e5f30c}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Context\+Id} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugStackTraceIterator_a495ce0f852497dd8364c48ec377bf2b3}\label{classv8_1_1internal_1_1DebugStackTraceIterator_a495ce0f852497dd8364c48ec377bf2b3}} 
+\mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ {\bfseries Get\+Receiver} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugStackTraceIterator_a645b1519631eedbb98f316be88fab64e}\label{classv8_1_1internal_1_1DebugStackTraceIterator_a645b1519631eedbb98f316be88fab64e}} 
+\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ {\bfseries Get\+Return\+Value} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugStackTraceIterator_abe3c5921ed9268c0b90755a92af81161}\label{classv8_1_1internal_1_1DebugStackTraceIterator_abe3c5921ed9268c0b90755a92af81161}} 
+\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{v8\+::\+String}} $>$ {\bfseries Get\+Function\+Debug\+Name} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugStackTraceIterator_a19f19fc0effa871d3131b9610bb74d70}\label{classv8_1_1internal_1_1DebugStackTraceIterator_a19f19fc0effa871d3131b9610bb74d70}} 
+\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1debug_1_1Script}{v8\+::debug\+::\+Script}} $>$ {\bfseries Get\+Script} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugStackTraceIterator_aceb83dc0511cd7b43d9e6aeb6c97d99e}\label{classv8_1_1internal_1_1DebugStackTraceIterator_aceb83dc0511cd7b43d9e6aeb6c97d99e}} 
+\mbox{\hyperlink{classv8_1_1debug_1_1Location}{debug\+::\+Location}} {\bfseries Get\+Source\+Location} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugStackTraceIterator_a196cfc91b9d0888781a9d03603f2f5a5}\label{classv8_1_1internal_1_1DebugStackTraceIterator_a196cfc91b9d0888781a9d03603f2f5a5}} 
+\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Function}{v8\+::\+Function}} $>$ {\bfseries Get\+Function} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugStackTraceIterator_a7d2843ea84bde1c1700b0fcb37f50538}\label{classv8_1_1internal_1_1DebugStackTraceIterator_a7d2843ea84bde1c1700b0fcb37f50538}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1debug_1_1ScopeIterator}{v8\+::debug\+::\+Scope\+Iterator}} $>$ {\bfseries Get\+Scope\+Iterator} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugStackTraceIterator_afe0ede5b52fb1a97244c561632b766dc}\label{classv8_1_1internal_1_1DebugStackTraceIterator_afe0ede5b52fb1a97244c561632b766dc}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Restart} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugStackTraceIterator_ab342197fcebd314afb384c95c7c98e6c}\label{classv8_1_1internal_1_1DebugStackTraceIterator_ab342197fcebd314afb384c95c7c98e6c}} 
+\mbox{\hyperlink{classv8_1_1MaybeLocal}{v8\+::\+Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ {\bfseries Evaluate} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{v8\+::\+String}} $>$ source, \mbox{\hyperlink{classbool}{bool}} throw\+\_\+on\+\_\+side\+\_\+effect) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file debug-\/stack-\/trace-\/iterator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/debug/debug-\/stack-\/trace-\/iterator.\+h\item 
+v8/src/debug/debug-\/stack-\/trace-\/iterator.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,57 @@
+\hypertarget{classv8_1_1internal_1_1ProfileTree}{}\section{v8\+:\+:internal\+:\+:Profile\+Tree Class Reference}
+\label{classv8_1_1internal_1_1ProfileTree}\index{v8\+::internal\+::\+Profile\+Tree@{v8\+::internal\+::\+Profile\+Tree}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileTree_a3c44580881c9acd619dc36ac30776ad4}\label{classv8_1_1internal_1_1ProfileTree_a3c44580881c9acd619dc36ac30776ad4}} 
+typedef v8\+::\+Cpu\+Profiling\+Mode {\bfseries Profiling\+Mode}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileTree_ad0a684dc116b33cae0283694e33af15f}\label{classv8_1_1internal_1_1ProfileTree_ad0a684dc116b33cae0283694e33af15f}} 
+{\bfseries Profile\+Tree} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileTree_a2f2066b32fa506574a093427056b3347}\label{classv8_1_1internal_1_1ProfileTree_a2f2066b32fa506574a093427056b3347}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ProfileNode}{Profile\+Node}} $\ast$ {\bfseries Add\+Path\+From\+End} (const std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CodeEntry}{Code\+Entry}} $\ast$$>$ \&path, \mbox{\hyperlink{classint}{int}} src\+\_\+line=v8\+::\+Cpu\+Profile\+Node\+::k\+No\+Line\+Number\+Info, \mbox{\hyperlink{classbool}{bool}} update\+\_\+stats=true)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileTree_aa5db53be59f3acb60ff1e6070f3b0932}\label{classv8_1_1internal_1_1ProfileTree_aa5db53be59f3acb60ff1e6070f3b0932}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ProfileNode}{Profile\+Node}} $\ast$ {\bfseries Add\+Path\+From\+End} (const Profile\+Stack\+Trace \&path, \mbox{\hyperlink{classint}{int}} src\+\_\+line=v8\+::\+Cpu\+Profile\+Node\+::k\+No\+Line\+Number\+Info, \mbox{\hyperlink{classbool}{bool}} update\+\_\+stats=true, Profiling\+Mode mode=Profiling\+Mode\+::k\+Leaf\+Node\+Line\+Numbers)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileTree_a03154bc74928f83002cb9148cc2fbfa8}\label{classv8_1_1internal_1_1ProfileTree_a03154bc74928f83002cb9148cc2fbfa8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ProfileNode}{Profile\+Node}} $\ast$ {\bfseries root} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileTree_a8f6da4826c203b27853dd938cc629afe}\label{classv8_1_1internal_1_1ProfileTree_a8f6da4826c203b27853dd938cc629afe}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries next\+\_\+node\+\_\+id} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileTree_a801fa3c6cdc6c8ade55b1e33284301a7}\label{classv8_1_1internal_1_1ProfileTree_a801fa3c6cdc6c8ade55b1e33284301a7}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries Get\+Function\+Id} (const \mbox{\hyperlink{classv8_1_1internal_1_1ProfileNode}{Profile\+Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileTree_a8c898f6817801f67220153bfdba1c868}\label{classv8_1_1internal_1_1ProfileTree_a8c898f6817801f67220153bfdba1c868}} 
+void {\bfseries Print} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileTree_ad94fde29f1f599e00c6fee5ec39fcc37}\label{classv8_1_1internal_1_1ProfileTree_ad94fde29f1f599e00c6fee5ec39fcc37}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileTree_abe2a0b714c5184628ac10ce2d1515124}\label{classv8_1_1internal_1_1ProfileTree_abe2a0b714c5184628ac10ce2d1515124}} 
+void {\bfseries Enqueue\+Node} (const \mbox{\hyperlink{classv8_1_1internal_1_1ProfileNode}{Profile\+Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileTree_aa802e9a0e558ff7a6d89fec49a02dc52}\label{classv8_1_1internal_1_1ProfileTree_aa802e9a0e558ff7a6d89fec49a02dc52}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries pending\+\_\+nodes\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfileTree_ae4edc725d27480353bd7b62f290ccbe8}\label{classv8_1_1internal_1_1ProfileTree_ae4edc725d27480353bd7b62f290ccbe8}} 
+std\+::vector$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1ProfileNode}{Profile\+Node}} $\ast$ $>$ {\bfseries Take\+Pending\+Nodes} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 267 of file profile-\/generator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/profile-\/generator.\+h\item 
+v8/src/profiler/profile-\/generator.\+cc\end{DoxyCompactItemize}

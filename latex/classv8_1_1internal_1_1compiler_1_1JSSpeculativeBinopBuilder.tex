@@ -1,0 +1,68 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Speculative\+Binop\+Builder Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder}\index{v8\+::internal\+::compiler\+::\+J\+S\+Speculative\+Binop\+Builder@{v8\+::internal\+::compiler\+::\+J\+S\+Speculative\+Binop\+Builder}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a9f9e7f34bb9158348546ff8b31667bbd}\label{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a9f9e7f34bb9158348546ff8b31667bbd}} 
+{\bfseries J\+S\+Speculative\+Binop\+Builder} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering}{J\+S\+Type\+Hint\+Lowering}} $\ast$lowering, const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$op, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$left, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$right, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$effect, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$control, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_aef755bc1a39954265db02e19d1b5faa9}\label{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_aef755bc1a39954265db02e19d1b5faa9}} 
+Binary\+Operation\+Hint {\bfseries Get\+Binary\+Operation\+Hint} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a532867e7c4368307ab4eab3bed89ba93}\label{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a532867e7c4368307ab4eab3bed89ba93}} 
+Compare\+Operation\+Hint {\bfseries Get\+Compare\+Operation\+Hint} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a70bca65fe845bcd8fc5adf857b552a1a}\label{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a70bca65fe845bcd8fc5adf857b552a1a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Get\+Binary\+Number\+Operation\+Hint} (Number\+Operation\+Hint $\ast$hint)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a579d554b89914cfea9787a4a8c32e8bb}\label{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a579d554b89914cfea9787a4a8c32e8bb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Get\+Compare\+Number\+Operation\+Hint} (Number\+Operation\+Hint $\ast$hint)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_aa6c4bbd70b1509cc73b5933c4382c41e}\label{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_aa6c4bbd70b1509cc73b5933c4382c41e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Speculative\+Number\+Op} (Number\+Operation\+Hint hint)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a5071b9d5fdd54f02073e0a25d655de68}\label{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a5071b9d5fdd54f02073e0a25d655de68}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Speculative\+Compare\+Op} (Number\+Operation\+Hint hint)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a526f97edbcd779039596be6c927a7f74}\label{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a526f97edbcd779039596be6c927a7f74}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Build\+Speculative\+Operation} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$op)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a31b9c27886c2a0b0c14720662a679411}\label{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a31b9c27886c2a0b0c14720662a679411}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Try\+Build\+Number\+Binop} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a5e86281129a0aa8820f01b8131ae1f4b}\label{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a5e86281129a0aa8820f01b8131ae1f4b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Try\+Build\+Number\+Compare} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a75ffe13438b07a9a44c7455b0efe797f}\label{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a75ffe13438b07a9a44c7455b0efe797f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSGraph}{J\+S\+Graph}} $\ast$ {\bfseries jsgraph} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a82411df8ecd442a69e65573499cad72d}\label{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a82411df8ecd442a69e65573499cad72d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a55c8ff15b1bc93ee8567899afcdaa2e6}\label{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a55c8ff15b1bc93ee8567899afcdaa2e6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Graph}{Graph}} $\ast$ {\bfseries graph} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a9d3a405054fdbc60013f1abcad085b9e}\label{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a9d3a405054fdbc60013f1abcad085b9e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSOperatorBuilder}{J\+S\+Operator\+Builder}} $\ast$ {\bfseries javascript} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a582b5bdbeace0a7481b211fa516e59f7}\label{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_a582b5bdbeace0a7481b211fa516e59f7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SimplifiedOperatorBuilder}{Simplified\+Operator\+Builder}} $\ast$ {\bfseries simplified} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_aa38e6ead259baa230efc143c9bc84627}\label{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_aa38e6ead259baa230efc143c9bc84627}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CommonOperatorBuilder}{Common\+Operator\+Builder}} $\ast$ {\bfseries common} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_adeef41efa23c7c71ebaffed0d212aff8}\label{classv8_1_1internal_1_1compiler_1_1JSSpeculativeBinopBuilder_adeef41efa23c7c71ebaffed0d212aff8}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackVector}{Feedback\+Vector}} $>$ \& {\bfseries feedback\+\_\+vector} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 49 of file js-\/type-\/hint-\/lowering.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/js-\/type-\/hint-\/lowering.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,55 @@
+\hypertarget{structv8_1_1internal_1_1interpreter_1_1OperandScaler}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Operand\+Scaler$<$ operand\+\_\+type, operand\+\_\+scale $>$ Struct Template Reference}
+\label{structv8_1_1internal_1_1interpreter_1_1OperandScaler}\index{v8\+::internal\+::interpreter\+::\+Operand\+Scaler$<$ operand\+\_\+type, operand\+\_\+scale $>$@{v8\+::internal\+::interpreter\+::\+Operand\+Scaler$<$ operand\+\_\+type, operand\+\_\+scale $>$}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1interpreter_1_1OperandScaler_1_1Helper}{Helper}}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1interpreter_1_1OperandScaler_1_1Helper_3_01false_00_01size_00_01scale_01_4}{Helper$<$ false, size, scale $>$}}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1interpreter_1_1OperandScaler_1_1Helper_3_01true_00_01size_00_01scale_01_4}{Helper$<$ true, size, scale $>$}}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Size}
+\item 
+\mbox{\Hypertarget{structv8_1_1internal_1_1interpreter_1_1OperandScaler_ae8a29ace7ee9572510145173b84e8a00}\label{structv8_1_1internal_1_1interpreter_1_1OperandScaler_ae8a29ace7ee9572510145173b84e8a00}} 
+static const Operand\+Size {\bfseries k\+Operand\+Size} = static\+\_\+cast$<$Operand\+Size$>$(k\+Size)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$Operand\+Type operand\+\_\+type, Operand\+Scale operand\+\_\+scale$>$\newline
+struct v8\+::internal\+::interpreter\+::\+Operand\+Scaler$<$ operand\+\_\+type, operand\+\_\+scale $>$}
+
+
+
+Definition at line 47 of file bytecode-\/traits.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structv8_1_1internal_1_1interpreter_1_1OperandScaler_a8e7bad5558ef958d84376ed6d472134b}\label{structv8_1_1internal_1_1interpreter_1_1OperandScaler_a8e7bad5558ef958d84376ed6d472134b}} 
+\index{v8\+::internal\+::interpreter\+::\+Operand\+Scaler@{v8\+::internal\+::interpreter\+::\+Operand\+Scaler}!k\+Size@{k\+Size}}
+\index{k\+Size@{k\+Size}!v8\+::internal\+::interpreter\+::\+Operand\+Scaler@{v8\+::internal\+::interpreter\+::\+Operand\+Scaler}}
+\subsubsection{\texorpdfstring{k\+Size}{kSize}}
+{\footnotesize\ttfamily template$<$Operand\+Type operand\+\_\+type, Operand\+Scale operand\+\_\+scale$>$ \\
+const \mbox{\hyperlink{classint}{int}} \mbox{\hyperlink{structv8_1_1internal_1_1interpreter_1_1OperandScaler}{v8\+::internal\+::interpreter\+::\+Operand\+Scaler}}$<$ operand\+\_\+type, operand\+\_\+scale $>$\+::k\+Size\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      Helper<OperandTraits<operand\_type>::TypeInfoTraits::kIsScalable,
+             OperandTraits<operand\_type>::TypeInfoTraits::kUnscaledSize,
+             operand\_scale>::kSize
+\end{DoxyCode}
+
+
+Definition at line 61 of file bytecode-\/traits.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/interpreter/bytecode-\/traits.\+h\end{DoxyCompactItemize}

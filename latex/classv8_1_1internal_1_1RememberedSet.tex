@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1internal_1_1RememberedSet}{}\section{v8\+:\+:internal\+:\+:Remembered\+Set$<$ type $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1RememberedSet}\index{v8\+::internal\+::\+Remembered\+Set$<$ type $>$@{v8\+::internal\+::\+Remembered\+Set$<$ type $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Remembered\+Set$<$ type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1RememberedSet}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RememberedSet_a0cede271e87b3c0dfa0a1ff9d08c6ae9}\label{classv8_1_1internal_1_1RememberedSet_a0cede271e87b3c0dfa0a1ff9d08c6ae9}} 
+{\footnotesize template$<$Access\+Mode access\+\_\+mode = Access\+Mode\+::\+A\+T\+O\+M\+IC$>$ }\\static void {\bfseries Insert} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk, \mbox{\hyperlink{classuintptr__t}{Address}} slot\+\_\+addr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RememberedSet_ac2389422a9fa1727303b885b57daf2a4}\label{classv8_1_1internal_1_1RememberedSet_ac2389422a9fa1727303b885b57daf2a4}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Contains} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk, \mbox{\hyperlink{classuintptr__t}{Address}} slot\+\_\+addr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RememberedSet_a305d9f1e1b65f8271594317101ec9fc2}\label{classv8_1_1internal_1_1RememberedSet_a305d9f1e1b65f8271594317101ec9fc2}} 
+static void {\bfseries Remove} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk, \mbox{\hyperlink{classuintptr__t}{Address}} slot\+\_\+addr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RememberedSet_a8a83b8bd95360ba2463ea4f584ed09a9}\label{classv8_1_1internal_1_1RememberedSet_a8a83b8bd95360ba2463ea4f584ed09a9}} 
+static void {\bfseries Remove\+Range} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk, \mbox{\hyperlink{classuintptr__t}{Address}} start, \mbox{\hyperlink{classuintptr__t}{Address}} end, Slot\+Set\+::\+Empty\+Bucket\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RememberedSet_abab20db130f4f10a93d7d6c7327f8e69}\label{classv8_1_1internal_1_1RememberedSet_abab20db130f4f10a93d7d6c7327f8e69}} 
+{\footnotesize template$<$typename Callback $>$ }\\static void {\bfseries Iterate} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, Remembered\+Set\+Iteration\+Mode mode, Callback callback)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RememberedSet_a1d5253b451545ec2e5fc960b42d00870}\label{classv8_1_1internal_1_1RememberedSet_a1d5253b451545ec2e5fc960b42d00870}} 
+{\footnotesize template$<$typename Callback $>$ }\\static void {\bfseries Iterate\+Memory\+Chunks} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, Callback callback)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RememberedSet_a0c6cce464a23684f2d8ffa31536fdf5b}\label{classv8_1_1internal_1_1RememberedSet_a0c6cce464a23684f2d8ffa31536fdf5b}} 
+{\footnotesize template$<$typename Callback $>$ }\\static void {\bfseries Iterate} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk, Callback callback, Slot\+Set\+::\+Empty\+Bucket\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RememberedSet_a23f4106a191a0ae4d0c110cbce1b235b}\label{classv8_1_1internal_1_1RememberedSet_a23f4106a191a0ae4d0c110cbce1b235b}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Pre\+Freed\+Empty\+Buckets} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RememberedSet_a6473ebd18767be6d343014ed334a3529}\label{classv8_1_1internal_1_1RememberedSet_a6473ebd18767be6d343014ed334a3529}} 
+static void {\bfseries Pre\+Free\+Empty\+Buckets} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RememberedSet_ad82eb049f075f20b7036f7fe9989afc5}\label{classv8_1_1internal_1_1RememberedSet_ad82eb049f075f20b7036f7fe9989afc5}} 
+static void {\bfseries Free\+Empty\+Buckets} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RememberedSet_a953537496457d7ef63607ef3607cb0ed}\label{classv8_1_1internal_1_1RememberedSet_a953537496457d7ef63607ef3607cb0ed}} 
+static void {\bfseries Insert\+Typed} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page, \mbox{\hyperlink{classuintptr__t}{Address}} host\+\_\+addr, Slot\+Type slot\+\_\+type, \mbox{\hyperlink{classuintptr__t}{Address}} slot\+\_\+addr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RememberedSet_aa299467ca0ddbf9356f865807aaa753e}\label{classv8_1_1internal_1_1RememberedSet_aa299467ca0ddbf9356f865807aaa753e}} 
+static void {\bfseries Remove\+Range\+Typed} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$page, \mbox{\hyperlink{classuintptr__t}{Address}} start, \mbox{\hyperlink{classuintptr__t}{Address}} end)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RememberedSet_aec84a1fa7382d8e5bd8c9b44e5dea3c9}\label{classv8_1_1internal_1_1RememberedSet_aec84a1fa7382d8e5bd8c9b44e5dea3c9}} 
+{\footnotesize template$<$typename Callback $>$ }\\static void {\bfseries Iterate\+Typed} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, Remembered\+Set\+Iteration\+Mode mode, Callback callback)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RememberedSet_aa5e746c1ad3c2ed0e8759e3b66c2dd63}\label{classv8_1_1internal_1_1RememberedSet_aa5e746c1ad3c2ed0e8759e3b66c2dd63}} 
+{\footnotesize template$<$typename Callback $>$ }\\static void {\bfseries Iterate\+Typed} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk, Callback callback)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RememberedSet_a62fe759ca5f6b7cc5c38a151bd808239}\label{classv8_1_1internal_1_1RememberedSet_a62fe759ca5f6b7cc5c38a151bd808239}} 
+static void {\bfseries Clear\+All} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$Remembered\+Set\+Type type$>$\newline
+class v8\+::internal\+::\+Remembered\+Set$<$ type $>$}
+
+
+
+Definition at line 21 of file remembered-\/set.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/remembered-\/set.\+h\end{DoxyCompactItemize}

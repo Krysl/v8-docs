@@ -1,0 +1,62 @@
+\hypertarget{classv8_1_1base_1_1ThreadedListBase_1_1Iterator}{}\section{v8\+:\+:base\+:\+:Threaded\+List\+Base$<$ T, Base\+Class, T\+L\+Traits $>$\+:\+:Iterator Class Reference}
+\label{classv8_1_1base_1_1ThreadedListBase_1_1Iterator}\index{v8\+::base\+::\+Threaded\+List\+Base$<$ T, Base\+Class, T\+L\+Traits $>$\+::\+Iterator@{v8\+::base\+::\+Threaded\+List\+Base$<$ T, Base\+Class, T\+L\+Traits $>$\+::\+Iterator}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_ae3140b417a1068e893c0bb5a0216d9be}\label{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_ae3140b417a1068e893c0bb5a0216d9be}} 
+using {\bfseries iterator\+\_\+category} = std\+::forward\+\_\+iterator\+\_\+tag
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_a71f874ccee1fc7db1db8cfbb68b8c36c}\label{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_a71f874ccee1fc7db1db8cfbb68b8c36c}} 
+using {\bfseries difference\+\_\+type} = std\+::ptrdiff\+\_\+t
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_ace0085141d3a6f45a751a0cd782bdb8d}\label{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_ace0085141d3a6f45a751a0cd782bdb8d}} 
+using {\bfseries value\+\_\+type} = T $\ast$
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_a99944e9c74da84b8a078c4fd3118482c}\label{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_a99944e9c74da84b8a078c4fd3118482c}} 
+using {\bfseries reference} = value\+\_\+type
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_ab93b8e5172ca5bf99d60786ff50c044a}\label{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_ab93b8e5172ca5bf99d60786ff50c044a}} 
+using {\bfseries pointer} = value\+\_\+type $\ast$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_a3a7ea8c08ecb4b52c3625681416c6303}\label{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_a3a7ea8c08ecb4b52c3625681416c6303}} 
+\mbox{\hyperlink{classv8_1_1base_1_1ThreadedListBase_1_1Iterator}{Iterator}} \& {\bfseries operator++} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_a8da9f0493326d4c854c5330c4523de34}\label{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_a8da9f0493326d4c854c5330c4523de34}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries operator==} (const \mbox{\hyperlink{classv8_1_1base_1_1ThreadedListBase_1_1Iterator}{Iterator}} \&other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_aa0c180d648dc5e42c6d9caac311b9ca0}\label{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_aa0c180d648dc5e42c6d9caac311b9ca0}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries operator!=} (const \mbox{\hyperlink{classv8_1_1base_1_1ThreadedListBase_1_1Iterator}{Iterator}} \&other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_a0a0f4e2b8f533a42b46df6b0b6a3fbf5}\label{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_a0a0f4e2b8f533a42b46df6b0b6a3fbf5}} 
+T $\ast$\& {\bfseries operator$\ast$} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_ae9d7a1164c379989141bbf5b0eabcc2f}\label{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_ae9d7a1164c379989141bbf5b0eabcc2f}} 
+T $\ast$ {\bfseries operator-\/$>$} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_a9a6a576fc5af4a99a32668a32e19a6c6}\label{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_a9a6a576fc5af4a99a32668a32e19a6c6}} 
+\mbox{\hyperlink{classv8_1_1base_1_1ThreadedListBase_1_1Iterator}{Iterator}} \& {\bfseries operator=} (T $\ast$entry)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_a212195f95aeeefa4942d777bce073178}\label{classv8_1_1base_1_1ThreadedListBase_1_1Iterator_a212195f95aeeefa4942d777bce073178}} 
+class {\bfseries Threaded\+List\+Base}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T, typename Base\+Class, typename T\+L\+Traits = Threaded\+List\+Traits$<$\+T$>$$>$\newline
+class v8\+::base\+::\+Threaded\+List\+Base$<$ T, Base\+Class, T\+L\+Traits $>$\+::\+Iterator}
+
+
+
+Definition at line 130 of file threaded-\/list.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/base/threaded-\/list.\+h\end{DoxyCompactItemize}

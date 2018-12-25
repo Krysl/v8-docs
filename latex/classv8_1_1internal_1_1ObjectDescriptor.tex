@@ -1,0 +1,59 @@
+\hypertarget{classv8_1_1internal_1_1ObjectDescriptor}{}\section{v8\+:\+:internal\+:\+:Object\+Descriptor Class Reference}
+\label{classv8_1_1internal_1_1ObjectDescriptor}\index{v8\+::internal\+::\+Object\+Descriptor@{v8\+::internal\+::\+Object\+Descriptor}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectDescriptor_a4343e2eb7d8328e8c2ef9ae4c857dc20}\label{classv8_1_1internal_1_1ObjectDescriptor_a4343e2eb7d8328e8c2ef9ae4c857dc20}} 
+void {\bfseries Inc\+Computed\+Count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectDescriptor_a7927c9ab1253449bd55a0a88758f3bf6}\label{classv8_1_1internal_1_1ObjectDescriptor_a7927c9ab1253449bd55a0a88758f3bf6}} 
+void {\bfseries Inc\+Properties\+Count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectDescriptor_a2d13ed6f017312dc11b6b70004885462}\label{classv8_1_1internal_1_1ObjectDescriptor_a2d13ed6f017312dc11b6b70004885462}} 
+void {\bfseries Inc\+Elements\+Count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectDescriptor_adb84128cc8051890413f401a18053137}\label{classv8_1_1internal_1_1ObjectDescriptor_adb84128cc8051890413f401a18053137}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Dictionary\+Properties} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectDescriptor_a954a003b5eb7361e80e922a151ed7a5a}\label{classv8_1_1internal_1_1ObjectDescriptor_a954a003b5eb7361e80e922a151ed7a5a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries properties\+\_\+template} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectDescriptor_ae148cbd0c8700791a740fee9dd3eafd0}\label{classv8_1_1internal_1_1ObjectDescriptor_ae148cbd0c8700791a740fee9dd3eafd0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1NumberDictionary}{Number\+Dictionary}} $>$ {\bfseries elements\+\_\+template} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectDescriptor_abc422b54a0df60369b0d4ce8b7f356fb}\label{classv8_1_1internal_1_1ObjectDescriptor_abc422b54a0df60369b0d4ce8b7f356fb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ {\bfseries computed\+\_\+properties} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectDescriptor_a1ea820170011d499d7816845db3f2185}\label{classv8_1_1internal_1_1ObjectDescriptor_a1ea820170011d499d7816845db3f2185}} 
+void {\bfseries Create\+Templates} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} slack)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectDescriptor_adcc3e1d83d862b5e022b90fcb0f58eb8}\label{classv8_1_1internal_1_1ObjectDescriptor_adcc3e1d83d862b5e022b90fcb0f58eb8}} 
+void {\bfseries Add\+Constant} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, Property\+Attributes attribs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectDescriptor_afeecf5a36aa5aba928d7caee85ea7e3b}\label{classv8_1_1internal_1_1ObjectDescriptor_afeecf5a36aa5aba928d7caee85ea7e3b}} 
+void {\bfseries Add\+Named\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, Class\+Boilerplate\+::\+Value\+Kind value\+\_\+kind, \mbox{\hyperlink{classint}{int}} value\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectDescriptor_a51e29eb960c54d4264040e97f62a820e}\label{classv8_1_1internal_1_1ObjectDescriptor_a51e29eb960c54d4264040e97f62a820e}} 
+void {\bfseries Add\+Indexed\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} element, Class\+Boilerplate\+::\+Value\+Kind value\+\_\+kind, \mbox{\hyperlink{classint}{int}} value\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectDescriptor_ae8f5d5bdbbf7ccf17f3a743094d53161}\label{classv8_1_1internal_1_1ObjectDescriptor_ae8f5d5bdbbf7ccf17f3a743094d53161}} 
+void {\bfseries Add\+Computed} (Class\+Boilerplate\+::\+Value\+Kind value\+\_\+kind, \mbox{\hyperlink{classint}{int}} key\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectDescriptor_a11cb323dbe53d462b7f272580ea4c033}\label{classv8_1_1internal_1_1ObjectDescriptor_a11cb323dbe53d462b7f272580ea4c033}} 
+void {\bfseries Update\+Next\+Enumeration\+Index} (\mbox{\hyperlink{classint}{int}} value\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectDescriptor_ac286f8dc33939993347f8e9eb12770c0}\label{classv8_1_1internal_1_1ObjectDescriptor_ac286f8dc33939993347f8e9eb12770c0}} 
+void {\bfseries Finalize} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 295 of file literal-\/objects.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/literal-\/objects.\+cc\end{DoxyCompactItemize}

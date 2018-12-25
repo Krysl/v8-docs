@@ -1,0 +1,60 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1BlockAssessments}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Block\+Assessments Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1BlockAssessments}\index{v8\+::internal\+::compiler\+::\+Block\+Assessments@{v8\+::internal\+::compiler\+::\+Block\+Assessments}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Block\+Assessments\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1BlockAssessments}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BlockAssessments_aadb80ba282499ca7661203edf35956ba}\label{classv8_1_1internal_1_1compiler_1_1BlockAssessments_aadb80ba282499ca7661203edf35956ba}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1ZoneMap}{Zone\+Map}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}}, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Assessment}{Assessment}} $\ast$, \mbox{\hyperlink{structv8_1_1internal_1_1compiler_1_1OperandAsKeyLess}{Operand\+As\+Key\+Less}} $>$ {\bfseries Operand\+Map}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BlockAssessments_a700e4a6d5b772dd3227058d09d8e2afd}\label{classv8_1_1internal_1_1compiler_1_1BlockAssessments_a700e4a6d5b772dd3227058d09d8e2afd}} 
+{\bfseries Block\+Assessments} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BlockAssessments_af426cc23b18a87d752c7a0d603ff902a}\label{classv8_1_1internal_1_1compiler_1_1BlockAssessments_af426cc23b18a87d752c7a0d603ff902a}} 
+void {\bfseries Drop} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} operand)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BlockAssessments_adc89da8c1bc90dd088292ca2d0412f7f}\label{classv8_1_1internal_1_1compiler_1_1BlockAssessments_adc89da8c1bc90dd088292ca2d0412f7f}} 
+void {\bfseries Drop\+Registers} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BlockAssessments_a64c6a0b81ec94e830a85773a2bf3bd89}\label{classv8_1_1internal_1_1compiler_1_1BlockAssessments_a64c6a0b81ec94e830a85773a2bf3bd89}} 
+void {\bfseries Add\+Definition} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} operand, \mbox{\hyperlink{classint}{int}} virtual\+\_\+register)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BlockAssessments_a63528cb219f683bfde6d5f40d893e5dc}\label{classv8_1_1internal_1_1compiler_1_1BlockAssessments_a63528cb219f683bfde6d5f40d893e5dc}} 
+void {\bfseries Perform\+Moves} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Instruction}{Instruction}} $\ast$instruction)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BlockAssessments_a37a06801540f257333623693a349743d}\label{classv8_1_1internal_1_1compiler_1_1BlockAssessments_a37a06801540f257333623693a349743d}} 
+void {\bfseries Perform\+Parallel\+Moves} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1ParallelMove}{Parallel\+Move}} $\ast$moves)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BlockAssessments_a61768a55893c2e2c08b5de928d3708ac}\label{classv8_1_1internal_1_1compiler_1_1BlockAssessments_a61768a55893c2e2c08b5de928d3708ac}} 
+void {\bfseries Copy\+From} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1BlockAssessments}{Block\+Assessments}} $\ast$other)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BlockAssessments_ac12e8c9f7acbd913d5b04639fbcc463d}\label{classv8_1_1internal_1_1compiler_1_1BlockAssessments_ac12e8c9f7acbd913d5b04639fbcc463d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneMap}{Operand\+Map}} \& {\bfseries map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BlockAssessments_adc9adc4a7cab49d937623b567136349f}\label{classv8_1_1internal_1_1compiler_1_1BlockAssessments_adc9adc4a7cab49d937623b567136349f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneMap}{Operand\+Map}} \& {\bfseries map} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1BlockAssessments_a0fb4f2daf5848423b5d54c651743fb0b}\label{classv8_1_1internal_1_1compiler_1_1BlockAssessments_a0fb4f2daf5848423b5d54c651743fb0b}} 
+void {\bfseries Print} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 133 of file register-\/allocator-\/verifier.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/backend/register-\/allocator-\/verifier.\+h\item 
+v8/src/compiler/backend/register-\/allocator-\/verifier.\+cc\end{DoxyCompactItemize}

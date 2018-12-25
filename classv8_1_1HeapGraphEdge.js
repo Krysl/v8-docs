@@ -9,8 +9,8 @@ var classv8_1_1HeapGraphEdge =
       [ "kShortcut", "classv8_1_1HeapGraphEdge.html#a252500cf4307fe9e4fcb0335a907259ba2b64b91a4e16ef3e33fdef57a9488d3e", null ],
       [ "kWeak", "classv8_1_1HeapGraphEdge.html#a252500cf4307fe9e4fcb0335a907259ba93fb3b0bf4c8eeb82ebf84b8ee3c5ccf", null ]
     ] ],
-    [ "GetFromNode", "classv8_1_1HeapGraphEdge.html#a2d730f01c04209726ee3d35524e66113", null ],
-    [ "GetName", "classv8_1_1HeapGraphEdge.html#a05c82a383b42324b73506abc4c82f584", null ],
-    [ "GetToNode", "classv8_1_1HeapGraphEdge.html#a7db892a422357ca83d9803b923e30452", null ],
-    [ "GetType", "classv8_1_1HeapGraphEdge.html#a7d784f0b7a5bf532e9d4ec86bcb94092", null ]
+    [ "GetFromNode", "classv8_1_1HeapGraphEdge.html#a3b45afb4502d730d9b97f41a104d5e17", null ],
+    [ "GetName", "classv8_1_1HeapGraphEdge.html#af37de5a69827bdb0faaa215b9a6542d9", null ],
+    [ "GetToNode", "classv8_1_1HeapGraphEdge.html#a30120b9a5bfd427555bca63b4c3ed106", null ],
+    [ "GetType", "classv8_1_1HeapGraphEdge.html#a3d860b6d7cc571f2de369f8e9e9a6827", null ]
 ];

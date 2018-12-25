@@ -1,0 +1,94 @@
+\hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor}{}\section{v8\+:\+:internal\+:\+:torque\+:\+:Declaration\+Visitor Class Reference}
+\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor}\index{v8\+::internal\+::torque\+::\+Declaration\+Visitor@{v8\+::internal\+::torque\+::\+Declaration\+Visitor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:torque\+:\+:Declaration\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1torque_1_1DeclarationVisitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_ab789509fc39e22ec2c0c0d3dfdbb80ab}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_ab789509fc39e22ec2c0c0d3dfdbb80ab}} 
+void {\bfseries Visit} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Ast}{Ast}} $\ast$ast)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a75b60728f6aeda30e52f699e6d93ae1b}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a75b60728f6aeda30e52f699e6d93ae1b}} 
+void {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Declaration}{Declaration}} $\ast$decl)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_aa74d45f6cfcd63b9a87485d47d31a086}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_aa74d45f6cfcd63b9a87485d47d31a086}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Namespace}{Namespace}} $\ast$ {\bfseries Get\+Or\+Create\+Namespace} (const std\+::string \&name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_abf2ebf8e238ed95c761f4813b62c4393}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_abf2ebf8e238ed95c761f4813b62c4393}} 
+void {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1NamespaceDeclaration}{Namespace\+Declaration}} $\ast$decl)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a7c4914e1195e77326cbbbfbdacfc47f1}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a7c4914e1195e77326cbbbfbdacfc47f1}} 
+void {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1TypeDeclaration}{Type\+Declaration}} $\ast$decl)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_af70c959aea6e00dad8b106583da1dba1}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_af70c959aea6e00dad8b106583da1dba1}} 
+void {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1TypeAliasDeclaration}{Type\+Alias\+Declaration}} $\ast$decl)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_aadd23a4564995a41ad0e4a0dc64bc5ce}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_aadd23a4564995a41ad0e4a0dc64bc5ce}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Builtin}{Builtin}} $\ast$ {\bfseries Create\+Builtin} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1BuiltinDeclaration}{Builtin\+Declaration}} $\ast$decl, std\+::string external\+\_\+name, std\+::string readable\+\_\+name, \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Signature}{Signature}} signature, \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Statement}{Statement}} $\ast$$>$ body)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a4c0819c8134709416852a77bd0f37769}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a4c0819c8134709416852a77bd0f37769}} 
+void {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1ExternalBuiltinDeclaration}{External\+Builtin\+Declaration}} $\ast$decl, const \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Signature}{Signature}} \&signature, \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Statement}{Statement}} $\ast$$>$ body)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_ac1814f650e9f4ae8ff5697fe1987ef9a}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_ac1814f650e9f4ae8ff5697fe1987ef9a}} 
+void {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1ExternalRuntimeDeclaration}{External\+Runtime\+Declaration}} $\ast$decl, const \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Signature}{Signature}} \&sig, \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Statement}{Statement}} $\ast$$>$ body)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_ac4e6d66782858a7c63714afab3e0ea5e}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_ac4e6d66782858a7c63714afab3e0ea5e}} 
+void {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1ExternalMacroDeclaration}{External\+Macro\+Declaration}} $\ast$decl, const \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Signature}{Signature}} \&sig, \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Statement}{Statement}} $\ast$$>$ body)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a35cbaf6b73844586ffc9ea6aa54e9ecb}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a35cbaf6b73844586ffc9ea6aa54e9ecb}} 
+void {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1TorqueBuiltinDeclaration}{Torque\+Builtin\+Declaration}} $\ast$decl, const \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Signature}{Signature}} \&signature, \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Statement}{Statement}} $\ast$$>$ body)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a39f9a387d00f4411f0283bdbd0ad031f}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a39f9a387d00f4411f0283bdbd0ad031f}} 
+void {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1TorqueMacroDeclaration}{Torque\+Macro\+Declaration}} $\ast$decl, const \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Signature}{Signature}} \&signature, \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Statement}{Statement}} $\ast$$>$ body)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_aecb725a27e226651b2b4826deda1820d}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_aecb725a27e226651b2b4826deda1820d}} 
+void {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1IntrinsicDeclaration}{Intrinsic\+Declaration}} $\ast$decl, const \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Signature}{Signature}} \&signature, \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Statement}{Statement}} $\ast$$>$ body)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a2967413a39e7de3f673009d930c7a8a1}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a2967413a39e7de3f673009d930c7a8a1}} 
+void {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1CallableNode}{Callable\+Node}} $\ast$decl, const \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Signature}{Signature}} \&signature, \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Statement}{Statement}} $\ast$$>$ body)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_ab3a67a14d684dd460c44f18b446653a2}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_ab3a67a14d684dd460c44f18b446653a2}} 
+void {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1ConstDeclaration}{Const\+Declaration}} $\ast$decl)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a09a4cdc4c5c2e6a8be8dbf852a3e143e}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a09a4cdc4c5c2e6a8be8dbf852a3e143e}} 
+void {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1StandardDeclaration}{Standard\+Declaration}} $\ast$decl)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a9a68cce33021d5d5dbb43e2470862e28}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a9a68cce33021d5d5dbb43e2470862e28}} 
+void {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1GenericDeclaration}{Generic\+Declaration}} $\ast$decl)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a34c19bf9e25d7ab04839536b028b8e8c}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a34c19bf9e25d7ab04839536b028b8e8c}} 
+void {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1SpecializationDeclaration}{Specialization\+Declaration}} $\ast$decl)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a5aebc745c41b222fa0ad69675f1bea9e}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a5aebc745c41b222fa0ad69675f1bea9e}} 
+void {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1ExternConstDeclaration}{Extern\+Const\+Declaration}} $\ast$decl)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a82ece2660d75c0ea56a08e3636dc7e67}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a82ece2660d75c0ea56a08e3636dc7e67}} 
+void {\bfseries Visit} (\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1StructDeclaration}{Struct\+Declaration}} $\ast$decl)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a7fffc5ea7401ab8bf7208cdf0720b6b8}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a7fffc5ea7401ab8bf7208cdf0720b6b8}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Signature}{Signature}} {\bfseries Make\+Specialized\+Signature} (const \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1SpecializationKey}{Specialization\+Key}} \&key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a954520e2d7eb1c2c14a8880838992dbd}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a954520e2d7eb1c2c14a8880838992dbd}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Callable}{Callable}} $\ast$ {\bfseries Specialize\+Implicit} (const \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1SpecializationKey}{Specialization\+Key}} \&key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a2fb6fcf99ae756b6e9961cffce952db5}\label{classv8_1_1internal_1_1torque_1_1DeclarationVisitor_a2fb6fcf99ae756b6e9961cffce952db5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Callable}{Callable}} $\ast$ {\bfseries Specialize} (const \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1SpecializationKey}{Specialization\+Key}} \&key, \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1CallableNode}{Callable\+Node}} $\ast$declaration, \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ const \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1CallableNodeSignature}{Callable\+Node\+Signature}} $\ast$$>$ signature, \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1torque_1_1Statement}{Statement}} $\ast$$>$ body)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file declaration-\/visitor.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/torque/declaration-\/visitor.\+h\item 
+v8/src/torque/declaration-\/visitor.\+cc\end{DoxyCompactItemize}

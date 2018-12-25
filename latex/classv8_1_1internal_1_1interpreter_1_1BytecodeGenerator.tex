@@ -1,0 +1,77 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecode\+Generator Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator}\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Generator@{v8\+::internal\+::interpreter\+::\+Bytecode\+Generator}}
+Inheritance diagram for v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecode\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ContextScope}{Context\+Scope}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope}{Control\+Scope}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScopeForBreakable}{Control\+Scope\+For\+Breakable}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScopeForIteration}{Control\+Scope\+For\+Iteration}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScopeForTopLevel}{Control\+Scope\+For\+Top\+Level}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScopeForTryCatch}{Control\+Scope\+For\+Try\+Catch}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScopeForTryFinally}{Control\+Scope\+For\+Try\+Finally}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1CurrentScope}{Current\+Scope}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1EffectResultScope}{Effect\+Result\+Scope}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ExpressionResultScope}{Expression\+Result\+Scope}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1FeedbackSlotCache}{Feedback\+Slot\+Cache}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1GlobalDeclarationsBuilder}{Global\+Declarations\+Builder}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1IteratorRecord}{Iterator\+Record}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1NaryCodeCoverageSlots}{Nary\+Code\+Coverage\+Slots}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1RegisterAllocationScope}{Register\+Allocation\+Scope}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1TestResultScope}{Test\+Result\+Scope}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ValueResultScope}{Value\+Result\+Scope}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_ac4631a891725f4cd325adb4cad97ccdc}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_ac4631a891725f4cd325adb4cad97ccdc}} 
+{\bfseries Bytecode\+Generator} (\mbox{\hyperlink{classv8_1_1internal_1_1UnoptimizedCompilationInfo}{Unoptimized\+Compilation\+Info}} $\ast$info, const \mbox{\hyperlink{classv8_1_1internal_1_1AstStringConstants}{Ast\+String\+Constants}} $\ast$ast\+\_\+string\+\_\+constants, std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FunctionLiteral}{Function\+Literal}} $\ast$$>$ $\ast$eager\+\_\+inner\+\_\+literals)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_a16a6e87a78b3d35ec6eb5278babad5be}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_a16a6e87a78b3d35ec6eb5278babad5be}} 
+void {\bfseries Generate\+Bytecode} (\mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} stack\+\_\+limit)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_a55291a15a37126f1a3b7f45eb52975fd}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_a55291a15a37126f1a3b7f45eb52975fd}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BytecodeArray}{Bytecode\+Array}} $>$ {\bfseries Finalize\+Bytecode} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Script}{Script}} $>$ script)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_ade0d28db74cc7bef573590c8b1dbcb5f}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_ade0d28db74cc7bef573590c8b1dbcb5f}} 
+void {\bfseries Visit\+Declarations} (\mbox{\hyperlink{classv8_1_1base_1_1ThreadedListBase}{Declaration\+::\+List}} $\ast$declarations)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_a79a0fc0b6a939e65963e7b448d7a892e}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_a79a0fc0b6a939e65963e7b448d7a892e}} 
+void {\bfseries Visit\+Statements} (const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Statement}{Statement}} $>$ $\ast$statments)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 30 of file bytecode-\/generator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/interpreter/bytecode-\/generator.\+h\item 
+v8/src/interpreter/bytecode-\/generator.\+cc\end{DoxyCompactItemize}

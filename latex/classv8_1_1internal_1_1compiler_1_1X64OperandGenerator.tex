@@ -1,0 +1,48 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:X64\+Operand\+Generator Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator}\index{v8\+::internal\+::compiler\+::\+X64\+Operand\+Generator@{v8\+::internal\+::compiler\+::\+X64\+Operand\+Generator}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:X64\+Operand\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator_a2f123c8b3f3c98fe340ac808feaca428}\label{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator_a2f123c8b3f3c98fe340ac808feaca428}} 
+{\bfseries X64\+Operand\+Generator} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionSelector}{Instruction\+Selector}} $\ast$selector)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator_aeea6d01288b05aa78636fbdb60b06200}\label{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator_aeea6d01288b05aa78636fbdb60b06200}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Be\+Immediate} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator_a4fc6668955ffd8795ab1adf62d075b21}\label{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator_a4fc6668955ffd8795ab1adf62d075b21}} 
+int32\+\_\+t {\bfseries Get\+Immediate\+Integer\+Value} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator_ae56e894a714203086c0639e7745166fb}\label{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator_ae56e894a714203086c0639e7745166fb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Be\+Memory\+Operand} (Instruction\+Code opcode, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$input, \mbox{\hyperlink{classint}{int}} effect\+\_\+level)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator_a1a9b8161d0be292813394d8596cafe3e}\label{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator_a1a9b8161d0be292813394d8596cafe3e}} 
+Addressing\+Mode {\bfseries Generate\+Memory\+Operand\+Inputs} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$index, \mbox{\hyperlink{classint}{int}} scale\+\_\+exponent, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$base, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$displacement, Displacement\+Mode displacement\+\_\+mode, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} inputs\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} $\ast$input\+\_\+count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator_aa794b876b7305b077a2ad11adbc153e3}\label{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator_aa794b876b7305b077a2ad11adbc153e3}} 
+Addressing\+Mode {\bfseries Get\+Effective\+Address\+Memory\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$operand, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} inputs\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} $\ast$input\+\_\+count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator_a6331c00cdef46f4371b6aee778890dc2}\label{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator_a6331c00cdef46f4371b6aee778890dc2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} {\bfseries Get\+Effective\+Index\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$index, Addressing\+Mode $\ast$mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator_a58a76db293772c7ecb5a698c2ba39988}\label{classv8_1_1internal_1_1compiler_1_1X64OperandGenerator_a58a76db293772c7ecb5a698c2ba39988}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Be\+Better\+Left\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file instruction-\/selector-\/x64.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/backend/x64/instruction-\/selector-\/x64.\+cc\end{DoxyCompactItemize}

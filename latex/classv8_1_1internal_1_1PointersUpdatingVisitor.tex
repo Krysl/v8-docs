@@ -1,0 +1,51 @@
+\hypertarget{classv8_1_1internal_1_1PointersUpdatingVisitor}{}\section{v8\+:\+:internal\+:\+:Pointers\+Updating\+Visitor Class Reference}
+\label{classv8_1_1internal_1_1PointersUpdatingVisitor}\index{v8\+::internal\+::\+Pointers\+Updating\+Visitor@{v8\+::internal\+::\+Pointers\+Updating\+Visitor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Pointers\+Updating\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1PointersUpdatingVisitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PointersUpdatingVisitor_a84e6800ee618f900fbe6bad487fbbd28}\label{classv8_1_1internal_1_1PointersUpdatingVisitor_a84e6800ee618f900fbe6bad487fbbd28}} 
+{\bfseries Pointers\+Updating\+Visitor} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PointersUpdatingVisitor_a62efedced652b6dff0aacf3b8a852519}\label{classv8_1_1internal_1_1PointersUpdatingVisitor_a62efedced652b6dff0aacf3b8a852519}} 
+void {\bfseries Visit\+Pointer} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} p) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PointersUpdatingVisitor_a487f3b64dd16974f3254fc8961f20932}\label{classv8_1_1internal_1_1PointersUpdatingVisitor_a487f3b64dd16974f3254fc8961f20932}} 
+void {\bfseries Visit\+Pointer} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} p) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PointersUpdatingVisitor_a253e30a3b01b6d7d34bf70307db33648}\label{classv8_1_1internal_1_1PointersUpdatingVisitor_a253e30a3b01b6d7d34bf70307db33648}} 
+void {\bfseries Visit\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} end) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PointersUpdatingVisitor_ad47dd02ddbd2fe869bf1845a520ab183}\label{classv8_1_1internal_1_1PointersUpdatingVisitor_ad47dd02ddbd2fe869bf1845a520ab183}} 
+void {\bfseries Visit\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} end) final
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PointersUpdatingVisitor_a3c237ad790bfe701c59919c4966279cc}\label{classv8_1_1internal_1_1PointersUpdatingVisitor_a3c237ad790bfe701c59919c4966279cc}} 
+void {\bfseries Visit\+Root\+Pointer} (Root root, const \mbox{\hyperlink{classchar}{char}} $\ast$description, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} p) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PointersUpdatingVisitor_a403d10b03e697d1499d80d145e874202}\label{classv8_1_1internal_1_1PointersUpdatingVisitor_a403d10b03e697d1499d80d145e874202}} 
+void {\bfseries Visit\+Root\+Pointers} (Root root, const \mbox{\hyperlink{classchar}{char}} $\ast$description, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} end) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PointersUpdatingVisitor_af2d1b0ac2924355275045a3e91933e14}\label{classv8_1_1internal_1_1PointersUpdatingVisitor_af2d1b0ac2924355275045a3e91933e14}} 
+void {\bfseries Visit\+Embedded\+Pointer} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$rinfo) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PointersUpdatingVisitor_a73fc233b37577e745363789170077c75}\label{classv8_1_1internal_1_1PointersUpdatingVisitor_a73fc233b37577e745363789170077c75}} 
+void {\bfseries Visit\+Code\+Target} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classv8_1_1internal_1_1RelocInfo}{Reloc\+Info}} $\ast$rinfo) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 2267 of file mark-\/compact.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/mark-\/compact.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\hypertarget{classv8_1_1debug_1_1ScopeIterator}{}\section{v8\+:\+:debug\+:\+:Scope\+Iterator Class Reference}
+\label{classv8_1_1debug_1_1ScopeIterator}\index{v8\+::debug\+::\+Scope\+Iterator@{v8\+::debug\+::\+Scope\+Iterator}}
+Inheritance diagram for v8\+:\+:debug\+:\+:Scope\+Iterator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1debug_1_1ScopeIterator}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1ScopeIterator_af260ab9b643c76c1adf63339eb8ebc9d}\label{classv8_1_1debug_1_1ScopeIterator_af260ab9b643c76c1adf63339eb8ebc9d}} 
+enum {\bfseries Scope\+Type} \{ \newline
+{\bfseries Scope\+Type\+Global} = 0, 
+{\bfseries Scope\+Type\+Local}, 
+{\bfseries Scope\+Type\+With}, 
+{\bfseries Scope\+Type\+Closure}, 
+\newline
+{\bfseries Scope\+Type\+Catch}, 
+{\bfseries Scope\+Type\+Block}, 
+{\bfseries Scope\+Type\+Script}, 
+{\bfseries Scope\+Type\+Eval}, 
+\newline
+{\bfseries Scope\+Type\+Module}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1ScopeIterator_a72ac197a5ef82056d44362b5ced56d0e}\label{classv8_1_1debug_1_1ScopeIterator_a72ac197a5ef82056d44362b5ced56d0e}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Done} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1ScopeIterator_a92fec1678b3ce45e7e1d0c6d12ae5ddb}\label{classv8_1_1debug_1_1ScopeIterator_a92fec1678b3ce45e7e1d0c6d12ae5ddb}} 
+virtual void {\bfseries Advance} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1ScopeIterator_ad3e6ae710a5f1d336074e9db63cf8a4a}\label{classv8_1_1debug_1_1ScopeIterator_ad3e6ae710a5f1d336074e9db63cf8a4a}} 
+virtual Scope\+Type {\bfseries Get\+Type} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1ScopeIterator_a8e110c598c50e21cb02f2ba8af7f5edf}\label{classv8_1_1debug_1_1ScopeIterator_a8e110c598c50e21cb02f2ba8af7f5edf}} 
+virtual \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{v8\+::\+Object}} $>$ {\bfseries Get\+Object} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1ScopeIterator_a8ac2cf60212bf1f4ccdb6fa108edaf7a}\label{classv8_1_1debug_1_1ScopeIterator_a8ac2cf60212bf1f4ccdb6fa108edaf7a}} 
+virtual \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ {\bfseries Get\+Function\+Debug\+Name} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1ScopeIterator_a0a517ca94e126f3155577f486e34d961}\label{classv8_1_1debug_1_1ScopeIterator_a0a517ca94e126f3155577f486e34d961}} 
+virtual \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Script\+Id} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1ScopeIterator_adf784be449e5e7fdd40cc75ff1758981}\label{classv8_1_1debug_1_1ScopeIterator_adf784be449e5e7fdd40cc75ff1758981}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Location\+Info} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1ScopeIterator_ac6606bae83f9c085fd7629cbc0d2fc2f}\label{classv8_1_1debug_1_1ScopeIterator_ac6606bae83f9c085fd7629cbc0d2fc2f}} 
+virtual \mbox{\hyperlink{classv8_1_1debug_1_1Location}{debug\+::\+Location}} {\bfseries Get\+Start\+Location} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1ScopeIterator_ad1e0c7c9a7b5d225d4255bfc23c13bcf}\label{classv8_1_1debug_1_1ScopeIterator_ad1e0c7c9a7b5d225d4255bfc23c13bcf}} 
+virtual \mbox{\hyperlink{classv8_1_1debug_1_1Location}{debug\+::\+Location}} {\bfseries Get\+End\+Location} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1ScopeIterator_a528ce99d0480f447d28fee52354d4fc9}\label{classv8_1_1debug_1_1ScopeIterator_a528ce99d0480f447d28fee52354d4fc9}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Set\+Variable\+Value} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{v8\+::\+String}} $>$ name, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ value)=0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1ScopeIterator_a0426555c120a3c61a40417f6fbd682a0}\label{classv8_1_1debug_1_1ScopeIterator_a0426555c120a3c61a40417f6fbd682a0}} 
+static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1debug_1_1ScopeIterator}{Scope\+Iterator}} $>$ {\bfseries Create\+For\+Function} (v8\+::\+Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Function}{v8\+::\+Function}} $>$ func)
+\item 
+\mbox{\Hypertarget{classv8_1_1debug_1_1ScopeIterator_a7f2f2b7bb3e6ee9b10a231caeca4fff6}\label{classv8_1_1debug_1_1ScopeIterator_a7f2f2b7bb3e6ee9b10a231caeca4fff6}} 
+static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1debug_1_1ScopeIterator}{Scope\+Iterator}} $>$ {\bfseries Create\+For\+Generator\+Object} (v8\+::\+Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{v8\+::\+Object}} $>$ generator)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 387 of file debug-\/interface.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/debug/debug-\/interface.\+h\item 
+v8/src/debug/debug-\/scope-\/iterator.\+cc\end{DoxyCompactItemize}

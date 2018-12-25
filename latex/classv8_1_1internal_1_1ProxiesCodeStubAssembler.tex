@@ -1,0 +1,63 @@
+\hypertarget{classv8_1_1internal_1_1ProxiesCodeStubAssembler}{}\section{v8\+:\+:internal\+:\+:Proxies\+Code\+Stub\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1ProxiesCodeStubAssembler}\index{v8\+::internal\+::\+Proxies\+Code\+Stub\+Assembler@{v8\+::internal\+::\+Proxies\+Code\+Stub\+Assembler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Proxies\+Code\+Stub\+Assembler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1ProxiesCodeStubAssembler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProxiesCodeStubAssembler_a134508466518b81a7184d038abf568f0}\label{classv8_1_1internal_1_1ProxiesCodeStubAssembler_a134508466518b81a7184d038abf568f0}} 
+{\bfseries Proxies\+Code\+Stub\+Assembler} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerState}{compiler\+::\+Code\+Assembler\+State}} $\ast$state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProxiesCodeStubAssembler_ad2c09cc4c3faed1ecca093d7b4f3e410}\label{classv8_1_1internal_1_1ProxiesCodeStubAssembler_ad2c09cc4c3faed1ecca093d7b4f3e410}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Proxy\+Get\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$proxy, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$name, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$receiver)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProxiesCodeStubAssembler_aece69e7d337cca4196d9253ce230e952}\label{classv8_1_1internal_1_1ProxiesCodeStubAssembler_aece69e7d337cca4196d9253ce230e952}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Proxy\+Set\+Property} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$proxy, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$name, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$value, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$receiver)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProxiesCodeStubAssembler_adcebd5bf6071a0fe7476ffac319b1b39}\label{classv8_1_1internal_1_1ProxiesCodeStubAssembler_adcebd5bf6071a0fe7476ffac319b1b39}} 
+enum {\bfseries Proxy\+Revoke\+Function\+Context\+Slot} \{ {\bfseries k\+Proxy\+Slot} = Context\+:\+:M\+I\+N\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+S\+L\+O\+TS, 
+{\bfseries k\+Proxy\+Context\+Length}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProxiesCodeStubAssembler_ae0d771584ffd48da4f02a26df8e7bb64}\label{classv8_1_1internal_1_1ProxiesCodeStubAssembler_ae0d771584ffd48da4f02a26df8e7bb64}} 
+void {\bfseries Goto\+If\+Revoked\+Proxy} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$object, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+proxy\+\_\+revoked)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProxiesCodeStubAssembler_a1551a563808dc844c525c0fd6397846a}\label{classv8_1_1internal_1_1ProxiesCodeStubAssembler_a1551a563808dc844c525c0fd6397846a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Allocate\+Proxy} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$target, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$handler, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProxiesCodeStubAssembler_a1f7ea534bcdc3b79ff54ec301e518173}\label{classv8_1_1internal_1_1ProxiesCodeStubAssembler_a1f7ea534bcdc3b79ff54ec301e518173}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Allocate\+J\+S\+Array\+For\+Code\+Stub\+Arguments} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1CodeStubArguments}{Code\+Stub\+Arguments}} \&args, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$argc, Parameter\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProxiesCodeStubAssembler_ae220875faccdac1904f6849dd5ef31b5}\label{classv8_1_1internal_1_1ProxiesCodeStubAssembler_ae220875faccdac1904f6849dd5ef31b5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Allocate\+Proxy\+Revoke\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$proxy, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProxiesCodeStubAssembler_adff8f5f2fcd22163ec68c9dd45ea1598}\label{classv8_1_1internal_1_1ProxiesCodeStubAssembler_adff8f5f2fcd22163ec68c9dd45ea1598}} 
+void {\bfseries Check\+Has\+Trap\+Result} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$target, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$proxy, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$name, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$check\+\_\+passed, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+bailout)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProxiesCodeStubAssembler_aaadc9317271a2d7a0af86379f1c518fd}\label{classv8_1_1internal_1_1ProxiesCodeStubAssembler_aaadc9317271a2d7a0af86379f1c518fd}} 
+void {\bfseries Check\+Get\+Set\+Trap\+Result} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$target, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$proxy, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$name, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$trap\+\_\+result, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+not\+\_\+found, J\+S\+Proxy\+::\+Access\+Kind access\+\_\+kind)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file builtins-\/proxy-\/gen.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/builtins/builtins-\/proxy-\/gen.\+h\item 
+v8/src/builtins/builtins-\/proxy-\/gen.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,107 @@
+\hypertarget{classv8_1_1internal_1_1Sweeper}{}\section{v8\+:\+:internal\+:\+:Sweeper Class Reference}
+\label{classv8_1_1internal_1_1Sweeper}\index{v8\+::internal\+::\+Sweeper@{v8\+::internal\+::\+Sweeper}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1Sweeper_1_1FilterSweepingPagesScope}{Filter\+Sweeping\+Pages\+Scope}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1Sweeper_1_1IncrementalSweeperTask}{Incremental\+Sweeper\+Task}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1Sweeper_1_1IterabilityTask}{Iterability\+Task}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1Sweeper_1_1PauseOrCompleteScope}{Pause\+Or\+Complete\+Scope}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1Sweeper_1_1SweeperTask}{Sweeper\+Task}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_a4a6b2dc61081c50c8281e81d3b79d6e3}\label{classv8_1_1internal_1_1Sweeper_a4a6b2dc61081c50c8281e81d3b79d6e3}} 
+enum {\bfseries Free\+List\+Rebuilding\+Mode} \{ {\bfseries R\+E\+B\+U\+I\+L\+D\+\_\+\+F\+R\+E\+E\+\_\+\+L\+I\+ST}, 
+{\bfseries I\+G\+N\+O\+R\+E\+\_\+\+F\+R\+E\+E\+\_\+\+L\+I\+ST}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_ac05e24a8a3b4daad2ebb91d7e8c50071}\label{classv8_1_1internal_1_1Sweeper_ac05e24a8a3b4daad2ebb91d7e8c50071}} 
+enum {\bfseries Clear\+Old\+To\+New\+Slots\+Mode} \{ {\bfseries D\+O\+\_\+\+N\+O\+T\+\_\+\+C\+L\+E\+AR}, 
+{\bfseries C\+L\+E\+A\+R\+\_\+\+R\+E\+G\+U\+L\+A\+R\+\_\+\+S\+L\+O\+TS}, 
+{\bfseries C\+L\+E\+A\+R\+\_\+\+T\+Y\+P\+E\+D\+\_\+\+S\+L\+O\+TS}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_a0ea5d975faaf1f212783c10bedbfb630}\label{classv8_1_1internal_1_1Sweeper_a0ea5d975faaf1f212783c10bedbfb630}} 
+enum {\bfseries Add\+Page\+Mode} \{ {\bfseries R\+E\+G\+U\+L\+AR}, 
+{\bfseries R\+E\+A\+D\+D\+\_\+\+T\+E\+M\+P\+O\+R\+A\+R\+Y\+\_\+\+R\+E\+M\+O\+V\+E\+D\+\_\+\+P\+A\+GE}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_a1a6d90c28a334467088b96f74e764ba1}\label{classv8_1_1internal_1_1Sweeper_a1a6d90c28a334467088b96f74e764ba1}} 
+typedef std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$ $>$ {\bfseries Iterability\+List}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_a6dc9d681ce7d5f92110fb9483e3217c7}\label{classv8_1_1internal_1_1Sweeper_a6dc9d681ce7d5f92110fb9483e3217c7}} 
+typedef std\+::deque$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$ $>$ {\bfseries Sweeping\+List}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_aa367afef3ebeaac28b6ce78cd235f047}\label{classv8_1_1internal_1_1Sweeper_aa367afef3ebeaac28b6ce78cd235f047}} 
+typedef std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$ $>$ {\bfseries Swept\+List}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_abf8cbaa16bd25d3071d8746acbf97014}\label{classv8_1_1internal_1_1Sweeper_abf8cbaa16bd25d3071d8746acbf97014}} 
+{\bfseries Sweeper} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, \mbox{\hyperlink{classv8_1_1internal_1_1MajorNonAtomicMarkingState}{Major\+Non\+Atomic\+Marking\+State}} $\ast$marking\+\_\+state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_a01bad92ed163322fda20e965bec9e19e}\label{classv8_1_1internal_1_1Sweeper_a01bad92ed163322fda20e965bec9e19e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries sweeping\+\_\+in\+\_\+progress} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_ad8f6f5ec90bd98f416befe59d48aa881}\label{classv8_1_1internal_1_1Sweeper_ad8f6f5ec90bd98f416befe59d48aa881}} 
+void {\bfseries Add\+Page} (Allocation\+Space space, \mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page, Add\+Page\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_a68b65d0255f44c25445dffa4fd19fddb}\label{classv8_1_1internal_1_1Sweeper_a68b65d0255f44c25445dffa4fd19fddb}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Parallel\+Sweep\+Space} (Allocation\+Space identity, \mbox{\hyperlink{classint}{int}} required\+\_\+freed\+\_\+bytes, \mbox{\hyperlink{classint}{int}} max\+\_\+pages=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_a599809ad833aaaeb76b9ea32818c522e}\label{classv8_1_1internal_1_1Sweeper_a599809ad833aaaeb76b9ea32818c522e}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Parallel\+Sweep\+Page} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page, Allocation\+Space identity)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_a35d028f98c47f6097c52072e0ed6c597}\label{classv8_1_1internal_1_1Sweeper_a35d028f98c47f6097c52072e0ed6c597}} 
+void {\bfseries Schedule\+Incremental\+Sweeping\+Task} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_a823d43ecf65cb253154da171439b3a2e}\label{classv8_1_1internal_1_1Sweeper_a823d43ecf65cb253154da171439b3a2e}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Raw\+Sweep} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$p, Free\+List\+Rebuilding\+Mode free\+\_\+list\+\_\+mode, Free\+Space\+Treatment\+Mode free\+\_\+space\+\_\+mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_accf2894afba95fe932c05334349a7a8a}\label{classv8_1_1internal_1_1Sweeper_accf2894afba95fe932c05334349a7a8a}} 
+void {\bfseries Start\+Sweeping} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_a0863b5bf8d851dd7b793da8b807d3a7f}\label{classv8_1_1internal_1_1Sweeper_a0863b5bf8d851dd7b793da8b807d3a7f}} 
+void {\bfseries Start\+Sweeper\+Tasks} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_a04405f7360f8c25619667af5a85232d7}\label{classv8_1_1internal_1_1Sweeper_a04405f7360f8c25619667af5a85232d7}} 
+void {\bfseries Ensure\+Completed} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_a071083b193311719d6f14e64a6386377}\label{classv8_1_1internal_1_1Sweeper_a071083b193311719d6f14e64a6386377}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Are\+Sweeper\+Tasks\+Running} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_ac55ccd9ec0a1281412fcc1ffd634af23}\label{classv8_1_1internal_1_1Sweeper_ac55ccd9ec0a1281412fcc1ffd634af23}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$ {\bfseries Get\+Swept\+Page\+Safe} (\mbox{\hyperlink{classv8_1_1internal_1_1PagedSpace}{Paged\+Space}} $\ast$space)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_a192b5bd090db7f2e107653b71c6dbb48}\label{classv8_1_1internal_1_1Sweeper_a192b5bd090db7f2e107653b71c6dbb48}} 
+void {\bfseries Ensure\+Page\+Is\+Iterable} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_ac4f8de279b0074856ade5a321fe183d0}\label{classv8_1_1internal_1_1Sweeper_ac4f8de279b0074856ade5a321fe183d0}} 
+void {\bfseries Add\+Page\+For\+Iterability} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_a24211bd4993d151b7da13f8f24cce93d}\label{classv8_1_1internal_1_1Sweeper_a24211bd4993d151b7da13f8f24cce93d}} 
+void {\bfseries Start\+Iterability\+Tasks} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Sweeper_ad5b16fdd37c2e011e6bd69874a33008f}\label{classv8_1_1internal_1_1Sweeper_ad5b16fdd37c2e011e6bd69874a33008f}} 
+void {\bfseries Ensure\+Iterability\+Completed} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file sweeper.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/sweeper.\+h\item 
+v8/src/heap/sweeper.\+cc\end{DoxyCompactItemize}

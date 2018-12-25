@@ -1,0 +1,107 @@
+\hypertarget{classv8_1_1internal_1_1StringStream}{}\section{v8\+:\+:internal\+:\+:String\+Stream Class Reference}
+\label{classv8_1_1internal_1_1StringStream}\index{v8\+::internal\+::\+String\+Stream@{v8\+::internal\+::\+String\+Stream}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_a361ab644103e5b93e61e9446d097195e}\label{classv8_1_1internal_1_1StringStream_a361ab644103e5b93e61e9446d097195e}} 
+enum {\bfseries Object\+Print\+Mode} \{ {\bfseries k\+Print\+Object\+Concise}, 
+{\bfseries k\+Print\+Object\+Verbose}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_a8c233bfed7b292234ab22574b34014a3}\label{classv8_1_1internal_1_1StringStream_a8c233bfed7b292234ab22574b34014a3}} 
+{\bfseries String\+Stream} (\mbox{\hyperlink{classv8_1_1internal_1_1StringAllocator}{String\+Allocator}} $\ast$allocator, Object\+Print\+Mode object\+\_\+print\+\_\+mode=k\+Print\+Object\+Verbose)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_a24a1a07729bf42969140ba16f3351920}\label{classv8_1_1internal_1_1StringStream_a24a1a07729bf42969140ba16f3351920}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Put} (\mbox{\hyperlink{classchar}{char}} c)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_a86145819736b9e719f2a75e7cd70ea4d}\label{classv8_1_1internal_1_1StringStream_a86145819736b9e719f2a75e7cd70ea4d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Put} (\mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} str)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_a4ff50256ce9eb96aa42c0d47451a3353}\label{classv8_1_1internal_1_1StringStream_a4ff50256ce9eb96aa42c0d47451a3353}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Put} (\mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} str, \mbox{\hyperlink{classint}{int}} start, \mbox{\hyperlink{classint}{int}} end)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_aa3882575a01cba886e200b75ad4225ca}\label{classv8_1_1internal_1_1StringStream_aa3882575a01cba886e200b75ad4225ca}} 
+void {\bfseries Add} (const \mbox{\hyperlink{classchar}{char}} $\ast$format)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_a1575cac89edd5f8f004d2da49b3fb76b}\label{classv8_1_1internal_1_1StringStream_a1575cac89edd5f8f004d2da49b3fb76b}} 
+void {\bfseries Add} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const \mbox{\hyperlink{classchar}{char}} $>$ format)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_a355eb9a1ad080ca52510df27d16ab6de}\label{classv8_1_1internal_1_1StringStream_a355eb9a1ad080ca52510df27d16ab6de}} 
+{\footnotesize template$<$typename... Args$>$ }\\void {\bfseries Add} (const \mbox{\hyperlink{classchar}{char}} $\ast$format, Args... args)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_a109c2f84c2c58636fc4d7d7f1efaf64e}\label{classv8_1_1internal_1_1StringStream_a109c2f84c2c58636fc4d7d7f1efaf64e}} 
+{\footnotesize template$<$typename... Args$>$ }\\void {\bfseries Add} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const \mbox{\hyperlink{classchar}{char}} $>$ format, Args... args)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_a8b576f5204b520bb54eb6d52506c275d}\label{classv8_1_1internal_1_1StringStream_a8b576f5204b520bb54eb6d52506c275d}} 
+void {\bfseries Output\+To\+File} (F\+I\+LE $\ast$out)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_adbf40215996d150c5d9d413b2e8149e7}\label{classv8_1_1internal_1_1StringStream_adbf40215996d150c5d9d413b2e8149e7}} 
+void {\bfseries Output\+To\+Std\+Out} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_adf1fc4320631c6dbc92e0daa9d0eddbd}\label{classv8_1_1internal_1_1StringStream_adf1fc4320631c6dbc92e0daa9d0eddbd}} 
+void {\bfseries Log} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_aee5de03855bbb3f1ee69de474fc7314f}\label{classv8_1_1internal_1_1StringStream_aee5de03855bbb3f1ee69de474fc7314f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries To\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_a7d96587636bdae53c045be25f90af7c7}\label{classv8_1_1internal_1_1StringStream_a7d96587636bdae53c045be25f90af7c7}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classchar}{char}}\mbox{[}$\,$\mbox{]}$>$ {\bfseries To\+C\+String} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_a66eed2a18d93f5407fe7dc302cadcad8}\label{classv8_1_1internal_1_1StringStream_a66eed2a18d93f5407fe7dc302cadcad8}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries length} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_afd1e2ee1f63ba6d4c8b7b2303add685c}\label{classv8_1_1internal_1_1StringStream_afd1e2ee1f63ba6d4c8b7b2303add685c}} 
+void {\bfseries Print\+Name} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$o)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_a3fbfdfe36261fdf9fb43e8e735763d5e}\label{classv8_1_1internal_1_1StringStream_a3fbfdfe36261fdf9fb43e8e735763d5e}} 
+void {\bfseries Print\+Fixed\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} array, \mbox{\hyperlink{classunsigned}{unsigned}} \mbox{\hyperlink{classint}{int}} limit)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_aec3f4088a23cb7acf1660f94d452e44e}\label{classv8_1_1internal_1_1StringStream_aec3f4088a23cb7acf1660f94d452e44e}} 
+void {\bfseries Print\+Byte\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1ByteArray}{Byte\+Array}} ba)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_a18dafcb71cb03dfab099345894be47f4}\label{classv8_1_1internal_1_1StringStream_a18dafcb71cb03dfab099345894be47f4}} 
+void {\bfseries Print\+Using\+Map} (\mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $\ast$js\+\_\+object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_afb484ceb6ccf40f9d9194bfdb68edd4e}\label{classv8_1_1internal_1_1StringStream_afb484ceb6ccf40f9d9194bfdb68edd4e}} 
+void {\bfseries Print\+Prototype} (\mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $\ast$fun, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$receiver)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_a5cfc02c8e9a0be50c769b0bd92e7ba92}\label{classv8_1_1internal_1_1StringStream_a5cfc02c8e9a0be50c769b0bd92e7ba92}} 
+void {\bfseries Print\+Security\+Token\+If\+Changed} (\mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $\ast$function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_a5fa04e64fdb917d0bb34e7ef74c54b6a}\label{classv8_1_1internal_1_1StringStream_a5fa04e64fdb917d0bb34e7ef74c54b6a}} 
+void {\bfseries Print\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $\ast$function, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$receiver, \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $\ast$code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_ac124b401d3e5678944c1377ee936f8d0}\label{classv8_1_1internal_1_1StringStream_ac124b401d3e5678944c1377ee936f8d0}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_a623085f254cf314be127bdd1e23641a7}\label{classv8_1_1internal_1_1StringStream_a623085f254cf314be127bdd1e23641a7}} 
+void {\bfseries Print\+Mentioned\+Object\+Cache} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_a51afd68ec786821ea978e5855e9afe62}\label{classv8_1_1internal_1_1StringStream_a51afd68ec786821ea978e5855e9afe62}} 
+static void {\bfseries Clear\+Mentioned\+Object\+Cache} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringStream_a5893ecef00152a5d11918d88d6d1ff02}\label{classv8_1_1internal_1_1StringStream_a5893ecef00152a5d11918d88d6d1ff02}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Initial\+Capacity} = 16
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 59 of file string-\/stream.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/string-\/stream.\+h\item 
+v8/src/string-\/stream.\+cc\end{DoxyCompactItemize}

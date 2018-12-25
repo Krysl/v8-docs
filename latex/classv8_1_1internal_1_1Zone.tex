@@ -1,0 +1,48 @@
+\hypertarget{classv8_1_1internal_1_1Zone}{}\section{v8\+:\+:internal\+:\+:Zone Class Reference}
+\label{classv8_1_1internal_1_1Zone}\index{v8\+::internal\+::\+Zone@{v8\+::internal\+::\+Zone}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Zone_a8fb6a99ca98823c602829f69db1462d2}\label{classv8_1_1internal_1_1Zone_a8fb6a99ca98823c602829f69db1462d2}} 
+{\bfseries Zone} (\mbox{\hyperlink{classv8_1_1internal_1_1AccountingAllocator}{Accounting\+Allocator}} $\ast$allocator, const \mbox{\hyperlink{classchar}{char}} $\ast$name, Segment\+Size segment\+\_\+size=Segment\+Size\+::k\+Default)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Zone_a7d3492d6524610364041fb21e62eb8cb}\label{classv8_1_1internal_1_1Zone_a7d3492d6524610364041fb21e62eb8cb}} 
+void $\ast$ {\bfseries New} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Zone_a1d4688f66d15aa955237f583791f6435}\label{classv8_1_1internal_1_1Zone_a1d4688f66d15aa955237f583791f6435}} 
+void $\ast$ {\bfseries Asan\+New} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Zone_ae8dd57543ca8ad136b47a99faad622dd}\label{classv8_1_1internal_1_1Zone_ae8dd57543ca8ad136b47a99faad622dd}} 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$ {\bfseries New\+Array} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Zone_a199eff98cf634a8ab8e8812847a36edc}\label{classv8_1_1internal_1_1Zone_a199eff98cf634a8ab8e8812847a36edc}} 
+void {\bfseries Seal} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Zone_a43c1a6b7b5953e7c1fbbc30f7e840263}\label{classv8_1_1internal_1_1Zone_a43c1a6b7b5953e7c1fbbc30f7e840263}} 
+void {\bfseries Release\+Memory} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Zone_a20777dcfc2efa6bd108be169f230ec4e}\label{classv8_1_1internal_1_1Zone_a20777dcfc2efa6bd108be169f230ec4e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries excess\+\_\+allocation} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Zone_a077f7ecccaf09830dab3a7ed05506942}\label{classv8_1_1internal_1_1Zone_a077f7ecccaf09830dab3a7ed05506942}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Zone_a5598fd0d6fbe395c364a7cc5722433ee}\label{classv8_1_1internal_1_1Zone_a5598fd0d6fbe395c364a7cc5722433ee}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries allocation\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Zone_a0b20134756b6b3f740f016847fa207df}\label{classv8_1_1internal_1_1Zone_a0b20134756b6b3f740f016847fa207df}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1AccountingAllocator}{Accounting\+Allocator}} $\ast$ {\bfseries allocator} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 42 of file zone.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/zone/zone.\+h\item 
+v8/src/zone/zone.\+cc\end{DoxyCompactItemize}

@@ -19,7 +19,7 @@ void \mbox{\hyperlink{classv8_1_1Template_a623b9f0cdd87dc861516f276cc9a7cfa}{Set
 void {\bfseries Set\+Private} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Private}{Private}} $>$ name, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Data}{Data}} $>$ value, \mbox{\hyperlink{namespacev8_a05f25f935e108a1ea2d150e274602b87}{Property\+Attribute}} attributes=\mbox{\hyperlink{namespacev8_a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df}{None}})
 \item 
 \mbox{\Hypertarget{classv8_1_1Template_adc2fc88ac8df0d12b44d4c16ff0128cc}\label{classv8_1_1Template_adc2fc88ac8df0d12b44d4c16ff0128cc}} 
-V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Set} (Isolate $\ast$isolate, const char $\ast$name, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Data}{Data}} $>$ value)
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Set} (Isolate $\ast$isolate, const \mbox{\hyperlink{classchar}{char}} $\ast$name, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Data}{Data}} $>$ value)
 \item 
 \mbox{\Hypertarget{classv8_1_1Template_a5c702a91581d6cf8cfb72c24ba8b8d17}\label{classv8_1_1Template_a5c702a91581d6cf8cfb72c24ba8b8d17}} 
 void {\bfseries Set\+Accessor\+Property} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Name}{Name}} $>$ name, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1FunctionTemplate}{Function\+Template}} $>$ getter=\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1FunctionTemplate}{Function\+Template}} $>$(), \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1FunctionTemplate}{Function\+Template}} $>$ setter=\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1FunctionTemplate}{Function\+Template}} $>$(), \mbox{\hyperlink{namespacev8_a05f25f935e108a1ea2d150e274602b87}{Property\+Attribute}} attribute=\mbox{\hyperlink{namespacev8_a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df}{None}}, \mbox{\hyperlink{namespacev8_a31d8355cb043d7d2dda3f4a52760b64e}{Access\+Control}} settings=D\+E\+F\+A\+U\+LT)
@@ -56,27 +56,39 @@ Definition at line 5287 of file v8.\+h.
 \index{v8\+::\+Template@{v8\+::\+Template}!Set@{Set}}
 \index{Set@{Set}!v8\+::\+Template@{v8\+::\+Template}}
 \subsubsection{\texorpdfstring{Set()}{Set()}}
-{\footnotesize\ttfamily void v8\+::\+Template\+::\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Name}{Name}} $>$}]{name,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Data}{Data}} $>$}]{value,  }\item[{\mbox{\hyperlink{namespacev8_a05f25f935e108a1ea2d150e274602b87}{Property\+Attribute}}}]{attributes = {\ttfamily \mbox{\hyperlink{namespacev8_a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df}{None}}} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void v8\+::\+Template\+::\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Name}{Name}} $>$}]{name,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Data}{Data}} $>$}]{value,  }\item[{\mbox{\hyperlink{namespacev8_a05f25f935e108a1ea2d150e274602b87}{v8\+::\+Property\+Attribute}}}]{attribute = {\ttfamily \mbox{\hyperlink{namespacev8_a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df}{None}}} }\end{DoxyParamCaption})}
 
 Adds a property to each instance created by this template.
 
-The property must be defined either as a primitive value, or a template. \mbox{\Hypertarget{classv8_1_1Template_aef172ef714818a210d815de389a5ab77}\label{classv8_1_1Template_aef172ef714818a210d815de389a5ab77}} 
+The property must be defined either as a primitive value, or a template. 
+
+Definition at line 1283 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1Template_aef172ef714818a210d815de389a5ab77}\label{classv8_1_1Template_aef172ef714818a210d815de389a5ab77}} 
 \index{v8\+::\+Template@{v8\+::\+Template}!Set\+Intrinsic\+Data\+Property@{Set\+Intrinsic\+Data\+Property}}
 \index{Set\+Intrinsic\+Data\+Property@{Set\+Intrinsic\+Data\+Property}!v8\+::\+Template@{v8\+::\+Template}}
 \subsubsection{\texorpdfstring{Set\+Intrinsic\+Data\+Property()}{SetIntrinsicDataProperty()}}
 {\footnotesize\ttfamily void v8\+::\+Template\+::\+Set\+Intrinsic\+Data\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Name}{Name}} $>$}]{name,  }\item[{Intrinsic}]{intrinsic,  }\item[{\mbox{\hyperlink{namespacev8_a05f25f935e108a1ea2d150e274602b87}{Property\+Attribute}}}]{attribute = {\ttfamily \mbox{\hyperlink{namespacev8_a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df}{None}}} }\end{DoxyParamCaption})}
 
-During template instantiation, sets the value with the intrinsic property from the correct context. \mbox{\Hypertarget{classv8_1_1Template_ab306ba858f4e71a25ebba4380ea5791f}\label{classv8_1_1Template_ab306ba858f4e71a25ebba4380ea5791f}} 
+During template instantiation, sets the value with the intrinsic property from the correct context. 
+
+Definition at line 1737 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1Template_ab306ba858f4e71a25ebba4380ea5791f}\label{classv8_1_1Template_ab306ba858f4e71a25ebba4380ea5791f}} 
 \index{v8\+::\+Template@{v8\+::\+Template}!Set\+Lazy\+Data\+Property@{Set\+Lazy\+Data\+Property}}
 \index{Set\+Lazy\+Data\+Property@{Set\+Lazy\+Data\+Property}!v8\+::\+Template@{v8\+::\+Template}}
 \subsubsection{\texorpdfstring{Set\+Lazy\+Data\+Property()}{SetLazyDataProperty()}}
-{\footnotesize\ttfamily void v8\+::\+Template\+::\+Set\+Lazy\+Data\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Name}{Name}} $>$}]{name,  }\item[{Accessor\+Name\+Getter\+Callback}]{getter,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$}]{data = {\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$~\mbox{\hyperlink{classv8_1_1Value}{Value}}~$>$()},  }\item[{\mbox{\hyperlink{namespacev8_a05f25f935e108a1ea2d150e274602b87}{Property\+Attribute}}}]{attribute = {\ttfamily \mbox{\hyperlink{namespacev8_a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df}{None}}},  }\item[{\mbox{\hyperlink{namespacev8_a29711319c2b9fc7716d65faee2f7b9cb}{Side\+Effect\+Type}}}]{getter\+\_\+side\+\_\+effect\+\_\+type = {\ttfamily SideEffectType\+:\+:kHasSideEffect},  }\item[{\mbox{\hyperlink{namespacev8_a29711319c2b9fc7716d65faee2f7b9cb}{Side\+Effect\+Type}}}]{setter\+\_\+side\+\_\+effect\+\_\+type = {\ttfamily SideEffectType\+:\+:kHasSideEffect} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void v8\+::\+Template\+::\+Set\+Lazy\+Data\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Name}{Name}} $>$}]{name,  }\item[{Accessor\+Name\+Getter\+Callback}]{getter,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$}]{data = {\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Value}{Value}}$>$()},  }\item[{\mbox{\hyperlink{namespacev8_a05f25f935e108a1ea2d150e274602b87}{Property\+Attribute}}}]{attribute = {\ttfamily \mbox{\hyperlink{namespacev8_a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df}{None}}},  }\item[{\mbox{\hyperlink{namespacev8_a29711319c2b9fc7716d65faee2f7b9cb}{Side\+Effect\+Type}}}]{getter\+\_\+side\+\_\+effect\+\_\+type = {\ttfamily SideEffectType\+:\+:kHasSideEffect},  }\item[{\mbox{\hyperlink{namespacev8_a29711319c2b9fc7716d65faee2f7b9cb}{Side\+Effect\+Type}}}]{setter\+\_\+side\+\_\+effect\+\_\+type = {\ttfamily SideEffectType\+:\+:kHasSideEffect} }\end{DoxyParamCaption})}
 
-Like Set\+Native\+Data\+Property, but V8 will replace the native data property with a real data property on first access. \mbox{\Hypertarget{classv8_1_1Template_a771f6ca09e5c4789306f8638de5b99ed}\label{classv8_1_1Template_a771f6ca09e5c4789306f8638de5b99ed}} 
+Like Set\+Native\+Data\+Property, but V8 will replace the native data property with a real data property on first access. 
+
+Definition at line 1725 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1Template_a771f6ca09e5c4789306f8638de5b99ed}\label{classv8_1_1Template_a771f6ca09e5c4789306f8638de5b99ed}} 
 \index{v8\+::\+Template@{v8\+::\+Template}!Set\+Native\+Data\+Property@{Set\+Native\+Data\+Property}}
 \index{Set\+Native\+Data\+Property@{Set\+Native\+Data\+Property}!v8\+::\+Template@{v8\+::\+Template}}
 \subsubsection{\texorpdfstring{Set\+Native\+Data\+Property()}{SetNativeDataProperty()}}
-{\footnotesize\ttfamily void v8\+::\+Template\+::\+Set\+Native\+Data\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{name,  }\item[{\mbox{\hyperlink{namespacev8_a722613c87061708a4f1aa050d095f868}{Accessor\+Getter\+Callback}}}]{getter,  }\item[{Accessor\+Setter\+Callback}]{setter = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$}]{data = {\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$~\mbox{\hyperlink{classv8_1_1Value}{Value}}~$>$()},  }\item[{\mbox{\hyperlink{namespacev8_a05f25f935e108a1ea2d150e274602b87}{Property\+Attribute}}}]{attribute = {\ttfamily \mbox{\hyperlink{namespacev8_a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df}{None}}},  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1AccessorSignature}{Accessor\+Signature}} $>$}]{signature = {\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$~\mbox{\hyperlink{classv8_1_1AccessorSignature}{Accessor\+Signature}}~$>$()},  }\item[{\mbox{\hyperlink{namespacev8_a31d8355cb043d7d2dda3f4a52760b64e}{Access\+Control}}}]{settings = {\ttfamily DEFAULT},  }\item[{\mbox{\hyperlink{namespacev8_a29711319c2b9fc7716d65faee2f7b9cb}{Side\+Effect\+Type}}}]{getter\+\_\+side\+\_\+effect\+\_\+type = {\ttfamily SideEffectType\+:\+:kHasSideEffect},  }\item[{\mbox{\hyperlink{namespacev8_a29711319c2b9fc7716d65faee2f7b9cb}{Side\+Effect\+Type}}}]{setter\+\_\+side\+\_\+effect\+\_\+type = {\ttfamily SideEffectType\+:\+:kHasSideEffect} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void v8\+::\+Template\+::\+Set\+Native\+Data\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{name,  }\item[{\mbox{\hyperlink{namespacev8_a722613c87061708a4f1aa050d095f868}{Accessor\+Getter\+Callback}}}]{getter,  }\item[{Accessor\+Setter\+Callback}]{setter = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$}]{data = {\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Value}{Value}}$>$()},  }\item[{\mbox{\hyperlink{namespacev8_a05f25f935e108a1ea2d150e274602b87}{Property\+Attribute}}}]{attribute = {\ttfamily \mbox{\hyperlink{namespacev8_a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df}{None}}},  }\item[{\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1AccessorSignature}{Accessor\+Signature}} $>$}]{signature = {\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1AccessorSignature}{Accessor\+Signature}}$>$()},  }\item[{\mbox{\hyperlink{namespacev8_a31d8355cb043d7d2dda3f4a52760b64e}{Access\+Control}}}]{settings = {\ttfamily DEFAULT},  }\item[{\mbox{\hyperlink{namespacev8_a29711319c2b9fc7716d65faee2f7b9cb}{Side\+Effect\+Type}}}]{getter\+\_\+side\+\_\+effect\+\_\+type = {\ttfamily SideEffectType\+:\+:kHasSideEffect},  }\item[{\mbox{\hyperlink{namespacev8_a29711319c2b9fc7716d65faee2f7b9cb}{Side\+Effect\+Type}}}]{setter\+\_\+side\+\_\+effect\+\_\+type = {\ttfamily SideEffectType\+:\+:kHasSideEffect} }\end{DoxyParamCaption})}
 
 Whenever the property with the given name is accessed on objects created from this \mbox{\hyperlink{classv8_1_1Template}{Template}} the getter and setter callbacks are called instead of getting and setting the property directly on the Java\+Script object.
 
@@ -99,6 +111,11 @@ Whenever the property with the given name is accessed on objects created from th
 \end{DoxyParams}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Definition at line 1703 of file api.\+cc.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8.\+h\end{DoxyCompactItemize}
+v8/include/v8.\+h\item 
+v8/src/api.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\hypertarget{classv8_1_1internal_1_1ScavengeJob}{}\section{v8\+:\+:internal\+:\+:Scavenge\+Job Class Reference}
+\label{classv8_1_1internal_1_1ScavengeJob}\index{v8\+::internal\+::\+Scavenge\+Job@{v8\+::internal\+::\+Scavenge\+Job}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1ScavengeJob_1_1IdleTask}{Idle\+Task}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScavengeJob_a27884ce03e524dc5039bace60a816137}\label{classv8_1_1internal_1_1ScavengeJob_a27884ce03e524dc5039bace60a816137}} 
+void {\bfseries Schedule\+Idle\+Task\+If\+Needed} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, \mbox{\hyperlink{classint}{int}} bytes\+\_\+allocated)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScavengeJob_ac5836505660266ea4948517856135266}\label{classv8_1_1internal_1_1ScavengeJob_ac5836505660266ea4948517856135266}} 
+void {\bfseries Reschedule\+Idle\+Task} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScavengeJob_a203b7877a919ad2d51439a1a7694abf7}\label{classv8_1_1internal_1_1ScavengeJob_a203b7877a919ad2d51439a1a7694abf7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Idle\+Task\+Pending} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScavengeJob_a35e76dd78df598289ea207816fe6f358}\label{classv8_1_1internal_1_1ScavengeJob_a35e76dd78df598289ea207816fe6f358}} 
+void {\bfseries Notify\+Idle\+Task} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScavengeJob_a17f71605b42c832b29e14d87fa610255}\label{classv8_1_1internal_1_1ScavengeJob_a17f71605b42c832b29e14d87fa610255}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Idle\+Task\+Rescheduled} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScavengeJob_abc8b32ff3da05cb65d845027951590ec}\label{classv8_1_1internal_1_1ScavengeJob_abc8b32ff3da05cb65d845027951590ec}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Reached\+Idle\+Allocation\+Limit} (double scavenge\+\_\+speed\+\_\+in\+\_\+bytes\+\_\+per\+\_\+ms, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} new\+\_\+space\+\_\+size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} new\+\_\+space\+\_\+capacity)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScavengeJob_a055df953f929bd8b42d52d1ca96958b3}\label{classv8_1_1internal_1_1ScavengeJob_a055df953f929bd8b42d52d1ca96958b3}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Enough\+Idle\+Time\+For\+Scavenge} (double idle\+\_\+time\+\_\+ms, double scavenge\+\_\+speed\+\_\+in\+\_\+bytes\+\_\+per\+\_\+ms, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} new\+\_\+space\+\_\+size)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScavengeJob_a73be7a33cd4c9e0621139a61a24524a1}\label{classv8_1_1internal_1_1ScavengeJob_a73be7a33cd4c9e0621139a61a24524a1}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Initial\+Scavenge\+Speed\+In\+Bytes\+Per\+Ms} = 256 $\ast$ KB
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScavengeJob_a23416920357abe1bedcad9805017ddd1}\label{classv8_1_1internal_1_1ScavengeJob_a23416920357abe1bedcad9805017ddd1}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Average\+Idle\+Time\+Ms} = 5
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScavengeJob_ae367f695e5a1f6ce8162921108c465e3}\label{classv8_1_1internal_1_1ScavengeJob_ae367f695e5a1f6ce8162921108c465e3}} 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Bytes\+Allocated\+Before\+Next\+Idle\+Task} = 1024 $\ast$ KB
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScavengeJob_a2b8d60098d3eb019b700acb261facbf8}\label{classv8_1_1internal_1_1ScavengeJob_a2b8d60098d3eb019b700acb261facbf8}} 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Min\+Allocation\+Limit} = 512 $\ast$ KB
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ScavengeJob_aa7e3f75336725f3ecf2aff805fd2c29e}\label{classv8_1_1internal_1_1ScavengeJob_aa7e3f75336725f3ecf2aff805fd2c29e}} 
+static const double {\bfseries k\+Max\+Allocation\+Limit\+As\+Fraction\+Of\+New\+Space} = 0.\+8
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file scavenge-\/job.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/scavenge-\/job.\+h\item 
+v8/src/heap/scavenge-\/job.\+cc\end{DoxyCompactItemize}

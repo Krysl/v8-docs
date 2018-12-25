@@ -1,0 +1,113 @@
+\hypertarget{classv8_1_1internal_1_1HeapObjectPtr}{}\section{v8\+:\+:internal\+:\+:Heap\+Object\+Ptr Class Reference}
+\label{classv8_1_1internal_1_1HeapObjectPtr}\index{v8\+::internal\+::\+Heap\+Object\+Ptr@{v8\+::internal\+::\+Heap\+Object\+Ptr}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Heap\+Object\+Ptr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.377991cm]{classv8_1_1internal_1_1HeapObjectPtr}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_aebd266886d68b75183930bae1d84fbef}\label{classv8_1_1internal_1_1HeapObjectPtr_aebd266886d68b75183930bae1d84fbef}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} {\bfseries map} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_a6cf3db6f027fef3ac5fb055295ffc688}\label{classv8_1_1internal_1_1HeapObjectPtr_a6cf3db6f027fef3ac5fb055295ffc688}} 
+void {\bfseries set\+\_\+map} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_a4e61e61a62d94af25d23d25e6d0d8258}\label{classv8_1_1internal_1_1HeapObjectPtr_a4e61e61a62d94af25d23d25e6d0d8258}} 
+void {\bfseries set\+\_\+map\+\_\+after\+\_\+allocation} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} value, Write\+Barrier\+Mode mode=U\+P\+D\+A\+T\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+A\+R\+R\+I\+ER)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_af5380e30fdd9ca5b9f991c9865b7184f}\label{classv8_1_1internal_1_1HeapObjectPtr_af5380e30fdd9ca5b9f991c9865b7184f}} 
+void {\bfseries set\+\_\+map\+\_\+no\+\_\+write\+\_\+barrier} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_a9834e3029de158558d3f59fa74cc7a90}\label{classv8_1_1internal_1_1HeapObjectPtr_a9834e3029de158558d3f59fa74cc7a90}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} {\bfseries map\+\_\+slot} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_a989448f57a8cbd95974ee754bf2419d6}\label{classv8_1_1internal_1_1HeapObjectPtr_a989448f57a8cbd95974ee754bf2419d6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MapWord}{Map\+Word}} {\bfseries map\+\_\+word} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_a47f0cc8468828a61a9666172153b1b76}\label{classv8_1_1internal_1_1HeapObjectPtr_a47f0cc8468828a61a9666172153b1b76}} 
+void {\bfseries set\+\_\+map\+\_\+word} (\mbox{\hyperlink{classv8_1_1internal_1_1MapWord}{Map\+Word}} map\+\_\+word)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_aecd710c437646ebe1691464eec925dc0}\label{classv8_1_1internal_1_1HeapObjectPtr_aecd710c437646ebe1691464eec925dc0}} 
+void {\bfseries synchronized\+\_\+set\+\_\+map} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_a883be44fb259d3e24c5e10bdbac12b79}\label{classv8_1_1internal_1_1HeapObjectPtr_a883be44fb259d3e24c5e10bdbac12b79}} 
+void {\bfseries synchronized\+\_\+set\+\_\+map\+\_\+word} (\mbox{\hyperlink{classv8_1_1internal_1_1MapWord}{Map\+Word}} map\+\_\+word)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_a4385e1a7c062a70c187278c8bbcf46ba}\label{classv8_1_1internal_1_1HeapObjectPtr_a4385e1a7c062a70c187278c8bbcf46ba}} 
+Write\+Barrier\+Mode {\bfseries Get\+Write\+Barrier\+Mode} (const \mbox{\hyperlink{classv8_1_1internal_1_1PerThreadAssertScopeDebugOnly}{Disallow\+Heap\+Allocation}} \&promise)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_ac91475e3e5529ce57c17bba4af2a8d83}\label{classv8_1_1internal_1_1HeapObjectPtr_ac91475e3e5529ce57c17bba4af2a8d83}} 
+{\bfseries operator Heap\+Object $\ast$} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_aaa125b2f8798a6e781c6c1b75ec4fb08}\label{classv8_1_1internal_1_1HeapObjectPtr_aaa125b2f8798a6e781c6c1b75ec4fb08}} 
+{\bfseries operator const Heap\+Object $\ast$} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_a46d110d13cdc25993b86efc80a24d1cb}\label{classv8_1_1internal_1_1HeapObjectPtr_a46d110d13cdc25993b86efc80a24d1cb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+null} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_a7e65d12723559e0761358353d98ba4a4}\label{classv8_1_1internal_1_1HeapObjectPtr_a7e65d12723559e0761358353d98ba4a4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Heap\+Object\+Ptr} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_a83890f301c6d00aae09624c867606b22}\label{classv8_1_1internal_1_1HeapObjectPtr_a83890f301c6d00aae09624c867606b22}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ReadOnlyRoots}{Read\+Only\+Roots}} {\bfseries Get\+Read\+Only\+Roots} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_abd003cb1b4b0cac05310d6b480039c0b}\label{classv8_1_1internal_1_1HeapObjectPtr_abd003cb1b4b0cac05310d6b480039c0b}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries address} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_a8ba8830262743f4a74109e04897238af}\label{classv8_1_1internal_1_1HeapObjectPtr_a8ba8830262743f4a74109e04897238af}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_af1b761960b2eb98da0823e05c3b159d2}\label{classv8_1_1internal_1_1HeapObjectPtr_af1b761960b2eb98da0823e05c3b159d2}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Size\+From\+Map} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_a4d62e4ef9daf583b3410015a92917848}\label{classv8_1_1internal_1_1HeapObjectPtr_a4d62e4ef9daf583b3410015a92917848}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} {\bfseries Raw\+Field} (\mbox{\hyperlink{classint}{int}} byte\+\_\+offset) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_ae08c7bc39af1acf23dfa5122546d6cff}\label{classv8_1_1internal_1_1HeapObjectPtr_ae08c7bc39af1acf23dfa5122546d6cff}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} {\bfseries Raw\+Maybe\+Weak\+Field} (\mbox{\hyperlink{classint}{int}} byte\+\_\+offset) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_ae33920e79786004e964b51007612407f}\label{classv8_1_1internal_1_1HeapObjectPtr_ae33920e79786004e964b51007612407f}} 
+void {\bfseries Heap\+Object\+Verify} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_adcb650fa74fc76da838bd8a538bf1f03}\label{classv8_1_1internal_1_1HeapObjectPtr_adcb650fa74fc76da838bd8a538bf1f03}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Get\+Field\+Address} (\mbox{\hyperlink{classint}{int}} field\+\_\+offset) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_aef3782b22ad83fd4fbd5e65a26e1d99a}\label{classv8_1_1internal_1_1HeapObjectPtr_aef3782b22ad83fd4fbd5e65a26e1d99a}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Map\+Offset} = Heap\+Object\+::k\+Map\+Offset
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_a41096931a164a1aeddcabb8dcf47585d}\label{classv8_1_1internal_1_1HeapObjectPtr_a41096931a164a1aeddcabb8dcf47585d}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Header\+Size} = Heap\+Object\+::k\+Header\+Size
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_adabe074ddf1486294e01270c0b626bd6}\label{classv8_1_1internal_1_1HeapObjectPtr_adabe074ddf1486294e01270c0b626bd6}} 
+enum {\bfseries Allow\+Inline\+Smi\+Storage} \{ {\bfseries k\+Require\+Heap\+Object\+Tag}, 
+{\bfseries k\+Allow\+Being\+A\+Smi}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapObjectPtr_a02a9b144523f81594e525200252861a3}\label{classv8_1_1internal_1_1HeapObjectPtr_a02a9b144523f81594e525200252861a3}} 
+{\bfseries Heap\+Object\+Ptr} (\mbox{\hyperlink{classuintptr__t}{Address}} ptr, Allow\+Inline\+Smi\+Storage allow\+\_\+smi)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 124 of file heap-\/object.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/heap-\/object.\+h\item 
+v8/src/objects/heap-\/object-\/inl.\+h\end{DoxyCompactItemize}

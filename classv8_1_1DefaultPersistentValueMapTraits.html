@@ -109,14 +109,14 @@ Inheritance diagram for v8::DefaultPersistentValueMapTraits&lt; K, V &gt;:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a05cbd536d6bb9ba4949198351e074854"><td class="memItemLeft" align="right" valign="top"><a id="a05cbd536d6bb9ba4949198351e074854"></a>
-typedef <a class="el" href="classv8_1_1PersistentValueMap.html">PersistentValueMap</a>&lt; K, V, <a class="el" href="classv8_1_1DefaultPersistentValueMapTraits.html">DefaultPersistentValueMapTraits</a>&lt; K, V &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MapType</b></td></tr>
+typedef <a class="el" href="classv8_1_1PersistentValueMap.html">PersistentValueMap</a>&lt; K, <a class="el" href="classV.html">V</a>, <a class="el" href="classv8_1_1DefaultPersistentValueMapTraits.html">DefaultPersistentValueMapTraits</a>&lt; K, <a class="el" href="classV.html">V</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MapType</b></td></tr>
 <tr class="separator:a05cbd536d6bb9ba4949198351e074854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a379f8c42e727a9576fb0954bb0245d8f"><td class="memItemLeft" align="right" valign="top"><a id="a379f8c42e727a9576fb0954bb0245d8f"></a>
 typedef void&#160;</td><td class="memItemRight" valign="bottom"><b>WeakCallbackDataType</b></td></tr>
 <tr class="separator:a379f8c42e727a9576fb0954bb0245d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classv8_1_1StdMapTraits"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classv8_1_1StdMapTraits')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classv8_1_1StdMapTraits.html">v8::StdMapTraits&lt; K, V &gt;</a></td></tr>
 <tr class="memitem:ac64cb78b3ef5cfbc35cf03837552e4ea inherit pub_types_classv8_1_1StdMapTraits"><td class="memItemLeft" align="right" valign="top"><a id="ac64cb78b3ef5cfbc35cf03837552e4ea"></a>
-typedef std::map&lt; K, PersistentContainerValue &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Impl</b></td></tr>
+typedef std::map&lt; K, <a class="el" href="classuintptr__t.html">PersistentContainerValue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Impl</b></td></tr>
 <tr class="separator:ac64cb78b3ef5cfbc35cf03837552e4ea inherit pub_types_classv8_1_1StdMapTraits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad20ef2022e83bfba6dcee23a2a34098e inherit pub_types_classv8_1_1StdMapTraits"><td class="memItemLeft" align="right" valign="top"><a id="ad20ef2022e83bfba6dcee23a2a34098e"></a>
 typedef Impl::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>Iterator</b></td></tr>
@@ -125,7 +125,7 @@ typedef Impl::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>Ite
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a63b6fc80207ce6ac7d1eaa306b68768c"><td class="memItemLeft" align="right" valign="top"><a id="a63b6fc80207ce6ac7d1eaa306b68768c"></a>
-static WeakCallbackDataType *&#160;</td><td class="memItemRight" valign="bottom"><b>WeakCallbackParameter</b> (<a class="el" href="classv8_1_1PersistentValueMap.html">MapType</a> *map, const K &amp;key, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; V &gt; value)</td></tr>
+static WeakCallbackDataType *&#160;</td><td class="memItemRight" valign="bottom"><b>WeakCallbackParameter</b> (<a class="el" href="classv8_1_1PersistentValueMap.html">MapType</a> *map, const K &amp;key, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classV.html">V</a> &gt; value)</td></tr>
 <tr class="separator:a63b6fc80207ce6ac7d1eaa306b68768c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5a476677abdec41871199920820e8bd"><td class="memItemLeft" align="right" valign="top"><a id="ad5a476677abdec41871199920820e8bd"></a>
 static <a class="el" href="classv8_1_1PersistentValueMap.html">MapType</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>MapFromWeakCallbackInfo</b> (const <a class="el" href="classv8_1_1WeakCallbackInfo.html">WeakCallbackInfo</a>&lt; WeakCallbackDataType &gt; &amp;data)</td></tr>
@@ -137,14 +137,14 @@ static K&#160;</td><td class="memItemRight" valign="bottom"><b>KeyFromWeakCallba
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>DisposeCallbackData</b> (WeakCallbackDataType *data)</td></tr>
 <tr class="separator:a9e5c3a4a054b13f46065adec2c44ddfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28f1a2d349eb5a6ad376b6e968d51490"><td class="memItemLeft" align="right" valign="top"><a id="a28f1a2d349eb5a6ad376b6e968d51490"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Dispose</b> (Isolate *isolate, <a class="el" href="classv8_1_1Global.html">Global</a>&lt; V &gt; value, K key)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Dispose</b> (Isolate *isolate, <a class="el" href="classv8_1_1Global.html">Global</a>&lt; <a class="el" href="classV.html">V</a> &gt; value, K key)</td></tr>
 <tr class="separator:a28f1a2d349eb5a6ad376b6e968d51490"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classv8_1_1StdMapTraits"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classv8_1_1StdMapTraits')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classv8_1_1StdMapTraits.html">v8::StdMapTraits&lt; K, V &gt;</a></td></tr>
 <tr class="memitem:a63765723a9d6457ef47a42f79b13eaf7 inherit pub_static_methods_classv8_1_1StdMapTraits"><td class="memItemLeft" align="right" valign="top"><a id="a63765723a9d6457ef47a42f79b13eaf7"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>Empty</b> (Impl *impl)</td></tr>
+static <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Empty</b> (Impl *impl)</td></tr>
 <tr class="separator:a63765723a9d6457ef47a42f79b13eaf7 inherit pub_static_methods_classv8_1_1StdMapTraits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60bd7720bbc6e662d948cf05283a009d inherit pub_static_methods_classv8_1_1StdMapTraits"><td class="memItemLeft" align="right" valign="top"><a id="a60bd7720bbc6e662d948cf05283a009d"></a>
-static size_t&#160;</td><td class="memItemRight" valign="bottom"><b>Size</b> (Impl *impl)</td></tr>
+static <a class="el" href="classsize__t.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Size</b> (Impl *impl)</td></tr>
 <tr class="separator:a60bd7720bbc6e662d948cf05283a009d inherit pub_static_methods_classv8_1_1StdMapTraits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae018f70b3284ffda2566c36156db8baa inherit pub_static_methods_classv8_1_1StdMapTraits"><td class="memItemLeft" align="right" valign="top"><a id="ae018f70b3284ffda2566c36156db8baa"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Swap</b> (Impl &amp;a, Impl &amp;b)</td></tr>
@@ -159,16 +159,16 @@ static Iterator&#160;</td><td class="memItemRight" valign="bottom"><b>End</b> (I
 static K&#160;</td><td class="memItemRight" valign="bottom"><b>Key</b> (Iterator it)</td></tr>
 <tr class="separator:aa90a541b794946054fbc1e76e3976c4f inherit pub_static_methods_classv8_1_1StdMapTraits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad85f9d7e2ac639208fbce6b04d2436ad inherit pub_static_methods_classv8_1_1StdMapTraits"><td class="memItemLeft" align="right" valign="top"><a id="ad85f9d7e2ac639208fbce6b04d2436ad"></a>
-static PersistentContainerValue&#160;</td><td class="memItemRight" valign="bottom"><b>Value</b> (Iterator it)</td></tr>
+static <a class="el" href="classuintptr__t.html">PersistentContainerValue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Value</b> (Iterator it)</td></tr>
 <tr class="separator:ad85f9d7e2ac639208fbce6b04d2436ad inherit pub_static_methods_classv8_1_1StdMapTraits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f41e206a3b1c9806253cca40d2891b1 inherit pub_static_methods_classv8_1_1StdMapTraits"><td class="memItemLeft" align="right" valign="top"><a id="a2f41e206a3b1c9806253cca40d2891b1"></a>
-static PersistentContainerValue&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (Impl *impl, K key, PersistentContainerValue value)</td></tr>
+static <a class="el" href="classuintptr__t.html">PersistentContainerValue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (Impl *impl, K key, <a class="el" href="classuintptr__t.html">PersistentContainerValue</a> value)</td></tr>
 <tr class="separator:a2f41e206a3b1c9806253cca40d2891b1 inherit pub_static_methods_classv8_1_1StdMapTraits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96c6fa384a4f7b7a64b464457ff347c2 inherit pub_static_methods_classv8_1_1StdMapTraits"><td class="memItemLeft" align="right" valign="top"><a id="a96c6fa384a4f7b7a64b464457ff347c2"></a>
-static PersistentContainerValue&#160;</td><td class="memItemRight" valign="bottom"><b>Get</b> (Impl *impl, K key)</td></tr>
+static <a class="el" href="classuintptr__t.html">PersistentContainerValue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Get</b> (Impl *impl, K key)</td></tr>
 <tr class="separator:a96c6fa384a4f7b7a64b464457ff347c2 inherit pub_static_methods_classv8_1_1StdMapTraits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad35e42652392e70dd23fa4b69b9800ea inherit pub_static_methods_classv8_1_1StdMapTraits"><td class="memItemLeft" align="right" valign="top"><a id="ad35e42652392e70dd23fa4b69b9800ea"></a>
-static PersistentContainerValue&#160;</td><td class="memItemRight" valign="bottom"><b>Remove</b> (Impl *impl, K key)</td></tr>
+static <a class="el" href="classuintptr__t.html">PersistentContainerValue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Remove</b> (Impl *impl, K key)</td></tr>
 <tr class="separator:ad35e42652392e70dd23fa4b69b9800ea inherit pub_static_methods_classv8_1_1StdMapTraits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -194,7 +194,7 @@ class v8::DefaultPersistentValueMapTraits&lt; K, V &gt;</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1DefaultPersistentValueMapTraits.html">DefaultPersistentValueMapTraits</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 14:32:59 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:40:20 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

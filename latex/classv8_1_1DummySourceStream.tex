@@ -1,0 +1,51 @@
+\hypertarget{classv8_1_1DummySourceStream}{}\section{v8\+:\+:Dummy\+Source\+Stream Class Reference}
+\label{classv8_1_1DummySourceStream}\index{v8\+::\+Dummy\+Source\+Stream@{v8\+::\+Dummy\+Source\+Stream}}
+Inheritance diagram for v8\+:\+:Dummy\+Source\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1DummySourceStream}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1DummySourceStream_a87cba21b72735c1322df59c68c0472ad}\label{classv8_1_1DummySourceStream_a87cba21b72735c1322df59c68c0472ad}} 
+{\bfseries Dummy\+Source\+Stream} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ source, Isolate $\ast$isolate)
+\item 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} \mbox{\hyperlink{classv8_1_1DummySourceStream_a0b4b9e3f0d0747d169ba75e68fe596d7}{Get\+More\+Data}} (const uint8\+\_\+t $\ast$$\ast$src) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 382 of file d8.\+cc.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1DummySourceStream_a0b4b9e3f0d0747d169ba75e68fe596d7}\label{classv8_1_1DummySourceStream_a0b4b9e3f0d0747d169ba75e68fe596d7}} 
+\index{v8\+::\+Dummy\+Source\+Stream@{v8\+::\+Dummy\+Source\+Stream}!Get\+More\+Data@{Get\+More\+Data}}
+\index{Get\+More\+Data@{Get\+More\+Data}!v8\+::\+Dummy\+Source\+Stream@{v8\+::\+Dummy\+Source\+Stream}}
+\subsubsection{\texorpdfstring{Get\+More\+Data()}{GetMoreData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsize__t}{size\+\_\+t}} v8\+::\+Dummy\+Source\+Stream\+::\+Get\+More\+Data (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$$\ast$}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+V8 calls this to request the next chunk of data from the embedder. This function will be called on a background thread, so it\textquotesingle{}s OK to block and wait for the data, if the embedder doesn\textquotesingle{}t have data yet. Returns the length of the data returned. When the data ends, Get\+More\+Data should return 0. Caller takes ownership of the data.
+
+When streaming U\+T\+F-\/8 data, V8 handles multi-\/byte characters split between two data chunks, but doesn\textquotesingle{}t handle multi-\/byte characters split between more than two data chunks. The embedder can avoid this problem by always returning at least 2 bytes of data.
+
+When streaming U\+T\+F-\/16 data, V8 does not handle characters split between two data chunks. The embedder has to make sure that chunks have an even length.
+
+If the embedder wants to cancel the streaming, they should make the next Get\+More\+Data call return 0. V8 will interpret it as end of data (and most probably, parsing will fail). The streaming task will return as soon as V8 has parsed the data it received so far. 
+
+Implements \mbox{\hyperlink{classv8_1_1ScriptCompiler_1_1ExternalSourceStream_ac3a0221b5725f0b612a6342d8e83d899}{v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream}}.
+
+
+
+Definition at line 391 of file d8.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/d8.\+cc\end{DoxyCompactItemize}

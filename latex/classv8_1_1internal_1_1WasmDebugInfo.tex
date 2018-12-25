@@ -1,0 +1,76 @@
+\hypertarget{classv8_1_1internal_1_1WasmDebugInfo}{}\section{v8\+:\+:internal\+:\+:Wasm\+Debug\+Info Class Reference}
+\label{classv8_1_1internal_1_1WasmDebugInfo}\index{v8\+::internal\+::\+Wasm\+Debug\+Info@{v8\+::internal\+::\+Wasm\+Debug\+Info}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Wasm\+Debug\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1WasmDebugInfo}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmDebugInfo_af6956e34b2598f372b214494bb4d5423}\label{classv8_1_1internal_1_1WasmDebugInfo_af6956e34b2598f372b214494bb4d5423}} 
+{\bfseries D\+E\+C\+L\+\_\+\+A\+C\+C\+E\+S\+S\+O\+RS} (interpreter\+\_\+handle, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmDebugInfo_aba977310a17e1ec277ac173af84f0f07}\label{classv8_1_1internal_1_1WasmDebugInfo_aba977310a17e1ec277ac173af84f0f07}} 
+{\bfseries D\+E\+C\+L\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+S2} (interpreted\+\_\+functions, \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmDebugInfo_a0e1900b59a880a87fe5c77375d7051ab}\label{classv8_1_1internal_1_1WasmDebugInfo_a0e1900b59a880a87fe5c77375d7051ab}} 
+void {\bfseries Prepare\+Step} (Step\+Action)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmDebugInfo_a34127003bf7a18c49ad0fd636695e364}\label{classv8_1_1internal_1_1WasmDebugInfo_a34127003bf7a18c49ad0fd636695e364}} 
+std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}}, \mbox{\hyperlink{classint}{int}} $>$ $>$ {\bfseries Get\+Interpreted\+Stack} (\mbox{\hyperlink{classuintptr__t}{Address}} frame\+\_\+pointer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmDebugInfo_a274f7aff8476cac41eef60ccf6dddf14}\label{classv8_1_1internal_1_1WasmDebugInfo_a274f7aff8476cac41eef60ccf6dddf14}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1InterpretedFrame}{wasm\+::\+Interpreted\+Frame}}, \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1InterpretedFrameDeleter}{wasm\+::\+Interpreted\+Frame\+Deleter}} $>$ {\bfseries Get\+Interpreted\+Frame} (\mbox{\hyperlink{classuintptr__t}{Address}} frame\+\_\+pointer, \mbox{\hyperlink{classint}{int}} frame\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmDebugInfo_a1aecb4831ae30a7e158d3e6dd26e5ee1}\label{classv8_1_1internal_1_1WasmDebugInfo_a1aecb4831ae30a7e158d3e6dd26e5ee1}} 
+void {\bfseries Unwind} (\mbox{\hyperlink{classuintptr__t}{Address}} frame\+\_\+pointer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmDebugInfo_aeb041d9175c888337e3201d7603d048e}\label{classv8_1_1internal_1_1WasmDebugInfo_aeb041d9175c888337e3201d7603d048e}} 
+uint64\+\_\+t {\bfseries Num\+Interpreted\+Calls} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmDebugInfo_a91a45f1974f8a43a3f945c4cac8cd065}\label{classv8_1_1internal_1_1WasmDebugInfo_a91a45f1974f8a43a3f945c4cac8cd065}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmDebugInfo}{Wasm\+Debug\+Info}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmInstanceObject}{Wasm\+Instance\+Object}} $>$)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmDebugInfo_a8f76920d83880848be54b1ea5123b63e}\label{classv8_1_1internal_1_1WasmDebugInfo_a8f76920d83880848be54b1ea5123b63e}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmInterpreter}{wasm\+::\+Wasm\+Interpreter}} $\ast$ {\bfseries Setup\+For\+Testing} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmInstanceObject}{Wasm\+Instance\+Object}} $>$)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmDebugInfo_a361716856a25a028d0e93643ec41d2a0}\label{classv8_1_1internal_1_1WasmDebugInfo_a361716856a25a028d0e93643ec41d2a0}} 
+static void {\bfseries Set\+Breakpoint} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmDebugInfo}{Wasm\+Debug\+Info}} $>$, \mbox{\hyperlink{classint}{int}} func\+\_\+index, \mbox{\hyperlink{classint}{int}} offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmDebugInfo_a78e3426c061f712f26468c58ff4286d9}\label{classv8_1_1internal_1_1WasmDebugInfo_a78e3426c061f712f26468c58ff4286d9}} 
+static void {\bfseries Redirect\+To\+Interpreter} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmDebugInfo}{Wasm\+Debug\+Info}} $>$, \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ \mbox{\hyperlink{classint}{int}} $>$ func\+\_\+indexes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmDebugInfo_a152f9e1e71047feca57508a7df8a61c5}\label{classv8_1_1internal_1_1WasmDebugInfo_a152f9e1e71047feca57508a7df8a61c5}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Run\+Interpreter} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmDebugInfo}{Wasm\+Debug\+Info}} $>$, \mbox{\hyperlink{classuintptr__t}{Address}} frame\+\_\+pointer, \mbox{\hyperlink{classint}{int}} func\+\_\+index, \mbox{\hyperlink{classuintptr__t}{Address}} arg\+\_\+buffer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmDebugInfo_a9a5bfdbd39eab47c8032f12ab2c7083a}\label{classv8_1_1internal_1_1WasmDebugInfo_a9a5bfdbd39eab47c8032f12ab2c7083a}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ {\bfseries Get\+Scope\+Details} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmDebugInfo}{Wasm\+Debug\+Info}} $>$, \mbox{\hyperlink{classuintptr__t}{Address}} frame\+\_\+pointer, \mbox{\hyperlink{classint}{int}} frame\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmDebugInfo_a0d5da6920f80e6b54d6ff4bdb353df32}\label{classv8_1_1internal_1_1WasmDebugInfo_a0d5da6920f80e6b54d6ff4bdb353df32}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ {\bfseries Get\+Global\+Scope\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmDebugInfo}{Wasm\+Debug\+Info}} $>$, \mbox{\hyperlink{classuintptr__t}{Address}} frame\+\_\+pointer, \mbox{\hyperlink{classint}{int}} frame\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmDebugInfo_a9f3bba8157341117f44743cac5da5196}\label{classv8_1_1internal_1_1WasmDebugInfo_a9f3bba8157341117f44743cac5da5196}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ {\bfseries Get\+Local\+Scope\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmDebugInfo}{Wasm\+Debug\+Info}} $>$, \mbox{\hyperlink{classuintptr__t}{Address}} frame\+\_\+pointer, \mbox{\hyperlink{classint}{int}} frame\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmDebugInfo_a5f0c8df99342eeebdfde00f066ce09c1}\label{classv8_1_1internal_1_1WasmDebugInfo_a5f0c8df99342eeebdfde00f066ce09c1}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ {\bfseries Get\+C\+Wasm\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmDebugInfo}{Wasm\+Debug\+Info}} $>$, \mbox{\hyperlink{classv8_1_1internal_1_1Signature}{wasm\+::\+Function\+Sig}} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 556 of file wasm-\/objects.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/wasm-\/objects.\+h\item 
+v8/src/wasm/wasm-\/debug.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,88 @@
+\hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState}{}\section{v8\+:\+:internal\+:\+:Parser\+Base$<$ Impl $>$\+:\+:Function\+State Class Reference}
+\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState}\index{v8\+::internal\+::\+Parser\+Base$<$ Impl $>$\+::\+Function\+State@{v8\+::internal\+::\+Parser\+Base$<$ Impl $>$\+::\+Function\+State}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Parser\+Base$<$ Impl $>$\+:\+:Function\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1ParserBase_1_1FunctionState}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1ParserBase_1_1FunctionState_1_1FunctionOrEvalRecordingScope}{Function\+Or\+Eval\+Recording\+Scope}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a33b05f398235c1c8bffbcc54096bb5b5}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a33b05f398235c1c8bffbcc54096bb5b5}} 
+{\bfseries Function\+State} (\mbox{\hyperlink{classv8_1_1internal_1_1ParserBase_1_1FunctionState}{Function\+State}} $\ast$$\ast$function\+\_\+state\+\_\+stack, \mbox{\hyperlink{classv8_1_1internal_1_1Scope}{Scope}} $\ast$$\ast$scope\+\_\+stack, \mbox{\hyperlink{classv8_1_1internal_1_1DeclarationScope}{Declaration\+Scope}} $\ast$scope)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a735e4473f3bc9d57e89c15e97a6510d7}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a735e4473f3bc9d57e89c15e97a6510d7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1DeclarationScope}{Declaration\+Scope}} $\ast$ {\bfseries scope} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_af127060420e27c3ba4ab5287ef1c421d}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_af127060420e27c3ba4ab5287ef1c421d}} 
+void {\bfseries Add\+Property} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a915f977890dd043288c12ea8fbdd458c}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a915f977890dd043288c12ea8fbdd458c}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries expected\+\_\+property\+\_\+count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a20acd022be992bcee62ac7a3171f1b98}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a20acd022be992bcee62ac7a3171f1b98}} 
+void {\bfseries Disable\+Optimization} (Bailout\+Reason reason)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a33e800881f4bb8644c69f19a283c641b}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a33e800881f4bb8644c69f19a283c641b}} 
+Bailout\+Reason {\bfseries dont\+\_\+optimize\+\_\+reason} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_afa6c08365a73f4cf327b9a142b98d971}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_afa6c08365a73f4cf327b9a142b98d971}} 
+void {\bfseries Add\+Suspend} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a3b43180d6b7f04c8f53e09d461557811}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a3b43180d6b7f04c8f53e09d461557811}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries suspend\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_ad8127196e031a52b1014dfea6c39e125}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_ad8127196e031a52b1014dfea6c39e125}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Suspend} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_acc1ef08daee8dcf9d750760498a39856}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_acc1ef08daee8dcf9d750760498a39856}} 
+Function\+Kind {\bfseries kind} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a8f8071f6345fd85745ae83b4a76f2c44}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a8f8071f6345fd85745ae83b4a76f2c44}} 
+void {\bfseries Rewind\+Destructuring\+Assignments} (\mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_acc59b5f2f18ad9eb098a0e9acb9960cc}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_acc59b5f2f18ad9eb098a0e9acb9960cc}} 
+void {\bfseries Adopt\+Destructuring\+Assignments\+From\+Parent\+State} (\mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a93b0d727351602e1455480dffc187ca3}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a93b0d727351602e1455480dffc187ca3}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneChunkList}{Zone\+Chunk\+List}}$<$ Rewritable\+ExpressionT $>$ \& {\bfseries destructuring\+\_\+assignments\+\_\+to\+\_\+rewrite} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a75d3e809cfbaba54eb4d7806c8329f66}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a75d3e809cfbaba54eb4d7806c8329f66}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ typename Expression\+Classifier\+::\+Error $>$ $\ast$ {\bfseries Get\+Reported\+Error\+List} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a60e62d3c8307a9fe5436a167e672d004}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a60e62d3c8307a9fe5436a167e672d004}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries next\+\_\+function\+\_\+is\+\_\+likely\+\_\+called} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a7e7545f6a839601b8038ccdd0840de80}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a7e7545f6a839601b8038ccdd0840de80}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries previous\+\_\+function\+\_\+was\+\_\+likely\+\_\+called} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a6db51fb7d056320f651fecd44b7a433a}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a6db51fb7d056320f651fecd44b7a433a}} 
+void {\bfseries set\+\_\+next\+\_\+function\+\_\+is\+\_\+likely\+\_\+called} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a557d765d8ffb640fa824245f2fad181c}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a557d765d8ffb640fa824245f2fad181c}} 
+void {\bfseries Record\+Function\+Or\+Eval\+Call} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a68d5f2f63bfad1af33b4e3ae6565afd3}\label{classv8_1_1internal_1_1ParserBase_1_1FunctionState_a68d5f2f63bfad1af33b4e3ae6565afd3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries contains\+\_\+function\+\_\+or\+\_\+eval} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Impl$>$\newline
+class v8\+::internal\+::\+Parser\+Base$<$ Impl $>$\+::\+Function\+State}
+
+
+
+Definition at line 364 of file parser-\/base.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/parsing/parser-\/base.\+h\end{DoxyCompactItemize}

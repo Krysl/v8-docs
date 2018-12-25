@@ -1,0 +1,35 @@
+var classv8_1_1internal_1_1RegisterConfiguration =
+[
+    [ "AliasingKind", "classv8_1_1internal_1_1RegisterConfiguration.html#a8a6492334216887c82e6830b51c403ae", [
+      [ "OVERLAP", "classv8_1_1internal_1_1RegisterConfiguration.html#a8a6492334216887c82e6830b51c403aea6ef30bd6ae4c2779877bfa9a7d1e815a", null ],
+      [ "COMBINE", "classv8_1_1internal_1_1RegisterConfiguration.html#a8a6492334216887c82e6830b51c403aeaced0d28885202980a6a8e6b741722a3e", null ]
+    ] ],
+    [ "RegisterConfiguration", "classv8_1_1internal_1_1RegisterConfiguration.html#a9506911d9df9eb40c47d9231b042ee80", null ],
+    [ "~RegisterConfiguration", "classv8_1_1internal_1_1RegisterConfiguration.html#aea5a63a04d270ee0308c030b45cf998d", null ],
+    [ "allocatable_double_codes", "classv8_1_1internal_1_1RegisterConfiguration.html#a1e65386b7f438470a5368bf976fd9f7c", null ],
+    [ "allocatable_double_codes_mask", "classv8_1_1internal_1_1RegisterConfiguration.html#ad45bd879551ed6552e7dedb84a1507f5", null ],
+    [ "allocatable_float_codes", "classv8_1_1internal_1_1RegisterConfiguration.html#ad07707af73184ae21c5ed2932292a6b9", null ],
+    [ "allocatable_float_codes_mask", "classv8_1_1internal_1_1RegisterConfiguration.html#a4c8cd67132600eae7e7708c57b60275c", null ],
+    [ "allocatable_general_codes", "classv8_1_1internal_1_1RegisterConfiguration.html#a43f3d1f0589b0e739c1bdbd472b453c2", null ],
+    [ "allocatable_general_codes_mask", "classv8_1_1internal_1_1RegisterConfiguration.html#ad43f24ad1ac7199b8814f87a32a3f124", null ],
+    [ "allocatable_simd128_codes", "classv8_1_1internal_1_1RegisterConfiguration.html#aa45e8bc2dcca1124002ae958ae2a09c5", null ],
+    [ "AreAliases", "classv8_1_1internal_1_1RegisterConfiguration.html#adbacb05e8f529c62412d2c8acc6bde13", null ],
+    [ "fp_aliasing_kind", "classv8_1_1internal_1_1RegisterConfiguration.html#a1f7514745048cc28a3cc24c3ad31e0ec", null ],
+    [ "GetAliases", "classv8_1_1internal_1_1RegisterConfiguration.html#acd3660791638421dca93da0fde45f0aa", null ],
+    [ "GetAllocatableDoubleCode", "classv8_1_1internal_1_1RegisterConfiguration.html#a77843f22cf974691a11fe7b75cb05c71", null ],
+    [ "GetAllocatableFloatCode", "classv8_1_1internal_1_1RegisterConfiguration.html#addcf15db8ce2e558c703d7de4683567a", null ],
+    [ "GetAllocatableGeneralCode", "classv8_1_1internal_1_1RegisterConfiguration.html#ae97dd7a1c349fc5b59f80401446842e0", null ],
+    [ "GetAllocatableSimd128Code", "classv8_1_1internal_1_1RegisterConfiguration.html#af139c8aee49828fe88779d4bfde5c221", null ],
+    [ "IsAllocatableDoubleCode", "classv8_1_1internal_1_1RegisterConfiguration.html#a0dfbbaaf99df73d68e905e3857b34f7b", null ],
+    [ "IsAllocatableFloatCode", "classv8_1_1internal_1_1RegisterConfiguration.html#aefe223f64959fa038c0394fc8597533c", null ],
+    [ "IsAllocatableGeneralCode", "classv8_1_1internal_1_1RegisterConfiguration.html#a447ba2ef7733106bda05cb34ab22c550", null ],
+    [ "IsAllocatableSimd128Code", "classv8_1_1internal_1_1RegisterConfiguration.html#a6c2353b4693aa45206b26c973ac69231", null ],
+    [ "num_allocatable_double_registers", "classv8_1_1internal_1_1RegisterConfiguration.html#aca22d10ec6b1176236b60f23815908e2", null ],
+    [ "num_allocatable_float_registers", "classv8_1_1internal_1_1RegisterConfiguration.html#aebec04e7d80ba8785d217af1cb951395", null ],
+    [ "num_allocatable_general_registers", "classv8_1_1internal_1_1RegisterConfiguration.html#a6e31fa3def971af63685de3a925bae53", null ],
+    [ "num_allocatable_simd128_registers", "classv8_1_1internal_1_1RegisterConfiguration.html#ae883f1a4bd4867ed4e697b9997566276", null ],
+    [ "num_double_registers", "classv8_1_1internal_1_1RegisterConfiguration.html#a72ee9a20955f55215914a2c5760e58ce", null ],
+    [ "num_float_registers", "classv8_1_1internal_1_1RegisterConfiguration.html#a4535458db7f705f6cf101eb20f53ce24", null ],
+    [ "num_general_registers", "classv8_1_1internal_1_1RegisterConfiguration.html#a4303d47f990d565c58f2a03c6ff0c575", null ],
+    [ "num_simd128_registers", "classv8_1_1internal_1_1RegisterConfiguration.html#af53e287d3f890c5dd038f19b56a36f1e", null ]
+];

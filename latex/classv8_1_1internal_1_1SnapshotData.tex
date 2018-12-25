@@ -1,0 +1,83 @@
+\hypertarget{classv8_1_1internal_1_1SnapshotData}{}\section{v8\+:\+:internal\+:\+:Snapshot\+Data Class Reference}
+\label{classv8_1_1internal_1_1SnapshotData}\index{v8\+::internal\+::\+Snapshot\+Data@{v8\+::internal\+::\+Snapshot\+Data}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Snapshot\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1SnapshotData}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SnapshotData_afa6acd7590bd5c1aa45a55bba609de8a}\label{classv8_1_1internal_1_1SnapshotData_afa6acd7590bd5c1aa45a55bba609de8a}} 
+{\bfseries Snapshot\+Data} (const \mbox{\hyperlink{classv8_1_1internal_1_1Serializer}{Serializer}} $\ast$serializer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SnapshotData_a248fcacda06cb9107fa8a4bd762fa400}\label{classv8_1_1internal_1_1SnapshotData_a248fcacda06cb9107fa8a4bd762fa400}} 
+{\bfseries Snapshot\+Data} (const \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const byte $>$ snapshot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SnapshotData_a2e5f77128f4c7a874e0f2619e1d63fc8}\label{classv8_1_1internal_1_1SnapshotData_a2e5f77128f4c7a874e0f2619e1d63fc8}} 
+std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SerializedData_1_1Reservation}{Reservation}} $>$ {\bfseries Reservations} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SnapshotData_a74504b78b6a3751fbdc90fb5037133b7}\label{classv8_1_1internal_1_1SnapshotData_a74504b78b6a3751fbdc90fb5037133b7}} 
+virtual \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const byte $>$ {\bfseries Payload} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SnapshotData_a278ac1a1ffa805bdc0d71e21339b3a58}\label{classv8_1_1internal_1_1SnapshotData_a278ac1a1ffa805bdc0d71e21339b3a58}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const byte $>$ {\bfseries Raw\+Data} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Num\+Reservations\+Offset}
+\item 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Payload\+Length\+Offset}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SnapshotData_a0895a7571369257e2e9bb545327906c7}\label{classv8_1_1internal_1_1SnapshotData_a0895a7571369257e2e9bb545327906c7}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Header\+Size} = k\+Payload\+Length\+Offset + k\+U\+Int32\+Size
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file snapshot.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1SnapshotData_a515a2c5cb30881d394e8630b7ebce8b2}\label{classv8_1_1internal_1_1SnapshotData_a515a2c5cb30881d394e8630b7ebce8b2}} 
+\index{v8\+::internal\+::\+Snapshot\+Data@{v8\+::internal\+::\+Snapshot\+Data}!k\+Num\+Reservations\+Offset@{k\+Num\+Reservations\+Offset}}
+\index{k\+Num\+Reservations\+Offset@{k\+Num\+Reservations\+Offset}!v8\+::internal\+::\+Snapshot\+Data@{v8\+::internal\+::\+Snapshot\+Data}}
+\subsubsection{\texorpdfstring{k\+Num\+Reservations\+Offset}{kNumReservationsOffset}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} v8\+::internal\+::\+Snapshot\+Data\+::k\+Num\+Reservations\+Offset\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kMagicNumberOffset + kUInt32Size
+\end{DoxyCode}
+
+
+Definition at line 46 of file snapshot.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1SnapshotData_a8cd2a841789d01c5ffd3f10cfeecb03a}\label{classv8_1_1internal_1_1SnapshotData_a8cd2a841789d01c5ffd3f10cfeecb03a}} 
+\index{v8\+::internal\+::\+Snapshot\+Data@{v8\+::internal\+::\+Snapshot\+Data}!k\+Payload\+Length\+Offset@{k\+Payload\+Length\+Offset}}
+\index{k\+Payload\+Length\+Offset@{k\+Payload\+Length\+Offset}!v8\+::internal\+::\+Snapshot\+Data@{v8\+::internal\+::\+Snapshot\+Data}}
+\subsubsection{\texorpdfstring{k\+Payload\+Length\+Offset}{kPayloadLengthOffset}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} v8\+::internal\+::\+Snapshot\+Data\+::k\+Payload\+Length\+Offset\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kNumReservationsOffset + kUInt32Size
+\end{DoxyCode}
+
+
+Definition at line 48 of file snapshot.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/snapshot/snapshot.\+h\item 
+v8/src/snapshot/snapshot-\/common.\+cc\end{DoxyCompactItemize}

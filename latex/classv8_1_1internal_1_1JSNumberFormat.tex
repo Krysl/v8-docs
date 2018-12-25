@@ -1,0 +1,103 @@
+\hypertarget{classv8_1_1internal_1_1JSNumberFormat}{}\section{v8\+:\+:internal\+:\+:J\+S\+Number\+Format Class Reference}
+\label{classv8_1_1internal_1_1JSNumberFormat}\index{v8\+::internal\+::\+J\+S\+Number\+Format@{v8\+::internal\+::\+J\+S\+Number\+Format}}
+Inheritance diagram for v8\+:\+:internal\+:\+:J\+S\+Number\+Format\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1JSNumberFormat}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_a233e4dace4876b4d3746fdbf9122d3fc}\label{classv8_1_1internal_1_1JSNumberFormat_a233e4dace4876b4d3746fdbf9122d3fc}} 
+enum {\bfseries Style} \{ {\bfseries D\+E\+C\+I\+M\+AL}, 
+{\bfseries P\+E\+R\+C\+E\+NT}, 
+{\bfseries C\+U\+R\+R\+E\+N\+CY}, 
+{\bfseries C\+O\+U\+NT}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_a0dd9bbb31abf795e3482177a564d996a}\label{classv8_1_1internal_1_1JSNumberFormat_a0dd9bbb31abf795e3482177a564d996a}} 
+enum {\bfseries Currency\+Display} \{ {\bfseries C\+O\+DE}, 
+{\bfseries S\+Y\+M\+B\+OL}, 
+{\bfseries N\+A\+ME}, 
+{\bfseries C\+O\+U\+NT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_ac7d0db7b8ff7dc59c6d9de9a25e55ba5}\label{classv8_1_1internal_1_1JSNumberFormat_ac7d0db7b8ff7dc59c6d9de9a25e55ba5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Style\+As\+String} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_a8b50b7790671dd9b8d1e33036671437b}\label{classv8_1_1internal_1_1JSNumberFormat_a8b50b7790671dd9b8d1e33036671437b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Currency\+Display\+As\+String} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_a6a749b84d509bfdf0796b61e3c633b1b}\label{classv8_1_1internal_1_1JSNumberFormat_a6a749b84d509bfdf0796b61e3c633b1b}} 
+void {\bfseries set\+\_\+style} (Style style)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_ae83e94ad68358b7d6237be62259b95ff}\label{classv8_1_1internal_1_1JSNumberFormat_ae83e94ad68358b7d6237be62259b95ff}} 
+Style {\bfseries style} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_a52e1bedcdf438dce0bd04f3f0e842315}\label{classv8_1_1internal_1_1JSNumberFormat_a52e1bedcdf438dce0bd04f3f0e842315}} 
+void {\bfseries set\+\_\+currency\+\_\+display} (Currency\+Display currency\+\_\+display)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_a562d404d8a8d5a037551bbd684eac8df}\label{classv8_1_1internal_1_1JSNumberFormat_a562d404d8a8d5a037551bbd684eac8df}} 
+Currency\+Display {\bfseries currency\+\_\+display} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_af0de652e1472601e9acd891b33500097}\label{classv8_1_1internal_1_1JSNumberFormat_af0de652e1472601e9acd891b33500097}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Style\+::\+D\+E\+C\+I\+M\+AL$<$=Style\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_afd61d4337ff40c698ad599198c4c70de}\label{classv8_1_1internal_1_1JSNumberFormat_afd61d4337ff40c698ad599198c4c70de}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Style\+::\+P\+E\+R\+C\+E\+NT$<$=Style\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_acea5d48dff3154c94f3e4f05975e5c33}\label{classv8_1_1internal_1_1JSNumberFormat_acea5d48dff3154c94f3e4f05975e5c33}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Style\+::\+C\+U\+R\+R\+E\+N\+CY$<$=Style\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_a01feeb17d057e6b84b4046a6e27703b7}\label{classv8_1_1internal_1_1JSNumberFormat_a01feeb17d057e6b84b4046a6e27703b7}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Currency\+Display\+::\+C\+O\+DE$<$=Currency\+Display\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_a15f09a15d11448e66e005fbbb848fb1f}\label{classv8_1_1internal_1_1JSNumberFormat_a15f09a15d11448e66e005fbbb848fb1f}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Currency\+Display\+::\+S\+Y\+M\+B\+OL$<$=Currency\+Display\+Bits\+::k\+Max)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_ae8a108387ce9fe81cb4c9c45291d3b02}\label{classv8_1_1internal_1_1JSNumberFormat_ae8a108387ce9fe81cb4c9c45291d3b02}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Currency\+Display\+::\+N\+A\+ME$<$=Currency\+Display\+Bits\+::k\+Max)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_aa6d66a00fb622a2df624cc4cb895a311}\label{classv8_1_1internal_1_1JSNumberFormat_aa6d66a00fb622a2df624cc4cb895a311}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSNumberFormat}{J\+S\+Number\+Format}} $>$ {\bfseries Initialize} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSNumberFormat}{J\+S\+Number\+Format}} $>$ number\+\_\+format, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ locales, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ options)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_aea6b330620a7ce4cfd0148ce4d0293e9}\label{classv8_1_1internal_1_1JSNumberFormat_aea6b330620a7ce4cfd0148ce4d0293e9}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSNumberFormat}{J\+S\+Number\+Format}} $>$ {\bfseries Unwrap\+Number\+Format} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $>$ format\+\_\+holder)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_a798a2c76afb2c9d663955dcbfaefe0e2}\label{classv8_1_1internal_1_1JSNumberFormat_a798a2c76afb2c9d663955dcbfaefe0e2}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ {\bfseries Resolved\+Options} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSNumberFormat}{J\+S\+Number\+Format}} $>$ number\+\_\+format)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_ae267697f8132156e42def00ba5ef546e}\label{classv8_1_1internal_1_1JSNumberFormat_ae267697f8132156e42def00ba5ef546e}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArray}{J\+S\+Array}} $>$ {\bfseries Format\+To\+Parts} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSNumberFormat}{J\+S\+Number\+Format}} $>$ number\+\_\+format, double number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_af8d8f6e408c0589ad4489e36d76d1634}\label{classv8_1_1internal_1_1JSNumberFormat_af8d8f6e408c0589ad4489e36d76d1634}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classint}{int}} $>$ {\bfseries Format\+To\+Parts} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArray}{J\+S\+Array}} $>$ result, \mbox{\hyperlink{classint}{int}} start\+\_\+index, const icu\+::\+Number\+Format \&fmt, double number, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ unit)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_adf51f64c35e78f6a52cb32f85fcefb6c}\label{classv8_1_1internal_1_1JSNumberFormat_adf51f64c35e78f6a52cb32f85fcefb6c}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Format\+Number} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const icu\+::\+Number\+Format \&number\+\_\+format, double number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSNumberFormat_a5c508ba34accfff91e26824992a4078b}\label{classv8_1_1internal_1_1JSNumberFormat_a5c508ba34accfff91e26824992a4078b}} 
+static std\+::set$<$ std\+::string $>$ {\bfseries Get\+Available\+Locales} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 31 of file js-\/number-\/format.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/js-\/number-\/format.\+h\item 
+v8/src/objects/js-\/number-\/format-\/inl.\+h\item 
+v8/src/objects/js-\/number-\/format.\+cc\end{DoxyCompactItemize}

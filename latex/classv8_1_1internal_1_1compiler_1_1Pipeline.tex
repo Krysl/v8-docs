@@ -1,0 +1,48 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1Pipeline}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Pipeline Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1Pipeline}\index{v8\+::internal\+::compiler\+::\+Pipeline@{v8\+::internal\+::compiler\+::\+Pipeline}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Pipeline\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1Pipeline}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Pipeline_aabca8cd6a91f8c8d6da36a247de313d6}\label{classv8_1_1internal_1_1compiler_1_1Pipeline_aabca8cd6a91f8c8d6da36a247de313d6}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1OptimizedCompilationJob}{Optimized\+Compilation\+Job}} $\ast$ {\bfseries New\+Compilation\+Job} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ function, \mbox{\hyperlink{classbool}{bool}} has\+\_\+script)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Pipeline_a3e1236bfa191d51c5db6e0e6c1f76e02}\label{classv8_1_1internal_1_1compiler_1_1Pipeline_a3e1236bfa191d51c5db6e0e6c1f76e02}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCode}{wasm\+::\+Wasm\+Code}} $\ast$ {\bfseries Generate\+Code\+For\+Wasm\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1OptimizedCompilationInfo}{Optimized\+Compilation\+Info}} $\ast$info, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmEngine}{wasm\+::\+Wasm\+Engine}} $\ast$wasm\+\_\+engine, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1MachineGraph}{Machine\+Graph}} $\ast$mcgraph, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CallDescriptor}{Call\+Descriptor}} $\ast$call\+\_\+descriptor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SourcePositionTable}{Source\+Position\+Table}} $\ast$source\+\_\+positions, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1NodeOriginTable}{Node\+Origin\+Table}} $\ast$node\+\_\+origins, \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1FunctionBody}{wasm\+::\+Function\+Body}} function\+\_\+body, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1NativeModule}{wasm\+::\+Native\+Module}} $\ast$native\+\_\+module, \mbox{\hyperlink{classint}{int}} function\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Pipeline_a1eb185c022b5fd6ff0bd57f045e0e40f}\label{classv8_1_1internal_1_1compiler_1_1Pipeline_a1eb185c022b5fd6ff0bd57f045e0e40f}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCode}{wasm\+::\+Wasm\+Code}} $\ast$ {\bfseries Generate\+Code\+For\+Wasm\+Native\+Stub} (\mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmEngine}{wasm\+::\+Wasm\+Engine}} $\ast$wasm\+\_\+engine, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CallDescriptor}{Call\+Descriptor}} $\ast$call\+\_\+descriptor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1MachineGraph}{Machine\+Graph}} $\ast$mcgraph, Code\+::\+Kind kind, \mbox{\hyperlink{classint}{int}} wasm\+\_\+kind, const \mbox{\hyperlink{classchar}{char}} $\ast$debug\+\_\+name, const \mbox{\hyperlink{structv8_1_1internal_1_1AssemblerOptions}{Assembler\+Options}} \&assembler\+\_\+options, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1NativeModule}{wasm\+::\+Native\+Module}} $\ast$native\+\_\+module, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SourcePositionTable}{Source\+Position\+Table}} $\ast$source\+\_\+positions=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Pipeline_a03e2a30f3e235b36edf4a1f86a97ac4b}\label{classv8_1_1internal_1_1compiler_1_1Pipeline_a03e2a30f3e235b36edf4a1f86a97ac4b}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Generate\+Code\+For\+Wasm\+Heap\+Stub} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CallDescriptor}{Call\+Descriptor}} $\ast$call\+\_\+descriptor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Graph}{Graph}} $\ast$graph, Code\+::\+Kind kind, const \mbox{\hyperlink{classchar}{char}} $\ast$debug\+\_\+name, const \mbox{\hyperlink{structv8_1_1internal_1_1AssemblerOptions}{Assembler\+Options}} \&assembler\+\_\+options, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SourcePositionTable}{Source\+Position\+Table}} $\ast$source\+\_\+positions=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Pipeline_a9900bd602dfd5c1a207fd31316f9e323}\label{classv8_1_1internal_1_1compiler_1_1Pipeline_a9900bd602dfd5c1a207fd31316f9e323}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Generate\+Code\+For\+Code\+Stub} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CallDescriptor}{Call\+Descriptor}} $\ast$call\+\_\+descriptor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Graph}{Graph}} $\ast$graph, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Schedule}{Schedule}} $\ast$schedule, Code\+::\+Kind kind, const \mbox{\hyperlink{classchar}{char}} $\ast$debug\+\_\+name, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} stub\+\_\+key, int32\+\_\+t builtin\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1JumpOptimizationInfo}{Jump\+Optimization\+Info}} $\ast$jump\+\_\+opt, Poisoning\+Mitigation\+Level poisoning\+\_\+level, const \mbox{\hyperlink{structv8_1_1internal_1_1AssemblerOptions}{Assembler\+Options}} \&options)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Pipeline_a9c56edadb874e9d9755ff89a01cc43b1}\label{classv8_1_1internal_1_1compiler_1_1Pipeline_a9c56edadb874e9d9755ff89a01cc43b1}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Generate\+Code\+For\+Testing} (\mbox{\hyperlink{classv8_1_1internal_1_1OptimizedCompilationInfo}{Optimized\+Compilation\+Info}} $\ast$info, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Pipeline_ab848a901b8275cba006b1ef9ed41ed56}\label{classv8_1_1internal_1_1compiler_1_1Pipeline_ab848a901b8275cba006b1ef9ed41ed56}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ {\bfseries Generate\+Code\+For\+Testing} (\mbox{\hyperlink{classv8_1_1internal_1_1OptimizedCompilationInfo}{Optimized\+Compilation\+Info}} $\ast$info, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CallDescriptor}{Call\+Descriptor}} $\ast$call\+\_\+descriptor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Graph}{Graph}} $\ast$graph, const \mbox{\hyperlink{structv8_1_1internal_1_1AssemblerOptions}{Assembler\+Options}} \&options, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Schedule}{Schedule}} $\ast$schedule=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1Pipeline_a55010c13df900af7da725dc7fbde4bc1}\label{classv8_1_1internal_1_1compiler_1_1Pipeline_a55010c13df900af7da725dc7fbde4bc1}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classbool}{bool}} {\bfseries Allocate\+Registers\+For\+Testing} (const \mbox{\hyperlink{classv8_1_1internal_1_1RegisterConfiguration}{Register\+Configuration}} $\ast$config, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionSequence}{Instruction\+Sequence}} $\ast$sequence, \mbox{\hyperlink{classbool}{bool}} run\+\_\+verifier)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 40 of file pipeline.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/pipeline.\+h\item 
+v8/src/compiler/pipeline.\+cc\end{DoxyCompactItemize}

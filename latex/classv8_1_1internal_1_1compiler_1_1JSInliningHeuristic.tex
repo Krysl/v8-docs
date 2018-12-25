@@ -1,0 +1,46 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1JSInliningHeuristic}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Inlining\+Heuristic Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1JSInliningHeuristic}\index{v8\+::internal\+::compiler\+::\+J\+S\+Inlining\+Heuristic@{v8\+::internal\+::compiler\+::\+J\+S\+Inlining\+Heuristic}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Inlining\+Heuristic\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1compiler_1_1JSInliningHeuristic}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSInliningHeuristic_a460dfd6f51f754658f4d9d8b155fc66e}\label{classv8_1_1internal_1_1compiler_1_1JSInliningHeuristic_a460dfd6f51f754658f4d9d8b155fc66e}} 
+enum {\bfseries Mode} \{ {\bfseries k\+General\+Inlining}, 
+{\bfseries k\+Restricted\+Inlining}, 
+{\bfseries k\+Stress\+Inlining}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSInliningHeuristic_adc56c56b8005a19497141087157b39f9}\label{classv8_1_1internal_1_1compiler_1_1JSInliningHeuristic_adc56c56b8005a19497141087157b39f9}} 
+{\bfseries J\+S\+Inlining\+Heuristic} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1AdvancedReducer_1_1Editor}{Editor}} $\ast$editor, Mode mode, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$local\+\_\+zone, \mbox{\hyperlink{classv8_1_1internal_1_1OptimizedCompilationInfo}{Optimized\+Compilation\+Info}} $\ast$info, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSGraph}{J\+S\+Graph}} $\ast$jsgraph, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSHeapBroker}{J\+S\+Heap\+Broker}} $\ast$broker, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SourcePositionTable}{Source\+Position\+Table}} $\ast$source\+\_\+positions)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSInliningHeuristic_ab09bd5e0ac356cbf60879e0debba631b}\label{classv8_1_1internal_1_1compiler_1_1JSInliningHeuristic_ab09bd5e0ac356cbf60879e0debba631b}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries reducer\+\_\+name} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSInliningHeuristic_a46c67cd61d9ab1b3123e0fecf458e936}\label{classv8_1_1internal_1_1compiler_1_1JSInliningHeuristic_a46c67cd61d9ab1b3123e0fecf458e936}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Reduction}{Reduction}} {\bfseries Reduce} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node) final
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSInliningHeuristic_aa74c825a3782aa899312b7ea57d74e85}\label{classv8_1_1internal_1_1compiler_1_1JSInliningHeuristic_aa74c825a3782aa899312b7ea57d74e85}} 
+void {\bfseries Finalize} () final
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file js-\/inlining-\/heuristic.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/js-\/inlining-\/heuristic.\+h\item 
+v8/src/compiler/js-\/inlining-\/heuristic.\+cc\end{DoxyCompactItemize}

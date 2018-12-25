@@ -1,0 +1,64 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecode\+Register\+Optimizer Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer}\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Register\+Optimizer@{v8\+::internal\+::interpreter\+::\+Bytecode\+Register\+Optimizer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecode\+Register\+Optimizer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.836066cm]{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1BytecodeWriter}{Bytecode\+Writer}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1RegisterInfo}{Register\+Info}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_aea99a7bb39a35d487de4d60f422ce14a}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_aea99a7bb39a35d487de4d60f422ce14a}} 
+{\bfseries Bytecode\+Register\+Optimizer} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator}{Bytecode\+Register\+Allocator}} $\ast$register\+\_\+allocator, \mbox{\hyperlink{classint}{int}} fixed\+\_\+registers\+\_\+count, \mbox{\hyperlink{classint}{int}} parameter\+\_\+count, \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_1_1BytecodeWriter}{Bytecode\+Writer}} $\ast$bytecode\+\_\+writer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_a92fd27975a6ddd1b89b09e84a0462864}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_a92fd27975a6ddd1b89b09e84a0462864}} 
+void {\bfseries Do\+Ldar} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1Register}{Register}} input)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_aa0177340a164002087636d07325defe2}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_aa0177340a164002087636d07325defe2}} 
+void {\bfseries Do\+Star} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1Register}{Register}} output)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_aa8d192275e0aa0cee25eb29f0d781200}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_aa8d192275e0aa0cee25eb29f0d781200}} 
+void {\bfseries Do\+Mov} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1Register}{Register}} input, \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1Register}{Register}} output)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_ac8008a00c9b1925c724cbc58098811d9}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_ac8008a00c9b1925c724cbc58098811d9}} 
+void {\bfseries Flush} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_a53ff1b3b3655aa5e82093c5bf0ba594e}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_a53ff1b3b3655aa5e82093c5bf0ba594e}} 
+{\footnotesize template$<$Bytecode bytecode, Accumulator\+Use accumulator\+\_\+use$>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Prepare\+For\+Bytecode} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_ace29c00fab0b548b6e9a533fcc6162e7}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_ace29c00fab0b548b6e9a533fcc6162e7}} 
+void {\bfseries Prepare\+Output\+Register} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1Register}{Register}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_abb3ce0fff2c029e87d9be8ea1a30c9a2}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_abb3ce0fff2c029e87d9be8ea1a30c9a2}} 
+void {\bfseries Prepare\+Output\+Register\+List} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1RegisterList}{Register\+List}} reg\+\_\+list)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_abd4590c5cf9d8990b70650f5d79d868b}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_abd4590c5cf9d8990b70650f5d79d868b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1Register}{Register}} {\bfseries Get\+Input\+Register} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1Register}{Register}} reg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_a60ab6685c4867b5e7cd399b355696d72}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_a60ab6685c4867b5e7cd399b355696d72}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1RegisterList}{Register\+List}} {\bfseries Get\+Input\+Register\+List} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1RegisterList}{Register\+List}} reg\+\_\+list)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_a795926c3cd4e1f35fe3745c6c5faf8b7}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterOptimizer_a795926c3cd4e1f35fe3745c6c5faf8b7}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries maxiumum\+\_\+register\+\_\+index} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file bytecode-\/register-\/optimizer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/interpreter/bytecode-\/register-\/optimizer.\+h\item 
+v8/src/interpreter/bytecode-\/register-\/optimizer.\+cc\end{DoxyCompactItemize}

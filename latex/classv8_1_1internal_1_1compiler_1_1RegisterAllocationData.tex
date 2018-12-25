@@ -1,0 +1,154 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Register\+Allocation\+Data Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData}\index{v8\+::internal\+::compiler\+::\+Register\+Allocation\+Data@{v8\+::internal\+::compiler\+::\+Register\+Allocation\+Data}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Register\+Allocation\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1compiler_1_1RegisterAllocationData_1_1DelayedReference}{Delayed\+Reference}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_1_1PhiMapValue}{Phi\+Map\+Value}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a499367b6c11ac133bb8bd07ed43de507}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a499367b6c11ac133bb8bd07ed43de507}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1ZoneMap}{Zone\+Map}}$<$ \mbox{\hyperlink{classint}{int}}, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_1_1PhiMapValue}{Phi\+Map\+Value}} $\ast$ $>$ {\bfseries Phi\+Map}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a03a8a85148cea9f1f080b21dddc5a0ab}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a03a8a85148cea9f1f080b21dddc5a0ab}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1compiler_1_1RegisterAllocationData_1_1DelayedReference}{Delayed\+Reference}} $>$ {\bfseries Delayed\+References}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a94e30f7f867baed98c97de669989377d}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a94e30f7f867baed98c97de669989377d}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ std\+::pair$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$, \mbox{\hyperlink{classint}{int}} $>$ $>$ {\bfseries Ranges\+With\+Preassigned\+Slots}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a4309276ff4c1efb291394c3800965d6e}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a4309276ff4c1efb291394c3800965d6e}} 
+{\bfseries Register\+Allocation\+Data} (const \mbox{\hyperlink{classv8_1_1internal_1_1RegisterConfiguration}{Register\+Configuration}} $\ast$config, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$allocation\+\_\+zone, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Frame}{Frame}} $\ast$frame, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionSequence}{Instruction\+Sequence}} $\ast$code, const \mbox{\hyperlink{classchar}{char}} $\ast$debug\+\_\+name=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_afc8a4b3c66832eb2ee286f35aa13b963}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_afc8a4b3c66832eb2ee286f35aa13b963}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$ $>$ \& {\bfseries live\+\_\+ranges} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a56201d7e6d4e0efa459955af777d07e3}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a56201d7e6d4e0efa459955af777d07e3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$ $>$ \& {\bfseries live\+\_\+ranges} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a0aed743921ee7af7ef9a24cc1aa71bf2}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a0aed743921ee7af7ef9a24cc1aa71bf2}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$ $>$ \& {\bfseries fixed\+\_\+live\+\_\+ranges} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a4d0612742fb55b48f4f9b307903649be}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a4d0612742fb55b48f4f9b307903649be}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$ $>$ \& {\bfseries fixed\+\_\+live\+\_\+ranges} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a4a72fd2604fc2de9d11d9ee7f8318906}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a4a72fd2604fc2de9d11d9ee7f8318906}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$ $>$ \& {\bfseries fixed\+\_\+float\+\_\+live\+\_\+ranges} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a0af9705780b669ee1d5abae24b672ac0}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a0af9705780b669ee1d5abae24b672ac0}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$ $>$ \& {\bfseries fixed\+\_\+float\+\_\+live\+\_\+ranges} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_aff70ac053f82477b2b302d6ba01567cd}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_aff70ac053f82477b2b302d6ba01567cd}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$ $>$ \& {\bfseries fixed\+\_\+double\+\_\+live\+\_\+ranges} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a1f71d3118d6d60ca20a28bb7444cdf6c}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a1f71d3118d6d60ca20a28bb7444cdf6c}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$ $>$ \& {\bfseries fixed\+\_\+double\+\_\+live\+\_\+ranges} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a84f421bfc04d451300ad0fe6f6395281}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a84f421bfc04d451300ad0fe6f6395281}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$ $>$ \& {\bfseries fixed\+\_\+simd128\+\_\+live\+\_\+ranges} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_ae9def5d893a450c95a0ba3a2e6d9f0be}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_ae9def5d893a450c95a0ba3a2e6d9f0be}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$ $>$ \& {\bfseries fixed\+\_\+simd128\+\_\+live\+\_\+ranges} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a892628ed960a0ded65e7cfbeb194ea69}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a892628ed960a0ded65e7cfbeb194ea69}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BitVector}{Bit\+Vector}} $\ast$ $>$ \& {\bfseries live\+\_\+in\+\_\+sets} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_aed12c5de5dfb9b1187b62fcf6519f9ed}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_aed12c5de5dfb9b1187b62fcf6519f9ed}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1BitVector}{Bit\+Vector}} $\ast$ $>$ \& {\bfseries live\+\_\+out\+\_\+sets} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a58b877ffa68f468e227e1b4f2fdc11d1}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a58b877ffa68f468e227e1b4f2fdc11d1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SpillRange}{Spill\+Range}} $\ast$ $>$ \& {\bfseries spill\+\_\+ranges} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a229fb765f124879cf557ad4adeed4d9c}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a229fb765f124879cf557ad4adeed4d9c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Delayed\+References}} \& {\bfseries delayed\+\_\+references} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a1630a04f46aa84989f4b07c24e0ab067}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a1630a04f46aa84989f4b07c24e0ab067}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionSequence}{Instruction\+Sequence}} $\ast$ {\bfseries code} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a1a3e1abb55a54789bb63db745313cbf4}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a1a3e1abb55a54789bb63db745313cbf4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$ {\bfseries allocation\+\_\+zone} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a02f7fcf5edd1cb0f4faffe0cba7f1f70}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a02f7fcf5edd1cb0f4faffe0cba7f1f70}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$ {\bfseries code\+\_\+zone} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_ae054d6f0d9c8b64c0c60b8fb2f265748}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_ae054d6f0d9c8b64c0c60b8fb2f265748}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Frame}{Frame}} $\ast$ {\bfseries frame} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a3b95b2bdbae23058c8cd8fd807f7c885}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a3b95b2bdbae23058c8cd8fd807f7c885}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries debug\+\_\+name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_aaf770c4de453b6abb7bd3590679cce6b}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_aaf770c4de453b6abb7bd3590679cce6b}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1RegisterConfiguration}{Register\+Configuration}} $\ast$ {\bfseries config} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a8ae78985d0aedc1a2aae4b5f047490a2}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a8ae78985d0aedc1a2aae4b5f047490a2}} 
+Machine\+Representation {\bfseries Representation\+For} (\mbox{\hyperlink{classint}{int}} virtual\+\_\+register)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a72fcded3300c2838282b899da059b0db}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a72fcded3300c2838282b899da059b0db}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$ {\bfseries Get\+Or\+Create\+Live\+Range\+For} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a8aaa6c35ee3fa556a0a0eb05949a5f11}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a8aaa6c35ee3fa556a0a0eb05949a5f11}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$ {\bfseries New\+Live\+Range} (\mbox{\hyperlink{classint}{int}} index, Machine\+Representation rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_aa4941541db3cb62e93ec99bde12fad9b}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_aa4941541db3cb62e93ec99bde12fad9b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$ {\bfseries Next\+Live\+Range} (Machine\+Representation rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_ab9440a5be6da0819c146c806ede9a824}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_ab9440a5be6da0819c146c806ede9a824}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SpillRange}{Spill\+Range}} $\ast$ {\bfseries Assign\+Spill\+Range\+To\+Live\+Range} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$range)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a29c9322d0d2f0a96a437fb4d0c307c00}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a29c9322d0d2f0a96a437fb4d0c307c00}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1SpillRange}{Spill\+Range}} $\ast$ {\bfseries Create\+Spill\+Range\+For\+Live\+Range} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$range)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a64b0910107365e638623261ee2910b04}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a64b0910107365e638623261ee2910b04}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1MoveOperands}{Move\+Operands}} $\ast$ {\bfseries Add\+Gap\+Move} (\mbox{\hyperlink{classint}{int}} index, Instruction\+::\+Gap\+Position position, const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} \&from, const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionOperand}{Instruction\+Operand}} \&to)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a08de1c96a6ef0600d8621137da45c777}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a08de1c96a6ef0600d8621137da45c777}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Reference} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$top\+\_\+range) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_adf72417aa15b3f6bf9d703070137f8b2}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_adf72417aa15b3f6bf9d703070137f8b2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Exists\+Use\+Without\+Definition} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_aef182aa9a93a84b759fcf545090c8088}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_aef182aa9a93a84b759fcf545090c8088}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Ranges\+Defined\+In\+Deferred\+Stay\+In\+Deferred} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_aaa3311dda3bed814a1ec032a986b7ad9}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_aaa3311dda3bed814a1ec032a986b7ad9}} 
+void {\bfseries Mark\+Allocated} (Machine\+Representation rep, \mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a97e5ea2014d1db00183c2ddd496e9b13}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a97e5ea2014d1db00183c2ddd496e9b13}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_1_1PhiMapValue}{Phi\+Map\+Value}} $\ast$ {\bfseries Initialize\+Phi\+Map} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionBlock}{Instruction\+Block}} $\ast$block, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1PhiInstruction}{Phi\+Instruction}} $\ast$phi)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a8708b0753584cdf313aa489dbdb87bc5}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a8708b0753584cdf313aa489dbdb87bc5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_1_1PhiMapValue}{Phi\+Map\+Value}} $\ast$ {\bfseries Get\+Phi\+Map\+Value\+For} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TopLevelLiveRange}{Top\+Level\+Live\+Range}} $\ast$top\+\_\+range)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a0d52d71a36565e0ff19921fe5fda463d}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a0d52d71a36565e0ff19921fe5fda463d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_1_1PhiMapValue}{Phi\+Map\+Value}} $\ast$ {\bfseries Get\+Phi\+Map\+Value\+For} (\mbox{\hyperlink{classint}{int}} virtual\+\_\+register)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a6f8fcd07e74378d83027c2d1fb5c491d}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_a6f8fcd07e74378d83027c2d1fb5c491d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Block\+Boundary} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LifetimePosition}{Lifetime\+Position}} pos) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_ae5e91e376daf933766242d3cb7441581}\label{classv8_1_1internal_1_1compiler_1_1RegisterAllocationData_ae5e91e376daf933766242d3cb7441581}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Ranges\+With\+Preassigned\+Slots}} \& {\bfseries preassigned\+\_\+slot\+\_\+ranges} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 709 of file register-\/allocator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/backend/register-\/allocator.\+h\item 
+v8/src/compiler/backend/register-\/allocator.\+cc\end{DoxyCompactItemize}

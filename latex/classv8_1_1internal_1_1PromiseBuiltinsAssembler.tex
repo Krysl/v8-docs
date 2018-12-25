@@ -1,0 +1,178 @@
+\hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler}{}\section{v8\+:\+:internal\+:\+:Promise\+Builtins\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler}\index{v8\+::internal\+::\+Promise\+Builtins\+Assembler@{v8\+::internal\+::\+Promise\+Builtins\+Assembler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Promise\+Builtins\+Assembler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1PromiseBuiltinsAssembler}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a8623affd9d4cc381a548b2bf937cd26f}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a8623affd9d4cc381a548b2bf937cd26f}} 
+enum {\bfseries Promise\+Resolving\+Function\+Context\+Slot} \{ {\bfseries k\+Promise\+Slot} = Context\+:\+:M\+I\+N\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+S\+L\+O\+TS, 
+{\bfseries k\+Already\+Resolved\+Slot}, 
+{\bfseries k\+Debug\+Event\+Slot}, 
+{\bfseries k\+Promise\+Context\+Length}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a39f734cf374704268a75581ca08deb0c}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a39f734cf374704268a75581ca08deb0c}} 
+enum {\bfseries Promise\+All\+Resolve\+Element\+Context\+Slots} \{ {\bfseries k\+Promise\+All\+Resolve\+Element\+Remaining\+Slot} = Context\+:\+:M\+I\+N\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+S\+L\+O\+TS, 
+{\bfseries k\+Promise\+All\+Resolve\+Element\+Capability\+Slot}, 
+{\bfseries k\+Promise\+All\+Resolve\+Element\+Values\+Array\+Slot}, 
+{\bfseries k\+Promise\+All\+Resolve\+Element\+Length}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a2e1b921b76d99261d540cb5a28e38feb}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a2e1b921b76d99261d540cb5a28e38feb}} 
+enum {\bfseries Function\+Context\+Slot} \{ {\bfseries k\+Capability\+Slot} = Context\+:\+:M\+I\+N\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+S\+L\+O\+TS, 
+{\bfseries k\+Capabilities\+Context\+Length}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_aa5f578a4e9a0dc7657e0d20ed32e6d20}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_aa5f578a4e9a0dc7657e0d20ed32e6d20}} 
+enum {\bfseries Promise\+Finally\+Context\+Slot} \{ {\bfseries k\+On\+Finally\+Slot} = Context\+:\+:M\+I\+N\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+S\+L\+O\+TS, 
+{\bfseries k\+Constructor\+Slot}, 
+{\bfseries k\+Promise\+Finally\+Context\+Length}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_ad56720e6d76bf8328571060d8ca780f8}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_ad56720e6d76bf8328571060d8ca780f8}} 
+enum {\bfseries Promise\+Value\+Thunk\+Or\+Reason\+Context\+Slot} \{ {\bfseries k\+Value\+Slot} = Context\+:\+:M\+I\+N\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+S\+L\+O\+TS, 
+{\bfseries k\+Promise\+Value\+Thunk\+Or\+Reason\+Context\+Length}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a6fd825775cf690998bb3dbc4e7491340}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a6fd825775cf690998bb3dbc4e7491340}} 
+{\bfseries Promise\+Builtins\+Assembler} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerState}{compiler\+::\+Code\+Assembler\+State}} $\ast$state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_ad89892e58360295a4077269fedee4618}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_ad89892e58360295a4077269fedee4618}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Allocate\+And\+Init\+J\+S\+Promise} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a64cb6fe4c981d5984835994ea695942c}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a64cb6fe4c981d5984835994ea695942c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Allocate\+And\+Init\+J\+S\+Promise} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$parent)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a32a8f0a2e6c494144092b65821749cbe}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a32a8f0a2e6c494144092b65821749cbe}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Allocate\+And\+Set\+J\+S\+Promise} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1Promise_a0c357b9d99a634f98a5a203b0a322544}{v8\+::\+Promise\+::\+Promise\+State}} status, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$result)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a16f1c2bc7dedebfe2cf76d564a5b9660}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a16f1c2bc7dedebfe2cf76d564a5b9660}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Allocate\+Promise\+Reaction} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$next, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise\+\_\+or\+\_\+capability, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$fulfill\+\_\+handler, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$reject\+\_\+handler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a8013e272ce715a459595bbd1f3ce6514}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a8013e272ce715a459595bbd1f3ce6514}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Allocate\+Promise\+Reaction\+Job\+Task} (Root\+Index map\+\_\+root\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$argument, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$handler, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise\+\_\+or\+\_\+capability)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_ae2663b68bd46f365a8ba4dbf15cfe45c}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_ae2663b68bd46f365a8ba4dbf15cfe45c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Allocate\+Promise\+Reaction\+Job\+Task} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$map, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$argument, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$handler, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise\+\_\+or\+\_\+capability)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a0d622abdf1ca0a34a1d063843cfbdd90}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a0d622abdf1ca0a34a1d063843cfbdd90}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Allocate\+Promise\+Resolve\+Thenable\+Job\+Task} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise\+\_\+to\+\_\+resolve, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$then, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$thenable, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a3b2c7e7c2c8fc5ba5ff9400f43bce9d8}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a3b2c7e7c2c8fc5ba5ff9400f43bce9d8}} 
+std\+::pair$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ $>$ {\bfseries Create\+Promise\+Resolving\+Functions} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$native\+\_\+context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise\+\_\+context)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a5bf0e6c485533a27040936893adab80d}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a5bf0e6c485533a27040936893adab80d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Promise\+Has\+Handler} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_ac61d1dc18a6ea7100549f8d0bcddb653}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_ac61d1dc18a6ea7100549f8d0bcddb653}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Create\+Promise\+All\+Resolve\+Element\+Context} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise\+\_\+capability, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$native\+\_\+context)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a3cb3e41eed388a10b6e51ee98362dd19}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a3cb3e41eed388a10b6e51ee98362dd19}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Create\+Promise\+All\+Resolve\+Element\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$native\+\_\+context)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a8f421d09e69d4e955820cec3ea73c068}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a8f421d09e69d4e955820cec3ea73c068}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Create\+Promise\+Resolving\+Functions\+Context} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$debug\+\_\+event, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$native\+\_\+context)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a7bcd0b6121e4cdd72398e21247d84400}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a7bcd0b6121e4cdd72398e21247d84400}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Create\+Promise\+Get\+Capabilities\+Executor\+Context} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$native\+\_\+context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise\+\_\+capability)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a1c6cda4f9934236e35247c99189c3401}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a1c6cda4f9934236e35247c99189c3401}} 
+void {\bfseries Promise\+Init} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_ab949652bc52be62da64b8e04a8b38488}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_ab949652bc52be62da64b8e04a8b38488}} 
+void {\bfseries Promise\+Set\+Has\+Handler} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a0d09c3adccdc738bafc4a1fdc8eeb5b8}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a0d09c3adccdc738bafc4a1fdc8eeb5b8}} 
+void {\bfseries Promise\+Set\+Handled\+Hint} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a316d72dbbcd5c9bda5ff4252688775e2}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a316d72dbbcd5c9bda5ff4252688775e2}} 
+void {\bfseries Perform\+Promise\+Then} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$on\+\_\+fulfilled, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$on\+\_\+rejected, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$result\+\_\+promise\+\_\+or\+\_\+capability)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_aac05ef13537c677cfb397559521d11e5}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_aac05ef13537c677cfb397559521d11e5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Create\+Promise\+Context} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$native\+\_\+context, \mbox{\hyperlink{classint}{int}} slots)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a5fd90efe14a52a301d10285fa477da63}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a5fd90efe14a52a301d10285fa477da63}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Trigger\+Promise\+Reactions} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$result, Promise\+Reaction\+::\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_aa3d4e0a0be83280ebef173383a4dc2e2}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_aa3d4e0a0be83280ebef173383a4dc2e2}} 
+void {\bfseries Branch\+If\+Promise\+Resolve\+Lookup\+Chain\+Intact} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$native\+\_\+context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$constructor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+fast, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+slow)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_aa8311e593e04856dd2372f57e3deb43a}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_aa8311e593e04856dd2372f57e3deb43a}} 
+void {\bfseries Goto\+If\+Not\+Promise\+Resolve\+Lookup\+Chain\+Intact} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$native\+\_\+context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$constructor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+slow)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a7086cf452f3b5f524ac6f48c609f091f}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a7086cf452f3b5f524ac6f48c609f091f}} 
+void {\bfseries Branch\+If\+Promise\+Species\+Lookup\+Chain\+Intact} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$native\+\_\+context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise\+\_\+map, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+fast, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+slow)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_aef124578802df3873fb527ecf7023e7e}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_aef124578802df3873fb527ecf7023e7e}} 
+void {\bfseries Branch\+If\+Promise\+Then\+Lookup\+Chain\+Intact} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$native\+\_\+context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$receiver\+\_\+map, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+fast, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+slow)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a3aa37d737db299b590cf12c50f5efa92}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a3aa37d737db299b590cf12c50f5efa92}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Invoke\+Resolve} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$native\+\_\+context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$constructor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$value, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+exception, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerVariable}{Variable}} $\ast$var\+\_\+exception)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a2d6db50a2cf3e87e8cb162be16844302}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a2d6db50a2cf3e87e8cb162be16844302}} 
+{\footnotesize template$<$typename... T\+Args$>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Invoke\+Then} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$native\+\_\+context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$receiver, T\+Args... args)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_aef4e9805bd47021a5cbf4b05588cb19b}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_aef4e9805bd47021a5cbf4b05588cb19b}} 
+void {\bfseries Branch\+If\+Access\+Check\+Failed} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$native\+\_\+context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise\+\_\+constructor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$executor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+noaccess)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_ada6e4dee8ba68a827e57a523a72b6980}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_ada6e4dee8ba68a827e57a523a72b6980}} 
+std\+::pair$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ $>$ {\bfseries Create\+Promise\+Finally\+Functions} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$on\+\_\+finally, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$constructor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$native\+\_\+context)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a9fd0730f7222ab25ff47f92fd3e34c6a}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a9fd0730f7222ab25ff47f92fd3e34c6a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Create\+Value\+Thunk\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$value, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$native\+\_\+context)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a7c47f04f6e274ec8934629c5185c058d}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a7c47f04f6e274ec8934629c5185c058d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Create\+Thrower\+Function} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$reason, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$native\+\_\+context)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_add72dc50676df818fddad896da96314b}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_add72dc50676df818fddad896da96314b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Perform\+Promise\+All} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$constructor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$capability, const Iterator\+Builtins\+From\+D\+S\+L\+Assembler\+::\+Iterator\+Record \&record, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+exception, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerVariable}{Variable}} $\ast$var\+\_\+exception)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a1ac07b06bb2991a7973f4fe7d6c3d7b6}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a1ac07b06bb2991a7973f4fe7d6c3d7b6}} 
+void {\bfseries Set\+Forwarding\+Handler\+If\+True} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$condition, const Node\+Generator \&object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a46ff94a74e6628712dc21a0ec435878a}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a46ff94a74e6628712dc21a0ec435878a}} 
+void {\bfseries Set\+Forwarding\+Handler\+If\+True} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$condition, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_ad926b9de85cf18f7fc8c66affabcbfc5}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_ad926b9de85cf18f7fc8c66affabcbfc5}} 
+void {\bfseries Set\+Promise\+Handled\+By\+If\+True} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$condition, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise, const Node\+Generator \&handled\+\_\+by)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a1d753e3fa87ee05fd5b7893474d69fb7}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a1d753e3fa87ee05fd5b7893474d69fb7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Promise\+Status} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a45c24ad9bfb359dc5ad8d34af854b1de}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a45c24ad9bfb359dc5ad8d34af854b1de}} 
+void {\bfseries Promise\+Reaction\+Job} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$argument, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$handler, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise\+\_\+or\+\_\+capability, Promise\+Reaction\+::\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_ac914408a99b22f4793cca0f497b31f59}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_ac914408a99b22f4793cca0f497b31f59}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Is\+Promise\+Status} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$actual, \mbox{\hyperlink{classv8_1_1Promise_a0c357b9d99a634f98a5a203b0a322544}{v8\+::\+Promise\+::\+Promise\+State}} expected)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a0a001c0bc8b4b5334db056600cc2fef4}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a0a001c0bc8b4b5334db056600cc2fef4}} 
+void {\bfseries Promise\+Set\+Status} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$promise, \mbox{\hyperlink{classv8_1_1Promise_a0c357b9d99a634f98a5a203b0a322544}{v8\+::\+Promise\+::\+Promise\+State}} status)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a116d67b7c8b8c7f8f0bcbea175348cf6}\label{classv8_1_1internal_1_1PromiseBuiltinsAssembler_a116d67b7c8b8c7f8f0bcbea175348cf6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Allocate\+J\+S\+Promise} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$context)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file builtins-\/promise-\/gen.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/builtins/builtins-\/promise-\/gen.\+h\item 
+v8/src/builtins/builtins-\/promise-\/gen.\+cc\end{DoxyCompactItemize}

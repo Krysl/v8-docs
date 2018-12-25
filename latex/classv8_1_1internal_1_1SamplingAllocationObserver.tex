@@ -1,0 +1,37 @@
+\hypertarget{classv8_1_1internal_1_1SamplingAllocationObserver}{}\section{v8\+:\+:internal\+:\+:Sampling\+Allocation\+Observer Class Reference}
+\label{classv8_1_1internal_1_1SamplingAllocationObserver}\index{v8\+::internal\+::\+Sampling\+Allocation\+Observer@{v8\+::internal\+::\+Sampling\+Allocation\+Observer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Sampling\+Allocation\+Observer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1SamplingAllocationObserver}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SamplingAllocationObserver_a60bf25c58608f2666d0843666145b554}\label{classv8_1_1internal_1_1SamplingAllocationObserver_a60bf25c58608f2666d0843666145b554}} 
+{\bfseries Sampling\+Allocation\+Observer} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, intptr\+\_\+t step\+\_\+size, uint64\+\_\+t rate, \mbox{\hyperlink{classv8_1_1internal_1_1SamplingHeapProfiler}{Sampling\+Heap\+Profiler}} $\ast$profiler, \mbox{\hyperlink{classv8_1_1base_1_1RandomNumberGenerator}{base\+::\+Random\+Number\+Generator}} $\ast$random)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SamplingAllocationObserver_a3b95036f997dfdc2a581f50de752f80f}\label{classv8_1_1internal_1_1SamplingAllocationObserver_a3b95036f997dfdc2a581f50de752f80f}} 
+void {\bfseries Step} (\mbox{\hyperlink{classint}{int}} bytes\+\_\+allocated, \mbox{\hyperlink{classuintptr__t}{Address}} soon\+\_\+object, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SamplingAllocationObserver_aae9dd259b530e7993fbb241a0406dd2a}\label{classv8_1_1internal_1_1SamplingAllocationObserver_aae9dd259b530e7993fbb241a0406dd2a}} 
+intptr\+\_\+t {\bfseries Get\+Next\+Step\+Size} () override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 174 of file sampling-\/heap-\/profiler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/sampling-\/heap-\/profiler.\+h\item 
+v8/src/profiler/sampling-\/heap-\/profiler.\+cc\end{DoxyCompactItemize}

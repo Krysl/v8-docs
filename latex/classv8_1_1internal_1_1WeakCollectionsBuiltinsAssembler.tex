@@ -1,0 +1,87 @@
+\hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler}{}\section{v8\+:\+:internal\+:\+:Weak\+Collections\+Builtins\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler}\index{v8\+::internal\+::\+Weak\+Collections\+Builtins\+Assembler@{v8\+::internal\+::\+Weak\+Collections\+Builtins\+Assembler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Weak\+Collections\+Builtins\+Assembler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.666667cm]{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_a25badc1f2caf9abbd48edcbfb608d0d4}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_a25badc1f2caf9abbd48edcbfb608d0d4}} 
+{\bfseries Weak\+Collections\+Builtins\+Assembler} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerState}{compiler\+::\+Code\+Assembler\+State}} $\ast$state)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_ad06af8e4e6dffd179e5a030400246f49}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_ad06af8e4e6dffd179e5a030400246f49}} 
+typedef std\+::function$<$ void(\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ entry\+\_\+key, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+same)$>$ {\bfseries Key\+Comparator}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_a335929c4a4d26e40a4f7e40ef92dd9c3}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_a335929c4a4d26e40a4f7e40ef92dd9c3}} 
+void {\bfseries Add\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1EphemeronHashTable}{Ephemeron\+Hash\+Table}} $>$ table, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ key\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ number\+\_\+of\+\_\+elements)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_ac635cfebcd4305c1c22d38df5ece01ae}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_ac635cfebcd4305c1c22d38df5ece01ae}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Allocate\+Table} (Variant variant, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ at\+\_\+least\+\_\+space\+\_\+for) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_a7e71d1b535926b3559bb245c0acb7f1b}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_a7e71d1b535926b3559bb245c0acb7f1b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ {\bfseries Create\+Identity\+Hash} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ receiver)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_ace154ec65dc503e7694be4d30da35568}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_ace154ec65dc503e7694be4d30da35568}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ {\bfseries Entry\+Mask} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ capacity)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_a1260d020fa15e75d3f96dec4be439f10}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_a1260d020fa15e75d3f96dec4be439f10}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ {\bfseries Find\+Key\+Index} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ table, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ key\+\_\+hash, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ entry\+\_\+mask, const Key\+Comparator \&key\+\_\+compare)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_a7df3b4ff71203fc2eea43a0573268987}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_a7df3b4ff71203fc2eea43a0573268987}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ {\bfseries Find\+Key\+Index\+For\+Insertion} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ table, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ key\+\_\+hash, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ entry\+\_\+mask)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_ad009e8cf96cec83f823c9036c3fc32a7}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_ad009e8cf96cec83f823c9036c3fc32a7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ {\bfseries Find\+Key\+Index\+For\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ table, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ hash, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ entry\+\_\+mask, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+not\+\_\+found)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_ab53c7cf7116115dc2ea23a02f297f7c9}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_ab53c7cf7116115dc2ea23a02f297f7c9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1Word32T}{Word32T}} $>$ {\bfseries Insufficient\+Capacity\+To\+Add} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ capacity, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ number\+\_\+of\+\_\+elements, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ number\+\_\+of\+\_\+deleted)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_a3f9ee97120e61a0ea4c6fda2fbf4dbd8}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_a3f9ee97120e61a0ea4c6fda2fbf4dbd8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ {\bfseries Key\+Index\+From\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ entry)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_af658cdd3c9e086c0a04379bd6e3271c2}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_af658cdd3c9e086c0a04379bd6e3271c2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ {\bfseries Load\+Number\+Of\+Elements} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1EphemeronHashTable}{Ephemeron\+Hash\+Table}} $>$ table, \mbox{\hyperlink{classint}{int}} offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_ae5b76333b9db89bcb060ff5e978e8c72}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_ae5b76333b9db89bcb060ff5e978e8c72}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ {\bfseries Load\+Number\+Of\+Deleted} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1EphemeronHashTable}{Ephemeron\+Hash\+Table}} $>$ table, \mbox{\hyperlink{classint}{int}} offset=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_ad9f52645f3c440990951fc955fcb0db7}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_ad9f52645f3c440990951fc955fcb0db7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1EphemeronHashTable}{Ephemeron\+Hash\+Table}} $>$ {\bfseries Load\+Table} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSWeakCollection}{J\+S\+Weak\+Collection}} $>$ collection)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_a1744620df618bb2ea351ef4b7ae41e2d}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_a1744620df618bb2ea351ef4b7ae41e2d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ {\bfseries Load\+Table\+Capacity} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1EphemeronHashTable}{Ephemeron\+Hash\+Table}} $>$ table)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_aa1a04c2aaeaccd2f4ac0825679ae9b8f}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_aa1a04c2aaeaccd2f4ac0825679ae9b8f}} 
+void {\bfseries Remove\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1EphemeronHashTable}{Ephemeron\+Hash\+Table}} $>$ table, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ key\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ number\+\_\+of\+\_\+elements)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_af2283dbb2e07fb8d6a755897183ad390}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_af2283dbb2e07fb8d6a755897183ad390}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1BoolT}{BoolT}} $>$ {\bfseries Should\+Rehash} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ number\+\_\+of\+\_\+elements, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ number\+\_\+of\+\_\+deleted)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_aa60f6016e45117bfaca2834eb6543db6}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_aa60f6016e45117bfaca2834eb6543db6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1Word32T}{Word32T}} $>$ {\bfseries Should\+Shrink} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ capacity, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ number\+\_\+of\+\_\+elements)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_aaa40e4281df6d8de393a8e0d1383ec1c}\label{classv8_1_1internal_1_1WeakCollectionsBuiltinsAssembler_aaa40e4281df6d8de393a8e0d1383ec1c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ {\bfseries Value\+Index\+From\+Key\+Index} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ key\+\_\+index)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 2264 of file builtins-\/collections-\/gen.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/builtins/builtins-\/collections-\/gen.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,93 @@
+\hypertarget{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo}{}\section{v8\+:\+:internal\+:\+:Native\+Group\+Retained\+Object\+Info Class Reference}
+\label{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo}\index{v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info@{v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Native\+Group\+Retained\+Object\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo_ac0426b5022da76fc2a5229ae7967c99a}\label{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo_ac0426b5022da76fc2a5229ae7967c99a}} 
+{\bfseries Native\+Group\+Retained\+Object\+Info} (const \mbox{\hyperlink{classchar}{char}} $\ast$label)
+\item 
+void \mbox{\hyperlink{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo_a27dc763171801350dc7f7b2b9e74ee42}{Dispose}} () override
+\item 
+\mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo_a8d54367b99192c9081d03ccdc8e97612}{Is\+Equivalent}} (\mbox{\hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info}} $\ast$other) override
+\item 
+intptr\+\_\+t \mbox{\hyperlink{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo_a0bb1682d322ad1c63b22058cf5a75a6f}{Get\+Hash}} () override
+\item 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ \mbox{\hyperlink{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo_a8b9d63379a9e6647ecbe169d6f9223ee}{Get\+Label}} () override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1925 of file heap-\/snapshot-\/generator.\+cc.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo_a27dc763171801350dc7f7b2b9e74ee42}\label{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo_a27dc763171801350dc7f7b2b9e74ee42}} 
+\index{v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info@{v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info@{v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily void v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info\+::\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called by \mbox{\hyperlink{classv8_1_1internal_1_1V8}{V8}} when it no longer needs an instance. 
+
+Implements \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_a5011203f7c5949049ba36b8059f03eca}{v8\+::\+Retained\+Object\+Info}}.
+
+
+
+Definition at line 1933 of file heap-\/snapshot-\/generator.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo_a0bb1682d322ad1c63b22058cf5a75a6f}\label{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo_a0bb1682d322ad1c63b22058cf5a75a6f}} 
+\index{v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info@{v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info}!Get\+Hash@{Get\+Hash}}
+\index{Get\+Hash@{Get\+Hash}!v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info@{v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info}}
+\subsubsection{\texorpdfstring{Get\+Hash()}{GetHash()}}
+{\footnotesize\ttfamily intptr\+\_\+t v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info\+::\+Get\+Hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns hash value for the instance. Equivalent instances must have the same hash value. 
+
+Implements \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_a6fdbfa242b95615e63f08433419c8066}{v8\+::\+Retained\+Object\+Info}}.
+
+
+
+Definition at line 1941 of file heap-\/snapshot-\/generator.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo_a8b9d63379a9e6647ecbe169d6f9223ee}\label{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo_a8b9d63379a9e6647ecbe169d6f9223ee}} 
+\index{v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info@{v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info}!Get\+Label@{Get\+Label}}
+\index{Get\+Label@{Get\+Label}!v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info@{v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info}}
+\subsubsection{\texorpdfstring{Get\+Label()}{GetLabel()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classchar}{char}}$\ast$ v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info\+::\+Get\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns human-\/readable label. It must be a null-\/terminated U\+T\+F-\/8 encoded string. \mbox{\hyperlink{classv8_1_1internal_1_1V8}{V8}} copies its contents during a call to Get\+Label. 
+
+Implements \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_ad19106fc7f0499fd45005077551d54c0}{v8\+::\+Retained\+Object\+Info}}.
+
+
+
+Definition at line 1942 of file heap-\/snapshot-\/generator.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo_a8d54367b99192c9081d03ccdc8e97612}\label{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo_a8d54367b99192c9081d03ccdc8e97612}} 
+\index{v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info@{v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info}!Is\+Equivalent@{Is\+Equivalent}}
+\index{Is\+Equivalent@{Is\+Equivalent}!v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info@{v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info}}
+\subsubsection{\texorpdfstring{Is\+Equivalent()}{IsEquivalent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbool}{bool}} v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info\+::\+Is\+Equivalent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info}} $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns whether two instances are equivalent. 
+
+Implements \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_a286103bb076c85415919c86b1838c990}{v8\+::\+Retained\+Object\+Info}}.
+
+
+
+Definition at line 1938 of file heap-\/snapshot-\/generator.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/heap-\/snapshot-\/generator.\+cc\end{DoxyCompactItemize}

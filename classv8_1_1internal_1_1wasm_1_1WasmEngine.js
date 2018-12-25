@@ -1,0 +1,27 @@
+var classv8_1_1internal_1_1wasm_1_1WasmEngine =
+[
+    [ "WasmEngine", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#aee97c8a6e684e2b5b646159ee0c4ec73", null ],
+    [ "~WasmEngine", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#af2a33b8b1886a22b78cfa5c01d6db7c1", null ],
+    [ "AddIsolate", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#af7ca4a2df3e7f8a56c31571ade78372e", null ],
+    [ "allocator", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#a92bf3bf6d5ba9b15735d9ae1a3643817", null ],
+    [ "AsyncCompile", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#aaacfae0e6099d8696eda0a2d8d7fecf4", null ],
+    [ "AsyncInstantiate", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#aefce4d20fbd0cf19f61519ad741bf1dd", null ],
+    [ "code_manager", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#ab09e92a7aa8374889c1a6928bab813ed", null ],
+    [ "CompileFunction", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#a381b86c1c5f9a4b82b6172e343df5f74", null ],
+    [ "DeleteCompileJobsOnIsolate", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#aa103ab294ff94d0c588ea065e30e7038", null ],
+    [ "DumpAndResetTurboStatistics", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#a54471342125fa1a1edbfce3cbabc9ab6", null ],
+    [ "ExportNativeModule", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#a904933c8cee59fd4e7ba4e1d73afc6ad", null ],
+    [ "FinalizeTranslatedAsmJs", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#a2f4b59db1fd3eec79204f0e3628f1074", null ],
+    [ "GetCodeTracer", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#a935fb8d614cf2741a9b6bb23671b0e76", null ],
+    [ "GetOrCreateTurboStatistics", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#a6ba64d2431a10ea5ff7a0c33cf8a03f8", null ],
+    [ "HasRunningCompileJob", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#ab6afdb3fea4c987fb6d9d515c5faa630", null ],
+    [ "ImportNativeModule", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#ae9574a38d771411fadc441fa58b875cf", null ],
+    [ "memory_tracker", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#a7f0d4c368b7d4cf712a46d022bedec09", null ],
+    [ "RemoveCompileJob", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#a8378f5ecdd236147a0b3c590c12899b8", null ],
+    [ "RemoveIsolate", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#adb290a299b20f78b6b32641fc21325c5", null ],
+    [ "StartStreamingCompilation", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#ab7e9fa577a810aa1ee66a110c7349d1f", null ],
+    [ "SyncCompile", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#a6892238feb266e57371ed9aa88c38ee6", null ],
+    [ "SyncCompileTranslatedAsmJs", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#a842b15c32ff8d4f3ccffcbab32e21ce9", null ],
+    [ "SyncInstantiate", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#acaaae132f9415e5194a088e8f466328a", null ],
+    [ "SyncValidate", "classv8_1_1internal_1_1wasm_1_1WasmEngine.html#aaf88e443756927e9a1bde00d2e78a196", null ]
+];

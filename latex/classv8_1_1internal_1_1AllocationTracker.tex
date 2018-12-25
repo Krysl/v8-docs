@@ -1,0 +1,41 @@
+\hypertarget{classv8_1_1internal_1_1AllocationTracker}{}\section{v8\+:\+:internal\+:\+:Allocation\+Tracker Class Reference}
+\label{classv8_1_1internal_1_1AllocationTracker}\index{v8\+::internal\+::\+Allocation\+Tracker@{v8\+::internal\+::\+Allocation\+Tracker}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1AllocationTracker_1_1FunctionInfo}{Function\+Info}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationTracker_ae705bae00ff323c41efc0b1d50afc62c}\label{classv8_1_1internal_1_1AllocationTracker_ae705bae00ff323c41efc0b1d50afc62c}} 
+{\bfseries Allocation\+Tracker} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObjectsMap}{Heap\+Objects\+Map}} $\ast$ids, \mbox{\hyperlink{classv8_1_1internal_1_1StringsStorage}{Strings\+Storage}} $\ast$names)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationTracker_a06984664822efec67f15cfc200f9c1c8}\label{classv8_1_1internal_1_1AllocationTracker_a06984664822efec67f15cfc200f9c1c8}} 
+void {\bfseries Prepare\+For\+Serialization} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationTracker_af59e0f4c414b6fe00ff0729e616ae219}\label{classv8_1_1internal_1_1AllocationTracker_af59e0f4c414b6fe00ff0729e616ae219}} 
+void {\bfseries Allocation\+Event} (\mbox{\hyperlink{classuintptr__t}{Address}} addr, \mbox{\hyperlink{classint}{int}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationTracker_aa0471186f074acec90232839b6e22431}\label{classv8_1_1internal_1_1AllocationTracker_aa0471186f074acec90232839b6e22431}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1AllocationTraceTree}{Allocation\+Trace\+Tree}} $\ast$ {\bfseries trace\+\_\+tree} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationTracker_aa5efd08c197a25727449c819519a0853}\label{classv8_1_1internal_1_1AllocationTracker_aa5efd08c197a25727449c819519a0853}} 
+const std\+::vector$<$ \mbox{\hyperlink{structv8_1_1internal_1_1AllocationTracker_1_1FunctionInfo}{Function\+Info}} $\ast$ $>$ \& {\bfseries function\+\_\+info\+\_\+list} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationTracker_adacf25ec6310501fb4d9ae02c1737621}\label{classv8_1_1internal_1_1AllocationTracker_adacf25ec6310501fb4d9ae02c1737621}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1AddressToTraceMap}{Address\+To\+Trace\+Map}} $\ast$ {\bfseries address\+\_\+to\+\_\+trace} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 98 of file allocation-\/tracker.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/allocation-\/tracker.\+h\item 
+v8/src/profiler/allocation-\/tracker.\+cc\end{DoxyCompactItemize}

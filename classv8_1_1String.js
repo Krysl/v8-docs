@@ -23,7 +23,7 @@ var classv8_1_1String =
     ] ],
     [ "CanMakeExternal", "classv8_1_1String.html#a0fe076838af046506ffebbfadcde812a", null ],
     [ "ContainsOnlyOneByte", "classv8_1_1String.html#a29b9bc5f71fba74af478e806b9d6a1d6", null ],
-    [ "GetExternalOneByteStringResource", "classv8_1_1String.html#af93d92ca10a216be472d1b7c20550f76", null ],
+    [ "GetExternalOneByteStringResource", "classv8_1_1String.html#af362afb9835e123ad28c5255964af793", null ],
     [ "GetExternalStringResource", "classv8_1_1String.html#ac751c8c239eb213a879204cab6787883", null ],
     [ "GetExternalStringResourceBase", "classv8_1_1String.html#a3031c6406f3f84bbc2d9810477a07489", null ],
     [ "IsExternal", "classv8_1_1String.html#a1d24faa97c6168221ec362c395d41ce1", null ],

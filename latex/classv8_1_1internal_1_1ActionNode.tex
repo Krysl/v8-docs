@@ -1,0 +1,91 @@
+\hypertarget{classv8_1_1internal_1_1ActionNode}{}\section{v8\+:\+:internal\+:\+:Action\+Node Class Reference}
+\label{classv8_1_1internal_1_1ActionNode}\index{v8\+::internal\+::\+Action\+Node@{v8\+::internal\+::\+Action\+Node}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Action\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1ActionNode}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ActionNode_ab695380c09977f360b2d4f817f9124bc}\label{classv8_1_1internal_1_1ActionNode_ab695380c09977f360b2d4f817f9124bc}} 
+enum {\bfseries Action\+Type} \{ \newline
+{\bfseries S\+E\+T\+\_\+\+R\+E\+G\+I\+S\+T\+ER}, 
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+\_\+\+R\+E\+G\+I\+S\+T\+ER}, 
+{\bfseries S\+T\+O\+R\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON}, 
+{\bfseries B\+E\+G\+I\+N\+\_\+\+S\+U\+B\+M\+A\+T\+CH}, 
+\newline
+{\bfseries P\+O\+S\+I\+T\+I\+V\+E\+\_\+\+S\+U\+B\+M\+A\+T\+C\+H\+\_\+\+S\+U\+C\+C\+E\+SS}, 
+{\bfseries E\+M\+P\+T\+Y\+\_\+\+M\+A\+T\+C\+H\+\_\+\+C\+H\+E\+CK}, 
+{\bfseries C\+L\+E\+A\+R\+\_\+\+C\+A\+P\+T\+U\+R\+ES}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ActionNode_a7211d3783a725f51fb57c05ae8900cce}\label{classv8_1_1internal_1_1ActionNode_a7211d3783a725f51fb57c05ae8900cce}} 
+void {\bfseries Accept} (\mbox{\hyperlink{classv8_1_1internal_1_1NodeVisitor}{Node\+Visitor}} $\ast$visitor) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ActionNode_ad664161e894fe81e82ce76b7e43545a2}\label{classv8_1_1internal_1_1ActionNode_ad664161e894fe81e82ce76b7e43545a2}} 
+void {\bfseries Emit} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classv8_1_1internal_1_1Trace}{Trace}} $\ast$trace) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ActionNode_ad318703d79f086c1b518f6008e2384b4}\label{classv8_1_1internal_1_1ActionNode_ad318703d79f086c1b518f6008e2384b4}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Eats\+At\+Least} (\mbox{\hyperlink{classint}{int}} still\+\_\+to\+\_\+find, \mbox{\hyperlink{classint}{int}} budget, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ActionNode_ae590338eedba24969860acef618ee829}\label{classv8_1_1internal_1_1ActionNode_ae590338eedba24969860acef618ee829}} 
+void {\bfseries Get\+Quick\+Check\+Details} (\mbox{\hyperlink{classv8_1_1internal_1_1QuickCheckDetails}{Quick\+Check\+Details}} $\ast$details, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classint}{int}} filled\+\_\+in, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ActionNode_aa97507c043d2ca1971c9a9bf179ed359}\label{classv8_1_1internal_1_1ActionNode_aa97507c043d2ca1971c9a9bf179ed359}} 
+void {\bfseries Fill\+In\+B\+M\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} offset, \mbox{\hyperlink{classint}{int}} budget, \mbox{\hyperlink{classv8_1_1internal_1_1BoyerMooreLookahead}{Boyer\+Moore\+Lookahead}} $\ast$bm, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ActionNode_ae848c71b17d244a67f3f34afe142fac8}\label{classv8_1_1internal_1_1ActionNode_ae848c71b17d244a67f3f34afe142fac8}} 
+Action\+Type {\bfseries action\+\_\+type} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ActionNode_a7c7df272a95395571580fca4e060f786}\label{classv8_1_1internal_1_1ActionNode_a7c7df272a95395571580fca4e060f786}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Greedy\+Loop\+Text\+Length} () override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ActionNode_ab0232aafb29641c830970993c18ca5a7}\label{classv8_1_1internal_1_1ActionNode_ab0232aafb29641c830970993c18ca5a7}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ActionNode}{Action\+Node}} $\ast$ {\bfseries Set\+Register} (\mbox{\hyperlink{classint}{int}} reg, \mbox{\hyperlink{classint}{int}} val, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ActionNode_ac2fea920241e4412a3bba2d10acb91ef}\label{classv8_1_1internal_1_1ActionNode_ac2fea920241e4412a3bba2d10acb91ef}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ActionNode}{Action\+Node}} $\ast$ {\bfseries Increment\+Register} (\mbox{\hyperlink{classint}{int}} reg, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ActionNode_a7b7c1ea99df9360c97a7e73e2672a834}\label{classv8_1_1internal_1_1ActionNode_a7b7c1ea99df9360c97a7e73e2672a834}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ActionNode}{Action\+Node}} $\ast$ {\bfseries Store\+Position} (\mbox{\hyperlink{classint}{int}} reg, \mbox{\hyperlink{classbool}{bool}} is\+\_\+capture, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ActionNode_af5c152a32e7afbe31390f57c07eed05a}\label{classv8_1_1internal_1_1ActionNode_af5c152a32e7afbe31390f57c07eed05a}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ActionNode}{Action\+Node}} $\ast$ {\bfseries Clear\+Captures} (\mbox{\hyperlink{classv8_1_1internal_1_1Interval}{Interval}} range, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ActionNode_a84297f33bee6dffd0cc7a6b5341fb106}\label{classv8_1_1internal_1_1ActionNode_a84297f33bee6dffd0cc7a6b5341fb106}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ActionNode}{Action\+Node}} $\ast$ {\bfseries Begin\+Submatch} (\mbox{\hyperlink{classint}{int}} stack\+\_\+pointer\+\_\+reg, \mbox{\hyperlink{classint}{int}} position\+\_\+reg, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ActionNode_a89bed32eadb39ad776f7e5523d8d152b}\label{classv8_1_1internal_1_1ActionNode_a89bed32eadb39ad776f7e5523d8d152b}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ActionNode}{Action\+Node}} $\ast$ {\bfseries Positive\+Submatch\+Success} (\mbox{\hyperlink{classint}{int}} stack\+\_\+pointer\+\_\+reg, \mbox{\hyperlink{classint}{int}} restore\+\_\+reg, \mbox{\hyperlink{classint}{int}} clear\+\_\+capture\+\_\+count, \mbox{\hyperlink{classint}{int}} clear\+\_\+capture\+\_\+from, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ActionNode_a1f8492811dde72cce77b5b7f8d083292}\label{classv8_1_1internal_1_1ActionNode_a1f8492811dde72cce77b5b7f8d083292}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ActionNode}{Action\+Node}} $\ast$ {\bfseries Empty\+Match\+Check} (\mbox{\hyperlink{classint}{int}} start\+\_\+register, \mbox{\hyperlink{classint}{int}} repetition\+\_\+register, \mbox{\hyperlink{classint}{int}} repetition\+\_\+limit, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ActionNode_a9c19d4d6fc300c029ba554cbe4d3d2e0}\label{classv8_1_1internal_1_1ActionNode_a9c19d4d6fc300c029ba554cbe4d3d2e0}} 
+class {\bfseries Dot\+Printer}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 609 of file jsregexp.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/jsregexp.\+h\item 
+v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,49 @@
+\hypertarget{classv8_1_1internal_1_1VerifyPointersVisitor}{}\section{v8\+:\+:internal\+:\+:Verify\+Pointers\+Visitor Class Reference}
+\label{classv8_1_1internal_1_1VerifyPointersVisitor}\index{v8\+::internal\+::\+Verify\+Pointers\+Visitor@{v8\+::internal\+::\+Verify\+Pointers\+Visitor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Verify\+Pointers\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1VerifyPointersVisitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VerifyPointersVisitor_a5293c0c820eca00a7c7b0a6a95f9b654}\label{classv8_1_1internal_1_1VerifyPointersVisitor_a5293c0c820eca00a7c7b0a6a95f9b654}} 
+{\bfseries Verify\+Pointers\+Visitor} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VerifyPointersVisitor_aacf719c90ca4ded43a0a2d2a3d973280}\label{classv8_1_1internal_1_1VerifyPointersVisitor_aacf719c90ca4ded43a0a2d2a3d973280}} 
+void {\bfseries Visit\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} end) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VerifyPointersVisitor_a1582412b9011946614b632d5457234e3}\label{classv8_1_1internal_1_1VerifyPointersVisitor_a1582412b9011946614b632d5457234e3}} 
+void {\bfseries Visit\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} end) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VerifyPointersVisitor_acb875e45dfeb48e5cb5de7247a51e093}\label{classv8_1_1internal_1_1VerifyPointersVisitor_acb875e45dfeb48e5cb5de7247a51e093}} 
+void {\bfseries Visit\+Root\+Pointers} (Root root, const \mbox{\hyperlink{classchar}{char}} $\ast$description, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} end) override
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VerifyPointersVisitor_a9216a972a4dc944e4c9cf403ca4d2b1b}\label{classv8_1_1internal_1_1VerifyPointersVisitor_a9216a972a4dc944e4c9cf403ca4d2b1b}} 
+virtual void {\bfseries Verify\+Pointers} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} start, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} end)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1VerifyPointersVisitor_a602c5bc5ac7c99b38879f29952b038b5}\label{classv8_1_1internal_1_1VerifyPointersVisitor_a602c5bc5ac7c99b38879f29952b038b5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$ {\bfseries heap\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 2166 of file heap.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/heap.\+h\item 
+v8/src/heap/heap.\+cc\end{DoxyCompactItemize}

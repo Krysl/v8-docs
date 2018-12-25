@@ -1,0 +1,59 @@
+\hypertarget{classv8_1_1internal_1_1JSGlobalObject}{}\section{v8\+:\+:internal\+:\+:J\+S\+Global\+Object Class Reference}
+\label{classv8_1_1internal_1_1JSGlobalObject}\index{v8\+::internal\+::\+J\+S\+Global\+Object@{v8\+::internal\+::\+J\+S\+Global\+Object}}
+Inheritance diagram for v8\+:\+:internal\+:\+:J\+S\+Global\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1JSGlobalObject}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSGlobalObject_ab192eb8283fae997a4990985974464ba}\label{classv8_1_1internal_1_1JSGlobalObject_ab192eb8283fae997a4990985974464ba}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1GlobalDictionary}{Global\+Dictionary}} {\bfseries global\+\_\+dictionary} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSGlobalObject_a65733c64de114e8bb86588041253ce2d}\label{classv8_1_1internal_1_1JSGlobalObject_a65733c64de114e8bb86588041253ce2d}} 
+void {\bfseries set\+\_\+global\+\_\+dictionary} (\mbox{\hyperlink{classv8_1_1internal_1_1GlobalDictionary}{Global\+Dictionary}} dictionary)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSGlobalObject_a9c78fdab942887837ce802a9f466c10f}\label{classv8_1_1internal_1_1JSGlobalObject_a9c78fdab942887837ce802a9f466c10f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Detached} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSGlobalObject_a44356fa85dc699669cf67fbcae2e1025}\label{classv8_1_1internal_1_1JSGlobalObject_a44356fa85dc699669cf67fbcae2e1025}} 
+static void {\bfseries Invalidate\+Property\+Cell} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSGlobalObject}{J\+S\+Global\+Object}} $>$ object, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSGlobalObject_ac3ab88276c86a0e85d3db9715a36d79f}\label{classv8_1_1internal_1_1JSGlobalObject_ac3ab88276c86a0e85d3db9715a36d79f}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1PropertyCell}{Property\+Cell}} $>$ {\bfseries Ensure\+Empty\+Property\+Cell} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSGlobalObject}{J\+S\+Global\+Object}} $>$ global, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} $>$ name, Property\+Cell\+Type cell\+\_\+type, \mbox{\hyperlink{classint}{int}} $\ast$entry\+\_\+out=nullptr)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSGlobalObject_a99a21c71d44a6456ee78e5f1d8d176f5}\label{classv8_1_1internal_1_1JSGlobalObject_a99a21c71d44a6456ee78e5f1d8d176f5}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Native\+Context\+Offset} = J\+S\+Object\+::k\+Header\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSGlobalObject_a1c45d2940692ce5e8205be1613041c90}\label{classv8_1_1internal_1_1JSGlobalObject_a1c45d2940692ce5e8205be1613041c90}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Global\+Proxy\+Offset} = k\+Native\+Context\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSGlobalObject_a34edd920371e7a8c24b618a401a5e78e}\label{classv8_1_1internal_1_1JSGlobalObject_a34edd920371e7a8c24b618a401a5e78e}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Header\+Size} = k\+Global\+Proxy\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JSGlobalObject_a5dcb192b8930d640333fe390b2d5cfb8}\label{classv8_1_1internal_1_1JSGlobalObject_a5dcb192b8930d640333fe390b2d5cfb8}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Size} = k\+Header\+Size
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1134 of file js-\/objects.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/js-\/objects.\+h\item 
+v8/src/objects/js-\/objects-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('classv8_1_1Template.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="v8_8h_source.html">v8.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="include_2v8_8h_source.html">v8.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for v8::Template:</div>
 <div class="dyncontent">
@@ -115,7 +115,7 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPrivate</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Private.html">Private</a> &gt; name, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Data.html">Data</a> &gt; value, <a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87">PropertyAttribute</a> attributes=<a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df">None</a>)</td></tr>
 <tr class="separator:a91214bdb0cc2d6534c81742e67fc4cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc2fc88ac8df0d12b44d4c16ff0128cc"><td class="memItemLeft" align="right" valign="top"><a id="adc2fc88ac8df0d12b44d4c16ff0128cc"></a>
-V8_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (Isolate *isolate, const char *name, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Data.html">Data</a> &gt; value)</td></tr>
+V8_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (Isolate *isolate, const <a class="el" href="classchar.html">char</a> *name, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Data.html">Data</a> &gt; value)</td></tr>
 <tr class="separator:adc2fc88ac8df0d12b44d4c16ff0128cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c702a91581d6cf8cfb72c24ba8b8d17"><td class="memItemLeft" align="right" valign="top"><a id="a5c702a91581d6cf8cfb72c24ba8b8d17"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAccessorProperty</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt; name, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1FunctionTemplate.html">FunctionTemplate</a> &gt; getter=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1FunctionTemplate.html">FunctionTemplate</a> &gt;(), <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1FunctionTemplate.html">FunctionTemplate</a> &gt; setter=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1FunctionTemplate.html">FunctionTemplate</a> &gt;(), <a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87">PropertyAttribute</a> attribute=<a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df">None</a>, <a class="el" href="namespacev8.html#a31d8355cb043d7d2dda3f4a52760b64e">AccessControl</a> settings=DEFAULT)</td></tr>
@@ -142,7 +142,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The superclass of object and function templates. </p>
 
-<p class="definition">Definition at line <a class="el" href="v8_8h_source.html#l05287">5287</a> of file <a class="el" href="v8_8h_source.html">v8.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="include_2v8_8h_source.html#l05287">5287</a> of file <a class="el" href="include_2v8_8h_source.html">v8.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a623b9f0cdd87dc861516f276cc9a7cfa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a623b9f0cdd87dc861516f276cc9a7cfa">&#9670;&nbsp;</a></span>Set()</h2>
@@ -153,20 +153,20 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
         <tr>
           <td class="memname">void v8::Template::Set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Data.html">Data</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Data.html">Data</a> &gt;&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87">PropertyAttribute</a>&#160;</td>
-          <td class="paramname"><em>attributes</em> = <code><a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df">None</a></code>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87">v8::PropertyAttribute</a>&#160;</td>
+          <td class="paramname"><em>attribute</em> = <code><a class="el" href="namespacev8.html#a05f25f935e108a1ea2d150e274602b87a7ab4d58719c33b3ea2dfaefa29b111df">None</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -177,6 +177,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
 </div><div class="memdoc">
 <p>Adds a property to each instance created by this template.</p>
 <p>The property must be defined either as a primitive value, or a template. </p>
+
+<p class="definition">Definition at line <a class="el" href="api_8cc_source.html#l01283">1283</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -213,6 +215,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
 </div><div class="memdoc">
 <p>During template instantiation, sets the value with the intrinsic property from the correct context. </p>
 
+<p class="definition">Definition at line <a class="el" href="api_8cc_source.html#l01737">1737</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a id="ab306ba858f4e71a25ebba4380ea5791f"></a>
@@ -224,7 +228,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
         <tr>
           <td class="memname">void v8::Template::SetLazyDataProperty </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -236,8 +240,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td>
-          <td class="paramname"><em>data</em> = <code><a class="el" href="classv8_1_1Local.html">Local</a>&lt;&#160;<a class="el" href="classv8_1_1Value.html">Value</a>&#160;&gt;()</code>, </td>
+          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td>
+          <td class="paramname"><em>data</em> = <code><a class="el" href="classv8_1_1Local.html">Local</a>&lt;<a class="el" href="classv8_1_1Value.html">Value</a>&gt;()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -266,6 +270,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
 </div><div class="memdoc">
 <p>Like SetNativeDataProperty, but V8 will replace the native data property with a real data property on first access. </p>
 
+<p class="definition">Definition at line <a class="el" href="api_8cc_source.html#l01725">1725</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a id="a771f6ca09e5c4789306f8638de5b99ed"></a>
@@ -277,7 +283,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
         <tr>
           <td class="memname">void v8::Template::SetNativeDataProperty </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -295,8 +301,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td>
-          <td class="paramname"><em>data</em> = <code><a class="el" href="classv8_1_1Local.html">Local</a>&lt;&#160;<a class="el" href="classv8_1_1Value.html">Value</a>&#160;&gt;()</code>, </td>
+          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td>
+          <td class="paramname"><em>data</em> = <code><a class="el" href="classv8_1_1Local.html">Local</a>&lt;<a class="el" href="classv8_1_1Value.html">Value</a>&gt;()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -307,8 +313,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt;&#160;</td>
-          <td class="paramname"><em>signature</em> = <code><a class="el" href="classv8_1_1Local.html">Local</a>&lt;&#160;<a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a>&#160;&gt;()</code>, </td>
+          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt;&#160;</td>
+          <td class="paramname"><em>signature</em> = <code><a class="el" href="classv8_1_1Local.html">Local</a>&lt;<a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a>&gt;()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -349,10 +355,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="api_8cc_source.html#l01703">1703</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>v8/include/<a class="el" href="v8_8h_source.html">v8.h</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>v8/include/<a class="el" href="include_2v8_8h_source.html">v8.h</a></li>
+<li>v8/src/<a class="el" href="api_8cc_source.html">api.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -360,7 +369,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacev8.html">v8</a></li><li class="navelem"><a class="el" href="classv8_1_1Template.html">Template</a></li>
-    <li class="footer">Generated on Tue Dec 25 2018 14:33:12 by
+    <li class="footer">Generated on Tue Dec 25 2018 14:40:39 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

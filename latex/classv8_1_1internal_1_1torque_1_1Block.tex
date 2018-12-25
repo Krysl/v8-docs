@@ -1,0 +1,48 @@
+\hypertarget{classv8_1_1internal_1_1torque_1_1Block}{}\section{v8\+:\+:internal\+:\+:torque\+:\+:Block Class Reference}
+\label{classv8_1_1internal_1_1torque_1_1Block}\index{v8\+::internal\+::torque\+::\+Block@{v8\+::internal\+::torque\+::\+Block}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Block_ad1a59696dc8eaf8774938f2159c7d1aa}\label{classv8_1_1internal_1_1torque_1_1Block_ad1a59696dc8eaf8774938f2159c7d1aa}} 
+{\bfseries Block} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1ControlFlowGraph}{Control\+Flow\+Graph}} $\ast$cfg, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} id, \mbox{\hyperlink{classv8_1_1base_1_1Optional}{base\+::\+Optional}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Stack}{Stack}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$$>$$>$ input\+\_\+types, \mbox{\hyperlink{classbool}{bool}} is\+\_\+deferred)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Block_aac2824dc390b57440c0d0f68ba26828a}\label{classv8_1_1internal_1_1torque_1_1Block_aac2824dc390b57440c0d0f68ba26828a}} 
+void {\bfseries Add} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Instruction}{Instruction}} instruction)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Block_a9ea154be544c6090f266d574480b4aae}\label{classv8_1_1internal_1_1torque_1_1Block_a9ea154be544c6090f266d574480b4aae}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Input\+Types} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Block_a7ff0fb4b818748b36fa28d863c526707}\label{classv8_1_1internal_1_1torque_1_1Block_a7ff0fb4b818748b36fa28d863c526707}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Stack}{Stack}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$ $>$ \& {\bfseries Input\+Types} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Block_ac3b0befbcecd0ef337c1ca115013ab3c}\label{classv8_1_1internal_1_1torque_1_1Block_ac3b0befbcecd0ef337c1ca115013ab3c}} 
+void {\bfseries Set\+Input\+Types} (const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Stack}{Stack}}$<$ const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Type}{Type}} $\ast$$>$ \&input\+\_\+types)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Block_a63459ecacdeeb351bc2d892b3e558f21}\label{classv8_1_1internal_1_1torque_1_1Block_a63459ecacdeeb351bc2d892b3e558f21}} 
+void {\bfseries Retype} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Block_a747c79cf63bcc637baf0d08818df860f}\label{classv8_1_1internal_1_1torque_1_1Block_a747c79cf63bcc637baf0d08818df860f}} 
+const std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1Instruction}{Instruction}} $>$ \& {\bfseries instructions} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Block_a412256096628845cd81ab5cf4c87a5e0}\label{classv8_1_1internal_1_1torque_1_1Block_a412256096628845cd81ab5cf4c87a5e0}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Complete} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Block_af73b8d0d391734109f9efd673c3ed336}\label{classv8_1_1internal_1_1torque_1_1Block_af73b8d0d391734109f9efd673c3ed336}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1torque_1_1Block_a306af9bd15c8155ce8adf7a918b3d754}\label{classv8_1_1internal_1_1torque_1_1Block_a306af9bd15c8155ce8adf7a918b3d754}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Deferred} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file cfg.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/torque/cfg.\+h\item 
+v8/src/torque/cfg.\+cc\end{DoxyCompactItemize}

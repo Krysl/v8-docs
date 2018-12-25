@@ -1,0 +1,176 @@
+\hypertarget{classv8_1_1internal_1_1SerializedCodeData}{}\section{v8\+:\+:internal\+:\+:Serialized\+Code\+Data Class Reference}
+\label{classv8_1_1internal_1_1SerializedCodeData}\index{v8\+::internal\+::\+Serialized\+Code\+Data@{v8\+::internal\+::\+Serialized\+Code\+Data}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Serialized\+Code\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1SerializedCodeData}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_a5f99aa9dffa478e9ae70db3ce97bf214}\label{classv8_1_1internal_1_1SerializedCodeData_a5f99aa9dffa478e9ae70db3ce97bf214}} 
+enum {\bfseries Sanity\+Check\+Result} \{ \newline
+{\bfseries C\+H\+E\+C\+K\+\_\+\+S\+U\+C\+C\+E\+SS} = 0, 
+{\bfseries M\+A\+G\+I\+C\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+M\+I\+S\+M\+A\+T\+CH} = 1, 
+{\bfseries V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+I\+S\+M\+A\+T\+CH} = 2, 
+{\bfseries S\+O\+U\+R\+C\+E\+\_\+\+M\+I\+S\+M\+A\+T\+CH} = 3, 
+\newline
+{\bfseries C\+P\+U\+\_\+\+F\+E\+A\+T\+U\+R\+E\+S\+\_\+\+M\+I\+S\+M\+A\+T\+CH} = 4, 
+{\bfseries F\+L\+A\+G\+S\+\_\+\+M\+I\+S\+M\+A\+T\+CH} = 5, 
+{\bfseries C\+H\+E\+C\+K\+S\+U\+M\+\_\+\+M\+I\+S\+M\+A\+T\+CH} = 6, 
+{\bfseries I\+N\+V\+A\+L\+I\+D\+\_\+\+H\+E\+A\+D\+ER} = 7, 
+\newline
+{\bfseries L\+E\+N\+G\+T\+H\+\_\+\+M\+I\+S\+M\+A\+T\+CH} = 8
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_a927774e4b3f611d4c3255bb2dfc33c4c}\label{classv8_1_1internal_1_1SerializedCodeData_a927774e4b3f611d4c3255bb2dfc33c4c}} 
+{\bfseries Serialized\+Code\+Data} (const std\+::vector$<$ byte $>$ $\ast$payload, const \mbox{\hyperlink{classv8_1_1internal_1_1CodeSerializer}{Code\+Serializer}} $\ast$cs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_ac3f0b4f3c07b6218574be530df3772e7}\label{classv8_1_1internal_1_1SerializedCodeData_ac3f0b4f3c07b6218574be530df3772e7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ScriptData}{Script\+Data}} $\ast$ {\bfseries Get\+Script\+Data} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_a6223c32016188cfafb817654f53c8ccf}\label{classv8_1_1internal_1_1SerializedCodeData_a6223c32016188cfafb817654f53c8ccf}} 
+std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SerializedData_1_1Reservation}{Reservation}} $>$ {\bfseries Reservations} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_ade394399a6953a078ffb5279e46b90ba}\label{classv8_1_1internal_1_1SerializedCodeData_ade394399a6953a078ffb5279e46b90ba}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const byte $>$ {\bfseries Payload} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_a59a355428429f34d8d14ef13fa36f5c9}\label{classv8_1_1internal_1_1SerializedCodeData_a59a355428429f34d8d14ef13fa36f5c9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} $>$ {\bfseries Code\+Stub\+Keys} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_a845545d38f02d84d90c8d98c54252c06}\label{classv8_1_1internal_1_1SerializedCodeData_a845545d38f02d84d90c8d98c54252c06}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1SerializedCodeData}{Serialized\+Code\+Data}} {\bfseries From\+Cached\+Data} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1ScriptData}{Script\+Data}} $\ast$cached\+\_\+data, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} expected\+\_\+source\+\_\+hash, Sanity\+Check\+Result $\ast$rejection\+\_\+result)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_a769a3dd68a555a655664812ce6077d1a}\label{classv8_1_1internal_1_1SerializedCodeData_a769a3dd68a555a655664812ce6077d1a}} 
+static \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Source\+Hash} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ source, \mbox{\hyperlink{classv8_1_1ScriptOriginOptions}{Script\+Origin\+Options}} origin\+\_\+options)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_ab8e6cc7b79c3a14d2b998c7f0292d564}\label{classv8_1_1internal_1_1SerializedCodeData_ab8e6cc7b79c3a14d2b998c7f0292d564}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Version\+Hash\+Offset} = k\+Magic\+Number\+Offset + k\+U\+Int32\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_a0defee17d5dabf9c83eb8184acf84782}\label{classv8_1_1internal_1_1SerializedCodeData_a0defee17d5dabf9c83eb8184acf84782}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Source\+Hash\+Offset} = k\+Version\+Hash\+Offset + k\+U\+Int32\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_ac3e14fee91d73ebfb9cc266169e98547}\label{classv8_1_1internal_1_1SerializedCodeData_ac3e14fee91d73ebfb9cc266169e98547}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Cpu\+Features\+Offset} = k\+Source\+Hash\+Offset + k\+U\+Int32\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_afb5080276ae3ab8972d231e13a61371a}\label{classv8_1_1internal_1_1SerializedCodeData_afb5080276ae3ab8972d231e13a61371a}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Flag\+Hash\+Offset} = k\+Cpu\+Features\+Offset + k\+U\+Int32\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_af0ef46bf65e397e30eea33a1d4f1d349}\label{classv8_1_1internal_1_1SerializedCodeData_af0ef46bf65e397e30eea33a1d4f1d349}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Num\+Reservations\+Offset} = k\+Flag\+Hash\+Offset + k\+U\+Int32\+Size
+\item 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Num\+Code\+Stub\+Keys\+Offset}
+\item 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Payload\+Length\+Offset}
+\item 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Checksum\+Part\+A\+Offset}
+\item 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Checksum\+Part\+B\+Offset}
+\item 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Unaligned\+Header\+Size}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_ab6aba652952993458a92d3d19230e01c}\label{classv8_1_1internal_1_1SerializedCodeData_ab6aba652952993458a92d3d19230e01c}} 
+static const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries k\+Header\+Size} = P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+L\+I\+GN(k\+Unaligned\+Header\+Size)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 89 of file code-\/serializer.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_a937a7d03a9bed5c13880c91c34221c6d}\label{classv8_1_1internal_1_1SerializedCodeData_a937a7d03a9bed5c13880c91c34221c6d}} 
+\index{v8\+::internal\+::\+Serialized\+Code\+Data@{v8\+::internal\+::\+Serialized\+Code\+Data}!k\+Checksum\+Part\+A\+Offset@{k\+Checksum\+Part\+A\+Offset}}
+\index{k\+Checksum\+Part\+A\+Offset@{k\+Checksum\+Part\+A\+Offset}!v8\+::internal\+::\+Serialized\+Code\+Data@{v8\+::internal\+::\+Serialized\+Code\+Data}}
+\subsubsection{\texorpdfstring{k\+Checksum\+Part\+A\+Offset}{kChecksumPartAOffset}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} v8\+::internal\+::\+Serialized\+Code\+Data\+::k\+Checksum\+Part\+A\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kPayloadLengthOffset + kUInt32Size
+\end{DoxyCode}
+
+
+Definition at line 126 of file code-\/serializer.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_af8aa48395e2d2a51661f5059d9d3c84d}\label{classv8_1_1internal_1_1SerializedCodeData_af8aa48395e2d2a51661f5059d9d3c84d}} 
+\index{v8\+::internal\+::\+Serialized\+Code\+Data@{v8\+::internal\+::\+Serialized\+Code\+Data}!k\+Checksum\+Part\+B\+Offset@{k\+Checksum\+Part\+B\+Offset}}
+\index{k\+Checksum\+Part\+B\+Offset@{k\+Checksum\+Part\+B\+Offset}!v8\+::internal\+::\+Serialized\+Code\+Data@{v8\+::internal\+::\+Serialized\+Code\+Data}}
+\subsubsection{\texorpdfstring{k\+Checksum\+Part\+B\+Offset}{kChecksumPartBOffset}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} v8\+::internal\+::\+Serialized\+Code\+Data\+::k\+Checksum\+Part\+B\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kChecksumPartAOffset + kUInt32Size
+\end{DoxyCode}
+
+
+Definition at line 128 of file code-\/serializer.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_a5de0975f51f21362757a9bd2c2eba99c}\label{classv8_1_1internal_1_1SerializedCodeData_a5de0975f51f21362757a9bd2c2eba99c}} 
+\index{v8\+::internal\+::\+Serialized\+Code\+Data@{v8\+::internal\+::\+Serialized\+Code\+Data}!k\+Num\+Code\+Stub\+Keys\+Offset@{k\+Num\+Code\+Stub\+Keys\+Offset}}
+\index{k\+Num\+Code\+Stub\+Keys\+Offset@{k\+Num\+Code\+Stub\+Keys\+Offset}!v8\+::internal\+::\+Serialized\+Code\+Data@{v8\+::internal\+::\+Serialized\+Code\+Data}}
+\subsubsection{\texorpdfstring{k\+Num\+Code\+Stub\+Keys\+Offset}{kNumCodeStubKeysOffset}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} v8\+::internal\+::\+Serialized\+Code\+Data\+::k\+Num\+Code\+Stub\+Keys\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kNumReservationsOffset + kUInt32Size
+\end{DoxyCode}
+
+
+Definition at line 122 of file code-\/serializer.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_a0ff9127c019160dbb1931ea0fa440332}\label{classv8_1_1internal_1_1SerializedCodeData_a0ff9127c019160dbb1931ea0fa440332}} 
+\index{v8\+::internal\+::\+Serialized\+Code\+Data@{v8\+::internal\+::\+Serialized\+Code\+Data}!k\+Payload\+Length\+Offset@{k\+Payload\+Length\+Offset}}
+\index{k\+Payload\+Length\+Offset@{k\+Payload\+Length\+Offset}!v8\+::internal\+::\+Serialized\+Code\+Data@{v8\+::internal\+::\+Serialized\+Code\+Data}}
+\subsubsection{\texorpdfstring{k\+Payload\+Length\+Offset}{kPayloadLengthOffset}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} v8\+::internal\+::\+Serialized\+Code\+Data\+::k\+Payload\+Length\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kNumCodeStubKeysOffset + kUInt32Size
+\end{DoxyCode}
+
+
+Definition at line 124 of file code-\/serializer.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1SerializedCodeData_a32b0061e3ce874540975d09a6242c1a9}\label{classv8_1_1internal_1_1SerializedCodeData_a32b0061e3ce874540975d09a6242c1a9}} 
+\index{v8\+::internal\+::\+Serialized\+Code\+Data@{v8\+::internal\+::\+Serialized\+Code\+Data}!k\+Unaligned\+Header\+Size@{k\+Unaligned\+Header\+Size}}
+\index{k\+Unaligned\+Header\+Size@{k\+Unaligned\+Header\+Size}!v8\+::internal\+::\+Serialized\+Code\+Data@{v8\+::internal\+::\+Serialized\+Code\+Data}}
+\subsubsection{\texorpdfstring{k\+Unaligned\+Header\+Size}{kUnalignedHeaderSize}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} v8\+::internal\+::\+Serialized\+Code\+Data\+::k\+Unaligned\+Header\+Size\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kChecksumPartBOffset + kUInt32Size
+\end{DoxyCode}
+
+
+Definition at line 130 of file code-\/serializer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/snapshot/code-\/serializer.\+h\item 
+v8/src/snapshot/code-\/serializer.\+cc\end{DoxyCompactItemize}

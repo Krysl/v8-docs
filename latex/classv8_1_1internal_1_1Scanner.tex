@@ -1,0 +1,169 @@
+\hypertarget{classv8_1_1internal_1_1Scanner}{}\section{v8\+:\+:internal\+:\+:Scanner Class Reference}
+\label{classv8_1_1internal_1_1Scanner}\index{v8\+::internal\+::\+Scanner@{v8\+::internal\+::\+Scanner}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1Scanner_1_1BookmarkScope}{Bookmark\+Scope}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1Scanner_1_1ErrorState}{Error\+State}}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Location}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_aa40988dd00a83fd2792ede63e0eb92db}\label{classv8_1_1internal_1_1Scanner_aa40988dd00a83fd2792ede63e0eb92db}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries set\+\_\+parser\+\_\+error} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a9b56b012c3fdddf538c275a016b85ace}\label{classv8_1_1internal_1_1Scanner_a9b56b012c3fdddf538c275a016b85ace}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries reset\+\_\+parser\+\_\+error\+\_\+flag} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a5307ba40abbaa60c7bc0fa9f27818182}\label{classv8_1_1internal_1_1Scanner_a5307ba40abbaa60c7bc0fa9f27818182}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+parser\+\_\+error} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_acd01e5666a3da7344b6b0633af87a567}\label{classv8_1_1internal_1_1Scanner_acd01e5666a3da7344b6b0633af87a567}} 
+{\bfseries Scanner} (\mbox{\hyperlink{classv8_1_1internal_1_1Utf16CharacterStream}{Utf16\+Character\+Stream}} $\ast$source, \mbox{\hyperlink{classbool}{bool}} is\+\_\+module)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_ab8c92995c0ed8e8e5da4358586b1222e}\label{classv8_1_1internal_1_1Scanner_ab8c92995c0ed8e8e5da4358586b1222e}} 
+void {\bfseries Initialize} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a076d7ff22f3c1a4301512c356991eeb0}\label{classv8_1_1internal_1_1Scanner_a076d7ff22f3c1a4301512c356991eeb0}} 
+Token\+::\+Value {\bfseries Next} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a6a9f69460d1377154b182f52584477e3}\label{classv8_1_1internal_1_1Scanner_a6a9f69460d1377154b182f52584477e3}} 
+Token\+::\+Value {\bfseries Peek\+Ahead} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a528a97cfcdbf505127268f0c032bf119}\label{classv8_1_1internal_1_1Scanner_a528a97cfcdbf505127268f0c032bf119}} 
+Token\+::\+Value {\bfseries current\+\_\+token} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a7f8f4c83f8c06c558f9df6b5c2f3a307}\label{classv8_1_1internal_1_1Scanner_a7f8f4c83f8c06c558f9df6b5c2f3a307}} 
+const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Location}} \& {\bfseries location} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_aa1f0e33b709700357e24cac17a6838ce}\label{classv8_1_1internal_1_1Scanner_aa1f0e33b709700357e24cac17a6838ce}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+error} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a0ccddf721d88d97ddded4e78ed9aa837}\label{classv8_1_1internal_1_1Scanner_a0ccddf721d88d97ddded4e78ed9aa837}} 
+Message\+Template {\bfseries error} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_aef5266c62272244a809a6c0e11ad44c5}\label{classv8_1_1internal_1_1Scanner_aef5266c62272244a809a6c0e11ad44c5}} 
+const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Location}} \& {\bfseries error\+\_\+location} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a2efc5bf02d84f7c9b10cbb33074c2faf}\label{classv8_1_1internal_1_1Scanner_a2efc5bf02d84f7c9b10cbb33074c2faf}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+invalid\+\_\+template\+\_\+escape} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_ad0a6499479568df560de92a4c8d87226}\label{classv8_1_1internal_1_1Scanner_ad0a6499479568df560de92a4c8d87226}} 
+Message\+Template {\bfseries invalid\+\_\+template\+\_\+escape\+\_\+message} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a1cf1fcaa537aefff5e2dad8be1191f44}\label{classv8_1_1internal_1_1Scanner_a1cf1fcaa537aefff5e2dad8be1191f44}} 
+void {\bfseries clear\+\_\+invalid\+\_\+template\+\_\+escape\+\_\+message} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a24b159969b13804abc3840284fe6a00f}\label{classv8_1_1internal_1_1Scanner_a24b159969b13804abc3840284fe6a00f}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Location}} {\bfseries invalid\+\_\+template\+\_\+escape\+\_\+location} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a0ef30b387b3d68ad8d2c1c7d755eca95}\label{classv8_1_1internal_1_1Scanner_a0ef30b387b3d68ad8d2c1c7d755eca95}} 
+Token\+::\+Value {\bfseries peek} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a8bdc5f06d9bb99832a8c56927402161b}\label{classv8_1_1internal_1_1Scanner_a8bdc5f06d9bb99832a8c56927402161b}} 
+const \mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Location}} \& {\bfseries peek\+\_\+location} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a493a8af2963c765abce032731c17e1c0}\label{classv8_1_1internal_1_1Scanner_a493a8af2963c765abce032731c17e1c0}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries literal\+\_\+contains\+\_\+escapes} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a4902299eea1e00c7e20261d39203ccdb}\label{classv8_1_1internal_1_1Scanner_a4902299eea1e00c7e20261d39203ccdb}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$ {\bfseries Current\+Symbol} (\mbox{\hyperlink{classv8_1_1internal_1_1AstValueFactory}{Ast\+Value\+Factory}} $\ast$ast\+\_\+value\+\_\+factory) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_abde47d9a0bbc660fd4508519185a8e0f}\label{classv8_1_1internal_1_1Scanner_abde47d9a0bbc660fd4508519185a8e0f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$ {\bfseries Next\+Symbol} (\mbox{\hyperlink{classv8_1_1internal_1_1AstValueFactory}{Ast\+Value\+Factory}} $\ast$ast\+\_\+value\+\_\+factory) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a6ef88cefb48d73880e57964751c4aac8}\label{classv8_1_1internal_1_1Scanner_a6ef88cefb48d73880e57964751c4aac8}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1AstRawString}{Ast\+Raw\+String}} $\ast$ {\bfseries Current\+Raw\+Symbol} (\mbox{\hyperlink{classv8_1_1internal_1_1AstValueFactory}{Ast\+Value\+Factory}} $\ast$ast\+\_\+value\+\_\+factory) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a86409d59b79b3685549d19b810471f92}\label{classv8_1_1internal_1_1Scanner_a86409d59b79b3685549d19b810471f92}} 
+double {\bfseries Double\+Value} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a58658519737ee0c3477f0fb4be409e57}\label{classv8_1_1internal_1_1Scanner_a58658519737ee0c3477f0fb4be409e57}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Current\+Literal\+As\+C\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a56b75c63f353505cd9bc258a3c2f37ec}\label{classv8_1_1internal_1_1Scanner_a56b75c63f353505cd9bc258a3c2f37ec}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Current\+Matches} (Token\+::\+Value token) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_adc18cb10f009c17192bc4af3c1ea9500}\label{classv8_1_1internal_1_1Scanner_adc18cb10f009c17192bc4af3c1ea9500}} 
+{\footnotesize template$<$size\+\_\+t N$>$ }\\\mbox{\hyperlink{classbool}{bool}} {\bfseries Next\+Literal\+Equals} (const \mbox{\hyperlink{classchar}{char}}(\&s)\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_aeaee3c60f01ad645879201b369a03918}\label{classv8_1_1internal_1_1Scanner_aeaee3c60f01ad645879201b369a03918}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1Scanner_1_1Location}{Location}} {\bfseries octal\+\_\+position} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_abe7c13b9718df360f2e875c6cf130cd6}\label{classv8_1_1internal_1_1Scanner_abe7c13b9718df360f2e875c6cf130cd6}} 
+void {\bfseries clear\+\_\+octal\+\_\+position} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_ab54a9bbacac7b60e993283ba34f2cb8a}\label{classv8_1_1internal_1_1Scanner_ab54a9bbacac7b60e993283ba34f2cb8a}} 
+Message\+Template {\bfseries octal\+\_\+message} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a3fc636bdca7d6e8cb3b9b95b6a25de65}\label{classv8_1_1internal_1_1Scanner_a3fc636bdca7d6e8cb3b9b95b6a25de65}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries smi\+\_\+value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a0315418ce348564954978dec2c68934a}\label{classv8_1_1internal_1_1Scanner_a0315418ce348564954978dec2c68934a}} 
+void {\bfseries Seek\+Forward} (\mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a5719e0e2addd4faee6e2933fd701637c}\label{classv8_1_1internal_1_1Scanner_a5719e0e2addd4faee6e2933fd701637c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Line\+Terminator\+Before\+Next} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_aec9dfc284b27a8350360214c41d7a065}\label{classv8_1_1internal_1_1Scanner_aec9dfc284b27a8350360214c41d7a065}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Line\+Terminator\+After\+Next} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_acab90aca9dab2a508275208e5eeb18f5}\label{classv8_1_1internal_1_1Scanner_acab90aca9dab2a508275208e5eeb18f5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Scan\+Reg\+Exp\+Pattern} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a1499aff4667a9ba8ba54b8bdcb805efd}\label{classv8_1_1internal_1_1Scanner_a1499aff4667a9ba8ba54b8bdcb805efd}} 
+\mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ \mbox{\hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Reg\+Exp\+::\+Flags}} $>$ {\bfseries Scan\+Reg\+Exp\+Flags} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a55e23955e70102d7623126d6c7dbb555}\label{classv8_1_1internal_1_1Scanner_a55e23955e70102d7623126d6c7dbb555}} 
+Token\+::\+Value {\bfseries Scan\+Template\+Continuation} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_abe075ed90f78cfc60c9a1a0132c9b194}\label{classv8_1_1internal_1_1Scanner_abe075ed90f78cfc60c9a1a0132c9b194}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Source\+Url} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a59276016e564e23110a6acc9a0cf2525}\label{classv8_1_1internal_1_1Scanner_a59276016e564e23110a6acc9a0cf2525}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Source\+Mapping\+Url} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a30b41d55ff19a4063d91caf18ad19865}\label{classv8_1_1internal_1_1Scanner_a30b41d55ff19a4063d91caf18ad19865}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Found\+Html\+Comment} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a38fb64f05975529993b504b57f40d34f}\label{classv8_1_1internal_1_1Scanner_a38fb64f05975529993b504b57f40d34f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries allow\+\_\+harmony\+\_\+private\+\_\+fields} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_aacb0591c543aed10d503a000a95064c7}\label{classv8_1_1internal_1_1Scanner_aacb0591c543aed10d503a000a95064c7}} 
+void {\bfseries set\+\_\+allow\+\_\+harmony\+\_\+private\+\_\+fields} (\mbox{\hyperlink{classbool}{bool}} allow)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_af7dd7cf50fd74fb39df46f007ccec4d2}\label{classv8_1_1internal_1_1Scanner_af7dd7cf50fd74fb39df46f007ccec4d2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries allow\+\_\+harmony\+\_\+numeric\+\_\+separator} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a7d19f92f93c593d71ac27c423b006883}\label{classv8_1_1internal_1_1Scanner_a7d19f92f93c593d71ac27c423b006883}} 
+void {\bfseries set\+\_\+allow\+\_\+harmony\+\_\+numeric\+\_\+separator} (\mbox{\hyperlink{classbool}{bool}} allow)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a0932fdd38ace79116186cae247624d6e}\label{classv8_1_1internal_1_1Scanner_a0932fdd38ace79116186cae247624d6e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1Utf16CharacterStream}{Utf16\+Character\+Stream}} $\ast$ {\bfseries stream} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_a3ee71c47804e353b42e2c114ee1471ed}\label{classv8_1_1internal_1_1Scanner_a3ee71c47804e353b42e2c114ee1471ed}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+No\+Octal\+Location} = -\/1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scanner_aab809f1e38e8ff4450b3318b86e73a8d}\label{classv8_1_1internal_1_1Scanner_aab809f1e38e8ff4450b3318b86e73a8d}} 
+static const uc32 {\bfseries k\+End\+Of\+Input} = Utf16\+Character\+Stream\+::k\+End\+Of\+Input
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 207 of file scanner.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/parsing/scanner.\+h\item 
+v8/src/parsing/scanner-\/inl.\+h\item 
+v8/src/parsing/scanner.\+cc\end{DoxyCompactItemize}

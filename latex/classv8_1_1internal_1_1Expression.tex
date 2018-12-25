@@ -1,0 +1,98 @@
+\hypertarget{classv8_1_1internal_1_1Expression}{}\section{v8\+:\+:internal\+:\+:Expression Class Reference}
+\label{classv8_1_1internal_1_1Expression}\index{v8\+::internal\+::\+Expression@{v8\+::internal\+::\+Expression}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Expression\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classv8_1_1internal_1_1Expression}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_a04f7abd80505ef4b9e813324d2fb37a9}\label{classv8_1_1internal_1_1Expression_a04f7abd80505ef4b9e813324d2fb37a9}} 
+enum {\bfseries Context} \{ {\bfseries k\+Uninitialized}, 
+{\bfseries k\+Effect}, 
+{\bfseries k\+Value}, 
+{\bfseries k\+Test}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_a336135a84ba54434ed5b8614d82b2b0c}\label{classv8_1_1internal_1_1Expression_a336135a84ba54434ed5b8614d82b2b0c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Valid\+Reference\+Expression} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_ad0f77ba6549f0fb58909bf195aa0bbf9}\label{classv8_1_1internal_1_1Expression_ad0f77ba6549f0fb58909bf195aa0bbf9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries To\+Boolean\+Is\+True} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_a0538bdc8dfd2b9e09a1041756e8ca5c0}\label{classv8_1_1internal_1_1Expression_a0538bdc8dfd2b9e09a1041756e8ca5c0}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries To\+Boolean\+Is\+False} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_afe17f912a40333f92b3200f53f7af0db}\label{classv8_1_1internal_1_1Expression_afe17f912a40333f92b3200f53f7af0db}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Property\+Name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_a4e4a2946cd7b8535af42f042944f92f6}\label{classv8_1_1internal_1_1Expression_a4e4a2946cd7b8535af42f042944f92f6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Anonymous\+Function\+Definition} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_afd3bcd22669a345b0fab87e1d3cdeca2}\label{classv8_1_1internal_1_1Expression_afd3bcd22669a345b0fab87e1d3cdeca2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Concise\+Method\+Definition} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_a18f619cb504201f2e5e365a86220d1d1}\label{classv8_1_1internal_1_1Expression_a18f619cb504201f2e5e365a86220d1d1}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Accessor\+Function\+Definition} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_af0f66a9830266f28d3b7caccf230cb54}\label{classv8_1_1internal_1_1Expression_af0f66a9830266f28d3b7caccf230cb54}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Smi\+Literal} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_ab4b9bbac2111cf28396c91432663c531}\label{classv8_1_1internal_1_1Expression_ab4b9bbac2111cf28396c91432663c531}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Number\+Literal} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_ac9cc2ba7b1be597a9a8829746f3f77bb}\label{classv8_1_1internal_1_1Expression_ac9cc2ba7b1be597a9a8829746f3f77bb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+String\+Literal} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_aee388b864230b335c3e9d8ec8b5138bf}\label{classv8_1_1internal_1_1Expression_aee388b864230b335c3e9d8ec8b5138bf}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Null\+Literal} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_ae97b4cc46cfee92c15acf013fa3a0eaa}\label{classv8_1_1internal_1_1Expression_ae97b4cc46cfee92c15acf013fa3a0eaa}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+The\+Hole\+Literal} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_a1325e42b83560adf2368a00a236961cf}\label{classv8_1_1internal_1_1Expression_a1325e42b83560adf2368a00a236961cf}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Undefined\+Literal} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_a8b4ebe9a66936161ba6067a2338ac95f}\label{classv8_1_1internal_1_1Expression_a8b4ebe9a66936161ba6067a2338ac95f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Compile\+Time\+Value} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_a306e8fd0962c9de7aab400bb09f1b58a}\label{classv8_1_1internal_1_1Expression_a306e8fd0962c9de7aab400bb09f1b58a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Pattern} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_a255b9ee4c165b2d66c10aa2ea0712678}\label{classv8_1_1internal_1_1Expression_a255b9ee4c165b2d66c10aa2ea0712678}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+parenthesized} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_a889786a520b596e84034bdf04274641f}\label{classv8_1_1internal_1_1Expression_a889786a520b596e84034bdf04274641f}} 
+void {\bfseries mark\+\_\+parenthesized} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_ac61d72ebdd7aa404bcd623a189dc30d2}\label{classv8_1_1internal_1_1Expression_ac61d72ebdd7aa404bcd623a189dc30d2}} 
+{\bfseries Expression} (\mbox{\hyperlink{classint}{int}} pos, Node\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Expression_a5f2d484725d68789995bfaabc1b95a1b}\label{classv8_1_1internal_1_1Expression_a5f2d484725d68789995bfaabc1b95a1b}} 
+static const uint8\+\_\+t {\bfseries k\+Next\+Bit\+Field\+Index} = Is\+Parenthesized\+Field\+::k\+Next
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 196 of file ast.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ast/ast.\+h\item 
+v8/src/ast/ast.\+cc\end{DoxyCompactItemize}

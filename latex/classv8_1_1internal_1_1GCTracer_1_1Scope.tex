@@ -1,0 +1,50 @@
+\hypertarget{classv8_1_1internal_1_1GCTracer_1_1Scope}{}\section{v8\+:\+:internal\+:\+:G\+C\+Tracer\+:\+:Scope Class Reference}
+\label{classv8_1_1internal_1_1GCTracer_1_1Scope}\index{v8\+::internal\+::\+G\+C\+Tracer\+::\+Scope@{v8\+::internal\+::\+G\+C\+Tracer\+::\+Scope}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Scope_a6702624408f5af3d30559d5d02371891}\label{classv8_1_1internal_1_1GCTracer_1_1Scope_a6702624408f5af3d30559d5d02371891}} 
+enum {\bfseries Scope\+Id} \{ \newline
+{\bfseries T\+R\+A\+C\+E\+R\+\_\+\+S\+C\+O\+P\+ES}, 
+{\bfseries F\+I\+R\+S\+T\+\_\+\+I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+S\+C\+O\+PE} = M\+C\+\_\+\+I\+N\+C\+R\+E\+M\+E\+N\+T\+AL, 
+{\bfseries L\+A\+S\+T\+\_\+\+I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+S\+C\+O\+PE} = M\+C\+\_\+\+I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+P\+R\+O\+L\+O\+G\+UE, 
+{\bfseries F\+I\+R\+S\+T\+\_\+\+S\+C\+O\+PE} = M\+C\+\_\+\+I\+N\+C\+R\+E\+M\+E\+N\+T\+AL, 
+\newline
+{\bfseries N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+S\+C\+O\+P\+ES}, 
+{\bfseries F\+I\+R\+S\+T\+\_\+\+G\+E\+N\+E\+R\+A\+L\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+S\+C\+O\+PE} = B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+F\+R\+EE, 
+{\bfseries L\+A\+S\+T\+\_\+\+G\+E\+N\+E\+R\+A\+L\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+S\+C\+O\+PE} = B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+U\+N\+M\+A\+P\+P\+ER, 
+{\bfseries F\+I\+R\+S\+T\+\_\+\+M\+C\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+S\+C\+O\+PE} = M\+C\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+E\+V\+A\+C\+U\+A\+T\+E\+\_\+\+C\+O\+PY, 
+\newline
+{\bfseries L\+A\+S\+T\+\_\+\+M\+C\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+S\+C\+O\+PE} = M\+C\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+S\+W\+E\+E\+P\+I\+NG, 
+{\bfseries F\+I\+R\+S\+T\+\_\+\+T\+O\+P\+\_\+\+M\+C\+\_\+\+S\+C\+O\+PE} = M\+C\+\_\+\+C\+L\+E\+AR, 
+{\bfseries L\+A\+S\+T\+\_\+\+T\+O\+P\+\_\+\+M\+C\+\_\+\+S\+C\+O\+PE} = M\+C\+\_\+\+S\+W\+E\+EP, 
+{\bfseries F\+I\+R\+S\+T\+\_\+\+M\+I\+N\+O\+R\+\_\+\+G\+C\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+S\+C\+O\+PE} = M\+I\+N\+O\+R\+\_\+\+M\+C\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+E\+V\+A\+C\+U\+A\+T\+E\+\_\+\+C\+O\+PY, 
+\newline
+{\bfseries L\+A\+S\+T\+\_\+\+M\+I\+N\+O\+R\+\_\+\+G\+C\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+S\+C\+O\+PE} = S\+C\+A\+V\+E\+N\+G\+E\+R\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+S\+C\+A\+V\+E\+N\+G\+E\+\_\+\+P\+A\+R\+A\+L\+L\+EL
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Scope_a8ef5876b55fd9d305d2b9df8c1d6dcf3}\label{classv8_1_1internal_1_1GCTracer_1_1Scope_a8ef5876b55fd9d305d2b9df8c1d6dcf3}} 
+{\bfseries Scope} (\mbox{\hyperlink{classv8_1_1internal_1_1GCTracer}{G\+C\+Tracer}} $\ast$tracer, Scope\+Id scope)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GCTracer_1_1Scope_a9b8c6d78e8e1c0a676dfda714819ddf8}\label{classv8_1_1internal_1_1GCTracer_1_1Scope_a9b8c6d78e8e1c0a676dfda714819ddf8}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Name} (Scope\+Id id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 65 of file gc-\/tracer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/gc-\/tracer.\+h\item 
+v8/src/heap/gc-\/tracer.\+cc\end{DoxyCompactItemize}

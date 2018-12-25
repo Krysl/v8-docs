@@ -1,0 +1,1084 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Machine\+Operator\+Builder Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder}\index{v8\+::internal\+::compiler\+::\+Machine\+Operator\+Builder@{v8\+::internal\+::compiler\+::\+Machine\+Operator\+Builder}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Machine\+Operator\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_1_1AlignmentRequirements}{Alignment\+Requirements}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a95ac98a3d73747db21e0d99d42f1f3ca}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a95ac98a3d73747db21e0d99d42f1f3ca}} 
+enum {\bfseries Flag} \+: unsigned \{ \newline
+{\bfseries k\+No\+Flags} = 0u, 
+{\bfseries k\+Float32\+Round\+Down} = 1u $<$$<$ 0, 
+{\bfseries k\+Float64\+Round\+Down} = 1u $<$$<$ 1, 
+{\bfseries k\+Float32\+Round\+Up} = 1u $<$$<$ 2, 
+\newline
+{\bfseries k\+Float64\+Round\+Up} = 1u $<$$<$ 3, 
+{\bfseries k\+Float32\+Round\+Truncate} = 1u $<$$<$ 4, 
+{\bfseries k\+Float64\+Round\+Truncate} = 1u $<$$<$ 5, 
+{\bfseries k\+Float32\+Round\+Ties\+Even} = 1u $<$$<$ 6, 
+\newline
+{\bfseries k\+Float64\+Round\+Ties\+Even} = 1u $<$$<$ 7, 
+{\bfseries k\+Float64\+Round\+Ties\+Away} = 1u $<$$<$ 8, 
+{\bfseries k\+Int32\+Div\+Is\+Safe} = 1u $<$$<$ 9, 
+{\bfseries k\+Uint32\+Div\+Is\+Safe} = 1u $<$$<$ 10, 
+\newline
+{\bfseries k\+Word32\+Shift\+Is\+Safe} = 1u $<$$<$ 11, 
+{\bfseries k\+Word32\+Ctz} = 1u $<$$<$ 12, 
+{\bfseries k\+Word64\+Ctz} = 1u $<$$<$ 13, 
+{\bfseries k\+Word32\+Popcnt} = 1u $<$$<$ 14, 
+\newline
+{\bfseries k\+Word64\+Popcnt} = 1u $<$$<$ 15, 
+{\bfseries k\+Word32\+Reverse\+Bits} = 1u $<$$<$ 16, 
+{\bfseries k\+Word64\+Reverse\+Bits} = 1u $<$$<$ 17, 
+{\bfseries k\+Int32\+Abs\+With\+Overflow} = 1u $<$$<$ 20, 
+\newline
+{\bfseries k\+Int64\+Abs\+With\+Overflow} = 1u $<$$<$ 21, 
+{\bfseries k\+Speculation\+Fence} = 1u $<$$<$ 22, 
+{\bfseries k\+All\+Optional\+Ops}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aaa2c15070c17a7bb8bb646ed2a9112fa}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aaa2c15070c17a7bb8bb646ed2a9112fa}} 
+typedef \mbox{\hyperlink{classv8_1_1base_1_1Flags}{base\+::\+Flags}}$<$ Flag, \mbox{\hyperlink{classunsigned}{unsigned}} $>$ {\bfseries Flags}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_acbeaf35f975007f8ce7ebb1acce32a45}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_acbeaf35f975007f8ce7ebb1acce32a45}} 
+{\bfseries Machine\+Operator\+Builder} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, Machine\+Representation word=Machine\+Type\+::\+Pointer\+Representation(), \mbox{\hyperlink{classv8_1_1base_1_1Flags}{Flags}} supported\+Operators=k\+No\+Flags, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_1_1AlignmentRequirements}{Alignment\+Requirements}} alignment\+Requirements=Alignment\+Requirements\+::\+Full\+Unaligned\+Access\+Support())
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a42deddacdc4a0056f7f79f8a0e073785}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a42deddacdc4a0056f7f79f8a0e073785}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Comment} (const \mbox{\hyperlink{classchar}{char}} $\ast$msg)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1c45fc1ab628663d0f453d6c8e01e937}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1c45fc1ab628663d0f453d6c8e01e937}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Debug\+Abort} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a97d592cedc6c21a30cf4af5433d5020b}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a97d592cedc6c21a30cf4af5433d5020b}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Debug\+Break} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a90509bd20690a338d76950894ba8a7a7}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a90509bd20690a338d76950894ba8a7a7}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Unsafe\+Pointer\+Add} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a87bdea608df015d88c3e6ef48a596002}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a87bdea608df015d88c3e6ef48a596002}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+And} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0b34213228599fac9e11434cb1e400ac}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0b34213228599fac9e11434cb1e400ac}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Or} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a80003ce43ec0605cfb5500bfa1e4b3b2}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a80003ce43ec0605cfb5500bfa1e4b3b2}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Xor} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a80fcd3efbedaf3ba65c41053cf87d97f}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a80fcd3efbedaf3ba65c41053cf87d97f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Shl} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_abcb1ddcdf6f06114af0019a295a03c47}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_abcb1ddcdf6f06114af0019a295a03c47}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Shr} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a252b92ed74ea475235bcfeeab19d1117}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a252b92ed74ea475235bcfeeab19d1117}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Sar} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a22e1ea71317f8856cd2b1ebdb500fcf0}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a22e1ea71317f8856cd2b1ebdb500fcf0}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Ror} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0af3eacd11f25808aaa1dfccacd3b30f}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0af3eacd11f25808aaa1dfccacd3b30f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Equal} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae072a5dd9b4e42b461c0812bf64d3c31}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae072a5dd9b4e42b461c0812bf64d3c31}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Clz} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2fefb679b22db72e0ee49bbe1584802c}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2fefb679b22db72e0ee49bbe1584802c}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OptionalOperator}{Optional\+Operator}} {\bfseries Word32\+Ctz} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_afed7af2b05a045aea9b857cd1a207594}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_afed7af2b05a045aea9b857cd1a207594}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OptionalOperator}{Optional\+Operator}} {\bfseries Word32\+Popcnt} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a12c01c82503315db5a040797f2658829}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a12c01c82503315db5a040797f2658829}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OptionalOperator}{Optional\+Operator}} {\bfseries Word64\+Popcnt} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a92f031382555d3af38f355a8f7976846}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a92f031382555d3af38f355a8f7976846}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OptionalOperator}{Optional\+Operator}} {\bfseries Word32\+Reverse\+Bits} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_adc07c9bb1fb4ec434ef0b5b5e64414ee}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_adc07c9bb1fb4ec434ef0b5b5e64414ee}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OptionalOperator}{Optional\+Operator}} {\bfseries Word64\+Reverse\+Bits} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa423b8d271b0de9a9d813046b05ea9de}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa423b8d271b0de9a9d813046b05ea9de}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Reverse\+Bytes} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7db9a0f81ee4e705558d634a3eba580f}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7db9a0f81ee4e705558d634a3eba580f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Reverse\+Bytes} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af0be5ad2ef22fb75eb79853eb379d3b8}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af0be5ad2ef22fb75eb79853eb379d3b8}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OptionalOperator}{Optional\+Operator}} {\bfseries Int32\+Abs\+With\+Overflow} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a84eff2936db23af5df0cc49f8f39aa76}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a84eff2936db23af5df0cc49f8f39aa76}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OptionalOperator}{Optional\+Operator}} {\bfseries Int64\+Abs\+With\+Overflow} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a00bdf37e4bf9aab5f4f7951d300197a6}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a00bdf37e4bf9aab5f4f7951d300197a6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Word32\+Shift\+Is\+Safe} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af8dda520b6ad7208af307258fe4b822c}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af8dda520b6ad7208af307258fe4b822c}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+And} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0f87f309cdf4cdac5437a2d3d64da31c}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0f87f309cdf4cdac5437a2d3d64da31c}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Or} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2933daed89fbdb137c04477aac7a25f1}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2933daed89fbdb137c04477aac7a25f1}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Xor} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_afb3ad78535f3153a5bc8463ec1e6bfda}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_afb3ad78535f3153a5bc8463ec1e6bfda}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Shl} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1e316373e672869609999c721d449388}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1e316373e672869609999c721d449388}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Shr} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab083607faa5ed1c26c18e59b7f7c6b01}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab083607faa5ed1c26c18e59b7f7c6b01}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Sar} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a9a28d96768552eb56a03081ab9457239}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a9a28d96768552eb56a03081ab9457239}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Ror} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a07251a2bccae4c45fddc396a66b0cb0d}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a07251a2bccae4c45fddc396a66b0cb0d}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Clz} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a5b28101444294d5921a4b8ad0e155e79}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a5b28101444294d5921a4b8ad0e155e79}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OptionalOperator}{Optional\+Operator}} {\bfseries Word64\+Ctz} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8565b5700adf14f9c45de6758df1b0de}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8565b5700adf14f9c45de6758df1b0de}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Equal} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7ce3c6d5fea4bf8a9b628038fec9269a}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7ce3c6d5fea4bf8a9b628038fec9269a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int32\+Pair\+Add} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa0d371708035a562e2f1139edf13effa}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa0d371708035a562e2f1139edf13effa}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int32\+Pair\+Sub} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a96b5738eaab535bb46d7f8842cd03ae7}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a96b5738eaab535bb46d7f8842cd03ae7}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int32\+Pair\+Mul} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_acb4dd1278dc11b8edc91f8eef3316a5e}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_acb4dd1278dc11b8edc91f8eef3316a5e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Pair\+Shl} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a884e3ef81145075c4a88d17555b3c461}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a884e3ef81145075c4a88d17555b3c461}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Pair\+Shr} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a53c2684b96820f7ddbc9f4a96a62f64f}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a53c2684b96820f7ddbc9f4a96a62f64f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Pair\+Sar} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad525bf14e01ac14049a0223a6e5171c5}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad525bf14e01ac14049a0223a6e5171c5}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int32\+Add} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a57ab89ff7fa176f9f7943649fe386a3f}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a57ab89ff7fa176f9f7943649fe386a3f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int32\+Add\+With\+Overflow} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a48e3aab492395b3495a4694221057785}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a48e3aab492395b3495a4694221057785}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int32\+Sub} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a3f1516fa6a754b2fd44577407f60c220}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a3f1516fa6a754b2fd44577407f60c220}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int32\+Sub\+With\+Overflow} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae802be56b150eb8b6eac6c9803581b2d}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae802be56b150eb8b6eac6c9803581b2d}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int32\+Mul} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a943eb08c3fa56f4a71155f530ad1981c}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a943eb08c3fa56f4a71155f530ad1981c}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int32\+Mul\+With\+Overflow} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a79d28b3106e16532d584394c765d513c}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a79d28b3106e16532d584394c765d513c}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int32\+Mul\+High} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8b863092ea13e333193883bee446b0de}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8b863092ea13e333193883bee446b0de}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int32\+Div} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a61629c7fd2226fed80934d206fffc9d3}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a61629c7fd2226fed80934d206fffc9d3}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int32\+Mod} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a5812538a7109bf5996a57ccd903b5f49}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a5812538a7109bf5996a57ccd903b5f49}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int32\+Less\+Than} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a12b860c150317b37de3d6e7b6118a660}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a12b860c150317b37de3d6e7b6118a660}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int32\+Less\+Than\+Or\+Equal} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aaee670f43db058691c7c7ce21a226582}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aaee670f43db058691c7c7ce21a226582}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Uint32\+Div} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a760dc12b90f3cc4abf6fd44f6b73a2e7}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a760dc12b90f3cc4abf6fd44f6b73a2e7}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Uint32\+Less\+Than} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8d09c60016ab49d025beaf09359144b3}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8d09c60016ab49d025beaf09359144b3}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Uint32\+Less\+Than\+Or\+Equal} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af36bc6fc0acac28617ccde7c95a46041}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af36bc6fc0acac28617ccde7c95a46041}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Uint32\+Mod} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7981e60f2d55c6bb4e0237d11ce7ff41}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7981e60f2d55c6bb4e0237d11ce7ff41}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Uint32\+Mul\+High} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a904c6d7cc1c271213e703365a71ca059}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a904c6d7cc1c271213e703365a71ca059}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Int32\+Div\+Is\+Safe} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a24eeadc275033669466e47e7c837a527}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a24eeadc275033669466e47e7c837a527}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Uint32\+Div\+Is\+Safe} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae63ccb4964b1483ebad0134a7e01eaff}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae63ccb4964b1483ebad0134a7e01eaff}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int64\+Add} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_adfc168b5f10a993f7c0ba59efe4418a9}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_adfc168b5f10a993f7c0ba59efe4418a9}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int64\+Add\+With\+Overflow} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad34f3ee756649669555f49e94934d61a}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad34f3ee756649669555f49e94934d61a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int64\+Sub} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a4361f5d48e105d57f21a135689eace93}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a4361f5d48e105d57f21a135689eace93}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int64\+Sub\+With\+Overflow} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad92bc62127cade7b6893ba313c130cba}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad92bc62127cade7b6893ba313c130cba}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int64\+Mul} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a556c8a23b66dc8ffcbbb85ba013acb55}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a556c8a23b66dc8ffcbbb85ba013acb55}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int64\+Div} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2c4d444d02853aa23f104cf075a2ff3f}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2c4d444d02853aa23f104cf075a2ff3f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int64\+Mod} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a62d9cc93021c664cb2ff636d4696a5c4}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a62d9cc93021c664cb2ff636d4696a5c4}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int64\+Less\+Than} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa200fba110202a21c0c253901caef968}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa200fba110202a21c0c253901caef968}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Int64\+Less\+Than\+Or\+Equal} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aff1c9ce73c33e45e8709695b660e3362}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aff1c9ce73c33e45e8709695b660e3362}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Uint64\+Div} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_adefa9621d620a8984d1e0fde1b134fe9}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_adefa9621d620a8984d1e0fde1b134fe9}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Uint64\+Less\+Than} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a12f314f8089ff8580ea589ce3f65b6cf}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a12f314f8089ff8580ea589ce3f65b6cf}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Uint64\+Less\+Than\+Or\+Equal} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad083fbd284b07367395e3df9a0a7f5bc}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad083fbd284b07367395e3df9a0a7f5bc}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Uint64\+Mod} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a123c5c675476dd522053f4f7ec6c75f2}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a123c5c675476dd522053f4f7ec6c75f2}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Bitcast\+Tagged\+To\+Word} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a00bb7747c2239c1067d4c851a9d1b2e8}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a00bb7747c2239c1067d4c851a9d1b2e8}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Bitcast\+Maybe\+Object\+To\+Word} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_afcd716aadea2aebb56fe45525c9c6ac4}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_afcd716aadea2aebb56fe45525c9c6ac4}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Bitcast\+Word\+To\+Tagged} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7a6724cd04b66f96aa569d93bc598412}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7a6724cd04b66f96aa569d93bc598412}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Bitcast\+Word\+To\+Tagged\+Signed} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a20f3f5b0ef81a1cff20ffb2b4df35739}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a20f3f5b0ef81a1cff20ffb2b4df35739}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Truncate\+Float64\+To\+Word32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a4d1d50e25888e2c6f8127dc936300aa8}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a4d1d50e25888e2c6f8127dc936300aa8}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Change\+Float32\+To\+Float64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8271e1f76bc630c94c287adb8238fb89}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8271e1f76bc630c94c287adb8238fb89}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Change\+Float64\+To\+Int32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a496605ad035609e1d2e5b20b304d9b33}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a496605ad035609e1d2e5b20b304d9b33}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Change\+Float64\+To\+Int64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a6db69e12440042029d97d39a964dd28a}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a6db69e12440042029d97d39a964dd28a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Change\+Float64\+To\+Uint32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af73f3560365304cf09205b9baae4115b}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af73f3560365304cf09205b9baae4115b}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Change\+Float64\+To\+Uint64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a340be1a553a46b32a886432b9cf38d59}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a340be1a553a46b32a886432b9cf38d59}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Truncate\+Float64\+To\+Int64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0b2e858bae94838dd9b57cc5fec77876}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0b2e858bae94838dd9b57cc5fec77876}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Truncate\+Float64\+To\+Uint32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac95975b710b43e442e2b7bb13a5fbba5}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac95975b710b43e442e2b7bb13a5fbba5}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Truncate\+Float32\+To\+Int32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a5a77b6c71d8c1f71a3678447143cd2df}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a5a77b6c71d8c1f71a3678447143cd2df}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Truncate\+Float32\+To\+Uint32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a891ca38b2d5a195e3e0857d428f17e68}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a891ca38b2d5a195e3e0857d428f17e68}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Try\+Truncate\+Float32\+To\+Int64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aecf32be45c5a3c76186ad012a5164f2b}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aecf32be45c5a3c76186ad012a5164f2b}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Try\+Truncate\+Float64\+To\+Int64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a658698cd5df6ed300164a290da754b93}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a658698cd5df6ed300164a290da754b93}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Try\+Truncate\+Float32\+To\+Uint64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a34e9a93ae6cb321a3a6ea909b8fdbcdf}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a34e9a93ae6cb321a3a6ea909b8fdbcdf}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Try\+Truncate\+Float64\+To\+Uint64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa4a1e5740f3765ed2c168618a3c416e5}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa4a1e5740f3765ed2c168618a3c416e5}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Change\+Int32\+To\+Float64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a334bfed50f758d589bc73f4ceb861f16}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a334bfed50f758d589bc73f4ceb861f16}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Change\+Int32\+To\+Int64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a29d28e4705eb370199723dabaf313997}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a29d28e4705eb370199723dabaf313997}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Change\+Int64\+To\+Float64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae21bf43b87175626f51375a494c1a669}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae21bf43b87175626f51375a494c1a669}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Change\+Uint32\+To\+Float64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a33885225ab783d7c0311d5208d89514e}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a33885225ab783d7c0311d5208d89514e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Change\+Uint32\+To\+Uint64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aeb7c27385c5e1a36f8065af82a36f53c}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aeb7c27385c5e1a36f8065af82a36f53c}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Truncate\+Float64\+To\+Float32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a9968585f520554408f3e4213313ff087}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a9968585f520554408f3e4213313ff087}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Truncate\+Int64\+To\+Int32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a27e51a636a2a77b5c320ec3e7ef6fe81}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a27e51a636a2a77b5c320ec3e7ef6fe81}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Round\+Float64\+To\+Int32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a75c074580ed8cd7c8dfa9f2c172db574}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a75c074580ed8cd7c8dfa9f2c172db574}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Round\+Int32\+To\+Float32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a6e2fecf167841a9388d1f2a1098243a9}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a6e2fecf167841a9388d1f2a1098243a9}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Round\+Int64\+To\+Float32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab5a171bb8920a5249ffb020b209db04e}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab5a171bb8920a5249ffb020b209db04e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Round\+Int64\+To\+Float64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab5d90d2a8f932a21945a176daed1a60b}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab5d90d2a8f932a21945a176daed1a60b}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Round\+Uint32\+To\+Float32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a223c37e90bc0f08638d9b6dec520b5d4}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a223c37e90bc0f08638d9b6dec520b5d4}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Round\+Uint64\+To\+Float32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa19142043be36e3378d1670618f2eac7}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa19142043be36e3378d1670618f2eac7}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Round\+Uint64\+To\+Float64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1fa2d1b4d084fe370bb5150cd32a2ad6}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1fa2d1b4d084fe370bb5150cd32a2ad6}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Bitcast\+Float32\+To\+Int32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a4a25cfc55dc6ac7132bee469bda72caa}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a4a25cfc55dc6ac7132bee469bda72caa}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Bitcast\+Float64\+To\+Int64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a713274f0aa6f72301a0eff3712c7c5fe}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a713274f0aa6f72301a0eff3712c7c5fe}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Bitcast\+Int32\+To\+Float32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a11669f38f399a8260a10ef3e13356a96}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a11669f38f399a8260a10ef3e13356a96}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Bitcast\+Int64\+To\+Float64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a54f0c1d469d35297c5a9135eec800831}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a54f0c1d469d35297c5a9135eec800831}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Sign\+Extend\+Word8\+To\+Int32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2c5a6b04ad70a59d6ad3b9f329beecaa}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2c5a6b04ad70a59d6ad3b9f329beecaa}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Sign\+Extend\+Word16\+To\+Int32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aee6d8ba67e88a88fed022741431b0132}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aee6d8ba67e88a88fed022741431b0132}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Sign\+Extend\+Word8\+To\+Int64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab0f03cc704c79fe6859d58c38acb7934}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab0f03cc704c79fe6859d58c38acb7934}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Sign\+Extend\+Word16\+To\+Int64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae136beaad76be1f934eb2d57f82b154d}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae136beaad76be1f934eb2d57f82b154d}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Sign\+Extend\+Word32\+To\+Int64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af6b142234d6e98a6a2933b969e1baac1}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af6b142234d6e98a6a2933b969e1baac1}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float32\+Add} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a5fc17038a358e6268b24be2828d769d8}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a5fc17038a358e6268b24be2828d769d8}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float32\+Sub} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aba65e9ce981afbf43e3c415d4ae790da}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aba65e9ce981afbf43e3c415d4ae790da}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float32\+Mul} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a6d8efc217248dd26e4e97ddff3572a90}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a6d8efc217248dd26e4e97ddff3572a90}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float32\+Div} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad7334472804c3006853036e4a48bc82d}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad7334472804c3006853036e4a48bc82d}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float32\+Sqrt} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a3526d29bc8b89270f41469aa49c45ea1}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a3526d29bc8b89270f41469aa49c45ea1}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Add} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aaed87a06b3d17f96fc1a9a3e7ede2f66}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aaed87a06b3d17f96fc1a9a3e7ede2f66}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Sub} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae76862cdc422a96c52d8ff5a89beb04f}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae76862cdc422a96c52d8ff5a89beb04f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Mul} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad010b08af660285184c371cf170d39c3}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad010b08af660285184c371cf170d39c3}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Div} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae42ea6bdd4343c3f9e3da17813ab4d72}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae42ea6bdd4343c3f9e3da17813ab4d72}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Mod} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a78c0aea1b10970b27806abc96ac5b75a}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a78c0aea1b10970b27806abc96ac5b75a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Sqrt} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a20e9fd1c392a8211beacbf9fb6fe8b61}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a20e9fd1c392a8211beacbf9fb6fe8b61}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float32\+Equal} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a3a4eeeaad0f026f5f47910049ff84cfb}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a3a4eeeaad0f026f5f47910049ff84cfb}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float32\+Less\+Than} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae66b8ab10c10764b5affbd9e92651f8a}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae66b8ab10c10764b5affbd9e92651f8a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float32\+Less\+Than\+Or\+Equal} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aba54e7608ffd9e779fead71bce676b78}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aba54e7608ffd9e779fead71bce676b78}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Equal} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a19717561675a297b43792d0834b18e56}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a19717561675a297b43792d0834b18e56}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Less\+Than} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2c2ea22ab7f028ff4d087f88d5d87511}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2c2ea22ab7f028ff4d087f88d5d87511}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Less\+Than\+Or\+Equal} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a5522263106737c00b89ed65d1fea460f}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a5522263106737c00b89ed65d1fea460f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Max} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a041641918070bc5740d22faed096f488}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a041641918070bc5740d22faed096f488}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Min} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a5019b359902d04ede02a1e781d14ef68}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a5019b359902d04ede02a1e781d14ef68}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float32\+Max} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a665ca6dec9a7c58d60d5dfc231473ab8}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a665ca6dec9a7c58d60d5dfc231473ab8}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float32\+Min} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a69756e8e5253a6a17bac6d0274ab452d}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a69756e8e5253a6a17bac6d0274ab452d}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float32\+Abs} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a19c357f9848fbd8ec278dcd25387a683}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a19c357f9848fbd8ec278dcd25387a683}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Abs} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_afaafb3846f58c7be978a947b48cd81d8}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_afaafb3846f58c7be978a947b48cd81d8}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OptionalOperator}{Optional\+Operator}} {\bfseries Float32\+Round\+Down} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa2bec2140e578d2c00b4761b98ef66cf}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa2bec2140e578d2c00b4761b98ef66cf}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OptionalOperator}{Optional\+Operator}} {\bfseries Float64\+Round\+Down} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a6f481d1e0b204fbd0763a89241bca55b}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a6f481d1e0b204fbd0763a89241bca55b}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OptionalOperator}{Optional\+Operator}} {\bfseries Float32\+Round\+Up} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0587403a08ac100bd19d5c9f244618a9}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0587403a08ac100bd19d5c9f244618a9}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OptionalOperator}{Optional\+Operator}} {\bfseries Float64\+Round\+Up} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a52a022c8dfc72d1ac934f1ec3520e1c4}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a52a022c8dfc72d1ac934f1ec3520e1c4}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OptionalOperator}{Optional\+Operator}} {\bfseries Float32\+Round\+Truncate} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae59f3228b79e0e3aa73629ac87514342}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae59f3228b79e0e3aa73629ac87514342}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OptionalOperator}{Optional\+Operator}} {\bfseries Float64\+Round\+Truncate} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae932b0c69ae2da0c535845e70a320cdb}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae932b0c69ae2da0c535845e70a320cdb}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OptionalOperator}{Optional\+Operator}} {\bfseries Float64\+Round\+Ties\+Away} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab837b093b54101884c33965c7036d383}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab837b093b54101884c33965c7036d383}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OptionalOperator}{Optional\+Operator}} {\bfseries Float32\+Round\+Ties\+Even} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a142b7663d03eb58a5c9242cb7f05b4c7}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a142b7663d03eb58a5c9242cb7f05b4c7}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OptionalOperator}{Optional\+Operator}} {\bfseries Float64\+Round\+Ties\+Even} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aadac15e2597d28729e8878168a16a2aa}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aadac15e2597d28729e8878168a16a2aa}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float32\+Neg} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aac2cdfe49ca079274e917e0b8868bc4a}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aac2cdfe49ca079274e917e0b8868bc4a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Neg} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af08cdd40a3b8a1b96ece9adc77829e97}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af08cdd40a3b8a1b96ece9adc77829e97}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Acos} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7ceda2e68c2bde0712f69991fab2fa50}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7ceda2e68c2bde0712f69991fab2fa50}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Acosh} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a132fcbde3d46429f6c710c4ff701c055}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a132fcbde3d46429f6c710c4ff701c055}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Asin} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a9082a0496028832f0edb6a7b2226d726}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a9082a0496028832f0edb6a7b2226d726}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Asinh} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af533a5b80144b4ee8a86ab0266c99477}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af533a5b80144b4ee8a86ab0266c99477}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Atan} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a04551c28a26f61c76d22d9a3b3093a6f}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a04551c28a26f61c76d22d9a3b3093a6f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Atan2} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0f24e44a519f6d1ade1b77e4526d9349}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0f24e44a519f6d1ade1b77e4526d9349}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Atanh} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a37e3acacb1aade920c9f9e1d9e3535a9}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a37e3acacb1aade920c9f9e1d9e3535a9}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Cos} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa0f78f1370615b9197d3af646f1d3f20}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa0f78f1370615b9197d3af646f1d3f20}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Cosh} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac0fe3c41a178fb3f3fbfe2774d7e3cba}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac0fe3c41a178fb3f3fbfe2774d7e3cba}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Sin} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_abc0d1937e025a9714da46f8a2f51417f}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_abc0d1937e025a9714da46f8a2f51417f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Sinh} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a05f3eaeed8f824de30d0de30872663dc}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a05f3eaeed8f824de30d0de30872663dc}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Tan} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa47024936d951c3ed68c24949b2dd4d3}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa47024936d951c3ed68c24949b2dd4d3}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Tanh} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a6cd9933e3fb7ff5efafa074c4f39e64e}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a6cd9933e3fb7ff5efafa074c4f39e64e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Exp} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0f3733ae21e87678e8cc2150f14a9f5f}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0f3733ae21e87678e8cc2150f14a9f5f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Expm1} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa63e2ae036069643e23ac8a7ce8e31b1}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa63e2ae036069643e23ac8a7ce8e31b1}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Pow} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a331c11f1b11808737db5d9cc06f5e90c}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a331c11f1b11808737db5d9cc06f5e90c}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Log} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_abd1c5819e09f9e66f0e06f190a88b25e}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_abd1c5819e09f9e66f0e06f190a88b25e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Log1p} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae49577754328d2df68439abc3e1614e8}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae49577754328d2df68439abc3e1614e8}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Log2} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab1ed382964dd5737edad919d6cae2540}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab1ed382964dd5737edad919d6cae2540}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Log10} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a76cba649c47d5d74e37adcc5dcce7584}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a76cba649c47d5d74e37adcc5dcce7584}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Cbrt} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a71c7fe82aa86951cd412efec3ffa85ca}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a71c7fe82aa86951cd412efec3ffa85ca}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Extract\+Low\+Word32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a4a96aea7dc51bafb55d1ba9a8f200b08}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a4a96aea7dc51bafb55d1ba9a8f200b08}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Extract\+High\+Word32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a19ed462406b3f5a72b460b8dadd04018}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a19ed462406b3f5a72b460b8dadd04018}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Insert\+Low\+Word32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a9e19453f01699720225e5857fabc7f02}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a9e19453f01699720225e5857fabc7f02}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Insert\+High\+Word32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac6dbdbbb4ff6410653f1fb331162bb66}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac6dbdbbb4ff6410653f1fb331162bb66}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Float64\+Silence\+NaN} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_acbc6eb94ce884772dc0282cff2f5b0d4}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_acbc6eb94ce884772dc0282cff2f5b0d4}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+Splat} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa0b98a7802d590cb2d52cad483e83b31}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa0b98a7802d590cb2d52cad483e83b31}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+Extract\+Lane} (int32\+\_\+t)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1254ed24894adef0a1af72a7af426fd6}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1254ed24894adef0a1af72a7af426fd6}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+Replace\+Lane} (int32\+\_\+t)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a66266da8df323a482d8375dc9dcb418e}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a66266da8df323a482d8375dc9dcb418e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+S\+Convert\+I32x4} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af2e4669b5e46118ecb287cd7001341d0}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af2e4669b5e46118ecb287cd7001341d0}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+U\+Convert\+I32x4} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2a3ff0840420ba27559b51b5b34d2c1a}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2a3ff0840420ba27559b51b5b34d2c1a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+Abs} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a4fa9eb95579e380f6d8aa344ab84a6f0}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a4fa9eb95579e380f6d8aa344ab84a6f0}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+Neg} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8f2783a053bc8ea8db42e49ce253f66e}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8f2783a053bc8ea8db42e49ce253f66e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+Recip\+Approx} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_acf15d5a1862112f96345f23845e4789e}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_acf15d5a1862112f96345f23845e4789e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+Recip\+Sqrt\+Approx} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a02aa900bca1e8f10e96c27c910c36870}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a02aa900bca1e8f10e96c27c910c36870}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+Add} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1c8022ef344475ce49a662d277265142}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1c8022ef344475ce49a662d277265142}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+Add\+Horiz} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a95523ffca47c027279ad28b922fe497e}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a95523ffca47c027279ad28b922fe497e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+Sub} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a04068e937de0bc68b3ce6ae6e24865b3}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a04068e937de0bc68b3ce6ae6e24865b3}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+Mul} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae09bd925fc770b88719d183f7b9fabe4}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae09bd925fc770b88719d183f7b9fabe4}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+Div} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_acd71f7622e74183d7dbdc1459c85ea60}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_acd71f7622e74183d7dbdc1459c85ea60}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+Min} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_afcaefaf43bd3e7156e422bd2cc8634ee}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_afcaefaf43bd3e7156e422bd2cc8634ee}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+Max} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab0c5c9f7d3fb57469814fffd18683d56}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab0c5c9f7d3fb57469814fffd18683d56}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+Eq} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa2070d370c2ecd4642a2672ac3a23440}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa2070d370c2ecd4642a2672ac3a23440}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+Ne} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aec3212025567d5faf90733cb4fbc719e}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aec3212025567d5faf90733cb4fbc719e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+Lt} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad85629772f35ec04e0510b55112c90a8}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad85629772f35ec04e0510b55112c90a8}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries F32x4\+Le} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af9727680c38b0748a55db691870dd02a}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af9727680c38b0748a55db691870dd02a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+Splat} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2b2c5fb4794ccc8fd8155300b0742823}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2b2c5fb4794ccc8fd8155300b0742823}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+Extract\+Lane} (int32\+\_\+t)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1a5ba4762580aeba3c635ef2da9d8269}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1a5ba4762580aeba3c635ef2da9d8269}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+Replace\+Lane} (int32\+\_\+t)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a3351de52fbb5f359378e7e4e54d6cbf9}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a3351de52fbb5f359378e7e4e54d6cbf9}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+S\+Convert\+F32x4} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_abaa14685f27bb56de861b521ca5d0ec4}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_abaa14685f27bb56de861b521ca5d0ec4}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+S\+Convert\+I16x8\+Low} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae5f0b63f1bcd33c36061f87bc294f399}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae5f0b63f1bcd33c36061f87bc294f399}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+S\+Convert\+I16x8\+High} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a4dbf9e8bb6542f974444a6d9a0788da7}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a4dbf9e8bb6542f974444a6d9a0788da7}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+Neg} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac1f61d3f163c9ebf8989a27dcd8ca487}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac1f61d3f163c9ebf8989a27dcd8ca487}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+Shl} (int32\+\_\+t)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a45f6d53b7e7c7048a18f9fed4cd0d79e}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a45f6d53b7e7c7048a18f9fed4cd0d79e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+ShrS} (int32\+\_\+t)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a048de7adc84b7367aae560e9aa557cc6}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a048de7adc84b7367aae560e9aa557cc6}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+Add} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0254dc49795abea0c9038249d83886b8}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0254dc49795abea0c9038249d83886b8}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+Add\+Horiz} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_abfaa0eb6bfb8c038225278c53cd7bb67}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_abfaa0eb6bfb8c038225278c53cd7bb67}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+Sub} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_abd3cc0cf4c79e0639f510c7d7efd8de6}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_abd3cc0cf4c79e0639f510c7d7efd8de6}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+Mul} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8500de78c35cd6b85b1516580b5775d2}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8500de78c35cd6b85b1516580b5775d2}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+MinS} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a292817959fb637006ad84278dbf788e6}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a292817959fb637006ad84278dbf788e6}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+MaxS} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a40bffe052fd26777a8d888298a349388}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a40bffe052fd26777a8d888298a349388}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+Eq} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a4ce85df8d1dace2be7c116cc6b785e48}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a4ce85df8d1dace2be7c116cc6b785e48}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+Ne} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac87285739a0fb05f68f70bab54fec35f}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac87285739a0fb05f68f70bab54fec35f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+GtS} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa18df24b885083fce9a7e7df13b2e8cc}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa18df24b885083fce9a7e7df13b2e8cc}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+GeS} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a6f66465ca1216a2479f3d4787276c03e}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a6f66465ca1216a2479f3d4787276c03e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+U\+Convert\+F32x4} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae1c9f40de1ba6745b92fa8c1f5f62c39}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae1c9f40de1ba6745b92fa8c1f5f62c39}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+U\+Convert\+I16x8\+Low} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0fb4a6f45f3195f43dbd660ae3a9514f}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0fb4a6f45f3195f43dbd660ae3a9514f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+U\+Convert\+I16x8\+High} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aab04acf78c3f1378f3370605172738de}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aab04acf78c3f1378f3370605172738de}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+ShrU} (int32\+\_\+t)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa9c98614b5d499931a1acc644f1aacc0}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aa9c98614b5d499931a1acc644f1aacc0}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+MinU} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7e0c88e8f840d3050e3ae58837227920}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7e0c88e8f840d3050e3ae58837227920}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+MaxU} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a00a74af162bcb0dd27676aa98dc5098a}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a00a74af162bcb0dd27676aa98dc5098a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+GtU} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ada24cc037bc483e89f94aae4e29143b3}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ada24cc037bc483e89f94aae4e29143b3}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I32x4\+GeU} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae56f4cb610cdd89953f35456619ae426}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae56f4cb610cdd89953f35456619ae426}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+Splat} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a958e30ba864f6027ac5029e4e9d41572}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a958e30ba864f6027ac5029e4e9d41572}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+Extract\+Lane} (int32\+\_\+t)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8e71dbe07871d793f8ae8d5485e4977e}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8e71dbe07871d793f8ae8d5485e4977e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+Replace\+Lane} (int32\+\_\+t)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0328ad61f97a7e3d507511756a07ffb0}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0328ad61f97a7e3d507511756a07ffb0}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+S\+Convert\+I8x16\+Low} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab6702a4c75c249fb12c6fdae81b36fa0}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab6702a4c75c249fb12c6fdae81b36fa0}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+S\+Convert\+I8x16\+High} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a802a58297dce40338330cdd89a46982b}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a802a58297dce40338330cdd89a46982b}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+Neg} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1e1a022cd772a9b118bc57458fad1ffd}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1e1a022cd772a9b118bc57458fad1ffd}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+Shl} (int32\+\_\+t)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0ba2a4dbd8c5853fdc483cb355ddb2ea}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0ba2a4dbd8c5853fdc483cb355ddb2ea}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+ShrS} (int32\+\_\+t)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a38d7f1fdbf103b0b14b3f295250dc01d}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a38d7f1fdbf103b0b14b3f295250dc01d}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+S\+Convert\+I32x4} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a58073672c99ab6264e3f433922cd57d7}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a58073672c99ab6264e3f433922cd57d7}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+Add} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a05788ccd2a6a704d341af328c406b386}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a05788ccd2a6a704d341af328c406b386}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+Add\+SaturateS} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aef1867d6d79e7a4a663816c5ed941aef}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aef1867d6d79e7a4a663816c5ed941aef}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+Add\+Horiz} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac83e12a2c8aafc6eeec8c70d9f744595}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac83e12a2c8aafc6eeec8c70d9f744595}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+Sub} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a713750d6d1d9c5423119808972ed5054}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a713750d6d1d9c5423119808972ed5054}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+Sub\+SaturateS} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae85430e6c9ea70cf6a8e9f3c08a69743}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae85430e6c9ea70cf6a8e9f3c08a69743}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+Mul} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_afbcea071c18bab47f894654524243140}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_afbcea071c18bab47f894654524243140}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+MinS} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0aac3ad2e11f78f84590fec027b51b54}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0aac3ad2e11f78f84590fec027b51b54}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+MaxS} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a624e5adcec7c245da59087ad30e6f766}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a624e5adcec7c245da59087ad30e6f766}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+Eq} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0fe3902a697d389be056b4c25fd11a6a}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0fe3902a697d389be056b4c25fd11a6a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+Ne} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac7652d907ff1ab3551844d8e4d0c6847}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac7652d907ff1ab3551844d8e4d0c6847}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+GtS} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_acc0eb9181982a63871ffaba3b508f6c6}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_acc0eb9181982a63871ffaba3b508f6c6}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+GeS} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a18a9fb316383ee7b65b4b290858dccf6}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a18a9fb316383ee7b65b4b290858dccf6}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+U\+Convert\+I8x16\+Low} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac4994bdd15f949f575fb5cc3dfb23d58}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac4994bdd15f949f575fb5cc3dfb23d58}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+U\+Convert\+I8x16\+High} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae33b56cdb8cbf91bcf4dd6b5ed4163dd}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae33b56cdb8cbf91bcf4dd6b5ed4163dd}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+ShrU} (int32\+\_\+t)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad7dcbbe95c35181b25e6fc665da934bc}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad7dcbbe95c35181b25e6fc665da934bc}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+U\+Convert\+I32x4} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a232b06057a2db10318a3f5722cf6cad2}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a232b06057a2db10318a3f5722cf6cad2}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+Add\+SaturateU} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0dc92eb40b611299dd2aa8065831d4c6}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0dc92eb40b611299dd2aa8065831d4c6}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+Sub\+SaturateU} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a5d6da89427930418b8cec33f11aaf97a}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a5d6da89427930418b8cec33f11aaf97a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+MinU} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8c998f5d05ddcfdb6336658bcafee11e}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8c998f5d05ddcfdb6336658bcafee11e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+MaxU} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a3386d98bb41dfc28909d6153596b3609}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a3386d98bb41dfc28909d6153596b3609}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+GtU} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2c6de03dcdb2ef26a283491a6f1c50d9}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2c6de03dcdb2ef26a283491a6f1c50d9}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I16x8\+GeU} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a218ce43e22d11278abba1718689afdd3}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a218ce43e22d11278abba1718689afdd3}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+Splat} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a38ac5261776186e36c112e52c48a6e1c}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a38ac5261776186e36c112e52c48a6e1c}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+Extract\+Lane} (int32\+\_\+t)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0a644095571fa669efb6707031e5798c}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a0a644095571fa669efb6707031e5798c}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+Replace\+Lane} (int32\+\_\+t)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab9da9578aa47929157774859ba27676d}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab9da9578aa47929157774859ba27676d}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+Neg} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a257b5216b974f7ca6b72afdf0ff3cd8c}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a257b5216b974f7ca6b72afdf0ff3cd8c}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+Shl} (int32\+\_\+t)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a511a1dfe0aac4c458dcf11e8e13bd02f}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a511a1dfe0aac4c458dcf11e8e13bd02f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+ShrS} (int32\+\_\+t)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a5f7288ed2795f423dcd210f64b2a52af}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a5f7288ed2795f423dcd210f64b2a52af}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+S\+Convert\+I16x8} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a6bd63ba2f98d76508086f225a5f9344a}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a6bd63ba2f98d76508086f225a5f9344a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+Add} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8724dc466706743b9ed8de099b7787d3}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8724dc466706743b9ed8de099b7787d3}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+Add\+SaturateS} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1104dd348c36fa1615a2eae0bd7ed9d1}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1104dd348c36fa1615a2eae0bd7ed9d1}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+Sub} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1ae5c1bd479203cf89de1d2ac7486899}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1ae5c1bd479203cf89de1d2ac7486899}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+Sub\+SaturateS} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a402777e47012f58886212e9f6bb381a8}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a402777e47012f58886212e9f6bb381a8}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+Mul} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a25d84acd19b5a25bb81af5f3777a3e95}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a25d84acd19b5a25bb81af5f3777a3e95}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+MinS} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a9be40991504105cb940023b2cc1d2da0}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a9be40991504105cb940023b2cc1d2da0}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+MaxS} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a39d9516a30a31895ec37bca839ab44b8}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a39d9516a30a31895ec37bca839ab44b8}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+Eq} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a44f0a6f73822f8bbf60b58e43e15073a}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a44f0a6f73822f8bbf60b58e43e15073a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+Ne} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_afe2bdb78cfde735290fee752265eae30}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_afe2bdb78cfde735290fee752265eae30}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+GtS} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_add9abce5a8da87fad8d1c68b7750dd88}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_add9abce5a8da87fad8d1c68b7750dd88}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+GeS} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8e0d50411092c65d4fd113fddf2d3260}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8e0d50411092c65d4fd113fddf2d3260}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+ShrU} (int32\+\_\+t)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2ba41d3cdab89a3cb9747b725819d759}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2ba41d3cdab89a3cb9747b725819d759}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+U\+Convert\+I16x8} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a025de52d4100d6504f8ec3eedeef212d}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a025de52d4100d6504f8ec3eedeef212d}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+Add\+SaturateU} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_adc24d07a1d40ee3696f1bdc7c6dee4be}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_adc24d07a1d40ee3696f1bdc7c6dee4be}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+Sub\+SaturateU} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a43f0274b153b7f6f195d4f520b9ecd20}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a43f0274b153b7f6f195d4f520b9ecd20}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+MinU} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_afbc53b58f2ebf454b93970303a22f46b}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_afbc53b58f2ebf454b93970303a22f46b}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+MaxU} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a4a937f5052f4cab8ca3494fffd930981}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a4a937f5052f4cab8ca3494fffd930981}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+GtU} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a3751d22b23b343ef53e5794c36f74712}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a3751d22b23b343ef53e5794c36f74712}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries I8x16\+GeU} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad3502c8b2f8f35269c5222f43f504b74}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad3502c8b2f8f35269c5222f43f504b74}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries S128\+Load} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a91017ee80b9ad6de54a93222b78b08b4}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a91017ee80b9ad6de54a93222b78b08b4}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries S128\+Store} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a785c1d54da315beaf2c7fe8cc530bf4b}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a785c1d54da315beaf2c7fe8cc530bf4b}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries S128\+Zero} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad7e253725d6e8e1498f1b8ab17d997c2}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad7e253725d6e8e1498f1b8ab17d997c2}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries S128\+And} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aabaa35cc20342ea2b9ea21325bb2df34}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aabaa35cc20342ea2b9ea21325bb2df34}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries S128\+Or} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a29422dd2420babf94da6f924a0d26643}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a29422dd2420babf94da6f924a0d26643}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries S128\+Xor} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2889879f9e3e1610c09facf7180272c7}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2889879f9e3e1610c09facf7180272c7}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries S128\+Not} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a41c587f67bc4e023546c896d7bd1469d}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a41c587f67bc4e023546c896d7bd1469d}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries S128\+Select} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_abaa7ca52107d46026346d3a6c0232855}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_abaa7ca52107d46026346d3a6c0232855}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries S8x16\+Shuffle} (const uint8\+\_\+t shuffle\mbox{[}16\mbox{]})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af1a265ac5eecda67feebc0c39c50c393}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af1a265ac5eecda67feebc0c39c50c393}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries S1x4\+Any\+True} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_addda522c2c2a55ca2c513b693ccffff1}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_addda522c2c2a55ca2c513b693ccffff1}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries S1x4\+All\+True} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2aab001c79e5125786553a63a19c1ea9}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2aab001c79e5125786553a63a19c1ea9}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries S1x8\+Any\+True} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7d2759804aa0831738d8dae702c6a15c}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7d2759804aa0831738d8dae702c6a15c}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries S1x8\+All\+True} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a939722aa82e718ea0c67af3770bc6bf0}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a939722aa82e718ea0c67af3770bc6bf0}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries S1x16\+Any\+True} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad8d70d2b52929625e7452874bd85ec70}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad8d70d2b52929625e7452874bd85ec70}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries S1x16\+All\+True} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a30d290d64c0f250c70dfa93fb3ea4bfe}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a30d290d64c0f250c70dfa93fb3ea4bfe}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Load} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Load\+Representation}} rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a237f0c9d027c971f704b1f9372cda1f6}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a237f0c9d027c971f704b1f9372cda1f6}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Poisoned\+Load} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Load\+Representation}} rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1a09d22ac12fae07d47d6e21a613f802}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1a09d22ac12fae07d47d6e21a613f802}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Protected\+Load} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Load\+Representation}} rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae97e96d59434f78a11bfc507d55056a5}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ae97e96d59434f78a11bfc507d55056a5}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Store} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1StoreRepresentation}{Store\+Representation}} rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a81e4187a4cf49c2f1b88782f267eca15}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a81e4187a4cf49c2f1b88782f267eca15}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Protected\+Store} (Machine\+Representation rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a71bc1751b9ddf8bce5fef2ccbf403869}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a71bc1751b9ddf8bce5fef2ccbf403869}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Unaligned\+Load} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Load\+Representation}} rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aae90765399dd8dc72be6d6aea5ebaab7}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aae90765399dd8dc72be6d6aea5ebaab7}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Unaligned\+Store} (Unaligned\+Store\+Representation rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2f6a9b39be0d3a74d535bc80b5c9f54c}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2f6a9b39be0d3a74d535bc80b5c9f54c}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Stack\+Slot} (\mbox{\hyperlink{classint}{int}} size, \mbox{\hyperlink{classint}{int}} alignment=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a4cb0d72bf52e41566586588d3e4d597e}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a4cb0d72bf52e41566586588d3e4d597e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Stack\+Slot} (Machine\+Representation rep, \mbox{\hyperlink{classint}{int}} alignment=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_addc46c9b05025b77fec2d027bc406d83}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_addc46c9b05025b77fec2d027bc406d83}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Tagged\+Poison\+On\+Speculation} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a86ae043a0d866a94ca871d2f41719792}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a86ae043a0d866a94ca871d2f41719792}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Poison\+On\+Speculation} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad18fd38942eef3147a5dc96eb31ad39c}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ad18fd38942eef3147a5dc96eb31ad39c}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Poison\+On\+Speculation} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a9217052eadddfc793439a358ba03874e}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a9217052eadddfc793439a358ba03874e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Load\+Stack\+Pointer} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8e6423084857dd5fa08ed5146eb75f74}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a8e6423084857dd5fa08ed5146eb75f74}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Load\+Frame\+Pointer} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7d1f4a41b5fa9d09cf7df26918b5f39b}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7d1f4a41b5fa9d09cf7df26918b5f39b}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Load\+Parent\+Frame\+Pointer} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7c7425780dc4692a373234cb77dc2067}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7c7425780dc4692a373234cb77dc2067}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Atomic\+Load} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Load\+Representation}} rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a55fba405c5e3364a7820bc693de23d4c}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a55fba405c5e3364a7820bc693de23d4c}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Atomic\+Load} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Load\+Representation}} rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ade26c1593753080759575a377949bbaf}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ade26c1593753080759575a377949bbaf}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Atomic\+Store} (Machine\+Representation rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ada57483a424fddeb54e1b01435d5187a}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ada57483a424fddeb54e1b01435d5187a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Atomic\+Store} (Machine\+Representation rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a068bf475fe010d1b3803d10ffa0f746d}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a068bf475fe010d1b3803d10ffa0f746d}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Atomic\+Exchange} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_adaed21c5435a2312c1e4c01497177fec}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_adaed21c5435a2312c1e4c01497177fec}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Atomic\+Exchange} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2cfd0bdd9c373055469b81d0a9577208}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2cfd0bdd9c373055469b81d0a9577208}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Atomic\+Compare\+Exchange} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a6856c0b73391bd7d0c62eb0b85da7940}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a6856c0b73391bd7d0c62eb0b85da7940}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Atomic\+Compare\+Exchange} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab980710c5ad56624ed4349bc5397a951}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab980710c5ad56624ed4349bc5397a951}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Atomic\+Add} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af425135f3a9cd82fe0706f22af225d8b}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af425135f3a9cd82fe0706f22af225d8b}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Atomic\+Sub} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac0a503668b8f506c2e28f3eadd5ca9a5}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac0a503668b8f506c2e28f3eadd5ca9a5}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Atomic\+And} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a3c5cef9d0cb8318e951c6a937a7d6319}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a3c5cef9d0cb8318e951c6a937a7d6319}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Atomic\+Or} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab9f29f685a9881e42d56f6f024c46b07}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ab9f29f685a9881e42d56f6f024c46b07}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Atomic\+Xor} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac3aedbebcb6091cee3ab1f73b5bdf8bd}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_ac3aedbebcb6091cee3ab1f73b5bdf8bd}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Atomic\+Add} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a93727bc03d86878379710bec362146ec}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a93727bc03d86878379710bec362146ec}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Atomic\+Sub} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a585da71374776494964df82bbe956b18}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a585da71374776494964df82bbe956b18}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Atomic\+And} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a202e321baeac6da29185d4f31738ea4e}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a202e321baeac6da29185d4f31738ea4e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Atomic\+Or} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_acaaa062b2efa2472b942b62089dcce6f}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_acaaa062b2efa2472b942b62089dcce6f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word64\+Atomic\+Xor} (\mbox{\hyperlink{classv8_1_1internal_1_1MachineType}{Machine\+Type}} rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a516066e9ffa6d2ce73564a858dac339f}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a516066e9ffa6d2ce73564a858dac339f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Atomic\+Pair\+Load} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aabdebfc2f30f9884922489e81cf18e9f}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aabdebfc2f30f9884922489e81cf18e9f}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Atomic\+Pair\+Store} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aaae08256d4b944690670ac0f1cfed352}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_aaae08256d4b944690670ac0f1cfed352}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Atomic\+Pair\+Add} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1a871a527c5af33f12dbd2653818eb1a}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a1a871a527c5af33f12dbd2653818eb1a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Atomic\+Pair\+Sub} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a452c5a98544c76aacc901320b66db8f9}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a452c5a98544c76aacc901320b66db8f9}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Atomic\+Pair\+And} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a595167c4a08e81149fa3f2f540021ffd}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a595167c4a08e81149fa3f2f540021ffd}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Atomic\+Pair\+Or} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2864ab7efdb9ffe371451cbe19186bcd}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a2864ab7efdb9ffe371451cbe19186bcd}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Atomic\+Pair\+Xor} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af31386537d37be492e1de384669e491d}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af31386537d37be492e1de384669e491d}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Atomic\+Pair\+Exchange} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_afb561fa4bef344c1e730fda7dfa26922}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_afb561fa4bef344c1e730fda7dfa26922}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$ {\bfseries Word32\+Atomic\+Pair\+Compare\+Exchange} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af5afe823c076a1a03cc8b27b5561a9cc}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_af5afe823c076a1a03cc8b27b5561a9cc}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1OptionalOperator}{Optional\+Operator}} {\bfseries Speculation\+Fence} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a81f879a7bdbc95fffda43436f671337e}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a81f879a7bdbc95fffda43436f671337e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is32} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_adcdd074708dd32cd3f95e9dfb74b32ef}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_adcdd074708dd32cd3f95e9dfb74b32ef}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is64} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a05bf2dd4f74af529c2c35ee6ef66acc6}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a05bf2dd4f74af529c2c35ee6ef66acc6}} 
+Machine\+Representation {\bfseries word} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a077c309d54617ff9013ac5026d2ca910}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a077c309d54617ff9013ac5026d2ca910}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Unaligned\+Load\+Supported} (Machine\+Representation rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7adc7a20b77c61851b3ca02ec6bd2b49}\label{classv8_1_1internal_1_1compiler_1_1MachineOperatorBuilder_a7adc7a20b77c61851b3ca02ec6bd2b49}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Unaligned\+Store\+Supported} (Machine\+Representation rep)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 118 of file machine-\/operator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/machine-\/operator.\+h\item 
+v8/src/compiler/machine-\/operator.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,137 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Unwinding\+Info\+Writer Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter}\index{v8\+::internal\+::compiler\+::\+Unwinding\+Info\+Writer@{v8\+::internal\+::compiler\+::\+Unwinding\+Info\+Writer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_ab9baf225b2104df264b3cf7b1a5b7cce}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_ab9baf225b2104df264b3cf7b1a5b7cce}} 
+{\bfseries Unwinding\+Info\+Writer} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a5480ac05525eca5283126ea5e3748561}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a5480ac05525eca5283126ea5e3748561}} 
+void {\bfseries Set\+Number\+Of\+Instruction\+Blocks} (\mbox{\hyperlink{classint}{int}} number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a4fe6a694e0d3b6d0472459af40eba0ab}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a4fe6a694e0d3b6d0472459af40eba0ab}} 
+void {\bfseries Begin\+Instruction\+Block} (\mbox{\hyperlink{classint}{int}} pc\+\_\+offset, const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionBlock}{Instruction\+Block}} $\ast$block)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_afc7ef781f2d55ef125a3dd4697c0164e}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_afc7ef781f2d55ef125a3dd4697c0164e}} 
+void {\bfseries End\+Instruction\+Block} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionBlock}{Instruction\+Block}} $\ast$block)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a89fc5c79255c6242455e8446cb1c2174}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a89fc5c79255c6242455e8446cb1c2174}} 
+void {\bfseries Mark\+Link\+Register\+On\+Top\+Of\+Stack} (\mbox{\hyperlink{classint}{int}} pc\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a05332c1659688e85b348a458a4740908}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a05332c1659688e85b348a458a4740908}} 
+void {\bfseries Mark\+Pop\+Link\+Register\+From\+Top\+Of\+Stack} (\mbox{\hyperlink{classint}{int}} pc\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a37421bacf153f8481c5353ac1562ec42}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a37421bacf153f8481c5353ac1562ec42}} 
+void {\bfseries Mark\+Frame\+Constructed} (\mbox{\hyperlink{classint}{int}} at\+\_\+pc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a498394bf6512169edf8c2f162c76aa23}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a498394bf6512169edf8c2f162c76aa23}} 
+void {\bfseries Mark\+Frame\+Deconstructed} (\mbox{\hyperlink{classint}{int}} at\+\_\+pc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a159ca354dbbdeb7a838b58ed2e2fdbc7}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a159ca354dbbdeb7a838b58ed2e2fdbc7}} 
+void {\bfseries Mark\+Block\+Will\+Exit} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a7dd0336aa10a53ee8dd31c57179c9778}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a7dd0336aa10a53ee8dd31c57179c9778}} 
+void {\bfseries Finish} (\mbox{\hyperlink{classint}{int}} code\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_ae8d9ca300ce739150b15da003ce3e642}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_ae8d9ca300ce739150b15da003ce3e642}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1EhFrameWriter}{Eh\+Frame\+Writer}} $\ast$ {\bfseries eh\+\_\+frame\+\_\+writer} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_ab9baf225b2104df264b3cf7b1a5b7cce}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_ab9baf225b2104df264b3cf7b1a5b7cce}} 
+{\bfseries Unwinding\+Info\+Writer} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a5480ac05525eca5283126ea5e3748561}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a5480ac05525eca5283126ea5e3748561}} 
+void {\bfseries Set\+Number\+Of\+Instruction\+Blocks} (\mbox{\hyperlink{classint}{int}} number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a4fe6a694e0d3b6d0472459af40eba0ab}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a4fe6a694e0d3b6d0472459af40eba0ab}} 
+void {\bfseries Begin\+Instruction\+Block} (\mbox{\hyperlink{classint}{int}} pc\+\_\+offset, const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionBlock}{Instruction\+Block}} $\ast$block)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_afc7ef781f2d55ef125a3dd4697c0164e}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_afc7ef781f2d55ef125a3dd4697c0164e}} 
+void {\bfseries End\+Instruction\+Block} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionBlock}{Instruction\+Block}} $\ast$block)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a7832f10e7d3bb73e5cb5c4a4258ab29d}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a7832f10e7d3bb73e5cb5c4a4258ab29d}} 
+void {\bfseries Mark\+Link\+Register\+On\+Top\+Of\+Stack} (\mbox{\hyperlink{classint}{int}} pc\+\_\+offset, const \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} \&sp)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a05332c1659688e85b348a458a4740908}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a05332c1659688e85b348a458a4740908}} 
+void {\bfseries Mark\+Pop\+Link\+Register\+From\+Top\+Of\+Stack} (\mbox{\hyperlink{classint}{int}} pc\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a37421bacf153f8481c5353ac1562ec42}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a37421bacf153f8481c5353ac1562ec42}} 
+void {\bfseries Mark\+Frame\+Constructed} (\mbox{\hyperlink{classint}{int}} at\+\_\+pc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a498394bf6512169edf8c2f162c76aa23}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a498394bf6512169edf8c2f162c76aa23}} 
+void {\bfseries Mark\+Frame\+Deconstructed} (\mbox{\hyperlink{classint}{int}} at\+\_\+pc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a159ca354dbbdeb7a838b58ed2e2fdbc7}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a159ca354dbbdeb7a838b58ed2e2fdbc7}} 
+void {\bfseries Mark\+Block\+Will\+Exit} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a7dd0336aa10a53ee8dd31c57179c9778}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a7dd0336aa10a53ee8dd31c57179c9778}} 
+void {\bfseries Finish} (\mbox{\hyperlink{classint}{int}} code\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_ae8d9ca300ce739150b15da003ce3e642}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_ae8d9ca300ce739150b15da003ce3e642}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1EhFrameWriter}{Eh\+Frame\+Writer}} $\ast$ {\bfseries eh\+\_\+frame\+\_\+writer} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_ab9baf225b2104df264b3cf7b1a5b7cce}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_ab9baf225b2104df264b3cf7b1a5b7cce}} 
+{\bfseries Unwinding\+Info\+Writer} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a5480ac05525eca5283126ea5e3748561}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a5480ac05525eca5283126ea5e3748561}} 
+void {\bfseries Set\+Number\+Of\+Instruction\+Blocks} (\mbox{\hyperlink{classint}{int}} number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a4fe6a694e0d3b6d0472459af40eba0ab}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a4fe6a694e0d3b6d0472459af40eba0ab}} 
+void {\bfseries Begin\+Instruction\+Block} (\mbox{\hyperlink{classint}{int}} pc\+\_\+offset, const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionBlock}{Instruction\+Block}} $\ast$block)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_afc7ef781f2d55ef125a3dd4697c0164e}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_afc7ef781f2d55ef125a3dd4697c0164e}} 
+void {\bfseries End\+Instruction\+Block} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionBlock}{Instruction\+Block}} $\ast$block)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a7dd0336aa10a53ee8dd31c57179c9778}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a7dd0336aa10a53ee8dd31c57179c9778}} 
+void {\bfseries Finish} (\mbox{\hyperlink{classint}{int}} code\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_ae8d9ca300ce739150b15da003ce3e642}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_ae8d9ca300ce739150b15da003ce3e642}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1EhFrameWriter}{Eh\+Frame\+Writer}} $\ast$ {\bfseries eh\+\_\+frame\+\_\+writer} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_ab9baf225b2104df264b3cf7b1a5b7cce}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_ab9baf225b2104df264b3cf7b1a5b7cce}} 
+{\bfseries Unwinding\+Info\+Writer} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a611938f3ee18a1b674d09c77ff011521}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a611938f3ee18a1b674d09c77ff011521}} 
+void {\bfseries Maybe\+Increase\+Base\+Offset\+At} (\mbox{\hyperlink{classint}{int}} pc\+\_\+offset, \mbox{\hyperlink{classint}{int}} base\+\_\+delta)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a5480ac05525eca5283126ea5e3748561}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a5480ac05525eca5283126ea5e3748561}} 
+void {\bfseries Set\+Number\+Of\+Instruction\+Blocks} (\mbox{\hyperlink{classint}{int}} number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a4fe6a694e0d3b6d0472459af40eba0ab}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a4fe6a694e0d3b6d0472459af40eba0ab}} 
+void {\bfseries Begin\+Instruction\+Block} (\mbox{\hyperlink{classint}{int}} pc\+\_\+offset, const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionBlock}{Instruction\+Block}} $\ast$block)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_afc7ef781f2d55ef125a3dd4697c0164e}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_afc7ef781f2d55ef125a3dd4697c0164e}} 
+void {\bfseries End\+Instruction\+Block} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionBlock}{Instruction\+Block}} $\ast$block)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_aff920035ff2122d03a0d0ff4d10a1f59}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_aff920035ff2122d03a0d0ff4d10a1f59}} 
+void {\bfseries Mark\+Frame\+Constructed} (\mbox{\hyperlink{classint}{int}} pc\+\_\+base)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_acb2a88eb365e90796c3e70f6873e3e36}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_acb2a88eb365e90796c3e70f6873e3e36}} 
+void {\bfseries Mark\+Frame\+Deconstructed} (\mbox{\hyperlink{classint}{int}} pc\+\_\+base)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a159ca354dbbdeb7a838b58ed2e2fdbc7}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a159ca354dbbdeb7a838b58ed2e2fdbc7}} 
+void {\bfseries Mark\+Block\+Will\+Exit} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a7dd0336aa10a53ee8dd31c57179c9778}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_a7dd0336aa10a53ee8dd31c57179c9778}} 
+void {\bfseries Finish} (\mbox{\hyperlink{classint}{int}} code\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_ae8d9ca300ce739150b15da003ce3e642}\label{classv8_1_1internal_1_1compiler_1_1UnwindingInfoWriter_ae8d9ca300ce739150b15da003ce3e642}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1EhFrameWriter}{Eh\+Frame\+Writer}} $\ast$ {\bfseries eh\+\_\+frame\+\_\+writer} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file unwinding-\/info-\/writer-\/arm.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/backend/arm/unwinding-\/info-\/writer-\/arm.\+h\item 
+v8/src/compiler/backend/arm64/unwinding-\/info-\/writer-\/arm64.\+h\item 
+v8/src/compiler/backend/x64/unwinding-\/info-\/writer-\/x64.\+h\item 
+v8/src/compiler/backend/unwinding-\/info-\/writer.\+h\item 
+v8/src/compiler/backend/arm/unwinding-\/info-\/writer-\/arm.\+cc\item 
+v8/src/compiler/backend/arm64/unwinding-\/info-\/writer-\/arm64.\+cc\item 
+v8/src/compiler/backend/x64/unwinding-\/info-\/writer-\/x64.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\hypertarget{classv8_1_1base_1_1RandomNumberGenerator}{}\section{v8\+:\+:base\+:\+:Random\+Number\+Generator Class Reference}
+\label{classv8_1_1base_1_1RandomNumberGenerator}\index{v8\+::base\+::\+Random\+Number\+Generator@{v8\+::base\+::\+Random\+Number\+Generator}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RandomNumberGenerator_ab60ef43489dd07c6d39d1fa1e117f625}\label{classv8_1_1base_1_1RandomNumberGenerator_ab60ef43489dd07c6d39d1fa1e117f625}} 
+typedef \mbox{\hyperlink{classbool}{bool}}($\ast$ {\bfseries Entropy\+Source}) (\mbox{\hyperlink{classunsigned}{unsigned}} \mbox{\hyperlink{classchar}{char}} $\ast$buffer, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} buflen)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RandomNumberGenerator_adb6de9543dad50afa7986a2e35ce003f}\label{classv8_1_1base_1_1RandomNumberGenerator_adb6de9543dad50afa7986a2e35ce003f}} 
+{\bfseries Random\+Number\+Generator} (\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} seed)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RandomNumberGenerator_aef22ff5ed9ab075348bb7988874ad6f8}\label{classv8_1_1base_1_1RandomNumberGenerator_aef22ff5ed9ab075348bb7988874ad6f8}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries Next\+Int} () V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RandomNumberGenerator_a32102edf0e72631705af5a3316fd4068}\label{classv8_1_1base_1_1RandomNumberGenerator_a32102edf0e72631705af5a3316fd4068}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Next\+Int} (\mbox{\hyperlink{classint}{int}} max) V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RandomNumberGenerator_a9f4f789dc1abf53926db911f1db7534d}\label{classv8_1_1base_1_1RandomNumberGenerator_a9f4f789dc1abf53926db911f1db7534d}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries Next\+Bool} () V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RandomNumberGenerator_a3cb661fd70f4322d36792f98acd6ca7e}\label{classv8_1_1base_1_1RandomNumberGenerator_a3cb661fd70f4322d36792f98acd6ca7e}} 
+double {\bfseries Next\+Double} () V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RandomNumberGenerator_ac44e22b8b6250f2cc8666c880a4871a8}\label{classv8_1_1base_1_1RandomNumberGenerator_ac44e22b8b6250f2cc8666c880a4871a8}} 
+\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} {\bfseries Next\+Int64} () V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RandomNumberGenerator_a0094583611a7499452662dcdcc2b6ddb}\label{classv8_1_1base_1_1RandomNumberGenerator_a0094583611a7499452662dcdcc2b6ddb}} 
+void {\bfseries Next\+Bytes} (void $\ast$buffer, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} buflen)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RandomNumberGenerator_a4090ec844e0f1cc4150db68cf69c6c7d}\label{classv8_1_1base_1_1RandomNumberGenerator_a4090ec844e0f1cc4150db68cf69c6c7d}} 
+std\+::vector$<$ uint64\+\_\+t $>$ {\bfseries Next\+Sample} (uint64\+\_\+t max, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} n) V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RandomNumberGenerator_a8da70065401acffe63d0be29e5a20596}\label{classv8_1_1base_1_1RandomNumberGenerator_a8da70065401acffe63d0be29e5a20596}} 
+std\+::vector$<$ uint64\+\_\+t $>$ {\bfseries Next\+Sample\+Slow} (uint64\+\_\+t max, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} n, const std\+::unordered\+\_\+set$<$ uint64\+\_\+t $>$ \&excluded=std\+::unordered\+\_\+set$<$ uint64\+\_\+t $>$\{\}) V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RandomNumberGenerator_a09f96e1c329a56aa6c62b21c2d97d188}\label{classv8_1_1base_1_1RandomNumberGenerator_a09f96e1c329a56aa6c62b21c2d97d188}} 
+void {\bfseries Set\+Seed} (\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} seed)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RandomNumberGenerator_ab2032751e720a66ae16e9bf81cc63f8f}\label{classv8_1_1base_1_1RandomNumberGenerator_ab2032751e720a66ae16e9bf81cc63f8f}} 
+\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} {\bfseries initial\+\_\+seed} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RandomNumberGenerator_ae97b331c6a33123e8571f93aaeaea164}\label{classv8_1_1base_1_1RandomNumberGenerator_ae97b331c6a33123e8571f93aaeaea164}} 
+static void {\bfseries Set\+Entropy\+Source} (Entropy\+Source entropy\+\_\+source)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RandomNumberGenerator_a654429611ff0993d6ef6a337c6943158}\label{classv8_1_1base_1_1RandomNumberGenerator_a654429611ff0993d6ef6a337c6943158}} 
+static double {\bfseries To\+Double} (uint64\+\_\+t state0)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RandomNumberGenerator_aed81ac9a466d6f8c981f13909574b1cf}\label{classv8_1_1base_1_1RandomNumberGenerator_aed81ac9a466d6f8c981f13909574b1cf}} 
+static void {\bfseries Xor\+Shift128} (uint64\+\_\+t $\ast$state0, uint64\+\_\+t $\ast$state1)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RandomNumberGenerator_ac780ac819aabd925ed250e66dc00a6b8}\label{classv8_1_1base_1_1RandomNumberGenerator_ac780ac819aabd925ed250e66dc00a6b8}} 
+static uint64\+\_\+t {\bfseries Murmur\+Hash3} (uint64\+\_\+t)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 38 of file random-\/number-\/generator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/base/utils/random-\/number-\/generator.\+h\item 
+v8/src/base/utils/random-\/number-\/generator.\+cc\end{DoxyCompactItemize}

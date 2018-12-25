@@ -1,0 +1,78 @@
+\hypertarget{classv8_1_1base_1_1RegionAllocator}{}\section{v8\+:\+:base\+:\+:Region\+Allocator Class Reference}
+\label{classv8_1_1base_1_1RegionAllocator}\index{v8\+::base\+::\+Region\+Allocator@{v8\+::base\+::\+Region\+Allocator}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RegionAllocator_a2929e4abcf2bf700325decd544d2e3e2}\label{classv8_1_1base_1_1RegionAllocator_a2929e4abcf2bf700325decd544d2e3e2}} 
+typedef \mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} {\bfseries Address}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RegionAllocator_a16ab971ebf2050879550de8fc7e443a5}\label{classv8_1_1base_1_1RegionAllocator_a16ab971ebf2050879550de8fc7e443a5}} 
+{\bfseries Region\+Allocator} (\mbox{\hyperlink{classuintptr__t}{Address}} address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} page\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RegionAllocator_a428036fd1bb24d7a8f77d5d8142cf497}\label{classv8_1_1base_1_1RegionAllocator_a428036fd1bb24d7a8f77d5d8142cf497}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Allocate\+Region} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RegionAllocator_a8f15873bfe828fcba73829fff945806d}\label{classv8_1_1base_1_1RegionAllocator_a8f15873bfe828fcba73829fff945806d}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Allocate\+Region} (\mbox{\hyperlink{classv8_1_1base_1_1RandomNumberGenerator}{Random\+Number\+Generator}} $\ast$rng, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RegionAllocator_af653f4debdf65b4fda8850478b795e66}\label{classv8_1_1base_1_1RegionAllocator_af653f4debdf65b4fda8850478b795e66}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Allocate\+Region\+At} (\mbox{\hyperlink{classuintptr__t}{Address}} requested\+\_\+address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RegionAllocator_acd3b53ae0790f516aab692b5cc840012}\label{classv8_1_1base_1_1RegionAllocator_acd3b53ae0790f516aab692b5cc840012}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Free\+Region} (\mbox{\hyperlink{classuintptr__t}{Address}} address)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RegionAllocator_a9bf2ee5d09b644e87306cc0628b8abf8}\label{classv8_1_1base_1_1RegionAllocator_a9bf2ee5d09b644e87306cc0628b8abf8}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Trim\+Region} (\mbox{\hyperlink{classuintptr__t}{Address}} address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} new\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RegionAllocator_ad1624531e2cfeeed0738b580ee6c8f8e}\label{classv8_1_1base_1_1RegionAllocator_ad1624531e2cfeeed0738b580ee6c8f8e}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Check\+Region} (\mbox{\hyperlink{classuintptr__t}{Address}} address)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RegionAllocator_a860593ad2131d832ff7fd136670d44c8}\label{classv8_1_1base_1_1RegionAllocator_a860593ad2131d832ff7fd136670d44c8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Free} (\mbox{\hyperlink{classuintptr__t}{Address}} address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RegionAllocator_a3437cbd3fc2327d85832dd21bf647d3d}\label{classv8_1_1base_1_1RegionAllocator_a3437cbd3fc2327d85832dd21bf647d3d}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RegionAllocator_a8516cded10cb1cfb159fc4e807546aa6}\label{classv8_1_1base_1_1RegionAllocator_a8516cded10cb1cfb159fc4e807546aa6}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RegionAllocator_a0fd217bd58091193f8a7b3714cd3b695}\label{classv8_1_1base_1_1RegionAllocator_a0fd217bd58091193f8a7b3714cd3b695}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RegionAllocator_a66f0ba7e4a5b1850714989de3a697e76}\label{classv8_1_1base_1_1RegionAllocator_a66f0ba7e4a5b1850714989de3a697e76}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries contains} (\mbox{\hyperlink{classuintptr__t}{Address}} address) const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RegionAllocator_aa70179b13323d1875df94fbd6b47fc12}\label{classv8_1_1base_1_1RegionAllocator_aa70179b13323d1875df94fbd6b47fc12}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries contains} (\mbox{\hyperlink{classuintptr__t}{Address}} address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size) const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RegionAllocator_aaa2ecdae9b4876b7c6815d8ffb161124}\label{classv8_1_1base_1_1RegionAllocator_aaa2ecdae9b4876b7c6815d8ffb161124}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries free\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RegionAllocator_aebfeaa4b85144d83f99f84d5895cfacf}\label{classv8_1_1base_1_1RegionAllocator_aebfeaa4b85144d83f99f84d5895cfacf}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries page\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RegionAllocator_a30522cf233c5bd77e16943c0b52ce5e0}\label{classv8_1_1base_1_1RegionAllocator_a30522cf233c5bd77e16943c0b52ce5e0}} 
+void {\bfseries Print} (std\+::ostream \&os) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1base_1_1RegionAllocator_ad71f7237bc76ed36662935004f126f04}\label{classv8_1_1base_1_1RegionAllocator_ad71f7237bc76ed36662935004f126f04}} 
+static constexpr \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries k\+Allocation\+Failure} = static\+\_\+cast$<$\mbox{\hyperlink{classuintptr__t}{Address}}$>$(-\/1)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file region-\/allocator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/base/region-\/allocator.\+h\item 
+v8/src/base/region-\/allocator.\+cc\end{DoxyCompactItemize}

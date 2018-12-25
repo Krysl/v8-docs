@@ -1,0 +1,65 @@
+\hypertarget{classv8_1_1internal_1_1DependentCode}{}\section{v8\+:\+:internal\+:\+:Dependent\+Code Class Reference}
+\label{classv8_1_1internal_1_1DependentCode}\index{v8\+::internal\+::\+Dependent\+Code@{v8\+::internal\+::\+Dependent\+Code}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Dependent\+Code\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1DependentCode}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DependentCode_a6ddeb27b4e6f458ce2257036e3f364ae}\label{classv8_1_1internal_1_1DependentCode_a6ddeb27b4e6f458ce2257036e3f364ae}} 
+enum {\bfseries Dependency\+Group} \{ \newline
+{\bfseries k\+Transition\+Group}, 
+{\bfseries k\+Prototype\+Check\+Group}, 
+{\bfseries k\+Property\+Cell\+Changed\+Group}, 
+{\bfseries k\+Field\+Owner\+Group}, 
+\newline
+{\bfseries k\+Initial\+Map\+Changed\+Group}, 
+{\bfseries k\+Allocation\+Site\+Tenuring\+Changed\+Group}, 
+{\bfseries k\+Allocation\+Site\+Transition\+Changed\+Group}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DependentCode_a1c704fdb8d804bfc536477100246768c}\label{classv8_1_1internal_1_1DependentCode_a1c704fdb8d804bfc536477100246768c}} 
+void {\bfseries Deoptimize\+Dependent\+Code\+Group} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Dependency\+Group group)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DependentCode_a05a9f6512e52b8238a3da21842f36009}\label{classv8_1_1internal_1_1DependentCode_a05a9f6512e52b8238a3da21842f36009}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Mark\+Code\+For\+Deoptimization} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Dependency\+Group group)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DependentCode_a5380e41c40fc535ac25c03dd8edf19cd}\label{classv8_1_1internal_1_1DependentCode_a5380e41c40fc535ac25c03dd8edf19cd}} 
+Dependency\+Group {\bfseries group} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DependentCode_ae0e295bbc29a2cd4550bd7b046356d1c}\label{classv8_1_1internal_1_1DependentCode_ae0e295bbc29a2cd4550bd7b046356d1c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} {\bfseries object\+\_\+at} (\mbox{\hyperlink{classint}{int}} i)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DependentCode_adcf6e16bc085d6c6b00ca0c347ac1861}\label{classv8_1_1internal_1_1DependentCode_adcf6e16bc085d6c6b00ca0c347ac1861}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DependentCode_aca2d708affdfbeb57280b5f5eb9f478c}\label{classv8_1_1internal_1_1DependentCode_aca2d708affdfbeb57280b5f5eb9f478c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1DependentCode}{Dependent\+Code}} $\ast$ {\bfseries next\+\_\+link} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DependentCode_a68d3ff4a2b19b702a0ba9a77d4789bc7}\label{classv8_1_1internal_1_1DependentCode_a68d3ff4a2b19b702a0ba9a77d4789bc7}} 
+static void {\bfseries Install\+Dependency} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectHandle}{Maybe\+Object\+Handle}} \&code, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ object, Dependency\+Group group)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 595 of file code.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/code.\+h\item 
+v8/src/objects/code-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,53 @@
+\hypertarget{classv8_1_1internal_1_1PrototypeUsers}{}\section{v8\+:\+:internal\+:\+:Prototype\+Users Class Reference}
+\label{classv8_1_1internal_1_1PrototypeUsers}\index{v8\+::internal\+::\+Prototype\+Users@{v8\+::internal\+::\+Prototype\+Users}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Prototype\+Users\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1PrototypeUsers}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeUsers_af840963f223ac6d0e999070f75f3b208}\label{classv8_1_1internal_1_1PrototypeUsers_af840963f223ac6d0e999070f75f3b208}} 
+typedef void($\ast$ {\bfseries Compaction\+Callback}) (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object, \mbox{\hyperlink{classint}{int}} from\+\_\+index, \mbox{\hyperlink{classint}{int}} to\+\_\+index)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeUsers_ac1e151b7fc464f67325bd35e554f5234}\label{classv8_1_1internal_1_1PrototypeUsers_ac1e151b7fc464f67325bd35e554f5234}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WeakArrayList}{Weak\+Array\+List}} $>$ {\bfseries Add} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WeakArrayList}{Weak\+Array\+List}} $>$ array, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ value, \mbox{\hyperlink{classint}{int}} $\ast$assigned\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeUsers_ad933d7f100fc6c5b3c249ac6ec56339f}\label{classv8_1_1internal_1_1PrototypeUsers_ad933d7f100fc6c5b3c249ac6ec56339f}} 
+static void {\bfseries Mark\+Slot\+Empty} (\mbox{\hyperlink{classv8_1_1internal_1_1WeakArrayList}{Weak\+Array\+List}} $\ast$array, \mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeUsers_a6a004cfa647743b419dd93b71baf9163}\label{classv8_1_1internal_1_1PrototypeUsers_a6a004cfa647743b419dd93b71baf9163}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1WeakArrayList}{Weak\+Array\+List}} $\ast$ {\bfseries Compact} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WeakArrayList}{Weak\+Array\+List}} $>$ array, \mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, Compaction\+Callback callback, Pretenure\+Flag pretenure=N\+O\+T\+\_\+\+T\+E\+N\+U\+R\+ED)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeUsers_ab18a5d183585030ee659baac1207cf93}\label{classv8_1_1internal_1_1PrototypeUsers_ab18a5d183585030ee659baac1207cf93}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Empty\+Slot\+Index} = 0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeUsers_abdd1fe7556befe7069e126ae36d624df}\label{classv8_1_1internal_1_1PrototypeUsers_abdd1fe7556befe7069e126ae36d624df}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+First\+Index} = 1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeUsers_ac11715090a75cb75698f638a884621d5}\label{classv8_1_1internal_1_1PrototypeUsers_ac11715090a75cb75698f638a884621d5}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+No\+Empty\+Slots\+Marker} = 0
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 77 of file prototype-\/info.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/prototype-\/info.\+h\item 
+v8/src/objects/prototype-\/info-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

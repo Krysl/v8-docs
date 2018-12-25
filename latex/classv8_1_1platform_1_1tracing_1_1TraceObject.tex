@@ -9,31 +9,31 @@ union \mbox{\hyperlink{unionv8_1_1platform_1_1tracing_1_1TraceObject_1_1ArgValue
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceObject_aaa2b2f4c50e28cd65d2146cbf84f1449}\label{classv8_1_1platform_1_1tracing_1_1TraceObject_aaa2b2f4c50e28cd65d2146cbf84f1449}} 
-void {\bfseries Initialize} (char phase, const uint8\+\_\+t $\ast$category\+\_\+enabled\+\_\+flag, const char $\ast$name, const char $\ast$scope, uint64\+\_\+t id, uint64\+\_\+t bind\+\_\+id, int num\+\_\+args, const char $\ast$$\ast$arg\+\_\+names, const uint8\+\_\+t $\ast$arg\+\_\+types, const uint64\+\_\+t $\ast$arg\+\_\+values, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1ConvertableToTraceFormat}{v8\+::\+Convertable\+To\+Trace\+Format}} $>$ $\ast$arg\+\_\+convertables, unsigned int flags, int64\+\_\+t timestamp, int64\+\_\+t cpu\+\_\+timestamp)
+void {\bfseries Initialize} (\mbox{\hyperlink{classchar}{char}} phase, const uint8\+\_\+t $\ast$category\+\_\+enabled\+\_\+flag, const \mbox{\hyperlink{classchar}{char}} $\ast$name, const \mbox{\hyperlink{classchar}{char}} $\ast$scope, uint64\+\_\+t id, uint64\+\_\+t bind\+\_\+id, \mbox{\hyperlink{classint}{int}} num\+\_\+args, const \mbox{\hyperlink{classchar}{char}} $\ast$$\ast$arg\+\_\+names, const uint8\+\_\+t $\ast$arg\+\_\+types, const uint64\+\_\+t $\ast$arg\+\_\+values, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1ConvertableToTraceFormat}{v8\+::\+Convertable\+To\+Trace\+Format}} $>$ $\ast$arg\+\_\+convertables, \mbox{\hyperlink{classunsigned}{unsigned}} \mbox{\hyperlink{classint}{int}} flags, \mbox{\hyperlink{classint64__t}{int64\+\_\+t}} timestamp, \mbox{\hyperlink{classint64__t}{int64\+\_\+t}} cpu\+\_\+timestamp)
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceObject_ac7bc3b2b76c56a0c3ac7911ce36174cd}\label{classv8_1_1platform_1_1tracing_1_1TraceObject_ac7bc3b2b76c56a0c3ac7911ce36174cd}} 
-void {\bfseries Update\+Duration} (int64\+\_\+t timestamp, int64\+\_\+t cpu\+\_\+timestamp)
+void {\bfseries Update\+Duration} (\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} timestamp, \mbox{\hyperlink{classint64__t}{int64\+\_\+t}} cpu\+\_\+timestamp)
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceObject_ac72dae1918276021f3c747ef2056b710}\label{classv8_1_1platform_1_1tracing_1_1TraceObject_ac72dae1918276021f3c747ef2056b710}} 
-void {\bfseries Initialize\+For\+Testing} (char phase, const uint8\+\_\+t $\ast$category\+\_\+enabled\+\_\+flag, const char $\ast$name, const char $\ast$scope, uint64\+\_\+t id, uint64\+\_\+t bind\+\_\+id, int num\+\_\+args, const char $\ast$$\ast$arg\+\_\+names, const uint8\+\_\+t $\ast$arg\+\_\+types, const uint64\+\_\+t $\ast$arg\+\_\+values, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1ConvertableToTraceFormat}{v8\+::\+Convertable\+To\+Trace\+Format}} $>$ $\ast$arg\+\_\+convertables, unsigned int flags, int pid, int tid, int64\+\_\+t ts, int64\+\_\+t tts, uint64\+\_\+t duration, uint64\+\_\+t cpu\+\_\+duration)
+void {\bfseries Initialize\+For\+Testing} (\mbox{\hyperlink{classchar}{char}} phase, const uint8\+\_\+t $\ast$category\+\_\+enabled\+\_\+flag, const \mbox{\hyperlink{classchar}{char}} $\ast$name, const \mbox{\hyperlink{classchar}{char}} $\ast$scope, uint64\+\_\+t id, uint64\+\_\+t bind\+\_\+id, \mbox{\hyperlink{classint}{int}} num\+\_\+args, const \mbox{\hyperlink{classchar}{char}} $\ast$$\ast$arg\+\_\+names, const uint8\+\_\+t $\ast$arg\+\_\+types, const uint64\+\_\+t $\ast$arg\+\_\+values, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1ConvertableToTraceFormat}{v8\+::\+Convertable\+To\+Trace\+Format}} $>$ $\ast$arg\+\_\+convertables, \mbox{\hyperlink{classunsigned}{unsigned}} \mbox{\hyperlink{classint}{int}} flags, \mbox{\hyperlink{classint}{int}} pid, \mbox{\hyperlink{classint}{int}} tid, \mbox{\hyperlink{classint64__t}{int64\+\_\+t}} ts, \mbox{\hyperlink{classint64__t}{int64\+\_\+t}} tts, uint64\+\_\+t duration, uint64\+\_\+t cpu\+\_\+duration)
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceObject_afd37b401fca52334e264fb14e956aa77}\label{classv8_1_1platform_1_1tracing_1_1TraceObject_afd37b401fca52334e264fb14e956aa77}} 
-int {\bfseries pid} () const
+\mbox{\hyperlink{classint}{int}} {\bfseries pid} () const
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceObject_abed685a45e1ec0119f296d9dce82e49b}\label{classv8_1_1platform_1_1tracing_1_1TraceObject_abed685a45e1ec0119f296d9dce82e49b}} 
-int {\bfseries tid} () const
+\mbox{\hyperlink{classint}{int}} {\bfseries tid} () const
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceObject_a9aeff0bc84517ff7a5740de1ecf06f2f}\label{classv8_1_1platform_1_1tracing_1_1TraceObject_a9aeff0bc84517ff7a5740de1ecf06f2f}} 
-char {\bfseries phase} () const
+\mbox{\hyperlink{classchar}{char}} {\bfseries phase} () const
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceObject_a56b8afc0b8867f866a68d3a3c6b6ef50}\label{classv8_1_1platform_1_1tracing_1_1TraceObject_a56b8afc0b8867f866a68d3a3c6b6ef50}} 
 const uint8\+\_\+t $\ast$ {\bfseries category\+\_\+enabled\+\_\+flag} () const
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceObject_a98533aedf93db780b77ba948e9baa89e}\label{classv8_1_1platform_1_1tracing_1_1TraceObject_a98533aedf93db780b77ba948e9baa89e}} 
-const char $\ast$ {\bfseries name} () const
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries name} () const
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceObject_a97240c11b42d8a131ef8fa855fb5265d}\label{classv8_1_1platform_1_1tracing_1_1TraceObject_a97240c11b42d8a131ef8fa855fb5265d}} 
-const char $\ast$ {\bfseries scope} () const
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries scope} () const
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceObject_ae927964e6a42130adb33594ffd7923bd}\label{classv8_1_1platform_1_1tracing_1_1TraceObject_ae927964e6a42130adb33594ffd7923bd}} 
 uint64\+\_\+t {\bfseries id} () const
@@ -42,10 +42,10 @@ uint64\+\_\+t {\bfseries id} () const
 uint64\+\_\+t {\bfseries bind\+\_\+id} () const
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceObject_aa82b5395cf4fa451d9f365294578846f}\label{classv8_1_1platform_1_1tracing_1_1TraceObject_aa82b5395cf4fa451d9f365294578846f}} 
-int {\bfseries num\+\_\+args} () const
+\mbox{\hyperlink{classint}{int}} {\bfseries num\+\_\+args} () const
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceObject_a91c8a7bd1af6fbeac9b44c6b94668fab}\label{classv8_1_1platform_1_1tracing_1_1TraceObject_a91c8a7bd1af6fbeac9b44c6b94668fab}} 
-const char $\ast$$\ast$ {\bfseries arg\+\_\+names} ()
+const \mbox{\hyperlink{classchar}{char}} $\ast$$\ast$ {\bfseries arg\+\_\+names} ()
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceObject_a87c3c8319757d996065fdcdf528726df}\label{classv8_1_1platform_1_1tracing_1_1TraceObject_a87c3c8319757d996065fdcdf528726df}} 
 uint8\+\_\+t $\ast$ {\bfseries arg\+\_\+types} ()
@@ -57,13 +57,13 @@ uint8\+\_\+t $\ast$ {\bfseries arg\+\_\+types} ()
 std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1ConvertableToTraceFormat}{v8\+::\+Convertable\+To\+Trace\+Format}} $>$ $\ast$ {\bfseries arg\+\_\+convertables} ()
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceObject_ab80f30a4e91c4abb56aeaa9e36c96591}\label{classv8_1_1platform_1_1tracing_1_1TraceObject_ab80f30a4e91c4abb56aeaa9e36c96591}} 
-unsigned int {\bfseries flags} () const
+\mbox{\hyperlink{classunsigned}{unsigned}} \mbox{\hyperlink{classint}{int}} {\bfseries flags} () const
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceObject_aafa4ee41e7b9c25fed7a77fc1a42d50c}\label{classv8_1_1platform_1_1tracing_1_1TraceObject_aafa4ee41e7b9c25fed7a77fc1a42d50c}} 
-int64\+\_\+t {\bfseries ts} ()
+\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} {\bfseries ts} ()
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceObject_ae36c95f3b341f1d4453e3c13a91b3883}\label{classv8_1_1platform_1_1tracing_1_1TraceObject_ae36c95f3b341f1d4453e3c13a91b3883}} 
-int64\+\_\+t {\bfseries tts} ()
+\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} {\bfseries tts} ()
 \item 
 \mbox{\Hypertarget{classv8_1_1platform_1_1tracing_1_1TraceObject_aa1e75659d2248c1ff133f07454ffcf28}\label{classv8_1_1platform_1_1tracing_1_1TraceObject_aa1e75659d2248c1ff133f07454ffcf28}} 
 uint64\+\_\+t {\bfseries duration} ()
@@ -80,6 +80,7 @@ Definition at line 27 of file v8-\/tracing.\+h.
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/libplatform/v8-\/tracing.\+h\end{DoxyCompactItemize}
+v8/include/libplatform/v8-\/tracing.\+h\item 
+v8/src/libplatform/tracing/trace-\/object.\+cc\end{DoxyCompactItemize}

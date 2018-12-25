@@ -1,0 +1,58 @@
+\hypertarget{classv8_1_1internal_1_1RegExpText}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Text Class Reference}
+\label{classv8_1_1internal_1_1RegExpText}\index{v8\+::internal\+::\+Reg\+Exp\+Text@{v8\+::internal\+::\+Reg\+Exp\+Text}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Reg\+Exp\+Text\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1RegExpText}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpText_a0324310cc71e60bd7b4809c422d23d32}\label{classv8_1_1internal_1_1RegExpText_a0324310cc71e60bd7b4809c422d23d32}} 
+{\bfseries Reg\+Exp\+Text} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpText_aea179b143ae81674b36bb232fc7faefa}\label{classv8_1_1internal_1_1RegExpText_aea179b143ae81674b36bb232fc7faefa}} 
+void $\ast$ {\bfseries Accept} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpVisitor}{Reg\+Exp\+Visitor}} $\ast$visitor, void $\ast$data) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpText_a6ea6b99a77e2b5fd64a5d29837be5ff7}\label{classv8_1_1internal_1_1RegExpText_a6ea6b99a77e2b5fd64a5d29837be5ff7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ {\bfseries To\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpText_a92671346bcc28980f0f6fce28a1f1bbe}\label{classv8_1_1internal_1_1RegExpText_a92671346bcc28980f0f6fce28a1f1bbe}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpText}{Reg\+Exp\+Text}} $\ast$ {\bfseries As\+Text} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpText_acba0fe87d94d0d3d2273c1c756b3b4fb}\label{classv8_1_1internal_1_1RegExpText_acba0fe87d94d0d3d2273c1c756b3b4fb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Text} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpText_a9656a07fc9368d7d4b2cec3959fde1c9}\label{classv8_1_1internal_1_1RegExpText_a9656a07fc9368d7d4b2cec3959fde1c9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Text\+Element} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpText_aa314a4eba4ea4c94205347204cc2d102}\label{classv8_1_1internal_1_1RegExpText_aa314a4eba4ea4c94205347204cc2d102}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries min\+\_\+match} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpText_ac6e7ca99e8d7dc54bbd1b205953d2c52}\label{classv8_1_1internal_1_1RegExpText_ac6e7ca99e8d7dc54bbd1b205953d2c52}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries max\+\_\+match} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpText_a08e5bd7d0143a9b18a96cb99e0fac798}\label{classv8_1_1internal_1_1RegExpText_a08e5bd7d0143a9b18a96cb99e0fac798}} 
+void {\bfseries Append\+To\+Text} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpText}{Reg\+Exp\+Text}} $\ast$text, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpText_a712a212b61a1885e17e905724731a233}\label{classv8_1_1internal_1_1RegExpText_a712a212b61a1885e17e905724731a233}} 
+void {\bfseries Add\+Element} (\mbox{\hyperlink{classv8_1_1internal_1_1TextElement}{Text\+Element}} elm, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpText_a54dc3a5be0ef2e6447e154e594f3c779}\label{classv8_1_1internal_1_1RegExpText_a54dc3a5be0ef2e6447e154e594f3c779}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1TextElement}{Text\+Element}} $>$ $\ast$ {\bfseries elements} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 385 of file regexp-\/ast.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/regexp-\/ast.\+h\item 
+v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

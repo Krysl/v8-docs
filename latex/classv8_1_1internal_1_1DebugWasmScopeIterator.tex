@@ -1,0 +1,58 @@
+\hypertarget{classv8_1_1internal_1_1DebugWasmScopeIterator}{}\section{v8\+:\+:internal\+:\+:Debug\+Wasm\+Scope\+Iterator Class Reference}
+\label{classv8_1_1internal_1_1DebugWasmScopeIterator}\index{v8\+::internal\+::\+Debug\+Wasm\+Scope\+Iterator@{v8\+::internal\+::\+Debug\+Wasm\+Scope\+Iterator}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Debug\+Wasm\+Scope\+Iterator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1DebugWasmScopeIterator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugWasmScopeIterator_a8f3a1a31651d144344c15e9bd7116ba0}\label{classv8_1_1internal_1_1DebugWasmScopeIterator_a8f3a1a31651d144344c15e9bd7116ba0}} 
+{\bfseries Debug\+Wasm\+Scope\+Iterator} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1StandardFrame}{Standard\+Frame}} $\ast$frame, \mbox{\hyperlink{classint}{int}} inlined\+\_\+frame\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugWasmScopeIterator_aaf15b8b80a6d29062273579ba4f8d8e5}\label{classv8_1_1internal_1_1DebugWasmScopeIterator_aaf15b8b80a6d29062273579ba4f8d8e5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Done} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugWasmScopeIterator_a1ae485a1a8297172acf77f81ff4cb5f6}\label{classv8_1_1internal_1_1DebugWasmScopeIterator_a1ae485a1a8297172acf77f81ff4cb5f6}} 
+void {\bfseries Advance} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugWasmScopeIterator_a26af9ce29cb5f55c33717be5e669645b}\label{classv8_1_1internal_1_1DebugWasmScopeIterator_a26af9ce29cb5f55c33717be5e669645b}} 
+Scope\+Type {\bfseries Get\+Type} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugWasmScopeIterator_a310e9400ffcebdc3e7faa7ce54cec9d4}\label{classv8_1_1internal_1_1DebugWasmScopeIterator_a310e9400ffcebdc3e7faa7ce54cec9d4}} 
+\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{v8\+::\+Object}} $>$ {\bfseries Get\+Object} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugWasmScopeIterator_a5e45ee24da2e7bb346b169417875019d}\label{classv8_1_1internal_1_1DebugWasmScopeIterator_a5e45ee24da2e7bb346b169417875019d}} 
+\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ {\bfseries Get\+Function\+Debug\+Name} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugWasmScopeIterator_aafa346923677b93fdb5e8d34c92aec53}\label{classv8_1_1internal_1_1DebugWasmScopeIterator_aafa346923677b93fdb5e8d34c92aec53}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Script\+Id} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugWasmScopeIterator_a0621a5f63c485afe0defbc440d25d4e9}\label{classv8_1_1internal_1_1DebugWasmScopeIterator_a0621a5f63c485afe0defbc440d25d4e9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Location\+Info} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugWasmScopeIterator_a820254318f83fa6ecdc290e17fb6ee76}\label{classv8_1_1internal_1_1DebugWasmScopeIterator_a820254318f83fa6ecdc290e17fb6ee76}} 
+\mbox{\hyperlink{classv8_1_1debug_1_1Location}{debug\+::\+Location}} {\bfseries Get\+Start\+Location} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugWasmScopeIterator_a7b55c1aa12a64852c8c5531dfbd3dd39}\label{classv8_1_1internal_1_1DebugWasmScopeIterator_a7b55c1aa12a64852c8c5531dfbd3dd39}} 
+\mbox{\hyperlink{classv8_1_1debug_1_1Location}{debug\+::\+Location}} {\bfseries Get\+End\+Location} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1DebugWasmScopeIterator_aa5a19ae8124f30f225f858c841e66286}\label{classv8_1_1internal_1_1DebugWasmScopeIterator_aa5a19ae8124f30f225f858c841e66286}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Set\+Variable\+Value} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{v8\+::\+String}} $>$ name, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ value) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 41 of file debug-\/scope-\/iterator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/debug/debug-\/scope-\/iterator.\+h\item 
+v8/src/debug/debug-\/scope-\/iterator.\+cc\end{DoxyCompactItemize}

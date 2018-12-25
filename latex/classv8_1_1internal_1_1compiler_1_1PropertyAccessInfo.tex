@@ -1,0 +1,112 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Property\+Access\+Info Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo}\index{v8\+::internal\+::compiler\+::\+Property\+Access\+Info@{v8\+::internal\+::compiler\+::\+Property\+Access\+Info}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a2804d5e273b0aa143cd0b33ead05fd3e}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a2804d5e273b0aa143cd0b33ead05fd3e}} 
+enum {\bfseries Kind} \{ \newline
+{\bfseries k\+Invalid}, 
+{\bfseries k\+Not\+Found}, 
+{\bfseries k\+Data\+Constant}, 
+{\bfseries k\+Data\+Field}, 
+\newline
+{\bfseries k\+Data\+Constant\+Field}, 
+{\bfseries k\+Accessor\+Constant}, 
+{\bfseries k\+Module\+Export}, 
+{\bfseries k\+String\+Length}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a67278c1fd0a6091c44f3be6db094cb16}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a67278c1fd0a6091c44f3be6db094cb16}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Merge} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo}{Property\+Access\+Info}} const $\ast$that, Access\+Mode access\+\_\+mode, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone) V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_ac8207b49759f075a32e4fc56781fbf44}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_ac8207b49759f075a32e4fc56781fbf44}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Not\+Found} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a33e86348292ec2935eb1213b2ab57cc9}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a33e86348292ec2935eb1213b2ab57cc9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Data\+Constant} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_aac5aca51cfc218e1a5a48dc99d07ee00}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_aac5aca51cfc218e1a5a48dc99d07ee00}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Data\+Field} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_add09d47664bdd26451ca64874aaaafa1}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_add09d47664bdd26451ca64874aaaafa1}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Data\+Constant\+Field} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a65e34d25ce2ee8a6a3acc0bfc1b77e79}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a65e34d25ce2ee8a6a3acc0bfc1b77e79}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Accessor\+Constant} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_aceecae10bafe847390201292aba4d8be}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_aceecae10bafe847390201292aba4d8be}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Module\+Export} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a0eabf24646efd3161108507b01da0c8c}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a0eabf24646efd3161108507b01da0c8c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+String\+Length} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_ad965390b0b0d3623c9823f1103fdf810}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_ad965390b0b0d3623c9823f1103fdf810}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Transition\+Map} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a509feca7273d121e2f6db2da53a1c3c9}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a509feca7273d121e2f6db2da53a1c3c9}} 
+Kind {\bfseries kind} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_ae6098a0a07456724098a65802c8e4bb3}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_ae6098a0a07456724098a65802c8e4bb3}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ {\bfseries holder} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_ac5078baedff2fd4cbed456996630112a}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_ac5078baedff2fd4cbed456996630112a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ {\bfseries transition\+\_\+map} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a8aef4dfc4d18f2fdabf39f69a529491c}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a8aef4dfc4d18f2fdabf39f69a529491c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries constant} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a8ecab0b392cd769c19e339afff76c68b}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a8ecab0b392cd769c19e339afff76c68b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1FieldIndex}{Field\+Index}} {\bfseries field\+\_\+index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_af15fd1de5f0b56e3f96bae8398951260}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_af15fd1de5f0b56e3f96bae8398951260}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} {\bfseries field\+\_\+type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a647c4bf5f74c98c45b7545ce8fde32a8}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a647c4bf5f74c98c45b7545ce8fde32a8}} 
+Machine\+Representation {\bfseries field\+\_\+representation} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a1ff2f2cf402713cbb8b6c983f55d7e3a}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a1ff2f2cf402713cbb8b6c983f55d7e3a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ {\bfseries field\+\_\+map} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_ae9ed61e8faced12745eb9326459afb1b}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_ae9ed61e8faced12745eb9326459afb1b}} 
+Map\+Handles const  \& {\bfseries receiver\+\_\+maps} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_ad62a11bf9e4e517ad26a6efbab876ef9}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_ad62a11bf9e4e517ad26a6efbab876ef9}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Cell}{Cell}} $>$ {\bfseries export\+\_\+cell} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a4ab01f3dd9a1ca7afa3a636614727faf}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a4ab01f3dd9a1ca7afa3a636614727faf}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo}{Property\+Access\+Info}} {\bfseries Not\+Found} (Map\+Handles const \&receiver\+\_\+maps, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ holder)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a66245b722b0474b6a0b283354164248f}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a66245b722b0474b6a0b283354164248f}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo}{Property\+Access\+Info}} {\bfseries Data\+Constant} (Map\+Handles const \&receiver\+\_\+maps, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ constant, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ holder)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a0abc51531f104fde3ac06b20db363ef5}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a0abc51531f104fde3ac06b20db363ef5}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo}{Property\+Access\+Info}} {\bfseries Data\+Field} (Property\+Constness constness, Map\+Handles const \&receiver\+\_\+maps, \mbox{\hyperlink{classv8_1_1internal_1_1FieldIndex}{Field\+Index}} field\+\_\+index, Machine\+Representation field\+\_\+representation, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Type}{Type}} field\+\_\+type, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ field\+\_\+map=\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$(), \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ holder=\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$(), \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ transition\+\_\+map=\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$())
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a360060d3cf9c028601e8a936a3eb555d}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a360060d3cf9c028601e8a936a3eb555d}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo}{Property\+Access\+Info}} {\bfseries Accessor\+Constant} (Map\+Handles const \&receiver\+\_\+maps, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ constant, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $>$ holder)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_af7226e047f94c8b32ee63b9f87a21d9b}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_af7226e047f94c8b32ee63b9f87a21d9b}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo}{Property\+Access\+Info}} {\bfseries Module\+Export} (Map\+Handles const \&receiver\+\_\+maps, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Cell}{Cell}} $>$ cell)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a78f9e2274f564d9a937ee1d2a1eb9c5c}\label{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo_a78f9e2274f564d9a937ee1d2a1eb9c5c}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1PropertyAccessInfo}{Property\+Access\+Info}} {\bfseries String\+Length} (Map\+Handles const \&receiver\+\_\+maps)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 59 of file access-\/info.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/access-\/info.\+h\item 
+v8/src/compiler/access-\/info.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,148 @@
+\hypertarget{classv8_1_1internal_1_1CodeEntry}{}\section{v8\+:\+:internal\+:\+:Code\+Entry Class Reference}
+\label{classv8_1_1internal_1_1CodeEntry}\index{v8\+::internal\+::\+Code\+Entry@{v8\+::internal\+::\+Code\+Entry}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_ad063ba8bb9fa8791c460b9a6861c3e73}\label{classv8_1_1internal_1_1CodeEntry_ad063ba8bb9fa8791c460b9a6861c3e73}} 
+{\bfseries Code\+Entry} (Code\+Event\+Listener\+::\+Log\+Events\+And\+Tags tag, const \mbox{\hyperlink{classchar}{char}} $\ast$name, const \mbox{\hyperlink{classchar}{char}} $\ast$resource\+\_\+name=Code\+Entry\+::k\+Empty\+Resource\+Name, \mbox{\hyperlink{classint}{int}} line\+\_\+number=v8\+::\+Cpu\+Profile\+Node\+::k\+No\+Line\+Number\+Info, \mbox{\hyperlink{classint}{int}} column\+\_\+number=v8\+::\+Cpu\+Profile\+Node\+::k\+No\+Column\+Number\+Info, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SourcePositionTable}{Source\+Position\+Table}} $>$ line\+\_\+info=nullptr, \mbox{\hyperlink{classuintptr__t}{Address}} instruction\+\_\+start=k\+Null\+Address)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_aed597d4719fb67b37a239a67a7ba4e01}\label{classv8_1_1internal_1_1CodeEntry_aed597d4719fb67b37a239a67a7ba4e01}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_ab2a64634ea78202fe9c64424964653fc}\label{classv8_1_1internal_1_1CodeEntry_ab2a64634ea78202fe9c64424964653fc}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries resource\+\_\+name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_affc328044ac66c290e92ddd9dfc1a685}\label{classv8_1_1internal_1_1CodeEntry_affc328044ac66c290e92ddd9dfc1a685}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries line\+\_\+number} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a63a1aa8187c29f62e5a0a2d75b8de9f4}\label{classv8_1_1internal_1_1CodeEntry_a63a1aa8187c29f62e5a0a2d75b8de9f4}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries column\+\_\+number} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a981f5235897c2f0e2d85a2387e1d6bd6}\label{classv8_1_1internal_1_1CodeEntry_a981f5235897c2f0e2d85a2387e1d6bd6}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1SourcePositionTable}{Source\+Position\+Table}} $\ast$ {\bfseries line\+\_\+info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_aca7316f853baf657f8ee9c4219e007ea}\label{classv8_1_1internal_1_1CodeEntry_aca7316f853baf657f8ee9c4219e007ea}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries script\+\_\+id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a52937aac42b99caaa1f5956706a6565c}\label{classv8_1_1internal_1_1CodeEntry_a52937aac42b99caaa1f5956706a6565c}} 
+void {\bfseries set\+\_\+script\+\_\+id} (\mbox{\hyperlink{classint}{int}} script\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a697e1a31e0470fe2c6d5915b4bedb5bc}\label{classv8_1_1internal_1_1CodeEntry_a697e1a31e0470fe2c6d5915b4bedb5bc}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries position} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a80a9e85cbb2d54e7ed6bee8184d014d0}\label{classv8_1_1internal_1_1CodeEntry_a80a9e85cbb2d54e7ed6bee8184d014d0}} 
+void {\bfseries set\+\_\+position} (\mbox{\hyperlink{classint}{int}} position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a6c5b09de8c11f72b63c95f086bddb489}\label{classv8_1_1internal_1_1CodeEntry_a6c5b09de8c11f72b63c95f086bddb489}} 
+void {\bfseries set\+\_\+bailout\+\_\+reason} (const \mbox{\hyperlink{classchar}{char}} $\ast$bailout\+\_\+reason)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_aa6c254b7e544a1d111d7d85834d7cb56}\label{classv8_1_1internal_1_1CodeEntry_aa6c254b7e544a1d111d7d85834d7cb56}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries bailout\+\_\+reason} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_ac50d387f1a95bf810ae33613f18648b6}\label{classv8_1_1internal_1_1CodeEntry_ac50d387f1a95bf810ae33613f18648b6}} 
+void {\bfseries set\+\_\+deopt\+\_\+info} (const \mbox{\hyperlink{classchar}{char}} $\ast$deopt\+\_\+reason, \mbox{\hyperlink{classint}{int}} deopt\+\_\+id, std\+::vector$<$ \mbox{\hyperlink{structv8_1_1CpuProfileDeoptFrame}{Cpu\+Profile\+Deopt\+Frame}} $>$ inlined\+\_\+frames)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a70c880a279db9b5489e978f399892a92}\label{classv8_1_1internal_1_1CodeEntry_a70c880a279db9b5489e978f399892a92}} 
+\mbox{\hyperlink{structv8_1_1CpuProfileDeoptInfo}{Cpu\+Profile\+Deopt\+Info}} {\bfseries Get\+Deopt\+Info} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a2dadb4b5d440fa0eb0a08727f49efeff}\label{classv8_1_1internal_1_1CodeEntry_a2dadb4b5d440fa0eb0a08727f49efeff}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+deopt\+\_\+info} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a2fde5f4a15d06a39f3dcd51da62521de}\label{classv8_1_1internal_1_1CodeEntry_a2fde5f4a15d06a39f3dcd51da62521de}} 
+void {\bfseries clear\+\_\+deopt\+\_\+info} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_aa01cf388f7198e696ee6363098db6fd4}\label{classv8_1_1internal_1_1CodeEntry_aa01cf388f7198e696ee6363098db6fd4}} 
+void {\bfseries mark\+\_\+used} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a86204e618ae1e0bfc0ea22cf52a83743}\label{classv8_1_1internal_1_1CodeEntry_a86204e618ae1e0bfc0ea22cf52a83743}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries used} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_ad344098c75b97c8c0f82f46d83b28906}\label{classv8_1_1internal_1_1CodeEntry_ad344098c75b97c8c0f82f46d83b28906}} 
+void {\bfseries Fill\+Function\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$shared)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a059bc6a8c10ba7ef846f7c11b592784d}\label{classv8_1_1internal_1_1CodeEntry_a059bc6a8c10ba7ef846f7c11b592784d}} 
+void {\bfseries Set\+Builtin\+Id} (Builtins\+::\+Name id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_ac0c9542380d90c49a1d4be4dfbbc0302}\label{classv8_1_1internal_1_1CodeEntry_ac0c9542380d90c49a1d4be4dfbbc0302}} 
+Builtins\+::\+Name {\bfseries builtin\+\_\+id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_aec901062a1678adf9fb8b9c3c5bd643a}\label{classv8_1_1internal_1_1CodeEntry_aec901062a1678adf9fb8b9c3c5bd643a}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Get\+Hash} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a2083c5f581cbce6e70f2341ed9fb7d11}\label{classv8_1_1internal_1_1CodeEntry_a2083c5f581cbce6e70f2341ed9fb7d11}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Same\+Function\+As} (const \mbox{\hyperlink{classv8_1_1internal_1_1CodeEntry}{Code\+Entry}} $\ast$entry) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_abe5b05a42c59591ff122d293bf484789}\label{classv8_1_1internal_1_1CodeEntry_abe5b05a42c59591ff122d293bf484789}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Source\+Line} (\mbox{\hyperlink{classint}{int}} pc\+\_\+offset) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_aa6e91ec1028fa9e3422a908027b7bb74}\label{classv8_1_1internal_1_1CodeEntry_aa6e91ec1028fa9e3422a908027b7bb74}} 
+void {\bfseries Add\+Inline\+Stack} (\mbox{\hyperlink{classint}{int}} pc\+\_\+offset, std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CodeEntry}{Code\+Entry}} $>$$>$ inline\+\_\+stack)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a5eeeb30d558dd37c29055fb7780d5b0a}\label{classv8_1_1internal_1_1CodeEntry_a5eeeb30d558dd37c29055fb7780d5b0a}} 
+const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1CodeEntry}{Code\+Entry}} $>$ $>$ $\ast$ {\bfseries Get\+Inline\+Stack} (\mbox{\hyperlink{classint}{int}} pc\+\_\+offset) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_aa168b0f0ab774675546e16c847c4274c}\label{classv8_1_1internal_1_1CodeEntry_aa168b0f0ab774675546e16c847c4274c}} 
+void {\bfseries set\+\_\+instruction\+\_\+start} (\mbox{\hyperlink{classuintptr__t}{Address}} start)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_af8c3242d2d0cb69fd51df0bea826dc76}\label{classv8_1_1internal_1_1CodeEntry_af8c3242d2d0cb69fd51df0bea826dc76}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries instruction\+\_\+start} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a5d2796418bd503a5be93e362c43358a8}\label{classv8_1_1internal_1_1CodeEntry_a5d2796418bd503a5be93e362c43358a8}} 
+Code\+Event\+Listener\+::\+Log\+Events\+And\+Tags {\bfseries tag} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_ae46bd95cd925a33436b007edaf1cb382}\label{classv8_1_1internal_1_1CodeEntry_ae46bd95cd925a33436b007edaf1cb382}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1CodeEntry}{Code\+Entry}} $\ast$ {\bfseries program\+\_\+entry} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_af967b3b9da0154f68acc1e1c83798410}\label{classv8_1_1internal_1_1CodeEntry_af967b3b9da0154f68acc1e1c83798410}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1CodeEntry}{Code\+Entry}} $\ast$ {\bfseries idle\+\_\+entry} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a7012418efaf8f148bc37a791173bab98}\label{classv8_1_1internal_1_1CodeEntry_a7012418efaf8f148bc37a791173bab98}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1CodeEntry}{Code\+Entry}} $\ast$ {\bfseries gc\+\_\+entry} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_abf6245cd860f911a0a7e08b7a6455560}\label{classv8_1_1internal_1_1CodeEntry_abf6245cd860f911a0a7e08b7a6455560}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1CodeEntry}{Code\+Entry}} $\ast$ {\bfseries unresolved\+\_\+entry} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a14bdf38d4c3ebcf8f7a63c64d8b4a2e0}\label{classv8_1_1internal_1_1CodeEntry_a14bdf38d4c3ebcf8f7a63c64d8b4a2e0}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$const {\bfseries k\+Wasm\+Resource\+Name\+Prefix} = \char`\"{}wasm \char`\"{}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a8252e4f992350bf1a093c275694332cb}\label{classv8_1_1internal_1_1CodeEntry_a8252e4f992350bf1a093c275694332cb}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$const {\bfseries k\+Empty\+Resource\+Name} = \char`\"{}\char`\"{}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_ab3288c79f50d86af34c09214795aa2f2}\label{classv8_1_1internal_1_1CodeEntry_ab3288c79f50d86af34c09214795aa2f2}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$const {\bfseries k\+Empty\+Bailout\+Reason} = \char`\"{}\char`\"{}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a043c3c8bbfd302e3b09b8e51d44e144b}\label{classv8_1_1internal_1_1CodeEntry_a043c3c8bbfd302e3b09b8e51d44e144b}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$const {\bfseries k\+No\+Deopt\+Reason} = \char`\"{}\char`\"{}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_af5b4d469a451548eca87b1709e677d46}\label{classv8_1_1internal_1_1CodeEntry_af5b4d469a451548eca87b1709e677d46}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$const {\bfseries k\+Program\+Entry\+Name} = \char`\"{}(program)\char`\"{}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a5e09544990d7e511d71d951dc55b31a2}\label{classv8_1_1internal_1_1CodeEntry_a5e09544990d7e511d71d951dc55b31a2}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$const {\bfseries k\+Idle\+Entry\+Name} = \char`\"{}(idle)\char`\"{}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a65525d24c10c0ed71d7830b5a997adce}\label{classv8_1_1internal_1_1CodeEntry_a65525d24c10c0ed71d7830b5a997adce}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$const {\bfseries k\+Garbage\+Collector\+Entry\+Name} = \char`\"{}(garbage collector)\char`\"{}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1CodeEntry_a1669bc7aedd073be73751251222d08eb}\label{classv8_1_1internal_1_1CodeEntry_a1669bc7aedd073be73751251222d08eb}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$const {\bfseries k\+Unresolved\+Function\+Name} = \char`\"{}(unresolved function)\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 52 of file profile-\/generator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/profile-\/generator.\+h\item 
+v8/src/profiler/profile-\/generator-\/inl.\+h\item 
+v8/src/profiler/profile-\/generator.\+cc\end{DoxyCompactItemize}

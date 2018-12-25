@@ -1,0 +1,72 @@
+\hypertarget{classv8_1_1internal_1_1SimpleStringBuilder}{}\section{v8\+:\+:internal\+:\+:Simple\+String\+Builder Class Reference}
+\label{classv8_1_1internal_1_1SimpleStringBuilder}\index{v8\+::internal\+::\+Simple\+String\+Builder@{v8\+::internal\+::\+Simple\+String\+Builder}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Simple\+String\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1SimpleStringBuilder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SimpleStringBuilder_ada67732d4870e7e3a3f27ad7e000c050}\label{classv8_1_1internal_1_1SimpleStringBuilder_ada67732d4870e7e3a3f27ad7e000c050}} 
+{\bfseries Simple\+String\+Builder} (\mbox{\hyperlink{classint}{int}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SimpleStringBuilder_a369f5f45849c9cad938cd03114d26462}\label{classv8_1_1internal_1_1SimpleStringBuilder_a369f5f45849c9cad938cd03114d26462}} 
+{\bfseries Simple\+String\+Builder} (\mbox{\hyperlink{classchar}{char}} $\ast$buffer, \mbox{\hyperlink{classint}{int}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SimpleStringBuilder_a6fd0d7edfe012905b788b5492d1989cc}\label{classv8_1_1internal_1_1SimpleStringBuilder_a6fd0d7edfe012905b788b5492d1989cc}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SimpleStringBuilder_a856c891342137fab4a7e5c8efac88b0c}\label{classv8_1_1internal_1_1SimpleStringBuilder_a856c891342137fab4a7e5c8efac88b0c}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries position} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SimpleStringBuilder_a8a8110a70bbf4d63786952574d4936bc}\label{classv8_1_1internal_1_1SimpleStringBuilder_a8a8110a70bbf4d63786952574d4936bc}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SimpleStringBuilder_a63cc005351a5201e0184aec719e630af}\label{classv8_1_1internal_1_1SimpleStringBuilder_a63cc005351a5201e0184aec719e630af}} 
+void {\bfseries Add\+Character} (\mbox{\hyperlink{classchar}{char}} c)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SimpleStringBuilder_af1564a47d9e6a5c686bd6e331441ba50}\label{classv8_1_1internal_1_1SimpleStringBuilder_af1564a47d9e6a5c686bd6e331441ba50}} 
+void {\bfseries Add\+String} (const \mbox{\hyperlink{classchar}{char}} $\ast$s)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SimpleStringBuilder_aacd0c2e2d8ec5331d5d64eca4a548cdb}\label{classv8_1_1internal_1_1SimpleStringBuilder_aacd0c2e2d8ec5331d5d64eca4a548cdb}} 
+void {\bfseries Add\+Substring} (const \mbox{\hyperlink{classchar}{char}} $\ast$s, \mbox{\hyperlink{classint}{int}} n)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SimpleStringBuilder_a550e57aa8ec2df7143c5e864b6ae5402}\label{classv8_1_1internal_1_1SimpleStringBuilder_a550e57aa8ec2df7143c5e864b6ae5402}} 
+void {\bfseries Add\+Padding} (\mbox{\hyperlink{classchar}{char}} c, \mbox{\hyperlink{classint}{int}} count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SimpleStringBuilder_a169f40e57341232ced1e8ac1e23fdbad}\label{classv8_1_1internal_1_1SimpleStringBuilder_a169f40e57341232ced1e8ac1e23fdbad}} 
+void {\bfseries Add\+Decimal\+Integer} (\mbox{\hyperlink{classint}{int}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SimpleStringBuilder_ab6aebcff188bdab258d9c139e29543e4}\label{classv8_1_1internal_1_1SimpleStringBuilder_ab6aebcff188bdab258d9c139e29543e4}} 
+\mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Finalize} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SimpleStringBuilder_a6021086a5e9f2ce467aca259ff4f479d}\label{classv8_1_1internal_1_1SimpleStringBuilder_a6021086a5e9f2ce467aca259ff4f479d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+finalized} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SimpleStringBuilder_a2e7d92b54792ab26c3bff5f96de202fc}\label{classv8_1_1internal_1_1SimpleStringBuilder_a2e7d92b54792ab26c3bff5f96de202fc}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ \mbox{\hyperlink{classchar}{char}} $>$ {\bfseries buffer\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SimpleStringBuilder_a0deafc31ecda5d1800219fc4232565c5}\label{classv8_1_1internal_1_1SimpleStringBuilder_a0deafc31ecda5d1800219fc4232565c5}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries position\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 812 of file utils.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/utils.\+h\item 
+v8/src/utils.\+cc\end{DoxyCompactItemize}

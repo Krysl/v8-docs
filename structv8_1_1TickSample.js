@@ -5,7 +5,7 @@ var structv8_1_1TickSample =
       [ "kSkipCEntryFrame", "structv8_1_1TickSample.html#ae3223c2114f7140f8af1793802b94d42ad7e49e823dc69c989251a2bc7b7ab9a7", null ]
     ] ],
     [ "TickSample", "structv8_1_1TickSample.html#a05d23fe271179e93cef810ea232f5dfd", null ],
-    [ "Init", "structv8_1_1TickSample.html#a5e763b4b249b3fba53241b82d4ef6eeb", null ],
+    [ "Init", "structv8_1_1TickSample.html#a71cbf35dee4a229fdcd3c1a4c1bbd87d", null ],
     [ "external_callback_entry", "structv8_1_1TickSample.html#a14de59785b74568608b7f1e502f66acd", null ],
     [ "frames_count", "structv8_1_1TickSample.html#a00bfe6e03f75c291e220777fe74272d5", null ],
     [ "has_external_callback", "structv8_1_1TickSample.html#aa7c90f53d4ac6ab23727e21369f70b6e", null ],

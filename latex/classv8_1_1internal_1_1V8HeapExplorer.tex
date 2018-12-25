@@ -1,0 +1,66 @@
+\hypertarget{classv8_1_1internal_1_1V8HeapExplorer}{}\section{v8\+:\+:internal\+:\+:V8\+Heap\+Explorer Class Reference}
+\label{classv8_1_1internal_1_1V8HeapExplorer}\index{v8\+::internal\+::\+V8\+Heap\+Explorer@{v8\+::internal\+::\+V8\+Heap\+Explorer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:V8\+Heap\+Explorer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1V8HeapExplorer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1V8HeapExplorer_a380cad4a97cc6608f02640026ef32441}\label{classv8_1_1internal_1_1V8HeapExplorer_a380cad4a97cc6608f02640026ef32441}} 
+{\bfseries V8\+Heap\+Explorer} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapSnapshot}{Heap\+Snapshot}} $\ast$snapshot, \mbox{\hyperlink{classv8_1_1internal_1_1SnapshottingProgressReportingInterface}{Snapshotting\+Progress\+Reporting\+Interface}} $\ast$progress, \mbox{\hyperlink{classv8_1_1HeapProfiler_1_1ObjectNameResolver}{v8\+::\+Heap\+Profiler\+::\+Object\+Name\+Resolver}} $\ast$resolver)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1V8HeapExplorer_a6695e91c59d50a8d8d8f47d7c89fe7fb}\label{classv8_1_1internal_1_1V8HeapExplorer_a6695e91c59d50a8d8d8f47d7c89fe7fb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $\ast$ {\bfseries Allocate\+Entry} (Heap\+Thing ptr) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1V8HeapExplorer_a217a37b1c9d73867805d6881784f189d}\label{classv8_1_1internal_1_1V8HeapExplorer_a217a37b1c9d73867805d6881784f189d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Estimate\+Objects\+Count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1V8HeapExplorer_aff3a17723e9ea1c85248d70a57b357d7}\label{classv8_1_1internal_1_1V8HeapExplorer_aff3a17723e9ea1c85248d70a57b357d7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Iterate\+And\+Extract\+References} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapSnapshotGenerator}{Heap\+Snapshot\+Generator}} $\ast$generator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1V8HeapExplorer_a3fc89ba6b31b1f48e4ce026976eeaf79}\label{classv8_1_1internal_1_1V8HeapExplorer_a3fc89ba6b31b1f48e4ce026976eeaf79}} 
+void {\bfseries Tag\+Global\+Objects} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1V8HeapExplorer_ab9a5128c03dc5b3c708afda56c3366ef}\label{classv8_1_1internal_1_1V8HeapExplorer_ab9a5128c03dc5b3c708afda56c3366ef}} 
+void {\bfseries Tag\+Code\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1V8HeapExplorer_a681f71584651bf8ab63dcfa812086a1b}\label{classv8_1_1internal_1_1V8HeapExplorer_a681f71584651bf8ab63dcfa812086a1b}} 
+void {\bfseries Tag\+Builtin\+Code\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} code, const \mbox{\hyperlink{classchar}{char}} $\ast$name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1V8HeapExplorer_abd278633cdd9c46c73e0455558f16068}\label{classv8_1_1internal_1_1V8HeapExplorer_abd278633cdd9c46c73e0455558f16068}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $\ast$ {\bfseries Add\+Entry} (\mbox{\hyperlink{classuintptr__t}{Address}} address, Heap\+Entry\+::\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, const \mbox{\hyperlink{classchar}{char}} $\ast$name, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1V8HeapExplorer_a651144b1fdda09da9a071bcf63665ba0}\label{classv8_1_1internal_1_1V8HeapExplorer_a651144b1fdda09da9a071bcf63665ba0}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $\ast$ {\bfseries Get\+Constructor} (\mbox{\hyperlink{classv8_1_1internal_1_1JSReceiver}{J\+S\+Receiver}} $\ast$receiver)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1V8HeapExplorer_a3bd447f1a99a47187086943d637d35b5}\label{classv8_1_1internal_1_1V8HeapExplorer_a3bd447f1a99a47187086943d637d35b5}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} {\bfseries Get\+Constructor\+Name} (\mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $\ast$object)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1V8HeapExplorer_a6ef0d133911e40c06746778027023e0a}\label{classv8_1_1internal_1_1V8HeapExplorer_a6ef0d133911e40c06746778027023e0a}} 
+class {\bfseries Indexed\+References\+Extractor}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1V8HeapExplorer_a07c650327bd63061c049a9ae184a0ba6}\label{classv8_1_1internal_1_1V8HeapExplorer_a07c650327bd63061c049a9ae184a0ba6}} 
+class {\bfseries Roots\+References\+Extractor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 314 of file heap-\/snapshot-\/generator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/heap-\/snapshot-\/generator.\+h\item 
+v8/src/profiler/heap-\/snapshot-\/generator.\+cc\end{DoxyCompactItemize}

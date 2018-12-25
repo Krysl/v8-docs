@@ -1,0 +1,103 @@
+\hypertarget{classv8_1_1internal_1_1HeapEntry}{}\section{v8\+:\+:internal\+:\+:Heap\+Entry Class Reference}
+\label{classv8_1_1internal_1_1HeapEntry}\index{v8\+::internal\+::\+Heap\+Entry@{v8\+::internal\+::\+Heap\+Entry}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_a6e70aae1c0794dd9783cb91e01b0a6c1}\label{classv8_1_1internal_1_1HeapEntry_a6e70aae1c0794dd9783cb91e01b0a6c1}} 
+enum {\bfseries Type} \{ \newline
+{\bfseries k\+Hidden} = v8\+:\+:Heap\+Graph\+Node\+:\+:k\+Hidden, 
+{\bfseries k\+Array} = v8\+:\+:Heap\+Graph\+Node\+:\+:k\+Array, 
+{\bfseries k\+String} = v8\+:\+:Heap\+Graph\+Node\+:\+:k\+String, 
+{\bfseries k\+Object} = v8\+:\+:Heap\+Graph\+Node\+:\+:k\+Object, 
+\newline
+{\bfseries k\+Code} = v8\+:\+:Heap\+Graph\+Node\+:\+:k\+Code, 
+{\bfseries k\+Closure} = v8\+:\+:Heap\+Graph\+Node\+:\+:k\+Closure, 
+{\bfseries k\+Reg\+Exp} = v8\+:\+:Heap\+Graph\+Node\+:\+:k\+Reg\+Exp, 
+{\bfseries k\+Heap\+Number} = v8\+:\+:Heap\+Graph\+Node\+:\+:k\+Heap\+Number, 
+\newline
+{\bfseries k\+Native} = v8\+:\+:Heap\+Graph\+Node\+:\+:k\+Native, 
+{\bfseries k\+Synthetic} = v8\+:\+:Heap\+Graph\+Node\+:\+:k\+Synthetic, 
+{\bfseries k\+Cons\+String} = v8\+:\+:Heap\+Graph\+Node\+:\+:k\+Cons\+String, 
+{\bfseries k\+Sliced\+String} = v8\+:\+:Heap\+Graph\+Node\+:\+:k\+Sliced\+String, 
+\newline
+{\bfseries k\+Symbol} = v8\+:\+:Heap\+Graph\+Node\+:\+:k\+Symbol, 
+{\bfseries k\+Big\+Int} = v8\+:\+:Heap\+Graph\+Node\+:\+:k\+Big\+Int
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_a1baff02546d2d3f32a8568404adc9c92}\label{classv8_1_1internal_1_1HeapEntry_a1baff02546d2d3f32a8568404adc9c92}} 
+{\bfseries Heap\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapSnapshot}{Heap\+Snapshot}} $\ast$snapshot, \mbox{\hyperlink{classint}{int}} index, Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, const \mbox{\hyperlink{classchar}{char}} $\ast$name, \mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} id, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} self\+\_\+size, \mbox{\hyperlink{classunsigned}{unsigned}} trace\+\_\+node\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_af592de683760c38f4318785b92ba16af}\label{classv8_1_1internal_1_1HeapEntry_af592de683760c38f4318785b92ba16af}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapSnapshot}{Heap\+Snapshot}} $\ast$ {\bfseries snapshot} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_afd6c145a81759e90b101b3d826be8964}\label{classv8_1_1internal_1_1HeapEntry_afd6c145a81759e90b101b3d826be8964}} 
+Type {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_a93b23e65e577012a6184bda16bda4ad6}\label{classv8_1_1internal_1_1HeapEntry_a93b23e65e577012a6184bda16bda4ad6}} 
+void {\bfseries set\+\_\+type} (Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_a392c7b95816a7e8818fcc7df568984a9}\label{classv8_1_1internal_1_1HeapEntry_a392c7b95816a7e8818fcc7df568984a9}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_aa57e9ce86049417efcdc7245c87b7974}\label{classv8_1_1internal_1_1HeapEntry_aa57e9ce86049417efcdc7245c87b7974}} 
+void {\bfseries set\+\_\+name} (const \mbox{\hyperlink{classchar}{char}} $\ast$name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_a381a2ceaf83a8ced0a67de901c7eaa23}\label{classv8_1_1internal_1_1HeapEntry_a381a2ceaf83a8ced0a67de901c7eaa23}} 
+\mbox{\hyperlink{classuint32__t}{Snapshot\+Object\+Id}} {\bfseries id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_a6ab693fa3a9eb6db78a5a25ef2675d35}\label{classv8_1_1internal_1_1HeapEntry_a6ab693fa3a9eb6db78a5a25ef2675d35}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries self\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_aa24ab9f99c63a95e85c1c48f1027dffd}\label{classv8_1_1internal_1_1HeapEntry_aa24ab9f99c63a95e85c1c48f1027dffd}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries trace\+\_\+node\+\_\+id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_a27b8f0f70caba5c21c44f4ca77048a09}\label{classv8_1_1internal_1_1HeapEntry_a27b8f0f70caba5c21c44f4ca77048a09}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_afd1e43f07da2b8d6a831d7a9584b4d60}\label{classv8_1_1internal_1_1HeapEntry_afd1e43f07da2b8d6a831d7a9584b4d60}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries children\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_a6e7fd27040789c58d08d3577f041e857}\label{classv8_1_1internal_1_1HeapEntry_a6e7fd27040789c58d08d3577f041e857}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries set\+\_\+children\+\_\+index} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_a431fc57aecebe519a6c9cd18376d7e63}\label{classv8_1_1internal_1_1HeapEntry_a431fc57aecebe519a6c9cd18376d7e63}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries add\+\_\+child} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapGraphEdge}{Heap\+Graph\+Edge}} $\ast$edge)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_aa75a282d9c3185aa60c8e40268b48cda}\label{classv8_1_1internal_1_1HeapEntry_aa75a282d9c3185aa60c8e40268b48cda}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1HeapGraphEdge}{Heap\+Graph\+Edge}} $\ast$ {\bfseries child} (\mbox{\hyperlink{classint}{int}} i)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_ad5a5526753b476f866ee0ec1ddd4a092}\label{classv8_1_1internal_1_1HeapEntry_ad5a5526753b476f866ee0ec1ddd4a092}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_a8c5ba07a005302d99c85a6cca0799e89}\label{classv8_1_1internal_1_1HeapEntry_a8c5ba07a005302d99c85a6cca0799e89}} 
+void {\bfseries Set\+Indexed\+Reference} (Heap\+Graph\+Edge\+::\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $\ast$entry)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_a2babc0ad746ddd49d0d72a20fc5b26e5}\label{classv8_1_1internal_1_1HeapEntry_a2babc0ad746ddd49d0d72a20fc5b26e5}} 
+void {\bfseries Set\+Named\+Reference} (Heap\+Graph\+Edge\+::\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, const \mbox{\hyperlink{classchar}{char}} $\ast$name, \mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $\ast$entry)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_aa14628153866b6375a447c8c8d2c9daf}\label{classv8_1_1internal_1_1HeapEntry_aa14628153866b6375a447c8c8d2c9daf}} 
+void {\bfseries Set\+Indexed\+Auto\+Index\+Reference} (Heap\+Graph\+Edge\+::\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $\ast$child)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_a7913c5b2d63d8f12792550e03183cf94}\label{classv8_1_1internal_1_1HeapEntry_a7913c5b2d63d8f12792550e03183cf94}} 
+void {\bfseries Set\+Named\+Auto\+Index\+Reference} (Heap\+Graph\+Edge\+::\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, const \mbox{\hyperlink{classchar}{char}} $\ast$description, \mbox{\hyperlink{classv8_1_1internal_1_1HeapEntry}{Heap\+Entry}} $\ast$child, \mbox{\hyperlink{classv8_1_1internal_1_1StringsStorage}{Strings\+Storage}} $\ast$strings)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapEntry_ac577d2a4de4b542592286977b032a496}\label{classv8_1_1internal_1_1HeapEntry_ac577d2a4de4b542592286977b032a496}} 
+void {\bfseries Print} (const \mbox{\hyperlink{classchar}{char}} $\ast$prefix, const \mbox{\hyperlink{classchar}{char}} $\ast$edge\+\_\+name, \mbox{\hyperlink{classint}{int}} max\+\_\+depth, \mbox{\hyperlink{classint}{int}} indent)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 98 of file heap-\/snapshot-\/generator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/heap-\/snapshot-\/generator.\+h\item 
+v8/src/profiler/heap-\/snapshot-\/generator-\/inl.\+h\item 
+v8/src/profiler/heap-\/snapshot-\/generator.\+cc\end{DoxyCompactItemize}

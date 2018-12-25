@@ -1,0 +1,209 @@
+\hypertarget{classv8_1_1internal_1_1FunctionLiteral}{}\section{v8\+:\+:internal\+:\+:Function\+Literal Class Reference}
+\label{classv8_1_1internal_1_1FunctionLiteral}\index{v8\+::internal\+::\+Function\+Literal@{v8\+::internal\+::\+Function\+Literal}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Function\+Literal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1FunctionLiteral}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a8886eb91113bf0a173f28930847f8709}\label{classv8_1_1internal_1_1FunctionLiteral_a8886eb91113bf0a173f28930847f8709}} 
+enum {\bfseries Function\+Type} \{ \newline
+{\bfseries k\+Anonymous\+Expression}, 
+{\bfseries k\+Named\+Expression}, 
+{\bfseries k\+Declaration}, 
+{\bfseries k\+Accessor\+Or\+Method}, 
+\newline
+{\bfseries k\+Wrapped}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a62a06abc664217bd65f039f3fc7aa5c4}\label{classv8_1_1internal_1_1FunctionLiteral_a62a06abc664217bd65f039f3fc7aa5c4}} 
+enum {\bfseries Id\+Type} \{ {\bfseries k\+Id\+Type\+Invalid} = -\/1, 
+{\bfseries k\+Id\+Type\+Top\+Level} = 0
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a5284629ea529d40edd36090d9032a6c4}\label{classv8_1_1internal_1_1FunctionLiteral_a5284629ea529d40edd36090d9032a6c4}} 
+enum {\bfseries Parameter\+Flag} \+: uint8\+\_\+t \{ {\bfseries k\+No\+Duplicate\+Parameters}, 
+{\bfseries k\+Has\+Duplicate\+Parameters}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a88aceb776d91034844bee9a78b28a236}\label{classv8_1_1internal_1_1FunctionLiteral_a88aceb776d91034844bee9a78b28a236}} 
+enum {\bfseries Eager\+Compile\+Hint} \+: uint8\+\_\+t \{ {\bfseries k\+Should\+Eager\+Compile}, 
+{\bfseries k\+Should\+Lazy\+Compile}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_acb9652c08a31504785c48ba3600541f2}\label{classv8_1_1internal_1_1FunctionLiteral_acb9652c08a31504785c48ba3600541f2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_ab1845403e348b534c5d5260d0ca7f98f}\label{classv8_1_1internal_1_1FunctionLiteral_ab1845403e348b534c5d5260d0ca7f98f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries name} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a14b02df9de947d49c426ddc7d10a9560}\label{classv8_1_1internal_1_1FunctionLiteral_a14b02df9de947d49c426ddc7d10a9560}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+shared\+\_\+name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a4e73095fa97b6e328c25730cf5053f00}\label{classv8_1_1internal_1_1FunctionLiteral_a4e73095fa97b6e328c25730cf5053f00}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1AstConsString}{Ast\+Cons\+String}} $\ast$ {\bfseries raw\+\_\+name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a0289b6b4f436e875184c9e92ff5dcb8d}\label{classv8_1_1internal_1_1FunctionLiteral_a0289b6b4f436e875184c9e92ff5dcb8d}} 
+void {\bfseries set\+\_\+raw\+\_\+name} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstConsString}{Ast\+Cons\+String}} $\ast$name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_ab032a7bfe5cec6c7a9c7b5fb3112aa22}\label{classv8_1_1internal_1_1FunctionLiteral_ab032a7bfe5cec6c7a9c7b5fb3112aa22}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1DeclarationScope}{Declaration\+Scope}} $\ast$ {\bfseries scope} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_aebfe2aab643d4562fa8eaed0ac40c34f}\label{classv8_1_1internal_1_1FunctionLiteral_aebfe2aab643d4562fa8eaed0ac40c34f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneList}{Zone\+Ptr\+List}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Statement}{Statement}} $>$ $\ast$ {\bfseries body} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_aea6a35c67dbede9d3a0f79abdafd0cff}\label{classv8_1_1internal_1_1FunctionLiteral_aea6a35c67dbede9d3a0f79abdafd0cff}} 
+void {\bfseries set\+\_\+function\+\_\+token\+\_\+position} (\mbox{\hyperlink{classint}{int}} pos)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a2b9fd608f987d650a0fec96cfd144b23}\label{classv8_1_1internal_1_1FunctionLiteral_a2b9fd608f987d650a0fec96cfd144b23}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries function\+\_\+token\+\_\+position} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a882001096b1edab1bcd5d5889eb88287}\label{classv8_1_1internal_1_1FunctionLiteral_a882001096b1edab1bcd5d5889eb88287}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries start\+\_\+position} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_ad293f0afa3cf931da50b286576ad6cf1}\label{classv8_1_1internal_1_1FunctionLiteral_ad293f0afa3cf931da50b286576ad6cf1}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries end\+\_\+position} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a1ef7bea87b396a692cc38ba766fe7947}\label{classv8_1_1internal_1_1FunctionLiteral_a1ef7bea87b396a692cc38ba766fe7947}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+declaration} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_af9fbeef7d39c429cf72fe8712fcfd83b}\label{classv8_1_1internal_1_1FunctionLiteral_af9fbeef7d39c429cf72fe8712fcfd83b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+named\+\_\+expression} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_aa784542aefac2f867900d8b7aa58d767}\label{classv8_1_1internal_1_1FunctionLiteral_aa784542aefac2f867900d8b7aa58d767}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+anonymous\+\_\+expression} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a2df83e743e512d1b89835d9bb9cc9c36}\label{classv8_1_1internal_1_1FunctionLiteral_a2df83e743e512d1b89835d9bb9cc9c36}} 
+void {\bfseries mark\+\_\+as\+\_\+iife} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_adc4e306743d7839f4cdd7f05877065be}\label{classv8_1_1internal_1_1FunctionLiteral_adc4e306743d7839f4cdd7f05877065be}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+iife} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_af5221133cd95d9271b31635f1ed731d0}\label{classv8_1_1internal_1_1FunctionLiteral_af5221133cd95d9271b31635f1ed731d0}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+toplevel} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a7c0157e17d1274b6e503ae29dc8868e0}\label{classv8_1_1internal_1_1FunctionLiteral_a7c0157e17d1274b6e503ae29dc8868e0}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+wrapped} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a4b5b8124b3323efb1095bbd984c36812}\label{classv8_1_1internal_1_1FunctionLiteral_a4b5b8124b3323efb1095bbd984c36812}} 
+Language\+Mode {\bfseries language\+\_\+mode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_abbb581b9e7f0bfceb539e9b1c36c5731}\label{classv8_1_1internal_1_1FunctionLiteral_abbb581b9e7f0bfceb539e9b1c36c5731}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries expected\+\_\+property\+\_\+count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_afba4a2fe6bb0ef660bc62e0df12c7985}\label{classv8_1_1internal_1_1FunctionLiteral_afba4a2fe6bb0ef660bc62e0df12c7985}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries parameter\+\_\+count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_ae9528fe98cf049e7749e94f0b9cacc95}\label{classv8_1_1internal_1_1FunctionLiteral_ae9528fe98cf049e7749e94f0b9cacc95}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries function\+\_\+length} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a7d0a890afce7b8f84d089de0c66dee1b}\label{classv8_1_1internal_1_1FunctionLiteral_a7d0a890afce7b8f84d089de0c66dee1b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Allows\+Lazy\+Compilation} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a8968b3fd8691e2a21d29f9970f68f1cc}\label{classv8_1_1internal_1_1FunctionLiteral_a8968b3fd8691e2a21d29f9970f68f1cc}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Suspend} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_af5f0627311bad32978cdc21c8d18465a}\label{classv8_1_1internal_1_1FunctionLiteral_af5f0627311bad32978cdc21c8d18465a}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classchar}{char}}\mbox{[}$\,$\mbox{]}$>$ {\bfseries Get\+Debug\+Name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_ace872c6893e6284120f5d29daba614e0}\label{classv8_1_1internal_1_1FunctionLiteral_ace872c6893e6284120f5d29daba614e0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries inferred\+\_\+name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a00aaecb572643bb64582874c184f4a7a}\label{classv8_1_1internal_1_1FunctionLiteral_a00aaecb572643bb64582874c184f4a7a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1AstConsString}{Ast\+Cons\+String}} $\ast$ {\bfseries raw\+\_\+inferred\+\_\+name} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a80eb85688afb619fdebfcea87d02990f}\label{classv8_1_1internal_1_1FunctionLiteral_a80eb85688afb619fdebfcea87d02990f}} 
+void {\bfseries set\+\_\+inferred\+\_\+name} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ inferred\+\_\+name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a034dc7ea6dd8518940f65d0333ea41c3}\label{classv8_1_1internal_1_1FunctionLiteral_a034dc7ea6dd8518940f65d0333ea41c3}} 
+void {\bfseries set\+\_\+raw\+\_\+inferred\+\_\+name} (const \mbox{\hyperlink{classv8_1_1internal_1_1AstConsString}{Ast\+Cons\+String}} $\ast$raw\+\_\+inferred\+\_\+name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a0e5709c2e72d5e4ac60d88edc0a3ef43}\label{classv8_1_1internal_1_1FunctionLiteral_a0e5709c2e72d5e4ac60d88edc0a3ef43}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries pretenure} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_ae0f1d8fa6eb53c0c35a554dfada96703}\label{classv8_1_1internal_1_1FunctionLiteral_ae0f1d8fa6eb53c0c35a554dfada96703}} 
+void {\bfseries set\+\_\+pretenure} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a3698883fa4c653db06e6deb196640bd9}\label{classv8_1_1internal_1_1FunctionLiteral_a3698883fa4c653db06e6deb196640bd9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+duplicate\+\_\+parameters} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_ae995baeca19a6af45d2b1d1913fc21f4}\label{classv8_1_1internal_1_1FunctionLiteral_ae995baeca19a6af45d2b1d1913fc21f4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Should\+Eager\+Compile} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a2c835b9c9c0c6de12b3087de0d68c1f1}\label{classv8_1_1internal_1_1FunctionLiteral_a2c835b9c9c0c6de12b3087de0d68c1f1}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Set\+Should\+Eager\+Compile} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a6b344fece650475ae4f3b49ec6b235bb}\label{classv8_1_1internal_1_1FunctionLiteral_a6b344fece650475ae4f3b49ec6b235bb}} 
+Function\+Type {\bfseries function\+\_\+type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a1521eee3afff7f8789645b14afc0c3a6}\label{classv8_1_1internal_1_1FunctionLiteral_a1521eee3afff7f8789645b14afc0c3a6}} 
+Function\+Kind {\bfseries kind} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_ae5bb4631781f580279c78646257df90b}\label{classv8_1_1internal_1_1FunctionLiteral_ae5bb4631781f580279c78646257df90b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries dont\+\_\+optimize} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_afc61ad6fe5de1249ba8e92c76592fd5a}\label{classv8_1_1internal_1_1FunctionLiteral_afc61ad6fe5de1249ba8e92c76592fd5a}} 
+Bailout\+Reason {\bfseries dont\+\_\+optimize\+\_\+reason} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a9eafb67cba8eb6da7e118e1890d0c2a5}\label{classv8_1_1internal_1_1FunctionLiteral_a9eafb67cba8eb6da7e118e1890d0c2a5}} 
+void {\bfseries set\+\_\+dont\+\_\+optimize\+\_\+reason} (Bailout\+Reason reason)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a2726300df016e9a516e0a5a7567bd707}\label{classv8_1_1internal_1_1FunctionLiteral_a2726300df016e9a516e0a5a7567bd707}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Anonymous\+Function\+Definition} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a8666facc578704c3358e39292fd12e7e}\label{classv8_1_1internal_1_1FunctionLiteral_a8666facc578704c3358e39292fd12e7e}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries suspend\+\_\+count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_adcded0ce04dfc23ef8462fe1583492a0}\label{classv8_1_1internal_1_1FunctionLiteral_adcded0ce04dfc23ef8462fe1583492a0}} 
+void {\bfseries set\+\_\+suspend\+\_\+count} (\mbox{\hyperlink{classint}{int}} suspend\+\_\+count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a1ccaef3943604df5b8089b9a6cf0b067}\label{classv8_1_1internal_1_1FunctionLiteral_a1ccaef3943604df5b8089b9a6cf0b067}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries return\+\_\+position} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a1c1557deeb58518614d28b07959e7c86}\label{classv8_1_1internal_1_1FunctionLiteral_a1c1557deeb58518614d28b07959e7c86}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries function\+\_\+literal\+\_\+id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a84fb6382f5c0b25e73b1c85df0865e3b}\label{classv8_1_1internal_1_1FunctionLiteral_a84fb6382f5c0b25e73b1c85df0865e3b}} 
+void {\bfseries set\+\_\+function\+\_\+literal\+\_\+id} (\mbox{\hyperlink{classint}{int}} function\+\_\+literal\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a51fdd8fd553feaf69d24c8c6fb4953d6}\label{classv8_1_1internal_1_1FunctionLiteral_a51fdd8fd553feaf69d24c8c6fb4953d6}} 
+void {\bfseries set\+\_\+requires\+\_\+instance\+\_\+members\+\_\+initializer} (\mbox{\hyperlink{classbool}{bool}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_adaa4765cd0a7e6433bbce41b4b3e17a1}\label{classv8_1_1internal_1_1FunctionLiteral_adaa4765cd0a7e6433bbce41b4b3e17a1}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries requires\+\_\+instance\+\_\+members\+\_\+initializer} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a42a6b4b8e76009acd0ce406aa5eaa987}\label{classv8_1_1internal_1_1FunctionLiteral_a42a6b4b8e76009acd0ce406aa5eaa987}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ProducedPreParsedScopeData}{Produced\+Pre\+Parsed\+Scope\+Data}} $\ast$ {\bfseries produced\+\_\+preparsed\+\_\+scope\+\_\+data} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_ad78102843077c6fd61438c3709d6d1ba}\label{classv8_1_1internal_1_1FunctionLiteral_ad78102843077c6fd61438c3709d6d1ba}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Needs\+Home\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Expression}{Expression}} $\ast$expr)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FunctionLiteral_a8d587c8ad3515ff6433eb83c578e795f}\label{classv8_1_1internal_1_1FunctionLiteral_a8d587c8ad3515ff6433eb83c578e795f}} 
+class {\bfseries Ast\+Node\+Factory}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 2330 of file ast.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/ast/ast.\+h\item 
+v8/src/ast/ast.\+cc\end{DoxyCompactItemize}

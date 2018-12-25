@@ -1,0 +1,67 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Streaming\+Decoder Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder}\index{v8\+::internal\+::wasm\+::\+Streaming\+Decoder@{v8\+::internal\+::wasm\+::\+Streaming\+Decoder}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeFunctionBody}{Decode\+Function\+Body}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeFunctionLength}{Decode\+Function\+Length}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeModuleHeader}{Decode\+Module\+Header}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeNumberOfFunctions}{Decode\+Number\+Of\+Functions}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeSectionID}{Decode\+Section\+ID}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeSectionLength}{Decode\+Section\+Length}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeSectionPayload}{Decode\+Section\+Payload}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_1_1DecodeVarInt32}{Decode\+Var\+Int32}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_acea0d8adb726e22028153b725fafcfae}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_acea0d8adb726e22028153b725fafcfae}} 
+using {\bfseries Module\+Compiled\+Callback} = std\+::function$<$ void(\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmModuleObject}{Wasm\+Module\+Object}} $>$)$>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_aab83f7ab2d78c42910f09f873207a55e}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_aab83f7ab2d78c42910f09f873207a55e}} 
+{\bfseries Streaming\+Decoder} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1StreamingProcessor}{Streaming\+Processor}} $>$ processor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_a87150dba32a98fbe7b21f3ee2fcf7807}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_a87150dba32a98fbe7b21f3ee2fcf7807}} 
+void {\bfseries On\+Bytes\+Received} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_a58fc1dd707ae7bb14177d7fbf6eb72ab}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_a58fc1dd707ae7bb14177d7fbf6eb72ab}} 
+void {\bfseries Finish} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_a6b698d899e5420033d48dee9b75fe502}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_a6b698d899e5420033d48dee9b75fe502}} 
+void {\bfseries Abort} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_ac5668a0c723d472cf0792f40b6b3f55f}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_ac5668a0c723d472cf0792f40b6b3f55f}} 
+void {\bfseries Notify\+Compilation\+Ended} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_a7b6bf8180a9b7acb131c061c8ab2135f}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_a7b6bf8180a9b7acb131c061c8ab2135f}} 
+void {\bfseries Set\+Module\+Compiled\+Callback} (Module\+Compiled\+Callback callback)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_a6b187932bb49d00d6fb687580cec8572}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_a6b187932bb49d00d6fb687580cec8572}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Set\+Compiled\+Module\+Bytes} (\mbox{\hyperlink{classv8_1_1internal_1_1Vector}{Vector}}$<$ const uint8\+\_\+t $>$ compiled\+\_\+module\+\_\+bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_a94e998848cc55448c404fc0650c74f59}\label{classv8_1_1internal_1_1wasm_1_1StreamingDecoder_a94e998848cc55448c404fc0650c74f59}} 
+Module\+Compiled\+Callback {\bfseries module\+\_\+compiled\+\_\+callback} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 70 of file streaming-\/decoder.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/streaming-\/decoder.\+h\item 
+v8/src/wasm/streaming-\/decoder.\+cc\end{DoxyCompactItemize}

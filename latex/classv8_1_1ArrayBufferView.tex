@@ -13,15 +13,15 @@ Inheritance diagram for v8\+:\+:Array\+Buffer\+View\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}} $>$ \mbox{\hyperlink{classv8_1_1ArrayBufferView_a2ceba3908fbf98ecc81702083127b046}{Buffer}} ()
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}} $>$ \mbox{\hyperlink{classv8_1_1ArrayBufferView_a134c62b37be7a9e8437a56b832f1800a}{Buffer}} ()
 \item 
-size\+\_\+t \mbox{\hyperlink{classv8_1_1ArrayBufferView_a4739a31269f5ebc5b88a708b9429c688}{Byte\+Offset}} ()
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} \mbox{\hyperlink{classv8_1_1ArrayBufferView_a4739a31269f5ebc5b88a708b9429c688}{Byte\+Offset}} ()
 \item 
-size\+\_\+t \mbox{\hyperlink{classv8_1_1ArrayBufferView_a9fc7563c97e0b639a6c0a3274995bb3c}{Byte\+Length}} ()
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} \mbox{\hyperlink{classv8_1_1ArrayBufferView_a9fc7563c97e0b639a6c0a3274995bb3c}{Byte\+Length}} ()
 \item 
-size\+\_\+t \mbox{\hyperlink{classv8_1_1ArrayBufferView_aa728e762ed43194f3a5e05e792fff64e}{Copy\+Contents}} (void $\ast$dest, size\+\_\+t byte\+\_\+length)
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} \mbox{\hyperlink{classv8_1_1ArrayBufferView_aa728e762ed43194f3a5e05e792fff64e}{Copy\+Contents}} (void $\ast$dest, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} byte\+\_\+length)
 \item 
-bool \mbox{\hyperlink{classv8_1_1ArrayBufferView_ab1f5835c3dea53a625814a8c3ab2e0ae}{Has\+Buffer}} () const
+\mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{classv8_1_1ArrayBufferView_ab1f5835c3dea53a625814a8c3ab2e0ae}{Has\+Buffer}} () const
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -32,9 +32,9 @@ static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1ArrayBufferView}{Arr
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static const int {\bfseries k\+Internal\+Field\+Count}
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Internal\+Field\+Count}
 \item 
-static const int {\bfseries k\+Embedder\+Field\+Count}
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Embedder\+Field\+Count}
 \end{DoxyCompactItemize}
 
 
@@ -46,46 +46,66 @@ Definition at line 4690 of file v8.\+h.
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classv8_1_1ArrayBufferView_a2ceba3908fbf98ecc81702083127b046}\label{classv8_1_1ArrayBufferView_a2ceba3908fbf98ecc81702083127b046}} 
+\mbox{\Hypertarget{classv8_1_1ArrayBufferView_a134c62b37be7a9e8437a56b832f1800a}\label{classv8_1_1ArrayBufferView_a134c62b37be7a9e8437a56b832f1800a}} 
 \index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!Buffer@{Buffer}}
 \index{Buffer@{Buffer}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
 \subsubsection{\texorpdfstring{Buffer()}{Buffer()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}}$>$ v8\+::\+Array\+Buffer\+View\+::\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}} $>$ v8\+::\+Array\+Buffer\+View\+::\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Returns underlying \mbox{\hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}}. \mbox{\Hypertarget{classv8_1_1ArrayBufferView_a9fc7563c97e0b639a6c0a3274995bb3c}\label{classv8_1_1ArrayBufferView_a9fc7563c97e0b639a6c0a3274995bb3c}} 
+Returns underlying \mbox{\hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}}. 
+
+Definition at line 7667 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1ArrayBufferView_a9fc7563c97e0b639a6c0a3274995bb3c}\label{classv8_1_1ArrayBufferView_a9fc7563c97e0b639a6c0a3274995bb3c}} 
 \index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!Byte\+Length@{Byte\+Length}}
 \index{Byte\+Length@{Byte\+Length}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
 \subsubsection{\texorpdfstring{Byte\+Length()}{ByteLength()}}
-{\footnotesize\ttfamily size\+\_\+t v8\+::\+Array\+Buffer\+View\+::\+Byte\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsize__t}{size\+\_\+t}} v8\+::\+Array\+Buffer\+View\+::\+Byte\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Size of a view in bytes. \mbox{\Hypertarget{classv8_1_1ArrayBufferView_a4739a31269f5ebc5b88a708b9429c688}\label{classv8_1_1ArrayBufferView_a4739a31269f5ebc5b88a708b9429c688}} 
+Size of a view in bytes. 
+
+Definition at line 7722 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1ArrayBufferView_a4739a31269f5ebc5b88a708b9429c688}\label{classv8_1_1ArrayBufferView_a4739a31269f5ebc5b88a708b9429c688}} 
 \index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!Byte\+Offset@{Byte\+Offset}}
 \index{Byte\+Offset@{Byte\+Offset}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
 \subsubsection{\texorpdfstring{Byte\+Offset()}{ByteOffset()}}
-{\footnotesize\ttfamily size\+\_\+t v8\+::\+Array\+Buffer\+View\+::\+Byte\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsize__t}{size\+\_\+t}} v8\+::\+Array\+Buffer\+View\+::\+Byte\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Byte offset in $\vert$\+Buffer$\vert$. \mbox{\Hypertarget{classv8_1_1ArrayBufferView_aa728e762ed43194f3a5e05e792fff64e}\label{classv8_1_1ArrayBufferView_aa728e762ed43194f3a5e05e792fff64e}} 
+Byte offset in $\vert$\+Buffer$\vert$. 
+
+Definition at line 7716 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1ArrayBufferView_aa728e762ed43194f3a5e05e792fff64e}\label{classv8_1_1ArrayBufferView_aa728e762ed43194f3a5e05e792fff64e}} 
 \index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!Copy\+Contents@{Copy\+Contents}}
 \index{Copy\+Contents@{Copy\+Contents}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
 \subsubsection{\texorpdfstring{Copy\+Contents()}{CopyContents()}}
-{\footnotesize\ttfamily size\+\_\+t v8\+::\+Array\+Buffer\+View\+::\+Copy\+Contents (\begin{DoxyParamCaption}\item[{void $\ast$}]{dest,  }\item[{size\+\_\+t}]{byte\+\_\+length }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsize__t}{size\+\_\+t}} v8\+::\+Array\+Buffer\+View\+::\+Copy\+Contents (\begin{DoxyParamCaption}\item[{void $\ast$}]{dest,  }\item[{\mbox{\hyperlink{classsize__t}{size\+\_\+t}}}]{byte\+\_\+length }\end{DoxyParamCaption})}
 
-Copy the contents of the \mbox{\hyperlink{classv8_1_1ArrayBufferView}{Array\+Buffer\+View}}\textquotesingle{}s buffer to an embedder defined memory without additional overhead that calling \mbox{\hyperlink{classv8_1_1ArrayBufferView_a2ceba3908fbf98ecc81702083127b046}{Array\+Buffer\+View\+::\+Buffer}} might incur.
+Copy the contents of the \mbox{\hyperlink{classv8_1_1ArrayBufferView}{Array\+Buffer\+View}}\textquotesingle{}s buffer to an embedder defined memory without additional overhead that calling \mbox{\hyperlink{classv8_1_1ArrayBufferView_a134c62b37be7a9e8437a56b832f1800a}{Array\+Buffer\+View\+::\+Buffer}} might incur.
 
-Will write at most min($\vert$byte\+\_\+length$\vert$, Byte\+Length) bytes starting at Byte\+Offset of the underlying buffer to the memory starting at $\vert$dest$\vert$. Returns the number of bytes actually written. \mbox{\Hypertarget{classv8_1_1ArrayBufferView_ab1f5835c3dea53a625814a8c3ab2e0ae}\label{classv8_1_1ArrayBufferView_ab1f5835c3dea53a625814a8c3ab2e0ae}} 
+Will write at most min($\vert$byte\+\_\+length$\vert$, Byte\+Length) bytes starting at Byte\+Offset of the underlying buffer to the memory starting at $\vert$dest$\vert$. Returns the number of bytes actually written. 
+
+Definition at line 7684 of file api.\+cc.
+
+\mbox{\Hypertarget{classv8_1_1ArrayBufferView_ab1f5835c3dea53a625814a8c3ab2e0ae}\label{classv8_1_1ArrayBufferView_ab1f5835c3dea53a625814a8c3ab2e0ae}} 
 \index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!Has\+Buffer@{Has\+Buffer}}
 \index{Has\+Buffer@{Has\+Buffer}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
 \subsubsection{\texorpdfstring{Has\+Buffer()}{HasBuffer()}}
-{\footnotesize\ttfamily bool v8\+::\+Array\+Buffer\+View\+::\+Has\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbool}{bool}} v8\+::\+Array\+Buffer\+View\+::\+Has\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 Returns true if \mbox{\hyperlink{classv8_1_1ArrayBufferView}{Array\+Buffer\+View}}\textquotesingle{}s backing \mbox{\hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}} has already been allocated. 
+
+Definition at line 7708 of file api.\+cc.
+
+
 
 \subsection{Member Data Documentation}
 \mbox{\Hypertarget{classv8_1_1ArrayBufferView_a4c007c4f644125cee1b7605c9ea1bc6c}\label{classv8_1_1ArrayBufferView_a4c007c4f644125cee1b7605c9ea1bc6c}} 
 \index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!k\+Embedder\+Field\+Count@{k\+Embedder\+Field\+Count}}
 \index{k\+Embedder\+Field\+Count@{k\+Embedder\+Field\+Count}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
 \subsubsection{\texorpdfstring{k\+Embedder\+Field\+Count}{kEmbedderFieldCount}}
-{\footnotesize\ttfamily const int v8\+::\+Array\+Buffer\+View\+::k\+Embedder\+Field\+Count\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::\+Array\+Buffer\+View\+::k\+Embedder\+Field\+Count\hspace{0.3cm}{\ttfamily [static]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
@@ -100,7 +120,7 @@ Definition at line 4726 of file v8.\+h.
 \index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!k\+Internal\+Field\+Count@{k\+Internal\+Field\+Count}}
 \index{k\+Internal\+Field\+Count@{k\+Internal\+Field\+Count}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
 \subsubsection{\texorpdfstring{k\+Internal\+Field\+Count}{kInternalFieldCount}}
-{\footnotesize\ttfamily const int v8\+::\+Array\+Buffer\+View\+::k\+Internal\+Field\+Count\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::\+Array\+Buffer\+View\+::k\+Internal\+Field\+Count\hspace{0.3cm}{\ttfamily [static]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
@@ -113,6 +133,7 @@ Definition at line 4724 of file v8.\+h.
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8.\+h\end{DoxyCompactItemize}
+v8/include/v8.\+h\item 
+v8/src/api.\+cc\end{DoxyCompactItemize}

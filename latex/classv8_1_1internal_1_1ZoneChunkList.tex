@@ -1,0 +1,113 @@
+\hypertarget{classv8_1_1internal_1_1ZoneChunkList}{}\section{v8\+:\+:internal\+:\+:Zone\+Chunk\+List$<$ T $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1ZoneChunkList}\index{v8\+::internal\+::\+Zone\+Chunk\+List$<$ T $>$@{v8\+::internal\+::\+Zone\+Chunk\+List$<$ T $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Zone\+Chunk\+List$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1ZoneChunkList}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_a23abd583818fc35654ca5897b2f0572b}\label{classv8_1_1internal_1_1ZoneChunkList_a23abd583818fc35654ca5897b2f0572b}} 
+enum {\bfseries Start\+Mode} \{ {\bfseries k\+Empty} = 0, 
+{\bfseries k\+Small} = 8, 
+{\bfseries k\+Big} = 256
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_ac24f3783e7f9641e4e1783fb689a0c07}\label{classv8_1_1internal_1_1ZoneChunkList_ac24f3783e7f9641e4e1783fb689a0c07}} 
+using {\bfseries iterator} = \mbox{\hyperlink{classv8_1_1internal_1_1ZoneChunkListIterator}{Zone\+Chunk\+List\+Iterator}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, false, true $>$
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_a632c22365562df6b5fe8b5780ae4a669}\label{classv8_1_1internal_1_1ZoneChunkList_a632c22365562df6b5fe8b5780ae4a669}} 
+using {\bfseries const\+\_\+iterator} = \mbox{\hyperlink{classv8_1_1internal_1_1ZoneChunkListIterator}{Zone\+Chunk\+List\+Iterator}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, false, false $>$
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_a609709b11c66db21d338fb1515e22c1a}\label{classv8_1_1internal_1_1ZoneChunkList_a609709b11c66db21d338fb1515e22c1a}} 
+using {\bfseries reverse\+\_\+iterator} = \mbox{\hyperlink{classv8_1_1internal_1_1ZoneChunkListIterator}{Zone\+Chunk\+List\+Iterator}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, true, true $>$
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_a76c620dcafb242358a1b9468beda4ecd}\label{classv8_1_1internal_1_1ZoneChunkList_a76c620dcafb242358a1b9468beda4ecd}} 
+using {\bfseries const\+\_\+reverse\+\_\+iterator} = \mbox{\hyperlink{classv8_1_1internal_1_1ZoneChunkListIterator}{Zone\+Chunk\+List\+Iterator}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, true, false $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_af3276988c3fc0740f76eba5c102915b3}\label{classv8_1_1internal_1_1ZoneChunkList_af3276988c3fc0740f76eba5c102915b3}} 
+{\bfseries Zone\+Chunk\+List} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, Start\+Mode start\+\_\+mode=Start\+Mode\+::k\+Empty)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_a9c0a9de3bb20dedc836317c219dab166}\label{classv8_1_1internal_1_1ZoneChunkList_a9c0a9de3bb20dedc836317c219dab166}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_a1a6213aafc16a3c4ff9921d254fcc417}\label{classv8_1_1internal_1_1ZoneChunkList_a1a6213aafc16a3c4ff9921d254fcc417}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+empty} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_a6123f8a1d9bb7232db72b07c157fde08}\label{classv8_1_1internal_1_1ZoneChunkList_a6123f8a1d9bb7232db72b07c157fde08}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \& {\bfseries front} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_a4155146c20e269d6070752bddafd8595}\label{classv8_1_1internal_1_1ZoneChunkList_a4155146c20e269d6070752bddafd8595}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \& {\bfseries back} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_a1bfa2578fd6bf29b46d5f3a9b04199bb}\label{classv8_1_1internal_1_1ZoneChunkList_a1bfa2578fd6bf29b46d5f3a9b04199bb}} 
+void {\bfseries push\+\_\+back} (const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \&item)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_a6ed7733d9a5f4e2b662d0ea7554219ef}\label{classv8_1_1internal_1_1ZoneChunkList_a6ed7733d9a5f4e2b662d0ea7554219ef}} 
+void {\bfseries pop\+\_\+back} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_a5b567f81ef5a6cdfe93edad692802e49}\label{classv8_1_1internal_1_1ZoneChunkList_a5b567f81ef5a6cdfe93edad692802e49}} 
+void {\bfseries push\+\_\+front} (const \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} \&item)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_ae484d24be7d33ea708645400c727b56d}\label{classv8_1_1internal_1_1ZoneChunkList_ae484d24be7d33ea708645400c727b56d}} 
+void {\bfseries Rewind} (const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} limit=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_a0b7a36ccb0d2c9479df36972f82fec7a}\label{classv8_1_1internal_1_1ZoneChunkList_a0b7a36ccb0d2c9479df36972f82fec7a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneChunkListIterator}{iterator}} {\bfseries Find} (const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_a4092787553af4635047bde3b2640e82d}\label{classv8_1_1internal_1_1ZoneChunkList_a4092787553af4635047bde3b2640e82d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneChunkListIterator}{const\+\_\+iterator}} {\bfseries Find} (const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_ac32ef619277dc7bf70dd53c60d863d67}\label{classv8_1_1internal_1_1ZoneChunkList_ac32ef619277dc7bf70dd53c60d863d67}} 
+void {\bfseries Copy\+To} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$ptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_a1264568ce2491759f946ccc651e1d18f}\label{classv8_1_1internal_1_1ZoneChunkList_a1264568ce2491759f946ccc651e1d18f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneChunkListIterator}{iterator}} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_af2639c7be19ed839897712a37a5465b2}\label{classv8_1_1internal_1_1ZoneChunkList_af2639c7be19ed839897712a37a5465b2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneChunkListIterator}{iterator}} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_a22b48818bd77297a72a51a68df71e18f}\label{classv8_1_1internal_1_1ZoneChunkList_a22b48818bd77297a72a51a68df71e18f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneChunkListIterator}{reverse\+\_\+iterator}} {\bfseries rbegin} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_a6377ac77625febe387db53f3182050fb}\label{classv8_1_1internal_1_1ZoneChunkList_a6377ac77625febe387db53f3182050fb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneChunkListIterator}{reverse\+\_\+iterator}} {\bfseries rend} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_a9157c14fba8e1ed4c5dba71ad6dc523f}\label{classv8_1_1internal_1_1ZoneChunkList_a9157c14fba8e1ed4c5dba71ad6dc523f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneChunkListIterator}{const\+\_\+iterator}} {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_a23209c952148b1fd8884e55789a70b1f}\label{classv8_1_1internal_1_1ZoneChunkList_a23209c952148b1fd8884e55789a70b1f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneChunkListIterator}{const\+\_\+iterator}} {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_ad1f2fa9d0a85c255fed42605a3939025}\label{classv8_1_1internal_1_1ZoneChunkList_ad1f2fa9d0a85c255fed42605a3939025}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneChunkListIterator}{const\+\_\+reverse\+\_\+iterator}} {\bfseries rbegin} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_adba4a76d4efde7cb271281f4b1d92eac}\label{classv8_1_1internal_1_1ZoneChunkList_adba4a76d4efde7cb271281f4b1d92eac}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneChunkListIterator}{const\+\_\+reverse\+\_\+iterator}} {\bfseries rend} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ZoneChunkList_aadb999f6c7ceb0e3c94ab892e1bce6dd}\label{classv8_1_1internal_1_1ZoneChunkList_aadb999f6c7ceb0e3c94ab892e1bce6dd}} 
+{\footnotesize template$<$typename S , bool backwards, bool modifiable$>$ }\\class {\bfseries Zone\+Chunk\+List\+Iterator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class v8\+::internal\+::\+Zone\+Chunk\+List$<$ T $>$}
+
+
+
+Definition at line 36 of file zone-\/chunk-\/list.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/zone/zone-\/chunk-\/list.\+h\end{DoxyCompactItemize}

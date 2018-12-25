@@ -1,0 +1,27 @@
+var structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState =
+[
+    [ "CacheState", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#a8c1d23f876181f5717c9a6bda93a8b5a", null ],
+    [ "CacheState", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#a73c6c91f08985fc09cda83b236a5e290", null ],
+    [ "clear_used", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#ab65768ab07079a1678e4000a4ab795ea", null ],
+    [ "dec_used", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#a584dfef9f0e2943eba8ac32599f25aa5", null ],
+    [ "get_use_count", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#acf044dfcbb992e83525a51e941c22cd0", null ],
+    [ "GetNextSpillReg", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#a8ae6915a44702224c4f01b858816ccc1", null ],
+    [ "has_unused_register", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#ac7de89e3a8af938538518b4369a9ce32", null ],
+    [ "has_unused_register", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#a4021d51729e98f434eebc98396c20d44", null ],
+    [ "inc_used", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#af820adf39429ab1f85a958462bef56e3", null ],
+    [ "InitMerge", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#a8369d61c635ff4d25d7a8f93ac52b7d7", null ],
+    [ "is_free", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#af6cc512b51eaba3c8478715925872851", null ],
+    [ "is_used", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#a6be7f9493222979a9c4808b5598b70f0", null ],
+    [ "operator=", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#ab4854ab3f9ef0df9fe5bfc8063961981", null ],
+    [ "reset_used_registers", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#a86225afcb0582e0c4cdc5e1e8706beb7", null ],
+    [ "Split", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#a7de3159aaa95dc902b9ed7179762d7e9", null ],
+    [ "stack_height", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#a35fd415b19981b549128a74d5eb6cbd3", null ],
+    [ "Steal", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#ad644c9b3e80f6ecca1a9a8e12e9babc9", null ],
+    [ "unused_register", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#a47d2a1e87d4be31ca542159701f507aa", null ],
+    [ "unused_register", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#af43441f32f8ca9071dae6ed589216f32", null ],
+    [ "last_spilled_regs", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#a4807fc139516c831af01ceca9ef87e38", null ],
+    [ "register_use_count", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#a0a053f00d7cdd700b68e14f698301c13", null ],
+    [ "stack_base", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#a150fcf755276c2a335cf3f96acf45fb6", null ],
+    [ "stack_state", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#a07476cda8a7cbc4bf0b1c3234e0c9821", null ],
+    [ "used_registers", "structv8_1_1internal_1_1wasm_1_1LiftoffAssembler_1_1CacheState.html#ad39cb865a21d3afcbdcffc691f400362", null ]
+];

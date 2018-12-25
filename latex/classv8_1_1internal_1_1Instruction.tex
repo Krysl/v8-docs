@@ -1,0 +1,658 @@
+\hypertarget{classv8_1_1internal_1_1Instruction}{}\section{v8\+:\+:internal\+:\+:Instruction Class Reference}
+\label{classv8_1_1internal_1_1Instruction}\index{v8\+::internal\+::\+Instruction@{v8\+::internal\+::\+Instruction}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Instruction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.878378cm]{classv8_1_1internal_1_1Instruction}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ac2dd89da7f115bc053a0a65209db0184}\label{classv8_1_1internal_1_1Instruction_ac2dd89da7f115bc053a0a65209db0184}} 
+enum {\bfseries Check\+Alignment} \{ {\bfseries N\+O\+\_\+\+C\+H\+E\+CK}, 
+{\bfseries C\+H\+E\+C\+K\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ac894b43bb5eb5aef647496c3e6233381}\label{classv8_1_1internal_1_1Instruction_ac894b43bb5eb5aef647496c3e6233381}} 
+enum {\bfseries Opcode\+Format\+Type} \{ {\bfseries O\+N\+E\+\_\+\+B\+Y\+T\+E\+\_\+\+O\+P\+C\+O\+DE}, 
+{\bfseries T\+W\+O\+\_\+\+B\+Y\+T\+E\+\_\+\+O\+P\+C\+O\+DE}, 
+{\bfseries T\+W\+O\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+I\+S\+J\+O\+I\+N\+T\+\_\+\+O\+P\+C\+O\+DE}, 
+{\bfseries T\+H\+R\+E\+E\+\_\+\+N\+I\+B\+B\+L\+E\+\_\+\+O\+P\+C\+O\+DE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a073ca49bc4fd2394c1e75829f49625d1}\label{classv8_1_1internal_1_1Instruction_a073ca49bc4fd2394c1e75829f49625d1}} 
+Instr {\bfseries Instruction\+Bits} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a09df19b9577ff4a002c4f775b018d7a0}\label{classv8_1_1internal_1_1Instruction_a09df19b9577ff4a002c4f775b018d7a0}} 
+void {\bfseries Set\+Instruction\+Bits} (Instr value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aeed143f6d56aee73a4eeca0496f8487d}\label{classv8_1_1internal_1_1Instruction_aeed143f6d56aee73a4eeca0496f8487d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Bit} (\mbox{\hyperlink{classint}{int}} nr) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a7a87cc79130522edf745bc8be42b08ea}\label{classv8_1_1internal_1_1Instruction_a7a87cc79130522edf745bc8be42b08ea}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Bits} (\mbox{\hyperlink{classint}{int}} hi, \mbox{\hyperlink{classint}{int}} lo) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a097f739f4e9326b14dbaa8db07d7f375}\label{classv8_1_1internal_1_1Instruction_a097f739f4e9326b14dbaa8db07d7f375}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Bit\+Field} (\mbox{\hyperlink{classint}{int}} hi, \mbox{\hyperlink{classint}{int}} lo) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aa9c0c2e647cd52174357581e5d94f0af}\label{classv8_1_1internal_1_1Instruction_aa9c0c2e647cd52174357581e5d94f0af}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Condition\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aaa4b71c953e2b1435f5a2228647d0b59}\label{classv8_1_1internal_1_1Instruction_aaa4b71c953e2b1435f5a2228647d0b59}} 
+Condition {\bfseries Condition\+Field} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a2dc55a146a8d735c7cbd3f9340d03d47}\label{classv8_1_1internal_1_1Instruction_a2dc55a146a8d735c7cbd3f9340d03d47}} 
+{\bfseries D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+T\+Y\+P\+E\+D\+\_\+\+A\+C\+C\+E\+S\+S\+OR} (\mbox{\hyperlink{classint}{int}}, Condition\+Value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aefb75415931ab56f48ec8612fd195fe1}\label{classv8_1_1internal_1_1Instruction_aefb75415931ab56f48ec8612fd195fe1}} 
+{\bfseries D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+T\+Y\+P\+E\+D\+\_\+\+A\+C\+C\+E\+S\+S\+OR} (Condition, Condition\+Field)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_abf7844f4bd126f56021728b214bab8e7}\label{classv8_1_1internal_1_1Instruction_abf7844f4bd126f56021728b214bab8e7}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Type\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_adca48fdda66bb4be9c1cf15452852aef}\label{classv8_1_1internal_1_1Instruction_adca48fdda66bb4be9c1cf15452852aef}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Special\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ad92b6245dbbeeb9844fb3838cea91689}\label{classv8_1_1internal_1_1Instruction_ad92b6245dbbeeb9844fb3838cea91689}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Rn\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ab12d631dbfe50f0c6ab356a7e138deee}\label{classv8_1_1internal_1_1Instruction_ab12d631dbfe50f0c6ab356a7e138deee}} 
+{\bfseries D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+C\+C\+E\+S\+S\+OR} (Rn\+Value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ac09f058b171881da57d75cc04bfdfe58}\label{classv8_1_1internal_1_1Instruction_ac09f058b171881da57d75cc04bfdfe58}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Rd\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ad67155f61390ac8e7da933f4d62f6323}\label{classv8_1_1internal_1_1Instruction_ad67155f61390ac8e7da933f4d62f6323}} 
+{\bfseries D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+C\+C\+E\+S\+S\+OR} (Rd\+Value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_adbe76ce98bb231bd822d7635a032f3e9}\label{classv8_1_1internal_1_1Instruction_adbe76ce98bb231bd822d7635a032f3e9}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Coprocessor\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aa655887f8e6b5791188e506073eefafb}\label{classv8_1_1internal_1_1Instruction_aa655887f8e6b5791188e506073eefafb}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Vn\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a33d12a02904c2e8db7423f8e9c94e6a9}\label{classv8_1_1internal_1_1Instruction_a33d12a02904c2e8db7423f8e9c94e6a9}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Vm\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a66f4b94f2611258074d73628d4604af5}\label{classv8_1_1internal_1_1Instruction_a66f4b94f2611258074d73628d4604af5}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Vd\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_afd5474068fd3acb793544fbf9af44746}\label{classv8_1_1internal_1_1Instruction_afd5474068fd3acb793544fbf9af44746}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries N\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a5ac13a9103c0f15e0e5e6c06a14f5777}\label{classv8_1_1internal_1_1Instruction_a5ac13a9103c0f15e0e5e6c06a14f5777}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries M\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_afad8e5a61d0430fde9aea18785815655}\label{classv8_1_1internal_1_1Instruction_afad8e5a61d0430fde9aea18785815655}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries D\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a74c00efd2ca3ec2166eb3fc738ca426b}\label{classv8_1_1internal_1_1Instruction_a74c00efd2ca3ec2166eb3fc738ca426b}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Rt\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a7f6b5abcc8c77be36538920aceb13ba3}\label{classv8_1_1internal_1_1Instruction_a7f6b5abcc8c77be36538920aceb13ba3}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries P\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_acf24389c64f332208b182600ef7e2b07}\label{classv8_1_1internal_1_1Instruction_acf24389c64f332208b182600ef7e2b07}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries U\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a8379e3b8c4ee6e03cb5e5db675378289}\label{classv8_1_1internal_1_1Instruction_a8379e3b8c4ee6e03cb5e5db675378289}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Opc1\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ad196dde58a4bbcf1f0da67e882623a2c}\label{classv8_1_1internal_1_1Instruction_ad196dde58a4bbcf1f0da67e882623a2c}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Opc2\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ac65456fd88c6f5c1fcfd039689f001a2}\label{classv8_1_1internal_1_1Instruction_ac65456fd88c6f5c1fcfd039689f001a2}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Opc3\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aa4e7073eaec95585002cd710763583a8}\label{classv8_1_1internal_1_1Instruction_aa4e7073eaec95585002cd710763583a8}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Sz\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a0db05c97196c57d217393dd0a0cf8771}\label{classv8_1_1internal_1_1Instruction_a0db05c97196c57d217393dd0a0cf8771}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries V\+L\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a2058bb8b9984f40b665f787eb39add53}\label{classv8_1_1internal_1_1Instruction_a2058bb8b9984f40b665f787eb39add53}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries V\+C\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_acd65508698c6e0db2971202143c72de8}\label{classv8_1_1internal_1_1Instruction_acd65508698c6e0db2971202143c72de8}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries V\+A\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ad590956606ab3468bbb1d18a660aef4d}\label{classv8_1_1internal_1_1Instruction_ad590956606ab3468bbb1d18a660aef4d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries V\+B\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a623096cbb68bf88d1d27778a6695435f}\label{classv8_1_1internal_1_1Instruction_a623096cbb68bf88d1d27778a6695435f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries V\+F\+P\+N\+Reg\+Value} (V\+F\+P\+Reg\+Precision pre)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ab127055fc17908325e5c95ec3e3c7ba5}\label{classv8_1_1internal_1_1Instruction_ab127055fc17908325e5c95ec3e3c7ba5}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries V\+F\+P\+M\+Reg\+Value} (V\+F\+P\+Reg\+Precision pre)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a11f32cd288b496d07c8281910bc20e4a}\label{classv8_1_1internal_1_1Instruction_a11f32cd288b496d07c8281910bc20e4a}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries V\+F\+P\+D\+Reg\+Value} (V\+F\+P\+Reg\+Precision pre)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a9cdc3bbc19be9111b15e8030163fca3d}\label{classv8_1_1internal_1_1Instruction_a9cdc3bbc19be9111b15e8030163fca3d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Opcode\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_abdabc86b8c0ac142836d03d8d3be618b}\label{classv8_1_1internal_1_1Instruction_abdabc86b8c0ac142836d03d8d3be618b}} 
+Opcode {\bfseries Opcode\+Field} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a9da78d8ffb52fa5bdfdc897fca1d2b7e}\label{classv8_1_1internal_1_1Instruction_a9da78d8ffb52fa5bdfdc897fca1d2b7e}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries S\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aba44ed95a604ebd7e7300059642dd382}\label{classv8_1_1internal_1_1Instruction_aba44ed95a604ebd7e7300059642dd382}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Rm\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ab35d6f038fba9a5a1d8e9c17f98db53a}\label{classv8_1_1internal_1_1Instruction_ab35d6f038fba9a5a1d8e9c17f98db53a}} 
+{\bfseries D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+C\+C\+E\+S\+S\+OR} (Rm\+Value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a418f577fa8bed8ec6930f2e9985eec81}\label{classv8_1_1internal_1_1Instruction_a418f577fa8bed8ec6930f2e9985eec81}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Shift\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ab4a50ccd95821e6153dbadaceb30c28e}\label{classv8_1_1internal_1_1Instruction_ab4a50ccd95821e6153dbadaceb30c28e}} 
+Shift\+Op {\bfseries Shift\+Field} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_acfb4785ce647456cb37b57133a6869d3}\label{classv8_1_1internal_1_1Instruction_acfb4785ce647456cb37b57133a6869d3}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Reg\+Shift\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aa898158aa4e7a01cb3dff980eb566d98}\label{classv8_1_1internal_1_1Instruction_aa898158aa4e7a01cb3dff980eb566d98}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Rs\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a8ad7238a65f6dae1e22869dc93f544be}\label{classv8_1_1internal_1_1Instruction_a8ad7238a65f6dae1e22869dc93f544be}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Shift\+Amount\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aa77045998e9f98b6a8d79a47887dcb93}\label{classv8_1_1internal_1_1Instruction_aa77045998e9f98b6a8d79a47887dcb93}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Rotate\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a7683d308d637af223cb2acc3acf45dda}\label{classv8_1_1internal_1_1Instruction_a7683d308d637af223cb2acc3acf45dda}} 
+{\bfseries D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+C\+C\+E\+S\+S\+OR} (Rotate\+Value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a19f7be473639842f8dcf105c7ba037d4}\label{classv8_1_1internal_1_1Instruction_a19f7be473639842f8dcf105c7ba037d4}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Immed8\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_afe9f36bca70dd4ae6906107ba64dfa26}\label{classv8_1_1internal_1_1Instruction_afe9f36bca70dd4ae6906107ba64dfa26}} 
+{\bfseries D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+C\+C\+E\+S\+S\+OR} (Immed8\+Value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aacb931c01d6785e9d38e9e616726e9d9}\label{classv8_1_1internal_1_1Instruction_aacb931c01d6785e9d38e9e616726e9d9}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Immed4\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a418c13e3193859de972645faafa65913}\label{classv8_1_1internal_1_1Instruction_a418c13e3193859de972645faafa65913}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Immed\+Movw\+Movt\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a0de5172615eadb21942127510fce9fd4}\label{classv8_1_1internal_1_1Instruction_a0de5172615eadb21942127510fce9fd4}} 
+{\bfseries D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+C\+C\+E\+S\+S\+OR} (Immed\+Movw\+Movt\+Value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a624f7bd3487b1eea101ec638feacf1bf}\label{classv8_1_1internal_1_1Instruction_a624f7bd3487b1eea101ec638feacf1bf}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries P\+U\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a728a2fdbe7bbf9e5f3b3df7d9e7d476e}\label{classv8_1_1internal_1_1Instruction_a728a2fdbe7bbf9e5f3b3df7d9e7d476e}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries P\+U\+Field} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a882decf3209dea448d889e4e5418cf43}\label{classv8_1_1internal_1_1Instruction_a882decf3209dea448d889e4e5418cf43}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries B\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a7502cdc203654e52ed4c9f2e7369c932}\label{classv8_1_1internal_1_1Instruction_a7502cdc203654e52ed4c9f2e7369c932}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries W\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aeeae9ac5c6152873fda22d29cf6701b2}\label{classv8_1_1internal_1_1Instruction_aeeae9ac5c6152873fda22d29cf6701b2}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries L\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ac64190e9b0663290395afd2772991597}\label{classv8_1_1internal_1_1Instruction_ac64190e9b0663290395afd2772991597}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Offset12\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a772a5025f52e35d85d5b63663339425f}\label{classv8_1_1internal_1_1Instruction_a772a5025f52e35d85d5b63663339425f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Rlist\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a638efbc95c1f250e9294aef63844f50d}\label{classv8_1_1internal_1_1Instruction_a638efbc95c1f250e9294aef63844f50d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Sign\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a008d888c512a5406002f5600495b1b8b}\label{classv8_1_1internal_1_1Instruction_a008d888c512a5406002f5600495b1b8b}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries H\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a7cdd2bad63ce6011525c97dbe20a306e}\label{classv8_1_1internal_1_1Instruction_a7cdd2bad63ce6011525c97dbe20a306e}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Immed\+H\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a4d90d084fa847a5edd0cfa1423123817}\label{classv8_1_1internal_1_1Instruction_a4d90d084fa847a5edd0cfa1423123817}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Immed\+L\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a42cf739aecdd440e037dfcc13215bb13}\label{classv8_1_1internal_1_1Instruction_a42cf739aecdd440e037dfcc13215bb13}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Link\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a17598d91faf93c5dd09cda52bd375f11}\label{classv8_1_1internal_1_1Instruction_a17598d91faf93c5dd09cda52bd375f11}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries S\+Immed24\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a7e976dcbb22b0023d34e897225d70148}\label{classv8_1_1internal_1_1Instruction_a7e976dcbb22b0023d34e897225d70148}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Branch} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a7b296fe318b8d5a88e47caead87f0568}\label{classv8_1_1internal_1_1Instruction_a7b296fe318b8d5a88e47caead87f0568}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Branch\+Offset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ad044a88fdf00cf2b625284d73aa32ca5}\label{classv8_1_1internal_1_1Instruction_ad044a88fdf00cf2b625284d73aa32ca5}} 
+void {\bfseries Set\+Branch\+Offset} (int32\+\_\+t branch\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a63c161e2c20f6d8a1210ac3db37b9512}\label{classv8_1_1internal_1_1Instruction_a63c161e2c20f6d8a1210ac3db37b9512}} 
+Software\+Interrupt\+Codes {\bfseries Svc\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a1fce819a5a7815b32c9bbd618c2538f0}\label{classv8_1_1internal_1_1Instruction_a1fce819a5a7815b32c9bbd618c2538f0}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Special\+Type0} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a0237ed964938a41585740151c101b154}\label{classv8_1_1internal_1_1Instruction_a0237ed964938a41585740151c101b154}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Misc\+Type0} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a4baae2fd6799b8d9ff9429b555543fd3}\label{classv8_1_1internal_1_1Instruction_a4baae2fd6799b8d9ff9429b555543fd3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Nop\+Like\+Type1} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a58e4f9a9814cfb82fbe78789c751e016}\label{classv8_1_1internal_1_1Instruction_a58e4f9a9814cfb82fbe78789c751e016}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Stop} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a8091f74c410bab416e9cd9c8d73b71c4}\label{classv8_1_1internal_1_1Instruction_a8091f74c410bab416e9cd9c8d73b71c4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries HasS} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a2688dc62a53e586d45a6e32fd7bec934}\label{classv8_1_1internal_1_1Instruction_a2688dc62a53e586d45a6e32fd7bec934}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries HasB} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a42368665204d7eb67e47429c16c8f6cc}\label{classv8_1_1internal_1_1Instruction_a42368665204d7eb67e47429c16c8f6cc}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries HasW} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ab2286e2fb4ddd108a851548f8d32f069}\label{classv8_1_1internal_1_1Instruction_ab2286e2fb4ddd108a851548f8d32f069}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries HasL} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a41e1e66dd5aaefab5113eb3cee97b69d}\label{classv8_1_1internal_1_1Instruction_a41e1e66dd5aaefab5113eb3cee97b69d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries HasU} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ad12b6a101a7157bdedd7e0bfd6979b90}\label{classv8_1_1internal_1_1Instruction_ad12b6a101a7157bdedd7e0bfd6979b90}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Sign} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ae479de96288131f4f5f8fbb28514de6d}\label{classv8_1_1internal_1_1Instruction_ae479de96288131f4f5f8fbb28514de6d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries HasH} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ad950d0ec551577ad0b79d95da1bb5921}\label{classv8_1_1internal_1_1Instruction_ad950d0ec551577ad0b79d95da1bb5921}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Link} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aec4d38a1ff5e42460c18a57e0cab19b0}\label{classv8_1_1internal_1_1Instruction_aec4d38a1ff5e42460c18a57e0cab19b0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Float64}{Float64}} {\bfseries Double\+Immed\+Vmov} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ac34850e192668f8069e02d572286cc40}\label{classv8_1_1internal_1_1Instruction_ac34850e192668f8069e02d572286cc40}} 
+V8\+\_\+\+I\+N\+L\+I\+NE Instr {\bfseries Instruction\+Bits} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a5beb1e5b3af5ab0d6e44e27df166afe0}\label{classv8_1_1internal_1_1Instruction_a5beb1e5b3af5ab0d6e44e27df166afe0}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Set\+Instruction\+Bits} (Instr new\+\_\+instr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a78191b7ef3adfe9989c38f327b6f673d}\label{classv8_1_1internal_1_1Instruction_a78191b7ef3adfe9989c38f327b6f673d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Bit} (\mbox{\hyperlink{classint}{int}} pos) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_af75a4cb08a91fbc192b36bc45813a7d0}\label{classv8_1_1internal_1_1Instruction_af75a4cb08a91fbc192b36bc45813a7d0}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Bits} (\mbox{\hyperlink{classint}{int}} msb, \mbox{\hyperlink{classint}{int}} lsb) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a1072dc430b125f7f4f7cd75729cd8959}\label{classv8_1_1internal_1_1Instruction_a1072dc430b125f7f4f7cd75729cd8959}} 
+int32\+\_\+t {\bfseries Signed\+Bits} (\mbox{\hyperlink{classint}{int}} msb, \mbox{\hyperlink{classint}{int}} lsb) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a3e1a843df3e5c533cb5cba2dfa22a982}\label{classv8_1_1internal_1_1Instruction_a3e1a843df3e5c533cb5cba2dfa22a982}} 
+Instr {\bfseries Mask} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} mask) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a3ab91f40e1102c33731d37032b5f9a77}\label{classv8_1_1internal_1_1Instruction_a3ab91f40e1102c33731d37032b5f9a77}} 
+V8\+\_\+\+I\+N\+L\+I\+NE const \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$ {\bfseries following} (\mbox{\hyperlink{classint}{int}} count=1) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ab45df0a5def9cbf4c9d54cacd76945eb}\label{classv8_1_1internal_1_1Instruction_ab45df0a5def9cbf4c9d54cacd76945eb}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$ {\bfseries following} (\mbox{\hyperlink{classint}{int}} count=1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ae45ab69b1719e4fd87e6f04da1ef1042}\label{classv8_1_1internal_1_1Instruction_ae45ab69b1719e4fd87e6f04da1ef1042}} 
+V8\+\_\+\+I\+N\+L\+I\+NE const \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$ {\bfseries preceding} (\mbox{\hyperlink{classint}{int}} count=1) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a496c1fb4fbfec20f6de26b830bf2783e}\label{classv8_1_1internal_1_1Instruction_a496c1fb4fbfec20f6de26b830bf2783e}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$ {\bfseries preceding} (\mbox{\hyperlink{classint}{int}} count=1)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a839c5d07088fa8af82784224c96a3edf}\label{classv8_1_1internal_1_1Instruction_a839c5d07088fa8af82784224c96a3edf}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Imm\+P\+C\+Rel} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a25a2f0b667877a3cd5e0a0d7002f9821}\label{classv8_1_1internal_1_1Instruction_a25a2f0b667877a3cd5e0a0d7002f9821}} 
+uint64\+\_\+t {\bfseries Imm\+Logical} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a3ed55761d73a74c9c4e7fcd49302f377}\label{classv8_1_1internal_1_1Instruction_a3ed55761d73a74c9c4e7fcd49302f377}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries Imm\+N\+E\+O\+Nabcdefgh} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ac8fe438043bca2df74631723e0f7a165}\label{classv8_1_1internal_1_1Instruction_ac8fe438043bca2df74631723e0f7a165}} 
+float {\bfseries Imm\+F\+P32} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aa832a68318cd81db6e5ea7119ad5b4d5}\label{classv8_1_1internal_1_1Instruction_aa832a68318cd81db6e5ea7119ad5b4d5}} 
+double {\bfseries Imm\+F\+P64} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a8aa6319a5fc345e3ce69ecb5ae34f23f}\label{classv8_1_1internal_1_1Instruction_a8aa6319a5fc345e3ce69ecb5ae34f23f}} 
+float {\bfseries Imm\+N\+E\+O\+N\+F\+P32} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a1f0c238d64d00aa7d91f8f4bc3600a92}\label{classv8_1_1internal_1_1Instruction_a1f0c238d64d00aa7d91f8f4bc3600a92}} 
+double {\bfseries Imm\+N\+E\+O\+N\+F\+P64} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ad072ed4e2a91bf13fadd21676f79316e}\label{classv8_1_1internal_1_1Instruction_ad072ed4e2a91bf13fadd21676f79316e}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries Size\+LS} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ad12b53f9f02e3d5174a4104ec83b6eaa}\label{classv8_1_1internal_1_1Instruction_ad12b53f9f02e3d5174a4104ec83b6eaa}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries Size\+L\+S\+Pair} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_abea92ddf4dbe8890a09278714243ea38}\label{classv8_1_1internal_1_1Instruction_abea92ddf4dbe8890a09278714243ea38}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries N\+E\+O\+N\+L\+S\+Index} (\mbox{\hyperlink{classint}{int}} access\+\_\+size\+\_\+shift) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a9b38a829d4c77ae288953a38bcbd3b99}\label{classv8_1_1internal_1_1Instruction_a9b38a829d4c77ae288953a38bcbd3b99}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Cond\+Branch\+Imm} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a6cc72cbaab12237af0f8650f76d80f64}\label{classv8_1_1internal_1_1Instruction_a6cc72cbaab12237af0f8650f76d80f64}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Uncond\+Branch\+Imm} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a155544d43771a12acbc635c5ec7de386}\label{classv8_1_1internal_1_1Instruction_a155544d43771a12acbc635c5ec7de386}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Compare\+Branch} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a7229bfb78539f1e5a4b09d2094fb5d7e}\label{classv8_1_1internal_1_1Instruction_a7229bfb78539f1e5a4b09d2094fb5d7e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Test\+Branch} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ae3b45b90bc7fd77e0cce49330449fe34}\label{classv8_1_1internal_1_1Instruction_ae3b45b90bc7fd77e0cce49330449fe34}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Imm\+Branch} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a7cadcf80321e1c93c155883727c37e39}\label{classv8_1_1internal_1_1Instruction_a7cadcf80321e1c93c155883727c37e39}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Ldr\+Literal} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aa7f937b3dbf0b3001bbe164c0c3cd9ac}\label{classv8_1_1internal_1_1Instruction_aa7f937b3dbf0b3001bbe164c0c3cd9ac}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Ldr\+LiteralX} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_affb9d66e4b24154f4e7d0fa642e0e317}\label{classv8_1_1internal_1_1Instruction_affb9d66e4b24154f4e7d0fa642e0e317}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+P\+C\+Rel\+Addressing} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a55850af4a543f10bff6bd3d2fa6d644e}\label{classv8_1_1internal_1_1Instruction_a55850af4a543f10bff6bd3d2fa6d644e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Adr} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a2c248be3fd6fd50e992fa1dbc540647b}\label{classv8_1_1internal_1_1Instruction_a2c248be3fd6fd50e992fa1dbc540647b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Brk} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ad7b22a3c2d07620937134e07beec620c}\label{classv8_1_1internal_1_1Instruction_ad7b22a3c2d07620937134e07beec620c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Unresolved\+Internal\+Reference} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ad8c4429aa9b945ec1c7eabefb0aad77c}\label{classv8_1_1internal_1_1Instruction_ad8c4429aa9b945ec1c7eabefb0aad77c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Logical\+Immediate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a800e294ab9a4a9866bba20a8a3adb86a}\label{classv8_1_1internal_1_1Instruction_a800e294ab9a4a9866bba20a8a3adb86a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Add\+Sub\+Immediate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a9ea314d92048cb40e41174644591caa6}\label{classv8_1_1internal_1_1Instruction_a9ea314d92048cb40e41174644591caa6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Add\+Sub\+Shifted} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a3e3f543106a55d83202cf70a68ff1398}\label{classv8_1_1internal_1_1Instruction_a3e3f543106a55d83202cf70a68ff1398}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Add\+Sub\+Extended} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a9eae910dec0155b57835d17339b707d9}\label{classv8_1_1internal_1_1Instruction_a9eae910dec0155b57835d17339b707d9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Load\+Or\+Store} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aefda7f48385807820025630b96058e45}\label{classv8_1_1internal_1_1Instruction_aefda7f48385807820025630b96058e45}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Load} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aca1f30787e7f58832097290b774bb2c9}\label{classv8_1_1internal_1_1Instruction_aca1f30787e7f58832097290b774bb2c9}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Store} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a2f4273e919c214a73b017bdb36cf874a}\label{classv8_1_1internal_1_1Instruction_a2f4273e919c214a73b017bdb36cf874a}} 
+Reg31\+Mode {\bfseries Rd\+Mode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_adce35bb6d2fc240461961af0d90c3b73}\label{classv8_1_1internal_1_1Instruction_adce35bb6d2fc240461961af0d90c3b73}} 
+Reg31\+Mode {\bfseries Rn\+Mode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ae421bcfcc15acfa4daff9499b93a6678}\label{classv8_1_1internal_1_1Instruction_ae421bcfcc15acfa4daff9499b93a6678}} 
+Imm\+Branch\+Type {\bfseries Branch\+Type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_adaa5644beab55dc69aacafe28e52647d}\label{classv8_1_1internal_1_1Instruction_adaa5644beab55dc69aacafe28e52647d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Imm\+Branch} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ab8df96e22b54b852378f5823912f13df}\label{classv8_1_1internal_1_1Instruction_ab8df96e22b54b852378f5823912f13df}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Imm\+Unresolved\+Internal\+Reference} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a34e8cc82ebf54884024e9a26a3600e46}\label{classv8_1_1internal_1_1Instruction_a34e8cc82ebf54884024e9a26a3600e46}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Unconditional\+Branch} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a21ae0fd80cdc541fb93b1db4f0eec102}\label{classv8_1_1internal_1_1Instruction_a21ae0fd80cdc541fb93b1db4f0eec102}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Branch\+And\+Link} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a7a38aef5908ad05d5ad5b44092d6e4d5}\label{classv8_1_1internal_1_1Instruction_a7a38aef5908ad05d5ad5b44092d6e4d5}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Branch\+And\+Link\+To\+Register} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ae1db54368b2a350c1c8f75fc30199013}\label{classv8_1_1internal_1_1Instruction_ae1db54368b2a350c1c8f75fc30199013}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Movz} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_afa07d9a4f43868f33aca4015548e6e2f}\label{classv8_1_1internal_1_1Instruction_afa07d9a4f43868f33aca4015548e6e2f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Movk} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a5af7799c242f7d99a8092a1b05efda4c}\label{classv8_1_1internal_1_1Instruction_a5af7799c242f7d99a8092a1b05efda4c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Movn} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aedf8d12166333dd1f9349ecb75bb1d80}\label{classv8_1_1internal_1_1Instruction_aedf8d12166333dd1f9349ecb75bb1d80}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Nop} (\mbox{\hyperlink{classint}{int}} n)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ac03c28a2beead9a6485eda3a7be877df}\label{classv8_1_1internal_1_1Instruction_ac03c28a2beead9a6485eda3a7be877df}} 
+\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} {\bfseries Imm\+P\+C\+Offset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aa6970868d0bc53ee29bc74958465a9b8}\label{classv8_1_1internal_1_1Instruction_aa6970868d0bc53ee29bc74958465a9b8}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$ {\bfseries Imm\+P\+C\+Offset\+Target} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aa9f1e2021ca9a491f9ed61aa0f02138d}\label{classv8_1_1internal_1_1Instruction_aa9f1e2021ca9a491f9ed61aa0f02138d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Target\+In\+Imm\+P\+C\+Offset\+Range} (\mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$target)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a6a4deb93e3cc63f9a98b8ecee5375ff1}\label{classv8_1_1internal_1_1Instruction_a6a4deb93e3cc63f9a98b8ecee5375ff1}} 
+void {\bfseries Set\+Imm\+P\+C\+Offset\+Target} (const \mbox{\hyperlink{structv8_1_1internal_1_1AssemblerOptions}{Assembler\+Options}} \&options, \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$target)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a2b31b8b4eb1c51c44ec564a0d7b15390}\label{classv8_1_1internal_1_1Instruction_a2b31b8b4eb1c51c44ec564a0d7b15390}} 
+void {\bfseries Set\+Unresolved\+Internal\+Reference\+Imm\+Target} (const \mbox{\hyperlink{structv8_1_1internal_1_1AssemblerOptions}{Assembler\+Options}} \&options, \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$target)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ac6a3f98c64d4bc69f2d5a7ecccbddb59}\label{classv8_1_1internal_1_1Instruction_ac6a3f98c64d4bc69f2d5a7ecccbddb59}} 
+void {\bfseries Set\+Imm\+L\+Literal} (\mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$source)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a9597e888188d3c20e82d6b00b93dbc0d}\label{classv8_1_1internal_1_1Instruction_a9597e888188d3c20e82d6b00b93dbc0d}} 
+\mbox{\hyperlink{classuintptr__t}{uintptr\+\_\+t}} {\bfseries Literal\+Address} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_afcb06c73ab7acd74af802249ceddd06c}\label{classv8_1_1internal_1_1Instruction_afcb06c73ab7acd74af802249ceddd06c}} 
+V8\+\_\+\+I\+N\+L\+I\+NE const \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$ {\bfseries Instruction\+At\+Offset} (\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} offset, Check\+Alignment check=C\+H\+E\+C\+K\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ac4b2539339c911a2aea99746f161f9e5}\label{classv8_1_1internal_1_1Instruction_ac4b2539339c911a2aea99746f161f9e5}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$ {\bfseries Instruction\+At\+Offset} (\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} offset, Check\+Alignment check=C\+H\+E\+C\+K\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ae5f8a7f859452caae4d852c29ce59e3a}\label{classv8_1_1internal_1_1Instruction_ae5f8a7f859452caae4d852c29ce59e3a}} 
+V8\+\_\+\+I\+N\+L\+I\+NE ptrdiff\+\_\+t {\bfseries Distance\+To} (\mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$target)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a2561c9163e5d5dfa3f4f124b3e3859fa}\label{classv8_1_1internal_1_1Instruction_a2561c9163e5d5dfa3f4f124b3e3859fa}} 
+void {\bfseries Set\+P\+C\+Rel\+Imm\+Target} (const \mbox{\hyperlink{structv8_1_1internal_1_1AssemblerOptions}{Assembler\+Options}} \&options, \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$target)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ace63485d6bbbb8121c18d46aed973ef3}\label{classv8_1_1internal_1_1Instruction_ace63485d6bbbb8121c18d46aed973ef3}} 
+void {\bfseries Set\+Branch\+Imm\+Target} (\mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$target)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a073ca49bc4fd2394c1e75829f49625d1}\label{classv8_1_1internal_1_1Instruction_a073ca49bc4fd2394c1e75829f49625d1}} 
+Instr {\bfseries Instruction\+Bits} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a09df19b9577ff4a002c4f775b018d7a0}\label{classv8_1_1internal_1_1Instruction_a09df19b9577ff4a002c4f775b018d7a0}} 
+void {\bfseries Set\+Instruction\+Bits} (Instr value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aeed143f6d56aee73a4eeca0496f8487d}\label{classv8_1_1internal_1_1Instruction_aeed143f6d56aee73a4eeca0496f8487d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Bit} (\mbox{\hyperlink{classint}{int}} nr) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a7a87cc79130522edf745bc8be42b08ea}\label{classv8_1_1internal_1_1Instruction_a7a87cc79130522edf745bc8be42b08ea}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Bits} (\mbox{\hyperlink{classint}{int}} hi, \mbox{\hyperlink{classint}{int}} lo) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a4b701d6ed2836af75836629a06baca6f}\label{classv8_1_1internal_1_1Instruction_a4b701d6ed2836af75836629a06baca6f}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Bit\+Field} (\mbox{\hyperlink{classint}{int}} hi, \mbox{\hyperlink{classint}{int}} lo) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a6f38512f694a74b28c6a9a568f4d2f48}\label{classv8_1_1internal_1_1Instruction_a6f38512f694a74b28c6a9a568f4d2f48}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries R\+S\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_abf49d53ef5a34fa627097e0722d20f86}\label{classv8_1_1internal_1_1Instruction_abf49d53ef5a34fa627097e0722d20f86}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries R\+T\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a1beb24471618bc0793017645dc08b9b0}\label{classv8_1_1internal_1_1Instruction_a1beb24471618bc0793017645dc08b9b0}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries R\+A\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_abe6b6fa7a33f3a615bb3cb2db0942f28}\label{classv8_1_1internal_1_1Instruction_abe6b6fa7a33f3a615bb3cb2db0942f28}} 
+{\bfseries D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+C\+C\+E\+S\+S\+OR} (R\+A\+Value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a4e4f3db0df1895f0e1c0a1760b9bd028}\label{classv8_1_1internal_1_1Instruction_a4e4f3db0df1895f0e1c0a1760b9bd028}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries R\+B\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a55271d4c23b2a1483c860a5da8e5498a}\label{classv8_1_1internal_1_1Instruction_a55271d4c23b2a1483c860a5da8e5498a}} 
+{\bfseries D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+C\+C\+E\+S\+S\+OR} (R\+B\+Value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ad4bf0c441080ddadf9f8c5700b35f491}\label{classv8_1_1internal_1_1Instruction_ad4bf0c441080ddadf9f8c5700b35f491}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries R\+C\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a80ec630831f050e9dc64e0cf53922ebe}\label{classv8_1_1internal_1_1Instruction_a80ec630831f050e9dc64e0cf53922ebe}} 
+{\bfseries D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+C\+C\+E\+S\+S\+OR} (R\+C\+Value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a9cdc3bbc19be9111b15e8030163fca3d}\label{classv8_1_1internal_1_1Instruction_a9cdc3bbc19be9111b15e8030163fca3d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Opcode\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ac1dafd90f30c57dfe991466311532cd4}\label{classv8_1_1internal_1_1Instruction_ac1dafd90f30c57dfe991466311532cd4}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Opcode\+Field} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aeee0f9b0240f9c8b4567460b76015f19}\label{classv8_1_1internal_1_1Instruction_aeee0f9b0240f9c8b4567460b76015f19}} 
+Opcode {\bfseries Opcode\+Base} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a63c161e2c20f6d8a1210ac3db37b9512}\label{classv8_1_1internal_1_1Instruction_a63c161e2c20f6d8a1210ac3db37b9512}} 
+Software\+Interrupt\+Codes {\bfseries Svc\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_abacce6a825dc0ed2893f2a6ce7de7605}\label{classv8_1_1internal_1_1Instruction_abacce6a825dc0ed2893f2a6ce7de7605}} 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} {\bfseries Instruction\+Bits} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a073ca49bc4fd2394c1e75829f49625d1}\label{classv8_1_1internal_1_1Instruction_a073ca49bc4fd2394c1e75829f49625d1}} 
+Instr {\bfseries Instruction\+Bits} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a8a64fed64e24eb61ef96ea3fcc24fb21}\label{classv8_1_1internal_1_1Instruction_a8a64fed64e24eb61ef96ea3fcc24fb21}} 
+{\footnotesize template$<$typename T $>$ }\\void {\bfseries Set\+Instruction\+Bits} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} value) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a09df19b9577ff4a002c4f775b018d7a0}\label{classv8_1_1internal_1_1Instruction_a09df19b9577ff4a002c4f775b018d7a0}} 
+void {\bfseries Set\+Instruction\+Bits} (Instr value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aeed143f6d56aee73a4eeca0496f8487d}\label{classv8_1_1internal_1_1Instruction_aeed143f6d56aee73a4eeca0496f8487d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Bit} (\mbox{\hyperlink{classint}{int}} nr) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a7a87cc79130522edf745bc8be42b08ea}\label{classv8_1_1internal_1_1Instruction_a7a87cc79130522edf745bc8be42b08ea}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Bits} (\mbox{\hyperlink{classint}{int}} hi, \mbox{\hyperlink{classint}{int}} lo) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a22aece7af65fd6ed7bc639bd5d64c933}\label{classv8_1_1internal_1_1Instruction_a22aece7af65fd6ed7bc639bd5d64c933}} 
+{\footnotesize template$<$typename T , typename U $>$ }\\U {\bfseries Bits} (\mbox{\hyperlink{classint}{int}} hi, \mbox{\hyperlink{classint}{int}} lo) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a097f739f4e9326b14dbaa8db07d7f375}\label{classv8_1_1internal_1_1Instruction_a097f739f4e9326b14dbaa8db07d7f375}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Bit\+Field} (\mbox{\hyperlink{classint}{int}} hi, \mbox{\hyperlink{classint}{int}} lo) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a1f7ad2ce52cc6a5becd9bb79162f4c7c}\label{classv8_1_1internal_1_1Instruction_a1f7ad2ce52cc6a5becd9bb79162f4c7c}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Instruction\+Length} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a68af6475094a76bee8dd444a2a4db40f}\label{classv8_1_1internal_1_1Instruction_a68af6475094a76bee8dd444a2a4db40f}} 
+Opcode {\bfseries S390\+Opcode\+Value} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a63c161e2c20f6d8a1210ac3db37b9512}\label{classv8_1_1internal_1_1Instruction_a63c161e2c20f6d8a1210ac3db37b9512}} 
+Software\+Interrupt\+Codes {\bfseries Svc\+Value} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a72f9d7a469c17eea228fe628530157e4}\label{classv8_1_1internal_1_1Instruction_a72f9d7a469c17eea228fe628530157e4}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Bit} (Instr instr, \mbox{\hyperlink{classint}{int}} nr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_af5577086b166e1c6f418c077ab935a9c}\label{classv8_1_1internal_1_1Instruction_af5577086b166e1c6f418c077ab935a9c}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Bits} (Instr instr, \mbox{\hyperlink{classint}{int}} hi, \mbox{\hyperlink{classint}{int}} lo)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a0f8fff80fb9aeeeb77172229c7d73d26}\label{classv8_1_1internal_1_1Instruction_a0f8fff80fb9aeeeb77172229c7d73d26}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Bit\+Field} (Instr instr, \mbox{\hyperlink{classint}{int}} hi, \mbox{\hyperlink{classint}{int}} lo)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_adaf912e1f9fac18ea2f85be959e5157e}\label{classv8_1_1internal_1_1Instruction_adaf912e1f9fac18ea2f85be959e5157e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$ {\bfseries At} (\mbox{\hyperlink{classuintptr__t}{Address}} pc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a2d0626383234c3d89f65bd103395f290}\label{classv8_1_1internal_1_1Instruction_a2d0626383234c3d89f65bd103395f290}} 
+static float {\bfseries Imm8\+To\+F\+P32} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} imm8)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ad5e027d142a7428c0ab4cc8523ed9f53}\label{classv8_1_1internal_1_1Instruction_ad5e027d142a7428c0ab4cc8523ed9f53}} 
+static double {\bfseries Imm8\+To\+F\+P64} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} imm8)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aceacb23d0cb19bfa603b1e8dec505aaa}\label{classv8_1_1internal_1_1Instruction_aceacb23d0cb19bfa603b1e8dec505aaa}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Imm\+Branch\+Range\+Bitwidth} (Imm\+Branch\+Type branch\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a7b095e92ba5b03354df8314085bd6f62}\label{classv8_1_1internal_1_1Instruction_a7b095e92ba5b03354df8314085bd6f62}} 
+static int32\+\_\+t {\bfseries Imm\+Branch\+Range} (Imm\+Branch\+Type branch\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a584e16e6e6c7f84789ae310842a51f8a}\label{classv8_1_1internal_1_1Instruction_a584e16e6e6c7f84789ae310842a51f8a}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Valid\+Imm\+P\+C\+Offset} (Imm\+Branch\+Type branch\+\_\+type, ptrdiff\+\_\+t offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aecb7a04edf284a6cbebb48c86792fdfd}\label{classv8_1_1internal_1_1Instruction_aecb7a04edf284a6cbebb48c86792fdfd}} 
+{\footnotesize template$<$typename T $>$ }\\static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$ {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} src)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a1c55ff4d0489af239bf15fba112ecfc1}\label{classv8_1_1internal_1_1Instruction_a1c55ff4d0489af239bf15fba112ecfc1}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Valid\+P\+C\+Rel\+Offset} (ptrdiff\+\_\+t offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ababb29269d211ebdc2c9c772e06dc85e}\label{classv8_1_1internal_1_1Instruction_ababb29269d211ebdc2c9c772e06dc85e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$ {\bfseries At} (byte $\ast$pc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ababb29269d211ebdc2c9c772e06dc85e}\label{classv8_1_1internal_1_1Instruction_ababb29269d211ebdc2c9c772e06dc85e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$ {\bfseries At} (byte $\ast$pc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a72f9d7a469c17eea228fe628530157e4}\label{classv8_1_1internal_1_1Instruction_a72f9d7a469c17eea228fe628530157e4}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Bit} (Instr instr, \mbox{\hyperlink{classint}{int}} nr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_af5577086b166e1c6f418c077ab935a9c}\label{classv8_1_1internal_1_1Instruction_af5577086b166e1c6f418c077ab935a9c}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Bits} (Instr instr, \mbox{\hyperlink{classint}{int}} hi, \mbox{\hyperlink{classint}{int}} lo)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a9d06aa6773f7243daf676ee84ae96abd}\label{classv8_1_1internal_1_1Instruction_a9d06aa6773f7243daf676ee84ae96abd}} 
+static \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Bit\+Field} (Instr instr, \mbox{\hyperlink{classint}{int}} hi, \mbox{\hyperlink{classint}{int}} lo)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ababb29269d211ebdc2c9c772e06dc85e}\label{classv8_1_1internal_1_1Instruction_ababb29269d211ebdc2c9c772e06dc85e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$ {\bfseries At} (byte $\ast$pc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a72f9d7a469c17eea228fe628530157e4}\label{classv8_1_1internal_1_1Instruction_a72f9d7a469c17eea228fe628530157e4}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Bit} (Instr instr, \mbox{\hyperlink{classint}{int}} nr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_af5577086b166e1c6f418c077ab935a9c}\label{classv8_1_1internal_1_1Instruction_af5577086b166e1c6f418c077ab935a9c}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Bits} (Instr instr, \mbox{\hyperlink{classint}{int}} hi, \mbox{\hyperlink{classint}{int}} lo)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a0f8fff80fb9aeeeb77172229c7d73d26}\label{classv8_1_1internal_1_1Instruction_a0f8fff80fb9aeeeb77172229c7d73d26}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Bit\+Field} (Instr instr, \mbox{\hyperlink{classint}{int}} hi, \mbox{\hyperlink{classint}{int}} lo)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_adeb3aab3b502018e5af7556915457032}\label{classv8_1_1internal_1_1Instruction_adeb3aab3b502018e5af7556915457032}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Instruction\+Length} (const byte $\ast$instr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ac984035f4e03b7c91abd5d78d32e4318}\label{classv8_1_1internal_1_1Instruction_ac984035f4e03b7c91abd5d78d32e4318}} 
+static uint64\+\_\+t {\bfseries Instruction\+Bits} (const byte $\ast$instr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a8fd97b3ac516d7d69066feaa4cc9494b}\label{classv8_1_1internal_1_1Instruction_a8fd97b3ac516d7d69066feaa4cc9494b}} 
+{\footnotesize template$<$typename T $>$ }\\static \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} {\bfseries Instruction\+Bits} (const byte $\ast$instr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a6da14f51a73fa72ff9f8c45dbe4c0fb0}\label{classv8_1_1internal_1_1Instruction_a6da14f51a73fa72ff9f8c45dbe4c0fb0}} 
+{\footnotesize template$<$typename T $>$ }\\static void {\bfseries Set\+Instruction\+Bits} (byte $\ast$instr, \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a4adaa2f1f1687001718a1ce29f51bb7a}\label{classv8_1_1internal_1_1Instruction_a4adaa2f1f1687001718a1ce29f51bb7a}} 
+static Opcode\+Format\+Type {\bfseries get\+Opcode\+Format\+Type} (const byte $\ast$instr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a9ec1310621a44573f53df905664f7e14}\label{classv8_1_1internal_1_1Instruction_a9ec1310621a44573f53df905664f7e14}} 
+static Opcode {\bfseries S390\+Opcode\+Value} (const byte $\ast$instr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ababb29269d211ebdc2c9c772e06dc85e}\label{classv8_1_1internal_1_1Instruction_ababb29269d211ebdc2c9c772e06dc85e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Instruction}{Instruction}} $\ast$ {\bfseries At} (byte $\ast$pc)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_a4eb6d93f2e4ff786fe99bb16ccb91592}\label{classv8_1_1internal_1_1Instruction_a4eb6d93f2e4ff786fe99bb16ccb91592}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Pc\+Load\+Delta} = 8
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_aa9f82f3a387d3ae9e7a615077602cccb}\label{classv8_1_1internal_1_1Instruction_aa9f82f3a387d3ae9e7a615077602cccb}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries Imm\+P\+C\+Rel\+Range\+Bitwidth} = 21
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Instruction_ac0a399cb509d4df1428caf368a1bcb71}\label{classv8_1_1internal_1_1Instruction_ac0a399cb509d4df1428caf368a1bcb71}} 
+static Opcode\+Format\+Type {\bfseries Opcode\+Format\+Table} \mbox{[}256\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 445 of file constants-\/arm.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/arm/constants-\/arm.\+h\item 
+v8/src/arm64/instructions-\/arm64.\+h\item 
+v8/src/s390/constants-\/s390.\+h\item 
+v8/src/mips/constants-\/mips.\+h\item 
+v8/src/mips64/constants-\/mips64.\+h\item 
+v8/src/ppc/constants-\/ppc.\+h\end{DoxyCompactItemize}

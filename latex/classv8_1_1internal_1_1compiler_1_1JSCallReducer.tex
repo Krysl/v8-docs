@@ -1,0 +1,48 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1JSCallReducer}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Call\+Reducer Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1JSCallReducer}\index{v8\+::internal\+::compiler\+::\+J\+S\+Call\+Reducer@{v8\+::internal\+::compiler\+::\+J\+S\+Call\+Reducer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Call\+Reducer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1compiler_1_1JSCallReducer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSCallReducer_a6996f7826b08cb7b4ef61f9bd5874a9c}\label{classv8_1_1internal_1_1compiler_1_1JSCallReducer_a6996f7826b08cb7b4ef61f9bd5874a9c}} 
+enum {\bfseries Flag} \{ {\bfseries k\+No\+Flags} = 0u, 
+{\bfseries k\+Bailout\+On\+Uninitialized} = 1u $<$$<$ 0
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSCallReducer_a920d8d4abde8cc564a01f8c7580a39d8}\label{classv8_1_1internal_1_1compiler_1_1JSCallReducer_a920d8d4abde8cc564a01f8c7580a39d8}} 
+typedef \mbox{\hyperlink{classv8_1_1base_1_1Flags}{base\+::\+Flags}}$<$ Flag $>$ {\bfseries Flags}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSCallReducer_a7ce847291fa0a9e329fa55f0c9c724f8}\label{classv8_1_1internal_1_1compiler_1_1JSCallReducer_a7ce847291fa0a9e329fa55f0c9c724f8}} 
+{\bfseries J\+S\+Call\+Reducer} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1AdvancedReducer_1_1Editor}{Editor}} $\ast$editor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSGraph}{J\+S\+Graph}} $\ast$jsgraph, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSHeapBroker}{J\+S\+Heap\+Broker}} $\ast$broker, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{Flags}} flags, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CompilationDependencies}{Compilation\+Dependencies}} $\ast$dependencies)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSCallReducer_afb7225a49f2e322701138e6a2f159f0b}\label{classv8_1_1internal_1_1compiler_1_1JSCallReducer_afb7225a49f2e322701138e6a2f159f0b}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries reducer\+\_\+name} () const override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSCallReducer_abf441e16cdaa5b1d3be850e853803674}\label{classv8_1_1internal_1_1compiler_1_1JSCallReducer_abf441e16cdaa5b1d3be850e853803674}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Reduction}{Reduction}} {\bfseries Reduce} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node) final
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSCallReducer_ab49b50a9fc062e9bfda06cb5ccb00301}\label{classv8_1_1internal_1_1compiler_1_1JSCallReducer_ab49b50a9fc062e9bfda06cb5ccb00301}} 
+void {\bfseries Finalize} () final
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 35 of file js-\/call-\/reducer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/js-\/call-\/reducer.\+h\item 
+v8/src/compiler/js-\/call-\/reducer.\+cc\end{DoxyCompactItemize}

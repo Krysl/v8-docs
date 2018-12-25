@@ -10,7 +10,7 @@ Inheritance diagram for v8\+:\+:Default\+Global\+Map\+Traits$<$ K, V $>$\+:\begi
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classv8_1_1DefaultGlobalMapTraits_a6626b089621a436fde5ac1a1132cc83c}\label{classv8_1_1DefaultGlobalMapTraits_a6626b089621a436fde5ac1a1132cc83c}} 
-typedef \mbox{\hyperlink{classv8_1_1GlobalValueMap}{Global\+Value\+Map}}$<$ K, V, \mbox{\hyperlink{classv8_1_1DefaultGlobalMapTraits}{Default\+Global\+Map\+Traits}}$<$ K, V $>$ $>$ {\bfseries Map\+Type}
+typedef \mbox{\hyperlink{classv8_1_1GlobalValueMap}{Global\+Value\+Map}}$<$ K, \mbox{\hyperlink{classV}{V}}, \mbox{\hyperlink{classv8_1_1DefaultGlobalMapTraits}{Default\+Global\+Map\+Traits}}$<$ K, \mbox{\hyperlink{classV}{V}} $>$ $>$ {\bfseries Map\+Type}
 \item 
 \mbox{\Hypertarget{classv8_1_1DefaultGlobalMapTraits_af5285197aae83dcb00d0381fbc90869e}\label{classv8_1_1DefaultGlobalMapTraits_af5285197aae83dcb00d0381fbc90869e}} 
 typedef void {\bfseries Weak\+Callback\+Data\+Type}
@@ -19,7 +19,7 @@ typedef void {\bfseries Weak\+Callback\+Data\+Type}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classv8_1_1DefaultGlobalMapTraits_a3d4b483a077d6e5665cc62a23c719ee8}\label{classv8_1_1DefaultGlobalMapTraits_a3d4b483a077d6e5665cc62a23c719ee8}} 
-static Weak\+Callback\+Data\+Type $\ast$ {\bfseries Weak\+Callback\+Parameter} (\mbox{\hyperlink{classv8_1_1GlobalValueMap}{Map\+Type}} $\ast$map, const K \&key, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ V $>$ value)
+static Weak\+Callback\+Data\+Type $\ast$ {\bfseries Weak\+Callback\+Parameter} (\mbox{\hyperlink{classv8_1_1GlobalValueMap}{Map\+Type}} $\ast$map, const K \&key, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classV}{V}} $>$ value)
 \item 
 \mbox{\Hypertarget{classv8_1_1DefaultGlobalMapTraits_ae65c4d78f93d033712aa328654c00250}\label{classv8_1_1DefaultGlobalMapTraits_ae65c4d78f93d033712aa328654c00250}} 
 static \mbox{\hyperlink{classv8_1_1GlobalValueMap}{Map\+Type}} $\ast$ {\bfseries Map\+From\+Weak\+Callback\+Info} (const \mbox{\hyperlink{classv8_1_1WeakCallbackInfo}{Weak\+Callback\+Info}}$<$ Weak\+Callback\+Data\+Type $>$ \&data)
@@ -34,7 +34,7 @@ static void {\bfseries Dispose\+Callback\+Data} (Weak\+Callback\+Data\+Type $\as
 static void {\bfseries On\+Weak\+Callback} (const \mbox{\hyperlink{classv8_1_1WeakCallbackInfo}{Weak\+Callback\+Info}}$<$ Weak\+Callback\+Data\+Type $>$ \&data)
 \item 
 \mbox{\Hypertarget{classv8_1_1DefaultGlobalMapTraits_af2a539ddbe5db2b6e1e944590e1dd7e6}\label{classv8_1_1DefaultGlobalMapTraits_af2a539ddbe5db2b6e1e944590e1dd7e6}} 
-static void {\bfseries Dispose} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Global}{Global}}$<$ V $>$ value, K key)
+static void {\bfseries Dispose} (Isolate $\ast$isolate, \mbox{\hyperlink{classv8_1_1Global}{Global}}$<$ \mbox{\hyperlink{classV}{V}} $>$ value, K key)
 \item 
 \mbox{\Hypertarget{classv8_1_1DefaultGlobalMapTraits_ad3478535925c0f42664c97c4d35d1c91}\label{classv8_1_1DefaultGlobalMapTraits_ad3478535925c0f42664c97c4d35d1c91}} 
 static void {\bfseries Dispose\+Weak} (const \mbox{\hyperlink{classv8_1_1WeakCallbackInfo}{Weak\+Callback\+Info}}$<$ Weak\+Callback\+Data\+Type $>$ \&data)

@@ -1,0 +1,270 @@
+\hypertarget{classv8_1_1internal_1_1PagedSpace}{}\section{v8\+:\+:internal\+:\+:Paged\+Space Class Reference}
+\label{classv8_1_1internal_1_1PagedSpace}\index{v8\+::internal\+::\+Paged\+Space@{v8\+::internal\+::\+Paged\+Space}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Paged\+Space\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.033846cm]{classv8_1_1internal_1_1PagedSpace}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_afe936e2f7428f4db89715fd29f50e2f1}\label{classv8_1_1internal_1_1PagedSpace_afe936e2f7428f4db89715fd29f50e2f1}} 
+enum {\bfseries Update\+Skip\+List} \{ {\bfseries U\+P\+D\+A\+T\+E\+\_\+\+S\+K\+I\+P\+\_\+\+L\+I\+ST}, 
+{\bfseries I\+G\+N\+O\+R\+E\+\_\+\+S\+K\+I\+P\+\_\+\+L\+I\+ST}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a32449f251084c73afd1266172058621c}\label{classv8_1_1internal_1_1PagedSpace_a32449f251084c73afd1266172058621c}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1PageIteratorImpl}{Page\+Iterator}} {\bfseries iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a6440528a56d355adf4767b78ea110d09}\label{classv8_1_1internal_1_1PagedSpace_a6440528a56d355adf4767b78ea110d09}} 
+{\bfseries Paged\+Space} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, Allocation\+Space id, Executability executable)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a036e435d35992934e04555cafc9862f3}\label{classv8_1_1internal_1_1PagedSpace_a036e435d35992934e04555cafc9862f3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Contains} (\mbox{\hyperlink{classuintptr__t}{Address}} a)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a44185c0be4d9a8399df8f4fa93567e45}\label{classv8_1_1internal_1_1PagedSpace_a44185c0be4d9a8399df8f4fa93567e45}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Contains} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$o)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a794549ba01a528900a103d7edc5a3abe}\label{classv8_1_1internal_1_1PagedSpace_a794549ba01a528900a103d7edc5a3abe}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Contains\+Slow} (\mbox{\hyperlink{classuintptr__t}{Address}} addr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_ab90d70b6b22f54ca07b2c1352b17d76e}\label{classv8_1_1internal_1_1PagedSpace_ab90d70b6b22f54ca07b2c1352b17d76e}} 
+Executability {\bfseries executable} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a89fdc3ca159cf2f174fe1d4750af1fd0}\label{classv8_1_1internal_1_1PagedSpace_a89fdc3ca159cf2f174fe1d4750af1fd0}} 
+void {\bfseries Prepare\+For\+Mark\+Compact} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_aff4aed73693e367ee5edeadd19871439}\label{classv8_1_1internal_1_1PagedSpace_aff4aed73693e367ee5edeadd19871439}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Capacity} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a301c9ae946ef646107499ca03c8cbf07}\label{classv8_1_1internal_1_1PagedSpace_a301c9ae946ef646107499ca03c8cbf07}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Committed\+Physical\+Memory} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a763d614a5b270ae54665785d55b4b2be}\label{classv8_1_1internal_1_1PagedSpace_a763d614a5b270ae54665785d55b4b2be}} 
+void {\bfseries Reset\+Free\+List\+Statistics} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_ab3bc3fb5a62e54da60ac8d6f84246287}\label{classv8_1_1internal_1_1PagedSpace_ab3bc3fb5a62e54da60ac8d6f84246287}} 
+void {\bfseries Clear\+Stats} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_adf937296bd07681d7bcc06ff42ccacf9}\label{classv8_1_1internal_1_1PagedSpace_adf937296bd07681d7bcc06ff42ccacf9}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Available} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a08788a64693bb668317a11f667376d73}\label{classv8_1_1internal_1_1PagedSpace_a08788a64693bb668317a11f667376d73}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Size} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a9d66f8a7a4c69270d1f976be51c440ea}\label{classv8_1_1internal_1_1PagedSpace_a9d66f8a7a4c69270d1f976be51c440ea}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Size\+Of\+Objects} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_abb4ab2c02b4ab90a01c70a0d448d1472}\label{classv8_1_1internal_1_1PagedSpace_abb4ab2c02b4ab90a01c70a0d448d1472}} 
+virtual \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Waste} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_aed0b55e63b6f324531b20bf9d29cdee1}\label{classv8_1_1internal_1_1PagedSpace_aed0b55e63b6f324531b20bf9d29cdee1}} 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1AllocationResult}{Allocation\+Result}} {\bfseries Allocate\+Raw\+Unaligned} (\mbox{\hyperlink{classint}{int}} size\+\_\+in\+\_\+bytes, Update\+Skip\+List update\+\_\+skip\+\_\+list=U\+P\+D\+A\+T\+E\+\_\+\+S\+K\+I\+P\+\_\+\+L\+I\+ST)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_ae04e88837c5f6b417acc679a89707b93}\label{classv8_1_1internal_1_1PagedSpace_ae04e88837c5f6b417acc679a89707b93}} 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1AllocationResult}{Allocation\+Result}} {\bfseries Allocate\+Raw\+Aligned} (\mbox{\hyperlink{classint}{int}} size\+\_\+in\+\_\+bytes, Allocation\+Alignment alignment)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a190586880dfb86739d285b2f8ae4ad69}\label{classv8_1_1internal_1_1PagedSpace_a190586880dfb86739d285b2f8ae4ad69}} 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1AllocationResult}{Allocation\+Result}} {\bfseries Allocate\+Raw} (\mbox{\hyperlink{classint}{int}} size\+\_\+in\+\_\+bytes, Allocation\+Alignment alignment)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a6ae7376fb39c9605bd24a844d5db6b19}\label{classv8_1_1internal_1_1PagedSpace_a6ae7376fb39c9605bd24a844d5db6b19}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Free} (\mbox{\hyperlink{classuintptr__t}{Address}} start, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size\+\_\+in\+\_\+bytes, Space\+Accounting\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_af4cc6101fadace16a2020a79ff40d4ff}\label{classv8_1_1internal_1_1PagedSpace_af4cc6101fadace16a2020a79ff40d4ff}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Accounted\+Free} (\mbox{\hyperlink{classuintptr__t}{Address}} start, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size\+\_\+in\+\_\+bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_aa23445ba81fe8a4450d210da27c43171}\label{classv8_1_1internal_1_1PagedSpace_aa23445ba81fe8a4450d210da27c43171}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Unaccounted\+Free} (\mbox{\hyperlink{classuintptr__t}{Address}} start, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size\+\_\+in\+\_\+bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_ad59e58750cc6107fd5be2845b712685a}\label{classv8_1_1internal_1_1PagedSpace_ad59e58750cc6107fd5be2845b712685a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Try\+Free\+Last} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object, \mbox{\hyperlink{classint}{int}} object\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a717b2939aec984ef6c6517c3195b0923}\label{classv8_1_1internal_1_1PagedSpace_a717b2939aec984ef6c6517c3195b0923}} 
+void {\bfseries Reset\+Free\+List} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a5fd0a215647d1fb8761e73d24300aa44}\label{classv8_1_1internal_1_1PagedSpace_a5fd0a215647d1fb8761e73d24300aa44}} 
+void {\bfseries Free\+Linear\+Allocation\+Area} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a44db2a2fb8bcf7227f68d00f958f64bf}\label{classv8_1_1internal_1_1PagedSpace_a44db2a2fb8bcf7227f68d00f958f64bf}} 
+void {\bfseries Mark\+Linear\+Allocation\+Area\+Black} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a81d7dad4eb4d0e101c447d833a55860b}\label{classv8_1_1internal_1_1PagedSpace_a81d7dad4eb4d0e101c447d833a55860b}} 
+void {\bfseries Unmark\+Linear\+Allocation\+Area} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a25f3112028608189499cdf7041c8dc71}\label{classv8_1_1internal_1_1PagedSpace_a25f3112028608189499cdf7041c8dc71}} 
+void {\bfseries Decrease\+Allocated\+Bytes} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} bytes, \mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_ae1478a2a4e3b71da6a79ef15a0fa5c5f}\label{classv8_1_1internal_1_1PagedSpace_ae1478a2a4e3b71da6a79ef15a0fa5c5f}} 
+void {\bfseries Increase\+Allocated\+Bytes} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} bytes, \mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_af77b28ac44111a4d5fde54472b98b5cf}\label{classv8_1_1internal_1_1PagedSpace_af77b28ac44111a4d5fde54472b98b5cf}} 
+void {\bfseries Decrease\+Capacity} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a9a70458af4feb7c26b03a8f42a4e66cf}\label{classv8_1_1internal_1_1PagedSpace_a9a70458af4feb7c26b03a8f42a4e66cf}} 
+void {\bfseries Increase\+Capacity} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a8e588038c3a9f13a92d9eeb4f3a6573b}\label{classv8_1_1internal_1_1PagedSpace_a8e588038c3a9f13a92d9eeb4f3a6573b}} 
+void {\bfseries Refine\+Allocated\+Bytes\+After\+Sweeping} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a49d220b646897e508761f38ca31b294a}\label{classv8_1_1internal_1_1PagedSpace_a49d220b646897e508761f38ca31b294a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$ {\bfseries Initialize\+Page} (\mbox{\hyperlink{classv8_1_1internal_1_1MemoryChunk}{Memory\+Chunk}} $\ast$chunk, Executability executable)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_aa3530ad4022aca5a8e5417220d45f4a8}\label{classv8_1_1internal_1_1PagedSpace_aa3530ad4022aca5a8e5417220d45f4a8}} 
+void {\bfseries Release\+Page} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a8e65f1e506cc8711da42e5e6ff836cac}\label{classv8_1_1internal_1_1PagedSpace_a8e65f1e506cc8711da42e5e6ff836cac}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Add\+Page} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a8856498642b6573224bd46dede973269}\label{classv8_1_1internal_1_1PagedSpace_a8856498642b6573224bd46dede973269}} 
+void {\bfseries Remove\+Page} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a367942983536ac54aba16456e55677c4}\label{classv8_1_1internal_1_1PagedSpace_a367942983536ac54aba16456e55677c4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$ {\bfseries Remove\+Page\+Safe} (\mbox{\hyperlink{classint}{int}} size\+\_\+in\+\_\+bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_ad1228261180f2a32eb836a39ddc72b35}\label{classv8_1_1internal_1_1PagedSpace_ad1228261180f2a32eb836a39ddc72b35}} 
+void {\bfseries Set\+Read\+And\+Executable} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_adc3d90a8507d18ff790ef065a4b270fb}\label{classv8_1_1internal_1_1PagedSpace_adc3d90a8507d18ff790ef065a4b270fb}} 
+void {\bfseries Set\+Read\+And\+Writable} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a39fa697858764fdc843514eb78f1eb91}\label{classv8_1_1internal_1_1PagedSpace_a39fa697858764fdc843514eb78f1eb91}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Expand} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a6af30463ab9b8ba5a9262105966141f1}\label{classv8_1_1internal_1_1PagedSpace_a6af30463ab9b8ba5a9262105966141f1}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Count\+Total\+Pages} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a016c01ceec1db5de9d488307d4ffad9f}\label{classv8_1_1internal_1_1PagedSpace_a016c01ceec1db5de9d488307d4ffad9f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Area\+Size} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_afb305bd5b7becd7c672294ee34cd4649}\label{classv8_1_1internal_1_1PagedSpace_afb305bd5b7becd7c672294ee34cd4649}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+local} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a07c8e12295961020e9fda32ae29204d4}\label{classv8_1_1internal_1_1PagedSpace_a07c8e12295961020e9fda32ae29204d4}} 
+void {\bfseries Merge\+Compaction\+Space} (\mbox{\hyperlink{classv8_1_1internal_1_1CompactionSpace}{Compaction\+Space}} $\ast$other)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_ab1006806cc0cd72589fa3dfad5892432}\label{classv8_1_1internal_1_1PagedSpace_ab1006806cc0cd72589fa3dfad5892432}} 
+virtual void {\bfseries Refill\+Free\+List} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_ae33395cb348529b779ca8afd5d548747}\label{classv8_1_1internal_1_1PagedSpace_ae33395cb348529b779ca8afd5d548747}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1FreeList}{Free\+List}} $\ast$ {\bfseries free\+\_\+list} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a853f1a10c66848593987d2d39cbdc18c}\label{classv8_1_1internal_1_1PagedSpace_a853f1a10c66848593987d2d39cbdc18c}} 
+\mbox{\hyperlink{classv8_1_1base_1_1Mutex}{base\+::\+Mutex}} $\ast$ {\bfseries mutex} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_adf9e3e161534bdb4d8db7a404850d7d8}\label{classv8_1_1internal_1_1PagedSpace_adf9e3e161534bdb4d8db7a404850d7d8}} 
+void {\bfseries Unlink\+Free\+List\+Categories} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a3d44ca37bd5926b1a807f7624d403841}\label{classv8_1_1internal_1_1PagedSpace_a3d44ca37bd5926b1a807f7624d403841}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Relink\+Free\+List\+Categories} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a6214bc07c7fb4195d7d3517e9c605596}\label{classv8_1_1internal_1_1PagedSpace_a6214bc07c7fb4195d7d3517e9c605596}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$ {\bfseries first\+\_\+page} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a4588395e6526bb7865ebd2e77b692050}\label{classv8_1_1internal_1_1PagedSpace_a4588395e6526bb7865ebd2e77b692050}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PageIteratorImpl}{iterator}} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a52d6b906c32bdac6af24a04e9ad59a0e}\label{classv8_1_1internal_1_1PagedSpace_a52d6b906c32bdac6af24a04e9ad59a0e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PageIteratorImpl}{iterator}} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a56074b52c4273e8f2e0a9792fe90b402}\label{classv8_1_1internal_1_1PagedSpace_a56074b52c4273e8f2e0a9792fe90b402}} 
+void {\bfseries Shrink\+Immortal\+Immovable\+Pages} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a12fa02c1c5b7cb6a578f34d34aba421c}\label{classv8_1_1internal_1_1PagedSpace_a12fa02c1c5b7cb6a578f34d34aba421c}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Shrink\+Page\+To\+High\+Water\+Mark} (\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_ab193eb3d2aed412789962d77736f43bb}\label{classv8_1_1internal_1_1PagedSpace_ab193eb3d2aed412789962d77736f43bb}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ObjectIterator}{Object\+Iterator}} $>$ {\bfseries Get\+Object\+Iterator} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a943ac15803d76b5975fd5c5694b734c0}\label{classv8_1_1internal_1_1PagedSpace_a943ac15803d76b5975fd5c5694b734c0}} 
+void {\bfseries Set\+Linear\+Allocation\+Area} (\mbox{\hyperlink{classuintptr__t}{Address}} top, \mbox{\hyperlink{classuintptr__t}{Address}} limit)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a6113b6e185113349e4e5e55b6a2dc72e}\label{classv8_1_1internal_1_1PagedSpace_a6113b6e185113349e4e5e55b6a2dc72e}} 
+static const \mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries k\+Compaction\+Memory\+Wanted} = 500 $\ast$ KB
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_aeb0dd24b678bc4f2f70b54e86de0cd66}\label{classv8_1_1internal_1_1PagedSpace_aeb0dd24b678bc4f2f70b54e86de0cd66}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries snapshotable} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_ae922e0aa9f3dec8c7b3f3c86d78340a2}\label{classv8_1_1internal_1_1PagedSpace_ae922e0aa9f3dec8c7b3f3c86d78340a2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Pages} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_aff48f83009c4b8429f3e3263d2b3da32}\label{classv8_1_1internal_1_1PagedSpace_aff48f83009c4b8429f3e3263d2b3da32}} 
+void {\bfseries Tear\+Down} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a72b12619f3f5da63cf74e17043a9a294}\label{classv8_1_1internal_1_1PagedSpace_a72b12619f3f5da63cf74e17043a9a294}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Expand} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a3e1aa954ebd619696f7f4a6d41eb53d3}\label{classv8_1_1internal_1_1PagedSpace_a3e1aa954ebd619696f7f4a6d41eb53d3}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Ensure\+Linear\+Allocation\+Area} (\mbox{\hyperlink{classint}{int}} size\+\_\+in\+\_\+bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a4f721427d9246676c4d3223df775c815}\label{classv8_1_1internal_1_1PagedSpace_a4f721427d9246676c4d3223df775c815}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$ {\bfseries Allocate\+Linearly} (\mbox{\hyperlink{classint}{int}} size\+\_\+in\+\_\+bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_ad06a7cbfdd136ef441a4ed19a9a06f89}\label{classv8_1_1internal_1_1PagedSpace_ad06a7cbfdd136ef441a4ed19a9a06f89}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$ {\bfseries Try\+Allocate\+Linearly\+Aligned} (\mbox{\hyperlink{classint}{int}} $\ast$size\+\_\+in\+\_\+bytes, Allocation\+Alignment alignment)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a0a5dc5519a48a999db321aae3c032a89}\label{classv8_1_1internal_1_1PagedSpace_a0a5dc5519a48a999db321aae3c032a89}} 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classbool}{bool}} {\bfseries Refill\+Linear\+Allocation\+Area\+From\+Free\+List} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} size\+\_\+in\+\_\+bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_afaf66748c32af47763bde871b1088314}\label{classv8_1_1internal_1_1PagedSpace_afaf66748c32af47763bde871b1088314}} 
+virtual V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classbool}{bool}} {\bfseries Sweep\+And\+Retry\+Allocation} (\mbox{\hyperlink{classint}{int}} size\+\_\+in\+\_\+bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a41e193daf710d2b30ad04c1f38267e38}\label{classv8_1_1internal_1_1PagedSpace_a41e193daf710d2b30ad04c1f38267e38}} 
+virtual V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classbool}{bool}} {\bfseries Slow\+Refill\+Linear\+Allocation\+Area} (\mbox{\hyperlink{classint}{int}} size\+\_\+in\+\_\+bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_aa839bd2910788baf3a5edadccf504a33}\label{classv8_1_1internal_1_1PagedSpace_aa839bd2910788baf3a5edadccf504a33}} 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classbool}{bool}} {\bfseries Raw\+Slow\+Refill\+Linear\+Allocation\+Area} (\mbox{\hyperlink{classint}{int}} size\+\_\+in\+\_\+bytes)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_ad9b54100cc7cd9d6023563cac2544e29}\label{classv8_1_1internal_1_1PagedSpace_ad9b54100cc7cd9d6023563cac2544e29}} 
+Executability {\bfseries executable\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a718a991f1ed33badd96ac928ce26d38a}\label{classv8_1_1internal_1_1PagedSpace_a718a991f1ed33badd96ac928ce26d38a}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries area\+\_\+size\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a90f22415397f27568bfb7193630406d6}\label{classv8_1_1internal_1_1PagedSpace_a90f22415397f27568bfb7193630406d6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1AllocationStats}{Allocation\+Stats}} {\bfseries accounting\+\_\+stats\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a0112b5322bebbe0fe1ba4c3b896cfaae}\label{classv8_1_1internal_1_1PagedSpace_a0112b5322bebbe0fe1ba4c3b896cfaae}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1FreeList}{Free\+List}} {\bfseries free\+\_\+list\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_aa31ae431e843b5dc3d15c1fa409eaa35}\label{classv8_1_1internal_1_1PagedSpace_aa31ae431e843b5dc3d15c1fa409eaa35}} 
+\mbox{\hyperlink{classv8_1_1base_1_1Mutex}{base\+::\+Mutex}} {\bfseries space\+\_\+mutex\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_abe19bf8497a23b6101b9916f8ac1d587}\label{classv8_1_1internal_1_1PagedSpace_abe19bf8497a23b6101b9916f8ac1d587}} 
+class {\bfseries Incremental\+Marking}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_ae585a96455613b2bc2ae3ea75a061d8b}\label{classv8_1_1internal_1_1PagedSpace_ae585a96455613b2bc2ae3ea75a061d8b}} 
+class {\bfseries Mark\+Compact\+Collector}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PagedSpace_a82ae4496cd3d64eb51e343ce3dcda96f}\label{classv8_1_1internal_1_1PagedSpace_a82ae4496cd3d64eb51e343ce3dcda96f}} 
+class {\bfseries heap\+::\+Heap\+Tester}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 2066 of file spaces.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/spaces.\+h\item 
+v8/src/heap/spaces-\/inl.\+h\item 
+v8/src/heap/spaces.\+cc\end{DoxyCompactItemize}

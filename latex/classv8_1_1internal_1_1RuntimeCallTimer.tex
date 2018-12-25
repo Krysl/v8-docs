@@ -1,0 +1,69 @@
+\hypertarget{classv8_1_1internal_1_1RuntimeCallTimer}{}\section{v8\+:\+:internal\+:\+:Runtime\+Call\+Timer Class Reference}
+\label{classv8_1_1internal_1_1RuntimeCallTimer}\index{v8\+::internal\+::\+Runtime\+Call\+Timer@{v8\+::internal\+::\+Runtime\+Call\+Timer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RuntimeCallTimer_a58c33415c0c7956e8a166f0b85e95448}\label{classv8_1_1internal_1_1RuntimeCallTimer_a58c33415c0c7956e8a166f0b85e95448}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RuntimeCallCounter}{Runtime\+Call\+Counter}} $\ast$ {\bfseries counter} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RuntimeCallTimer_a28c59965e00446c32a0cd3f6c4d648ce}\label{classv8_1_1internal_1_1RuntimeCallTimer_a28c59965e00446c32a0cd3f6c4d648ce}} 
+void {\bfseries set\+\_\+counter} (\mbox{\hyperlink{classv8_1_1internal_1_1RuntimeCallCounter}{Runtime\+Call\+Counter}} $\ast$counter)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RuntimeCallTimer_ab79975e763cd537259ecf6f264786c9f}\label{classv8_1_1internal_1_1RuntimeCallTimer_ab79975e763cd537259ecf6f264786c9f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RuntimeCallTimer}{Runtime\+Call\+Timer}} $\ast$ {\bfseries parent} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RuntimeCallTimer_a7324817011df759993447a92d53a6d45}\label{classv8_1_1internal_1_1RuntimeCallTimer_a7324817011df759993447a92d53a6d45}} 
+void {\bfseries set\+\_\+parent} (\mbox{\hyperlink{classv8_1_1internal_1_1RuntimeCallTimer}{Runtime\+Call\+Timer}} $\ast$timer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RuntimeCallTimer_ac6d6044b1054c5cc149f8db80551717e}\label{classv8_1_1internal_1_1RuntimeCallTimer_ac6d6044b1054c5cc149f8db80551717e}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries name} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RuntimeCallTimer_a2a9bf65370ce4d9ebc298661c7ec9d66}\label{classv8_1_1internal_1_1RuntimeCallTimer_a2a9bf65370ce4d9ebc298661c7ec9d66}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Started} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RuntimeCallTimer_a12d402530f324e001f7c3ece911bb10a}\label{classv8_1_1internal_1_1RuntimeCallTimer_a12d402530f324e001f7c3ece911bb10a}} 
+void {\bfseries Start} (\mbox{\hyperlink{classv8_1_1internal_1_1RuntimeCallCounter}{Runtime\+Call\+Counter}} $\ast$counter, \mbox{\hyperlink{classv8_1_1internal_1_1RuntimeCallTimer}{Runtime\+Call\+Timer}} $\ast$parent)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RuntimeCallTimer_af11006ce3ef185eab342a1c5e73b2773}\label{classv8_1_1internal_1_1RuntimeCallTimer_af11006ce3ef185eab342a1c5e73b2773}} 
+void {\bfseries Snapshot} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RuntimeCallTimer_ac1919ebae231974bffbfe0bce3b1c376}\label{classv8_1_1internal_1_1RuntimeCallTimer_ac1919ebae231974bffbfe0bce3b1c376}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RuntimeCallTimer}{Runtime\+Call\+Timer}} $\ast$ {\bfseries Stop} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classv8_1_1base_1_1TimeTicks}{base\+::\+Time\+Ticks}}($\ast$ {\bfseries Now} )()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 684 of file counters.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1RuntimeCallTimer_a53e0e314996b55a3eee5958f3ec20418}\label{classv8_1_1internal_1_1RuntimeCallTimer_a53e0e314996b55a3eee5958f3ec20418}} 
+\index{v8\+::internal\+::\+Runtime\+Call\+Timer@{v8\+::internal\+::\+Runtime\+Call\+Timer}!Now@{Now}}
+\index{Now@{Now}!v8\+::internal\+::\+Runtime\+Call\+Timer@{v8\+::internal\+::\+Runtime\+Call\+Timer}}
+\subsubsection{\texorpdfstring{Now}{Now}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1base_1_1TimeTicks}{base\+::\+Time\+Ticks}}($\ast$ v8\+::internal\+::\+Runtime\+Call\+Timer\+::\+Now)()\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+    &base::TimeTicks::HighResolutionNow
+\end{DoxyCode}
+
+
+Definition at line 699 of file counters.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/counters.\+h\item 
+v8/src/counters-\/inl.\+h\item 
+v8/src/counters.\+cc\end{DoxyCompactItemize}

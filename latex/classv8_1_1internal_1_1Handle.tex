@@ -1,0 +1,105 @@
+\hypertarget{classv8_1_1internal_1_1Handle}{}\section{v8\+:\+:internal\+:\+:Handle$<$ T $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1Handle}\index{v8\+::internal\+::\+Handle$<$ T $>$@{v8\+::internal\+::\+Handle$<$ T $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Handle$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1Handle}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1Handle_1_1equal__to}{equal\+\_\+to}}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1Handle_1_1hash}{hash}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_af02dd0e938fb456009350e5c4db339c1}\label{classv8_1_1internal_1_1Handle_af02dd0e938fb456009350e5c4db339c1}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Handle} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$$\ast$location)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_aa72cc18bb37e4b4a2108416f2407d272}\label{classv8_1_1internal_1_1Handle_aa72cc18bb37e4b4a2108416f2407d272}} 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Handle} (\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$location=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_aa490d9f58a51cfde00ba3eccb2084ac4}\label{classv8_1_1internal_1_1Handle_aa490d9f58a51cfde00ba3eccb2084ac4}} 
+{\footnotesize template$<$typename T1  = T, typename  = typename std\+::enable\+\_\+if$<$                                 std\+::is\+\_\+base\+\_\+of$<$\+Object, T1$>$\+::value$>$\+::type$>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Handle} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$object, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_aaaa97b75a603435d51976aad66c38a12}\label{classv8_1_1internal_1_1Handle_aaaa97b75a603435d51976aad66c38a12}} 
+{\footnotesize template$<$typename T1  = T, typename  = typename std\+::enable\+\_\+if$<$                                 std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ptr, T1$>$\+::value$>$\+::type$>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Handle} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} object, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_ac54502311b10ce3e05401f0c15b2b064}\label{classv8_1_1internal_1_1Handle_ac54502311b10ce3e05401f0c15b2b064}} 
+{\footnotesize template$<$typename S , typename  = typename std\+::enable\+\_\+if$<$          std\+::is\+\_\+convertible$<$\+S$\ast$, T$\ast$$>$\+::value $\vert$$\vert$          std\+::is\+\_\+same$<$\+T, Object$>$\+::value $\vert$$\vert$          (std\+::is\+\_\+same$<$\+T, Heap\+Object$>$\+::value \&\&           (std\+::is\+\_\+same$<$\+S, Byte\+Array$>$\+::value $\vert$$\vert$ std\+::is\+\_\+same$<$\+S, Code$>$\+::value $\vert$$\vert$            std\+::is\+\_\+same$<$\+S, Context$>$\+::value $\vert$$\vert$            std\+::is\+\_\+same$<$\+S, Fixed\+Array$>$\+::value $\vert$$\vert$            std\+::is\+\_\+same$<$\+S, Fixed\+Array\+Base$>$\+::value $\vert$$\vert$            std\+::is\+\_\+same$<$\+S, Fixed\+Double\+Array$>$\+::value $\vert$$\vert$            std\+::is\+\_\+same$<$\+S, Map$>$\+::value $\vert$$\vert$ std\+::is\+\_\+same$<$\+S, Name$>$\+::value $\vert$$\vert$            std\+::is\+\_\+same$<$\+S, Number\+Dictionary$>$\+::value $\vert$$\vert$            std\+::is\+\_\+same$<$\+S, Object\+Boilerplate\+Description$>$\+::value $\vert$$\vert$            std\+::is\+\_\+same$<$\+S, Ordered\+Hash\+Map$>$\+::value $\vert$$\vert$            std\+::is\+\_\+same$<$\+S, Ordered\+Hash\+Set$>$\+::value $\vert$$\vert$            std\+::is\+\_\+same$<$\+S, Ordered\+Name\+Dictionary$>$\+::value $\vert$$\vert$            std\+::is\+\_\+same$<$\+S, Script\+Context\+Table$>$\+::value $\vert$$\vert$            std\+::is\+\_\+same$<$\+S, Scope\+Info$>$\+::value $\vert$$\vert$            std\+::is\+\_\+same$<$\+S, Small\+Ordered\+Hash\+Map$>$\+::value $\vert$$\vert$            std\+::is\+\_\+same$<$\+S, Small\+Ordered\+Hash\+Set$>$\+::value $\vert$$\vert$            std\+::is\+\_\+same$<$\+S, Small\+Ordered\+Name\+Dictionary$>$\+::value $\vert$$\vert$            std\+::is\+\_\+same$<$\+S, String$>$\+::value $\vert$$\vert$            std\+::is\+\_\+same$<$\+S, Symbol$>$\+::value))$>$\+::type$>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Handle} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ S $>$ handle)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_a2e3c4bba666298aa3f4dca995fff6a8a}\label{classv8_1_1internal_1_1Handle_a2e3c4bba666298aa3f4dca995fff6a8a}} 
+{\footnotesize template$<$typename T1  = T, typename  = typename std\+::enable\+\_\+if$<$                std\+::is\+\_\+base\+\_\+of$<$\+Object, T1$>$\+::value $\vert$$\vert$                std\+::is\+\_\+base\+\_\+of$<$\+Never\+Read\+Only\+Space\+Object, T1$>$\+::value$>$\+::type$>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$ {\bfseries operator-\/$>$} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_aac3cb02fcbed439e47324f82169968b7}\label{classv8_1_1internal_1_1Handle_aac3cb02fcbed439e47324f82169968b7}} 
+{\footnotesize template$<$typename T1  = T, typename  = typename std\+::enable\+\_\+if$<$                                 std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ptr, T1$>$\+::value$>$\+::type$>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} {\bfseries operator-\/$>$} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_a3cf0eb2aa1f2b690c4157d1f8880ad4d}\label{classv8_1_1internal_1_1Handle_a3cf0eb2aa1f2b690c4157d1f8880ad4d}} 
+{\footnotesize template$<$typename T1  = T, typename  = typename std\+::enable\+\_\+if$<$                std\+::is\+\_\+base\+\_\+of$<$\+Object, T1$>$\+::value $\vert$$\vert$                std\+::is\+\_\+base\+\_\+of$<$\+Never\+Read\+Only\+Space\+Object, T1$>$\+::value$>$\+::type$>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$ {\bfseries operator$\ast$} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_a3bae2959102faaff7ac9a70757217ee6}\label{classv8_1_1internal_1_1Handle_a3bae2959102faaff7ac9a70757217ee6}} 
+{\footnotesize template$<$typename T1  = T, typename  = typename std\+::enable\+\_\+if$<$                                 std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ptr, T1$>$\+::value$>$\+::type$>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} {\bfseries operator$\ast$} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_af30887d325be5e0d177d434299c2169e}\label{classv8_1_1internal_1_1Handle_af30887d325be5e0d177d434299c2169e}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{Address}} $\ast$ {\bfseries location} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_a0f47c1abaebd32cb5be45a5c77d366d4}\label{classv8_1_1internal_1_1Handle_a0f47c1abaebd32cb5be45a5c77d366d4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries equals} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_a5ba3015ddba711fdc48007abfe88bbc6}\label{classv8_1_1internal_1_1Handle_a5ba3015ddba711fdc48007abfe88bbc6}} 
+{\footnotesize template$<$typename T1 , typename $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$object, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_a8821d122d5acb8f872716fdda6e6fc36}\label{classv8_1_1internal_1_1Handle_a8821d122d5acb8f872716fdda6e6fc36}} 
+{\footnotesize template$<$typename T1 , typename $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} object, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_a3d288ca459647dcbad3eabf711e464e4}\label{classv8_1_1internal_1_1Handle_a3d288ca459647dcbad3eabf711e464e4}} 
+{\footnotesize template$<$typename T1 , typename $>$ }\\{\bfseries Handle} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$object, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_a6f8909a2af37b10d6c7cd5085df627fb}\label{classv8_1_1internal_1_1Handle_a6f8909a2af37b10d6c7cd5085df627fb}} 
+{\footnotesize template$<$typename T1 , typename $>$ }\\{\bfseries Handle} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} object, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_a9652a13a5b281a06424a7dc65230a8b6}\label{classv8_1_1internal_1_1Handle_a9652a13a5b281a06424a7dc65230a8b6}} 
+{\footnotesize template$<$typename T1  = T, typename  = typename std\+::enable\+\_\+if$<$                                 std\+::is\+\_\+base\+\_\+of$<$\+Object, T1$>$\+::value$>$\+::type$>$ }\\static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$object, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_a37ffdf94b304974cf7518dc2dc00b3de}\label{classv8_1_1internal_1_1Handle_a37ffdf94b304974cf7518dc2dc00b3de}} 
+{\footnotesize template$<$typename T1  = T, typename  = typename std\+::enable\+\_\+if$<$                                 std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ptr, T1$>$\+::value$>$\+::type$>$ }\\static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} object, \mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_ab79a98e1b94c7e002f2bb24dcae11ca7}\label{classv8_1_1internal_1_1Handle_ab79a98e1b94c7e002f2bb24dcae11ca7}} 
+{\footnotesize template$<$typename S $>$ }\\static const \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries cast} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ S $>$ that)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_a5370e41511ebb3dd59333d20f35fe9ab}\label{classv8_1_1internal_1_1Handle_a5370e41511ebb3dd59333d20f35fe9ab}} 
+static const \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries null} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_a67ca1a2d91273eaf85fb3d23ba8ce984}\label{classv8_1_1internal_1_1Handle_a67ca1a2d91273eaf85fb3d23ba8ce984}} 
+{\footnotesize template$<$typename $>$ }\\class {\bfseries Handle}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Handle_a43ca95cbc5708225727b3674f4690233}\label{classv8_1_1internal_1_1Handle_a43ca95cbc5708225727b3674f4690233}} 
+{\footnotesize template$<$typename $>$ }\\class {\bfseries Maybe\+Handle}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class v8\+::internal\+::\+Handle$<$ T $>$}
+
+
+
+Definition at line 19 of file accessors.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/accessors.\+h\item 
+v8/src/handles.\+h\item 
+v8/src/handles-\/inl.\+h\end{DoxyCompactItemize}

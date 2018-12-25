@@ -1,0 +1,55 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecode\+Register\+Allocator Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator}\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Register\+Allocator@{v8\+::internal\+::interpreter\+::\+Bytecode\+Register\+Allocator}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_1_1Observer}{Observer}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_a6bb510d6fbd5921990071c38b480d414}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_a6bb510d6fbd5921990071c38b480d414}} 
+{\bfseries Bytecode\+Register\+Allocator} (\mbox{\hyperlink{classint}{int}} start\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_ae8468fa1ccff28941fcbf2ebe13fac41}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_ae8468fa1ccff28941fcbf2ebe13fac41}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1Register}{Register}} {\bfseries New\+Register} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_a556d45acfc5520a797df76cc2a078ac6}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_a556d45acfc5520a797df76cc2a078ac6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1RegisterList}{Register\+List}} {\bfseries New\+Register\+List} (\mbox{\hyperlink{classint}{int}} count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_a2c7dd907394f2dc48b2250b1b74e27e4}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_a2c7dd907394f2dc48b2250b1b74e27e4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1RegisterList}{Register\+List}} {\bfseries New\+Growable\+Register\+List} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_aa2dd80ea09df4b9f56d430f5db312c04}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_aa2dd80ea09df4b9f56d430f5db312c04}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1Register}{Register}} {\bfseries Grow\+Register\+List} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1RegisterList}{Register\+List}} $\ast$reg\+\_\+list)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_a10809b0c4b7d4b1829f27ae8e52b3e83}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_a10809b0c4b7d4b1829f27ae8e52b3e83}} 
+void {\bfseries Release\+Registers} (\mbox{\hyperlink{classint}{int}} register\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_a0bc56ab130525071cd03980110eac9cc}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_a0bc56ab130525071cd03980110eac9cc}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Register\+Is\+Live} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1Register}{Register}} reg) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_a2087253e4b96aad48722e7dc6a985e4b}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_a2087253e4b96aad48722e7dc6a985e4b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1RegisterList}{Register\+List}} {\bfseries All\+Live\+Registers} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_abcd4a8405ef4a920eddc496e05644b20}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_abcd4a8405ef4a920eddc496e05644b20}} 
+void {\bfseries set\+\_\+observer} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_1_1Observer}{Observer}} $\ast$observer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_aa472152914721a6a18e1b55cb2c2cd80}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_aa472152914721a6a18e1b55cb2c2cd80}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries next\+\_\+register\+\_\+index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_a89179712a755d485133b82e33ec21a8c}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeRegisterAllocator_a89179712a755d485133b82e33ec21a8c}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries maximum\+\_\+register\+\_\+count} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file bytecode-\/register-\/allocator.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/interpreter/bytecode-\/register-\/allocator.\+h\end{DoxyCompactItemize}

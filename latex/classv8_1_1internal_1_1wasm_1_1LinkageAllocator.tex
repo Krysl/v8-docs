@@ -1,0 +1,47 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1LinkageAllocator}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Linkage\+Allocator Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1LinkageAllocator}\index{v8\+::internal\+::wasm\+::\+Linkage\+Allocator@{v8\+::internal\+::wasm\+::\+Linkage\+Allocator}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_aac8d92c63a326fd9652b7e3ac3729fdf}\label{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_aac8d92c63a326fd9652b7e3ac3729fdf}} 
+{\footnotesize template$<$size\+\_\+t k\+Num\+Gp\+Regs, size\+\_\+t k\+Num\+Fp\+Regs$>$ }\\constexpr {\bfseries Linkage\+Allocator} (const \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}}(\&gp)\mbox{[}k\+Num\+Gp\+Regs\mbox{]}, const \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}}(\&fp)\mbox{[}k\+Num\+Fp\+Regs\mbox{]})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_ae0bb6352c0aba8446ec06e2a963cc7d5}\label{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_ae0bb6352c0aba8446ec06e2a963cc7d5}} 
+constexpr {\bfseries Linkage\+Allocator} (const \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} $\ast$gp, \mbox{\hyperlink{classint}{int}} gpc, const \mbox{\hyperlink{classv8_1_1internal_1_1DoubleRegister}{Double\+Register}} $\ast$fp, \mbox{\hyperlink{classint}{int}} fpc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_a904ea070dd0585b68950a93416a59356}\label{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_a904ea070dd0585b68950a93416a59356}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Allocate\+GP} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_adaf700b27f4f319a7462bc206dbe8b38}\label{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_adaf700b27f4f319a7462bc206dbe8b38}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Allocate\+FP} (Machine\+Representation rep) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_a8e3aeba1884af06ce2cee008143d9ffe}\label{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_a8e3aeba1884af06ce2cee008143d9ffe}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Next\+Gp\+Reg} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_a5b540690cf61eb431388a182b488aa77}\label{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_a5b540690cf61eb431388a182b488aa77}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Next\+Fp\+Reg} (Machine\+Representation rep)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_a86d5b8e7f9f948935551b325ebd81220}\label{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_a86d5b8e7f9f948935551b325ebd81220}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Num\+Stack\+Slots} (Machine\+Representation \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_a3af30c37b18d63128c626e7def2899e7}\label{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_a3af30c37b18d63128c626e7def2899e7}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Next\+Stack\+Slot} (Machine\+Representation \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_a3732bd0d98c84ba7414f00eede068041}\label{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_a3732bd0d98c84ba7414f00eede068041}} 
+void {\bfseries Set\+Stack\+Offset} (\mbox{\hyperlink{classint}{int}} num)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_a790a117ee5c0168107d77d98554dc086}\label{classv8_1_1internal_1_1wasm_1_1LinkageAllocator_a790a117ee5c0168107d77d98554dc086}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Num\+Stack\+Slots} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 121 of file wasm-\/linkage.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/wasm-\/linkage.\+h\end{DoxyCompactItemize}

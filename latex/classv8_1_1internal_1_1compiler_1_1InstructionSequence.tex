@@ -1,0 +1,195 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Instruction\+Sequence Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence}\index{v8\+::internal\+::compiler\+::\+Instruction\+Sequence@{v8\+::internal\+::compiler\+::\+Instruction\+Sequence}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Instruction\+Sequence\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1InstructionSequence}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ab15b72b20e24e09dd5d2eca12113a265}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ab15b72b20e24e09dd5d2eca12113a265}} 
+typedef Instruction\+Deque\+::const\+\_\+iterator {\bfseries const\+\_\+iterator}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a454e726f151fd3538e4f3aa468844460}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a454e726f151fd3538e4f3aa468844460}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Constant}{Constant}} $>$ {\bfseries Immediates}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_aae3d24f3e9291a4e9aeb97c6d6b074c9}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_aae3d24f3e9291a4e9aeb97c6d6b074c9}} 
+{\bfseries Instruction\+Sequence} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Instruction\+Blocks}} $\ast$instruction\+\_\+blocks)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_aad92360c5302421950fd346e8d55b8e7}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_aad92360c5302421950fd346e8d55b8e7}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Next\+Virtual\+Register} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a3111e0f702c76e9aceb6c39cc0a6672b}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a3111e0f702c76e9aceb6c39cc0a6672b}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Virtual\+Register\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ac2275233b0810699e6c49be347dbaaed}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ac2275233b0810699e6c49be347dbaaed}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Instruction\+Blocks}} \& {\bfseries instruction\+\_\+blocks} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a5e1382ead8e78b4d18e7933099b6fc9e}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a5e1382ead8e78b4d18e7933099b6fc9e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Instruction\+Blocks}} \& {\bfseries ao\+\_\+blocks} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a290f73b7103077a4963979d30c773e48}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a290f73b7103077a4963979d30c773e48}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Instruction\+Block\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a9c3aecd79b289855c043cc27c2749b35}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a9c3aecd79b289855c043cc27c2749b35}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionBlock}{Instruction\+Block}} $\ast$ {\bfseries Instruction\+Block\+At} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RpoNumber}{Rpo\+Number}} rpo\+\_\+number)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a3e4782187f095df9dd8c4d326a9a63f1}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a3e4782187f095df9dd8c4d326a9a63f1}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Last\+Loop\+Instruction\+Index} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionBlock}{Instruction\+Block}} $\ast$block)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ad67890bba0a685cf6bba6424823b662a}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ad67890bba0a685cf6bba6424823b662a}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionBlock}{Instruction\+Block}} $\ast$ {\bfseries Instruction\+Block\+At} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RpoNumber}{Rpo\+Number}} rpo\+\_\+number) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ab39706b179c530fabb0c718022a6731a}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ab39706b179c530fabb0c718022a6731a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionBlock}{Instruction\+Block}} $\ast$ {\bfseries Get\+Instruction\+Block} (\mbox{\hyperlink{classint}{int}} instruction\+\_\+index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_aac718e4d1adf40fbb2a1b6dc7cd9fc68}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_aac718e4d1adf40fbb2a1b6dc7cd9fc68}} 
+Machine\+Representation {\bfseries Get\+Representation} (\mbox{\hyperlink{classint}{int}} virtual\+\_\+register) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ab547e6e38ed7e52c523d989fcf0998ea}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ab547e6e38ed7e52c523d989fcf0998ea}} 
+void {\bfseries Mark\+As\+Representation} (Machine\+Representation rep, \mbox{\hyperlink{classint}{int}} virtual\+\_\+register)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ab80cf9bd92b27700c5ab000cec1cf385}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ab80cf9bd92b27700c5ab000cec1cf385}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Reference} (\mbox{\hyperlink{classint}{int}} virtual\+\_\+register) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ac55ec8aecddf9a9f3a77265352bd1749}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ac55ec8aecddf9a9f3a77265352bd1749}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+FP} (\mbox{\hyperlink{classint}{int}} virtual\+\_\+register) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a7515689e4915f49f86b65561f16499f4}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a7515689e4915f49f86b65561f16499f4}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries representation\+\_\+mask} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a7f668a787615c3177be08bb5b72b5a81}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a7f668a787615c3177be08bb5b72b5a81}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+F\+P\+Virtual\+Registers} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a7ceed94c7a132435cdd516adf26fd9de}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a7ceed94c7a132435cdd516adf26fd9de}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Instruction}{Instruction}} $\ast$ {\bfseries Get\+Block\+Start} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RpoNumber}{Rpo\+Number}} rpo) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ae0fe8e4bd4eb9ae6a9918240ec1b395b}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ae0fe8e4bd4eb9ae6a9918240ec1b395b}} 
+const\+\_\+iterator {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_aebbeaf9641307109629bf24af99676c9}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_aebbeaf9641307109629bf24af99676c9}} 
+const\+\_\+iterator {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_abdb7b1a6146b1520d385c011e126c4cf}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_abdb7b1a6146b1520d385c011e126c4cf}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneDeque}{Instruction\+Deque}} \& {\bfseries instructions} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a5f8015bf80dba27215f252036f25cdc6}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a5f8015bf80dba27215f252036f25cdc6}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Last\+Instruction\+Index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_aa22bf34954aefdb2a4e0af0f7061dd56}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_aa22bf34954aefdb2a4e0af0f7061dd56}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Instruction}{Instruction}} $\ast$ {\bfseries Instruction\+At} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a2d08072441064f3d37c42fc194e4b874}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a2d08072441064f3d37c42fc194e4b874}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a4465295ae1418f08eb6cb6658040cffa}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a4465295ae1418f08eb6cb6658040cffa}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneDeque}{Reference\+Map\+Deque}} $\ast$ {\bfseries reference\+\_\+maps} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a5749a22c101c776c60cbe099e49cc03a}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a5749a22c101c776c60cbe099e49cc03a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$ {\bfseries zone} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ac4ad79f596ab1da4724a300377f07378}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ac4ad79f596ab1da4724a300377f07378}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Add\+Instruction} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Instruction}{Instruction}} $\ast$instr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a74fb9e547bcad9426fde6e0decad4d52}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a74fb9e547bcad9426fde6e0decad4d52}} 
+void {\bfseries Start\+Block} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RpoNumber}{Rpo\+Number}} rpo)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a77ddea19783d04c383345421068cd68b}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a77ddea19783d04c383345421068cd68b}} 
+void {\bfseries End\+Block} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RpoNumber}{Rpo\+Number}} rpo)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a6a3a3108e144a07b260d0460cb0f3d05}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a6a3a3108e144a07b260d0460cb0f3d05}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Add\+Constant} (\mbox{\hyperlink{classint}{int}} virtual\+\_\+register, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Constant}{Constant}} constant)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a3c581fba579d6ec63b6d3a32654c3c8b}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a3c581fba579d6ec63b6d3a32654c3c8b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Constant}{Constant}} {\bfseries Get\+Constant} (\mbox{\hyperlink{classint}{int}} virtual\+\_\+register) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a9538839b6dc50885c2cec28a1eae175d}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a9538839b6dc50885c2cec28a1eae175d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Immediates}} \& {\bfseries immediates} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a8eef7894ee18da1ca41379ca1e396ccd}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a8eef7894ee18da1ca41379ca1e396ccd}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1ImmediateOperand}{Immediate\+Operand}} {\bfseries Add\+Immediate} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Constant}{Constant}} \&constant)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a05471340edd207be7799b198f628646b}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a05471340edd207be7799b198f628646b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Constant}{Constant}} {\bfseries Get\+Immediate} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1ImmediateOperand}{Immediate\+Operand}} $\ast$op) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a9738bc1ed8589b1d6a4aefb58d62e23d}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a9738bc1ed8589b1d6a4aefb58d62e23d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Add\+Deoptimization\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1FrameStateDescriptor}{Frame\+State\+Descriptor}} $\ast$descriptor, Deoptimize\+Kind kind, Deoptimize\+Reason reason, \mbox{\hyperlink{classv8_1_1internal_1_1VectorSlotPair}{Vector\+Slot\+Pair}} const \&feedback)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a008f3e9208a8d7ba95ce6a8e3e17f6c1}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a008f3e9208a8d7ba95ce6a8e3e17f6c1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1DeoptimizationEntry}{Deoptimization\+Entry}} const  \& {\bfseries Get\+Deoptimization\+Entry} (\mbox{\hyperlink{classint}{int}} deoptimization\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_aa9a3d15fb1f4a3ade20077ac4204890f}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_aa9a3d15fb1f4a3ade20077ac4204890f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Deoptimization\+Entry\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a0a84e2da4afedbc169afb3ccda2ff6a1}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a0a84e2da4afedbc169afb3ccda2ff6a1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1RpoNumber}{Rpo\+Number}} {\bfseries Input\+Rpo} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Instruction}{Instruction}} $\ast$instr, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_aa0b6ee55f7efacf3904f6099c48d12de}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_aa0b6ee55f7efacf3904f6099c48d12de}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Get\+Source\+Position} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Instruction}{Instruction}} $\ast$instr, \mbox{\hyperlink{classv8_1_1internal_1_1SourcePosition}{Source\+Position}} $\ast$result) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ac091dd12aa000ca94fd5d80b424a60b1}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ac091dd12aa000ca94fd5d80b424a60b1}} 
+void {\bfseries Set\+Source\+Position} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Instruction}{Instruction}} $\ast$instr, \mbox{\hyperlink{classv8_1_1internal_1_1SourcePosition}{Source\+Position}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ae0384461eccb6e527ef1b32573be559d}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ae0384461eccb6e527ef1b32573be559d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Contains\+Call} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a796f58071d2b38f78f248a82632d1b7b}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a796f58071d2b38f78f248a82632d1b7b}} 
+void {\bfseries Print} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a69d07d57357f8d9ebb0b884d651cc899}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a69d07d57357f8d9ebb0b884d651cc899}} 
+void {\bfseries Print\+Block} (\mbox{\hyperlink{classint}{int}} block\+\_\+id) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a2de06533aa0d70a7c65e3ffad2ecc9a7}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a2de06533aa0d70a7c65e3ffad2ecc9a7}} 
+void {\bfseries Validate\+Edge\+Split\+Form} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a2016b863de84f0c12d3a59835aebb241}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a2016b863de84f0c12d3a59835aebb241}} 
+void {\bfseries Validate\+Deferred\+Block\+Exit\+Paths} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_aec04a14b057a9ab87e8b07fa998dfdda}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_aec04a14b057a9ab87e8b07fa998dfdda}} 
+void {\bfseries Validate\+Deferred\+Block\+Entry\+Paths} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a56829834d69247dec8c3a390f2c4084d}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a56829834d69247dec8c3a390f2c4084d}} 
+void {\bfseries Validate\+S\+SA} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_af8a41a231ec5b4f340b5e58e13c34279}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_af8a41a231ec5b4f340b5e58e13c34279}} 
+void {\bfseries Recompute\+Assembly\+Order\+For\+Testing} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a6f677c42a8af001db192a383a038054e}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a6f677c42a8af001db192a383a038054e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Instruction\+Blocks}} $\ast$ {\bfseries Instruction\+Blocks\+For} (\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone, const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Schedule}{Schedule}} $\ast$schedule)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ac54100a4cfc4148097448cb925d0bbfe}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ac54100a4cfc4148097448cb925d0bbfe}} 
+static Machine\+Representation {\bfseries Default\+Representation} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_aad5fcb8982b6d10b4163ce03c61ca429}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_aad5fcb8982b6d10b4163ce03c61ca429}} 
+static void {\bfseries Set\+Register\+Configuration\+For\+Testing} (const \mbox{\hyperlink{classv8_1_1internal_1_1RegisterConfiguration}{Register\+Configuration}} $\ast$reg\+Config)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a0548d4607dbfc2bb52ad4ee9d4dc1bb5}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_a0548d4607dbfc2bb52ad4ee9d4dc1bb5}} 
+static void {\bfseries Clear\+Register\+Configuration\+For\+Testing} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ab127b5e55b4043ee1e17529c49787e69}\label{classv8_1_1internal_1_1compiler_1_1InstructionSequence_ab127b5e55b4043ee1e17529c49787e69}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&, const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1InstructionSequence}{Instruction\+Sequence}} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1437 of file instruction.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/backend/instruction.\+h\item 
+v8/src/compiler/backend/instruction.\+cc\end{DoxyCompactItemize}

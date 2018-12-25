@@ -4,18 +4,24 @@
 
 {\ttfamily \#include $<$v8-\/profiler.\+h$>$}
 
+Inheritance diagram for v8\+:\+:Retained\+Object\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1RetainedObjectInfo}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_a5011203f7c5949049ba36b8059f03eca}{Dispose}} ()=0
 \item 
-virtual bool \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_a286103bb076c85415919c86b1838c990}{Is\+Equivalent}} (\mbox{\hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info}} $\ast$other)=0
+virtual \mbox{\hyperlink{classbool}{bool}} \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_a286103bb076c85415919c86b1838c990}{Is\+Equivalent}} (\mbox{\hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info}} $\ast$other)=0
 \item 
 virtual intptr\+\_\+t \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_a6fdbfa242b95615e63f08433419c8066}{Get\+Hash}} ()=0
 \item 
-virtual const char $\ast$ \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_ad19106fc7f0499fd45005077551d54c0}{Get\+Label}} ()=0
+virtual const \mbox{\hyperlink{classchar}{char}} $\ast$ \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_ad19106fc7f0499fd45005077551d54c0}{Get\+Label}} ()=0
 \item 
-virtual const char $\ast$ \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_adf835370c5516f2a89dd2d3f83dee10b}{Get\+Group\+Label}} ()
+virtual const \mbox{\hyperlink{classchar}{char}} $\ast$ \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_adf835370c5516f2a89dd2d3f83dee10b}{Get\+Group\+Label}} ()
 \item 
 virtual intptr\+\_\+t \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_ae6865597469bc7d28bd8ec71b4b890bd}{Get\+Element\+Count}} ()
 \item 
@@ -53,7 +59,11 @@ Definition at line 985 of file v8-\/profiler.\+h.
 \subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
 {\footnotesize\ttfamily virtual void v8\+::\+Retained\+Object\+Info\+::\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
-Called by V8 when it no longer needs an instance. \mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_ae6865597469bc7d28bd8ec71b4b890bd}\label{classv8_1_1RetainedObjectInfo_ae6865597469bc7d28bd8ec71b4b890bd}} 
+Called by V8 when it no longer needs an instance. 
+
+Implemented in \mbox{\hyperlink{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo_a27dc763171801350dc7f7b2b9e74ee42}{v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info}}.
+
+\mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_ae6865597469bc7d28bd8ec71b4b890bd}\label{classv8_1_1RetainedObjectInfo_ae6865597469bc7d28bd8ec71b4b890bd}} 
 \index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Get\+Element\+Count@{Get\+Element\+Count}}
 \index{Get\+Element\+Count@{Get\+Element\+Count}!v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}}
 \subsubsection{\texorpdfstring{Get\+Element\+Count()}{GetElementCount()}}
@@ -67,7 +77,7 @@ Definition at line 1020 of file v8-\/profiler.\+h.
 \index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Get\+Group\+Label@{Get\+Group\+Label}}
 \index{Get\+Group\+Label@{Get\+Group\+Label}!v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}}
 \subsubsection{\texorpdfstring{Get\+Group\+Label()}{GetGroupLabel()}}
-{\footnotesize\ttfamily virtual const char$\ast$ v8\+::\+Retained\+Object\+Info\+::\+Get\+Group\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{classchar}{char}}$\ast$ v8\+::\+Retained\+Object\+Info\+::\+Get\+Group\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 Returns human-\/readable group label. It must be a null-\/terminated U\+T\+F-\/8 encoded string. V8 copies its contents during a call to Get\+Group\+Label. Heap snapshot generator will collect all the group names, create top level entries with these names and attach the objects to the corresponding top level group objects. There is a default implementation which is required because embedders don\textquotesingle{}t have their own implementation yet. 
 
@@ -79,13 +89,21 @@ Definition at line 1014 of file v8-\/profiler.\+h.
 \subsubsection{\texorpdfstring{Get\+Hash()}{GetHash()}}
 {\footnotesize\ttfamily virtual intptr\+\_\+t v8\+::\+Retained\+Object\+Info\+::\+Get\+Hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
-Returns hash value for the instance. Equivalent instances must have the same hash value. \mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_ad19106fc7f0499fd45005077551d54c0}\label{classv8_1_1RetainedObjectInfo_ad19106fc7f0499fd45005077551d54c0}} 
+Returns hash value for the instance. Equivalent instances must have the same hash value. 
+
+Implemented in \mbox{\hyperlink{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo_a0bb1682d322ad1c63b22058cf5a75a6f}{v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info}}.
+
+\mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_ad19106fc7f0499fd45005077551d54c0}\label{classv8_1_1RetainedObjectInfo_ad19106fc7f0499fd45005077551d54c0}} 
 \index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Get\+Label@{Get\+Label}}
 \index{Get\+Label@{Get\+Label}!v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}}
 \subsubsection{\texorpdfstring{Get\+Label()}{GetLabel()}}
-{\footnotesize\ttfamily virtual const char$\ast$ v8\+::\+Retained\+Object\+Info\+::\+Get\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{classchar}{char}}$\ast$ v8\+::\+Retained\+Object\+Info\+::\+Get\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
-Returns human-\/readable label. It must be a null-\/terminated U\+T\+F-\/8 encoded string. V8 copies its contents during a call to Get\+Label. \mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_a1a899eed0b1f6e046edc3c7a7c08aa8c}\label{classv8_1_1RetainedObjectInfo_a1a899eed0b1f6e046edc3c7a7c08aa8c}} 
+Returns human-\/readable label. It must be a null-\/terminated U\+T\+F-\/8 encoded string. V8 copies its contents during a call to Get\+Label. 
+
+Implemented in \mbox{\hyperlink{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo_a8b9d63379a9e6647ecbe169d6f9223ee}{v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info}}.
+
+\mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_a1a899eed0b1f6e046edc3c7a7c08aa8c}\label{classv8_1_1RetainedObjectInfo_a1a899eed0b1f6e046edc3c7a7c08aa8c}} 
 \index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Get\+Size\+In\+Bytes@{Get\+Size\+In\+Bytes}}
 \index{Get\+Size\+In\+Bytes@{Get\+Size\+In\+Bytes}!v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}}
 \subsubsection{\texorpdfstring{Get\+Size\+In\+Bytes()}{GetSizeInBytes()}}
@@ -99,9 +117,13 @@ Definition at line 1023 of file v8-\/profiler.\+h.
 \index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Is\+Equivalent@{Is\+Equivalent}}
 \index{Is\+Equivalent@{Is\+Equivalent}!v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}}
 \subsubsection{\texorpdfstring{Is\+Equivalent()}{IsEquivalent()}}
-{\footnotesize\ttfamily virtual bool v8\+::\+Retained\+Object\+Info\+::\+Is\+Equivalent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info}} $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classbool}{bool}} v8\+::\+Retained\+Object\+Info\+::\+Is\+Equivalent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info}} $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 Returns whether two instances are equivalent. 
+
+Implemented in \mbox{\hyperlink{classv8_1_1internal_1_1NativeGroupRetainedObjectInfo_a8d54367b99192c9081d03ccdc8e97612}{v8\+::internal\+::\+Native\+Group\+Retained\+Object\+Info}}.
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

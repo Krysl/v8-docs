@@ -1,0 +1,90 @@
+\hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase}{}\section{v8\+:\+:internal\+:\+:Expression\+Classifier\+Base$<$ Types, Error\+Tracker $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1ExpressionClassifierBase}\index{v8\+::internal\+::\+Expression\+Classifier\+Base$<$ Types, Error\+Tracker $>$@{v8\+::internal\+::\+Expression\+Classifier\+Base$<$ Types, Error\+Tracker $>$}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1ExpressionClassifierBase_1_1Error}{Error}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase_a0908dede1ae40a8f806bd722a297b00a}\label{classv8_1_1internal_1_1ExpressionClassifierBase_a0908dede1ae40a8f806bd722a297b00a}} 
+enum {\bfseries Error\+Kind} \+: unsigned \{ {\bfseries k\+Unused\+Error} = 15
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase_adaf37aaba028e65e96a559a1aa79f9a2}\label{classv8_1_1internal_1_1ExpressionClassifierBase_adaf37aaba028e65e96a559a1aa79f9a2}} 
+enum {\bfseries Target\+Production} \+: unsigned \{ {\bfseries All\+Productions} = E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+ES(D\+E\+F\+I\+N\+E\+\_\+\+A\+L\+L\+\_\+\+P\+R\+O\+D\+U\+C\+T\+I\+O\+NS) 0
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase_a9d41bf338b0fc999d070bf53997647ab}\label{classv8_1_1internal_1_1ExpressionClassifierBase_a9d41bf338b0fc999d070bf53997647ab}} 
+{\bfseries Expression\+Classifier\+Base} (typename Types\+::\+Base $\ast$base)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase_a5ca825b969212998f583a1a549b507cd}\label{classv8_1_1internal_1_1ExpressionClassifierBase_a5ca825b969212998f583a1a549b507cd}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+valid} (\mbox{\hyperlink{classunsigned}{unsigned}} productions) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase_a30702d82a07e71ba97b380ceb26b8f27}\label{classv8_1_1internal_1_1ExpressionClassifierBase_a30702d82a07e71ba97b380ceb26b8f27}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+valid\+\_\+expression} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase_a176471557524a1f4cf57d3ffac93021d}\label{classv8_1_1internal_1_1ExpressionClassifierBase_a176471557524a1f4cf57d3ffac93021d}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+valid\+\_\+formal\+\_\+parameter\+\_\+initializer} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase_a680ae006a44dc53eb73f79dba085ece2}\label{classv8_1_1internal_1_1ExpressionClassifierBase_a680ae006a44dc53eb73f79dba085ece2}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+valid\+\_\+pattern} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase_a2a4a7f2e60d30261d4afed933864577e}\label{classv8_1_1internal_1_1ExpressionClassifierBase_a2a4a7f2e60d30261d4afed933864577e}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+valid\+\_\+binding\+\_\+pattern} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase_ae5231eb6faca873f370b075b26c335ff}\label{classv8_1_1internal_1_1ExpressionClassifierBase_ae5231eb6faca873f370b075b26c335ff}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+valid\+\_\+strict\+\_\+mode\+\_\+formal\+\_\+parameters} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase_ae7f0bc25ea8ea4d81f0ee8cf9a35adee}\label{classv8_1_1internal_1_1ExpressionClassifierBase_ae7f0bc25ea8ea4d81f0ee8cf9a35adee}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+valid\+\_\+let\+\_\+pattern} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase_a6e7c05450a6d7c46f7e467a41a5f2c47}\label{classv8_1_1internal_1_1ExpressionClassifierBase_a6e7c05450a6d7c46f7e467a41a5f2c47}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+valid\+\_\+async\+\_\+arrow\+\_\+formal\+\_\+parameters} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase_a9e0c10b18bc963a53d647d98a857f619}\label{classv8_1_1internal_1_1ExpressionClassifierBase_a9e0c10b18bc963a53d647d98a857f619}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+simple\+\_\+parameter\+\_\+list} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase_ade945ef08224ba25b2b2622fb2cd9a07}\label{classv8_1_1internal_1_1ExpressionClassifierBase_ade945ef08224ba25b2b2622fb2cd9a07}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Record\+Non\+Simple\+Parameter} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase_a5785a89ab537512948a398ff9f2b7b2d}\label{classv8_1_1internal_1_1ExpressionClassifierBase_a5785a89ab537512948a398ff9f2b7b2d}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Accumulate} (\mbox{\hyperlink{classv8_1_1internal_1_1ExpressionClassifier}{Expression\+Classifier}}$<$ Types $>$ $\ast$const inner, \mbox{\hyperlink{classunsigned}{unsigned}} productions)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase_aa8c4d85b4abeefc863f52e880713cf7b}\label{classv8_1_1internal_1_1ExpressionClassifierBase_aa8c4d85b4abeefc863f52e880713cf7b}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Unused\+Error$<$=15)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase_a983151d7bfcb6491f3424cd610a91de7}\label{classv8_1_1internal_1_1ExpressionClassifierBase_a983151d7bfcb6491f3424cd610a91de7}} 
+Types\+::\+Base $\ast$ {\bfseries base\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase_aff227b4b99d43b298cd38ce11e5c1906}\label{classv8_1_1internal_1_1ExpressionClassifierBase_aff227b4b99d43b298cd38ce11e5c1906}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries invalid\+\_\+productions\+\_\+}\+: k\+Unused\+Error
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ExpressionClassifierBase_a8662e4e61e45e2675079317ae0de0981}\label{classv8_1_1internal_1_1ExpressionClassifierBase_a8662e4e61e45e2675079317ae0de0981}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries is\+\_\+non\+\_\+simple\+\_\+parameter\+\_\+list\+\_\+}\+: 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Types, typename Error\+Tracker$>$\newline
+class v8\+::internal\+::\+Expression\+Classifier\+Base$<$ Types, Error\+Tracker $>$}
+
+
+
+Definition at line 75 of file expression-\/classifier.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/parsing/expression-\/classifier.\+h\end{DoxyCompactItemize}

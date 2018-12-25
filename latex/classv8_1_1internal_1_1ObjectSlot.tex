@@ -1,0 +1,70 @@
+\hypertarget{classv8_1_1internal_1_1ObjectSlot}{}\section{v8\+:\+:internal\+:\+:Object\+Slot Class Reference}
+\label{classv8_1_1internal_1_1ObjectSlot}\index{v8\+::internal\+::\+Object\+Slot@{v8\+::internal\+::\+Object\+Slot}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Object\+Slot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1ObjectSlot}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectSlot_adec37667fb7102502a6cbaf904ddd67e}\label{classv8_1_1internal_1_1ObjectSlot_adec37667fb7102502a6cbaf904ddd67e}} 
+{\bfseries Object\+Slot} (\mbox{\hyperlink{classuintptr__t}{Address}} ptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectSlot_a06e5f3b311c209f0c06b34cb4389cc1d}\label{classv8_1_1internal_1_1ObjectSlot_a06e5f3b311c209f0c06b34cb4389cc1d}} 
+{\bfseries Object\+Slot} (\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$ptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectSlot_a32e32523ded7095afc0ecbe57bb26739}\label{classv8_1_1internal_1_1ObjectSlot_a32e32523ded7095afc0ecbe57bb26739}} 
+{\bfseries Object\+Slot} (\mbox{\hyperlink{classv8_1_1internal_1_1ObjectPtr}{Object\+Ptr}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectSlot_aaa8d7065921b5412986da7d9f6c1a5a0}\label{classv8_1_1internal_1_1ObjectSlot_aaa8d7065921b5412986da7d9f6c1a5a0}} 
+{\bfseries Object\+Slot} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} const $\ast$const $\ast$ptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectSlot_ada1742534cbb63c2dc1d34d3d244fcd2}\label{classv8_1_1internal_1_1ObjectSlot_ada1742534cbb63c2dc1d34d3d244fcd2}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries Object\+Slot} (\mbox{\hyperlink{classv8_1_1internal_1_1SlotBase}{Slot\+Base}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}}, \mbox{\hyperlink{classuintptr__t}{T\+Data}}, k\+Slot\+Data\+Size $>$ slot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectSlot_a8903a2b3dd6582095fa0fd853ffa4b16}\label{classv8_1_1internal_1_1ObjectSlot_a8903a2b3dd6582095fa0fd853ffa4b16}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries operator$\ast$} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectSlot_ae4dfb5a40819a35291b54e1017d24c3c}\label{classv8_1_1internal_1_1ObjectSlot_ae4dfb5a40819a35291b54e1017d24c3c}} 
+void {\bfseries store} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectSlot_a3cb8ee46e0ea437ad4d82b25b4fa6f46}\label{classv8_1_1internal_1_1ObjectSlot_a3cb8ee46e0ea437ad4d82b25b4fa6f46}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ObjectPtr}{Object\+Ptr}} {\bfseries Acquire\+\_\+\+Load} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectSlot_ad1d61b2e38430fc1ad47588526b624f0}\label{classv8_1_1internal_1_1ObjectSlot_ad1d61b2e38430fc1ad47588526b624f0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ObjectPtr}{Object\+Ptr}} {\bfseries Relaxed\+\_\+\+Load} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectSlot_a436dd46b3ebd14ff0c6fae30e433ab28}\label{classv8_1_1internal_1_1ObjectSlot_a436dd46b3ebd14ff0c6fae30e433ab28}} 
+void {\bfseries Relaxed\+\_\+\+Store} (\mbox{\hyperlink{classv8_1_1internal_1_1ObjectPtr}{Object\+Ptr}} value) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectSlot_a9dd0bf1d678fb9b749bda3618d2d6c4b}\label{classv8_1_1internal_1_1ObjectSlot_a9dd0bf1d678fb9b749bda3618d2d6c4b}} 
+void {\bfseries Release\+\_\+\+Store} (\mbox{\hyperlink{classv8_1_1internal_1_1ObjectPtr}{Object\+Ptr}} value) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectSlot_af7ed7ef74ca5c09bbb04d80f91efaf15}\label{classv8_1_1internal_1_1ObjectSlot_af7ed7ef74ca5c09bbb04d80f91efaf15}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ObjectPtr}{Object\+Ptr}} {\bfseries Release\+\_\+\+Compare\+And\+Swap} (\mbox{\hyperlink{classv8_1_1internal_1_1ObjectPtr}{Object\+Ptr}} old, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectPtr}{Object\+Ptr}} target) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectSlot_a05dc27aa192e826e4c12d9d7afd05b9a}\label{classv8_1_1internal_1_1ObjectSlot_a05dc27aa192e826e4c12d9d7afd05b9a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$ {\bfseries Acquire\+\_\+\+Load1} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectSlot_ae6b49da8c1c4542297b5804a12601110}\label{classv8_1_1internal_1_1ObjectSlot_ae6b49da8c1c4542297b5804a12601110}} 
+void {\bfseries Relaxed\+\_\+\+Store1} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ObjectSlot_ad2df3d97d1558ce975beef817d63eac0}\label{classv8_1_1internal_1_1ObjectSlot_ad2df3d97d1558ce975beef817d63eac0}} 
+void {\bfseries Release\+\_\+\+Store1} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 90 of file slots.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/slots.\+h\item 
+v8/src/objects/slots-\/inl.\+h\end{DoxyCompactItemize}

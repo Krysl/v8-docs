@@ -1,0 +1,65 @@
+\hypertarget{classv8__inspector_1_1WasmTranslation}{}\section{v8\+\_\+inspector\+:\+:Wasm\+Translation Class Reference}
+\label{classv8__inspector_1_1WasmTranslation}\index{v8\+\_\+inspector\+::\+Wasm\+Translation@{v8\+\_\+inspector\+::\+Wasm\+Translation}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8__inspector_1_1WasmTranslation_1_1TranslatorImpl}{Translator\+Impl}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_a409505a466b2a1b2b4ef6cbcf7caf32f}\label{classv8__inspector_1_1WasmTranslation_a409505a466b2a1b2b4ef6cbcf7caf32f}} 
+{\bfseries Wasm\+Translation} (v8\+::\+Isolate $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_ab9fde8cf46e1aaa10c9c644d82d7a098}\label{classv8__inspector_1_1WasmTranslation_ab9fde8cf46e1aaa10c9c644d82d7a098}} 
+void {\bfseries Add\+Script} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1debug_1_1WasmScript}{v8\+::debug\+::\+Wasm\+Script}} $>$ script, \mbox{\hyperlink{classv8__inspector_1_1V8DebuggerAgentImpl}{V8\+Debugger\+Agent\+Impl}} $\ast$agent)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_af8be8426dba3eaa99fc551bed9358705}\label{classv8__inspector_1_1WasmTranslation_af8be8426dba3eaa99fc551bed9358705}} 
+void {\bfseries Clear} ()
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_abf086eed10b030ba8ec5521ab6347442}\label{classv8__inspector_1_1WasmTranslation_abf086eed10b030ba8ec5521ab6347442}} 
+void {\bfseries Clear} (v8\+::\+Isolate $\ast$isolate, const std\+::vector$<$ \mbox{\hyperlink{classint}{int}} $>$ \&context\+Ids\+To\+Clear)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_a0ba657d87620afeb33ace4e6ef48dbff}\label{classv8__inspector_1_1WasmTranslation_a0ba657d87620afeb33ace4e6ef48dbff}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Translate\+Wasm\+Script\+Location\+To\+Protocol\+Location} (\mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $\ast$script\+\_\+id, \mbox{\hyperlink{classint}{int}} $\ast$line\+\_\+number, \mbox{\hyperlink{classint}{int}} $\ast$column\+\_\+number)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_a79d2f8e219a487e8256cab390eb68ffe}\label{classv8__inspector_1_1WasmTranslation_a79d2f8e219a487e8256cab390eb68ffe}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Translate\+Protocol\+Location\+To\+Wasm\+Script\+Location} (\mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} $\ast$script\+\_\+id, \mbox{\hyperlink{classint}{int}} $\ast$line\+\_\+number, \mbox{\hyperlink{classint}{int}} $\ast$column\+\_\+number)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_a8bdffea837bc476c67a65d7a851860fa}\label{classv8__inspector_1_1WasmTranslation_a8bdffea837bc476c67a65d7a851860fa}} 
+const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \& {\bfseries Get\+Source} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&script\+\_\+id, \mbox{\hyperlink{classint}{int}} func\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_af5dfd6b6590b774d9b8b83a4c971d8ef}\label{classv8__inspector_1_1WasmTranslation_af5dfd6b6590b774d9b8b83a4c971d8ef}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Start\+Line} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&script\+\_\+id, \mbox{\hyperlink{classint}{int}} func\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_aac81fbbe5b4f165354aadb8532de794d}\label{classv8__inspector_1_1WasmTranslation_aac81fbbe5b4f165354aadb8532de794d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Start\+Column} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&script\+\_\+id, \mbox{\hyperlink{classint}{int}} func\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_a0cce0e8eb71ac20c199f71470cadebf6}\label{classv8__inspector_1_1WasmTranslation_a0cce0e8eb71ac20c199f71470cadebf6}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+End\+Line} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&script\+\_\+id, \mbox{\hyperlink{classint}{int}} func\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_ac8490a78475a887adf4cfafe1a8d913e}\label{classv8__inspector_1_1WasmTranslation_ac8490a78475a887adf4cfafe1a8d913e}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+End\+Column} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&script\+\_\+id, \mbox{\hyperlink{classint}{int}} func\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_a3a85ab3a9073eb2e12615e6a3cd47b1a}\label{classv8__inspector_1_1WasmTranslation_a3a85ab3a9073eb2e12615e6a3cd47b1a}} 
+\mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} {\bfseries Get\+Hash} (const \mbox{\hyperlink{classv8__inspector_1_1String16}{String16}} \&script\+\_\+id, \mbox{\hyperlink{classint}{int}} func\+\_\+index)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1WasmTranslation_a0f575bbb59fefda52f43a24bd713c046}\label{classv8__inspector_1_1WasmTranslation_a0f575bbb59fefda52f43a24bd713c046}} 
+class {\bfseries Translator\+Impl}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file wasm-\/translation.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/inspector/wasm-\/translation.\+h\item 
+v8/src/inspector/wasm-\/translation.\+cc\end{DoxyCompactItemize}

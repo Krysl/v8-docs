@@ -1,0 +1,103 @@
+\hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler}{}\section{v8\+:\+:internal\+:\+:Base\+Collections\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1BaseCollectionsAssembler}\index{v8\+::internal\+::\+Base\+Collections\+Assembler@{v8\+::internal\+::\+Base\+Collections\+Assembler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Base\+Collections\+Assembler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.666667cm]{classv8_1_1internal_1_1BaseCollectionsAssembler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_aa6233af936515d2fcb11f0f2e20642af}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_aa6233af936515d2fcb11f0f2e20642af}} 
+{\bfseries Base\+Collections\+Assembler} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerState}{compiler\+::\+Code\+Assembler\+State}} $\ast$state)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_a015331a50bbfaff45b9a75af0791ec02}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_a015331a50bbfaff45b9a75af0791ec02}} 
+enum {\bfseries Variant} \{ {\bfseries k\+Map}, 
+{\bfseries k\+Set}, 
+{\bfseries k\+Weak\+Map}, 
+{\bfseries k\+Weak\+Set}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_a827aece4cbaaa0546bc597b8159f612b}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_a827aece4cbaaa0546bc597b8159f612b}} 
+void {\bfseries Add\+Constructor\+Entry} (Variant variant, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ collection, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ add\+\_\+function, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ key\+\_\+value, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+may\+\_\+have\+\_\+side\+\_\+effects=nullptr, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+exception=nullptr, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TypedCodeAssemblerVariable}{T\+Variable}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ $\ast$var\+\_\+exception=nullptr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_a3d791194ead981359bf7162fc69074cf}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_a3d791194ead981359bf7162fc69074cf}} 
+void {\bfseries Add\+Constructor\+Entries} (Variant variant, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ native\+\_\+context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ collection, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ initial\+\_\+entries)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_ad0dbd1fb9bfdd83908f4180e5854c0d1}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_ad0dbd1fb9bfdd83908f4180e5854c0d1}} 
+void {\bfseries Add\+Constructor\+Entries\+From\+Fast\+J\+S\+Array} (Variant variant, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ native\+\_\+context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ collection, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSArray}{J\+S\+Array}} $>$ fast\+\_\+jsarray, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+may\+\_\+have\+\_\+side\+\_\+effects)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_a6616d10df13bfcaf1d9064cca5293a00}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_a6616d10df13bfcaf1d9064cca5293a00}} 
+void {\bfseries Add\+Constructor\+Entries\+From\+Iterable} (Variant variant, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ native\+\_\+context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ collection, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ iterable)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_a67a93bdf3cf80e5202756893981a011e}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_a67a93bdf3cf80e5202756893981a011e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Allocate\+J\+S\+Collection} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ constructor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ new\+\_\+target)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_ad9a68f5c3a20d12bb6365dac0d444f22}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_ad9a68f5c3a20d12bb6365dac0d444f22}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Allocate\+J\+S\+Collection\+Fast} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ constructor)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_a9be3b217b111a46db6d46c4828433e49}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_a9be3b217b111a46db6d46c4828433e49}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Allocate\+J\+S\+Collection\+Slow} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ constructor, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ new\+\_\+target)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_aa9c4588ffeb19fce3aacbaf4a99f57ce}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_aa9c4588ffeb19fce3aacbaf4a99f57ce}} 
+virtual \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Allocate\+Table} (Variant variant, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ at\+\_\+least\+\_\+space\+\_\+for)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_a6264cbd33a70875e85f131a53cf2434b}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_a6264cbd33a70875e85f131a53cf2434b}} 
+void {\bfseries Generate\+Constructor} (Variant variant, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ constructor\+\_\+function\+\_\+name, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ new\+\_\+target, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ argc, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_a363490cfa3ce13b453214bba61749bc5}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_a363490cfa3ce13b453214bba61749bc5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Get\+Add\+Function} (Variant variant, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ collection)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_a48b8331f9c3476f4585a9304a98b3aa1}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_a48b8331f9c3476f4585a9304a98b3aa1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ {\bfseries Get\+Constructor} (Variant variant, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ native\+\_\+context)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_a346346682ae5fb47ab68cfd574d729c6}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_a346346682ae5fb47ab68cfd574d729c6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ {\bfseries Get\+Initial\+Add\+Function} (Variant variant, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ native\+\_\+context)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_a77a6b06281d960186638a164a065a5f4}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_a77a6b06281d960186638a164a065a5f4}} 
+void {\bfseries Goto\+If\+Initial\+Add\+Function\+Modified} (Variant variant, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ native\+\_\+context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ collection, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+modified)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_a402707f905f0590e3ded3192cdf92bac}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_a402707f905f0590e3ded3192cdf92bac}} 
+Root\+Index {\bfseries Get\+Add\+Function\+Name\+Index} (Variant variant)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_a96a92a475b2cf96a2759fbb3c4bd4340}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_a96a92a475b2cf96a2759fbb3c4bd4340}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Table\+Offset} (Variant variant)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_ad2fb1abdb88308b84986f2e50b1fbfa6}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_ad2fb1abdb88308b84986f2e50b1fbfa6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ {\bfseries Estimated\+Initial\+Size} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ initial\+\_\+entries, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1BoolT}{BoolT}} $>$ is\+\_\+fast\+\_\+jsarray)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_aa2cfa9749b4e8bf122fc406cca52e4e1}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_aa2cfa9749b4e8bf122fc406cca52e4e1}} 
+void {\bfseries Goto\+If\+Not\+J\+S\+Receiver} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const obj, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$if\+\_\+not\+\_\+receiver)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_ad0673bad5ec59bcf5486d190bd4c7e90}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_ad0673bad5ec59bcf5486d190bd4c7e90}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1BoolT}{BoolT}} $>$ {\bfseries Has\+Initial\+Collection\+Prototype} (Variant variant, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ native\+\_\+context, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ collection)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_a0d9774779d4d9dc844e4e284c72813ff}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_a0d9774779d4d9dc844e4e284c72813ff}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ {\bfseries Get\+Initial\+Collection\+Prototype} (Variant variant, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ native\+\_\+context)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_a4b6bb28d831ed8d4e9e95ad9e89ba976}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_a4b6bb28d831ed8d4e9e95ad9e89ba976}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Load\+And\+Normalize\+Fixed\+Array\+Element} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ elements, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BaseCollectionsAssembler_a05eeb24562d10d9065bdd4e5aa59af05}\label{classv8_1_1internal_1_1BaseCollectionsAssembler_a05eeb24562d10d9065bdd4e5aa59af05}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Load\+And\+Normalize\+Fixed\+Double\+Array\+Element} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ elements, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ index)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 23 of file builtins-\/collections-\/gen.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/builtins/builtins-\/collections-\/gen.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,101 @@
+\hypertarget{classv8_1_1internal_1_1PrototypeInfo}{}\section{v8\+:\+:internal\+:\+:Prototype\+Info Class Reference}
+\label{classv8_1_1internal_1_1PrototypeInfo}\index{v8\+::internal\+::\+Prototype\+Info@{v8\+::internal\+::\+Prototype\+Info}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Prototype\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1PrototypeInfo}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1PrototypeInfo_1_1BodyDescriptor}{Body\+Descriptor}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeInfo_ae8d5e0b063897318a4f31d849f867b4e}\label{classv8_1_1internal_1_1PrototypeInfo_ae8d5e0b063897318a4f31d849f867b4e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} {\bfseries Object\+Create\+Map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeInfo_a2d8e572e68f9a72a7aa14f5a68c018c8}\label{classv8_1_1internal_1_1PrototypeInfo_a2d8e572e68f9a72a7aa14f5a68c018c8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Object\+Create\+Map} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeInfo_a6dd37c472eda5395dc483ad483b1fb9b}\label{classv8_1_1internal_1_1PrototypeInfo_a6dd37c472eda5395dc483ad483b1fb9b}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries registry\+\_\+slot} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeInfo_a7274493679b5e347e8a6c3fe8204389f}\label{classv8_1_1internal_1_1PrototypeInfo_a7274493679b5e347e8a6c3fe8204389f}} 
+void {\bfseries set\+\_\+registry\+\_\+slot} (\mbox{\hyperlink{classint}{int}} slot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeInfo_a56640332a46018b5cf0318b071ae7f53}\label{classv8_1_1internal_1_1PrototypeInfo_a56640332a46018b5cf0318b071ae7f53}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries bit\+\_\+field} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeInfo_a59bdfd972593cc2ecf904c767bab49df}\label{classv8_1_1internal_1_1PrototypeInfo_a59bdfd972593cc2ecf904c767bab49df}} 
+void {\bfseries set\+\_\+bit\+\_\+field} (\mbox{\hyperlink{classint}{int}} bit\+\_\+field)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeInfo_abbf2f81ca59011eecb4ac959a451aac9}\label{classv8_1_1internal_1_1PrototypeInfo_abbf2f81ca59011eecb4ac959a451aac9}} 
+static void {\bfseries Set\+Object\+Create\+Map} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1PrototypeInfo}{Prototype\+Info}} $>$ info, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} $>$ map)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeInfo_a98d62de8e98c5cd39b161902bb947d14}\label{classv8_1_1internal_1_1PrototypeInfo_a98d62de8e98c5cd39b161902bb947d14}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries U\+N\+R\+E\+G\+I\+S\+T\+E\+R\+ED} = -\/1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeInfo_a69357b2292912f26af1a079df7930255}\label{classv8_1_1internal_1_1PrototypeInfo_a69357b2292912f26af1a079df7930255}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+J\+S\+Module\+Namespace\+Offset} = Heap\+Object\+::k\+Header\+Size
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Prototype\+Users\+Offset}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeInfo_a3b906319993652cb23451f58a58ddcd1}\label{classv8_1_1internal_1_1PrototypeInfo_a3b906319993652cb23451f58a58ddcd1}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Registry\+Slot\+Offset} = k\+Prototype\+Users\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeInfo_acd8f9aeb2ef2c796f0a7898bb44553ea}\label{classv8_1_1internal_1_1PrototypeInfo_acd8f9aeb2ef2c796f0a7898bb44553ea}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Validity\+Cell\+Offset} = k\+Registry\+Slot\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeInfo_ac0e76b1a60ce1dfb769ecf09292c8d5a}\label{classv8_1_1internal_1_1PrototypeInfo_ac0e76b1a60ce1dfb769ecf09292c8d5a}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Object\+Create\+Map\+Offset} = k\+Validity\+Cell\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeInfo_a70c01e322134ed106d1b9be1748c6b44}\label{classv8_1_1internal_1_1PrototypeInfo_a70c01e322134ed106d1b9be1748c6b44}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Bit\+Field\+Offset} = k\+Object\+Create\+Map\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeInfo_a84ca9d4eaced6fda3553bdfbd0b3f79e}\label{classv8_1_1internal_1_1PrototypeInfo_a84ca9d4eaced6fda3553bdfbd0b3f79e}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Size} = k\+Bit\+Field\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeInfo_a6b45e6e0375b8da18fe0dc92af70e645}\label{classv8_1_1internal_1_1PrototypeInfo_a6b45e6e0375b8da18fe0dc92af70e645}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Should\+Be\+Fast\+Bit} = 0
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file prototype-\/info.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1PrototypeInfo_a1302870eab35b0cb5109d42b26903526}\label{classv8_1_1internal_1_1PrototypeInfo_a1302870eab35b0cb5109d42b26903526}} 
+\index{v8\+::internal\+::\+Prototype\+Info@{v8\+::internal\+::\+Prototype\+Info}!k\+Prototype\+Users\+Offset@{k\+Prototype\+Users\+Offset}}
+\index{k\+Prototype\+Users\+Offset@{k\+Prototype\+Users\+Offset}!v8\+::internal\+::\+Prototype\+Info@{v8\+::internal\+::\+Prototype\+Info}}
+\subsubsection{\texorpdfstring{k\+Prototype\+Users\+Offset}{kPrototypeUsersOffset}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Prototype\+Info\+::k\+Prototype\+Users\+Offset\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kJSModuleNamespaceOffset + kPointerSize
+\end{DoxyCode}
+
+
+Definition at line 56 of file prototype-\/info.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/prototype-\/info.\+h\item 
+v8/src/objects/prototype-\/info-\/inl.\+h\end{DoxyCompactItemize}

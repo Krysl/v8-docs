@@ -1,0 +1,42 @@
+\hypertarget{classv8_1_1internal_1_1JitLogger}{}\section{v8\+:\+:internal\+:\+:Jit\+Logger Class Reference}
+\label{classv8_1_1internal_1_1JitLogger}\index{v8\+::internal\+::\+Jit\+Logger@{v8\+::internal\+::\+Jit\+Logger}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Jit\+Logger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1JitLogger}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JitLogger_a4887c963640eca28dc82db005861855c}\label{classv8_1_1internal_1_1JitLogger_a4887c963640eca28dc82db005861855c}} 
+{\bfseries Jit\+Logger} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Jit\+Code\+Event\+Handler code\+\_\+event\+\_\+handler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JitLogger_a270a00b56bff5ed4a43e54ebb402de55}\label{classv8_1_1internal_1_1JitLogger_a270a00b56bff5ed4a43e54ebb402de55}} 
+void {\bfseries Code\+Move\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} from, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} to) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JitLogger_adacbe7168d45f2490b98808c0e567c2d}\label{classv8_1_1internal_1_1JitLogger_adacbe7168d45f2490b98808c0e567c2d}} 
+void {\bfseries Code\+Disable\+Opt\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$shared) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JitLogger_af2076ae625c31e5165653dde71a30e49}\label{classv8_1_1internal_1_1JitLogger_af2076ae625c31e5165653dde71a30e49}} 
+void {\bfseries Add\+Code\+Line\+Pos\+Info\+Event} (void $\ast$jit\+\_\+handler\+\_\+data, \mbox{\hyperlink{classint}{int}} pc\+\_\+offset, \mbox{\hyperlink{classint}{int}} position, Jit\+Code\+Event\+::\+Position\+Type position\+\_\+type)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JitLogger_ae521e7d5d7de523dd5fd5a57b1f39907}\label{classv8_1_1internal_1_1JitLogger_ae521e7d5d7de523dd5fd5a57b1f39907}} 
+void $\ast$ {\bfseries Start\+Code\+Pos\+Info\+Event} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1JitLogger_a9504054c843f691b0626fa60e93ea8c4}\label{classv8_1_1internal_1_1JitLogger_a9504054c843f691b0626fa60e93ea8c4}} 
+void {\bfseries End\+Code\+Pos\+Info\+Event} (\mbox{\hyperlink{classuintptr__t}{Address}} start\+\_\+address, void $\ast$jit\+\_\+handler\+\_\+data)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 624 of file log.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/log.\+cc\end{DoxyCompactItemize}

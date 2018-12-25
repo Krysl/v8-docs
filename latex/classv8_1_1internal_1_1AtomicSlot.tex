@@ -1,0 +1,68 @@
+\hypertarget{classv8_1_1internal_1_1AtomicSlot}{}\section{v8\+:\+:internal\+:\+:Atomic\+Slot Class Reference}
+\label{classv8_1_1internal_1_1AtomicSlot}\index{v8\+::internal\+::\+Atomic\+Slot@{v8\+::internal\+::\+Atomic\+Slot}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Atomic\+Slot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1AtomicSlot}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1AtomicSlot_1_1Reference}{Reference}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AtomicSlot_a06691537e2d58b02290bde7c7e92d520}\label{classv8_1_1internal_1_1AtomicSlot_a06691537e2d58b02290bde7c7e92d520}} 
+typedef \mbox{\hyperlink{classint}{int}} {\bfseries difference\+\_\+type}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AtomicSlot_add1e8f072b990c212b86e6e172a1d290}\label{classv8_1_1internal_1_1AtomicSlot_add1e8f072b990c212b86e6e172a1d290}} 
+typedef \mbox{\hyperlink{classuintptr__t}{Tagged\+\_\+t}} {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AtomicSlot_ac03f1963c0104f2444712319fff91c8a}\label{classv8_1_1internal_1_1AtomicSlot_ac03f1963c0104f2444712319fff91c8a}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1AtomicSlot_1_1Reference}{Reference}} {\bfseries reference}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AtomicSlot_a110b01e03686a5225d5cf799ba938612}\label{classv8_1_1internal_1_1AtomicSlot_a110b01e03686a5225d5cf799ba938612}} 
+typedef void $\ast$ {\bfseries pointer}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AtomicSlot_ad5f832afe0cbe712573b03d5e81bd518}\label{classv8_1_1internal_1_1AtomicSlot_ad5f832afe0cbe712573b03d5e81bd518}} 
+typedef std\+::random\+\_\+access\+\_\+iterator\+\_\+tag {\bfseries iterator\+\_\+category}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AtomicSlot_a6d6ef708b6d68106abd04fddb8cc085c}\label{classv8_1_1internal_1_1AtomicSlot_a6d6ef708b6d68106abd04fddb8cc085c}} 
+{\bfseries Atomic\+Slot} (\mbox{\hyperlink{classuintptr__t}{Address}} address)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AtomicSlot_a02cb8e75eeb0cc827852b7ffd07573c5}\label{classv8_1_1internal_1_1AtomicSlot_a02cb8e75eeb0cc827852b7ffd07573c5}} 
+{\bfseries Atomic\+Slot} (\mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} slot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AtomicSlot_a131f8d2a9fb471d457488cfd0a64b1c0}\label{classv8_1_1internal_1_1AtomicSlot_a131f8d2a9fb471d457488cfd0a64b1c0}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1AtomicSlot_1_1Reference}{Reference}} {\bfseries operator$\ast$} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AtomicSlot_a4b257bff165b6658a98ccb5cddb79055}\label{classv8_1_1internal_1_1AtomicSlot_a4b257bff165b6658a98ccb5cddb79055}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1AtomicSlot_1_1Reference}{Reference}} {\bfseries operator\mbox{[}$\,$\mbox{]}} (\mbox{\hyperlink{classint}{difference\+\_\+type}} i) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AtomicSlot_acfbcbaef744b7d02648f58ade71d61ae}\label{classv8_1_1internal_1_1AtomicSlot_acfbcbaef744b7d02648f58ade71d61ae}} 
+void {\bfseries swap} (\mbox{\hyperlink{classv8_1_1internal_1_1AtomicSlot_1_1Reference}{Reference}} lhs, \mbox{\hyperlink{classv8_1_1internal_1_1AtomicSlot_1_1Reference}{Reference}} rhs)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AtomicSlot_a561536e764ed95aa21a4b02599d80b58}\label{classv8_1_1internal_1_1AtomicSlot_a561536e764ed95aa21a4b02599d80b58}} 
+\mbox{\hyperlink{classint}{difference\+\_\+type}} {\bfseries operator-\/} (\mbox{\hyperlink{classv8_1_1internal_1_1AtomicSlot}{Atomic\+Slot}} a, \mbox{\hyperlink{classv8_1_1internal_1_1AtomicSlot}{Atomic\+Slot}} b)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 28 of file slots-\/atomic-\/inl.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/slots-\/atomic-\/inl.\+h\end{DoxyCompactItemize}

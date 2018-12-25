@@ -1,0 +1,283 @@
+\hypertarget{classv8_1_1internal_1_1RelocInfo}{}\section{v8\+:\+:internal\+:\+:Reloc\+Info Class Reference}
+\label{classv8_1_1internal_1_1RelocInfo}\index{v8\+::internal\+::\+Reloc\+Info@{v8\+::internal\+::\+Reloc\+Info}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_ad2e613bbaf7c7a82f0db322c069cad8e}\label{classv8_1_1internal_1_1RelocInfo_ad2e613bbaf7c7a82f0db322c069cad8e}} 
+enum {\bfseries Mode} \+: int8\+\_\+t \{ \newline
+{\bfseries C\+O\+D\+E\+\_\+\+T\+A\+R\+G\+ET}, 
+{\bfseries R\+E\+L\+A\+T\+I\+V\+E\+\_\+\+C\+O\+D\+E\+\_\+\+T\+A\+R\+G\+ET}, 
+{\bfseries E\+M\+B\+E\+D\+D\+E\+D\+\_\+\+O\+B\+J\+E\+CT}, 
+{\bfseries W\+A\+S\+M\+\_\+\+C\+A\+LL}, 
+\newline
+{\bfseries W\+A\+S\+M\+\_\+\+S\+T\+U\+B\+\_\+\+C\+A\+LL}, 
+{\bfseries R\+U\+N\+T\+I\+M\+E\+\_\+\+E\+N\+T\+RY}, 
+{\bfseries C\+O\+M\+M\+E\+NT}, 
+{\bfseries E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+R\+E\+F\+E\+R\+E\+N\+CE}, 
+\newline
+{\bfseries I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+R\+E\+F\+E\+R\+E\+N\+CE}, 
+{\bfseries I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+E\+N\+C\+O\+D\+ED}, 
+{\bfseries O\+F\+F\+\_\+\+H\+E\+A\+P\+\_\+\+T\+A\+R\+G\+ET}, 
+{\bfseries C\+O\+N\+S\+T\+\_\+\+P\+O\+OL}, 
+\newline
+{\bfseries V\+E\+N\+E\+E\+R\+\_\+\+P\+O\+OL}, 
+{\bfseries D\+E\+O\+P\+T\+\_\+\+S\+C\+R\+I\+P\+T\+\_\+\+O\+F\+F\+S\+ET}, 
+{\bfseries D\+E\+O\+P\+T\+\_\+\+I\+N\+L\+I\+N\+I\+N\+G\+\_\+\+ID}, 
+{\bfseries D\+E\+O\+P\+T\+\_\+\+R\+E\+A\+S\+ON}, 
+\newline
+{\bfseries D\+E\+O\+P\+T\+\_\+\+ID}, 
+{\bfseries P\+C\+\_\+\+J\+U\+MP}, 
+{\bfseries N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+M\+O\+D\+ES}, 
+{\bfseries N\+O\+NE}, 
+\newline
+{\bfseries L\+A\+S\+T\+\_\+\+C\+O\+D\+E\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+M\+O\+DE} = R\+E\+L\+A\+T\+I\+V\+E\+\_\+\+C\+O\+D\+E\+\_\+\+T\+A\+R\+G\+ET, 
+{\bfseries F\+I\+R\+S\+T\+\_\+\+R\+E\+A\+L\+\_\+\+R\+E\+L\+O\+C\+\_\+\+M\+O\+DE} = C\+O\+D\+E\+\_\+\+T\+A\+R\+G\+ET, 
+{\bfseries L\+A\+S\+T\+\_\+\+R\+E\+A\+L\+\_\+\+R\+E\+L\+O\+C\+\_\+\+M\+O\+DE} = V\+E\+N\+E\+E\+R\+\_\+\+P\+O\+OL, 
+{\bfseries L\+A\+S\+T\+\_\+\+G\+C\+E\+D\+\_\+\+E\+N\+UM} = E\+M\+B\+E\+D\+D\+E\+D\+\_\+\+O\+B\+J\+E\+CT, 
+\newline
+{\bfseries F\+I\+R\+S\+T\+\_\+\+S\+H\+A\+R\+E\+A\+B\+L\+E\+\_\+\+R\+E\+L\+O\+C\+\_\+\+M\+O\+DE} = W\+A\+S\+M\+\_\+\+C\+A\+LL
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a0d452667cd0ee0eb944f7ee7cc9b7dea}\label{classv8_1_1internal_1_1RelocInfo_a0d452667cd0ee0eb944f7ee7cc9b7dea}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+M\+O\+D\+ES$<$=k\+Bits\+Per\+Int)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a456992820657fdfa8fba3db076773e9f}\label{classv8_1_1internal_1_1RelocInfo_a456992820657fdfa8fba3db076773e9f}} 
+{\bfseries Reloc\+Info} (\mbox{\hyperlink{classuintptr__t}{Address}} pc, Mode rmode, intptr\+\_\+t data, \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} host, \mbox{\hyperlink{classuintptr__t}{Address}} constant\+\_\+pool=k\+Null\+Address)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_ae4e4b6b325ffcbba5c03de7c640c8f99}\label{classv8_1_1internal_1_1RelocInfo_ae4e4b6b325ffcbba5c03de7c640c8f99}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries pc} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_adbcb85c0a1896ff1e7661746d6143e90}\label{classv8_1_1internal_1_1RelocInfo_adbcb85c0a1896ff1e7661746d6143e90}} 
+Mode {\bfseries rmode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_ad66d51d2cd4ceaa7c5e9fc6adc69c4de}\label{classv8_1_1internal_1_1RelocInfo_ad66d51d2cd4ceaa7c5e9fc6adc69c4de}} 
+intptr\+\_\+t {\bfseries data} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a691844e190ac36795d08e805187054f2}\label{classv8_1_1internal_1_1RelocInfo_a691844e190ac36795d08e805187054f2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} {\bfseries host} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_aa4314d13f013efd9affcd17fbab1f4f2}\label{classv8_1_1internal_1_1RelocInfo_aa4314d13f013efd9affcd17fbab1f4f2}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries constant\+\_\+pool} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a2f9c0cf5d56324fe127b8cccbaa2de78}\label{classv8_1_1internal_1_1RelocInfo_a2f9c0cf5d56324fe127b8cccbaa2de78}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries apply} (intptr\+\_\+t delta)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a8f33d5c22a0e3cbe30e5ff67843dea3f}\label{classv8_1_1internal_1_1RelocInfo_a8f33d5c22a0e3cbe30e5ff67843dea3f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Coded\+Specially} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a74178a98b5efdd971a4f647281b6296e}\label{classv8_1_1internal_1_1RelocInfo_a74178a98b5efdd971a4f647281b6296e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+In\+Constant\+Pool} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a25414185c0fd7454a18ab16a64517903}\label{classv8_1_1internal_1_1RelocInfo_a25414185c0fd7454a18ab16a64517903}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Get\+Deoptimization\+Id} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, Deoptimize\+Kind kind)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_ac23f06483254bd0fe0f937d206535830}\label{classv8_1_1internal_1_1RelocInfo_ac23f06483254bd0fe0f937d206535830}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries wasm\+\_\+call\+\_\+address} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_afec7cdcceb9634b507298486b121f8f4}\label{classv8_1_1internal_1_1RelocInfo_afec7cdcceb9634b507298486b121f8f4}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries wasm\+\_\+stub\+\_\+call\+\_\+address} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a4532875f67c1658431b317da15aaa1b9}\label{classv8_1_1internal_1_1RelocInfo_a4532875f67c1658431b317da15aaa1b9}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries wasm\+\_\+call\+\_\+tag} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a548ba1a0b722b622f2b382887887592a}\label{classv8_1_1internal_1_1RelocInfo_a548ba1a0b722b622f2b382887887592a}} 
+void {\bfseries set\+\_\+wasm\+\_\+call\+\_\+address} (\mbox{\hyperlink{classuintptr__t}{Address}}, I\+Cache\+Flush\+Mode icache\+\_\+flush\+\_\+mode=F\+L\+U\+S\+H\+\_\+\+I\+C\+A\+C\+H\+E\+\_\+\+I\+F\+\_\+\+N\+E\+E\+D\+ED)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a6fcd9eedbac8fa24408e58dd0e9a651e}\label{classv8_1_1internal_1_1RelocInfo_a6fcd9eedbac8fa24408e58dd0e9a651e}} 
+void {\bfseries set\+\_\+wasm\+\_\+stub\+\_\+call\+\_\+address} (\mbox{\hyperlink{classuintptr__t}{Address}}, I\+Cache\+Flush\+Mode icache\+\_\+flush\+\_\+mode=F\+L\+U\+S\+H\+\_\+\+I\+C\+A\+C\+H\+E\+\_\+\+I\+F\+\_\+\+N\+E\+E\+D\+ED)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a37946d7dda0621c92ed0a09bd556843f}\label{classv8_1_1internal_1_1RelocInfo_a37946d7dda0621c92ed0a09bd556843f}} 
+void {\bfseries set\+\_\+target\+\_\+address} (\mbox{\hyperlink{classuintptr__t}{Address}} target, Write\+Barrier\+Mode write\+\_\+barrier\+\_\+mode=U\+P\+D\+A\+T\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+A\+R\+R\+I\+ER, I\+Cache\+Flush\+Mode icache\+\_\+flush\+\_\+mode=F\+L\+U\+S\+H\+\_\+\+I\+C\+A\+C\+H\+E\+\_\+\+I\+F\+\_\+\+N\+E\+E\+D\+ED)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a5105ad25a3cfafd733106928a9d8a4ad}\label{classv8_1_1internal_1_1RelocInfo_a5105ad25a3cfafd733106928a9d8a4ad}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries target\+\_\+address} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_ad80bf75f1f04208415ef28558fe617d3}\label{classv8_1_1internal_1_1RelocInfo_ad80bf75f1f04208415ef28558fe617d3}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$ {\bfseries target\+\_\+object} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a1e5e13bc0017ec05d0e8320b7023b3b2}\label{classv8_1_1internal_1_1RelocInfo_a1e5e13bc0017ec05d0e8320b7023b3b2}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ {\bfseries target\+\_\+object\+\_\+handle} (\mbox{\hyperlink{classv8_1_1internal_1_1Assembler}{Assembler}} $\ast$origin)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a7f492b2b52f6b3c359fec43a0c154b0b}\label{classv8_1_1internal_1_1RelocInfo_a7f492b2b52f6b3c359fec43a0c154b0b}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries set\+\_\+target\+\_\+object} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$target, Write\+Barrier\+Mode write\+\_\+barrier\+\_\+mode=U\+P\+D\+A\+T\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+A\+R\+R\+I\+ER, I\+Cache\+Flush\+Mode icache\+\_\+flush\+\_\+mode=F\+L\+U\+S\+H\+\_\+\+I\+C\+A\+C\+H\+E\+\_\+\+I\+F\+\_\+\+N\+E\+E\+D\+ED)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a0d17b16373425a2732df5c3fe6a00772}\label{classv8_1_1internal_1_1RelocInfo_a0d17b16373425a2732df5c3fe6a00772}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries target\+\_\+runtime\+\_\+entry} (\mbox{\hyperlink{classv8_1_1internal_1_1Assembler}{Assembler}} $\ast$origin)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a5abb732e980c69d05896adbd636c2c1c}\label{classv8_1_1internal_1_1RelocInfo_a5abb732e980c69d05896adbd636c2c1c}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries set\+\_\+target\+\_\+runtime\+\_\+entry} (\mbox{\hyperlink{classuintptr__t}{Address}} target, Write\+Barrier\+Mode write\+\_\+barrier\+\_\+mode=U\+P\+D\+A\+T\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+A\+R\+R\+I\+ER, I\+Cache\+Flush\+Mode icache\+\_\+flush\+\_\+mode=F\+L\+U\+S\+H\+\_\+\+I\+C\+A\+C\+H\+E\+\_\+\+I\+F\+\_\+\+N\+E\+E\+D\+ED)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a989dacaf1a8166d06b75076a429651c2}\label{classv8_1_1internal_1_1RelocInfo_a989dacaf1a8166d06b75076a429651c2}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries target\+\_\+off\+\_\+heap\+\_\+target} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a8ef575c2919bd0c7635907be06135a9a}\label{classv8_1_1internal_1_1RelocInfo_a8ef575c2919bd0c7635907be06135a9a}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Cell}{Cell}} $\ast$ {\bfseries target\+\_\+cell} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_aa60abc3d0a501dd3fe966cfc2b3ecf71}\label{classv8_1_1internal_1_1RelocInfo_aa60abc3d0a501dd3fe966cfc2b3ecf71}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Cell}{Cell}} $>$ {\bfseries target\+\_\+cell\+\_\+handle} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a4040bacc5338bb8fcc472d4ace72c2ca}\label{classv8_1_1internal_1_1RelocInfo_a4040bacc5338bb8fcc472d4ace72c2ca}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries set\+\_\+target\+\_\+cell} (\mbox{\hyperlink{classv8_1_1internal_1_1Cell}{Cell}} $\ast$cell, Write\+Barrier\+Mode write\+\_\+barrier\+\_\+mode=U\+P\+D\+A\+T\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+A\+R\+R\+I\+ER, I\+Cache\+Flush\+Mode icache\+\_\+flush\+\_\+mode=F\+L\+U\+S\+H\+\_\+\+I\+C\+A\+C\+H\+E\+\_\+\+I\+F\+\_\+\+N\+E\+E\+D\+ED)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_aecae1b893a70cbbd672ae9e3e14270e1}\label{classv8_1_1internal_1_1RelocInfo_aecae1b893a70cbbd672ae9e3e14270e1}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries set\+\_\+target\+\_\+external\+\_\+reference} (\mbox{\hyperlink{classuintptr__t}{Address}}, I\+Cache\+Flush\+Mode icache\+\_\+flush\+\_\+mode=F\+L\+U\+S\+H\+\_\+\+I\+C\+A\+C\+H\+E\+\_\+\+I\+F\+\_\+\+N\+E\+E\+D\+ED)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_abecc351ac3cac56e2f2c19081b2fc2e1}\label{classv8_1_1internal_1_1RelocInfo_abecc351ac3cac56e2f2c19081b2fc2e1}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries constant\+\_\+pool\+\_\+entry\+\_\+address} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_ae31c8ab764a827e3319303f8aa937863}\label{classv8_1_1internal_1_1RelocInfo_ae31c8ab764a827e3319303f8aa937863}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries target\+\_\+address\+\_\+address} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a830e369f0e5f6c22a6427ce90637dd4c}\label{classv8_1_1internal_1_1RelocInfo_a830e369f0e5f6c22a6427ce90637dd4c}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries target\+\_\+address\+\_\+size} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_aa3014108f63ba702145573e65c2da262}\label{classv8_1_1internal_1_1RelocInfo_aa3014108f63ba702145573e65c2da262}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries target\+\_\+external\+\_\+reference} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a06b1200cd7ebba343854d0a5ab49434d}\label{classv8_1_1internal_1_1RelocInfo_a06b1200cd7ebba343854d0a5ab49434d}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries target\+\_\+internal\+\_\+reference} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a6ad4cf43111402992637884496a0f2c3}\label{classv8_1_1internal_1_1RelocInfo_a6ad4cf43111402992637884496a0f2c3}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries target\+\_\+internal\+\_\+reference\+\_\+address} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_af71beb53464ee31d4f5077fa15abc8ca}\label{classv8_1_1internal_1_1RelocInfo_af71beb53464ee31d4f5077fa15abc8ca}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Wipe\+Out} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_abfce7f28cc216eef8d89a1450aa85b5e}\label{classv8_1_1internal_1_1RelocInfo_abfce7f28cc216eef8d89a1450aa85b5e}} 
+{\footnotesize template$<$typename Object\+Visitor $>$ }\\void {\bfseries Visit} (\mbox{\hyperlink{classv8_1_1internal_1_1ObjectVisitor}{Object\+Visitor}} $\ast$v)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a9f9a943d59c240474b61183dbffa1c6a}\label{classv8_1_1internal_1_1RelocInfo_a9f9a943d59c240474b61183dbffa1c6a}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Real\+Reloc\+Mode} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a317d0543bf8b464ac0801f92eab3d176}\label{classv8_1_1internal_1_1RelocInfo_a317d0543bf8b464ac0801f92eab3d176}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+G\+C\+Reloc\+Mode} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a3d4d465181ccdb6cdf4f1cef466fee93}\label{classv8_1_1internal_1_1RelocInfo_a3d4d465181ccdb6cdf4f1cef466fee93}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Shareable\+Reloc\+Mode} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a6eaa68064d28ea7801633e34298bd163}\label{classv8_1_1internal_1_1RelocInfo_a6eaa68064d28ea7801633e34298bd163}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Code\+Target} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a4826de2c62c03505c8cef4fdd868a2a4}\label{classv8_1_1internal_1_1RelocInfo_a4826de2c62c03505c8cef4fdd868a2a4}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Code\+Target\+Mode} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a47c051bc688dcb55f47c0d192a23ae4c}\label{classv8_1_1internal_1_1RelocInfo_a47c051bc688dcb55f47c0d192a23ae4c}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Relative\+Code\+Target} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a3958f027f1a75bba30fdf7f881d7aba1}\label{classv8_1_1internal_1_1RelocInfo_a3958f027f1a75bba30fdf7f881d7aba1}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Embedded\+Object} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_ac604e62221b983e45bd81309f607524d}\label{classv8_1_1internal_1_1RelocInfo_ac604e62221b983e45bd81309f607524d}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Runtime\+Entry} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a7ced4909c9b4b70bf6b682825d75b25e}\label{classv8_1_1internal_1_1RelocInfo_a7ced4909c9b4b70bf6b682825d75b25e}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Wasm\+Call} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_af233afa098a98121b02cacb44ef0bd11}\label{classv8_1_1internal_1_1RelocInfo_af233afa098a98121b02cacb44ef0bd11}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Wasm\+Reference} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a9b6cc7beedb93c75dda2852cb6af822e}\label{classv8_1_1internal_1_1RelocInfo_a9b6cc7beedb93c75dda2852cb6af822e}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Wasm\+Stub\+Call} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a175d337d1d6181586401abdb7639829c}\label{classv8_1_1internal_1_1RelocInfo_a175d337d1d6181586401abdb7639829c}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Comment} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a0e96798f4965bac63d66d491d5b16f19}\label{classv8_1_1internal_1_1RelocInfo_a0e96798f4965bac63d66d491d5b16f19}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Const\+Pool} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_aebede0c29a4b7b6adc20b5eaea71ecd1}\label{classv8_1_1internal_1_1RelocInfo_aebede0c29a4b7b6adc20b5eaea71ecd1}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Veneer\+Pool} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_af1185bfdefe952926085a4cd5e9cb0db}\label{classv8_1_1internal_1_1RelocInfo_af1185bfdefe952926085a4cd5e9cb0db}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Deopt\+Position} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a013879efea7afb99bce36ea535949069}\label{classv8_1_1internal_1_1RelocInfo_a013879efea7afb99bce36ea535949069}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Deopt\+Reason} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a8f3ae56febd66b8e96e1358d55b1e0e3}\label{classv8_1_1internal_1_1RelocInfo_a8f3ae56febd66b8e96e1358d55b1e0e3}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Deopt\+Id} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_aa23bd20c400df93240be7af19f41e4af}\label{classv8_1_1internal_1_1RelocInfo_aa23bd20c400df93240be7af19f41e4af}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+External\+Reference} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a295c7ff71d6f39d3cf481caa1ea778e7}\label{classv8_1_1internal_1_1RelocInfo_a295c7ff71d6f39d3cf481caa1ea778e7}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Internal\+Reference} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a580a152f238b64eeb3c731fd5fec4727}\label{classv8_1_1internal_1_1RelocInfo_a580a152f238b64eeb3c731fd5fec4727}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Internal\+Reference\+Encoded} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a2af1f7effb64e4c166216072b315a714}\label{classv8_1_1internal_1_1RelocInfo_a2af1f7effb64e4c166216072b315a714}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Off\+Heap\+Target} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_abbce0c52fa5db29c25a1fc8dafb4460f}\label{classv8_1_1internal_1_1RelocInfo_abbce0c52fa5db29c25a1fc8dafb4460f}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+None} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a130c6a33506ee2241439cb37808268fa}\label{classv8_1_1internal_1_1RelocInfo_a130c6a33506ee2241439cb37808268fa}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Only\+For\+Serializer} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a4bb9ca8ff590a4b9a46751997f9f9c5e}\label{classv8_1_1internal_1_1RelocInfo_a4bb9ca8ff590a4b9a46751997f9f9c5e}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries Mode\+Mask} (Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_ac7db3ae941dbcb503530247f26b4eb19}\label{classv8_1_1internal_1_1RelocInfo_ac7db3ae941dbcb503530247f26b4eb19}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Off\+Heap\+Target\+Is\+Coded\+Specially} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a9f926d469464d32bcf11639a600e9a01}\label{classv8_1_1internal_1_1RelocInfo_a9f926d469464d32bcf11639a600e9a01}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Requires\+Relocation\+After\+Codegen} (const \mbox{\hyperlink{structv8_1_1internal_1_1CodeDesc}{Code\+Desc}} \&desc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_ae3e0ef20322b6db3eb4f272f0b6c6959}\label{classv8_1_1internal_1_1RelocInfo_ae3e0ef20322b6db3eb4f272f0b6c6959}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Requires\+Relocation} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a6f49064ba286a16a94d4292f778aa1b7}\label{classv8_1_1internal_1_1RelocInfo_a6f49064ba286a16a94d4292f778aa1b7}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Post\+Codegen\+Relocation\+Mask} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a5dca3a70ad12924b3a1d6a42c3b03a98}\label{classv8_1_1internal_1_1RelocInfo_a5dca3a70ad12924b3a1d6a42c3b03a98}} 
+static const \mbox{\hyperlink{classchar}{char}} $\ast$const {\bfseries k\+Filler\+Comment\+String} = \char`\"{}D\+E\+O\+P\+T\+I\+M\+I\+Z\+A\+T\+I\+ON P\+A\+D\+D\+I\+NG\char`\"{}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_ac4fb63784119fabde3751f74a4c6317c}\label{classv8_1_1internal_1_1RelocInfo_ac4fb63784119fabde3751f74a4c6317c}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Min\+Reloc\+Comment\+Size} = 2 + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a67b0b843b7077292ca5e49d94470c54b}\label{classv8_1_1internal_1_1RelocInfo_a67b0b843b7077292ca5e49d94470c54b}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Call\+Size} = 6
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_aaa24612c6d9accc00a457efc88180136}\label{classv8_1_1internal_1_1RelocInfo_aaa24612c6d9accc00a457efc88180136}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Small\+P\+C\+Delta} = k\+Small\+P\+C\+Delta\+Mask
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a3674f1738fbd7b36d670397d0fbd363e}\label{classv8_1_1internal_1_1RelocInfo_a3674f1738fbd7b36d670397d0fbd363e}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Apply\+Mask}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RelocInfo_a9ff673d9f08f4ce3738760e4e66dc88a}\label{classv8_1_1internal_1_1RelocInfo_a9ff673d9f08f4ce3738760e4e66dc88a}} 
+class {\bfseries Reloc\+Iterator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 35 of file reloc-\/info.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/reloc-\/info.\+h\item 
+v8/src/arm/assembler-\/arm-\/inl.\+h\item 
+v8/src/arm64/assembler-\/arm64-\/inl.\+h\item 
+v8/src/ia32/assembler-\/ia32-\/inl.\+h\item 
+v8/src/mips/assembler-\/mips-\/inl.\+h\item 
+v8/src/mips64/assembler-\/mips64-\/inl.\+h\item 
+v8/src/ppc/assembler-\/ppc-\/inl.\+h\item 
+v8/src/reloc-\/info.\+cc\item 
+v8/src/s390/assembler-\/s390-\/inl.\+h\item 
+v8/src/x64/assembler-\/x64-\/inl.\+h\end{DoxyCompactItemize}

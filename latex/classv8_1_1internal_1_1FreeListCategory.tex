@@ -1,0 +1,73 @@
+\hypertarget{classv8_1_1internal_1_1FreeListCategory}{}\section{v8\+:\+:internal\+:\+:Free\+List\+Category Class Reference}
+\label{classv8_1_1internal_1_1FreeListCategory}\index{v8\+::internal\+::\+Free\+List\+Category@{v8\+::internal\+::\+Free\+List\+Category}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeListCategory_a67f651b50064e79ab1f5c4b3873438ec}\label{classv8_1_1internal_1_1FreeListCategory_a67f651b50064e79ab1f5c4b3873438ec}} 
+{\bfseries Free\+List\+Category} (\mbox{\hyperlink{classv8_1_1internal_1_1FreeList}{Free\+List}} $\ast$free\+\_\+list, \mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$page)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeListCategory_a5f433934357036f7199d55a8410987da}\label{classv8_1_1internal_1_1FreeListCategory_a5f433934357036f7199d55a8410987da}} 
+void {\bfseries Initialize} (Free\+List\+Category\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeListCategory_ad990a3fde12ff8ad7de041d86290e30a}\label{classv8_1_1internal_1_1FreeListCategory_ad990a3fde12ff8ad7de041d86290e30a}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeListCategory_a2950a535ed7dc57b181531a387f88737}\label{classv8_1_1internal_1_1FreeListCategory_a2950a535ed7dc57b181531a387f88737}} 
+void {\bfseries Reset\+Stats} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeListCategory_a5c4612d807dcf03546d802ad081beb2a}\label{classv8_1_1internal_1_1FreeListCategory_a5c4612d807dcf03546d802ad081beb2a}} 
+void {\bfseries Repair\+Free\+List} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeListCategory_a1fcddd498785db7739ad713d351b88e3}\label{classv8_1_1internal_1_1FreeListCategory_a1fcddd498785db7739ad713d351b88e3}} 
+void {\bfseries Relink} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeListCategory_a548b810cbe726b4769d39b97a1375f64}\label{classv8_1_1internal_1_1FreeListCategory_a548b810cbe726b4769d39b97a1375f64}} 
+void {\bfseries Free} (\mbox{\hyperlink{classuintptr__t}{Address}} address, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size\+\_\+in\+\_\+bytes, Free\+Mode mode)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeListCategory_ae46d192ee315a30a925eeafa4a94aa86}\label{classv8_1_1internal_1_1FreeListCategory_ae46d192ee315a30a925eeafa4a94aa86}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1FreeSpace}{Free\+Space}} $\ast$ {\bfseries Pick\+Node\+From\+List} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} minimum\+\_\+size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} $\ast$node\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeListCategory_a949ff56032f5d2c8a87f2565b02a49a2}\label{classv8_1_1internal_1_1FreeListCategory_a949ff56032f5d2c8a87f2565b02a49a2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1FreeSpace}{Free\+Space}} $\ast$ {\bfseries Search\+For\+Node\+In\+List} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} minimum\+\_\+size, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} $\ast$node\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeListCategory_a1a900f1e9bb903ee4f10a13d6a1c1231}\label{classv8_1_1internal_1_1FreeListCategory_a1a900f1e9bb903ee4f10a13d6a1c1231}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1FreeList}{Free\+List}} $\ast$ {\bfseries owner} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeListCategory_ab89c026480e345fa48733935290610eb}\label{classv8_1_1internal_1_1FreeListCategory_ab89c026480e345fa48733935290610eb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Page}{Page}} $\ast$ {\bfseries page} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeListCategory_ac238d461f0673c7626b454f2ddeca94f}\label{classv8_1_1internal_1_1FreeListCategory_ac238d461f0673c7626b454f2ddeca94f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+linked} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeListCategory_a7216c7b46bede002b7c76bfaff070565}\label{classv8_1_1internal_1_1FreeListCategory_a7216c7b46bede002b7c76bfaff070565}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+empty} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeListCategory_a840b35c4323d1d5b6636e476dcb936ae}\label{classv8_1_1internal_1_1FreeListCategory_a840b35c4323d1d5b6636e476dcb936ae}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries available} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeListCategory_a1029a291e100bbdde30a41b93db80491}\label{classv8_1_1internal_1_1FreeListCategory_a1029a291e100bbdde30a41b93db80491}} 
+void {\bfseries set\+\_\+free\+\_\+list} (\mbox{\hyperlink{classv8_1_1internal_1_1FreeList}{Free\+List}} $\ast$free\+\_\+list)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeListCategory_aef93a5461456ab609efd34caf72f8764}\label{classv8_1_1internal_1_1FreeListCategory_aef93a5461456ab609efd34caf72f8764}} 
+class {\bfseries Free\+List}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FreeListCategory_a57d18a423c610563132a99ab1e1c1b8e}\label{classv8_1_1internal_1_1FreeListCategory_a57d18a423c610563132a99ab1e1c1b8e}} 
+class {\bfseries Paged\+Space}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 152 of file spaces.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/spaces.\+h\item 
+v8/src/heap/spaces-\/inl.\+h\item 
+v8/src/heap/spaces.\+cc\end{DoxyCompactItemize}

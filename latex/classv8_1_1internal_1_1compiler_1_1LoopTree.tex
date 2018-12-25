@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1LoopTree}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Loop\+Tree Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1LoopTree}\index{v8\+::internal\+::compiler\+::\+Loop\+Tree@{v8\+::internal\+::compiler\+::\+Loop\+Tree}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Loop\+Tree\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1LoopTree}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LoopTree_1_1Loop}{Loop}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopTree_ad97ed839da7fbb2ee91274305c8065ad}\label{classv8_1_1internal_1_1compiler_1_1LoopTree_ad97ed839da7fbb2ee91274305c8065ad}} 
+{\bfseries Loop\+Tree} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} num\+\_\+nodes, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopTree_a240df032e3852bfc4ba86b7863bf40f5}\label{classv8_1_1internal_1_1compiler_1_1LoopTree_a240df032e3852bfc4ba86b7863bf40f5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LoopTree_1_1Loop}{Loop}} $\ast$ {\bfseries Containing\+Loop} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopTree_a1977573fea0e6e4aa01caee168619adc}\label{classv8_1_1internal_1_1compiler_1_1LoopTree_a1977573fea0e6e4aa01caee168619adc}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Contains} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LoopTree_1_1Loop}{Loop}} $\ast$loop, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopTree_ad2a20d633ee252e55cec3b45ffaacec8}\label{classv8_1_1internal_1_1compiler_1_1LoopTree_ad2a20d633ee252e55cec3b45ffaacec8}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1ZoneVector}{Zone\+Vector}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LoopTree_1_1Loop}{Loop}} $\ast$ $>$ \& {\bfseries outer\+\_\+loops} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopTree_a8faff30804270a92524a39fce9869523}\label{classv8_1_1internal_1_1compiler_1_1LoopTree_a8faff30804270a92524a39fce9869523}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Loop\+Num} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LoopTree_1_1Loop}{Loop}} $\ast$loop) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopTree_ad2eaef8208f548ede52142346db1cfed}\label{classv8_1_1internal_1_1compiler_1_1LoopTree_ad2eaef8208f548ede52142346db1cfed}} 
+\mbox{\hyperlink{classv8_1_1base_1_1iterator__range}{Node\+Range}} {\bfseries Header\+Nodes} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LoopTree_1_1Loop}{Loop}} $\ast$loop)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopTree_adf0363cbed4719dc252f4ac5abbc2ac1}\label{classv8_1_1internal_1_1compiler_1_1LoopTree_adf0363cbed4719dc252f4ac5abbc2ac1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Header\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LoopTree_1_1Loop}{Loop}} $\ast$loop)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopTree_a66f5f87cb228804b85385d2d4302917f}\label{classv8_1_1internal_1_1compiler_1_1LoopTree_a66f5f87cb228804b85385d2d4302917f}} 
+\mbox{\hyperlink{classv8_1_1base_1_1iterator__range}{Node\+Range}} {\bfseries Body\+Nodes} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LoopTree_1_1Loop}{Loop}} $\ast$loop)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopTree_a51e998088de8bfb87c9d23ea3668cd08}\label{classv8_1_1internal_1_1compiler_1_1LoopTree_a51e998088de8bfb87c9d23ea3668cd08}} 
+\mbox{\hyperlink{classv8_1_1base_1_1iterator__range}{Node\+Range}} {\bfseries Exit\+Nodes} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LoopTree_1_1Loop}{Loop}} $\ast$loop)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopTree_a5183a5e40ca9e983916e8137d6aa9f17}\label{classv8_1_1internal_1_1compiler_1_1LoopTree_a5183a5e40ca9e983916e8137d6aa9f17}} 
+\mbox{\hyperlink{classv8_1_1base_1_1iterator__range}{Node\+Range}} {\bfseries Loop\+Nodes} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LoopTree_1_1Loop}{Loop}} $\ast$loop)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopTree_a8b683114c9ddaebd760414de00419762}\label{classv8_1_1internal_1_1compiler_1_1LoopTree_a8b683114c9ddaebd760414de00419762}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$ {\bfseries Get\+Loop\+Control} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1LoopTree_1_1Loop}{Loop}} $\ast$loop)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopTree_a2405896f650a2788774696dab810608f}\label{classv8_1_1internal_1_1compiler_1_1LoopTree_a2405896f650a2788774696dab810608f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$ {\bfseries zone} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1LoopTree_a7c3aef85599c6822d83a965a321dfbc3}\label{classv8_1_1internal_1_1compiler_1_1LoopTree_a7c3aef85599c6822d83a965a321dfbc3}} 
+class {\bfseries Loop\+Finder\+Impl}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file loop-\/analysis.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/loop-\/analysis.\+h\item 
+v8/src/compiler/loop-\/analysis.\+cc\end{DoxyCompactItemize}

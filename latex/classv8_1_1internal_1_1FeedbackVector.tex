@@ -1,0 +1,174 @@
+\hypertarget{classv8_1_1internal_1_1FeedbackVector}{}\section{v8\+:\+:internal\+:\+:Feedback\+Vector Class Reference}
+\label{classv8_1_1internal_1_1FeedbackVector}\index{v8\+::internal\+::\+Feedback\+Vector@{v8\+::internal\+::\+Feedback\+Vector}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Feedback\+Vector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1FeedbackVector}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackVector_1_1BodyDescriptor}{Body\+Descriptor}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a494d8db442e09378f5526b7be1fa7d54}\label{classv8_1_1internal_1_1FeedbackVector_a494d8db442e09378f5526b7be1fa7d54}} 
+void {\bfseries Compute\+Counts} (\mbox{\hyperlink{classint}{int}} $\ast$with\+\_\+type\+\_\+info, \mbox{\hyperlink{classint}{int}} $\ast$generic, \mbox{\hyperlink{classint}{int}} $\ast$vector\+\_\+ic\+\_\+count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a692825685d500241f64622ee06c82cc0}\label{classv8_1_1internal_1_1FeedbackVector_a692825685d500241f64622ee06c82cc0}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+empty} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_af60b9e0d6f27e5c812c88d8c76b5767f}\label{classv8_1_1internal_1_1FeedbackVector_af60b9e0d6f27e5c812c88d8c76b5767f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1FeedbackMetadata}{Feedback\+Metadata}} $\ast$ {\bfseries metadata} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a6d807f938b1931ac2f521e80a6069457}\label{classv8_1_1internal_1_1FeedbackVector_a6d807f938b1931ac2f521e80a6069457}} 
+void {\bfseries clear\+\_\+invocation\+\_\+count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a409860d7ce80c8930d01e37dc8450965}\label{classv8_1_1internal_1_1FeedbackVector_a409860d7ce80c8930d01e37dc8450965}} 
+void {\bfseries increment\+\_\+deopt\+\_\+count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_ae05f0fe6e4c8479bcff89a9717b85092}\label{classv8_1_1internal_1_1FeedbackVector_ae05f0fe6e4c8479bcff89a9717b85092}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} {\bfseries optimized\+\_\+code} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_afa675d11c92c8e0a1abeb28549688fc6}\label{classv8_1_1internal_1_1FeedbackVector_afa675d11c92c8e0a1abeb28549688fc6}} 
+Optimization\+Marker {\bfseries optimization\+\_\+marker} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a3092075d611274edd9d4f34630f899be}\label{classv8_1_1internal_1_1FeedbackVector_a3092075d611274edd9d4f34630f899be}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+optimized\+\_\+code} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a53d2303ea56edeec2c69c9b21e463ce4}\label{classv8_1_1internal_1_1FeedbackVector_a53d2303ea56edeec2c69c9b21e463ce4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries has\+\_\+optimization\+\_\+marker} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_ae38143d271689d1c7f162460772862f5}\label{classv8_1_1internal_1_1FeedbackVector_ae38143d271689d1c7f162460772862f5}} 
+void {\bfseries Clear\+Optimized\+Code} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_ab2598f90579fdd438d928e0ec2bf8dee}\label{classv8_1_1internal_1_1FeedbackVector_ab2598f90579fdd438d928e0ec2bf8dee}} 
+void {\bfseries Evict\+Optimized\+Code\+Marked\+For\+Deoptimization} (\mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$shared, const \mbox{\hyperlink{classchar}{char}} $\ast$reason)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a2a8dd7f7d782fc6b3cbd9b8bc1ea0233}\label{classv8_1_1internal_1_1FeedbackVector_a2a8dd7f7d782fc6b3cbd9b8bc1ea0233}} 
+void {\bfseries Set\+Optimization\+Marker} (Optimization\+Marker marker)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a3f827b5aa64dbba6f3d71cf4d2311eb6}\label{classv8_1_1internal_1_1FeedbackVector_a3f827b5aa64dbba6f3d71cf4d2311eb6}} 
+void {\bfseries Clear\+Optimization\+Marker} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_ab845b60ed687cd767d3c49ddfe15df4d}\label{classv8_1_1internal_1_1FeedbackVector_ab845b60ed687cd767d3c49ddfe15df4d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} {\bfseries Get} (\mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_ac8c1a8a9b0b526963043841b7e158af2}\label{classv8_1_1internal_1_1FeedbackVector_ac8c1a8a9b0b526963043841b7e158af2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} {\bfseries get} (\mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_ae5c34c13b97251662c4de1fa40e6ed9a}\label{classv8_1_1internal_1_1FeedbackVector_ae5c34c13b97251662c4de1fa40e6ed9a}} 
+void {\bfseries Set} (\mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} value, Write\+Barrier\+Mode mode=U\+P\+D\+A\+T\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+A\+R\+R\+I\+ER)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a990a92b16bdd10fed3f2171a429e93ea}\label{classv8_1_1internal_1_1FeedbackVector_a990a92b16bdd10fed3f2171a429e93ea}} 
+void {\bfseries set} (\mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} value, Write\+Barrier\+Mode mode=U\+P\+D\+A\+T\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+A\+R\+R\+I\+ER)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a4659ee16139f9aef68619f567f7bc4fc}\label{classv8_1_1internal_1_1FeedbackVector_a4659ee16139f9aef68619f567f7bc4fc}} 
+void {\bfseries Set} (\mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value, Write\+Barrier\+Mode mode=U\+P\+D\+A\+T\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+A\+R\+R\+I\+ER)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a2d9eb85735692cc1f1488fc8409e2196}\label{classv8_1_1internal_1_1FeedbackVector_a2d9eb85735692cc1f1488fc8409e2196}} 
+void {\bfseries set} (\mbox{\hyperlink{classint}{int}} index, \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value, Write\+Barrier\+Mode mode=U\+P\+D\+A\+T\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+A\+R\+R\+I\+ER)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a69e1e7d094cc71bc27ceac00d36624b4}\label{classv8_1_1internal_1_1FeedbackVector_a69e1e7d094cc71bc27ceac00d36624b4}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObjectSlot}{Maybe\+Object\+Slot}} {\bfseries slots\+\_\+start} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_afd08a5e5100cff380a993c823f3cadb8}\label{classv8_1_1internal_1_1FeedbackVector_afd08a5e5100cff380a993c823f3cadb8}} 
+Feedback\+Slot\+Kind {\bfseries Get\+Kind} (\mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a2f4d0b2886f028af1f2fd2be2c4867ad}\label{classv8_1_1internal_1_1FeedbackVector_a2f4d0b2886f028af1f2fd2be2c4867ad}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} {\bfseries Get\+Type\+Profile\+Slot} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a15e78327ee4017cd4b56cef63484b83a}\label{classv8_1_1internal_1_1FeedbackVector_a15e78327ee4017cd4b56cef63484b83a}} 
+Typeof\+Mode {\bfseries Get\+Typeof\+Mode} (\mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a0421de885650faa72f1d78962a587fee}\label{classv8_1_1internal_1_1FeedbackVector_a0421de885650faa72f1d78962a587fee}} 
+Language\+Mode {\bfseries Get\+Language\+Mode} (\mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_aacbf6a88ef0b521bdb33c52f2ed794c8}\label{classv8_1_1internal_1_1FeedbackVector_aacbf6a88ef0b521bdb33c52f2ed794c8}} 
+void {\bfseries Feedback\+Slot\+Print} (std\+::ostream \&os, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_aa038f593321117e3ff77050da7ba20bb}\label{classv8_1_1internal_1_1FeedbackVector_aa038f593321117e3ff77050da7ba20bb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Clear\+Slots} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a4dda422640f1bb3df2726d77a428e983}\label{classv8_1_1internal_1_1FeedbackVector_a4dda422640f1bb3df2726d77a428e983}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackVector}{Feedback\+Vector}} $\ast$ {\bfseries cast} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$obj)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a30f7ed7ae28122241b09fed5e734e0b0}\label{classv8_1_1internal_1_1FeedbackVector_a30f7ed7ae28122241b09fed5e734e0b0}} 
+static void {\bfseries Set\+Optimized\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackVector}{Feedback\+Vector}} $>$ vector, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a9a8633e806a0c4a8f346d1b923941247}\label{classv8_1_1internal_1_1FeedbackVector_a9a8633e806a0c4a8f346d1b923941247}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Get\+Index} (\mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a054ae440e12f8e8824f822f0367e0a47}\label{classv8_1_1internal_1_1FeedbackVector_a054ae440e12f8e8824f822f0367e0a47}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} {\bfseries To\+Slot} (\mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a7809aa2a12723f4a67da6e6093d61e2a}\label{classv8_1_1internal_1_1FeedbackVector_a7809aa2a12723f4a67da6e6093d61e2a}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackVector}{Feedback\+Vector}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $>$ shared)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_af9d341eb21f433101d5771425b212b4e}\label{classv8_1_1internal_1_1FeedbackVector_af9d341eb21f433101d5771425b212b4e}} 
+static void {\bfseries Assert\+No\+Legacy\+Types} (\mbox{\hyperlink{classv8_1_1internal_1_1MaybeObject}{Maybe\+Object}} object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a2fb51d2b5d732e6bde55c6966ae3d361}\label{classv8_1_1internal_1_1FeedbackVector_a2fb51d2b5d732e6bde55c6966ae3d361}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Symbol}{Symbol}} $>$ {\bfseries Uninitialized\+Sentinel} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_aac3ebcc5f35f5782c00db4e2ff880b49}\label{classv8_1_1internal_1_1FeedbackVector_aac3ebcc5f35f5782c00db4e2ff880b49}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Symbol}{Symbol}} $>$ {\bfseries Generic\+Sentinel} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_ad73f8cb81d9dcfe2fdf9de8b6e1c4624}\label{classv8_1_1internal_1_1FeedbackVector_ad73f8cb81d9dcfe2fdf9de8b6e1c4624}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Symbol}{Symbol}} $>$ {\bfseries Megamorphic\+Sentinel} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a4ffa7c1d811c71405ef64294448fb64b}\label{classv8_1_1internal_1_1FeedbackVector_a4ffa7c1d811c71405ef64294448fb64b}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Symbol}{Symbol}} $>$ {\bfseries Premonomorphic\+Sentinel} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_affda67631cf6f9dbc303f3adc6bcd363}\label{classv8_1_1internal_1_1FeedbackVector_affda67631cf6f9dbc303f3adc6bcd363}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Symbol}{Symbol}} {\bfseries Raw\+Uninitialized\+Sentinel} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a4a5e3a59a93bb852ff963b8abde378e9}\label{classv8_1_1internal_1_1FeedbackVector_a4a5e3a59a93bb852ff963b8abde378e9}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries Size\+For} (\mbox{\hyperlink{classint}{int}} length)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Header\+Size}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_a9eb2b328b43c8a269b65a6e8f4674ddd}\label{classv8_1_1internal_1_1FeedbackVector_a9eb2b328b43c8a269b65a6e8f4674ddd}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Feedback\+Slots\+Offset} = k\+Header\+Size
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 148 of file feedback-\/vector.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1FeedbackVector_af4c6f205e9fb95c671afe34ff7071c18}\label{classv8_1_1internal_1_1FeedbackVector_af4c6f205e9fb95c671afe34ff7071c18}} 
+\index{v8\+::internal\+::\+Feedback\+Vector@{v8\+::internal\+::\+Feedback\+Vector}!k\+Header\+Size@{k\+Header\+Size}}
+\index{k\+Header\+Size@{k\+Header\+Size}!v8\+::internal\+::\+Feedback\+Vector@{v8\+::internal\+::\+Feedback\+Vector}}
+\subsubsection{\texorpdfstring{k\+Header\+Size}{kHeaderSize}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Feedback\+Vector\+::k\+Header\+Size\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      RoundUp<kObjectAlignment>(\textcolor{keywordtype}{int}\{kUnalignedHeaderSize\})
+\end{DoxyCode}
+
+
+Definition at line 291 of file feedback-\/vector.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/feedback-\/vector.\+h\item 
+v8/src/feedback-\/vector-\/inl.\+h\item 
+v8/src/feedback-\/vector.\+cc\end{DoxyCompactItemize}

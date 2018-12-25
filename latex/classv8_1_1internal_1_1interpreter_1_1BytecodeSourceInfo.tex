@@ -1,0 +1,56 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecode\+Source\+Info Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo}\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Source\+Info@{v8\+::internal\+::interpreter\+::\+Bytecode\+Source\+Info}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_a3f0323eea6989d82039e2b88ff4b82ed}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_a3f0323eea6989d82039e2b88ff4b82ed}} 
+{\bfseries Bytecode\+Source\+Info} (\mbox{\hyperlink{classint}{int}} source\+\_\+position, \mbox{\hyperlink{classbool}{bool}} is\+\_\+statement)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_ade14f31e2489bc03a32e1919a445d89e}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_ade14f31e2489bc03a32e1919a445d89e}} 
+void {\bfseries Make\+Statement\+Position} (\mbox{\hyperlink{classint}{int}} source\+\_\+position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_a7b630bdfc2599ad86e1a98abe06af5c9}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_a7b630bdfc2599ad86e1a98abe06af5c9}} 
+void {\bfseries Make\+Expression\+Position} (\mbox{\hyperlink{classint}{int}} source\+\_\+position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_a1c8bb926771052b4aba70e572d02b816}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_a1c8bb926771052b4aba70e572d02b816}} 
+void {\bfseries Force\+Expression\+Position} (\mbox{\hyperlink{classint}{int}} source\+\_\+position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_a73c64b75ff24baaef3217c1243ef781f}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_a73c64b75ff24baaef3217c1243ef781f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries source\+\_\+position} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_ab7b04d84ef48faf68060479bcb6d1b83}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_ab7b04d84ef48faf68060479bcb6d1b83}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+statement} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_a9f8d0d124f382af48394d1cbb72a2e7f}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_a9f8d0d124f382af48394d1cbb72a2e7f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+expression} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_a4bba4207673cc540b03b2272092d5f4f}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_a4bba4207673cc540b03b2272092d5f4f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+valid} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_ad495a11c1f25a08a473972ef0deb2046}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_ad495a11c1f25a08a473972ef0deb2046}} 
+void {\bfseries set\+\_\+invalid} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_a7483b2e4c890d5e798bed9589e6f3b6f}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_a7483b2e4c890d5e798bed9589e6f3b6f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries operator==} (const \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo}{Bytecode\+Source\+Info}} \&other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_a5d9867a000dfbbf07f74ba0822ce09e8}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_a5d9867a000dfbbf07f74ba0822ce09e8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries operator!=} (const \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo}{Bytecode\+Source\+Info}} \&other) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_a397961cb4df1d7ce5dad893f554959ea}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeSourceInfo_a397961cb4df1d7ce5dad893f554959ea}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Uninitialized\+Position} = -\/1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file bytecode-\/source-\/info.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/interpreter/bytecode-\/source-\/info.\+h\end{DoxyCompactItemize}

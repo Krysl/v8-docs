@@ -1,0 +1,73 @@
+\hypertarget{classv8_1_1internal_1_1PropertyCell}{}\section{v8\+:\+:internal\+:\+:Property\+Cell Class Reference}
+\label{classv8_1_1internal_1_1PropertyCell}\index{v8\+::internal\+::\+Property\+Cell@{v8\+::internal\+::\+Property\+Cell}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Property\+Cell\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1PropertyCell}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyCell_aeb393fc6731d117c3ffe49529ffef01c}\label{classv8_1_1internal_1_1PropertyCell_aeb393fc6731d117c3ffe49529ffef01c}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1FixedBodyDescriptor}{Fixed\+Body\+Descriptor}}$<$ k\+Name\+Offset, k\+Size, k\+Size $>$ {\bfseries Body\+Descriptor}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyCell_a18ce56f3c916f221defd2c721acf3ead}\label{classv8_1_1internal_1_1PropertyCell_a18ce56f3c916f221defd2c721acf3ead}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails}{Property\+Details}} {\bfseries property\+\_\+details} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyCell_a937742725ab442a47662f39d0acccb05}\label{classv8_1_1internal_1_1PropertyCell_a937742725ab442a47662f39d0acccb05}} 
+void {\bfseries set\+\_\+property\+\_\+details} (\mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails}{Property\+Details}} details)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyCell_ad575b8b56625ef4ce299f936c1396734}\label{classv8_1_1internal_1_1PropertyCell_ad575b8b56625ef4ce299f936c1396734}} 
+Property\+Cell\+Constant\+Type {\bfseries Get\+Constant\+Type} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyCell_a80939ecb94b1be3388000a2733f6c7d4}\label{classv8_1_1internal_1_1PropertyCell_a80939ecb94b1be3388000a2733f6c7d4}} 
+static Property\+Cell\+Type {\bfseries Updated\+Type} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1PropertyCell}{Property\+Cell}} $>$ cell, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails}{Property\+Details}} details)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyCell_a7a0de225d78dc1b37cd5e73d0dc96bf7}\label{classv8_1_1internal_1_1PropertyCell_a7a0de225d78dc1b37cd5e73d0dc96bf7}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1PropertyCell}{Property\+Cell}} $>$ {\bfseries Prepare\+For\+Value} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1GlobalDictionary}{Global\+Dictionary}} $>$ dictionary, \mbox{\hyperlink{classint}{int}} entry, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ value, \mbox{\hyperlink{classv8_1_1internal_1_1PropertyDetails}{Property\+Details}} details)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyCell_a2ff1840a627ae8d94a09d33c891e202c}\label{classv8_1_1internal_1_1PropertyCell_a2ff1840a627ae8d94a09d33c891e202c}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1PropertyCell}{Property\+Cell}} $>$ {\bfseries Invalidate\+Entry} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1GlobalDictionary}{Global\+Dictionary}} $>$ dictionary, \mbox{\hyperlink{classint}{int}} entry)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyCell_ab1511bccfbc7e27b3057148773dc9cab}\label{classv8_1_1internal_1_1PropertyCell_ab1511bccfbc7e27b3057148773dc9cab}} 
+static void {\bfseries Set\+Value\+With\+Invalidation} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1PropertyCell}{Property\+Cell}} $>$ cell, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ new\+\_\+value)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyCell_a9eca2ab1acc9e7d269c42234bd6f0ae9}\label{classv8_1_1internal_1_1PropertyCell_a9eca2ab1acc9e7d269c42234bd6f0ae9}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Details\+Offset} = Heap\+Object\+::k\+Header\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyCell_aaaa5829de0a02eb4a92a5d6510d88500}\label{classv8_1_1internal_1_1PropertyCell_aaaa5829de0a02eb4a92a5d6510d88500}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Name\+Offset} = k\+Details\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyCell_a35f0fea4789352fe9b971e8486d6034d}\label{classv8_1_1internal_1_1PropertyCell_a35f0fea4789352fe9b971e8486d6034d}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Value\+Offset} = k\+Name\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyCell_a4170212f9537f0386e47d0cb3992862d}\label{classv8_1_1internal_1_1PropertyCell_a4170212f9537f0386e47d0cb3992862d}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Dependent\+Code\+Offset} = k\+Value\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1PropertyCell_aebba1cc2196a61c1f8e639175a9a83d5}\label{classv8_1_1internal_1_1PropertyCell_aebba1cc2196a61c1f8e639175a9a83d5}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Size} = k\+Dependent\+Code\+Offset + k\+Pointer\+Size
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1562 of file objects.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects.\+h\item 
+v8/src/objects-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

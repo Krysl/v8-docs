@@ -1,0 +1,238 @@
+\hypertarget{classv8_1_1internal_1_1StackFrame}{}\section{v8\+:\+:internal\+:\+:Stack\+Frame Class Reference}
+\label{classv8_1_1internal_1_1StackFrame}\index{v8\+::internal\+::\+Stack\+Frame@{v8\+::internal\+::\+Stack\+Frame}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Stack\+Frame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.642277cm]{classv8_1_1internal_1_1StackFrame}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1StackFrame_1_1State}{State}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a539db1a450ec470771bfb8f4995cee9b}\label{classv8_1_1internal_1_1StackFrame_a539db1a450ec470771bfb8f4995cee9b}} 
+enum {\bfseries Type} \{ {\bfseries N\+O\+NE} = 0, 
+{\bfseries N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+T\+Y\+P\+ES}, 
+{\bfseries M\+A\+N\+U\+AL}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_ad77512257703c6f7ed72645ca5a54aba}\label{classv8_1_1internal_1_1StackFrame_ad77512257703c6f7ed72645ca5a54aba}} 
+enum {\bfseries Id} \{ {\bfseries I\+D\+\_\+\+M\+I\+N\+\_\+\+V\+A\+L\+UE} = k\+Min\+Int, 
+{\bfseries I\+D\+\_\+\+M\+A\+X\+\_\+\+V\+A\+L\+UE} = k\+Max\+Int, 
+{\bfseries N\+O\+\_\+\+ID} = 0
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_ae414b30b6b5a49e66aae840c87dc2fe9}\label{classv8_1_1internal_1_1StackFrame_ae414b30b6b5a49e66aae840c87dc2fe9}} 
+enum {\bfseries Js\+Frame\+Marker} \{ {\bfseries I\+N\+N\+E\+R\+\_\+\+J\+S\+E\+N\+T\+R\+Y\+\_\+\+F\+R\+A\+ME} = (0 $<$$<$ k\+Smi\+Tag\+Size) $\vert$ k\+Smi\+Tag, 
+{\bfseries O\+U\+T\+E\+R\+M\+O\+S\+T\+\_\+\+J\+S\+E\+N\+T\+R\+Y\+\_\+\+F\+R\+A\+ME} = (1 $<$$<$ k\+Smi\+Tag\+Size) $\vert$ k\+Smi\+Tag
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_abe64e1340233eb31145fd14e7c5ee433}\label{classv8_1_1internal_1_1StackFrame_abe64e1340233eb31145fd14e7c5ee433}} 
+enum {\bfseries Print\+Mode} \{ {\bfseries O\+V\+E\+R\+V\+I\+EW}, 
+{\bfseries D\+E\+T\+A\+I\+LS}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a5938b969c181d07c5377ab1c36b77148}\label{classv8_1_1internal_1_1StackFrame_a5938b969c181d07c5377ab1c36b77148}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} ((I\+N\+N\+E\+R\+\_\+\+J\+S\+E\+N\+T\+R\+Y\+\_\+\+F\+R\+A\+ME \&k\+Heap\+Object\+Tag\+Mask) !=k\+Heap\+Object\+Tag)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a5144b19ee390190e6c5abc43eafd1479}\label{classv8_1_1internal_1_1StackFrame_a5144b19ee390190e6c5abc43eafd1479}} 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} ((O\+U\+T\+E\+R\+M\+O\+S\+T\+\_\+\+J\+S\+E\+N\+T\+R\+Y\+\_\+\+F\+R\+A\+ME \&k\+Heap\+Object\+Tag\+Mask) !=k\+Heap\+Object\+Tag)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_afb58d576091921c8587a632b3ef0527e}\label{classv8_1_1internal_1_1StackFrame_afb58d576091921c8587a632b3ef0527e}} 
+{\bfseries Stack\+Frame} (const \mbox{\hyperlink{classv8_1_1internal_1_1StackFrame}{Stack\+Frame}} \&original)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_aa0ea94203137e8d2c6f14b0cd92bda1b}\label{classv8_1_1internal_1_1StackFrame_aa0ea94203137e8d2c6f14b0cd92bda1b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+entry} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_accd220077ba1b11a0d7d26867b53cd29}\label{classv8_1_1internal_1_1StackFrame_accd220077ba1b11a0d7d26867b53cd29}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+construct\+\_\+entry} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_aa9aa2ce70abc47cb6166786aa85c0778}\label{classv8_1_1internal_1_1StackFrame_aa9aa2ce70abc47cb6166786aa85c0778}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+exit} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_aaac70f1efdd1281a4d11e833d66ef63b}\label{classv8_1_1internal_1_1StackFrame_aaac70f1efdd1281a4d11e833d66ef63b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+optimized} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_adac92b9b79f68c55461e4a770c5ca3ce}\label{classv8_1_1internal_1_1StackFrame_adac92b9b79f68c55461e4a770c5ca3ce}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+interpreted} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a129d83f3a133e9cae748e6f87e697a90}\label{classv8_1_1internal_1_1StackFrame_a129d83f3a133e9cae748e6f87e697a90}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+wasm\+\_\+compiled} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_afbded7aa33c81b52b7800713104afa51}\label{classv8_1_1internal_1_1StackFrame_afbded7aa33c81b52b7800713104afa51}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+wasm\+\_\+compile\+\_\+lazy} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a08c63fa89e2708b21bed76dd55a1ba6d}\label{classv8_1_1internal_1_1StackFrame_a08c63fa89e2708b21bed76dd55a1ba6d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+wasm\+\_\+to\+\_\+js} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a10996bc467b974a0636f5afbdf7472ff}\label{classv8_1_1internal_1_1StackFrame_a10996bc467b974a0636f5afbdf7472ff}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+js\+\_\+to\+\_\+wasm} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a6cf3fe8633416b54a7c6fe1ea3e013be}\label{classv8_1_1internal_1_1StackFrame_a6cf3fe8633416b54a7c6fe1ea3e013be}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+wasm\+\_\+interpreter\+\_\+entry} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a0b566355d1df4bbe97c8dfc04af5c02c}\label{classv8_1_1internal_1_1StackFrame_a0b566355d1df4bbe97c8dfc04af5c02c}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+arguments\+\_\+adaptor} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a8b90149733556d1ac10c30a41b5ffc3e}\label{classv8_1_1internal_1_1StackFrame_a8b90149733556d1ac10c30a41b5ffc3e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+builtin} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_aa52c8ed6a28f64caa23e7a15c4d7b671}\label{classv8_1_1internal_1_1StackFrame_aa52c8ed6a28f64caa23e7a15c4d7b671}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+internal} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a2b91f473c5825825b4b1f598b99d1eef}\label{classv8_1_1internal_1_1StackFrame_a2b91f473c5825825b4b1f598b99d1eef}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+builtin\+\_\+continuation} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a1231f2dca783ef81d8093c252c598bb0}\label{classv8_1_1internal_1_1StackFrame_a1231f2dca783ef81d8093c252c598bb0}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+java\+\_\+script\+\_\+builtin\+\_\+continuation} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_aa5f07c35d7aab5673f89f7a105d3d827}\label{classv8_1_1internal_1_1StackFrame_aa5f07c35d7aab5673f89f7a105d3d827}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+java\+\_\+script\+\_\+builtin\+\_\+with\+\_\+catch\+\_\+continuation} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a89b370f25c3761e289d9f0d2325c87d4}\label{classv8_1_1internal_1_1StackFrame_a89b370f25c3761e289d9f0d2325c87d4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+construct} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a22054792aec52a4cb16af7fcf2c522be}\label{classv8_1_1internal_1_1StackFrame_a22054792aec52a4cb16af7fcf2c522be}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+builtin\+\_\+exit} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a45c4a08416dec35182913ecd9c548b59}\label{classv8_1_1internal_1_1StackFrame_a45c4a08416dec35182913ecd9c548b59}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+standard} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_ac2bcb35470bdbfe24f1f9d80791e8beb}\label{classv8_1_1internal_1_1StackFrame_ac2bcb35470bdbfe24f1f9d80791e8beb}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+java\+\_\+script} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_aea7e9cc3a202c7e52ae6f5314e5af91e}\label{classv8_1_1internal_1_1StackFrame_aea7e9cc3a202c7e52ae6f5314e5af91e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+wasm} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a62e284fd302dbca8c04aa744c28d4960}\label{classv8_1_1internal_1_1StackFrame_a62e284fd302dbca8c04aa744c28d4960}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries sp} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_acd57bdd7c8b254edf7f35b769e6db458}\label{classv8_1_1internal_1_1StackFrame_acd57bdd7c8b254edf7f35b769e6db458}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries fp} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_aac4d6d26ca61d10d018a8d62809de88b}\label{classv8_1_1internal_1_1StackFrame_aac4d6d26ca61d10d018a8d62809de88b}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries callee\+\_\+pc} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a3337ff038f20902cc8530699f266d498}\label{classv8_1_1internal_1_1StackFrame_a3337ff038f20902cc8530699f266d498}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries caller\+\_\+sp} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a5e092e97de384b69bcae6e64c46bf15c}\label{classv8_1_1internal_1_1StackFrame_a5e092e97de384b69bcae6e64c46bf15c}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Unpadded\+FP} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_abc14319996484cb09f941a893aa96525}\label{classv8_1_1internal_1_1StackFrame_abc14319996484cb09f941a893aa96525}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries pc} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_ad4d30baaa8c02c12e10423d7d7228003}\label{classv8_1_1internal_1_1StackFrame_ad4d30baaa8c02c12e10423d7d7228003}} 
+void {\bfseries set\+\_\+pc} (\mbox{\hyperlink{classuintptr__t}{Address}} pc)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a83e79bef91efaf88de80f5d57ebe865d}\label{classv8_1_1internal_1_1StackFrame_a83e79bef91efaf88de80f5d57ebe865d}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries constant\+\_\+pool} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_aaafb76109212b9df8fc514675c1a5ec1}\label{classv8_1_1internal_1_1StackFrame_aaafb76109212b9df8fc514675c1a5ec1}} 
+void {\bfseries set\+\_\+constant\+\_\+pool} (\mbox{\hyperlink{classuintptr__t}{Address}} constant\+\_\+pool)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a96bcfb103f36a3425496b3217d037efd}\label{classv8_1_1internal_1_1StackFrame_a96bcfb103f36a3425496b3217d037efd}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$ {\bfseries pc\+\_\+address} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a1965778b163e8648c83fec878250c854}\label{classv8_1_1internal_1_1StackFrame_a1965778b163e8648c83fec878250c854}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$ {\bfseries constant\+\_\+pool\+\_\+address} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_aab8e7b4048fade9eba3272651830f52f}\label{classv8_1_1internal_1_1StackFrame_aab8e7b4048fade9eba3272651830f52f}} 
+Id {\bfseries id} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_aa5d31ae1e2158e119c1575dc9bf31d07}\label{classv8_1_1internal_1_1StackFrame_aa5d31ae1e2158e119c1575dc9bf31d07}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1StackHandler}{Stack\+Handler}} $\ast$ {\bfseries top\+\_\+handler} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a88b5e0918e5090f576323df49a7dd57f}\label{classv8_1_1internal_1_1StackFrame_a88b5e0918e5090f576323df49a7dd57f}} 
+virtual Type {\bfseries type} () const =0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a1ae087b7ba1a8389196c2f8087df0521}\label{classv8_1_1internal_1_1StackFrame_a1ae087b7ba1a8389196c2f8087df0521}} 
+virtual \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} {\bfseries unchecked\+\_\+code} () const =0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a0137f1ee59b5870bd5cb7d3fc7de1aed}\label{classv8_1_1internal_1_1StackFrame_a0137f1ee59b5870bd5cb7d3fc7de1aed}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} {\bfseries Lookup\+Code} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_aab011a08317b22888974fe2ce8bffac3}\label{classv8_1_1internal_1_1StackFrame_aab011a08317b22888974fe2ce8bffac3}} 
+virtual void {\bfseries Iterate} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v) const =0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_addfdf12f9318c8969bf991991465dccb}\label{classv8_1_1internal_1_1StackFrame_addfdf12f9318c8969bf991991465dccb}} 
+virtual void {\bfseries Print} (\mbox{\hyperlink{classv8_1_1internal_1_1StringStream}{String\+Stream}} $\ast$accumulator, Print\+Mode mode, \mbox{\hyperlink{classint}{int}} index) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_aa833f02441454c45d09c5bf51a699a20}\label{classv8_1_1internal_1_1StackFrame_aa833f02441454c45d09c5bf51a699a20}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_afc2d74826f291f14b6402b8839b98f1a}\label{classv8_1_1internal_1_1StackFrame_afc2d74826f291f14b6402b8839b98f1a}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{classv8_1_1internal_1_1StackFrame}{Stack\+Frame}} \&original)=delete
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_abfd43314c3e2c9cb920568d2613cb3de}\label{classv8_1_1internal_1_1StackFrame_abfd43314c3e2c9cb920568d2613cb3de}} 
+static int32\+\_\+t {\bfseries Type\+To\+Marker} (Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_adf1dfc677ab4ee393b29b9cebe915f53}\label{classv8_1_1internal_1_1StackFrame_adf1dfc677ab4ee393b29b9cebe915f53}} 
+static Type {\bfseries Marker\+To\+Type} (intptr\+\_\+t marker)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a57e543e69f916c6f1bae1a01d366dd31}\label{classv8_1_1internal_1_1StackFrame_a57e543e69f916c6f1bae1a01d366dd31}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Type\+Marker} (intptr\+\_\+t function\+\_\+or\+\_\+marker)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a3c4daaf3ec791b146b3ec605fe3a3649}\label{classv8_1_1internal_1_1StackFrame_a3c4daaf3ec791b146b3ec605fe3a3649}} 
+static void {\bfseries Iterate\+Pc} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v, \mbox{\hyperlink{classuintptr__t}{Address}} $\ast$pc\+\_\+address, \mbox{\hyperlink{classuintptr__t}{Address}} $\ast$constant\+\_\+pool\+\_\+address, \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} holder)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_ad4eb34e123a01977508d6d94be76d61f}\label{classv8_1_1internal_1_1StackFrame_ad4eb34e123a01977508d6d94be76d61f}} 
+static void {\bfseries Set\+Return\+Address\+Location\+Resolver} (Return\+Address\+Location\+Resolver resolver)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_aa5a56ac2eb1e045eb6c970fcd6c82398}\label{classv8_1_1internal_1_1StackFrame_aa5a56ac2eb1e045eb6c970fcd6c82398}} 
+static \mbox{\hyperlink{classuintptr__t}{Address}} $\ast$ {\bfseries Resolve\+Return\+Address\+Location} (\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$pc\+\_\+address)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_abcccdfb9008438a94d62d4eb8bc4c9b2}\label{classv8_1_1internal_1_1StackFrame_abcccdfb9008438a94d62d4eb8bc4c9b2}} 
+{\bfseries Stack\+Frame} (\mbox{\hyperlink{classv8_1_1internal_1_1StackFrameIteratorBase}{Stack\+Frame\+Iterator\+Base}} $\ast$iterator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a92124e9b6e55643af188b7396334be71}\label{classv8_1_1internal_1_1StackFrame_a92124e9b6e55643af188b7396334be71}} 
+virtual \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Get\+Caller\+Stack\+Pointer} () const =0
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a6bc055bcd72f37e6697c46c6d2b1a1b2}\label{classv8_1_1internal_1_1StackFrame_a6bc055bcd72f37e6697c46c6d2b1a1b2}} 
+static Type {\bfseries Compute\+Type} (const \mbox{\hyperlink{classv8_1_1internal_1_1StackFrameIteratorBase}{Stack\+Frame\+Iterator\+Base}} $\ast$iterator, \mbox{\hyperlink{structv8_1_1internal_1_1StackFrame_1_1State}{State}} $\ast$state)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a71cc3464740f5b07cfcdda465b494567}\label{classv8_1_1internal_1_1StackFrame_a71cc3464740f5b07cfcdda465b494567}} 
+class {\bfseries Stack\+Frame\+Iterator}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_ac7310421866976ca454bbe11c5f926c3}\label{classv8_1_1internal_1_1StackFrame_ac7310421866976ca454bbe11c5f926c3}} 
+class {\bfseries Stack\+Frame\+Iterator\+Base}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_a3781b5e70cd04856f8ecda880742e298}\label{classv8_1_1internal_1_1StackFrame_a3781b5e70cd04856f8ecda880742e298}} 
+class {\bfseries Stack\+Handler\+Iterator}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StackFrame_aa1c3e6274807549ee11be5be6cd1ae62}\label{classv8_1_1internal_1_1StackFrame_aa1c3e6274807549ee11be5be6cd1ae62}} 
+class {\bfseries Safe\+Stack\+Frame\+Iterator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 83 of file frames.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/frames.\+h\item 
+v8/src/frames-\/inl.\+h\item 
+v8/src/frames.\+cc\end{DoxyCompactItemize}

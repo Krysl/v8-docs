@@ -1,0 +1,85 @@
+\hypertarget{classv8_1_1internal_1_1ProfilerListener}{}\section{v8\+:\+:internal\+:\+:Profiler\+Listener Class Reference}
+\label{classv8_1_1internal_1_1ProfilerListener}\index{v8\+::internal\+::\+Profiler\+Listener@{v8\+::internal\+::\+Profiler\+Listener}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Profiler\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1ProfilerListener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_a2147e5b887e41ec33e129840174ee425}\label{classv8_1_1internal_1_1ProfilerListener_a2147e5b887e41ec33e129840174ee425}} 
+{\bfseries Profiler\+Listener} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$, \mbox{\hyperlink{classv8_1_1internal_1_1CodeEventObserver}{Code\+Event\+Observer}} $\ast$)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_a65b2b92fd53688e27828c294e557e510}\label{classv8_1_1internal_1_1ProfilerListener_a65b2b92fd53688e27828c294e557e510}} 
+void {\bfseries Callback\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, \mbox{\hyperlink{classuintptr__t}{Address}} entry\+\_\+point) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_a25ccd944c83ad98d8ec1604bfdfb2c7a}\label{classv8_1_1internal_1_1ProfilerListener_a25ccd944c83ad98d8ec1604bfdfb2c7a}} 
+void {\bfseries Code\+Create\+Event} (Code\+Event\+Listener\+::\+Log\+Events\+And\+Tags tag, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, const \mbox{\hyperlink{classchar}{char}} $\ast$comment) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_a6fb8651b91b7799809291936a4fc3104}\label{classv8_1_1internal_1_1ProfilerListener_a6fb8651b91b7799809291936a4fc3104}} 
+void {\bfseries Code\+Create\+Event} (Code\+Event\+Listener\+::\+Log\+Events\+And\+Tags tag, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_ac4dbfc29673535104ae6d2a7b2ff1ea5}\label{classv8_1_1internal_1_1ProfilerListener_ac4dbfc29673535104ae6d2a7b2ff1ea5}} 
+void {\bfseries Code\+Create\+Event} (Code\+Event\+Listener\+::\+Log\+Events\+And\+Tags tag, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$shared, \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} script\+\_\+name) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_a02e669924d15491365a616a2b649f371}\label{classv8_1_1internal_1_1ProfilerListener_a02e669924d15491365a616a2b649f371}} 
+void {\bfseries Code\+Create\+Event} (Code\+Event\+Listener\+::\+Log\+Events\+And\+Tags tag, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$shared, \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} script\+\_\+name, \mbox{\hyperlink{classint}{int}} line, \mbox{\hyperlink{classint}{int}} column) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_a9eda1140221812bb7db39bc25c99c47f}\label{classv8_1_1internal_1_1ProfilerListener_a9eda1140221812bb7db39bc25c99c47f}} 
+void {\bfseries Code\+Create\+Event} (Code\+Event\+Listener\+::\+Log\+Events\+And\+Tags tag, const \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCode}{wasm\+::\+Wasm\+Code}} $\ast$code, \mbox{\hyperlink{classv8_1_1internal_1_1Vector}{wasm\+::\+Wasm\+Name}} name) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_a4ca0eaaafeb5271c053cd5a6b7220150}\label{classv8_1_1internal_1_1ProfilerListener_a4ca0eaaafeb5271c053cd5a6b7220150}} 
+void {\bfseries Code\+Moving\+G\+C\+Event} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_ac885796988030e4a546bea218fd25cf8}\label{classv8_1_1internal_1_1ProfilerListener_ac885796988030e4a546bea218fd25cf8}} 
+void {\bfseries Code\+Move\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} from, \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} to) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_a8dd6c9de402e3bb457dbf474b886e5c8}\label{classv8_1_1internal_1_1ProfilerListener_a8dd6c9de402e3bb457dbf474b886e5c8}} 
+void {\bfseries Code\+Disable\+Opt\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1SharedFunctionInfo}{Shared\+Function\+Info}} $\ast$shared) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_a6421fa93e4dc5d0ed30fc76d4f43610c}\label{classv8_1_1internal_1_1ProfilerListener_a6421fa93e4dc5d0ed30fc76d4f43610c}} 
+void {\bfseries Code\+Deopt\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} code, Deoptimize\+Kind kind, \mbox{\hyperlink{classuintptr__t}{Address}} pc, \mbox{\hyperlink{classint}{int}} fp\+\_\+to\+\_\+sp\+\_\+delta) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_ab82cec107fffbc649f80e0dff64fadc7}\label{classv8_1_1internal_1_1ProfilerListener_ab82cec107fffbc649f80e0dff64fadc7}} 
+void {\bfseries Getter\+Callback\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, \mbox{\hyperlink{classuintptr__t}{Address}} entry\+\_\+point) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_a299b4b8be8b7e17fe0909f20cbf318e6}\label{classv8_1_1internal_1_1ProfilerListener_a299b4b8be8b7e17fe0909f20cbf318e6}} 
+void {\bfseries Reg\+Exp\+Code\+Create\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} code, \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} source) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_a865b334b5bd03d090fbb66a221b1aa06}\label{classv8_1_1internal_1_1ProfilerListener_a865b334b5bd03d090fbb66a221b1aa06}} 
+void {\bfseries Setter\+Callback\+Event} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name, \mbox{\hyperlink{classuintptr__t}{Address}} entry\+\_\+point) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_ac918ffd305af15e09b273d309de2b2a0}\label{classv8_1_1internal_1_1ProfilerListener_ac918ffd305af15e09b273d309de2b2a0}} 
+void {\bfseries Shared\+Function\+Info\+Move\+Event} (\mbox{\hyperlink{classuintptr__t}{Address}} from, \mbox{\hyperlink{classuintptr__t}{Address}} to) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_a5e9fe54059f9d141ba7c88a68264a393}\label{classv8_1_1internal_1_1ProfilerListener_a5e9fe54059f9d141ba7c88a68264a393}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1CodeEntry}{Code\+Entry}} $\ast$ {\bfseries New\+Code\+Entry} (Code\+Event\+Listener\+::\+Log\+Events\+And\+Tags tag, const \mbox{\hyperlink{classchar}{char}} $\ast$name, const \mbox{\hyperlink{classchar}{char}} $\ast$resource\+\_\+name=Code\+Entry\+::k\+Empty\+Resource\+Name, \mbox{\hyperlink{classint}{int}} line\+\_\+number=v8\+::\+Cpu\+Profile\+Node\+::k\+No\+Line\+Number\+Info, \mbox{\hyperlink{classint}{int}} column\+\_\+number=v8\+::\+Cpu\+Profile\+Node\+::k\+No\+Column\+Number\+Info, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SourcePositionTable}{Source\+Position\+Table}} $>$ line\+\_\+info=nullptr, \mbox{\hyperlink{classuintptr__t}{Address}} instruction\+\_\+start=k\+Null\+Address)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_a0a3e7a365ea99649f7864076a047b57e}\label{classv8_1_1internal_1_1ProfilerListener_a0a3e7a365ea99649f7864076a047b57e}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Get\+Name} (\mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_a3ed9ed40fa37436a4a329b8a4617b9d6}\label{classv8_1_1internal_1_1ProfilerListener_a3ed9ed40fa37436a4a329b8a4617b9d6}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Get\+Name} (\mbox{\hyperlink{classint}{int}} args\+\_\+count)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_a8aa379766ddded71011323d72aeac2d1}\label{classv8_1_1internal_1_1ProfilerListener_a8aa379766ddded71011323d72aeac2d1}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Get\+Name} (const \mbox{\hyperlink{classchar}{char}} $\ast$name)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ProfilerListener_a331a4baab12ed1e1f3d0cc5b76a4b05b}\label{classv8_1_1internal_1_1ProfilerListener_a331a4baab12ed1e1f3d0cc5b76a4b05b}} 
+const \mbox{\hyperlink{classchar}{char}} $\ast$ {\bfseries Get\+Cons\+Name} (const \mbox{\hyperlink{classchar}{char}} $\ast$prefix, \mbox{\hyperlink{classv8_1_1internal_1_1Name}{Name}} name)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file profiler-\/listener.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/profiler/profiler-\/listener.\+h\item 
+v8/src/profiler/profiler-\/listener.\+cc\end{DoxyCompactItemize}

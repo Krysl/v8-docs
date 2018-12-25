@@ -1,0 +1,76 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Type\+Hint\+Lowering Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering}\index{v8\+::internal\+::compiler\+::\+J\+S\+Type\+Hint\+Lowering@{v8\+::internal\+::compiler\+::\+J\+S\+Type\+Hint\+Lowering}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_1_1LoweringResult}{Lowering\+Result}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_ad076303c132fb3a18fbb3ba364d88ba7}\label{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_ad076303c132fb3a18fbb3ba364d88ba7}} 
+enum {\bfseries Flag} \{ {\bfseries k\+No\+Flags} = 0u, 
+{\bfseries k\+Bailout\+On\+Uninitialized} = 1u $<$$<$ 1
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_aa9d143a358d0c29088a93c7f56cc2192}\label{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_aa9d143a358d0c29088a93c7f56cc2192}} 
+typedef \mbox{\hyperlink{classv8_1_1base_1_1Flags}{base\+::\+Flags}}$<$ Flag $>$ {\bfseries Flags}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_ae69e001f024bd0b376d1bb55ee8b94e2}\label{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_ae69e001f024bd0b376d1bb55ee8b94e2}} 
+{\bfseries J\+S\+Type\+Hint\+Lowering} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSGraph}{J\+S\+Graph}} $\ast$jsgraph, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackVector}{Feedback\+Vector}} $>$ feedback\+\_\+vector, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{Flags}} flags)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_ada9905375bde3d035eb3b1502cd5961f}\label{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_ada9905375bde3d035eb3b1502cd5961f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_1_1LoweringResult}{Lowering\+Result}} {\bfseries Reduce\+Unary\+Operation} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$op, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$operand, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$effect, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$control, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_ad14ede070953ded2f4a4fc1ce100692e}\label{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_ad14ede070953ded2f4a4fc1ce100692e}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_1_1LoweringResult}{Lowering\+Result}} {\bfseries Reduce\+Binary\+Operation} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$op, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$left, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$right, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$effect, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$control, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_a9a0dffca0a79d58fc9e261cc4ca04d08}\label{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_a9a0dffca0a79d58fc9e261cc4ca04d08}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_1_1LoweringResult}{Lowering\+Result}} {\bfseries Reduce\+For\+In\+Next\+Operation} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$receiver, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$cache\+\_\+array, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$cache\+\_\+type, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$effect, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$control, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_a5bae8baa98d4da6b516413ce3af5144d}\label{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_a5bae8baa98d4da6b516413ce3af5144d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_1_1LoweringResult}{Lowering\+Result}} {\bfseries Reduce\+For\+In\+Prepare\+Operation} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$enumerator, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$effect, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$control, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_ab39ea0cd4bcec2ac2ec388eb00a7e093}\label{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_ab39ea0cd4bcec2ac2ec388eb00a7e093}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_1_1LoweringResult}{Lowering\+Result}} {\bfseries Reduce\+To\+Number\+Operation} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$value, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$effect, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$control, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_af8f7199ab1f07ddcdb18ffe7e05a8a51}\label{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_af8f7199ab1f07ddcdb18ffe7e05a8a51}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_1_1LoweringResult}{Lowering\+Result}} {\bfseries Reduce\+Call\+Operation} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$op, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const $\ast$args, \mbox{\hyperlink{classint}{int}} arg\+\_\+count, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$effect, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$control, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_a469727dac8fe9c8346ec30fb48c6df70}\label{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_a469727dac8fe9c8346ec30fb48c6df70}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_1_1LoweringResult}{Lowering\+Result}} {\bfseries Reduce\+Construct\+Operation} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$op, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const $\ast$args, \mbox{\hyperlink{classint}{int}} arg\+\_\+count, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$effect, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$control, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_ad927281e4d3e4ace24b7ad6a6b9aae3a}\label{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_ad927281e4d3e4ace24b7ad6a6b9aae3a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_1_1LoweringResult}{Lowering\+Result}} {\bfseries Reduce\+Load\+Named\+Operation} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$op, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$obj, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$effect, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$control, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_a850d0469eb6cd409471d2fa71ddd2bc5}\label{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_a850d0469eb6cd409471d2fa71ddd2bc5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_1_1LoweringResult}{Lowering\+Result}} {\bfseries Reduce\+Load\+Keyed\+Operation} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$op, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$obj, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$key, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$effect, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$control, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_af17f19f05bda4105eed4d37f523b466c}\label{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_af17f19f05bda4105eed4d37f523b466c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_1_1LoweringResult}{Lowering\+Result}} {\bfseries Reduce\+Store\+Named\+Operation} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$op, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$obj, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$val, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$effect, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$control, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_aec3dfa3a986b38888d57095c1b65c043}\label{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_aec3dfa3a986b38888d57095c1b65c043}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_1_1LoweringResult}{Lowering\+Result}} {\bfseries Reduce\+Store\+Keyed\+Operation} (const \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Operator}{Operator}} $\ast$op, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$obj, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$key, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$val, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$effect, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$control, \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackSlot}{Feedback\+Slot}} slot) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_a9bedef980633fc8b35b0af29aaf59d36}\label{classv8_1_1internal_1_1compiler_1_1JSTypeHintLowering_a9bedef980633fc8b35b0af29aaf59d36}} 
+class {\bfseries J\+S\+Speculative\+Binop\+Builder}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 38 of file js-\/type-\/hint-\/lowering.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/js-\/type-\/hint-\/lowering.\+h\item 
+v8/src/compiler/js-\/type-\/hint-\/lowering.\+cc\end{DoxyCompactItemize}

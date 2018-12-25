@@ -1,0 +1,93 @@
+\hypertarget{classv8_1_1internal_1_1HashTableBase}{}\section{v8\+:\+:internal\+:\+:Hash\+Table\+Base Class Reference}
+\label{classv8_1_1internal_1_1HashTableBase}\index{v8\+::internal\+::\+Hash\+Table\+Base@{v8\+::internal\+::\+Hash\+Table\+Base}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Hash\+Table\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.353536cm]{classv8_1_1internal_1_1HashTableBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_a28b2b49a3a7435c69e8618c366b0b972}\label{classv8_1_1internal_1_1HashTableBase_a28b2b49a3a7435c69e8618c366b0b972}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Elements} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_a6f100c15dbdc0e98e88f8c0ccabe58ab}\label{classv8_1_1internal_1_1HashTableBase_a6f100c15dbdc0e98e88f8c0ccabe58ab}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Deleted\+Elements} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_abf32dc092786ef9b61128331c884c0d0}\label{classv8_1_1internal_1_1HashTableBase_abf32dc092786ef9b61128331c884c0d0}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Capacity} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_a9c26053696a9507a6548c562de31896e}\label{classv8_1_1internal_1_1HashTableBase_a9c26053696a9507a6548c562de31896e}} 
+void {\bfseries Element\+Added} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_a60cec5ab24abcb14a08c59e6abf33aaf}\label{classv8_1_1internal_1_1HashTableBase_a60cec5ab24abcb14a08c59e6abf33aaf}} 
+void {\bfseries Element\+Removed} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_a0f5cbf8c5beece520200339ea79521c4}\label{classv8_1_1internal_1_1HashTableBase_a0f5cbf8c5beece520200339ea79521c4}} 
+void {\bfseries Elements\+Removed} (\mbox{\hyperlink{classint}{int}} n)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_abc79b7681516b408f235db11d181d158}\label{classv8_1_1internal_1_1HashTableBase_abc79b7681516b408f235db11d181d158}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries Compute\+Capacity} (\mbox{\hyperlink{classint}{int}} at\+\_\+least\+\_\+space\+\_\+for)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_a5c0dade921887e7b3f2c76a0c595ced7}\label{classv8_1_1internal_1_1HashTableBase_a5c0dade921887e7b3f2c76a0c595ced7}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Get\+Probe\+Offset} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} n)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_aec11b4e6518d8551f973bc237740cc89}\label{classv8_1_1internal_1_1HashTableBase_aec11b4e6518d8551f973bc237740cc89}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Number\+Of\+Elements\+Index} = 0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_aac8547f563526b42fd0be66a3d6cdd9e}\label{classv8_1_1internal_1_1HashTableBase_aac8547f563526b42fd0be66a3d6cdd9e}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Number\+Of\+Deleted\+Elements\+Index} = 1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_a5dbdd64713695ce2688050fe21a9fa27}\label{classv8_1_1internal_1_1HashTableBase_a5dbdd64713695ce2688050fe21a9fa27}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Capacity\+Index} = 2
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_a47b1d536b0124b61b18113aba80896bf}\label{classv8_1_1internal_1_1HashTableBase_a47b1d536b0124b61b18113aba80896bf}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Prefix\+Start\+Index} = 3
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_a808cd230b60a37067e5a0387e6466daf}\label{classv8_1_1internal_1_1HashTableBase_a808cd230b60a37067e5a0387e6466daf}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Not\+Found} = -\/1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_a307abad55c64aae5af22b3236b4dd2da}\label{classv8_1_1internal_1_1HashTableBase_a307abad55c64aae5af22b3236b4dd2da}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Min\+Capacity} = 4
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_a73d1d12847dea6375c769aa36c54b6a8}\label{classv8_1_1internal_1_1HashTableBase_a73d1d12847dea6375c769aa36c54b6a8}} 
+void {\bfseries Set\+Number\+Of\+Elements} (\mbox{\hyperlink{classint}{int}} nof)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_a03f2719df776dfa5ad846f41f76757b1}\label{classv8_1_1internal_1_1HashTableBase_a03f2719df776dfa5ad846f41f76757b1}} 
+void {\bfseries Set\+Number\+Of\+Deleted\+Elements} (\mbox{\hyperlink{classint}{int}} nod)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_aa259e268c7f58639ab33414e5adb04c4}\label{classv8_1_1internal_1_1HashTableBase_aa259e268c7f58639ab33414e5adb04c4}} 
+static \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Get\+Probe} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} hash, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} number, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_a771b91b666da8b9c60060f2061b2635f}\label{classv8_1_1internal_1_1HashTableBase_a771b91b666da8b9c60060f2061b2635f}} 
+static \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries First\+Probe} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} hash, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HashTableBase_a14b520de3484f55cc4a726a872f31547}\label{classv8_1_1internal_1_1HashTableBase_a14b520de3484f55cc4a726a872f31547}} 
+static \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries Next\+Probe} (\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} last, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} number, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} size)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 66 of file hash-\/table.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/hash-\/table.\+h\item 
+v8/src/objects/hash-\/table-\/inl.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,83 @@
+\hypertarget{classv8_1_1internal_1_1RegisterBase}{}\section{v8\+:\+:internal\+:\+:Register\+Base$<$ Sub\+Type, k\+After\+Last\+Register $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1RegisterBase}\index{v8\+::internal\+::\+Register\+Base$<$ Sub\+Type, k\+After\+Last\+Register $>$@{v8\+::internal\+::\+Register\+Base$<$ Sub\+Type, k\+After\+Last\+Register $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegisterBase_a7e2b55b58447de993cab1171d5e46ee0}\label{classv8_1_1internal_1_1RegisterBase_a7e2b55b58447de993cab1171d5e46ee0}} 
+constexpr {\bfseries operator Register\+Code} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegisterBase_ab4edadb64159d517dd8c8fcfd989d316}\label{classv8_1_1internal_1_1RegisterBase_ab4edadb64159d517dd8c8fcfd989d316}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+valid} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegisterBase_a555a95027a790b38d9f719ba79c2ade4}\label{classv8_1_1internal_1_1RegisterBase_a555a95027a790b38d9f719ba79c2ade4}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries code} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegisterBase_a158888485d9fd68a93a7e3cac1834880}\label{classv8_1_1internal_1_1RegisterBase_a158888485d9fd68a93a7e3cac1834880}} 
+\mbox{\hyperlink{classuint32__t}{Reg\+List}} {\bfseries bit} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegisterBase_a7778852fa06f4fa42e2bc38aee047c17}\label{classv8_1_1internal_1_1RegisterBase_a7778852fa06f4fa42e2bc38aee047c17}} 
+constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries operator==} (Sub\+Type other) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegisterBase_accd5df1f56bf6941cb449c941e2bbb87}\label{classv8_1_1internal_1_1RegisterBase_accd5df1f56bf6941cb449c941e2bbb87}} 
+constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries operator!=} (Sub\+Type other) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegisterBase_a99d34fe5d17363e2c57ab0a3dab22305}\label{classv8_1_1internal_1_1RegisterBase_a99d34fe5d17363e2c57ab0a3dab22305}} 
+static constexpr Sub\+Type {\bfseries no\+\_\+reg} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegisterBase_abd3562d1d0c4016e30e186fee15dbc56}\label{classv8_1_1internal_1_1RegisterBase_abd3562d1d0c4016e30e186fee15dbc56}} 
+{\footnotesize template$<$int code$>$ }\\static constexpr Sub\+Type {\bfseries from\+\_\+code} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegisterBase_a69ead19534f9f02d208c08e9f933b75a}\label{classv8_1_1internal_1_1RegisterBase_a69ead19534f9f02d208c08e9f933b75a}} 
+{\footnotesize template$<$Register\+Code reg\+\_\+code$>$ }\\static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries code} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegisterBase_add92777161d96225c9ac8f0e76f9b6d5}\label{classv8_1_1internal_1_1RegisterBase_add92777161d96225c9ac8f0e76f9b6d5}} 
+{\footnotesize template$<$Register\+Code reg\+\_\+code$>$ }\\static constexpr \mbox{\hyperlink{classuint32__t}{Reg\+List}} {\bfseries bit} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegisterBase_ab99867f6a09563711cc66bb2053f735b}\label{classv8_1_1internal_1_1RegisterBase_ab99867f6a09563711cc66bb2053f735b}} 
+static Sub\+Type {\bfseries from\+\_\+code} (\mbox{\hyperlink{classint}{int}} code)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegisterBase_a7981ceef9da8682fdec0ad51e68984a3}\label{classv8_1_1internal_1_1RegisterBase_a7981ceef9da8682fdec0ad51e68984a3}} 
+{\footnotesize template$<$Register\+Code... reg\+\_\+codes$>$ }\\static constexpr \mbox{\hyperlink{classuint32__t}{Reg\+List}} {\bfseries List\+Of} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegisterBase_a931699829e487ea940722ce3246fc0c8}\label{classv8_1_1internal_1_1RegisterBase_a931699829e487ea940722ce3246fc0c8}} 
+{\footnotesize template$<$typename... Register$>$ }\\static \mbox{\hyperlink{classuint32__t}{Reg\+List}} {\bfseries List\+Of} (Register... regs)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegisterBase_aae3303a8531bf2f4951b7f1b88770782}\label{classv8_1_1internal_1_1RegisterBase_aae3303a8531bf2f4951b7f1b88770782}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Code\+\_\+no\+\_\+reg} = -\/1
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegisterBase_aa75fc94873db2cd40533f9933e036fdb}\label{classv8_1_1internal_1_1RegisterBase_aa75fc94873db2cd40533f9933e036fdb}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Num\+Registers} = k\+After\+Last\+Register
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegisterBase_a350b07992e99cb2a59474c2ef4869441}\label{classv8_1_1internal_1_1RegisterBase_a350b07992e99cb2a59474c2ef4869441}} 
+constexpr {\bfseries Register\+Base} (\mbox{\hyperlink{classint}{int}} code)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegisterBase_ae15927247b0c2cd047e1e4923788b981}\label{classv8_1_1internal_1_1RegisterBase_ae15927247b0c2cd047e1e4923788b981}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries reg\+\_\+code\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Sub\+Type, int k\+After\+Last\+Register$>$\newline
+class v8\+::internal\+::\+Register\+Base$<$ Sub\+Type, k\+After\+Last\+Register $>$}
+
+
+
+Definition at line 456 of file assembler.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/assembler.\+h\end{DoxyCompactItemize}

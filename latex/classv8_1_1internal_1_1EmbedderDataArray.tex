@@ -1,0 +1,81 @@
+\hypertarget{classv8_1_1internal_1_1EmbedderDataArray}{}\section{v8\+:\+:internal\+:\+:Embedder\+Data\+Array Class Reference}
+\label{classv8_1_1internal_1_1EmbedderDataArray}\index{v8\+::internal\+::\+Embedder\+Data\+Array@{v8\+::internal\+::\+Embedder\+Data\+Array}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Embedder\+Data\+Array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1EmbedderDataArray}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1EmbedderDataArray_1_1BodyDescriptor}{Body\+Descriptor}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EmbedderDataArray_abcc21b2f85ca92a3357d7654a111e930}\label{classv8_1_1internal_1_1EmbedderDataArray_abcc21b2f85ca92a3357d7654a111e930}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries length} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EmbedderDataArray_a8b31a5c51f74f2c7e96ce786c3692f96}\label{classv8_1_1internal_1_1EmbedderDataArray_a8b31a5c51f74f2c7e96ce786c3692f96}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries set\+\_\+length} (\mbox{\hyperlink{classint}{int}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EmbedderDataArray_a3dba77b10a8e7040392bd6d798e2e03f}\label{classv8_1_1internal_1_1EmbedderDataArray_a3dba77b10a8e7040392bd6d798e2e03f}} 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+F\+I\+E\+L\+D\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+C\+O\+N\+S\+T\+A\+N\+TS} (Heap\+Object\+::k\+Header\+Size, E\+M\+B\+E\+D\+D\+E\+R\+\_\+\+D\+A\+T\+A\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+F\+I\+E\+L\+DS) static const expr \mbox{\hyperlink{classint}{int}} Size\+For(\mbox{\hyperlink{classint}{int}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EmbedderDataArray_acc1db71039a06b8163f191fa44a9f4b4}\label{classv8_1_1internal_1_1EmbedderDataArray_acc1db71039a06b8163f191fa44a9f4b4}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries slots\+\_\+start} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EmbedderDataArray_a38526bc7d52500532c40d3b76afe81ad}\label{classv8_1_1internal_1_1EmbedderDataArray_a38526bc7d52500532c40d3b76afe81ad}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries slots\+\_\+end} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EmbedderDataArray_a13e5bf0b935cd372b656fd7ad574c3f3}\label{classv8_1_1internal_1_1EmbedderDataArray_a13e5bf0b935cd372b656fd7ad574c3f3}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1EmbedderDataArray}{Embedder\+Data\+Array}} $>$ {\bfseries Ensure\+Capacity} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1EmbedderDataArray}{Embedder\+Data\+Array}} $>$ array, \mbox{\hyperlink{classint}{int}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EmbedderDataArray_a3499d13e47b7caeb496c52ab37927246}\label{classv8_1_1internal_1_1EmbedderDataArray_a3499d13e47b7caeb496c52ab37927246}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries Offset\+Of\+Element\+At} (\mbox{\hyperlink{classint}{int}} index)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1EmbedderDataArray_ab80dcbf423059c4d4863e13becc6e933}\label{classv8_1_1internal_1_1EmbedderDataArray_ab80dcbf423059c4d4863e13becc6e933}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Size} = k\+Max\+Regular\+Heap\+Object\+Size
+\item 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Length}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file embedder-\/data-\/array.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1EmbedderDataArray_a50957fe62aef14abfc5e0015dc4263f0}\label{classv8_1_1internal_1_1EmbedderDataArray_a50957fe62aef14abfc5e0015dc4263f0}} 
+\index{v8\+::internal\+::\+Embedder\+Data\+Array@{v8\+::internal\+::\+Embedder\+Data\+Array}!k\+Max\+Length@{k\+Max\+Length}}
+\index{k\+Max\+Length@{k\+Max\+Length}!v8\+::internal\+::\+Embedder\+Data\+Array@{v8\+::internal\+::\+Embedder\+Data\+Array}}
+\subsubsection{\texorpdfstring{k\+Max\+Length}{kMaxLength}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{classint}{int}} v8\+::internal\+::\+Embedder\+Data\+Array\+::k\+Max\+Length\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      (kMaxSize - kHeaderSize) / kEmbedderDataSlotSize
+\end{DoxyCode}
+
+
+Definition at line 64 of file embedder-\/data-\/array.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/embedder-\/data-\/array.\+h\item 
+v8/src/objects/embedder-\/data-\/array-\/inl.\+h\item 
+v8/src/objects/embedder-\/data-\/array.\+cc\end{DoxyCompactItemize}

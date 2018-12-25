@@ -1,0 +1,79 @@
+\hypertarget{classv8_1_1internal_1_1SpaceWithLinearArea}{}\section{v8\+:\+:internal\+:\+:Space\+With\+Linear\+Area Class Reference}
+\label{classv8_1_1internal_1_1SpaceWithLinearArea}\index{v8\+::internal\+::\+Space\+With\+Linear\+Area@{v8\+::internal\+::\+Space\+With\+Linear\+Area}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Space\+With\+Linear\+Area\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1SpaceWithLinearArea}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SpaceWithLinearArea_a85da499b12cdb8a59b5e125c3be4e92c}\label{classv8_1_1internal_1_1SpaceWithLinearArea_a85da499b12cdb8a59b5e125c3be4e92c}} 
+{\bfseries Space\+With\+Linear\+Area} (\mbox{\hyperlink{classv8_1_1internal_1_1Heap}{Heap}} $\ast$heap, Allocation\+Space id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SpaceWithLinearArea_a820ce506a31987161ceda6cfdafbd542}\label{classv8_1_1internal_1_1SpaceWithLinearArea_a820ce506a31987161ceda6cfdafbd542}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Supports\+Inline\+Allocation} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SpaceWithLinearArea_a9abd7cc862bdbbf377ca081eed1777d8}\label{classv8_1_1internal_1_1SpaceWithLinearArea_a9abd7cc862bdbbf377ca081eed1777d8}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries top} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SpaceWithLinearArea_a838f9156dceb9961b794ce70830e04ff}\label{classv8_1_1internal_1_1SpaceWithLinearArea_a838f9156dceb9961b794ce70830e04ff}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries limit} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SpaceWithLinearArea_a54fb3593f5faa40c65e79f98af9b14fd}\label{classv8_1_1internal_1_1SpaceWithLinearArea_a54fb3593f5faa40c65e79f98af9b14fd}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$ {\bfseries allocation\+\_\+top\+\_\+address} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SpaceWithLinearArea_af97675a0f2e413ac8414fe8f70869cb1}\label{classv8_1_1internal_1_1SpaceWithLinearArea_af97675a0f2e413ac8414fe8f70869cb1}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$ {\bfseries allocation\+\_\+limit\+\_\+address} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SpaceWithLinearArea_a5e6f2404d608d547bd258290444c036a}\label{classv8_1_1internal_1_1SpaceWithLinearArea_a5e6f2404d608d547bd258290444c036a}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Add\+Allocation\+Observer} (\mbox{\hyperlink{classv8_1_1internal_1_1AllocationObserver}{Allocation\+Observer}} $\ast$observer) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SpaceWithLinearArea_af06c7313b6432e3f5d7d35f110b6072b}\label{classv8_1_1internal_1_1SpaceWithLinearArea_af06c7313b6432e3f5d7d35f110b6072b}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Remove\+Allocation\+Observer} (\mbox{\hyperlink{classv8_1_1internal_1_1AllocationObserver}{Allocation\+Observer}} $\ast$observer) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SpaceWithLinearArea_aa13d43eabcc2e4dafc96fe6c9af5231a}\label{classv8_1_1internal_1_1SpaceWithLinearArea_aa13d43eabcc2e4dafc96fe6c9af5231a}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Resume\+Allocation\+Observers} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SpaceWithLinearArea_aa82e154f0c929129195e5c51646ec9dd}\label{classv8_1_1internal_1_1SpaceWithLinearArea_aa82e154f0c929129195e5c51646ec9dd}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Pause\+Allocation\+Observers} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SpaceWithLinearArea_a2910ecd8e3b503be887bee41731b60fc}\label{classv8_1_1internal_1_1SpaceWithLinearArea_a2910ecd8e3b503be887bee41731b60fc}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Compute\+Limit} (\mbox{\hyperlink{classuintptr__t}{Address}} start, \mbox{\hyperlink{classuintptr__t}{Address}} end, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} min\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SpaceWithLinearArea_a21ec28e3548a0bbdbe24c86f696a22ce}\label{classv8_1_1internal_1_1SpaceWithLinearArea_a21ec28e3548a0bbdbe24c86f696a22ce}} 
+virtual V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Update\+Inline\+Allocation\+Limit} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} min\+\_\+size)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SpaceWithLinearArea_a6652320014fa945db2e6e13d3cf7c16f}\label{classv8_1_1internal_1_1SpaceWithLinearArea_a6652320014fa945db2e6e13d3cf7c16f}} 
+void {\bfseries Inline\+Allocation\+Step} (\mbox{\hyperlink{classuintptr__t}{Address}} top, \mbox{\hyperlink{classuintptr__t}{Address}} top\+\_\+for\+\_\+next\+\_\+step, \mbox{\hyperlink{classuintptr__t}{Address}} soon\+\_\+object, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SpaceWithLinearArea_a85030a6985d1ca020c25badeb46de07c}\label{classv8_1_1internal_1_1SpaceWithLinearArea_a85030a6985d1ca020c25badeb46de07c}} 
+V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Start\+Next\+Inline\+Allocation\+Step} () override
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SpaceWithLinearArea_ac31bc82b1905578b337a2cd731419e5f}\label{classv8_1_1internal_1_1SpaceWithLinearArea_ac31bc82b1905578b337a2cd731419e5f}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1LinearAllocationArea}{Linear\+Allocation\+Area}} {\bfseries allocation\+\_\+info\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1SpaceWithLinearArea_a75d5d47dec861087a7869bd6e78ec74e}\label{classv8_1_1internal_1_1SpaceWithLinearArea_a75d5d47dec861087a7869bd6e78ec74e}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries top\+\_\+on\+\_\+previous\+\_\+step\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 2010 of file spaces.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/spaces.\+h\item 
+v8/src/heap/spaces.\+cc\end{DoxyCompactItemize}

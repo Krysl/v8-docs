@@ -1,0 +1,47 @@
+\hypertarget{classv8_1_1internal_1_1Snapshot}{}\section{v8\+:\+:internal\+:\+:Snapshot Class Reference}
+\label{classv8_1_1internal_1_1Snapshot}\index{v8\+::internal\+::\+Snapshot@{v8\+::internal\+::\+Snapshot}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Snapshot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1Snapshot}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Snapshot_a5054ae7a1ee4b2db6052099fbbddb401}\label{classv8_1_1internal_1_1Snapshot_a5054ae7a1ee4b2db6052099fbbddb401}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Initialize} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Snapshot_a27a66d2b0f7d680711bc8208a09fa77e}\label{classv8_1_1internal_1_1Snapshot_a27a66d2b0f7d680711bc8208a09fa77e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ {\bfseries New\+Context\+From\+Snapshot} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSGlobalProxy}{J\+S\+Global\+Proxy}} $>$ global\+\_\+proxy, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} context\+\_\+index, v8\+::\+Deserialize\+Embedder\+Fields\+Callback embedder\+\_\+fields\+\_\+deserializer)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Snapshot_a8792603b1bdff6535d4cb0b0034d82b8}\label{classv8_1_1internal_1_1Snapshot_a8792603b1bdff6535d4cb0b0034d82b8}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Context\+Snapshot} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Snapshot_a3a1aebec9d95ea0ab6934cca5ce3a9af}\label{classv8_1_1internal_1_1Snapshot_a3a1aebec9d95ea0ab6934cca5ce3a9af}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Embeds\+Script} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Snapshot_a5581dcad3c8aebccb9e9ad5fd641cf03}\label{classv8_1_1internal_1_1Snapshot_a5581dcad3c8aebccb9e9ad5fd641cf03}} 
+static const v8\+::\+Startup\+Data $\ast$ {\bfseries Default\+Snapshot\+Blob} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Snapshot_ad186fe56fe8f495f0aabd8bdb2b658c4}\label{classv8_1_1internal_1_1Snapshot_ad186fe56fe8f495f0aabd8bdb2b658c4}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Verify\+Checksum} (const v8\+::\+Startup\+Data $\ast$data)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Snapshot_a710d1c205ea568700a0d245f6a5f0d83}\label{classv8_1_1internal_1_1Snapshot_a710d1c205ea568700a0d245f6a5f0d83}} 
+static v8\+::\+Startup\+Data {\bfseries Create\+Snapshot\+Blob} (const \mbox{\hyperlink{classv8_1_1internal_1_1SnapshotData}{Snapshot\+Data}} $\ast$startup\+\_\+snapshot, const \mbox{\hyperlink{classv8_1_1internal_1_1SnapshotData}{Snapshot\+Data}} $\ast$read\+\_\+only\+\_\+snapshot, const std\+::vector$<$ \mbox{\hyperlink{classv8_1_1internal_1_1SnapshotData}{Snapshot\+Data}} $\ast$$>$ \&context\+\_\+snapshots, \mbox{\hyperlink{classbool}{bool}} can\+\_\+be\+\_\+rehashed)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 53 of file snapshot.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/snapshot/snapshot.\+h\item 
+v8/src/snapshot/snapshot-\/common.\+cc\item 
+v8/src/snapshot/snapshot-\/empty.\+cc\item 
+v8/src/snapshot/snapshot-\/external.\+cc\end{DoxyCompactItemize}

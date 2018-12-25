@@ -1,0 +1,72 @@
+\hypertarget{classv8_1_1internal_1_1FrameArray}{}\section{v8\+:\+:internal\+:\+:Frame\+Array Class Reference}
+\label{classv8_1_1internal_1_1FrameArray}\index{v8\+::internal\+::\+Frame\+Array@{v8\+::internal\+::\+Frame\+Array}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Frame\+Array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1FrameArray}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameArray_a4466449869b97b4a8272906f8f475f90}\label{classv8_1_1internal_1_1FrameArray_a4466449869b97b4a8272906f8f475f90}} 
+enum {\bfseries Flag} \{ \newline
+{\bfseries k\+Is\+Wasm\+Frame} = 1 $<$$<$ 0, 
+{\bfseries k\+Is\+Wasm\+Interpreted\+Frame} = 1 $<$$<$ 1, 
+{\bfseries k\+Is\+Asm\+Js\+Wasm\+Frame} = 1 $<$$<$ 2, 
+{\bfseries k\+Is\+Strict} = 1 $<$$<$ 3, 
+\newline
+{\bfseries k\+Is\+Constructor} = 1 $<$$<$ 4, 
+{\bfseries k\+Asm\+Js\+At\+Number\+Conversion} = 1 $<$$<$ 5, 
+{\bfseries k\+Is\+Async} = 1 $<$$<$ 6, 
+{\bfseries k\+Is\+Promise\+All} = 1 $<$$<$ 7
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameArray_a3db1bc48e7b856730a45b323e81b661f}\label{classv8_1_1internal_1_1FrameArray_a3db1bc48e7b856730a45b323e81b661f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Wasm\+Frame} (\mbox{\hyperlink{classint}{int}} frame\+\_\+ix) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameArray_a43e3740f14fb7c8286abd4596a9c7152}\label{classv8_1_1internal_1_1FrameArray_a43e3740f14fb7c8286abd4596a9c7152}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Wasm\+Interpreted\+Frame} (\mbox{\hyperlink{classint}{int}} frame\+\_\+ix) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameArray_a479d40c2f922cc1baabb319158118e4e}\label{classv8_1_1internal_1_1FrameArray_a479d40c2f922cc1baabb319158118e4e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Asm\+Js\+Wasm\+Frame} (\mbox{\hyperlink{classint}{int}} frame\+\_\+ix) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameArray_a88f51e76bd736059aa3f69b5b33ce450}\label{classv8_1_1internal_1_1FrameArray_a88f51e76bd736059aa3f69b5b33ce450}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Frame\+Count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameArray_a2bd377e1e6949ded6dfefe87077cb85f}\label{classv8_1_1internal_1_1FrameArray_a2bd377e1e6949ded6dfefe87077cb85f}} 
+void {\bfseries Shrink\+To\+Fit} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameArray_a3447f2336aa30a7835ee20c6d4e7a8a9}\label{classv8_1_1internal_1_1FrameArray_a3447f2336aa30a7835ee20c6d4e7a8a9}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FrameArray}{Frame\+Array}} $>$ {\bfseries Append\+J\+S\+Frame} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FrameArray}{Frame\+Array}} $>$ in, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ receiver, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ function, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1AbstractCode}{Abstract\+Code}} $>$ code, \mbox{\hyperlink{classint}{int}} offset, \mbox{\hyperlink{classint}{int}} flags)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameArray_a0172baa6760b4778d568666822e245b3}\label{classv8_1_1internal_1_1FrameArray_a0172baa6760b4778d568666822e245b3}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FrameArray}{Frame\+Array}} $>$ {\bfseries Append\+Wasm\+Frame} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FrameArray}{Frame\+Array}} $>$ in, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmInstanceObject}{Wasm\+Instance\+Object}} $>$ wasm\+\_\+instance, \mbox{\hyperlink{classint}{int}} wasm\+\_\+function\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1wasm_1_1WasmCode}{wasm\+::\+Wasm\+Code}} $\ast$code, \mbox{\hyperlink{classint}{int}} offset, \mbox{\hyperlink{classint}{int}} flags)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1FrameArray_a328c093d609680cca505905c6d49901a}\label{classv8_1_1internal_1_1FrameArray_a328c093d609680cca505905c6d49901a}} 
+class {\bfseries Factory}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 31 of file frame-\/array.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/frame-\/array.\+h\item 
+v8/src/objects/frame-\/array-\/inl.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

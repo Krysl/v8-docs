@@ -1,0 +1,202 @@
+\hypertarget{classv8_1_1internal_1_1InstructionBase}{}\section{v8\+:\+:internal\+:\+:Instruction\+Base Class Reference}
+\label{classv8_1_1internal_1_1InstructionBase}\index{v8\+::internal\+::\+Instruction\+Base@{v8\+::internal\+::\+Instruction\+Base}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Instruction\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.439189cm]{classv8_1_1internal_1_1InstructionBase}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_ab7cbe67a29bc61a444b1c6dc566670b4}\label{classv8_1_1internal_1_1InstructionBase_ab7cbe67a29bc61a444b1c6dc566670b4}} 
+enum \{ {\bfseries k\+P\+C\+Read\+Offset} = 0
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_a5e37f32c9f2865606c1721fc63f467d1}\label{classv8_1_1internal_1_1InstructionBase_a5e37f32c9f2865606c1721fc63f467d1}} 
+enum {\bfseries Type} \{ \newline
+{\bfseries k\+Register\+Type}, 
+{\bfseries k\+Immediate\+Type}, 
+{\bfseries k\+Jump\+Type}, 
+{\bfseries k\+Unsupported} = -\/1, 
+\newline
+{\bfseries k\+Register\+Type}, 
+{\bfseries k\+Immediate\+Type}, 
+{\bfseries k\+Jump\+Type}, 
+{\bfseries k\+Unsupported} = -\/1
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_a5eb13c6b026f17150ed8bcb4f81936d9}\label{classv8_1_1internal_1_1InstructionBase_a5eb13c6b026f17150ed8bcb4f81936d9}} 
+enum \{ {\bfseries k\+P\+C\+Read\+Offset} = 0
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_a5e37f32c9f2865606c1721fc63f467d1}\label{classv8_1_1internal_1_1InstructionBase_a5e37f32c9f2865606c1721fc63f467d1}} 
+enum {\bfseries Type} \{ \newline
+{\bfseries k\+Register\+Type}, 
+{\bfseries k\+Immediate\+Type}, 
+{\bfseries k\+Jump\+Type}, 
+{\bfseries k\+Unsupported} = -\/1, 
+\newline
+{\bfseries k\+Register\+Type}, 
+{\bfseries k\+Immediate\+Type}, 
+{\bfseries k\+Jump\+Type}, 
+{\bfseries k\+Unsupported} = -\/1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_a81805d880f407299a67a40d924a9bece}\label{classv8_1_1internal_1_1InstructionBase_a81805d880f407299a67a40d924a9bece}} 
+Instr {\bfseries Instruction\+Bits} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_ad7e385006a75031e5bd75d3243268e37}\label{classv8_1_1internal_1_1InstructionBase_ad7e385006a75031e5bd75d3243268e37}} 
+void {\bfseries Set\+Instruction\+Bits} (Instr value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_abf59af3dff4a31c8e4e701e34af27b7f}\label{classv8_1_1internal_1_1InstructionBase_abf59af3dff4a31c8e4e701e34af27b7f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Bit} (\mbox{\hyperlink{classint}{int}} nr) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_a486155bd61f6d76785336d7415db161d}\label{classv8_1_1internal_1_1InstructionBase_a486155bd61f6d76785336d7415db161d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Bits} (\mbox{\hyperlink{classint}{int}} hi, \mbox{\hyperlink{classint}{int}} lo) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_ae7c64c83d6e01c787beb6b2417454011}\label{classv8_1_1internal_1_1InstructionBase_ae7c64c83d6e01c787beb6b2417454011}} 
+Opcode {\bfseries Opcode\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_af1b301c501310124443d992f92faccb4}\label{classv8_1_1internal_1_1InstructionBase_af1b301c501310124443d992f92faccb4}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Function\+Field\+Raw} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_a7f3016835875a7ea6f00b7e080a85dec}\label{classv8_1_1internal_1_1InstructionBase_a7f3016835875a7ea6f00b7e080a85dec}} 
+Opcode {\bfseries Opcode\+Field\+Raw} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_a38fbbe20848598dff95a765c07b68241}\label{classv8_1_1internal_1_1InstructionBase_a38fbbe20848598dff95a765c07b68241}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Rs\+Field\+Raw\+No\+Assert} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_a2fbbd2c466574b050c72efaf71abfca0}\label{classv8_1_1internal_1_1InstructionBase_a2fbbd2c466574b050c72efaf71abfca0}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Sa\+Field\+Raw} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_ae0e23386aa9941f85f15b63f2514e3f7}\label{classv8_1_1internal_1_1InstructionBase_ae0e23386aa9941f85f15b63f2514e3f7}} 
+Type {\bfseries Instruction\+Type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_a5c88371ce84d80dfd236cbc1db9f9185}\label{classv8_1_1internal_1_1InstructionBase_a5c88371ce84d80dfd236cbc1db9f9185}} 
+M\+S\+A\+Minor\+Opcode {\bfseries M\+S\+A\+Minor\+Opcode\+Field} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_a81805d880f407299a67a40d924a9bece}\label{classv8_1_1internal_1_1InstructionBase_a81805d880f407299a67a40d924a9bece}} 
+Instr {\bfseries Instruction\+Bits} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_ad7e385006a75031e5bd75d3243268e37}\label{classv8_1_1internal_1_1InstructionBase_ad7e385006a75031e5bd75d3243268e37}} 
+void {\bfseries Set\+Instruction\+Bits} (Instr value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_abf59af3dff4a31c8e4e701e34af27b7f}\label{classv8_1_1internal_1_1InstructionBase_abf59af3dff4a31c8e4e701e34af27b7f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Bit} (\mbox{\hyperlink{classint}{int}} nr) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_a486155bd61f6d76785336d7415db161d}\label{classv8_1_1internal_1_1InstructionBase_a486155bd61f6d76785336d7415db161d}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Bits} (\mbox{\hyperlink{classint}{int}} hi, \mbox{\hyperlink{classint}{int}} lo) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_ae7c64c83d6e01c787beb6b2417454011}\label{classv8_1_1internal_1_1InstructionBase_ae7c64c83d6e01c787beb6b2417454011}} 
+Opcode {\bfseries Opcode\+Value} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_af1b301c501310124443d992f92faccb4}\label{classv8_1_1internal_1_1InstructionBase_af1b301c501310124443d992f92faccb4}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Function\+Field\+Raw} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_a7f3016835875a7ea6f00b7e080a85dec}\label{classv8_1_1internal_1_1InstructionBase_a7f3016835875a7ea6f00b7e080a85dec}} 
+Opcode {\bfseries Opcode\+Field\+Raw} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_a38fbbe20848598dff95a765c07b68241}\label{classv8_1_1internal_1_1InstructionBase_a38fbbe20848598dff95a765c07b68241}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Rs\+Field\+Raw\+No\+Assert} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_a2fbbd2c466574b050c72efaf71abfca0}\label{classv8_1_1internal_1_1InstructionBase_a2fbbd2c466574b050c72efaf71abfca0}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Sa\+Field\+Raw} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_a372cce2f45823051b7a7ae0e01c4864a}\label{classv8_1_1internal_1_1InstructionBase_a372cce2f45823051b7a7ae0e01c4864a}} 
+Type {\bfseries Instruction\+Type} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_a5c88371ce84d80dfd236cbc1db9f9185}\label{classv8_1_1internal_1_1InstructionBase_a5c88371ce84d80dfd236cbc1db9f9185}} 
+M\+S\+A\+Minor\+Opcode {\bfseries M\+S\+A\+Minor\+Opcode\+Field} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr uint64\+\_\+t {\bfseries k\+Opcode\+Immediate\+Type\+Mask}
+\item 
+static const uint64\+\_\+t {\bfseries k\+Function\+Field\+Register\+Type\+Mask}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1225 of file constants-\/mips.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_a144163bd1b5b773b28105e089bf442a9}\label{classv8_1_1internal_1_1InstructionBase_a144163bd1b5b773b28105e089bf442a9}} 
+\index{v8\+::internal\+::\+Instruction\+Base@{v8\+::internal\+::\+Instruction\+Base}!k\+Function\+Field\+Register\+Type\+Mask@{k\+Function\+Field\+Register\+Type\+Mask}}
+\index{k\+Function\+Field\+Register\+Type\+Mask@{k\+Function\+Field\+Register\+Type\+Mask}!v8\+::internal\+::\+Instruction\+Base@{v8\+::internal\+::\+Instruction\+Base}}
+\subsubsection{\texorpdfstring{k\+Function\+Field\+Register\+Type\+Mask}{kFunctionFieldRegisterTypeMask}}
+{\footnotesize\ttfamily static const uint64\+\_\+t v8\+::internal\+::\+Instruction\+Base\+::k\+Function\+Field\+Register\+Type\+Mask\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      FunctionFieldToBitNumber(JR) | FunctionFieldToBitNumber(JALR) |
+      FunctionFieldToBitNumber(BREAK) | FunctionFieldToBitNumber(SLL) |
+      FunctionFieldToBitNumber(SRL) | FunctionFieldToBitNumber(SRA) |
+      FunctionFieldToBitNumber(SLLV) | FunctionFieldToBitNumber(SRLV) |
+      FunctionFieldToBitNumber(SRAV) | FunctionFieldToBitNumber(LSA) |
+      FunctionFieldToBitNumber(MFHI) | FunctionFieldToBitNumber(MFLO) |
+      FunctionFieldToBitNumber(MULT) | FunctionFieldToBitNumber(MULTU) |
+      FunctionFieldToBitNumber(DIV) | FunctionFieldToBitNumber(DIVU) |
+      FunctionFieldToBitNumber(ADD) | FunctionFieldToBitNumber(ADDU) |
+      FunctionFieldToBitNumber(SUB) | FunctionFieldToBitNumber(SUBU) |
+      FunctionFieldToBitNumber(AND) | FunctionFieldToBitNumber(OR) |
+      FunctionFieldToBitNumber(XOR) | FunctionFieldToBitNumber(NOR) |
+      FunctionFieldToBitNumber(SLT) | FunctionFieldToBitNumber(SLTU) |
+      FunctionFieldToBitNumber(TGE) | FunctionFieldToBitNumber(TGEU) |
+      FunctionFieldToBitNumber(TLT) | FunctionFieldToBitNumber(TLTU) |
+      FunctionFieldToBitNumber(TEQ) | FunctionFieldToBitNumber(TNE) |
+      FunctionFieldToBitNumber(MOVZ) | FunctionFieldToBitNumber(MOVN) |
+      FunctionFieldToBitNumber(MOVCI) | FunctionFieldToBitNumber(SELEQZ\_S) |
+      FunctionFieldToBitNumber(SELNEZ\_S) | FunctionFieldToBitNumber(SYNC)
+\end{DoxyCode}
+
+
+Definition at line 1279 of file constants-\/mips.\+h.
+
+\mbox{\Hypertarget{classv8_1_1internal_1_1InstructionBase_a30a7c8fc99e3c10ff0f32516127681a4}\label{classv8_1_1internal_1_1InstructionBase_a30a7c8fc99e3c10ff0f32516127681a4}} 
+\index{v8\+::internal\+::\+Instruction\+Base@{v8\+::internal\+::\+Instruction\+Base}!k\+Opcode\+Immediate\+Type\+Mask@{k\+Opcode\+Immediate\+Type\+Mask}}
+\index{k\+Opcode\+Immediate\+Type\+Mask@{k\+Opcode\+Immediate\+Type\+Mask}!v8\+::internal\+::\+Instruction\+Base@{v8\+::internal\+::\+Instruction\+Base}}
+\subsubsection{\texorpdfstring{k\+Opcode\+Immediate\+Type\+Mask}{kOpcodeImmediateTypeMask}}
+{\footnotesize\ttfamily static constexpr uint64\+\_\+t v8\+::internal\+::\+Instruction\+Base\+::k\+Opcode\+Immediate\+Type\+Mask\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      OpcodeToBitNumber(REGIMM) | OpcodeToBitNumber(BEQ) |
+      OpcodeToBitNumber(BNE) | OpcodeToBitNumber(BLEZ) |
+      OpcodeToBitNumber(BGTZ) | OpcodeToBitNumber(ADDI) |
+      OpcodeToBitNumber(DADDI) | OpcodeToBitNumber(ADDIU) |
+      OpcodeToBitNumber(SLTI) | OpcodeToBitNumber(SLTIU) |
+      OpcodeToBitNumber(ANDI) | OpcodeToBitNumber(ORI) |
+      OpcodeToBitNumber(XORI) | OpcodeToBitNumber(LUI) |
+      OpcodeToBitNumber(BEQL) | OpcodeToBitNumber(BNEL) |
+      OpcodeToBitNumber(BLEZL) | OpcodeToBitNumber(BGTZL) |
+      OpcodeToBitNumber(POP66) | OpcodeToBitNumber(POP76) |
+      OpcodeToBitNumber(LB) | OpcodeToBitNumber(LH) | OpcodeToBitNumber(LWL) |
+      OpcodeToBitNumber(LW) | OpcodeToBitNumber(LBU) | OpcodeToBitNumber(LHU) |
+      OpcodeToBitNumber(LWR) | OpcodeToBitNumber(SB) | OpcodeToBitNumber(SH) |
+      OpcodeToBitNumber(SWL) | OpcodeToBitNumber(SW) | OpcodeToBitNumber(SWR) |
+      OpcodeToBitNumber(LWC1) | OpcodeToBitNumber(LDC1) |
+      OpcodeToBitNumber(SWC1) | OpcodeToBitNumber(SDC1) |
+      OpcodeToBitNumber(PCREL) | OpcodeToBitNumber(BC) |
+      OpcodeToBitNumber(BALC)
+\end{DoxyCode}
+
+
+Definition at line 1257 of file constants-\/mips.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/mips/constants-\/mips.\+h\item 
+v8/src/mips64/constants-\/mips64.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,205 @@
+\hypertarget{classv8_1_1internal_1_1MemOperand}{}\section{v8\+:\+:internal\+:\+:Mem\+Operand Class Reference}
+\label{classv8_1_1internal_1_1MemOperand}\index{v8\+::internal\+::\+Mem\+Operand@{v8\+::internal\+::\+Mem\+Operand}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Mem\+Operand\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1MemOperand}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a39c608c01e6307073154d984c757a072}\label{classv8_1_1internal_1_1MemOperand_a39c608c01e6307073154d984c757a072}} 
+enum {\bfseries Pair\+Result} \{ {\bfseries k\+Not\+Pair}, 
+{\bfseries k\+Pair\+AB}, 
+{\bfseries k\+Pair\+BA}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_ae497a6efbe9a0c02dd8ba0f2428f1bc8}\label{classv8_1_1internal_1_1MemOperand_ae497a6efbe9a0c02dd8ba0f2428f1bc8}} 
+enum {\bfseries Offset\+Addend} \{ {\bfseries offset\+\_\+minus\+\_\+one} = -\/1, 
+{\bfseries offset\+\_\+zero} = 0, 
+{\bfseries offset\+\_\+minus\+\_\+one} = -\/1, 
+{\bfseries offset\+\_\+zero} = 0
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_ae497a6efbe9a0c02dd8ba0f2428f1bc8}\label{classv8_1_1internal_1_1MemOperand_ae497a6efbe9a0c02dd8ba0f2428f1bc8}} 
+enum {\bfseries Offset\+Addend} \{ {\bfseries offset\+\_\+minus\+\_\+one} = -\/1, 
+{\bfseries offset\+\_\+zero} = 0, 
+{\bfseries offset\+\_\+minus\+\_\+one} = -\/1, 
+{\bfseries offset\+\_\+zero} = 0
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a1f1fc1cae4a474495925a17e06e9fac5}\label{classv8_1_1internal_1_1MemOperand_a1f1fc1cae4a474495925a17e06e9fac5}} 
+{\bfseries Mem\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rn, int32\+\_\+t offset=0, Addr\+Mode am=Offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a18e6a1d3aeef9c7bd7d74479c6b8eb7a}\label{classv8_1_1internal_1_1MemOperand_a18e6a1d3aeef9c7bd7d74479c6b8eb7a}} 
+{\bfseries Mem\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rn, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rm, Addr\+Mode am=Offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a8d0dcd20fceec7994a405f7fbbbae791}\label{classv8_1_1internal_1_1MemOperand_a8d0dcd20fceec7994a405f7fbbbae791}} 
+{\bfseries Mem\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rn, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rm, Shift\+Op shift\+\_\+op, \mbox{\hyperlink{classint}{int}} shift\+\_\+imm, Addr\+Mode am=Offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a30ece25e1514815c1f3d5777126d312c}\label{classv8_1_1internal_1_1MemOperand_a30ece25e1514815c1f3d5777126d312c}} 
+void {\bfseries set\+\_\+offset} (int32\+\_\+t offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_ab991d0d59cf6cf9854033c505ca77f51}\label{classv8_1_1internal_1_1MemOperand_ab991d0d59cf6cf9854033c505ca77f51}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a27806f72f187fecccdc7235eb009172a}\label{classv8_1_1internal_1_1MemOperand_a27806f72f187fecccdc7235eb009172a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries rn} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_adf280517e8da86a76e84772a44865e82}\label{classv8_1_1internal_1_1MemOperand_adf280517e8da86a76e84772a44865e82}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries rm} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_aeace4301e1700d1bb02b1c3c674be3ba}\label{classv8_1_1internal_1_1MemOperand_aeace4301e1700d1bb02b1c3c674be3ba}} 
+Addr\+Mode {\bfseries am} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a75b767518fa53c30f527dd38025b6142}\label{classv8_1_1internal_1_1MemOperand_a75b767518fa53c30f527dd38025b6142}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Offset\+Is\+Uint12\+Encodable} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_ae9fd00bb795a6167aad166523c3638cd}\label{classv8_1_1internal_1_1MemOperand_ae9fd00bb795a6167aad166523c3638cd}} 
+{\bfseries Mem\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} base, \mbox{\hyperlink{classint64__t}{int64\+\_\+t}} offset=0, Addr\+Mode addrmode=Offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a562e2fbd4b0504f796639ef844aa1e50}\label{classv8_1_1internal_1_1MemOperand_a562e2fbd4b0504f796639ef844aa1e50}} 
+{\bfseries Mem\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} base, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} regoffset, Shift shift=L\+SL, \mbox{\hyperlink{classunsigned}{unsigned}} shift\+\_\+amount=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a55149be1fde3109b1c4cbdd7b7dfa288}\label{classv8_1_1internal_1_1MemOperand_a55149be1fde3109b1c4cbdd7b7dfa288}} 
+{\bfseries Mem\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} base, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} regoffset, Extend extend, \mbox{\hyperlink{classunsigned}{unsigned}} shift\+\_\+amount=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a4fbd893ed38c7cf0c5516997eecefd20}\label{classv8_1_1internal_1_1MemOperand_a4fbd893ed38c7cf0c5516997eecefd20}} 
+{\bfseries Mem\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} base, const \mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} \&offset, Addr\+Mode addrmode=Offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_aa1c94e8470808fc3da808eec593df34e}\label{classv8_1_1internal_1_1MemOperand_aa1c94e8470808fc3da808eec593df34e}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} \& {\bfseries base} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a0800c27d8a5f1e2166df09a62fff6821}\label{classv8_1_1internal_1_1MemOperand_a0800c27d8a5f1e2166df09a62fff6821}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} \& {\bfseries regoffset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_ac894707b1df2cf7c177a7800a8973868}\label{classv8_1_1internal_1_1MemOperand_ac894707b1df2cf7c177a7800a8973868}} 
+\mbox{\hyperlink{classint64__t}{int64\+\_\+t}} {\bfseries offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a5be03e20755c06a8bef45f4de9747ba3}\label{classv8_1_1internal_1_1MemOperand_a5be03e20755c06a8bef45f4de9747ba3}} 
+Addr\+Mode {\bfseries addrmode} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a6232388ddfc9ba22292611eb5391364a}\label{classv8_1_1internal_1_1MemOperand_a6232388ddfc9ba22292611eb5391364a}} 
+Shift {\bfseries shift} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a70308462cc685323eed97e7519866866}\label{classv8_1_1internal_1_1MemOperand_a70308462cc685323eed97e7519866866}} 
+Extend {\bfseries extend} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_ad743279b9dd39be55260d0e842f2393c}\label{classv8_1_1internal_1_1MemOperand_ad743279b9dd39be55260d0e842f2393c}} 
+\mbox{\hyperlink{classunsigned}{unsigned}} {\bfseries shift\+\_\+amount} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a277ad341b6c1f1adca6adb157be230d8}\label{classv8_1_1internal_1_1MemOperand_a277ad341b6c1f1adca6adb157be230d8}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Immediate\+Offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_ad0ebfb82de726e4b9a521f68ac0e1f3d}\label{classv8_1_1internal_1_1MemOperand_ad0ebfb82de726e4b9a521f68ac0e1f3d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Register\+Offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a872404ed1fd39ce7e412347f16540387}\label{classv8_1_1internal_1_1MemOperand_a872404ed1fd39ce7e412347f16540387}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Pre\+Index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a8402053a4da1ccb38efa00636c924052}\label{classv8_1_1internal_1_1MemOperand_a8402053a4da1ccb38efa00636c924052}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Post\+Index} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a20e6ed12d1f178fafecf9a89e573ee35}\label{classv8_1_1internal_1_1MemOperand_a20e6ed12d1f178fafecf9a89e573ee35}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Operand}{Operand}} {\bfseries Offset\+As\+Operand} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a7edbeda729ce9248b7151164c72e41ef}\label{classv8_1_1internal_1_1MemOperand_a7edbeda729ce9248b7151164c72e41ef}} 
+{\bfseries Mem\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rn, int32\+\_\+t offset=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a5cd48c156f36f5795f1982b2ccb52740}\label{classv8_1_1internal_1_1MemOperand_a5cd48c156f36f5795f1982b2ccb52740}} 
+{\bfseries Mem\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rn, int32\+\_\+t unit, int32\+\_\+t multiplier, Offset\+Addend offset\+\_\+addend=offset\+\_\+zero)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_acf7eabec54a6bf88443b6f5e9746f7c6}\label{classv8_1_1internal_1_1MemOperand_acf7eabec54a6bf88443b6f5e9746f7c6}} 
+int32\+\_\+t {\bfseries offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a016351742a376f0414a919173441163a}\label{classv8_1_1internal_1_1MemOperand_a016351742a376f0414a919173441163a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Offset\+Is\+Int16\+Encodable} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a7edbeda729ce9248b7151164c72e41ef}\label{classv8_1_1internal_1_1MemOperand_a7edbeda729ce9248b7151164c72e41ef}} 
+{\bfseries Mem\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rn, int32\+\_\+t offset=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a5cd48c156f36f5795f1982b2ccb52740}\label{classv8_1_1internal_1_1MemOperand_a5cd48c156f36f5795f1982b2ccb52740}} 
+{\bfseries Mem\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rn, int32\+\_\+t unit, int32\+\_\+t multiplier, Offset\+Addend offset\+\_\+addend=offset\+\_\+zero)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_acf7eabec54a6bf88443b6f5e9746f7c6}\label{classv8_1_1internal_1_1MemOperand_acf7eabec54a6bf88443b6f5e9746f7c6}} 
+int32\+\_\+t {\bfseries offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a016351742a376f0414a919173441163a}\label{classv8_1_1internal_1_1MemOperand_a016351742a376f0414a919173441163a}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Offset\+Is\+Int16\+Encodable} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a7edbeda729ce9248b7151164c72e41ef}\label{classv8_1_1internal_1_1MemOperand_a7edbeda729ce9248b7151164c72e41ef}} 
+{\bfseries Mem\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rn, int32\+\_\+t offset=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a71eb3b13579bd605099179bfa24bdef4}\label{classv8_1_1internal_1_1MemOperand_a71eb3b13579bd605099179bfa24bdef4}} 
+{\bfseries Mem\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} ra, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rb)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_acf7eabec54a6bf88443b6f5e9746f7c6}\label{classv8_1_1internal_1_1MemOperand_acf7eabec54a6bf88443b6f5e9746f7c6}} 
+int32\+\_\+t {\bfseries offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_af891c2026dc63cca53ee07ad5f51d8ea}\label{classv8_1_1internal_1_1MemOperand_af891c2026dc63cca53ee07ad5f51d8ea}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries ra} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a497c30ce37c5a313619a05f5eef7b80b}\label{classv8_1_1internal_1_1MemOperand_a497c30ce37c5a313619a05f5eef7b80b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries rb} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a6a2e7e3fdb40f0c6a923ade8f071cca8}\label{classv8_1_1internal_1_1MemOperand_a6a2e7e3fdb40f0c6a923ade8f071cca8}} 
+{\bfseries Mem\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rx, Disp offset=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a0eabdda14da4b3a04b3c3d57b8dd5705}\label{classv8_1_1internal_1_1MemOperand_a0eabdda14da4b3a04b3c3d57b8dd5705}} 
+{\bfseries Mem\+Operand} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rx, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} rb, Disp offset=0)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_acf7eabec54a6bf88443b6f5e9746f7c6}\label{classv8_1_1internal_1_1MemOperand_acf7eabec54a6bf88443b6f5e9746f7c6}} 
+int32\+\_\+t {\bfseries offset} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_af3e5746cc15bf2ed5daa3cd0eef8a645}\label{classv8_1_1internal_1_1MemOperand_af3e5746cc15bf2ed5daa3cd0eef8a645}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries get\+Displacement} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a497c30ce37c5a313619a05f5eef7b80b}\label{classv8_1_1internal_1_1MemOperand_a497c30ce37c5a313619a05f5eef7b80b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries rb} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a2c25cc7a3a736ec760fa79c2243ccf2d}\label{classv8_1_1internal_1_1MemOperand_a2c25cc7a3a736ec760fa79c2243ccf2d}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries get\+Base\+Register} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_affeb222c1ee2ba39ca124239420ce4e7}\label{classv8_1_1internal_1_1MemOperand_affeb222c1ee2ba39ca124239420ce4e7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries rx} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_a4f16ad7e751f20f47d8953f4125fb1cb}\label{classv8_1_1internal_1_1MemOperand_a4f16ad7e751f20f47d8953f4125fb1cb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} {\bfseries get\+Index\+Register} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_adb75ae517082c386ce4aa416ee944e84}\label{classv8_1_1internal_1_1MemOperand_adb75ae517082c386ce4aa416ee944e84}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1MemOperand}{Mem\+Operand}} {\bfseries Pointer\+Address\+From\+Smi\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} array, \mbox{\hyperlink{classv8_1_1internal_1_1Register}{Register}} key, Addr\+Mode am=Offset)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_ade2082eb65c99187fad7a281b2311849}\label{classv8_1_1internal_1_1MemOperand_ade2082eb65c99187fad7a281b2311849}} 
+static Pair\+Result {\bfseries Are\+Consistent\+For\+Pair} (const \mbox{\hyperlink{classv8_1_1internal_1_1MemOperand}{Mem\+Operand}} \&operandA, const \mbox{\hyperlink{classv8_1_1internal_1_1MemOperand}{Mem\+Operand}} \&operandB, \mbox{\hyperlink{classint}{int}} access\+\_\+size\+\_\+log2=k\+X\+Reg\+Size\+Log2)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1MemOperand_ab679df99d1569d09fdf3358620a4ad34}\label{classv8_1_1internal_1_1MemOperand_ab679df99d1569d09fdf3358620a4ad34}} 
+class {\bfseries Assembler}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 503 of file assembler-\/arm.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/arm/assembler-\/arm.\+h\item 
+v8/src/arm64/assembler-\/arm64.\+h\item 
+v8/src/mips/assembler-\/mips.\+h\item 
+v8/src/mips64/assembler-\/mips64.\+h\item 
+v8/src/ppc/assembler-\/ppc.\+h\item 
+v8/src/s390/assembler-\/s390.\+h\item 
+v8/src/arm64/assembler-\/arm64-\/inl.\+h\end{DoxyCompactItemize}

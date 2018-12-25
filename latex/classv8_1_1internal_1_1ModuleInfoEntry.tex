@@ -1,0 +1,55 @@
+\hypertarget{classv8_1_1internal_1_1ModuleInfoEntry}{}\section{v8\+:\+:internal\+:\+:Module\+Info\+Entry Class Reference}
+\label{classv8_1_1internal_1_1ModuleInfoEntry}\index{v8\+::internal\+::\+Module\+Info\+Entry@{v8\+::internal\+::\+Module\+Info\+Entry}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Module\+Info\+Entry\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1ModuleInfoEntry}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleInfoEntry_a68b83d95529fd5dc190362c6b7563dda}\label{classv8_1_1internal_1_1ModuleInfoEntry_a68b83d95529fd5dc190362c6b7563dda}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ModuleInfoEntry}{Module\+Info\+Entry}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ export\+\_\+name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ local\+\_\+name, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ import\+\_\+name, \mbox{\hyperlink{classint}{int}} module\+\_\+request, \mbox{\hyperlink{classint}{int}} cell\+\_\+index, \mbox{\hyperlink{classint}{int}} beg\+\_\+pos, \mbox{\hyperlink{classint}{int}} end\+\_\+pos)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleInfoEntry_a921b3befc5c88aae0b5cc27b0d53acb7}\label{classv8_1_1internal_1_1ModuleInfoEntry_a921b3befc5c88aae0b5cc27b0d53acb7}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Export\+Name\+Offset} = Heap\+Object\+::k\+Header\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleInfoEntry_acf91020c74592f2086a035b04ca8129c}\label{classv8_1_1internal_1_1ModuleInfoEntry_acf91020c74592f2086a035b04ca8129c}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Local\+Name\+Offset} = k\+Export\+Name\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleInfoEntry_ab2db1479815b2411afbe77508a11a83a}\label{classv8_1_1internal_1_1ModuleInfoEntry_ab2db1479815b2411afbe77508a11a83a}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Import\+Name\+Offset} = k\+Local\+Name\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleInfoEntry_ab8e7db60199395c50709f22dcf4b3925}\label{classv8_1_1internal_1_1ModuleInfoEntry_ab8e7db60199395c50709f22dcf4b3925}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Module\+Request\+Offset} = k\+Import\+Name\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleInfoEntry_a21a94e079734d2a79c80c6dbfbb4188f}\label{classv8_1_1internal_1_1ModuleInfoEntry_a21a94e079734d2a79c80c6dbfbb4188f}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Cell\+Index\+Offset} = k\+Module\+Request\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleInfoEntry_a4bcb836ad80d25bcc49925d017b4375c}\label{classv8_1_1internal_1_1ModuleInfoEntry_a4bcb836ad80d25bcc49925d017b4375c}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Beg\+Pos\+Offset} = k\+Cell\+Index\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleInfoEntry_a64fcf7a6a18134150a0f53d92ae20001}\label{classv8_1_1internal_1_1ModuleInfoEntry_a64fcf7a6a18134150a0f53d92ae20001}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+End\+Pos\+Offset} = k\+Beg\+Pos\+Offset + k\+Pointer\+Size
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1ModuleInfoEntry_aa45b004071e1869d9ae6489c0009a929}\label{classv8_1_1internal_1_1ModuleInfoEntry_aa45b004071e1869d9ae6489c0009a929}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Size} = k\+End\+Pos\+Offset + k\+Pointer\+Size
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 301 of file module.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/module.\+h\item 
+v8/src/objects/scope-\/info.\+cc\end{DoxyCompactItemize}

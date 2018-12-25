@@ -1,0 +1,60 @@
+\hypertarget{classv8_1_1internal_1_1AllocationObserver}{}\section{v8\+:\+:internal\+:\+:Allocation\+Observer Class Reference}
+\label{classv8_1_1internal_1_1AllocationObserver}\index{v8\+::internal\+::\+Allocation\+Observer@{v8\+::internal\+::\+Allocation\+Observer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Allocation\+Observer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.124498cm]{classv8_1_1internal_1_1AllocationObserver}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationObserver_afd17faabb89efdf1211915e9e684a31f}\label{classv8_1_1internal_1_1AllocationObserver_afd17faabb89efdf1211915e9e684a31f}} 
+{\bfseries Allocation\+Observer} (intptr\+\_\+t step\+\_\+size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationObserver_a83b330ab2d41bd63c8463c98e3b44139}\label{classv8_1_1internal_1_1AllocationObserver_a83b330ab2d41bd63c8463c98e3b44139}} 
+void {\bfseries Allocation\+Step} (\mbox{\hyperlink{classint}{int}} bytes\+\_\+allocated, \mbox{\hyperlink{classuintptr__t}{Address}} soon\+\_\+object, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationObserver_a34d92b5b7db58528cbcbace883ca43d4}\label{classv8_1_1internal_1_1AllocationObserver_a34d92b5b7db58528cbcbace883ca43d4}} 
+intptr\+\_\+t {\bfseries step\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationObserver_a7bdb2960ee3bc34da0a6908d3a87e1d0}\label{classv8_1_1internal_1_1AllocationObserver_a7bdb2960ee3bc34da0a6908d3a87e1d0}} 
+intptr\+\_\+t {\bfseries bytes\+\_\+to\+\_\+next\+\_\+step} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationObserver_a41118152d2c9a9834a486eccf08043a5}\label{classv8_1_1internal_1_1AllocationObserver_a41118152d2c9a9834a486eccf08043a5}} 
+virtual void {\bfseries Step} (\mbox{\hyperlink{classint}{int}} bytes\+\_\+allocated, \mbox{\hyperlink{classuintptr__t}{Address}} soon\+\_\+object, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} size)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationObserver_a91fb6ffe2d4b42ff7b4221dad89db465}\label{classv8_1_1internal_1_1AllocationObserver_a91fb6ffe2d4b42ff7b4221dad89db465}} 
+virtual intptr\+\_\+t {\bfseries Get\+Next\+Step\+Size} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationObserver_aca0c9295ca497a26f08cd8244f84d5aa}\label{classv8_1_1internal_1_1AllocationObserver_aca0c9295ca497a26f08cd8244f84d5aa}} 
+intptr\+\_\+t {\bfseries step\+\_\+size\+\_\+}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationObserver_a5f02cbcbd88c5b87439c31ada838923e}\label{classv8_1_1internal_1_1AllocationObserver_a5f02cbcbd88c5b87439c31ada838923e}} 
+intptr\+\_\+t {\bfseries bytes\+\_\+to\+\_\+next\+\_\+step\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1AllocationObserver_a2129e6c0ac73536a2ac4f681dae16947}\label{classv8_1_1internal_1_1AllocationObserver_a2129e6c0ac73536a2ac4f681dae16947}} 
+class {\bfseries Space}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 2274 of file heap.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/heap.\+h\item 
+v8/src/heap/heap.\+cc\end{DoxyCompactItemize}

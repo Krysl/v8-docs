@@ -1,0 +1,67 @@
+\hypertarget{classv8_1_1internal_1_1StringTable}{}\section{v8\+:\+:internal\+:\+:String\+Table Class Reference}
+\label{classv8_1_1internal_1_1StringTable}\index{v8\+::internal\+::\+String\+Table@{v8\+::internal\+::\+String\+Table}}
+Inheritance diagram for v8\+:\+:internal\+:\+:String\+Table\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1StringTable}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringTable_a1e5bbfa11d1d3e127cf8040931b9e55e}\label{classv8_1_1internal_1_1StringTable_a1e5bbfa11d1d3e127cf8040931b9e55e}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Lookup\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringTable_a3e911a9cf1e7d30970d875a65ba280a1}\label{classv8_1_1internal_1_1StringTable_a3e911a9cf1e7d30970d875a65ba280a1}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Lookup\+Key} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1StringTableKey}{String\+Table\+Key}} $\ast$key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringTable_a03979655eedfe70a81b2fb6984aed690}\label{classv8_1_1internal_1_1StringTable_a03979655eedfe70a81b2fb6984aed690}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Add\+Key\+No\+Resize} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1StringTableKey}{String\+Table\+Key}} $\ast$key)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringTable_a55f9ba90435a78966f794c5e65820043}\label{classv8_1_1internal_1_1StringTable_a55f9ba90435a78966f794c5e65820043}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} {\bfseries Forward\+String\+If\+Exists} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1StringTableKey}{String\+Table\+Key}} $\ast$key, \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} string)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringTable_aab6e0d1733e279f389ef50328047038e}\label{classv8_1_1internal_1_1StringTable_aab6e0d1733e279f389ef50328047038e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1StringTable}{String\+Table}} $>$ {\bfseries Cautious\+Shrink} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1StringTable}{String\+Table}} $>$ table)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringTable_af4c75301d2ce7b54118523a1b0764b1f}\label{classv8_1_1internal_1_1StringTable_af4c75301d2ce7b54118523a1b0764b1f}} 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Lookup\+Two\+Chars\+String\+If\+Exists} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, uint16\+\_\+t c1, uint16\+\_\+t c2)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringTable_a2d8861360a8d7a5d67860364667fdba2}\label{classv8_1_1internal_1_1StringTable_a2d8861360a8d7a5d67860364667fdba2}} 
+static \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries Lookup\+String\+If\+Exists\+\_\+\+No\+Allocate} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classuintptr__t}{Address}} raw\+\_\+string)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringTable_af642d2cd7ddd164366c1935d91916028}\label{classv8_1_1internal_1_1StringTable_af642d2cd7ddd164366c1935d91916028}} 
+static void {\bfseries Ensure\+Capacity\+For\+Deserialization} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} expected)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringTable_a387839569febea92bf39c483c2719e73}\label{classv8_1_1internal_1_1StringTable_a387839569febea92bf39c483c2719e73}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Max\+Empty\+Factor} = 4
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringTable_a97892e1db80079c6c386643c7cd8a33b}\label{classv8_1_1internal_1_1StringTable_a97892e1db80079c6c386643c7cd8a33b}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Min\+Capacity} = 2048
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringTable_a716917a7d96987abfb821c83eee25b36}\label{classv8_1_1internal_1_1StringTable_a716917a7d96987abfb821c83eee25b36}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Min\+Shrink\+Capacity} = k\+Min\+Capacity
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringTable_a9f71fbaae144c73b8be1f30630fdb8da}\label{classv8_1_1internal_1_1StringTable_a9f71fbaae144c73b8be1f30630fdb8da}} 
+{\footnotesize template$<$bool seq\+\_\+one\+\_\+byte$>$ }\\class {\bfseries Json\+Parser}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 57 of file string-\/table.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/objects/string-\/table.\+h\item 
+v8/src/objects.\+cc\end{DoxyCompactItemize}

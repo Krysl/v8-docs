@@ -1,0 +1,62 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Memory\+Tracker Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker}\index{v8\+::internal\+::wasm\+::\+Wasm\+Memory\+Tracker@{v8\+::internal\+::wasm\+::\+Wasm\+Memory\+Tracker}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_1_1AllocationData}{Allocation\+Data}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_a27679a5baca8c8e4d21a00bb308a3958}\label{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_a27679a5baca8c8e4d21a00bb308a3958}} 
+enum {\bfseries Reservation\+Limit} \{ {\bfseries k\+Soft\+Limit}, 
+{\bfseries k\+Hard\+Limit}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_ab69c14121ba67188237962cb5869f054}\label{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_ab69c14121ba67188237962cb5869f054}} 
+enum {\bfseries Allocation\+Status} \{ {\bfseries k\+Success}, 
+{\bfseries k\+Success\+After\+Retry}, 
+{\bfseries k\+Address\+Space\+Limit\+Reached\+Failure}, 
+{\bfseries k\+Other\+Failure}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_aef0416889b1e9679d284ffd83fcc1e21}\label{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_aef0416889b1e9679d284ffd83fcc1e21}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Reserve\+Address\+Space} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} num\+\_\+bytes, Reservation\+Limit limit)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_af991e4db1ec67809109724a9a70a4f7e}\label{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_af991e4db1ec67809109724a9a70a4f7e}} 
+void {\bfseries Register\+Allocation} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, void $\ast$allocation\+\_\+base, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} allocation\+\_\+length, void $\ast$buffer\+\_\+start, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} buffer\+\_\+length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_a57115f5d9bee51cce11d645ce13b95d2}\label{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_a57115f5d9bee51cce11d645ce13b95d2}} 
+void {\bfseries Release\+Reservation} (\mbox{\hyperlink{classsize__t}{size\+\_\+t}} num\+\_\+bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_af251edb3c8b528dc5f3bd776e8e134a7}\label{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_af251edb3c8b528dc5f3bd776e8e134a7}} 
+\mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_1_1AllocationData}{Allocation\+Data}} {\bfseries Release\+Allocation} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const void $\ast$buffer\+\_\+start)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_ac8323ffef060fc3bac02b514493b57f2}\label{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_ac8323ffef060fc3bac02b514493b57f2}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Wasm\+Memory} (const void $\ast$buffer\+\_\+start)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_a92afb50bb68eeb9eb405421079b51601}\label{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_a92afb50bb68eeb9eb405421079b51601}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Full\+Guard\+Regions} (const void $\ast$buffer\+\_\+start)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_a2faa753c4d25b2abd8a55ed5283ed4fa}\label{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_a2faa753c4d25b2abd8a55ed5283ed4fa}} 
+const \mbox{\hyperlink{structv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_1_1AllocationData}{Allocation\+Data}} $\ast$ {\bfseries Find\+Allocation\+Data} (const void $\ast$buffer\+\_\+start)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_a84fc3e8d7cc812cfb687c61a01db1b4d}\label{classv8_1_1internal_1_1wasm_1_1WasmMemoryTracker_a84fc3e8d7cc812cfb687c61a01db1b4d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Free\+Memory\+If\+Is\+Wasm\+Memory} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, const void $\ast$buffer\+\_\+start)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 25 of file wasm-\/memory.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/wasm-\/memory.\+h\item 
+v8/src/wasm/wasm-\/memory.\+cc\end{DoxyCompactItemize}

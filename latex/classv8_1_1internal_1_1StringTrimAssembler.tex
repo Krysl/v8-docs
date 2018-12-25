@@ -1,0 +1,43 @@
+\hypertarget{classv8_1_1internal_1_1StringTrimAssembler}{}\section{v8\+:\+:internal\+:\+:String\+Trim\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1StringTrimAssembler}\index{v8\+::internal\+::\+String\+Trim\+Assembler@{v8\+::internal\+::\+String\+Trim\+Assembler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:String\+Trim\+Assembler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1StringTrimAssembler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringTrimAssembler_aa7be25da0064b8cfccc140b267888ecc}\label{classv8_1_1internal_1_1StringTrimAssembler_aa7be25da0064b8cfccc140b267888ecc}} 
+{\bfseries String\+Trim\+Assembler} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerState}{compiler\+::\+Code\+Assembler\+State}} $\ast$state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringTrimAssembler_a93e9de0b4ef1758f5bba9262580b9c1f}\label{classv8_1_1internal_1_1StringTrimAssembler_a93e9de0b4ef1758f5bba9262580b9c1f}} 
+void {\bfseries Goto\+If\+Not\+White\+Space\+Or\+Line\+Terminator} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const char\+\_\+code, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$const if\+\_\+not\+\_\+whitespace)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringTrimAssembler_ad42cdd233e93ca4df66dcb22806ee24c}\label{classv8_1_1internal_1_1StringTrimAssembler_ad42cdd233e93ca4df66dcb22806ee24c}} 
+void {\bfseries Generate} (String\+::\+Trim\+Mode mode, const \mbox{\hyperlink{classchar}{char}} $\ast$method, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{structv8_1_1internal_1_1IntPtrT}{Int\+PtrT}} $>$ argc, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Context}{Context}} $>$ context)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringTrimAssembler_a06802ea999fe9e129012b2dbbc664bd6}\label{classv8_1_1internal_1_1StringTrimAssembler_a06802ea999fe9e129012b2dbbc664bd6}} 
+void {\bfseries Scan\+For\+Non\+White\+Space\+Or\+Line\+Terminator} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const string\+\_\+data, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const string\+\_\+data\+\_\+offset, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const is\+\_\+stringonebyte, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerVariable}{Variable}} $\ast$const var\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const end, \mbox{\hyperlink{classint}{int}} increment, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$const if\+\_\+none\+\_\+found)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1StringTrimAssembler_a52ec125291f04717c641c64dffd4c9a8}\label{classv8_1_1internal_1_1StringTrimAssembler_a52ec125291f04717c641c64dffd4c9a8}} 
+void {\bfseries Build\+Loop} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerVariable}{Variable}} $\ast$const var\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$const end, \mbox{\hyperlink{classint}{int}} increment, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$const if\+\_\+none\+\_\+found, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerLabel}{Label}} $\ast$const out, const std\+::function$<$ \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$(\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1Node}{Node}} $\ast$)$>$ \&get\+\_\+character)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 132 of file builtins-\/string-\/gen.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/builtins/builtins-\/string-\/gen.\+h\item 
+v8/src/builtins/builtins-\/string-\/gen.\+cc\end{DoxyCompactItemize}

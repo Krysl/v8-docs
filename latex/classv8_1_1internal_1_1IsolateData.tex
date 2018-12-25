@@ -1,0 +1,74 @@
+\hypertarget{classv8_1_1internal_1_1IsolateData}{}\section{v8\+:\+:internal\+:\+:Isolate\+Data Class Reference}
+\label{classv8_1_1internal_1_1IsolateData}\index{v8\+::internal\+::\+Isolate\+Data@{v8\+::internal\+::\+Isolate\+Data}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IsolateData_a1d66e1f1da6ef4e6650c718de28f4f8a}\label{classv8_1_1internal_1_1IsolateData_a1d66e1f1da6ef4e6650c718de28f4f8a}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries isolate\+\_\+root} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IsolateData_a31f08986e38286a45fc896cacf57d167}\label{classv8_1_1internal_1_1IsolateData_a31f08986e38286a45fc896cacf57d167}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries contains} (\mbox{\hyperlink{classuintptr__t}{Address}} address) const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IsolateData_a064a1b323a85295cbd88fb864eff28eb}\label{classv8_1_1internal_1_1IsolateData_a064a1b323a85295cbd88fb864eff28eb}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RootsTable}{Roots\+Table}} \& {\bfseries roots} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IsolateData_aa1cf43a7481c664fb2d5cac2112530be}\label{classv8_1_1internal_1_1IsolateData_aa1cf43a7481c664fb2d5cac2112530be}} 
+const \mbox{\hyperlink{classv8_1_1internal_1_1RootsTable}{Roots\+Table}} \& {\bfseries roots} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IsolateData_a52b2c122143242b042414e6d1e097920}\label{classv8_1_1internal_1_1IsolateData_a52b2c122143242b042414e6d1e097920}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1ExternalReferenceTable}{External\+Reference\+Table}} $\ast$ {\bfseries external\+\_\+reference\+\_\+table} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IsolateData_a8b8c40be02f2b7b4726bcb0c39a0b6d4}\label{classv8_1_1internal_1_1IsolateData_a8b8c40be02f2b7b4726bcb0c39a0b6d4}} 
+\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$ {\bfseries builtins} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IsolateData_a56558a0d7f84218a378553cb7c5371bc}\label{classv8_1_1internal_1_1IsolateData_a56558a0d7f84218a378553cb7c5371bc}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries roots\+\_\+table\+\_\+offset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IsolateData_a8bd280ebaf3c7d370ba882d5b91350e1}\label{classv8_1_1internal_1_1IsolateData_a8bd280ebaf3c7d370ba882d5b91350e1}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries root\+\_\+slot\+\_\+offset} (Root\+Index root\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IsolateData_a338ed020c98d9c687ae29fd54f4ab994}\label{classv8_1_1internal_1_1IsolateData_a338ed020c98d9c687ae29fd54f4ab994}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries external\+\_\+reference\+\_\+table\+\_\+offset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IsolateData_a17a4544fd84500de00b60b319fddcfbb}\label{classv8_1_1internal_1_1IsolateData_a17a4544fd84500de00b60b319fddcfbb}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries builtins\+\_\+table\+\_\+offset} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IsolateData_ae31abd8b7628102a9807eefe12ac2b22}\label{classv8_1_1internal_1_1IsolateData_ae31abd8b7628102a9807eefe12ac2b22}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries builtin\+\_\+slot\+\_\+offset} (\mbox{\hyperlink{classint}{int}} builtin\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IsolateData_a2337f444e917bee3d0b2530e388c7af8}\label{classv8_1_1internal_1_1IsolateData_a2337f444e917bee3d0b2530e388c7af8}} 
+static \mbox{\hyperlink{classint}{int}} {\bfseries builtin\+\_\+slot\+\_\+offset} (Builtins\+::\+Name id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IsolateData_a9da7e2bc64f150d0339a910a8f3e8d4d}\label{classv8_1_1internal_1_1IsolateData_a9da7e2bc64f150d0339a910a8f3e8d4d}} 
+static constexpr \mbox{\hyperlink{classint}{int}} {\bfseries virtual\+\_\+call\+\_\+target\+\_\+register\+\_\+offset} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IsolateData_a937a7477cefb41ae53a994c5e70f750d}\label{classv8_1_1internal_1_1IsolateData_a937a7477cefb41ae53a994c5e70f750d}} 
+static constexpr intptr\+\_\+t {\bfseries k\+Isolate\+Root\+Bias} = k\+Root\+Register\+Bias
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IsolateData_aba4f0964bdacf2bbf62cf876e5d28d0a}\label{classv8_1_1internal_1_1IsolateData_aba4f0964bdacf2bbf62cf876e5d28d0a}} 
+class {\bfseries Isolate}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IsolateData_a3d69975be2e998e7bf2dcd1b1c8b4577}\label{classv8_1_1internal_1_1IsolateData_a3d69975be2e998e7bf2dcd1b1c8b4577}} 
+class {\bfseries Heap}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file isolate-\/data.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/isolate-\/data.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\hypertarget{classv8_1_1internal_1_1HeapVisitor}{}\section{v8\+:\+:internal\+:\+:Heap\+Visitor$<$ Result\+Type, Concrete\+Visitor $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1HeapVisitor}\index{v8\+::internal\+::\+Heap\+Visitor$<$ Result\+Type, Concrete\+Visitor $>$@{v8\+::internal\+::\+Heap\+Visitor$<$ Result\+Type, Concrete\+Visitor $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Heap\+Visitor$<$ Result\+Type, Concrete\+Visitor $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1HeapVisitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapVisitor_ac1c57af9bd875ccf04d842f28f3ad1f1}\label{classv8_1_1internal_1_1HeapVisitor_ac1c57af9bd875ccf04d842f28f3ad1f1}} 
+V8\+\_\+\+I\+N\+L\+I\+NE Result\+Type {\bfseries Visit} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapVisitor_a4c88cabe1e471c5fe345980872058042}\label{classv8_1_1internal_1_1HeapVisitor_a4c88cabe1e471c5fe345980872058042}} 
+V8\+\_\+\+I\+N\+L\+I\+NE Result\+Type {\bfseries Visit} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapVisitor_aaebf4d317254e72d1e53daa7d4d3cfb6}\label{classv8_1_1internal_1_1HeapVisitor_aaebf4d317254e72d1e53daa7d4d3cfb6}} 
+{\footnotesize template$<$typename T , typename $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$ {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapVisitor_abe886e3af709a8c8fb5fa56301df8120}\label{classv8_1_1internal_1_1HeapVisitor_abe886e3af709a8c8fb5fa56301df8120}} 
+{\footnotesize template$<$typename T , typename $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapVisitor_adcdf8103d53d6fd8b5e2d9fd973ae2b4}\label{classv8_1_1internal_1_1HeapVisitor_adcdf8103d53d6fd8b5e2d9fd973ae2b4}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries Should\+Visit} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapVisitor_ad17144c2f364cffbe8518ffce3b412dc}\label{classv8_1_1internal_1_1HeapVisitor_ad17144c2f364cffbe8518ffce3b412dc}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries Should\+Visit\+Map\+Pointer} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapVisitor_a3d09bd8b3340e06127e810a3b8a7a3f0}\label{classv8_1_1internal_1_1HeapVisitor_a3d09bd8b3340e06127e810a3b8a7a3f0}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Visit\+Map\+Pointer} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$host, \mbox{\hyperlink{classv8_1_1internal_1_1ObjectSlot}{Object\+Slot}} map)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapVisitor_aeb0f847fcfe257dad099ac8f9467820f}\label{classv8_1_1internal_1_1HeapVisitor_aeb0f847fcfe257dad099ac8f9467820f}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries Allow\+Default\+J\+S\+Object\+Visit} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapVisitor_ac03a6866344c30a945911fb2a6b81b9e}\label{classv8_1_1internal_1_1HeapVisitor_ac03a6866344c30a945911fb2a6b81b9e}} 
+V8\+\_\+\+I\+N\+L\+I\+NE Result\+Type {\bfseries Visit\+Shortcut\+Candidate} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1ConsString}{Cons\+String}} object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapVisitor_a59148b7803492493e9b60f1482dc5755}\label{classv8_1_1internal_1_1HeapVisitor_a59148b7803492493e9b60f1482dc5755}} 
+V8\+\_\+\+I\+N\+L\+I\+NE Result\+Type {\bfseries Visit\+Data\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapVisitor_a10d41e99e62354a8c02b4b4bba2761f2}\label{classv8_1_1internal_1_1HeapVisitor_a10d41e99e62354a8c02b4b4bba2761f2}} 
+V8\+\_\+\+I\+N\+L\+I\+NE Result\+Type {\bfseries Visit\+J\+S\+Object\+Fast} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapVisitor_a0ca3fa9c8b6bdfcfddd130e4bc8e238c}\label{classv8_1_1internal_1_1HeapVisitor_a0ca3fa9c8b6bdfcfddd130e4bc8e238c}} 
+V8\+\_\+\+I\+N\+L\+I\+NE Result\+Type {\bfseries Visit\+J\+S\+Api\+Object} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1JSObject}{J\+S\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapVisitor_a4bdd5e9d9f6ba05fba75558313afb049}\label{classv8_1_1internal_1_1HeapVisitor_a4bdd5e9d9f6ba05fba75558313afb049}} 
+V8\+\_\+\+I\+N\+L\+I\+NE Result\+Type {\bfseries Visit\+Struct} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapVisitor_a2ae00de8f4c77385bae9569abcbbb464}\label{classv8_1_1internal_1_1HeapVisitor_a2ae00de8f4c77385bae9569abcbbb464}} 
+V8\+\_\+\+I\+N\+L\+I\+NE Result\+Type {\bfseries Visit\+Free\+Space} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1FreeSpace}{Free\+Space}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapVisitor_a09c539a53e17bb4f9d2ff2d4eeac9074}\label{classv8_1_1internal_1_1HeapVisitor_a09c539a53e17bb4f9d2ff2d4eeac9074}} 
+V8\+\_\+\+I\+N\+L\+I\+NE Result\+Type {\bfseries Visit\+Weak\+Array} (\mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapVisitor_a0a3645f75a70cf2e442ab4fd3cbceae9}\label{classv8_1_1internal_1_1HeapVisitor_a0a3645f75a70cf2e442ab4fd3cbceae9}} 
+{\footnotesize template$<$typename T , typename  = typename std\+::enable\+\_\+if$<$                            std\+::is\+\_\+base\+\_\+of$<$\+Object, T$>$\+::value$>$\+::type$>$ }\\static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$ {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HeapVisitor_a70ca0fd1cc5e4622712420bb0b3929ff}\label{classv8_1_1internal_1_1HeapVisitor_a70ca0fd1cc5e4622712420bb0b3929ff}} 
+{\footnotesize template$<$typename T , typename  = typename std\+::enable\+\_\+if$<$                            std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ptr, T$>$\+::value$>$\+::type$>$ }\\static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Result\+Type, typename Concrete\+Visitor$>$\newline
+class v8\+::internal\+::\+Heap\+Visitor$<$ Result\+Type, Concrete\+Visitor $>$}
+
+
+
+Definition at line 93 of file objects-\/visiting.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/objects-\/visiting.\+h\item 
+v8/src/heap/objects-\/visiting-\/inl.\+h\end{DoxyCompactItemize}

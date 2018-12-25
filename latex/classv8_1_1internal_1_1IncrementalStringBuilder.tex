@@ -1,0 +1,69 @@
+\hypertarget{classv8_1_1internal_1_1IncrementalStringBuilder}{}\section{v8\+:\+:internal\+:\+:Incremental\+String\+Builder Class Reference}
+\label{classv8_1_1internal_1_1IncrementalStringBuilder}\index{v8\+::internal\+::\+Incremental\+String\+Builder@{v8\+::internal\+::\+Incremental\+String\+Builder}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1IncrementalStringBuilder_1_1NoExtend}{No\+Extend}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1IncrementalStringBuilder_1_1NoExtendBuilder}{No\+Extend\+Builder}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1IncrementalStringBuilder_1_1NoExtendString}{No\+Extend\+String}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IncrementalStringBuilder_abdbbf12d39c18da9629c57300c4566d0}\label{classv8_1_1internal_1_1IncrementalStringBuilder_abdbbf12d39c18da9629c57300c4566d0}} 
+{\bfseries Incremental\+String\+Builder} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IncrementalStringBuilder_ae62004c471dd8252493c147a392452ea}\label{classv8_1_1internal_1_1IncrementalStringBuilder_ae62004c471dd8252493c147a392452ea}} 
+V8\+\_\+\+I\+N\+L\+I\+NE String\+::\+Encoding {\bfseries Current\+Encoding} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IncrementalStringBuilder_a1d4118c10b5296fe155a56e371d31777}\label{classv8_1_1internal_1_1IncrementalStringBuilder_a1d4118c10b5296fe155a56e371d31777}} 
+{\footnotesize template$<$typename Src\+Char , typename Dest\+Char $>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Append} (Src\+Char c)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IncrementalStringBuilder_ab5f3dd21befe24f519edc16cc8c1ce2c}\label{classv8_1_1internal_1_1IncrementalStringBuilder_ab5f3dd21befe24f519edc16cc8c1ce2c}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Append\+Character} (uint8\+\_\+t c)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IncrementalStringBuilder_a9f7a023722963a48477a131d09ecfc07}\label{classv8_1_1internal_1_1IncrementalStringBuilder_a9f7a023722963a48477a131d09ecfc07}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Append\+C\+String} (const \mbox{\hyperlink{classchar}{char}} $\ast$s)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IncrementalStringBuilder_adbe5ec63b9636d9a8107559238398286}\label{classv8_1_1internal_1_1IncrementalStringBuilder_adbe5ec63b9636d9a8107559238398286}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Append\+C\+String} (const uc16 $\ast$s)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IncrementalStringBuilder_af46fd10aecee6addf5528306b95c2f07}\label{classv8_1_1internal_1_1IncrementalStringBuilder_af46fd10aecee6addf5528306b95c2f07}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries Current\+Part\+Can\+Fit} (\mbox{\hyperlink{classint}{int}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IncrementalStringBuilder_a84025ff9047d568247e9730dfad46904}\label{classv8_1_1internal_1_1IncrementalStringBuilder_a84025ff9047d568247e9730dfad46904}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classint}{int}} {\bfseries Escaped\+Length\+If\+Current\+Part\+Fits} (\mbox{\hyperlink{classint}{int}} length)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IncrementalStringBuilder_ac052d667b4362b4a8187b2bc41c5d624}\label{classv8_1_1internal_1_1IncrementalStringBuilder_ac052d667b4362b4a8187b2bc41c5d624}} 
+void {\bfseries Append\+String} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ string)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IncrementalStringBuilder_a0abca58c430ebdda0937a26c580040f5}\label{classv8_1_1internal_1_1IncrementalStringBuilder_a0abca58c430ebdda0937a26c580040f5}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1MaybeHandle}{Maybe\+Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ {\bfseries Finish} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IncrementalStringBuilder_a9a7ddc433947f9a4c6576979dc2ec3d1}\label{classv8_1_1internal_1_1IncrementalStringBuilder_a9a7ddc433947f9a4c6576979dc2ec3d1}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classbool}{bool}} {\bfseries Has\+Overflowed} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IncrementalStringBuilder_a5a21b6b1c4c3dbfdbe3a8bf94fefde53}\label{classv8_1_1internal_1_1IncrementalStringBuilder_a5a21b6b1c4c3dbfdbe3a8bf94fefde53}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Length} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IncrementalStringBuilder_a0b8605c2f8efbc2a7b84092ae95b462a}\label{classv8_1_1internal_1_1IncrementalStringBuilder_a0b8605c2f8efbc2a7b84092ae95b462a}} 
+void {\bfseries Change\+Encoding} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1IncrementalStringBuilder_a465683659aeb8bd3e1ab285787eaa53a}\label{classv8_1_1internal_1_1IncrementalStringBuilder_a465683659aeb8bd3e1ab285787eaa53a}} 
+{\footnotesize template$<$typename Src\+Char , typename Dest\+Char $>$ }\\void {\bfseries Append} (Src\+Char c)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 115 of file string-\/builder-\/inl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/string-\/builder-\/inl.\+h\item 
+v8/src/string-\/builder.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,152 @@
+\hypertarget{classv8_1_1internal_1_1GlobalHandles}{}\section{v8\+:\+:internal\+:\+:Global\+Handles Class Reference}
+\label{classv8_1_1internal_1_1GlobalHandles}\index{v8\+::internal\+::\+Global\+Handles@{v8\+::internal\+::\+Global\+Handles}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1GlobalHandles_1_1Node}{Node}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1GlobalHandles_1_1NodeBlock}{Node\+Block}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1GlobalHandles_1_1NodeIterator}{Node\+Iterator}}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1GlobalHandles_1_1PendingPhantomCallback}{Pending\+Phantom\+Callback}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_af195ba8f98e17aab81b643cecbc60f0a}\label{classv8_1_1internal_1_1GlobalHandles_af195ba8f98e17aab81b643cecbc60f0a}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Create} (\mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_ab2840cc6bd414f1a526e19ed0b1b5648}\label{classv8_1_1internal_1_1GlobalHandles_ab2840cc6bd414f1a526e19ed0b1b5648}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Create} (\mbox{\hyperlink{classuintptr__t}{Address}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a53d21cd6008fb968617ceff14bbf8585}\label{classv8_1_1internal_1_1GlobalHandles_a53d21cd6008fb968617ceff14bbf8585}} 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries Create} (\mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a0f347ad922f1883463494e754d702699}\label{classv8_1_1internal_1_1GlobalHandles_a0f347ad922f1883463494e754d702699}} 
+void {\bfseries Record\+Stats} (\mbox{\hyperlink{classv8_1_1internal_1_1HeapStats}{Heap\+Stats}} $\ast$stats)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a3a0761a94a46b9edebb9500787a9ae9f}\label{classv8_1_1internal_1_1GlobalHandles_a3a0761a94a46b9edebb9500787a9ae9f}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries global\+\_\+handles\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_aa1d30cd0e92be81c9e8e5bcadaa68fda}\label{classv8_1_1internal_1_1GlobalHandles_aa1d30cd0e92be81c9e8e5bcadaa68fda}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Number\+Of\+Phantom\+Handle\+Resets} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_ac891251a51b6aacb26e1b3ff9908f4d0}\label{classv8_1_1internal_1_1GlobalHandles_ac891251a51b6aacb26e1b3ff9908f4d0}} 
+void {\bfseries Reset\+Number\+Of\+Phantom\+Handle\+Resets} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a38299b5bc78072ae350ff8d84ea087e5}\label{classv8_1_1internal_1_1GlobalHandles_a38299b5bc78072ae350ff8d84ea087e5}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Number\+Of\+New\+Space\+Nodes} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_acb854a3689cc8e8bec2179101bbe6e58}\label{classv8_1_1internal_1_1GlobalHandles_acb854a3689cc8e8bec2179101bbe6e58}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Invoke\+First\+Pass\+Weak\+Callbacks} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a7191d3b6218e05993443fbd7ad5908c6}\label{classv8_1_1internal_1_1GlobalHandles_a7191d3b6218e05993443fbd7ad5908c6}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Post\+Garbage\+Collection\+Processing} (Garbage\+Collector collector, const v8\+::\+G\+C\+Callback\+Flags gc\+\_\+callback\+\_\+flags)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_abeb34b96e383b1b66f554f972eaa67e5}\label{classv8_1_1internal_1_1GlobalHandles_abeb34b96e383b1b66f554f972eaa67e5}} 
+void {\bfseries Iterate\+Strong\+Roots} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_ae36970816b69a4ba3b4eebef5fd861e9}\label{classv8_1_1internal_1_1GlobalHandles_ae36970816b69a4ba3b4eebef5fd861e9}} 
+void {\bfseries Iterate\+Weak\+Roots} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a876786cdf78faecb4f8ecf02c76c255b}\label{classv8_1_1internal_1_1GlobalHandles_a876786cdf78faecb4f8ecf02c76c255b}} 
+void {\bfseries Iterate\+All\+Roots} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_ac4c65dee7d1193385a48c7dfda668448}\label{classv8_1_1internal_1_1GlobalHandles_ac4c65dee7d1193385a48c7dfda668448}} 
+void {\bfseries Iterate\+All\+New\+Space\+Roots} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a7e9b3bb9f172aff643705a3fb1e84047}\label{classv8_1_1internal_1_1GlobalHandles_a7e9b3bb9f172aff643705a3fb1e84047}} 
+void {\bfseries Iterate\+New\+Space\+Roots} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} start, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} end)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a835c15821ac609dabf258d235063ef3f}\label{classv8_1_1internal_1_1GlobalHandles_a835c15821ac609dabf258d235063ef3f}} 
+void {\bfseries Iterate\+All\+Roots\+With\+Class\+Ids} (v8\+::\+Persistent\+Handle\+Visitor $\ast$v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a6ec43ecb7ce2ee26ba912d388825abcb}\label{classv8_1_1internal_1_1GlobalHandles_a6ec43ecb7ce2ee26ba912d388825abcb}} 
+void {\bfseries Iterate\+All\+Roots\+In\+New\+Space\+With\+Class\+Ids} (v8\+::\+Persistent\+Handle\+Visitor $\ast$v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a0d9ae6dad6cc9fd707d0b8b89897c38a}\label{classv8_1_1internal_1_1GlobalHandles_a0d9ae6dad6cc9fd707d0b8b89897c38a}} 
+void {\bfseries Iterate\+Weak\+Roots\+In\+New\+Space\+With\+Class\+Ids} (v8\+::\+Persistent\+Handle\+Visitor $\ast$v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_aac057dd1698f7add74cdbe6b9ed72fe6}\label{classv8_1_1internal_1_1GlobalHandles_aac057dd1698f7add74cdbe6b9ed72fe6}} 
+void {\bfseries Iterate\+Weak\+Roots\+For\+Finalizers} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_afa07f32c8258551fd4b82156c41f2e18}\label{classv8_1_1internal_1_1GlobalHandles_afa07f32c8258551fd4b82156c41f2e18}} 
+void {\bfseries Iterate\+Weak\+Roots\+For\+Phantom\+Handles} (Weak\+Slot\+Callback\+With\+Heap should\+\_\+reset\+\_\+handle)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a948a45895f46b33c7888f706f653093d}\label{classv8_1_1internal_1_1GlobalHandles_a948a45895f46b33c7888f706f653093d}} 
+void {\bfseries Identify\+Weak\+Handles} (Weak\+Slot\+Callback\+With\+Heap should\+\_\+reset\+\_\+handle)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a6e531cd34702b56469b86312f2f526b3}\label{classv8_1_1internal_1_1GlobalHandles_a6e531cd34702b56469b86312f2f526b3}} 
+void {\bfseries Iterate\+New\+Space\+Strong\+And\+Dependent\+Roots} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a595432bbf0978b8147490f1b9c7f711b}\label{classv8_1_1internal_1_1GlobalHandles_a595432bbf0978b8147490f1b9c7f711b}} 
+void {\bfseries Iterate\+New\+Space\+Strong\+And\+Dependent\+Roots\+And\+Identify\+Unmodified} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} start, \mbox{\hyperlink{classsize__t}{size\+\_\+t}} end)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a275548088e2a6e785be3ff4f70d2945e}\label{classv8_1_1internal_1_1GlobalHandles_a275548088e2a6e785be3ff4f70d2945e}} 
+void {\bfseries Mark\+New\+Space\+Weak\+Unmodified\+Objects\+Pending} (Weak\+Slot\+Callback\+With\+Heap is\+\_\+dead)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a3945b0c98ec220aa606fe8d6eabe494c}\label{classv8_1_1internal_1_1GlobalHandles_a3945b0c98ec220aa606fe8d6eabe494c}} 
+void {\bfseries Iterate\+New\+Space\+Weak\+Unmodified\+Roots\+For\+Finalizers} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a9e3d10d11ecde9acd7e69d7aa1789b71}\label{classv8_1_1internal_1_1GlobalHandles_a9e3d10d11ecde9acd7e69d7aa1789b71}} 
+void {\bfseries Iterate\+New\+Space\+Weak\+Unmodified\+Roots\+For\+Phantom\+Handles} (\mbox{\hyperlink{classv8_1_1internal_1_1RootVisitor}{Root\+Visitor}} $\ast$v, Weak\+Slot\+Callback\+With\+Heap should\+\_\+reset\+\_\+handle)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a3af4aba6d067411dac31c436a3a71431}\label{classv8_1_1internal_1_1GlobalHandles_a3af4aba6d067411dac31c436a3a71431}} 
+void {\bfseries Identify\+Weak\+Unmodified\+Objects} (Weak\+Slot\+Callback is\+\_\+unmodified)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a08ae35c499746d53695855f3fa478777}\label{classv8_1_1internal_1_1GlobalHandles_a08ae35c499746d53695855f3fa478777}} 
+void {\bfseries Tear\+Down} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_af52a3cdd14e9d051a3668250091305b1}\label{classv8_1_1internal_1_1GlobalHandles_af52a3cdd14e9d051a3668250091305b1}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a0de9ef6a1926b14e82c880e409ed6edf}\label{classv8_1_1internal_1_1GlobalHandles_a0de9ef6a1926b14e82c880e409ed6edf}} 
+void {\bfseries Invoke\+Second\+Pass\+Phantom\+Callbacks} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_aa602be11a1bc9a7330847643f0da5b8e}\label{classv8_1_1internal_1_1GlobalHandles_aa602be11a1bc9a7330847643f0da5b8e}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Object}{Object}} $>$ {\bfseries Copy\+Global} (\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$location)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a1a31391c097b88af06b7e0cf673bcf00}\label{classv8_1_1internal_1_1GlobalHandles_a1a31391c097b88af06b7e0cf673bcf00}} 
+static void {\bfseries Destroy} (\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$location)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_aba8a4005e8af1b131ee9dd35a05277f3}\label{classv8_1_1internal_1_1GlobalHandles_aba8a4005e8af1b131ee9dd35a05277f3}} 
+static void {\bfseries Make\+Weak} (\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$location, void $\ast$parameter, \mbox{\hyperlink{classv8_1_1WeakCallbackInfo}{Weak\+Callback\+Info}}$<$ void $>$\+::Callback weak\+\_\+callback, v8\+::\+Weak\+Callback\+Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a9d9ae4618105297a4f6ec6a087feaa60}\label{classv8_1_1internal_1_1GlobalHandles_a9d9ae4618105297a4f6ec6a087feaa60}} 
+static void {\bfseries Make\+Weak} (\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$$\ast$location\+\_\+addr)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a344f421b639960957cddf519e33e80e7}\label{classv8_1_1internal_1_1GlobalHandles_a344f421b639960957cddf519e33e80e7}} 
+static void {\bfseries Annotate\+Strong\+Retainer} (\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$location, const \mbox{\hyperlink{classchar}{char}} $\ast$label)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a1217999e7546b3aa6d8fc1d90d870dbf}\label{classv8_1_1internal_1_1GlobalHandles_a1217999e7546b3aa6d8fc1d90d870dbf}} 
+static void $\ast$ {\bfseries Clear\+Weakness} (\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$location)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a526596b238a7cb246f980354a9a7fca1}\label{classv8_1_1internal_1_1GlobalHandles_a526596b238a7cb246f980354a9a7fca1}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Near\+Death} (\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$location)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_a9acf76cddd5d89af57a42ddb74ad7948}\label{classv8_1_1internal_1_1GlobalHandles_a9acf76cddd5d89af57a42ddb74ad7948}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Weak} (\mbox{\hyperlink{classuintptr__t}{Address}} $\ast$location)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1GlobalHandles_aba4f0964bdacf2bbf62cf876e5d28d0a}\label{classv8_1_1internal_1_1GlobalHandles_aba4f0964bdacf2bbf62cf876e5d28d0a}} 
+class {\bfseries Isolate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 44 of file global-\/handles.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/global-\/handles.\+h\item 
+v8/src/global-\/handles.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\hypertarget{classv8_1_1internal_1_1RegExpLookaround}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Lookaround Class Reference}
+\label{classv8_1_1internal_1_1RegExpLookaround}\index{v8\+::internal\+::\+Reg\+Exp\+Lookaround@{v8\+::internal\+::\+Reg\+Exp\+Lookaround}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Reg\+Exp\+Lookaround\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1RegExpLookaround}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1RegExpLookaround_1_1Builder}{Builder}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpLookaround_a5982c9f5930a64e1547da44da96836db}\label{classv8_1_1internal_1_1RegExpLookaround_a5982c9f5930a64e1547da44da96836db}} 
+enum {\bfseries Type} \{ {\bfseries L\+O\+O\+K\+A\+H\+E\+AD}, 
+{\bfseries L\+O\+O\+K\+B\+E\+H\+I\+ND}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpLookaround_a676a682119f03effcc975fe41c0936c1}\label{classv8_1_1internal_1_1RegExpLookaround_a676a682119f03effcc975fe41c0936c1}} 
+{\bfseries Reg\+Exp\+Lookaround} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpTree}{Reg\+Exp\+Tree}} $\ast$body, \mbox{\hyperlink{classbool}{bool}} is\+\_\+positive, \mbox{\hyperlink{classint}{int}} capture\+\_\+count, \mbox{\hyperlink{classint}{int}} capture\+\_\+from, Type \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}})
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpLookaround_a42e3aa3233fca1c15774c62d090e7a9f}\label{classv8_1_1internal_1_1RegExpLookaround_a42e3aa3233fca1c15774c62d090e7a9f}} 
+void $\ast$ {\bfseries Accept} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpVisitor}{Reg\+Exp\+Visitor}} $\ast$visitor, void $\ast$data) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpLookaround_aaecf191fb2547c78b12ad372a0467e73}\label{classv8_1_1internal_1_1RegExpLookaround_aaecf191fb2547c78b12ad372a0467e73}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ {\bfseries To\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpLookaround_a39aca1f129b4c5bb07dc8ef10cc4476c}\label{classv8_1_1internal_1_1RegExpLookaround_a39aca1f129b4c5bb07dc8ef10cc4476c}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpLookaround}{Reg\+Exp\+Lookaround}} $\ast$ {\bfseries As\+Lookaround} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpLookaround_a62644443efa0d13d6c44bdae22be1764}\label{classv8_1_1internal_1_1RegExpLookaround_a62644443efa0d13d6c44bdae22be1764}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Interval}{Interval}} {\bfseries Capture\+Registers} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpLookaround_a454f240cf27a5c395306a2ff038e163e}\label{classv8_1_1internal_1_1RegExpLookaround_a454f240cf27a5c395306a2ff038e163e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Lookaround} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpLookaround_a16c0ff4325d453275b2c390efbc14a43}\label{classv8_1_1internal_1_1RegExpLookaround_a16c0ff4325d453275b2c390efbc14a43}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Anchored\+At\+Start} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpLookaround_a15837ba2d732a0809843d745a2e17521}\label{classv8_1_1internal_1_1RegExpLookaround_a15837ba2d732a0809843d745a2e17521}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries min\+\_\+match} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpLookaround_af20bddc3c92ef40530b7ee02a6e26b4e}\label{classv8_1_1internal_1_1RegExpLookaround_af20bddc3c92ef40530b7ee02a6e26b4e}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries max\+\_\+match} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpLookaround_ab538d061070c36a13a1e951db73f3915}\label{classv8_1_1internal_1_1RegExpLookaround_ab538d061070c36a13a1e951db73f3915}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1RegExpTree}{Reg\+Exp\+Tree}} $\ast$ {\bfseries body} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpLookaround_a3af802a6dffd466eaabbe8e343e9184f}\label{classv8_1_1internal_1_1RegExpLookaround_a3af802a6dffd466eaabbe8e343e9184f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+positive} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpLookaround_a29d3075cfac50bfcf70681cd923b25ff}\label{classv8_1_1internal_1_1RegExpLookaround_a29d3075cfac50bfcf70681cd923b25ff}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries capture\+\_\+count} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpLookaround_a37ad3a74be5bfa6d6ba9339e40ea7dff}\label{classv8_1_1internal_1_1RegExpLookaround_a37ad3a74be5bfa6d6ba9339e40ea7dff}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries capture\+\_\+from} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpLookaround_ae595543691ac367a51658d9be5e3aa5b}\label{classv8_1_1internal_1_1RegExpLookaround_ae595543691ac367a51658d9be5e3aa5b}} 
+Type {\bfseries type} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 500 of file regexp-\/ast.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/regexp-\/ast.\+h\item 
+v8/src/regexp/jsregexp.\+cc\item 
+v8/src/regexp/regexp-\/ast.\+cc\end{DoxyCompactItemize}

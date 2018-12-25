@@ -1,0 +1,61 @@
+\hypertarget{classv8_1_1internal_1_1RegExpTree}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Tree Class Reference}
+\label{classv8_1_1internal_1_1RegExpTree}\index{v8\+::internal\+::\+Reg\+Exp\+Tree@{v8\+::internal\+::\+Reg\+Exp\+Tree}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Reg\+Exp\+Tree\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classv8_1_1internal_1_1RegExpTree}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpTree_a47b10904011eb76bb081c2354c5d0232}\label{classv8_1_1internal_1_1RegExpTree_a47b10904011eb76bb081c2354c5d0232}} 
+virtual void $\ast$ {\bfseries Accept} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpVisitor}{Reg\+Exp\+Visitor}} $\ast$visitor, void $\ast$data)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpTree_a9670a35c2a033db8032ca275910e1ac2}\label{classv8_1_1internal_1_1RegExpTree_a9670a35c2a033db8032ca275910e1ac2}} 
+virtual \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$ {\bfseries To\+Node} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpTree_ad942297d0d8695a8401e3841d9ad5b8c}\label{classv8_1_1internal_1_1RegExpTree_ad942297d0d8695a8401e3841d9ad5b8c}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Text\+Element} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpTree_a63684350c648009df5ee42068a39a4fc}\label{classv8_1_1internal_1_1RegExpTree_a63684350c648009df5ee42068a39a4fc}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Anchored\+At\+Start} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpTree_a6a53cc0f2787e7cd698f5c44886f9816}\label{classv8_1_1internal_1_1RegExpTree_a6a53cc0f2787e7cd698f5c44886f9816}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Anchored\+At\+End} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpTree_a6aee84bbe2e078446f84681b70ebc32a}\label{classv8_1_1internal_1_1RegExpTree_a6aee84bbe2e078446f84681b70ebc32a}} 
+virtual \mbox{\hyperlink{classint}{int}} {\bfseries min\+\_\+match} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpTree_ad27450dae179517a30b47de7eedde3c4}\label{classv8_1_1internal_1_1RegExpTree_ad27450dae179517a30b47de7eedde3c4}} 
+virtual \mbox{\hyperlink{classint}{int}} {\bfseries max\+\_\+match} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpTree_ac9eaff84346b534c7617bfaf99fe277f}\label{classv8_1_1internal_1_1RegExpTree_ac9eaff84346b534c7617bfaf99fe277f}} 
+virtual \mbox{\hyperlink{classv8_1_1internal_1_1Interval}{Interval}} {\bfseries Capture\+Registers} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpTree_a703a7d343de906a8a76dadc11907d6cc}\label{classv8_1_1internal_1_1RegExpTree_a703a7d343de906a8a76dadc11907d6cc}} 
+virtual void {\bfseries Append\+To\+Text} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpText}{Reg\+Exp\+Text}} $\ast$text, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpTree_af682087bc39041e46f30cc97b6536605}\label{classv8_1_1internal_1_1RegExpTree_af682087bc39041e46f30cc97b6536605}} 
+std\+::ostream \& {\bfseries Print} (std\+::ostream \&os, \mbox{\hyperlink{classv8_1_1internal_1_1Zone}{Zone}} $\ast$zone)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpTree_a91c43a4c99efe5ac1ec0db20eff0a1f3}\label{classv8_1_1internal_1_1RegExpTree_a91c43a4c99efe5ac1ec0db20eff0a1f3}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Infinity} = k\+Max\+Int
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 195 of file regexp-\/ast.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/regexp-\/ast.\+h\item 
+v8/src/regexp/jsregexp.\+cc\item 
+v8/src/regexp/regexp-\/ast.\+cc\end{DoxyCompactItemize}

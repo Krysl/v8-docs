@@ -1,0 +1,76 @@
+\hypertarget{classv8_1_1internal_1_1HandleScope}{}\section{v8\+:\+:internal\+:\+:Handle\+Scope Class Reference}
+\label{classv8_1_1internal_1_1HandleScope}\index{v8\+::internal\+::\+Handle\+Scope@{v8\+::internal\+::\+Handle\+Scope}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleScope_a3742f18d5b401cc58fcf6168ebca077d}\label{classv8_1_1internal_1_1HandleScope_a3742f18d5b401cc58fcf6168ebca077d}} 
+{\bfseries Handle\+Scope} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleScope_a37fa551b0621f759ebc0aed8d8061384}\label{classv8_1_1internal_1_1HandleScope_a37fa551b0621f759ebc0aed8d8061384}} 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ {\bfseries Close\+And\+Escape} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1torque_1_1T}{T}} $>$ handle\+\_\+value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleScope_afebe38c26e4dad47b86d195898bd6400}\label{classv8_1_1internal_1_1HandleScope_afebe38c26e4dad47b86d195898bd6400}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleScope_a24b3e5fe5858089d5f677b6e81fb17b4}\label{classv8_1_1internal_1_1HandleScope_a24b3e5fe5858089d5f677b6e81fb17b4}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE \mbox{\hyperlink{classint}{int}} {\bfseries Number\+Of\+Handles} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleScope_ab14ab0c8aa1f3c87200a246dfbabeb39}\label{classv8_1_1internal_1_1HandleScope_ab14ab0c8aa1f3c87200a246dfbabeb39}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{Address}} $\ast$ {\bfseries Get\+Handle} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classuintptr__t}{Address}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleScope_aaa41d7957b4fee82fded13453ed0f29e}\label{classv8_1_1internal_1_1HandleScope_aaa41d7957b4fee82fded13453ed0f29e}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classuintptr__t}{Address}} $\ast$ {\bfseries Create\+Handle} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classuintptr__t}{Address}} value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleScope_a49d50c5b71e4d3aed324e3ce63bb681d}\label{classv8_1_1internal_1_1HandleScope_a49d50c5b71e4d3aed324e3ce63bb681d}} 
+static V8\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+P\+R\+I\+V\+A\+TE void {\bfseries Delete\+Extensions} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleScope_a4ab0caf3631e3b3f5aa40d20696ca6cc}\label{classv8_1_1internal_1_1HandleScope_a4ab0caf3631e3b3f5aa40d20696ca6cc}} 
+static \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries current\+\_\+next\+\_\+address} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleScope_a49204b2b24d948e6a4b2cec31f043a0c}\label{classv8_1_1internal_1_1HandleScope_a49204b2b24d948e6a4b2cec31f043a0c}} 
+static \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries current\+\_\+limit\+\_\+address} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleScope_ad8e3d2e7853cee42d7d255e45afb1f5e}\label{classv8_1_1internal_1_1HandleScope_ad8e3d2e7853cee42d7d255e45afb1f5e}} 
+static \mbox{\hyperlink{classuintptr__t}{Address}} {\bfseries current\+\_\+level\+\_\+address} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleScope_aba5a5d86706677947f728ef03adddee3}\label{classv8_1_1internal_1_1HandleScope_aba5a5d86706677947f728ef03adddee3}} 
+static const \mbox{\hyperlink{classint}{int}} {\bfseries k\+Check\+Handle\+Threshold} = 30 $\ast$ 1024
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleScope_a8b16bf00a6bc5a91a76e86067d2f9dfc}\label{classv8_1_1internal_1_1HandleScope_a8b16bf00a6bc5a91a76e86067d2f9dfc}} 
+class {\bfseries v8\+::\+Handle\+Scope}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleScope_abf66bd266bd1fddbc859832c4838b436}\label{classv8_1_1internal_1_1HandleScope_abf66bd266bd1fddbc859832c4838b436}} 
+class {\bfseries Deferred\+Handles}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleScope_ab79a97e63b62ac3e95a40640e3e70f96}\label{classv8_1_1internal_1_1HandleScope_ab79a97e63b62ac3e95a40640e3e70f96}} 
+class {\bfseries Deferred\+Handle\+Scope}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleScope_a4212b6d1addb496cb92d67a2e399a1f3}\label{classv8_1_1internal_1_1HandleScope_a4212b6d1addb496cb92d67a2e399a1f3}} 
+class {\bfseries Handle\+Scope\+Implementer}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1HandleScope_aba4f0964bdacf2bbf62cf876e5d28d0a}\label{classv8_1_1internal_1_1HandleScope_aba4f0964bdacf2bbf62cf876e5d28d0a}} 
+class {\bfseries Isolate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 256 of file handles.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/handles.\+h\item 
+v8/src/handles-\/inl.\+h\item 
+v8/src/handles.\+cc\end{DoxyCompactItemize}

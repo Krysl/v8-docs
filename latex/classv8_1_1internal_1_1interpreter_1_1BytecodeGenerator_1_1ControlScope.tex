@@ -1,0 +1,83 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecode\+Generator\+:\+:Control\+Scope Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope}\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Generator\+::\+Control\+Scope@{v8\+::internal\+::interpreter\+::\+Bytecode\+Generator\+::\+Control\+Scope}}
+Inheritance diagram for v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecode\+Generator\+:\+:Control\+Scope\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.529551cm]{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_1_1DeferredCommands}{Deferred\+Commands}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a6fde8346423739e90e07a09cc0507c50}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a6fde8346423739e90e07a09cc0507c50}} 
+{\bfseries Control\+Scope} (\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator}{Bytecode\+Generator}} $\ast$generator)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a9e4750e9e467e0dac979a58e5a54f38a}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a9e4750e9e467e0dac979a58e5a54f38a}} 
+void {\bfseries Break} (\mbox{\hyperlink{classv8_1_1internal_1_1Statement}{Statement}} $\ast$stmt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a6cb96ab2060a74b9338e86405e33e375}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a6cb96ab2060a74b9338e86405e33e375}} 
+void {\bfseries Continue} (\mbox{\hyperlink{classv8_1_1internal_1_1Statement}{Statement}} $\ast$stmt)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a77183289ad9c9821249548c0a3c558b1}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a77183289ad9c9821249548c0a3c558b1}} 
+void {\bfseries Return\+Accumulator} (\mbox{\hyperlink{classint}{int}} source\+\_\+position=k\+No\+Source\+Position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_aca122b43c2d33547bdc26eb9fcfa53cc}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_aca122b43c2d33547bdc26eb9fcfa53cc}} 
+void {\bfseries Async\+Return\+Accumulator} (\mbox{\hyperlink{classint}{int}} source\+\_\+position=k\+No\+Source\+Position)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_ad432302094607f68b8201756743bcd5f}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_ad432302094607f68b8201756743bcd5f}} 
+enum {\bfseries Command} \{ \newline
+{\bfseries C\+M\+D\+\_\+\+B\+R\+E\+AK}, 
+{\bfseries C\+M\+D\+\_\+\+C\+O\+N\+T\+I\+N\+UE}, 
+{\bfseries C\+M\+D\+\_\+\+R\+E\+T\+U\+RN}, 
+{\bfseries C\+M\+D\+\_\+\+A\+S\+Y\+N\+C\+\_\+\+R\+E\+T\+U\+RN}, 
+\newline
+{\bfseries C\+M\+D\+\_\+\+R\+E\+T\+H\+R\+OW}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a0433a9ed04a952359da575ad2193a34a}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a0433a9ed04a952359da575ad2193a34a}} 
+void {\bfseries Perform\+Command} (Command command, \mbox{\hyperlink{classv8_1_1internal_1_1Statement}{Statement}} $\ast$statement, \mbox{\hyperlink{classint}{int}} source\+\_\+position)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a5eb468f354441d849f9cf755119260c7}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a5eb468f354441d849f9cf755119260c7}} 
+virtual \mbox{\hyperlink{classbool}{bool}} {\bfseries Execute} (Command command, \mbox{\hyperlink{classv8_1_1internal_1_1Statement}{Statement}} $\ast$statement, \mbox{\hyperlink{classint}{int}} source\+\_\+position)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a7afc61ec6d0e5012e7aba2e4b6abc321}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a7afc61ec6d0e5012e7aba2e4b6abc321}} 
+void {\bfseries Pop\+Context\+To\+Expected\+Depth} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_aaebb2bc38d031b745e8e1922ddbd7fd6}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_aaebb2bc38d031b745e8e1922ddbd7fd6}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator}{Bytecode\+Generator}} $\ast$ {\bfseries generator} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a6741ae732c89eb2e838bc90d25073ce7}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a6741ae732c89eb2e838bc90d25073ce7}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope}{Control\+Scope}} $\ast$ {\bfseries outer} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a390d42f8dd15223563f453f6d8ac362b}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a390d42f8dd15223563f453f6d8ac362b}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ContextScope}{Context\+Scope}} $\ast$ {\bfseries context} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a9907edb461443a2da7d7d4983f3091bb}\label{classv8_1_1internal_1_1interpreter_1_1BytecodeGenerator_1_1ControlScope_a9907edb461443a2da7d7d4983f3091bb}} 
+static constexpr \mbox{\hyperlink{classbool}{bool}} {\bfseries Command\+Uses\+Accumulator} (Command command)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 98 of file bytecode-\/generator.\+cc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/interpreter/bytecode-\/generator.\+cc\end{DoxyCompactItemize}

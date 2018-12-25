@@ -1,0 +1,47 @@
+\hypertarget{classv8_1_1internal_1_1Scavenger_1_1PromotionList}{}\section{v8\+:\+:internal\+:\+:Scavenger\+:\+:Promotion\+List Class Reference}
+\label{classv8_1_1internal_1_1Scavenger_1_1PromotionList}\index{v8\+::internal\+::\+Scavenger\+::\+Promotion\+List@{v8\+::internal\+::\+Scavenger\+::\+Promotion\+List}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1internal_1_1Scavenger_1_1PromotionList_1_1View}{View}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_1_1PromotionList_aac5f3d0fa3f469b301481c553dfd28c9}\label{classv8_1_1internal_1_1Scavenger_1_1PromotionList_aac5f3d0fa3f469b301481c553dfd28c9}} 
+{\bfseries Promotion\+List} (\mbox{\hyperlink{classint}{int}} num\+\_\+tasks)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_1_1PromotionList_a58adda6aa77cd9c08d615c54eacfe225}\label{classv8_1_1internal_1_1Scavenger_1_1PromotionList_a58adda6aa77cd9c08d615c54eacfe225}} 
+void {\bfseries Push\+Regular\+Object} (\mbox{\hyperlink{classint}{int}} task\+\_\+id, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object, \mbox{\hyperlink{classint}{int}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_1_1PromotionList_a89d34156e499849c085d304e6512bd91}\label{classv8_1_1internal_1_1Scavenger_1_1PromotionList_a89d34156e499849c085d304e6512bd91}} 
+void {\bfseries Push\+Large\+Object} (\mbox{\hyperlink{classint}{int}} task\+\_\+id, \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $\ast$object, \mbox{\hyperlink{classv8_1_1internal_1_1Map}{Map}} map, \mbox{\hyperlink{classint}{int}} size)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_1_1PromotionList_a1419fd83828bb9de0a353c0f5112873f}\label{classv8_1_1internal_1_1Scavenger_1_1PromotionList_a1419fd83828bb9de0a353c0f5112873f}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Empty} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_1_1PromotionList_afb95ce10b129464d3f677c7f9791beb1}\label{classv8_1_1internal_1_1Scavenger_1_1PromotionList_afb95ce10b129464d3f677c7f9791beb1}} 
+\mbox{\hyperlink{classsize__t}{size\+\_\+t}} {\bfseries Local\+Push\+Segment\+Size} (\mbox{\hyperlink{classint}{int}} task\+\_\+id)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_1_1PromotionList_aa24c10a48784d1947064653597598a7d}\label{classv8_1_1internal_1_1Scavenger_1_1PromotionList_aa24c10a48784d1947064653597598a7d}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Pop} (\mbox{\hyperlink{classint}{int}} task\+\_\+id, struct \mbox{\hyperlink{structv8_1_1internal_1_1Scavenger_1_1PromotionListEntry}{Promotion\+List\+Entry}} $\ast$entry)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_1_1PromotionList_a6410612895edb0a14dced4f08988c308}\label{classv8_1_1internal_1_1Scavenger_1_1PromotionList_a6410612895edb0a14dced4f08988c308}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Global\+Pool\+Empty} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1Scavenger_1_1PromotionList_a5a5926bde6070b10ef32f38599477bf4}\label{classv8_1_1internal_1_1Scavenger_1_1PromotionList_a5a5926bde6070b10ef32f38599477bf4}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Should\+Eagerly\+Process\+Promotion\+List} (\mbox{\hyperlink{classint}{int}} task\+\_\+id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 62 of file scavenger.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/heap/scavenger.\+h\item 
+v8/src/heap/scavenger-\/inl.\+h\end{DoxyCompactItemize}

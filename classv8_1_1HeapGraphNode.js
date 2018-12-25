@@ -16,10 +16,10 @@ var classv8_1_1HeapGraphNode =
       [ "kSymbol", "classv8_1_1HeapGraphNode.html#ab674a58103a51abc56f99edc6a1479eda1208a3bd03b7cd7fa7062bc05571562f", null ],
       [ "kBigInt", "classv8_1_1HeapGraphNode.html#ab674a58103a51abc56f99edc6a1479edad8e0a5146947d35ad802e85a3f249cef", null ]
     ] ],
-    [ "GetChild", "classv8_1_1HeapGraphNode.html#a3dc91726c26eb1c167706b112cd74564", null ],
+    [ "GetChild", "classv8_1_1HeapGraphNode.html#ad3a8d2b97d9ffbdafc5c0b23f20427cf", null ],
     [ "GetChildrenCount", "classv8_1_1HeapGraphNode.html#afb0afb27e5d5ae27b54376bc69f095ae", null ],
     [ "GetId", "classv8_1_1HeapGraphNode.html#a62cd677be9c23067c6e2394b1fd154c6", null ],
-    [ "GetName", "classv8_1_1HeapGraphNode.html#a3a9d366c11fe526a11eea8dc878a58c0", null ],
+    [ "GetName", "classv8_1_1HeapGraphNode.html#a030f9646498eec5f689c8f6c8fe09168", null ],
     [ "GetShallowSize", "classv8_1_1HeapGraphNode.html#ad61965a12cabdc7a4eeeb7e6aade46ba", null ],
-    [ "GetType", "classv8_1_1HeapGraphNode.html#a9bd100b1338413f6153fe56a3fac60f1", null ]
+    [ "GetType", "classv8_1_1HeapGraphNode.html#a93db89e657229ddc9820beb1b6dad046", null ]
 ];

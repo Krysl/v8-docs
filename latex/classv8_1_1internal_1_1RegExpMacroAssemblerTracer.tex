@@ -1,0 +1,163 @@
+\hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Macro\+Assembler\+Tracer Class Reference}
+\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer}\index{v8\+::internal\+::\+Reg\+Exp\+Macro\+Assembler\+Tracer@{v8\+::internal\+::\+Reg\+Exp\+Macro\+Assembler\+Tracer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Reg\+Exp\+Macro\+Assembler\+Tracer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1RegExpMacroAssemblerTracer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a5088178e9104eec2f5336b04977cbde5}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a5088178e9104eec2f5336b04977cbde5}} 
+{\bfseries Reg\+Exp\+Macro\+Assembler\+Tracer} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpMacroAssembler}{Reg\+Exp\+Macro\+Assembler}} $\ast$assembler)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a9bf4651ef3079a884b483ec4b45cfc41}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a9bf4651ef3079a884b483ec4b45cfc41}} 
+void {\bfseries Aborted\+Code\+Generation} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_af0f960eea4ddae2122110d6a0221f5ef}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_af0f960eea4ddae2122110d6a0221f5ef}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries stack\+\_\+limit\+\_\+slack} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a00554f58de95a5d321fc4baacb7b75d7}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a00554f58de95a5d321fc4baacb7b75d7}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Can\+Read\+Unaligned} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a1ce374e849501446b20efc1ce9707248}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a1ce374e849501446b20efc1ce9707248}} 
+void {\bfseries Advance\+Current\+Position} (\mbox{\hyperlink{classint}{int}} by) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a0b278a007b21cc8bb47eb8c6d8ca450c}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a0b278a007b21cc8bb47eb8c6d8ca450c}} 
+void {\bfseries Advance\+Register} (\mbox{\hyperlink{classint}{int}} reg, \mbox{\hyperlink{classint}{int}} by) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ad08fb630289b0ad80a8ebf634967934b}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ad08fb630289b0ad80a8ebf634967934b}} 
+void {\bfseries Backtrack} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ae54ec6c8e120b8079f891e78724d6e32}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ae54ec6c8e120b8079f891e78724d6e32}} 
+void {\bfseries Bind} (\mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$label) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a44a53103c2283c954f1550ff60f49712}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a44a53103c2283c954f1550ff60f49712}} 
+void {\bfseries Check\+At\+Start} (\mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ad1cd9a1e5b01d4272f689385eed9d95d}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ad1cd9a1e5b01d4272f689385eed9d95d}} 
+void {\bfseries Check\+Character} (\mbox{\hyperlink{classunsigned}{unsigned}} c, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+equal) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a1c7280abd8525d9bc9846174cee28b69}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a1c7280abd8525d9bc9846174cee28b69}} 
+void {\bfseries Check\+Character\+After\+And} (\mbox{\hyperlink{classunsigned}{unsigned}} c, \mbox{\hyperlink{classunsigned}{unsigned}} and\+\_\+with, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+equal) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_acd9510939768f9128ae583b993bc905c}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_acd9510939768f9128ae583b993bc905c}} 
+void {\bfseries Check\+Character\+GT} (uc16 limit, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+greater) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a8d9af999c71f3c56f0824dc465187631}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a8d9af999c71f3c56f0824dc465187631}} 
+void {\bfseries Check\+Character\+LT} (uc16 limit, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+less) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ab99b7fc2e9ea57622f35482a3d3d7943}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ab99b7fc2e9ea57622f35482a3d3d7943}} 
+void {\bfseries Check\+Greedy\+Loop} (\mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+tos\+\_\+equals\+\_\+current\+\_\+position) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a1cbd5ae5be461cc354c5a33f40cec62c}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a1cbd5ae5be461cc354c5a33f40cec62c}} 
+void {\bfseries Check\+Not\+At\+Start} (\mbox{\hyperlink{classint}{int}} cp\+\_\+offset, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a726930a75469eef3f4fc2ad4219315c9}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a726930a75469eef3f4fc2ad4219315c9}} 
+void {\bfseries Check\+Not\+Back\+Reference} (\mbox{\hyperlink{classint}{int}} start\+\_\+reg, \mbox{\hyperlink{classbool}{bool}} read\+\_\+backward, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+no\+\_\+match) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a0a603eb323565872f21e5f31a1fbaf3b}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a0a603eb323565872f21e5f31a1fbaf3b}} 
+void {\bfseries Check\+Not\+Back\+Reference\+Ignore\+Case} (\mbox{\hyperlink{classint}{int}} start\+\_\+reg, \mbox{\hyperlink{classbool}{bool}} read\+\_\+backward, \mbox{\hyperlink{classbool}{bool}} unicode, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+no\+\_\+match) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ac7a921ece0f9e85613b67b5f802f1968}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ac7a921ece0f9e85613b67b5f802f1968}} 
+void {\bfseries Check\+Not\+Character} (\mbox{\hyperlink{classunsigned}{unsigned}} c, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+not\+\_\+equal) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a7cc32c02d687c2c51949c286b4a67416}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a7cc32c02d687c2c51949c286b4a67416}} 
+void {\bfseries Check\+Not\+Character\+After\+And} (\mbox{\hyperlink{classunsigned}{unsigned}} c, \mbox{\hyperlink{classunsigned}{unsigned}} and\+\_\+with, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+not\+\_\+equal) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_af750b6fd43fbaea2ecc9ecbd09106ba4}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_af750b6fd43fbaea2ecc9ecbd09106ba4}} 
+void {\bfseries Check\+Not\+Character\+After\+Minus\+And} (uc16 c, uc16 minus, uc16 and\+\_\+with, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+not\+\_\+equal) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a39cdc5aa844164b26297cb27e537bd83}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a39cdc5aa844164b26297cb27e537bd83}} 
+void {\bfseries Check\+Character\+In\+Range} (uc16 from, uc16 to, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+in\+\_\+range) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ab1f1c365495d56275abb483477b0e84d}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ab1f1c365495d56275abb483477b0e84d}} 
+void {\bfseries Check\+Character\+Not\+In\+Range} (uc16 from, uc16 to, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+not\+\_\+in\+\_\+range) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ac1f7b38355f449a4c0afc7193f584eee}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ac1f7b38355f449a4c0afc7193f584eee}} 
+void {\bfseries Check\+Bit\+In\+Table} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1ByteArray}{Byte\+Array}} $>$ table, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+bit\+\_\+set) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a386626454d05eb77493ee827b17cecda}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a386626454d05eb77493ee827b17cecda}} 
+void {\bfseries Check\+Position} (\mbox{\hyperlink{classint}{int}} cp\+\_\+offset, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+outside\+\_\+input) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a6107d9a93c789dc9ac79c854cb22ccb6}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a6107d9a93c789dc9ac79c854cb22ccb6}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Check\+Special\+Character\+Class} (uc16 \mbox{\hyperlink{classstd_1_1conditional_1_1type}{type}}, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+no\+\_\+match) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a35356e0a474db1ef6434bd01ad023140}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a35356e0a474db1ef6434bd01ad023140}} 
+void {\bfseries Fail} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ad79f9b07a2db92c1521566e5a87b3cd2}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ad79f9b07a2db92c1521566e5a87b3cd2}} 
+\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1HeapObject}{Heap\+Object}} $>$ {\bfseries Get\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1String}{String}} $>$ source) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a06fd5ce6c85d66643d88a98bc8d23dfc}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a06fd5ce6c85d66643d88a98bc8d23dfc}} 
+void {\bfseries Go\+To} (\mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$label) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a0601bea6c55fad8800c145a218b1901d}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a0601bea6c55fad8800c145a218b1901d}} 
+void {\bfseries If\+Register\+GE} (\mbox{\hyperlink{classint}{int}} reg, \mbox{\hyperlink{classint}{int}} comparand, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$if\+\_\+ge) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ae0096730a2241b18da194146d11788d8}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ae0096730a2241b18da194146d11788d8}} 
+void {\bfseries If\+Register\+LT} (\mbox{\hyperlink{classint}{int}} reg, \mbox{\hyperlink{classint}{int}} comparand, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$if\+\_\+lt) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a786956fa9df29d221b8fa9789affce9b}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a786956fa9df29d221b8fa9789affce9b}} 
+void {\bfseries If\+Register\+Eq\+Pos} (\mbox{\hyperlink{classint}{int}} reg, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$if\+\_\+eq) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_abc39d592c76a4b4de6100c464af7d9cd}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_abc39d592c76a4b4de6100c464af7d9cd}} 
+Irregexp\+Implementation {\bfseries Implementation} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_aff120eec3b92c752036b5901c6cf6891}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_aff120eec3b92c752036b5901c6cf6891}} 
+void {\bfseries Load\+Current\+Character} (\mbox{\hyperlink{classint}{int}} cp\+\_\+offset, \mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$on\+\_\+end\+\_\+of\+\_\+input, \mbox{\hyperlink{classbool}{bool}} check\+\_\+bounds=true, \mbox{\hyperlink{classint}{int}} characters=1) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ab0668d43a070038847c4aa5b6f5b6695}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ab0668d43a070038847c4aa5b6f5b6695}} 
+void {\bfseries Pop\+Current\+Position} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a686d7fa60fc26a66968634103ef1b756}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a686d7fa60fc26a66968634103ef1b756}} 
+void {\bfseries Pop\+Register} (\mbox{\hyperlink{classint}{int}} register\+\_\+index) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_adc4a32ff8deb6ea76ddba7a34bd0a65d}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_adc4a32ff8deb6ea76ddba7a34bd0a65d}} 
+void {\bfseries Push\+Backtrack} (\mbox{\hyperlink{classv8_1_1internal_1_1Label}{Label}} $\ast$label) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a3c9b38a9615fd8dfcabd9813317d91fa}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a3c9b38a9615fd8dfcabd9813317d91fa}} 
+void {\bfseries Push\+Current\+Position} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_aa2d18b69aaacef7ed1b781fafba6d8f5}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_aa2d18b69aaacef7ed1b781fafba6d8f5}} 
+void {\bfseries Push\+Register} (\mbox{\hyperlink{classint}{int}} register\+\_\+index, Stack\+Check\+Flag check\+\_\+stack\+\_\+limit) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ac9a062f6a379913024669b89150019db}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_ac9a062f6a379913024669b89150019db}} 
+void {\bfseries Read\+Current\+Position\+From\+Register} (\mbox{\hyperlink{classint}{int}} reg) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a0308ce6797e079508d173db246a46a26}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a0308ce6797e079508d173db246a46a26}} 
+void {\bfseries Read\+Stack\+Pointer\+From\+Register} (\mbox{\hyperlink{classint}{int}} reg) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_aa9c127b8e476f621ccc63dd971d71800}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_aa9c127b8e476f621ccc63dd971d71800}} 
+void {\bfseries Set\+Current\+Position\+From\+End} (\mbox{\hyperlink{classint}{int}} by) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a071ff70027d402b7d4cf026bec4b378a}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a071ff70027d402b7d4cf026bec4b378a}} 
+void {\bfseries Set\+Register} (\mbox{\hyperlink{classint}{int}} register\+\_\+index, \mbox{\hyperlink{classint}{int}} to) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a3f36f07f3140a501c727692e74c3b58e}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a3f36f07f3140a501c727692e74c3b58e}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries Succeed} () override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a1c35d06d23287b461c2f665d7a17950c}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a1c35d06d23287b461c2f665d7a17950c}} 
+void {\bfseries Write\+Current\+Position\+To\+Register} (\mbox{\hyperlink{classint}{int}} reg, \mbox{\hyperlink{classint}{int}} cp\+\_\+offset) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a261b9c61cfcbc6ab5eb1760bf5be431a}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a261b9c61cfcbc6ab5eb1760bf5be431a}} 
+void {\bfseries Clear\+Registers} (\mbox{\hyperlink{classint}{int}} reg\+\_\+from, \mbox{\hyperlink{classint}{int}} reg\+\_\+to) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a56f1a3f6aefde895fa11c518dae92efa}\label{classv8_1_1internal_1_1RegExpMacroAssemblerTracer_a56f1a3f6aefde895fa11c518dae92efa}} 
+void {\bfseries Write\+Stack\+Pointer\+To\+Register} (\mbox{\hyperlink{classint}{int}} reg) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file regexp-\/macro-\/assembler-\/tracer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/regexp-\/macro-\/assembler-\/tracer.\+h\item 
+v8/src/regexp/regexp-\/macro-\/assembler-\/tracer.\+cc\end{DoxyCompactItemize}

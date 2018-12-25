@@ -1,0 +1,52 @@
+\hypertarget{classv8_1_1internal_1_1BackReferenceNode}{}\section{v8\+:\+:internal\+:\+:Back\+Reference\+Node Class Reference}
+\label{classv8_1_1internal_1_1BackReferenceNode}\index{v8\+::internal\+::\+Back\+Reference\+Node@{v8\+::internal\+::\+Back\+Reference\+Node}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Back\+Reference\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1BackReferenceNode}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BackReferenceNode_ae933efa9a953239a056c56d88fff4ed7}\label{classv8_1_1internal_1_1BackReferenceNode_ae933efa9a953239a056c56d88fff4ed7}} 
+{\bfseries Back\+Reference\+Node} (\mbox{\hyperlink{classint}{int}} start\+\_\+reg, \mbox{\hyperlink{classint}{int}} end\+\_\+reg, \mbox{\hyperlink{classv8_1_1base_1_1Flags}{J\+S\+Reg\+Exp\+::\+Flags}} flags, \mbox{\hyperlink{classbool}{bool}} read\+\_\+backward, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpNode}{Reg\+Exp\+Node}} $\ast$on\+\_\+success)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BackReferenceNode_a9d86f33912d50d93c289c02936d791f3}\label{classv8_1_1internal_1_1BackReferenceNode_a9d86f33912d50d93c289c02936d791f3}} 
+void {\bfseries Accept} (\mbox{\hyperlink{classv8_1_1internal_1_1NodeVisitor}{Node\+Visitor}} $\ast$visitor) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BackReferenceNode_a5898f97fe856e743638d8a4db8aae160}\label{classv8_1_1internal_1_1BackReferenceNode_a5898f97fe856e743638d8a4db8aae160}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries start\+\_\+register} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BackReferenceNode_a9cc793e4e2defe8937482aa8d3462047}\label{classv8_1_1internal_1_1BackReferenceNode_a9cc793e4e2defe8937482aa8d3462047}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries end\+\_\+register} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BackReferenceNode_a9f4bbaa6fe3c5ccd09d61aa0528b2b9b}\label{classv8_1_1internal_1_1BackReferenceNode_a9f4bbaa6fe3c5ccd09d61aa0528b2b9b}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries read\+\_\+backward} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BackReferenceNode_aa6684979b8c1e23af67e4cc36fb4e911}\label{classv8_1_1internal_1_1BackReferenceNode_aa6684979b8c1e23af67e4cc36fb4e911}} 
+void {\bfseries Emit} (\mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classv8_1_1internal_1_1Trace}{Trace}} $\ast$trace) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BackReferenceNode_a68bddd7867ba77e91b7e2cd7ef8becf4}\label{classv8_1_1internal_1_1BackReferenceNode_a68bddd7867ba77e91b7e2cd7ef8becf4}} 
+\mbox{\hyperlink{classint}{int}} {\bfseries Eats\+At\+Least} (\mbox{\hyperlink{classint}{int}} still\+\_\+to\+\_\+find, \mbox{\hyperlink{classint}{int}} recursion\+\_\+depth, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BackReferenceNode_a8e32a6380a981ec577f8551fff292e29}\label{classv8_1_1internal_1_1BackReferenceNode_a8e32a6380a981ec577f8551fff292e29}} 
+void {\bfseries Get\+Quick\+Check\+Details} (\mbox{\hyperlink{classv8_1_1internal_1_1QuickCheckDetails}{Quick\+Check\+Details}} $\ast$details, \mbox{\hyperlink{classv8_1_1internal_1_1RegExpCompiler}{Reg\+Exp\+Compiler}} $\ast$compiler, \mbox{\hyperlink{classint}{int}} characters\+\_\+filled\+\_\+in, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1BackReferenceNode_a7248d52a3a8975462042f74fea36027e}\label{classv8_1_1internal_1_1BackReferenceNode_a7248d52a3a8975462042f74fea36027e}} 
+void {\bfseries Fill\+In\+B\+M\+Info} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classint}{int}} offset, \mbox{\hyperlink{classint}{int}} budget, \mbox{\hyperlink{classv8_1_1internal_1_1BoyerMooreLookahead}{Boyer\+Moore\+Lookahead}} $\ast$bm, \mbox{\hyperlink{classbool}{bool}} not\+\_\+at\+\_\+start) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 803 of file jsregexp.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/regexp/jsregexp.\+h\item 
+v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

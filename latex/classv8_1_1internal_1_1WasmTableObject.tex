@@ -1,0 +1,50 @@
+\hypertarget{classv8_1_1internal_1_1WasmTableObject}{}\section{v8\+:\+:internal\+:\+:Wasm\+Table\+Object Class Reference}
+\label{classv8_1_1internal_1_1WasmTableObject}\index{v8\+::internal\+::\+Wasm\+Table\+Object@{v8\+::internal\+::\+Wasm\+Table\+Object}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Wasm\+Table\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1WasmTableObject}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmTableObject_a6deac16403ebf5eec01fff7119df6684}\label{classv8_1_1internal_1_1WasmTableObject_a6deac16403ebf5eec01fff7119df6684}} 
+\mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} {\bfseries current\+\_\+length} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmTableObject_a5aa40fff30ed423a1960f856be2e156a}\label{classv8_1_1internal_1_1WasmTableObject_a5aa40fff30ed423a1960f856be2e156a}} 
+void {\bfseries Grow} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} count)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmTableObject_a58747b0a090a94d254e0b742c7d9d83f}\label{classv8_1_1internal_1_1WasmTableObject_a58747b0a090a94d254e0b742c7d9d83f}} 
+static \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmTableObject}{Wasm\+Table\+Object}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classuint32__t}{uint32\+\_\+t}} initial, \mbox{\hyperlink{classint64__t}{int64\+\_\+t}} maximum, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FixedArray}{Fixed\+Array}} $>$ $\ast$js\+\_\+functions)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmTableObject_a85d23a412078580cc7163127e8115e72}\label{classv8_1_1internal_1_1WasmTableObject_a85d23a412078580cc7163127e8115e72}} 
+static void {\bfseries Add\+Dispatch\+Table} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmTableObject}{Wasm\+Table\+Object}} $>$ table, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmInstanceObject}{Wasm\+Instance\+Object}} $>$ instance, \mbox{\hyperlink{classint}{int}} table\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmTableObject_aff98252569d9c473fce4f42be46bd989}\label{classv8_1_1internal_1_1WasmTableObject_aff98252569d9c473fce4f42be46bd989}} 
+static void {\bfseries Set} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmTableObject}{Wasm\+Table\+Object}} $>$ table, int32\+\_\+t index, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmTableObject_a003fdf1e3bcad5d9e33908cbc728bfee}\label{classv8_1_1internal_1_1WasmTableObject_a003fdf1e3bcad5d9e33908cbc728bfee}} 
+static void {\bfseries Update\+Dispatch\+Tables} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmTableObject}{Wasm\+Table\+Object}} $>$ table, \mbox{\hyperlink{classint}{int}} table\+\_\+index, \mbox{\hyperlink{classv8_1_1internal_1_1Signature}{wasm\+::\+Function\+Sig}} $\ast$sig, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmInstanceObject}{Wasm\+Instance\+Object}} $>$ target\+\_\+instance, \mbox{\hyperlink{classint}{int}} target\+\_\+func\+\_\+index)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1WasmTableObject_abde58cb3af4b53a24af9c8cbc9e68417}\label{classv8_1_1internal_1_1WasmTableObject_abde58cb3af4b53a24af9c8cbc9e68417}} 
+static void {\bfseries Clear\+Dispatch\+Tables} (\mbox{\hyperlink{classv8_1_1internal_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1internal_1_1Handle}{Handle}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1WasmTableObject}{Wasm\+Table\+Object}} $>$ table, \mbox{\hyperlink{classint}{int}} index)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 249 of file wasm-\/objects.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/wasm/wasm-\/objects.\+h\item 
+v8/src/wasm/wasm-\/objects-\/inl.\+h\item 
+v8/src/wasm/wasm-\/objects.\+cc\end{DoxyCompactItemize}

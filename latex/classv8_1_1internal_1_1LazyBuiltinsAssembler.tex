@@ -1,0 +1,49 @@
+\hypertarget{classv8_1_1internal_1_1LazyBuiltinsAssembler}{}\section{v8\+:\+:internal\+:\+:Lazy\+Builtins\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1LazyBuiltinsAssembler}\index{v8\+::internal\+::\+Lazy\+Builtins\+Assembler@{v8\+::internal\+::\+Lazy\+Builtins\+Assembler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Lazy\+Builtins\+Assembler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1LazyBuiltinsAssembler}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LazyBuiltinsAssembler_ab7ee37943a1544b8b9223f18cb63bd72}\label{classv8_1_1internal_1_1LazyBuiltinsAssembler_ab7ee37943a1544b8b9223f18cb63bd72}} 
+typedef \mbox{\hyperlink{classv8_1_1internal_1_1JSTrampolineDescriptor}{J\+S\+Trampoline\+Descriptor}} {\bfseries Descriptor}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LazyBuiltinsAssembler_afa0088e9f69d9326c69dbabdb04b8744}\label{classv8_1_1internal_1_1LazyBuiltinsAssembler_afa0088e9f69d9326c69dbabdb04b8744}} 
+{\bfseries Lazy\+Builtins\+Assembler} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1CodeAssemblerState}{compiler\+::\+Code\+Assembler\+State}} $\ast$state)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LazyBuiltinsAssembler_a48c1f737a11ea11e1c6b148b9ad3ff36}\label{classv8_1_1internal_1_1LazyBuiltinsAssembler_a48c1f737a11ea11e1c6b148b9ad3ff36}} 
+void {\bfseries Generate\+Tail\+Call\+To\+J\+S\+Code} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Code}{Code}} $>$ code, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LazyBuiltinsAssembler_a634d441d564577d562def8cb4c589073}\label{classv8_1_1internal_1_1LazyBuiltinsAssembler_a634d441d564577d562def8cb4c589073}} 
+void {\bfseries Generate\+Tail\+Call\+To\+Returned\+Code} (Runtime\+::\+Function\+Id function\+\_\+id, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LazyBuiltinsAssembler_a2fe4c92efa92d82f6d3b84057a917aa1}\label{classv8_1_1internal_1_1LazyBuiltinsAssembler_a2fe4c92efa92d82f6d3b84057a917aa1}} 
+void {\bfseries Tail\+Call\+Runtime\+If\+Marker\+Equals} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1Smi}{Smi}} $>$ marker, Optimization\+Marker expected\+\_\+marker, Runtime\+::\+Function\+Id function\+\_\+id, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ function)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LazyBuiltinsAssembler_ab31967cbab67770db88bc2dc9e1d4b73}\label{classv8_1_1internal_1_1LazyBuiltinsAssembler_ab31967cbab67770db88bc2dc9e1d4b73}} 
+void {\bfseries Maybe\+Tail\+Call\+Optimized\+Code\+Slot} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ function, \mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1FeedbackVector}{Feedback\+Vector}} $>$ feedback\+\_\+vector)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1LazyBuiltinsAssembler_aa55786193d7d430246a6ddc2f67fe28f}\label{classv8_1_1internal_1_1LazyBuiltinsAssembler_aa55786193d7d430246a6ddc2f67fe28f}} 
+void {\bfseries Compile\+Lazy} (\mbox{\hyperlink{classv8_1_1internal_1_1compiler_1_1TNode}{T\+Node}}$<$ \mbox{\hyperlink{classv8_1_1internal_1_1JSFunction}{J\+S\+Function}} $>$ function)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file builtins-\/lazy-\/gen.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/builtins/builtins-\/lazy-\/gen.\+h\item 
+v8/src/builtins/builtins-\/lazy-\/gen.\+cc\end{DoxyCompactItemize}

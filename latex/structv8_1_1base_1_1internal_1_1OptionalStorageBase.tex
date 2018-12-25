@@ -1,0 +1,41 @@
+\hypertarget{structv8_1_1base_1_1internal_1_1OptionalStorageBase}{}\section{v8\+:\+:base\+:\+:internal\+:\+:Optional\+Storage\+Base$<$ T, bool $>$ Struct Template Reference}
+\label{structv8_1_1base_1_1internal_1_1OptionalStorageBase}\index{v8\+::base\+::internal\+::\+Optional\+Storage\+Base$<$ T, bool $>$@{v8\+::base\+::internal\+::\+Optional\+Storage\+Base$<$ T, bool $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1base_1_1internal_1_1OptionalStorageBase_afa996596076b4c072a02bb42c3ed1bcd}\label{structv8_1_1base_1_1internal_1_1OptionalStorageBase_afa996596076b4c072a02bb42c3ed1bcd}} 
+{\footnotesize template$<$class... Args$>$ }\\constexpr {\bfseries Optional\+Storage\+Base} (\mbox{\hyperlink{structv8_1_1base_1_1in__place__t}{in\+\_\+place\+\_\+t}}, Args \&\&... args)
+\item 
+\mbox{\Hypertarget{structv8_1_1base_1_1internal_1_1OptionalStorageBase_aa1ddb47bb5a0ce4b6e944079299bdea0}\label{structv8_1_1base_1_1internal_1_1OptionalStorageBase_aa1ddb47bb5a0ce4b6e944079299bdea0}} 
+{\footnotesize template$<$class... Args$>$ }\\void {\bfseries Init} (Args \&\&... args)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1base_1_1internal_1_1OptionalStorageBase_a4e22aa051642b3e0072c9fe871a677dc}\label{structv8_1_1base_1_1internal_1_1OptionalStorageBase_a4e22aa051642b3e0072c9fe871a677dc}} 
+\mbox{\hyperlink{classbool}{bool}} {\bfseries is\+\_\+populated\+\_\+} = false
+\item 
+\mbox{\Hypertarget{structv8_1_1base_1_1internal_1_1OptionalStorageBase_a76770e1130608a136f5b30fe751bad2a}\label{structv8_1_1base_1_1internal_1_1OptionalStorageBase_a76770e1130608a136f5b30fe751bad2a}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{classchar}{char}} {\bfseries empty\_}\\
+\>T {\bfseries value\_}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T, bool = std\+::is\+\_\+trivially\+\_\+destructible$<$\+T$>$\+::value$>$\newline
+struct v8\+::base\+::internal\+::\+Optional\+Storage\+Base$<$ T, bool $>$}
+
+
+
+Definition at line 45 of file optional.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/base/optional.\+h\end{DoxyCompactItemize}

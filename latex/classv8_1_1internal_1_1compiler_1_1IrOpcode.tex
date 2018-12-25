@@ -1,0 +1,61 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1IrOpcode}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Ir\+Opcode Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1IrOpcode}\index{v8\+::internal\+::compiler\+::\+Ir\+Opcode@{v8\+::internal\+::compiler\+::\+Ir\+Opcode}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1IrOpcode_a12e212665e666e61e7d32a0ae9a31e80}\label{classv8_1_1internal_1_1compiler_1_1IrOpcode_a12e212665e666e61e7d32a0ae9a31e80}} 
+enum {\bfseries Value} \{ {\bfseries k\+Last}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1IrOpcode_a6906dbfaf437968556e664ba41743bdb}\label{classv8_1_1internal_1_1compiler_1_1IrOpcode_a6906dbfaf437968556e664ba41743bdb}} 
+static \mbox{\hyperlink{classchar}{char}} const  $\ast$ {\bfseries Mnemonic} (Value value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1IrOpcode_a3944a06868cbaa6371e7fd87ab9e733b}\label{classv8_1_1internal_1_1compiler_1_1IrOpcode_a3944a06868cbaa6371e7fd87ab9e733b}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Common\+Opcode} (Value value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1IrOpcode_ab6010eaf55a8c961187d3c4234fadae8}\label{classv8_1_1internal_1_1compiler_1_1IrOpcode_ab6010eaf55a8c961187d3c4234fadae8}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Control\+Opcode} (Value value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1IrOpcode_a198950864a27301e70d323a3c68949fa}\label{classv8_1_1internal_1_1compiler_1_1IrOpcode_a198950864a27301e70d323a3c68949fa}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Js\+Opcode} (Value value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1IrOpcode_a0c8debc3b479132178de3b181e878fcc}\label{classv8_1_1internal_1_1compiler_1_1IrOpcode_a0c8debc3b479132178de3b181e878fcc}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Constant\+Opcode} (Value value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1IrOpcode_a75e2c3c0cc8d9d5c9e69f4d2f83c6937}\label{classv8_1_1internal_1_1compiler_1_1IrOpcode_a75e2c3c0cc8d9d5c9e69f4d2f83c6937}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Phi\+Opcode} (Value value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1IrOpcode_a1cac9f3536724226e2a7421ee5ed14bb}\label{classv8_1_1internal_1_1compiler_1_1IrOpcode_a1cac9f3536724226e2a7421ee5ed14bb}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Merge\+Opcode} (Value value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1IrOpcode_abb0836c14630f19cbac19747ca8ac329}\label{classv8_1_1internal_1_1compiler_1_1IrOpcode_abb0836c14630f19cbac19747ca8ac329}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+If\+Projection\+Opcode} (Value value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1IrOpcode_a2b7c019661bce2793c182b8b6d9aadc5}\label{classv8_1_1internal_1_1compiler_1_1IrOpcode_a2b7c019661bce2793c182b8b6d9aadc5}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Graph\+Terminator} (Value value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1IrOpcode_a7f0be422453152d34c2917579c7ba5f8}\label{classv8_1_1internal_1_1compiler_1_1IrOpcode_a7f0be422453152d34c2917579c7ba5f8}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Inlinee\+Opcode} (Value value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1IrOpcode_ab349a2fcedbfaabdccaa50d98e44dba3}\label{classv8_1_1internal_1_1compiler_1_1IrOpcode_ab349a2fcedbfaabdccaa50d98e44dba3}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Comparison\+Opcode} (Value value)
+\item 
+\mbox{\Hypertarget{classv8_1_1internal_1_1compiler_1_1IrOpcode_a0daa6a590ec5050ae269afb9fb00f9c2}\label{classv8_1_1internal_1_1compiler_1_1IrOpcode_a0daa6a590ec5050ae269afb9fb00f9c2}} 
+static \mbox{\hyperlink{classbool}{bool}} {\bfseries Is\+Context\+Chain\+Extending\+Opcode} (Value value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 856 of file opcodes.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+v8/src/compiler/opcodes.\+h\item 
+v8/src/compiler/opcodes.\+cc\end{DoxyCompactItemize}
