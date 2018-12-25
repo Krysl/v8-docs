@@ -1,4 +1,4 @@
-[Go to v8 docs](http://peerigon.github.io/v8-docs/)
+[Go to v8 docs for Deno](http://denolib.github.io/v8-docs/)
 ===============
 
 About
@@ -6,6 +6,8 @@ About
 
 This project is intended to be an up-to-date reference for developers using the [Google v8](http://code.google.com/p/v8/)
 api. The reference is automatically created by [doxygen](http://www.stack.nl/~dimitri/doxygen/).
+
+Current v8 version of this doc is 7.2.502.16
 
 **This is not the official v8 repository. The v8 is not ours, it's an open-source project developed by Google.**
 
