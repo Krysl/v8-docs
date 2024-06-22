@@ -1,0 +1,502 @@
+digraph "v8::internal::wasm::WasmModule"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  rankdir="LR";
+  edge [fontname="Cascadia Code NF",fontsize=10,labelfontname="Cascadia Code NF",labelfontsize=10];
+  node [fontname="Cascadia Code NF",fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [id="Node000001",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::WasmModule</TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">untagged_globals_buffer_size<BR ALIGN="LEFT"/></TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">WasmModule()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">WasmModule()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">operator=()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">AddTypeForTesting()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">AddSignatureForTesting()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">AddStructTypeForTesting()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">AddArrayTypeForTesting()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">has_type()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">has_signature()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">signature()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0"></TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">and 14 more...</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" ",label=" +signature_zone",fontcolor="grey" ,arrowhead="odiamond"];
+  Node2 [id="Node000002",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::Zone</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">Zone()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">~Zone()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">supports_compression()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">Allocate()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">Delete()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">New()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">AllocateArray()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">AllocateVector()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">NewVector()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">NewVector()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0"></TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">and 10 more...</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$dc/dfb/classv8_1_1internal_1_1Zone.html",tooltip=" "];
+  Node3 -> Node1 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" ",label=" +start_function_index",fontcolor="grey" ,arrowhead="odiamond"];
+  Node3 [id="Node000003",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">int</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$d1/da0/classint.html",tooltip=" "];
+  Node4 -> Node1 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" ",label=" +num_declared_data\l_segments\n+num_declared_functions\n+num_exported_functions\n+num_imported_functions\n+num_imported_globals\n+num_imported_mutable\l_globals\n+num_imported_tables\n+num_imported_tags\n+num_small_functions\n+tagged_globals_buffer\l_size\n...",fontcolor="grey" ,arrowhead="odiamond"];
+  Node4 [id="Node000004",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">uint32_t</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$d3/d87/classuint32__t.html",tooltip=" "];
+  Node5 -> Node1 [id="edge4_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" ",label=" +code\n+name\n+name_section",fontcolor="grey" ,arrowhead="odiamond"];
+  Node5 [id="Node000005",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::WireBytesRef</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">WireBytesRef()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">WireBytesRef()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">offset()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">length()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">end_offset()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">is_empty()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">is_set()<BR ALIGN="LEFT"/></TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$d7/d2e/classv8_1_1internal_1_1wasm_1_1WireBytesRef.html",tooltip=" "];
+  Node6 -> Node1 [id="edge5_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" ",label=" +has_shared_part\n+is_wasm_gc",fontcolor="grey" ,arrowhead="odiamond"];
+  Node6 [id="Node000006",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">bool</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [id="edge6_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" ",label=" +types",fontcolor="grey" ,arrowhead="odiamond"];
+  Node7 [id="Node000007",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::vector&lt; v8::internal<BR ALIGN="LEFT"/>::wasm::TypeDefinition &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node7 [id="edge7_Node000007_Node000008",color="steelblue1",style="solid",tooltip=" ",label=" +elements",fontcolor="grey" ,arrowhead="odiamond"];
+  Node8 [id="Node000008",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::TypeDefinition</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">TypeDefinition()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">TypeDefinition()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">TypeDefinition()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">TypeDefinition()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">operator==()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">operator!=()<BR ALIGN="LEFT"/></TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$d6/d21/structv8_1_1internal_1_1wasm_1_1TypeDefinition.html",tooltip=" "];
+  Node9 -> Node8 [id="edge8_Node000008_Node000009",color="steelblue1",style="solid",tooltip=" ",label=" +array_type\n+function_sig\n+struct_type",fontcolor="grey" ,arrowhead="odiamond"];
+  Node9 [id="Node000009",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">const</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node8 [id="edge9_Node000008_Node000010",color="steelblue1",style="solid",tooltip=" ",label=" +@171",fontcolor="grey" ,arrowhead="odiamond"];
+  Node10 [id="Node000010",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">anonymous:+@171</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node8 [id="edge10_Node000008_Node000004",color="steelblue1",style="solid",tooltip=" ",label=" +supertype",fontcolor="grey" ,arrowhead="odiamond"];
+  Node11 -> Node8 [id="edge11_Node000008_Node000011",color="steelblue1",style="solid",tooltip=" ",label=" +kind",fontcolor="grey" ,arrowhead="odiamond"];
+  Node11 [id="Node000011",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">Kind</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node8 [id="edge12_Node000008_Node000006",color="steelblue1",style="solid",tooltip=" ",label=" +is_final\n+is_shared",fontcolor="grey" ,arrowhead="odiamond"];
+  Node12 -> Node8 [id="edge13_Node000008_Node000012",color="steelblue1",style="solid",tooltip=" ",label=" +subtyping_depth",fontcolor="grey" ,arrowhead="odiamond"];
+  Node12 [id="Node000012",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">uint8_t</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node1 [id="edge14_Node000001_Node000013",color="steelblue1",style="solid",tooltip=" ",label=" +isorecursive_canonical\l_type_ids",fontcolor="grey" ,arrowhead="odiamond"];
+  Node13 [id="Node000013",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::vector&lt; uint32_t &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node13 [id="edge15_Node000013_Node000004",color="steelblue1",style="solid",tooltip=" ",label=" +elements",fontcolor="grey" ,arrowhead="odiamond"];
+  Node14 -> Node1 [id="edge16_Node000001_Node000014",color="steelblue1",style="solid",tooltip=" ",label=" +functions",fontcolor="grey" ,arrowhead="odiamond"];
+  Node14 [id="Node000014",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::vector&lt; v8::internal<BR ALIGN="LEFT"/>::wasm::WasmFunction &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node14 [id="edge17_Node000014_Node000015",color="steelblue1",style="solid",tooltip=" ",label=" +elements",fontcolor="grey" ,arrowhead="odiamond"];
+  Node15 [id="Node000015",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::WasmFunction</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$d3/d58/structv8_1_1internal_1_1wasm_1_1WasmFunction.html",tooltip=" "];
+  Node9 -> Node15 [id="edge18_Node000015_Node000009",color="steelblue1",style="solid",tooltip=" ",label=" +sig",fontcolor="grey" ,arrowhead="odiamond"];
+  Node4 -> Node15 [id="edge19_Node000015_Node000004",color="steelblue1",style="solid",tooltip=" ",label=" +func_index\n+sig_index",fontcolor="grey" ,arrowhead="odiamond"];
+  Node5 -> Node15 [id="edge20_Node000015_Node000005",color="steelblue1",style="solid",tooltip=" ",label=" +code",fontcolor="grey" ,arrowhead="odiamond"];
+  Node6 -> Node15 [id="edge21_Node000015_Node000006",color="steelblue1",style="solid",tooltip=" ",label=" +declared\n+exported\n+imported",fontcolor="grey" ,arrowhead="odiamond"];
+  Node16 -> Node1 [id="edge22_Node000001_Node000016",color="steelblue1",style="solid",tooltip=" ",label=" +globals",fontcolor="grey" ,arrowhead="odiamond"];
+  Node16 [id="Node000016",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::vector&lt; v8::internal<BR ALIGN="LEFT"/>::wasm::WasmGlobal &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node17 -> Node16 [id="edge23_Node000016_Node000017",color="steelblue1",style="solid",tooltip=" ",label=" +elements",fontcolor="grey" ,arrowhead="odiamond"];
+  Node17 [id="Node000017",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::WasmGlobal</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="orangered", fillcolor="white", style="filled",URL="$de/d50/structv8_1_1internal_1_1wasm_1_1WasmGlobal.html",tooltip=" "];
+  Node6 -> Node17 [id="edge24_Node000017_Node000006",color="steelblue1",style="solid",tooltip=" ",label=" +exported\n+imported\n+mutability\n+shared",fontcolor="grey" ,arrowhead="odiamond"];
+  Node4 -> Node17 [id="edge25_Node000017_Node000004",color="steelblue1",style="solid",tooltip=" ",label=" +index\n+offset",fontcolor="grey" ,arrowhead="odiamond"];
+  Node21 -> Node1 [id="edge26_Node000001_Node000021",color="steelblue1",style="solid",tooltip=" ",label=" +data_segments",fontcolor="grey" ,arrowhead="odiamond"];
+  Node21 [id="Node000021",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::vector&lt; v8::internal<BR ALIGN="LEFT"/>::wasm::WasmDataSegment &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node22 -> Node21 [id="edge27_Node000021_Node000022",color="steelblue1",style="solid",tooltip=" ",label=" +elements",fontcolor="grey" ,arrowhead="odiamond"];
+  Node22 [id="Node000022",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::WasmDataSegment</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">WasmDataSegment()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">PassiveForTesting()<BR ALIGN="LEFT"/></TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="orangered", fillcolor="white", style="filled",URL="$d9/d4b/structv8_1_1internal_1_1wasm_1_1WasmDataSegment.html",tooltip=" "];
+  Node6 -> Node22 [id="edge28_Node000022_Node000006",color="steelblue1",style="solid",tooltip=" ",label=" +active\n+shared",fontcolor="grey" ,arrowhead="odiamond"];
+  Node4 -> Node22 [id="edge29_Node000022_Node000004",color="steelblue1",style="solid",tooltip=" ",label=" +memory_index",fontcolor="grey" ,arrowhead="odiamond"];
+  Node5 -> Node22 [id="edge30_Node000022_Node000005",color="steelblue1",style="solid",tooltip=" ",label=" +source",fontcolor="grey" ,arrowhead="odiamond"];
+  Node23 -> Node1 [id="edge31_Node000001_Node000023",color="steelblue1",style="solid",tooltip=" ",label=" +tables",fontcolor="grey" ,arrowhead="odiamond"];
+  Node23 [id="Node000023",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::vector&lt; v8::internal<BR ALIGN="LEFT"/>::wasm::WasmTable &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node24 -> Node23 [id="edge32_Node000023_Node000024",color="steelblue1",style="solid",tooltip=" ",label=" +elements",fontcolor="grey" ,arrowhead="odiamond"];
+  Node24 [id="Node000024",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::WasmTable</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">MOVE_ONLY_WITH_DEFAULT<BR ALIGN="LEFT"/>_CONSTRUCTORS()<BR ALIGN="LEFT"/></TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="orangered", fillcolor="white", style="filled",URL="$d7/d94/structv8_1_1internal_1_1wasm_1_1WasmTable.html",tooltip=" "];
+  Node4 -> Node24 [id="edge33_Node000024_Node000004",color="steelblue1",style="solid",tooltip=" ",label=" +initial_size\n+maximum_size",fontcolor="grey" ,arrowhead="odiamond"];
+  Node6 -> Node24 [id="edge34_Node000024_Node000006",color="steelblue1",style="solid",tooltip=" ",label=" +exported\n+has_maximum_size\n+imported\n+shared",fontcolor="grey" ,arrowhead="odiamond"];
+  Node25 -> Node1 [id="edge35_Node000001_Node000025",color="steelblue1",style="solid",tooltip=" ",label=" +memories",fontcolor="grey" ,arrowhead="odiamond"];
+  Node25 [id="Node000025",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::vector&lt; v8::internal<BR ALIGN="LEFT"/>::wasm::WasmMemory &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node26 -> Node25 [id="edge36_Node000025_Node000026",color="steelblue1",style="solid",tooltip=" ",label=" +elements",fontcolor="grey" ,arrowhead="odiamond"];
+  Node26 [id="Node000026",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::WasmMemory</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">GetMemory64GuardsShift()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">GetMemory64GuardsSize()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">GetMemory64GuardsShift()<BR ALIGN="LEFT"/></TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="orangered", fillcolor="white", style="filled",URL="$de/d4e/structv8_1_1internal_1_1wasm_1_1WasmMemory.html",tooltip=" "];
+  Node4 -> Node26 [id="edge37_Node000026_Node000004",color="steelblue1",style="solid",tooltip=" ",label=" +index\n+initial_pages\n+maximum_pages",fontcolor="grey" ,arrowhead="odiamond"];
+  Node6 -> Node26 [id="edge38_Node000026_Node000006",color="steelblue1",style="solid",tooltip=" ",label=" +exported\n+has_maximum_pages\n+imported\n+is_memory64\n+is_shared",fontcolor="grey" ,arrowhead="odiamond"];
+  Node29 -> Node1 [id="edge39_Node000001_Node000029",color="steelblue1",style="solid",tooltip=" ",label=" +import_table",fontcolor="grey" ,arrowhead="odiamond"];
+  Node29 [id="Node000029",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::vector&lt; v8::internal<BR ALIGN="LEFT"/>::wasm::WasmImport &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node30 -> Node29 [id="edge40_Node000029_Node000030",color="steelblue1",style="solid",tooltip=" ",label=" +elements",fontcolor="grey" ,arrowhead="odiamond"];
+  Node30 [id="Node000030",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::WasmImport</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="orangered", fillcolor="white", style="filled",URL="$dc/df7/structv8_1_1internal_1_1wasm_1_1WasmImport.html",tooltip=" "];
+  Node5 -> Node30 [id="edge41_Node000030_Node000005",color="steelblue1",style="solid",tooltip=" ",label=" +field_name\n+module_name",fontcolor="grey" ,arrowhead="odiamond"];
+  Node4 -> Node30 [id="edge42_Node000030_Node000004",color="steelblue1",style="solid",tooltip=" ",label=" +index",fontcolor="grey" ,arrowhead="odiamond"];
+  Node32 -> Node1 [id="edge43_Node000001_Node000032",color="steelblue1",style="solid",tooltip=" ",label=" +export_table",fontcolor="grey" ,arrowhead="odiamond"];
+  Node32 [id="Node000032",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::vector&lt; v8::internal<BR ALIGN="LEFT"/>::wasm::WasmExport &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node33 -> Node32 [id="edge44_Node000032_Node000033",color="steelblue1",style="solid",tooltip=" ",label=" +elements",fontcolor="grey" ,arrowhead="odiamond"];
+  Node33 [id="Node000033",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::WasmExport</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="orangered", fillcolor="white", style="filled",URL="$d3/d8b/structv8_1_1internal_1_1wasm_1_1WasmExport.html",tooltip=" "];
+  Node5 -> Node33 [id="edge45_Node000033_Node000005",color="steelblue1",style="solid",tooltip=" ",label=" +name",fontcolor="grey" ,arrowhead="odiamond"];
+  Node4 -> Node33 [id="edge46_Node000033_Node000004",color="steelblue1",style="solid",tooltip=" ",label=" +index",fontcolor="grey" ,arrowhead="odiamond"];
+  Node34 -> Node1 [id="edge47_Node000001_Node000034",color="steelblue1",style="solid",tooltip=" ",label=" +tags",fontcolor="grey" ,arrowhead="odiamond"];
+  Node34 [id="Node000034",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::vector&lt; v8::internal<BR ALIGN="LEFT"/>::wasm::WasmTag &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node35 -> Node34 [id="edge48_Node000034_Node000035",color="steelblue1",style="solid",tooltip=" ",label=" +elements",fontcolor="grey" ,arrowhead="odiamond"];
+  Node35 [id="Node000035",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::WasmTag</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">WasmTag()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">ToFunctionSig()<BR ALIGN="LEFT"/></TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$d0/d3b/structv8_1_1internal_1_1wasm_1_1WasmTag.html",tooltip=" "];
+  Node9 -> Node35 [id="edge49_Node000035_Node000009",color="steelblue1",style="solid",tooltip=" ",label=" +sig",fontcolor="grey" ,arrowhead="odiamond"];
+  Node4 -> Node35 [id="edge50_Node000035_Node000004",color="steelblue1",style="solid",tooltip=" ",label=" +sig_index",fontcolor="grey" ,arrowhead="odiamond"];
+  Node36 -> Node1 [id="edge51_Node000001_Node000036",color="steelblue1",style="solid",tooltip=" ",label=" +stringref_literals",fontcolor="grey" ,arrowhead="odiamond"];
+  Node36 [id="Node000036",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::vector&lt; v8::internal<BR ALIGN="LEFT"/>::wasm::WasmStringRefLiteral &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node37 -> Node36 [id="edge52_Node000036_Node000037",color="steelblue1",style="solid",tooltip=" ",label=" +elements",fontcolor="grey" ,arrowhead="odiamond"];
+  Node37 [id="Node000037",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::WasmStringRefLiteral</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">WasmStringRefLiteral()<BR ALIGN="LEFT"/></TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$da/d42/structv8_1_1internal_1_1wasm_1_1WasmStringRefLiteral.html",tooltip=" "];
+  Node5 -> Node37 [id="edge53_Node000037_Node000005",color="steelblue1",style="solid",tooltip=" ",label=" +source",fontcolor="grey" ,arrowhead="odiamond"];
+  Node38 -> Node1 [id="edge54_Node000001_Node000038",color="steelblue1",style="solid",tooltip=" ",label=" +elem_segments",fontcolor="grey" ,arrowhead="odiamond"];
+  Node38 [id="Node000038",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::vector&lt; v8::internal<BR ALIGN="LEFT"/>::wasm::WasmElemSegment &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node39 -> Node38 [id="edge55_Node000038_Node000039",color="steelblue1",style="solid",tooltip=" ",label=" +elements",fontcolor="grey" ,arrowhead="odiamond"];
+  Node39 [id="Node000039",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::WasmElemSegment</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">WasmElemSegment()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">WasmElemSegment()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">WasmElemSegment()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">WasmElemSegment()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">WasmElemSegment()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">operator=()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">operator=()<BR ALIGN="LEFT"/></TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="orangered", fillcolor="white", style="filled",URL="$dc/d29/structv8_1_1internal_1_1wasm_1_1WasmElemSegment.html",tooltip=" "];
+  Node6 -> Node39 [id="edge56_Node000039_Node000006",color="steelblue1",style="solid",tooltip=" ",label=" +shared",fontcolor="grey" ,arrowhead="odiamond"];
+  Node4 -> Node39 [id="edge57_Node000039_Node000004",color="steelblue1",style="solid",tooltip=" ",label=" +element_count\n+elements_wire_bytes\l_offset\n+table_index",fontcolor="grey" ,arrowhead="odiamond"];
+  Node42 -> Node1 [id="edge58_Node000001_Node000042",color="steelblue1",style="solid",tooltip=" ",label=" +compilation_hints",fontcolor="grey" ,arrowhead="odiamond"];
+  Node42 [id="Node000042",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::vector&lt; v8::internal<BR ALIGN="LEFT"/>::wasm::WasmCompilationHint &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node43 -> Node42 [id="edge59_Node000042_Node000043",color="steelblue1",style="solid",tooltip=" ",label=" +elements",fontcolor="grey" ,arrowhead="odiamond"];
+  Node43 [id="Node000043",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::WasmCompilationHint</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="orangered", fillcolor="white", style="filled",URL="$d3/d66/structv8_1_1internal_1_1wasm_1_1WasmCompilationHint.html",tooltip=" "];
+  Node46 -> Node1 [id="edge60_Node000001_Node000046",color="steelblue1",style="solid",tooltip=" ",label=" +branch_hints",fontcolor="grey" ,arrowhead="odiamond"];
+  Node46 [id="Node000046",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::unordered_map<BR ALIGN="LEFT"/>&lt; uint32_t, BranchHintMap &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node46 [id="edge61_Node000046_Node000004",color="steelblue1",style="solid",tooltip=" ",label=" +keys",fontcolor="grey" ,arrowhead="odiamond"];
+  Node47 -> Node46 [id="edge62_Node000046_Node000047",color="steelblue1",style="solid",tooltip=" ",label=" +elements",fontcolor="grey" ,arrowhead="odiamond"];
+  Node47 [id="Node000047",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::BranchHintMap</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">insert()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">GetHintFor()<BR ALIGN="LEFT"/></TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$db/de2/classv8_1_1internal_1_1wasm_1_1BranchHintMap.html",tooltip=" "];
+  Node48 -> Node1 [id="edge63_Node000001_Node000048",color="steelblue1",style="solid",tooltip=" ",label=" +inst_traces",fontcolor="grey" ,arrowhead="odiamond"];
+  Node48 [id="Node000048",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::vector&lt; std::pair<BR ALIGN="LEFT"/>&lt; uint32_t, uint32_t &gt; &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node49 -> Node48 [id="edge64_Node000048_Node000049",color="steelblue1",style="solid",tooltip=" ",label=" +elements",fontcolor="grey" ,arrowhead="odiamond"];
+  Node49 [id="Node000049",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::pair&lt; uint32_t,<BR ALIGN="LEFT"/> uint32_t &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node49 [id="edge65_Node000049_Node000004",color="steelblue1",style="solid",tooltip=" ",label=" +first_type\n+second_type",fontcolor="grey" ,arrowhead="odiamond"];
+  Node50 -> Node1 [id="edge66_Node000001_Node000050",color="steelblue1",style="solid",tooltip=" ",label=" +type_feedback",fontcolor="grey" ,arrowhead="odiamond"];
+  Node50 [id="Node000050",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::TypeFeedbackStorage</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">EstimateCurrentMemoryConsumption()<BR ALIGN="LEFT"/></TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$dc/d1a/structv8_1_1internal_1_1wasm_1_1TypeFeedbackStorage.html",tooltip=" "];
+  Node51 -> Node50 [id="edge67_Node000050_Node000051",color="steelblue1",style="solid",tooltip=" ",label=" +feedback_for_function",fontcolor="grey" ,arrowhead="odiamond"];
+  Node51 [id="Node000051",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::unordered_map<BR ALIGN="LEFT"/>&lt; uint32_t, v8::internal<BR ALIGN="LEFT"/>::wasm::FunctionTypeFeedback &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="orangered", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node51 [id="edge68_Node000051_Node000004",color="steelblue1",style="solid",tooltip=" ",label=" +keys",fontcolor="grey" ,arrowhead="odiamond"];
+  Node56 -> Node50 [id="edge69_Node000050_Node000056",color="steelblue1",style="solid",tooltip=" ",label=" +mutex",fontcolor="grey" ,arrowhead="odiamond"];
+  Node56 [id="Node000056",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::base::SharedMutex</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">SharedMutex()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">SharedMutex()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">operator=()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">~SharedMutex()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">LockShared()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">LockExclusive()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">UnlockShared()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">UnlockExclusive()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">TryLockShared()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">TryLockExclusive()<BR ALIGN="LEFT"/></TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$d8/d7b/classv8_1_1base_1_1SharedMutex.html",tooltip=" "];
+  Node57 -> Node50 [id="edge70_Node000050_Node000057",color="steelblue1",style="solid",tooltip=" ",label=" +well_known_imports",fontcolor="grey" ,arrowhead="odiamond"];
+  Node57 [id="Node000057",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::WellKnownImportsList</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">WellKnownImportsList()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">Initialize()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">Initialize()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">get()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">Update()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">mutex()<BR ALIGN="LEFT"/></TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$d5/d1e/classv8_1_1internal_1_1wasm_1_1WellKnownImportsList.html",tooltip=" "];
+  Node6 -> Node50 [id="edge71_Node000050_Node000006",color="steelblue1",style="solid",tooltip=" ",label=" +has_magic_string_constants",fontcolor="grey" ,arrowhead="odiamond"];
+  Node9 -> Node1 [id="edge72_Node000001_Node000009",color="steelblue1",style="solid",tooltip=" ",label=" +origin",fontcolor="grey" ,arrowhead="odiamond"];
+  Node58 -> Node1 [id="edge73_Node000001_Node000058",color="steelblue1",style="solid",tooltip=" ",label=" +lazily_generated_names",fontcolor="grey" ,arrowhead="odiamond"];
+  Node58 [id="Node000058",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::LazilyGeneratedNames</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">LookupFunctionName()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">AddForTesting()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">Has()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">EstimateCurrentMemoryConsumption()<BR ALIGN="LEFT"/></TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$d9/d0a/classv8_1_1internal_1_1wasm_1_1LazilyGeneratedNames.html",tooltip=" "];
+  Node59 -> Node1 [id="edge74_Node000001_Node000059",color="steelblue1",style="solid",tooltip=" ",label=" +debug_symbols",fontcolor="grey" ,arrowhead="odiamond"];
+  Node59 [id="Node000059",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::WasmDebugSymbols</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$db/d3b/structv8_1_1internal_1_1wasm_1_1WasmDebugSymbols.html",tooltip=" "];
+  Node60 -> Node59 [id="edge75_Node000059_Node000060",color="steelblue1",style="solid",tooltip=" ",label=" +type",fontcolor="grey" ,arrowhead="odiamond"];
+  Node60 [id="Node000060",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">Type</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node59 [id="edge76_Node000059_Node000005",color="steelblue1",style="solid",tooltip=" ",label=" +external_url",fontcolor="grey" ,arrowhead="odiamond"];
+  Node61 -> Node1 [id="edge77_Node000001_Node000061",color="steelblue1",style="solid",tooltip=" ",label=" +asm_js_offset_information",fontcolor="grey" ,arrowhead="odiamond"];
+  Node61 [id="Node000061",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::unique_ptr&lt; v8<BR ALIGN="LEFT"/>::internal::wasm::AsmJsOffset<BR ALIGN="LEFT"/>Information &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">operator-&gt;()<BR ALIGN="LEFT"/></TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node62 -> Node61 [id="edge78_Node000061_Node000062",color="steelblue1",style="solid",tooltip=" ",label=" +ptr",fontcolor="grey" ,arrowhead="odiamond"];
+  Node62 [id="Node000062",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">v8::internal::wasm<BR ALIGN="LEFT"/>::AsmJsOffsetInformation</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">AsmJsOffsetInformation()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">~AsmJsOffsetInformation()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">GetSourcePosition()<BR ALIGN="LEFT"/></TD></TR>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">GetFunctionOffsets()<BR ALIGN="LEFT"/></TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$d2/d89/classv8_1_1internal_1_1wasm_1_1AsmJsOffsetInformation.html",tooltip=" "];
+  Node63 -> Node1 [id="edge79_Node000001_Node000063",color="steelblue1",style="solid",tooltip=" ",label=" +validated_functions",fontcolor="grey" ,arrowhead="odiamond"];
+  Node63 [id="Node000063",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::unique_ptr&lt; std<BR ALIGN="LEFT"/>::atomic&lt; uint8_t &gt;[]&gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD VALIGN="top" CELLPADDING="1" CELLSPACING="0">+</TD><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">operator-&gt;()<BR ALIGN="LEFT"/></TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node64 -> Node63 [id="edge80_Node000063_Node000064",color="steelblue1",style="solid",tooltip=" ",label=" +ptr",fontcolor="grey" ,arrowhead="odiamond"];
+  Node64 [id="Node000064",shape=plain,label=<<TABLE CELLBORDER="0" BORDER="1"><TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">std::atomic&lt; uint8_t &gt;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+<HR/>
+<TR><TD COLSPAN="2" CELLPADDING="1" CELLSPACING="0">&nbsp;</TD></TR>
+</TABLE>>
+,height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node64 [id="edge81_Node000064_Node000012",color="steelblue1",style="solid",tooltip=" ",label=" +ptr",fontcolor="grey" ,arrowhead="odiamond"];
+}

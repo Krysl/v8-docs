@@ -1,0 +1,4 @@
+var structv8_1_1internal_1_1compiler_1_1turboshaft_1_1v__traits_3_01T_00_01std_1_1enable__if__t_3_01ab4a0dc5f2cc25aeec7edf65fc7fe6b8 =
+[
+    [ "implicitly_constructible_from", "dc/dc5/structv8_1_1internal_1_1compiler_1_1turboshaft_1_1v__traits_3_01T_00_01std_1_1enable__if__t_3_014ef6e80e7bf256addecdb7a5745a9a1e.html", null ]
+];
