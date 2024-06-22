@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>v8docs</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="shortcut icon" type="image/ico" href="/assets/favicon.ico">
+  <meta name="og:image" content="logo.png">
+  <meta name="og:image:type" content="image/png">
+  <meta name="og:image:width" content="512">
+  <meta name="og:image:height" content="512">
+  <link rel="stylesheet" href="index.css">
+  <script type="module">
+    import { Octokit } from "https://esm.sh/@octokit/core";
+    // Octokit.js
+    // https://github.com/octokit/core.js#readme
+    const octokit = new Octokit({
+      // auth: 'YOUR-TOKEN'
+    })
+
+    const json = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
+      owner: 'v8',
+      repo: 'api',
+      ref: 'gh-pages',
+      path: '',
+      headers: {
+        'X-GitHub-Api-Version': '2022-11-28'
+      }
+    })
+    const vers = json.data.filter((value) => value.path.match(/v\d+\.\d+/)).sort((a, b) => {
+      const na = a.path.substring(1).split('.');
+      const nb = b.path.substring(1).split('.');
+
+      const va1 = parseInt(na[0]);
+      const vb1 = parseInt(nb[0]);
+      if (va1 != vb1)
+        return va1 - vb1;
+
+      const va2 = parseInt(na[1]);
+      const vb2 = parseInt(nb[1]);
+      if (va2 != vb2)
+        return va2 - vb2;
+      return 0;
+    }
+    );
+
+    let preMajor = -1;
+    let preUl = undefined;
+    const publicApi = document.getElementById("public");
+    for (const ver of vers) {
+      const verNum = ver.path.substring(1).split('.');
+      const verMajor = parseInt(verNum[0]);
+      if (verMajor != preMajor) {
+        preMajor = verMajor;
+        // create a new ul element
+        preUl = document.createElement("ul");
+        preUl.className = "versions";
+        publicApi.appendChild(preUl);
+      }
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.textContent = ver.name;
+      a.title = ver.name;
+      a.href = `https://v8.github.io/api/${ver.path}/`;
+
+      preUl.appendChild(li);
+      li.appendChild(a);
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="v8docs">
+      <img src="img/v8-logo.svg" alt="V8docs" />
+    </h1>
+
+    <h2>Documentation of the V8 public&internal API.</h2>
+    <ul class="versions">
+      <li><a title="7.2.502.16/" href="dist/7.2.502.16/index.html">7.2.502.16</a></li>
+      <li><a title="12.6" href="dist/12.6/index.html">12.6</a></li>
+    </ul>
+    <br />
+    <h2>Documentation of the V8 public API.</h2>
+    <div id="public">
+      <ul class="versions">
+        <li><a title="head" href="https://v8.github.io/api/head">head</a></li>
+      </ul>
+    </div>
+
+    <p class="description">
+      V8&#0153; documentation.
+    </p>
+  </div>
+</body>
+
+</html>
